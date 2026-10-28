@@ -1,0 +1,160 @@
+"""End-to-end steps shared by the live forecast and historical backtests."""
+
+from __future__ import annotations
+
+import json
+from collections.abc import Callable
+from pathlib import Path
+
+import numpy as np
+import polars as pl
+
+from prophecy import DATA_DIR
+from prophecy.ingest.vec import canonical_district
+from prophecy.jurisdictions import Election
+from prophecy.model.aggregate import AggregateFit, fit, summarise
+from prophecy.model.preferences import (
+    BLOCS,
+    IDX,
+    apply_onp_targets,
+    calibrate_to_results,
+    estimate_weights,
+    two_party,
+)
+from prophecy.model.simulate import SeatInputs, SimConfig, build_inputs
+from prophecy.schema.parties import bloc
+
+PROCESSED = DATA_DIR / "processed"
+RUNS = DATA_DIR.parent / "runs"
+# Preference distributions are only published for 2022; earlier elections reuse their
+# structure, re-calibrated to that election's own seat results.
+FLOW_SOURCE = "vic-2022"
+ONP_START = 3.0  # ONP's starting level (%) when the previous Assembly barely had it
+
+
+def start_shares(previous: Election) -> dict[str, float]:
+    """Previous election's statewide bloc shares as the aggregator's anchor."""
+    share = pl.read_csv(PROCESSED / previous.election_id / "primary.csv").group_by("bloc").agg(
+        pl.col("votes").sum()
+    )
+    total = share["votes"].sum()
+    s = {b: 100 * v / total for b, v in share.iter_rows()}
+    return {"ALP": s["ALP"], "COAL": s["COAL"], "GRN": s["GRN"], "ONP": ONP_START,
+            "OTH": 100 - s["ALP"] - s["COAL"] - s["GRN"] - ONP_START}
+
+
+def run_aggregate(election: Election, previous: Election, polls: pl.DataFrame,
+                  out_dir: Path, run_dir: Path, log: Callable[[str], None] = print) -> AggregateFit:
+    start = start_shares(previous)
+    f = fit(polls, previous, election, start)
+    diag = {k: v for k, v in f.diagnostics.items() if k != "report"}
+    log(f"diagnostics: {diag}")
+    if diag["max_rhat"] > 1.01 or diag["divergences"] > 0:
+        log("WARNING: sampler diagnostics failed thresholds")
+    # Persist draws first so post-processing failures never require a refit.
+    run_dir.mkdir(parents=True, exist_ok=True)
+    np.savez_compressed(run_dir / "aggregate_draws.npz", shares=f.shares.astype(np.float32),
+                        parties=np.array(f.parties))
+    out_dir.mkdir(parents=True, exist_ok=True)
+    f.house.write_csv(out_dir / "house_effects.csv")
+    (out_dir / "aggregate_meta.json").write_text(json.dumps(
+        {"diagnostics": diag, "start_share": start, "pollsters": f.pollsters,
+         "parties": f.parties, "weeks": [w.isoformat() for w in f.weeks]}, indent=1))
+    summarise(f, polls).write_csv(out_dir / "poll_trend.csv")
+    return f
+
+
+def load_draws(run_dir: Path) -> tuple[np.ndarray, list[str]]:
+    agg = np.load(run_dir / "aggregate_draws.npz")
+    return agg["shares"], [str(p) for p in agg["parties"]]
+
+
+def seat_inputs(previous: Election, boundaries: str, onp_geography: bool,
+                log: Callable[[str], None] = print) -> SeatInputs:
+    from prophecy.ingest.federal_xwalk import district_regions, federal_by_state_district
+
+    base_dir = PROCESSED / previous.election_id
+    primary = pl.read_csv(base_dir / "primary.csv")
+    districts = pl.read_csv(base_dir / "districts.csv")
+    canon = pl.col("district").map_elements(canonical_district, return_dtype=pl.String)
+    regions = district_regions(boundaries).with_columns(canon)
+    if onp_geography:
+        federal = federal_by_state_district(boundaries=boundaries).with_columns(canon)
+        federal.write_csv(base_dir / "federal2025_by_district.csv")
+        missing = set(districts["district"]) - set(federal["district"])
+        if missing:
+            log(f"WARNING: no federal booths matched for {sorted(missing)}")
+    else:
+        federal = pl.DataFrame(schema={"district": pl.String, "bloc": pl.String,
+                                       "votes": pl.Int64, "pct": pl.Float64})
+    missing_regions = set(districts["district"]) - set(regions["district"])
+    if missing_regions:
+        raise ValueError(f"No region for districts {sorted(missing_regions)} in {boundaries}")
+    by_dir = PROCESSED / f"{previous.election_id}-by-elections"
+    holders = {}
+    if by_dir.exists():
+        holders = dict(pl.read_csv(by_dir / "districts.csv").select("district", "elected_party").iter_rows())
+    return build_inputs(primary, districts, federal, regions, holders)
+
+
+def flow_weights(previous: Election, inputs: SeatInputs,
+                 log: Callable[[str], None] = print) -> np.ndarray:
+    """Luce weights from the DoPs, tilted so replaying ``previous`` reproduces its seat
+    2CPs, then ONP flows from polls."""
+    transfers = pl.read_csv(PROCESSED / FLOW_SOURCE / "dop_transfers.csv").filter(
+        pl.col("count") > 0
+    ).with_columns(
+        pl.col("from_party").map_elements(bloc, return_dtype=pl.String).alias("from_bloc"),
+        pl.col("to_party").map_elements(bloc, return_dtype=pl.String).alias("to_bloc"),
+    )
+    tcp = pl.read_csv(PROCESSED / previous.election_id / "tcp.csv")
+    alp_tcp = np.full(len(inputs.districts), np.nan)
+    for i, name in enumerate(inputs.districts):
+        t = tcp.filter(pl.col("district") == name)
+        if set(t["bloc"]) == {"ALP", "COAL"}:
+            alp_tcp[i] = t.filter(pl.col("bloc") == "ALP")["pct"][0]
+    flows, calib = calibrate_to_results(estimate_weights(transfers), inputs.base, alp_tcp)
+    log(f"flow calibration ({previous.election_id}): {calib}")
+    return apply_onp_targets(flows)
+
+
+def ind_fraction(inputs: SeatInputs) -> float:
+    """Independents' share of Others+IND at the previous election."""
+    w = inputs.weight / inputs.weight.sum()
+    ind, oth = inputs.base[:, IDX["IND"]] @ w, inputs.base[:, IDX["OTH"]] @ w
+    return float(ind / (ind + oth))
+
+
+def add_tpp_trend(shares: np.ndarray, parties: list[str], flows: np.ndarray, trend_path: Path,
+                  ind_frac: float) -> None:
+    """Add model-implied ALP-v-Coalition 2PP (median, 90%) to the weekly trend file."""
+    trend = pl.read_csv(trend_path, try_parse_dates=True, infer_schema_length=None)
+    trend = trend.drop([c for c in trend.columns if c.startswith("tpp_alp_vs_coal")])
+    n_draws = shares.shape[0]
+    flows_s = np.repeat(flows[None], n_draws, axis=0)
+    med, lo, hi = [], [], []
+    for w in range(trend.height):
+        prim = np.zeros((n_draws, len(BLOCS)))
+        for k, p in enumerate(parties):
+            prim[:, IDX[p]] = shares[:, w, k] / 100
+        prim[:, IDX["IND"]] = prim[:, IDX["OTH"]] * ind_frac
+        prim[:, IDX["OTH"]] *= 1 - ind_frac
+        q = np.quantile(two_party(prim, flows_s, "ALP", "COAL"), [0.5, 0.05, 0.95])
+        med.append(round(float(q[0]), 2))
+        lo.append(round(float(q[1]), 2))
+        hi.append(round(float(q[2]), 2))
+    trend.with_columns(
+        pl.Series("tpp_alp_vs_coal", med), pl.Series("tpp_alp_vs_coal_lo", lo),
+        pl.Series("tpp_alp_vs_coal_hi", hi),
+    ).write_csv(trend_path)
+
+
+def default_config(n_per_draw: int = 5) -> SimConfig:
+    """Simulation settings, with polling error calibrated from history when available."""
+    cfg = SimConfig(n_per_draw=n_per_draw)
+    path = PROCESSED / "poll_error_vic.json"
+    if path.exists():
+        err = json.loads(path.read_text(encoding="utf-8"))
+        cfg.poll_error_sd.update({k: v for k, v in err["sd"].items() if k in cfg.poll_error_sd})
+        cfg.poll_bias = err.get("bias", {})
+    return cfg

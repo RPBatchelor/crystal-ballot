@@ -9,8 +9,27 @@
 	const j = $derived(data.jurisdiction);
 
 	const pollsters = $derived([...new Set(polls.polls.map((p) => p.pollster))].sort());
+	const cycles = $derived([...(polls.cycles ?? [])].reverse());
+	// The current cycle starts at the previous election.
+	const cycleStart = $derived(
+		(polls.results ?? []).map((r) => r.date).filter((d) => d < polls.election_date).at(-1)
+	);
+	const firstYear = $derived(new Date(polls.polls.at(-1)?.field_end ?? polls.election_date).getFullYear());
 	let pollster = $state('all');
-	const shown = $derived(pollster === 'all' ? polls.polls : polls.polls.filter((p) => p.pollster === pollster));
+	let cycle = $state('all');
+	const shown = $derived(
+		polls.polls
+			.filter((p) => pollster === 'all' || p.pollster === pollster)
+			.filter((p) => cycle === 'all' || p.cycle === cycle)
+	);
+	const markers = $derived(
+		(polls.results ?? []).map((r) => ({ ...r, label: `${r.year} election` }))
+	);
+	const cycleLabel = (id: string) => {
+		const i = (polls.cycles ?? []).findIndex((c) => c.election_id === id);
+		const prev = (polls.results ?? []).filter((r) => r.date < (polls.cycles ?? [])[i]?.date).at(-1);
+		return `${prev ? prev.year : '…'}–${id.slice(-4)}`;
+	};
 
 	const events = $derived(
 		polls.events
@@ -28,21 +47,26 @@
 </svelte:head>
 
 <p class="eyebrow">{j.name} · voting intention</p>
-<h1>Every poll since the 2022 election</h1>
+<h1>Every state poll since {firstYear}</h1>
 <p class="lede">
-	{polls.polls.length} published state voting-intention polls from {pollsters.length} pollsters. Dots are
-	individual polls; lines are the Bayesian poll average with 90% bands.
+	{polls.polls.length} published state voting-intention polls from {pollsters.length} pollsters across
+	{cycles.length} election cycles. Dots are individual polls, lines the poll average, and diamonds the actual
+	election results. Use the range buttons or drag across the strip under each chart to zoom.
 </p>
 
 <h2>Primary vote</h2>
 <TimeSeriesChart
-	title="Victorian primary vote polling since 2022"
+	title="Victorian primary vote polling since {firstYear}"
 	series={PRIMARY_SERIES}
 	points={polls.polls}
 	pointDate={(p) => p.field_end}
 	trend={polls.trend}
 	{events}
+	{markers}
 	end={polls.election_date}
+	zoomable
+	{cycleStart}
+	initialRange="cycle"
 />
 
 <h2>Two-party preferred</h2>
@@ -51,14 +75,18 @@
 	the line is implied from the primary-vote average using estimated preference flows.
 </p>
 <TimeSeriesChart
-	title="Labor two-party-preferred vote in Victorian polls since 2022"
+	title="Labor two-party-preferred vote in Victorian polls since {firstYear}"
 	series={TPP_SERIES}
 	points={polls.polls}
 	pointDate={(p) => p.field_end}
 	trend={polls.trend}
+	{markers}
 	end={polls.election_date}
 	yRef={50}
 	height={280}
+	zoomable
+	{cycleStart}
+	initialRange="cycle"
 />
 
 <p class="muted small method">
@@ -105,6 +133,13 @@
 <h2>All polls</h2>
 <div class="controls">
 	<label>
+		Cycle
+		<select bind:value={cycle}>
+			<option value="all">All cycles</option>
+			{#each cycles as c (c.election_id)}<option value={c.election_id}>{cycleLabel(c.election_id)}</option>{/each}
+		</select>
+	</label>
+	<label>
 		Pollster
 		<select bind:value={pollster}>
 			<option value="all">All pollsters</option>
@@ -131,7 +166,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each shown as p (p.pollster + p.field_end + p.field_start)}
+			{#each shown as p, i (i)}
 				<tr>
 					<td class="left">{fmtDate(p.field_start)} – {fmtDate(p.field_end)}</td>
 					<td class="left">{p.pollster}{#if p.client}<span class="muted small"> · {p.client}</span>{/if}</td>

@@ -17,10 +17,9 @@
 						label: `${y} forecast`
 					})),
 					...(current.hasPolls ? [{ href: `/${current.code}/polls/`, label: 'Polls' }] : []),
-					...current.resultYears.map((y) => ({
-						href: `/${current.code}/results/${y}/`,
-						label: `${y} results`
-					}))
+					...(current.resultYears.length
+						? [{ href: `/${current.code}/results/${current.resultYears.at(-1)}/`, label: 'Results', prefix: `/${current.code}/results/` }]
+						: [])
 				]
 			: []
 	);
@@ -56,7 +55,7 @@
 	{#if sections.length > 1}
 		<nav class="sections" aria-label="{current?.name} sections">
 			{#each sections as s (s.href)}
-				<a href={s.href} aria-current={path === s.href ? 'page' : undefined}>{s.label}</a>
+				<a href={s.href} aria-current={path === s.href || ('prefix' in s && path.startsWith(s.prefix as string)) ? 'page' : undefined}>{s.label}</a>
 			{/each}
 		</nav>
 	{/if}

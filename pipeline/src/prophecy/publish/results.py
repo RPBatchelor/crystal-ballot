@@ -35,6 +35,14 @@ def publish_results(election: Election) -> str:
         p = primary.filter(pl.col("district") == name).sort("votes", descending=True)
         t = tcp.filter(pl.col("district") == name).sort("votes", descending=True)
         tp = tpp.filter(pl.col("district") == name)
+        estimated = t.height < 2
+        if estimated:
+            # Archived seats without a 2CP count: approximate from the leading two
+            # candidates of the final count (or first preferences), renormalised.
+            final = pl.read_csv(src / "final.csv").filter(pl.col("district") == name)
+            source = final if final.height >= 2 else p
+            t = source.sort("votes", descending=True).head(2)
+            t = t.with_columns((100 * pl.col("votes") / pl.col("votes").sum()).round(3).alias("pct"))
         winner, runner_up = t.row(0, named=True), t.row(1, named=True)
         seat = {
             "name": name,
@@ -48,6 +56,7 @@ def publish_results(election: Election) -> str:
             "tcp": [_cand(r) for r in t.iter_rows(named=True)],
             # Margin = winner's 2CP share minus 50.
             "margin": round(winner["pct"] - 50, 2),
+            "tcp_estimated": estimated,
             "runner_up_party": runner_up["party"],
             "tpp_alp": tp["alp_tpp"][0] if tp.height else None,
             "tpp_method": tp["tpp_method"][0] if tp.height else None,
@@ -59,6 +68,14 @@ def publish_results(election: Election) -> str:
 
     totals = primary.group_by("bloc").agg(pl.col("votes").sum())
     total_votes = totals["votes"].sum()
+    # Official statewide 2PP where known; summing seat 2PPs misses non-classic seats in
+    # years when the EC published no full statewide figure.
+    official = PROCESSED / f"election_results_{election.jurisdiction.lower()}.csv"
+    official_tpp = None
+    if official.exists():
+        row = pl.read_csv(official).filter(pl.col("year") == election.date.year)
+        official_tpp = row["tpp_alp_vs_coal"][0] if row.height else None
+    seat_tpp = 100 * tpp["alp_votes"].sum() / (tpp["alp_votes"].sum() + tpp["coal_votes"].sum())
     payload = {
         "election_id": election.election_id,
         "jurisdiction": election.jurisdiction,
@@ -69,7 +86,7 @@ def publish_results(election: Election) -> str:
         "primary_share": {
             b: round(100 * v / total_votes, 2) for b, v in totals.sort("votes", descending=True).iter_rows()
         },
-        "tpp_alp": round(100 * tpp["alp_votes"].sum() / (tpp["alp_votes"].sum() + tpp["coal_votes"].sum()), 2),
+        "tpp_alp": round(official_tpp if official_tpp is not None else seat_tpp, 2),
         "seats": seats,
     }
     out_dir = WEB_DATA_DIR / election.jurisdiction.lower() / "results"

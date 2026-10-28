@@ -6,9 +6,9 @@
  "majority": 45,
  "seat_counts": {
   "NAT": 9,
-  "LIB": 19,
+  "ALP": 56,
   "GRN": 4,
-  "ALP": 56
+  "LIB": 19
  },
  "primary_share": {
   "ALP": 36.66,
@@ -103,6 +103,7 @@
     }
    ],
    "margin": 11.15,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 61.151,
    "tpp_method": "Preference distribution",
@@ -193,6 +194,7 @@
     }
    ],
    "margin": 6.15,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 56.153,
    "tpp_method": "Preference distribution",
@@ -297,6 +299,7 @@
     }
    ],
    "margin": 0.24,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 50.244,
    "tpp_method": "Preference distribution",
@@ -394,6 +397,7 @@
     }
    ],
    "margin": 4.23,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 54.229,
    "tpp_method": "Preference distribution",
@@ -491,6 +495,7 @@
     }
    ],
    "margin": 8.46,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 58.463,
    "tpp_method": "Preference distribution",
@@ -581,6 +586,7 @@
     }
    ],
    "margin": 0.94,
+   "tcp_estimated": false,
    "runner_up_party": "IND",
    "tpp_alp": 36.742,
    "tpp_method": "2PP",
@@ -664,6 +670,7 @@
     }
    ],
    "margin": 10.91,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 60.909,
    "tpp_method": "2CP",
@@ -761,6 +768,7 @@
     }
    ],
    "margin": 14.35,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 64.346,
    "tpp_method": "2CP",
@@ -837,6 +845,7 @@
     }
    ],
    "margin": 8.04,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 58.041,
    "tpp_method": "Preference distribution",
@@ -913,6 +922,7 @@
     }
    ],
    "margin": 4.71,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 45.286,
    "tpp_method": "2CP",
@@ -1010,6 +1020,7 @@
     }
    ],
    "margin": 7.23,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 57.226,
    "tpp_method": "Preference distribution",
@@ -1107,6 +1118,7 @@
     }
    ],
    "margin": 4.21,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 45.788,
    "tpp_method": "2CP",
@@ -1204,6 +1216,7 @@
     }
    ],
    "margin": 15.45,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 65.451,
    "tpp_method": "2CP",
@@ -1301,6 +1314,7 @@
     }
    ],
    "margin": 13.46,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 84.056,
    "tpp_method": "2PP",
@@ -1391,6 +1405,7 @@
     }
    ],
    "margin": 5.94,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 44.065,
    "tpp_method": "2CP",
@@ -1474,6 +1489,7 @@
     }
    ],
    "margin": 12.74,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 62.736,
    "tpp_method": "2CP",
@@ -1557,6 +1573,7 @@
     }
    ],
    "margin": 9.94,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 59.936,
    "tpp_method": "2CP",
@@ -1640,6 +1657,7 @@
     }
    ],
    "margin": 2.07,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 47.932,
    "tpp_method": "Preference distribution",
@@ -1730,6 +1748,7 @@
     }
    ],
    "margin": 10.37,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 60.368,
    "tpp_method": "2CP",
@@ -1827,6 +1846,7 @@
     }
    ],
    "margin": 9.0,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 58.999,
    "tpp_method": "2CP",
@@ -1903,6 +1923,7 @@
     }
    ],
    "margin": 1.37,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 48.627,
    "tpp_method": "Preference distribution",
@@ -1986,6 +2007,7 @@
     }
    ],
    "margin": 19.11,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 69.106,
    "tpp_method": "2CP",
@@ -2076,6 +2098,7 @@
     }
    ],
    "margin": 7.08,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 42.924,
    "tpp_method": "2CP",
@@ -2152,6 +2175,7 @@
     }
    ],
    "margin": 9.01,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 59.005,
    "tpp_method": "Preference distribution",
@@ -2242,6 +2266,7 @@
     }
    ],
    "margin": 12.45,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 62.45,
    "tpp_method": "Preference distribution",
@@ -2346,6 +2371,7 @@
     }
    ],
    "margin": 7.17,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 57.173,
    "tpp_method": "Preference distribution",
@@ -2429,6 +2455,7 @@
     }
    ],
    "margin": 9.93,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 40.069,
    "tpp_method": "Preference distribution",
@@ -2512,6 +2539,7 @@
     }
    ],
    "margin": 5.22,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 44.785,
    "tpp_method": "2CP",
@@ -2595,6 +2623,7 @@
     }
    ],
    "margin": 4.24,
+   "tcp_estimated": false,
    "runner_up_party": "GRN",
    "tpp_alp": 75.664,
    "tpp_method": "2PP",
@@ -2692,6 +2721,7 @@
     }
    ],
    "margin": 8.66,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 58.659,
    "tpp_method": "Preference distribution",
@@ -2775,6 +2805,7 @@
     }
    ],
    "margin": 14.71,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 64.709,
    "tpp_method": "Preference distribution",
@@ -2858,6 +2889,7 @@
     }
    ],
    "margin": 23.92,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 26.077,
    "tpp_method": "2CP",
@@ -2941,6 +2973,7 @@
     }
    ],
    "margin": 15.25,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 34.75,
    "tpp_method": "2CP",
@@ -3024,6 +3057,7 @@
     }
    ],
    "margin": 3.3,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 53.303,
    "tpp_method": "Preference distribution",
@@ -3114,6 +3148,7 @@
     }
    ],
    "margin": 6.92,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 56.919,
    "tpp_method": "2CP",
@@ -3204,6 +3239,7 @@
     }
    ],
    "margin": 1.35,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 51.353,
    "tpp_method": "Preference distribution",
@@ -3294,6 +3330,7 @@
     }
    ],
    "margin": 1.74,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 48.258,
    "tpp_method": "Preference distribution",
@@ -3370,6 +3407,7 @@
     }
    ],
    "margin": 12.75,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 62.75,
    "tpp_method": "Preference distribution",
@@ -3467,6 +3505,7 @@
     }
    ],
    "margin": 16.43,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 66.431,
    "tpp_method": "2CP",
@@ -3557,6 +3596,7 @@
     }
    ],
    "margin": 3.98,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 46.024,
    "tpp_method": "Preference distribution",
@@ -3654,6 +3694,7 @@
     }
    ],
    "margin": 14.25,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 64.247,
    "tpp_method": "2CP",
@@ -3744,6 +3785,7 @@
     }
    ],
    "margin": 16.15,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 66.153,
    "tpp_method": "2CP",
@@ -3848,6 +3890,7 @@
     }
    ],
    "margin": 18.01,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 68.014,
    "tpp_method": "2CP",
@@ -3931,6 +3974,7 @@
     }
    ],
    "margin": 21.61,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 28.393,
    "tpp_method": "2CP",
@@ -4021,6 +4065,7 @@
     }
    ],
    "margin": 9.54,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 59.54,
    "tpp_method": "Preference distribution",
@@ -4097,6 +4142,7 @@
     }
    ],
    "margin": 8.28,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 41.718,
    "tpp_method": "2CP",
@@ -4194,6 +4240,7 @@
     }
    ],
    "margin": 10.19,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 75.014,
    "tpp_method": "2PP",
@@ -4326,6 +4373,7 @@
     }
    ],
    "margin": 4.59,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 54.595,
    "tpp_method": "Preference distribution",
@@ -4437,6 +4485,7 @@
     }
    ],
    "margin": 1.18,
+   "tcp_estimated": false,
    "runner_up_party": "IND",
    "tpp_alp": 35.884,
    "tpp_method": "2PP",
@@ -4513,6 +4562,7 @@
     }
    ],
    "margin": 11.43,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 61.434,
    "tpp_method": "2CP",
@@ -4603,6 +4653,7 @@
     }
    ],
    "margin": 7.55,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 57.554,
    "tpp_method": "Preference distribution",
@@ -4693,6 +4744,7 @@
     }
    ],
    "margin": 8.2,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 58.195,
    "tpp_method": "Preference distribution",
@@ -4783,6 +4835,7 @@
     }
    ],
    "margin": 0.7,
+   "tcp_estimated": false,
    "runner_up_party": "IND",
    "tpp_alp": 41.719,
    "tpp_method": "2PP",
@@ -4901,6 +4954,7 @@
     }
    ],
    "margin": 4.42,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 45.584,
    "tpp_method": "Preference distribution",
@@ -5033,6 +5087,7 @@
     }
    ],
    "margin": 10.2,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 60.199,
    "tpp_method": "2CP",
@@ -5208,6 +5263,7 @@
     }
    ],
    "margin": 22.89,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 27.112,
    "tpp_method": "2CP",
@@ -5319,6 +5375,7 @@
     }
    ],
    "margin": 12.9,
+   "tcp_estimated": false,
    "runner_up_party": "IND",
    "tpp_alp": null,
    "tpp_method": null,
@@ -5423,6 +5480,7 @@
     }
    ],
    "margin": 9.16,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 59.163,
    "tpp_method": "2CP",
@@ -5513,6 +5571,7 @@
     }
    ],
    "margin": 8.5,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 58.496,
    "tpp_method": "2CP",
@@ -5624,6 +5683,7 @@
     }
    ],
    "margin": 6.68,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 43.318,
    "tpp_method": "2CP",
@@ -5799,6 +5859,7 @@
     }
    ],
    "margin": 6.7,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 56.695,
    "tpp_method": "Preference distribution",
@@ -5910,6 +5971,7 @@
     }
    ],
    "margin": 0.22,
+   "tcp_estimated": false,
    "runner_up_party": "GRN",
    "tpp_alp": 81.703,
    "tpp_method": "2PP",
@@ -6000,6 +6062,7 @@
     }
    ],
    "margin": 13.48,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 63.484,
    "tpp_method": "Preference distribution",
@@ -6083,6 +6146,7 @@
     }
    ],
    "margin": 17.97,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 32.034,
    "tpp_method": "2CP",
@@ -6194,6 +6258,7 @@
     }
    ],
    "margin": 0.4,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 50.395,
    "tpp_method": "Preference distribution",
@@ -6284,6 +6349,7 @@
     }
    ],
    "margin": 2.02,
+   "tcp_estimated": false,
    "runner_up_party": "GRN",
    "tpp_alp": 72.247,
    "tpp_method": "2PP",
@@ -6423,6 +6489,7 @@
     }
    ],
    "margin": 8.34,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 58.339,
    "tpp_method": "Preference distribution",
@@ -6506,6 +6573,7 @@
     }
    ],
    "margin": 1.79,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 48.213,
    "tpp_method": "Preference distribution",
@@ -6582,6 +6650,7 @@
     }
    ],
    "margin": 12.01,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 61.071,
    "tpp_method": "2PP",
@@ -6785,6 +6854,7 @@
     }
    ],
    "margin": 2.09,
+   "tcp_estimated": false,
    "runner_up_party": "GRN",
    "tpp_alp": 69.672,
    "tpp_method": "2PP",
@@ -6875,6 +6945,7 @@
     }
    ],
    "margin": 7.31,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 74.126,
    "tpp_method": "2PP",
@@ -6958,6 +7029,7 @@
     }
    ],
    "margin": 7.53,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 57.531,
    "tpp_method": "Preference distribution",
@@ -7055,6 +7127,7 @@
     }
    ],
    "margin": 2.99,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 52.994,
    "tpp_method": "Preference distribution",
@@ -7138,6 +7211,7 @@
     }
    ],
    "margin": 3.66,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 46.335,
    "tpp_method": "Preference distribution",
@@ -7228,6 +7302,7 @@
     }
    ],
    "margin": 5.15,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 44.85,
    "tpp_method": "2CP",
@@ -7325,6 +7400,7 @@
     }
    ],
    "margin": 6.79,
+   "tcp_estimated": false,
    "runner_up_party": "IND",
    "tpp_alp": 25.658,
    "tpp_method": "2PP",
@@ -7415,6 +7491,7 @@
     }
    ],
    "margin": 9.8,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 59.8,
    "tpp_method": "Preference distribution",
@@ -7519,6 +7596,7 @@
     }
    ],
    "margin": 8.05,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 41.951,
    "tpp_method": "Preference distribution",
@@ -7623,6 +7701,7 @@
     }
    ],
    "margin": 9.56,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 59.564,
    "tpp_method": "Preference distribution",
@@ -7720,6 +7799,7 @@
     }
    ],
    "margin": 6.41,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 56.413,
    "tpp_method": "Preference distribution",
@@ -7810,6 +7890,7 @@
     }
    ],
    "margin": 8.73,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 58.728,
    "tpp_method": "2CP",
@@ -7907,6 +7988,7 @@
     }
    ],
    "margin": 12.58,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 62.578,
    "tpp_method": "2CP",
@@ -7983,6 +8065,7 @@
     }
    ],
    "margin": 16.0,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 65.996,
    "tpp_method": "2CP",
@@ -8059,6 +8142,7 @@
     }
    ],
    "margin": 4.15,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
    "tpp_alp": 45.85,
    "tpp_method": "2CP",
@@ -8233,6 +8317,7 @@
     }
    ],
    "margin": 13.46,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 63.461,
    "tpp_method": "2CP",
@@ -8372,6 +8457,7 @@
     }
    ],
    "margin": 10.5,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 60.501,
    "tpp_method": "2CP",
@@ -8568,6 +8654,7 @@
     }
    ],
    "margin": 13.44,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 63.442,
    "tpp_method": "Preference distribution",
@@ -8665,6 +8752,7 @@
     }
    ],
    "margin": 4.45,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
    "tpp_alp": 54.45,
    "tpp_method": "2CP",

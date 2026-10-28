@@ -40,6 +40,9 @@ SUPPLEMENTARY = {
     },
 }
 BY_ELECTIONS_INDEX = "/results/state-election-results/state-by-elections-timeline"
+# Elections before 2022 are served as static HTML from the VEC's results archive.
+ARCHIVE_BASE = "https://itsitecoreblobvecprd01.blob.core.windows.net/public-files/historical-results"
+ARCHIVE_YEARS = {2014, 2018}
 REQUEST_DELAY_S = 1.0
 
 
@@ -143,6 +146,7 @@ class DistrictResult:
     tpp: list[dict]
     booth_primary_xlsx: str | None
     tcp: list[dict] = field(default_factory=list)  # two-candidate-preferred totals
+    tcp_inline: list[dict] = field(default_factory=list)  # 2CP table on the page itself
 
 
 def parse_district_page(html: str, district: str) -> DistrictResult:
@@ -157,10 +161,12 @@ def parse_district_page(html: str, district: str) -> DistrictResult:
         elected_party = sec.text[1] if len(sec.text) > 1 else None
 
     enrolment = formal = informal = None
-    sec = _section(sections, "Recheck votes") or _section(sections, "Votes")
+    sec = _section(sections, "Recheck votes") or _section(sections, "Recount votes") or _section(sections, "Votes")
     if sec:
         joined = " | ".join(sec.text)
-        m = re.search(r"enrolment[^|]*\|\s*([\d,]+)", joined, re.IGNORECASE)
+        # 2022: "Total enrolment as at close of rolls: | 54533"; archive pages split the
+        # label: "Total Enrolment | as at close of rolls: | 53340".
+        m = re.search(r"enrolment(?:[^|\d]*\|)+\s*([\d,]+)", joined, re.IGNORECASE)
         enrolment = _int(m.group(1)) if m else None
         m = re.search(r"Formal votes:?\s*\|\s*([\d,]+)", joined, re.IGNORECASE)
         formal = _int(m.group(1)) if m else None
@@ -169,7 +175,8 @@ def parse_district_page(html: str, district: str) -> DistrictResult:
 
     primary: list[dict] = []
     booth_xlsx = None
-    sec = _section(sections, "Recheck first preference") or _section(sections, "First preference")
+    sec = (_section(sections, "Recheck first preference") or _section(sections, "Recount first preference")
+           or _section(sections, "First preference"))
     if sec and sec.tables:
         for row in sec.tables[0][1:]:
             if len(row) >= 3 and _int(row[2]) is not None:
@@ -192,9 +199,25 @@ def parse_district_page(html: str, district: str) -> DistrictResult:
             if len(row) >= 3 and _int(row[2]) is not None:
                 tpp.append({"party_name": row[0], "candidate": row[1], "votes": _int(row[2])})
 
+    # Archive pages for seats without a full distribution give the 2CP count inline.
+    tcp_inline: list[dict] = []
+    sec = _section(sections, "Two candidate preferred")
+    if sec:
+        for table in sec.tables:
+            if table and table[0] and table[0][0].lower() == "candidate":
+                for row in table[1:]:
+                    if len(row) >= 3 and _int(row[2]) is not None:
+                        tcp_inline.append({"candidate": row[0], "party_name": row[1], "votes": _int(row[2])})
+
+    # The party line under "Elected member" is absent for independents (the next text
+    # is a map caption), so take the elected member's party from the results table.
+    elected_row = next((c for c in primary if c["candidate"] == elected), None)
+    if elected_row is not None:
+        elected_party = elected_row["party_name"]
+
     return DistrictResult(
         district, elected, elected_party, enrolment, formal, informal, primary, final, tpp,
-        booth_xlsx,
+        booth_xlsx, tcp_inline=tcp_inline,
     )
 
 
@@ -362,7 +385,10 @@ def _assemble(
     # (e.g. Shepparton 2022) or predate rechecks (Pakenham 2022). Prefer the official
     # distribution whenever it ends with exactly two candidates.
     for r in results:
-        r.tcp = r.final if len(r.final) == 2 else tcp.get(r.district, [])
+        r.tcp = r.final if len(r.final) == 2 else (tcp.get(r.district) or r.tcp_inline)
+        if not r.tpp and {bloc(party_code(c["party_name"])) for c in r.tcp} == {"ALP", "COAL"}:
+            r.tpp = [{"party_name": c["party_name"], "candidate": c["candidate"], "votes": c["votes"]}
+                     for c in r.tcp]
     return {
         "districts": summary,
         "primary": _long(results, "primary", election_id),
@@ -405,6 +431,45 @@ _CANDIDATE_SCHEMA = {
     "pct": pl.Float64,
     "elected": pl.Boolean,
 }
+
+
+def ingest_vec_archive(year: int) -> dict[str, pl.DataFrame]:
+    """Results for an archived election (static per-district pages, same layout as 2022)."""
+    raw = RAW_DIR / "vec" / str(year)
+    base = f"{ARCHIVE_BASE}/state{year}/"
+    with httpx.Client(base_url=base, headers={"User-Agent": USER_AGENT},
+                      follow_redirects=True, timeout=60) as client:
+        summary = _cached_get(client, "summary.html", raw / "summary.html").read_text(encoding="utf-8")
+        slugs = sorted(set(re.findall(r'href="([a-z-]+district)\.html"', summary)))
+        results = []
+        for slug in slugs:
+            html = _cached_get(client, f"{slug}.html", raw / "districts" / f"{slug}.html").read_text(
+                encoding="utf-8", errors="replace")
+            results.append(parse_district_page(html, _archive_name(html, slug)))
+    election_id = f"vic-{year}"
+    tables = _assemble(results, {}, election_id)
+    tables["tpp"] = _tpp_from_pages(results, election_id)
+    return tables
+
+
+def _archive_name(html: str, slug: str) -> str:
+    m = re.search(r">\s*([A-Z][A-Za-z' -]+?) District\s*<", html)
+    return canonical_district(m.group(1).strip() if m else slug.removesuffix("district").title())
+
+
+def _tpp_from_pages(results: list[DistrictResult], election_id: str) -> pl.DataFrame:
+    rows = []
+    for r in results:
+        alp = next((x["votes"] for x in r.tpp if party_code(x["party_name"]) == "ALP"), None)
+        coal = next((x["votes"] for x in r.tpp if bloc(party_code(x["party_name"])) == "COAL"), None)
+        if alp is None or coal is None:
+            continue
+        rows.append({
+            "election_id": election_id, "district": canonical_district(r.district),
+            "tpp_method": "page", "alp_votes": alp, "coal_votes": coal,
+            "alp_tpp": round(100 * alp / (alp + coal), 3),
+        })
+    return pl.DataFrame(rows)
 
 
 def read_tpp_xlsx(path: Path, election_id: str) -> pl.DataFrame:

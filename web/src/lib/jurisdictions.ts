@@ -44,7 +44,7 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		chamber: 'Legislative Assembly',
 		seats: 88,
 		nextElection: '2026-11-28',
-		resultYears: [2022],
+		resultYears: [2014, 2018, 2022],
 		forecastYears: [2026],
 		hasPolls: true
 	},

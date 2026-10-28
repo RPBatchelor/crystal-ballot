@@ -19,21 +19,33 @@
 			.map((k) => ({ code: k, label: party(k).short, pct: r.primary_share[k] }))
 	);
 	const maxShare = $derived(Math.max(...shares.map((s) => s.pct)));
-	const government = $derived(
-		Object.entries(r.seat_counts).sort((a, b) => b[1] - a[1])[0][0] === 'ALP' ? 'ALP' : 'COAL'
-	);
+	const coalSeats = $derived((r.seat_counts.LIB ?? 0) + (r.seat_counts.NAT ?? 0) + (r.seat_counts.LNP ?? 0));
+	const alpSeats = $derived(r.seat_counts.ALP ?? 0);
+	const government = $derived(alpSeats >= coalSeats ? 'ALP' : 'COAL');
+	const govSeats = $derived(government === 'ALP' ? alpSeats : coalSeats);
 	const nonClassic = $derived(r.seats.filter((s) => !s.classic).length);
+	const years = $derived(j.resultYears);
 </script>
 
 <svelte:head>
 	<title>{j.name} {data.year} results · Prophecy</title>
 </svelte:head>
 
+{#if years.length > 1}
+	<nav class="years" aria-label="Election year">
+		{#each years as y (y)}
+			<a href="/{j.code}/results/{y}/" aria-current={y === data.year ? 'page' : undefined}>{y}</a>
+		{/each}
+	</nav>
+{/if}
+
 <p class="eyebrow">{j.name} · {j.chamber} · {fmtDate(r.date)}</p>
 <h1>{data.year} {j.name} election results</h1>
 <p class="lede">
-	Labor retained government with {r.seat_counts.ALP} of {r.seats_total} seats and {r.tpp_alp.toFixed(1)}%
-	of the statewide two-party-preferred vote.
+	{party(government).short} formed government with {govSeats} of {r.seats_total} seats{govSeats >=
+	r.majority
+		? ''
+		: ' (short of a majority)'}. Labor won {r.tpp_alp.toFixed(1)}% of the statewide two-party-preferred vote.
 </p>
 
 <SeatBar
@@ -65,6 +77,25 @@
 <SeatTable seats={r.seats} {base} />
 
 <style>
+	.years {
+		display: flex;
+		gap: 0.35rem;
+		margin-bottom: 1rem;
+	}
+	.years a {
+		font-size: 0.85rem;
+		font-weight: 550;
+		padding: 0.25rem 0.7rem;
+		border: 1px solid var(--rule-strong);
+		border-radius: 999px;
+		text-decoration: none;
+		color: var(--fg-2);
+	}
+	.years a[aria-current='page'] {
+		background: var(--fg);
+		color: var(--bg);
+		border-color: var(--fg);
+	}
 	.shares {
 		list-style: none;
 		padding: 0;

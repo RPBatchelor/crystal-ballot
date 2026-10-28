@@ -35,6 +35,8 @@ class SimConfig:
         default_factory=lambda: {"ALP": 2.0, "COAL": 2.0, "GRN": 1.2, "ONP": 2.5}
     )
     poll_error_df: float = 5.0
+    # Persistent poll lean (points, polls minus result) subtracted from the aggregate.
+    poll_bias: dict[str, float] = field(default_factory=dict)
     region_sd: float = 0.06  # logit, per region x party
     seat_sd: dict[str, float] = field(
         default_factory=lambda: {"ALP": 0.12, "COAL": 0.12, "GRN": 0.18, "OTH": 0.25, "ONP": 0.25}
@@ -74,7 +76,7 @@ def build_inputs(primary: pl.DataFrame, districts: pl.DataFrame, federal: pl.Dat
     fed = federal.filter(pl.col("bloc") == "ONP").select("district", "pct", "votes")
     fed_total = federal.group_by("district").agg(pl.col("votes").sum().alias("total"))
     fed = fed.join(fed_total, on="district")
-    state_onp = fed["votes"].sum() / fed["total"].sum() * 100
+    state_onp = fed["votes"].sum() / fed["total"].sum() * 100 if fed.height else 1.0
     onp_index = np.array([
         float(fed.filter(pl.col("district") == d)["pct"][0]) / state_onp
         if d in fed["district"].to_list() else 1.0
@@ -138,8 +140,12 @@ def simulate(inputs: SeatInputs, agg_draws: np.ndarray, agg_parties: list[str],
     for k, p in enumerate(agg_parties):
         state[:, IDX[p]] = draws[:, k]
     scale = np.sqrt((cfg.poll_error_df - 2) / cfg.poll_error_df)
+    for p, b in cfg.poll_bias.items():
+        if p in agg_parties:
+            state[:, IDX[p]] -= b
     for p, sd in cfg.poll_error_sd.items():
-        state[:, IDX[p]] += sd * scale * rng.standard_t(cfg.poll_error_df, size=S)
+        if p in agg_parties:  # e.g. ONP is not modelled in cycles where it wasn't polled
+            state[:, IDX[p]] += sd * scale * rng.standard_t(cfg.poll_error_df, size=S)
     modelled = [IDX[p] for p in agg_parties]
     state[:, modelled] = np.clip(state[:, modelled], 0.3, None)
     state = 100 * state / state.sum(axis=1, keepdims=True)
@@ -170,10 +176,11 @@ def simulate(inputs: SeatInputs, agg_draws: np.ndarray, agg_parties: list[str],
         p = logit(base)[None, :] + swing[:, None] + region_eff + noise
         seat[:, :, k] = expit(_recentre(p, inputs.weight, targets[b]))
 
-    # 3. One Nation from federal geography.
-    onp = inputs.onp_index[None, :] * np.exp(rng.normal(0, cfg.seat_sd["ONP"], size=(S, D)))
-    onp *= (state[:, IDX["ONP"]] / 100 / (onp @ w))[:, None]
-    seat[:, :, IDX["ONP"]] = np.clip(onp, 0, 0.9)
+    # 3. One Nation from federal geography (only when ONP is modelled this cycle).
+    if "ONP" in agg_parties:
+        onp = inputs.onp_index[None, :] * np.exp(rng.normal(0, cfg.seat_sd["ONP"], size=(S, D)))
+        onp *= (state[:, IDX["ONP"]] / 100 / (onp @ w))[:, None]
+        seat[:, :, IDX["ONP"]] = np.clip(onp, 0, 0.9)
 
     seat /= seat.sum(axis=2, keepdims=True)
 

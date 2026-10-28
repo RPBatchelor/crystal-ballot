@@ -8,7 +8,7 @@ from datetime import UTC, datetime, timedelta
 import numpy as np
 import polars as pl
 
-from prophecy import DATA_DIR, WEB_DATA_DIR
+from prophecy import DATA_DIR, WEB_DATA_DIR, jurisdictions
 from prophecy.jurisdictions import Election
 
 POLL_FIELDS = [
@@ -18,35 +18,56 @@ POLL_FIELDS = [
 
 
 def publish_polls(election: Election) -> str:
-    processed = DATA_DIR / "processed"
-    polls = pl.read_csv(processed / f"polls_{election.election_id}.csv", try_parse_dates=True)
-    events_path = processed / f"events_{election.election_id}.csv"
-    events = pl.read_csv(events_path, try_parse_dates=True) if events_path.exists() else None
+    """Every cycle's polls for the jurisdiction, with trends, events and results.
 
-    model_trend = processed / election.election_id / "poll_trend.csv"
+    The current cycle's trend is the Bayesian aggregate (with 90% bands); earlier cycles
+    use a simple kernel average. A null row separates cycles so lines break at elections.
+    """
+    processed = DATA_DIR / "processed"
+    code = election.jurisdiction.lower()
+    cycles = [e for e in jurisdictions.in_jurisdiction(election.jurisdiction)
+              if (processed / f"polls_{e.election_id}.csv").exists() and e.date <= election.date]
+
+    all_polls, trend, events = [], [], []
+    for e in cycles:
+        polls = pl.read_csv(processed / f"polls_{e.election_id}.csv", try_parse_dates=True,
+                            infer_schema_length=None)
+        all_polls.append(polls.select(POLL_FIELDS).with_columns(pl.lit(e.election_id).alias("cycle")))
+        model_trend = processed / e.election_id / "poll_trend.csv"
+        if e.election_id == election.election_id and model_trend.exists():
+            rows = _records(pl.read_csv(model_trend, try_parse_dates=True, infer_schema_length=None))
+        else:
+            rows = kernel_trend(polls)
+        if trend:
+            trend.append({"date": rows[0]["date"]})  # break the line at the election
+        trend.extend(rows)
+        ev_path = processed / f"events_{e.election_id}.csv"
+        if ev_path.exists():
+            ev = pl.read_csv(ev_path, try_parse_dates=True)
+            events.extend(_records(ev.select("event_date", "description")))
+
+    results_path = processed / f"election_results_{code}.csv"
+    results = (_records(pl.read_csv(results_path, try_parse_dates=True)) if results_path.exists()
+               else [])
     house_path = processed / election.election_id / "house_effects.csv"
-    if model_trend.exists():
-        trend = _records(pl.read_csv(model_trend, try_parse_dates=True, infer_schema_length=None))
-        method = (
-            "Bayesian poll aggregate: weekly random walk from the 2022 result, adjusting for "
-            "each pollster's house effect and sample size. Bands show 90% credible intervals. "
-            "The 2PP line is implied from the primary-vote aggregate using estimated "
-            "preference flows; dots are pollsters' own 2PP figures."
-        )
-    else:
-        trend = kernel_trend(polls)
-        method = (f"Gaussian kernel average, {BANDWIDTH_DAYS}-day bandwidth, weighted by "
-                  "sqrt(sample size). Placeholder until the Bayesian aggregate.")
+    method = (
+        "Current cycle: Bayesian poll aggregate (weekly random walk from the previous result, "
+        "adjusting for each pollster's house effect and sample size; bands are 90% credible "
+        "intervals; 2PP implied from primaries via estimated preference flows). Earlier cycles: "
+        f"simple {BANDWIDTH_DAYS}-day kernel average of published polls."
+    )
     payload = {
         "election_id": election.election_id,
         "jurisdiction": election.jurisdiction,
         "election_date": election.date.isoformat(),
         "generated_at": datetime.now(UTC).isoformat(timespec="seconds"),
-        "polls": _records(polls.select(POLL_FIELDS).sort("field_end", descending=True)),
+        "cycles": [{"election_id": e.election_id, "date": e.date.isoformat()} for e in cycles],
+        "polls": _records(pl.concat(all_polls, how="diagonal_relaxed").sort("field_end", descending=True)),
         "trend": trend,
         "trend_method": method,
+        "results": results,
         "house_effects": _records(pl.read_csv(house_path)) if house_path.exists() else [],
-        "events": _records(events.select("event_date", "description")) if events is not None else [],
+        "events": sorted(events, key=lambda r: str(r["event_date"])),
     }
     out = WEB_DATA_DIR / election.jurisdiction.lower() / "polls.json"
     out.parent.mkdir(parents=True, exist_ok=True)

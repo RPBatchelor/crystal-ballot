@@ -184,6 +184,83 @@ def _value_columns(swatches: list[str]) -> tuple[list[str], list[str]]:
 # Main parser
 # --------------------------------------------------------------------------------------
 
+LABEL_PATTERNS: list[tuple[str, str]] = [
+    (r"\bdate\b|fieldwork", "date"),
+    (r"firm|pollster|organisation|^poll", "pollster"),
+    (r"client|commission|sponsor|publication|media", "client"),
+    (r"sample", "sample"),
+    (r"^(l/?np|lnp|coalition|lib/nat|liberal[-–/ ]national)$", "COAL"),
+    (r"^(lib|liberal)$", "LIB"),
+    (r"^(nat|nationals?)$", "NAT"),
+    (r"^(alp|labor)$", "ALP"),
+    (r"^(grn|greens?)$", "GRN"),
+    (r"^(onp|one nation|phon)$", "ONP"),
+    (r"^(ind|independents?)$", "IND"),
+    (r"^(oth|others?)$", "OTH"),
+]
+TPP_HEADER = re.compile(r"\b(tpp|2pp|two[- ]party)", re.IGNORECASE)
+INCLUDE_HEADING = re.compile(r"voting intention|opinion poll|^polling$", re.IGNORECASE)
+EXCLUDE_HEADING = re.compile(
+    r"council|premier|satisfaction|leader|seat|electorate|sub-state|three-party|"
+    r"approval|preferred|metropolitan|regional|referendum", re.IGNORECASE)
+PCT = re.compile(r"\d\s*%")
+
+
+def _label_code(text: str) -> str | None:
+    t = text.strip().lower()
+    for pattern, code in LABEL_PATTERNS:
+        if re.search(pattern, t):
+            return code
+    return None
+
+
+def _n_header_rows(table: Table, grid: list[list[Cell | None]]) -> int:
+    """Leading rows before the first data/event row (has a %, an event style, or a date)."""
+    for r, (row, cells) in enumerate(zip(table.rows, grid)):
+        texts = [c.text for c in cells if c is not None]
+        if "DADADA" in row.attrs.upper() or any(PCT.search(t) for t in texts):
+            return r
+        if texts and parse_date_range(texts[0], 2000) is not None and not _label_code(texts[0]):
+            return r
+    return len(table.rows)
+
+
+def _infer_columns(table: Table, grid: list[list[Cell | None]]) -> list[tuple[str, str]] | None:
+    """(section, code) per grid column; section is 'meta', 'primary', 'tpp' or 'skip'.
+
+    Labels come from the header cells stacked above each column (bottom-most known
+    label wins); a spanning "TPP/2PP" header marks the two-party block.
+    """
+    n_header = _n_header_rows(table, grid)
+    if n_header == 0:
+        return None
+    width = max(len(r) for r in grid[:n_header])
+    swatches = _swatch_columns(table)
+    cols: list[tuple[str, str]] = []
+    for j in range(width):
+        stack = [grid[r][j] for r in range(n_header) if j < len(grid[r]) and grid[r][j] is not None]
+        code = next((c for c in (_label_code(cell.text) for cell in reversed(stack)) if c), None)
+        is_tpp = any(TPP_HEADER.search(cell.text) for cell in stack)
+        if code in ("date", "pollster", "client", "sample"):
+            cols.append(("meta", code))
+        elif code:
+            cols.append(("tpp" if is_tpp else "primary", code))
+        else:
+            cols.append(("skip", ""))
+    # Fall back to colour swatches for party columns the header text didn't name.
+    if swatches and sum(1 for s, _ in cols if s in ("primary", "tpp")) < len(swatches):
+        meta = [c for c in cols if c[0] == "meta"]
+        primary, tpp = _value_columns(swatches)
+        cols = meta + [("primary", c) for c in primary] + [("tpp", c) for c in tpp]
+    # Older tables leave the date column's header blank.
+    if cols and cols[0] == ("skip", "") and not any(c == "date" for _, c in cols):
+        cols[0] = ("meta", "date")
+    codes = {c for _, c in cols}
+    if not {"date", "ALP"} <= codes:
+        return None
+    return cols
+
+
 def parse_poll_page(
     wikitext: str, jurisdiction: str, chamber_heading: str = "Legislative Assembly"
 ) -> tuple[list[Poll], list[Event]]:
@@ -204,22 +281,27 @@ def parse_poll_page(
             ctx[level] = title
         return ctx
 
+    # Single-pollster eras state the pollster in prose rather than a column.
+    m = re.search(r"[Pp]olling\]? (?:was )?conducted by \[\[([^\]|]+)", wikitext)
+    default_pollster = m.group(1) if m else "Unknown"
+
     polls: list[Poll] = []
     events: list[Event] = []
+    results: list[Poll] = []  # election-result rows (pollster = "Election")
     for table in parse_tables(wikitext):
         ctx = context(table.start_line)
-        if ctx.get(2) != "Voting intention" or ctx.get(3) != chamber_heading:
+        titles = list(ctx.values())
+        if not any(INCLUDE_HEADING.search(t) for t in titles):
             continue
-        year_heading = ctx.get(4, "")
-        default_year = int(year_heading) if year_heading.isdigit() else date.today().year
-        swatches = _swatch_columns(table)
-        if not swatches:
+        if any(EXCLUDE_HEADING.search(t) for t in titles if t != chamber_heading):
             continue
-        primary_cols, tpp_cols = _value_columns(swatches)
-        meta_cols = ["date", "pollster", "client", "sample"]
-        columns = meta_cols + primary_cols + tpp_cols
-        n_header = _header_rows(table)
+        year_heading = next((t for t in reversed(titles) if t.isdigit()), "")
+        default_year = int(year_heading) if year_heading else date.today().year
         grid = table.grid()
+        columns = _infer_columns(table, grid)
+        if columns is None:
+            continue
+        n_header = _n_header_rows(table, grid)
         for r, (row, cells) in enumerate(zip(table.rows, grid)):
             if r < n_header or not cells:
                 continue
@@ -233,47 +315,87 @@ def parse_poll_page(
                 continue
             if len(cells) < len(columns):
                 cells = cells + [None] * (len(columns) - len(cells))
-            rec = _row_to_poll(
-                cells, columns, len(meta_cols), len(primary_cols), jurisdiction,
-                chamber_heading, default_year, table.start_line,
-            )
+            result = _election_row(cells, columns, jurisdiction)
+            if result is not None:
+                results.append(result)
+                continue
+            rec = _row_to_poll(cells, columns, jurisdiction, chamber_heading, default_year,
+                               table.start_line, default_pollster)
             if rec is None:
                 continue
-            date_cell = cells[0]
+            if rec.ALP is None:
+                # Older tables mark leadership changes as plain rows spanning the table.
+                text = max((c.text for c in cells if c is not None), key=len, default="")
+                if len(text) > 25 and "sourced" not in text.lower():
+                    # The date and description often share one cell: strip the leading date.
+                    desc = re.sub(r"^\s*\d{1,2}\s+[A-Za-z]+\.?\s+\d{4}\s*[-–—:]?\s*", "", text)
+                    events.append(Event(jurisdiction, rec.date_text, rec.field_end, desc.strip()))
+                continue
+            date_cell = cells[[c for _, c in columns].index("date")]
             if date_cell is not None and date_cell.inherited and polls:
                 _merge_continuation(polls[-1], rec)
             else:
                 polls.append(rec)
-    return polls, events
+    return polls + _dedupe_results(results), events
 
 
-def _header_rows(table: Table) -> int:
-    n = 0
-    for row in table.rows:
-        if row.cells and all(c.header for c in row.cells):
-            n += 1
-        else:
-            break
-    return n
+def _election_row(cells: list[Cell | None], columns: list[tuple[str, str]],
+                  jurisdiction: str) -> Poll | None:
+    """An "<date> election" result row, returned as a Poll with pollster "Election"."""
+    texts = [c.text for c in cells if c is not None]
+    label = next((t for t in texts if "election" in t.lower()), None)
+    if label is None:
+        return None
+    m = re.search(r"(\d{4})", label)
+    if not m:
+        return None
+    rng = parse_date_range(label, int(m.group(1)))
+    year = int(m.group(1))
+    when = rng[1] if rng else date(year, 11, 30)  # month unknown: placeholder, fixed by caller
+    rec = Poll(jurisdiction, "Legislative Assembly", "Election", None, when, when, label, None)
+    for (sec, code), cell in zip(columns, cells):
+        if cell is None or sec not in ("primary", "tpp"):
+            continue
+        v = parse_number(cell.text)
+        if v is None:
+            continue
+        if sec == "primary":
+            target = "COAL" if code in ("LIB", "NAT") else code
+            cur = getattr(rec, target)
+            setattr(rec, target, v if cur is None else cur + v)
+        elif code == "ALP":
+            rec.tpp_alp_vs_coal = v
+    return rec if rec.ALP is not None else None
+
+
+def _dedupe_results(results: list[Poll]) -> list[Poll]:
+    by_year: dict[int, Poll] = {}
+    for r in results:
+        by_year.setdefault(r.field_end.year, r)
+    return list(by_year.values())
 
 
 def _row_to_poll(
     cells: list[Cell | None],
-    columns: list[str],
-    n_meta: int,
-    n_primary: int,
+    columns: list[tuple[str, str]],
     jurisdiction: str,
     chamber: str,
     default_year: int,
     table_line: int,
+    default_pollster: str = "Unknown",
 ) -> Poll | None:
-    date_cell, pollster_cell, client_cell, sample_cell = cells[:4]
-    if date_cell is None or pollster_cell is None:
+    meta = {code: cells[j] for j, (sec, code) in enumerate(columns) if sec == "meta"}
+    date_cell = meta.get("date")
+    pollster_cell, client_cell, sample_cell = meta.get("pollster"), meta.get("client"), meta.get("sample")
+    if date_cell is None or "election" in date_cell.text.lower():
         return None
     rng = parse_date_range(date_cell.text, default_year)
     if rng is None:
         return None
-    pollster = re.sub(r"\s+", " ", pollster_cell.text).strip()
+    # Older single-pollster tables (e.g. Newspoll-only) have no firm column.
+    pollster = re.sub(r"\s+", " ", pollster_cell.text).strip() if pollster_cell else default_pollster
+    if not pollster or "election" in pollster.lower() or "exit poll" in pollster.lower():
+        return None
     rec = Poll(
         jurisdiction=jurisdiction,
         chamber=chamber,
@@ -287,11 +409,10 @@ def _row_to_poll(
     )
 
     # Primary votes: group grid columns by source cell so merged cells are detected.
-    primary = columns[n_meta : n_meta + n_primary]
     seen: dict[int, list[str]] = {}
     values: dict[int, float | None] = {}
-    for code, cell in zip(primary, cells[n_meta : n_meta + n_primary]):
-        if cell is None:
+    for (sec, code), cell in zip(columns, cells):
+        if sec != "primary" or cell is None:
             continue
         key = id(cell) if not cell.inherited else hash((cell.origin, cell.raw))
         seen.setdefault(key, []).append(code)
@@ -305,10 +426,10 @@ def _row_to_poll(
         setattr(rec, target, val if current is None else current + val)
 
     # 2PP block: ALP + one opponent.
-    tpp_codes = columns[n_meta + n_primary :]
     tpp = {
-        code: (parse_number(cell.text) if cell is not None else None)
-        for code, cell in zip(tpp_codes, cells[n_meta + n_primary :])
+        ("COAL" if code in ("LIB", "NAT") else code): (parse_number(cell.text) if cell is not None else None)
+        for (sec, code), cell in zip(columns, cells)
+        if sec == "tpp"
     }
     alp = tpp.get("ALP")
     if alp is not None:
@@ -344,16 +465,23 @@ def _merge_continuation(base: Poll, cont: Poll) -> None:
 # --------------------------------------------------------------------------------------
 
 def ingest_wikipedia_polls(
-    title: str, jurisdiction: str, slug: str, refresh: bool = True
-) -> tuple[pl.DataFrame, pl.DataFrame]:
+    title: str, jurisdiction: str, slug: str, refresh: bool = True,
+    window: tuple[date, date] | None = None, cycle: str | None = None,
+) -> tuple[pl.DataFrame, pl.DataFrame, pl.DataFrame]:
+    """Polls, events and election-result rows from one Wikipedia page.
+
+    ``window`` (previous election, this election] keeps only this cycle's polls; pages
+    often repeat polls from adjacent cycles.
+    """
     raw_path = RAW_DIR / "wikipedia" / f"{slug}.wiki"
     if refresh or not raw_path.exists():
         fetch_wikitext(title, raw_path)
-    polls, events = parse_poll_page(raw_path.read_text(encoding="utf-8"), jurisdiction)
-    df = pl.DataFrame([asdict(p) for p in polls])
+    parsed, events = parse_poll_page(raw_path.read_text(encoding="utf-8"), jurisdiction)
+    df = pl.DataFrame([asdict(p) for p in parsed], infer_schema_length=None)
+    is_result = pl.col("pollster") == "Election"
+    results = df.filter(is_result)
     df = (
-        # Election-result reference rows are not polls; results come from the EC.
-        df.filter(~pl.col("pollster").str.to_lowercase().str.contains("election"))
+        df.filter(~is_result)
         # The same poll can appear at the boundary of two year tables.
         .unique(subset=["pollster", "field_start", "field_end", "ALP", "COAL"], keep="first",
                 maintain_order=True)
@@ -362,9 +490,17 @@ def ingest_wikipedia_polls(
         )
         .sort("field_end", descending=True)
     )
-    df = apply_corrections(df)
     ev = pl.DataFrame([asdict(e) for e in events]) if events else pl.DataFrame()
-    return df, ev
+    if window is not None:
+        lo, hi = window
+        df = df.filter((pl.col("field_end") > lo) & (pl.col("field_start") < hi))
+        if ev.height:
+            ev = ev.filter(pl.col("event_date").is_null()
+                           | ((pl.col("event_date") > lo) & (pl.col("event_date") <= hi)))
+    if cycle is not None:
+        df = df.with_columns(pl.lit(cycle).alias("cycle"))
+    df = apply_corrections(df)
+    return df, ev, results
 
 
 def apply_corrections(df: pl.DataFrame) -> pl.DataFrame:

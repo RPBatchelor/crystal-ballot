@@ -48,6 +48,12 @@
 <div class="split">
 	<section>
 		<h2>Two-candidate preferred</h2>
+		{#if s.tcp_estimated}
+			<p class="muted small">
+				No two-candidate count is published for this seat; shown is the leading pair from the count,
+				rescaled.
+			</p>
+		{/if}
 		<div class="tcp" role="img" aria-label="{winner.candidate} {winner.pct}%, {loser.candidate} {loser.pct}%">
 			<span style:width="{winner.pct}%" style:background={partyColour(winner.party)}></span>
 			<span style:width="{loser.pct}%" style:background={partyColour(loser.party)}></span>

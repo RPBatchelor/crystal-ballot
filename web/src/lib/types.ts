@@ -14,6 +14,7 @@ export interface Poll {
 	OTH: number | null;
 	tpp_alp_vs_coal: number | null;
 	tpp_alp_vs_onp: number | null;
+	cycle?: string;
 }
 
 export interface TrendPoint {
@@ -38,6 +39,8 @@ export interface PollsFile {
 	polls: Poll[];
 	trend: TrendPoint[];
 	trend_method: string;
+	cycles?: { election_id: string; date: string }[];
+	results?: ({ year: number; date: string; ALP: number | null; COAL: number | null; GRN: number | null; ONP: number | null; tpp_alp_vs_coal: number | null } & Record<string, unknown>)[];
 	house_effects?: { pollster: string; party: string; median: number; lo: number; hi: number }[];
 	events: PollEvent[];
 }
@@ -69,6 +72,7 @@ export interface SeatResult {
 	primary: CandidateResult[];
 	tcp: CandidateResult[];
 	margin: number;
+	tcp_estimated?: boolean;
 	runner_up_party: string;
 	tpp_alp: number | null;
 	tpp_method: string | null;

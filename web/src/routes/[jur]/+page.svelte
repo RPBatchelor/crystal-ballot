@@ -88,6 +88,8 @@
 			trend={data.polls.trend}
 			end={data.polls.election_date}
 			height={340}
+			cycleStart={data.results?.date}
+			initialRange="cycle"
 		/>
 		<p><a href="/{j.code}/polls/">All polls, 2PP and pollster detail →</a></p>
 	{/if}

@@ -51,8 +51,9 @@
 
 {#if !f.validated}
 	<aside class="preview">
-		<strong>Development preview.</strong> This forecast has not yet passed its historical backtest, and
-		several inputs (polling-error size, candidate lists, independents) are provisional. Do not cite.
+		<strong>Development preview.</strong> The model has been <a href="/methodology/">backtested on 2018</a>,
+		but candidate lists (nominations close in November) and independents are still provisional. Do not
+		cite.
 	</aside>
 {/if}
 

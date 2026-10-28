@@ -30,6 +30,14 @@
 		/** Horizontal reference line (e.g. 50 for 2PP). */
 		yRef?: number;
 		height?: number;
+		/** Show range presets and a brushable overview strip for zooming. */
+		zoomable?: boolean;
+		/** Start of the current cycle, for the "since last election" preset. */
+		cycleStart?: string;
+		/** Initial zoom: everything, or the current cycle. */
+		initialRange?: 'all' | 'cycle';
+		/** Point markers (e.g. election results) keyed like the series. */
+		markers?: ({ date: string; label?: string } & Record<string, unknown>)[];
 	}
 
 	let {
@@ -43,12 +51,17 @@
 		endLabel = 'Election',
 		yDomain,
 		yRef,
-		height = 380
+		height = 380,
+		zoomable = false,
+		cycleStart,
+		initialRange = 'all',
+		markers = []
 	}: Props = $props();
 
 	let width = $state(720);
 	let hoverIndex = $state<number | null>(null);
 	let hoverEvent = $state<number | null>(null);
+	let hoverMarker = $state<number | null>(null);
 
 	const narrow = $derived(width < 560);
 	const m = $derived({ top: 22, right: narrow ? 64 : 104, bottom: 28, left: 34 });
@@ -57,20 +70,35 @@
 
 	const value = (d: object, key: string) =>
 		(d as Record<string, unknown>)[key] as number | null | undefined;
+	const t = (iso: string) => +new Date(iso);
 
-	const xDomain = $derived.by(() => {
-		const dates = [...trend.map((d) => +new Date(d.date)), ...points.map((p) => +new Date(pointDate(p)))];
-		if (end) dates.push(+new Date(end));
-		return [new Date(Math.min(...dates)), new Date(Math.max(...dates))] as [Date, Date];
+	const fullDomain = $derived.by(() => {
+		const dates = [...trend.map((d) => t(d.date)), ...points.map((p) => t(pointDate(p)))];
+		if (end) dates.push(t(end));
+		return [Math.min(...dates), Math.max(...dates)] as [number, number];
 	});
-	const x = $derived(scaleTime().domain(xDomain).range([0, innerW]));
+
+	// Zoom state: null = full extent. Initial range applies once.
+	// svelte-ignore state_referenced_locally
+	let view = $state<[number, number] | null>(
+		initialRange === 'cycle' && cycleStart ? [t(cycleStart), Number.POSITIVE_INFINITY] : null
+	);
+	const viewDomain = $derived.by((): [number, number] => {
+		if (!view) return fullDomain;
+		const lo = Math.max(fullDomain[0], view[0]);
+		const hi = Math.min(fullDomain[1], view[1]);
+		return hi - lo > 86_400_000 * 7 ? [lo, hi] : fullDomain;
+	});
+	const inView = (iso: string) => t(iso) >= viewDomain[0] && t(iso) <= viewDomain[1];
+	const x = $derived(scaleTime().domain(viewDomain.map((v) => new Date(v))).range([0, innerW]));
 
 	const y = $derived.by(() => {
 		if (yDomain) return scaleLinear().domain(yDomain).range([innerH, 0]);
 		const vals = series.flatMap((s) => [
-			...points.map((p) => value(p, s.key)),
-			...trend.map((t) => value(t, s.key))
+			...points.filter((p) => inView(pointDate(p))).map((p) => value(p, s.key)),
+			...trend.filter((d) => inView(d.date)).map((d) => value(d, s.key))
 		]).filter((v): v is number => v != null);
+		if (!vals.length) return scaleLinear().domain([0, 50]).range([innerH, 0]);
 		const lo = Math.max(0, Math.floor((Math.min(...vals) - 2) / 5) * 5);
 		const hi = Math.ceil((Math.max(...vals) + 2) / 5) * 5;
 		return scaleLinear().domain([lo, hi]).range([innerH, 0]).nice();
@@ -104,7 +132,7 @@
 	const endLabels = $derived.by(() => {
 		const labels = series
 			.map((s) => {
-				const last = [...trend].reverse().find((d) => value(d, s.key) != null);
+				const last = [...trend].reverse().find((d) => value(d, s.key) != null && inView(d.date));
 				return last ? { ...s, v: value(last, s.key)!, y: y(value(last, s.key)!), x: x(new Date(last.date)) } : null;
 			})
 			.filter((l): l is NonNullable<typeof l> => l !== null)
@@ -160,13 +188,101 @@
 		return `${fmtDate(d.date)}: ${vals.join(', ')}`;
 	});
 	const tipLeft = $derived(hovered ? m.left + x(new Date(hovered.date)) : 0);
+
+	// Unique clip-path id per chart instance.
+	const clipId = `clip-${Math.random().toString(36).slice(2, 9)}`;
+
+	// ---- Zoom: presets + brushable overview ---------------------------------------------
+	const DAY = 86_400_000;
+	const presets = $derived(
+		[
+			{ key: 'all', label: 'All', range: null as [number, number] | null },
+			...(cycleStart
+				? [{ key: 'cycle', label: `Since ${new Date(cycleStart).getFullYear()} election`, range: [t(cycleStart), fullDomain[1]] as [number, number] }]
+				: []),
+			{ key: '12m', label: '12 months', range: [fullDomain[1] - 365 * DAY, fullDomain[1]] as [number, number] },
+			{ key: '6m', label: '6 months', range: [fullDomain[1] - 182 * DAY, fullDomain[1]] as [number, number] }
+		]
+	);
+	const isActive = (r: [number, number] | null) =>
+		r === null
+			? viewDomain[0] === fullDomain[0] && viewDomain[1] === fullDomain[1]
+			: Math.abs(viewDomain[0] - Math.max(r[0], fullDomain[0])) < DAY &&
+				Math.abs(viewDomain[1] - Math.min(r[1], fullDomain[1])) < DAY;
+
+	const ovH = 54;
+	const x2 = $derived(scaleTime().domain(fullDomain.map((v) => new Date(v))).range([0, innerW]));
+	const y2 = $derived.by(() => {
+		const vals = series
+			.flatMap((s) => trend.map((d) => value(d, s.key)))
+			.filter((v): v is number => v != null);
+		return scaleLinear()
+			.domain([Math.min(...vals, 100), Math.max(...vals, 0)])
+			.range([ovH - 6, 6]);
+	});
+	const ovPaths = $derived(
+		series.map((s) => ({
+			key: s.key,
+			colour: s.colour,
+			d:
+				line<T>()
+					.defined((d) => value(d, s.key) != null)
+					.x((d) => x2(new Date(d.date)))
+					.y((d) => y2(value(d, s.key)!))(trend) ?? ''
+		}))
+	);
+	const brushX = $derived([x2(new Date(viewDomain[0])), x2(new Date(viewDomain[1]))]);
+	let drag: { mode: 'new' | 'pan'; startPx: number; origin: [number, number] } | null = null;
+
+	function ovPx(e: PointerEvent) {
+		const rect = (e.currentTarget as SVGElement).getBoundingClientRect();
+		return Math.max(0, Math.min(innerW, ((e.clientX - rect.left) / rect.width) * width - m.left));
+	}
+	function ovDown(e: PointerEvent) {
+		(e.currentTarget as SVGElement).setPointerCapture(e.pointerId);
+		const px = ovPx(e);
+		const zoomed = !isActive(null);
+		const mode = zoomed && px >= brushX[0] && px <= brushX[1] ? 'pan' : 'new';
+		drag = { mode, startPx: px, origin: [...viewDomain] as [number, number] };
+	}
+	function ovMove(e: PointerEvent) {
+		if (!drag) return;
+		const px = ovPx(e);
+		if (drag.mode === 'new') {
+			const a = Math.min(drag.startPx, px);
+			const b = Math.max(drag.startPx, px);
+			if (b - a > 6) view = [+x2.invert(a), +x2.invert(b)];
+		} else {
+			const span = drag.origin[1] - drag.origin[0];
+			let lo = drag.origin[0] + (+x2.invert(px) - +x2.invert(drag.startPx));
+			lo = Math.max(fullDomain[0], Math.min(fullDomain[1] - span, lo));
+			view = [lo, lo + span];
+		}
+	}
+	function ovUp() {
+		drag = null;
+	}
 </script>
 
 <figure class="chart">
-	<div class="legend" aria-hidden="true">
-		{#each series as s (s.key)}
-			<span class="item"><span class="swatch" style:background={s.colour}></span>{s.label}</span>
-		{/each}
+	<div class="toolbar">
+		<div class="legend" aria-hidden="true">
+			{#each series as s (s.key)}
+				<span class="item"><span class="swatch" style:background={s.colour}></span>{s.label}</span>
+			{/each}
+			{#if markers.length}
+				<span class="item"><span class="marker-key"></span>Election result</span>
+			{/if}
+		</div>
+		{#if zoomable}
+			<div class="presets" role="group" aria-label="Time range">
+				{#each presets as p (p.key)}
+					<button type="button" aria-pressed={isActive(p.range)} onclick={() => (view = p.range)}>
+						{p.label}
+					</button>
+				{/each}
+			</div>
+		{/if}
 	</div>
 
 	<div
@@ -184,6 +300,9 @@
 	>
 		<!-- viewBox lets the prerendered (pre-measurement) SVG scale to fit before hydration. -->
 		<svg viewBox="0 0 {width} {height}" aria-hidden="true">
+			<defs>
+				<clipPath id={clipId}><rect x="-6" y="-6" width={innerW + 12} height={innerH + 12} /></clipPath>
+			</defs>
 			<g transform="translate({m.left},{m.top})">
 				{#each yTicks as t (t)}
 					<line class="grid" x1="0" x2={innerW} y1={y(t)} y2={y(t)} />
@@ -199,26 +318,29 @@
 				{/if}
 
 				{#each events as ev, i (ev.date + ev.label)}
-					{@const ex = x(new Date(ev.date))}
-					<g
-						class="event"
-						role="presentation"
-						onpointerenter={() => (hoverEvent = i)}
-						onpointerleave={() => (hoverEvent = null)}
-					>
-						<line x1={ex} x2={ex} y1="-6" y2={innerH} />
-						<rect x={ex - 7} y="-16" width="14" height={innerH + 16} fill="transparent" />
-						<circle cx={ex} cy="-10" r="7" />
-						<text x={ex} y="-10" dy="0.35em" text-anchor="middle">{i + 1}</text>
-					</g>
+					{#if inView(ev.date)}
+						{@const ex = x(new Date(ev.date))}
+						<g
+							class="event"
+							role="presentation"
+							onpointerenter={() => (hoverEvent = i)}
+							onpointerleave={() => (hoverEvent = null)}
+						>
+							<line x1={ex} x2={ex} y1="-6" y2={innerH} />
+							<rect x={ex - 7} y="-16" width="14" height={innerH + 16} fill="transparent" />
+							<circle cx={ex} cy="-10" r="7" />
+							<text x={ex} y="-10" dy="0.35em" text-anchor="middle">{i + 1}</text>
+						</g>
+					{/if}
 				{/each}
 
-				{#if end}
+				{#if end && inView(end)}
 					{@const ex = x(new Date(end))}
 					<line class="end" x1={ex} x2={ex} y1="0" y2={innerH} />
 					<text class="end-label" x={ex - 4} y="10" text-anchor="end">{endLabel}</text>
 				{/if}
 
+				<g clip-path="url(#{clipId})">
 				{#each series as s (s.key)}
 					{#each points as p, i (i)}
 						{@const v = value(p, s.key)}
@@ -234,6 +356,25 @@
 				{#each paths as p (p.key)}
 					<path class="trend" d={p.d} stroke={p.colour} />
 				{/each}
+				{#each markers as mk, i (mk.date)}
+					{#if inView(mk.date)}
+						{#each series as s (s.key)}
+							{@const v = value(mk, s.key)}
+							{#if v != null}
+								<path
+									class="marker"
+									d="M0,-6L6,0L0,6L-6,0Z"
+									transform="translate({x(new Date(mk.date))},{y(v)})"
+									stroke={s.colour}
+									role="presentation"
+									onpointerenter={() => (hoverMarker = i)}
+									onpointerleave={() => (hoverMarker = null)}
+								/>
+							{/if}
+						{/each}
+					{/if}
+				{/each}
+				</g>
 
 				{#each endLabels as l (l.key)}
 					<line class="leader" x1={l.x + 4} x2={l.x + 10} y1={y(l.v)} y2={l.y} />
@@ -283,7 +424,47 @@
 				<div>{events[hoverEvent].label}</div>
 			</div>
 		{/if}
+		{#if hoverMarker != null}
+			{@const mk = markers[hoverMarker]}
+			<div class="tooltip" style:left="{m.left + x(new Date(mk.date))}px" class:flip={m.left + x(new Date(mk.date)) > width * 0.6}>
+				<div class="tip-date">{mk.label ?? 'Election'} · {fmtDate(mk.date)}</div>
+				{#each series as s (s.key)}
+					{@const v = value(mk, s.key)}
+					{#if v != null}
+						<div class="tip-row">
+							<span class="swatch" style:background={s.colour}></span>
+							<span class="tip-label">{s.label}</span>
+							<span class="tip-v">{v.toFixed(1)}</span>
+						</div>
+					{/if}
+				{/each}
+			</div>
+		{/if}
 	</div>
+
+	{#if zoomable}
+		<div class="overview" style:padding-left="{(100 * m.left) / width}%" style:padding-right="{(100 * m.right) / width}%">
+			<svg
+				viewBox="0 0 {innerW} {ovH}"
+				preserveAspectRatio="none"
+				role="presentation"
+				onpointerdown={ovDown}
+				onpointermove={ovMove}
+				onpointerup={ovUp}
+				onpointercancel={ovUp}
+				ondblclick={() => (view = null)}
+			>
+				<rect class="ov-bg" width={innerW} height={ovH} />
+				{#each ovPaths as p (p.key)}
+					<path class="ov-line" d={p.d} stroke={p.colour} vector-effect="non-scaling-stroke" />
+				{/each}
+				<rect class="ov-shade" x="0" width={Math.max(0, brushX[0])} height={ovH} />
+				<rect class="ov-shade" x={brushX[1]} width={Math.max(0, innerW - brushX[1])} height={ovH} />
+				<rect class="ov-brush" x={brushX[0]} width={Math.max(2, brushX[1] - brushX[0])} height={ovH} vector-effect="non-scaling-stroke" />
+			</svg>
+			<p class="ov-hint small muted">Drag across the strip to zoom; drag the window to pan; double-click to reset.</p>
+		</div>
+	{/if}
 
 	{#if events.length}
 		<ol class="events-key small muted">
@@ -298,13 +479,89 @@
 	.chart {
 		margin: 0;
 	}
+	.toolbar {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0.5rem 1rem;
+		margin-bottom: 0.5rem;
+	}
 	.legend {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.35rem 1rem;
 		font-size: 0.85rem;
 		color: var(--fg-2);
-		margin-bottom: 0.5rem;
+	}
+	.marker-key {
+		width: 0.6rem;
+		height: 0.6rem;
+		transform: rotate(45deg);
+		border: 2px solid var(--fg-2);
+		background: var(--surface);
+		display: inline-block;
+	}
+	.presets {
+		display: flex;
+		flex-wrap: wrap;
+		border: 1px solid var(--rule-strong);
+		border-radius: var(--radius);
+		overflow: hidden;
+	}
+	.presets button {
+		font: inherit;
+		font-size: 0.8rem;
+		padding: 0.3rem 0.6rem;
+		border: 0;
+		background: var(--surface);
+		color: var(--fg-2);
+		cursor: pointer;
+	}
+	.presets button + button {
+		border-left: 1px solid var(--rule-strong);
+	}
+	.presets button[aria-pressed='true'] {
+		background: var(--fg);
+		color: var(--bg);
+	}
+	.marker {
+		fill: var(--surface);
+		stroke-width: 2;
+	}
+	.overview {
+		margin-top: 0.4rem;
+	}
+	.overview svg {
+		display: block;
+		width: 100%;
+		height: 54px;
+		cursor: crosshair;
+		touch-action: none;
+	}
+	.ov-bg {
+		fill: var(--surface);
+		stroke: var(--rule);
+	}
+	.ov-line {
+		fill: none;
+		stroke-width: 1.25;
+		opacity: 0.8;
+	}
+	.ov-shade {
+		fill: var(--bg);
+		opacity: 0.65;
+		pointer-events: none;
+	}
+	.ov-brush {
+		fill: none;
+		stroke: var(--fg);
+		stroke-width: 1.5;
+		cursor: grab;
+	}
+	.ov-hint {
+		margin: 0.25rem 0 0;
+		font-size: 0.75rem;
 	}
 	.item {
 		display: inline-flex;
@@ -460,5 +717,10 @@
 		margin: 0.75rem 0 0;
 		padding-left: 1.4rem;
 		columns: 2 18rem;
+		column-gap: 3rem;
+	}
+	.events-key li {
+		break-inside: avoid;
+		padding-left: 0.25rem;
 	}
 </style>
