@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Data: raw downloads are reproducible from the ingest commands. Processed CSVs and
+# hand-curated inputs are tracked so every forecast is auditable.
+data/raw/
+data/*.duckdb
+data/*.duckdb.wal
+runs/
+
+# Stan build artifacts (keep only .stan sources)
+pipeline/src/prophecy/model/stan/*
+!pipeline/src/prophecy/model/stan/*.stan
+
+# Web
+web/node_modules/
+web/.svelte-kit/
+web/build/
+
+# OS / editor
+.DS_Store
+Thumbs.db

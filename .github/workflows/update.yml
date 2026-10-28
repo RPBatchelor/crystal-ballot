@@ -1,0 +1,65 @@
+# Daily forecast update: ingest -> test -> publish -> build site.
+# Deploy to Cloudflare Pages is added once the Pages project and secrets exist.
+name: update
+
+on:
+  schedule:
+    - cron: "0 19 * * *" # 06:00 AEDT
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          version: "0.5.7"
+
+      - name: Cache CmdStan
+        uses: actions/cache@v4
+        with:
+          path: ~/.cmdstan
+          key: cmdstan-2.40.0-${{ runner.os }}
+
+      - name: Install pipeline
+        working-directory: pipeline
+        run: |
+          uv sync
+          uv run python -c "import cmdstanpy; cmdstanpy.install_cmdstan(version='2.40.0', progress=False)"
+
+      - name: Ingest polls
+        working-directory: pipeline
+        env:
+          PROPHECY_USER_AGENT: ${{ secrets.PROPHECY_USER_AGENT }}
+        run: uv run prophecy ingest-polls --election vic-2026
+
+      - name: Test
+        working-directory: pipeline
+        run: uv run pytest -q
+
+      - name: Publish site data
+        working-directory: pipeline
+        run: uv run prophecy publish --election vic-2026
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Build site
+        working-directory: web
+        run: |
+          npm ci
+          npm run check
+          npm run build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: web/build
