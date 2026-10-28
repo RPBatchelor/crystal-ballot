@@ -82,13 +82,13 @@ def publish_results(election: Election) -> str:
         "date": election.date.isoformat(),
         "seats_total": election.seats,
         "majority": election.seats // 2 + 1,
-        "seat_counts": dict(districts["elected_party"].value_counts().iter_rows()),
+        "seat_counts": dict(districts["elected_party"].value_counts().sort("count", "elected_party", descending=[True, False]).iter_rows()),
         "primary_share": {
             b: round(100 * v / total_votes, 2) for b, v in totals.sort("votes", descending=True).iter_rows()
         },
         "party_share": {
             p: round(100 * v / total_votes, 2)
-            for p, v in primary.group_by("party").agg(pl.col("votes").sum()).iter_rows()
+            for p, v in primary.group_by("party").agg(pl.col("votes").sum()).sort("votes", descending=True).iter_rows()
         },
         "tpp_alp": round(official_tpp if official_tpp is not None else seat_tpp, 2),
         "seats": seats,
