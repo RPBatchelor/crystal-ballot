@@ -13,6 +13,8 @@ jobs:
   pipeline:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    env:
+      PROPHECY_USER_AGENT: ${{ secrets.PROPHECY_USER_AGENT }}
     steps:
       - uses: actions/checkout@v4
 
@@ -20,22 +22,15 @@ jobs:
         with:
           version: "0.5.7"
 
-      - name: Cache CmdStan
-        uses: actions/cache@v4
-        with:
-          path: ~/.cmdstan
-          key: cmdstan-2.40.0-${{ runner.os }}
-
       - name: Install pipeline
         working-directory: pipeline
-        run: |
-          uv sync
-          uv run python -c "import cmdstanpy; cmdstanpy.install_cmdstan(version='2.40.0', progress=False)"
+        run: uv sync
 
+      # Needs the PROPHECY_USER_AGENT secret (Wikimedia robot policy). Without it the
+      # committed data/processed polls are used as-is.
       - name: Ingest polls
+        if: env.PROPHECY_USER_AGENT != ''
         working-directory: pipeline
-        env:
-          PROPHECY_USER_AGENT: ${{ secrets.PROPHECY_USER_AGENT }}
         run: uv run prophecy ingest-polls --election vic-2026
 
       - name: Test
