@@ -63,8 +63,14 @@ def ingest_results(year: int = typer.Option(2022, help="Victorian state election
 def publish(election: str = typer.Option("vic-2026", help="Election id")) -> None:
     """Write website data files for an election."""
     from prophecy.publish.polls import publish_polls
+    from prophecy.publish.results import publish_results
 
-    typer.echo(publish_polls(jurisdictions.get(election)))
+    e = jurisdictions.get(election)
+    typer.echo(publish_polls(e))
+    # Historical results for every past election in the same jurisdiction we have ingested.
+    for past in jurisdictions.ELECTIONS.values():
+        if past.jurisdiction == e.jurisdiction and (PROCESSED_DIR / past.election_id).exists():
+            typer.echo(publish_results(past))
 
 
 def _write_tables(tables: dict, out) -> None:

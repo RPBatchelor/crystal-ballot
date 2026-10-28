@@ -1,73 +1,164 @@
 <script lang="ts">
+	import '../app.css';
+	import { page } from '$app/state';
+	import { JURISDICTIONS, getJurisdiction, isActive } from '$lib/jurisdictions';
+
 	let { children } = $props();
+
+	const current = $derived(getJurisdiction(page.params.jur ?? ''));
+	const path = $derived(page.url.pathname);
+
+	const sections = $derived(
+		current
+			? [
+					{ href: `/${current.code}/`, label: 'Overview' },
+					...(current.hasPolls ? [{ href: `/${current.code}/polls/`, label: 'Polls' }] : []),
+					...current.resultYears.map((y) => ({
+						href: `/${current.code}/results/${y}/`,
+						label: `${y} results`
+					}))
+				]
+			: []
+	);
 </script>
 
 <svelte:head>
-	<title>Prophecy</title>
+	<title>Prophecy · Australian election forecasts</title>
+	<meta
+		name="description"
+		content="Bayesian seat-by-seat forecasts, polling and results for Australian elections."
+	/>
 </svelte:head>
 
-<header>
-	<a href="/" class="brand">Prophecy</a>
-	<nav>
-		<a href="/vic/2026/polls/">Victoria 2026 · Polls</a>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+	<div class="bar">
+		<a href="/" class="brand" aria-label="Prophecy home">
+			<span class="mark" aria-hidden="true"></span>Prophecy
+		</a>
+		<a href="/methodology/" class="meta-link">Methodology</a>
+	</div>
+	<nav class="jurisdictions" aria-label="Jurisdiction">
+		{#each JURISDICTIONS as j (j.code)}
+			<a
+				href="/{j.code}/"
+				class:active={current?.code === j.code}
+				class:inactive={!isActive(j)}
+				aria-current={current?.code === j.code ? 'page' : undefined}>{j.short}</a
+			>
+		{/each}
 	</nav>
+	{#if sections.length > 1}
+		<nav class="sections" aria-label="{current?.name} sections">
+			{#each sections as s (s.href)}
+				<a href={s.href} aria-current={path === s.href ? 'page' : undefined}>{s.label}</a>
+			{/each}
+		</nav>
+	{/if}
 </header>
 
-<main>
+<main id="main">
 	{@render children()}
 </main>
 
+<footer>
+	<p>
+		Prophecy is an independent, non-partisan forecasting project. Results data from the Victorian
+		Electoral Commission; polls from published pollster releases.
+	</p>
+</footer>
+
 <style>
-	:global(:root) {
-		--bg: #fbfaf7;
-		--fg: #1d1d1f;
-		--muted: #6b6b70;
-		--rule: #e3e1dc;
-		--alp: #d7262c;
-		--coal: #1c4fa1;
-		--grn: #2e8b3e;
-		--onp: #e8731c;
-		--oth: #8a8a8a;
-		color-scheme: light dark;
+	.skip {
+		position: absolute;
+		left: -999px;
 	}
-	@media (prefers-color-scheme: dark) {
-		:global(:root) {
-			--bg: #141416;
-			--fg: #ececee;
-			--muted: #9a9aa2;
-			--rule: #2c2c31;
-			--alp: #ff5a5f;
-			--coal: #5b8cff;
-			--grn: #4cc35e;
-			--onp: #ff9440;
-		}
+	.skip:focus {
+		left: 1rem;
+		top: 1rem;
+		background: var(--surface);
+		padding: 0.5rem 1rem;
+		z-index: 10;
 	}
-	:global(body) {
-		margin: 0;
-		background: var(--bg);
-		color: var(--fg);
-		font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
-		line-height: 1.5;
-	}
-	header {
-		display: flex;
-		gap: 1.5rem;
-		align-items: baseline;
-		padding: 1rem;
+	header.site {
 		border-bottom: 1px solid var(--rule);
+		background: var(--bg);
+		position: sticky;
+		top: 0;
+		z-index: 5;
+	}
+	.bar,
+	nav {
+		max-width: 72rem;
+		margin: 0 auto;
+		padding: 0 var(--gutter);
+	}
+	.bar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 3.25rem;
 	}
 	.brand {
+		font-family: var(--font-serif);
 		font-weight: 700;
-		font-size: 1.25rem;
-		color: inherit;
+		font-size: 1.35rem;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	.mark {
+		width: 0.9rem;
+		height: 0.9rem;
+		border-radius: 50%;
+		background: conic-gradient(var(--party-ALP) 0 50%, var(--party-COAL) 50% 100%);
+	}
+	.meta-link {
+		font-size: 0.9rem;
+		color: var(--fg-2);
 		text-decoration: none;
 	}
+	nav {
+		display: flex;
+		gap: 0.25rem;
+		overflow-x: auto;
+		scrollbar-width: none;
+	}
 	nav a {
+		flex: none;
+		font-size: 0.85rem;
+		font-weight: 550;
+		text-decoration: none;
+		padding: 0.45rem 0.7rem;
+		border-bottom: 2px solid transparent;
+		color: var(--fg-2);
+	}
+	nav a.inactive {
 		color: var(--muted);
+		font-weight: 450;
+	}
+	nav a[aria-current='page'] {
+		color: var(--fg);
+		border-bottom-color: var(--fg);
+	}
+	.sections {
+		border-top: 1px solid var(--rule);
 	}
 	main {
 		max-width: 72rem;
 		margin: 0 auto;
-		padding: 1rem;
+		padding: 1.75rem var(--gutter) 3rem;
+	}
+	footer {
+		border-top: 1px solid var(--rule);
+		color: var(--muted);
+		font-size: 0.85rem;
+	}
+	footer p {
+		max-width: 72rem;
+		margin: 0 auto;
+		padding: 1.25rem var(--gutter) 2rem;
 	}
 </style>
