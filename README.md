@@ -23,8 +23,10 @@ cd ../web && npm install
 
 ```sh
 cd pipeline
-uv run prophecy ingest-polls --election vic-2026   # Wikipedia poll tables -> data/processed
-uv run prophecy ingest-results --year 2022         # VEC results, by-elections, preference distributions
+uv run prophecy ingest-polls --jurisdiction VIC    # every cycle's polls + election results
+uv run prophecy ingest-results --year 2022         # VEC results (also 2014, 2018), by-elections, DoPs
+uv run prophecy poll-error                         # historical final-poll error table
+uv run prophecy backtest --election vic-2018       # blind forecast of 2018, scored
 uv run prophecy aggregate --election vic-2026      # Bayesian poll aggregate (Stan, ~6 min)
 uv run prophecy forecast --election vic-2026       # seat simulation (needs aggregate + AEC/Vicmap raw data)
 uv run prophecy publish --election vic-2026        # JSON for the website
