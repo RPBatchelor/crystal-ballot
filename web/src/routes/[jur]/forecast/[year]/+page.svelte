@@ -2,7 +2,10 @@
 	import type { PageData } from './$types';
 	import OutcomeBar from '$lib/components/charts/OutcomeBar.svelte';
 	import SeatHistogram from '$lib/components/charts/SeatHistogram.svelte';
+	import Hemicycle from '$lib/components/charts/Hemicycle.svelte';
+	import SeatMap from '$lib/components/charts/SeatMap.svelte';
 	import { fmtDate } from '$lib/format';
+	import { chamberSeats, tierOpacity, TIERS } from '$lib/maps';
 	import { party, partyColour } from '$lib/parties';
 
 	let { data }: { data: PageData } = $props();
@@ -40,6 +43,43 @@
 			})
 	);
 	const pct = (p: number) => (p < 0.005 ? '<1%' : p > 0.995 ? '>99%' : `${Math.round(p * 100)}%`);
+	const seatHref = (slug: string) =>
+		data.lastResults ? `/${j.code}/results/${data.lastResults}/${slug}/` : undefined;
+	const bySlug = $derived(Object.fromEntries(f.districts.map((d) => [d.slug, d])));
+	const chamber = $derived(
+		chamberSeats(
+			f.districts.map((d) => ({
+				slug: d.slug,
+				name: d.district,
+				party: d.leader,
+				strength: d.leader_prob,
+				detail: `${pct(d.leader_prob)} chance`,
+				href: seatHref(d.slug),
+				opacity: tierOpacity(d.leader_prob)
+			}))
+		)
+	);
+	const favCounts = $derived(
+		Object.entries(
+			f.districts.reduce<Record<string, number>>((acc, d) => ((acc[d.leader] = (acc[d.leader] ?? 0) + 1), acc), {})
+		).sort((a, b) => b[1] - a[1])
+	);
+	function seatTip(slug: string) {
+		const d = bySlug[slug];
+		if (!d) return { title: slug, lines: [] };
+		const probs = Object.entries(d.probs)
+			.filter(([, p]) => p >= 0.01)
+			.sort((a, b) => b[1] - a[1])
+			.map(([p, v]) => `${party(p).short} ${pct(v)}`);
+		const prim = ['ALP', 'COAL', 'GRN', 'ONP']
+			.filter((b) => (d.primary[b]?.[1] ?? 0) >= 3)
+			.map((b) => `${party(b).short} ${d.primary[b][1].toFixed(0)}%`);
+		return {
+			title: `${d.district} (held by ${party(d.incumbent).short})`,
+			lines: [`Chance: ${probs.join(' · ')}`, `Median first prefs: ${prim.join(', ')}`]
+		};
+	}
+
 	const changes = $derived(
 		f.districts.filter((d) => d.leader !== d.incumbent && d.leader_prob > 0.5).length
 	);
@@ -71,7 +111,41 @@
 	)} of 100.
 </p>
 
-<h2>Seats</h2>
+<h2>Seat by seat</h2>
+<p class="small muted">
+	Each seat coloured by its most likely winner; shading shows how confident the model is. Close races sit
+	near the centre of the chamber.
+</p>
+<div class="chamber">
+	<Hemicycle title="Most likely winner in each seat" seats={chamber} majority={f.majority} />
+	<ul class="fav small">
+		{#each favCounts as [p, n] (p)}
+			<li><span class="chip" style:--c={partyColour(p)}>{party(p).short}</span> favoured in <strong>{n}</strong></li>
+		{/each}
+		<li class="tiers">
+			{#each TIERS as t (t.label)}
+				<span><i style:opacity={t.opacity}></i>{t.label}</span>
+			{/each}
+		</li>
+	</ul>
+</div>
+
+{#if data.geo}
+	<SeatMap
+		title="Forecast favourite by district"
+		geo={data.geo}
+		fill={(slug) => partyColour(bySlug[slug]?.leader ?? 'OTH')}
+		opacity={(slug) => tierOpacity(bySlug[slug]?.leader_prob ?? 0)}
+		tooltip={seatTip}
+		href={seatHref}
+		legend={[
+			...favCounts.map(([p]) => ({ label: party(p).short, colour: partyColour(p) })),
+			...TIERS.map((t) => ({ label: t.label, colour: 'var(--fg-2)', opacity: t.opacity }))
+		]}
+	/>
+{/if}
+
+<h2>Seat totals</h2>
 <div class="hists">
 	<SeatHistogram label="Labor" colour={partyColour('ALP')} counts={f.seat_hist.ALP} majority={f.majority} quantiles={f.seats.ALP} />
 	<SeatHistogram label="Coalition" colour={partyColour('COAL')} counts={f.seat_hist.COAL} majority={f.majority} quantiles={f.seats.COAL} />
@@ -164,6 +238,41 @@
 		padding: 0.7rem 1rem;
 		margin-bottom: 1.25rem;
 		font-size: 0.92rem;
+	}
+	.chamber {
+		display: grid;
+		grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+		gap: 1rem 2rem;
+		align-items: center;
+		margin-bottom: 1.5rem;
+	}
+	@media (max-width: 760px) {
+		.chamber {
+			grid-template-columns: 1fr;
+		}
+	}
+	.fav {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: grid;
+		gap: 0.4rem;
+	}
+	.fav .tiers {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.3rem 0.9rem;
+		margin-top: 0.6rem;
+		color: var(--fg-2);
+	}
+	.fav .tiers i {
+		display: inline-block;
+		width: 0.75rem;
+		height: 0.75rem;
+		border-radius: 50%;
+		background: var(--fg-2);
+		margin-right: 0.35rem;
+		vertical-align: -0.1rem;
 	}
 	.hists {
 		display: grid;

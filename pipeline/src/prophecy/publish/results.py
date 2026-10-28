@@ -86,6 +86,10 @@ def publish_results(election: Election) -> str:
         "primary_share": {
             b: round(100 * v / total_votes, 2) for b, v in totals.sort("votes", descending=True).iter_rows()
         },
+        "party_share": {
+            p: round(100 * v / total_votes, 2)
+            for p, v in primary.group_by("party").agg(pl.col("votes").sum()).iter_rows()
+        },
         "tpp_alp": round(official_tpp if official_tpp is not None else seat_tpp, 2),
         "seats": seats,
     }

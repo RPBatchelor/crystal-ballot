@@ -20,3 +20,9 @@ export const loadPreferences = (fetch: Fetch, jur: string, year: number | string
 
 export const loadForecast = (fetch: Fetch, jur: string, year: number | string) =>
 	getJSON<import('./types').ForecastFile>(fetch, `/data/${jur}/forecast/${year}.json`);
+
+export const loadGeo = (fetch: Fetch, jur: string, boundaries: string) =>
+	getJSON<import('geojson').FeatureCollection<import('geojson').Geometry, import('./components/charts/SeatMap.svelte').SeatProps>>(
+		fetch,
+		`/data/${jur}/geo/${boundaries}.json`
+	);

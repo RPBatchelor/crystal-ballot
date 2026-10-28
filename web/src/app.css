@@ -1,7 +1,8 @@
 @import '@fontsource-variable/inter';
 @import '@fontsource-variable/source-serif-4';
 
-/* Party colours validated with the dataviz palette checker (light + dark):
+/* Party colours validated with the dataviz palette checker (light + dark), incl. NAT
+   as a lighter (light theme) / deeper (dark theme) Coalition blue:
    lightness band, chroma, CVD separation and normal-vision floor all pass.
    ONP orange is below 3:1 on light surfaces, so charts always carry labels/tables. */
 :root {
@@ -18,7 +19,7 @@
 	--party-ALP: #c8202b;
 	--party-COAL: #1f4e9e;
 	--party-LIB: #1f4e9e;
-	--party-NAT: #1f4e9e;
+	--party-NAT: #5f8fd8;
 	--party-GRN: #2a7f3f;
 	--party-ONP: #e5892b;
 	--party-IND: #6f6f78;
@@ -46,7 +47,7 @@
 		--party-ALP: #e5484f;
 		--party-COAL: #5a8af6;
 		--party-LIB: #5a8af6;
-		--party-NAT: #5a8af6;
+		--party-NAT: #305db0;
 		--party-GRN: #1f7a3a;
 		--party-ONP: #cc8134;
 		--party-IND: #8d8d96;
@@ -69,7 +70,7 @@
 	--party-ALP: #e5484f;
 	--party-COAL: #5a8af6;
 	--party-LIB: #5a8af6;
-	--party-NAT: #5a8af6;
+	--party-NAT: #305db0;
 	--party-GRN: #1f7a3a;
 	--party-ONP: #cc8134;
 	--party-IND: #8d8d96;

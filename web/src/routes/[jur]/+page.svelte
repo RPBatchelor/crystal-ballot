@@ -1,10 +1,11 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import TimeSeriesChart from '$lib/components/charts/TimeSeriesChart.svelte';
-	import SeatBar from '$lib/components/charts/SeatBar.svelte';
+	import Hemicycle from '$lib/components/charts/Hemicycle.svelte';
+	import { chamberSeats } from '$lib/maps';
 	import { daysUntil, fmtDate } from '$lib/format';
 	import { partyColour } from '$lib/parties';
-	import { PRIMARY_SERIES, seatSegments } from '$lib/series';
+	import { PRIMARY_SERIES } from '$lib/series';
 
 	let { data }: { data: PageData } = $props();
 	const j = $derived(data.jurisdiction);
@@ -101,17 +102,30 @@
 				1
 			)}% of the two-party-preferred vote.
 		</p>
-		<SeatBar
-			title="Seats won at the 2022 Victorian election"
-			segments={seatSegments(data.results.seat_counts)}
-			total={data.results.seats_total}
-			majority={data.results.majority}
-		/>
+		<div class="baseline">
+			<Hemicycle
+				title="Seats won at the 2022 Victorian election"
+				seats={chamberSeats(
+					data.results.seats.map((s) => ({
+						slug: s.slug,
+						name: s.name,
+						party: s.party,
+						strength: s.margin,
+						detail: `margin ${s.margin.toFixed(1)}`,
+						href: `/${j.code}/results/2022/${s.slug}/`
+					}))
+				)}
+				majority={data.results.majority}
+			/>
+		</div>
 		<p><a href="/{j.code}/results/2022/">Seat-by-seat results and pendulum →</a></p>
 	{/if}
 {/if}
 
 <style>
+	.baseline {
+		max-width: 30rem;
+	}
 	.notice {
 		margin: 1.25rem 0 0.5rem;
 		max-width: 46rem;

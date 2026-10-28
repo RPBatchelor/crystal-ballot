@@ -89,6 +89,8 @@ export interface ResultsFile {
 	majority: number;
 	seat_counts: Record<string, number>;
 	primary_share: Record<string, number>;
+	/** First-preference share by party code (LIB and NAT separate). */
+	party_share?: Record<string, number>;
 	tpp_alp: number;
 	seats: SeatResult[];
 }

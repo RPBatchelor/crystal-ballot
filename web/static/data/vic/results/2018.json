@@ -5,10 +5,10 @@
  "seats_total": 88,
  "majority": 45,
  "seat_counts": {
-  "IND": 3,
-  "ALP": 55,
   "LIB": 21,
   "GRN": 3,
+  "ALP": 55,
+  "IND": 3,
   "NAT": 6
  },
  "primary_share": {
@@ -17,6 +17,25 @@
   "GRN": 10.71,
   "IND": 6.07,
   "OTH": 5.16
+ },
+ "party_share": {
+  "TMP": 0.29,
+  "DHJ": 0.26,
+  "REA": 0.36,
+  "ALP": 42.86,
+  "X_ABP": 0.04,
+  "VS": 0.44,
+  "SAP": 0.23,
+  "X_ACP": 0.19,
+  "IND": 6.07,
+  "SFF": 0.69,
+  "LDP": 0.11,
+  "LIB": 30.43,
+  "DLP": 0.69,
+  "NAT": 4.77,
+  "GRN": 10.71,
+  "X_ALA": 0.04,
+  "AJP": 1.82
  },
  "tpp_alp": 57.3,
  "seats": [
