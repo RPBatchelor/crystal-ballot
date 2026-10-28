@@ -55,3 +55,16 @@ npm run build    # static output in web/build
 | Voting-intention polls | Pollster releases, indexed via [Wikipedia](https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Victorian_state_election) |
 
 Hand corrections live in `data/curated/` (`poll_corrections.csv`, `by_elections_vic.csv`).
+
+## Candidates and local factors
+
+- `data/curated/members_vic-2026.csv`: sitting members, first-elected year and 2026 status
+  (recontesting / retiring / vacant). Retirements come from the election article's cited
+  "Candidates and retiring MPs" list; edit by hand as announcements change.
+- `data/curated/candidates_vic-2026.csv`: the ballot, once VEC nominations close
+  (12 noon, 9 November 2026). One row per candidate: `district,name,party,ballot_position,prior_share,note`.
+  Seats listed here only give votes to parties with a candidate; `prior_share` (%) sets
+  the expected first-preference vote of a notable independent.
+- Model effects (logit primary vote, priors): retiring member −0.08, first-term member
+  recontesting +0.05; half of a by-election's swing beyond the statewide poll movement is
+  carried forward where Labor, the Coalition and the Greens all stood.

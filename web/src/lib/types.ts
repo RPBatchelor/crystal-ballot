@@ -114,6 +114,7 @@ export interface ForecastDistrict {
 	primary: Record<string, [number, number, number]>;
 	leader: string;
 	leader_prob: number;
+	notes?: string[];
 }
 
 export interface ForecastFile {

@@ -130,7 +130,7 @@ def forecast(
     prev = jurisdictions.previous(e)
     shares, parties = load_draws(RUNS / election)
     inputs = seat_inputs(prev, boundaries="assembly2022", onp_geography="ONP" in parties,
-                         log=typer.echo)
+                         log=typer.echo, election=e)
     flows = flow_weights(prev, inputs, log=typer.echo)
     add_tpp_trend(shares, parties, flows, PROCESSED_DIR / election / "poll_trend.csv",
                   ind_fraction(inputs))
@@ -277,6 +277,19 @@ def _write_tables(tables: dict, out) -> None:
     for name, df in tables.items():
         df.write_csv(out / f"{name}.csv")
         typer.echo(f"{out.name}/{name}: {df.height} rows")
+
+
+
+
+@app.command("publish-geo")
+def publish_geo(
+    boundaries: str = typer.Option("assembly2022,assembly2013", help="Comma-separated layers"),
+) -> None:
+    """Simplify Vicmap boundaries to GeoJSON for the site (needs raw Vicmap downloads)."""
+    from prophecy.publish.geo import publish_boundaries
+
+    for b in boundaries.split(","):
+        typer.echo(publish_boundaries(b))
 
 
 if __name__ == "__main__":

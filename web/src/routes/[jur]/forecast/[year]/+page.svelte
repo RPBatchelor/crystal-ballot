@@ -76,9 +76,13 @@
 			.map((b) => `${party(b).short} ${d.primary[b][1].toFixed(0)}%`);
 		return {
 			title: `${d.district} (held by ${party(d.incumbent).short})`,
-			lines: [`Chance: ${probs.join(' · ')}`, `Median first prefs: ${prim.join(', ')}`]
+			lines: [`Chance: ${probs.join(' · ')}`, `Median first prefs: ${prim.join(', ')}`, ...(d.notes ?? [])]
 		};
 	}
+
+	const noted = $derived(
+		f.districts.filter((d) => d.notes?.length).toSorted((a, b) => a.district.localeCompare(b.district))
+	);
 
 	const changes = $derived(
 		f.districts.filter((d) => d.leader !== d.incumbent && d.leader_prob > 0.5).length
@@ -143,6 +147,17 @@
 			...TIERS.map((t) => ({ label: t.label, colour: 'var(--fg-2)', opacity: t.opacity }))
 		]}
 	/>
+{/if}
+
+{#if noted.length}
+	<details class="local">
+		<summary><strong>Local factors in {noted.length} seats</strong> — retiring members, first-term members and by-election swings</summary>
+		<ul class="small">
+			{#each noted as d (d.slug)}
+				<li><strong>{d.district}</strong> ({party(d.incumbent).short}): {d.notes!.join('; ')}</li>
+			{/each}
+		</ul>
+	</details>
 {/if}
 
 <h2>Seat totals</h2>
@@ -238,6 +253,26 @@
 		padding: 0.7rem 1rem;
 		margin-bottom: 1.25rem;
 		font-size: 0.92rem;
+	}
+	.local {
+		margin: 1.5rem 0 0;
+		border: 1px solid var(--rule);
+		border-radius: var(--radius);
+		padding: 0.6rem 1rem;
+		background: var(--surface);
+	}
+	.local summary {
+		cursor: pointer;
+		font-size: 0.9rem;
+	}
+	.local ul {
+		columns: 2 22rem;
+		column-gap: 2rem;
+		padding-left: 1.1rem;
+	}
+	.local li {
+		break-inside: avoid;
+		margin-bottom: 0.25rem;
 	}
 	.chamber {
 		display: grid;

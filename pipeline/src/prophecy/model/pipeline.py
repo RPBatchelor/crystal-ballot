@@ -70,17 +70,29 @@ def load_draws(run_dir: Path) -> tuple[np.ndarray, list[str]]:
 
 
 def seat_inputs(previous: Election, boundaries: str, onp_geography: bool,
-                log: Callable[[str], None] = print) -> SeatInputs:
+                log: Callable[[str], None] = print,
+                election: Election | None = None) -> SeatInputs:
     from prophecy.ingest.federal_xwalk import district_regions, federal_by_state_district
 
     base_dir = PROCESSED / previous.election_id
     primary = pl.read_csv(base_dir / "primary.csv")
     districts = pl.read_csv(base_dir / "districts.csv")
     canon = pl.col("district").map_elements(canonical_district, return_dtype=pl.String)
-    regions = district_regions(boundaries).with_columns(canon)
+    # Derived tables are cached in data/processed (committed) so the forecast runs
+    # without the large raw boundary/booth downloads (e.g. in CI).
+    regions_path = PROCESSED / f"regions_{boundaries}.csv"
+    if regions_path.exists():
+        regions = pl.read_csv(regions_path)
+    else:
+        regions = district_regions(boundaries).with_columns(canon)
+        regions.write_csv(regions_path)
     if onp_geography:
-        federal = federal_by_state_district(boundaries=boundaries).with_columns(canon)
-        federal.write_csv(base_dir / "federal2025_by_district.csv")
+        federal_path = base_dir / "federal2025_by_district.csv"
+        if federal_path.exists():
+            federal = pl.read_csv(federal_path)
+        else:
+            federal = federal_by_state_district(boundaries=boundaries).with_columns(canon)
+            federal.write_csv(federal_path)
         missing = set(districts["district"]) - set(federal["district"])
         if missing:
             log(f"WARNING: no federal booths matched for {sorted(missing)}")
@@ -94,7 +106,77 @@ def seat_inputs(previous: Election, boundaries: str, onp_geography: bool,
     holders = {}
     if by_dir.exists():
         holders = dict(pl.read_csv(by_dir / "districts.csv").select("district", "elected_party").iter_rows())
-    return build_inputs(primary, districts, federal, regions, holders)
+    inputs = build_inputs(primary, districts, federal, regions, holders)
+    if election is not None:
+        if by_dir.exists():
+            byelection_adjust(inputs, by_dir, PROCESSED / election.election_id / "poll_trend.csv",
+                              previous, log)
+        inputs = attach_candidates(inputs, election, previous, log)
+    return inputs
+
+
+BYELECTION_PERSISTENCE = 0.5  # share of a by-election's excess local swing carried forward
+BYELECTION_BLOCS = ("ALP", "COAL", "GRN")
+
+
+def byelection_adjust(inputs: SeatInputs, by_dir: Path, trend_path: Path, previous: Election,
+                      log: Callable[[str], None] = print) -> None:
+    """Shift seat baselines by the by-election swing beyond the statewide poll movement.
+
+    Only used where Labor, the Coalition and the Greens all contested both the previous
+    general election and the by-election: when a major party sits out, its vote spills
+    to the others and the primaries are not comparable.
+    """
+    if not trend_path.exists():
+        return
+    trend = pl.read_csv(trend_path, try_parse_dates=True, infer_schema_length=None)
+    by_primary = pl.read_csv(by_dir / "primary.csv")
+    by_districts = pl.read_csv(by_dir / "districts.csv", try_parse_dates=True)
+    # Statewide change is measured from the previous election's actual result.
+    w = inputs.weight / inputs.weight.sum()
+    start = {b: 100 * float(inputs.base[:, IDX[b]] @ w) for b in BYELECTION_BLOCS}
+    for r in by_districts.iter_rows(named=True):
+        name = r["district"]
+        if name not in inputs.districts:
+            continue
+        d = inputs.districts.index(name)
+        shares = dict(by_primary.filter(pl.col("district") == name).group_by("bloc")
+                      .agg(pl.col("pct").sum()).iter_rows())
+        if any(shares.get(b, 0) < 1 or inputs.base[d, IDX[b]] < 0.01 for b in BYELECTION_BLOCS):
+            log(f"by-election {name}: skipped (a major party did not contest)")
+            continue
+        at = trend.filter((pl.col("date") <= r["date"]) & pl.col("ALP").is_not_null()).tail(1).row(0, named=True)
+        moves = []
+        for b in BYELECTION_BLOCS:
+            local = shares[b] - 100 * inputs.base[d, IDX[b]]
+            statewide = at[b] - start[b]
+            excess = local - statewide
+            inputs.base[d, IDX[b]] = max(0.002, inputs.base[d, IDX[b]] + BYELECTION_PERSISTENCE * excess / 100)
+            moves.append(f"{b} {excess:+.1f}")
+        inputs.base[d] /= inputs.base[d].sum()
+        note = (f"by-election {r['date']}: swing beyond statewide polls {', '.join(moves)} pts "
+                f"(half carried forward)")
+        inputs.notes.setdefault(name, []).append(note)
+        log(note.replace("by-election", f"by-election {name}"))
+
+
+def attach_candidates(inputs: SeatInputs, election: Election, previous: Election,
+                      log: Callable[[str], None] = print) -> SeatInputs:
+    """Member status and ballot from the curated files, when they exist."""
+    from prophecy import CURATED_DIR
+    from prophecy.model.simulate import apply_candidates
+
+    members_path = CURATED_DIR / f"members_{election.election_id}.csv"
+    cands_path = CURATED_DIR / f"candidates_{election.election_id}.csv"
+    members = pl.read_csv(members_path, infer_schema_length=None) if members_path.exists() else None
+    cands = pl.read_csv(cands_path, infer_schema_length=None) if cands_path.exists() else None
+    inputs = apply_candidates(inputs, members, cands, sophomore_since=previous.date.year)
+    n_ret = int(inputs.retiring.sum()) if inputs.retiring is not None else 0
+    n_soph = int(inputs.sophomore.sum()) if inputs.sophomore is not None else 0
+    n_cand = cands["district"].n_unique() if cands is not None and cands.height else 0
+    log(f"candidates: {n_ret} retiring, {n_soph} first-term recontesting, "
+        f"ballot known for {n_cand} seats")
+    return inputs
 
 
 def flow_weights(previous: Election, inputs: SeatInputs,

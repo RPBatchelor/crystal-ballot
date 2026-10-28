@@ -2,7 +2,7 @@
  "election_id": "vic-2026",
  "jurisdiction": "VIC",
  "election_date": "2026-11-28",
- "generated_at": "2026-10-28T10:18:48+00:00",
+ "generated_at": "2026-10-28T10:26:53+00:00",
  "model_version": "0.1.0",
  "validated": false,
  "diagnostics": {
@@ -13,11 +13,11 @@
  "n_sims": 20000,
  "majority": 45,
  "outcome": {
-  "alp_majority": 0.16235,
-  "coal_majority": 0.3802,
-  "hung": 0.45745,
-  "alp_most_seats": 0.3758,
-  "coal_most_seats": 0.6103
+  "alp_majority": 0.16385,
+  "coal_majority": 0.3793,
+  "hung": 0.45685,
+  "alp_most_seats": 0.37605,
+  "coal_most_seats": 0.6113
  },
  "seats": {
   "ALP": [
@@ -53,7 +53,7 @@
    2.0,
    5.0,
    12.0,
-   25.0
+   26.0
   ],
   "IND": [
    0.0,
@@ -74,82 +74,82 @@
    31.0,
    39.0,
    51.0,
-   66.0
+   67.0
   ]
  },
  "seat_hist": {
   "ALP": [
-   26,
+   30,
    64,
    109,
-   112,
-   152,
-   148,
-   195,
-   258,
-   223,
-   259,
-   230,
-   278,
-   298,
-   329,
-   346,
-   318,
-   363,
-   366,
-   411,
-   386,
-   425,
-   438,
-   414,
-   466,
-   447,
-   463,
-   463,
-   460,
-   439,
-   479,
-   480,
-   503,
-   488,
-   506,
-   476,
-   530,
-   492,
-   486,
-   509,
-   454,
-   532,
-   506,
-   479,
-   465,
-   482,
-   404,
-   414,
-   379,
-   341,
-   312,
-   275,
-   237,
+   129,
+   135,
+   158,
    206,
-   168,
-   132,
-   87,
-   74,
-   51,
+   227,
+   227,
+   232,
+   246,
+   295,
+   300,
+   316,
+   338,
+   336,
+   338,
+   357,
+   397,
+   408,
+   403,
+   425,
+   430,
+   425,
+   454,
+   476,
+   474,
+   437,
+   476,
+   441,
+   494,
+   509,
+   524,
+   469,
+   513,
+   534,
+   522,
+   510,
+   478,
+   473,
+   490,
+   498,
+   504,
+   464,
+   452,
+   414,
+   408,
+   371,
+   347,
+   314,
+   273,
+   262,
+   179,
+   171,
+   127,
+   101,
+   78,
+   68,
    55,
-   34,
+   31,
    17,
+   19,
    14,
-   16,
    9,
-   8,
-   7,
-   1,
+   6,
+   4,
    2,
-   0,
-   1,
    3,
+   0,
+   0,
+   4,
    0,
    0,
    0,
@@ -170,53 +170,51 @@
    0
   ],
   "GRN": [
-   114,
-   122,
-   174,
-   601,
-   2906,
-   3402,
-   3059,
-   2732,
-   2126,
-   1503,
-   962,
-   638,
-   463,
-   316,
-   190,
-   161,
-   128,
-   87,
-   81,
-   48,
-   40,
-   36,
-   24,
-   20,
-   14,
-   13,
-   10,
-   7,
+   121,
+   115,
+   173,
+   648,
+   3091,
+   3492,
+   3060,
+   2667,
+   1988,
+   1410,
+   920,
+   622,
+   466,
+   310,
+   208,
+   169,
+   131,
+   84,
+   76,
+   59,
+   42,
+   28,
+   27,
+   25,
+   19,
+   8,
+   8,
+   8,
    3,
-   3,
-   3,
+   4,
+   4,
+   1,
+   2,
    1,
    3,
    1,
    2,
    0,
-   2,
-   0,
-   1,
-   1,
    0,
    0,
    1,
    0,
    0,
    0,
-   0,
+   1,
    0,
    0,
    0,
@@ -232,6 +230,8 @@
    0,
    0,
    1,
+   0,
+   0,
    0,
    0,
    0,
@@ -261,72 +261,72 @@
    0
   ],
   "ONP": [
-   2725,
-   2153,
-   1655,
-   1404,
-   1292,
-   1127,
-   999,
-   882,
-   748,
-   727,
-   619,
-   606,
-   529,
-   446,
-   425,
+   2814,
+   2128,
+   1708,
+   1388,
+   1212,
+   1145,
+   965,
+   867,
+   804,
+   664,
+   624,
+   632,
+   514,
+   485,
    387,
-   380,
-   311,
-   263,
-   241,
-   244,
-   224,
-   180,
-   175,
+   379,
+   361,
+   326,
+   273,
+   247,
+   233,
+   215,
+   178,
+   167,
+   148,
    128,
-   135,
-   125,
-   96,
-   99,
-   91,
-   58,
-   66,
-   60,
-   47,
-   34,
-   39,
-   22,
-   36,
-   22,
-   27,
+   121,
+   101,
+   88,
+   93,
+   71,
+   74,
+   52,
+   48,
+   45,
+   35,
+   29,
+   29,
    21,
-   19,
-   17,
-   16,
-   13,
-   6,
-   6,
+   31,
+   20,
+   21,
+   15,
+   14,
+   12,
    7,
-   7,
-   10,
+   6,
+   4,
+   11,
+   8,
+   6,
    5,
    4,
    6,
-   7,
-   1,
+   4,
+   4,
+   3,
+   4,
    6,
-   3,
-   7,
-   3,
-   1,
+   2,
    3,
    0,
    1,
-   1,
-   2,
-   1,
+   0,
+   4,
+   0,
    0,
    0,
    0,
@@ -352,16 +352,16 @@
    0
   ],
   "IND": [
-   5333,
-   6421,
-   4426,
-   2295,
-   983,
-   392,
-   107,
-   30,
-   11,
-   2,
+   5261,
+   6283,
+   4365,
+   2446,
+   1051,
+   410,
+   141,
+   28,
+   12,
+   3,
    0,
    0,
    0,
@@ -446,89 +446,89 @@
    1,
    0,
    0,
-   0,
-   3,
-   1,
-   4,
-   3,
-   5,
-   10,
-   8,
-   21,
-   22,
-   33,
-   43,
-   47,
-   62,
-   70,
-   88,
-   133,
-   151,
-   189,
-   235,
-   254,
-   312,
-   394,
-   448,
-   513,
-   577,
-   581,
-   613,
-   628,
-   614,
-   569,
-   636,
-   594,
-   574,
-   542,
-   521,
-   542,
-   513,
-   493,
-   459,
-   466,
-   424,
-   452,
-   413,
-   427,
-   400,
-   408,
-   389,
-   354,
-   326,
-   355,
-   319,
-   318,
-   278,
-   284,
-   260,
-   269,
-   206,
-   230,
-   218,
-   201,
-   195,
-   168,
-   149,
-   126,
-   138,
-   111,
-   82,
-   93,
-   91,
-   82,
-   68,
-   56,
-   51,
-   21,
-   23,
-   16,
-   9,
-   6,
-   7,
-   1,
    2,
    1,
+   3,
+   2,
+   3,
+   5,
+   8,
+   10,
+   19,
+   25,
+   33,
+   44,
+   48,
+   60,
+   78,
+   77,
+   136,
+   190,
+   187,
+   248,
+   273,
+   331,
+   381,
+   439,
+   516,
+   570,
+   561,
+   617,
+   620,
+   612,
+   578,
+   598,
+   596,
+   562,
+   536,
+   533,
+   500,
+   527,
+   522,
+   469,
+   436,
+   457,
+   431,
+   446,
+   442,
+   404,
+   370,
+   402,
+   364,
+   307,
+   327,
+   336,
+   302,
+   280,
+   272,
+   287,
+   236,
+   217,
+   226,
+   208,
+   215,
+   192,
+   161,
+   152,
+   141,
+   121,
+   102,
+   104,
+   95,
+   88,
+   73,
+   74,
+   62,
+   55,
+   19,
+   25,
+   19,
+   12,
+   7,
+   5,
+   3,
+   1,
+   2,
    0,
    1,
    0
@@ -576,62 +576,66 @@
    "district": "Albert Park",
    "region": "Southern Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.4319,
-    "LIB": 0.1794,
-    "GRN": 0.3878,
-    "ONP": 0.0008,
+    "ALP": 0.4786,
+    "LIB": 0.1585,
+    "GRN": 0.3621,
+    "ONP": 0.0007,
     "IND": 0.0001
    },
    "primary": {
     "ALP": [
-     20.2,
-     25.0,
-     30.2
+     20.8,
+     25.8,
+     31.0
     ],
     "COAL": [
-     22.7,
-     27.7,
-     33.3
+     22.5,
+     27.4,
+     33.0
     ],
     "GRN": [
-     18.9,
-     25.7,
-     32.3
+     18.7,
+     25.5,
+     32.1
     ],
     "ONP": [
-     6.7,
-     11.0,
-     17.1
+     6.6,
+     10.8,
+     16.9
     ],
     "IND": [
      3.2,
      5.2,
-     8.5
+     8.4
     ],
     "OTH": [
      2.6,
-     4.1,
+     4.0,
      6.0
     ]
    },
    "slug": "albert-park",
    "leader": "ALP",
-   "leader_prob": 0.4319
+   "leader_prob": 0.4786
   },
   {
    "district": "Ashwood",
    "region": "Southern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.5359,
-    "LIB": 0.4267,
+    "ALP": 0.5386,
+    "LIB": 0.424,
     "GRN": 0.0374
    },
    "primary": {
     "ALP": [
      24.6,
-     29.7,
+     29.8,
      35.1
     ],
     "COAL": [
@@ -662,303 +666,322 @@
    },
    "slug": "ashwood",
    "leader": "ALP",
-   "leader_prob": 0.5359
+   "leader_prob": 0.5386
   },
   {
    "district": "Bass",
    "region": "Eastern Victoria",
    "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "ALP": 0.0238,
-    "LIB": 0.934,
+    "ALP": 0.0184,
+    "LIB": 0.9388,
     "GRN": 0.0003,
-    "ONP": 0.0419
+    "ONP": 0.0425
    },
    "primary": {
     "ALP": [
-     15.0,
-     19.1,
-     23.7
+     14.1,
+     18.2,
+     22.6
     ],
     "COAL": [
-     30.1,
-     36.4,
-     42.7
+     30.4,
+     36.9,
+     43.2
     ],
     "GRN": [
-     5.8,
-     9.0,
-     12.7
+     5.9,
+     9.1,
+     12.9
     ],
     "ONP": [
-     16.3,
-     24.7,
-     35.1
+     16.5,
+     25.0,
+     35.5
     ],
     "IND": [
      2.1,
-     3.4,
-     5.7
+     3.5,
+     5.8
     ],
     "OTH": [
      3.9,
      6.0,
-     8.8
+     8.9
     ]
    },
    "slug": "bass",
    "leader": "LIB",
-   "leader_prob": 0.934
+   "leader_prob": 0.9388
   },
   {
    "district": "Bayswater",
    "region": "North-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "ALP": 0.27,
-    "LIB": 0.7216,
-    "GRN": 0.0003,
+    "ALP": 0.2228,
+    "LIB": 0.7687,
+    "GRN": 0.0004,
     "ONP": 0.0081
    },
    "primary": {
     "ALP": [
-     24.5,
-     29.7,
-     35.0
+     23.4,
+     28.5,
+     33.7
     ],
     "COAL": [
-     28.5,
-     34.1,
-     39.9
+     29.0,
+     34.7,
+     40.6
     ],
     "GRN": [
-     6.3,
-     9.5,
-     13.3
+     6.4,
+     9.7,
+     13.6
     ],
     "ONP": [
-     9.5,
-     15.1,
-     22.9
+     9.6,
+     15.4,
+     23.3
     ],
     "IND": [
-     1.1,
+     1.2,
      1.9,
-     3.1
+     3.2
     ],
     "OTH": [
-     5.6,
-     8.3,
-     11.9
+     5.7,
+     8.5,
+     12.1
     ]
    },
    "slug": "bayswater",
    "leader": "LIB",
-   "leader_prob": 0.7216
+   "leader_prob": 0.7687
   },
   {
    "district": "Bellarine",
    "region": "Western Victoria",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.6228,
-    "LIB": 0.3679,
-    "GRN": 0.0071,
-    "ONP": 0.0022
+    "ALP": 0.6667,
+    "LIB": 0.3251,
+    "GRN": 0.006,
+    "ONP": 0.0021
    },
    "primary": {
     "ALP": [
-     25.6,
-     30.9,
-     36.3
+     26.4,
+     31.7,
+     37.1
     ],
     "COAL": [
-     26.4,
-     31.6,
-     37.2
+     26.1,
+     31.2,
+     36.8
     ],
     "GRN": [
-     10.3,
-     15.0,
-     20.3
+     10.2,
+     14.9,
+     20.1
     ],
     "ONP": [
-     7.5,
-     12.2,
-     18.8
+     7.4,
+     12.1,
+     18.6
     ],
     "IND": [
      2.5,
-     4.2,
+     4.1,
      6.8
     ],
     "OTH": [
      3.1,
      4.7,
-     7.0
+     6.9
     ]
    },
    "slug": "bellarine",
    "leader": "ALP",
-   "leader_prob": 0.6228
+   "leader_prob": 0.6667
   },
   {
    "district": "Benambra",
    "region": "Northern Victoria",
    "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "LIB": 0.708,
-    "ONP": 0.1092,
-    "IND": 0.1827
+    "LIB": 0.6682,
+    "ONP": 0.1168,
+    "IND": 0.215
    },
    "primary": {
     "ALP": [
-     4.7,
-     6.6,
-     8.9
+     4.8,
+     6.7,
+     9.1
     ],
     "COAL": [
-     27.2,
-     34.3,
-     41.9
+     26.1,
+     33.2,
+     40.8
     ],
     "GRN": [
-     2.5,
-     4.1,
-     6.2
+     2.6,
+     4.2,
+     6.3
     ],
     "ONP": [
-     16.5,
-     25.1,
-     35.8
+     16.7,
+     25.5,
+     36.3
     ],
     "IND": [
-     15.5,
-     23.8,
-     34.5
+     15.7,
+     24.2,
+     35.0
     ],
     "OTH": [
      2.6,
-     4.1,
-     6.4
+     4.2,
+     6.5
     ]
    },
    "slug": "benambra",
    "leader": "LIB",
-   "leader_prob": 0.708
+   "leader_prob": 0.6682
   },
   {
    "district": "Bendigo East",
    "region": "Northern Victoria",
    "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "ALP": 0.7683,
-    "LIB": 0.1953,
-    "GRN": 0.0004,
-    "ONP": 0.036
+    "ALP": 0.7183,
+    "LIB": 0.2367,
+    "GRN": 0.0005,
+    "ONP": 0.0445
    },
    "primary": {
     "ALP": [
-     29.7,
-     35.7,
-     41.6
+     28.6,
+     34.5,
+     40.4
     ],
     "COAL": [
-     20.4,
-     25.5,
-     30.9
+     20.8,
+     26.0,
+     31.4
     ],
     "GRN": [
-     7.2,
-     11.0,
-     15.3
+     7.4,
+     11.2,
+     15.6
     ],
     "ONP": [
-     12.6,
-     19.6,
-     28.9
+     12.8,
+     20.0,
+     29.4
     ],
     "IND": [
      1.9,
-     3.1,
+     3.2,
      5.2
     ],
     "OTH": [
-     2.4,
+     2.5,
      3.8,
-     5.7
+     5.8
     ]
    },
    "slug": "bendigo-east",
    "leader": "ALP",
-   "leader_prob": 0.7683
+   "leader_prob": 0.7183
   },
   {
    "district": "Bendigo West",
    "region": "Northern Victoria",
    "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "ALP": 0.8623,
-    "LIB": 0.1181,
-    "GRN": 0.0097,
-    "ONP": 0.01
+    "ALP": 0.8276,
+    "LIB": 0.148,
+    "GRN": 0.0121,
+    "ONP": 0.0123
    },
    "primary": {
     "ALP": [
-     28.6,
-     34.2,
-     39.8
+     27.5,
+     33.0,
+     38.6
     ],
     "COAL": [
-     18.8,
-     23.3,
-     28.3
+     19.1,
+     23.7,
+     28.8
     ],
     "GRN": [
-     9.9,
-     14.6,
-     19.7
+     10.1,
+     14.9,
+     20.1
     ],
     "ONP": [
-     9.5,
-     15.2,
-     23.0
+     9.7,
+     15.5,
+     23.4
     ],
     "IND": [
      1.8,
      3.0,
-     4.9
+     5.0
     ],
     "OTH": [
-     5.6,
-     8.3,
-     12.0
+     5.7,
+     8.5,
+     12.1
     ]
    },
    "slug": "bendigo-west",
    "leader": "ALP",
-   "leader_prob": 0.8623
+   "leader_prob": 0.8276
   },
   {
    "district": "Bentleigh",
    "region": "Southern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.527,
-    "LIB": 0.4666,
+    "ALP": 0.5292,
+    "LIB": 0.4644,
     "GRN": 0.0017,
     "ONP": 0.0047
    },
    "primary": {
     "ALP": [
      27.5,
-     32.8,
+     32.9,
      38.4
     ],
     "COAL": [
      28.5,
      33.9,
-     39.7
+     39.6
     ],
     "GRN": [
      9.0,
@@ -972,7 +995,7 @@
     ],
     "IND": [
      0.9,
-     1.6,
+     1.5,
      2.6
     ],
     "OTH": [
@@ -983,22 +1006,23 @@
    },
    "slug": "bentleigh",
    "leader": "ALP",
-   "leader_prob": 0.527
+   "leader_prob": 0.5292
   },
   {
    "district": "Berwick",
    "region": "South-Eastern Metropolitan",
    "incumbent": "LIB",
+   "notes": [],
    "probs": {
     "ALP": 0.0345,
-    "LIB": 0.9369,
+    "LIB": 0.9368,
     "GRN": 0.0004,
     "ONP": 0.0282
    },
    "primary": {
     "ALP": [
      17.1,
-     21.5,
+     21.6,
      26.5
     ],
     "COAL": [
@@ -1029,15 +1053,16 @@
    },
    "slug": "berwick",
    "leader": "LIB",
-   "leader_prob": 0.9369
+   "leader_prob": 0.9368
   },
   {
    "district": "Box Hill",
    "region": "North-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.6532,
-    "LIB": 0.3185,
+    "ALP": 0.656,
+    "LIB": 0.3157,
     "GRN": 0.0283
    },
    "primary": {
@@ -1074,16 +1099,17 @@
    },
    "slug": "box-hill",
    "leader": "ALP",
-   "leader_prob": 0.6532
+   "leader_prob": 0.656
   },
   {
    "district": "Brighton",
    "region": "Southern Metropolitan",
    "incumbent": "LIB",
+   "notes": [],
    "probs": {
-    "ALP": 0.0147,
-    "LIB": 0.9622,
-    "GRN": 0.0183,
+    "ALP": 0.0148,
+    "LIB": 0.962,
+    "GRN": 0.0184,
     "IND": 0.0048
    },
    "primary": {
@@ -1120,119 +1146,126 @@
    },
    "slug": "brighton",
    "leader": "LIB",
-   "leader_prob": 0.9622
+   "leader_prob": 0.962
   },
   {
    "district": "Broadmeadows",
    "region": "Northern Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.8044,
-    "LIB": 0.1597,
-    "GRN": 0.0021,
-    "ONP": 0.0338,
+    "ALP": 0.8313,
+    "LIB": 0.1373,
+    "GRN": 0.0019,
+    "ONP": 0.0295,
     "IND": 0.0001
    },
    "primary": {
     "ALP": [
-     27.5,
-     33.2,
-     38.9
+     28.3,
+     34.0,
+     39.7
     ],
     "COAL": [
-     16.9,
-     21.3,
-     26.3
+     16.7,
+     21.1,
+     25.9
     ],
     "GRN": [
-     7.0,
-     10.5,
-     14.7
+     6.9,
+     10.4,
+     14.6
     ],
     "ONP": [
-     11.3,
-     17.9,
-     26.8
+     11.2,
+     17.7,
+     26.5
     ],
     "IND": [
      2.6,
      4.3,
-     7.1
+     7.0
     ],
     "OTH": [
-     7.5,
-     11.1,
-     15.6
+     7.4,
+     11.0,
+     15.4
     ]
    },
    "slug": "broadmeadows",
    "leader": "ALP",
-   "leader_prob": 0.8044
+   "leader_prob": 0.8313
   },
   {
    "district": "Brunswick",
    "region": "Northern Metropolitan",
    "incumbent": "GRN",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "ALP": 0.0089,
+    "ALP": 0.0115,
     "LIB": 0.0004,
-    "GRN": 0.9907
+    "GRN": 0.9881
    },
    "primary": {
     "ALP": [
-     14.6,
-     18.6,
-     23.3
+     15.0,
+     19.0,
+     23.8
     ],
     "COAL": [
-     7.4,
-     9.7,
-     12.6
+     7.6,
+     9.9,
+     12.9
     ],
     "GRN": [
-     43.4,
-     51.0,
-     57.2
+     42.2,
+     50.0,
+     56.3
     ],
     "ONP": [
-     5.5,
-     9.1,
-     14.4
+     5.6,
+     9.3,
+     14.7
     ],
     "IND": [
-     0.8,
-     1.4,
-     2.4
+     0.9,
+     1.5,
+     2.5
     ],
     "OTH": [
-     6.3,
-     9.3,
-     13.4
+     6.4,
+     9.5,
+     13.6
     ]
    },
    "slug": "brunswick",
    "leader": "GRN",
-   "leader_prob": 0.9907
+   "leader_prob": 0.9881
   },
   {
    "district": "Bulleen",
    "region": "North-Eastern Metropolitan",
    "incumbent": "LIB",
+   "notes": [],
    "probs": {
-    "ALP": 0.0117,
-    "LIB": 0.9875,
+    "ALP": 0.0118,
+    "LIB": 0.9873,
     "GRN": 0.0008
    },
    "primary": {
     "ALP": [
      18.6,
      22.9,
-     27.5
+     27.6
     ],
     "COAL": [
      42.7,
      48.4,
-     54.0
+     53.9
     ],
     "GRN": [
      9.6,
@@ -1257,23 +1290,24 @@
    },
    "slug": "bulleen",
    "leader": "LIB",
-   "leader_prob": 0.9875
+   "leader_prob": 0.9873
   },
   {
    "district": "Bundoora",
    "region": "North-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.7754,
-    "LIB": 0.163,
-    "GRN": 0.0147,
-    "ONP": 0.0469
+    "ALP": 0.777,
+    "LIB": 0.1616,
+    "GRN": 0.0146,
+    "ONP": 0.0467
    },
    "primary": {
     "ALP": [
      26.9,
-     32.6,
-     38.3
+     32.7,
+     38.4
     ],
     "COAL": [
      19.1,
@@ -1282,7 +1316,7 @@
     ],
     "GRN": [
      10.4,
-     15.2,
+     15.3,
      20.6
     ],
     "ONP": [
@@ -1303,28 +1337,29 @@
    },
    "slug": "bundoora",
    "leader": "ALP",
-   "leader_prob": 0.7754
+   "leader_prob": 0.777
   },
   {
    "district": "Carrum",
    "region": "South-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.6068,
-    "LIB": 0.2506,
+    "ALP": 0.6089,
+    "LIB": 0.2492,
     "GRN": 0.0001,
-    "ONP": 0.1425
+    "ONP": 0.1417
    },
    "primary": {
     "ALP": [
-     27.1,
+     27.2,
      33.1,
      39.0
     ],
     "COAL": [
      20.1,
      25.2,
-     30.8
+     30.7
     ],
     "GRN": [
      5.5,
@@ -1343,30 +1378,31 @@
     ],
     "OTH": [
      3.4,
-     5.3,
+     5.2,
      7.8
     ]
    },
    "slug": "carrum",
    "leader": "ALP",
-   "leader_prob": 0.6068
+   "leader_prob": 0.6089
   },
   {
    "district": "Caulfield",
    "region": "Southern Metropolitan",
    "incumbent": "LIB",
+   "notes": [],
    "probs": {
-    "ALP": 0.0255,
-    "LIB": 0.9399,
-    "GRN": 0.0345,
+    "ALP": 0.026,
+    "LIB": 0.9393,
+    "GRN": 0.0347,
     "ONP": 0.0001,
     "IND": 0.0001
    },
    "primary": {
     "ALP": [
-     14.6,
+     14.7,
      18.4,
-     22.7
+     22.8
     ],
     "COAL": [
      37.5,
@@ -1396,22 +1432,23 @@
    },
    "slug": "caulfield",
    "leader": "LIB",
-   "leader_prob": 0.9399
+   "leader_prob": 0.9393
   },
   {
    "district": "Clarinda",
    "region": "South-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.5897,
-    "LIB": 0.3292,
+    "ALP": 0.5916,
+    "LIB": 0.3277,
     "GRN": 0.0004,
-    "ONP": 0.0712,
+    "ONP": 0.0708,
     "IND": 0.0095
    },
    "primary": {
     "ALP": [
-     25.2,
+     25.3,
      30.9,
      36.7
     ],
@@ -1443,16 +1480,17 @@
    },
    "slug": "clarinda",
    "leader": "ALP",
-   "leader_prob": 0.5897
+   "leader_prob": 0.5916
   },
   {
    "district": "Cranbourne",
    "region": "South-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.453,
-    "LIB": 0.1976,
-    "ONP": 0.3494
+    "ALP": 0.4548,
+    "LIB": 0.1962,
+    "ONP": 0.3489
    },
    "primary": {
     "ALP": [
@@ -1483,43 +1521,46 @@
     "OTH": [
      7.3,
      11.0,
-     15.6
+     15.5
     ]
    },
    "slug": "cranbourne",
    "leader": "ALP",
-   "leader_prob": 0.453
+   "leader_prob": 0.4548
   },
   {
    "district": "Croydon",
    "region": "North-Eastern Metropolitan",
    "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "ALP": 0.0483,
-    "LIB": 0.9475,
-    "GRN": 0.0026,
-    "ONP": 0.0017
+    "ALP": 0.0696,
+    "LIB": 0.9239,
+    "GRN": 0.004,
+    "ONP": 0.0026
    },
    "primary": {
     "ALP": [
-     18.4,
-     22.8,
-     27.6
+     18.8,
+     23.3,
+     28.2
     ],
     "COAL": [
-     34.8,
-     40.6,
-     46.5
+     33.5,
+     39.4,
+     45.3
     ],
     "GRN": [
-     9.1,
-     13.4,
-     18.3
+     9.3,
+     13.7,
+     18.7
     ],
     "ONP": [
-     9.3,
-     14.9,
-     22.5
+     9.5,
+     15.2,
+     22.9
     ],
     "IND": [
      0.0,
@@ -1528,27 +1569,28 @@
     ],
     "OTH": [
      4.8,
-     7.2,
-     10.3
+     7.3,
+     10.5
     ]
    },
    "slug": "croydon",
    "leader": "LIB",
-   "leader_prob": 0.9475
+   "leader_prob": 0.9239
   },
   {
    "district": "Dandenong",
    "region": "South-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.948,
-    "LIB": 0.0263,
+    "ALP": 0.9486,
+    "LIB": 0.0259,
     "GRN": 0.0003,
-    "ONP": 0.0254
+    "ONP": 0.0252
    },
    "primary": {
     "ALP": [
-     34.5,
+     34.6,
      40.8,
      46.7
     ],
@@ -1573,22 +1615,23 @@
      0.0
     ],
     "OTH": [
-     6.2,
+     6.1,
      9.2,
      13.1
     ]
    },
    "slug": "dandenong",
    "leader": "ALP",
-   "leader_prob": 0.948
+   "leader_prob": 0.9486
   },
   {
    "district": "Eildon",
    "region": "Northern Victoria",
    "incumbent": "LIB",
+   "notes": [],
    "probs": {
     "ALP": 0.0076,
-    "LIB": 0.959,
+    "LIB": 0.9589,
     "GRN": 0.0009,
     "ONP": 0.0324
    },
@@ -1619,23 +1662,24 @@
      3.1
     ],
     "OTH": [
-     3.3,
+     3.2,
      5.0,
      7.4
     ]
    },
    "slug": "eildon",
    "leader": "LIB",
-   "leader_prob": 0.959
+   "leader_prob": 0.9589
   },
   {
    "district": "Eltham",
    "region": "North-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.5689,
-    "LIB": 0.4158,
-    "GRN": 0.0106,
+    "ALP": 0.5715,
+    "LIB": 0.4133,
+    "GRN": 0.0105,
     "ONP": 0.0047
    },
    "primary": {
@@ -1667,43 +1711,46 @@
     "OTH": [
      2.4,
      3.7,
-     5.5
+     5.4
     ]
    },
    "slug": "eltham",
    "leader": "ALP",
-   "leader_prob": 0.5689
+   "leader_prob": 0.5715
   },
   {
    "district": "Essendon",
    "region": "Northern Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "ALP": 0.5639,
-    "LIB": 0.3328,
-    "GRN": 0.0605,
-    "ONP": 0.0428
+    "ALP": 0.5027,
+    "LIB": 0.3785,
+    "GRN": 0.0727,
+    "ONP": 0.0462
    },
    "primary": {
     "ALP": [
-     22.4,
-     27.5,
-     33.0
+     21.3,
+     26.4,
+     31.9
     ],
     "COAL": [
-     21.0,
-     26.1,
-     31.6
+     21.3,
+     26.5,
+     32.1
     ],
     "GRN": [
-     12.5,
-     18.0,
-     23.6
+     12.7,
+     18.3,
+     24.0
     ],
     "ONP": [
-     12.0,
-     18.9,
-     28.2
+     12.2,
+     19.2,
+     28.6
     ],
     "IND": [
      0.0,
@@ -1711,30 +1758,31 @@
      0.0
     ],
     "OTH": [
-     5.5,
-     8.3,
-     11.8
+     5.6,
+     8.4,
+     12.0
     ]
    },
    "slug": "essendon",
    "leader": "ALP",
-   "leader_prob": 0.5639
+   "leader_prob": 0.5027
   },
   {
    "district": "Eureka",
    "region": "Western Victoria",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.2852,
-    "LIB": 0.2686,
+    "ALP": 0.2866,
+    "LIB": 0.2667,
     "GRN": 0.0049,
-    "ONP": 0.4414
+    "ONP": 0.4418
    },
    "primary": {
     "ALP": [
      17.7,
      23.0,
-     28.3
+     28.4
     ],
     "COAL": [
      18.2,
@@ -1748,7 +1796,7 @@
     ],
     "ONP": [
      22.1,
-     32.7,
+     32.6,
      44.5
     ],
     "IND": [
@@ -1759,33 +1807,36 @@
     "OTH": [
      3.7,
      5.8,
-     8.7
+     8.6
     ]
    },
    "slug": "eureka",
    "leader": "ONP",
-   "leader_prob": 0.4414
+   "leader_prob": 0.4418
   },
   {
    "district": "Euroa",
    "region": "Northern Victoria",
    "incumbent": "NAT",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
     "ALP": 0.0003,
-    "NAT": 0.9075,
+    "NAT": 0.9169,
     "GRN": 0.0001,
-    "ONP": 0.0921
+    "ONP": 0.0828
    },
    "primary": {
     "ALP": [
-     12.1,
-     15.9,
-     20.3
+     12.0,
+     15.8,
+     20.1
     ],
     "COAL": [
-     34.3,
-     41.7,
-     48.8
+     34.9,
+     42.3,
+     49.3
     ],
     "GRN": [
      3.3,
@@ -1793,9 +1844,9 @@
      7.8
     ],
     "ONP": [
-     21.2,
-     31.3,
-     42.8
+     20.9,
+     30.9,
+     42.3
     ],
     "IND": [
      0.0,
@@ -1803,29 +1854,30 @@
      0.0
     ],
     "OTH": [
-     3.2,
-     4.9,
-     7.4
+     3.1,
+     4.8,
+     7.3
     ]
    },
    "slug": "euroa",
    "leader": "NAT",
-   "leader_prob": 0.9075
+   "leader_prob": 0.9169
   },
   {
    "district": "Evelyn",
    "region": "Eastern Victoria",
    "incumbent": "LIB",
+   "notes": [],
    "probs": {
-    "ALP": 0.0157,
-    "LIB": 0.9791,
+    "ALP": 0.0159,
+    "LIB": 0.9789,
     "GRN": 0.0003,
-    "ONP": 0.0049
+    "ONP": 0.0047
    },
    "primary": {
     "ALP": [
      16.3,
-     20.5,
+     20.6,
      25.1
     ],
     "COAL": [
@@ -1850,28 +1902,29 @@
     ],
     "OTH": [
      3.4,
-     5.3,
-     7.7
+     5.2,
+     7.6
     ]
    },
    "slug": "evelyn",
    "leader": "LIB",
-   "leader_prob": 0.9791
+   "leader_prob": 0.9789
   },
   {
    "district": "Footscray",
    "region": "Western Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.5239,
-    "LIB": 0.0064,
-    "GRN": 0.4687,
+    "ALP": 0.5241,
+    "LIB": 0.0063,
+    "GRN": 0.4686,
     "ONP": 0.001
    },
    "primary": {
     "ALP": [
      25.5,
-     30.9,
+     31.0,
      36.7
     ],
     "COAL": [
@@ -1880,7 +1933,7 @@
      20.6
     ],
     "GRN": [
-     20.5,
+     20.6,
      27.8,
      34.6
     ],
@@ -1902,26 +1955,27 @@
    },
    "slug": "footscray",
    "leader": "ALP",
-   "leader_prob": 0.5239
+   "leader_prob": 0.5241
   },
   {
    "district": "Frankston",
    "region": "South-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.5323,
-    "LIB": 0.3537,
-    "GRN": 0.0194,
-    "ONP": 0.0946
+    "ALP": 0.5342,
+    "LIB": 0.3518,
+    "GRN": 0.0196,
+    "ONP": 0.0945
    },
    "primary": {
     "ALP": [
      21.9,
-     27.0,
+     27.1,
      32.4
     ],
     "COAL": [
-     20.1,
+     20.2,
      25.2,
      30.6
     ],
@@ -1943,27 +1997,28 @@
     "OTH": [
      4.9,
      7.4,
-     10.7
+     10.6
     ]
    },
    "slug": "frankston",
    "leader": "ALP",
-   "leader_prob": 0.5323
+   "leader_prob": 0.5342
   },
   {
    "district": "Geelong",
    "region": "Western Victoria",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.6902,
-    "LIB": 0.126,
+    "ALP": 0.6919,
+    "LIB": 0.1251,
     "GRN": 0.0515,
-    "ONP": 0.1322
+    "ONP": 0.1316
    },
    "primary": {
     "ALP": [
      23.5,
-     29.0,
+     29.1,
      34.8
     ],
     "COAL": [
@@ -1979,7 +2034,7 @@
     "ONP": [
      16.4,
      25.2,
-     35.9
+     35.8
     ],
     "IND": [
      1.5,
@@ -1994,36 +2049,39 @@
    },
    "slug": "geelong",
    "leader": "ALP",
-   "leader_prob": 0.6902
+   "leader_prob": 0.6919
   },
   {
    "district": "Gippsland East",
    "region": "Eastern Victoria",
    "incumbent": "NAT",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "NAT": 0.8623,
-    "ONP": 0.1377
+    "NAT": 0.8445,
+    "ONP": 0.1555
    },
    "primary": {
     "ALP": [
-     5.5,
-     7.5,
-     10.0
+     5.6,
+     7.7,
+     10.2
     ],
     "COAL": [
-     37.1,
-     45.4,
-     53.1
+     36.3,
+     44.5,
+     52.3
     ],
     "GRN": [
-     3.6,
-     5.7,
-     8.4
+     3.7,
+     5.8,
+     8.6
     ],
     "ONP": [
-     24.3,
-     34.9,
-     46.8
+     24.7,
+     35.5,
+     47.4
     ],
     "IND": [
      0.0,
@@ -2031,28 +2089,29 @@
      0.0
     ],
     "OTH": [
-     3.6,
-     5.7,
-     8.5
+     3.7,
+     5.8,
+     8.6
     ]
    },
    "slug": "gippsland-east",
    "leader": "NAT",
-   "leader_prob": 0.8623
+   "leader_prob": 0.8445
   },
   {
    "district": "Gippsland South",
    "region": "Eastern Victoria",
    "incumbent": "NAT",
+   "notes": [],
    "probs": {
     "ALP": 0.0003,
-    "NAT": 0.8614,
-    "ONP": 0.1384
+    "NAT": 0.8616,
+    "ONP": 0.1382
    },
    "primary": {
     "ALP": [
-     8.3,
-     11.2,
+     8.4,
+     11.3,
      14.6
     ],
     "COAL": [
@@ -2061,7 +2120,7 @@
      46.3
     ],
     "GRN": [
-     5.0,
+     5.1,
      7.9,
      11.4
     ],
@@ -2083,37 +2142,40 @@
    },
    "slug": "gippsland-south",
    "leader": "NAT",
-   "leader_prob": 0.8614
+   "leader_prob": 0.8616
   },
   {
    "district": "Glen Waverley",
    "region": "North-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.2407,
-    "LIB": 0.7584,
+    "ALP": 0.2857,
+    "LIB": 0.7136,
     "GRN": 0.0008
    },
    "primary": {
     "ALP": [
-     25.7,
-     30.9,
-     36.2
+     26.5,
+     31.7,
+     37.1
     ],
     "COAL": [
-     35.6,
-     41.2,
-     47.0
+     35.1,
+     40.7,
+     46.4
     ],
     "GRN": [
-     8.8,
-     13.1,
-     17.8
+     8.7,
+     12.9,
+     17.6
     ],
     "ONP": [
      4.7,
-     7.8,
-     12.4
+     7.7,
+     12.3
     ],
     "IND": [
      0.0,
@@ -2121,92 +2183,98 @@
      0.0
     ],
     "OTH": [
-     4.1,
-     6.2,
-     9.0
+     4.0,
+     6.1,
+     8.8
     ]
    },
    "slug": "glen-waverley",
    "leader": "LIB",
-   "leader_prob": 0.7584
+   "leader_prob": 0.7136
   },
   {
    "district": "Greenvale",
    "region": "Northern Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.6307,
-    "LIB": 0.3619,
+    "ALP": 0.6712,
+    "LIB": 0.3222,
     "GRN": 0.0001,
-    "ONP": 0.0065,
-    "IND": 0.0009
+    "ONP": 0.0057,
+    "IND": 0.0008
    },
    "primary": {
     "ALP": [
-     26.6,
-     32.0,
-     37.5
+     27.4,
+     32.9,
+     38.3
     ],
     "COAL": [
-     20.8,
-     25.6,
-     30.9
+     20.6,
+     25.3,
+     30.5
     ],
     "GRN": [
-     5.3,
-     8.0,
-     11.4
+     5.2,
+     7.9,
+     11.3
     ],
     "ONP": [
-     7.4,
-     12.1,
-     18.7
+     7.3,
+     11.9,
+     18.5
     ],
     "IND": [
      3.8,
-     6.3,
-     10.1
+     6.2,
+     10.0
     ],
     "OTH": [
-     10.0,
-     14.4,
-     19.6
+     9.8,
+     14.2,
+     19.3
     ]
    },
    "slug": "greenvale",
    "leader": "ALP",
-   "leader_prob": 0.6307
+   "leader_prob": 0.6712
   },
   {
    "district": "Hastings",
    "region": "Eastern Victoria",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.0938,
-    "LIB": 0.7662,
-    "GRN": 0.0008,
-    "ONP": 0.1392
+    "ALP": 0.1109,
+    "LIB": 0.746,
+    "GRN": 0.0006,
+    "ONP": 0.1424
    },
    "primary": {
     "ALP": [
-     16.9,
-     21.6,
-     26.7
+     17.4,
+     22.2,
+     27.4
     ],
     "COAL": [
-     25.7,
-     31.8,
-     38.0
+     25.5,
+     31.5,
+     37.7
     ],
     "GRN": [
      6.9,
      10.5,
-     14.8
+     14.7
     ],
     "ONP": [
-     18.7,
-     28.1,
-     39.5
+     18.5,
+     27.9,
+     39.2
     ],
     "IND": [
      0.6,
@@ -2214,24 +2282,25 @@
      1.6
     ],
     "OTH": [
-     3.8,
+     3.7,
      5.8,
-     8.6
+     8.5
     ]
    },
    "slug": "hastings",
    "leader": "LIB",
-   "leader_prob": 0.7662
+   "leader_prob": 0.746
   },
   {
    "district": "Hawthorn",
    "region": "Southern Metropolitan",
    "incumbent": "LIB",
+   "notes": [],
    "probs": {
     "ALP": 0.0118,
     "LIB": 0.902,
-    "GRN": 0.0109,
-    "IND": 0.0752
+    "GRN": 0.0111,
+    "IND": 0.0751
    },
    "primary": {
     "ALP": [
@@ -2273,15 +2342,16 @@
    "district": "Ivanhoe",
    "region": "North-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.7023,
-    "LIB": 0.1278,
+    "ALP": 0.7035,
+    "LIB": 0.1267,
     "GRN": 0.1688,
     "ONP": 0.001
    },
    "primary": {
     "ALP": [
-     25.0,
+     25.1,
      30.3,
      35.8
     ],
@@ -2307,28 +2377,29 @@
     ],
     "OTH": [
      2.0,
-     3.1,
+     3.0,
      4.6
     ]
    },
    "slug": "ivanhoe",
    "leader": "ALP",
-   "leader_prob": 0.7023
+   "leader_prob": 0.7035
   },
   {
    "district": "Kalkallo",
    "region": "Northern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.9575,
-    "LIB": 0.0386,
+    "ALP": 0.9577,
+    "LIB": 0.0384,
     "ONP": 0.004
    },
    "primary": {
     "ALP": [
-     37.3,
-     43.2,
-     48.8
+     37.4,
+     43.3,
+     48.9
     ],
     "COAL": [
      17.9,
@@ -2352,136 +2423,145 @@
     ],
     "OTH": [
      6.8,
-     10.1,
-     14.2
+     10.0,
+     14.1
     ]
    },
    "slug": "kalkallo",
    "leader": "ALP",
-   "leader_prob": 0.9575
+   "leader_prob": 0.9577
   },
   {
    "district": "Kew",
    "region": "Southern Metropolitan",
    "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.0053,
-    "LIB": 0.927,
-    "GRN": 0.0012,
-    "IND": 0.0665
+    "ALP": 0.0041,
+    "LIB": 0.938,
+    "GRN": 0.0009,
+    "IND": 0.057
    },
    "primary": {
     "ALP": [
-     11.7,
-     15.3,
-     19.4
+     11.6,
+     15.1,
+     19.1
     ],
     "COAL": [
-     37.9,
-     45.1,
-     52.0
+     38.7,
+     45.9,
+     52.7
     ],
     "GRN": [
-     7.3,
-     11.0,
-     15.4
+     7.2,
+     10.9,
+     15.2
     ],
     "ONP": [
      2.7,
-     4.6,
-     7.5
+     4.5,
+     7.4
     ],
     "IND": [
-     13.5,
-     20.7,
-     30.7
+     13.3,
+     20.4,
+     30.3
     ],
     "OTH": [
      1.1,
      1.7,
-     2.7
+     2.6
     ]
    },
    "slug": "kew",
    "leader": "LIB",
-   "leader_prob": 0.927
+   "leader_prob": 0.938
   },
   {
    "district": "Kororoit",
    "region": "Western Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.6452,
-    "LIB": 0.2908,
-    "GRN": 0.0004,
-    "ONP": 0.0636
+    "ALP": 0.6812,
+    "LIB": 0.2606,
+    "GRN": 0.0003,
+    "ONP": 0.0578
    },
    "primary": {
     "ALP": [
-     25.6,
-     31.1,
-     36.8
+     26.4,
+     31.9,
+     37.6
     ],
     "COAL": [
-     17.9,
-     22.5,
-     27.7
+     17.7,
+     22.3,
+     27.3
     ],
     "GRN": [
      5.4,
-     8.3,
-     11.9
+     8.2,
+     11.8
     ],
     "ONP": [
-     12.2,
-     19.3,
-     28.6
+     12.0,
+     19.0,
+     28.3
     ],
     "IND": [
      1.3,
      2.2,
-     3.6
+     3.5
     ],
     "OTH": [
-     10.5,
-     15.0,
-     20.4
+     10.3,
+     14.8,
+     20.2
     ]
    },
    "slug": "kororoit",
    "leader": "ALP",
-   "leader_prob": 0.6452
+   "leader_prob": 0.6812
   },
   {
    "district": "Lara",
    "region": "Western Victoria",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.4653,
-    "LIB": 0.008,
-    "GRN": 0.0069,
-    "ONP": 0.5198
+    "ALP": 0.4925,
+    "LIB": 0.0066,
+    "GRN": 0.0053,
+    "ONP": 0.4955
    },
    "primary": {
     "ALP": [
-     21.5,
-     27.7,
-     34.1
+     22.1,
+     28.4,
+     34.8
     ],
     "COAL": [
      10.9,
-     14.7,
-     19.2
+     14.6,
+     19.0
     ],
     "GRN": [
-     6.9,
-     10.6,
-     15.1
+     6.8,
+     10.5,
+     15.0
     ],
     "ONP": [
-     25.9,
-     37.2,
-     49.6
+     25.6,
+     36.8,
+     49.2
     ],
     "IND": [
      1.0,
@@ -2489,30 +2569,31 @@
      3.0
     ],
     "OTH": [
-     4.4,
-     6.8,
-     10.1
+     4.3,
+     6.7,
+     10.0
     ]
    },
    "slug": "lara",
    "leader": "ONP",
-   "leader_prob": 0.5198
+   "leader_prob": 0.4955
   },
   {
    "district": "Laverton",
    "region": "Western Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.846,
-    "LIB": 0.1242,
-    "GRN": 0.0052,
-    "ONP": 0.0246
+    "ALP": 0.847,
+    "LIB": 0.1234,
+    "GRN": 0.0051,
+    "ONP": 0.0245
    },
    "primary": {
     "ALP": [
      28.2,
      33.9,
-     39.6
+     39.7
     ],
     "COAL": [
      16.5,
@@ -2536,20 +2617,21 @@
     ],
     "OTH": [
      9.6,
-     13.9,
-     19.0
+     13.8,
+     18.9
     ]
    },
    "slug": "laverton",
    "leader": "ALP",
-   "leader_prob": 0.846
+   "leader_prob": 0.847
   },
   {
    "district": "Lowan",
    "region": "Western Victoria",
    "incumbent": "NAT",
+   "notes": [],
    "probs": {
-    "NAT": 0.9678,
+    "NAT": 0.9679,
     "ONP": 0.0321
    },
    "primary": {
@@ -2560,18 +2642,18 @@
     ],
     "COAL": [
      39.4,
-     46.9,
-     53.7
+     46.8,
+     53.6
     ],
     "GRN": [
-     3.8,
-     6.0,
+     3.9,
+     6.1,
      8.8
     ],
     "ONP": [
      18.2,
      27.4,
-     38.3
+     38.2
     ],
     "IND": [
      2.4,
@@ -2586,107 +2668,114 @@
    },
    "slug": "lowan",
    "leader": "NAT",
-   "leader_prob": 0.9678
+   "leader_prob": 0.9679
   },
   {
    "district": "Macedon",
    "region": "Northern Victoria",
    "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "ALP": 0.5312,
-    "LIB": 0.3499,
-    "GRN": 0.0174,
-    "ONP": 0.1014
+    "ALP": 0.4788,
+    "LIB": 0.3884,
+    "GRN": 0.0218,
+    "ONP": 0.1109
    },
    "primary": {
     "ALP": [
-     21.9,
-     27.2,
-     32.8
+     20.8,
+     26.0,
+     31.6
     ],
     "COAL": [
-     20.6,
-     25.8,
-     31.5
+     21.0,
+     26.3,
+     32.0
     ],
     "GRN": [
-     9.8,
-     14.6,
-     19.8
+     10.0,
+     14.8,
+     20.1
     ],
     "ONP": [
-     14.7,
-     22.7,
-     32.6
+     14.9,
+     23.0,
+     33.1
     ],
     "IND": [
      2.7,
      4.5,
-     7.3
+     7.4
     ],
     "OTH": [
-     2.4,
+     2.5,
      3.8,
-     5.7
+     5.8
     ]
    },
    "slug": "macedon",
    "leader": "ALP",
-   "leader_prob": 0.5312
+   "leader_prob": 0.4788
   },
   {
    "district": "Malvern",
    "region": "Southern Metropolitan",
    "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "ALP": 0.0004,
-    "LIB": 0.9968,
-    "GRN": 0.0027
+    "ALP": 0.0013,
+    "LIB": 0.9938,
+    "GRN": 0.005
    },
    "primary": {
     "ALP": [
-     13.8,
-     17.4,
-     21.5
+     14.1,
+     17.8,
+     22.0
     ],
     "COAL": [
-     46.8,
-     52.5,
-     58.1
+     45.6,
+     51.5,
+     57.1
     ],
     "GRN": [
-     14.3,
-     19.9,
-     25.9
+     14.6,
+     20.4,
+     26.4
     ],
     "ONP": [
-     3.4,
-     5.6,
-     9.0
+     3.5,
+     5.7,
+     9.2
     ],
     "IND": [
      0.9,
-     1.4,
-     2.4
+     1.5,
+     2.5
     ],
     "OTH": [
-     1.5,
+     1.6,
      2.4,
      3.6
     ]
    },
    "slug": "malvern",
    "leader": "LIB",
-   "leader_prob": 0.9968
+   "leader_prob": 0.9938
   },
   {
    "district": "Melbourne",
    "region": "Northern Metropolitan",
    "incumbent": "GRN",
+   "notes": [],
    "probs": {
-    "ALP": 0.0181,
-    "LIB": 0.0036,
-    "GRN": 0.9783,
+    "ALP": 0.018,
+    "LIB": 0.0034,
+    "GRN": 0.9785,
     "ONP": 0.0001
    },
    "primary": {
@@ -2702,7 +2791,7 @@
     ],
     "GRN": [
      36.3,
-     44.1,
+     44.2,
      50.8
     ],
     "ONP": [
@@ -2718,68 +2807,74 @@
     "OTH": [
      5.4,
      8.0,
-     11.6
+     11.5
     ]
    },
    "slug": "melbourne",
    "leader": "GRN",
-   "leader_prob": 0.9783
+   "leader_prob": 0.9785
   },
   {
    "district": "Melton",
    "region": "Western Victoria",
    "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "ALP": 0.2656,
-    "LIB": 0.2865,
+    "ALP": 0.2273,
+    "LIB": 0.3145,
     "GRN": 0.0001,
-    "ONP": 0.3494,
-    "IND": 0.0984
+    "ONP": 0.3552,
+    "IND": 0.1029
    },
    "primary": {
     "ALP": [
-     17.9,
-     23.1,
-     28.7
+     17.0,
+     22.1,
+     27.5
     ],
     "COAL": [
-     15.2,
-     19.9,
-     25.1
+     15.4,
+     20.2,
+     25.4
     ],
     "GRN": [
-     3.2,
-     5.1,
-     7.5
+     3.3,
+     5.2,
+     7.7
     ],
     "ONP": [
-     18.5,
-     28.1,
-     39.4
+     18.8,
+     28.4,
+     39.8
     ],
     "IND": [
-     7.4,
-     12.0,
-     18.8
+     7.5,
+     12.1,
+     19.0
     ],
     "OTH": [
-     6.5,
-     9.9,
-     14.4
+     6.6,
+     10.1,
+     14.5
     ]
    },
    "slug": "melton",
    "leader": "ONP",
-   "leader_prob": 0.3494
+   "leader_prob": 0.3552
   },
   {
    "district": "Mildura",
    "region": "Northern Victoria",
    "incumbent": "NAT",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "NAT": 0.4822,
-    "ONP": 0.2124,
-    "IND": 0.3054
+    "NAT": 0.5088,
+    "ONP": 0.2074,
+    "IND": 0.2839
    },
    "primary": {
     "ALP": [
@@ -2788,9 +2883,9 @@
      4.0
     ],
     "COAL": [
-     24.6,
-     32.3,
-     40.8
+     25.2,
+     32.9,
+     41.5
     ],
     "GRN": [
      1.3,
@@ -2798,14 +2893,14 @@
      3.4
     ],
     "ONP": [
-     20.7,
-     31.0,
-     43.1
+     20.5,
+     30.7,
+     42.7
     ],
     "IND": [
-     18.3,
-     27.7,
-     39.6
+     18.1,
+     27.5,
+     39.3
     ],
     "OTH": [
      1.3,
@@ -2815,38 +2910,41 @@
    },
    "slug": "mildura",
    "leader": "NAT",
-   "leader_prob": 0.4822
+   "leader_prob": 0.5088
   },
   {
    "district": "Mill Park",
    "region": "North-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "ALP": 0.704,
-    "LIB": 0.1558,
+    "ALP": 0.6536,
+    "LIB": 0.1855,
     "GRN": 0.0001,
-    "ONP": 0.1401
+    "ONP": 0.1608
    },
    "primary": {
     "ALP": [
-     28.1,
-     34.2,
-     40.1
+     27.0,
+     33.0,
+     39.0
     ],
     "COAL": [
-     17.4,
-     22.1,
-     27.2
+     17.7,
+     22.5,
+     27.7
     ],
     "GRN": [
-     5.5,
-     8.5,
-     12.1
+     5.6,
+     8.6,
+     12.3
     ],
     "ONP": [
-     16.1,
-     24.6,
-     35.1
+     16.4,
+     25.0,
+     35.7
     ],
     "IND": [
      0.0,
@@ -2854,70 +2952,74 @@
      0.0
     ],
     "OTH": [
-     6.4,
-     9.5,
-     13.5
+     6.5,
+     9.7,
+     13.7
     ]
    },
    "slug": "mill-park",
    "leader": "ALP",
-   "leader_prob": 0.704
+   "leader_prob": 0.6536
   },
   {
    "district": "Monbulk",
    "region": "Eastern Victoria",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.4227,
-    "LIB": 0.4248,
-    "GRN": 0.0867,
-    "ONP": 0.058,
-    "IND": 0.0078
+    "ALP": 0.4642,
+    "LIB": 0.3945,
+    "GRN": 0.078,
+    "ONP": 0.0558,
+    "IND": 0.0076
    },
    "primary": {
     "ALP": [
-     18.1,
-     22.8,
-     27.9
+     18.8,
+     23.5,
+     28.7
     ],
     "COAL": [
-     20.3,
-     25.3,
-     30.9
+     20.1,
+     25.1,
+     30.7
     ],
     "GRN": [
-     11.9,
-     17.2,
-     22.9
+     11.8,
+     17.0,
+     22.7
     ],
     "ONP": [
-     12.3,
-     19.4,
-     28.8
+     12.2,
+     19.2,
+     28.5
     ],
     "IND": [
      5.2,
-     8.5,
-     13.5
+     8.4,
+     13.4
     ],
     "OTH": [
      3.2,
      5.0,
-     7.5
+     7.4
     ]
    },
    "slug": "monbulk",
-   "leader": "LIB",
-   "leader_prob": 0.4248
+   "leader": "ALP",
+   "leader_prob": 0.4642
   },
   {
    "district": "Mordialloc",
    "region": "South-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.5659,
-    "LIB": 0.4037,
-    "GRN": 0.0022,
+    "ALP": 0.5672,
+    "LIB": 0.4025,
+    "GRN": 0.0021,
     "ONP": 0.0274,
     "IND": 0.0008
    },
@@ -2925,7 +3027,7 @@
     "ALP": [
      24.8,
      30.3,
-     35.7
+     35.8
     ],
     "COAL": [
      22.8,
@@ -2955,75 +3057,179 @@
    },
    "slug": "mordialloc",
    "leader": "ALP",
-   "leader_prob": 0.5659
+   "leader_prob": 0.5672
   },
   {
    "district": "Mornington",
    "region": "Eastern Victoria",
    "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.0031,
-    "LIB": 0.8923,
+    "ALP": 0.0027,
+    "LIB": 0.9061,
     "GRN": 0.0001,
-    "ONP": 0.0037,
-    "IND": 0.1008
+    "ONP": 0.0033,
+    "IND": 0.0879
    },
    "primary": {
     "ALP": [
-     10.2,
-     13.4,
-     17.2
+     10.1,
+     13.2,
+     17.0
     ],
     "COAL": [
-     32.3,
-     39.3,
-     46.1
+     33.0,
+     40.0,
+     46.8
     ],
     "GRN": [
-     5.0,
-     7.8,
-     11.1
+     4.9,
+     7.7,
+     11.0
     ],
     "ONP": [
-     8.8,
-     14.1,
-     21.4
+     8.7,
+     14.0,
+     21.2
     ],
     "IND": [
-     13.4,
-     20.7,
-     30.7
+     13.2,
+     20.5,
+     30.4
     ],
     "OTH": [
      1.8,
-     2.9,
+     2.8,
      4.3
     ]
    },
    "slug": "mornington",
    "leader": "LIB",
-   "leader_prob": 0.8923
+   "leader_prob": 0.9061
   },
   {
    "district": "Morwell",
    "region": "Eastern Victoria",
    "incumbent": "NAT",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.004,
-    "NAT": 0.3372,
-    "ONP": 0.6579,
+    "ALP": 0.0037,
+    "NAT": 0.3565,
+    "ONP": 0.639,
     "IND": 0.0009
    },
    "primary": {
     "ALP": [
-     10.9,
-     14.7,
-     19.4
+     10.8,
+     14.6,
+     19.2
     ],
     "COAL": [
-     19.6,
-     25.5,
-     32.4
+     20.2,
+     26.1,
+     33.1
+    ],
+    "GRN": [
+     2.3,
+     3.7,
+     5.7
+    ],
+    "ONP": [
+     31.9,
+     44.2,
+     55.8
+    ],
+    "IND": [
+     3.6,
+     6.0,
+     9.9
+    ],
+    "OTH": [
+     2.6,
+     4.2,
+     6.4
+    ]
+   },
+   "slug": "morwell",
+   "leader": "ONP",
+   "leader_prob": 0.639
+  },
+  {
+   "district": "Mulgrave",
+   "region": "South-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "by-election 2023-11-18: swing beyond statewide polls ALP -10.5, COAL +5.1, GRN -0.3 pts (half carried forward)",
+    "first-term member recontesting (since 2023)"
+   ],
+   "probs": {
+    "ALP": 0.6123,
+    "LIB": 0.0669,
+    "GRN": 0.0001,
+    "ONP": 0.0122,
+    "IND": 0.3085
+   },
+   "primary": {
+    "ALP": [
+     28.9,
+     35.4,
+     41.9
+    ],
+    "COAL": [
+     14.3,
+     18.5,
+     23.3
+    ],
+    "GRN": [
+     4.1,
+     6.4,
+     9.3
+    ],
+    "ONP": [
+     9.5,
+     15.2,
+     23.1
+    ],
+    "IND": [
+     12.2,
+     18.9,
+     28.2
+    ],
+    "OTH": [
+     2.3,
+     3.6,
+     5.5
+    ]
+   },
+   "slug": "mulgrave",
+   "leader": "ALP",
+   "leader_prob": 0.6123
+  },
+  {
+   "district": "Murray Plains",
+   "region": "Northern Victoria",
+   "incumbent": "NAT",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "NAT": 0.8935,
+    "ONP": 0.1065
+   },
+   "primary": {
+    "ALP": [
+     6.6,
+     8.9,
+     11.8
+    ],
+    "COAL": [
+     37.5,
+     45.5,
+     53.0
     ],
     "GRN": [
      2.3,
@@ -3031,99 +3237,9 @@
      5.7
     ],
     "ONP": [
-     32.2,
-     44.6,
-     56.2
-    ],
-    "IND": [
-     3.6,
-     6.1,
-     10.0
-    ],
-    "OTH": [
-     2.6,
-     4.2,
-     6.5
-    ]
-   },
-   "slug": "morwell",
-   "leader": "ONP",
-   "leader_prob": 0.6579
-  },
-  {
-   "district": "Mulgrave",
-   "region": "South-Eastern Metropolitan",
-   "incumbent": "ALP",
-   "probs": {
-    "ALP": 0.707,
-    "LIB": 0.0184,
-    "ONP": 0.0096,
-    "IND": 0.2651
-   },
-   "primary": {
-    "ALP": [
-     31.6,
-     38.4,
-     45.1
-    ],
-    "COAL": [
-     12.0,
-     15.7,
-     20.1
-    ],
-    "GRN": [
-     4.1,
-     6.5,
-     9.4
-    ],
-    "ONP": [
-     9.6,
-     15.3,
-     23.3
-    ],
-    "IND": [
-     11.9,
-     18.6,
-     27.8
-    ],
-    "OTH": [
-     2.3,
-     3.6,
-     5.4
-    ]
-   },
-   "slug": "mulgrave",
-   "leader": "ALP",
-   "leader_prob": 0.707
-  },
-  {
-   "district": "Murray Plains",
-   "region": "Northern Victoria",
-   "incumbent": "NAT",
-   "probs": {
-    "NAT": 0.9084,
-    "ONP": 0.0916
-   },
-   "primary": {
-    "ALP": [
-     6.5,
-     8.8,
-     11.6
-    ],
-    "COAL": [
-     38.4,
-     46.3,
-     53.8
-    ],
-    "GRN": [
-     2.3,
-     3.7,
-     5.5
-    ],
-    "ONP": [
-     22.4,
-     32.7,
-     44.2
+     22.8,
+     33.2,
+     44.9
     ],
     "IND": [
      1.0,
@@ -3133,22 +3249,25 @@
     "OTH": [
      3.8,
      5.9,
-     8.8
+     8.9
     ]
    },
    "slug": "murray-plains",
    "leader": "NAT",
-   "leader_prob": 0.9084
+   "leader_prob": 0.8935
   },
   {
    "district": "Narracan",
    "region": "Eastern Victoria",
    "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "LIB": 0.7966,
+    "LIB": 0.8124,
     "GRN": 0.0003,
-    "ONP": 0.192,
-    "IND": 0.0112
+    "ONP": 0.1783,
+    "IND": 0.0091
    },
    "primary": {
     "ALP": [
@@ -3157,65 +3276,68 @@
      0.1
     ],
     "COAL": [
-     28.2,
-     35.1,
-     42.2
+     28.8,
+     35.8,
+     42.9
     ],
     "GRN": [
-     7.4,
-     11.3,
-     15.8
+     7.3,
+     11.2,
+     15.7
     ],
     "ONP": [
-     19.4,
-     29.0,
-     40.5
+     19.2,
+     28.7,
+     40.1
     ],
     "IND": [
      7.1,
-     11.5,
-     18.3
+     11.4,
+     18.1
     ],
     "OTH": [
-     7.5,
-     11.2,
-     16.1
+     7.4,
+     11.1,
+     15.9
     ]
    },
    "slug": "narracan",
    "leader": "LIB",
-   "leader_prob": 0.7966
+   "leader_prob": 0.8124
   },
   {
    "district": "Narre Warren North",
    "region": "South-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.498,
-    "LIB": 0.1633,
+    "ALP": 0.5312,
+    "LIB": 0.1474,
     "GRN": 0.0001,
-    "ONP": 0.3384
+    "ONP": 0.3213
    },
    "primary": {
     "ALP": [
-     23.5,
-     29.3,
-     35.3
+     24.2,
+     30.1,
+     36.0
     ],
     "COAL": [
-     16.8,
-     21.7,
-     27.1
+     16.7,
+     21.5,
+     26.9
     ],
     "GRN": [
      4.7,
-     7.4,
-     10.6
+     7.3,
+     10.5
     ],
     "ONP": [
-     19.8,
-     29.7,
-     41.2
+     19.5,
+     29.4,
+     40.8
     ],
     "IND": [
      1.0,
@@ -3223,24 +3345,25 @@
      2.8
     ],
     "OTH": [
-     5.9,
-     8.9,
-     12.8
+     5.8,
+     8.8,
+     12.7
     ]
    },
    "slug": "narre-warren-north",
    "leader": "ALP",
-   "leader_prob": 0.498
+   "leader_prob": 0.5312
   },
   {
    "district": "Narre Warren South",
    "region": "South-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.5534,
-    "LIB": 0.2428,
+    "ALP": 0.5553,
+    "LIB": 0.2416,
     "GRN": 0.0001,
-    "ONP": 0.2037
+    "ONP": 0.203
    },
    "primary": {
     "ALP": [
@@ -3251,7 +3374,7 @@
     "COAL": [
      18.9,
      24.0,
-     29.5
+     29.4
     ],
     "GRN": [
      4.8,
@@ -3270,69 +3393,73 @@
     ],
     "OTH": [
      5.8,
-     8.9,
+     8.8,
      12.7
     ]
    },
    "slug": "narre-warren-south",
    "leader": "ALP",
-   "leader_prob": 0.5534
+   "leader_prob": 0.5553
   },
   {
    "district": "Nepean",
    "region": "Eastern Victoria",
    "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2026)"
+   ],
    "probs": {
-    "ALP": 0.0106,
-    "LIB": 0.9835,
+    "ALP": 0.0084,
+    "LIB": 0.9867,
     "GRN": 0.0001,
-    "ONP": 0.0057
+    "ONP": 0.0047
    },
    "primary": {
     "ALP": [
-     16.0,
-     20.2,
-     24.8
+     15.8,
+     20.0,
+     24.5
     ],
     "COAL": [
-     36.7,
-     42.8,
-     48.8
+     37.4,
+     43.5,
+     49.4
     ],
     "GRN": [
-     6.7,
-     10.2,
-     14.2
+     6.6,
+     10.0,
+     14.0
     ],
     "ONP": [
-     12.3,
-     19.2,
-     28.3
+     12.2,
+     19.0,
+     27.9
     ],
     "IND": [
      1.2,
      2.1,
-     3.5
+     3.4
     ],
     "OTH": [
-     2.8,
-     4.3,
-     6.4
+     2.7,
+     4.2,
+     6.3
     ]
    },
    "slug": "nepean",
    "leader": "LIB",
-   "leader_prob": 0.9835
+   "leader_prob": 0.9867
   },
   {
    "district": "Niddrie",
    "region": "Western Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.2664,
-    "LIB": 0.4601,
+    "ALP": 0.2681,
+    "LIB": 0.4582,
     "GRN": 0.0001,
-    "ONP": 0.2735
+    "ONP": 0.2736
    },
    "primary": {
     "ALP": [
@@ -3347,7 +3474,7 @@
     ],
     "GRN": [
      5.1,
-     7.9,
+     8.0,
      11.4
     ],
     "ONP": [
@@ -3368,21 +3495,22 @@
    },
    "slug": "niddrie",
    "leader": "LIB",
-   "leader_prob": 0.4601
+   "leader_prob": 0.4582
   },
   {
    "district": "Northcote",
    "region": "Northern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.3121,
+    "ALP": 0.3128,
     "LIB": 0.0002,
-    "GRN": 0.6871,
+    "GRN": 0.6864,
     "ONP": 0.0006
    },
    "primary": {
     "ALP": [
-     22.6,
+     22.7,
      27.9,
      33.6
     ],
@@ -3414,31 +3542,32 @@
    },
    "slug": "northcote",
    "leader": "GRN",
-   "leader_prob": 0.6871
+   "leader_prob": 0.6864
   },
   {
    "district": "Oakleigh",
    "region": "Southern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.7751,
-    "LIB": 0.1551,
-    "GRN": 0.0605,
-    "ONP": 0.0093
+    "ALP": 0.7765,
+    "LIB": 0.1536,
+    "GRN": 0.0607,
+    "ONP": 0.0092
    },
    "primary": {
     "ALP": [
      25.9,
      31.2,
-     36.8
+     36.9
     ],
     "COAL": [
      21.2,
      26.2,
-     31.6
+     31.5
     ],
     "GRN": [
-     13.9,
+     14.0,
      19.8,
      25.8
     ],
@@ -3450,7 +3579,7 @@
     "IND": [
      1.6,
      2.6,
-     4.3
+     4.2
     ],
     "OTH": [
      2.2,
@@ -3460,21 +3589,22 @@
    },
    "slug": "oakleigh",
    "leader": "ALP",
-   "leader_prob": 0.7751
+   "leader_prob": 0.7765
   },
   {
    "district": "Ovens Valley",
    "region": "Northern Victoria",
    "incumbent": "NAT",
+   "notes": [],
    "probs": {
     "NAT": 0.9728,
     "GRN": 0.0001,
-    "ONP": 0.0272
+    "ONP": 0.0271
    },
    "primary": {
     "ALP": [
      8.4,
-     11.1,
+     11.2,
      14.3
     ],
     "COAL": [
@@ -3511,150 +3641,160 @@
    "district": "Pakenham",
    "region": "Eastern Victoria",
    "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "ALP": 0.1159,
-    "LIB": 0.6384,
-    "GRN": 0.0005,
-    "ONP": 0.2429,
-    "IND": 0.0022
+    "ALP": 0.0922,
+    "LIB": 0.6712,
+    "GRN": 0.0006,
+    "ONP": 0.2334,
+    "IND": 0.0025
    },
    "primary": {
     "ALP": [
-     15.7,
-     20.3,
-     25.4
+     14.9,
+     19.3,
+     24.3
     ],
     "COAL": [
-     21.3,
-     26.9,
-     32.9
+     21.5,
+     27.2,
+     33.3
     ],
     "GRN": [
-     4.7,
-     7.4,
-     10.7
+     4.8,
+     7.5,
+     10.9
     ],
     "ONP": [
-     19.1,
-     28.8,
-     40.2
+     19.3,
+     29.2,
+     40.6
     ],
     "IND": [
      4.2,
-     6.9,
-     11.1
+     7.0,
+     11.2
     ],
     "OTH": [
      5.3,
      8.1,
-     11.8
+     11.9
     ]
    },
    "slug": "pakenham",
    "leader": "LIB",
-   "leader_prob": 0.6384
+   "leader_prob": 0.6712
   },
   {
    "district": "Pascoe Vale",
    "region": "Northern Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.4457,
-    "LIB": 0.0376,
-    "GRN": 0.5119,
-    "ONP": 0.0048
+    "ALP": 0.4831,
+    "LIB": 0.0316,
+    "GRN": 0.4812,
+    "ONP": 0.0042
    },
    "primary": {
     "ALP": [
-     21.2,
-     26.1,
-     31.6
+     21.9,
+     26.9,
+     32.4
     ],
     "COAL": [
-     14.7,
-     18.7,
-     23.3
+     14.6,
+     18.5,
+     23.0
     ],
     "GRN": [
-     19.8,
-     26.8,
-     33.4
+     19.6,
+     26.5,
+     33.1
     ],
     "ONP": [
-     9.6,
-     15.3,
-     23.3
+     9.5,
+     15.2,
+     23.1
     ],
     "IND": [
      2.2,
      3.6,
-     6.0
+     5.9
     ],
     "OTH": [
      5.3,
-     8.0,
-     11.4
+     7.9,
+     11.3
     ]
    },
    "slug": "pascoe-vale",
-   "leader": "GRN",
-   "leader_prob": 0.5119
+   "leader": "ALP",
+   "leader_prob": 0.4831
   },
   {
    "district": "Point Cook",
    "region": "Western Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.458,
-    "LIB": 0.3004,
-    "GRN": 0.0009,
-    "ONP": 0.2258,
-    "IND": 0.0147
+    "ALP": 0.4903,
+    "LIB": 0.2793,
+    "GRN": 0.0006,
+    "ONP": 0.2157,
+    "IND": 0.0141
    },
    "primary": {
     "ALP": [
-     20.7,
-     25.9,
-     31.4
+     21.4,
+     26.6,
+     32.2
     ],
     "COAL": [
-     16.4,
-     21.0,
-     26.3
+     16.3,
+     20.8,
+     26.0
     ],
     "GRN": [
      5.1,
-     7.9,
-     11.4
+     7.8,
+     11.3
     ],
     "ONP": [
-     15.9,
-     24.5,
-     35.0
+     15.7,
+     24.2,
+     34.7
     ],
     "IND": [
      5.1,
-     8.5,
-     13.5
+     8.4,
+     13.4
     ],
     "OTH": [
      6.9,
-     10.4,
-     14.8
+     10.3,
+     14.6
     ]
    },
    "slug": "point-cook",
    "leader": "ALP",
-   "leader_prob": 0.458
+   "leader_prob": 0.4903
   },
   {
    "district": "Polwarth",
    "region": "Western Victoria",
    "incumbent": "LIB",
+   "notes": [],
    "probs": {
-    "ALP": 0.0476,
-    "LIB": 0.9063,
-    "GRN": 0.0455,
+    "ALP": 0.048,
+    "LIB": 0.9058,
+    "GRN": 0.0457,
     "ONP": 0.0006
    },
    "primary": {
@@ -3669,14 +3809,14 @@
      45.1
     ],
     "GRN": [
-     14.1,
-     19.9,
+     14.2,
+     20.0,
      25.9
     ],
     "ONP": [
      8.2,
      13.2,
-     20.2
+     20.1
     ],
     "IND": [
      2.3,
@@ -3691,43 +3831,46 @@
    },
    "slug": "polwarth",
    "leader": "LIB",
-   "leader_prob": 0.9063
+   "leader_prob": 0.9058
   },
   {
    "district": "Prahran",
    "region": "Southern Metropolitan",
    "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2025)"
+   ],
    "probs": {
-    "ALP": 0.004,
-    "LIB": 0.0549,
-    "GRN": 0.9411,
+    "ALP": 0.0037,
+    "LIB": 0.0641,
+    "GRN": 0.9322,
     "ONP": 0.0001
    },
    "primary": {
     "ALP": [
-     13.1,
-     16.7,
-     21.0
+     13.0,
+     16.5,
+     20.8
     ],
     "COAL": [
-     22.9,
-     28.0,
-     33.8
+     23.6,
+     28.7,
+     34.5
     ],
     "GRN": [
-     34.2,
-     42.0,
-     48.6
+     33.9,
+     41.6,
+     48.1
     ],
     "ONP": [
-     5.4,
-     8.9,
-     14.1
+     5.3,
+     8.8,
+     13.9
     ],
     "IND": [
      0.6,
      1.0,
-     1.7
+     1.6
     ],
     "OTH": [
      1.7,
@@ -3737,130 +3880,139 @@
    },
    "slug": "prahran",
    "leader": "GRN",
-   "leader_prob": 0.9411
+   "leader_prob": 0.9322
   },
   {
    "district": "Preston",
    "region": "Northern Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.5529,
-    "LIB": 0.0437,
-    "GRN": 0.1949,
-    "ONP": 0.0828,
-    "IND": 0.1257
+    "ALP": 0.5924,
+    "LIB": 0.0386,
+    "GRN": 0.1743,
+    "ONP": 0.0774,
+    "IND": 0.1173
    },
    "primary": {
     "ALP": [
-     18.7,
-     23.7,
-     29.1
+     19.4,
+     24.4,
+     29.9
     ],
     "COAL": [
      10.8,
-     14.3,
-     18.3
+     14.2,
+     18.2
     ],
     "GRN": [
-     11.8,
-     17.1,
-     23.0
+     11.7,
+     17.0,
+     22.8
     ],
     "ONP": [
-     14.4,
-     22.3,
-     32.4
+     14.3,
+     22.1,
+     32.1
     ],
     "IND": [
      7.3,
-     11.9,
-     18.4
+     11.8,
+     18.3
     ],
     "OTH": [
-     5.7,
-     8.7,
-     12.5
+     5.6,
+     8.6,
+     12.4
     ]
    },
    "slug": "preston",
    "leader": "ALP",
-   "leader_prob": 0.5529
+   "leader_prob": 0.5924
   },
   {
    "district": "Richmond",
    "region": "Northern Metropolitan",
    "incumbent": "GRN",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.0246,
-    "LIB": 0.0037,
-    "GRN": 0.9718
+    "ALP": 0.0208,
+    "LIB": 0.0034,
+    "GRN": 0.9759
    },
    "primary": {
     "ALP": [
-     18.0,
-     22.5,
-     27.7
+     17.8,
+     22.2,
+     27.4
     ],
     "COAL": [
-     13.7,
-     17.5,
-     22.1
+     13.6,
+     17.2,
+     21.8
     ],
     "GRN": [
-     34.5,
-     42.5,
-     49.1
+     35.3,
+     43.3,
+     49.8
     ],
     "ONP": [
-     4.8,
-     7.9,
-     12.6
+     4.7,
+     7.8,
+     12.4
     ],
     "IND": [
      0.6,
-     1.0,
+     0.9,
      1.6
     ],
     "OTH": [
      5.2,
-     7.8,
-     11.3
+     7.7,
+     11.2
     ]
    },
    "slug": "richmond",
    "leader": "GRN",
-   "leader_prob": 0.9718
+   "leader_prob": 0.9759
   },
   {
    "district": "Ringwood",
    "region": "North-Eastern Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "ALP": 0.5434,
-    "LIB": 0.3811,
-    "GRN": 0.0754,
-    "ONP": 0.0001
+    "ALP": 0.4639,
+    "LIB": 0.4427,
+    "GRN": 0.093,
+    "ONP": 0.0003
    },
    "primary": {
     "ALP": [
-     23.6,
-     28.6,
-     33.9
+     22.5,
+     27.4,
+     32.7
     ],
     "COAL": [
-     28.0,
-     33.3,
-     39.1
+     28.4,
+     33.9,
+     39.7
     ],
     "GRN": [
-     14.5,
-     20.4,
-     26.5
+     14.8,
+     20.7,
+     26.9
     ],
     "ONP": [
-     5.6,
-     9.3,
-     14.7
+     5.7,
+     9.5,
+     14.9
     ],
     "IND": [
      0.0,
@@ -3868,45 +4020,48 @@
      0.0
     ],
     "OTH": [
-     4.9,
-     7.3,
-     10.6
+     5.0,
+     7.4,
+     10.7
     ]
    },
    "slug": "ringwood",
    "leader": "ALP",
-   "leader_prob": 0.5434
+   "leader_prob": 0.4639
   },
   {
    "district": "Ripon",
    "region": "Western Victoria",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.0988,
-    "LIB": 0.5962,
+    "ALP": 0.1178,
+    "LIB": 0.5699,
     "GRN": 0.0001,
-    "ONP": 0.305
+    "ONP": 0.3121
    },
    "primary": {
     "ALP": [
-     17.0,
-     22.0,
-     27.3
+     17.6,
+     22.7,
+     28.0
     ],
     "COAL": [
-     22.1,
-     28.0,
-     34.3
+     21.9,
+     27.8,
+     34.0
     ],
     "GRN": [
      3.9,
-     6.2,
+     6.1,
      9.0
     ],
     "ONP": [
-     21.9,
-     32.3,
-     44.2
+     21.6,
+     32.0,
+     43.8
     ],
     "IND": [
      1.2,
@@ -3914,70 +4069,74 @@
      3.4
     ],
     "OTH": [
-     5.5,
-     8.3,
-     12.1
+     5.4,
+     8.2,
+     12.0
     ]
    },
    "slug": "ripon",
    "leader": "LIB",
-   "leader_prob": 0.5962
+   "leader_prob": 0.5699
   },
   {
    "district": "Rowville",
    "region": "South-Eastern Metropolitan",
    "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "ALP": 0.0717,
-    "LIB": 0.9224,
+    "ALP": 0.0969,
+    "LIB": 0.8953,
     "GRN": 0.0003,
-    "ONP": 0.0004,
-    "IND": 0.0051
+    "ONP": 0.0008,
+    "IND": 0.0066
    },
    "primary": {
     "ALP": [
-     18.3,
-     22.7,
-     27.6
+     18.7,
+     23.2,
+     28.2
     ],
     "COAL": [
-     33.6,
-     39.6,
-     45.7
+     32.4,
+     38.4,
+     44.5
     ],
     "GRN": [
-     6.0,
-     9.1,
-     12.9
+     6.1,
+     9.3,
+     13.1
     ],
     "ONP": [
-     7.0,
-     11.4,
-     17.6
+     7.2,
+     11.6,
+     17.9
     ],
     "IND": [
-     6.9,
-     11.1,
-     17.3
+     7.0,
+     11.3,
+     17.7
     ],
     "OTH": [
      2.9,
-     4.4,
-     6.5
+     4.5,
+     6.6
     ]
    },
    "slug": "rowville",
    "leader": "LIB",
-   "leader_prob": 0.9224
+   "leader_prob": 0.8953
   },
   {
    "district": "Sandringham",
    "region": "Southern Metropolitan",
    "incumbent": "LIB",
+   "notes": [],
    "probs": {
     "ALP": 0.0103,
-    "LIB": 0.9761,
-    "GRN": 0.0134,
+    "LIB": 0.976,
+    "GRN": 0.0135,
     "IND": 0.0001
    },
    "primary": {
@@ -3989,7 +4148,7 @@
     "COAL": [
      39.5,
      45.4,
-     51.3
+     51.2
     ],
     "GRN": [
      13.1,
@@ -3997,13 +4156,13 @@
      24.4
     ],
     "ONP": [
-     4.7,
+     4.6,
      7.7,
-     12.2
+     12.1
     ],
     "IND": [
      4.0,
-     6.6,
+     6.5,
      10.6
     ],
     "OTH": [
@@ -4014,72 +4173,76 @@
    },
    "slug": "sandringham",
    "leader": "LIB",
-   "leader_prob": 0.9761
+   "leader_prob": 0.976
   },
   {
    "district": "Shepparton",
    "region": "Northern Victoria",
    "incumbent": "NAT",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "NAT": 0.715,
-    "ONP": 0.231,
-    "IND": 0.0539
+    "NAT": 0.6848,
+    "ONP": 0.25,
+    "IND": 0.0651
    },
    "primary": {
     "ALP": [
      2.5,
      3.5,
-     4.8
+     4.9
     ],
     "COAL": [
-     30.4,
-     38.3,
-     46.5
+     29.4,
+     37.3,
+     45.5
     ],
     "GRN": [
      1.5,
-     2.4,
-     3.7
+     2.5,
+     3.8
     ],
     "ONP": [
-     21.1,
-     31.3,
-     43.1
+     21.5,
+     31.8,
+     43.7
     ],
     "IND": [
-     12.3,
-     19.6,
-     29.5
+     12.5,
+     20.0,
+     29.9
     ],
     "OTH": [
      2.0,
-     3.2,
+     3.3,
      5.1
     ]
    },
    "slug": "shepparton",
    "leader": "NAT",
-   "leader_prob": 0.715
+   "leader_prob": 0.6848
   },
   {
    "district": "South Barwon",
    "region": "Western Victoria",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.5659,
-    "LIB": 0.3981,
+    "ALP": 0.5685,
+    "LIB": 0.3957,
     "GRN": 0.0103,
-    "ONP": 0.0256
+    "ONP": 0.0255
    },
    "primary": {
     "ALP": [
      25.1,
-     30.4,
-     35.9
+     30.5,
+     36.0
     ],
     "COAL": [
      23.6,
-     28.9,
+     28.8,
      34.3
     ],
     "GRN": [
@@ -4090,7 +4253,7 @@
     "ONP": [
      11.5,
      18.1,
-     26.9
+     26.8
     ],
     "IND": [
      0.0,
@@ -4105,27 +4268,28 @@
    },
    "slug": "south-barwon",
    "leader": "ALP",
-   "leader_prob": 0.5659
+   "leader_prob": 0.5685
   },
   {
    "district": "South-West Coast",
    "region": "Western Victoria",
    "incumbent": "LIB",
+   "notes": [],
    "probs": {
-    "ALP": 0.0021,
+    "ALP": 0.0022,
     "LIB": 0.8776,
     "ONP": 0.0024,
-    "IND": 0.1179
+    "IND": 0.1178
    },
    "primary": {
     "ALP": [
      9.8,
      13.0,
-     16.7
+     16.8
     ],
     "COAL": [
      32.8,
-     40.1,
+     40.0,
      47.1
     ],
     "GRN": [
@@ -4157,17 +4321,18 @@
    "district": "St Albans",
    "region": "Western Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.5785,
-    "LIB": 0.3443,
+    "ALP": 0.5806,
+    "LIB": 0.3425,
     "GRN": 0.0003,
-    "ONP": 0.077
+    "ONP": 0.0765
    },
    "primary": {
     "ALP": [
      24.4,
-     29.9,
-     35.5
+     30.0,
+     35.6
     ],
     "COAL": [
      18.6,
@@ -4177,12 +4342,12 @@
     "GRN": [
      5.6,
      8.5,
-     12.0
+     12.1
     ],
     "ONP": [
      12.5,
      19.8,
-     29.2
+     29.1
     ],
     "IND": [
      1.7,
@@ -4197,22 +4362,23 @@
    },
    "slug": "st-albans",
    "leader": "ALP",
-   "leader_prob": 0.5785
+   "leader_prob": 0.5806
   },
   {
    "district": "Sunbury",
    "region": "Western Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.2932,
-    "LIB": 0.3402,
+    "ALP": 0.2948,
+    "LIB": 0.3391,
     "GRN": 0.0001,
-    "ONP": 0.3665
+    "ONP": 0.3661
    },
    "primary": {
     "ALP": [
      20.4,
-     25.8,
+     25.9,
      31.6
     ],
     "COAL": [
@@ -4223,7 +4389,7 @@
     "GRN": [
      4.4,
      6.9,
-     10.0
+     10.1
     ],
     "ONP": [
      20.4,
@@ -4243,38 +4409,41 @@
    },
    "slug": "sunbury",
    "leader": "ONP",
-   "leader_prob": 0.3665
+   "leader_prob": 0.3661
   },
   {
    "district": "Sydenham",
    "region": "Western Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
    "probs": {
-    "ALP": 0.3844,
-    "LIB": 0.4083,
+    "ALP": 0.3363,
+    "LIB": 0.4476,
     "GRN": 0.0001,
-    "ONP": 0.2073
+    "ONP": 0.2159
    },
    "primary": {
     "ALP": [
-     23.1,
-     28.8,
-     34.4
+     22.1,
+     27.6,
+     33.2
     ],
     "COAL": [
-     19.8,
-     24.9,
-     30.5
+     20.1,
+     25.3,
+     31.0
     ],
     "GRN": [
      4.4,
-     6.8,
-     9.8
+     7.0,
+     10.0
     ],
     "ONP": [
-     16.6,
-     25.5,
-     36.6
+     16.9,
+     25.9,
+     37.1
     ],
     "IND": [
      0.0,
@@ -4282,75 +4451,79 @@
      0.0
     ],
     "OTH": [
-     8.6,
-     12.7,
-     17.6
+     8.7,
+     12.9,
+     17.9
     ]
    },
    "slug": "sydenham",
    "leader": "LIB",
-   "leader_prob": 0.4083
+   "leader_prob": 0.4476
   },
   {
    "district": "Tarneit",
    "region": "Western Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.64,
-    "LIB": 0.2539,
+    "ALP": 0.6793,
+    "LIB": 0.2249,
     "GRN": 0.0003,
-    "ONP": 0.1059
+    "ONP": 0.0956
    },
    "primary": {
     "ALP": [
-     26.4,
-     32.2,
-     38.0
+     27.1,
+     33.0,
+     38.7
     ],
     "COAL": [
-     18.7,
-     23.5,
-     28.8
+     18.5,
+     23.2,
+     28.5
     ],
     "GRN": [
      5.7,
-     8.8,
-     12.6
+     8.7,
+     12.4
     ],
     "ONP": [
-     14.4,
-     22.6,
-     32.7
+     14.3,
+     22.3,
+     32.4
     ],
     "IND": [
      0.7,
-     1.2,
+     1.1,
      1.9
     ],
     "OTH": [
-     7.0,
-     10.5,
-     14.8
+     6.9,
+     10.3,
+     14.6
     ]
    },
    "slug": "tarneit",
    "leader": "ALP",
-   "leader_prob": 0.64
+   "leader_prob": 0.6793
   },
   {
    "district": "Thomastown",
    "region": "Northern Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.8455,
-    "LIB": 0.0996,
+    "ALP": 0.8465,
+    "LIB": 0.0989,
     "GRN": 0.0001,
-    "ONP": 0.0548
+    "ONP": 0.0545
    },
    "primary": {
     "ALP": [
      31.5,
-     37.6,
+     37.7,
      43.5
     ],
     "COAL": [
@@ -4375,43 +4548,46 @@
     ],
     "OTH": [
      7.0,
-     10.4,
+     10.3,
      14.6
     ]
    },
    "slug": "thomastown",
    "leader": "ALP",
-   "leader_prob": 0.8455
+   "leader_prob": 0.8465
   },
   {
    "district": "Warrandyte",
    "region": "North-Eastern Metropolitan",
    "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2023)"
+   ],
    "probs": {
-    "ALP": 0.0197,
-    "LIB": 0.9786,
-    "GRN": 0.0018
+    "ALP": 0.0143,
+    "LIB": 0.9843,
+    "GRN": 0.0014
    },
    "primary": {
     "ALP": [
-     18.3,
-     22.6,
-     27.3
+     18.1,
+     22.3,
+     27.0
     ],
     "COAL": [
-     40.4,
-     46.2,
-     51.8
+     41.2,
+     46.9,
+     52.5
     ],
     "GRN": [
-     10.2,
-     14.9,
-     20.0
+     10.1,
+     14.7,
+     19.8
     ],
     "ONP": [
-     6.2,
-     10.3,
-     16.0
+     6.1,
+     10.1,
+     15.8
     ],
     "IND": [
      0.8,
@@ -4421,26 +4597,27 @@
     "OTH": [
      2.4,
      3.7,
-     5.5
+     5.4
     ]
    },
    "slug": "warrandyte",
    "leader": "LIB",
-   "leader_prob": 0.9786
+   "leader_prob": 0.9843
   },
   {
    "district": "Wendouree",
    "region": "Western Victoria",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.6168,
-    "LIB": 0.2447,
-    "GRN": 0.0017,
-    "ONP": 0.1368
+    "ALP": 0.6188,
+    "LIB": 0.2435,
+    "GRN": 0.0016,
+    "ONP": 0.136
    },
    "primary": {
     "ALP": [
-     25.3,
+     25.4,
      31.1,
      36.9
     ],
@@ -4472,69 +4649,74 @@
    },
    "slug": "wendouree",
    "leader": "ALP",
-   "leader_prob": 0.6168
+   "leader_prob": 0.6188
   },
   {
    "district": "Werribee",
    "region": "Western Metropolitan",
    "incumbent": "ALP",
+   "notes": [
+    "by-election 2025-02-08: swing beyond statewide polls ALP -5.8, COAL -2.9, GRN -1.3 pts (half carried forward)",
+    "first-term member recontesting (since 2025)"
+   ],
    "probs": {
-    "ALP": 0.566,
-    "LIB": 0.184,
+    "ALP": 0.5756,
+    "LIB": 0.1781,
     "GRN": 0.0003,
-    "ONP": 0.249,
-    "IND": 0.0006
+    "ONP": 0.2453,
+    "IND": 0.0008
    },
    "primary": {
     "ALP": [
-     23.6,
-     29.4,
-     35.3
+     23.9,
+     29.7,
+     35.6
     ],
     "COAL": [
-     16.3,
-     20.9,
-     26.1
+     16.1,
+     20.6,
+     25.7
     ],
     "GRN": [
-     4.9,
-     7.6,
-     11.0
+     4.6,
+     7.2,
+     10.4
     ],
     "ONP": [
-     17.3,
-     26.5,
-     37.5
+     17.2,
+     26.3,
+     37.3
     ],
     "IND": [
-     3.1,
-     5.2,
-     8.5
+     3.3,
+     5.4,
+     8.9
     ],
     "OTH": [
-     5.8,
-     8.7,
-     12.6
+     6.1,
+     9.1,
+     13.1
     ]
    },
    "slug": "werribee",
    "leader": "ALP",
-   "leader_prob": 0.566
+   "leader_prob": 0.5756
   },
   {
    "district": "Williamstown",
    "region": "Western Metropolitan",
    "incumbent": "ALP",
+   "notes": [],
    "probs": {
-    "ALP": 0.6162,
-    "LIB": 0.2696,
-    "GRN": 0.0751,
+    "ALP": 0.618,
+    "LIB": 0.2676,
+    "GRN": 0.0752,
     "ONP": 0.0391
    },
    "primary": {
     "ALP": [
      22.8,
-     28.0,
+     28.1,
      33.5
     ],
     "COAL": [
@@ -4558,45 +4740,48 @@
      0.0
     ],
     "OTH": [
-     5.9,
+     5.8,
      8.7,
-     12.5
+     12.4
     ]
    },
    "slug": "williamstown",
    "leader": "ALP",
-   "leader_prob": 0.6162
+   "leader_prob": 0.618
   },
   {
    "district": "Yan Yean",
    "region": "Northern Victoria",
    "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2022)"
+   ],
    "probs": {
-    "ALP": 0.2298,
-    "LIB": 0.6661,
+    "ALP": 0.2583,
+    "LIB": 0.6361,
     "GRN": 0.0001,
-    "ONP": 0.1041
+    "ONP": 0.1056
    },
    "primary": {
     "ALP": [
-     21.9,
-     27.3,
-     32.9
+     22.6,
+     28.1,
+     33.7
     ],
     "COAL": [
-     24.1,
-     29.7,
-     35.6
+     23.8,
+     29.4,
+     35.3
     ],
     "GRN": [
      4.9,
-     7.6,
-     10.9
+     7.5,
+     10.8
     ],
     "ONP": [
-     15.2,
-     23.6,
-     34.0
+     15.0,
+     23.4,
+     33.7
     ],
     "IND": [
      0.0,
@@ -4604,14 +4789,14 @@
      0.0
     ],
     "OTH": [
-     7.1,
-     10.5,
-     14.8
+     7.0,
+     10.4,
+     14.7
     ]
    },
    "slug": "yan-yean",
    "leader": "LIB",
-   "leader_prob": 0.6661
+   "leader_prob": 0.6361
   }
  ]
 }

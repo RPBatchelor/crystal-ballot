@@ -92,7 +92,7 @@
 {/snippet}
 
 <figure class="seatmap" bind:clientWidth={width} aria-label={title}>
-	<div class="maps" class:wide>
+	<div class="maps">
 		<svg viewBox="0 0 {mainW} {mainH}" class="main" role="img" aria-label="{title}: Victoria">
 			{@render seats(mainPath, false)}
 			<rect class="frame" x={frame.x} y={frame.y} width={frame.w} height={frame.h} />
@@ -137,24 +137,28 @@
 	.seatmap {
 		position: relative;
 		margin: 0;
-		contain: inline-size;
+		/* Layout follows the figure's own width in CSS, so the prerendered page is right
+		   before JavaScript measures it. */
+		container-type: inline-size;
 	}
 	.maps {
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
 	}
-	.maps.wide {
-		flex-direction: row;
-		align-items: flex-start;
+	@container (min-width: 760px) {
+		.maps {
+			flex-direction: row;
+			align-items: flex-start;
+		}
+		.main {
+			flex: 0 0 60%;
+		}
 	}
 	svg {
 		display: block;
 		width: 100%;
 		height: auto;
-	}
-	.maps.wide .main {
-		flex: 0 0 60%;
 	}
 	.inset {
 		flex: 1;

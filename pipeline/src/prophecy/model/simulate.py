@@ -43,6 +43,11 @@ class SimConfig:
     )
     ind_decay_mean: float = -0.2  # log scale: independents retain ~80% on average
     ind_decay_sd: float = 0.4
+    # Candidate effects on the logit primary vote of the party concerned (priors, in line
+    # with Australian estimates of 1-2 points; not estimable from our 2014-22 data).
+    retire_effect: float = -0.08  # sitting member not recontesting: lost personal vote
+    sophomore_effect: float = 0.05  # first-term member recontesting: personal vote gained
+    ind_prior_sd: float = 0.35  # log-scale spread around a curated independent's prior
 
 
 @dataclass
@@ -54,6 +59,12 @@ class SeatInputs:
     onp_index: np.ndarray  # D, seat ONP strength relative to state (1 = average)
     coal_party: list[str]  # LIB or NAT per seat
     incumbent: list[str]  # party holding the seat now
+    # Candidate adjustments (filled by apply_candidates; neutral by default).
+    retiring: np.ndarray | None = None  # D x B: 1 where that bloc's sitting member retires
+    sophomore: np.ndarray | None = None  # D x B: 1 where a first-term member recontests
+    contest: np.ndarray | None = None  # D x B bool: bloc has a candidate (None = all)
+    ind_prior: np.ndarray | None = None  # D: expected IND share (fraction), NaN = none
+    notes: dict[str, list[str]] = field(default_factory=dict)
 
 
 def build_inputs(primary: pl.DataFrame, districts: pl.DataFrame, federal: pl.DataFrame,
@@ -98,6 +109,63 @@ def build_inputs(primary: pl.DataFrame, districts: pl.DataFrame, federal: pl.Dat
     )
 
 
+def apply_candidates(inputs: SeatInputs, members: pl.DataFrame | None,
+                     candidates: pl.DataFrame | None, sophomore_since: int) -> SeatInputs:
+    """Attach member status (retirements, first-term members) and the ballot.
+
+    members: district, party, first_elected, status (recontesting/retiring/vacant).
+    candidates: district, party (code), name, [prior_share] for independents. Once
+    nominations close, a bloc with no candidate in a seat gets no vote there.
+    """
+    D, B = len(inputs.districts), len(BLOCS)
+    idx = {d: i for i, d in enumerate(inputs.districts)}
+    retiring = np.zeros((D, B))
+    sophomore = np.zeros((D, B))
+    notes: dict[str, list[str]] = {}
+    if members is not None:
+        for r in members.iter_rows(named=True):
+            i = idx.get(r["district"])
+            if i is None:
+                continue
+            # Effects apply to the party the member was elected for: a defector's
+            # personal vote at the last election was cast for that party.
+            elected_bloc = _bloc(inputs.incumbent[i] if r["party"] == "IND" else r["party"])
+            if r["status"] in ("retiring", "vacant"):
+                retiring[i, IDX[elected_bloc]] = 1
+                notes.setdefault(r["district"], []).append(f"sitting member not recontesting ({r['status']})")
+            elif str(r["first_elected"])[:4].isdigit() and int(str(r["first_elected"])[:4]) >= sophomore_since:
+                sophomore[i, IDX[_bloc(r["party"])]] = 1
+                notes.setdefault(r["district"], []).append(f"first-term member recontesting (since {r['first_elected']})")
+    contest = None
+    ind_prior = np.full(D, np.nan)
+    if candidates is not None and candidates.height:
+        contest = np.zeros((D, B), dtype=bool)
+        for r in candidates.iter_rows(named=True):
+            i = idx.get(r["district"])
+            if i is None:
+                continue
+            b = _bloc(r["party"])
+            contest[i, IDX[b]] = True
+            share = r.get("prior_share")
+            if b == "IND" and share is not None and not np.isnan(float(share)):
+                ind_prior[i] = np.nansum([ind_prior[i], float(share) / 100])
+        # Seats not yet on the ballot file keep everyone in contention.
+        listed = set(candidates["district"].to_list())
+        for d, i in idx.items():
+            if d not in listed:
+                contest[i] = True
+    inputs.retiring, inputs.sophomore, inputs.contest, inputs.ind_prior = retiring, sophomore, contest, ind_prior
+    for d, ns in notes.items():
+        inputs.notes.setdefault(d, []).extend(ns)
+    return inputs
+
+
+def _bloc(code: str) -> str:
+    from prophecy.schema.parties import bloc
+
+    return bloc(code)
+
+
 def _recentre(p_logit: np.ndarray, weight: np.ndarray, target: np.ndarray) -> np.ndarray:
     """Shift each simulation's logits so the vote-weighted mean share equals target.
 
@@ -113,6 +181,15 @@ def _recentre(p_logit: np.ndarray, weight: np.ndarray, target: np.ndarray) -> np
         hi = np.where(too_high, mid, hi)
         lo = np.where(too_high, lo, mid)
     return p_logit + ((lo + hi) / 2)[:, None]
+
+
+def _candidate_adj(inputs: SeatInputs, k: int, cfg: SimConfig) -> np.ndarray:
+    adj = np.zeros(len(inputs.districts))
+    if inputs.retiring is not None:
+        adj += cfg.retire_effect * inputs.retiring[:, k]
+    if inputs.sophomore is not None:
+        adj += cfg.sophomore_effect * inputs.sophomore[:, k]
+    return adj
 
 
 @dataclass
@@ -157,10 +234,16 @@ def simulate(inputs: SeatInputs, agg_draws: np.ndarray, agg_parties: list[str],
 
     seat = np.zeros((S, D, len(BLOCS)))
 
-    # 4. Independents: persist with random decay.
+    # 4. Independents: persist with random decay, or around a curated prior where a
+    #    notable independent is on the ballot.
     ind = inputs.base[:, IDX["IND"]][None, :] * np.exp(
         rng.normal(cfg.ind_decay_mean, cfg.ind_decay_sd, size=(S, D))
     )
+    if inputs.ind_prior is not None and np.isfinite(inputs.ind_prior).any():
+        has = np.isfinite(inputs.ind_prior)
+        prior = np.nan_to_num(inputs.ind_prior)[None, :] * np.exp(
+            rng.normal(0, cfg.ind_prior_sd, size=(S, D)))
+        ind = np.where(has[None, :], prior, ind)
     seat[:, :, IDX["IND"]] = ind
     ind_state = ind @ w  # S
 
@@ -173,7 +256,7 @@ def simulate(inputs: SeatInputs, agg_draws: np.ndarray, agg_parties: list[str],
         swing = logit(targets[b]) - logit(np.clip(base_state[k], 0.002, 0.98))
         region_eff = rng.normal(0, cfg.region_sd, size=(S, len(region_names)))[:, region_idx]
         noise = rng.normal(0, cfg.seat_sd[b], size=(S, D))
-        p = logit(base)[None, :] + swing[:, None] + region_eff + noise
+        p = logit(base)[None, :] + swing[:, None] + region_eff + noise + _candidate_adj(inputs, k, cfg)[None, :]
         seat[:, :, k] = expit(_recentre(p, inputs.weight, targets[b]))
 
     # 3. One Nation from federal geography (only when ONP is modelled this cycle).
@@ -182,6 +265,8 @@ def simulate(inputs: SeatInputs, agg_draws: np.ndarray, agg_parties: list[str],
         onp *= (state[:, IDX["ONP"]] / 100 / (onp @ w))[:, None]
         seat[:, :, IDX["ONP"]] = np.clip(onp, 0, 0.9)
 
+    if inputs.contest is not None:
+        seat *= inputs.contest[None, :, :]
     seat /= seat.sum(axis=2, keepdims=True)
 
     # 5. Preference count.
@@ -231,6 +316,7 @@ def summarise(res: SimResult) -> dict:
             "district": name,
             "region": res.inputs.regions[d],
             "incumbent": res.inputs.incumbent[d],
+            "notes": res.inputs.notes.get(name, []),
             "probs": {p: round(v, 4) for p, v in probs.items() if v > 0},
             "primary": {b: [round(float(v), 1) for v in np.quantile(prim[:, k], [0.1, 0.5, 0.9])]
                         for k, b in enumerate(BLOCS)},
