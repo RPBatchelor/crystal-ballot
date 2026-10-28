@@ -1,7 +1,7 @@
 {
  "diagnostics": {
-  "max_rhat": 1.00718,
-  "min_ess_bulk": 672.501,
+  "max_rhat": 1.00612,
+  "min_ess_bulk": 899.368,
   "divergences": 0
  },
  "start_share": {
@@ -20,6 +20,13 @@
   "Roy Morgan",
   "Wolf & Smith",
   "YouGov (MRP)"
+ ],
+ "parties": [
+  "ALP",
+  "COAL",
+  "GRN",
+  "ONP",
+  "OTH"
  ],
  "weeks": [
   "2022-11-26",

@@ -5,11 +5,11 @@
  "seats_total": 88,
  "majority": 45,
  "seat_counts": {
+  "LIB": 21,
+  "GRN": 3,
   "NAT": 6,
   "IND": 3,
-  "GRN": 3,
-  "ALP": 55,
-  "LIB": 21
+  "ALP": 55
  },
  "primary_share": {
   "ALP": 42.86,
@@ -19,23 +19,23 @@
   "OTH": 5.16
  },
  "party_share": {
-  "AJP": 1.82,
-  "X_ALA": 0.04,
   "X_ACP": 0.19,
-  "TMP": 0.29,
-  "SFF": 0.69,
   "LIB": 30.43,
   "DHJ": 0.26,
-  "X_ABP": 0.04,
-  "VS": 0.44,
-  "IND": 6.07,
   "LDP": 0.11,
-  "SAP": 0.23,
-  "GRN": 10.71,
-  "REA": 0.36,
   "ALP": 42.86,
+  "X_ABP": 0.04,
+  "REA": 0.36,
+  "SFF": 0.69,
+  "SAP": 0.23,
+  "TMP": 0.29,
+  "AJP": 1.82,
+  "VS": 0.44,
   "NAT": 4.77,
-  "DLP": 0.69
+  "DLP": 0.69,
+  "GRN": 10.71,
+  "X_ALA": 0.04,
+  "IND": 6.07
  },
  "tpp_alp": 57.3,
  "seats": [
