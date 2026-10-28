@@ -12,6 +12,10 @@
 		current
 			? [
 					{ href: `/${current.code}/`, label: 'Overview' },
+					...(current.forecastYears ?? []).map((y) => ({
+						href: `/${current.code}/forecast/${y}/`,
+						label: `${y} forecast`
+					})),
 					...(current.hasPolls ? [{ href: `/${current.code}/polls/`, label: 'Polls' }] : []),
 					...current.resultYears.map((y) => ({
 						href: `/${current.code}/results/${y}/`,

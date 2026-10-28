@@ -17,3 +17,6 @@ export const loadResults = (fetch: Fetch, jur: string, year: number | string) =>
 
 export const loadPreferences = (fetch: Fetch, jur: string, year: number | string) =>
 	getJSON<PreferencesFile>(fetch, `/data/${jur}/results/${year}-preferences.json`);
+
+export const loadForecast = (fetch: Fetch, jur: string, year: number | string) =>
+	getJSON<import('./types').ForecastFile>(fetch, `/data/${jur}/forecast/${year}.json`);

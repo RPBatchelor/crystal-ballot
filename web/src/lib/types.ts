@@ -38,6 +38,7 @@ export interface PollsFile {
 	polls: Poll[];
 	trend: TrendPoint[];
 	trend_method: string;
+	house_effects?: { pollster: string; party: string; median: number; lo: number; hi: number }[];
 	events: PollEvent[];
 }
 
@@ -97,3 +98,39 @@ export interface PreferenceCount {
 }
 
 export type PreferencesFile = Record<string, PreferenceCount[]>;
+
+export interface ForecastDistrict {
+	district: string;
+	slug: string;
+	region: string;
+	incumbent: string;
+	probs: Record<string, number>;
+	primary: Record<string, [number, number, number]>;
+	leader: string;
+	leader_prob: number;
+}
+
+export interface ForecastFile {
+	election_id: string;
+	jurisdiction: string;
+	election_date: string;
+	generated_at: string;
+	model_version: string;
+	validated: boolean;
+	diagnostics: { max_rhat?: number; min_ess_bulk?: number; divergences?: number };
+	n_sims: number;
+	majority: number;
+	outcome: {
+		alp_majority: number;
+		coal_majority: number;
+		hung: number;
+		alp_most_seats: number;
+		coal_most_seats: number;
+	};
+	/** Quantiles [5, 25, 50, 75, 95] of seats won. */
+	seats: Record<string, [number, number, number, number, number]>;
+	seat_hist: Record<string, number[]>;
+	statewide_primary: Record<string, [number, number, number]>;
+	tpp_alp: [number, number, number];
+	districts: ForecastDistrict[];
+}

@@ -9,6 +9,8 @@ export interface Jurisdiction {
 	nextElection?: string;
 	/** Past elections with published results on this site. */
 	resultYears: number[];
+	/** Elections with a published forecast. */
+	forecastYears?: number[];
 	hasPolls: boolean;
 }
 
@@ -43,6 +45,7 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		seats: 88,
 		nextElection: '2026-11-28',
 		resultYears: [2022],
+		forecastYears: [2026],
 		hasPolls: true
 	},
 	{

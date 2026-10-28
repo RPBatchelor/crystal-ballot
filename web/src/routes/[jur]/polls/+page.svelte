@@ -19,6 +19,8 @@
 			.sort((a, b) => a.date.localeCompare(b.date))
 	);
 	const v = (n: number | null) => (n == null ? '–' : n.toString());
+	const houseParties = ['ALP', 'COAL', 'GRN', 'ONP'];
+	const housePollsters = $derived([...new Set((polls.house_effects ?? []).map((h) => h.pollster))].sort());
 </script>
 
 <svelte:head>
@@ -29,7 +31,7 @@
 <h1>Every poll since the 2022 election</h1>
 <p class="lede">
 	{polls.polls.length} published state voting-intention polls from {pollsters.length} pollsters. Dots are
-	individual polls; lines are a simple smoothed average.
+	individual polls; lines are the Bayesian poll average with 90% bands.
 </p>
 
 <h2>Primary vote</h2>
@@ -44,7 +46,10 @@
 />
 
 <h2>Two-party preferred</h2>
-<p class="muted small">Labor share of the Labor-versus-Coalition two-party-preferred vote, as reported by each pollster.</p>
+<p class="muted small">
+	Labor share of the Labor-versus-Coalition two-party-preferred vote. Dots are each pollster's own figure;
+	the line is implied from the primary-vote average using estimated preference flows.
+</p>
 <TimeSeriesChart
 	title="Labor two-party-preferred vote in Victorian polls since 2022"
 	series={TPP_SERIES}
@@ -58,9 +63,44 @@
 
 <p class="muted small method">
 	<strong>About the average.</strong>
-	{polls.trend_method} It does not adjust for pollster house effects or sample design; the forecast model
-	will.
+	{polls.trend_method}
 </p>
+
+{#if polls.house_effects?.length}
+	<h2>Pollster house effects</h2>
+	<p class="muted small">
+		How far each pollster's figures typically sit from the average, in points (median, with 90% interval).
+		These sum to zero across pollsters, so they measure differences between pollsters, not industry-wide
+		error.
+	</p>
+	<div class="scroll-x">
+		<table class="data house">
+			<thead>
+				<tr>
+					<th class="left">Pollster</th>
+					{#each houseParties as hp (hp)}<th>{hp}</th>{/each}
+				</tr>
+			</thead>
+			<tbody>
+				{#each housePollsters as name (name)}
+					<tr>
+						<td class="left">{name}</td>
+						{#each houseParties as hp (hp)}
+							{@const h = polls.house_effects.find((r) => r.pollster === name && r.party === hp)}
+							<td>
+								{#if h}
+									<span class:strong={h.lo > 0 || h.hi < 0}>{h.median > 0 ? '+' : ''}{h.median.toFixed(1)}</span>
+									<span class="muted small">({h.lo.toFixed(1)}, {h.hi.toFixed(1)})</span>
+								{:else}–{/if}
+							</td>
+						{/each}
+					</tr>
+				{/each}
+			</tbody>
+		</table>
+	</div>
+	<p class="muted small">Bold: the 90% interval excludes zero.</p>
+{/if}
 
 <h2>All polls</h2>
 <div class="controls">
@@ -115,6 +155,12 @@
 </p>
 
 <style>
+	.house td {
+		white-space: nowrap;
+	}
+	.house .strong {
+		font-weight: 650;
+	}
 	.method {
 		max-width: 46rem;
 		margin-top: 1.5rem;

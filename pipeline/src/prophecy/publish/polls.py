@@ -23,15 +23,29 @@ def publish_polls(election: Election) -> str:
     events_path = processed / f"events_{election.election_id}.csv"
     events = pl.read_csv(events_path, try_parse_dates=True) if events_path.exists() else None
 
+    model_trend = processed / election.election_id / "poll_trend.csv"
+    house_path = processed / election.election_id / "house_effects.csv"
+    if model_trend.exists():
+        trend = _records(pl.read_csv(model_trend, try_parse_dates=True, infer_schema_length=None))
+        method = (
+            "Bayesian poll aggregate: weekly random walk from the 2022 result, adjusting for "
+            "each pollster's house effect and sample size. Bands show 90% credible intervals. "
+            "The 2PP line is implied from the primary-vote aggregate using estimated "
+            "preference flows; dots are pollsters' own 2PP figures."
+        )
+    else:
+        trend = kernel_trend(polls)
+        method = (f"Gaussian kernel average, {BANDWIDTH_DAYS}-day bandwidth, weighted by "
+                  "sqrt(sample size). Placeholder until the Bayesian aggregate.")
     payload = {
         "election_id": election.election_id,
         "jurisdiction": election.jurisdiction,
         "election_date": election.date.isoformat(),
         "generated_at": datetime.now(UTC).isoformat(timespec="seconds"),
         "polls": _records(polls.select(POLL_FIELDS).sort("field_end", descending=True)),
-        "trend": kernel_trend(polls),
-        "trend_method": f"Gaussian kernel average, {BANDWIDTH_DAYS}-day bandwidth, weighted by "
-        "sqrt(sample size). Placeholder until the Bayesian aggregate.",
+        "trend": trend,
+        "trend_method": method,
+        "house_effects": _records(pl.read_csv(house_path)) if house_path.exists() else [],
         "events": _records(events.select("event_date", "description")) if events is not None else [],
     }
     out = WEB_DATA_DIR / election.jurisdiction.lower() / "polls.json"

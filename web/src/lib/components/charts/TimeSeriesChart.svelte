@@ -1,6 +1,6 @@
 <script lang="ts" generics="P extends object, T extends { date: string }">
 	import { scaleLinear, scaleTime } from 'd3-scale';
-	import { curveMonotoneX, line } from 'd3-shape';
+	import { area, curveMonotoneX, line } from 'd3-shape';
 	import { bisector } from 'd3-array';
 	import { timeFormat } from 'd3-time-format';
 	import { fmtDate } from '$lib/format';
@@ -88,6 +88,14 @@
 					.defined((d) => value(d, s.key) != null)
 					.x((d) => x(new Date(d.date)))
 					.y((d) => y(value(d, s.key)!))
+					.curve(curveMonotoneX)(trend) ?? '',
+			// Uncertainty band when the trend carries `<key>_lo` / `<key>_hi`.
+			band:
+				area<T>()
+					.defined((d) => value(d, `${s.key}_lo`) != null && value(d, `${s.key}_hi`) != null)
+					.x((d) => x(new Date(d.date)))
+					.y0((d) => y(value(d, `${s.key}_lo`)!))
+					.y1((d) => y(value(d, `${s.key}_hi`)!))
 					.curve(curveMonotoneX)(trend) ?? ''
 		}))
 	);
@@ -132,7 +140,12 @@
 	const hoverRows = $derived(
 		hovered
 			? series
-					.map((s) => ({ ...s, v: value(hovered, s.key) }))
+					.map((s) => ({
+						...s,
+						v: value(hovered, s.key),
+						lo: value(hovered, `${s.key}_lo`),
+						hi: value(hovered, `${s.key}_hi`)
+					}))
 					.filter((r) => r.v != null)
 					.sort((a, b) => b.v! - a.v!)
 			: []
@@ -216,6 +229,9 @@
 				{/each}
 
 				{#each paths as p (p.key)}
+					{#if p.band}<path class="band" d={p.band} fill={p.colour} />{/if}
+				{/each}
+				{#each paths as p (p.key)}
 					<path class="trend" d={p.d} stroke={p.colour} />
 				{/each}
 
@@ -254,6 +270,9 @@
 						<span class="swatch" style:background={r.colour}></span>
 						<span class="tip-label">{r.label}</span>
 						<span class="tip-v">{r.v!.toFixed(1)}</span>
+						{#if r.lo != null && r.hi != null}
+							<span class="tip-range">{r.lo.toFixed(1)}–{r.hi.toFixed(1)}</span>
+						{/if}
 					</div>
 				{/each}
 			</div>
@@ -334,6 +353,10 @@
 	}
 	.dot {
 		opacity: 0.35;
+	}
+	.band {
+		opacity: 0.14;
+		stroke: none;
 	}
 	.trend {
 		fill: none;
@@ -421,6 +444,13 @@
 	.tip-label {
 		flex: 1;
 		color: var(--fg-2);
+	}
+	.tip-range {
+		font-size: 0.72rem;
+		color: var(--muted);
+		font-variant-numeric: tabular-nums;
+		min-width: 4.5rem;
+		text-align: right;
 	}
 	.tip-v {
 		font-variant-numeric: tabular-nums;

@@ -55,8 +55,8 @@
 
 	<aside class="card notice">
 		<strong>The forecast launches in mid-November.</strong>
-		Until then, this page tracks the polls and the 2022 baseline. Seat-by-seat probabilities will appear
-		here once the model passes its backtests.
+		A <a href="/{j.code}/forecast/2026/">development preview</a> is available; it becomes the official
+		forecast once the model passes its historical backtests.
 	</aside>
 
 	{#if data.polls && latest}

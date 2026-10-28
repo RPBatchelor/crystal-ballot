@@ -1,0 +1,305 @@
+<script lang="ts">
+	import type { PageData } from './$types';
+	import OutcomeBar from '$lib/components/charts/OutcomeBar.svelte';
+	import SeatHistogram from '$lib/components/charts/SeatHistogram.svelte';
+	import { fmtDate } from '$lib/format';
+	import { party, partyColour } from '$lib/parties';
+
+	let { data }: { data: PageData } = $props();
+	const f = $derived(data.forecast);
+	const j = $derived(data.jurisdiction);
+
+	const headline = $derived.by(() => {
+		const o = f.outcome;
+		const top = [
+			{ p: o.coal_majority, t: 'a Coalition majority' },
+			{ p: o.hung, t: 'a hung parliament' },
+			{ p: o.alp_majority, t: 'a Labor majority' }
+		].sort((a, b) => b.p - a.p)[0];
+		return `The most likely outcome is ${top.t}`;
+	});
+
+	const minor = ['GRN', 'ONP', 'IND'];
+	// Independents are inside Others in the poll aggregate, so they have no statewide row.
+	const voteOrder = ['ALP', 'COAL', 'GRN', 'ONP', 'OTH'];
+	const voteMax = $derived(Math.ceil(Math.max(...voteOrder.map((k) => f.statewide_primary[k]?.[2] ?? 0)) / 5) * 5);
+
+	// Seat table
+	const partyOrder = ['ALP', 'GRN', 'IND', 'OTH', 'ONP', 'NAT', 'LIB'];
+	let sortKey = $state<'name' | 'certainty' | 'alp' | 'coal'>('certainty');
+	let query = $state('');
+	const coalP = (d: (typeof f.districts)[number]) => (d.probs.LIB ?? 0) + (d.probs.NAT ?? 0);
+	const rows = $derived(
+		f.districts
+			.filter((d) => !query || d.district.toLowerCase().includes(query.toLowerCase()))
+			.toSorted((a, b) => {
+				if (sortKey === 'name') return a.district.localeCompare(b.district);
+				if (sortKey === 'alp') return (b.probs.ALP ?? 0) - (a.probs.ALP ?? 0);
+				if (sortKey === 'coal') return coalP(b) - coalP(a);
+				return a.leader_prob - b.leader_prob;
+			})
+	);
+	const pct = (p: number) => (p < 0.005 ? '<1%' : p > 0.995 ? '>99%' : `${Math.round(p * 100)}%`);
+	const changes = $derived(
+		f.districts.filter((d) => d.leader !== d.incumbent && d.leader_prob > 0.5).length
+	);
+</script>
+
+<svelte:head>
+	<title>{j.name} {data.year} forecast · Prophecy</title>
+</svelte:head>
+
+{#if !f.validated}
+	<aside class="preview">
+		<strong>Development preview.</strong> This forecast has not yet passed its historical backtest, and
+		several inputs (polling-error size, candidate lists, independents) are provisional. Do not cite.
+	</aside>
+{/if}
+
+<p class="eyebrow">{j.name} · {fmtDate(f.election_date)} · updated {fmtDate(f.generated_at)}</p>
+<h1>{headline}</h1>
+<p class="lede">
+	Across {f.n_sims.toLocaleString()} simulations of all {j.seats} seats, combining the poll aggregate,
+	polling-error history, seat-level swings and preference flows.
+</p>
+
+<OutcomeBar alpMajority={f.outcome.alp_majority} hung={f.outcome.hung} coalMajority={f.outcome.coal_majority} />
+<p class="small muted">
+	Largest party: Coalition in {Math.round(f.outcome.coal_most_seats * 100)} of 100, Labor in {Math.round(
+		f.outcome.alp_most_seats * 100
+	)} of 100.
+</p>
+
+<h2>Seats</h2>
+<div class="hists">
+	<SeatHistogram label="Labor" colour={partyColour('ALP')} counts={f.seat_hist.ALP} majority={f.majority} quantiles={f.seats.ALP} />
+	<SeatHistogram label="Coalition" colour={partyColour('COAL')} counts={f.seat_hist.COAL} majority={f.majority} quantiles={f.seats.COAL} />
+</div>
+<table class="data minor">
+	<thead><tr><th class="left">Party</th><th>Median seats</th><th>Likely range (50%)</th><th>90% range</th></tr></thead>
+	<tbody>
+		{#each minor as p (p)}
+			<tr>
+				<td class="left"><span class="chip" style:--c={partyColour(p)}>{party(p).short}</span></td>
+				<td>{f.seats[p][2]}</td>
+				<td>{f.seats[p][1]}–{f.seats[p][3]}</td>
+				<td>{f.seats[p][0]}–{f.seats[p][4]}</td>
+			</tr>
+		{/each}
+	</tbody>
+</table>
+
+<h2>Statewide vote</h2>
+<p class="small muted">Election-day first-preference estimates with 90% intervals, including polling error.</p>
+<ul class="forest">
+	{#each voteOrder as k (k)}
+		{@const v = f.statewide_primary[k]}
+		{#if v}
+			<li>
+				<span class="lbl">{party(k).short}</span>
+				<span class="track">
+					<span class="range" style:left="{(100 * v[0]) / voteMax}%" style:width="{(100 * (v[2] - v[0])) / voteMax}%" style:background={partyColour(k)}></span>
+					<span class="dot" style:left="{(100 * v[1]) / voteMax}%" style:background={partyColour(k)}></span>
+				</span>
+				<span class="num v">{v[1].toFixed(1)}% <span class="muted small">({v[0].toFixed(0)}–{v[2].toFixed(0)})</span></span>
+			</li>
+		{/if}
+	{/each}
+	<li class="tpp">
+		<span class="lbl">Labor 2PP</span>
+		<span class="track">
+			<span class="half" style:left="50%"></span>
+			<span class="range" style:left="{f.tpp_alp[0]}%" style:width="{f.tpp_alp[2] - f.tpp_alp[0]}%" style:background={partyColour('ALP')}></span>
+			<span class="dot" style:left="{f.tpp_alp[1]}%" style:background={partyColour('ALP')}></span>
+		</span>
+		<span class="num v">{f.tpp_alp[1].toFixed(1)}% <span class="muted small">({f.tpp_alp[0].toFixed(0)}–{f.tpp_alp[2].toFixed(0)})</span></span>
+	</li>
+</ul>
+
+<h2>Every seat</h2>
+<p class="small muted">
+	Chance of each party winning, from the simulations. {changes} seats currently favour a different party
+	from the one holding them.
+</p>
+<div class="controls">
+	<input type="search" placeholder="Search seats" bind:value={query} aria-label="Search seats" />
+	<label class="small">Sort
+		<select bind:value={sortKey}>
+			<option value="certainty">Closest first</option>
+			<option value="name">Name</option>
+			<option value="alp">Labor chance</option>
+			<option value="coal">Coalition chance</option>
+		</select>
+	</label>
+</div>
+<ol class="seats">
+	{#each rows as d (d.slug)}
+		<li>
+			<a href={data.lastResults ? `/${j.code}/results/${data.lastResults}/${d.slug}/` : undefined}>
+				<span class="name">{d.district}<span class="muted small">&nbsp;· held by {party(d.incumbent).short}</span></span>
+				<span class="probbar" role="img" aria-label={Object.entries(d.probs).map(([p, v]) => `${party(p).short} ${pct(v)}`).join(', ')}>
+					{#each partyOrder as p (p)}
+						{#if (d.probs[p] ?? 0) > 0.004}
+							<span style:flex-grow={d.probs[p]} style:background={partyColour(p)}></span>
+						{/if}
+					{/each}
+				</span>
+				<span class="fav num"><strong>{party(d.leader).short}</strong> {pct(d.leader_prob)}</span>
+			</a>
+		</li>
+	{/each}
+</ol>
+
+<p class="small muted diag">
+	Model {f.model_version}. Poll aggregate diagnostics: R-hat ≤ {f.diagnostics.max_rhat?.toFixed(3)}, minimum
+	ESS {Math.round(f.diagnostics.min_ess_bulk ?? 0)}, {f.diagnostics.divergences} divergences.
+</p>
+
+<style>
+	.preview {
+		border: 1px solid var(--party-ONP);
+		background: color-mix(in srgb, var(--party-ONP) 10%, var(--surface));
+		border-radius: var(--radius);
+		padding: 0.7rem 1rem;
+		margin-bottom: 1.25rem;
+		font-size: 0.92rem;
+	}
+	.hists {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+		gap: 1.5rem 2rem;
+	}
+	.minor {
+		max-width: 34rem;
+		margin-top: 1.25rem;
+	}
+	.chip {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+	}
+	.chip::before {
+		content: '';
+		width: 0.6rem;
+		height: 0.6rem;
+		border-radius: 2px;
+		background: var(--c);
+	}
+	.forest {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: grid;
+		gap: 0.6rem;
+		max-width: 44rem;
+	}
+	.forest li {
+		display: grid;
+		grid-template-columns: 6.5rem 1fr 8rem;
+		gap: 0.75rem;
+		align-items: center;
+		font-size: 0.9rem;
+	}
+	.forest .tpp {
+		margin-top: 0.5rem;
+		padding-top: 0.6rem;
+		border-top: 1px solid var(--rule);
+	}
+	.lbl {
+		color: var(--fg-2);
+	}
+	.track {
+		position: relative;
+		height: 1rem;
+		background: linear-gradient(var(--rule), var(--rule)) center / 100% 1px no-repeat;
+	}
+	.range {
+		position: absolute;
+		top: 0.3rem;
+		height: 0.4rem;
+		border-radius: 3px;
+		opacity: 0.45;
+	}
+	.dot {
+		position: absolute;
+		top: 0.1rem;
+		width: 0.8rem;
+		height: 0.8rem;
+		border-radius: 50%;
+		transform: translateX(-50%);
+		border: 2px solid var(--surface);
+	}
+	.half {
+		position: absolute;
+		top: -0.2rem;
+		bottom: -0.2rem;
+		border-left: 1px dashed var(--fg-2);
+	}
+	.v {
+		text-align: right;
+		font-weight: 600;
+	}
+	.controls {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		margin-bottom: 0.75rem;
+	}
+	input[type='search'],
+	select {
+		font: inherit;
+		font-size: 0.9rem;
+		padding: 0.35rem 0.6rem;
+		border: 1px solid var(--rule-strong);
+		border-radius: var(--radius);
+		background: var(--surface);
+		color: var(--fg);
+	}
+	select {
+		margin-left: 0.35rem;
+	}
+	.seats {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		columns: 2 30rem;
+		column-gap: 2.5rem;
+	}
+	.seats li {
+		break-inside: avoid;
+	}
+	.seats a {
+		display: grid;
+		grid-template-columns: minmax(0, 1.4fr) minmax(5rem, 1fr) 7.5rem;
+		gap: 0.75rem;
+		align-items: center;
+		padding: 0.3rem 0.25rem;
+		border-bottom: 1px solid var(--rule);
+		font-size: 0.88rem;
+		text-decoration: none;
+	}
+	.seats a:hover {
+		background: var(--rule);
+	}
+	.name {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.probbar {
+		display: flex;
+		gap: 1px;
+		height: 0.75rem;
+		border-radius: 3px;
+		overflow: hidden;
+	}
+	.probbar span {
+		flex-basis: 0;
+	}
+	.fav {
+		text-align: right;
+	}
+	.diag {
+		margin-top: 2rem;
+	}
+</style>

@@ -1,0 +1,4597 @@
+{
+ "election_id": "vic-2026",
+ "jurisdiction": "VIC",
+ "election_date": "2026-11-28",
+ "generated_at": "2026-10-28T09:41:23+00:00",
+ "model_version": "0.1.0",
+ "validated": false,
+ "diagnostics": {
+  "max_rhat": 1.00718,
+  "min_ess_bulk": 672.501,
+  "divergences": 0
+ },
+ "n_sims": 20000,
+ "majority": 45,
+ "outcome": {
+  "alp_majority": 0.16385,
+  "coal_majority": 0.3563,
+  "hung": 0.47985,
+  "alp_most_seats": 0.3875,
+  "coal_most_seats": 0.5982
+ },
+ "seats": {
+  "ALP": [
+   7.0,
+   20.0,
+   31.0,
+   41.0,
+   51.0
+  ],
+  "LIB": [
+   16.0,
+   24.0,
+   32.0,
+   42.0,
+   57.0
+  ],
+  "NAT": [
+   4.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0
+  ],
+  "GRN": [
+   4.0,
+   6.0,
+   7.0,
+   9.0,
+   12.0
+  ],
+  "ONP": [
+   0.0,
+   2.0,
+   5.0,
+   12.0,
+   25.0
+  ],
+  "IND": [
+   0.0,
+   0.0,
+   1.0,
+   2.0,
+   4.0
+  ],
+  "OTH": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "COAL": [
+   22.0,
+   30.0,
+   39.0,
+   50.0,
+   65.0
+  ]
+ },
+ "seat_hist": {
+  "ALP": [
+   32,
+   67,
+   99,
+   115,
+   162,
+   153,
+   191,
+   208,
+   201,
+   233,
+   256,
+   270,
+   306,
+   301,
+   292,
+   343,
+   332,
+   374,
+   383,
+   388,
+   419,
+   404,
+   432,
+   476,
+   414,
+   432,
+   458,
+   466,
+   462,
+   479,
+   490,
+   495,
+   507,
+   528,
+   533,
+   518,
+   493,
+   517,
+   526,
+   480,
+   503,
+   487,
+   504,
+   524,
+   470,
+   412,
+   454,
+   378,
+   332,
+   310,
+   285,
+   225,
+   201,
+   156,
+   130,
+   102,
+   76,
+   51,
+   46,
+   27,
+   22,
+   19,
+   13,
+   14,
+   6,
+   4,
+   8,
+   0,
+   3,
+   1,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "GRN": [
+   1,
+   3,
+   10,
+   137,
+   1743,
+   2789,
+   3327,
+   3498,
+   2913,
+   2046,
+   1310,
+   778,
+   493,
+   309,
+   205,
+   144,
+   89,
+   66,
+   38,
+   34,
+   21,
+   13,
+   13,
+   6,
+   5,
+   2,
+   3,
+   2,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "ONP": [
+   2684,
+   2113,
+   1721,
+   1385,
+   1267,
+   1094,
+   1002,
+   907,
+   793,
+   690,
+   662,
+   593,
+   516,
+   489,
+   410,
+   384,
+   379,
+   312,
+   292,
+   251,
+   249,
+   211,
+   161,
+   193,
+   130,
+   135,
+   114,
+   94,
+   79,
+   96,
+   74,
+   71,
+   55,
+   50,
+   44,
+   29,
+   29,
+   21,
+   30,
+   20,
+   22,
+   14,
+   21,
+   20,
+   13,
+   6,
+   3,
+   6,
+   6,
+   6,
+   13,
+   4,
+   2,
+   6,
+   3,
+   5,
+   6,
+   3,
+   3,
+   2,
+   3,
+   0,
+   0,
+   1,
+   2,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IND": [
+   5065,
+   6399,
+   4465,
+   2432,
+   1060,
+   412,
+   117,
+   37,
+   12,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "COAL": [
+   1,
+   0,
+   0,
+   1,
+   2,
+   2,
+   2,
+   1,
+   6,
+   10,
+   14,
+   21,
+   19,
+   38,
+   42,
+   49,
+   65,
+   69,
+   104,
+   136,
+   171,
+   211,
+   244,
+   270,
+   338,
+   431,
+   452,
+   525,
+   600,
+   589,
+   617,
+   627,
+   653,
+   619,
+   613,
+   646,
+   618,
+   540,
+   532,
+   592,
+   511,
+   456,
+   489,
+   464,
+   484,
+   436,
+   405,
+   447,
+   403,
+   373,
+   372,
+   313,
+   339,
+   334,
+   308,
+   305,
+   297,
+   262,
+   239,
+   238,
+   228,
+   209,
+   169,
+   196,
+   163,
+   160,
+   128,
+   109,
+   113,
+   99,
+   74,
+   84,
+   70,
+   68,
+   55,
+   35,
+   33,
+   31,
+   15,
+   5,
+   6,
+   0,
+   3,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "statewide_primary": {
+  "ALP": [
+   18.7,
+   23.4,
+   28.0
+  ],
+  "COAL": [
+   24.7,
+   29.8,
+   35.1
+  ],
+  "GRN": [
+   11.4,
+   14.1,
+   17.0
+  ],
+  "ONP": [
+   13.1,
+   20.9,
+   29.8
+  ],
+  "IND": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "OTH": [
+   9.6,
+   11.5,
+   13.6
+  ]
+ },
+ "tpp_alp": [
+  37.0,
+  45.7,
+  55.6
+ ],
+ "districts": [
+  {
+   "district": "Albert Park",
+   "region": "Southern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.3786,
+    "LIB": 0.1483,
+    "GRN": 0.4728,
+    "ONP": 0.0003,
+    "IND": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     19.8,
+     24.4,
+     29.2
+    ],
+    "COAL": [
+     22.4,
+     27.2,
+     32.3
+    ],
+    "GRN": [
+     22.1,
+     27.0,
+     32.2
+    ],
+    "ONP": [
+     6.6,
+     10.9,
+     16.8
+    ],
+    "IND": [
+     3.2,
+     5.2,
+     8.5
+    ],
+    "OTH": [
+     2.6,
+     4.0,
+     5.9
+    ]
+   },
+   "slug": "albert-park",
+   "leader": "GRN",
+   "leader_prob": 0.4728
+  },
+  {
+   "district": "Ashwood",
+   "region": "Southern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.5737,
+    "LIB": 0.396,
+    "GRN": 0.0303
+   },
+   "primary": {
+    "ALP": [
+     24.2,
+     29.1,
+     34.2
+    ],
+    "COAL": [
+     31.2,
+     36.4,
+     41.8
+    ],
+    "GRN": [
+     16.4,
+     20.5,
+     25.2
+    ],
+    "ONP": [
+     4.5,
+     7.4,
+     11.8
+    ],
+    "IND": [
+     1.5,
+     2.4,
+     4.0
+    ],
+    "OTH": [
+     2.0,
+     3.1,
+     4.6
+    ]
+   },
+   "slug": "ashwood",
+   "leader": "ALP",
+   "leader_prob": 0.5737
+  },
+  {
+   "district": "Bass",
+   "region": "Eastern Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.0253,
+    "LIB": 0.9315,
+    "GRN": 0.0001,
+    "ONP": 0.0432
+   },
+   "primary": {
+    "ALP": [
+     14.7,
+     18.8,
+     23.3
+    ],
+    "COAL": [
+     29.9,
+     36.1,
+     42.3
+    ],
+    "GRN": [
+     7.1,
+     9.6,
+     12.6
+    ],
+    "ONP": [
+     16.3,
+     24.7,
+     35.1
+    ],
+    "IND": [
+     2.1,
+     3.4,
+     5.7
+    ],
+    "OTH": [
+     3.9,
+     6.0,
+     8.7
+    ]
+   },
+   "slug": "bass",
+   "leader": "LIB",
+   "leader_prob": 0.9315
+  },
+  {
+   "district": "Bayswater",
+   "region": "North-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.2781,
+    "LIB": 0.7137,
+    "ONP": 0.0082
+   },
+   "primary": {
+    "ALP": [
+     24.2,
+     29.3,
+     34.5
+    ],
+    "COAL": [
+     28.4,
+     33.9,
+     39.5
+    ],
+    "GRN": [
+     7.7,
+     10.2,
+     13.2
+    ],
+    "ONP": [
+     9.5,
+     15.1,
+     22.9
+    ],
+    "IND": [
+     1.1,
+     1.9,
+     3.1
+    ],
+    "OTH": [
+     5.6,
+     8.3,
+     11.9
+    ]
+   },
+   "slug": "bayswater",
+   "leader": "LIB",
+   "leader_prob": 0.7137
+  },
+  {
+   "district": "Bellarine",
+   "region": "Western Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.6528,
+    "LIB": 0.3402,
+    "GRN": 0.0049,
+    "ONP": 0.0021
+   },
+   "primary": {
+    "ALP": [
+     25.2,
+     30.4,
+     35.6
+    ],
+    "COAL": [
+     26.2,
+     31.2,
+     36.6
+    ],
+    "GRN": [
+     12.4,
+     16.0,
+     20.1
+    ],
+    "ONP": [
+     7.5,
+     12.2,
+     18.7
+    ],
+    "IND": [
+     2.5,
+     4.2,
+     6.8
+    ],
+    "OTH": [
+     3.1,
+     4.7,
+     6.9
+    ]
+   },
+   "slug": "bellarine",
+   "leader": "ALP",
+   "leader_prob": 0.6528
+  },
+  {
+   "district": "Benambra",
+   "region": "Northern Victoria",
+   "incumbent": "LIB",
+   "probs": {
+    "LIB": 0.7022,
+    "ONP": 0.1096,
+    "IND": 0.1882
+   },
+   "primary": {
+    "ALP": [
+     4.6,
+     6.5,
+     8.8
+    ],
+    "COAL": [
+     26.9,
+     34.1,
+     41.6
+    ],
+    "GRN": [
+     3.1,
+     4.4,
+     6.1
+    ],
+    "ONP": [
+     16.5,
+     25.1,
+     35.8
+    ],
+    "IND": [
+     15.5,
+     23.9,
+     34.6
+    ],
+    "OTH": [
+     2.6,
+     4.1,
+     6.3
+    ]
+   },
+   "slug": "benambra",
+   "leader": "LIB",
+   "leader_prob": 0.7022
+  },
+  {
+   "district": "Bendigo East",
+   "region": "Northern Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.7761,
+    "LIB": 0.1877,
+    "GRN": 0.0001,
+    "ONP": 0.0362
+   },
+   "primary": {
+    "ALP": [
+     29.3,
+     35.2,
+     41.0
+    ],
+    "COAL": [
+     20.3,
+     25.2,
+     30.5
+    ],
+    "GRN": [
+     8.8,
+     11.8,
+     15.2
+    ],
+    "ONP": [
+     12.6,
+     19.6,
+     28.8
+    ],
+    "IND": [
+     1.9,
+     3.1,
+     5.2
+    ],
+    "OTH": [
+     2.4,
+     3.7,
+     5.6
+    ]
+   },
+   "slug": "bendigo-east",
+   "leader": "ALP",
+   "leader_prob": 0.7761
+  },
+  {
+   "district": "Bendigo West",
+   "region": "Northern Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.8769,
+    "LIB": 0.1064,
+    "GRN": 0.0071,
+    "ONP": 0.0096
+   },
+   "primary": {
+    "ALP": [
+     28.2,
+     33.6,
+     39.1
+    ],
+    "COAL": [
+     18.5,
+     22.9,
+     27.8
+    ],
+    "GRN": [
+     12.0,
+     15.5,
+     19.6
+    ],
+    "ONP": [
+     9.5,
+     15.2,
+     22.9
+    ],
+    "IND": [
+     1.8,
+     3.0,
+     4.9
+    ],
+    "OTH": [
+     5.6,
+     8.3,
+     11.9
+    ]
+   },
+   "slug": "bendigo-west",
+   "leader": "ALP",
+   "leader_prob": 0.8769
+  },
+  {
+   "district": "Bentleigh",
+   "region": "Southern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.5495,
+    "LIB": 0.4451,
+    "GRN": 0.0006,
+    "ONP": 0.0047
+   },
+   "primary": {
+    "ALP": [
+     27.1,
+     32.4,
+     37.7
+    ],
+    "COAL": [
+     28.3,
+     33.6,
+     39.2
+    ],
+    "GRN": [
+     10.9,
+     14.2,
+     18.0
+    ],
+    "ONP": [
+     8.7,
+     14.1,
+     21.3
+    ],
+    "IND": [
+     0.9,
+     1.6,
+     2.6
+    ],
+    "OTH": [
+     2.0,
+     3.1,
+     4.6
+    ]
+   },
+   "slug": "bentleigh",
+   "leader": "ALP",
+   "leader_prob": 0.5495
+  },
+  {
+   "district": "Berwick",
+   "region": "South-Eastern Metropolitan",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0363,
+    "LIB": 0.9352,
+    "GRN": 0.0001,
+    "ONP": 0.0284
+   },
+   "primary": {
+    "ALP": [
+     16.8,
+     21.2,
+     26.0
+    ],
+    "COAL": [
+     31.7,
+     37.9,
+     44.1
+    ],
+    "GRN": [
+     8.5,
+     11.4,
+     14.9
+    ],
+    "ONP": [
+     15.4,
+     23.7,
+     33.8
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.1,
+     4.8,
+     7.1
+    ]
+   },
+   "slug": "berwick",
+   "leader": "LIB",
+   "leader_prob": 0.9352
+  },
+  {
+   "district": "Box Hill",
+   "region": "North-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.6908,
+    "LIB": 0.2876,
+    "GRN": 0.0216
+   },
+   "primary": {
+    "ALP": [
+     25.7,
+     30.7,
+     35.9
+    ],
+    "COAL": [
+     29.7,
+     35.0,
+     40.4
+    ],
+    "GRN": [
+     15.9,
+     20.0,
+     24.6
+    ],
+    "ONP": [
+     4.1,
+     6.8,
+     10.8
+    ],
+    "IND": [
+     1.2,
+     1.9,
+     3.2
+    ],
+    "OTH": [
+     3.0,
+     4.6,
+     6.7
+    ]
+   },
+   "slug": "box-hill",
+   "leader": "ALP",
+   "leader_prob": 0.6908
+  },
+  {
+   "district": "Brighton",
+   "region": "Southern Metropolitan",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0167,
+    "LIB": 0.9619,
+    "GRN": 0.0159,
+    "IND": 0.0054
+   },
+   "primary": {
+    "ALP": [
+     12.4,
+     15.8,
+     19.7
+    ],
+    "COAL": [
+     38.4,
+     44.2,
+     49.9
+    ],
+    "GRN": [
+     14.6,
+     18.7,
+     23.1
+    ],
+    "ONP": [
+     4.0,
+     6.6,
+     10.5
+    ],
+    "IND": [
+     7.1,
+     11.4,
+     17.6
+    ],
+    "OTH": [
+     1.3,
+     2.0,
+     3.0
+    ]
+   },
+   "slug": "brighton",
+   "leader": "LIB",
+   "leader_prob": 0.9619
+  },
+  {
+   "district": "Broadmeadows",
+   "region": "Northern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.8143,
+    "LIB": 0.1513,
+    "GRN": 0.0014,
+    "ONP": 0.033,
+    "IND": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     27.1,
+     32.8,
+     38.4
+    ],
+    "COAL": [
+     16.7,
+     21.1,
+     25.9
+    ],
+    "GRN": [
+     8.5,
+     11.3,
+     14.6
+    ],
+    "ONP": [
+     11.3,
+     17.9,
+     26.7
+    ],
+    "IND": [
+     2.6,
+     4.3,
+     7.1
+    ],
+    "OTH": [
+     7.6,
+     11.1,
+     15.6
+    ]
+   },
+   "slug": "broadmeadows",
+   "leader": "ALP",
+   "leader_prob": 0.8143
+  },
+  {
+   "district": "Brunswick",
+   "region": "Northern Metropolitan",
+   "incumbent": "GRN",
+   "probs": {
+    "ALP": 0.0006,
+    "GRN": 0.9993
+   },
+   "primary": {
+    "ALP": [
+     14.3,
+     17.9,
+     21.9
+    ],
+    "COAL": [
+     7.3,
+     9.4,
+     11.9
+    ],
+    "GRN": [
+     47.1,
+     52.3,
+     57.0
+    ],
+    "ONP": [
+     5.5,
+     8.9,
+     13.9
+    ],
+    "IND": [
+     0.8,
+     1.4,
+     2.3
+    ],
+    "OTH": [
+     6.2,
+     9.1,
+     12.8
+    ]
+   },
+   "slug": "brunswick",
+   "leader": "GRN",
+   "leader_prob": 0.9993
+  },
+  {
+   "district": "Bulleen",
+   "region": "North-Eastern Metropolitan",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0124,
+    "LIB": 0.9873,
+    "GRN": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     18.3,
+     22.5,
+     27.0
+    ],
+    "COAL": [
+     42.5,
+     47.9,
+     53.2
+    ],
+    "GRN": [
+     11.5,
+     14.8,
+     18.7
+    ],
+    "ONP": [
+     4.9,
+     8.1,
+     12.8
+    ],
+    "IND": [
+     0.8,
+     1.4,
+     2.3
+    ],
+    "OTH": [
+     2.8,
+     4.3,
+     6.3
+    ]
+   },
+   "slug": "bulleen",
+   "leader": "LIB",
+   "leader_prob": 0.9873
+  },
+  {
+   "district": "Bundoora",
+   "region": "North-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.7919,
+    "LIB": 0.1505,
+    "GRN": 0.0117,
+    "ONP": 0.0459
+   },
+   "primary": {
+    "ALP": [
+     26.5,
+     32.1,
+     37.6
+    ],
+    "COAL": [
+     18.9,
+     23.5,
+     28.6
+    ],
+    "GRN": [
+     12.5,
+     16.2,
+     20.5
+    ],
+    "ONP": [
+     13.1,
+     20.4,
+     29.9
+    ],
+    "IND": [
+     0.5,
+     0.8,
+     1.4
+    ],
+    "OTH": [
+     3.7,
+     5.6,
+     8.3
+    ]
+   },
+   "slug": "bundoora",
+   "leader": "ALP",
+   "leader_prob": 0.7919
+  },
+  {
+   "district": "Carrum",
+   "region": "South-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.6113,
+    "LIB": 0.2458,
+    "ONP": 0.1429
+   },
+   "primary": {
+    "ALP": [
+     26.7,
+     32.7,
+     38.5
+    ],
+    "COAL": [
+     19.9,
+     25.0,
+     30.5
+    ],
+    "GRN": [
+     6.8,
+     9.1,
+     12.0
+    ],
+    "ONP": [
+     16.4,
+     25.0,
+     35.6
+    ],
+    "IND": [
+     1.1,
+     1.8,
+     3.0
+    ],
+    "OTH": [
+     3.4,
+     5.3,
+     7.7
+    ]
+   },
+   "slug": "carrum",
+   "leader": "ALP",
+   "leader_prob": 0.6113
+  },
+  {
+   "district": "Caulfield",
+   "region": "Southern Metropolitan",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0288,
+    "LIB": 0.9374,
+    "GRN": 0.0337,
+    "IND": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     14.4,
+     18.0,
+     22.1
+    ],
+    "COAL": [
+     37.2,
+     42.7,
+     48.1
+    ],
+    "GRN": [
+     16.9,
+     21.2,
+     25.8
+    ],
+    "ONP": [
+     4.8,
+     7.8,
+     12.4
+    ],
+    "IND": [
+     3.6,
+     5.9,
+     9.6
+    ],
+    "OTH": [
+     2.1,
+     3.2,
+     4.7
+    ]
+   },
+   "slug": "caulfield",
+   "leader": "LIB",
+   "leader_prob": 0.9374
+  },
+  {
+   "district": "Clarinda",
+   "region": "South-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.6006,
+    "LIB": 0.3181,
+    "GRN": 0.0003,
+    "ONP": 0.0711,
+    "IND": 0.0098
+   },
+   "primary": {
+    "ALP": [
+     24.9,
+     30.5,
+     36.2
+    ],
+    "COAL": [
+     19.8,
+     24.7,
+     30.0
+    ],
+    "GRN": [
+     7.5,
+     10.1,
+     13.2
+    ],
+    "ONP": [
+     12.9,
+     20.1,
+     29.5
+    ],
+    "IND": [
+     5.4,
+     8.9,
+     14.1
+    ],
+    "OTH": [
+     2.6,
+     4.1,
+     6.1
+    ]
+   },
+   "slug": "clarinda",
+   "leader": "ALP",
+   "leader_prob": 0.6006
+  },
+  {
+   "district": "Cranbourne",
+   "region": "South-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.4548,
+    "LIB": 0.192,
+    "ONP": 0.3531
+   },
+   "primary": {
+    "ALP": [
+     23.0,
+     29.0,
+     35.0
+    ],
+    "COAL": [
+     17.2,
+     22.1,
+     27.5
+    ],
+    "GRN": [
+     4.8,
+     6.6,
+     8.9
+    ],
+    "ONP": [
+     19.7,
+     29.7,
+     41.5
+    ],
+    "IND": [
+     0.3,
+     0.5,
+     0.8
+    ],
+    "OTH": [
+     7.4,
+     11.0,
+     15.6
+    ]
+   },
+   "slug": "cranbourne",
+   "leader": "ALP",
+   "leader_prob": 0.4548
+  },
+  {
+   "district": "Croydon",
+   "region": "North-Eastern Metropolitan",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0523,
+    "LIB": 0.9446,
+    "GRN": 0.0014,
+    "ONP": 0.0016
+   },
+   "primary": {
+    "ALP": [
+     18.1,
+     22.4,
+     27.1
+    ],
+    "COAL": [
+     34.5,
+     40.2,
+     45.9
+    ],
+    "GRN": [
+     11.0,
+     14.3,
+     18.1
+    ],
+    "ONP": [
+     9.3,
+     14.8,
+     22.4
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     4.8,
+     7.2,
+     10.2
+    ]
+   },
+   "slug": "croydon",
+   "leader": "LIB",
+   "leader_prob": 0.9446
+  },
+  {
+   "district": "Dandenong",
+   "region": "South-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.9493,
+    "LIB": 0.0251,
+    "GRN": 0.0002,
+    "ONP": 0.0254
+   },
+   "primary": {
+    "ALP": [
+     34.1,
+     40.3,
+     46.2
+    ],
+    "COAL": [
+     14.8,
+     18.8,
+     23.4
+    ],
+    "GRN": [
+     8.0,
+     10.6,
+     13.9
+    ],
+    "ONP": [
+     12.7,
+     19.9,
+     29.2
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     6.2,
+     9.2,
+     13.0
+    ]
+   },
+   "slug": "dandenong",
+   "leader": "ALP",
+   "leader_prob": 0.9493
+  },
+  {
+   "district": "Eildon",
+   "region": "Northern Victoria",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0086,
+    "LIB": 0.9568,
+    "GRN": 0.0008,
+    "ONP": 0.0337
+   },
+   "primary": {
+    "ALP": [
+     12.3,
+     16.0,
+     20.0
+    ],
+    "COAL": [
+     32.2,
+     38.8,
+     44.9
+    ],
+    "GRN": [
+     9.5,
+     12.7,
+     16.5
+    ],
+    "ONP": [
+     16.1,
+     24.6,
+     35.0
+    ],
+    "IND": [
+     1.1,
+     1.9,
+     3.1
+    ],
+    "OTH": [
+     3.3,
+     5.0,
+     7.4
+    ]
+   },
+   "slug": "eildon",
+   "leader": "LIB",
+   "leader_prob": 0.9568
+  },
+  {
+   "district": "Eltham",
+   "region": "North-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.598,
+    "LIB": 0.3895,
+    "GRN": 0.0075,
+    "ONP": 0.005
+   },
+   "primary": {
+    "ALP": [
+     25.7,
+     30.8,
+     36.2
+    ],
+    "COAL": [
+     27.1,
+     32.5,
+     38.0
+    ],
+    "GRN": [
+     13.7,
+     17.5,
+     21.8
+    ],
+    "ONP": [
+     9.1,
+     14.4,
+     22.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.4,
+     3.6,
+     5.4
+    ]
+   },
+   "slug": "eltham",
+   "leader": "ALP",
+   "leader_prob": 0.598
+  },
+  {
+   "district": "Essendon",
+   "region": "Northern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.5887,
+    "LIB": 0.3108,
+    "GRN": 0.0605,
+    "ONP": 0.04
+   },
+   "primary": {
+    "ALP": [
+     22.0,
+     27.0,
+     32.3
+    ],
+    "COAL": [
+     20.8,
+     25.7,
+     31.0
+    ],
+    "GRN": [
+     14.9,
+     19.0,
+     23.5
+    ],
+    "ONP": [
+     11.9,
+     18.9,
+     28.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     5.5,
+     8.2,
+     11.7
+    ]
+   },
+   "slug": "essendon",
+   "leader": "ALP",
+   "leader_prob": 0.5887
+  },
+  {
+   "district": "Eureka",
+   "region": "Western Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.2939,
+    "LIB": 0.2561,
+    "GRN": 0.0022,
+    "ONP": 0.4477
+   },
+   "primary": {
+    "ALP": [
+     17.5,
+     22.6,
+     27.9
+    ],
+    "COAL": [
+     18.0,
+     23.2,
+     28.9
+    ],
+    "GRN": [
+     8.5,
+     11.4,
+     15.1
+    ],
+    "ONP": [
+     22.1,
+     32.6,
+     44.5
+    ],
+    "IND": [
+     1.8,
+     3.1,
+     5.1
+    ],
+    "OTH": [
+     3.7,
+     5.8,
+     8.6
+    ]
+   },
+   "slug": "eureka",
+   "leader": "ONP",
+   "leader_prob": 0.4477
+  },
+  {
+   "district": "Euroa",
+   "region": "Northern Victoria",
+   "incumbent": "NAT",
+   "probs": {
+    "ALP": 0.0002,
+    "NAT": 0.9057,
+    "ONP": 0.0941
+   },
+   "primary": {
+    "ALP": [
+     11.9,
+     15.7,
+     20.0
+    ],
+    "COAL": [
+     34.1,
+     41.5,
+     48.6
+    ],
+    "GRN": [
+     4.1,
+     5.7,
+     7.8
+    ],
+    "ONP": [
+     21.2,
+     31.3,
+     42.8
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.2,
+     4.9,
+     7.3
+    ]
+   },
+   "slug": "euroa",
+   "leader": "NAT",
+   "leader_prob": 0.9057
+  },
+  {
+   "district": "Evelyn",
+   "region": "Eastern Victoria",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0167,
+    "LIB": 0.9782,
+    "GRN": 0.0001,
+    "ONP": 0.005
+   },
+   "primary": {
+    "ALP": [
+     16.0,
+     20.2,
+     24.6
+    ],
+    "COAL": [
+     35.6,
+     41.7,
+     47.5
+    ],
+    "GRN": [
+     8.8,
+     11.6,
+     15.0
+    ],
+    "ONP": [
+     11.9,
+     18.6,
+     27.5
+    ],
+    "IND": [
+     0.9,
+     1.6,
+     2.6
+    ],
+    "OTH": [
+     3.4,
+     5.2,
+     7.6
+    ]
+   },
+   "slug": "evelyn",
+   "leader": "LIB",
+   "leader_prob": 0.9782
+  },
+  {
+   "district": "Footscray",
+   "region": "Western Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.4325,
+    "LIB": 0.003,
+    "GRN": 0.5642,
+    "ONP": 0.0004
+   },
+   "primary": {
+    "ALP": [
+     25.0,
+     30.2,
+     35.4
+    ],
+    "COAL": [
+     12.6,
+     16.0,
+     20.0
+    ],
+    "GRN": [
+     23.8,
+     29.1,
+     34.3
+    ],
+    "ONP": [
+     8.3,
+     13.5,
+     20.7
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     6.9,
+     10.1,
+     14.2
+    ]
+   },
+   "slug": "footscray",
+   "leader": "GRN",
+   "leader_prob": 0.5642
+  },
+  {
+   "district": "Frankston",
+   "region": "South-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.5539,
+    "LIB": 0.3365,
+    "GRN": 0.0158,
+    "ONP": 0.0939
+   },
+   "primary": {
+    "ALP": [
+     21.5,
+     26.5,
+     31.8
+    ],
+    "COAL": [
+     20.0,
+     24.9,
+     30.1
+    ],
+    "GRN": [
+     11.9,
+     15.5,
+     19.7
+    ],
+    "ONP": [
+     14.0,
+     21.8,
+     31.6
+    ],
+    "IND": [
+     1.5,
+     2.5,
+     4.1
+    ],
+    "OTH": [
+     4.9,
+     7.3,
+     10.6
+    ]
+   },
+   "slug": "frankston",
+   "leader": "ALP",
+   "leader_prob": 0.5539
+  },
+  {
+   "district": "Geelong",
+   "region": "Western Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.708,
+    "LIB": 0.1172,
+    "GRN": 0.05,
+    "ONP": 0.1249
+   },
+   "primary": {
+    "ALP": [
+     23.1,
+     28.5,
+     34.0
+    ],
+    "COAL": [
+     16.8,
+     21.4,
+     26.4
+    ],
+    "GRN": [
+     13.3,
+     17.3,
+     21.9
+    ],
+    "ONP": [
+     16.4,
+     25.1,
+     35.7
+    ],
+    "IND": [
+     1.5,
+     2.5,
+     4.1
+    ],
+    "OTH": [
+     2.5,
+     3.9,
+     5.9
+    ]
+   },
+   "slug": "geelong",
+   "leader": "ALP",
+   "leader_prob": 0.708
+  },
+  {
+   "district": "Gippsland East",
+   "region": "Eastern Victoria",
+   "incumbent": "NAT",
+   "probs": {
+    "NAT": 0.861,
+    "ONP": 0.1389
+   },
+   "primary": {
+    "ALP": [
+     5.4,
+     7.4,
+     9.8
+    ],
+    "COAL": [
+     36.9,
+     45.2,
+     52.9
+    ],
+    "GRN": [
+     4.4,
+     6.2,
+     8.4
+    ],
+    "ONP": [
+     24.3,
+     34.9,
+     46.7
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.7,
+     5.7,
+     8.5
+    ]
+   },
+   "slug": "gippsland-east",
+   "leader": "NAT",
+   "leader_prob": 0.861
+  },
+  {
+   "district": "Gippsland South",
+   "region": "Eastern Victoria",
+   "incumbent": "NAT",
+   "probs": {
+    "ALP": 0.0003,
+    "NAT": 0.8609,
+    "ONP": 0.1389
+   },
+   "primary": {
+    "ALP": [
+     8.2,
+     11.0,
+     14.3
+    ],
+    "COAL": [
+     31.7,
+     39.0,
+     45.9
+    ],
+    "GRN": [
+     6.1,
+     8.5,
+     11.4
+    ],
+    "ONP": [
+     22.2,
+     32.4,
+     44.3
+    ],
+    "IND": [
+     2.3,
+     3.8,
+     6.3
+    ],
+    "OTH": [
+     2.6,
+     4.1,
+     6.2
+    ]
+   },
+   "slug": "gippsland-south",
+   "leader": "NAT",
+   "leader_prob": 0.8609
+  },
+  {
+   "district": "Glen Waverley",
+   "region": "North-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.2549,
+    "LIB": 0.745,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     25.4,
+     30.4,
+     35.6
+    ],
+    "COAL": [
+     35.4,
+     40.8,
+     46.4
+    ],
+    "GRN": [
+     10.7,
+     13.9,
+     17.6
+    ],
+    "ONP": [
+     4.7,
+     7.8,
+     12.4
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     4.1,
+     6.1,
+     8.9
+    ]
+   },
+   "slug": "glen-waverley",
+   "leader": "LIB",
+   "leader_prob": 0.745
+  },
+  {
+   "district": "Greenvale",
+   "region": "Northern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.6422,
+    "LIB": 0.3502,
+    "GRN": 0.0001,
+    "ONP": 0.0066,
+    "IND": 0.0009
+   },
+   "primary": {
+    "ALP": [
+     26.3,
+     31.6,
+     37.0
+    ],
+    "COAL": [
+     20.7,
+     25.4,
+     30.6
+    ],
+    "GRN": [
+     6.5,
+     8.6,
+     11.3
+    ],
+    "ONP": [
+     7.4,
+     12.1,
+     18.7
+    ],
+    "IND": [
+     3.8,
+     6.3,
+     10.1
+    ],
+    "OTH": [
+     10.1,
+     14.4,
+     19.6
+    ]
+   },
+   "slug": "greenvale",
+   "leader": "ALP",
+   "leader_prob": 0.6422
+  },
+  {
+   "district": "Hastings",
+   "region": "Eastern Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.0972,
+    "LIB": 0.7592,
+    "GRN": 0.0003,
+    "ONP": 0.1433
+   },
+   "primary": {
+    "ALP": [
+     16.6,
+     21.2,
+     26.2
+    ],
+    "COAL": [
+     25.5,
+     31.5,
+     37.6
+    ],
+    "GRN": [
+     8.4,
+     11.3,
+     14.7
+    ],
+    "ONP": [
+     18.7,
+     28.1,
+     39.4
+    ],
+    "IND": [
+     0.6,
+     1.0,
+     1.6
+    ],
+    "OTH": [
+     3.8,
+     5.8,
+     8.6
+    ]
+   },
+   "slug": "hastings",
+   "leader": "LIB",
+   "leader_prob": 0.7592
+  },
+  {
+   "district": "Hawthorn",
+   "region": "Southern Metropolitan",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.012,
+    "LIB": 0.8959,
+    "GRN": 0.0096,
+    "IND": 0.0825
+   },
+   "primary": {
+    "ALP": [
+     11.2,
+     14.5,
+     18.3
+    ],
+    "COAL": [
+     35.7,
+     42.2,
+     48.5
+    ],
+    "GRN": [
+     12.0,
+     15.7,
+     20.0
+    ],
+    "ONP": [
+     2.6,
+     4.4,
+     7.0
+    ],
+    "IND": [
+     12.2,
+     19.1,
+     28.5
+    ],
+    "OTH": [
+     1.8,
+     2.7,
+     4.1
+    ]
+   },
+   "slug": "hawthorn",
+   "leader": "LIB",
+   "leader_prob": 0.8959
+  },
+  {
+   "district": "Ivanhoe",
+   "region": "North-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.707,
+    "LIB": 0.1028,
+    "GRN": 0.1895,
+    "ONP": 0.0007
+   },
+   "primary": {
+    "ALP": [
+     24.6,
+     29.6,
+     34.8
+    ],
+    "COAL": [
+     23.5,
+     28.2,
+     33.4
+    ],
+    "GRN": [
+     20.2,
+     25.0,
+     30.0
+    ],
+    "ONP": [
+     7.1,
+     11.5,
+     17.7
+    ],
+    "IND": [
+     1.0,
+     1.6,
+     2.7
+    ],
+    "OTH": [
+     2.0,
+     3.0,
+     4.5
+    ]
+   },
+   "slug": "ivanhoe",
+   "leader": "ALP",
+   "leader_prob": 0.707
+  },
+  {
+   "district": "Kalkallo",
+   "region": "Northern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.9584,
+    "LIB": 0.0379,
+    "ONP": 0.0038
+   },
+   "primary": {
+    "ALP": [
+     36.9,
+     42.8,
+     48.5
+    ],
+    "COAL": [
+     17.7,
+     22.0,
+     26.8
+    ],
+    "GRN": [
+     5.7,
+     7.6,
+     10.1
+    ],
+    "ONP": [
+     8.7,
+     14.1,
+     21.6
+    ],
+    "IND": [
+     1.3,
+     2.1,
+     3.6
+    ],
+    "OTH": [
+     6.9,
+     10.1,
+     14.2
+    ]
+   },
+   "slug": "kalkallo",
+   "leader": "ALP",
+   "leader_prob": 0.9584
+  },
+  {
+   "district": "Kew",
+   "region": "Southern Metropolitan",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0058,
+    "LIB": 0.9227,
+    "GRN": 0.0007,
+    "IND": 0.0708
+   },
+   "primary": {
+    "ALP": [
+     11.5,
+     15.0,
+     19.0
+    ],
+    "COAL": [
+     37.7,
+     44.7,
+     51.3
+    ],
+    "GRN": [
+     8.9,
+     11.8,
+     15.4
+    ],
+    "ONP": [
+     2.7,
+     4.6,
+     7.4
+    ],
+    "IND": [
+     13.5,
+     20.7,
+     30.7
+    ],
+    "OTH": [
+     1.1,
+     1.7,
+     2.6
+    ]
+   },
+   "slug": "kew",
+   "leader": "LIB",
+   "leader_prob": 0.9227
+  },
+  {
+   "district": "Kororoit",
+   "region": "Western Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.651,
+    "LIB": 0.2848,
+    "GRN": 0.0001,
+    "ONP": 0.0641
+   },
+   "primary": {
+    "ALP": [
+     25.3,
+     30.7,
+     36.3
+    ],
+    "COAL": [
+     17.8,
+     22.3,
+     27.4
+    ],
+    "GRN": [
+     6.7,
+     8.9,
+     11.8
+    ],
+    "ONP": [
+     12.2,
+     19.3,
+     28.6
+    ],
+    "IND": [
+     1.3,
+     2.2,
+     3.6
+    ],
+    "OTH": [
+     10.5,
+     15.0,
+     20.4
+    ]
+   },
+   "slug": "kororoit",
+   "leader": "ALP",
+   "leader_prob": 0.651
+  },
+  {
+   "district": "Lara",
+   "region": "Western Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.4712,
+    "LIB": 0.0074,
+    "GRN": 0.0042,
+    "ONP": 0.5172
+   },
+   "primary": {
+    "ALP": [
+     21.2,
+     27.3,
+     33.6
+    ],
+    "COAL": [
+     10.8,
+     14.5,
+     18.9
+    ],
+    "GRN": [
+     8.3,
+     11.3,
+     15.1
+    ],
+    "ONP": [
+     25.9,
+     37.1,
+     49.5
+    ],
+    "IND": [
+     1.0,
+     1.8,
+     3.0
+    ],
+    "OTH": [
+     4.3,
+     6.8,
+     10.0
+    ]
+   },
+   "slug": "lara",
+   "leader": "ONP",
+   "leader_prob": 0.5172
+  },
+  {
+   "district": "Laverton",
+   "region": "Western Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.8535,
+    "LIB": 0.1188,
+    "GRN": 0.0036,
+    "ONP": 0.0241
+   },
+   "primary": {
+    "ALP": [
+     27.8,
+     33.4,
+     39.0
+    ],
+    "COAL": [
+     16.3,
+     20.5,
+     25.2
+    ],
+    "GRN": [
+     9.8,
+     12.9,
+     16.5
+    ],
+    "ONP": [
+     10.9,
+     17.2,
+     25.7
+    ],
+    "IND": [
+     0.5,
+     0.9,
+     1.4
+    ],
+    "OTH": [
+     9.7,
+     13.8,
+     18.9
+    ]
+   },
+   "slug": "laverton",
+   "leader": "ALP",
+   "leader_prob": 0.8535
+  },
+  {
+   "district": "Lowan",
+   "region": "Western Victoria",
+   "incumbent": "NAT",
+   "probs": {
+    "NAT": 0.9676,
+    "ONP": 0.0324
+   },
+   "primary": {
+    "ALP": [
+     7.3,
+     9.7,
+     12.7
+    ],
+    "COAL": [
+     39.2,
+     46.6,
+     53.4
+    ],
+    "GRN": [
+     4.7,
+     6.5,
+     8.7
+    ],
+    "ONP": [
+     18.2,
+     27.4,
+     38.2
+    ],
+    "IND": [
+     2.4,
+     4.0,
+     6.5
+    ],
+    "OTH": [
+     3.0,
+     4.7,
+     7.0
+    ]
+   },
+   "slug": "lowan",
+   "leader": "NAT",
+   "leader_prob": 0.9676
+  },
+  {
+   "district": "Macedon",
+   "region": "Northern Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.5514,
+    "LIB": 0.3331,
+    "GRN": 0.0129,
+    "ONP": 0.1026
+   },
+   "primary": {
+    "ALP": [
+     21.5,
+     26.7,
+     32.1
+    ],
+    "COAL": [
+     20.5,
+     25.5,
+     31.0
+    ],
+    "GRN": [
+     11.8,
+     15.5,
+     19.7
+    ],
+    "ONP": [
+     14.7,
+     22.6,
+     32.5
+    ],
+    "IND": [
+     2.7,
+     4.5,
+     7.3
+    ],
+    "OTH": [
+     2.4,
+     3.8,
+     5.6
+    ]
+   },
+   "slug": "macedon",
+   "leader": "ALP",
+   "leader_prob": 0.5514
+  },
+  {
+   "district": "Malvern",
+   "region": "Southern Metropolitan",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0007,
+    "LIB": 0.998,
+    "GRN": 0.0014
+   },
+   "primary": {
+    "ALP": [
+     13.5,
+     17.0,
+     20.8
+    ],
+    "COAL": [
+     46.6,
+     51.8,
+     56.8
+    ],
+    "GRN": [
+     16.9,
+     21.1,
+     25.8
+    ],
+    "ONP": [
+     3.4,
+     5.6,
+     8.9
+    ],
+    "IND": [
+     0.9,
+     1.4,
+     2.4
+    ],
+    "OTH": [
+     1.5,
+     2.3,
+     3.5
+    ]
+   },
+   "slug": "malvern",
+   "leader": "LIB",
+   "leader_prob": 0.998
+  },
+  {
+   "district": "Melbourne",
+   "region": "Northern Metropolitan",
+   "incumbent": "GRN",
+   "probs": {
+    "ALP": 0.0039,
+    "LIB": 0.0003,
+    "GRN": 0.9959
+   },
+   "primary": {
+    "ALP": [
+     15.8,
+     19.6,
+     23.8
+    ],
+    "COAL": [
+     12.3,
+     15.5,
+     19.3
+    ],
+    "GRN": [
+     40.1,
+     45.5,
+     50.5
+    ],
+    "ONP": [
+     5.9,
+     9.7,
+     15.0
+    ],
+    "IND": [
+     0.5,
+     0.9,
+     1.5
+    ],
+    "OTH": [
+     5.3,
+     7.9,
+     11.2
+    ]
+   },
+   "slug": "melbourne",
+   "leader": "GRN",
+   "leader_prob": 0.9959
+  },
+  {
+   "district": "Melton",
+   "region": "Western Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.2631,
+    "LIB": 0.2814,
+    "ONP": 0.3514,
+    "IND": 0.104
+   },
+   "primary": {
+    "ALP": [
+     17.7,
+     22.8,
+     28.3
+    ],
+    "COAL": [
+     15.1,
+     19.7,
+     24.9
+    ],
+    "GRN": [
+     3.9,
+     5.5,
+     7.5
+    ],
+    "ONP": [
+     18.5,
+     28.1,
+     39.4
+    ],
+    "IND": [
+     7.4,
+     12.0,
+     18.8
+    ],
+    "OTH": [
+     6.5,
+     9.9,
+     14.3
+    ]
+   },
+   "slug": "melton",
+   "leader": "ONP",
+   "leader_prob": 0.3514
+  },
+  {
+   "district": "Mildura",
+   "region": "Northern Victoria",
+   "incumbent": "NAT",
+   "probs": {
+    "NAT": 0.4743,
+    "ONP": 0.2126,
+    "IND": 0.3131
+   },
+   "primary": {
+    "ALP": [
+     1.9,
+     2.8,
+     3.9
+    ],
+    "COAL": [
+     24.4,
+     32.1,
+     40.6
+    ],
+    "GRN": [
+     1.6,
+     2.4,
+     3.5
+    ],
+    "ONP": [
+     20.7,
+     31.0,
+     43.2
+    ],
+    "IND": [
+     18.4,
+     27.8,
+     39.7
+    ],
+    "OTH": [
+     1.3,
+     2.1,
+     3.4
+    ]
+   },
+   "slug": "mildura",
+   "leader": "NAT",
+   "leader_prob": 0.4743
+  },
+  {
+   "district": "Mill Park",
+   "region": "North-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.7089,
+    "LIB": 0.15,
+    "ONP": 0.141
+   },
+   "primary": {
+    "ALP": [
+     27.8,
+     33.8,
+     39.7
+    ],
+    "COAL": [
+     17.2,
+     21.9,
+     27.0
+    ],
+    "GRN": [
+     6.7,
+     9.1,
+     12.0
+    ],
+    "ONP": [
+     16.1,
+     24.6,
+     35.1
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     6.4,
+     9.5,
+     13.5
+    ]
+   },
+   "slug": "mill-park",
+   "leader": "ALP",
+   "leader_prob": 0.7089
+  },
+  {
+   "district": "Monbulk",
+   "region": "Eastern Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.4419,
+    "LIB": 0.4,
+    "GRN": 0.095,
+    "ONP": 0.0544,
+    "IND": 0.0086
+   },
+   "primary": {
+    "ALP": [
+     17.8,
+     22.4,
+     27.3
+    ],
+    "COAL": [
+     20.1,
+     25.0,
+     30.3
+    ],
+    "GRN": [
+     14.1,
+     18.2,
+     22.8
+    ],
+    "ONP": [
+     12.2,
+     19.3,
+     28.6
+    ],
+    "IND": [
+     5.2,
+     8.5,
+     13.5
+    ],
+    "OTH": [
+     3.2,
+     5.0,
+     7.4
+    ]
+   },
+   "slug": "monbulk",
+   "leader": "ALP",
+   "leader_prob": 0.4419
+  },
+  {
+   "district": "Mordialloc",
+   "region": "South-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.5869,
+    "LIB": 0.384,
+    "GRN": 0.001,
+    "ONP": 0.0273,
+    "IND": 0.0008
+   },
+   "primary": {
+    "ALP": [
+     24.4,
+     29.8,
+     35.2
+    ],
+    "COAL": [
+     22.6,
+     27.7,
+     33.2
+    ],
+    "GRN": [
+     10.1,
+     13.2,
+     16.9
+    ],
+    "ONP": [
+     11.0,
+     17.5,
+     26.0
+    ],
+    "IND": [
+     4.0,
+     6.6,
+     10.6
+    ],
+    "OTH": [
+     2.4,
+     3.7,
+     5.5
+    ]
+   },
+   "slug": "mordialloc",
+   "leader": "ALP",
+   "leader_prob": 0.5869
+  },
+  {
+   "district": "Mornington",
+   "region": "Eastern Victoria",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0032,
+    "LIB": 0.8875,
+    "GRN": 0.0001,
+    "ONP": 0.0039,
+    "IND": 0.1054
+   },
+   "primary": {
+    "ALP": [
+     10.0,
+     13.1,
+     16.9
+    ],
+    "COAL": [
+     32.0,
+     38.9,
+     45.7
+    ],
+    "GRN": [
+     6.1,
+     8.3,
+     11.1
+    ],
+    "ONP": [
+     8.8,
+     14.1,
+     21.4
+    ],
+    "IND": [
+     13.5,
+     20.8,
+     30.8
+    ],
+    "OTH": [
+     1.8,
+     2.9,
+     4.3
+    ]
+   },
+   "slug": "mornington",
+   "leader": "LIB",
+   "leader_prob": 0.8875
+  },
+  {
+   "district": "Morwell",
+   "region": "Eastern Victoria",
+   "incumbent": "NAT",
+   "probs": {
+    "ALP": 0.0039,
+    "NAT": 0.3321,
+    "ONP": 0.6631,
+    "IND": 0.0009
+   },
+   "primary": {
+    "ALP": [
+     10.7,
+     14.5,
+     19.2
+    ],
+    "COAL": [
+     19.5,
+     25.3,
+     32.2
+    ],
+    "GRN": [
+     2.8,
+     4.1,
+     5.7
+    ],
+    "ONP": [
+     32.3,
+     44.7,
+     56.4
+    ],
+    "IND": [
+     3.7,
+     6.1,
+     10.0
+    ],
+    "OTH": [
+     2.6,
+     4.2,
+     6.5
+    ]
+   },
+   "slug": "morwell",
+   "leader": "ONP",
+   "leader_prob": 0.6631
+  },
+  {
+   "district": "Mulgrave",
+   "region": "South-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.6983,
+    "LIB": 0.0175,
+    "ONP": 0.0094,
+    "IND": 0.2748
+   },
+   "primary": {
+    "ALP": [
+     31.2,
+     38.0,
+     44.6
+    ],
+    "COAL": [
+     11.9,
+     15.5,
+     19.9
+    ],
+    "GRN": [
+     5.1,
+     6.9,
+     9.3
+    ],
+    "ONP": [
+     9.7,
+     15.4,
+     23.3
+    ],
+    "IND": [
+     12.0,
+     18.7,
+     27.9
+    ],
+    "OTH": [
+     2.3,
+     3.6,
+     5.4
+    ]
+   },
+   "slug": "mulgrave",
+   "leader": "ALP",
+   "leader_prob": 0.6983
+  },
+  {
+   "district": "Murray Plains",
+   "region": "Northern Victoria",
+   "incumbent": "NAT",
+   "probs": {
+    "NAT": 0.9069,
+    "ONP": 0.0931
+   },
+   "primary": {
+    "ALP": [
+     6.3,
+     8.6,
+     11.4
+    ],
+    "COAL": [
+     38.2,
+     46.2,
+     53.6
+    ],
+    "GRN": [
+     2.8,
+     4.0,
+     5.5
+    ],
+    "ONP": [
+     22.4,
+     32.7,
+     44.3
+    ],
+    "IND": [
+     1.0,
+     1.7,
+     2.9
+    ],
+    "OTH": [
+     3.8,
+     5.9,
+     8.8
+    ]
+   },
+   "slug": "murray-plains",
+   "leader": "NAT",
+   "leader_prob": 0.9069
+  },
+  {
+   "district": "Narracan",
+   "region": "Eastern Victoria",
+   "incumbent": "LIB",
+   "probs": {
+    "LIB": 0.8,
+    "ONP": 0.1882,
+    "IND": 0.0118
+   },
+   "primary": {
+    "ALP": [
+     0.1,
+     0.1,
+     0.1
+    ],
+    "COAL": [
+     27.9,
+     34.6,
+     41.6
+    ],
+    "GRN": [
+     8.8,
+     12.0,
+     15.8
+    ],
+    "ONP": [
+     19.3,
+     28.9,
+     40.3
+    ],
+    "IND": [
+     7.1,
+     11.5,
+     18.3
+    ],
+    "OTH": [
+     7.5,
+     11.1,
+     15.9
+    ]
+   },
+   "slug": "narracan",
+   "leader": "LIB",
+   "leader_prob": 0.8
+  },
+  {
+   "district": "Narre Warren North",
+   "region": "South-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.5007,
+    "LIB": 0.158,
+    "ONP": 0.3413
+   },
+   "primary": {
+    "ALP": [
+     23.2,
+     29.0,
+     34.9
+    ],
+    "COAL": [
+     16.7,
+     21.5,
+     26.9
+    ],
+    "GRN": [
+     5.7,
+     7.9,
+     10.6
+    ],
+    "ONP": [
+     19.8,
+     29.8,
+     41.2
+    ],
+    "IND": [
+     1.0,
+     1.7,
+     2.8
+    ],
+    "OTH": [
+     5.9,
+     8.9,
+     12.8
+    ]
+   },
+   "slug": "narre-warren-north",
+   "leader": "ALP",
+   "leader_prob": 0.5007
+  },
+  {
+   "district": "Narre Warren South",
+   "region": "South-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.5578,
+    "LIB": 0.2374,
+    "ONP": 0.2047
+   },
+   "primary": {
+    "ALP": [
+     25.4,
+     31.3,
+     37.2
+    ],
+    "COAL": [
+     18.8,
+     23.8,
+     29.2
+    ],
+    "GRN": [
+     5.9,
+     8.1,
+     10.7
+    ],
+    "ONP": [
+     17.2,
+     26.3,
+     37.2
+    ],
+    "IND": [
+     0.3,
+     0.5,
+     0.9
+    ],
+    "OTH": [
+     5.9,
+     8.9,
+     12.7
+    ]
+   },
+   "slug": "narre-warren-south",
+   "leader": "ALP",
+   "leader_prob": 0.5578
+  },
+  {
+   "district": "Nepean",
+   "region": "Eastern Victoria",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0112,
+    "LIB": 0.983,
+    "GRN": 0.0001,
+    "ONP": 0.0057
+   },
+   "primary": {
+    "ALP": [
+     15.7,
+     19.9,
+     24.4
+    ],
+    "COAL": [
+     36.4,
+     42.5,
+     48.3
+    ],
+    "GRN": [
+     8.1,
+     10.8,
+     14.1
+    ],
+    "ONP": [
+     12.3,
+     19.2,
+     28.2
+    ],
+    "IND": [
+     1.2,
+     2.1,
+     3.5
+    ],
+    "OTH": [
+     2.8,
+     4.3,
+     6.4
+    ]
+   },
+   "slug": "nepean",
+   "leader": "LIB",
+   "leader_prob": 0.983
+  },
+  {
+   "district": "Niddrie",
+   "region": "Western Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.2709,
+    "LIB": 0.4505,
+    "ONP": 0.2787
+   },
+   "primary": {
+    "ALP": [
+     21.1,
+     26.6,
+     32.3
+    ],
+    "COAL": [
+     21.4,
+     27.0,
+     33.0
+    ],
+    "GRN": [
+     6.2,
+     8.5,
+     11.4
+    ],
+    "ONP": [
+     19.4,
+     29.1,
+     40.6
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     5.0,
+     7.6,
+     11.0
+    ]
+   },
+   "slug": "niddrie",
+   "leader": "LIB",
+   "leader_prob": 0.4505
+  },
+  {
+   "district": "Northcote",
+   "region": "Northern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.2465,
+    "GRN": 0.7534,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     22.3,
+     27.1,
+     32.2
+    ],
+    "COAL": [
+     8.1,
+     10.4,
+     13.4
+    ],
+    "GRN": [
+     31.3,
+     36.9,
+     42.3
+    ],
+    "ONP": [
+     8.7,
+     13.9,
+     21.2
+    ],
+    "IND": [
+     0.7,
+     1.2,
+     2.0
+    ],
+    "OTH": [
+     6.3,
+     9.3,
+     13.1
+    ]
+   },
+   "slug": "northcote",
+   "leader": "GRN",
+   "leader_prob": 0.7534
+  },
+  {
+   "district": "Oakleigh",
+   "region": "Southern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.8013,
+    "LIB": 0.1312,
+    "GRN": 0.0595,
+    "ONP": 0.008
+   },
+   "primary": {
+    "ALP": [
+     25.5,
+     30.6,
+     35.9
+    ],
+    "COAL": [
+     21.0,
+     25.8,
+     30.9
+    ],
+    "GRN": [
+     16.6,
+     20.9,
+     25.6
+    ],
+    "ONP": [
+     9.7,
+     15.5,
+     23.2
+    ],
+    "IND": [
+     1.5,
+     2.6,
+     4.2
+    ],
+    "OTH": [
+     2.2,
+     3.4,
+     5.1
+    ]
+   },
+   "slug": "oakleigh",
+   "leader": "ALP",
+   "leader_prob": 0.8013
+  },
+  {
+   "district": "Ovens Valley",
+   "region": "Northern Victoria",
+   "incumbent": "NAT",
+   "probs": {
+    "ALP": 0.0001,
+    "NAT": 0.9724,
+    "GRN": 0.0001,
+    "ONP": 0.0276
+   },
+   "primary": {
+    "ALP": [
+     8.3,
+     10.9,
+     14.0
+    ],
+    "COAL": [
+     36.4,
+     43.1,
+     49.5
+    ],
+    "GRN": [
+     7.7,
+     10.3,
+     13.5
+    ],
+    "ONP": [
+     16.5,
+     25.0,
+     35.5
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     6.4,
+     9.6,
+     13.6
+    ]
+   },
+   "slug": "ovens-valley",
+   "leader": "NAT",
+   "leader_prob": 0.9724
+  },
+  {
+   "district": "Pakenham",
+   "region": "Eastern Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.1206,
+    "LIB": 0.6294,
+    "GRN": 0.0003,
+    "ONP": 0.2475,
+    "IND": 0.0023
+   },
+   "primary": {
+    "ALP": [
+     15.4,
+     20.0,
+     25.0
+    ],
+    "COAL": [
+     21.1,
+     26.6,
+     32.6
+    ],
+    "GRN": [
+     5.8,
+     7.9,
+     10.7
+    ],
+    "ONP": [
+     19.1,
+     28.8,
+     40.1
+    ],
+    "IND": [
+     4.2,
+     6.9,
+     11.1
+    ],
+    "OTH": [
+     5.3,
+     8.1,
+     11.8
+    ]
+   },
+   "slug": "pakenham",
+   "leader": "LIB",
+   "leader_prob": 0.6294
+  },
+  {
+   "district": "Pascoe Vale",
+   "region": "Northern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.3603,
+    "LIB": 0.0255,
+    "GRN": 0.6123,
+    "ONP": 0.0019
+   },
+   "primary": {
+    "ALP": [
+     20.8,
+     25.5,
+     30.6
+    ],
+    "COAL": [
+     14.5,
+     18.3,
+     22.6
+    ],
+    "GRN": [
+     23.0,
+     28.1,
+     33.3
+    ],
+    "ONP": [
+     9.5,
+     15.2,
+     23.0
+    ],
+    "IND": [
+     2.2,
+     3.6,
+     5.9
+    ],
+    "OTH": [
+     5.3,
+     7.9,
+     11.1
+    ]
+   },
+   "slug": "pascoe-vale",
+   "leader": "GRN",
+   "leader_prob": 0.6123
+  },
+  {
+   "district": "Point Cook",
+   "region": "Western Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.4629,
+    "LIB": 0.2927,
+    "GRN": 0.0004,
+    "ONP": 0.2278,
+    "IND": 0.0161
+   },
+   "primary": {
+    "ALP": [
+     20.4,
+     25.5,
+     31.0
+    ],
+    "COAL": [
+     16.3,
+     20.8,
+     26.0
+    ],
+    "GRN": [
+     6.2,
+     8.5,
+     11.3
+    ],
+    "ONP": [
+     15.9,
+     24.5,
+     35.0
+    ],
+    "IND": [
+     5.2,
+     8.5,
+     13.6
+    ],
+    "OTH": [
+     7.0,
+     10.4,
+     14.7
+    ]
+   },
+   "slug": "point-cook",
+   "leader": "ALP",
+   "leader_prob": 0.4629
+  },
+  {
+   "district": "Polwarth",
+   "region": "Western Victoria",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0516,
+    "LIB": 0.9036,
+    "GRN": 0.0442,
+    "ONP": 0.0006
+   },
+   "primary": {
+    "ALP": [
+     14.5,
+     18.2,
+     22.3
+    ],
+    "COAL": [
+     33.0,
+     38.6,
+     44.1
+    ],
+    "GRN": [
+     16.8,
+     21.0,
+     25.8
+    ],
+    "ONP": [
+     8.1,
+     13.1,
+     20.0
+    ],
+    "IND": [
+     2.3,
+     3.8,
+     6.2
+    ],
+    "OTH": [
+     2.6,
+     4.0,
+     5.9
+    ]
+   },
+   "slug": "polwarth",
+   "leader": "LIB",
+   "leader_prob": 0.9036
+  },
+  {
+   "district": "Prahran",
+   "region": "Southern Metropolitan",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0001,
+    "LIB": 0.0168,
+    "GRN": 0.9831
+   },
+   "primary": {
+    "ALP": [
+     12.8,
+     16.1,
+     19.9
+    ],
+    "COAL": [
+     22.7,
+     27.3,
+     32.2
+    ],
+    "GRN": [
+     38.0,
+     43.4,
+     48.5
+    ],
+    "ONP": [
+     5.4,
+     8.8,
+     13.7
+    ],
+    "IND": [
+     0.6,
+     1.0,
+     1.6
+    ],
+    "OTH": [
+     1.7,
+     2.6,
+     3.9
+    ]
+   },
+   "slug": "prahran",
+   "leader": "GRN",
+   "leader_prob": 0.9831
+  },
+  {
+   "district": "Preston",
+   "region": "Northern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.545,
+    "LIB": 0.0359,
+    "GRN": 0.2343,
+    "ONP": 0.0655,
+    "IND": 0.1193
+   },
+   "primary": {
+    "ALP": [
+     18.4,
+     23.2,
+     28.4
+    ],
+    "COAL": [
+     10.7,
+     14.0,
+     17.9
+    ],
+    "GRN": [
+     14.0,
+     18.2,
+     22.9
+    ],
+    "ONP": [
+     14.4,
+     22.2,
+     32.1
+    ],
+    "IND": [
+     7.3,
+     11.8,
+     18.4
+    ],
+    "OTH": [
+     5.7,
+     8.6,
+     12.3
+    ]
+   },
+   "slug": "preston",
+   "leader": "ALP",
+   "leader_prob": 0.545
+  },
+  {
+   "district": "Richmond",
+   "region": "Northern Metropolitan",
+   "incumbent": "GRN",
+   "probs": {
+    "ALP": 0.0034,
+    "LIB": 0.0003,
+    "GRN": 0.9964
+   },
+   "primary": {
+    "ALP": [
+     17.7,
+     21.8,
+     26.3
+    ],
+    "COAL": [
+     13.6,
+     17.0,
+     21.0
+    ],
+    "GRN": [
+     38.4,
+     43.9,
+     49.0
+    ],
+    "ONP": [
+     4.7,
+     7.8,
+     12.3
+    ],
+    "IND": [
+     0.6,
+     0.9,
+     1.6
+    ],
+    "OTH": [
+     5.2,
+     7.7,
+     10.9
+    ]
+   },
+   "slug": "richmond",
+   "leader": "GRN",
+   "leader_prob": 0.9964
+  },
+  {
+   "district": "Ringwood",
+   "region": "North-Eastern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.5784,
+    "LIB": 0.3474,
+    "GRN": 0.0741,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     23.2,
+     28.0,
+     33.1
+    ],
+    "COAL": [
+     27.7,
+     32.9,
+     38.3
+    ],
+    "GRN": [
+     17.2,
+     21.5,
+     26.3
+    ],
+    "ONP": [
+     5.6,
+     9.3,
+     14.6
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     4.9,
+     7.3,
+     10.4
+    ]
+   },
+   "slug": "ringwood",
+   "leader": "ALP",
+   "leader_prob": 0.5784
+  },
+  {
+   "district": "Ripon",
+   "region": "Western Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.1,
+    "LIB": 0.5896,
+    "ONP": 0.3104
+   },
+   "primary": {
+    "ALP": [
+     16.8,
+     21.7,
+     27.0
+    ],
+    "COAL": [
+     21.9,
+     27.8,
+     34.0
+    ],
+    "GRN": [
+     4.8,
+     6.7,
+     9.0
+    ],
+    "ONP": [
+     21.9,
+     32.3,
+     44.2
+    ],
+    "IND": [
+     1.2,
+     2.0,
+     3.4
+    ],
+    "OTH": [
+     5.5,
+     8.3,
+     12.1
+    ]
+   },
+   "slug": "ripon",
+   "leader": "LIB",
+   "leader_prob": 0.5896
+  },
+  {
+   "district": "Rowville",
+   "region": "South-Eastern Metropolitan",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0735,
+    "LIB": 0.9201,
+    "GRN": 0.0003,
+    "ONP": 0.0006,
+    "IND": 0.0056
+   },
+   "primary": {
+    "ALP": [
+     18.0,
+     22.4,
+     27.1
+    ],
+    "COAL": [
+     33.4,
+     39.3,
+     45.3
+    ],
+    "GRN": [
+     7.4,
+     9.8,
+     12.8
+    ],
+    "ONP": [
+     7.0,
+     11.4,
+     17.5
+    ],
+    "IND": [
+     6.9,
+     11.1,
+     17.4
+    ],
+    "OTH": [
+     2.9,
+     4.4,
+     6.5
+    ]
+   },
+   "slug": "rowville",
+   "leader": "LIB",
+   "leader_prob": 0.9201
+  },
+  {
+   "district": "Sandringham",
+   "region": "Southern Metropolitan",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0112,
+    "LIB": 0.977,
+    "GRN": 0.0117,
+    "IND": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     13.1,
+     16.5,
+     20.4
+    ],
+    "COAL": [
+     39.3,
+     44.8,
+     50.1
+    ],
+    "GRN": [
+     15.6,
+     19.7,
+     24.3
+    ],
+    "ONP": [
+     4.6,
+     7.6,
+     12.1
+    ],
+    "IND": [
+     4.0,
+     6.5,
+     10.6
+    ],
+    "OTH": [
+     2.3,
+     3.5,
+     5.2
+    ]
+   },
+   "slug": "sandringham",
+   "leader": "LIB",
+   "leader_prob": 0.977
+  },
+  {
+   "district": "Shepparton",
+   "region": "Northern Victoria",
+   "incumbent": "NAT",
+   "probs": {
+    "NAT": 0.7111,
+    "ONP": 0.2333,
+    "IND": 0.0556
+   },
+   "primary": {
+    "ALP": [
+     2.4,
+     3.4,
+     4.7
+    ],
+    "COAL": [
+     30.2,
+     38.0,
+     46.3
+    ],
+    "GRN": [
+     1.8,
+     2.6,
+     3.7
+    ],
+    "ONP": [
+     21.1,
+     31.3,
+     43.1
+    ],
+    "IND": [
+     12.4,
+     19.7,
+     29.5
+    ],
+    "OTH": [
+     2.0,
+     3.3,
+     5.1
+    ]
+   },
+   "slug": "shepparton",
+   "leader": "NAT",
+   "leader_prob": 0.7111
+  },
+  {
+   "district": "South Barwon",
+   "region": "Western Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.5911,
+    "LIB": 0.3762,
+    "GRN": 0.0064,
+    "ONP": 0.0262
+   },
+   "primary": {
+    "ALP": [
+     24.7,
+     29.9,
+     35.3
+    ],
+    "COAL": [
+     23.3,
+     28.5,
+     33.8
+    ],
+    "GRN": [
+     12.5,
+     16.1,
+     20.3
+    ],
+    "ONP": [
+     11.5,
+     18.0,
+     26.8
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     4.1,
+     6.3,
+     9.1
+    ]
+   },
+   "slug": "south-barwon",
+   "leader": "ALP",
+   "leader_prob": 0.5911
+  },
+  {
+   "district": "South-West Coast",
+   "region": "Western Victoria",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.0022,
+    "LIB": 0.8729,
+    "ONP": 0.0026,
+    "IND": 0.1224
+   },
+   "primary": {
+    "ALP": [
+     9.7,
+     12.8,
+     16.4
+    ],
+    "COAL": [
+     32.5,
+     39.8,
+     46.7
+    ],
+    "GRN": [
+     5.2,
+     7.1,
+     9.6
+    ],
+    "ONP": [
+     8.2,
+     13.3,
+     20.3
+    ],
+    "IND": [
+     14.8,
+     22.7,
+     33.1
+    ],
+    "OTH": [
+     1.6,
+     2.6,
+     4.0
+    ]
+   },
+   "slug": "south-west-coast",
+   "leader": "LIB",
+   "leader_prob": 0.8729
+  },
+  {
+   "district": "St Albans",
+   "region": "Western Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.5839,
+    "LIB": 0.3383,
+    "GRN": 0.0001,
+    "ONP": 0.0776
+   },
+   "primary": {
+    "ALP": [
+     24.0,
+     29.5,
+     35.1
+    ],
+    "COAL": [
+     18.5,
+     23.1,
+     28.2
+    ],
+    "GRN": [
+     6.8,
+     9.1,
+     12.0
+    ],
+    "ONP": [
+     12.5,
+     19.9,
+     29.2
+    ],
+    "IND": [
+     1.7,
+     2.9,
+     4.7
+    ],
+    "OTH": [
+     9.8,
+     14.1,
+     19.2
+    ]
+   },
+   "slug": "st-albans",
+   "leader": "ALP",
+   "leader_prob": 0.5839
+  },
+  {
+   "district": "Sunbury",
+   "region": "Western Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.2955,
+    "LIB": 0.3333,
+    "ONP": 0.3711
+   },
+   "primary": {
+    "ALP": [
+     20.1,
+     25.5,
+     31.2
+    ],
+    "COAL": [
+     19.2,
+     24.6,
+     30.3
+    ],
+    "GRN": [
+     5.4,
+     7.4,
+     10.0
+    ],
+    "ONP": [
+     20.4,
+     30.6,
+     42.2
+    ],
+    "IND": [
+     1.7,
+     2.9,
+     4.7
+    ],
+    "OTH": [
+     5.0,
+     7.7,
+     11.2
+    ]
+   },
+   "slug": "sunbury",
+   "leader": "ONP",
+   "leader_prob": 0.3711
+  },
+  {
+   "district": "Sydenham",
+   "region": "Western Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.3878,
+    "LIB": 0.4017,
+    "ONP": 0.2105
+   },
+   "primary": {
+    "ALP": [
+     22.8,
+     28.5,
+     34.1
+    ],
+    "COAL": [
+     19.6,
+     24.7,
+     30.3
+    ],
+    "GRN": [
+     5.4,
+     7.3,
+     9.8
+    ],
+    "ONP": [
+     16.6,
+     25.6,
+     36.6
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     8.7,
+     12.7,
+     17.6
+    ]
+   },
+   "slug": "sydenham",
+   "leader": "LIB",
+   "leader_prob": 0.4017
+  },
+  {
+   "district": "Tarneit",
+   "region": "Western Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.6458,
+    "LIB": 0.2472,
+    "ONP": 0.1071
+   },
+   "primary": {
+    "ALP": [
+     26.0,
+     31.8,
+     37.5
+    ],
+    "COAL": [
+     18.5,
+     23.2,
+     28.5
+    ],
+    "GRN": [
+     7.0,
+     9.5,
+     12.5
+    ],
+    "ONP": [
+     14.5,
+     22.6,
+     32.7
+    ],
+    "IND": [
+     0.7,
+     1.2,
+     1.9
+    ],
+    "OTH": [
+     7.1,
+     10.5,
+     14.8
+    ]
+   },
+   "slug": "tarneit",
+   "leader": "ALP",
+   "leader_prob": 0.6458
+  },
+  {
+   "district": "Thomastown",
+   "region": "Northern Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.8477,
+    "LIB": 0.0971,
+    "ONP": 0.0552
+   },
+   "primary": {
+    "ALP": [
+     31.2,
+     37.3,
+     43.1
+    ],
+    "COAL": [
+     16.8,
+     21.2,
+     26.1
+    ],
+    "GRN": [
+     6.6,
+     8.9,
+     11.7
+    ],
+    "ONP": [
+     13.6,
+     21.2,
+     30.8
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     7.0,
+     10.4,
+     14.6
+    ]
+   },
+   "slug": "thomastown",
+   "leader": "ALP",
+   "leader_prob": 0.8477
+  },
+  {
+   "district": "Warrandyte",
+   "region": "North-Eastern Metropolitan",
+   "incumbent": "LIB",
+   "probs": {
+    "ALP": 0.021,
+    "LIB": 0.9782,
+    "GRN": 0.0008
+   },
+   "primary": {
+    "ALP": [
+     18.0,
+     22.2,
+     26.7
+    ],
+    "COAL": [
+     40.3,
+     45.8,
+     51.1
+    ],
+    "GRN": [
+     12.4,
+     15.8,
+     19.9
+    ],
+    "ONP": [
+     6.2,
+     10.2,
+     15.9
+    ],
+    "IND": [
+     0.8,
+     1.3,
+     2.2
+    ],
+    "OTH": [
+     2.4,
+     3.7,
+     5.5
+    ]
+   },
+   "slug": "warrandyte",
+   "leader": "LIB",
+   "leader_prob": 0.9782
+  },
+  {
+   "district": "Wendouree",
+   "region": "Western Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.627,
+    "LIB": 0.2356,
+    "GRN": 0.0006,
+    "ONP": 0.1367
+   },
+   "primary": {
+    "ALP": [
+     25.0,
+     30.6,
+     36.4
+    ],
+    "COAL": [
+     19.5,
+     24.5,
+     29.7
+    ],
+    "GRN": [
+     9.4,
+     12.4,
+     16.1
+    ],
+    "ONP": [
+     16.0,
+     24.5,
+     34.9
+    ],
+    "IND": [
+     0.5,
+     0.9,
+     1.4
+    ],
+    "OTH": [
+     3.9,
+     5.9,
+     8.7
+    ]
+   },
+   "slug": "wendouree",
+   "leader": "ALP",
+   "leader_prob": 0.627
+  },
+  {
+   "district": "Werribee",
+   "region": "Western Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.5729,
+    "LIB": 0.1777,
+    "ONP": 0.2486,
+    "IND": 0.0007
+   },
+   "primary": {
+    "ALP": [
+     23.3,
+     29.0,
+     34.9
+    ],
+    "COAL": [
+     16.2,
+     20.7,
+     25.9
+    ],
+    "GRN": [
+     6.0,
+     8.2,
+     10.9
+    ],
+    "ONP": [
+     17.4,
+     26.6,
+     37.5
+    ],
+    "IND": [
+     3.1,
+     5.2,
+     8.5
+    ],
+    "OTH": [
+     5.8,
+     8.7,
+     12.6
+    ]
+   },
+   "slug": "werribee",
+   "leader": "ALP",
+   "leader_prob": 0.5729
+  },
+  {
+   "district": "Williamstown",
+   "region": "Western Metropolitan",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.6381,
+    "LIB": 0.246,
+    "GRN": 0.0798,
+    "ONP": 0.036
+   },
+   "primary": {
+    "ALP": [
+     22.4,
+     27.5,
+     32.7
+    ],
+    "COAL": [
+     19.7,
+     24.4,
+     29.7
+    ],
+    "GRN": [
+     15.2,
+     19.4,
+     24.1
+    ],
+    "ONP": [
+     11.8,
+     18.8,
+     27.9
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     5.9,
+     8.7,
+     12.3
+    ]
+   },
+   "slug": "williamstown",
+   "leader": "ALP",
+   "leader_prob": 0.6381
+  },
+  {
+   "district": "Yan Yean",
+   "region": "Northern Victoria",
+   "incumbent": "ALP",
+   "probs": {
+    "ALP": 0.2315,
+    "LIB": 0.6608,
+    "ONP": 0.1077
+   },
+   "primary": {
+    "ALP": [
+     21.6,
+     27.0,
+     32.5
+    ],
+    "COAL": [
+     23.9,
+     29.5,
+     35.4
+    ],
+    "GRN": [
+     6.0,
+     8.2,
+     10.8
+    ],
+    "ONP": [
+     15.2,
+     23.7,
+     34.1
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     7.1,
+     10.5,
+     14.8
+    ]
+   },
+   "slug": "yan-yean",
+   "leader": "LIB",
+   "leader_prob": 0.6608
+  }
+ ]
+}
