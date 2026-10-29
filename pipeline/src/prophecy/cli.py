@@ -334,6 +334,12 @@ def publish(election: str = typer.Option("vic-2026", help="Election id")) -> Non
     from prophecy.publish.model_eval import publish_model_eval
 
     typer.echo(publish_model_eval(e.jurisdiction) or "no model evaluation yet")
+    # Blind backtests, published as retrospective forecasts alongside the result.
+    from prophecy.publish.forecast import publish_retrospective
+
+    for past in jurisdictions.in_jurisdiction(e.jurisdiction):
+        if (PROCESSED_DIR / f"backtest-{past.election_id}").exists():
+            typer.echo(publish_retrospective(past))
     # Historical results for every past election in the same jurisdiction we have ingested.
     for past in jurisdictions.ELECTIONS.values():
         if past.jurisdiction == e.jurisdiction and (PROCESSED_DIR / past.election_id / "districts.csv").exists():

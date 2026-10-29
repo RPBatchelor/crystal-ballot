@@ -47,7 +47,7 @@
 	</p>
 </div>
 
-{#each data.models as { name, model } (name)}
+{#each data.models as { code, name, model } (name)}
 <h2>{name}</h2>
 {#if model?.poll_error.length}
 	<h3 class="jur">How far have {adjective(name)} polls missed?</h3>
@@ -96,55 +96,12 @@
 		<strong>{pct(b.outcome.alp_majority)}</strong> chance and a hung parliament {pct(b.outcome.hung)}. Its favourite
 		won {Math.round(b.favourite_accuracy * b.n_seats)} of {b.n_seats} seats (Brier score {b.brier.toFixed(3)});
 		simply assuming every seat stays with its holder would have got {Math.round(b.status_quo_accuracy * b.n_seats)}
-		right (Brier {(2 * (1 - b.status_quo_accuracy)).toFixed(3)}). Labor's two-party vote was forecast at
-		{b.statewide.tpp.forecast[1].toFixed(1)}% (90% range {b.statewide.tpp.forecast[0].toFixed(0)}–{b.statewide.tpp.forecast[2].toFixed(0)});
-		it was {b.statewide.tpp.actual.toFixed(1)}%.
+		right.
 	</p>
-
-	<div class="grid2">
-		<div>
-			<h3>Seats</h3>
-			<table class="data">
-				<thead><tr><th class="left">Party</th><th>Forecast</th><th>90% range</th><th>Actual</th></tr></thead>
-				<tbody>
-					{#each Object.entries(b.seats) as [p, s] (p)}
-						<tr>
-							<td class="left">{party(p).short}</td>
-							<td>{s.median}</td>
-							<td>{s.p90[0]}–{s.p90[1]}</td>
-							<td><strong>{s.actual}</strong>{s.covered_90 ? '' : ' ✗'}</td>
-						</tr>
-					{/each}
-				</tbody>
-			</table>
-		</div>
-		<div>
-			<h3>Calibration</h3>
-			<table class="data">
-				<thead><tr><th class="left">Favourite's chance</th><th>Seats</th><th>Average</th><th>Won</th></tr></thead>
-				<tbody>
-					{#each b.calibration as c (c.bin)}
-						<tr>
-							<td class="left">{c.bin.replace('-', '–')}</td>
-							<td>{c.n}</td>
-							<td>{pct(c.mean_prob)}</td>
-							<td>{pct(c.hit_rate)}</td>
-						</tr>
-					{/each}
-				</tbody>
-			</table>
-		</div>
-	</div>
-
-	<h3>Seats the favourite lost</h3>
-	<ul class="misses small">
-		{#each b.misses as m (m.district)}
-			<li>
-				<strong>{m.district}</strong>: {party(m.favourite).short} favoured ({pct(m.p_fav)}); {party(m.won).short}
-				won ({pct(m.p_won)}).
-			</li>
-		{/each}
-	</ul>
+	<p class="prose">
+		<a href="/{code}/forecast/{year}/">The {year} forecast</a> ·
+		<a href="/{code}/forecast/{year}/vs-result/">Forecast against the result: seats, vote, calibration and every miss →</a>
+	</p>
 {/each}
 {/each}
 
@@ -160,18 +117,9 @@
 	.narrow {
 		max-width: 36rem;
 	}
-	.grid2 {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-		gap: 1rem 2rem;
-	}
 	h3 {
 		margin-top: 1.25rem;
 		font-family: var(--font-sans);
 		font-size: 1rem;
-	}
-	.misses {
-		columns: 2 18rem;
-		padding-left: 1.2rem;
 	}
 </style>

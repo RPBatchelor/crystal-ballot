@@ -2,6 +2,7 @@
 	import type { PageData } from './$types';
 	import TimeSeriesChart from '$lib/components/charts/TimeSeriesChart.svelte';
 	import Hemicycle from '$lib/components/charts/Hemicycle.svelte';
+	import OutcomeBar from '$lib/components/charts/OutcomeBar.svelte';
 	import { chamberSeats } from '$lib/maps';
 	import { daysUntil, fmtDate } from '$lib/format';
 	import { partyColour } from '$lib/parties';
@@ -63,9 +64,32 @@
 		</aside>
 	{:else if j.kind === 'federal'}
 		<p class="lede">
-			The next federal election is due by 2028. Polling since the May 2025 election is tracked below;
-			the model's blind forecast of the 2025 election is on the <a href="/methodology/">methodology page</a>.
+			The next federal election is due by 2028. Polling since the May 2025 election is tracked below.
 		</p>
+	{/if}
+
+	{#if data.retro && data.retro.actual}
+		{@const r = data.retro}
+		{@const won = data.retro.actual.seat_counts.ALP ?? 0}
+		{@const hits = r.districts.filter((d) => d.leader === d.actual_winner).length}
+		<section class="card retro">
+			<p class="eyebrow">Forecast · {data.retroYear} election</p>
+			<h2>How the model would have called {data.retroYear}</h2>
+			<p>
+				Run blind on the eve of polling day, the model gave Labor a majority a
+				<strong>{Math.round(r.outcome.alp_majority * 100)} in 100</strong> chance, a hung parliament
+				{Math.round(r.outcome.hung * 100)} and a Coalition majority {Math.round(r.outcome.coal_majority * 100)}.
+				Labor won {won} seats{won >= r.majority
+					? ', a majority'
+					: ''}; the favourite won {hits} of
+				{r.districts.length} seats.
+			</p>
+			<OutcomeBar alpMajority={r.outcome.alp_majority} hung={r.outcome.hung} coalMajority={r.outcome.coal_majority} />
+			<p class="links">
+				<a href="/{j.code}/forecast/{data.retroYear}/">The full {data.retroYear} forecast →</a>
+				<a href="/{j.code}/forecast/{data.retroYear}/vs-result/">Forecast against the result →</a>
+			</p>
+		</section>
 	{/if}
 
 	{#if data.polls && latest}
@@ -133,6 +157,19 @@
 <style>
 	.baseline {
 		max-width: 30rem;
+	}
+	.retro {
+		margin: 1.5rem 0 0.5rem;
+		max-width: 46rem;
+	}
+	.retro h2 {
+		margin-top: 0.2rem;
+	}
+	.retro .links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem 1.5rem;
+		margin-bottom: 0;
 	}
 	.notice {
 		margin: 1.25rem 0 0.5rem;

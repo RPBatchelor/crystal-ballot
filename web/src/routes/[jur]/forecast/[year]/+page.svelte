@@ -11,6 +11,8 @@
 	let { data }: { data: PageData } = $props();
 	const f = $derived(data.forecast);
 	const j = $derived(data.jurisdiction);
+	const retro = $derived(f.mode === 'retrospective');
+	const area = $derived(j.kind === 'federal' ? 'National' : 'Statewide');
 
 	const headline = $derived.by(() => {
 		const o = f.outcome;
@@ -19,7 +21,7 @@
 			{ p: o.hung, t: 'a hung parliament' },
 			{ p: o.alp_majority, t: 'a Labor majority' }
 		].sort((a, b) => b.p - a.p)[0];
-		return `The most likely outcome is ${top.t}`;
+		return retro ? `The model's most likely outcome was ${top.t}` : `The most likely outcome is ${top.t}`;
 	});
 
 	const minor = ['GRN', 'ONP', 'IND'];
@@ -28,10 +30,10 @@
 	const voteMax = $derived(Math.ceil(Math.max(...voteOrder.map((k) => f.statewide_primary[k]?.[2] ?? 0)) / 5) * 5);
 
 	// Seat table
-	const partyOrder = ['ALP', 'GRN', 'IND', 'OTH', 'ONP', 'NAT', 'LIB'];
+	const partyOrder = ['ALP', 'GRN', 'IND', 'OTH', 'ONP', 'NAT', 'LIB', 'COAL'];
 	let sortKey = $state<'name' | 'certainty' | 'alp' | 'coal'>('certainty');
 	let query = $state('');
-	const coalP = (d: (typeof f.districts)[number]) => (d.probs.LIB ?? 0) + (d.probs.NAT ?? 0);
+	const coalP = (d: (typeof f.districts)[number]) => (d.probs.LIB ?? 0) + (d.probs.NAT ?? 0) + (d.probs.COAL ?? 0);
 	const rows = $derived(
 		f.districts
 			.filter((d) => !query || d.district.toLowerCase().includes(query.toLowerCase()))
@@ -93,7 +95,18 @@
 	<title>{j.name} {data.year} forecast · Prophecy</title>
 </svelte:head>
 
-{#if !f.validated}
+{#if retro && f.actual}
+	<aside class="retro">
+		<strong>A forecast of a past election.</strong> This is what the model would have published on the eve of
+		polling day, built blind: only the previous result, that cycle's polls and polling error from earlier
+		elections went in.
+		{#if f.actual}
+			On the day, Labor won {f.actual.seat_counts.ALP ?? 0} seats with {f.actual.tpp_alp.toFixed(1)}% two-party
+			preferred.
+		{/if}
+		<a href="vs-result/">Forecast against the result →</a>
+	</aside>
+{:else if !f.validated}
 	<aside class="preview">
 		<strong>Development preview.</strong> The model has been <a href="/methodology/">backtested on 2018</a>,
 		but candidate lists (nominations close in November) and independents are still provisional. Do not
@@ -101,7 +114,9 @@
 	</aside>
 {/if}
 
-<p class="eyebrow">{j.name} · {fmtDate(f.election_date)} · updated {fmtDate(f.generated_at)}</p>
+<p class="eyebrow">
+	{j.name} · {fmtDate(f.election_date)} · {retro ? 'forecast as at the eve of polling day' : `updated ${fmtDate(f.generated_at)}`}
+</p>
 <h1>{headline}</h1>
 <p class="lede">
 	Across {f.n_sims.toLocaleString()} simulations of all {j.seats} seats, combining the poll aggregate,
@@ -179,7 +194,7 @@
 	</tbody>
 </table>
 
-<h2>Statewide vote</h2>
+<h2>{area} vote</h2>
 <p class="small muted">Election-day first-preference estimates with 90% intervals, including polling error.</p>
 <ul class="forest">
 	{#each voteOrder as k (k)}
@@ -208,8 +223,8 @@
 
 <h2>Every seat</h2>
 <p class="small muted">
-	Chance of each party winning, from the simulations. {changes} seats currently favour a different party
-	from the one holding them.
+	Chance of each party winning, from the simulations. {changes} seats {retro ? 'favoured' : 'currently favour'} a
+	different party from the one holding them.
 </p>
 <div class="controls">
 	<input type="search" placeholder="Search seats" bind:value={query} aria-label="Search seats" />
@@ -253,6 +268,15 @@
 		padding: 0.7rem 1rem;
 		margin-bottom: 1.25rem;
 		font-size: 0.92rem;
+	}
+	.retro {
+		border-left: 3px solid var(--fg);
+		background: var(--surface);
+		border-radius: var(--radius);
+		padding: 0.7rem 1rem;
+		margin-bottom: 1.25rem;
+		font-size: 0.92rem;
+		max-width: 52rem;
 	}
 	.local {
 		margin: 1.5rem 0 0;

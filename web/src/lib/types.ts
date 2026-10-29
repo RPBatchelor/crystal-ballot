@@ -116,6 +116,10 @@ export interface ForecastDistrict {
 	leader: string;
 	leader_prob: number;
 	notes?: string[];
+	/** Retrospective forecasts only: what actually happened in the seat. */
+	actual_winner?: string;
+	actual_primary?: Record<string, number>;
+	p_actual?: number;
 }
 
 export interface ForecastFile {
@@ -141,4 +145,19 @@ export interface ForecastFile {
 	statewide_primary: Record<string, [number, number, number]>;
 	tpp_alp: [number, number, number];
 	districts: ForecastDistrict[];
+	/** 'retrospective': a blind backtest shown as the eve-of-election forecast. */
+	mode?: 'live' | 'retrospective';
+	actual?: {
+		seat_counts: Record<string, number>;
+		primary: Record<string, number | null>;
+		tpp_alp: number;
+	};
+	scores?: {
+		brier: number;
+		log_loss: number;
+		favourite_accuracy: number;
+		status_quo_accuracy: number;
+		calibration: { bin: string; n: number; mean_prob: number; hit_rate: number }[];
+		seats: Record<string, { actual: number; median: number; p90: [number, number]; covered_90: boolean }>;
+	};
 }

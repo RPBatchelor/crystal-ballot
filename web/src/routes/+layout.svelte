@@ -12,10 +12,10 @@
 		current
 			? [
 					{ href: `/${current.code}/`, label: 'Overview' },
-					...(current.forecastYears ?? []).map((y) => ({
-						href: `/${current.code}/forecast/${y}/`,
-						label: `${y} forecast`
-					})),
+					// Live forecasts; with none, the latest retrospective forecast.
+					...(current.forecastYears?.length ? current.forecastYears : (current.retroYears ?? []).slice(-1)).map(
+						(y) => ({ href: `/${current.code}/forecast/${y}/`, label: `${y} forecast` })
+					),
 					...(current.hasPolls ? [{ href: `/${current.code}/polls/`, label: 'Polls' }] : []),
 					...(current.resultYears.length
 						? [{ href: `/${current.code}/results/${current.resultYears.at(-1)}/`, label: 'Results', prefix: `/${current.code}/results/` }]

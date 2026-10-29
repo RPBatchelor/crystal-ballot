@@ -9,8 +9,10 @@ export interface Jurisdiction {
 	nextElection?: string;
 	/** Past elections with published results on this site. */
 	resultYears: number[];
-	/** Elections with a published forecast. */
+	/** Elections with a published (live) forecast. */
 	forecastYears?: number[];
+	/** Past elections with a retrospective (blind backtest) forecast and its result. */
+	retroYears?: number[];
 	hasPolls: boolean;
 }
 
@@ -23,6 +25,7 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		chamber: 'House of Representatives',
 		seats: 150,
 		resultYears: [2022, 2025],
+		retroYears: [2025],
 		hasPolls: true
 	},
 	{
@@ -46,6 +49,7 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		nextElection: '2026-11-28',
 		resultYears: [2014, 2018, 2022],
 		forecastYears: [2026],
+		retroYears: [2018],
 		hasPolls: true
 	},
 	{
@@ -112,6 +116,11 @@ export const JURISDICTIONS: Jurisdiction[] = [
 
 export function getJurisdiction(code: string): Jurisdiction | undefined {
 	return JURISDICTIONS.find((j) => j.code === code);
+}
+
+/** All forecast pages (live and retrospective). */
+export function allForecastYears(j: Jurisdiction): number[] {
+	return [...(j.retroYears ?? []), ...(j.forecastYears ?? [])];
 }
 
 export function isActive(j: Jurisdiction): boolean {
