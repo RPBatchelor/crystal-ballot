@@ -2,7 +2,7 @@
  "election_id": "fed-2025",
  "jurisdiction": "FED",
  "election_date": "2025-05-03",
- "generated_at": "2026-10-29T09:56:17+00:00",
+ "generated_at": "2026-10-29T10:10:39+00:00",
  "model_version": "0.1.0",
  "mode": "retrospective",
  "validated": true,
@@ -2151,12 +2151,12 @@
    "leader_prob": 0.9987,
    "actual_winner": "ALP",
    "actual_primary": {
+    "OTH": 10.6,
+    "IND": 2.2,
     "ONP": 9.9,
     "COAL": 19.1,
     "GRN": 11.5,
-    "ALP": 46.7,
-    "OTH": 10.6,
-    "IND": 2.2
+    "ALP": 46.7
    },
    "p_actual": 0.9987
   },

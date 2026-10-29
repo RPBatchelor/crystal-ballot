@@ -14,9 +14,10 @@ _PATTERNS: list[tuple[str, str]] = [
     (r"labor|\balp\b|^a\.l\.p\.?$", "ALP"),
     (r"liberal national|\blnp\b", "LNP"),
     (r"liberal democrat", "LDP"),
-    (r"\bclp\b|country liberal", "CLP"),
+    (r"\bclp\b|^c\.l\.p\.?$|country liberal", "CLP"),
     (r"katter", "KAP"),
     (r"centre alliance", "CA"),
+    (r"xenophon", "NXT"),
     (r"\bliberal\b", "LIB"),
     (r"national", "NAT"),
     (r"green", "GRN"),
@@ -48,10 +49,11 @@ BLOC = {
     "LNP": "COAL",
     "CLP": "COAL",
     "COAL": "COAL",
-    # Minor parties holding seats as de facto independents (Kennedy, Mayo): grouping
+    # Minor parties holding seats as de facto independents (Kennedy, Mayo; NXT became CA): grouping
     # them with Others would exclude them first in every simulated count.
     "KAP": "IND",
     "CA": "IND",
+    "NXT": "IND",
     "GRN": "GRN",
     "ONP": "ONP",
     "IND": "IND",

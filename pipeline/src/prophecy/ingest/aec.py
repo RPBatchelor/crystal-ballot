@@ -19,7 +19,8 @@ from prophecy import RAW_DIR
 from prophecy.schema.parties import bloc, party_code
 
 BASE = "https://results.aec.gov.au/{event}/Website/Downloads/{name}-{event}.csv"
-EVENTS = {2019: "24310", 2022: "27966", 2025: "31496"}
+EVENTS = {2007: "13745", 2010: "15508", 2013: "17496", 2016: "20499",
+          2019: "24310", 2022: "27966", 2025: "31496"}
 FILES = [
     "HouseFirstPrefsByCandidateByVoteTypeDownload",
     "HouseTcpByCandidateByVoteTypeDownload",
@@ -67,7 +68,10 @@ def _candidate(df: pl.DataFrame) -> pl.Expr:
 
 def ingest_aec_house(year: int) -> dict[str, pl.DataFrame]:
     election_id = f"fed-{year}"
-    fp = _codes(_read(year, "HouseFirstPrefsByCandidateByVoteTypeDownload")
+    raw = _read(year, "HouseFirstPrefsByCandidateByVoteTypeDownload")
+    informal = raw.filter(pl.col("Surname") == "Informal").select(
+        pl.col("DivisionNm").alias("district"), pl.col("TotalVotes").alias("informal"))
+    fp = _codes(raw.filter(pl.col("Surname") != "Informal")
                 .filter(pl.col("PartyNm").fill_null("Independent") != "Informal")
                 .with_columns(pl.col("PartyNm").fill_null("Independent")))
     fp = fp.with_columns(
@@ -85,7 +89,8 @@ def ingest_aec_house(year: int) -> dict[str, pl.DataFrame]:
                              pl.col("party").alias("elected_party")), on="DivisionNm")
         .rename({"DivisionNm": "district", "StateAb": "state"})
         .join(turnout, on="district", how="left")
-        .with_columns(pl.lit(election_id).alias("election_id"), pl.lit(None, pl.Int64).alias("informal"))
+        .join(informal, on="district", how="left")
+        .with_columns(pl.lit(election_id).alias("election_id"))
         .sort("district")
     )
     primary = fp.select(

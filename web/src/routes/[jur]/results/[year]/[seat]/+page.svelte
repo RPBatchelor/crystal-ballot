@@ -32,12 +32,12 @@
 	</span>
 </nav>
 
-<p class="eyebrow">{j.name} · District of</p>
+<p class="eyebrow">{j.name} · {j.kind === 'federal' ? 'Division' : 'District'} of</p>
 <h1>{s.name}</h1>
 <p class="lede">
 	<span class="chip" style:--c={partyColour(s.party)}>{party(s.party).short}</span>
 	{displayName(s.elected)} won in {data.year} by a margin of
-	<strong>{s.margin.toFixed(1)}%</strong> over {party(loser.party, loser.party_name ?? undefined).short}.
+	<strong>{s.margin < 0.1 ? s.margin.toFixed(2) : s.margin.toFixed(1)}%</strong> over {party(loser.party, loser.party_name ?? undefined).short}.
 	{#if by}
 		<br /><span class="by"
 			>A {fmtDate(by.date)} by-election was won by {displayName(by.elected)} ({party(by.party).short}).</span
@@ -85,7 +85,7 @@
 {#if data.preferences.length}
 	<h2>How preferences flowed</h2>
 	<p class="muted small">
-		The VEC's full distribution of preferences: at each count the lowest candidate is excluded and their
+		The {j.kind === 'federal' ? 'AEC' : 'VEC'}'s full distribution of preferences: at each count the lowest candidate is excluded and their
 		ballots pass to the next preference still in the count.
 	</p>
 	<ol class="counts">

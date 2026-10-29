@@ -13,6 +13,8 @@ export interface Jurisdiction {
 	forecastYears?: number[];
 	/** Past elections with a retrospective (blind backtest) forecast and its result. */
 	retroYears?: number[];
+	/** Who formed government after a hung parliament, where seat counts alone mislead. */
+	minorityGovernments?: Record<number, string>;
 	hasPolls: boolean;
 }
 
@@ -24,8 +26,9 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		kind: 'federal',
 		chamber: 'House of Representatives',
 		seats: 150,
-		resultYears: [2022, 2025],
+		resultYears: [2007, 2010, 2013, 2016, 2019, 2022, 2025],
 		retroYears: [2025],
+		minorityGovernments: { 2010: 'ALP' },
 		hasPolls: true
 	},
 	{

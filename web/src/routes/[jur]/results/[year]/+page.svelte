@@ -20,9 +20,11 @@
 			.map((k) => ({ code: k, label: party(k).short, pct: r.primary_share[k] }))
 	);
 	const maxShare = $derived(Math.max(...shares.map((s) => s.pct)));
-	const coalSeats = $derived((r.seat_counts.LIB ?? 0) + (r.seat_counts.NAT ?? 0) + (r.seat_counts.LNP ?? 0));
+	const coalSeats = $derived(['LIB', 'NAT', 'LNP', 'CLP'].reduce((a, c) => a + (r.seat_counts[c] ?? 0), 0));
 	const alpSeats = $derived(r.seat_counts.ALP ?? 0);
-	const government = $derived(alpSeats >= coalSeats ? 'ALP' : 'COAL');
+	const government = $derived(
+		j.minorityGovernments?.[data.year] ?? (alpSeats >= coalSeats ? 'ALP' : 'COAL')
+	);
 	const govSeats = $derived(government === 'ALP' ? alpSeats : coalSeats);
 	const nonClassic = $derived(r.seats.filter((s) => !s.classic).length);
 	const years = $derived(j.resultYears);
@@ -98,10 +100,8 @@
 <p class="eyebrow">{j.name} · {j.chamber} · {fmtDate(r.date)}</p>
 <h1>{data.year} {j.name} election results</h1>
 <p class="lede">
-	{party(government).short} formed government with {govSeats} of {r.seats_total} seats{govSeats >=
-	r.majority
-		? ''
-		: ' (short of a majority)'}. Labor won {r.tpp_alp.toFixed(1)}% of the {scope} two-party-preferred vote.
+	{party(government).short} formed {govSeats >= r.majority ? '' : 'minority '}government with {govSeats} of
+	{r.seats_total} seats{govSeats >= r.majority ? '' : ` (${r.majority} needed for a majority)`}. Labor won {r.tpp_alp.toFixed(1)}% of the {scope} two-party-preferred vote.
 </p>
 
 <div class="hero">
