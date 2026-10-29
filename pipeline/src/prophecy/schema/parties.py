@@ -11,9 +11,12 @@ import re
 
 # (pattern, code). First match wins; patterns are matched case-insensitively.
 _PATTERNS: list[tuple[str, str]] = [
-    (r"labor|\balp\b", "ALP"),
+    (r"labor|\balp\b|^a\.l\.p\.?$", "ALP"),
     (r"liberal national|\blnp\b", "LNP"),
     (r"liberal democrat", "LDP"),
+    (r"\bclp\b|country liberal", "CLP"),
+    (r"katter", "KAP"),
+    (r"centre alliance", "CA"),
     (r"\bliberal\b", "LIB"),
     (r"national", "NAT"),
     (r"green", "GRN"),
@@ -43,6 +46,12 @@ BLOC = {
     "LIB": "COAL",
     "NAT": "COAL",
     "LNP": "COAL",
+    "CLP": "COAL",
+    "COAL": "COAL",
+    # Minor parties holding seats as de facto independents (Kennedy, Mayo): grouping
+    # them with Others would exclude them first in every simulated count.
+    "KAP": "IND",
+    "CA": "IND",
     "GRN": "GRN",
     "ONP": "ONP",
     "IND": "IND",

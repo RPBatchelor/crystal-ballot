@@ -7,6 +7,7 @@ can tell a merged cell (e.g. one value spanning IND and Others) from two real va
 
 from __future__ import annotations
 
+import html
 import re
 from dataclasses import dataclass, field
 
@@ -101,6 +102,7 @@ def _strip_balanced(text: str, opener: str, closer: str, predicate) -> str:
                     j += 1
             inner = text[i + len(opener) : j - len(closer)]
             if predicate(inner):
+                out.append("\n" * text.count("\n", i, j))  # keep line numbers stable
                 i = j
                 continue
             out.append(text[i:j])
@@ -122,6 +124,14 @@ def clean(text: str) -> str:
         text, "{{", "}}", lambda inner: inner.split("|")[0].strip().lower() in _DROP_TEMPLATES
     )
     text = re.sub(r"\{\{\s*n/?a\s*\}\}", "", text, flags=re.IGNORECASE)
+    text = text.replace("{{!}}", "|")  # escaped pipe, e.g. inside [[Page{{!}}Label]]
+    # Dash templates: {{ndash}}, {{en dash}}, {{snd}} (spaced en dash), ...
+    text = re.sub(r"\{\{\s*(?:ndash|en ?dash|snd|spaced ndash)\s*\}\}", "–", text,
+                  flags=re.IGNORECASE)
+    text = re.sub(r"\{\{\s*(?:mdash|em ?dash)\s*\}\}", "—", text, flags=re.IGNORECASE)
+    text = html.unescape(text)  # &ndash; &nbsp; ...
+    # {{tooltip|LABEL|explanation}} shows LABEL.
+    text = re.sub(r"\{\{\s*(?:tooltip|abbr)\s*\|([^|{}]*)\|[^{}]*\}\}", r"\1", text, flags=re.IGNORECASE)
     # Unwrap simple templates: {{nowrap|x}} -> x ; other templates -> last arg.
     for _ in range(3):
         text = re.sub(r"\{\{([^{}]*)\}\}", lambda m: m.group(1).split("|")[-1], text)
@@ -185,6 +195,14 @@ def _parse_cell(chunk: str, header: bool) -> Cell:
 def parse_tables(wikitext: str) -> list[Table]:
     """Parse every top-level table in a page."""
     tables: list[Table] = []
+    # Citations and footnotes often span several lines; a continuation line such as
+    # "|access-date=..." would otherwise be read as a new table cell.
+    # Removed text is replaced by its newlines so line numbers (used to match tables to
+    # section headings) stay aligned with the original page.
+    wikitext = _REF_RE.sub(lambda m: "\n" * m.group(0).count("\n"), wikitext)
+    wikitext = _strip_balanced(
+        wikitext, "{{", "}}", lambda inner: inner.split("|")[0].strip().lower() in _DROP_TEMPLATES
+    )
     lines = wikitext.splitlines()
     current: Table | None = None
     row: Row | None = None

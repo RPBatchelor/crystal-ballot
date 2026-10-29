@@ -31,7 +31,17 @@ export interface ModelFile {
 	poll_error_settings: { sd: Record<string, number>; bias: Record<string, number>; window_days: number } | null;
 }
 
+const SOURCES = [
+	{ code: 'vic', name: 'Victoria' },
+	{ code: 'federal', name: 'Federal' }
+];
+
 export const load: PageLoad = async ({ fetch }) => {
-	const res = await fetch('/data/vic/model.json');
-	return { model: res.ok ? ((await res.json()) as ModelFile) : null };
+	const models = await Promise.all(
+		SOURCES.map(async ({ code, name }) => {
+			const res = await fetch(`/data/${code}/model.json`);
+			return { code, name, model: res.ok ? ((await res.json()) as ModelFile) : null };
+		})
+	);
+	return { models: models.filter((m) => m.model) };
 };

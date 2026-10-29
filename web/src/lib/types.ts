@@ -39,6 +39,7 @@ export interface PollsFile {
 	polls: Poll[];
 	trend: TrendPoint[];
 	trend_method: string;
+	election_date_known?: boolean;
 	cycles?: { election_id: string; date: string }[];
 	results?: ({ year: number; date: string; ALP: number | null; COAL: number | null; GRN: number | null; ONP: number | null; tpp_alp_vs_coal: number | null } & Record<string, unknown>)[];
 	house_effects?: { pollster: string; party: string; median: number; lo: number; hi: number }[];

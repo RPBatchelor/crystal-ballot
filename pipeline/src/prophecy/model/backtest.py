@@ -92,9 +92,10 @@ def score(res: SimResult, actual: dict[str, str], incumbents: dict[str, str]) ->
                          "incumbent": incumbents.get(name)})
 
     seats = {p: (labels == p).sum(axis=1) for p in ["ALP", "LIB", "NAT", "GRN", "IND", "OTH"]}
-    seats["COAL"] = seats["LIB"] + seats["NAT"]
+    coal_labels = ["LIB", "NAT", "LNP", "CLP", "COAL"]
+    seats["COAL"] = np.isin(labels, coal_labels).sum(axis=1)
     actual_seats = {p: sum(1 for v in actual.values() if v == p) for p in seats}
-    actual_seats["COAL"] = actual_seats["LIB"] + actual_seats["NAT"]
+    actual_seats["COAL"] = sum(1 for v in actual.values() if v in coal_labels)
     seat_check = {
         p: {"actual": actual_seats[p],
             "median": float(np.median(seats[p])),

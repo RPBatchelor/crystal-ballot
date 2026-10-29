@@ -48,6 +48,8 @@ class SimConfig:
     retire_effect: float = -0.08  # sitting member not recontesting: lost personal vote
     sophomore_effect: float = 0.05  # first-term member recontesting: personal vote gained
     ind_prior_sd: float = 0.35  # log-scale spread around a curated independent's prior
+    ind_sophomore_log: float = 0.15  # first-term independent recontesting (~+16%)
+    ind_retire_log: float = -1.2  # sitting independent retiring: ~70% of their vote leaves
 
 
 @dataclass
@@ -236,8 +238,17 @@ def simulate(inputs: SeatInputs, agg_draws: np.ndarray, agg_parties: list[str],
 
     # 4. Independents: persist with random decay, or around a curated prior where a
     #    notable independent is on the ballot.
+    # Sitting independents keep their vote (no decay); first-term ones gain; when a
+    # sitting independent retires most of their personal vote goes with them.
+    decay = np.full(D, cfg.ind_decay_mean)
+    if inputs.retiring is not None and inputs.sophomore is not None:
+        k = IDX["IND"]
+        sitting_ind = np.array([_bloc(h) == "IND" for h in inputs.incumbent])
+        decay = np.where(sitting_ind, 0.0, decay)
+        decay = np.where(inputs.sophomore[:, k] > 0, cfg.ind_sophomore_log, decay)
+        decay = np.where(inputs.retiring[:, k] > 0, cfg.ind_retire_log, decay)
     ind = inputs.base[:, IDX["IND"]][None, :] * np.exp(
-        rng.normal(cfg.ind_decay_mean, cfg.ind_decay_sd, size=(S, D))
+        decay[None, :] + rng.normal(0, cfg.ind_decay_sd, size=(S, D))
     )
     if inputs.ind_prior is not None and np.isfinite(inputs.ind_prior).any():
         has = np.isfinite(inputs.ind_prior)

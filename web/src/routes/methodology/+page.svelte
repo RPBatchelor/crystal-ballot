@@ -3,7 +3,7 @@
 	import { party } from '$lib/parties';
 
 	let { data }: { data: PageData } = $props();
-	const model = $derived(data.model);
+	const adjective = (name: string) => (name === 'Victoria' ? 'Victorian' : name.toLowerCase());
 	const pct = (p: number) => `${Math.round(p * 100)}%`;
 	const signed = (v: number | null) => (v == null ? '–' : `${v > 0 ? '+' : ''}${v.toFixed(1)}`);
 </script>
@@ -15,7 +15,7 @@
 <p class="eyebrow">How it works</p>
 <h1>Methodology</h1>
 <p class="lede">
-	The model has three layers, each checked against past Victorian elections. Everything below is
+	The model has three layers, each checked against past Victorian and federal elections. Everything below is
 	reproducible from the open pipeline.
 </p>
 
@@ -33,7 +33,7 @@
 	<h2>2. Election-day uncertainty</h2>
 	<p>
 		The industry as a whole can miss. The forecast adds a polling-error term sized from how far the final
-		month's poll average missed the result at past Victorian elections, with heavy tails, and corrects
+		month's poll average missed the result at past elections in the same jurisdiction, with heavy tails, and corrects
 		half of any persistent lean (polls have tended to overstate the Greens).
 	</p>
 
@@ -47,8 +47,10 @@
 	</p>
 </div>
 
+{#each data.models as { name, model } (name)}
+<h2>{name}</h2>
 {#if model?.poll_error.length}
-	<h2>How far have the polls missed?</h2>
+	<h3 class="jur">How far have {adjective(name)} polls missed?</h3>
 	<p class="muted small">
 		Final-{model.poll_error_settings?.window_days ?? 28}-day simple poll average minus the actual result, in
 		points. Positive means the polls overstated the party.
@@ -87,12 +89,16 @@
 
 {#each model?.backtests ?? [] as b (b.election_id)}
 	{@const year = b.election_id.slice(-4)}
-	<h2>Backtest: forecasting {year} blind</h2>
+	<h3 class="jur">Backtest: forecasting the {year} {adjective(name)} election blind</h3>
 	<p class="prose">
 		Using only what was known before polling day (the previous result, that cycle's polls, and polling
 		error from earlier elections), the model gave Labor a majority a
 		<strong>{pct(b.outcome.alp_majority)}</strong> chance and a hung parliament {pct(b.outcome.hung)}. Its favourite
-		won {Math.round(b.favourite_accuracy * b.n_seats)} of {b.n_seats} seats (Brier score {b.brier.toFixed(3)}).
+		won {Math.round(b.favourite_accuracy * b.n_seats)} of {b.n_seats} seats (Brier score {b.brier.toFixed(3)});
+		simply assuming every seat stays with its holder would have got {Math.round(b.status_quo_accuracy * b.n_seats)}
+		right (Brier {(2 * (1 - b.status_quo_accuracy)).toFixed(3)}). Labor's two-party vote was forecast at
+		{b.statewide.tpp.forecast[1].toFixed(1)}% (90% range {b.statewide.tpp.forecast[0].toFixed(0)}–{b.statewide.tpp.forecast[2].toFixed(0)});
+		it was {b.statewide.tpp.actual.toFixed(1)}%.
 	</p>
 
 	<div class="grid2">
@@ -140,8 +146,14 @@
 		{/each}
 	</ul>
 {/each}
+{/each}
 
 <style>
+	h3.jur {
+		font-family: var(--font-serif);
+		font-size: 1.3rem;
+		margin-top: 2rem;
+	}
 	.prose {
 		max-width: 44rem;
 	}

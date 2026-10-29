@@ -53,7 +53,9 @@ export const tierOpacity = (p: number) => TIERS.find((t) => p >= t.min)!.opacity
 const CHAMBER_ORDER = ['ALP', 'GRN', 'IND', 'OTH', 'ONP', 'NAT', 'LIB', 'LNP'];
 const rank = (code: string) => {
 	const i = CHAMBER_ORDER.indexOf(code);
-	return i === -1 ? CHAMBER_ORDER.indexOf(bloc(code) === 'COAL' ? 'LIB' : 'OTH') : i;
+	if (i !== -1) return i;
+	const b = bloc(code);
+	return CHAMBER_ORDER.indexOf(b === 'COAL' ? 'LIB' : b === 'IND' ? 'IND' : 'OTH');
 };
 
 /** Seats for the chamber diagram from per-seat winners. ``strength`` (0-1) orders seats

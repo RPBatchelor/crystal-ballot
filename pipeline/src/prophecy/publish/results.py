@@ -8,7 +8,7 @@ import re
 import polars as pl
 
 from prophecy import DATA_DIR, WEB_DATA_DIR
-from prophecy.jurisdictions import Election
+from prophecy.jurisdictions import Election, site_code
 from prophecy.schema.parties import bloc
 
 PROCESSED = DATA_DIR / "processed"
@@ -93,7 +93,7 @@ def publish_results(election: Election) -> str:
         "tpp_alp": round(official_tpp if official_tpp is not None else seat_tpp, 2),
         "seats": seats,
     }
-    out_dir = WEB_DATA_DIR / election.jurisdiction.lower() / "results"
+    out_dir = WEB_DATA_DIR / site_code(election.jurisdiction) / "results"
     out_dir.mkdir(parents=True, exist_ok=True)
     out = out_dir / f"{election.date.year}.json"
     out.write_text(json.dumps(payload, indent=1), encoding="utf-8")

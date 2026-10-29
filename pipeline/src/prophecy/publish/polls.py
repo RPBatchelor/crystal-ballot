@@ -9,7 +9,7 @@ import numpy as np
 import polars as pl
 
 from prophecy import DATA_DIR, WEB_DATA_DIR, jurisdictions
-from prophecy.jurisdictions import Election
+from prophecy.jurisdictions import Election, site_code
 
 POLL_FIELDS = [
     "pollster", "client", "field_start", "field_end", "sample_size",
@@ -60,6 +60,8 @@ def publish_polls(election: Election) -> str:
         "election_id": election.election_id,
         "jurisdiction": election.jurisdiction,
         "election_date": election.date.isoformat(),
+        # The next federal election has no fixed date: its date is a placeholder.
+        "election_date_known": not election.election_id.endswith("-next"),
         "generated_at": datetime.now(UTC).isoformat(timespec="seconds"),
         "cycles": [{"election_id": e.election_id, "date": e.date.isoformat()} for e in cycles],
         "polls": _records(pl.concat(all_polls, how="diagonal_relaxed").sort("field_end", descending=True)),
@@ -69,7 +71,7 @@ def publish_polls(election: Election) -> str:
         "house_effects": _records(pl.read_csv(house_path)) if house_path.exists() else [],
         "events": sorted(events, key=lambda r: str(r["event_date"])),
     }
-    out = WEB_DATA_DIR / election.jurisdiction.lower() / "polls.json"
+    out = WEB_DATA_DIR / site_code(election.jurisdiction) / "polls.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(payload, indent=1, default=str), encoding="utf-8")
     return str(out)

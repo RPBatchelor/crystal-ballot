@@ -47,23 +47,23 @@
 </svelte:head>
 
 <p class="eyebrow">{j.name} · voting intention</p>
-<h1>Every state poll since {firstYear}</h1>
+<h1>Every {j.kind === 'federal' ? 'federal' : 'state'} poll since {firstYear}</h1>
 <p class="lede">
-	{polls.polls.length} published state voting-intention polls from {pollsters.length} pollsters across
+	{polls.polls.length} published {j.kind === 'federal' ? 'federal' : 'state'} voting-intention polls from {pollsters.length} pollsters across
 	{cycles.length} election cycles. Dots are individual polls, lines the poll average, and diamonds the actual
 	election results. Use the range buttons or drag across the strip under each chart to zoom.
 </p>
 
 <h2>Primary vote</h2>
 <TimeSeriesChart
-	title="Victorian primary vote polling since {firstYear}"
+	title="{j.name} primary vote polling since {firstYear}"
 	series={PRIMARY_SERIES}
 	points={polls.polls}
 	pointDate={(p) => p.field_end}
 	trend={polls.trend}
 	{events}
 	{markers}
-	end={polls.election_date}
+	end={polls.election_date_known === false ? undefined : polls.election_date}
 	zoomable
 	{cycleStart}
 	initialRange="cycle"
@@ -75,13 +75,13 @@
 	the line is implied from the primary-vote average using estimated preference flows.
 </p>
 <TimeSeriesChart
-	title="Labor two-party-preferred vote in Victorian polls since {firstYear}"
+	title="Labor two-party-preferred vote in {j.name} polls since {firstYear}"
 	series={TPP_SERIES}
 	points={polls.polls}
 	pointDate={(p) => p.field_end}
 	trend={polls.trend}
 	{markers}
-	end={polls.election_date}
+	end={polls.election_date_known === false ? undefined : polls.election_date}
 	yRef={50}
 	height={280}
 	zoomable

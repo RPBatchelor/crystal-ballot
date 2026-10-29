@@ -37,6 +37,10 @@ def ingest_polls(
             e.polls_wiki_title, e.jurisdiction, slug, refresh, window=(prev.date, e.date),
             cycle=e.election_id,
         )
+        if df.height == 0:
+            typer.echo(f"{e.election_id}: no parseable polls, skipped")
+            all_results.append(results)
+            continue
         df.write_csv(PROCESSED_DIR / f"polls_{e.election_id}.csv")
         if events.height:
             events.write_csv(PROCESSED_DIR / f"events_{e.election_id}.csv")
@@ -65,6 +69,12 @@ def ingest_polls(
         .select("year", "date", "ALP", "COAL", "GRN", "ONP", "OTH", "tpp_alp_vs_coal")
         .sort("year")
     )
+    # Curated official results fill years with no result row on any poll page.
+    curated = DATA_DIR / "curated" / f"election_results_{code}.csv"
+    if curated.exists():
+        extra = pl.read_csv(curated, try_parse_dates=True).select(results.columns)
+        extra = extra.with_columns([pl.col(c).cast(results.schema[c]) for c in results.columns])
+        results = pl.concat([results.filter(~pl.col("year").is_in(extra["year"].implode())), extra]).sort("year")
     results.write_csv(PROCESSED_DIR / f"election_results_{code}.csv")
     typer.echo(f"election results: {results['year'].to_list()}")
 
@@ -95,16 +105,54 @@ def ingest_results(year: int = typer.Option(2022, help="Victorian state election
                   PROCESSED_DIR / e.election_id)
 
 
+@app.command("ingest-aec")
+def ingest_aec(years: str = typer.Option("2022,2025", help="Comma-separated federal years")) -> None:
+    """AEC House results (and the notional baseline for elections on new boundaries)."""
+    from prophecy.ingest.aec import download, ingest_aec_house, notional_baseline
+
+    for y in (int(x) for x in years.split(",")):
+        download(y)
+        _write_tables(ingest_aec_house(y), PROCESSED_DIR / f"fed-{y}")
+        if y == 2025:  # 2025 redistribution: NSW, Vic and WA boundaries changed
+            _write_tables(notional_baseline(y), PROCESSED_DIR / f"fed-{y}-notional")
+
+
 @app.command("aggregate")
-def aggregate(election: str = typer.Option("vic-2026", help="Election id")) -> None:
+def aggregate(
+    election: str = typer.Option("vic-2026", help="Election id"),
+    iter_sampling: int = typer.Option(1000, help="Post-warmup draws per chain"),
+) -> None:
     """Fit the Bayesian poll aggregator and save trend, house effects and draws."""
     from prophecy.model.pipeline import RUNS, run_aggregate
 
     e = jurisdictions.get(election)
     prev = jurisdictions.previous(e)
     polls = pl.read_csv(PROCESSED_DIR / f"polls_{election}.csv", try_parse_dates=True)
-    run_aggregate(e, prev, polls, PROCESSED_DIR / election, RUNS / election, log=typer.echo)
+    if election.endswith("-next"):
+        # No election date yet: model the trend only a few weeks past the latest poll
+        # rather than across a long, data-free stretch to a placeholder date.
+        from dataclasses import replace
+        from datetime import timedelta
+
+        e = replace(e, date=polls["field_end"].max() + timedelta(weeks=8))
+    run_aggregate(e, prev, polls, PROCESSED_DIR / election, RUNS / election, log=typer.echo,
+                  iter_sampling=iter_sampling)
     typer.echo(f"wrote {PROCESSED_DIR / election / 'poll_trend.csv'}")
+    if e.jurisdiction == "FED":
+        # No seat forecast for this cycle yet: add the model-implied 2PP trend here, using
+        # flows from the last election's full distributions.
+        import numpy as np
+
+        from prophecy.model.pipeline import add_tpp_trend, federal_flows, load_draws
+
+        shares, parties = load_draws(RUNS / election)
+        prim = pl.read_csv(PROCESSED_DIR / prev.election_id / "primary.csv")
+        by = dict(prim.group_by("bloc").agg(pl.col("votes").sum()).iter_rows())
+        ind_frac = by.get("IND", 0) / (by.get("IND", 0) + by.get("OTH", 0))
+        flows = federal_flows(prev, log=typer.echo)
+        add_tpp_trend(shares, parties, flows, PROCESSED_DIR / election / "poll_trend.csv",
+                      float(np.clip(ind_frac, 0, 1)))
+        typer.echo("added model-implied 2PP trend")
 
 
 @app.command("forecast")
@@ -210,16 +258,24 @@ def backtest(
         run_aggregate(e, prev, polls, out, run_dir, log=typer.echo)
     shares, parties = load_draws(run_dir)
 
-    inputs = seat_inputs(prev, boundaries=boundaries, onp_geography=False, log=typer.echo)
-    flows = flow_weights(prev, inputs, log=typer.echo)
+    federal = e.jurisdiction == "FED"
+    if federal:
+        from prophecy.model.pipeline import federal_flows, federal_inputs
+
+        inputs = federal_inputs(e, prev, log=typer.echo)
+        flows = federal_flows(prev, log=typer.echo)
+    else:
+        inputs = seat_inputs(prev, boundaries=boundaries, onp_geography=False, log=typer.echo)
+        flows = flow_weights(prev, inputs, log=typer.echo)
+    code = e.jurisdiction.lower()
 
     # Polling error/bias from elections *before* this one only (no hindsight).
     from prophecy.model.backtest import error_bias, error_sd, poll_error_table
     from prophecy.model.simulate import SimConfig
 
     hist = poll_error_table(
-        pl.read_csv(PROCESSED_DIR / "polls_vic_all.csv", try_parse_dates=True, infer_schema_length=None),
-        pl.read_csv(PROCESSED_DIR / "election_results_vic.csv", try_parse_dates=True)
+        pl.read_csv(PROCESSED_DIR / f"polls_{code}_all.csv", try_parse_dates=True, infer_schema_length=None),
+        pl.read_csv(PROCESSED_DIR / f"election_results_{code}.csv", try_parse_dates=True)
         .filter(pl.col("year") < e.date.year),
     )
     cfg = default_config()
@@ -231,9 +287,21 @@ def backtest(
 
     actual_df = pl.read_csv(PROCESSED_DIR / election / "districts.csv")
     actual = dict(actual_df.select("district", "elected_party").iter_rows())
-    incumbents = dict(zip(inputs.districts, inputs.incumbent))
+    if federal:
+        # The notional baseline has no Liberal/National split: score the Coalition as one
+        # bloc, and minor-party members (KAP, Centre Alliance) with independents.
+        from prophecy.schema.parties import bloc as _bloc
+
+        inputs.coal_party = ["COAL"] * len(inputs.districts)
+        actual = {d: ("COAL" if _bloc(p) == "COAL" else _bloc(p)) for d, p in actual.items()}
+    incumbents = {d: ("COAL" if federal and h in ("LIB", "NAT", "LNP", "CLP") else h)
+                  for d, h in zip(inputs.districts, inputs.incumbent)}
+    if federal:
+        from prophecy.schema.parties import bloc as _bloc
+
+        incumbents = {d: _bloc(h) for d, h in incumbents.items()}
     metrics = score(res, actual, incumbents)
-    results = pl.read_csv(PROCESSED_DIR / "election_results_vic.csv", try_parse_dates=True)
+    results = pl.read_csv(PROCESSED_DIR / f"election_results_{code}.csv", try_parse_dates=True)
     actual_state = results.filter(pl.col("year") == e.date.year).row(0, named=True)
     metrics["statewide"] = {
         p: {"forecast": summary["statewide_primary"][p], "actual": actual_state[p]}

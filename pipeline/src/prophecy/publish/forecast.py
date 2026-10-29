@@ -6,7 +6,7 @@ import json
 from datetime import UTC, datetime
 
 from prophecy import DATA_DIR, WEB_DATA_DIR
-from prophecy.jurisdictions import Election
+from prophecy.jurisdictions import Election, site_code
 from prophecy.publish.results import slugify
 
 MODEL_VERSION = "0.1.0"
@@ -37,7 +37,7 @@ def publish_forecast(election: Election, validated: bool = False) -> str | None:
         "diagnostics": meta.get("diagnostics", {}),
         **summary,
     }
-    out = WEB_DATA_DIR / election.jurisdiction.lower() / "forecast" / f"{election.date.year}.json"
+    out = WEB_DATA_DIR / site_code(election.jurisdiction) / "forecast" / f"{election.date.year}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(payload, indent=1), encoding="utf-8")
     return str(out)

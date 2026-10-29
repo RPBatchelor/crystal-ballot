@@ -1,0 +1,444 @@
+{
+ "backtests": [
+  {
+   "election_id": "fed-2025",
+   "n_seats": 150,
+   "brier": 0.2349,
+   "log_loss": 0.384,
+   "favourite_accuracy": 0.8333,
+   "status_quo_accuracy": 0.8733,
+   "seats": {
+    "ALP": {
+     "actual": 94,
+     "median": 75.0,
+     "p90": [
+      54.0,
+      98.0
+     ],
+     "covered_90": true
+    },
+    "COAL": {
+     "actual": 43,
+     "median": 59.0,
+     "p90": [
+      35.0,
+      80.0
+     ],
+     "covered_90": true
+    },
+    "GRN": {
+     "actual": 1,
+     "median": 5.0,
+     "p90": [
+      2.0,
+      8.0
+     ],
+     "covered_90": false
+    },
+    "IND": {
+     "actual": 12,
+     "median": 10.0,
+     "p90": [
+      7.0,
+      13.0
+     ],
+     "covered_90": true
+    }
+   },
+   "calibration": [
+    {
+     "bin": "0.50-0.70",
+     "n": 21,
+     "mean_prob": 0.627,
+     "hit_rate": 0.571
+    },
+    {
+     "bin": "0.70-0.90",
+     "n": 45,
+     "mean_prob": 0.805,
+     "hit_rate": 0.711
+    },
+    {
+     "bin": "0.90-0.99",
+     "n": 40,
+     "mean_prob": 0.955,
+     "hit_rate": 0.95
+    },
+    {
+     "bin": "0.99-1.00",
+     "n": 44,
+     "mean_prob": 0.997,
+     "hit_rate": 0.977
+    }
+   ],
+   "misses": [
+    {
+     "district": "Aston",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.721,
+     "p_won": 0.279,
+     "incumbent": "ALP"
+    },
+    {
+     "district": "Banks",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.782,
+     "p_won": 0.218,
+     "incumbent": "COAL"
+    },
+    {
+     "district": "Bass",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.741,
+     "p_won": 0.257,
+     "incumbent": "COAL"
+    },
+    {
+     "district": "Bennelong",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.642,
+     "p_won": 0.357,
+     "incumbent": "ALP"
+    },
+    {
+     "district": "Bonner",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.782,
+     "p_won": 0.203,
+     "incumbent": "COAL"
+    },
+    {
+     "district": "Braddon",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.986,
+     "p_won": 0.014,
+     "incumbent": "COAL"
+    },
+    {
+     "district": "Bradfield",
+     "won": "IND",
+     "favourite": "COAL",
+     "p_fav": 0.877,
+     "p_won": 0.112,
+     "incumbent": "COAL"
+    },
+    {
+     "district": "Brisbane",
+     "won": "ALP",
+     "favourite": "GRN",
+     "p_fav": 0.716,
+     "p_won": 0.171,
+     "incumbent": "GRN"
+    },
+    {
+     "district": "Calare",
+     "won": "IND",
+     "favourite": "COAL",
+     "p_fav": 0.843,
+     "p_won": 0.147,
+     "incumbent": "IND"
+    },
+    {
+     "district": "Deakin",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.55,
+     "p_won": 0.449,
+     "incumbent": "COAL"
+    },
+    {
+     "district": "Dickson",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.692,
+     "p_won": 0.306,
+     "incumbent": "COAL"
+    },
+    {
+     "district": "Forde",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.771,
+     "p_won": 0.218,
+     "incumbent": "COAL"
+    },
+    {
+     "district": "Fowler",
+     "won": "IND",
+     "favourite": "ALP",
+     "p_fav": 0.656,
+     "p_won": 0.343,
+     "incumbent": "IND"
+    },
+    {
+     "district": "Gilmore",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.603,
+     "p_won": 0.397,
+     "incumbent": "ALP"
+    },
+    {
+     "district": "Goldstein",
+     "won": "COAL",
+     "favourite": "IND",
+     "p_fav": 0.804,
+     "p_won": 0.195,
+     "incumbent": "IND"
+    },
+    {
+     "district": "Griffith",
+     "won": "ALP",
+     "favourite": "GRN",
+     "p_fav": 0.896,
+     "p_won": 0.103,
+     "incumbent": "GRN"
+    },
+    {
+     "district": "Hughes",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.953,
+     "p_won": 0.047,
+     "incumbent": "COAL"
+    },
+    {
+     "district": "Leichhardt",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.705,
+     "p_won": 0.285,
+     "incumbent": "COAL"
+    },
+    {
+     "district": "Lyons",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.73,
+     "p_won": 0.263,
+     "incumbent": "ALP"
+    },
+    {
+     "district": "Melbourne",
+     "won": "ALP",
+     "favourite": "GRN",
+     "p_fav": 0.995,
+     "p_won": 0.005,
+     "incumbent": "GRN"
+    },
+    {
+     "district": "Menzies",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.695,
+     "p_won": 0.305,
+     "incumbent": "COAL"
+    },
+    {
+     "district": "Moore",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.615,
+     "p_won": 0.383,
+     "incumbent": "IND"
+    },
+    {
+     "district": "Nicholls",
+     "won": "COAL",
+     "favourite": "ONP",
+     "p_fav": 0.506,
+     "p_won": 0.451,
+     "incumbent": "COAL"
+    },
+    {
+     "district": "Petrie",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.864,
+     "p_won": 0.135,
+     "incumbent": "COAL"
+    },
+    {
+     "district": "Sturt",
+     "won": "ALP",
+     "favourite": "COAL",
+     "p_fav": 0.669,
+     "p_won": 0.323,
+     "incumbent": "COAL"
+    }
+   ],
+   "statewide": {
+    "ALP": {
+     "forecast": [
+      28.0,
+      30.9,
+      33.9
+     ],
+     "actual": 34.6
+    },
+    "COAL": {
+     "forecast": [
+      31.7,
+      34.6,
+      37.6
+     ],
+     "actual": 31.8
+    },
+    "GRN": {
+     "forecast": [
+      11.3,
+      13.1,
+      15.0
+     ],
+     "actual": 12.2
+    },
+    "tpp": {
+     "forecast": [
+      44.8,
+      51.9,
+      57.7
+     ],
+     "actual": 55.2
+    }
+   },
+   "outcome": {
+    "alp_majority": 0.4705,
+    "coal_majority": 0.09235,
+    "hung": 0.43715,
+    "alp_most_seats": 0.72955,
+    "coal_most_seats": 0.2562
+   }
+  }
+ ],
+ "poll_error": [
+  {
+   "year": 2010,
+   "n_polls": 5,
+   "pollsters": "Newspoll",
+   "ALP_poll": 37.84,
+   "ALP_result": 37.99,
+   "ALP_error": -0.15,
+   "COAL_poll": 42.48,
+   "COAL_result": 43.32,
+   "COAL_error": -0.84,
+   "GRN_poll": 12.98,
+   "GRN_result": 11.76,
+   "GRN_error": 1.22,
+   "tpp_poll": 51.24,
+   "tpp_result": 50.12,
+   "tpp_error": 1.12
+  },
+  {
+   "year": 2013,
+   "n_polls": 31,
+   "pollsters": "AMR, Essential, Galaxy, Lonergan, Newspoll, Nielsen, ReachTEL, Roy Morgan",
+   "ALP_poll": 34.82,
+   "ALP_result": 33.4,
+   "ALP_error": 1.42,
+   "COAL_poll": 44.88,
+   "COAL_result": 45.5,
+   "COAL_error": -0.62,
+   "GRN_poll": 10.06,
+   "GRN_result": 8.6,
+   "GRN_error": 1.46,
+   "tpp_poll": 47.33,
+   "tpp_result": 46.5,
+   "tpp_error": 0.83
+  },
+  {
+   "year": 2016,
+   "n_polls": 17,
+   "pollsters": "Essential, Galaxy, Ipsos, Newspoll, ReachTEL",
+   "ALP_poll": 35.04,
+   "ALP_result": 34.7,
+   "ALP_error": 0.34,
+   "COAL_poll": 41.46,
+   "COAL_result": 42.0,
+   "COAL_error": -0.54,
+   "GRN_poll": 10.51,
+   "GRN_result": 10.2,
+   "GRN_error": 0.31,
+   "tpp_poll": 49.88,
+   "tpp_result": 49.6,
+   "tpp_error": 0.28
+  },
+  {
+   "year": 2019,
+   "n_polls": 15,
+   "pollsters": "Essential, Galaxy, Ipsos, Newspoll, Roy Morgan, YouGov-Galaxy",
+   "ALP_poll": 35.68,
+   "ALP_result": 33.34,
+   "ALP_error": 2.34,
+   "COAL_poll": 38.33,
+   "COAL_result": 41.44,
+   "COAL_error": -3.11,
+   "GRN_poll": 10.07,
+   "GRN_result": 10.4,
+   "GRN_error": -0.33,
+   "tpp_poll": 51.33,
+   "tpp_result": 48.47,
+   "tpp_error": 2.86
+  },
+  {
+   "year": 2022,
+   "n_polls": 16,
+   "pollsters": "Essential, Ipsos, Newspoll, Resolve, Roy Morgan",
+   "ALP_poll": 36.14,
+   "ALP_result": 32.6,
+   "ALP_error": 3.54,
+   "COAL_poll": 35.05,
+   "COAL_result": 35.7,
+   "COAL_error": -0.65,
+   "GRN_poll": 12.17,
+   "GRN_result": 12.2,
+   "GRN_error": -0.03,
+   "tpp_poll": 53.23,
+   "tpp_result": 52.1,
+   "tpp_error": 1.13
+  },
+  {
+   "year": 2025,
+   "n_polls": 67,
+   "pollsters": "DemosAU, Essential, Freshwater, Ipsos, Newspoll, RedBridge/Accent, Resolve, Roy Morgan, Spectre Strategy, Spectre Strategy/Dynata, YouGov, YouGov MRP",
+   "ALP_poll": 31.91,
+   "ALP_result": 34.6,
+   "ALP_error": -2.69,
+   "COAL_poll": 33.86,
+   "COAL_result": 31.8,
+   "COAL_error": 2.06,
+   "GRN_poll": 12.93,
+   "GRN_result": 12.2,
+   "GRN_error": 0.73,
+   "tpp_poll": 51.49,
+   "tpp_result": 55.2,
+   "tpp_error": -3.71
+  }
+ ],
+ "poll_error_settings": {
+  "sd": {
+   "ALP": 2.14,
+   "COAL": 2.0,
+   "GRN": 1.2
+  },
+  "bias": {
+   "ALP": 0.4,
+   "COAL": -0.31,
+   "GRN": 0.28
+  },
+  "elections": [
+   2010,
+   2013,
+   2016,
+   2019,
+   2022,
+   2025
+  ],
+  "window_days": 28
+ }
+}

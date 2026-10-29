@@ -7,6 +7,7 @@ import json
 import polars as pl
 
 from prophecy import DATA_DIR, WEB_DATA_DIR
+from prophecy.jurisdictions import site_code
 
 PROCESSED = DATA_DIR / "processed"
 
@@ -26,7 +27,7 @@ def publish_model_eval(jurisdiction: str) -> str | None:
         payload["poll_error_settings"] = json.loads(settings.read_text(encoding="utf-8"))
     if not payload["backtests"] and not payload["poll_error"]:
         return None
-    out = WEB_DATA_DIR / code / "model.json"
+    out = WEB_DATA_DIR / site_code(jurisdiction) / "model.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(payload, indent=1), encoding="utf-8")
     return str(out)

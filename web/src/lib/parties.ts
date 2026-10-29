@@ -12,6 +12,9 @@ const PARTIES: Record<string, PartyMeta> = {
 	LIB: { code: 'LIB', short: 'Liberal', name: 'Liberal Party' },
 	NAT: { code: 'NAT', short: 'Nationals', name: 'The Nationals' },
 	LNP: { code: 'LNP', short: 'LNP', name: 'Liberal National Party' },
+	CLP: { code: 'CLP', short: 'Country Liberal', name: 'Country Liberal Party' },
+	KAP: { code: 'KAP', short: 'Katter (KAP)', name: "Katter's Australian Party" },
+	CA: { code: 'CA', short: 'Centre Alliance', name: 'Centre Alliance' },
 	GRN: { code: 'GRN', short: 'Greens', name: 'Australian Greens' },
 	ONP: { code: 'ONP', short: 'One Nation', name: "Pauline Hanson's One Nation" },
 	IND: { code: 'IND', short: 'Independent', name: 'Independent' },
@@ -32,12 +35,15 @@ export function partyLabel(code: string, officialName?: string | null): string {
 
 /** CSS colour for a party code; minor parties share the neutral "Others" grey. */
 export function partyColour(code: string): string {
-	if (code === 'LNP') return 'var(--party-COAL)';
+	if (code === 'LNP' || code === 'CLP') return 'var(--party-COAL)';
+	// Minor parties holding seats as de facto independents.
+	if (code === 'KAP' || code === 'CA') return 'var(--party-IND)';
 	return COLOURED.has(code) ? `var(--party-${code})` : 'var(--party-OTH)';
 }
 
 /** Model bloc for a party code (mirrors schema.parties.bloc). */
 export function bloc(code: string): string {
-	if (['LIB', 'NAT', 'LNP'].includes(code)) return 'COAL';
+	if (['LIB', 'NAT', 'LNP', 'CLP', 'COAL'].includes(code)) return 'COAL';
+	if (['KAP', 'CA'].includes(code)) return 'IND';
 	return ['ALP', 'GRN', 'ONP', 'IND'].includes(code) ? code : 'OTH';
 }

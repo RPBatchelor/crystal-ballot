@@ -39,14 +39,17 @@ def start_shares(previous: Election) -> dict[str, float]:
     )
     total = share["votes"].sum()
     s = {b: 100 * v / total for b, v in share.iter_rows()}
-    return {"ALP": s["ALP"], "COAL": s["COAL"], "GRN": s["GRN"], "ONP": ONP_START,
-            "OTH": 100 - s["ALP"] - s["COAL"] - s["GRN"] - ONP_START}
+    # ONP: its actual share where it contested broadly, else a vague low starting level.
+    onp = s.get("ONP", 0.0) if s.get("ONP", 0.0) >= 1.0 else ONP_START
+    return {"ALP": s["ALP"], "COAL": s["COAL"], "GRN": s["GRN"], "ONP": onp,
+            "OTH": 100 - s["ALP"] - s["COAL"] - s["GRN"] - onp}
 
 
 def run_aggregate(election: Election, previous: Election, polls: pl.DataFrame,
-                  out_dir: Path, run_dir: Path, log: Callable[[str], None] = print) -> AggregateFit:
+                  out_dir: Path, run_dir: Path, log: Callable[[str], None] = print,
+                  **sample_kw) -> AggregateFit:
     start = start_shares(previous)
-    f = fit(polls, previous, election, start)
+    f = fit(polls, previous, election, start, **sample_kw)
     diag = {k: v for k, v in f.diagnostics.items() if k != "report"}
     log(f"diagnostics: {diag}")
     if diag["max_rhat"] > 1.01 or diag["divergences"] > 0:
@@ -242,3 +245,71 @@ def default_config(n_per_draw: int = 5) -> SimConfig:
         cfg.poll_error_sd.update({k: v for k, v in err["sd"].items() if k in cfg.poll_error_sd})
         cfg.poll_bias = err.get("bias", {})
     return cfg
+
+
+# --------------------------------------------------------------------------------------
+# Federal (House of Representatives)
+# --------------------------------------------------------------------------------------
+
+def federal_inputs(election: Election, previous: Election,
+                   log: Callable[[str], None] = print) -> SeatInputs:
+    """Seat inputs on ``election``'s boundaries from the AEC notional baseline.
+
+    States act as the correlated regions; One Nation's geography is its own notional
+    previous vote (it contested every seat); sitting members and the ballot come from
+    the nominations (public weeks before polling day).
+    """
+    from prophecy.model.simulate import apply_candidates
+
+    nd = PROCESSED / f"{election.election_id}-notional"
+    primary = pl.read_csv(nd / "primary.csv")
+    districts = pl.read_csv(nd / "districts.csv")
+    ballot = pl.read_csv(nd / "ballot.csv")
+    regions = districts.select("district", pl.col("state").alias("region"))
+    onp_geo = primary.select("district", "bloc", "votes", "pct")
+    inputs = build_inputs(primary, districts, onp_geo, regions)
+
+    # Members: sitting member's party and whether they were first elected last time.
+    prev_primary = pl.read_csv(PROCESSED / previous.election_id / "primary.csv")
+    new_last_time = set(
+        prev_primary.filter(pl.col("elected") & ~pl.col("sitting"))["candidate"].to_list())
+    rows = []
+    for r in districts.iter_rows(named=True):
+        sit = ballot.filter((pl.col("district") == r["district"]) & pl.col("sitting"))
+        if sit.height:
+            m = sit.row(0, named=True)
+            rows.append({"district": r["district"], "party": m["party"], "status": "recontesting",
+                         "first_elected": str(previous.date.year) if m["name"] in new_last_time else "earlier"})
+        else:
+            rows.append({"district": r["district"], "party": r["elected_party"], "status": "retiring",
+                         "first_elected": "earlier"})
+    members = pl.DataFrame(rows)
+    inputs = apply_candidates(inputs, members, ballot, sophomore_since=previous.date.year)
+    log(f"federal inputs: {len(inputs.districts)} seats, {int(inputs.retiring.sum())} retiring, "
+        f"{int(inputs.sophomore.sum())} first-term recontesting")
+    return inputs
+
+
+def federal_flows(previous: Election, log: Callable[[str], None] = print) -> np.ndarray:
+    """Flows from the previous election's full AEC distributions, calibrated on its
+    actual seat results (its own boundaries)."""
+    src = PROCESSED / previous.election_id
+    transfers = pl.read_csv(src / "dop_transfers.csv").with_columns(
+        pl.col("from_party").map_elements(bloc, return_dtype=pl.String).alias("from_bloc"),
+        pl.col("to_party").map_elements(bloc, return_dtype=pl.String).alias("to_bloc"),
+    )
+    primary = pl.read_csv(src / "primary.csv")
+    districts = pl.read_csv(src / "districts.csv")
+    names = sorted(districts["district"].to_list())
+    base = np.zeros((len(names), len(BLOCS)))
+    for d, b, v in primary.group_by("district", "bloc").agg(pl.col("votes").sum()).iter_rows():
+        base[names.index(d), IDX[b]] += v
+    base /= base.sum(axis=1, keepdims=True)
+    tcp = pl.read_csv(src / "tcp.csv")
+    alp_tcp = np.full(len(names), np.nan)
+    for (d,), t in tcp.group_by("district"):
+        if set(t["bloc"]) == {"ALP", "COAL"}:
+            alp_tcp[names.index(d)] = t.filter(pl.col("bloc") == "ALP")["pct"][0]
+    flows, calib = calibrate_to_results(estimate_weights(transfers), base, alp_tcp)
+    log(f"flow calibration ({previous.election_id}): {calib}")
+    return flows

@@ -8,7 +8,8 @@ export const fmtPct = (n: number | null | undefined, digits = 1) =>
 	n == null ? '–' : `${n.toFixed(digits)}%`;
 
 /** "LASTNAME, First" -> "First Lastname" */
-export function displayName(name: string): string {
+export function displayName(name: string | null | undefined): string {
+	if (!name) return '';
 	const [last, first] = name.split(',').map((s) => s.trim());
 	if (!first) return name;
 	const lastCased = last

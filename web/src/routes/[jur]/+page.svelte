@@ -10,6 +10,7 @@
 	let { data }: { data: PageData } = $props();
 	const j = $derived(data.jurisdiction);
 	const latest = $derived(data.polls?.trend.at(-1));
+	const lastYear = $derived(data.results?.date.slice(0, 4));
 	const days = $derived(j.nextElection ? daysUntil(j.nextElection) : null);
 
 	const tiles = $derived(
@@ -46,24 +47,31 @@
 		way.
 	</p>
 {:else}
-	<h1>{j.name} state election{#if j.nextElection}, {fmtDate(j.nextElection)}{/if}</h1>
+	<h1>{j.kind === 'federal' ? 'Federal election' : `${j.name} state election`}{#if j.nextElection}, {fmtDate(j.nextElection)}{/if}</h1>
 	{#if days != null && days > 0}
 		<p class="lede">
-			<strong>{days} days</strong> until polling day. All {j.seats} Legislative Assembly seats are up;
+			<strong>{days} days</strong> until polling day. All {j.seats} {j.chamber} seats are up;
 			{Math.floor(j.seats / 2) + 1} are needed to govern in majority.
 		</p>
 	{/if}
 
-	<aside class="card notice">
-		<strong>The forecast launches in mid-November.</strong>
-		A <a href="/{j.code}/forecast/2026/">development preview</a> is available; it becomes the official
-		forecast once the model passes its historical backtests.
-	</aside>
+	{#if j.forecastYears?.length}
+		<aside class="card notice">
+			<strong>The forecast launches in mid-November.</strong>
+			A <a href="/{j.code}/forecast/{j.forecastYears.at(-1)}/">development preview</a> is available; it
+			becomes the official forecast once the model passes its historical backtests.
+		</aside>
+	{:else if j.kind === 'federal'}
+		<p class="lede">
+			The next federal election is due by 2028. Polling since the May 2025 election is tracked below;
+			the model's blind forecast of the 2025 election is on the <a href="/methodology/">methodology page</a>.
+		</p>
+	{/if}
 
 	{#if data.polls && latest}
 		<h2>Where the polls are</h2>
 		<p class="muted small">
-			Simple poll average to {fmtDate(latest.date)} (primary vote %). Change is from the 2022 election
+			Poll average to {fmtDate(latest.date)} (primary vote %). Change is from the {lastYear} election
 			result.
 		</p>
 		<div class="tiles">
@@ -74,7 +82,7 @@
 						<span class="tile-value num">{t.value.toFixed(1)}</span>
 						{#if t.prev != null}
 							{@const d = t.value - t.prev}
-							<span class="tile-delta num muted">{d >= 0 ? '+' : '−'}{Math.abs(d).toFixed(1)} since 2022</span>
+							<span class="tile-delta num muted">{d >= 0 ? '+' : '−'}{Math.abs(d).toFixed(1)} since {lastYear}</span>
 						{/if}
 					</div>
 				{/if}
@@ -82,12 +90,12 @@
 		</div>
 
 		<TimeSeriesChart
-			title="Victorian primary vote polling since the 2022 election"
+			title="{j.name} primary vote polling, current cycle"
 			series={PRIMARY_SERIES}
 			points={data.polls.polls}
 			pointDate={(p) => p.field_end}
 			trend={data.polls.trend}
-			end={data.polls.election_date}
+			end={data.polls.election_date_known === false ? undefined : data.polls.election_date}
 			height={340}
 			cycleStart={data.results?.date}
 			initialRange="cycle"
@@ -96,7 +104,7 @@
 	{/if}
 
 	{#if data.results}
-		<h2>The 2022 baseline</h2>
+		<h2>The {lastYear} result</h2>
 		<p class="muted">
 			Labor won {data.results.seat_counts.ALP} of {data.results.seats_total} seats with {data.results.tpp_alp.toFixed(
 				1
@@ -104,7 +112,7 @@
 		</p>
 		<div class="baseline">
 			<Hemicycle
-				title="Seats won at the 2022 Victorian election"
+				title="Seats won at the {data.results.date.slice(0, 4)} election"
 				seats={chamberSeats(
 					data.results.seats.map((s) => ({
 						slug: s.slug,
@@ -112,13 +120,13 @@
 						party: s.party,
 						strength: s.margin,
 						detail: `margin ${s.margin.toFixed(1)}`,
-						href: `/${j.code}/results/2022/${s.slug}/`
+						href: `/${j.code}/results/${lastYear}/${s.slug}/`
 					}))
 				)}
 				majority={data.results.majority}
 			/>
 		</div>
-		<p><a href="/{j.code}/results/2022/">Seat-by-seat results and pendulum →</a></p>
+		<p><a href="/{j.code}/results/{lastYear}/">Seat-by-seat results and pendulum →</a></p>
 	{/if}
 {/if}
 

@@ -35,6 +35,24 @@ ELECTIONS: dict[str, Election] = {
             "vic-2026", "VIC", "assembly", date(2026, 11, 28), 88, "vic-2021",
             polls_wiki_title="Opinion polling for the 2026 Victorian state election",
         ),
+        # Federal House of Representatives. Earlier cycles' poll pages are Wikipedia's
+        # "Opinion polling for the <year> Australian federal election".
+        Election("fed-2007", "FED", "house", date(2007, 11, 24), 150, "fed-2006"),
+        # Next federal election: due by mid-2028; date is a placeholder until it is called.
+        Election("fed-next", "FED", "house", date(2028, 5, 20), 150, "fed-2024",
+                 polls_wiki_title="Opinion polling for the next Australian federal election"),
+        *[
+            Election(f"fed-{d.year}", "FED", "house", d, seats, boundary,
+                     polls_wiki_title=f"Opinion polling for the {d.year} Australian federal election")
+            for d, seats, boundary in [
+                (date(2010, 8, 21), 150, "fed-2009"),
+                (date(2013, 9, 7), 150, "fed-2010"),
+                (date(2016, 7, 2), 150, "fed-2015"),
+                (date(2019, 5, 18), 151, "fed-2018"),
+                (date(2022, 5, 21), 151, "fed-2021"),
+                (date(2025, 5, 3), 150, "fed-2024"),
+            ]
+        ],
     ]
 }
 
@@ -55,3 +73,8 @@ def get(election_id: str) -> Election:
         return ELECTIONS[election_id]
     except KeyError:
         raise KeyError(f"Unknown election {election_id!r}; known: {sorted(ELECTIONS)}") from None
+
+
+def site_code(jurisdiction: str) -> str:
+    """URL/data-folder code on the website (e.g. FED -> federal, VIC -> vic)."""
+    return {"FED": "federal"}.get(jurisdiction, jurisdiction.lower())

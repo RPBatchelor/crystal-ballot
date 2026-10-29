@@ -160,8 +160,9 @@ def _swatch_columns(table: Table) -> list[str] | None:
         if swatches:
             codes = []
             for c in swatches:
-                m = re.search(r"party colours\|([^}]+)\}\}", _attrs_of(c))
-                key = (m.group(1) if m else re.search(r"background:\s*([a-z]+)", _attrs_of(c)).group(1))
+                m = re.search(r"party colours\|([^}]+)\}\}", _attrs_of(c)) or re.search(
+                    r"background:\s*([a-z]+)", _attrs_of(c))
+                key = m.group(1) if m else "?"
                 codes.append(SWATCH_PARTY.get(key.strip().lower(), key.strip().upper()))
             return codes
     return None
@@ -176,7 +177,8 @@ def _value_columns(swatches: list[str]) -> tuple[list[str], list[str]]:
 
     Primary block ends when ALP appears for the second time.
     """
-    second_alp = swatches.index("ALP", 1)
+    first = swatches.index("ALP")
+    second_alp = swatches.index("ALP", first + 1)
     return swatches[:second_alp], swatches[second_alp:]
 
 
@@ -186,7 +188,8 @@ def _value_columns(swatches: list[str]) -> tuple[list[str], list[str]]:
 
 LABEL_PATTERNS: list[tuple[str, str]] = [
     (r"\bdate\b|fieldwork", "date"),
-    (r"firm|pollster|organisation|^poll", "pollster"),
+    (r"firm|pollster|organisation|^poll|^brand$", "pollster"),
+    (r"^(und|undecided|unsure|don't know)$", "undecided"),
     (r"client|commission|sponsor|publication|media", "client"),
     (r"sample", "sample"),
     (r"^(l/?np|lnp|coalition|lib/nat|liberal[-–/ ]national)$", "COAL"),
@@ -199,7 +202,7 @@ LABEL_PATTERNS: list[tuple[str, str]] = [
     (r"^(oth|others?)$", "OTH"),
 ]
 TPP_HEADER = re.compile(r"\b(tpp|2pp|two[- ]party)", re.IGNORECASE)
-INCLUDE_HEADING = re.compile(r"voting intention|opinion poll|^polling$", re.IGNORECASE)
+INCLUDE_HEADING = re.compile(r"voting intention|opinion poll|^polling$|^data table$", re.IGNORECASE)
 EXCLUDE_HEADING = re.compile(
     r"council|premier|satisfaction|leader|seat|electorate|sub-state|three-party|"
     r"approval|preferred|metropolitan|regional|referendum", re.IGNORECASE)
@@ -207,7 +210,7 @@ PCT = re.compile(r"\d\s*%")
 
 
 def _label_code(text: str) -> str | None:
-    t = text.strip().lower()
+    t = re.sub(r"[*†‡^]+$", "", text.strip().lower()).strip()  # footnote markers
     for pattern, code in LABEL_PATTERNS:
         if re.search(pattern, t):
             return code
@@ -241,14 +244,22 @@ def _infer_columns(table: Table, grid: list[list[Cell | None]]) -> list[tuple[st
         stack = [grid[r][j] for r in range(n_header) if j < len(grid[r]) and grid[r][j] is not None]
         code = next((c for c in (_label_code(cell.text) for cell in reversed(stack)) if c), None)
         is_tpp = any(TPP_HEADER.search(cell.text) for cell in stack)
+        in_primary = any("primary" in cell.text.lower() for cell in stack)
+        leaf = stack[-1].text.strip() if stack else ""
         if code in ("date", "pollster", "client", "sample"):
             cols.append(("meta", code))
+        elif code == "undecided":
+            cols.append(("meta", "undecided"))
         elif code:
             cols.append(("tpp" if is_tpp else "primary", code))
+        elif in_primary and not is_tpp and re.fullmatch(r"[A-Z][A-Za-z&/]{1,5}", leaf):
+            # Named minor party under "Primary vote" (UAP, KAP, TOP, PUP...): Others.
+            cols.append(("primary", "OTH"))
         else:
             cols.append(("skip", ""))
     # Fall back to colour swatches for party columns the header text didn't name.
-    if swatches and sum(1 for s, _ in cols if s in ("primary", "tpp")) < len(swatches):
+    named = sum(1 for s, _ in cols if s in ("primary", "tpp"))
+    if swatches and named < 3 and swatches.count("ALP") >= 2:
         meta = [c for c in cols if c[0] == "meta"]
         primary, tpp = _value_columns(swatches)
         cols = meta + [("primary", c) for c in primary] + [("tpp", c) for c in tpp]
@@ -302,6 +313,8 @@ def parse_poll_page(
         if columns is None:
             continue
         n_header = _n_header_rows(table, grid)
+        if not _mostly_percentages(grid[n_header:], columns):
+            continue  # e.g. seat projections, which share the poll-table layout
         for r, (row, cells) in enumerate(zip(table.rows, grid)):
             if r < n_header or not cells:
                 continue
@@ -339,6 +352,12 @@ def parse_poll_page(
     return polls + _dedupe_results(results), events
 
 
+def _mostly_percentages(rows: list[list[Cell | None]], columns: list[tuple[str, str]]) -> bool:
+    primary = [j for j, (sec, _) in enumerate(columns) if sec == "primary"]
+    vals = [r[j].text for r in rows for j in primary if j < len(r) and r[j] is not None and r[j].text]
+    return not vals or sum("%" in v for v in vals) / len(vals) >= 0.5
+
+
 def _election_row(cells: list[Cell | None], columns: list[tuple[str, str]],
                   jurisdiction: str) -> Poll | None:
     """An "<date> election" result row, returned as a Poll with pollster "Election"."""
@@ -346,10 +365,13 @@ def _election_row(cells: list[Cell | None], columns: list[tuple[str, str]],
     label = next((t for t in texts if "election" in t.lower()), None)
     if label is None:
         return None
-    m = re.search(r"(\d{4})", label)
+    # The year may sit in the date cell rather than the "Election" label.
+    m = re.search(r"(\d{4})", label) or next(
+        (re.search(r"(\d{4})", t) for t in texts if re.search(r"(19|20)\d{2}", t)), None)
     if not m:
         return None
-    rng = parse_date_range(label, int(m.group(1)))
+    rng = parse_date_range(label, int(m.group(1))) or next(
+        (parse_date_range(t, int(m.group(1))) for t in texts if parse_date_range(t, int(m.group(1)))), None)
     year = int(m.group(1))
     when = rng[1] if rng else date(year, 11, 30)  # month unknown: placeholder, fixed by caller
     rec = Poll(jurisdiction, "Legislative Assembly", "Election", None, when, when, label, None)
@@ -393,7 +415,8 @@ def _row_to_poll(
     if rng is None:
         return None
     # Older single-pollster tables (e.g. Newspoll-only) have no firm column.
-    pollster = re.sub(r"\s+", " ", pollster_cell.text).strip() if pollster_cell else default_pollster
+    pollster = normalise_pollster(
+        re.sub(r"\s+", " ", pollster_cell.text).strip() if pollster_cell else default_pollster)
     if not pollster or "election" in pollster.lower() or "exit poll" in pollster.lower():
         return None
     rec = Poll(
@@ -431,6 +454,14 @@ def _row_to_poll(
         for (sec, code), cell in zip(columns, cells)
         if sec == "tpp"
     }
+    und_cell = meta.get("undecided")
+    und = parse_number(und_cell.text) if und_cell is not None else None
+    if und and 0 < und < 50:
+        # Pollsters reporting "undecided" inside the primaries: rescale to decided voters.
+        for f in PRIMARY_FIELDS:
+            v = getattr(rec, f)
+            if v is not None:
+                setattr(rec, f, round(v * 100 / (100 - und), 2))
     alp = tpp.get("ALP")
     if alp is not None:
         if tpp.get("COAL") is not None:
@@ -438,6 +469,26 @@ def _row_to_poll(
         elif tpp.get("ONP") is not None:
             rec.tpp_alp_vs_onp = alp
     return rec
+
+
+POLLSTER_ALIASES: list[tuple[str, str]] = [
+    (r"redbridge", "RedBridge/Accent"),
+    (r"^newspoll", "Newspoll"),
+    (r"^resolve", "Resolve"),
+    (r"^freshwater", "Freshwater"),
+    (r"morgan", "Roy Morgan"),
+    (r"^demosau", "DemosAU"),
+    (r"^yougov.*mrp|^yougov \(mrp\)", "YouGov MRP"),
+    (r"^lonergan", "Lonergan"),
+]
+
+
+def normalise_pollster(name: str) -> str:
+    """One name per polling brand across years (house effects are per pollster)."""
+    for pattern, canonical in POLLSTER_ALIASES:
+        if re.search(pattern, name.strip(), re.IGNORECASE):
+            return canonical
+    return name.strip()
 
 
 def _merge_target(codes: list[str]) -> str:
@@ -477,6 +528,9 @@ def ingest_wikipedia_polls(
     if refresh or not raw_path.exists():
         fetch_wikitext(title, raw_path)
     parsed, events = parse_poll_page(raw_path.read_text(encoding="utf-8"), jurisdiction)
+    if not parsed:
+        empty = pl.DataFrame(schema={"pollster": pl.String, "field_end": pl.Date})
+        return empty, pl.DataFrame(), empty
     df = pl.DataFrame([asdict(p) for p in parsed], infer_schema_length=None)
     is_result = pl.col("pollster") == "Election"
     results = df.filter(is_result)

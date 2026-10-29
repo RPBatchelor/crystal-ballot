@@ -22,8 +22,8 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		kind: 'federal',
 		chamber: 'House of Representatives',
 		seats: 150,
-		resultYears: [],
-		hasPolls: false
+		resultYears: [2022, 2025],
+		hasPolls: true
 	},
 	{
 		code: 'nsw',

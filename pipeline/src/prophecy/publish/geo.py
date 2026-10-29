@@ -10,6 +10,7 @@ from shapely.geometry.polygon import orient
 
 from prophecy import RAW_DIR, WEB_DATA_DIR
 from prophecy.ingest.vec import canonical_district
+from prophecy.jurisdictions import site_code
 from prophecy.publish.results import slugify
 
 TOLERANCE_DEG = 0.001  # ~100 m: keeps small inner-city seats recognisable
@@ -40,7 +41,7 @@ def publish_boundaries(boundaries: str, jurisdiction: str = "VIC") -> str:
                            "region": p["region_label"].removesuffix(" Region")},
             "geometry": mapping(geom),
         })
-    out = WEB_DATA_DIR / jurisdiction.lower() / "geo" / f"{boundaries}.json"
+    out = WEB_DATA_DIR / site_code(jurisdiction) / "geo" / f"{boundaries}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps({"type": "FeatureCollection", "features": features},
                               separators=(",", ":")), encoding="utf-8")

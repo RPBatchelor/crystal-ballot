@@ -51,7 +51,9 @@ jobs:
       - name: Refresh polls
         if: env.FULL_RUN == 'true'
         working-directory: pipeline
-        run: uv run prophecy ingest-polls --jurisdiction VIC
+        run: |
+          uv run prophecy ingest-polls --jurisdiction VIC
+          uv run prophecy ingest-polls --jurisdiction FED
 
       - name: Poll aggregate and seat forecast
         if: env.FULL_RUN == 'true'
@@ -59,6 +61,7 @@ jobs:
         run: |
           uv run prophecy aggregate --election vic-2026
           uv run prophecy forecast --election vic-2026
+          uv run prophecy aggregate --election fed-next --iter-sampling 2000
 
       - name: Test
         working-directory: pipeline
@@ -66,7 +69,9 @@ jobs:
 
       - name: Publish site data
         working-directory: pipeline
-        run: uv run prophecy publish --election vic-2026
+        run: |
+          uv run prophecy publish --election vic-2026
+          uv run prophecy publish --election fed-next
 
       - name: Commit refreshed data
         if: env.FULL_RUN == 'true'
