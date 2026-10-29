@@ -1,7 +1,7 @@
 {
  "diagnostics": {
   "max_rhat": 1.00612,
-  "min_ess_bulk": 899.368,
+  "min_ess_bulk": 1120.94,
   "divergences": 0
  },
  "start_share": {
@@ -21,6 +21,29 @@
   "Wolf & Smith",
   "YouGov (MRP)"
  ],
+ "dynamics": {
+  "sigma_vel": [
+   0.0071,
+   0.0055,
+   0.0038,
+   0.0233
+  ],
+  "phi": [
+   0.7984
+  ],
+  "tau": [
+   0.5996,
+   1.1897,
+   0.2997,
+   1.5816
+  ],
+  "sigma_house": [
+   1.357,
+   1.4148,
+   0.5567,
+   1.4934
+  ]
+ },
  "parties": [
   "ALP",
   "COAL",

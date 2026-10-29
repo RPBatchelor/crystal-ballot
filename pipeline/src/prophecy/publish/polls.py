@@ -51,7 +51,7 @@ def publish_polls(election: Election) -> str:
                else [])
     house_path = processed / election.election_id / "house_effects.csv"
     method = (
-        "Current cycle: Bayesian poll aggregate (weekly random walk from the previous result, "
+        "Current cycle: Bayesian poll aggregate (a smooth, damped trend from the previous result, "
         "adjusting for each pollster's house effect and sample size; bands are 90% credible "
         "intervals; 2PP implied from primaries via estimated preference flows). Earlier cycles: "
         f"simple {BANDWIDTH_DAYS}-day kernel average of published polls."
@@ -75,7 +75,7 @@ def publish_polls(election: Election) -> str:
     return str(out)
 
 
-BANDWIDTH_DAYS = 30
+BANDWIDTH_DAYS = 60  # comparable to Wikipedia's LOESS smoothing of poll charts
 TREND_SERIES = ["ALP", "COAL", "GRN", "ONP", "tpp_alp_vs_coal"]
 MIN_WEIGHT = 0.5  # don't extend a series into periods with (almost) no polls
 

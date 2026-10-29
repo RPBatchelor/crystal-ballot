@@ -59,6 +59,8 @@ def run_aggregate(election: Election, previous: Election, polls: pl.DataFrame,
     f.house.write_csv(out_dir / "house_effects.csv")
     (out_dir / "aggregate_meta.json").write_text(json.dumps(
         {"diagnostics": diag, "start_share": start, "pollsters": f.pollsters,
+         "dynamics": {k: [round(float(x), 4) for x in np.atleast_1d(np.median(v, axis=0))]
+                      for k, v in f.params.items()},
          "parties": f.parties, "weeks": [w.isoformat() for w in f.weeks]}, indent=1))
     summarise(f, polls).write_csv(out_dir / "poll_trend.csv")
     return f

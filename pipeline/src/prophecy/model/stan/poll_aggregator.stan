@@ -1,8 +1,13 @@
 // State-space poll aggregator for primary votes.
 //
 // Latent weekly vote shares for K parties (last = Others, the reference category)
-// follow a random walk on the additive-log-ratio scale, starting near the previous
-// election result. Each poll observes a subset of party shares with sampling error,
+// follow a damped local linear trend on the additive-log-ratio scale, starting near the
+// previous election result: each party has a velocity that evolves as an AR(1) process
+// (damping phi), and its log-ratio integrates that velocity. Compared with a plain
+// random walk this gives smooth trends (week-to-week noise goes to the poll error, not
+// the trend) while still bending for genuine shifts; after the last poll the momentum
+// decays, so the election-day projection does not extrapolate trends far.
+// Each poll observes a subset of party shares with sampling error,
 // extra non-sampling error, and a pollster house effect. House effects sum to zero
 // across pollsters, so the aggregate tracks the polling industry average; systematic
 // industry-wide error is added downstream, calibrated from past elections.
@@ -35,8 +40,9 @@ transformed data {
 }
 parameters {
   vector[K - 1] eta0_raw;
-  matrix[T - 1, K - 1] z;             // non-centred weekly innovations
-  vector<lower=0>[K - 1] sigma_walk;  // weekly random-walk sd (log-ratio)
+  matrix[T - 1, K - 1] z;             // non-centred weekly velocity innovations
+  vector<lower=0>[K - 1] sigma_vel;   // weekly sd of velocity changes (log-ratio/week)
+  real<lower=0, upper=1> phi;         // velocity damping per week
   vector<lower=0>[K - 1] tau;         // non-sampling error (points)
   vector<lower=0>[K - 1] sigma_house; // spread of house effects (points)
   // House effects: one sum-to-zero vector per party, padded to J.
@@ -47,7 +53,13 @@ transformed parameters {
   matrix[T, K] share;                 // %
   array[K - 1] vector[J] house;       // points; 0 for pollsters not reporting
   eta[1] = (alr0 + start_sd .* eta0_raw)';
-  for (t in 2:T) eta[t] = eta[t - 1] + (sigma_walk .* z[t - 1]')';
+  {
+    vector[K - 1] vel = rep_vector(0, K - 1);
+    for (t in 2:T) {
+      vel = phi * vel + sigma_vel .* z[t - 1]';
+      eta[t] = eta[t - 1] + vel';
+    }
+  }
   for (t in 1:T) share[t] = 100 * softmax(append_row(eta[t]', 0))';
   for (k in 1:(K - 1)) {
     // Centre over reporting pollsters only.
@@ -61,7 +73,8 @@ transformed parameters {
 model {
   eta0_raw ~ std_normal();
   to_vector(z) ~ std_normal();
-  sigma_walk ~ normal(0, 0.05);
+  sigma_vel ~ normal(0, 0.01);
+  phi ~ beta(8, 2);
   tau ~ normal(0, 1.5);
   sigma_house ~ normal(0, 2);
   for (k in 1:(K - 1)) house_raw[k] ~ std_normal();

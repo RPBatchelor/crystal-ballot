@@ -112,7 +112,7 @@ def fit(polls: pl.DataFrame, previous: Election, election: Election,
     data, pollsters, weeks = prepare(polls, previous, election, start_share, parties)
     model = stan_model("poll_aggregator")
     kw = {"chains": 4, "parallel_chains": 4, "iter_warmup": 1000, "iter_sampling": 1000,
-              "adapt_delta": 0.95, "max_treedepth": 12, "show_progress": False}
+              "adapt_delta": 0.99, "max_treedepth": 12, "show_progress": False}
     kw.update(sample_kw)
     mcmc = model.sample(data=data, seed=seed, **kw)
 
@@ -138,6 +138,6 @@ def fit(polls: pl.DataFrame, previous: Election, election: Election,
     }
     return AggregateFit(
         parties=parties, weeks=weeks, shares=shares, house=pl.DataFrame(rows),
-        params={k: draws[k] for k in ("sigma_walk", "tau", "sigma_house")},
+        params={k: draws[k] for k in ("sigma_vel", "phi", "tau", "sigma_house")},
         diagnostics=diagnostics, pollsters=pollsters,
     )

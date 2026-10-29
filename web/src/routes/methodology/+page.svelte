@@ -23,8 +23,11 @@
 	<h2>1. Poll aggregation</h2>
 	<p>
 		A Bayesian state-space model tracks each party's primary vote week by week since the last election,
-		estimating every pollster's systematic lean ("house effect") and the noise in each poll. Pollsters'
-		house effects sum to zero, so the average tracks the polling industry as a whole.
+		estimating every pollster's systematic lean ("house effect") and the noise in each poll. Each
+		party's support follows a smooth, damped trend: it has a momentum that changes gradually, so
+		poll-to-poll noise is not mistaken for movement, and momentum fades after the last poll rather than
+		being projected to election day. Pollsters' house effects sum to zero, so the average tracks the
+		polling industry as a whole.
 	</p>
 
 	<h2>2. Election-day uncertainty</h2>

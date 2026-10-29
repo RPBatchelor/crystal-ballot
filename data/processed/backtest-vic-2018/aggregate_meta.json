@@ -1,7 +1,7 @@
 {
  "diagnostics": {
-  "max_rhat": 1.00817,
-  "min_ess_bulk": 985.605,
+  "max_rhat": 1.00749,
+  "min_ess_bulk": 839.612,
   "divergences": 0
  },
  "start_share": {
@@ -20,6 +20,26 @@
   "YouGov",
   "uComms/ReachTEL"
  ],
+ "dynamics": {
+  "sigma_vel": [
+   0.0058,
+   0.0044,
+   0.0089
+  ],
+  "phi": [
+   0.7741
+  ],
+  "tau": [
+   3.7066,
+   0.6633,
+   4.0381
+  ],
+  "sigma_house": [
+   0.7242,
+   1.5575,
+   0.8608
+  ]
+ },
  "parties": [
   "ALP",
   "COAL",

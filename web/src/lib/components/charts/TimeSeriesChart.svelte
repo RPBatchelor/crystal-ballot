@@ -615,6 +615,10 @@
 		opacity: 0.14;
 		stroke: none;
 	}
+	.band {
+		opacity: 0.14;
+		stroke: none;
+	}
 	.trend {
 		fill: none;
 		stroke-width: 2;
@@ -701,6 +705,13 @@
 	.tip-label {
 		flex: 1;
 		color: var(--fg-2);
+	}
+	.tip-range {
+		font-size: 0.72rem;
+		color: var(--muted);
+		font-variant-numeric: tabular-nums;
+		min-width: 4.5rem;
+		text-align: right;
 	}
 	.tip-range {
 		font-size: 0.72rem;
