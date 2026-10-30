@@ -2,7 +2,7 @@
  "election_id": "fed-2025",
  "jurisdiction": "FED",
  "election_date": "2025-05-03",
- "generated_at": "2026-10-29T10:10:39+00:00",
+ "generated_at": "2026-10-30T00:22:56+00:00",
  "model_version": "0.1.0",
  "mode": "retrospective",
  "validated": true,
@@ -1529,8 +1529,8 @@
    "leader_prob": 0.6854,
    "actual_winner": "ALP",
    "actual_primary": {
-    "COAL": 27.2,
     "OTH": 16.1,
+    "COAL": 27.2,
     "ALP": 36.6,
     "GRN": 10.3,
     "ONP": 9.7
@@ -2097,11 +2097,11 @@
    "leader_prob": 0.651,
    "actual_winner": "ALP",
    "actual_primary": {
-    "ONP": 8.6,
     "OTH": 8.2,
     "COAL": 40.1,
     "ALP": 31.9,
-    "GRN": 11.2
+    "GRN": 11.2,
+    "ONP": 8.6
    },
    "p_actual": 0.651
   },
@@ -2151,12 +2151,12 @@
    "leader_prob": 0.9987,
    "actual_winner": "ALP",
    "actual_primary": {
-    "OTH": 10.6,
-    "IND": 2.2,
     "ONP": 9.9,
     "COAL": 19.1,
     "GRN": 11.5,
-    "ALP": 46.7
+    "ALP": 46.7,
+    "OTH": 10.6,
+    "IND": 2.2
    },
    "p_actual": 0.9987
   },
@@ -3729,9 +3729,9 @@
    "leader_prob": 0.9999,
    "actual_winner": "ALP",
    "actual_primary": {
+    "ALP": 53.8,
     "COAL": 21.9,
     "OTH": 7.9,
-    "ALP": 53.8,
     "GRN": 16.4
    },
    "p_actual": 0.9999
@@ -3784,10 +3784,10 @@
    "leader_prob": 0.9234,
    "actual_winner": "COAL",
    "actual_primary": {
+    "OTH": 8.5,
     "IND": 16.3,
     "GRN": 9.6,
     "COAL": 37.2,
-    "OTH": 8.5,
     "ALP": 22.3,
     "ONP": 6.1
    },
@@ -5647,10 +5647,10 @@
    "leader_prob": 0.9999,
    "actual_winner": "ALP",
    "actual_primary": {
+    "IND": 3.6,
     "ONP": 5.9,
     "ALP": 50.8,
     "COAL": 26.2,
-    "IND": 3.6,
     "GRN": 13.6
    },
    "p_actual": 0.9999
@@ -6997,9 +6997,9 @@
     "ONP": 2.5,
     "ALP": 31.3,
     "IND": 4.9,
-    "GRN": 39.5,
     "OTH": 2.0,
-    "COAL": 19.8
+    "COAL": 19.8,
+    "GRN": 39.5
    },
    "p_actual": 0.0053
   },
@@ -7789,11 +7789,11 @@
    "actual_winner": "ALP",
    "actual_primary": {
     "OTH": 4.1,
-    "GRN": 12.1,
     "IND": 2.6,
     "ALP": 47.8,
     "COAL": 30.7,
-    "ONP": 2.7
+    "ONP": 2.7,
+    "GRN": 12.1
    },
    "p_actual": 0.9143
   },
