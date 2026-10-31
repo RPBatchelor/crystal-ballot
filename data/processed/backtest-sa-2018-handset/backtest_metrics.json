@@ -1,0 +1,259 @@
+{
+ "n_seats": 47,
+ "brier": 0.3597,
+ "log_loss": 0.7181,
+ "favourite_accuracy": 0.766,
+ "status_quo_accuracy": 0.9149,
+ "seats": {
+  "ALP": {
+   "actual": 19,
+   "median": 22.0,
+   "p90": [
+    4.0,
+    42.0
+   ],
+   "covered_90": true
+  },
+  "COAL": {
+   "actual": 25,
+   "median": 10.0,
+   "p90": [
+    3.0,
+    42.0
+   ],
+   "covered_90": true
+  },
+  "GRN": {
+   "actual": 0,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    30.0
+   ],
+   "covered_90": true
+  },
+  "IND": {
+   "actual": 3,
+   "median": 1.0,
+   "p90": [
+    0.0,
+    3.0
+   ],
+   "covered_90": true
+  }
+ },
+ "calibration": [
+  {
+   "bin": "0.50-0.70",
+   "n": 27,
+   "mean_prob": 0.572,
+   "hit_rate": 0.667
+  },
+  {
+   "bin": "0.70-0.90",
+   "n": 6,
+   "mean_prob": 0.838,
+   "hit_rate": 1.0
+  },
+  {
+   "bin": "0.90-0.99",
+   "n": 1,
+   "mean_prob": 0.973,
+   "hit_rate": 1.0
+  },
+  {
+   "bin": "0.99-1.00",
+   "n": 4,
+   "mean_prob": 0.998,
+   "hit_rate": 1.0
+  }
+ ],
+ "misses": [
+  {
+   "district": "Adelaide",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.527,
+   "p_won": 0.405,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Black",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.558,
+   "p_won": 0.319,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Colton",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.61,
+   "p_won": 0.376,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Dunstan",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.521,
+   "p_won": 0.459,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Elder",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.405,
+   "p_won": 0.345,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Florey",
+   "won": "IND",
+   "favourite": "ALP",
+   "p_fav": 0.579,
+   "p_won": 0.0,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Gibson",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.516,
+   "p_won": 0.352,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Hartley",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.552,
+   "p_won": 0.375,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "King",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.512,
+   "p_won": 0.298,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Mount Gambier",
+   "won": "IND",
+   "favourite": "LIB",
+   "p_fav": 0.478,
+   "p_won": 0.415,
+   "incumbent": "IND"
+  },
+  {
+   "district": "Newland",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.533,
+   "p_won": 0.3,
+   "incumbent": "ALP"
+  }
+ ],
+ "seat_vote": {
+  "ALP": {
+   "n": 47,
+   "crps": 2.914,
+   "cover50": 0.34,
+   "cover90": 0.766,
+   "pit_hist": [
+    4,
+    6,
+    3,
+    2,
+    5,
+    0,
+    5,
+    5,
+    6,
+    11
+   ]
+  },
+  "COAL": {
+   "n": 47,
+   "crps": 5.009,
+   "cover50": 0.191,
+   "cover90": 0.532,
+   "pit_hist": [
+    2,
+    0,
+    0,
+    0,
+    2,
+    3,
+    4,
+    4,
+    8,
+    24
+   ]
+  },
+  "GRN": {
+   "n": 47,
+   "crps": 1.364,
+   "cover50": 0.362,
+   "cover90": 0.851,
+   "pit_hist": [
+    16,
+    7,
+    8,
+    3,
+    1,
+    2,
+    5,
+    1,
+    3,
+    1
+   ]
+  }
+ },
+ "pendulum_accuracy": 0.7234,
+ "statewide": {
+  "ALP": {
+   "forecast": [
+    26.9,
+    30.5,
+    34.1
+   ],
+   "actual": 32.8
+  },
+  "COAL": {
+   "forecast": [
+    27.4,
+    31.4,
+    35.2
+   ],
+   "actual": 38.0
+  },
+  "GRN": {
+   "forecast": [
+    5.8,
+    7.9,
+    10.1
+   ],
+   "actual": 6.7
+  },
+  "tpp": {
+   "forecast": [
+    35.3,
+    56.2,
+    67.7
+   ],
+   "actual": 48.1
+  }
+ },
+ "outcome": {
+  "alp_majority": 0.46805,
+  "coal_majority": 0.30505,
+  "hung": 0.2269,
+  "alp_most_seats": 0.6144,
+  "coal_most_seats": 0.3682
+ }
+}

@@ -1,7 +1,7 @@
 {
  "n_seats": 150,
- "brier": 0.2349,
- "log_loss": 0.384,
+ "brier": 0.2153,
+ "log_loss": 0.3602,
  "favourite_accuracy": 0.8333,
  "status_quo_accuracy": 0.8733,
  "seats": {
@@ -9,35 +9,35 @@
    "actual": 94,
    "median": 75.0,
    "p90": [
-    54.0,
+    53.0,
     98.0
    ],
    "covered_90": true
   },
   "COAL": {
    "actual": 43,
-   "median": 59.0,
+   "median": 56.0,
    "p90": [
-    35.0,
-    80.0
+    33.0,
+    78.0
    ],
    "covered_90": true
   },
   "GRN": {
    "actual": 1,
-   "median": 5.0,
+   "median": 4.0,
    "p90": [
     2.0,
-    8.0
+    9.0
    ],
    "covered_90": false
   },
   "IND": {
    "actual": 12,
-   "median": 10.0,
+   "median": 13.0,
    "p90": [
-    7.0,
-    13.0
+    8.0,
+    17.0
    ],
    "covered_90": true
   }
@@ -45,27 +45,27 @@
  "calibration": [
   {
    "bin": "0.50-0.70",
-   "n": 21,
-   "mean_prob": 0.627,
-   "hit_rate": 0.571
+   "n": 30,
+   "mean_prob": 0.625,
+   "hit_rate": 0.5
   },
   {
    "bin": "0.70-0.90",
-   "n": 45,
-   "mean_prob": 0.805,
-   "hit_rate": 0.711
+   "n": 57,
+   "mean_prob": 0.814,
+   "hit_rate": 0.877
   },
   {
    "bin": "0.90-0.99",
-   "n": 40,
-   "mean_prob": 0.955,
-   "hit_rate": 0.95
+   "n": 55,
+   "mean_prob": 0.956,
+   "hit_rate": 0.964
   },
   {
    "bin": "0.99-1.00",
-   "n": 44,
-   "mean_prob": 0.997,
-   "hit_rate": 0.977
+   "n": 6,
+   "mean_prob": 0.994,
+   "hit_rate": 1.0
   }
  ],
  "misses": [
@@ -73,242 +73,298 @@
    "district": "Aston",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.721,
-   "p_won": 0.279,
+   "p_fav": 0.601,
+   "p_won": 0.373,
    "incumbent": "ALP"
   },
   {
    "district": "Banks",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.782,
-   "p_won": 0.218,
+   "p_fav": 0.693,
+   "p_won": 0.307,
    "incumbent": "COAL"
   },
   {
    "district": "Bass",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.741,
-   "p_won": 0.257,
+   "p_fav": 0.688,
+   "p_won": 0.305,
    "incumbent": "COAL"
   },
   {
    "district": "Bennelong",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.642,
-   "p_won": 0.357,
+   "p_fav": 0.505,
+   "p_won": 0.495,
    "incumbent": "ALP"
   },
   {
    "district": "Bonner",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.782,
-   "p_won": 0.203,
+   "p_fav": 0.716,
+   "p_won": 0.26,
    "incumbent": "COAL"
   },
   {
    "district": "Braddon",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.986,
-   "p_won": 0.014,
+   "p_fav": 0.893,
+   "p_won": 0.061,
    "incumbent": "COAL"
   },
   {
    "district": "Bradfield",
    "won": "IND",
    "favourite": "COAL",
-   "p_fav": 0.877,
-   "p_won": 0.112,
+   "p_fav": 0.693,
+   "p_won": 0.27,
    "incumbent": "COAL"
   },
   {
    "district": "Brisbane",
    "won": "ALP",
    "favourite": "GRN",
-   "p_fav": 0.716,
-   "p_won": 0.171,
+   "p_fav": 0.578,
+   "p_won": 0.238,
    "incumbent": "GRN"
   },
   {
    "district": "Calare",
    "won": "IND",
    "favourite": "COAL",
-   "p_fav": 0.843,
-   "p_won": 0.147,
+   "p_fav": 0.801,
+   "p_won": 0.184,
    "incumbent": "IND"
   },
   {
-   "district": "Deakin",
-   "won": "ALP",
-   "favourite": "COAL",
-   "p_fav": 0.55,
-   "p_won": 0.449,
+   "district": "Cowper",
+   "won": "COAL",
+   "favourite": "IND",
+   "p_fav": 0.532,
+   "p_won": 0.45,
    "incumbent": "COAL"
   },
   {
    "district": "Dickson",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.692,
-   "p_won": 0.306,
+   "p_fav": 0.61,
+   "p_won": 0.355,
    "incumbent": "COAL"
   },
   {
    "district": "Forde",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.771,
-   "p_won": 0.218,
+   "p_fav": 0.737,
+   "p_won": 0.251,
    "incumbent": "COAL"
   },
   {
    "district": "Fowler",
    "won": "IND",
    "favourite": "ALP",
-   "p_fav": 0.656,
-   "p_won": 0.343,
+   "p_fav": 0.644,
+   "p_won": 0.347,
    "incumbent": "IND"
   },
   {
    "district": "Gilmore",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.603,
-   "p_won": 0.397,
+   "p_fav": 0.532,
+   "p_won": 0.451,
    "incumbent": "ALP"
   },
   {
    "district": "Goldstein",
    "won": "COAL",
    "favourite": "IND",
-   "p_fav": 0.804,
-   "p_won": 0.195,
+   "p_fav": 0.788,
+   "p_won": 0.209,
    "incumbent": "IND"
   },
   {
    "district": "Griffith",
    "won": "ALP",
    "favourite": "GRN",
-   "p_fav": 0.896,
-   "p_won": 0.103,
+   "p_fav": 0.792,
+   "p_won": 0.191,
    "incumbent": "GRN"
   },
   {
    "district": "Hughes",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.953,
-   "p_won": 0.047,
+   "p_fav": 0.927,
+   "p_won": 0.073,
    "incumbent": "COAL"
   },
   {
    "district": "Leichhardt",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.705,
-   "p_won": 0.285,
+   "p_fav": 0.497,
+   "p_won": 0.308,
    "incumbent": "COAL"
   },
   {
    "district": "Lyons",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.73,
-   "p_won": 0.263,
+   "p_fav": 0.643,
+   "p_won": 0.304,
    "incumbent": "ALP"
   },
   {
    "district": "Melbourne",
    "won": "ALP",
    "favourite": "GRN",
-   "p_fav": 0.995,
-   "p_won": 0.005,
+   "p_fav": 0.93,
+   "p_won": 0.065,
    "incumbent": "GRN"
   },
   {
    "district": "Menzies",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.695,
-   "p_won": 0.305,
+   "p_fav": 0.66,
+   "p_won": 0.313,
    "incumbent": "COAL"
   },
   {
    "district": "Moore",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.615,
-   "p_won": 0.383,
+   "p_fav": 0.535,
+   "p_won": 0.432,
    "incumbent": "IND"
-  },
-  {
-   "district": "Nicholls",
-   "won": "COAL",
-   "favourite": "ONP",
-   "p_fav": 0.506,
-   "p_won": 0.451,
-   "incumbent": "COAL"
   },
   {
    "district": "Petrie",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.864,
-   "p_won": 0.135,
+   "p_fav": 0.789,
+   "p_won": 0.208,
+   "incumbent": "COAL"
+  },
+  {
+   "district": "Riverina",
+   "won": "COAL",
+   "favourite": "IND",
+   "p_fav": 0.519,
+   "p_won": 0.325,
    "incumbent": "COAL"
   },
   {
    "district": "Sturt",
    "won": "ALP",
    "favourite": "COAL",
-   "p_fav": 0.669,
-   "p_won": 0.323,
+   "p_fav": 0.56,
+   "p_won": 0.397,
    "incumbent": "COAL"
   }
  ],
+ "seat_vote": {
+  "ALP": {
+   "n": 150,
+   "crps": 3.036,
+   "cover50": 0.407,
+   "cover90": 0.893,
+   "pit_hist": [
+    2,
+    6,
+    6,
+    11,
+    7,
+    10,
+    18,
+    24,
+    27,
+    39
+   ]
+  },
+  "COAL": {
+   "n": 150,
+   "crps": 3.218,
+   "cover50": 0.427,
+   "cover90": 0.86,
+   "pit_hist": [
+    36,
+    35,
+    21,
+    15,
+    14,
+    11,
+    11,
+    2,
+    1,
+    4
+   ]
+  },
+  "GRN": {
+   "n": 150,
+   "crps": 1.478,
+   "cover50": 0.54,
+   "cover90": 0.913,
+   "pit_hist": [
+    16,
+    25,
+    12,
+    15,
+    19,
+    21,
+    15,
+    10,
+    10,
+    7
+   ]
+  }
+ },
  "statewide": {
   "ALP": {
    "forecast": [
-    28.0,
-    30.9,
-    33.9
+    27.6,
+    31.0,
+    34.4
    ],
    "actual": 34.6
   },
   "COAL": {
    "forecast": [
-    31.7,
-    34.6,
-    37.6
+    31.4,
+    34.8,
+    38.3
    ],
    "actual": 31.8
   },
   "GRN": {
    "forecast": [
-    11.3,
-    13.1,
-    15.0
+    10.7,
+    12.9,
+    15.1
    ],
    "actual": 12.2
   },
   "tpp": {
    "forecast": [
-    44.8,
-    51.9,
-    57.7
+    44.6,
+    52.1,
+    58.1
    ],
    "actual": 55.2
   }
  },
  "outcome": {
-  "alp_majority": 0.4705,
-  "coal_majority": 0.09235,
-  "hung": 0.43715,
-  "alp_most_seats": 0.72955,
-  "coal_most_seats": 0.2562
+  "alp_majority": 0.48625,
+  "coal_majority": 0.0739,
+  "hung": 0.43985,
+  "alp_most_seats": 0.7699,
+  "coal_most_seats": 0.21805
  }
 }

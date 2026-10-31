@@ -1,0 +1,75 @@
+{
+ "election": "tas-2025",
+ "run_at": "2026-10-31T10:19:36+00:00",
+ "git_commit": "a691a1253f10bb9f81b5638c0eb1400306477f7d",
+ "uncommitted_changes": false,
+ "config": {
+  "n_per_draw": 5,
+  "seed": 20261128,
+  "poll_error_sd": {
+   "ALP": 2.88,
+   "COAL": 3.46,
+   "GRN": 1.88,
+   "ONP": 2.5
+  },
+  "poll_error_df": 5.0,
+  "poll_error_corr": [
+   [
+    1.0,
+    -0.476,
+    -0.249
+   ],
+   [
+    -0.476,
+    1.0,
+    -0.32
+   ],
+   [
+    -0.249,
+    -0.32,
+    1.0
+   ]
+  ],
+  "poll_error_corr_parties": [
+   "ALP",
+   "COAL",
+   "GRN"
+  ],
+  "poll_bias": {
+   "ALP": -0.65,
+   "COAL": -1.85,
+   "GRN": 0.93
+  },
+  "region_sd": 0.06,
+  "seat_sd": {
+   "ALP": 0.12,
+   "COAL": 0.12,
+   "GRN": 0.18,
+   "OTH": 0.25,
+   "ONP": 0.25
+  },
+  "seat_df": {},
+  "seat_beta": {},
+  "ind_decay_mean": -0.2,
+  "ind_decay_sd": 0.4,
+  "retire_effect": -0.08,
+  "sophomore_effect": 0.05,
+  "ind_prior_sd": 0.35,
+  "ind_sophomore_log": 0.15,
+  "ind_retire_log": -1.2
+ },
+ "inputs": {
+  "tas-2025\\booths.csv": "235857cc864a51f3",
+  "tas-2025\\districts.csv": "a986f71498d8f180",
+  "tas-2025\\members.csv": "3581da506f94b59f",
+  "tas-2025\\primary.csv": "35a6a686e3d26a46",
+  "tas-2024\\booths.csv": "614761c0e9e92ca5",
+  "tas-2024\\districts.csv": "be6d911ab06f9771",
+  "tas-2024\\members.csv": "10d90e77bca6ca33",
+  "tas-2024\\primary.csv": "dc15f19d5d9e6b7c",
+  "polls_tas-2025.csv": "003dacf7e2ca5728",
+  "election_results_tas.csv": "50c751f4cbf82066"
+ },
+ "hand_set": false,
+ "no_polls": false
+}

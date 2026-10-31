@@ -1,0 +1,24 @@
+{
+ "no_polls": true,
+ "poll_average_for": [
+  "ALP",
+  "COAL",
+  "GRN"
+ ],
+ "start_share": {
+  "ALP": 24.35,
+  "COAL": 39.8,
+  "GRN": 11.05,
+  "OTH": 24.799999999999997
+ },
+ "swing_sd": {
+  "ALP": 4.68,
+  "COAL": 13.11,
+  "GRN": 1.5
+ },
+ "swing_from": [
+  2012,
+  2016,
+  2020
+ ]
+}

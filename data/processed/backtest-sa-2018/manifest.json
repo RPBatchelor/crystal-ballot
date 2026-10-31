@@ -1,0 +1,91 @@
+{
+ "election": "sa-2018",
+ "run_at": "2026-10-31T10:16:48+00:00",
+ "git_commit": "a691a1253f10bb9f81b5638c0eb1400306477f7d",
+ "uncommitted_changes": false,
+ "config": {
+  "n_per_draw": 5,
+  "seed": 20261128,
+  "poll_error_sd": {
+   "ALP": 1.81,
+   "COAL": 1.8,
+   "GRN": 1.94,
+   "ONP": 2.5
+  },
+  "poll_error_df": 5.0,
+  "poll_error_corr": [
+   [
+    1.0,
+    -0.353,
+    -0.341
+   ],
+   [
+    -0.353,
+    1.0,
+    -0.534
+   ],
+   [
+    -0.341,
+    -0.534,
+    1.0
+   ]
+  ],
+  "poll_error_corr_parties": [
+   "ALP",
+   "COAL",
+   "GRN"
+  ],
+  "poll_bias": {
+   "ALP": -0.76,
+   "COAL": 0.26,
+   "GRN": 0.34
+  },
+  "region_sd": 0.1225,
+  "seat_sd": {
+   "ALP": 0.1608,
+   "COAL": 0.1941,
+   "GRN": 0.1762,
+   "OTH": 0.25,
+   "ONP": 0.25
+  },
+  "seat_df": {
+   "ALP": 6.43,
+   "COAL": 11.79,
+   "GRN": 7.23,
+   "OTH": 6.43
+  },
+  "seat_beta": {
+   "ALP": -0.0936,
+   "COAL": -0.0322,
+   "GRN": -0.0258
+  },
+  "ind_decay_mean": -0.2,
+  "ind_decay_sd": 0.4,
+  "retire_effect": -0.0725,
+  "sophomore_effect": 0.113,
+  "ind_prior_sd": 0.35,
+  "ind_sophomore_log": 0.15,
+  "ind_retire_log": -1.2
+ },
+ "inputs": {
+  "sa-2018\\booths.csv": "afd63750025e8df8",
+  "sa-2018\\districts.csv": "af5dcd03a540127e",
+  "sa-2018\\final.csv": "58a644b8f3b0239e",
+  "sa-2018\\primary.csv": "f4609b1c4a346a30",
+  "sa-2018\\tcp.csv": "58a644b8f3b0239e",
+  "sa-2018\\tpp.csv": "26f34d6ad5339efd",
+  "sa-2014\\booths.csv": "00079faa7e79b819",
+  "sa-2014\\districts.csv": "f57f2002bbc2cfd1",
+  "sa-2014\\final.csv": "88d610050d2cd81e",
+  "sa-2014\\primary.csv": "d2ec3c5420db5729",
+  "sa-2014\\tcp.csv": "88d610050d2cd81e",
+  "sa-2014\\tpp.csv": "57cc4c579ceedde8",
+  "sa-2018-notional\\districts.csv": "6b685533c68e481d",
+  "sa-2018-notional\\primary.csv": "13be33a4a2a98265",
+  "sa-2018-notional\\venue_map.csv": "3c348a298afbd6d2",
+  "polls_sa-2018.csv": "0eb37d32da8d2ed3",
+  "election_results_sa.csv": "67395f71e00f1fe8"
+ },
+ "hand_set": false,
+ "no_polls": false
+}

@@ -1,0 +1,86 @@
+{
+ "election": "wa-2017",
+ "run_at": "2026-10-31T10:17:11+00:00",
+ "git_commit": "a691a1253f10bb9f81b5638c0eb1400306477f7d",
+ "uncommitted_changes": false,
+ "config": {
+  "n_per_draw": 5,
+  "seed": 20261128,
+  "poll_error_sd": {
+   "ALP": 1.84,
+   "COAL": 1.06,
+   "GRN": 2.08,
+   "ONP": 2.5
+  },
+  "poll_error_df": 5.0,
+  "poll_error_corr": [
+   [
+    1.0,
+    -0.074,
+    -0.591
+   ],
+   [
+    -0.074,
+    1.0,
+    -0.567
+   ],
+   [
+    -0.591,
+    -0.567,
+    1.0
+   ]
+  ],
+  "poll_error_corr_parties": [
+   "ALP",
+   "COAL",
+   "GRN"
+  ],
+  "poll_bias": {
+   "ALP": 0.02,
+   "COAL": -0.18,
+   "GRN": 0.39
+  },
+  "region_sd": 0.06,
+  "seat_sd": {
+   "ALP": 0.12,
+   "COAL": 0.12,
+   "GRN": 0.18,
+   "OTH": 0.25,
+   "ONP": 0.25
+  },
+  "seat_df": {
+   "OTH": 30.0
+  },
+  "seat_beta": {},
+  "ind_decay_mean": -0.2,
+  "ind_decay_sd": 0.4,
+  "retire_effect": -0.08,
+  "sophomore_effect": 0.05,
+  "ind_prior_sd": 0.35,
+  "ind_sophomore_log": 0.15,
+  "ind_retire_log": -1.2
+ },
+ "inputs": {
+  "wa-2017\\booths.csv": "54402f1b58fd43b7",
+  "wa-2017\\districts.csv": "1b5a44da4abcb879",
+  "wa-2017\\dop_transfers.csv": "a724b6a6dd3f0488",
+  "wa-2017\\final.csv": "9441b73ba29572ef",
+  "wa-2017\\primary.csv": "bde8f42faa005234",
+  "wa-2017\\tcp.csv": "9441b73ba29572ef",
+  "wa-2017\\tpp.csv": "45de26b66da3b632",
+  "wa-2013\\booths.csv": "0bf9c0646b68b8fe",
+  "wa-2013\\districts.csv": "fa810334cf154dcb",
+  "wa-2013\\dop_transfers.csv": "de83b449ea31fec0",
+  "wa-2013\\final.csv": "9c782c6130b60a8f",
+  "wa-2013\\primary.csv": "b1f24d97678a2571",
+  "wa-2013\\tcp.csv": "9c782c6130b60a8f",
+  "wa-2013\\tpp.csv": "6ae546ed8e420b63",
+  "wa-2017-notional\\districts.csv": "5e473f6e867394ff",
+  "wa-2017-notional\\primary.csv": "2cebf984f294bb7e",
+  "wa-2017-notional\\venue_map.csv": "d0f8a29cbc94f3de",
+  "polls_wa-2017.csv": "54277a1e1530ff2c",
+  "election_results_wa.csv": "fea62c1c6f6d2a12"
+ },
+ "hand_set": false,
+ "no_polls": false
+}

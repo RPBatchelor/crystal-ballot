@@ -1,0 +1,243 @@
+{
+ "n_seats": 93,
+ "brier": 0.1511,
+ "log_loss": 0.4099,
+ "favourite_accuracy": 0.9032,
+ "status_quo_accuracy": 0.957,
+ "seats": {
+  "ALP": {
+   "actual": 36,
+   "median": 39.0,
+   "p90": [
+    34.0,
+    46.0
+   ],
+   "covered_90": true
+  },
+  "COAL": {
+   "actual": 48,
+   "median": 50.0,
+   "p90": [
+    43.0,
+    55.0
+   ],
+   "covered_90": true
+  },
+  "GRN": {
+   "actual": 3,
+   "median": 2.0,
+   "p90": [
+    0.0,
+    4.0
+   ],
+   "covered_90": true
+  },
+  "IND": {
+   "actual": 3,
+   "median": 2.0,
+   "p90": [
+    1.0,
+    3.0
+   ],
+   "covered_90": true
+  }
+ },
+ "calibration": [
+  {
+   "bin": "0.50-0.70",
+   "n": 6,
+   "mean_prob": 0.598,
+   "hit_rate": 0.5
+  },
+  {
+   "bin": "0.70-0.90",
+   "n": 5,
+   "mean_prob": 0.838,
+   "hit_rate": 1.0
+  },
+  {
+   "bin": "0.90-0.99",
+   "n": 20,
+   "mean_prob": 0.946,
+   "hit_rate": 0.8
+  },
+  {
+   "bin": "0.99-1.00",
+   "n": 60,
+   "mean_prob": 0.999,
+   "hit_rate": 0.983
+  }
+ ],
+ "misses": [
+  {
+   "district": "Barwon",
+   "won": "OTH",
+   "favourite": "NAT",
+   "p_fav": 0.955,
+   "p_won": 0.0,
+   "incumbent": "NAT"
+  },
+  {
+   "district": "Coogee",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.607,
+   "p_won": 0.391,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "East Hills",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.926,
+   "p_won": 0.074,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Lismore",
+   "won": "ALP",
+   "favourite": "NAT",
+   "p_fav": 0.397,
+   "p_won": 0.374,
+   "incumbent": "NAT"
+  },
+  {
+   "district": "Monaro",
+   "won": "NAT",
+   "favourite": "ALP",
+   "p_fav": 0.55,
+   "p_won": 0.45,
+   "incumbent": "NAT"
+  },
+  {
+   "district": "Murray",
+   "won": "OTH",
+   "favourite": "NAT",
+   "p_fav": 0.979,
+   "p_won": 0.0,
+   "incumbent": "NAT"
+  },
+  {
+   "district": "Orange",
+   "won": "OTH",
+   "favourite": "NAT",
+   "p_fav": 1.0,
+   "p_won": 0.0,
+   "incumbent": "OTH"
+  },
+  {
+   "district": "Upper Hunter",
+   "won": "NAT",
+   "favourite": "ALP",
+   "p_fav": 0.587,
+   "p_won": 0.413,
+   "incumbent": "NAT"
+  },
+  {
+   "district": "Wagga Wagga",
+   "won": "IND",
+   "favourite": "NAT",
+   "p_fav": 0.985,
+   "p_won": 0.001,
+   "incumbent": "IND"
+  }
+ ],
+ "seat_vote": {
+  "ALP": {
+   "n": 93,
+   "crps": 4.211,
+   "cover50": 0.301,
+   "cover90": 0.624,
+   "pit_hist": [
+    46,
+    11,
+    2,
+    14,
+    5,
+    3,
+    3,
+    3,
+    3,
+    3
+   ]
+  },
+  "COAL": {
+   "n": 93,
+   "crps": 3.806,
+   "cover50": 0.323,
+   "cover90": 0.72,
+   "pit_hist": [
+    18,
+    7,
+    8,
+    8,
+    9,
+    2,
+    4,
+    4,
+    19,
+    14
+   ]
+  },
+  "GRN": {
+   "n": 93,
+   "crps": 1.076,
+   "cover50": 0.559,
+   "cover90": 0.946,
+   "pit_hist": [
+    6,
+    11,
+    7,
+    14,
+    9,
+    12,
+    12,
+    7,
+    7,
+    8
+   ]
+  }
+ },
+ "pendulum_accuracy": 0.9355,
+ "statewide": {
+  "ALP": {
+   "forecast": [
+    32.2,
+    35.5,
+    38.8
+   ],
+   "actual": 33.31
+  },
+  "COAL": {
+   "forecast": [
+    36.5,
+    40.1,
+    43.6
+   ],
+   "actual": 41.58
+  },
+  "GRN": {
+   "forecast": [
+    6.3,
+    9.2,
+    12.0
+   ],
+   "actual": 9.57
+  },
+  "tpp": {
+   "forecast": [
+    44.4,
+    48.9,
+    53.5
+   ],
+   "actual": 47.98
+  }
+ },
+ "outcome": {
+  "alp_majority": 0.0414,
+  "coal_majority": 0.8074,
+  "hung": 0.1512,
+  "alp_most_seats": 0.07935,
+  "coal_most_seats": 0.9034
+ }
+}

@@ -1,0 +1,968 @@
+{
+ "n_sims": 20000,
+ "seats_total": 35,
+ "majority": 18,
+ "outcome": {
+  "lib_majority": 0.06005,
+  "alp_majority": 0.00015,
+  "hung": 0.9398,
+  "lib_most_seats": 0.94725,
+  "alp_most_seats": 0.0312
+ },
+ "seats": {
+  "AJP": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "ALP": [
+   8.0,
+   9.75,
+   10.0,
+   11.0,
+   13.0
+  ],
+  "GRN": [
+   2.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0
+  ],
+  "IND": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   4.0
+  ],
+  "LIB": [
+   12.0,
+   15.0,
+   16.0,
+   16.0,
+   18.0
+  ],
+  "SFF": [
+   0.0,
+   1.0,
+   1.0,
+   2.0,
+   2.0
+  ],
+  "X_JLN": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "X_LNL": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ },
+ "statewide_primary": {
+  "ALP": [
+   20.4,
+   25.5,
+   30.8
+  ],
+  "COAL": [
+   32.0,
+   38.5,
+   44.7
+  ],
+  "GRN": [
+   9.1,
+   12.8,
+   16.7
+  ],
+  "ONP": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "IND": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "OTH": [
+   19.1,
+   23.0,
+   27.3
+  ]
+ },
+ "divisions": [
+  {
+   "district": "Bass",
+   "seats": 7,
+   "notes": [
+    "sitting member ALEXANDER Lara elected for LIB, standing for IND"
+   ],
+   "expected": {
+    "AJP": 0.0,
+    "ALP": 2.0,
+    "GRN": 0.86,
+    "IND": 0.06,
+    "LIB": 3.98,
+    "SFF": 0.1,
+    "X_JLN": 0.0
+   },
+   "seat_probs": {
+    "AJP": {
+     "0": 0.9992,
+     "1": 0.0008
+    },
+    "ALP": {
+     "0": 0.0002,
+     "1": 0.0568,
+     "2": 0.888,
+     "3": 0.0549,
+     "4": 0.0001
+    },
+    "GRN": {
+     "0": 0.1443,
+     "1": 0.8545,
+     "2": 0.0013
+    },
+    "IND": {
+     "0": 0.9391,
+     "1": 0.0609
+    },
+    "LIB": {
+     "0": 0.0001,
+     "1": 0.0001,
+     "2": 0.0011,
+     "3": 0.0883,
+     "4": 0.8355,
+     "5": 0.0749,
+     "6": 0.0001
+    },
+    "SFF": {
+     "0": 0.9007,
+     "1": 0.0993
+    },
+    "X_JLN": {
+     "0": 0.9999,
+     "1": 0.0001
+    }
+   },
+   "units": [
+    {
+     "label": "LIB",
+     "party": "LIB",
+     "share": [
+      43.8,
+      49.7,
+      55.4
+     ],
+     "p_seat": 1.0
+    },
+    {
+     "label": "ALP",
+     "party": "ALP",
+     "share": [
+      20.0,
+      24.5,
+      29.3
+     ],
+     "p_seat": 0.9998
+    },
+    {
+     "label": "GRN",
+     "party": "GRN",
+     "share": [
+      6.8,
+      9.5,
+      12.7
+     ],
+     "p_seat": 0.8557
+    },
+    {
+     "label": "X_JLN",
+     "party": "X_JLN",
+     "share": [
+      1.7,
+      2.8,
+      3.9
+     ],
+     "p_seat": 0.0001
+    },
+    {
+     "label": "SFF",
+     "party": "SFF",
+     "share": [
+      2.8,
+      4.5,
+      6.4
+     ],
+     "p_seat": 0.0993
+    },
+    {
+     "label": "AJP",
+     "party": "AJP",
+     "share": [
+      2.1,
+      3.4,
+      4.9
+     ],
+     "p_seat": 0.0008
+    },
+    {
+     "label": "WALKER Tim",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0118
+    },
+    {
+     "label": "BROWN Mark",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0132
+    },
+    {
+     "label": "ALEXANDER Lara",
+     "party": "IND",
+     "share": [
+      0.2,
+      0.3,
+      0.5
+     ],
+     "p_seat": 0.0
+    },
+    {
+     "label": "DAVENPORT Jack",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0121
+    },
+    {
+     "label": "QUINN Greg (Tubby)",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0127
+    },
+    {
+     "label": "RAZAY George",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0111
+    }
+   ]
+  },
+  {
+   "district": "Braddon",
+   "seats": 7,
+   "notes": [],
+   "expected": {
+    "AJP": 0.0,
+    "ALP": 2.06,
+    "GRN": 0.23,
+    "IND": 0.57,
+    "LIB": 3.86,
+    "SFF": 0.28
+   },
+   "seat_probs": {
+    "AJP": {
+     "0": 0.9998,
+     "1": 0.0003
+    },
+    "ALP": {
+     "0": 0.0003,
+     "1": 0.0369,
+     "2": 0.8652,
+     "3": 0.0972,
+     "4": 0.0004
+    },
+    "GRN": {
+     "0": 0.7683,
+     "1": 0.2316
+    },
+    "IND": {
+     "0": 0.4306,
+     "1": 0.5683,
+     "2": 0.001
+    },
+    "LIB": {
+     "0": 0.0001,
+     "1": 0.0002,
+     "2": 0.0026,
+     "3": 0.1756,
+     "4": 0.7785,
+     "5": 0.0428,
+     "6": 0.0001
+    },
+    "SFF": {
+     "0": 0.7244,
+     "1": 0.2757
+    }
+   },
+   "units": [
+    {
+     "label": "LIB",
+     "party": "LIB",
+     "share": [
+      43.0,
+      49.0,
+      54.8
+     ],
+     "p_seat": 1.0
+    },
+    {
+     "label": "ALP",
+     "party": "ALP",
+     "share": [
+      21.3,
+      26.0,
+      30.9
+     ],
+     "p_seat": 0.9998
+    },
+    {
+     "label": "GRN",
+     "party": "GRN",
+     "share": [
+      4.1,
+      5.9,
+      8.3
+     ],
+     "p_seat": 0.2316
+    },
+    {
+     "label": "X_JLN",
+     "party": "X_JLN",
+     "share": [
+      1.3,
+      2.1,
+      3.1
+     ],
+     "p_seat": 0.0
+    },
+    {
+     "label": "SFF",
+     "party": "SFF",
+     "share": [
+      3.3,
+      5.3,
+      7.8
+     ],
+     "p_seat": 0.2757
+    },
+    {
+     "label": "AJP",
+     "party": "AJP",
+     "share": [
+      1.3,
+      2.1,
+      3.1
+     ],
+     "p_seat": 0.0003
+    },
+    {
+     "label": "GARLAND Craig",
+     "party": "IND",
+     "share": [
+      3.1,
+      5.2,
+      8.4
+     ],
+     "p_seat": 0.5543
+    },
+    {
+     "label": "BURNETT Gatty",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.8,
+      2.1
+     ],
+     "p_seat": 0.0059
+    },
+    {
+     "label": "COURTNEY Andrea",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.8,
+      2.1
+     ],
+     "p_seat": 0.0046
+    },
+    {
+     "label": "FRESHNEY Peter",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.8,
+      2.1
+     ],
+     "p_seat": 0.0057
+    },
+    {
+     "label": "HAMER Liz",
+     "party": "IND",
+     "share": [
+      0.2,
+      0.4,
+      0.7
+     ],
+     "p_seat": 0.0
+    }
+   ]
+  },
+  {
+   "district": "Clark",
+   "seats": 7,
+   "notes": [],
+   "expected": {
+    "AJP": 0.0,
+    "ALP": 1.74,
+    "GRN": 1.57,
+    "IND": 1.68,
+    "LIB": 1.94,
+    "SFF": 0.0,
+    "X_LNL": 0.06
+   },
+   "seat_probs": {
+    "AJP": {
+     "0": 0.9967,
+     "1": 0.0033
+    },
+    "ALP": {
+     "0": 0.0003,
+     "1": 0.2621,
+     "2": 0.7319,
+     "3": 0.0056
+    },
+    "GRN": {
+     "0": 0.0018,
+     "1": 0.4312,
+     "2": 0.5626,
+     "3": 0.0043
+    },
+    "IND": {
+     "0": 0.007,
+     "1": 0.3061,
+     "2": 0.6821,
+     "3": 0.0048
+    },
+    "LIB": {
+     "0": 0.0003,
+     "1": 0.0993,
+     "2": 0.8606,
+     "3": 0.0396,
+     "4": 0.0001
+    },
+    "SFF": {
+     "0": 0.9997,
+     "1": 0.0003
+    },
+    "X_LNL": {
+     "0": 0.9408,
+     "1": 0.0592
+    }
+   },
+   "units": [
+    {
+     "label": "LIB",
+     "party": "LIB",
+     "share": [
+      18.6,
+      23.3,
+      28.4
+     ],
+     "p_seat": 0.9998
+    },
+    {
+     "label": "ALP",
+     "party": "ALP",
+     "share": [
+      16.1,
+      20.2,
+      24.6
+     ],
+     "p_seat": 0.9997
+    },
+    {
+     "label": "GRN",
+     "party": "GRN",
+     "share": [
+      15.4,
+      20.0,
+      25.1
+     ],
+     "p_seat": 0.9982
+    },
+    {
+     "label": "X_LNL",
+     "party": "X_LNL",
+     "share": [
+      2.4,
+      3.9,
+      5.7
+     ],
+     "p_seat": 0.0592
+    },
+    {
+     "label": "SFF",
+     "party": "SFF",
+     "share": [
+      2.3,
+      3.7,
+      5.3
+     ],
+     "p_seat": 0.0003
+    },
+    {
+     "label": "AJP",
+     "party": "AJP",
+     "share": [
+      2.3,
+      3.7,
+      5.3
+     ],
+     "p_seat": 0.0033
+    },
+    {
+     "label": "JOHNSTON Kristie",
+     "party": "IND",
+     "share": [
+      6.6,
+      10.8,
+      17.1
+     ],
+     "p_seat": 0.9049
+    },
+    {
+     "label": "HICKEY Sue",
+     "party": "IND",
+     "share": [
+      4.8,
+      7.9,
+      12.7
+     ],
+     "p_seat": 0.7652
+    },
+    {
+     "label": "LOHBERGER Ben",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0027
+    },
+    {
+     "label": "ELLIOT Louise",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0032
+    },
+    {
+     "label": "FORSTER John Michael",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0027
+    },
+    {
+     "label": "TRIFFITT Angela",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      1.9
+     ],
+     "p_seat": 0.0029
+    },
+    {
+     "label": "VOGEL Stefan",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0029
+    }
+   ]
+  },
+  {
+   "district": "Franklin",
+   "seats": 7,
+   "notes": [
+    "sitting member O'BYRNE David elected for ALP, standing for IND"
+   ],
+   "expected": {
+    "AJP": 0.12,
+    "ALP": 2.12,
+    "GRN": 1.53,
+    "IND": 0.52,
+    "LIB": 2.7,
+    "X_JLN": 0.0,
+    "X_LNL": 0.01
+   },
+   "seat_probs": {
+    "AJP": {
+     "0": 0.8798,
+     "1": 0.1202
+    },
+    "ALP": {
+     "0": 0.0002,
+     "1": 0.026,
+     "2": 0.8284,
+     "3": 0.1451,
+     "4": 0.0004
+    },
+    "GRN": {
+     "0": 0.0023,
+     "1": 0.4674,
+     "2": 0.5281,
+     "3": 0.0022,
+     "4": 0.0001
+    },
+    "IND": {
+     "0": 0.4779,
+     "1": 0.5199,
+     "2": 0.0022
+    },
+    "LIB": {
+     "0": 0.0001,
+     "1": 0.0026,
+     "2": 0.313,
+     "3": 0.6668,
+     "4": 0.0175,
+     "5": 0.0001
+    },
+    "X_JLN": {
+     "0": 0.9999,
+     "1": 0.0001
+    },
+    "X_LNL": {
+     "0": 0.9936,
+     "1": 0.0064
+    }
+   },
+   "units": [
+    {
+     "label": "LIB",
+     "party": "LIB",
+     "share": [
+      27.4,
+      33.0,
+      38.9
+     ],
+     "p_seat": 0.9999
+    },
+    {
+     "label": "ALP",
+     "party": "ALP",
+     "share": [
+      21.5,
+      26.2,
+      31.2
+     ],
+     "p_seat": 0.9998
+    },
+    {
+     "label": "GRN",
+     "party": "GRN",
+     "share": [
+      14.9,
+      19.5,
+      24.3
+     ],
+     "p_seat": 0.9977
+    },
+    {
+     "label": "X_JLN",
+     "party": "X_JLN",
+     "share": [
+      2.5,
+      3.8,
+      5.4
+     ],
+     "p_seat": 0.0001
+    },
+    {
+     "label": "X_LNL",
+     "party": "X_LNL",
+     "share": [
+      2.5,
+      3.8,
+      5.4
+     ],
+     "p_seat": 0.0064
+    },
+    {
+     "label": "AJP",
+     "party": "AJP",
+     "share": [
+      2.9,
+      4.5,
+      6.4
+     ],
+     "p_seat": 0.1202
+    },
+    {
+     "label": "O'BYRNE David",
+     "party": "IND",
+     "share": [
+      2.7,
+      4.5,
+      7.3
+     ],
+     "p_seat": 0.4925
+    },
+    {
+     "label": "MULDER Tony",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0077
+    },
+    {
+     "label": "GLADE-WRIGHT Clare",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0077
+    },
+    {
+     "label": "CORDOVER Tamar",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.008
+    },
+    {
+     "label": "ELLISTON Bob",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0084
+    }
+   ]
+  },
+  {
+   "district": "Lyons",
+   "seats": 7,
+   "notes": [
+    "sitting member TUCKER John elected for LIB, standing for IND"
+   ],
+   "expected": {
+    "AJP": 0.02,
+    "ALP": 2.35,
+    "GRN": 0.76,
+    "IND": 0.09,
+    "LIB": 2.97,
+    "SFF": 0.8
+   },
+   "seat_probs": {
+    "AJP": {
+     "0": 0.9752,
+     "1": 0.0248
+    },
+    "ALP": {
+     "0": 0.0002,
+     "1": 0.0063,
+     "2": 0.636,
+     "3": 0.3564,
+     "4": 0.0011
+    },
+    "GRN": {
+     "0": 0.2414,
+     "1": 0.7577,
+     "2": 0.001
+    },
+    "IND": {
+     "0": 0.9069,
+     "1": 0.093,
+     "2": 0.0001
+    },
+    "LIB": {
+     "0": 0.0001,
+     "1": 0.0013,
+     "2": 0.1093,
+     "3": 0.8095,
+     "4": 0.0796,
+     "5": 0.0003
+    },
+    "SFF": {
+     "0": 0.1979,
+     "1": 0.802,
+     "2": 0.0001
+    }
+   },
+   "units": [
+    {
+     "label": "LIB",
+     "party": "LIB",
+     "share": [
+      31.6,
+      37.5,
+      43.4
+     ],
+     "p_seat": 1.0
+    },
+    {
+     "label": "ALP",
+     "party": "ALP",
+     "share": [
+      25.2,
+      30.2,
+      35.4
+     ],
+     "p_seat": 0.9998
+    },
+    {
+     "label": "GRN",
+     "party": "GRN",
+     "share": [
+      6.4,
+      9.0,
+      12.1
+     ],
+     "p_seat": 0.7587
+    },
+    {
+     "label": "X_JLN",
+     "party": "X_JLN",
+     "share": [
+      1.9,
+      2.9,
+      4.0
+     ],
+     "p_seat": 0.0
+    },
+    {
+     "label": "SFF",
+     "party": "SFF",
+     "share": [
+      5.7,
+      8.6,
+      11.8
+     ],
+     "p_seat": 0.8021
+    },
+    {
+     "label": "AJP",
+     "party": "AJP",
+     "share": [
+      2.6,
+      3.8,
+      5.2
+     ],
+     "p_seat": 0.0248
+    },
+    {
+     "label": "TUCKER John",
+     "party": "IND",
+     "share": [
+      1.6,
+      2.6,
+      4.3
+     ],
+     "p_seat": 0.0631
+    },
+    {
+     "label": "OFFORD Angela",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0058
+    },
+    {
+     "label": "BRANCH-ALLEN Jenny",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0063
+    },
+    {
+     "label": "MILLER Fraser",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0069
+    },
+    {
+     "label": "ROBERTS Andrew",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0056
+    },
+    {
+     "label": "TRIFFITT Loueen (Lou)",
+     "party": "IND",
+     "share": [
+      0.3,
+      0.7,
+      2.0
+     ],
+     "p_seat": 0.0055
+    }
+   ]
+  }
+ ]
+}

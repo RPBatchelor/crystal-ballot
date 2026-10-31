@@ -1,0 +1,95 @@
+{
+ "election": "nsw-2023",
+ "run_at": "2026-10-31T10:18:07+00:00",
+ "git_commit": "a691a1253f10bb9f81b5638c0eb1400306477f7d",
+ "uncommitted_changes": false,
+ "config": {
+  "n_per_draw": 5,
+  "seed": 20261128,
+  "poll_error_sd": {
+   "ALP": 2.26,
+   "COAL": 2.05,
+   "GRN": 1.75,
+   "ONP": 2.5
+  },
+  "poll_error_df": 5.0,
+  "poll_error_corr": [
+   [
+    1.0,
+    -0.525,
+    -0.241
+   ],
+   [
+    -0.525,
+    1.0,
+    -0.341
+   ],
+   [
+    -0.241,
+    -0.341,
+    1.0
+   ]
+  ],
+  "poll_error_corr_parties": [
+   "ALP",
+   "COAL",
+   "GRN"
+  ],
+  "poll_bias": {
+   "ALP": -0.31,
+   "COAL": -0.67,
+   "GRN": 0.77
+  },
+  "region_sd": 0.095,
+  "seat_sd": {
+   "ALP": 0.1899,
+   "COAL": 0.2012,
+   "GRN": 0.2014,
+   "OTH": 0.25,
+   "ONP": 0.25
+  },
+  "seat_df": {
+   "ALP": 7.11,
+   "COAL": 5.7,
+   "GRN": 7.06,
+   "OTH": 5.7
+  },
+  "seat_beta": {
+   "ALP": -0.0453,
+   "COAL": -0.0683,
+   "GRN": -0.0247
+  },
+  "ind_decay_mean": -0.2,
+  "ind_decay_sd": 0.4,
+  "retire_effect": -0.0799,
+  "sophomore_effect": 0.1294,
+  "ind_prior_sd": 0.35,
+  "ind_sophomore_log": 0.15,
+  "ind_retire_log": -1.2
+ },
+ "inputs": {
+  "nsw-2023\\booths.csv": "c390f8684afe3398",
+  "nsw-2023\\districts.csv": "40bc9c727f8496b8",
+  "nsw-2023\\dop_transfers.csv": "cd05e9571c6cb7dc",
+  "nsw-2023\\final.csv": "a53d137e607920b6",
+  "nsw-2023\\primary.csv": "1381722bfed857d2",
+  "nsw-2023\\tcp.csv": "a53d137e607920b6",
+  "nsw-2023\\tpp.csv": "4df0455a395aff0a",
+  "nsw-2023\\tpp_booths.csv": "fcec2877cd3be574",
+  "nsw-2019\\booths.csv": "20a56e12bcfc2575",
+  "nsw-2019\\districts.csv": "3ecb72dd068e5a9d",
+  "nsw-2019\\dop_transfers.csv": "3770be80ae9fc67d",
+  "nsw-2019\\final.csv": "66aff30a0d56239e",
+  "nsw-2019\\primary.csv": "939306b9c6df117f",
+  "nsw-2019\\tcp.csv": "66aff30a0d56239e",
+  "nsw-2019\\tpp.csv": "8372301a23c43145",
+  "nsw-2019\\tpp_booths.csv": "bda778631a738d9d",
+  "nsw-2023-notional\\districts.csv": "7bbd2e4e086279c0",
+  "nsw-2023-notional\\primary.csv": "298a3fd5e1260fc9",
+  "nsw-2023-notional\\venue_map.csv": "ccd80521f0000a4e",
+  "polls_nsw-2023.csv": "2d025432d0e657ce",
+  "election_results_nsw.csv": "ac0495cf00fa900b"
+ },
+ "hand_set": false,
+ "no_polls": false
+}

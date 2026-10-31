@@ -1,0 +1,267 @@
+{
+ "n_seats": 89,
+ "brier": 0.1826,
+ "log_loss": 0.3252,
+ "favourite_accuracy": 0.8652,
+ "status_quo_accuracy": 0.5955,
+ "seats": {
+  "ALP": {
+   "actual": 44,
+   "median": 43.0,
+   "p90": [
+    32.0,
+    51.0
+   ],
+   "covered_90": true
+  },
+  "COAL": {
+   "actual": 42,
+   "median": 39.0,
+   "p90": [
+    31.0,
+    51.0
+   ],
+   "covered_90": true
+  },
+  "GRN": {
+   "actual": 0,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    0.0
+   ],
+   "covered_90": true
+  },
+  "IND": {
+   "actual": 3,
+   "median": 7.0,
+   "p90": [
+    4.0,
+    10.0
+   ],
+   "covered_90": false
+  }
+ },
+ "calibration": [
+  {
+   "bin": "0.50-0.70",
+   "n": 13,
+   "mean_prob": 0.612,
+   "hit_rate": 0.538
+  },
+  {
+   "bin": "0.70-0.90",
+   "n": 21,
+   "mean_prob": 0.82,
+   "hit_rate": 0.762
+  },
+  {
+   "bin": "0.90-0.99",
+   "n": 23,
+   "mean_prob": 0.959,
+   "hit_rate": 0.957
+  },
+  {
+   "bin": "0.99-1.00",
+   "n": 32,
+   "mean_prob": 0.998,
+   "hit_rate": 1.0
+  }
+ ],
+ "misses": [
+  {
+   "district": "Albert",
+   "won": "LNP",
+   "favourite": "ALP",
+   "p_fav": 0.521,
+   "p_won": 0.479,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "Broadwater",
+   "won": "LNP",
+   "favourite": "ALP",
+   "p_fav": 0.658,
+   "p_won": 0.342,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "Bundaberg",
+   "won": "ALP",
+   "favourite": "LNP",
+   "p_fav": 0.934,
+   "p_won": 0.059,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "Burleigh",
+   "won": "LNP",
+   "favourite": "ALP",
+   "p_fav": 0.709,
+   "p_won": 0.291,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "Burnett",
+   "won": "LNP",
+   "favourite": "IND",
+   "p_fav": 0.66,
+   "p_won": 0.304,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "Mansfield",
+   "won": "LNP",
+   "favourite": "ALP",
+   "p_fav": 0.649,
+   "p_won": 0.351,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "Maryborough",
+   "won": "ALP",
+   "favourite": "IND",
+   "p_fav": 0.893,
+   "p_won": 0.002,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "Nanango",
+   "won": "LNP",
+   "favourite": "IND",
+   "p_fav": 0.518,
+   "p_won": 0.482,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "Pine Rivers",
+   "won": "ALP",
+   "favourite": "LNP",
+   "p_fav": 0.648,
+   "p_won": 0.352,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "Springwood",
+   "won": "ALP",
+   "favourite": "LNP",
+   "p_fav": 0.808,
+   "p_won": 0.192,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "Toowoomba North",
+   "won": "LNP",
+   "favourite": "ALP",
+   "p_fav": 0.823,
+   "p_won": 0.177,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "Whitsunday",
+   "won": "LNP",
+   "favourite": "ALP",
+   "p_fav": 0.764,
+   "p_won": 0.177,
+   "incumbent": "LNP"
+  }
+ ],
+ "seat_vote": {
+  "ALP": {
+   "n": 89,
+   "crps": 2.691,
+   "cover50": 0.404,
+   "cover90": 0.82,
+   "pit_hist": [
+    15,
+    14,
+    4,
+    7,
+    8,
+    6,
+    8,
+    7,
+    6,
+    14
+   ]
+  },
+  "COAL": {
+   "n": 89,
+   "crps": 2.855,
+   "cover50": 0.404,
+   "cover90": 0.764,
+   "pit_hist": [
+    18,
+    5,
+    6,
+    7,
+    6,
+    10,
+    7,
+    4,
+    9,
+    17
+   ]
+  },
+  "GRN": {
+   "n": 89,
+   "crps": 1.005,
+   "cover50": 0.562,
+   "cover90": 0.921,
+   "pit_hist": [
+    10,
+    11,
+    12,
+    12,
+    12,
+    7,
+    11,
+    5,
+    5,
+    4
+   ]
+  }
+ },
+ "pendulum_accuracy": 0.8315,
+ "statewide": {
+  "ALP": {
+   "forecast": [
+    33.6,
+    36.5,
+    39.4
+   ],
+   "actual": 37.5
+  },
+  "COAL": {
+   "forecast": [
+    36.3,
+    39.3,
+    42.3
+   ],
+   "actual": 41.3
+  },
+  "GRN": {
+   "forecast": [
+    6.4,
+    8.7,
+    10.9
+   ],
+   "actual": 8.4
+  },
+  "tpp": {
+   "forecast": [
+    45.7,
+    49.3,
+    52.9
+   ],
+   "actual": 51.1
+  }
+ },
+ "outcome": {
+  "alp_majority": 0.36125,
+  "coal_majority": 0.20855,
+  "hung": 0.4302,
+  "alp_most_seats": 0.59125,
+  "coal_most_seats": 0.3764
+ }
+}

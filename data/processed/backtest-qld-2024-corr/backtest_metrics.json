@@ -1,0 +1,275 @@
+{
+ "n_seats": 93,
+ "brier": 0.1976,
+ "log_loss": 0.3396,
+ "favourite_accuracy": 0.8602,
+ "status_quo_accuracy": 0.7634,
+ "seats": {
+  "ALP": {
+   "actual": 36,
+   "median": 34.0,
+   "p90": [
+    20.0,
+    46.0
+   ],
+   "covered_90": true
+  },
+  "COAL": {
+   "actual": 52,
+   "median": 50.0,
+   "p90": [
+    36.950000000000045,
+    63.0
+   ],
+   "covered_90": true
+  },
+  "GRN": {
+   "actual": 1,
+   "median": 3.0,
+   "p90": [
+    1.0,
+    5.0
+   ],
+   "covered_90": true
+  },
+  "IND": {
+   "actual": 4,
+   "median": 6.0,
+   "p90": [
+    4.0,
+    8.0
+   ],
+   "covered_90": true
+  }
+ },
+ "calibration": [
+  {
+   "bin": "0.50-0.70",
+   "n": 22,
+   "mean_prob": 0.604,
+   "hit_rate": 0.636
+  },
+  {
+   "bin": "0.70-0.90",
+   "n": 21,
+   "mean_prob": 0.824,
+   "hit_rate": 0.905
+  },
+  {
+   "bin": "0.90-0.99",
+   "n": 28,
+   "mean_prob": 0.953,
+   "hit_rate": 0.964
+  },
+  {
+   "bin": "0.99-1.00",
+   "n": 18,
+   "mean_prob": 0.996,
+   "hit_rate": 1.0
+  }
+ ],
+ "misses": [
+  {
+   "district": "Aspley",
+   "won": "ALP",
+   "favourite": "LNP",
+   "p_fav": 0.665,
+   "p_won": 0.335,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Bundaberg",
+   "won": "ALP",
+   "favourite": "LNP",
+   "p_fav": 0.794,
+   "p_won": 0.166,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Cairns",
+   "won": "ALP",
+   "favourite": "LNP",
+   "p_fav": 0.551,
+   "p_won": 0.434,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Capalaba",
+   "won": "LNP",
+   "favourite": "ALP",
+   "p_fav": 0.751,
+   "p_won": 0.249,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Cook",
+   "won": "LNP",
+   "favourite": "IND",
+   "p_fav": 0.349,
+   "p_won": 0.303,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Cooper",
+   "won": "ALP",
+   "favourite": "GRN",
+   "p_fav": 0.516,
+   "p_won": 0.289,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Mansfield",
+   "won": "ALP",
+   "favourite": "LNP",
+   "p_fav": 0.538,
+   "p_won": 0.462,
+   "incumbent": "GRN"
+  },
+  {
+   "district": "Maryborough",
+   "won": "LNP",
+   "favourite": "ALP",
+   "p_fav": 0.67,
+   "p_won": 0.25,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "McConnel",
+   "won": "ALP",
+   "favourite": "GRN",
+   "p_fav": 0.544,
+   "p_won": 0.272,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Mirani",
+   "won": "LNP",
+   "favourite": "ONP",
+   "p_fav": 0.615,
+   "p_won": 0.267,
+   "incumbent": "IND"
+  },
+  {
+   "district": "Mulgrave",
+   "won": "LNP",
+   "favourite": "ALP",
+   "p_fav": 0.471,
+   "p_won": 0.213,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Pine Rivers",
+   "won": "ALP",
+   "favourite": "LNP",
+   "p_fav": 0.547,
+   "p_won": 0.453,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "South Brisbane",
+   "won": "ALP",
+   "favourite": "GRN",
+   "p_fav": 0.966,
+   "p_won": 0.028,
+   "incumbent": "GRN"
+  }
+ ],
+ "seat_vote": {
+  "ALP": {
+   "n": 93,
+   "crps": 2.3,
+   "cover50": 0.645,
+   "cover90": 0.925,
+   "pit_hist": [
+    5,
+    7,
+    8,
+    8,
+    13,
+    15,
+    16,
+    6,
+    9,
+    6
+   ]
+  },
+  "COAL": {
+   "n": 93,
+   "crps": 2.235,
+   "cover50": 0.602,
+   "cover90": 0.989,
+   "pit_hist": [
+    2,
+    12,
+    12,
+    14,
+    15,
+    7,
+    7,
+    10,
+    10,
+    4
+   ]
+  },
+  "GRN": {
+   "n": 93,
+   "crps": 1.184,
+   "cover50": 0.581,
+   "cover90": 1.0,
+   "pit_hist": [
+    9,
+    13,
+    21,
+    7,
+    19,
+    8,
+    9,
+    2,
+    2,
+    3
+   ]
+  }
+ },
+ "pendulum_accuracy": 0.8495,
+ "statewide": {
+  "ALP": {
+   "forecast": [
+    27.9,
+    31.6,
+    35.3
+   ],
+   "actual": 32.6
+  },
+  "COAL": {
+   "forecast": [
+    37.4,
+    40.9,
+    44.6
+   ],
+   "actual": 41.5
+  },
+  "GRN": {
+   "forecast": [
+    8.6,
+    11.0,
+    13.5
+   ],
+   "actual": 9.9
+  },
+  "tpp": {
+   "forecast": [
+    42.1,
+    47.9,
+    52.9
+   ],
+   "actual": 46.2
+  }
+ },
+ "outcome": {
+  "alp_majority": 0.04905,
+  "coal_majority": 0.64365,
+  "hung": 0.3073,
+  "alp_most_seats": 0.1511,
+  "coal_most_seats": 0.8324
+ }
+}

@@ -1,0 +1,211 @@
+{
+ "n_seats": 47,
+ "brier": 0.1515,
+ "log_loss": 0.242,
+ "favourite_accuracy": 0.8936,
+ "status_quo_accuracy": 0.7872,
+ "seats": {
+  "ALP": {
+   "actual": 27,
+   "median": 26.0,
+   "p90": [
+    21.0,
+    33.0
+   ],
+   "covered_90": true
+  },
+  "COAL": {
+   "actual": 16,
+   "median": 18.0,
+   "p90": [
+    11.0,
+    24.0
+   ],
+   "covered_90": true
+  },
+  "GRN": {
+   "actual": 0,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    0.0
+   ],
+   "covered_90": true
+  },
+  "IND": {
+   "actual": 4,
+   "median": 2.0,
+   "p90": [
+    1.0,
+    4.0
+   ],
+   "covered_90": true
+  }
+ },
+ "calibration": [
+  {
+   "bin": "0.50-0.70",
+   "n": 8,
+   "mean_prob": 0.595,
+   "hit_rate": 0.625
+  },
+  {
+   "bin": "0.70-0.90",
+   "n": 11,
+   "mean_prob": 0.791,
+   "hit_rate": 0.818
+  },
+  {
+   "bin": "0.90-0.99",
+   "n": 14,
+   "mean_prob": 0.964,
+   "hit_rate": 1.0
+  },
+  {
+   "bin": "0.99-1.00",
+   "n": 14,
+   "mean_prob": 0.997,
+   "hit_rate": 1.0
+  }
+ ],
+ "misses": [
+  {
+   "district": "Davenport",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.647,
+   "p_won": 0.353,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Gibson",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.772,
+   "p_won": 0.215,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Kavel",
+   "won": "IND",
+   "favourite": "LIB",
+   "p_fav": 0.593,
+   "p_won": 0.348,
+   "incumbent": "IND"
+  },
+  {
+   "district": "Narungga",
+   "won": "IND",
+   "favourite": "LIB",
+   "p_fav": 0.71,
+   "p_won": 0.266,
+   "incumbent": "IND"
+  },
+  {
+   "district": "Waite",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.54,
+   "p_won": 0.287,
+   "incumbent": "IND"
+  }
+ ],
+ "seat_vote": {
+  "ALP": {
+   "n": 47,
+   "crps": 2.249,
+   "cover50": 0.638,
+   "cover90": 0.957,
+   "pit_hist": [
+    3,
+    5,
+    6,
+    9,
+    7,
+    8,
+    4,
+    2,
+    2,
+    1
+   ]
+  },
+  "COAL": {
+   "n": 47,
+   "crps": 2.865,
+   "cover50": 0.617,
+   "cover90": 0.957,
+   "pit_hist": [
+    5,
+    3,
+    5,
+    4,
+    6,
+    7,
+    6,
+    4,
+    3,
+    4
+   ]
+  },
+  "GRN": {
+   "n": 43,
+   "crps": 1.459,
+   "cover50": 0.372,
+   "cover90": 0.953,
+   "pit_hist": [
+    3,
+    3,
+    5,
+    5,
+    3,
+    2,
+    1,
+    8,
+    10,
+    3
+   ]
+  }
+ },
+ "pendulum_accuracy": 0.8511,
+ "statewide": {
+  "ALP": {
+   "forecast": [
+    34.6,
+    39.3,
+    43.9
+   ],
+   "actual": 40.0
+  },
+  "COAL": {
+   "forecast": [
+    30.1,
+    35.1,
+    39.9
+   ],
+   "actual": 35.7
+  },
+  "GRN": {
+   "forecast": [
+    5.8,
+    8.7,
+    11.6
+   ],
+   "actual": 9.1
+  },
+  "tpp": {
+   "forecast": [
+    48.7,
+    54.5,
+    59.9
+   ],
+   "actual": 54.6
+  }
+ },
+ "outcome": {
+  "alp_majority": 0.8083,
+  "coal_majority": 0.06125,
+  "hung": 0.13045,
+  "alp_most_seats": 0.87665,
+  "coal_most_seats": 0.09225
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "election": "qld-2020",
+ "run_at": "2026-10-31T10:16:20+00:00",
+ "git_commit": "a691a1253f10bb9f81b5638c0eb1400306477f7d",
+ "uncommitted_changes": false,
+ "config": {
+  "n_per_draw": 5,
+  "seed": 20261128,
+  "poll_error_sd": {
+   "ALP": 1.59,
+   "COAL": 1.76,
+   "GRN": 1.7,
+   "ONP": 2.5
+  },
+  "poll_error_df": 5.0,
+  "poll_error_corr": [
+   [
+    1.0,
+    -0.386,
+    -0.227
+   ],
+   [
+    -0.386,
+    1.0,
+    -0.525
+   ],
+   [
+    -0.227,
+    -0.525,
+    1.0
+   ]
+  ],
+  "poll_error_corr_parties": [
+   "ALP",
+   "COAL",
+   "GRN"
+  ],
+  "poll_bias": {
+   "ALP": -0.2,
+   "COAL": -0.5,
+   "GRN": -0.17
+  },
+  "region_sd": 0.0921,
+  "seat_sd": {
+   "ALP": 0.1884,
+   "COAL": 0.2,
+   "GRN": 0.1934,
+   "OTH": 0.25,
+   "ONP": 0.25
+  },
+  "seat_df": {
+   "ALP": 6.74,
+   "COAL": 4.95,
+   "GRN": 8.29,
+   "OTH": 4.95
+  },
+  "seat_beta": {
+   "ALP": -0.0359,
+   "COAL": -0.0383,
+   "GRN": -0.0501
+  },
+  "ind_decay_mean": -0.2,
+  "ind_decay_sd": 0.4,
+  "retire_effect": -0.0888,
+  "sophomore_effect": 0.09,
+  "ind_prior_sd": 0.35,
+  "ind_sophomore_log": 0.15,
+  "ind_retire_log": -1.2
+ },
+ "inputs": {
+  "qld-2020\\booths.csv": "d47303b2fd61c796",
+  "qld-2020\\districts.csv": "15e26b714ec83277",
+  "qld-2020\\dop_transfers.csv": "33419cb53cdb5db6",
+  "qld-2020\\final.csv": "cff9a5adbe4cb9f1",
+  "qld-2020\\primary.csv": "44dd6c4529e19e0c",
+  "qld-2020\\tcp.csv": "cff9a5adbe4cb9f1",
+  "qld-2020\\tpp.csv": "623c89b230633e2d",
+  "qld-2017\\booths.csv": "f0e42e255cff89b4",
+  "qld-2017\\districts.csv": "dc5dc3a92b186264",
+  "qld-2017\\dop_transfers.csv": "e89ebeed764a0f1a",
+  "qld-2017\\final.csv": "b33a130183e4e07a",
+  "qld-2017\\primary.csv": "3730e8d3ce3ee517",
+  "qld-2017\\tcp.csv": "b33a130183e4e07a",
+  "qld-2017\\tpp.csv": "72f0c15291b3b82b",
+  "polls_qld-2020.csv": "51b4f49f4a036102",
+  "election_results_qld.csv": "d5036ea5fb14a05b"
+ },
+ "hand_set": false,
+ "no_polls": false
+}

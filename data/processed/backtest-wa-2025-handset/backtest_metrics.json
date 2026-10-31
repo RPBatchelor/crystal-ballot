@@ -1,0 +1,235 @@
+{
+ "n_seats": 59,
+ "brier": 0.1599,
+ "log_loss": 0.2364,
+ "favourite_accuracy": 0.8644,
+ "status_quo_accuracy": 0.8644,
+ "seats": {
+  "ALP": {
+   "actual": 46,
+   "median": 43.0,
+   "p90": [
+    37.0,
+    48.0
+   ],
+   "covered_90": true
+  },
+  "COAL": {
+   "actual": 13,
+   "median": 15.0,
+   "p90": [
+    10.0,
+    21.0
+   ],
+   "covered_90": true
+  },
+  "GRN": {
+   "actual": 0,
+   "median": 1.0,
+   "p90": [
+    0.0,
+    3.0
+   ],
+   "covered_90": true
+  },
+  "IND": {
+   "actual": 0,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    0.0
+   ],
+   "covered_90": true
+  }
+ },
+ "calibration": [
+  {
+   "bin": "0.50-0.70",
+   "n": 7,
+   "mean_prob": 0.62,
+   "hit_rate": 0.571
+  },
+  {
+   "bin": "0.70-0.90",
+   "n": 7,
+   "mean_prob": 0.814,
+   "hit_rate": 0.429
+  },
+  {
+   "bin": "0.90-0.99",
+   "n": 14,
+   "mean_prob": 0.957,
+   "hit_rate": 1.0
+  },
+  {
+   "bin": "0.99-1.00",
+   "n": 30,
+   "mean_prob": 0.999,
+   "hit_rate": 1.0
+  }
+ ],
+ "misses": [
+  {
+   "district": "Albany",
+   "won": "NAT",
+   "favourite": "ALP",
+   "p_fav": 0.386,
+   "p_won": 0.272,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Bateman",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.857,
+   "p_won": 0.142,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Fremantle",
+   "won": "ALP",
+   "favourite": "GRN",
+   "p_fav": 0.562,
+   "p_won": 0.435,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Kalamunda",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.787,
+   "p_won": 0.213,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Kalgoorlie",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.76,
+   "p_won": 0.171,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Murray-Wellington",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.82,
+   "p_won": 0.179,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Scarborough",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.674,
+   "p_won": 0.325,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "South Perth",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.517,
+   "p_won": 0.482,
+   "incumbent": "ALP"
+  }
+ ],
+ "seat_vote": {
+  "ALP": {
+   "n": 59,
+   "crps": 4.476,
+   "cover50": 0.22,
+   "cover90": 0.661,
+   "pit_hist": [
+    21,
+    10,
+    6,
+    2,
+    4,
+    2,
+    2,
+    1,
+    5,
+    6
+   ]
+  },
+  "COAL": {
+   "n": 59,
+   "crps": 2.47,
+   "cover50": 0.407,
+   "cover90": 0.797,
+   "pit_hist": [
+    10,
+    4,
+    6,
+    5,
+    5,
+    8,
+    4,
+    4,
+    5,
+    8
+   ]
+  },
+  "GRN": {
+   "n": 59,
+   "crps": 1.65,
+   "cover50": 0.373,
+   "cover90": 0.763,
+   "pit_hist": [
+    5,
+    2,
+    3,
+    6,
+    5,
+    2,
+    5,
+    7,
+    9,
+    15
+   ]
+  }
+ },
+ "pendulum_accuracy": 0.8983,
+ "statewide": {
+  "ALP": {
+   "forecast": [
+    38.8,
+    44.0,
+    49.0
+   ],
+   "actual": 41.43
+  },
+  "COAL": {
+   "forecast": [
+    29.3,
+    33.1,
+    37.2
+   ],
+   "actual": 33.17
+  },
+  "GRN": {
+   "forecast": [
+    8.4,
+    10.7,
+    13.0
+   ],
+   "actual": 11.06
+  },
+  "tpp": {
+   "forecast": [
+    54.3,
+    59.0,
+    63.4
+   ],
+   "actual": 57.1
+  }
+ },
+ "outcome": {
+  "alp_majority": 0.99795,
+  "coal_majority": 0.0014,
+  "hung": 0.00065,
+  "alp_most_seats": 0.99825,
+  "coal_most_seats": 0.0015
+ }
+}

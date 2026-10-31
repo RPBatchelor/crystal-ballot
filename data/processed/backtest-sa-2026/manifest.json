@@ -1,0 +1,93 @@
+{
+ "election": "sa-2026",
+ "run_at": "2026-10-31T10:18:51+00:00",
+ "git_commit": "a691a1253f10bb9f81b5638c0eb1400306477f7d",
+ "uncommitted_changes": false,
+ "config": {
+  "n_per_draw": 5,
+  "seed": 20261128,
+  "poll_error_sd": {
+   "ALP": 2.12,
+   "COAL": 2.79,
+   "GRN": 1.44,
+   "ONP": 2.5
+  },
+  "poll_error_df": 5.0,
+  "poll_error_corr": [
+   [
+    1.0,
+    -0.512,
+    -0.248
+   ],
+   [
+    -0.512,
+    1.0,
+    -0.286
+   ],
+   [
+    -0.248,
+    -0.286,
+    1.0
+   ]
+  ],
+  "poll_error_corr_parties": [
+   "ALP",
+   "COAL",
+   "GRN"
+  ],
+  "poll_bias": {
+   "ALP": -0.77,
+   "COAL": -0.55,
+   "GRN": 0.44
+  },
+  "region_sd": 0.0981,
+  "seat_sd": {
+   "ALP": 0.1823,
+   "COAL": 0.2165,
+   "GRN": 0.2318,
+   "OTH": 0.25,
+   "ONP": 0.25
+  },
+  "seat_df": {
+   "ALP": 5.22,
+   "COAL": 4.82,
+   "GRN": 6.91,
+   "OTH": 4.82
+  },
+  "seat_beta": {
+   "ALP": -0.0565,
+   "COAL": -0.0722,
+   "GRN": -0.087
+  },
+  "ind_decay_mean": -0.2,
+  "ind_decay_sd": 0.4,
+  "retire_effect": -0.0972,
+  "sophomore_effect": 0.1385,
+  "ind_prior_sd": 0.35,
+  "ind_sophomore_log": 0.15,
+  "ind_retire_log": -1.2
+ },
+ "inputs": {
+  "sa-2026\\booths.csv": "86a81d2d54846272",
+  "sa-2026\\districts.csv": "3fb370065ebd0711",
+  "sa-2026\\dop_transfers.csv": "445d72d2b53401a8",
+  "sa-2026\\final.csv": "310d7436e878d7fe",
+  "sa-2026\\primary.csv": "86229863e3bf3462",
+  "sa-2026\\tcp.csv": "310d7436e878d7fe",
+  "sa-2026\\tpp.csv": "5cb740e2719ebc6c",
+  "sa-2022\\booths.csv": "9803b9f49a9abae7",
+  "sa-2022\\districts.csv": "0112bde7529a8a26",
+  "sa-2022\\dop_transfers.csv": "38688cec35056c9a",
+  "sa-2022\\final.csv": "26316d2a93393d7f",
+  "sa-2022\\primary.csv": "c31cd58c2be33312",
+  "sa-2022\\tcp.csv": "26316d2a93393d7f",
+  "sa-2022\\tpp.csv": "d314794c81862613",
+  "sa-2026-notional\\districts.csv": "78ddeae0885fd8b1",
+  "sa-2026-notional\\primary.csv": "f4ed12d104f1f344",
+  "sa-2026-notional\\venue_map.csv": "bc27f7bc01cb4da0",
+  "polls_sa-2026.csv": "ad660aecc02bff3c",
+  "election_results_sa.csv": "67395f71e00f1fe8"
+ },
+ "hand_set": false,
+ "no_polls": false
+}

@@ -1,0 +1,359 @@
+{
+ "n_divisions": 5,
+ "seat_brier": 0.1411,
+ "mean_p_actual_seats": 0.8864,
+ "median_abs_error": 0.1,
+ "seats": {
+  "AJP": {
+   "actual": 0,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    0.0
+   ],
+   "covered_90": true
+  },
+  "ALP": {
+   "actual": 10,
+   "median": 10.0,
+   "p90": [
+    9.0,
+    12.0
+   ],
+   "covered_90": true
+  },
+  "BEL": {
+   "actual": 0,
+   "median": 1.0,
+   "p90": [
+    0.0,
+    1.0
+   ],
+   "covered_90": true
+  },
+  "DLP": {
+   "actual": 0,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    0.0
+   ],
+   "covered_90": true
+  },
+  "FFP": {
+   "actual": 0,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    0.0
+   ],
+   "covered_90": true
+  },
+  "GRN": {
+   "actual": 4,
+   "median": 4.0,
+   "p90": [
+    2.0,
+    6.0
+   ],
+   "covered_90": true
+  },
+  "IFC": {
+   "actual": 1,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    0.0
+   ],
+   "covered_90": false
+  },
+  "IND": {
+   "actual": 1,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    1.0
+   ],
+   "covered_90": true
+  },
+  "LIB": {
+   "actual": 9,
+   "median": 10.0,
+   "p90": [
+    8.0,
+    12.0
+   ],
+   "covered_90": true
+  },
+  "STR": {
+   "actual": 0,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    0.0
+   ],
+   "covered_90": true
+  },
+  "X_FNP": {
+   "actual": 0,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    0.0
+   ],
+   "covered_90": true
+  },
+  "X_LP": {
+   "actual": 0,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    0.0
+   ],
+   "covered_90": true
+  }
+ },
+ "by_division": [
+  {
+   "division": "Brindabella",
+   "party": "AJP",
+   "actual": 0,
+   "median": 0.0,
+   "mean": 0.01,
+   "p_actual": 0.995
+  },
+  {
+   "division": "Brindabella",
+   "party": "ALP",
+   "actual": 2,
+   "median": 2.0,
+   "mean": 2.11,
+   "p_actual": 0.884
+  },
+  {
+   "division": "Brindabella",
+   "party": "GRN",
+   "actual": 1,
+   "median": 1.0,
+   "mean": 0.76,
+   "p_actual": 0.76
+  },
+  {
+   "division": "Brindabella",
+   "party": "IND",
+   "actual": 0,
+   "median": 0.0,
+   "mean": 0.0,
+   "p_actual": 0.998
+  },
+  {
+   "division": "Brindabella",
+   "party": "LIB",
+   "actual": 2,
+   "median": 2.0,
+   "mean": 2.12,
+   "p_actual": 0.878
+  },
+  {
+   "division": "Ginninderra",
+   "party": "ALP",
+   "actual": 2,
+   "median": 2.0,
+   "mean": 2.15,
+   "p_actual": 0.838
+  },
+  {
+   "division": "Ginninderra",
+   "party": "BEL",
+   "actual": 0,
+   "median": 1.0,
+   "mean": 0.58,
+   "p_actual": 0.42
+  },
+  {
+   "division": "Ginninderra",
+   "party": "FFP",
+   "actual": 0,
+   "median": 0.0,
+   "mean": 0.04,
+   "p_actual": 0.959
+  },
+  {
+   "division": "Ginninderra",
+   "party": "GRN",
+   "actual": 1,
+   "median": 1.0,
+   "mean": 0.89,
+   "p_actual": 0.882
+  },
+  {
+   "division": "Ginninderra",
+   "party": "IND",
+   "actual": 0,
+   "median": 0.0,
+   "mean": 0.01,
+   "p_actual": 0.994
+  },
+  {
+   "division": "Ginninderra",
+   "party": "LIB",
+   "actual": 2,
+   "median": 1.0,
+   "mean": 1.33,
+   "p_actual": 0.331
+  },
+  {
+   "division": "Kurrajong",
+   "party": "AJP",
+   "actual": 0,
+   "median": 0.0,
+   "mean": 0.0,
+   "p_actual": 0.999
+  },
+  {
+   "division": "Kurrajong",
+   "party": "ALP",
+   "actual": 2,
+   "median": 2.0,
+   "mean": 2.03,
+   "p_actual": 0.936
+  },
+  {
+   "division": "Kurrajong",
+   "party": "GRN",
+   "actual": 1,
+   "median": 1.0,
+   "mean": 1.22,
+   "p_actual": 0.778
+  },
+  {
+   "division": "Kurrajong",
+   "party": "IFC",
+   "actual": 1,
+   "median": 0.0,
+   "mean": 0.0,
+   "p_actual": 0.0
+  },
+  {
+   "division": "Kurrajong",
+   "party": "LIB",
+   "actual": 1,
+   "median": 2.0,
+   "mean": 1.75,
+   "p_actual": 0.246
+  },
+  {
+   "division": "Murrumbidgee",
+   "party": "AJP",
+   "actual": 0,
+   "median": 0.0,
+   "mean": 0.01,
+   "p_actual": 0.988
+  },
+  {
+   "division": "Murrumbidgee",
+   "party": "ALP",
+   "actual": 2,
+   "median": 2.0,
+   "mean": 1.98,
+   "p_actual": 0.96
+  },
+  {
+   "division": "Murrumbidgee",
+   "party": "GRN",
+   "actual": 0,
+   "median": 1.0,
+   "mean": 0.78,
+   "p_actual": 0.216
+  },
+  {
+   "division": "Murrumbidgee",
+   "party": "IND",
+   "actual": 1,
+   "median": 0.0,
+   "mean": 0.2,
+   "p_actual": 0.196
+  },
+  {
+   "division": "Murrumbidgee",
+   "party": "LIB",
+   "actual": 2,
+   "median": 2.0,
+   "mean": 2.03,
+   "p_actual": 0.959
+  },
+  {
+   "division": "Yerrabi",
+   "party": "ALP",
+   "actual": 2,
+   "median": 2.0,
+   "mean": 1.94,
+   "p_actual": 0.923
+  },
+  {
+   "division": "Yerrabi",
+   "party": "DLP",
+   "actual": 0,
+   "median": 0.0,
+   "mean": 0.03,
+   "p_actual": 0.971
+  },
+  {
+   "division": "Yerrabi",
+   "party": "GRN",
+   "actual": 1,
+   "median": 1.0,
+   "mean": 0.55,
+   "p_actual": 0.552
+  },
+  {
+   "division": "Yerrabi",
+   "party": "IND",
+   "actual": 0,
+   "median": 0.0,
+   "mean": 0.0,
+   "p_actual": 1.0
+  },
+  {
+   "division": "Yerrabi",
+   "party": "LIB",
+   "actual": 2,
+   "median": 2.0,
+   "mean": 2.48,
+   "p_actual": 0.521
+  }
+ ],
+ "statewide": {
+  "ALP": {
+   "forecast": [
+    30.9,
+    35.7,
+    40.6
+   ],
+   "actual": 34.15
+  },
+  "COAL": {
+   "forecast": [
+    28.9,
+    33.8,
+    38.8
+   ],
+   "actual": 33.45
+  },
+  "GRN": {
+   "forecast": [
+    8.1,
+    13.5,
+    18.8
+   ],
+   "actual": 12.18
+  }
+ },
+ "outcome": {
+  "lib_majority": 0.00995,
+  "alp_majority": 0.0147,
+  "hung": 0.97535,
+  "lib_most_seats": 0.2666,
+  "alp_most_seats": 0.50315
+ }
+}

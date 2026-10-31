@@ -1,0 +1,235 @@
+{
+ "n_seats": 59,
+ "brier": 0.1966,
+ "log_loss": 0.313,
+ "favourite_accuracy": 0.8644,
+ "status_quo_accuracy": 0.6102,
+ "seats": {
+  "ALP": {
+   "actual": 41,
+   "median": 34.0,
+   "p90": [
+    28.0,
+    40.0
+   ],
+   "covered_90": false
+  },
+  "COAL": {
+   "actual": 18,
+   "median": 25.0,
+   "p90": [
+    18.0,
+    31.0
+   ],
+   "covered_90": true
+  },
+  "GRN": {
+   "actual": 0,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    0.0
+   ],
+   "covered_90": true
+  },
+  "IND": {
+   "actual": 0,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    1.0
+   ],
+   "covered_90": true
+  }
+ },
+ "calibration": [
+  {
+   "bin": "0.50-0.70",
+   "n": 14,
+   "mean_prob": 0.633,
+   "hit_rate": 0.643
+  },
+  {
+   "bin": "0.70-0.90",
+   "n": 8,
+   "mean_prob": 0.803,
+   "hit_rate": 0.75
+  },
+  {
+   "bin": "0.90-0.99",
+   "n": 14,
+   "mean_prob": 0.964,
+   "hit_rate": 0.929
+  },
+  {
+   "bin": "0.99-1.00",
+   "n": 23,
+   "mean_prob": 0.998,
+   "hit_rate": 1.0
+  }
+ ],
+ "misses": [
+  {
+   "district": "Bunbury",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.62,
+   "p_won": 0.379,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Jandakot",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.93,
+   "p_won": 0.07,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Kalamunda",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.611,
+   "p_won": 0.389,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Kingsley",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.719,
+   "p_won": 0.281,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Moore",
+   "won": "NAT",
+   "favourite": "LIB",
+   "p_fav": 0.538,
+   "p_won": 0.462,
+   "incumbent": "NAT"
+  },
+  {
+   "district": "Murray-Wellington",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.9,
+   "p_won": 0.095,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Pilbara",
+   "won": "ALP",
+   "favourite": "NAT",
+   "p_fav": 0.7,
+   "p_won": 0.076,
+   "incumbent": "NAT"
+  },
+  {
+   "district": "Southern River",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.638,
+   "p_won": 0.355,
+   "incumbent": "LIB"
+  }
+ ],
+ "seat_vote": {
+  "ALP": {
+   "n": 59,
+   "crps": 2.898,
+   "cover50": 0.407,
+   "cover90": 0.78,
+   "pit_hist": [
+    4,
+    6,
+    4,
+    2,
+    7,
+    7,
+    5,
+    3,
+    6,
+    15
+   ]
+  },
+  "COAL": {
+   "n": 59,
+   "crps": 3.143,
+   "cover50": 0.305,
+   "cover90": 0.644,
+   "pit_hist": [
+    23,
+    7,
+    9,
+    3,
+    4,
+    4,
+    2,
+    3,
+    2,
+    2
+   ]
+  },
+  "GRN": {
+   "n": 59,
+   "crps": 1.101,
+   "cover50": 0.576,
+   "cover90": 0.983,
+   "pit_hist": [
+    1,
+    3,
+    7,
+    4,
+    9,
+    6,
+    6,
+    12,
+    7,
+    4
+   ]
+  }
+ },
+ "pendulum_accuracy": 0.7797,
+ "statewide": {
+  "ALP": {
+   "forecast": [
+    36.1,
+    39.5,
+    43.0
+   ],
+   "actual": 42.2
+  },
+  "COAL": {
+   "forecast": [
+    36.1,
+    38.9,
+    41.7
+   ],
+   "actual": 36.62
+  },
+  "GRN": {
+   "forecast": [
+    4.8,
+    8.2,
+    11.6
+   ],
+   "actual": 8.91
+  },
+  "tpp": {
+   "forecast": [
+    49.2,
+    52.9,
+    56.3
+   ],
+   "actual": 55.5
+  }
+ },
+ "outcome": {
+  "alp_majority": 0.8867,
+  "coal_majority": 0.1032,
+  "hung": 0.0101,
+  "alp_most_seats": 0.888,
+  "coal_most_seats": 0.1043
+ }
+}

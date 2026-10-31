@@ -1,0 +1,227 @@
+{
+ "n_seats": 93,
+ "brier": 0.1612,
+ "log_loss": 0.2894,
+ "favourite_accuracy": 0.9247,
+ "status_quo_accuracy": 0.8925,
+ "seats": {
+  "ALP": {
+   "actual": 52,
+   "median": 46.0,
+   "p90": [
+    34.0,
+    60.0
+   ],
+   "covered_90": true
+  },
+  "COAL": {
+   "actual": 34,
+   "median": 37.0,
+   "p90": [
+    24.0,
+    50.0
+   ],
+   "covered_90": true
+  },
+  "GRN": {
+   "actual": 2,
+   "median": 1.0,
+   "p90": [
+    0.0,
+    3.0
+   ],
+   "covered_90": true
+  },
+  "IND": {
+   "actual": 4,
+   "median": 7.0,
+   "p90": [
+    4.0,
+    11.0
+   ],
+   "covered_90": true
+  }
+ },
+ "calibration": [
+  {
+   "bin": "0.50-0.70",
+   "n": 17,
+   "mean_prob": 0.619,
+   "hit_rate": 0.765
+  },
+  {
+   "bin": "0.70-0.90",
+   "n": 31,
+   "mean_prob": 0.797,
+   "hit_rate": 0.903
+  },
+  {
+   "bin": "0.90-0.99",
+   "n": 25,
+   "mean_prob": 0.955,
+   "hit_rate": 1.0
+  },
+  {
+   "bin": "0.99-1.00",
+   "n": 16,
+   "mean_prob": 0.996,
+   "hit_rate": 1.0
+  }
+ ],
+ "misses": [
+  {
+   "district": "Bundaberg",
+   "won": "ALP",
+   "favourite": "LNP",
+   "p_fav": 0.776,
+   "p_won": 0.222,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "Caloundra",
+   "won": "ALP",
+   "favourite": "LNP",
+   "p_fav": 0.681,
+   "p_won": 0.296,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "Hervey Bay",
+   "won": "ALP",
+   "favourite": "LNP",
+   "p_fav": 0.786,
+   "p_won": 0.157,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "Mirani",
+   "won": "ONP",
+   "favourite": "ALP",
+   "p_fav": 0.504,
+   "p_won": 0.178,
+   "incumbent": "ONP"
+  },
+  {
+   "district": "Nicklin",
+   "won": "ALP",
+   "favourite": "LNP",
+   "p_fav": 0.63,
+   "p_won": 0.305,
+   "incumbent": "LNP"
+  },
+  {
+   "district": "Rockhampton",
+   "won": "ALP",
+   "favourite": "IND",
+   "p_fav": 0.6,
+   "p_won": 0.289,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "South Brisbane",
+   "won": "GRN",
+   "favourite": "ALP",
+   "p_fav": 0.708,
+   "p_won": 0.276,
+   "incumbent": "ALP"
+  }
+ ],
+ "seat_vote": {
+  "ALP": {
+   "n": 93,
+   "crps": 3.093,
+   "cover50": 0.376,
+   "cover90": 0.871,
+   "pit_hist": [
+    2,
+    1,
+    2,
+    2,
+    3,
+    10,
+    13,
+    16,
+    20,
+    24
+   ]
+  },
+  "COAL": {
+   "n": 93,
+   "crps": 2.311,
+   "cover50": 0.656,
+   "cover90": 0.957,
+   "pit_hist": [
+    4,
+    9,
+    11,
+    15,
+    11,
+    10,
+    12,
+    11,
+    4,
+    6
+   ]
+  },
+  "GRN": {
+   "n": 93,
+   "crps": 1.504,
+   "cover50": 0.452,
+   "cover90": 0.871,
+   "pit_hist": [
+    20,
+    15,
+    24,
+    9,
+    11,
+    7,
+    1,
+    2,
+    2,
+    2
+   ]
+  }
+ },
+ "pendulum_accuracy": 0.9032,
+ "statewide": {
+  "ALP": {
+   "forecast": [
+    32.5,
+    35.5,
+    38.7
+   ],
+   "actual": 39.6
+  },
+  "COAL": {
+   "forecast": [
+    32.7,
+    36.0,
+    39.5
+   ],
+   "actual": 35.9
+  },
+  "GRN": {
+   "forecast": [
+    8.2,
+    10.9,
+    13.6
+   ],
+   "actual": 9.5
+  },
+  "tpp": {
+   "forecast": [
+    45.4,
+    51.7,
+    57.4
+   ],
+   "actual": 53.2
+  }
+ },
+ "outcome": {
+  "alp_majority": 0.4953,
+  "coal_majority": 0.12315,
+  "hung": 0.38155,
+  "alp_most_seats": 0.71,
+  "coal_most_seats": 0.2684
+ }
+}

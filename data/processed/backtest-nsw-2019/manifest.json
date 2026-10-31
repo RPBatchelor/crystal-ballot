@@ -1,0 +1,92 @@
+{
+ "election": "nsw-2019",
+ "run_at": "2026-10-31T10:16:38+00:00",
+ "git_commit": "a691a1253f10bb9f81b5638c0eb1400306477f7d",
+ "uncommitted_changes": false,
+ "config": {
+  "n_per_draw": 5,
+  "seed": 20261128,
+  "poll_error_sd": {
+   "ALP": 1.82,
+   "COAL": 1.55,
+   "GRN": 1.98,
+   "ONP": 2.5
+  },
+  "poll_error_df": 5.0,
+  "poll_error_corr": [
+   [
+    1.0,
+    -0.256,
+    -0.312
+   ],
+   [
+    -0.256,
+    1.0,
+    -0.439
+   ],
+   [
+    -0.312,
+    -0.439,
+    1.0
+   ]
+  ],
+  "poll_error_corr_parties": [
+   "ALP",
+   "COAL",
+   "GRN"
+  ],
+  "poll_bias": {
+   "ALP": -0.94,
+   "COAL": -0.35,
+   "GRN": 0.98
+  },
+  "region_sd": 0.092,
+  "seat_sd": {
+   "ALP": 0.1765,
+   "COAL": 0.2013,
+   "GRN": 0.1968,
+   "OTH": 0.25,
+   "ONP": 0.25
+  },
+  "seat_df": {
+   "ALP": 5.65,
+   "COAL": 7.01,
+   "GRN": 7.49,
+   "OTH": 5.65
+  },
+  "seat_beta": {
+   "ALP": -0.0593,
+   "COAL": 0.0067,
+   "GRN": -0.0382
+  },
+  "ind_decay_mean": -0.2,
+  "ind_decay_sd": 0.4,
+  "retire_effect": -0.0613,
+  "sophomore_effect": 0.0971,
+  "ind_prior_sd": 0.35,
+  "ind_sophomore_log": 0.15,
+  "ind_retire_log": -1.2
+ },
+ "inputs": {
+  "nsw-2019\\booths.csv": "20a56e12bcfc2575",
+  "nsw-2019\\districts.csv": "3ecb72dd068e5a9d",
+  "nsw-2019\\dop_transfers.csv": "3770be80ae9fc67d",
+  "nsw-2019\\final.csv": "66aff30a0d56239e",
+  "nsw-2019\\primary.csv": "939306b9c6df117f",
+  "nsw-2019\\tcp.csv": "66aff30a0d56239e",
+  "nsw-2019\\tpp.csv": "8372301a23c43145",
+  "nsw-2019\\tpp_booths.csv": "bda778631a738d9d",
+  "nsw-2015\\booths.csv": "f8a3b8663ed094c5",
+  "nsw-2015\\districts.csv": "8c07196431735d8e",
+  "nsw-2015\\dop_transfers.csv": "a55645229d5973c4",
+  "nsw-2015\\final.csv": "e3efcd4a6998231a",
+  "nsw-2015\\primary.csv": "62b6376593d5aa62",
+  "nsw-2015\\tcp.csv": "e3efcd4a6998231a",
+  "nsw-2015\\tpp.csv": "27d9e9bb711dd3aa",
+  "nsw-2015\\tpp_booths.csv": "518d29db1d3fe7db",
+  "polls_nsw-2019.csv": "4148e1ed87cbaf26",
+  "election_results_nsw.csv": "ac0495cf00fa900b"
+ },
+ "hand_set": false,
+ "no_polls": false
+}

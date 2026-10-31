@@ -1,0 +1,1367 @@
+{
+ "n_sims": 20000,
+ "majority": 13,
+ "outcome": {
+  "alp_majority": 0.6062,
+  "coal_majority": 0.243,
+  "hung": 0.1508,
+  "alp_most_seats": 0.66805,
+  "coal_most_seats": 0.30465
+ },
+ "seats": {
+  "ALP": [
+   7.0,
+   10.0,
+   16.0,
+   21.0,
+   23.0
+  ],
+  "LIB": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "NAT": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "CLP": [
+   1.0,
+   1.0,
+   6.0,
+   12.0,
+   16.0
+  ],
+  "GRN": [
+   0.0,
+   0.0,
+   0.0,
+   2.0,
+   5.0
+  ],
+  "ONP": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "IND": [
+   1.0,
+   1.0,
+   2.0,
+   2.0,
+   2.0
+  ],
+  "OTH": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "COAL": [
+   1.0,
+   1.0,
+   6.0,
+   12.0,
+   16.0
+  ]
+ },
+ "seat_hist": {
+  "ALP": [
+   3,
+   4,
+   19,
+   36,
+   97,
+   203,
+   422,
+   744,
+   1147,
+   1491,
+   1466,
+   1268,
+   976,
+   710,
+   657,
+   677,
+   772,
+   850,
+   1063,
+   984,
+   877,
+   1077,
+   2490,
+   1793,
+   170,
+   4
+  ],
+  "GRN": [
+   11055,
+   2183,
+   1920,
+   2219,
+   1508,
+   803,
+   248,
+   64,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "ONP": [
+   20000,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IND": [
+   75,
+   8701,
+   11217,
+   7,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "COAL": [
+   346,
+   5296,
+   1572,
+   1233,
+   879,
+   645,
+   541,
+   620,
+   706,
+   737,
+   798,
+   829,
+   938,
+   1225,
+   1285,
+   1166,
+   614,
+   336,
+   135,
+   64,
+   24,
+   9,
+   2,
+   0,
+   0,
+   0
+  ]
+ },
+ "statewide_primary": {
+  "ALP": [
+   31.0,
+   37.3,
+   43.5
+  ],
+  "COAL": [
+   22.6,
+   29.5,
+   36.3
+  ],
+  "GRN": [
+   2.9,
+   5.8,
+   9.7
+  ],
+  "ONP": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "IND": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "OTH": [
+   20.7,
+   27.3,
+   33.5
+  ]
+ },
+ "tpp_alp": [
+  38.5,
+  59.8,
+  72.9
+ ],
+ "districts": [
+  {
+   "district": "Arafura",
+   "region": "Remote",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.715,
+    "CLP": 0.2843,
+    "IND": 0.0006
+   },
+   "primary": {
+    "ALP": [
+     39.8,
+     46.5,
+     53.1
+    ],
+    "COAL": [
+     28.2,
+     35.2,
+     42.2
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     2.2,
+     3.7,
+     6.0
+    ],
+    "OTH": [
+     8.8,
+     14.0,
+     20.5
+    ]
+   }
+  },
+  {
+   "district": "Araluen",
+   "region": "Alice Springs and Katherine",
+   "incumbent": "IND",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.3026,
+    "CLP": 0.4152,
+    "GRN": 0.2823
+   },
+   "primary": {
+    "ALP": [
+     15.5,
+     20.2,
+     25.8
+    ],
+    "COAL": [
+     26.9,
+     34.1,
+     42.2
+    ],
+    "GRN": [
+     0.3,
+     0.6,
+     1.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     35.5,
+     44.9,
+     52.7
+    ]
+   }
+  },
+  {
+   "district": "Arnhem",
+   "region": "Remote",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.9192,
+    "CLP": 0.0807,
+    "IND": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     47.2,
+     54.8,
+     62.1
+    ],
+    "COAL": [
+     26.8,
+     33.6,
+     40.9
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     6.8,
+     10.8,
+     17.1
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Barkly",
+   "region": "Remote",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9988,
+    "CLP": 0.0012
+   },
+   "primary": {
+    "ALP": [
+     64.8,
+     72.5,
+     79.3
+    ],
+    "COAL": [
+     20.7,
+     27.5,
+     35.2
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Blain",
+   "region": "Palmerston and rural Darwin",
+   "incumbent": "IND",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.5876,
+    "CLP": 0.4124
+   },
+   "primary": {
+    "ALP": [
+     26.6,
+     33.1,
+     40.0
+    ],
+    "COAL": [
+     17.9,
+     24.0,
+     30.9
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     33.5,
+     42.9,
+     50.9
+    ]
+   }
+  },
+  {
+   "district": "Braitling",
+   "region": "Alice Springs and Katherine",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.3786,
+    "CLP": 0.2796,
+    "GRN": 0.3418
+   },
+   "primary": {
+    "ALP": [
+     21.3,
+     26.8,
+     33.3
+    ],
+    "COAL": [
+     26.2,
+     33.1,
+     40.5
+    ],
+    "GRN": [
+     14.2,
+     23.0,
+     32.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     10.1,
+     16.2,
+     23.2
+    ]
+   }
+  },
+  {
+   "district": "Brennan",
+   "region": "Palmerston and rural Darwin",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.5566,
+    "CLP": 0.4434
+   },
+   "primary": {
+    "ALP": [
+     38.9,
+     45.5,
+     52.1
+    ],
+    "COAL": [
+     35.8,
+     43.1,
+     49.9
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     6.8,
+     11.2,
+     16.9
+    ]
+   }
+  },
+  {
+   "district": "Casuarina",
+   "region": "Darwin",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.9875,
+    "CLP": 0.0126
+   },
+   "primary": {
+    "ALP": [
+     54.1,
+     60.4,
+     66.8
+    ],
+    "COAL": [
+     31.5,
+     38.0,
+     44.3
+    ],
+    "GRN": [
+     0.6,
+     1.2,
+     2.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.1,
+     0.2,
+     0.4
+    ]
+   }
+  },
+  {
+   "district": "Daly",
+   "region": "Remote",
+   "incumbent": "CLP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.4845,
+    "CLP": 0.4579,
+    "GRN": 0.0575
+   },
+   "primary": {
+    "ALP": [
+     27.3,
+     33.7,
+     40.6
+    ],
+    "COAL": [
+     32.0,
+     39.7,
+     47.5
+    ],
+    "GRN": [
+     0.3,
+     0.6,
+     1.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     17.6,
+     25.6,
+     34.0
+    ]
+   }
+  },
+  {
+   "district": "Drysdale",
+   "region": "Palmerston and rural Darwin",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.5533,
+    "CLP": 0.4467
+   },
+   "primary": {
+    "ALP": [
+     31.4,
+     38.1,
+     45.2
+    ],
+    "COAL": [
+     26.0,
+     33.2,
+     40.8
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     20.0,
+     28.4,
+     36.9
+    ]
+   }
+  },
+  {
+   "district": "Fannie Bay",
+   "region": "Darwin",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.9472,
+    "CLP": 0.0528
+   },
+   "primary": {
+    "ALP": [
+     47.9,
+     54.4,
+     60.6
+    ],
+    "COAL": [
+     26.3,
+     32.8,
+     39.5
+    ],
+    "GRN": [
+     0.3,
+     0.6,
+     1.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     7.3,
+     11.7,
+     17.6
+    ]
+   }
+  },
+  {
+   "district": "Fong Lim",
+   "region": "Darwin",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.5417,
+    "CLP": 0.4582
+   },
+   "primary": {
+    "ALP": [
+     33.7,
+     40.3,
+     47.2
+    ],
+    "COAL": [
+     29.6,
+     37.1,
+     44.5
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     15.0,
+     22.4,
+     30.2
+    ]
+   }
+  },
+  {
+   "district": "Goyder",
+   "region": "Palmerston and rural Darwin",
+   "incumbent": "IND",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.0029,
+    "CLP": 0.0014,
+    "GRN": 0.0046,
+    "IND": 0.9912
+   },
+   "primary": {
+    "ALP": [
+     9.3,
+     13.9,
+     19.7
+    ],
+    "COAL": [
+     10.8,
+     16.4,
+     23.3
+    ],
+    "GRN": [
+     4.7,
+     9.4,
+     16.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     43.9,
+     57.3,
+     69.6
+    ],
+    "OTH": [
+     0.8,
+     1.6,
+     3.0
+    ]
+   }
+  },
+  {
+   "district": "Gwoja",
+   "region": "Remote",
+   "incumbent": "ALP",
+   "notes": [
+    "new seat, notionally ALP"
+   ],
+   "probs": {
+    "ALP": 0.9879,
+    "CLP": 0.0121
+   },
+   "primary": {
+    "ALP": [
+     53.5,
+     60.2,
+     66.5
+    ],
+    "COAL": [
+     16.4,
+     21.7,
+     27.7
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     11.5,
+     17.7,
+     24.9
+    ]
+   }
+  },
+  {
+   "district": "Johnston",
+   "region": "Darwin",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.8499,
+    "CLP": 0.0008,
+    "GRN": 0.1493
+   },
+   "primary": {
+    "ALP": [
+     36.2,
+     43.2,
+     51.2
+    ],
+    "COAL": [
+     19.3,
+     25.1,
+     31.6
+    ],
+    "GRN": [
+     20.2,
+     30.0,
+     39.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.8,
+     1.3,
+     2.3
+    ]
+   }
+  },
+  {
+   "district": "Karama",
+   "region": "Darwin",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.5891,
+    "CLP": 0.4108
+   },
+   "primary": {
+    "ALP": [
+     24.7,
+     30.7,
+     37.6
+    ],
+    "COAL": [
+     16.5,
+     22.2,
+     28.8
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     37.8,
+     47.1,
+     54.7
+    ]
+   }
+  },
+  {
+   "district": "Katherine",
+   "region": "Alice Springs and Katherine",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.4229,
+    "CLP": 0.5772
+   },
+   "primary": {
+    "ALP": [
+     20.4,
+     26.1,
+     32.5
+    ],
+    "COAL": [
+     26.0,
+     33.4,
+     41.5
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     30.8,
+     40.4,
+     48.7
+    ]
+   }
+  },
+  {
+   "district": "Mulka",
+   "region": "Remote",
+   "incumbent": "IND",
+   "notes": [
+    "new seat, notionally IND"
+   ],
+   "probs": {
+    "ALP": 0.4341,
+    "IND": 0.5659
+   },
+   "primary": {
+    "ALP": [
+     35.1,
+     48.3,
+     61.6
+    ],
+    "COAL": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     38.4,
+     51.7,
+     64.9
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Namatjira",
+   "region": "Remote",
+   "incumbent": "CLP",
+   "notes": [
+    "notionally CLP after the redistribution"
+   ],
+   "probs": {
+    "ALP": 0.3898,
+    "CLP": 0.3709,
+    "GRN": 0.2394
+   },
+   "primary": {
+    "ALP": [
+     22.3,
+     28.0,
+     34.4
+    ],
+    "COAL": [
+     30.6,
+     37.8,
+     45.2
+    ],
+    "GRN": [
+     12.4,
+     20.6,
+     29.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     7.7,
+     12.6,
+     18.8
+    ]
+   }
+  },
+  {
+   "district": "Nelson",
+   "region": "Palmerston and rural Darwin",
+   "incumbent": "IND",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.3869,
+    "CLP": 0.6131
+   },
+   "primary": {
+    "ALP": [
+     6.8,
+     9.1,
+     12.1
+    ],
+    "COAL": [
+     15.6,
+     20.6,
+     26.5
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     63.9,
+     70.3,
+     75.3
+    ]
+   }
+  },
+  {
+   "district": "Nightcliff",
+   "region": "Darwin",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.9266,
+    "GRN": 0.0733
+   },
+   "primary": {
+    "ALP": [
+     42.7,
+     49.9,
+     58.3
+    ],
+    "COAL": [
+     12.8,
+     17.2,
+     22.5
+    ],
+    "GRN": [
+     22.2,
+     31.9,
+     40.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.3,
+     0.6,
+     1.1
+    ]
+   }
+  },
+  {
+   "district": "Port Darwin",
+   "region": "Darwin",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.5506,
+    "CLP": 0.3644,
+    "GRN": 0.0849
+   },
+   "primary": {
+    "ALP": [
+     29.0,
+     35.3,
+     42.2
+    ],
+    "COAL": [
+     27.5,
+     34.8,
+     42.4
+    ],
+    "GRN": [
+     0.3,
+     0.6,
+     1.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     20.4,
+     29.0,
+     37.6
+    ]
+   }
+  },
+  {
+   "district": "Sanderson",
+   "region": "Darwin",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.8047,
+    "CLP": 0.1953
+   },
+   "primary": {
+    "ALP": [
+     43.5,
+     50.2,
+     56.8
+    ],
+    "COAL": [
+     27.8,
+     34.7,
+     41.5
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     9.4,
+     14.8,
+     21.4
+    ]
+   }
+  },
+  {
+   "district": "Spillett",
+   "region": "Palmerston and rural Darwin",
+   "incumbent": "CLP",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.0176,
+    "CLP": 0.9824
+   },
+   "primary": {
+    "ALP": [
+     20.7,
+     25.9,
+     31.6
+    ],
+    "COAL": [
+     52.8,
+     60.0,
+     66.4
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     8.7,
+     13.9,
+     20.2
+    ]
+   }
+  },
+  {
+   "district": "Wanguri",
+   "region": "Darwin",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2016)"
+   ],
+   "probs": {
+    "ALP": 0.9533,
+    "CLP": 0.0467
+   },
+   "primary": {
+    "ALP": [
+     49.5,
+     56.3,
+     62.8
+    ],
+    "COAL": [
+     17.0,
+     22.5,
+     28.6
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     14.1,
+     20.9,
+     28.5
+    ]
+   }
+  }
+ ]
+}

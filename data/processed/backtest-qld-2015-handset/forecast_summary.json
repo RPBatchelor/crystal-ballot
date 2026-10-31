@@ -1,0 +1,4536 @@
+{
+ "n_sims": 20000,
+ "majority": 45,
+ "outcome": {
+  "alp_majority": 0.36125,
+  "coal_majority": 0.20855,
+  "hung": 0.4302,
+  "alp_most_seats": 0.59125,
+  "coal_most_seats": 0.3764
+ },
+ "seats": {
+  "ALP": [
+   32.0,
+   39.0,
+   43.0,
+   46.0,
+   51.0
+  ],
+  "LIB": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "NAT": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "LNP": [
+   31.0,
+   36.0,
+   39.0,
+   44.0,
+   51.0
+  ],
+  "GRN": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "ONP": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "IND": [
+   4.0,
+   6.0,
+   7.0,
+   8.0,
+   10.0
+  ],
+  "OTH": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "COAL": [
+   31.0,
+   36.0,
+   39.0,
+   44.0,
+   51.0
+  ]
+ },
+ "seat_hist": {
+  "ALP": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   1,
+   2,
+   3,
+   5,
+   15,
+   10,
+   24,
+   16,
+   16,
+   31,
+   40,
+   66,
+   96,
+   98,
+   140,
+   168,
+   229,
+   271,
+   356,
+   477,
+   489,
+   644,
+   754,
+   932,
+   1033,
+   1234,
+   1323,
+   1433,
+   1392,
+   1472,
+   1415,
+   1282,
+   1137,
+   956,
+   756,
+   585,
+   431,
+   276,
+   149,
+   99,
+   55,
+   27,
+   21,
+   7,
+   9,
+   2,
+   5,
+   2,
+   7,
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "GRN": [
+   19708,
+   273,
+   15,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "ONP": [
+   20000,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IND": [
+   0,
+   0,
+   9,
+   158,
+   874,
+   2605,
+   4477,
+   4971,
+   3822,
+   1988,
+   784,
+   246,
+   55,
+   9,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "COAL": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   3,
+   4,
+   4,
+   4,
+   3,
+   7,
+   16,
+   20,
+   47,
+   53,
+   115,
+   192,
+   312,
+   431,
+   627,
+   768,
+   920,
+   1080,
+   1280,
+   1325,
+   1468,
+   1350,
+   1365,
+   1299,
+   1157,
+   1045,
+   931,
+   774,
+   676,
+   551,
+   460,
+   356,
+   288,
+   231,
+   196,
+   150,
+   126,
+   95,
+   57,
+   57,
+   40,
+   27,
+   17,
+   12,
+   14,
+   9,
+   20,
+   5,
+   3,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "statewide_primary": {
+  "ALP": [
+   33.6,
+   36.5,
+   39.4
+  ],
+  "COAL": [
+   36.3,
+   39.3,
+   42.3
+  ],
+  "GRN": [
+   6.4,
+   8.7,
+   10.9
+  ],
+  "ONP": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "IND": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "OTH": [
+   14.0,
+   15.5,
+   17.2
+  ]
+ },
+ "tpp_alp": [
+  45.7,
+  49.3,
+  52.9
+ ],
+ "districts": [
+  {
+   "district": "Albert",
+   "region": "Gold Coast",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.521,
+    "LNP": 0.479
+   },
+   "primary": {
+    "ALP": [
+     37.5,
+     42.3,
+     47.2
+    ],
+    "COAL": [
+     37.7,
+     42.7,
+     47.5
+    ],
+    "GRN": [
+     4.8,
+     6.7,
+     9.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.4,
+     7.8,
+     14.4
+    ]
+   }
+  },
+  {
+   "district": "Algester",
+   "region": "Brisbane South",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.8807,
+    "LNP": 0.1193
+   },
+   "primary": {
+    "ALP": [
+     40.6,
+     44.7,
+     48.8
+    ],
+    "COAL": [
+     35.8,
+     39.9,
+     44.1
+    ],
+    "GRN": [
+     5.7,
+     7.9,
+     10.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     4.3,
+     7.0,
+     11.1
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Ashgrove",
+   "region": "Brisbane North",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9467,
+    "LNP": 0.0533
+   },
+   "primary": {
+    "ALP": [
+     43.2,
+     47.2,
+     51.1
+    ],
+    "COAL": [
+     36.6,
+     40.5,
+     44.5
+    ],
+    "GRN": [
+     7.6,
+     10.2,
+     13.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     1.1,
+     1.8,
+     2.9
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Aspley",
+   "region": "Brisbane North",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0003,
+    "LNP": 0.9998
+   },
+   "primary": {
+    "ALP": [
+     30.3,
+     34.1,
+     38.0
+    ],
+    "COAL": [
+     53.0,
+     57.0,
+     61.0
+    ],
+    "GRN": [
+     6.3,
+     8.7,
+     11.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Barron River",
+   "region": "North Queensland",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.8375,
+    "LNP": 0.1625
+   },
+   "primary": {
+    "ALP": [
+     40.8,
+     45.2,
+     49.8
+    ],
+    "COAL": [
+     37.5,
+     42.0,
+     46.5
+    ],
+    "GRN": [
+     9.1,
+     12.3,
+     16.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Beaudesert",
+   "region": "Ipswich and West Moreton",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0027,
+    "LNP": 0.9973
+   },
+   "primary": {
+    "ALP": [
+     25.5,
+     29.8,
+     34.4
+    ],
+    "COAL": [
+     47.9,
+     53.0,
+     58.1
+    ],
+    "GRN": [
+     10.0,
+     13.7,
+     17.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.8,
+     2.9,
+     6.1
+    ]
+   }
+  },
+  {
+   "district": "Brisbane Central",
+   "region": "Brisbane North",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9688,
+    "LNP": 0.0311,
+    "GRN": 0.0002
+   },
+   "primary": {
+    "ALP": [
+     39.6,
+     43.7,
+     47.9
+    ],
+    "COAL": [
+     33.3,
+     37.3,
+     41.5
+    ],
+    "GRN": [
+     12.9,
+     16.8,
+     21.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     1.1,
+     1.8,
+     3.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Broadwater",
+   "region": "Gold Coast",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.6577,
+    "LNP": 0.3421,
+    "IND": 0.0002
+   },
+   "primary": {
+    "ALP": [
+     38.0,
+     42.6,
+     46.9
+    ],
+    "COAL": [
+     36.4,
+     40.8,
+     45.1
+    ],
+    "GRN": [
+     2.6,
+     3.7,
+     5.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     6.2,
+     9.8,
+     15.5
+    ],
+    "OTH": [
+     0.7,
+     2.3,
+     4.7
+    ]
+   }
+  },
+  {
+   "district": "Buderim",
+   "region": "Sunshine Coast",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0001,
+    "LNP": 0.9999
+   },
+   "primary": {
+    "ALP": [
+     22.2,
+     25.8,
+     29.6
+    ],
+    "COAL": [
+     51.5,
+     56.2,
+     60.7
+    ],
+    "GRN": [
+     9.7,
+     13.1,
+     17.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.3,
+     4.4,
+     8.7
+    ]
+   }
+  },
+  {
+   "district": "Bulimba",
+   "region": "Brisbane South",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9997,
+    "LNP": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     49.1,
+     53.0,
+     56.9
+    ],
+    "COAL": [
+     31.6,
+     35.4,
+     39.2
+    ],
+    "GRN": [
+     8.6,
+     11.5,
+     14.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Bundaberg",
+   "region": "Wide Bay and Darling Downs",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0594,
+    "LNP": 0.9341,
+    "IND": 0.0065
+   },
+   "primary": {
+    "ALP": [
+     29.3,
+     33.9,
+     38.5
+    ],
+    "COAL": [
+     38.1,
+     43.4,
+     48.4
+    ],
+    "GRN": [
+     2.4,
+     3.4,
+     4.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     9.0,
+     14.2,
+     21.7
+    ],
+    "OTH": [
+     1.2,
+     4.0,
+     7.9
+    ]
+   }
+  },
+  {
+   "district": "Bundamba",
+   "region": "Ipswich and West Moreton",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9999,
+    "LNP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     54.5,
+     59.1,
+     63.4
+    ],
+    "COAL": [
+     25.4,
+     29.3,
+     33.3
+    ],
+    "GRN": [
+     4.8,
+     6.7,
+     9.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.3,
+     4.5,
+     8.9
+    ]
+   }
+  },
+  {
+   "district": "Burdekin",
+   "region": "Central Queensland",
+   "incumbent": "LNP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.1401,
+    "LNP": 0.6907,
+    "IND": 0.1691
+   },
+   "primary": {
+    "ALP": [
+     26.2,
+     31.6,
+     36.9
+    ],
+    "COAL": [
+     31.3,
+     37.3,
+     43.2
+    ],
+    "GRN": [
+     2.3,
+     3.3,
+     4.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     15.3,
+     23.4,
+     33.9
+    ],
+    "OTH": [
+     0.9,
+     3.3,
+     6.7
+    ]
+   }
+  },
+  {
+   "district": "Burleigh",
+   "region": "Gold Coast",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.7086,
+    "LNP": 0.2914
+   },
+   "primary": {
+    "ALP": [
+     39.5,
+     43.7,
+     47.9
+    ],
+    "COAL": [
+     38.4,
+     42.6,
+     46.9
+    ],
+    "GRN": [
+     7.4,
+     10.0,
+     13.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.9,
+     3.1,
+     6.4
+    ]
+   }
+  },
+  {
+   "district": "Burnett",
+   "region": "Wide Bay and Darling Downs",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0357,
+    "LNP": 0.3044,
+    "IND": 0.6599
+   },
+   "primary": {
+    "ALP": [
+     20.1,
+     25.8,
+     31.5
+    ],
+    "COAL": [
+     26.0,
+     33.0,
+     39.8
+    ],
+    "GRN": [
+     3.1,
+     4.6,
+     6.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     24.9,
+     35.7,
+     48.3
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Cairns",
+   "region": "North Queensland",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.8234,
+    "LNP": 0.0977,
+    "IND": 0.079
+   },
+   "primary": {
+    "ALP": [
+     32.9,
+     38.4,
+     43.6
+    ],
+    "COAL": [
+     28.2,
+     33.1,
+     38.1
+    ],
+    "GRN": [
+     5.9,
+     8.2,
+     11.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     12.4,
+     19.1,
+     28.4
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Callide",
+   "region": "Wide Bay and Darling Downs",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.001,
+    "LNP": 0.8912,
+    "IND": 0.1077
+   },
+   "primary": {
+    "ALP": [
+     19.1,
+     23.4,
+     28.0
+    ],
+    "COAL": [
+     38.8,
+     46.2,
+     52.9
+    ],
+    "GRN": [
+     2.7,
+     4.0,
+     5.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     16.9,
+     25.4,
+     36.3
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Caloundra",
+   "region": "Sunshine Coast",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0018,
+    "LNP": 0.9982
+   },
+   "primary": {
+    "ALP": [
+     27.6,
+     31.4,
+     35.3
+    ],
+    "COAL": [
+     49.2,
+     53.3,
+     57.5
+    ],
+    "GRN": [
+     11.2,
+     14.9,
+     18.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.1,
+     0.2,
+     0.5
+    ]
+   }
+  },
+  {
+   "district": "Capalaba",
+   "region": "Logan and Redlands",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9964,
+    "LNP": 0.0036
+   },
+   "primary": {
+    "ALP": [
+     48.5,
+     52.6,
+     56.7
+    ],
+    "COAL": [
+     34.2,
+     38.2,
+     42.3
+    ],
+    "GRN": [
+     6.6,
+     9.1,
+     12.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Chatsworth",
+   "region": "Brisbane South",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.2617,
+    "LNP": 0.7383
+   },
+   "primary": {
+    "ALP": [
+     38.0,
+     42.1,
+     46.2
+    ],
+    "COAL": [
+     43.3,
+     47.6,
+     51.7
+    ],
+    "GRN": [
+     5.4,
+     7.4,
+     9.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.7,
+     2.6,
+     5.3
+    ]
+   }
+  },
+  {
+   "district": "Clayfield",
+   "region": "Brisbane North",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0016,
+    "LNP": 0.9983
+   },
+   "primary": {
+    "ALP": [
+     27.1,
+     30.8,
+     34.6
+    ],
+    "COAL": [
+     48.0,
+     52.2,
+     56.3
+    ],
+    "GRN": [
+     9.2,
+     12.3,
+     15.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     2.6,
+     4.3,
+     7.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Cleveland",
+   "region": "Logan and Redlands",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.018,
+    "LNP": 0.982
+   },
+   "primary": {
+    "ALP": [
+     33.9,
+     37.8,
+     41.8
+    ],
+    "COAL": [
+     49.1,
+     53.2,
+     57.2
+    ],
+    "GRN": [
+     6.5,
+     8.9,
+     11.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Condamine",
+   "region": "Wide Bay and Darling Downs",
+   "incumbent": "LNP",
+   "notes": [
+    "sitting member HOPPER Ray (LNP) contesting Nanango",
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0008,
+    "LNP": 0.9641,
+    "IND": 0.0352
+   },
+   "primary": {
+    "ALP": [
+     19.0,
+     23.1,
+     27.4
+    ],
+    "COAL": [
+     42.3,
+     49.4,
+     55.5
+    ],
+    "GRN": [
+     3.6,
+     5.1,
+     7.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     13.9,
+     21.4,
+     31.5
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Cook",
+   "region": "North Queensland",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9435,
+    "LNP": 0.0056,
+    "IND": 0.0508
+   },
+   "primary": {
+    "ALP": [
+     38.7,
+     44.7,
+     50.2
+    ],
+    "COAL": [
+     24.4,
+     29.0,
+     33.7
+    ],
+    "GRN": [
+     4.5,
+     6.4,
+     8.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     12.1,
+     18.8,
+     28.1
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Coomera",
+   "region": "Gold Coast",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0003,
+    "LNP": 0.9998
+   },
+   "primary": {
+    "ALP": [
+     28.8,
+     32.7,
+     36.7
+    ],
+    "COAL": [
+     54.8,
+     59.0,
+     63.0
+    ],
+    "GRN": [
+     5.7,
+     7.9,
+     10.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Currumbin",
+   "region": "Gold Coast",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0056,
+    "LNP": 0.9944
+   },
+   "primary": {
+    "ALP": [
+     29.1,
+     33.2,
+     37.3
+    ],
+    "COAL": [
+     47.0,
+     51.5,
+     55.9
+    ],
+    "GRN": [
+     8.5,
+     11.5,
+     14.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.0,
+     3.4,
+     6.9
+    ]
+   }
+  },
+  {
+   "district": "Dalrymple",
+   "region": "North Queensland",
+   "incumbent": "IND",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0003,
+    "LNP": 0.0011,
+    "IND": 0.9986
+   },
+   "primary": {
+    "ALP": [
+     10.7,
+     15.6,
+     21.3
+    ],
+    "COAL": [
+     13.2,
+     19.0,
+     25.9
+    ],
+    "GRN": [
+     3.1,
+     5.0,
+     7.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     47.0,
+     60.0,
+     71.7
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Everton",
+   "region": "Brisbane North",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.3155,
+    "LNP": 0.6845
+   },
+   "primary": {
+    "ALP": [
+     39.2,
+     43.1,
+     47.1
+    ],
+    "COAL": [
+     44.3,
+     48.3,
+     52.3
+    ],
+    "GRN": [
+     6.1,
+     8.4,
+     11.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Ferny Grove",
+   "region": "Brisbane North",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.6839,
+    "LNP": 0.3161
+   },
+   "primary": {
+    "ALP": [
+     37.2,
+     41.3,
+     45.4
+    ],
+    "COAL": [
+     38.6,
+     42.7,
+     46.8
+    ],
+    "GRN": [
+     11.9,
+     15.6,
+     19.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.1,
+     0.2,
+     0.5
+    ]
+   }
+  },
+  {
+   "district": "Gaven",
+   "region": "Gold Coast",
+   "incumbent": "IND",
+   "notes": [
+    "sitting member DOUGLAS Alex elected as LNP, recontesting as an independent",
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0293,
+    "LNP": 0.7895,
+    "IND": 0.1812
+   },
+   "primary": {
+    "ALP": [
+     23.2,
+     27.6,
+     32.1
+    ],
+    "COAL": [
+     31.7,
+     37.1,
+     42.4
+    ],
+    "GRN": [
+     3.8,
+     5.4,
+     7.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     16.5,
+     23.8,
+     33.2
+    ],
+    "OTH": [
+     1.5,
+     5.0,
+     9.7
+    ]
+   }
+  },
+  {
+   "district": "Gladstone",
+   "region": "Central Queensland",
+   "incumbent": "IND",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9696,
+    "IND": 0.0304
+   },
+   "primary": {
+    "ALP": [
+     49.9,
+     59.3,
+     67.2
+    ],
+    "COAL": [
+     8.2,
+     10.5,
+     13.1
+    ],
+    "GRN": [
+     2.4,
+     3.6,
+     5.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     17.3,
+     26.1,
+     37.4
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Glass House",
+   "region": "Sunshine Coast",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.005,
+    "LNP": 0.9947,
+    "GRN": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     24.9,
+     28.9,
+     33.0
+    ],
+    "COAL": [
+     46.3,
+     51.0,
+     55.6
+    ],
+    "GRN": [
+     15.2,
+     19.7,
+     24.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Greenslopes",
+   "region": "Brisbane South",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9974,
+    "LNP": 0.0026
+   },
+   "primary": {
+    "ALP": [
+     45.2,
+     49.2,
+     53.2
+    ],
+    "COAL": [
+     32.4,
+     36.3,
+     40.3
+    ],
+    "GRN": [
+     10.6,
+     14.1,
+     18.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.1,
+     0.2,
+     0.5
+    ]
+   }
+  },
+  {
+   "district": "Gregory",
+   "region": "Central Queensland",
+   "incumbent": "LNP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0019,
+    "LNP": 0.9798,
+    "IND": 0.0183
+   },
+   "primary": {
+    "ALP": [
+     23.2,
+     27.6,
+     32.2
+    ],
+    "COAL": [
+     43.1,
+     49.4,
+     55.1
+    ],
+    "GRN": [
+     2.3,
+     3.4,
+     4.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     11.9,
+     18.6,
+     27.7
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Gympie",
+   "region": "Wide Bay and Darling Downs",
+   "incumbent": "LNP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0018,
+    "LNP": 0.9483,
+    "GRN": 0.0001,
+    "IND": 0.0498
+   },
+   "primary": {
+    "ALP": [
+     16.6,
+     20.2,
+     24.2
+    ],
+    "COAL": [
+     37.3,
+     43.5,
+     49.4
+    ],
+    "GRN": [
+     7.6,
+     10.6,
+     14.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     12.9,
+     19.9,
+     29.6
+    ],
+    "OTH": [
+     1.3,
+     4.4,
+     8.8
+    ]
+   }
+  },
+  {
+   "district": "Hervey Bay",
+   "region": "Wide Bay and Darling Downs",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0017,
+    "LNP": 0.998,
+    "IND": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     26.5,
+     30.6,
+     34.8
+    ],
+    "COAL": [
+     44.2,
+     49.4,
+     54.2
+    ],
+    "GRN": [
+     2.8,
+     4.0,
+     5.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     6.4,
+     10.3,
+     16.2
+    ],
+    "OTH": [
+     1.4,
+     4.7,
+     9.3
+    ]
+   }
+  },
+  {
+   "district": "Hinchinbrook",
+   "region": "North Queensland",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0179,
+    "LNP": 0.5104,
+    "IND": 0.4718
+   },
+   "primary": {
+    "ALP": [
+     20.7,
+     26.1,
+     31.6
+    ],
+    "COAL": [
+     29.6,
+     36.8,
+     43.7
+    ],
+    "GRN": [
+     2.7,
+     3.9,
+     5.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     22.0,
+     32.2,
+     44.5
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Inala",
+   "region": "Brisbane South",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 1.0,
+    "LNP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     60.0,
+     63.8,
+     67.5
+    ],
+    "COAL": [
+     23.7,
+     27.2,
+     30.9
+    ],
+    "GRN": [
+     6.5,
+     8.9,
+     11.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Indooroopilly",
+   "region": "Brisbane North",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0011,
+    "LNP": 0.9986,
+    "GRN": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     23.8,
+     27.4,
+     31.3
+    ],
+    "COAL": [
+     46.8,
+     51.3,
+     55.9
+    ],
+    "GRN": [
+     16.5,
+     21.1,
+     25.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Ipswich",
+   "region": "Ipswich and West Moreton",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9028,
+    "LNP": 0.0058,
+    "IND": 0.0914
+   },
+   "primary": {
+    "ALP": [
+     36.0,
+     41.9,
+     47.5
+    ],
+    "COAL": [
+     22.3,
+     26.7,
+     31.3
+    ],
+    "GRN": [
+     4.5,
+     6.4,
+     8.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     12.8,
+     20.0,
+     29.5
+    ],
+    "OTH": [
+     1.1,
+     3.9,
+     7.9
+    ]
+   }
+  },
+  {
+   "district": "Ipswich West",
+   "region": "Ipswich and West Moreton",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9515,
+    "LNP": 0.0316,
+    "IND": 0.0169
+   },
+   "primary": {
+    "ALP": [
+     37.7,
+     43.1,
+     48.0
+    ],
+    "COAL": [
+     29.1,
+     33.8,
+     38.3
+    ],
+    "GRN": [
+     5.1,
+     7.2,
+     9.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     9.7,
+     15.2,
+     23.1
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Kallangur",
+   "region": "Moreton Bay",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.5216,
+    "LNP": 0.4783
+   },
+   "primary": {
+    "ALP": [
+     39.5,
+     43.8,
+     48.0
+    ],
+    "COAL": [
+     41.7,
+     46.1,
+     50.5
+    ],
+    "GRN": [
+     7.3,
+     10.0,
+     13.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Kawana",
+   "region": "Sunshine Coast",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "LNP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     22.8,
+     26.3,
+     29.9
+    ],
+    "COAL": [
+     53.2,
+     57.5,
+     61.6
+    ],
+    "GRN": [
+     7.0,
+     9.6,
+     12.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     3.5,
+     5.8,
+     9.4
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.5
+    ]
+   }
+  },
+  {
+   "district": "Keppel",
+   "region": "Central Queensland",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9736,
+    "LNP": 0.0214,
+    "IND": 0.005
+   },
+   "primary": {
+    "ALP": [
+     39.6,
+     44.5,
+     49.3
+    ],
+    "COAL": [
+     29.7,
+     34.1,
+     38.6
+    ],
+    "GRN": [
+     5.2,
+     7.3,
+     9.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     8.2,
+     13.0,
+     20.3
+    ],
+    "OTH": [
+     0.1,
+     0.2,
+     0.5
+    ]
+   }
+  },
+  {
+   "district": "Lockyer",
+   "region": "Ipswich and West Moreton",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0064,
+    "LNP": 0.9327,
+    "IND": 0.0609
+   },
+   "primary": {
+    "ALP": [
+     22.5,
+     26.9,
+     31.5
+    ],
+    "COAL": [
+     37.4,
+     43.6,
+     49.5
+    ],
+    "GRN": [
+     5.5,
+     7.7,
+     10.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     13.3,
+     20.6,
+     30.4
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Logan",
+   "region": "Logan and Redlands",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9714,
+    "LNP": 0.0107,
+    "IND": 0.0179
+   },
+   "primary": {
+    "ALP": [
+     39.7,
+     45.2,
+     50.3
+    ],
+    "COAL": [
+     27.3,
+     31.8,
+     36.3
+    ],
+    "GRN": [
+     4.4,
+     6.2,
+     8.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     10.0,
+     15.7,
+     23.9
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.5
+    ]
+   }
+  },
+  {
+   "district": "Lytton",
+   "region": "Brisbane South",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9989,
+    "LNP": 0.0011,
+    "IND": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     45.7,
+     50.1,
+     54.2
+    ],
+    "COAL": [
+     29.2,
+     33.1,
+     37.0
+    ],
+    "GRN": [
+     6.6,
+     9.0,
+     11.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     4.5,
+     7.3,
+     11.7
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Mackay",
+   "region": "Central Queensland",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.988,
+    "LNP": 0.0014,
+    "IND": 0.0106
+   },
+   "primary": {
+    "ALP": [
+     43.4,
+     49.3,
+     54.4
+    ],
+    "COAL": [
+     23.2,
+     27.3,
+     31.5
+    ],
+    "GRN": [
+     4.5,
+     6.5,
+     8.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     10.2,
+     16.0,
+     24.2
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Mansfield",
+   "region": "Brisbane South",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.6493,
+    "LNP": 0.3507
+   },
+   "primary": {
+    "ALP": [
+     40.2,
+     44.3,
+     48.3
+    ],
+    "COAL": [
+     39.8,
+     43.9,
+     48.0
+    ],
+    "GRN": [
+     5.2,
+     7.1,
+     9.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     2.6,
+     4.3,
+     7.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Maroochydore",
+   "region": "Sunshine Coast",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0057,
+    "LNP": 0.9942
+   },
+   "primary": {
+    "ALP": [
+     27.6,
+     31.5,
+     35.6
+    ],
+    "COAL": [
+     47.5,
+     52.0,
+     56.4
+    ],
+    "GRN": [
+     12.1,
+     16.0,
+     20.3
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Maryborough",
+   "region": "Wide Bay and Darling Downs",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0016,
+    "LNP": 0.1052,
+    "IND": 0.8932
+   },
+   "primary": {
+    "ALP": [
+     14.7,
+     19.8,
+     25.5
+    ],
+    "COAL": [
+     22.4,
+     30.0,
+     37.8
+    ],
+    "GRN": [
+     2.3,
+     3.5,
+     5.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     33.5,
+     45.8,
+     58.7
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Mermaid Beach",
+   "region": "Gold Coast",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0001,
+    "LNP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     24.7,
+     28.3,
+     32.1
+    ],
+    "COAL": [
+     54.1,
+     58.5,
+     62.5
+    ],
+    "GRN": [
+     6.6,
+     9.0,
+     11.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.1,
+     3.8,
+     7.6
+    ]
+   }
+  },
+  {
+   "district": "Mirani",
+   "region": "Central Queensland",
+   "incumbent": "LNP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.8832,
+    "LNP": 0.1168
+   },
+   "primary": {
+    "ALP": [
+     44.7,
+     49.3,
+     53.9
+    ],
+    "COAL": [
+     37.4,
+     42.0,
+     46.7
+    ],
+    "GRN": [
+     3.4,
+     4.8,
+     6.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.0,
+     3.3,
+     6.8
+    ]
+   }
+  },
+  {
+   "district": "Moggill",
+   "region": "Brisbane South",
+   "incumbent": "LNP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0001,
+    "LNP": 0.9999
+   },
+   "primary": {
+    "ALP": [
+     20.8,
+     24.2,
+     27.9
+    ],
+    "COAL": [
+     47.6,
+     52.3,
+     56.9
+    ],
+    "GRN": [
+     12.5,
+     16.4,
+     20.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     3.8,
+     6.3,
+     10.1
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Morayfield",
+   "region": "Moreton Bay",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9858,
+    "LNP": 0.0143
+   },
+   "primary": {
+    "ALP": [
+     43.3,
+     47.8,
+     52.1
+    ],
+    "COAL": [
+     32.3,
+     36.4,
+     40.6
+    ],
+    "GRN": [
+     4.6,
+     6.4,
+     8.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     5.3,
+     8.6,
+     13.6
+    ],
+    "OTH": [
+     0.1,
+     0.2,
+     0.5
+    ]
+   }
+  },
+  {
+   "district": "Mount Coot-tha",
+   "region": "Brisbane North",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.8922,
+    "LNP": 0.0959,
+    "GRN": 0.012
+   },
+   "primary": {
+    "ALP": [
+     34.1,
+     38.3,
+     42.6
+    ],
+    "COAL": [
+     32.4,
+     36.5,
+     40.9
+    ],
+    "GRN": [
+     17.8,
+     22.6,
+     27.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     1.4,
+     2.3,
+     3.9
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Mount Isa",
+   "region": "North Queensland",
+   "incumbent": "IND",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.1389,
+    "LNP": 0.0003,
+    "IND": 0.8608
+   },
+   "primary": {
+    "ALP": [
+     25.6,
+     33.7,
+     41.9
+    ],
+    "COAL": [
+     14.2,
+     18.9,
+     24.3
+    ],
+    "GRN": [
+     1.5,
+     2.3,
+     3.3
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     32.3,
+     44.7,
+     57.3
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Mount Ommaney",
+   "region": "Brisbane South",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.078,
+    "LNP": 0.922
+   },
+   "primary": {
+    "ALP": [
+     33.3,
+     37.2,
+     41.3
+    ],
+    "COAL": [
+     44.4,
+     48.7,
+     52.9
+    ],
+    "GRN": [
+     8.6,
+     11.6,
+     15.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.6,
+     2.1,
+     4.4
+    ]
+   }
+  },
+  {
+   "district": "Mudgeeraba",
+   "region": "Gold Coast",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0001,
+    "LNP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     22.2,
+     25.9,
+     29.7
+    ],
+    "COAL": [
+     46.6,
+     51.6,
+     56.3
+    ],
+    "GRN": [
+     6.4,
+     8.7,
+     11.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     3.8,
+     6.3,
+     10.2
+    ],
+    "OTH": [
+     2.0,
+     6.5,
+     12.4
+    ]
+   }
+  },
+  {
+   "district": "Mulgrave",
+   "region": "North Queensland",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.8898,
+    "LNP": 0.0007,
+    "IND": 0.1095
+   },
+   "primary": {
+    "ALP": [
+     40.2,
+     47.5,
+     54.0
+    ],
+    "COAL": [
+     18.6,
+     22.8,
+     27.1
+    ],
+    "GRN": [
+     2.8,
+     4.1,
+     5.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     16.4,
+     24.8,
+     35.5
+    ],
+    "OTH": [
+     0.1,
+     0.2,
+     0.5
+    ]
+   }
+  },
+  {
+   "district": "Mundingburra",
+   "region": "North Queensland",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.7383,
+    "LNP": 0.2616
+   },
+   "primary": {
+    "ALP": [
+     40.5,
+     45.3,
+     50.1
+    ],
+    "COAL": [
+     37.5,
+     42.3,
+     47.1
+    ],
+    "GRN": [
+     5.2,
+     7.3,
+     9.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.4,
+     4.6,
+     9.2
+    ]
+   }
+  },
+  {
+   "district": "Murrumba",
+   "region": "Moreton Bay",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.8136,
+    "LNP": 0.1863
+   },
+   "primary": {
+    "ALP": [
+     40.8,
+     45.6,
+     50.3
+    ],
+    "COAL": [
+     36.0,
+     40.7,
+     45.4
+    ],
+    "GRN": [
+     4.1,
+     5.8,
+     7.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.3,
+     7.4,
+     13.8
+    ]
+   }
+  },
+  {
+   "district": "Nanango",
+   "region": "Wide Bay and Darling Downs",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0001,
+    "LNP": 0.4821,
+    "IND": 0.5178
+   },
+   "primary": {
+    "ALP": [
+     13.6,
+     17.8,
+     22.3
+    ],
+    "COAL": [
+     31.1,
+     39.5,
+     47.5
+    ],
+    "GRN": [
+     3.1,
+     4.7,
+     6.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     26.0,
+     37.1,
+     49.8
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Nicklin",
+   "region": "Sunshine Coast",
+   "incumbent": "IND",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "LNP": 0.0225,
+    "IND": 0.9775
+   },
+   "primary": {
+    "ALP": [
+     8.4,
+     11.9,
+     16.2
+    ],
+    "COAL": [
+     18.4,
+     25.7,
+     33.7
+    ],
+    "GRN": [
+     5.1,
+     7.9,
+     11.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     41.0,
+     54.0,
+     66.4
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Noosa",
+   "region": "Sunshine Coast",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0001,
+    "LNP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     17.9,
+     21.1,
+     24.7
+    ],
+    "COAL": [
+     52.2,
+     56.9,
+     61.6
+    ],
+    "GRN": [
+     15.3,
+     19.8,
+     24.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.5,
+     1.9,
+     4.0
+    ]
+   }
+  },
+  {
+   "district": "Nudgee",
+   "region": "Brisbane North",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9966,
+    "LNP": 0.0034
+   },
+   "primary": {
+    "ALP": [
+     43.6,
+     47.8,
+     52.0
+    ],
+    "COAL": [
+     29.7,
+     33.6,
+     37.6
+    ],
+    "GRN": [
+     6.6,
+     9.0,
+     11.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     3.9,
+     6.4,
+     10.3
+    ],
+    "OTH": [
+     0.7,
+     2.4,
+     4.9
+    ]
+   }
+  },
+  {
+   "district": "Pine Rivers",
+   "region": "Moreton Bay",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.352,
+    "LNP": 0.6479,
+    "IND": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     33.5,
+     37.9,
+     42.3
+    ],
+    "COAL": [
+     38.0,
+     42.6,
+     47.0
+    ],
+    "GRN": [
+     7.0,
+     9.6,
+     12.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     5.7,
+     9.3,
+     14.7
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Pumicestone",
+   "region": "Moreton Bay",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.5224,
+    "LNP": 0.4775
+   },
+   "primary": {
+    "ALP": [
+     36.8,
+     41.2,
+     45.5
+    ],
+    "COAL": [
+     38.2,
+     42.5,
+     46.8
+    ],
+    "GRN": [
+     5.0,
+     6.9,
+     9.3
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     5.2,
+     8.5,
+     13.5
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.5
+    ]
+   }
+  },
+  {
+   "district": "Redcliffe",
+   "region": "Moreton Bay",
+   "incumbent": "ALP",
+   "notes": [
+    "won by ALP at a by-election",
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.8612,
+    "LNP": 0.1388
+   },
+   "primary": {
+    "ALP": [
+     37.5,
+     42.0,
+     46.5
+    ],
+    "COAL": [
+     32.6,
+     36.9,
+     41.4
+    ],
+    "GRN": [
+     5.4,
+     7.5,
+     10.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     4.3,
+     7.0,
+     11.4
+    ],
+    "OTH": [
+     1.6,
+     5.5,
+     10.6
+    ]
+   }
+  },
+  {
+   "district": "Redlands",
+   "region": "Logan and Redlands",
+   "incumbent": "LNP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.005,
+    "LNP": 0.995
+   },
+   "primary": {
+    "ALP": [
+     30.5,
+     34.3,
+     38.3
+    ],
+    "COAL": [
+     49.3,
+     53.5,
+     57.6
+    ],
+    "GRN": [
+     8.7,
+     11.8,
+     15.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.5
+    ]
+   }
+  },
+  {
+   "district": "Rockhampton",
+   "region": "Central Queensland",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9865,
+    "LNP": 0.0001,
+    "IND": 0.0134
+   },
+   "primary": {
+    "ALP": [
+     45.5,
+     51.8,
+     57.3
+    ],
+    "COAL": [
+     18.4,
+     22.1,
+     25.9
+    ],
+    "GRN": [
+     2.7,
+     3.9,
+     5.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     11.6,
+     18.1,
+     27.1
+    ],
+    "OTH": [
+     0.9,
+     3.2,
+     6.6
+    ]
+   }
+  },
+  {
+   "district": "Sandgate",
+   "region": "Brisbane North",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9984,
+    "LNP": 0.0015
+   },
+   "primary": {
+    "ALP": [
+     45.2,
+     49.5,
+     53.7
+    ],
+    "COAL": [
+     30.0,
+     34.0,
+     38.0
+    ],
+    "GRN": [
+     7.5,
+     10.3,
+     13.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     3.5,
+     5.7,
+     9.3
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "South Brisbane",
+   "region": "Brisbane South",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.998,
+    "LNP": 0.0001,
+    "GRN": 0.002
+   },
+   "primary": {
+    "ALP": [
+     43.3,
+     47.8,
+     52.2
+    ],
+    "COAL": [
+     23.9,
+     27.4,
+     31.3
+    ],
+    "GRN": [
+     15.6,
+     20.1,
+     24.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     2.6,
+     4.3,
+     7.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Southern Downs",
+   "region": "Wide Bay and Darling Downs",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "LNP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     20.4,
+     23.7,
+     27.3
+    ],
+    "COAL": [
+     63.1,
+     67.3,
+     71.2
+    ],
+    "GRN": [
+     3.8,
+     5.3,
+     7.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.9,
+     3.2,
+     6.6
+    ]
+   }
+  },
+  {
+   "district": "Southport",
+   "region": "Gold Coast",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.2241,
+    "LNP": 0.7759,
+    "IND": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     34.8,
+     38.9,
+     43.0
+    ],
+    "COAL": [
+     40.9,
+     45.2,
+     49.5
+    ],
+    "GRN": [
+     5.5,
+     7.6,
+     10.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     4.6,
+     7.4,
+     11.9
+    ],
+    "OTH": [
+     0.1,
+     0.2,
+     0.5
+    ]
+   }
+  },
+  {
+   "district": "Springwood",
+   "region": "Logan and Redlands",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.1918,
+    "LNP": 0.8083
+   },
+   "primary": {
+    "ALP": [
+     36.1,
+     40.4,
+     44.6
+    ],
+    "COAL": [
+     43.0,
+     47.3,
+     51.6
+    ],
+    "GRN": [
+     5.8,
+     8.0,
+     10.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.1,
+     3.8,
+     7.6
+    ]
+   }
+  },
+  {
+   "district": "Stafford",
+   "region": "Brisbane North",
+   "incumbent": "ALP",
+   "notes": [
+    "won by ALP at a by-election",
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9689,
+    "LNP": 0.0311
+   },
+   "primary": {
+    "ALP": [
+     43.0,
+     47.2,
+     51.3
+    ],
+    "COAL": [
+     35.6,
+     39.6,
+     43.7
+    ],
+    "GRN": [
+     9.8,
+     13.1,
+     16.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Stretton",
+   "region": "Brisbane South",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.7497,
+    "LNP": 0.2304,
+    "IND": 0.0199
+   },
+   "primary": {
+    "ALP": [
+     34.7,
+     39.9,
+     44.8
+    ],
+    "COAL": [
+     32.1,
+     37.2,
+     42.0
+    ],
+    "GRN": [
+     4.5,
+     6.3,
+     8.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     10.1,
+     15.9,
+     24.1
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Sunnybank",
+   "region": "Brisbane South",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.7881,
+    "LNP": 0.2119
+   },
+   "primary": {
+    "ALP": [
+     41.1,
+     45.2,
+     49.3
+    ],
+    "COAL": [
+     39.3,
+     43.5,
+     47.6
+    ],
+    "GRN": [
+     8.3,
+     11.2,
+     14.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Surfers Paradise",
+   "region": "Gold Coast",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "LNP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     20.8,
+     24.0,
+     27.4
+    ],
+    "COAL": [
+     58.6,
+     63.0,
+     66.9
+    ],
+    "GRN": [
+     5.9,
+     8.1,
+     10.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.4,
+     4.6,
+     9.0
+    ]
+   }
+  },
+  {
+   "district": "Thuringowa",
+   "region": "North Queensland",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.6946,
+    "LNP": 0.0167,
+    "IND": 0.2888
+   },
+   "primary": {
+    "ALP": [
+     32.2,
+     38.4,
+     44.4
+    ],
+    "COAL": [
+     22.5,
+     27.6,
+     32.5
+    ],
+    "GRN": [
+     2.9,
+     4.2,
+     5.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     16.8,
+     25.3,
+     36.3
+    ],
+    "OTH": [
+     1.0,
+     3.5,
+     7.1
+    ]
+   }
+  },
+  {
+   "district": "Toowoomba North",
+   "region": "Wide Bay and Darling Downs",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.8229,
+    "LNP": 0.1767,
+    "IND": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     38.7,
+     43.4,
+     47.9
+    ],
+    "COAL": [
+     34.9,
+     39.3,
+     43.7
+    ],
+    "GRN": [
+     4.0,
+     5.6,
+     7.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     6.8,
+     10.8,
+     16.7
+    ],
+    "OTH": [
+     0.1,
+     0.2,
+     0.5
+    ]
+   }
+  },
+  {
+   "district": "Toowoomba South",
+   "region": "Wide Bay and Darling Downs",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.0024,
+    "LNP": 0.9976
+   },
+   "primary": {
+    "ALP": [
+     31.5,
+     35.5,
+     39.7
+    ],
+    "COAL": [
+     52.6,
+     56.9,
+     61.1
+    ],
+    "GRN": [
+     5.4,
+     7.4,
+     10.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Townsville",
+   "region": "North Queensland",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9889,
+    "LNP": 0.0111
+   },
+   "primary": {
+    "ALP": [
+     44.2,
+     48.9,
+     53.7
+    ],
+    "COAL": [
+     31.4,
+     35.8,
+     40.5
+    ],
+    "GRN": [
+     7.9,
+     10.7,
+     14.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.2,
+     4.0,
+     8.0
+    ]
+   }
+  },
+  {
+   "district": "Warrego",
+   "region": "Wide Bay and Darling Downs",
+   "incumbent": "LNP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0003,
+    "LNP": 0.9305,
+    "IND": 0.0692
+   },
+   "primary": {
+    "ALP": [
+     17.1,
+     21.2,
+     25.6
+    ],
+    "COAL": [
+     42.1,
+     50.0,
+     56.9
+    ],
+    "GRN": [
+     1.7,
+     2.5,
+     3.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     16.8,
+     25.3,
+     36.3
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Waterford",
+   "region": "Logan and Redlands",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9993,
+    "LNP": 0.0006
+   },
+   "primary": {
+    "ALP": [
+     46.8,
+     51.5,
+     56.0
+    ],
+    "COAL": [
+     26.8,
+     30.8,
+     34.9
+    ],
+    "GRN": [
+     5.9,
+     8.2,
+     10.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     5.5,
+     8.9,
+     14.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Whitsunday",
+   "region": "Central Queensland",
+   "incumbent": "LNP",
+   "notes": [
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.7637,
+    "LNP": 0.1771,
+    "IND": 0.0593
+   },
+   "primary": {
+    "ALP": [
+     33.0,
+     38.5,
+     43.6
+    ],
+    "COAL": [
+     29.9,
+     35.0,
+     40.0
+    ],
+    "GRN": [
+     4.8,
+     6.8,
+     9.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     12.1,
+     18.6,
+     27.8
+    ],
+    "OTH": [
+     0.1,
+     0.3,
+     0.6
+    ]
+   }
+  },
+  {
+   "district": "Woodridge",
+   "region": "Logan and Redlands",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 1.0,
+    "LNP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     57.2,
+     61.2,
+     65.1
+    ],
+    "COAL": [
+     24.4,
+     28.0,
+     31.9
+    ],
+    "GRN": [
+     7.8,
+     10.6,
+     13.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Yeerongpilly",
+   "region": "Brisbane South",
+   "incumbent": "IND",
+   "notes": [
+    "sitting member JUDGE Carl elected as LNP, recontesting as an independent",
+    "first-term member recontesting (since 2012)"
+   ],
+   "probs": {
+    "ALP": 0.9393,
+    "LNP": 0.0065,
+    "GRN": 0.001,
+    "IND": 0.0532
+   },
+   "primary": {
+    "ALP": [
+     33.3,
+     38.0,
+     42.6
+    ],
+    "COAL": [
+     22.7,
+     26.6,
+     30.6
+    ],
+    "GRN": [
+     11.2,
+     14.8,
+     18.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     12.2,
+     17.9,
+     25.6
+    ],
+    "OTH": [
+     0.5,
+     1.7,
+     3.6
+    ]
+   }
+  }
+ ]
+}
