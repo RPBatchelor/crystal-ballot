@@ -1,0 +1,1825 @@
+election_id,district,count,from_candidate,to_candidate,votes,from_party,to_party
+wa-2021,Albany,2,BACANARU Emil,MADEO Sandra,9.0,X_W,X_NMV
+wa-2021,Albany,2,BACANARU Emil,DODSON Malcolm,5.0,X_W,LDP
+wa-2021,Albany,2,BACANARU Emil,PURCELL Barry,2.0,X_W,SAP
+wa-2021,Albany,2,BACANARU Emil,LOUDEN Karrie,7.0,X_W,SFF
+wa-2021,Albany,2,BACANARU Emil,LEARY Scott,6.0,X_W,LIB
+wa-2021,Albany,2,BACANARU Emil,CULL Caroline,5.0,X_W,LCP
+wa-2021,Albany,2,BACANARU Emil,KINSELLA Michelle,2.0,X_W,ONP
+wa-2021,Albany,2,BACANARU Emil,STEPHENS Rebecca,6.0,X_W,ALP
+wa-2021,Albany,2,BACANARU Emil,'t HART Ian,1.0,X_W,CHR
+wa-2021,Albany,2,BACANARU Emil,BAESJOU Delma,3.0,X_W,NAT
+wa-2021,Albany,2,BACANARU Emil,Exhausted,1.0,X_W,EXH
+wa-2021,Albany,3,PURCELL Barry,MADEO Sandra,11.0,SAP,X_NMV
+wa-2021,Albany,3,PURCELL Barry,DODSON Malcolm,7.0,SAP,LDP
+wa-2021,Albany,3,PURCELL Barry,LOUDEN Karrie,9.0,SAP,SFF
+wa-2021,Albany,3,PURCELL Barry,LEARY Scott,12.0,SAP,LIB
+wa-2021,Albany,3,PURCELL Barry,CULL Caroline,20.0,SAP,LCP
+wa-2021,Albany,3,PURCELL Barry,KINSELLA Michelle,9.0,SAP,ONP
+wa-2021,Albany,3,PURCELL Barry,GILMOUR Nelson,39.0,SAP,GRN
+wa-2021,Albany,3,PURCELL Barry,STEPHENS Rebecca,23.0,SAP,ALP
+wa-2021,Albany,3,PURCELL Barry,'t HART Ian,4.0,SAP,CHR
+wa-2021,Albany,3,PURCELL Barry,BAESJOU Delma,11.0,SAP,NAT
+wa-2021,Albany,4,DODSON Malcolm,MADEO Sandra,31.0,LDP,X_NMV
+wa-2021,Albany,4,DODSON Malcolm,LOUDEN Karrie,15.0,LDP,SFF
+wa-2021,Albany,4,DODSON Malcolm,LEARY Scott,61.0,LDP,LIB
+wa-2021,Albany,4,DODSON Malcolm,CULL Caroline,9.0,LDP,LCP
+wa-2021,Albany,4,DODSON Malcolm,KINSELLA Michelle,10.0,LDP,ONP
+wa-2021,Albany,4,DODSON Malcolm,GILMOUR Nelson,5.0,LDP,GRN
+wa-2021,Albany,4,DODSON Malcolm,STEPHENS Rebecca,26.0,LDP,ALP
+wa-2021,Albany,4,DODSON Malcolm,'t HART Ian,4.0,LDP,CHR
+wa-2021,Albany,4,DODSON Malcolm,BAESJOU Delma,21.0,LDP,NAT
+wa-2021,Albany,5,MADEO Sandra,LOUDEN Karrie,134.0,X_NMV,SFF
+wa-2021,Albany,5,MADEO Sandra,LEARY Scott,32.0,X_NMV,LIB
+wa-2021,Albany,5,MADEO Sandra,CULL Caroline,54.0,X_NMV,LCP
+wa-2021,Albany,5,MADEO Sandra,KINSELLA Michelle,37.0,X_NMV,ONP
+wa-2021,Albany,5,MADEO Sandra,GILMOUR Nelson,30.0,X_NMV,GRN
+wa-2021,Albany,5,MADEO Sandra,STEPHENS Rebecca,30.0,X_NMV,ALP
+wa-2021,Albany,5,MADEO Sandra,'t HART Ian,30.0,X_NMV,CHR
+wa-2021,Albany,5,MADEO Sandra,BAESJOU Delma,20.0,X_NMV,NAT
+wa-2021,Albany,5,MADEO Sandra,Exhausted,9.0,X_NMV,EXH
+wa-2021,Albany,6,CULL Caroline,LOUDEN Karrie,93.0,LCP,SFF
+wa-2021,Albany,6,CULL Caroline,LEARY Scott,35.0,LCP,LIB
+wa-2021,Albany,6,CULL Caroline,KINSELLA Michelle,58.0,LCP,ONP
+wa-2021,Albany,6,CULL Caroline,GILMOUR Nelson,139.0,LCP,GRN
+wa-2021,Albany,6,CULL Caroline,STEPHENS Rebecca,139.0,LCP,ALP
+wa-2021,Albany,6,CULL Caroline,'t HART Ian,15.0,LCP,CHR
+wa-2021,Albany,6,CULL Caroline,BAESJOU Delma,24.0,LCP,NAT
+wa-2021,Albany,6,CULL Caroline,Exhausted,2.0,LCP,EXH
+wa-2021,Albany,7,LOUDEN Karrie,LEARY Scott,218.0,SFF,LIB
+wa-2021,Albany,7,LOUDEN Karrie,KINSELLA Michelle,159.0,SFF,ONP
+wa-2021,Albany,7,LOUDEN Karrie,GILMOUR Nelson,60.0,SFF,GRN
+wa-2021,Albany,7,LOUDEN Karrie,STEPHENS Rebecca,164.0,SFF,ALP
+wa-2021,Albany,7,LOUDEN Karrie,'t HART Ian,29.0,SFF,CHR
+wa-2021,Albany,7,LOUDEN Karrie,BAESJOU Delma,84.0,SFF,NAT
+wa-2021,Albany,7,LOUDEN Karrie,Exhausted,3.0,SFF,EXH
+wa-2021,Albany,8,KINSELLA Michelle,LEARY Scott,144.0,ONP,LIB
+wa-2021,Albany,8,KINSELLA Michelle,GILMOUR Nelson,119.0,ONP,GRN
+wa-2021,Albany,8,KINSELLA Michelle,STEPHENS Rebecca,196.0,ONP,ALP
+wa-2021,Albany,8,KINSELLA Michelle,'t HART Ian,252.0,ONP,CHR
+wa-2021,Albany,8,KINSELLA Michelle,BAESJOU Delma,162.0,ONP,NAT
+wa-2021,Albany,8,KINSELLA Michelle,Exhausted,4.0,ONP,EXH
+wa-2021,Albany,9,'t HART Ian,LEARY Scott,1073.0,CHR,LIB
+wa-2021,Albany,9,'t HART Ian,GILMOUR Nelson,51.0,CHR,GRN
+wa-2021,Albany,9,'t HART Ian,STEPHENS Rebecca,148.0,CHR,ALP
+wa-2021,Albany,9,'t HART Ian,BAESJOU Delma,305.0,CHR,NAT
+wa-2021,Albany,9,'t HART Ian,Exhausted,4.0,CHR,EXH
+wa-2021,Albany,10,GILMOUR Nelson,LEARY Scott,152.0,GRN,LIB
+wa-2021,Albany,10,GILMOUR Nelson,STEPHENS Rebecca,1319.0,GRN,ALP
+wa-2021,Albany,10,GILMOUR Nelson,BAESJOU Delma,281.0,GRN,NAT
+wa-2021,Albany,10,GILMOUR Nelson,Exhausted,1.0,GRN,EXH
+wa-2021,Albany,11,BAESJOU Delma,LEARY Scott,2463.0,NAT,LIB
+wa-2021,Albany,11,BAESJOU Delma,STEPHENS Rebecca,925.0,NAT,ALP
+wa-2021,Albany,11,BAESJOU Delma,Exhausted,3.0,NAT,EXH
+wa-2021,Armadale,2,MATHEW Eby,CLARKE Blake,34.0,X_W,X_WAP
+wa-2021,Armadale,2,MATHEW Eby,KLEYN Arthur,8.0,X_W,CHR
+wa-2021,Armadale,2,MATHEW Eby,CARR Jayden,19.0,X_W,ONP
+wa-2021,Armadale,2,MATHEW Eby,ARUMUGAM Mahesh,17.0,X_W,LIB
+wa-2021,Armadale,2,MATHEW Eby,BUTI Tony,44.0,X_W,ALP
+wa-2021,Armadale,2,MATHEW Eby,OPENSHAW Jessica,18.0,X_W,GRN
+wa-2021,Armadale,2,MATHEW Eby,MOODY Lisa,29.0,X_W,X_NMV
+wa-2021,Armadale,2,MATHEW Eby,Exhausted,2.0,X_W,EXH
+wa-2021,Armadale,3,MOODY Lisa,CLARKE Blake,61.0,X_NMV,X_WAP
+wa-2021,Armadale,3,MOODY Lisa,KLEYN Arthur,55.0,X_NMV,CHR
+wa-2021,Armadale,3,MOODY Lisa,CARR Jayden,96.0,X_NMV,ONP
+wa-2021,Armadale,3,MOODY Lisa,ARUMUGAM Mahesh,25.0,X_NMV,LIB
+wa-2021,Armadale,3,MOODY Lisa,BUTI Tony,126.0,X_NMV,ALP
+wa-2021,Armadale,3,MOODY Lisa,OPENSHAW Jessica,82.0,X_NMV,GRN
+wa-2021,Armadale,3,MOODY Lisa,Exhausted,1.0,X_NMV,EXH
+wa-2021,Armadale,4,CLARKE Blake,KLEYN Arthur,221.0,X_WAP,CHR
+wa-2021,Armadale,4,CLARKE Blake,CARR Jayden,176.0,X_WAP,ONP
+wa-2021,Armadale,4,CLARKE Blake,ARUMUGAM Mahesh,94.0,X_WAP,LIB
+wa-2021,Armadale,4,CLARKE Blake,BUTI Tony,192.0,X_WAP,ALP
+wa-2021,Armadale,4,CLARKE Blake,OPENSHAW Jessica,55.0,X_WAP,GRN
+wa-2021,Armadale,4,CLARKE Blake,Exhausted,6.0,X_WAP,EXH
+wa-2021,Armadale,5,CARR Jayden,KLEYN Arthur,298.0,ONP,CHR
+wa-2021,Armadale,5,CARR Jayden,ARUMUGAM Mahesh,216.0,ONP,LIB
+wa-2021,Armadale,5,CARR Jayden,BUTI Tony,342.0,ONP,ALP
+wa-2021,Armadale,5,CARR Jayden,OPENSHAW Jessica,117.0,ONP,GRN
+wa-2021,Armadale,6,OPENSHAW Jessica,KLEYN Arthur,168.0,GRN,CHR
+wa-2021,Armadale,6,OPENSHAW Jessica,ARUMUGAM Mahesh,142.0,GRN,LIB
+wa-2021,Armadale,6,OPENSHAW Jessica,BUTI Tony,1095.0,GRN,ALP
+wa-2021,Armadale,6,OPENSHAW Jessica,Exhausted,2.0,GRN,EXH
+wa-2021,Armadale,7,KLEYN Arthur,ARUMUGAM Mahesh,1244.0,CHR,LIB
+wa-2021,Armadale,7,KLEYN Arthur,BUTI Tony,926.0,CHR,ALP
+wa-2021,Armadale,7,KLEYN Arthur,Exhausted,4.0,CHR,EXH
+wa-2021,Balcatta,2,STALTARI Domenic,COLETTA Damian,29.0,X_W,LDP
+wa-2021,Balcatta,2,STALTARI Domenic,EVANS Wayne,50.0,X_W,LIB
+wa-2021,Balcatta,2,STALTARI Domenic,GUINERY Benedict,39.0,X_W,GRN
+wa-2021,Balcatta,2,STALTARI Domenic,MICHAEL David,71.0,X_W,ALP
+wa-2021,Balcatta,2,STALTARI Domenic,THORNTON Daniel Robert,33.0,X_W,X_NMV
+wa-2021,Balcatta,2,STALTARI Domenic,ANDERSON Rose,14.0,X_W,CHR
+wa-2021,Balcatta,2,STALTARI Domenic,Exhausted,2.0,X_W,EXH
+wa-2021,Balcatta,3,THORNTON Daniel Robert,COLETTA Damian,35.0,X_NMV,LDP
+wa-2021,Balcatta,3,THORNTON Daniel Robert,EVANS Wayne,63.0,X_NMV,LIB
+wa-2021,Balcatta,3,THORNTON Daniel Robert,GUINERY Benedict,114.0,X_NMV,GRN
+wa-2021,Balcatta,3,THORNTON Daniel Robert,MICHAEL David,127.0,X_NMV,ALP
+wa-2021,Balcatta,3,THORNTON Daniel Robert,ANDERSON Rose,146.0,X_NMV,CHR
+wa-2021,Balcatta,3,THORNTON Daniel Robert,Exhausted,1.0,X_NMV,EXH
+wa-2021,Balcatta,4,COLETTA Damian,EVANS Wayne,371.0,LDP,LIB
+wa-2021,Balcatta,4,COLETTA Damian,GUINERY Benedict,44.0,LDP,GRN
+wa-2021,Balcatta,4,COLETTA Damian,MICHAEL David,79.0,LDP,ALP
+wa-2021,Balcatta,4,COLETTA Damian,ANDERSON Rose,49.0,LDP,CHR
+wa-2021,Balcatta,4,COLETTA Damian,Exhausted,10.0,LDP,EXH
+wa-2021,Balcatta,5,ANDERSON Rose,EVANS Wayne,444.0,CHR,LIB
+wa-2021,Balcatta,5,ANDERSON Rose,GUINERY Benedict,100.0,CHR,GRN
+wa-2021,Balcatta,5,ANDERSON Rose,MICHAEL David,168.0,CHR,ALP
+wa-2021,Balcatta,5,ANDERSON Rose,Exhausted,1.0,CHR,EXH
+wa-2021,Balcatta,6,GUINERY Benedict,EVANS Wayne,365.0,GRN,LIB
+wa-2021,Balcatta,6,GUINERY Benedict,MICHAEL David,1748.0,GRN,ALP
+wa-2021,Balcatta,6,GUINERY Benedict,Exhausted,2.0,GRN,EXH
+wa-2021,Baldivis,2,McLERNON Brianna Eden,TOKAJI Andrea,34.0,X_W,IND
+wa-2021,Baldivis,2,McLERNON Brianna Eden,DERRICK Luke,19.0,X_W,LIB
+wa-2021,Baldivis,2,McLERNON Brianna Eden,RIZZO Chaz,19.0,X_W,X_NMV
+wa-2021,Baldivis,2,McLERNON Brianna Eden,SUTER Martin,21.0,X_W,ONP
+wa-2021,Baldivis,2,McLERNON Brianna Eden,MARSHALL David,7.0,X_W,LDP
+wa-2021,Baldivis,2,McLERNON Brianna Eden,FREEMAN Jody,8.0,X_W,GRN
+wa-2021,Baldivis,2,McLERNON Brianna Eden,WHITBY Reece,41.0,X_W,ALP
+wa-2021,Baldivis,3,MARSHALL David,TOKAJI Andrea,53.0,LDP,IND
+wa-2021,Baldivis,3,MARSHALL David,DERRICK Luke,109.0,LDP,LIB
+wa-2021,Baldivis,3,MARSHALL David,RIZZO Chaz,21.0,LDP,X_NMV
+wa-2021,Baldivis,3,MARSHALL David,SUTER Martin,46.0,LDP,ONP
+wa-2021,Baldivis,3,MARSHALL David,FREEMAN Jody,33.0,LDP,GRN
+wa-2021,Baldivis,3,MARSHALL David,WHITBY Reece,66.0,LDP,ALP
+wa-2021,Baldivis,4,RIZZO Chaz,TOKAJI Andrea,96.0,X_NMV,IND
+wa-2021,Baldivis,4,RIZZO Chaz,DERRICK Luke,46.0,X_NMV,LIB
+wa-2021,Baldivis,4,RIZZO Chaz,SUTER Martin,103.0,X_NMV,ONP
+wa-2021,Baldivis,4,RIZZO Chaz,FREEMAN Jody,44.0,X_NMV,GRN
+wa-2021,Baldivis,4,RIZZO Chaz,WHITBY Reece,82.0,X_NMV,ALP
+wa-2021,Baldivis,4,RIZZO Chaz,Exhausted,2.0,X_NMV,EXH
+wa-2021,Baldivis,5,SUTER Martin,TOKAJI Andrea,198.0,ONP,IND
+wa-2021,Baldivis,5,SUTER Martin,DERRICK Luke,192.0,ONP,LIB
+wa-2021,Baldivis,5,SUTER Martin,FREEMAN Jody,64.0,ONP,GRN
+wa-2021,Baldivis,5,SUTER Martin,WHITBY Reece,180.0,ONP,ALP
+wa-2021,Baldivis,6,FREEMAN Jody,TOKAJI Andrea,164.0,GRN,IND
+wa-2021,Baldivis,6,FREEMAN Jody,DERRICK Luke,126.0,GRN,LIB
+wa-2021,Baldivis,6,FREEMAN Jody,WHITBY Reece,894.0,GRN,ALP
+wa-2021,Baldivis,6,FREEMAN Jody,Exhausted,2.0,GRN,EXH
+wa-2021,Baldivis,7,TOKAJI Andrea,DERRICK Luke,855.0,IND,LIB
+wa-2021,Baldivis,7,TOKAJI Andrea,WHITBY Reece,620.0,IND,ALP
+wa-2021,Baldivis,7,TOKAJI Andrea,Exhausted,2.0,IND,EXH
+wa-2021,Bassendean,2,MARTIN Peter,ERCEG Leni,41.0,X_W,X_NMV
+wa-2021,Bassendean,2,MARTIN Peter,ADENIYI Felicia,56.0,X_W,LIB
+wa-2021,Bassendean,2,MARTIN Peter,PALLISTER Lesley,41.0,X_W,ONP
+wa-2021,Bassendean,2,MARTIN Peter,PRATT Charles,36.0,X_W,GRN
+wa-2021,Bassendean,2,MARTIN Peter,KELLY Dave,72.0,X_W,ALP
+wa-2021,Bassendean,2,MARTIN Peter,POWELL Dean,18.0,X_W,CHR
+wa-2021,Bassendean,2,MARTIN Peter,Exhausted,1.0,X_W,EXH
+wa-2021,Bassendean,3,PALLISTER Lesley,ERCEG Leni,91.0,ONP,X_NMV
+wa-2021,Bassendean,3,PALLISTER Lesley,ADENIYI Felicia,167.0,ONP,LIB
+wa-2021,Bassendean,3,PALLISTER Lesley,PRATT Charles,59.0,ONP,GRN
+wa-2021,Bassendean,3,PALLISTER Lesley,KELLY Dave,153.0,ONP,ALP
+wa-2021,Bassendean,3,PALLISTER Lesley,POWELL Dean,57.0,ONP,CHR
+wa-2021,Bassendean,4,POWELL Dean,ERCEG Leni,110.0,CHR,X_NMV
+wa-2021,Bassendean,4,POWELL Dean,ADENIYI Felicia,381.0,CHR,LIB
+wa-2021,Bassendean,4,POWELL Dean,PRATT Charles,81.0,CHR,GRN
+wa-2021,Bassendean,4,POWELL Dean,KELLY Dave,208.0,CHR,ALP
+wa-2021,Bassendean,5,ERCEG Leni,ADENIYI Felicia,489.0,X_NMV,LIB
+wa-2021,Bassendean,5,ERCEG Leni,PRATT Charles,201.0,X_NMV,GRN
+wa-2021,Bassendean,5,ERCEG Leni,KELLY Dave,225.0,X_NMV,ALP
+wa-2021,Bassendean,5,ERCEG Leni,Exhausted,12.0,X_NMV,EXH
+wa-2021,Bassendean,6,PRATT Charles,ADENIYI Felicia,405.0,GRN,LIB
+wa-2021,Bassendean,6,PRATT Charles,KELLY Dave,1975.0,GRN,ALP
+wa-2021,Bassendean,6,PRATT Charles,Exhausted,2.0,GRN,EXH
+wa-2021,Bateman,2,MASON Barry,McKENZIE-BROWN Fiona Irene,13.0,ONP,CHR
+wa-2021,Bateman,2,MASON Barry,ABDUL RAZAK Adam,10.0,ONP,GRN
+wa-2021,Bateman,2,MASON Barry,GIDDENS Kim,24.0,ONP,ALP
+wa-2021,Bateman,2,MASON Barry,WOODALL Matt,54.0,ONP,LIB
+wa-2021,Bateman,2,MASON Barry,TSENG Christina,28.0,ONP,X_NMV
+wa-2021,Bateman,2,MASON Barry,LEECH Gregory,13.0,ONP,LDP
+wa-2021,Bateman,2,MASON Barry,KEPERT Steve,24.0,ONP,IND
+wa-2021,Bateman,2,MASON Barry,KOUL Bill,47.0,ONP,X_WAP
+wa-2021,Bateman,3,KOUL Bill,McKENZIE-BROWN Fiona Irene,20.0,X_WAP,CHR
+wa-2021,Bateman,3,KOUL Bill,ABDUL RAZAK Adam,19.0,X_WAP,GRN
+wa-2021,Bateman,3,KOUL Bill,GIDDENS Kim,68.0,X_WAP,ALP
+wa-2021,Bateman,3,KOUL Bill,WOODALL Matt,48.0,X_WAP,LIB
+wa-2021,Bateman,3,KOUL Bill,TSENG Christina,17.0,X_WAP,X_NMV
+wa-2021,Bateman,3,KOUL Bill,LEECH Gregory,19.0,X_WAP,LDP
+wa-2021,Bateman,3,KOUL Bill,KEPERT Steve,84.0,X_WAP,IND
+wa-2021,Bateman,4,TSENG Christina,McKENZIE-BROWN Fiona Irene,71.0,X_NMV,CHR
+wa-2021,Bateman,4,TSENG Christina,ABDUL RAZAK Adam,64.0,X_NMV,GRN
+wa-2021,Bateman,4,TSENG Christina,GIDDENS Kim,56.0,X_NMV,ALP
+wa-2021,Bateman,4,TSENG Christina,WOODALL Matt,57.0,X_NMV,LIB
+wa-2021,Bateman,4,TSENG Christina,LEECH Gregory,25.0,X_NMV,LDP
+wa-2021,Bateman,4,TSENG Christina,KEPERT Steve,86.0,X_NMV,IND
+wa-2021,Bateman,5,LEECH Gregory,McKENZIE-BROWN Fiona Irene,105.0,LDP,CHR
+wa-2021,Bateman,5,LEECH Gregory,ABDUL RAZAK Adam,21.0,LDP,GRN
+wa-2021,Bateman,5,LEECH Gregory,GIDDENS Kim,51.0,LDP,ALP
+wa-2021,Bateman,5,LEECH Gregory,WOODALL Matt,160.0,LDP,LIB
+wa-2021,Bateman,5,LEECH Gregory,KEPERT Steve,60.0,LDP,IND
+wa-2021,Bateman,5,LEECH Gregory,Exhausted,1.0,LDP,EXH
+wa-2021,Bateman,6,McKENZIE-BROWN Fiona Irene,ABDUL RAZAK Adam,152.0,CHR,GRN
+wa-2021,Bateman,6,McKENZIE-BROWN Fiona Irene,GIDDENS Kim,173.0,CHR,ALP
+wa-2021,Bateman,6,McKENZIE-BROWN Fiona Irene,WOODALL Matt,542.0,CHR,LIB
+wa-2021,Bateman,6,McKENZIE-BROWN Fiona Irene,KEPERT Steve,110.0,CHR,IND
+wa-2021,Bateman,6,McKENZIE-BROWN Fiona Irene,Exhausted,6.0,CHR,EXH
+wa-2021,Bateman,7,KEPERT Steve,ABDUL RAZAK Adam,242.0,IND,GRN
+wa-2021,Bateman,7,KEPERT Steve,GIDDENS Kim,527.0,IND,ALP
+wa-2021,Bateman,7,KEPERT Steve,WOODALL Matt,448.0,IND,LIB
+wa-2021,Bateman,7,KEPERT Steve,Exhausted,3.0,IND,EXH
+wa-2021,Bateman,8,ABDUL RAZAK Adam,GIDDENS Kim,1958.0,GRN,ALP
+wa-2021,Bateman,8,ABDUL RAZAK Adam,WOODALL Matt,365.0,GRN,LIB
+wa-2021,Bicton,2,KINGSFORD Deonne,GRAHAM Jonathon,26.0,CHR,ONP
+wa-2021,Bicton,2,KINGSFORD Deonne,ROBINS Nicole,80.0,CHR,LIB
+wa-2021,Bicton,2,KINGSFORD Deonne,PRINZ Michael,13.0,CHR,LDP
+wa-2021,Bicton,2,KINGSFORD Deonne,OTNESS Annie Hill,14.0,CHR,GRN
+wa-2021,Bicton,2,KINGSFORD Deonne,HIRSBRUNNER Silvia,16.0,CHR,X_NMV
+wa-2021,Bicton,2,KINGSFORD Deonne,O'MALLEY Lisa,34.0,CHR,ALP
+wa-2021,Bicton,2,KINGSFORD Deonne,Exhausted,2.0,CHR,EXH
+wa-2021,Bicton,3,PRINZ Michael,GRAHAM Jonathon,29.0,LDP,ONP
+wa-2021,Bicton,3,PRINZ Michael,ROBINS Nicole,124.0,LDP,LIB
+wa-2021,Bicton,3,PRINZ Michael,OTNESS Annie Hill,26.0,LDP,GRN
+wa-2021,Bicton,3,PRINZ Michael,HIRSBRUNNER Silvia,42.0,LDP,X_NMV
+wa-2021,Bicton,3,PRINZ Michael,O'MALLEY Lisa,59.0,LDP,ALP
+wa-2021,Bicton,4,HIRSBRUNNER Silvia,GRAHAM Jonathon,135.0,X_NMV,ONP
+wa-2021,Bicton,4,HIRSBRUNNER Silvia,ROBINS Nicole,41.0,X_NMV,LIB
+wa-2021,Bicton,4,HIRSBRUNNER Silvia,OTNESS Annie Hill,79.0,X_NMV,GRN
+wa-2021,Bicton,4,HIRSBRUNNER Silvia,O'MALLEY Lisa,96.0,X_NMV,ALP
+wa-2021,Bicton,5,GRAHAM Jonathon,ROBINS Nicole,284.0,ONP,LIB
+wa-2021,Bicton,5,GRAHAM Jonathon,OTNESS Annie Hill,87.0,ONP,GRN
+wa-2021,Bicton,5,GRAHAM Jonathon,O'MALLEY Lisa,115.0,ONP,ALP
+wa-2021,Bicton,5,GRAHAM Jonathon,Exhausted,1.0,ONP,EXH
+wa-2021,Bicton,6,OTNESS Annie Hill,ROBINS Nicole,378.0,GRN,LIB
+wa-2021,Bicton,6,OTNESS Annie Hill,O'MALLEY Lisa,2276.0,GRN,ALP
+wa-2021,Bicton,6,OTNESS Annie Hill,Exhausted,2.0,GRN,EXH
+wa-2021,Belmont,2,BOKSMATI Mohammed,ROWE Cassie,63.0,X_W,ALP
+wa-2021,Belmont,2,BOKSMATI Mohammed,ROSE Shaun,30.0,X_W,X_NMV
+wa-2021,Belmont,2,BOKSMATI Mohammed,FENECH Chris,22.0,X_W,ONP
+wa-2021,Belmont,2,BOKSMATI Mohammed,NAIDU Nitasha,14.0,X_W,CHR
+wa-2021,Belmont,2,BOKSMATI Mohammed,BUTLER Charlotte,28.0,X_W,LIB
+wa-2021,Belmont,2,BOKSMATI Mohammed,UINK Clint,17.0,X_W,GRN
+wa-2021,Belmont,3,ROSE Shaun,ROWE Cassie,122.0,X_NMV,ALP
+wa-2021,Belmont,3,ROSE Shaun,FENECH Chris,112.0,X_NMV,ONP
+wa-2021,Belmont,3,ROSE Shaun,NAIDU Nitasha,49.0,X_NMV,CHR
+wa-2021,Belmont,3,ROSE Shaun,BUTLER Charlotte,49.0,X_NMV,LIB
+wa-2021,Belmont,3,ROSE Shaun,UINK Clint,71.0,X_NMV,GRN
+wa-2021,Belmont,3,ROSE Shaun,Exhausted,1.0,X_NMV,EXH
+wa-2021,Belmont,4,FENECH Chris,ROWE Cassie,176.0,ONP,ALP
+wa-2021,Belmont,4,FENECH Chris,NAIDU Nitasha,171.0,ONP,CHR
+wa-2021,Belmont,4,FENECH Chris,BUTLER Charlotte,164.0,ONP,LIB
+wa-2021,Belmont,4,FENECH Chris,UINK Clint,54.0,ONP,GRN
+wa-2021,Belmont,4,FENECH Chris,Exhausted,2.0,ONP,EXH
+wa-2021,Belmont,5,NAIDU Nitasha,ROWE Cassie,213.0,CHR,ALP
+wa-2021,Belmont,5,NAIDU Nitasha,BUTLER Charlotte,481.0,CHR,LIB
+wa-2021,Belmont,5,NAIDU Nitasha,UINK Clint,105.0,CHR,GRN
+wa-2021,Belmont,5,NAIDU Nitasha,Exhausted,1.0,CHR,EXH
+wa-2021,Belmont,6,UINK Clint,ROWE Cassie,1499.0,GRN,ALP
+wa-2021,Belmont,6,UINK Clint,BUTLER Charlotte,397.0,GRN,LIB
+wa-2021,Belmont,6,UINK Clint,Exhausted,2.0,GRN,EXH
+wa-2021,Burns Beach,2,ROSENGRAVE Peter,FOLKARD Mark,70.0,X_W,ALP
+wa-2021,Burns Beach,2,ROSENGRAVE Peter,MARCHANT Louis,29.0,X_W,GRN
+wa-2021,Burns Beach,2,ROSENGRAVE Peter,BOTHA Trish,54.0,X_W,LIB
+wa-2021,Burns Beach,2,ROSENGRAVE Peter,CAMPBELL Meredith,46.0,X_W,X_NMV
+wa-2021,Burns Beach,2,ROSENGRAVE Peter,OFFEREINS Graeme,23.0,X_W,CHR
+wa-2021,Burns Beach,2,ROSENGRAVE Peter,Exhausted,1.0,X_W,EXH
+wa-2021,Burns Beach,3,CAMPBELL Meredith,FOLKARD Mark,136.0,X_NMV,ALP
+wa-2021,Burns Beach,3,CAMPBELL Meredith,MARCHANT Louis,157.0,X_NMV,GRN
+wa-2021,Burns Beach,3,CAMPBELL Meredith,BOTHA Trish,113.0,X_NMV,LIB
+wa-2021,Burns Beach,3,CAMPBELL Meredith,OFFEREINS Graeme,223.0,X_NMV,CHR
+wa-2021,Burns Beach,3,CAMPBELL Meredith,Exhausted,2.0,X_NMV,EXH
+wa-2021,Burns Beach,4,OFFEREINS Graeme,FOLKARD Mark,149.0,CHR,ALP
+wa-2021,Burns Beach,4,OFFEREINS Graeme,MARCHANT Louis,128.0,CHR,GRN
+wa-2021,Burns Beach,4,OFFEREINS Graeme,BOTHA Trish,592.0,CHR,LIB
+wa-2021,Burns Beach,4,OFFEREINS Graeme,Exhausted,2.0,CHR,EXH
+wa-2021,Burns Beach,5,MARCHANT Louis,FOLKARD Mark,1301.0,GRN,ALP
+wa-2021,Burns Beach,5,MARCHANT Louis,BOTHA Trish,365.0,GRN,LIB
+wa-2021,Burns Beach,5,MARCHANT Louis,Exhausted,3.0,GRN,EXH
+wa-2021,Butler,2,BAWA Raj,QUIGLEY John,65.0,X_W,ALP
+wa-2021,Butler,2,BAWA Raj,AITKEN Linda,44.0,X_W,LIB
+wa-2021,Butler,2,BAWA Raj,KAMARA Elizabeth,23.0,X_W,GRN
+wa-2021,Butler,2,BAWA Raj,BECKER P,30.0,X_W,X_NMV
+wa-2021,Butler,2,BAWA Raj,HILDEBRANDT Katrina,16.0,X_W,CHR
+wa-2021,Butler,3,HILDEBRANDT Katrina,QUIGLEY John,102.0,CHR,ALP
+wa-2021,Butler,3,HILDEBRANDT Katrina,AITKEN Linda,298.0,CHR,LIB
+wa-2021,Butler,3,HILDEBRANDT Katrina,KAMARA Elizabeth,24.0,CHR,GRN
+wa-2021,Butler,3,HILDEBRANDT Katrina,BECKER P,134.0,CHR,X_NMV
+wa-2021,Butler,4,BECKER P,QUIGLEY John,237.0,X_NMV,ALP
+wa-2021,Butler,4,BECKER P,AITKEN Linda,270.0,X_NMV,LIB
+wa-2021,Butler,4,BECKER P,KAMARA Elizabeth,266.0,X_NMV,GRN
+wa-2021,Butler,5,KAMARA Elizabeth,QUIGLEY John,958.0,GRN,ALP
+wa-2021,Butler,5,KAMARA Elizabeth,AITKEN Linda,392.0,GRN,LIB
+wa-2021,Bunbury,2,ACATINCA Dan,JONES Gail,11.0,X_W,ONP
+wa-2021,Bunbury,2,ACATINCA Dan,HIBBERT Kelly,4.0,X_W,LCP
+wa-2021,Bunbury,2,ACATINCA Dan,HASTIE Shane,3.0,X_W,SFF
+wa-2021,Bunbury,2,ACATINCA Dan,MERRIFIELD Anthony,5.0,X_W,X_NMV
+wa-2021,Bunbury,2,ACATINCA Dan,NOONAN Kieran,4.0,X_W,X_WAP
+wa-2021,Bunbury,2,ACATINCA Dan,MINSON James,1.0,X_W,SAP
+wa-2021,Bunbury,2,ACATINCA Dan,PUNCH Don,9.0,X_W,ALP
+wa-2021,Bunbury,2,ACATINCA Dan,PERKS Patricia,2.0,X_W,GRN
+wa-2021,Bunbury,2,ACATINCA Dan,FOREMAN Matt,3.0,X_W,LIB
+wa-2021,Bunbury,2,ACATINCA Dan,DOWN Codee-Lee,1.0,X_W,NAT
+wa-2021,Bunbury,3,MINSON James,JONES Gail,9.0,SAP,ONP
+wa-2021,Bunbury,3,MINSON James,HIBBERT Kelly,31.0,SAP,LCP
+wa-2021,Bunbury,3,MINSON James,HASTIE Shane,9.0,SAP,SFF
+wa-2021,Bunbury,3,MINSON James,MERRIFIELD Anthony,11.0,SAP,X_NMV
+wa-2021,Bunbury,3,MINSON James,NOONAN Kieran,18.0,SAP,X_WAP
+wa-2021,Bunbury,3,MINSON James,PUNCH Don,33.0,SAP,ALP
+wa-2021,Bunbury,3,MINSON James,PERKS Patricia,27.0,SAP,GRN
+wa-2021,Bunbury,3,MINSON James,FOREMAN Matt,11.0,SAP,LIB
+wa-2021,Bunbury,3,MINSON James,DOWN Codee-Lee,10.0,SAP,NAT
+wa-2021,Bunbury,4,MERRIFIELD Anthony,JONES Gail,98.0,X_NMV,ONP
+wa-2021,Bunbury,4,MERRIFIELD Anthony,HIBBERT Kelly,90.0,X_NMV,LCP
+wa-2021,Bunbury,4,MERRIFIELD Anthony,HASTIE Shane,36.0,X_NMV,SFF
+wa-2021,Bunbury,4,MERRIFIELD Anthony,NOONAN Kieran,34.0,X_NMV,X_WAP
+wa-2021,Bunbury,4,MERRIFIELD Anthony,PUNCH Don,37.0,X_NMV,ALP
+wa-2021,Bunbury,4,MERRIFIELD Anthony,PERKS Patricia,29.0,X_NMV,GRN
+wa-2021,Bunbury,4,MERRIFIELD Anthony,FOREMAN Matt,27.0,X_NMV,LIB
+wa-2021,Bunbury,4,MERRIFIELD Anthony,DOWN Codee-Lee,12.0,X_NMV,NAT
+wa-2021,Bunbury,4,MERRIFIELD Anthony,Exhausted,1.0,X_NMV,EXH
+wa-2021,Bunbury,5,NOONAN Kieran,JONES Gail,43.0,X_WAP,ONP
+wa-2021,Bunbury,5,NOONAN Kieran,HIBBERT Kelly,33.0,X_WAP,LCP
+wa-2021,Bunbury,5,NOONAN Kieran,HASTIE Shane,100.0,X_WAP,SFF
+wa-2021,Bunbury,5,NOONAN Kieran,PUNCH Don,128.0,X_WAP,ALP
+wa-2021,Bunbury,5,NOONAN Kieran,PERKS Patricia,52.0,X_WAP,GRN
+wa-2021,Bunbury,5,NOONAN Kieran,FOREMAN Matt,58.0,X_WAP,LIB
+wa-2021,Bunbury,5,NOONAN Kieran,DOWN Codee-Lee,56.0,X_WAP,NAT
+wa-2021,Bunbury,5,NOONAN Kieran,Exhausted,1.0,X_WAP,EXH
+wa-2021,Bunbury,6,HIBBERT Kelly,JONES Gail,116.0,LCP,ONP
+wa-2021,Bunbury,6,HIBBERT Kelly,HASTIE Shane,244.0,LCP,SFF
+wa-2021,Bunbury,6,HIBBERT Kelly,PUNCH Don,180.0,LCP,ALP
+wa-2021,Bunbury,6,HIBBERT Kelly,PERKS Patricia,131.0,LCP,GRN
+wa-2021,Bunbury,6,HIBBERT Kelly,FOREMAN Matt,40.0,LCP,LIB
+wa-2021,Bunbury,6,HIBBERT Kelly,DOWN Codee-Lee,28.0,LCP,NAT
+wa-2021,Bunbury,6,HIBBERT Kelly,Exhausted,1.0,LCP,EXH
+wa-2021,Bunbury,7,JONES Gail,HASTIE Shane,536.0,ONP,SFF
+wa-2021,Bunbury,7,JONES Gail,PUNCH Don,147.0,ONP,ALP
+wa-2021,Bunbury,7,JONES Gail,PERKS Patricia,54.0,ONP,GRN
+wa-2021,Bunbury,7,JONES Gail,FOREMAN Matt,96.0,ONP,LIB
+wa-2021,Bunbury,7,JONES Gail,DOWN Codee-Lee,94.0,ONP,NAT
+wa-2021,Bunbury,7,JONES Gail,Exhausted,6.0,ONP,EXH
+wa-2021,Bunbury,8,DOWN Codee-Lee,HASTIE Shane,139.0,NAT,SFF
+wa-2021,Bunbury,8,DOWN Codee-Lee,PUNCH Don,217.0,NAT,ALP
+wa-2021,Bunbury,8,DOWN Codee-Lee,PERKS Patricia,85.0,NAT,GRN
+wa-2021,Bunbury,8,DOWN Codee-Lee,FOREMAN Matt,840.0,NAT,LIB
+wa-2021,Bunbury,8,DOWN Codee-Lee,Exhausted,1.0,NAT,EXH
+wa-2021,Bunbury,9,PERKS Patricia,HASTIE Shane,204.0,GRN,SFF
+wa-2021,Bunbury,9,PERKS Patricia,PUNCH Don,1112.0,GRN,ALP
+wa-2021,Bunbury,9,PERKS Patricia,FOREMAN Matt,231.0,GRN,LIB
+wa-2021,Bunbury,9,PERKS Patricia,Exhausted,3.0,GRN,EXH
+wa-2021,Bunbury,10,HASTIE Shane,PUNCH Don,1076.0,SFF,ALP
+wa-2021,Bunbury,10,HASTIE Shane,FOREMAN Matt,809.0,SFF,LIB
+wa-2021,Bunbury,10,HASTIE Shane,Exhausted,1.0,SFF,EXH
+wa-2021,Cannington,2,CAHILL June,STAER Mark,37.0,X_NMV,CHR
+wa-2021,Cannington,2,CAHILL June,IRIKS Gabrielle,84.0,X_NMV,ONP
+wa-2021,Cannington,2,CAHILL June,HENDERSON Bruce,24.0,X_NMV,LIB
+wa-2021,Cannington,2,CAHILL June,CLARKE River,66.0,X_NMV,GRN
+wa-2021,Cannington,2,CAHILL June,ONDRA Eric,22.0,X_NMV,LDP
+wa-2021,Cannington,2,CAHILL June,JOHNSTON Bill,69.0,X_NMV,ALP
+wa-2021,Cannington,3,ONDRA Eric,STAER Mark,37.0,LDP,CHR
+wa-2021,Cannington,3,ONDRA Eric,IRIKS Gabrielle,34.0,LDP,ONP
+wa-2021,Cannington,3,ONDRA Eric,HENDERSON Bruce,106.0,LDP,LIB
+wa-2021,Cannington,3,ONDRA Eric,CLARKE River,43.0,LDP,GRN
+wa-2021,Cannington,3,ONDRA Eric,JOHNSTON Bill,105.0,LDP,ALP
+wa-2021,Cannington,3,ONDRA Eric,Exhausted,1.0,LDP,EXH
+wa-2021,Cannington,4,IRIKS Gabrielle,STAER Mark,152.0,ONP,CHR
+wa-2021,Cannington,4,IRIKS Gabrielle,HENDERSON Bruce,170.0,ONP,LIB
+wa-2021,Cannington,4,IRIKS Gabrielle,CLARKE River,62.0,ONP,GRN
+wa-2021,Cannington,4,IRIKS Gabrielle,JOHNSTON Bill,118.0,ONP,ALP
+wa-2021,Cannington,4,IRIKS Gabrielle,Exhausted,1.0,ONP,EXH
+wa-2021,Cannington,5,STAER Mark,HENDERSON Bruce,898.0,CHR,LIB
+wa-2021,Cannington,5,STAER Mark,CLARKE River,129.0,CHR,GRN
+wa-2021,Cannington,5,STAER Mark,JOHNSTON Bill,287.0,CHR,ALP
+wa-2021,Cannington,5,STAER Mark,Exhausted,4.0,CHR,EXH
+wa-2021,Cannington,6,CLARKE River,HENDERSON Bruce,339.0,GRN,LIB
+wa-2021,Cannington,6,CLARKE River,JOHNSTON Bill,1436.0,GRN,ALP
+wa-2021,Cannington,6,CLARKE River,Exhausted,1.0,GRN,EXH
+wa-2021,Carine,2,TRINGAS Marilyn,KRSTICEVIC Tony,66.0,X_W,LIB
+wa-2021,Carine,2,TRINGAS Marilyn,D'ALONZO Nicholas,38.0,X_W,GRN
+wa-2021,Carine,2,TRINGAS Marilyn,LILBURNE Paul,56.0,X_W,ALP
+wa-2021,Carine,2,TRINGAS Marilyn,COX A,37.0,X_W,X_NMV
+wa-2021,Carine,3,COX A,KRSTICEVIC Tony,224.0,X_NMV,LIB
+wa-2021,Carine,3,COX A,D'ALONZO Nicholas,172.0,X_NMV,GRN
+wa-2021,Carine,3,COX A,LILBURNE Paul,130.0,X_NMV,ALP
+wa-2021,Carine,3,COX A,Exhausted,1.0,X_NMV,EXH
+wa-2021,Carine,4,D'ALONZO Nicholas,KRSTICEVIC Tony,562.0,GRN,LIB
+wa-2021,Carine,4,D'ALONZO Nicholas,LILBURNE Paul,2016.0,GRN,ALP
+wa-2021,Carine,4,D'ALONZO Nicholas,Exhausted,1.0,GRN,EXH
+wa-2021,Central Wheatbelt,2,GOM Estelle,NELSON Michelle,10.0,X_W,ALP
+wa-2021,Central Wheatbelt,2,GOM Estelle,FORSTER Rob,7.0,X_W,LIB
+wa-2021,Central Wheatbelt,2,GOM Estelle,DAVIES Mia,22.0,X_W,NAT
+wa-2021,Central Wheatbelt,2,GOM Estelle,REID Shaun,9.0,X_W,ONP
+wa-2021,Central Wheatbelt,2,GOM Estelle,CAHILL Brendon,10.0,X_W,X_NMV
+wa-2021,Central Wheatbelt,2,GOM Estelle,SINGLETON Stuart,8.0,X_W,SFF
+wa-2021,Central Wheatbelt,2,GOM Estelle,NEWBURY Annabelle,3.0,X_W,GRN
+wa-2021,Central Wheatbelt,2,GOM Estelle,PEASE Dennis,1.0,X_W,CHR
+wa-2021,Central Wheatbelt,3,CAHILL Brendon,NELSON Michelle,24.0,X_NMV,ALP
+wa-2021,Central Wheatbelt,3,CAHILL Brendon,FORSTER Rob,10.0,X_NMV,LIB
+wa-2021,Central Wheatbelt,3,CAHILL Brendon,DAVIES Mia,14.0,X_NMV,NAT
+wa-2021,Central Wheatbelt,3,CAHILL Brendon,REID Shaun,66.0,X_NMV,ONP
+wa-2021,Central Wheatbelt,3,CAHILL Brendon,SINGLETON Stuart,49.0,X_NMV,SFF
+wa-2021,Central Wheatbelt,3,CAHILL Brendon,NEWBURY Annabelle,11.0,X_NMV,GRN
+wa-2021,Central Wheatbelt,3,CAHILL Brendon,PEASE Dennis,15.0,X_NMV,CHR
+wa-2021,Central Wheatbelt,4,NEWBURY Annabelle,NELSON Michelle,263.0,GRN,ALP
+wa-2021,Central Wheatbelt,4,NEWBURY Annabelle,FORSTER Rob,18.0,GRN,LIB
+wa-2021,Central Wheatbelt,4,NEWBURY Annabelle,DAVIES Mia,66.0,GRN,NAT
+wa-2021,Central Wheatbelt,4,NEWBURY Annabelle,REID Shaun,13.0,GRN,ONP
+wa-2021,Central Wheatbelt,4,NEWBURY Annabelle,SINGLETON Stuart,30.0,GRN,SFF
+wa-2021,Central Wheatbelt,4,NEWBURY Annabelle,PEASE Dennis,12.0,GRN,CHR
+wa-2021,Central Wheatbelt,5,PEASE Dennis,NELSON Michelle,44.0,CHR,ALP
+wa-2021,Central Wheatbelt,5,PEASE Dennis,FORSTER Rob,150.0,CHR,LIB
+wa-2021,Central Wheatbelt,5,PEASE Dennis,DAVIES Mia,123.0,CHR,NAT
+wa-2021,Central Wheatbelt,5,PEASE Dennis,REID Shaun,56.0,CHR,ONP
+wa-2021,Central Wheatbelt,5,PEASE Dennis,SINGLETON Stuart,80.0,CHR,SFF
+wa-2021,Central Wheatbelt,5,PEASE Dennis,Exhausted,2.0,CHR,EXH
+wa-2021,Central Wheatbelt,6,REID Shaun,NELSON Michelle,94.0,ONP,ALP
+wa-2021,Central Wheatbelt,6,REID Shaun,FORSTER Rob,60.0,ONP,LIB
+wa-2021,Central Wheatbelt,6,REID Shaun,DAVIES Mia,166.0,ONP,NAT
+wa-2021,Central Wheatbelt,6,REID Shaun,SINGLETON Stuart,229.0,ONP,SFF
+wa-2021,Central Wheatbelt,7,SINGLETON Stuart,NELSON Michelle,314.0,SFF,ALP
+wa-2021,Central Wheatbelt,7,SINGLETON Stuart,FORSTER Rob,194.0,SFF,LIB
+wa-2021,Central Wheatbelt,7,SINGLETON Stuart,DAVIES Mia,627.0,SFF,NAT
+wa-2021,Central Wheatbelt,8,FORSTER Rob,NELSON Michelle,417.0,LIB,ALP
+wa-2021,Central Wheatbelt,8,FORSTER Rob,DAVIES Mia,1782.0,LIB,NAT
+wa-2021,Central Wheatbelt,8,FORSTER Rob,Exhausted,2.0,LIB,EXH
+wa-2021,Churchlands,2,FARSALAS Alexandra,BIVOLTSIS Jim,28.0,X_W,IND
+wa-2021,Churchlands,2,FARSALAS Alexandra,TONKIN Christine,27.0,X_W,ALP
+wa-2021,Churchlands,2,FARSALAS Alexandra,TWISS Mark,17.0,X_W,GRN
+wa-2021,Churchlands,2,FARSALAS Alexandra,L'ESTRANGE Sean,40.0,X_W,LIB
+wa-2021,Churchlands,2,FARSALAS Alexandra,PEARCE L,17.0,X_W,X_NMV
+wa-2021,Churchlands,2,FARSALAS Alexandra,MORAN Ray,17.0,X_W,CHR
+wa-2021,Churchlands,3,PEARCE L,BIVOLTSIS Jim,66.0,X_NMV,IND
+wa-2021,Churchlands,3,PEARCE L,TONKIN Christine,47.0,X_NMV,ALP
+wa-2021,Churchlands,3,PEARCE L,TWISS Mark,70.0,X_NMV,GRN
+wa-2021,Churchlands,3,PEARCE L,L'ESTRANGE Sean,77.0,X_NMV,LIB
+wa-2021,Churchlands,3,PEARCE L,MORAN Ray,76.0,X_NMV,CHR
+wa-2021,Churchlands,3,PEARCE L,Exhausted,1.0,X_NMV,EXH
+wa-2021,Churchlands,4,MORAN Ray,BIVOLTSIS Jim,90.0,CHR,IND
+wa-2021,Churchlands,4,MORAN Ray,TONKIN Christine,55.0,CHR,ALP
+wa-2021,Churchlands,4,MORAN Ray,TWISS Mark,31.0,CHR,GRN
+wa-2021,Churchlands,4,MORAN Ray,L'ESTRANGE Sean,309.0,CHR,LIB
+wa-2021,Churchlands,4,MORAN Ray,Exhausted,2.0,CHR,EXH
+wa-2021,Churchlands,5,BIVOLTSIS Jim,TONKIN Christine,320.0,IND,ALP
+wa-2021,Churchlands,5,BIVOLTSIS Jim,TWISS Mark,184.0,IND,GRN
+wa-2021,Churchlands,5,BIVOLTSIS Jim,L'ESTRANGE Sean,393.0,IND,LIB
+wa-2021,Churchlands,5,BIVOLTSIS Jim,Exhausted,1.0,IND,EXH
+wa-2021,Churchlands,6,TWISS Mark,TONKIN Christine,2434.0,GRN,ALP
+wa-2021,Churchlands,6,TWISS Mark,L'ESTRANGE Sean,507.0,GRN,LIB
+wa-2021,Churchlands,6,TWISS Mark,Exhausted,1.0,GRN,EXH
+wa-2021,Cockburn,2,MURRAY Brian,BAKER Andrew,44.0,LDP,X_W
+wa-2021,Cockburn,2,MURRAY Brian,MULDER Owen,144.0,LDP,LIB
+wa-2021,Cockburn,2,MURRAY Brian,TAIMRE Elspeth,24.0,LDP,X_NMV
+wa-2021,Cockburn,2,MURRAY Brian,MIRONENKO Igor,47.0,LDP,ONP
+wa-2021,Cockburn,2,MURRAY Brian,SCAIFE David,79.0,LDP,ALP
+wa-2021,Cockburn,2,MURRAY Brian,SMITH Jesse,35.0,LDP,GRN
+wa-2021,Cockburn,2,MURRAY Brian,Exhausted,1.0,LDP,EXH
+wa-2021,Cockburn,3,BAKER Andrew,MULDER Owen,256.0,X_W,LIB
+wa-2021,Cockburn,3,BAKER Andrew,TAIMRE Elspeth,59.0,X_W,X_NMV
+wa-2021,Cockburn,3,BAKER Andrew,MIRONENKO Igor,38.0,X_W,ONP
+wa-2021,Cockburn,3,BAKER Andrew,SCAIFE David,77.0,X_W,ALP
+wa-2021,Cockburn,3,BAKER Andrew,SMITH Jesse,37.0,X_W,GRN
+wa-2021,Cockburn,3,BAKER Andrew,Exhausted,3.0,X_W,EXH
+wa-2021,Cockburn,4,MIRONENKO Igor,MULDER Owen,192.0,ONP,LIB
+wa-2021,Cockburn,4,MIRONENKO Igor,TAIMRE Elspeth,143.0,ONP,X_NMV
+wa-2021,Cockburn,4,MIRONENKO Igor,SCAIFE David,161.0,ONP,ALP
+wa-2021,Cockburn,4,MIRONENKO Igor,SMITH Jesse,44.0,ONP,GRN
+wa-2021,Cockburn,4,MIRONENKO Igor,Exhausted,1.0,ONP,EXH
+wa-2021,Cockburn,5,TAIMRE Elspeth,MULDER Owen,291.0,X_NMV,LIB
+wa-2021,Cockburn,5,TAIMRE Elspeth,SCAIFE David,219.0,X_NMV,ALP
+wa-2021,Cockburn,5,TAIMRE Elspeth,SMITH Jesse,173.0,X_NMV,GRN
+wa-2021,Cockburn,5,TAIMRE Elspeth,Exhausted,4.0,X_NMV,EXH
+wa-2021,Cockburn,6,SMITH Jesse,MULDER Owen,319.0,GRN,LIB
+wa-2021,Cockburn,6,SMITH Jesse,SCAIFE David,1620.0,GRN,ALP
+wa-2021,Cockburn,6,SMITH Jesse,Exhausted,5.0,GRN,EXH
+wa-2021,Collie-Preston,2,TOMIC Jackie,MERRIFIELD Christine,4.0,X_W,X_NMV
+wa-2021,Collie-Preston,2,TOMIC Jackie,SCANTLEBURY Gordon,2.0,X_W,GRN
+wa-2021,Collie-Preston,2,TOMIC Jackie,HANNS Jodie,16.0,X_W,ALP
+wa-2021,Collie-Preston,2,TOMIC Jackie,GOFF Jane,6.0,X_W,LIB
+wa-2021,Collie-Preston,2,TOMIC Jackie,BUTLER Graham,4.0,X_W,SAP
+wa-2021,Collie-Preston,2,TOMIC Jackie,SHERIDAN Russell J,4.0,X_W,IND
+wa-2021,Collie-Preston,2,TOMIC Jackie,SANFORD Wayne,14.0,X_W,NAT
+wa-2021,Collie-Preston,2,TOMIC Jackie,WILKINSON Emily,8.0,X_W,LCP
+wa-2021,Collie-Preston,2,TOMIC Jackie,WILLIAMS Michael,7.0,X_W,ONP
+wa-2021,Collie-Preston,2,TOMIC Jackie,THOMAS Clinton,6.0,X_W,SFF
+wa-2021,Collie-Preston,3,BUTLER Graham,MERRIFIELD Christine,18.0,SAP,X_NMV
+wa-2021,Collie-Preston,3,BUTLER Graham,SCANTLEBURY Gordon,24.0,SAP,GRN
+wa-2021,Collie-Preston,3,BUTLER Graham,HANNS Jodie,31.0,SAP,ALP
+wa-2021,Collie-Preston,3,BUTLER Graham,GOFF Jane,12.0,SAP,LIB
+wa-2021,Collie-Preston,3,BUTLER Graham,SHERIDAN Russell J,19.0,SAP,IND
+wa-2021,Collie-Preston,3,BUTLER Graham,SANFORD Wayne,11.0,SAP,NAT
+wa-2021,Collie-Preston,3,BUTLER Graham,WILKINSON Emily,11.0,SAP,LCP
+wa-2021,Collie-Preston,3,BUTLER Graham,WILLIAMS Michael,9.0,SAP,ONP
+wa-2021,Collie-Preston,3,BUTLER Graham,THOMAS Clinton,18.0,SAP,SFF
+wa-2021,Collie-Preston,4,SHERIDAN Russell J,MERRIFIELD Christine,16.0,IND,X_NMV
+wa-2021,Collie-Preston,4,SHERIDAN Russell J,SCANTLEBURY Gordon,113.0,IND,GRN
+wa-2021,Collie-Preston,4,SHERIDAN Russell J,HANNS Jodie,91.0,IND,ALP
+wa-2021,Collie-Preston,4,SHERIDAN Russell J,GOFF Jane,66.0,IND,LIB
+wa-2021,Collie-Preston,4,SHERIDAN Russell J,SANFORD Wayne,70.0,IND,NAT
+wa-2021,Collie-Preston,4,SHERIDAN Russell J,WILKINSON Emily,16.0,IND,LCP
+wa-2021,Collie-Preston,4,SHERIDAN Russell J,WILLIAMS Michael,15.0,IND,ONP
+wa-2021,Collie-Preston,4,SHERIDAN Russell J,THOMAS Clinton,20.0,IND,SFF
+wa-2021,Collie-Preston,4,SHERIDAN Russell J,Exhausted,1.0,IND,EXH
+wa-2021,Collie-Preston,5,WILKINSON Emily,MERRIFIELD Christine,36.0,LCP,X_NMV
+wa-2021,Collie-Preston,5,WILKINSON Emily,SCANTLEBURY Gordon,76.0,LCP,GRN
+wa-2021,Collie-Preston,5,WILKINSON Emily,HANNS Jodie,112.0,LCP,ALP
+wa-2021,Collie-Preston,5,WILKINSON Emily,GOFF Jane,32.0,LCP,LIB
+wa-2021,Collie-Preston,5,WILKINSON Emily,SANFORD Wayne,36.0,LCP,NAT
+wa-2021,Collie-Preston,5,WILKINSON Emily,WILLIAMS Michael,71.0,LCP,ONP
+wa-2021,Collie-Preston,5,WILKINSON Emily,THOMAS Clinton,129.0,LCP,SFF
+wa-2021,Collie-Preston,5,WILKINSON Emily,Exhausted,1.0,LCP,EXH
+wa-2021,Collie-Preston,6,MERRIFIELD Christine,SCANTLEBURY Gordon,171.0,X_NMV,GRN
+wa-2021,Collie-Preston,6,MERRIFIELD Christine,HANNS Jodie,97.0,X_NMV,ALP
+wa-2021,Collie-Preston,6,MERRIFIELD Christine,GOFF Jane,43.0,X_NMV,LIB
+wa-2021,Collie-Preston,6,MERRIFIELD Christine,SANFORD Wayne,38.0,X_NMV,NAT
+wa-2021,Collie-Preston,6,MERRIFIELD Christine,WILLIAMS Michael,115.0,X_NMV,ONP
+wa-2021,Collie-Preston,6,MERRIFIELD Christine,THOMAS Clinton,96.0,X_NMV,SFF
+wa-2021,Collie-Preston,6,MERRIFIELD Christine,Exhausted,1.0,X_NMV,EXH
+wa-2021,Collie-Preston,7,WILLIAMS Michael,SCANTLEBURY Gordon,28.0,ONP,GRN
+wa-2021,Collie-Preston,7,WILLIAMS Michael,HANNS Jodie,96.0,ONP,ALP
+wa-2021,Collie-Preston,7,WILLIAMS Michael,GOFF Jane,95.0,ONP,LIB
+wa-2021,Collie-Preston,7,WILLIAMS Michael,SANFORD Wayne,113.0,ONP,NAT
+wa-2021,Collie-Preston,7,WILLIAMS Michael,THOMAS Clinton,416.0,ONP,SFF
+wa-2021,Collie-Preston,7,WILLIAMS Michael,Exhausted,2.0,ONP,EXH
+wa-2021,Collie-Preston,8,SCANTLEBURY Gordon,HANNS Jodie,891.0,GRN,ALP
+wa-2021,Collie-Preston,8,SCANTLEBURY Gordon,GOFF Jane,173.0,GRN,LIB
+wa-2021,Collie-Preston,8,SCANTLEBURY Gordon,SANFORD Wayne,114.0,GRN,NAT
+wa-2021,Collie-Preston,8,SCANTLEBURY Gordon,THOMAS Clinton,124.0,GRN,SFF
+wa-2021,Collie-Preston,8,SCANTLEBURY Gordon,Exhausted,1.0,GRN,EXH
+wa-2021,Collie-Preston,9,THOMAS Clinton,HANNS Jodie,641.0,SFF,ALP
+wa-2021,Collie-Preston,9,THOMAS Clinton,GOFF Jane,334.0,SFF,LIB
+wa-2021,Collie-Preston,9,THOMAS Clinton,SANFORD Wayne,604.0,SFF,NAT
+wa-2021,Collie-Preston,9,THOMAS Clinton,Exhausted,3.0,SFF,EXH
+wa-2021,Collie-Preston,10,SANFORD Wayne,HANNS Jodie,903.0,NAT,ALP
+wa-2021,Collie-Preston,10,SANFORD Wayne,GOFF Jane,2340.0,NAT,LIB
+wa-2021,Collie-Preston,10,SANFORD Wayne,Exhausted,2.0,NAT,EXH
+wa-2021,Cottesloe,2,BATSIOUDIS Paul,DRAYTON R,80.0,X_W,X_NMV
+wa-2021,Cottesloe,2,BATSIOUDIS Paul,PARKER Tony,56.0,X_W,IND
+wa-2021,Cottesloe,2,BATSIOUDIS Paul,HONEY David,56.0,X_W,LIB
+wa-2021,Cottesloe,2,BATSIOUDIS Paul,WEST Gemma,54.0,X_W,ALP
+wa-2021,Cottesloe,2,BATSIOUDIS Paul,MOSS Theresa,30.0,X_W,GRN
+wa-2021,Cottesloe,3,DRAYTON R,PARKER Tony,184.0,X_NMV,IND
+wa-2021,Cottesloe,3,DRAYTON R,HONEY David,92.0,X_NMV,LIB
+wa-2021,Cottesloe,3,DRAYTON R,WEST Gemma,50.0,X_NMV,ALP
+wa-2021,Cottesloe,3,DRAYTON R,MOSS Theresa,81.0,X_NMV,GRN
+wa-2021,Cottesloe,3,DRAYTON R,Exhausted,2.0,X_NMV,EXH
+wa-2021,Cottesloe,4,PARKER Tony,HONEY David,1890.0,IND,LIB
+wa-2021,Cottesloe,4,PARKER Tony,WEST Gemma,571.0,IND,ALP
+wa-2021,Cottesloe,4,PARKER Tony,MOSS Theresa,447.0,IND,GRN
+wa-2021,Cottesloe,4,PARKER Tony,Exhausted,2.0,IND,EXH
+wa-2021,Cottesloe,5,MOSS Theresa,HONEY David,808.0,GRN,LIB
+wa-2021,Cottesloe,5,MOSS Theresa,WEST Gemma,3158.0,GRN,ALP
+wa-2021,Cottesloe,5,MOSS Theresa,Exhausted,2.0,GRN,EXH
+wa-2021,Darling Range,2,SVILICIC Alan,THOMPSON Matthew,5.0,X_W,LDP
+wa-2021,Darling Range,2,SVILICIC Alan,CONGRENE Judith Maree,10.0,X_W,X_NMV
+wa-2021,Darling Range,2,SVILICIC Alan,CLARKE Brett Nathan,12.0,X_W,X_WAP
+wa-2021,Darling Range,2,SVILICIC Alan,HAYDEN Alyssa,7.0,X_W,LIB
+wa-2021,Darling Range,2,SVILICIC Alan,EIKELBOOM Eric,5.0,X_W,CHR
+wa-2021,Darling Range,2,SVILICIC Alan,FENECH Anthony,8.0,X_W,ONP
+wa-2021,Darling Range,2,SVILICIC Alan,STRAUTINS Dean,4.0,X_W,IND
+wa-2021,Darling Range,2,SVILICIC Alan,JONES Hugh,9.0,X_W,ALP
+wa-2021,Darling Range,2,SVILICIC Alan,LACEY Matthew,4.0,X_W,GRN
+wa-2021,Darling Range,2,SVILICIC Alan,Exhausted,1.0,X_W,EXH
+wa-2021,Darling Range,3,STRAUTINS Dean,THOMPSON Matthew,5.0,IND,LDP
+wa-2021,Darling Range,3,STRAUTINS Dean,CONGRENE Judith Maree,9.0,IND,X_NMV
+wa-2021,Darling Range,3,STRAUTINS Dean,CLARKE Brett Nathan,24.0,IND,X_WAP
+wa-2021,Darling Range,3,STRAUTINS Dean,HAYDEN Alyssa,22.0,IND,LIB
+wa-2021,Darling Range,3,STRAUTINS Dean,EIKELBOOM Eric,5.0,IND,CHR
+wa-2021,Darling Range,3,STRAUTINS Dean,FENECH Anthony,18.0,IND,ONP
+wa-2021,Darling Range,3,STRAUTINS Dean,JONES Hugh,58.0,IND,ALP
+wa-2021,Darling Range,3,STRAUTINS Dean,LACEY Matthew,20.0,IND,GRN
+wa-2021,Darling Range,4,CLARKE Brett Nathan,THOMPSON Matthew,24.0,X_WAP,LDP
+wa-2021,Darling Range,4,CLARKE Brett Nathan,CONGRENE Judith Maree,18.0,X_WAP,X_NMV
+wa-2021,Darling Range,4,CLARKE Brett Nathan,HAYDEN Alyssa,55.0,X_WAP,LIB
+wa-2021,Darling Range,4,CLARKE Brett Nathan,EIKELBOOM Eric,16.0,X_WAP,CHR
+wa-2021,Darling Range,4,CLARKE Brett Nathan,FENECH Anthony,34.0,X_WAP,ONP
+wa-2021,Darling Range,4,CLARKE Brett Nathan,JONES Hugh,56.0,X_WAP,ALP
+wa-2021,Darling Range,4,CLARKE Brett Nathan,LACEY Matthew,19.0,X_WAP,GRN
+wa-2021,Darling Range,4,CLARKE Brett Nathan,Exhausted,1.0,X_WAP,EXH
+wa-2021,Darling Range,5,THOMPSON Matthew,CONGRENE Judith Maree,123.0,LDP,X_NMV
+wa-2021,Darling Range,5,THOMPSON Matthew,HAYDEN Alyssa,114.0,LDP,LIB
+wa-2021,Darling Range,5,THOMPSON Matthew,EIKELBOOM Eric,15.0,LDP,CHR
+wa-2021,Darling Range,5,THOMPSON Matthew,FENECH Anthony,44.0,LDP,ONP
+wa-2021,Darling Range,5,THOMPSON Matthew,JONES Hugh,47.0,LDP,ALP
+wa-2021,Darling Range,5,THOMPSON Matthew,LACEY Matthew,24.0,LDP,GRN
+wa-2021,Darling Range,5,THOMPSON Matthew,Exhausted,2.0,LDP,EXH
+wa-2021,Darling Range,6,CONGRENE Judith Maree,HAYDEN Alyssa,166.0,X_NMV,LIB
+wa-2021,Darling Range,6,CONGRENE Judith Maree,EIKELBOOM Eric,81.0,X_NMV,CHR
+wa-2021,Darling Range,6,CONGRENE Judith Maree,FENECH Anthony,157.0,X_NMV,ONP
+wa-2021,Darling Range,6,CONGRENE Judith Maree,JONES Hugh,72.0,X_NMV,ALP
+wa-2021,Darling Range,6,CONGRENE Judith Maree,LACEY Matthew,86.0,X_NMV,GRN
+wa-2021,Darling Range,6,CONGRENE Judith Maree,Exhausted,4.0,X_NMV,EXH
+wa-2021,Darling Range,7,FENECH Anthony,HAYDEN Alyssa,227.0,ONP,LIB
+wa-2021,Darling Range,7,FENECH Anthony,EIKELBOOM Eric,204.0,ONP,CHR
+wa-2021,Darling Range,7,FENECH Anthony,JONES Hugh,263.0,ONP,ALP
+wa-2021,Darling Range,7,FENECH Anthony,LACEY Matthew,89.0,ONP,GRN
+wa-2021,Darling Range,7,FENECH Anthony,Exhausted,2.0,ONP,EXH
+wa-2021,Darling Range,8,LACEY Matthew,HAYDEN Alyssa,221.0,GRN,LIB
+wa-2021,Darling Range,8,LACEY Matthew,EIKELBOOM Eric,95.0,GRN,CHR
+wa-2021,Darling Range,8,LACEY Matthew,JONES Hugh,1177.0,GRN,ALP
+wa-2021,Darling Range,8,LACEY Matthew,Exhausted,3.0,GRN,EXH
+wa-2021,Darling Range,9,EIKELBOOM Eric,HAYDEN Alyssa,1362.0,CHR,LIB
+wa-2021,Darling Range,9,EIKELBOOM Eric,JONES Hugh,286.0,CHR,ALP
+wa-2021,Darling Range,9,EIKELBOOM Eric,Exhausted,3.0,CHR,EXH
+wa-2021,Dawesville,2,CHALKE Bradley,GODDEN Stewart,4.0,LDP,GRN
+wa-2021,Dawesville,2,CHALKE Bradley,MUNDAY Lisa,10.0,LDP,ALP
+wa-2021,Dawesville,2,CHALKE Bradley,STACEY Peter,5.0,LDP,SFF
+wa-2021,Dawesville,2,CHALKE Bradley,CHARLES Mark,4.0,LDP,LCP
+wa-2021,Dawesville,2,CHALKE Bradley,OANCEA Melissa,1.0,LDP,X_W
+wa-2021,Dawesville,2,CHALKE Bradley,GILMOUR Kerry,6.0,LDP,ONP
+wa-2021,Dawesville,2,CHALKE Bradley,KIRKUP Zak,18.0,LDP,LIB
+wa-2021,Dawesville,2,CHALKE Bradley,LEAKE Patricia,13.0,LDP,NAT
+wa-2021,Dawesville,2,CHALKE Bradley,Exhausted,1.0,LDP,EXH
+wa-2021,Dawesville,3,OANCEA Melissa,GODDEN Stewart,1.0,X_W,GRN
+wa-2021,Dawesville,3,OANCEA Melissa,MUNDAY Lisa,18.0,X_W,ALP
+wa-2021,Dawesville,3,OANCEA Melissa,OBORN Karen,6.0,X_W,SAP
+wa-2021,Dawesville,3,OANCEA Melissa,STONEHOUSE Elijah,8.0,X_W,X_NMV
+wa-2021,Dawesville,3,OANCEA Melissa,STACEY Peter,6.0,X_W,SFF
+wa-2021,Dawesville,3,OANCEA Melissa,CHARLES Mark,13.0,X_W,LCP
+wa-2021,Dawesville,3,OANCEA Melissa,GILMOUR Kerry,7.0,X_W,ONP
+wa-2021,Dawesville,3,OANCEA Melissa,KIRKUP Zak,10.0,X_W,LIB
+wa-2021,Dawesville,3,OANCEA Melissa,LEAKE Patricia,6.0,X_W,NAT
+wa-2021,Dawesville,4,OBORN Karen,GODDEN Stewart,25.0,SAP,GRN
+wa-2021,Dawesville,4,OBORN Karen,MUNDAY Lisa,31.0,SAP,ALP
+wa-2021,Dawesville,4,OBORN Karen,STONEHOUSE Elijah,10.0,SAP,X_NMV
+wa-2021,Dawesville,4,OBORN Karen,STACEY Peter,12.0,SAP,SFF
+wa-2021,Dawesville,4,OBORN Karen,CHARLES Mark,12.0,SAP,LCP
+wa-2021,Dawesville,4,OBORN Karen,GILMOUR Kerry,19.0,SAP,ONP
+wa-2021,Dawesville,4,OBORN Karen,KIRKUP Zak,15.0,SAP,LIB
+wa-2021,Dawesville,4,OBORN Karen,LEAKE Patricia,7.0,SAP,NAT
+wa-2021,Dawesville,5,LEAKE Patricia,GODDEN Stewart,19.0,NAT,GRN
+wa-2021,Dawesville,5,LEAKE Patricia,MUNDAY Lisa,30.0,NAT,ALP
+wa-2021,Dawesville,5,LEAKE Patricia,STONEHOUSE Elijah,1.0,NAT,X_NMV
+wa-2021,Dawesville,5,LEAKE Patricia,STACEY Peter,13.0,NAT,SFF
+wa-2021,Dawesville,5,LEAKE Patricia,CHARLES Mark,4.0,NAT,LCP
+wa-2021,Dawesville,5,LEAKE Patricia,GILMOUR Kerry,24.0,NAT,ONP
+wa-2021,Dawesville,5,LEAKE Patricia,KIRKUP Zak,113.0,NAT,LIB
+wa-2021,Dawesville,6,STONEHOUSE Elijah,GODDEN Stewart,34.0,X_NMV,GRN
+wa-2021,Dawesville,6,STONEHOUSE Elijah,MUNDAY Lisa,45.0,X_NMV,ALP
+wa-2021,Dawesville,6,STONEHOUSE Elijah,STACEY Peter,36.0,X_NMV,SFF
+wa-2021,Dawesville,6,STONEHOUSE Elijah,CHARLES Mark,65.0,X_NMV,LCP
+wa-2021,Dawesville,6,STONEHOUSE Elijah,GILMOUR Kerry,57.0,X_NMV,ONP
+wa-2021,Dawesville,6,STONEHOUSE Elijah,KIRKUP Zak,19.0,X_NMV,LIB
+wa-2021,Dawesville,6,STONEHOUSE Elijah,Exhausted,1.0,X_NMV,EXH
+wa-2021,Dawesville,7,STACEY Peter,GODDEN Stewart,30.0,SFF,GRN
+wa-2021,Dawesville,7,STACEY Peter,MUNDAY Lisa,107.0,SFF,ALP
+wa-2021,Dawesville,7,STACEY Peter,CHARLES Mark,91.0,SFF,LCP
+wa-2021,Dawesville,7,STACEY Peter,GILMOUR Kerry,96.0,SFF,ONP
+wa-2021,Dawesville,7,STACEY Peter,KIRKUP Zak,85.0,SFF,LIB
+wa-2021,Dawesville,8,CHARLES Mark,GODDEN Stewart,146.0,LCP,GRN
+wa-2021,Dawesville,8,CHARLES Mark,MUNDAY Lisa,198.0,LCP,ALP
+wa-2021,Dawesville,8,CHARLES Mark,GILMOUR Kerry,125.0,LCP,ONP
+wa-2021,Dawesville,8,CHARLES Mark,KIRKUP Zak,82.0,LCP,LIB
+wa-2021,Dawesville,8,CHARLES Mark,Exhausted,1.0,LCP,EXH
+wa-2021,Dawesville,9,GILMOUR Kerry,GODDEN Stewart,121.0,ONP,GRN
+wa-2021,Dawesville,9,GILMOUR Kerry,MUNDAY Lisa,236.0,ONP,ALP
+wa-2021,Dawesville,9,GILMOUR Kerry,KIRKUP Zak,375.0,ONP,LIB
+wa-2021,Dawesville,10,GODDEN Stewart,MUNDAY Lisa,934.0,GRN,ALP
+wa-2021,Dawesville,10,GODDEN Stewart,KIRKUP Zak,261.0,GRN,LIB
+wa-2021,Dawesville,10,GODDEN Stewart,Exhausted,5.0,GRN,EXH
+wa-2021,Forrestfield,2,SHAHALAM Mohammod,PRICE Stephen,39.0,X_W,ALP
+wa-2021,Forrestfield,2,SHAHALAM Mohammod,PETERS Cameron,8.0,X_W,X_NMV
+wa-2021,Forrestfield,2,SHAHALAM Mohammod,McMULLAN Beth,5.0,X_W,GRN
+wa-2021,Forrestfield,2,SHAHALAM Mohammod,TILBURY George,9.0,X_W,LIB
+wa-2021,Forrestfield,2,SHAHALAM Mohammod,DOYE Owen,18.0,X_W,X_WAP
+wa-2021,Forrestfield,2,SHAHALAM Mohammod,LAMPARD Peter,5.0,X_W,CHR
+wa-2021,Forrestfield,2,SHAHALAM Mohammod,BARNETT Roger,15.0,X_W,ONP
+wa-2021,Forrestfield,3,DOYE Owen,PRICE Stephen,68.0,X_WAP,ALP
+wa-2021,Forrestfield,3,DOYE Owen,PETERS Cameron,14.0,X_WAP,X_NMV
+wa-2021,Forrestfield,3,DOYE Owen,McMULLAN Beth,39.0,X_WAP,GRN
+wa-2021,Forrestfield,3,DOYE Owen,TILBURY George,44.0,X_WAP,LIB
+wa-2021,Forrestfield,3,DOYE Owen,LAMPARD Peter,24.0,X_WAP,CHR
+wa-2021,Forrestfield,3,DOYE Owen,BARNETT Roger,36.0,X_WAP,ONP
+wa-2021,Forrestfield,4,PETERS Cameron,PRICE Stephen,96.0,X_NMV,ALP
+wa-2021,Forrestfield,4,PETERS Cameron,McMULLAN Beth,68.0,X_NMV,GRN
+wa-2021,Forrestfield,4,PETERS Cameron,TILBURY George,45.0,X_NMV,LIB
+wa-2021,Forrestfield,4,PETERS Cameron,LAMPARD Peter,45.0,X_NMV,CHR
+wa-2021,Forrestfield,4,PETERS Cameron,BARNETT Roger,105.0,X_NMV,ONP
+wa-2021,Forrestfield,4,PETERS Cameron,Exhausted,2.0,X_NMV,EXH
+wa-2021,Forrestfield,5,BARNETT Roger,PRICE Stephen,218.0,ONP,ALP
+wa-2021,Forrestfield,5,BARNETT Roger,McMULLAN Beth,76.0,ONP,GRN
+wa-2021,Forrestfield,5,BARNETT Roger,TILBURY George,201.0,ONP,LIB
+wa-2021,Forrestfield,5,BARNETT Roger,LAMPARD Peter,178.0,ONP,CHR
+wa-2021,Forrestfield,5,BARNETT Roger,Exhausted,1.0,ONP,EXH
+wa-2021,Forrestfield,6,LAMPARD Peter,PRICE Stephen,190.0,CHR,ALP
+wa-2021,Forrestfield,6,LAMPARD Peter,McMULLAN Beth,105.0,CHR,GRN
+wa-2021,Forrestfield,6,LAMPARD Peter,TILBURY George,560.0,CHR,LIB
+wa-2021,Forrestfield,6,LAMPARD Peter,Exhausted,1.0,CHR,EXH
+wa-2021,Forrestfield,7,McMULLAN Beth,PRICE Stephen,968.0,GRN,ALP
+wa-2021,Forrestfield,7,McMULLAN Beth,TILBURY George,332.0,GRN,LIB
+wa-2021,Forrestfield,7,McMULLAN Beth,Exhausted,1.0,GRN,EXH
+wa-2021,Fremantle,2,KNAPP Janetia,SCHELLING Carl,18.0,X_WAP,LDP
+wa-2021,Fremantle,2,KNAPP Janetia,WAINWRIGHT Sam,7.0,X_WAP,VS
+wa-2021,Fremantle,2,KNAPP Janetia,RILEY Miquela,26.0,X_WAP,LIB
+wa-2021,Fremantle,2,KNAPP Janetia,CRAMER Liberty,32.0,X_WAP,GRN
+wa-2021,Fremantle,2,KNAPP Janetia,SCHULZE W,14.0,X_WAP,X_NMV
+wa-2021,Fremantle,2,KNAPP Janetia,GRLJUSICH Rod,32.0,X_WAP,IND
+wa-2021,Fremantle,2,KNAPP Janetia,McGURK Simone,85.0,X_WAP,ALP
+wa-2021,Fremantle,2,KNAPP Janetia,Exhausted,2.0,X_WAP,EXH
+wa-2021,Fremantle,3,GRLJUSICH Rod,SCHELLING Carl,34.0,IND,LDP
+wa-2021,Fremantle,3,GRLJUSICH Rod,WAINWRIGHT Sam,27.0,IND,VS
+wa-2021,Fremantle,3,GRLJUSICH Rod,RILEY Miquela,113.0,IND,LIB
+wa-2021,Fremantle,3,GRLJUSICH Rod,CRAMER Liberty,34.0,IND,GRN
+wa-2021,Fremantle,3,GRLJUSICH Rod,SCHULZE W,49.0,IND,X_NMV
+wa-2021,Fremantle,3,GRLJUSICH Rod,McGURK Simone,93.0,IND,ALP
+wa-2021,Fremantle,4,SCHELLING Carl,WAINWRIGHT Sam,159.0,LDP,VS
+wa-2021,Fremantle,4,SCHELLING Carl,RILEY Miquela,234.0,LDP,LIB
+wa-2021,Fremantle,4,SCHELLING Carl,CRAMER Liberty,32.0,LDP,GRN
+wa-2021,Fremantle,4,SCHELLING Carl,SCHULZE W,37.0,LDP,X_NMV
+wa-2021,Fremantle,4,SCHELLING Carl,McGURK Simone,80.0,LDP,ALP
+wa-2021,Fremantle,4,SCHELLING Carl,Exhausted,2.0,LDP,EXH
+wa-2021,Fremantle,5,SCHULZE W,WAINWRIGHT Sam,159.0,X_NMV,VS
+wa-2021,Fremantle,5,SCHULZE W,RILEY Miquela,187.0,X_NMV,LIB
+wa-2021,Fremantle,5,SCHULZE W,CRAMER Liberty,203.0,X_NMV,GRN
+wa-2021,Fremantle,5,SCHULZE W,McGURK Simone,124.0,X_NMV,ALP
+wa-2021,Fremantle,5,SCHULZE W,Exhausted,4.0,X_NMV,EXH
+wa-2021,Fremantle,6,WAINWRIGHT Sam,RILEY Miquela,286.0,VS,LIB
+wa-2021,Fremantle,6,WAINWRIGHT Sam,CRAMER Liberty,628.0,VS,GRN
+wa-2021,Fremantle,6,WAINWRIGHT Sam,McGURK Simone,159.0,VS,ALP
+wa-2021,Fremantle,6,WAINWRIGHT Sam,Exhausted,5.0,VS,EXH
+wa-2021,Fremantle,7,RILEY Miquela,CRAMER Liberty,3055.0,LIB,GRN
+wa-2021,Fremantle,7,RILEY Miquela,McGURK Simone,1613.0,LIB,ALP
+wa-2021,Fremantle,7,RILEY Miquela,Exhausted,15.0,LIB,EXH
+wa-2021,Geraldton,2,GENOVESE Andrew,KUNG Bey Bey,5.0,LDP,X_W
+wa-2021,Geraldton,2,GENOVESE Andrew,DINES Rob,19.0,LDP,LIB
+wa-2021,Geraldton,2,GENOVESE Andrew,MELLON Chris,17.0,LDP,SFF
+wa-2021,Geraldton,2,GENOVESE Andrew,DAVIES Bruce,10.0,LDP,ONP
+wa-2021,Geraldton,2,GENOVESE Andrew,DALTON Lara,14.0,LDP,ALP
+wa-2021,Geraldton,2,GENOVESE Andrew,LONG Mark James,1.0,LDP,X_NMV
+wa-2021,Geraldton,2,GENOVESE Andrew,BLAYNEY Ian,7.0,LDP,NAT
+wa-2021,Geraldton,2,GENOVESE Andrew,ROBERTS Matt,4.0,LDP,GRN
+wa-2021,Geraldton,3,KUNG Bey Bey,DINES Rob,72.0,X_W,LIB
+wa-2021,Geraldton,3,KUNG Bey Bey,MELLON Chris,21.0,X_W,SFF
+wa-2021,Geraldton,3,KUNG Bey Bey,DAVIES Bruce,6.0,X_W,ONP
+wa-2021,Geraldton,3,KUNG Bey Bey,DALTON Lara,13.0,X_W,ALP
+wa-2021,Geraldton,3,KUNG Bey Bey,LONG Mark James,4.0,X_W,X_NMV
+wa-2021,Geraldton,3,KUNG Bey Bey,BLAYNEY Ian,9.0,X_W,NAT
+wa-2021,Geraldton,3,KUNG Bey Bey,ROBERTS Matt,7.0,X_W,GRN
+wa-2021,Geraldton,4,LONG Mark James,DINES Rob,25.0,X_NMV,LIB
+wa-2021,Geraldton,4,LONG Mark James,MELLON Chris,40.0,X_NMV,SFF
+wa-2021,Geraldton,4,LONG Mark James,DAVIES Bruce,59.0,X_NMV,ONP
+wa-2021,Geraldton,4,LONG Mark James,DALTON Lara,44.0,X_NMV,ALP
+wa-2021,Geraldton,4,LONG Mark James,BLAYNEY Ian,45.0,X_NMV,NAT
+wa-2021,Geraldton,4,LONG Mark James,ROBERTS Matt,40.0,X_NMV,GRN
+wa-2021,Geraldton,5,DAVIES Bruce,DINES Rob,57.0,ONP,LIB
+wa-2021,Geraldton,5,DAVIES Bruce,MELLON Chris,143.0,ONP,SFF
+wa-2021,Geraldton,5,DAVIES Bruce,DALTON Lara,69.0,ONP,ALP
+wa-2021,Geraldton,5,DAVIES Bruce,BLAYNEY Ian,114.0,ONP,NAT
+wa-2021,Geraldton,5,DAVIES Bruce,ROBERTS Matt,26.0,ONP,GRN
+wa-2021,Geraldton,5,DAVIES Bruce,Exhausted,2.0,ONP,EXH
+wa-2021,Geraldton,6,MELLON Chris,DINES Rob,150.0,SFF,LIB
+wa-2021,Geraldton,6,MELLON Chris,DALTON Lara,201.0,SFF,ALP
+wa-2021,Geraldton,6,MELLON Chris,BLAYNEY Ian,184.0,SFF,NAT
+wa-2021,Geraldton,6,MELLON Chris,ROBERTS Matt,62.0,SFF,GRN
+wa-2021,Geraldton,6,MELLON Chris,Exhausted,4.0,SFF,EXH
+wa-2021,Geraldton,7,ROBERTS Matt,DINES Rob,69.0,GRN,LIB
+wa-2021,Geraldton,7,ROBERTS Matt,DALTON Lara,414.0,GRN,ALP
+wa-2021,Geraldton,7,ROBERTS Matt,BLAYNEY Ian,191.0,GRN,NAT
+wa-2021,Geraldton,7,ROBERTS Matt,Exhausted,1.0,GRN,EXH
+wa-2021,Geraldton,8,DINES Rob,DALTON Lara,739.0,LIB,ALP
+wa-2021,Geraldton,8,DINES Rob,BLAYNEY Ian,2401.0,LIB,NAT
+wa-2021,Geraldton,8,DINES Rob,Exhausted,2.0,LIB,EXH
+wa-2021,Hillarys,2,JANKULOVSKI Zoran,TYLKA Rick,15.0,X_W,X_LFC
+wa-2021,Hillarys,2,JANKULOVSKI Zoran,GLAZOV Greg,12.0,X_W,GRN
+wa-2021,Hillarys,2,JANKULOVSKI Zoran,SEETO W,19.0,X_W,X_NMV
+wa-2021,Hillarys,2,JANKULOVSKI Zoran,KATSAMBANIS Peter,51.0,X_W,LIB
+wa-2021,Hillarys,2,JANKULOVSKI Zoran,WINFIELD Katrina,30.0,X_W,LCP
+wa-2021,Hillarys,2,JANKULOVSKI Zoran,COLLINS Caitlin,57.0,X_W,ALP
+wa-2021,Hillarys,3,TYLKA Rick,GLAZOV Greg,135.0,X_LFC,GRN
+wa-2021,Hillarys,3,TYLKA Rick,SEETO W,23.0,X_LFC,X_NMV
+wa-2021,Hillarys,3,TYLKA Rick,KATSAMBANIS Peter,116.0,X_LFC,LIB
+wa-2021,Hillarys,3,TYLKA Rick,WINFIELD Katrina,21.0,X_LFC,LCP
+wa-2021,Hillarys,3,TYLKA Rick,COLLINS Caitlin,58.0,X_LFC,ALP
+wa-2021,Hillarys,3,TYLKA Rick,Exhausted,1.0,X_LFC,EXH
+wa-2021,Hillarys,4,SEETO W,GLAZOV Greg,106.0,X_NMV,GRN
+wa-2021,Hillarys,4,SEETO W,KATSAMBANIS Peter,112.0,X_NMV,LIB
+wa-2021,Hillarys,4,SEETO W,WINFIELD Katrina,224.0,X_NMV,LCP
+wa-2021,Hillarys,4,SEETO W,COLLINS Caitlin,75.0,X_NMV,ALP
+wa-2021,Hillarys,4,SEETO W,Exhausted,1.0,X_NMV,EXH
+wa-2021,Hillarys,5,WINFIELD Katrina,GLAZOV Greg,308.0,LCP,GRN
+wa-2021,Hillarys,5,WINFIELD Katrina,KATSAMBANIS Peter,205.0,LCP,LIB
+wa-2021,Hillarys,5,WINFIELD Katrina,COLLINS Caitlin,344.0,LCP,ALP
+wa-2021,Hillarys,6,GLAZOV Greg,KATSAMBANIS Peter,535.0,GRN,LIB
+wa-2021,Hillarys,6,GLAZOV Greg,COLLINS Caitlin,1392.0,GRN,ALP
+wa-2021,Jandakot,2,SINGH Jagdip,McCOY Mihael,45.0,X_W,LIB
+wa-2021,Jandakot,2,SINGH Jagdip,PRETORIUS Marianne,20.0,X_W,CHR
+wa-2021,Jandakot,2,SINGH Jagdip,LONSDALE Heather,22.0,X_W,GRN
+wa-2021,Jandakot,2,SINGH Jagdip,MILES Damon Mazzeo,15.0,X_W,LDP
+wa-2021,Jandakot,2,SINGH Jagdip,HALLIFAX P,12.0,X_W,X_NMV
+wa-2021,Jandakot,2,SINGH Jagdip,KELLY Dominic,28.0,X_W,ONP
+wa-2021,Jandakot,2,SINGH Jagdip,MUBARAKAI Yaz,109.0,X_W,ALP
+wa-2021,Jandakot,3,HALLIFAX P,McCOY Mihael,26.0,X_NMV,LIB
+wa-2021,Jandakot,3,HALLIFAX P,PRETORIUS Marianne,43.0,X_NMV,CHR
+wa-2021,Jandakot,3,HALLIFAX P,LONSDALE Heather,44.0,X_NMV,GRN
+wa-2021,Jandakot,3,HALLIFAX P,MILES Damon Mazzeo,19.0,X_NMV,LDP
+wa-2021,Jandakot,3,HALLIFAX P,KELLY Dominic,90.0,X_NMV,ONP
+wa-2021,Jandakot,3,HALLIFAX P,MUBARAKAI Yaz,52.0,X_NMV,ALP
+wa-2021,Jandakot,4,MILES Damon Mazzeo,McCOY Mihael,131.0,LDP,LIB
+wa-2021,Jandakot,4,MILES Damon Mazzeo,PRETORIUS Marianne,25.0,LDP,CHR
+wa-2021,Jandakot,4,MILES Damon Mazzeo,LONSDALE Heather,42.0,LDP,GRN
+wa-2021,Jandakot,4,MILES Damon Mazzeo,KELLY Dominic,43.0,LDP,ONP
+wa-2021,Jandakot,4,MILES Damon Mazzeo,MUBARAKAI Yaz,57.0,LDP,ALP
+wa-2021,Jandakot,4,MILES Damon Mazzeo,Exhausted,1.0,LDP,EXH
+wa-2021,Jandakot,5,KELLY Dominic,McCOY Mihael,167.0,ONP,LIB
+wa-2021,Jandakot,5,KELLY Dominic,PRETORIUS Marianne,132.0,ONP,CHR
+wa-2021,Jandakot,5,KELLY Dominic,LONSDALE Heather,65.0,ONP,GRN
+wa-2021,Jandakot,5,KELLY Dominic,MUBARAKAI Yaz,185.0,ONP,ALP
+wa-2021,Jandakot,6,PRETORIUS Marianne,McCOY Mihael,814.0,CHR,LIB
+wa-2021,Jandakot,6,PRETORIUS Marianne,LONSDALE Heather,113.0,CHR,GRN
+wa-2021,Jandakot,6,PRETORIUS Marianne,MUBARAKAI Yaz,213.0,CHR,ALP
+wa-2021,Jandakot,6,PRETORIUS Marianne,Exhausted,1.0,CHR,EXH
+wa-2021,Jandakot,7,LONSDALE Heather,McCOY Mihael,424.0,GRN,LIB
+wa-2021,Jandakot,7,LONSDALE Heather,MUBARAKAI Yaz,1207.0,GRN,ALP
+wa-2021,Jandakot,7,LONSDALE Heather,Exhausted,2.0,GRN,EXH
+wa-2021,Joondalup,2,WESTCOTT Peter,RIKKERS Jules,14.0,X_WAP,X_W
+wa-2021,Joondalup,2,WESTCOTT Peter,MURPHY Ziggi,48.0,X_WAP,IND
+wa-2021,Joondalup,2,WESTCOTT Peter,TREASURE Bret,9.0,X_WAP,LCP
+wa-2021,Joondalup,2,WESTCOTT Peter,McLOUGHLIN Peter,6.0,X_WAP,LDP
+wa-2021,Joondalup,2,WESTCOTT Peter,HILDEBRANDT Shanthi,5.0,X_WAP,CHR
+wa-2021,Joondalup,2,WESTCOTT Peter,HAMILTON Emily,43.0,X_WAP,ALP
+wa-2021,Joondalup,2,WESTCOTT Peter,WATTS Angelo,18.0,X_WAP,GRN
+wa-2021,Joondalup,2,WESTCOTT Peter,DAVEY Howard,26.0,X_WAP,X_NMV
+wa-2021,Joondalup,2,WESTCOTT Peter,INGHAM Sheldon,34.0,X_WAP,LIB
+wa-2021,Joondalup,3,RIKKERS Jules,MURPHY Ziggi,117.0,X_W,IND
+wa-2021,Joondalup,3,RIKKERS Jules,TREASURE Bret,46.0,X_W,LCP
+wa-2021,Joondalup,3,RIKKERS Jules,McLOUGHLIN Peter,4.0,X_W,LDP
+wa-2021,Joondalup,3,RIKKERS Jules,HILDEBRANDT Shanthi,5.0,X_W,CHR
+wa-2021,Joondalup,3,RIKKERS Jules,HAMILTON Emily,37.0,X_W,ALP
+wa-2021,Joondalup,3,RIKKERS Jules,WATTS Angelo,11.0,X_W,GRN
+wa-2021,Joondalup,3,RIKKERS Jules,DAVEY Howard,10.0,X_W,X_NMV
+wa-2021,Joondalup,3,RIKKERS Jules,INGHAM Sheldon,23.0,X_W,LIB
+wa-2021,Joondalup,3,RIKKERS Jules,Exhausted,1.0,X_W,EXH
+wa-2021,Joondalup,4,McLOUGHLIN Peter,MURPHY Ziggi,37.0,LDP,IND
+wa-2021,Joondalup,4,McLOUGHLIN Peter,TREASURE Bret,25.0,LDP,LCP
+wa-2021,Joondalup,4,McLOUGHLIN Peter,HILDEBRANDT Shanthi,21.0,LDP,CHR
+wa-2021,Joondalup,4,McLOUGHLIN Peter,HAMILTON Emily,73.0,LDP,ALP
+wa-2021,Joondalup,4,McLOUGHLIN Peter,WATTS Angelo,24.0,LDP,GRN
+wa-2021,Joondalup,4,McLOUGHLIN Peter,DAVEY Howard,12.0,LDP,X_NMV
+wa-2021,Joondalup,4,McLOUGHLIN Peter,INGHAM Sheldon,104.0,LDP,LIB
+wa-2021,Joondalup,5,DAVEY Howard,MURPHY Ziggi,76.0,X_NMV,IND
+wa-2021,Joondalup,5,DAVEY Howard,TREASURE Bret,88.0,X_NMV,LCP
+wa-2021,Joondalup,5,DAVEY Howard,HILDEBRANDT Shanthi,57.0,X_NMV,CHR
+wa-2021,Joondalup,5,DAVEY Howard,HAMILTON Emily,51.0,X_NMV,ALP
+wa-2021,Joondalup,5,DAVEY Howard,WATTS Angelo,56.0,X_NMV,GRN
+wa-2021,Joondalup,5,DAVEY Howard,INGHAM Sheldon,54.0,X_NMV,LIB
+wa-2021,Joondalup,6,HILDEBRANDT Shanthi,MURPHY Ziggi,66.0,CHR,IND
+wa-2021,Joondalup,6,HILDEBRANDT Shanthi,TREASURE Bret,38.0,CHR,LCP
+wa-2021,Joondalup,6,HILDEBRANDT Shanthi,HAMILTON Emily,104.0,CHR,ALP
+wa-2021,Joondalup,6,HILDEBRANDT Shanthi,WATTS Angelo,28.0,CHR,GRN
+wa-2021,Joondalup,6,HILDEBRANDT Shanthi,INGHAM Sheldon,387.0,CHR,LIB
+wa-2021,Joondalup,6,HILDEBRANDT Shanthi,Exhausted,2.0,CHR,EXH
+wa-2021,Joondalup,7,TREASURE Bret,MURPHY Ziggi,215.0,LCP,IND
+wa-2021,Joondalup,7,TREASURE Bret,HAMILTON Emily,232.0,LCP,ALP
+wa-2021,Joondalup,7,TREASURE Bret,WATTS Angelo,145.0,LCP,GRN
+wa-2021,Joondalup,7,TREASURE Bret,INGHAM Sheldon,79.0,LCP,LIB
+wa-2021,Joondalup,8,MURPHY Ziggi,HAMILTON Emily,455.0,IND,ALP
+wa-2021,Joondalup,8,MURPHY Ziggi,WATTS Angelo,341.0,IND,GRN
+wa-2021,Joondalup,8,MURPHY Ziggi,INGHAM Sheldon,241.0,IND,LIB
+wa-2021,Joondalup,8,MURPHY Ziggi,Exhausted,6.0,IND,EXH
+wa-2021,Joondalup,9,WATTS Angelo,HAMILTON Emily,1263.0,GRN,ALP
+wa-2021,Joondalup,9,WATTS Angelo,INGHAM Sheldon,459.0,GRN,LIB
+wa-2021,Joondalup,9,WATTS Angelo,Exhausted,3.0,GRN,EXH
+wa-2021,Kalamunda,2,ELLIS Robert,TRIGWELL Carolyn,6.0,X_W,LDP
+wa-2021,Kalamunda,2,ELLIS Robert,HUGHES Matthew,22.0,X_W,ALP
+wa-2021,Kalamunda,2,ELLIS Robert,FANE Michael,11.0,X_W,X_NMV
+wa-2021,Kalamunda,2,ELLIS Robert,MILES Lee-Anne,4.0,X_W,GRN
+wa-2021,Kalamunda,2,ELLIS Robert,STALTARI Liam,5.0,X_W,LIB
+wa-2021,Kalamunda,2,ELLIS Robert,PHELAN Stephen Glenn,18.0,X_W,X_WAP
+wa-2021,Kalamunda,2,ELLIS Robert,BUTTERS Maureen,5.0,X_W,ONP
+wa-2021,Kalamunda,2,ELLIS Robert,WILLIAMS Brady,3.0,X_W,CHR
+wa-2021,Kalamunda,3,PHELAN Stephen Glenn,TRIGWELL Carolyn,18.0,X_WAP,LDP
+wa-2021,Kalamunda,3,PHELAN Stephen Glenn,HUGHES Matthew,76.0,X_WAP,ALP
+wa-2021,Kalamunda,3,PHELAN Stephen Glenn,FANE Michael,21.0,X_WAP,X_NMV
+wa-2021,Kalamunda,3,PHELAN Stephen Glenn,MILES Lee-Anne,25.0,X_WAP,GRN
+wa-2021,Kalamunda,3,PHELAN Stephen Glenn,STALTARI Liam,74.0,X_WAP,LIB
+wa-2021,Kalamunda,3,PHELAN Stephen Glenn,BUTTERS Maureen,50.0,X_WAP,ONP
+wa-2021,Kalamunda,3,PHELAN Stephen Glenn,WILLIAMS Brady,21.0,X_WAP,CHR
+wa-2021,Kalamunda,4,TRIGWELL Carolyn,HUGHES Matthew,171.0,LDP,ALP
+wa-2021,Kalamunda,4,TRIGWELL Carolyn,FANE Michael,28.0,LDP,X_NMV
+wa-2021,Kalamunda,4,TRIGWELL Carolyn,MILES Lee-Anne,43.0,LDP,GRN
+wa-2021,Kalamunda,4,TRIGWELL Carolyn,STALTARI Liam,117.0,LDP,LIB
+wa-2021,Kalamunda,4,TRIGWELL Carolyn,BUTTERS Maureen,34.0,LDP,ONP
+wa-2021,Kalamunda,4,TRIGWELL Carolyn,WILLIAMS Brady,13.0,LDP,CHR
+wa-2021,Kalamunda,5,BUTTERS Maureen,HUGHES Matthew,108.0,ONP,ALP
+wa-2021,Kalamunda,5,BUTTERS Maureen,FANE Michael,83.0,ONP,X_NMV
+wa-2021,Kalamunda,5,BUTTERS Maureen,MILES Lee-Anne,43.0,ONP,GRN
+wa-2021,Kalamunda,5,BUTTERS Maureen,STALTARI Liam,143.0,ONP,LIB
+wa-2021,Kalamunda,5,BUTTERS Maureen,WILLIAMS Brady,84.0,ONP,CHR
+wa-2021,Kalamunda,6,FANE Michael,HUGHES Matthew,117.0,X_NMV,ALP
+wa-2021,Kalamunda,6,FANE Michael,MILES Lee-Anne,159.0,X_NMV,GRN
+wa-2021,Kalamunda,6,FANE Michael,STALTARI Liam,87.0,X_NMV,LIB
+wa-2021,Kalamunda,6,FANE Michael,WILLIAMS Brady,193.0,X_NMV,CHR
+wa-2021,Kalamunda,6,FANE Michael,Exhausted,2.0,X_NMV,EXH
+wa-2021,Kalamunda,7,WILLIAMS Brady,HUGHES Matthew,155.0,CHR,ALP
+wa-2021,Kalamunda,7,WILLIAMS Brady,MILES Lee-Anne,130.0,CHR,GRN
+wa-2021,Kalamunda,7,WILLIAMS Brady,STALTARI Liam,679.0,CHR,LIB
+wa-2021,Kalamunda,7,WILLIAMS Brady,Exhausted,1.0,CHR,EXH
+wa-2021,Kalamunda,8,MILES Lee-Anne,HUGHES Matthew,2032.0,GRN,ALP
+wa-2021,Kalamunda,8,MILES Lee-Anne,STALTARI Liam,534.0,GRN,LIB
+wa-2021,Kalamunda,8,MILES Lee-Anne,Exhausted,2.0,GRN,EXH
+wa-2021,Kalgoorlie,2,BUYUKCAKAR Rustu,RENNIE Sam,2.0,X_W,LDP
+wa-2021,Kalgoorlie,2,BUYUKCAKAR Rustu,CARMODY Jack,6.0,X_W,SFF
+wa-2021,Kalgoorlie,2,BUYUKCAKAR Rustu,O'DONNELL Kyran,1.0,X_W,LIB
+wa-2021,Kalgoorlie,2,BUYUKCAKAR Rustu,REDREAU Patrick,6.0,X_W,ONP
+wa-2021,Kalgoorlie,2,BUYUKCAKAR Rustu,WALLACE Alex,4.0,X_W,GRN
+wa-2021,Kalgoorlie,2,BUYUKCAKAR Rustu,PIAZZA Enrico,5.0,X_W,X_NMV
+wa-2021,Kalgoorlie,2,BUYUKCAKAR Rustu,OLSEN Rowena,3.0,X_W,NAT
+wa-2021,Kalgoorlie,2,BUYUKCAKAR Rustu,KENT Ali,4.0,X_W,ALP
+wa-2021,Kalgoorlie,3,PIAZZA Enrico,RENNIE Sam,2.0,X_NMV,LDP
+wa-2021,Kalgoorlie,3,PIAZZA Enrico,CARMODY Jack,30.0,X_NMV,SFF
+wa-2021,Kalgoorlie,3,PIAZZA Enrico,O'DONNELL Kyran,15.0,X_NMV,LIB
+wa-2021,Kalgoorlie,3,PIAZZA Enrico,REDREAU Patrick,36.0,X_NMV,ONP
+wa-2021,Kalgoorlie,3,PIAZZA Enrico,WALLACE Alex,26.0,X_NMV,GRN
+wa-2021,Kalgoorlie,3,PIAZZA Enrico,OLSEN Rowena,18.0,X_NMV,NAT
+wa-2021,Kalgoorlie,3,PIAZZA Enrico,KENT Ali,17.0,X_NMV,ALP
+wa-2021,Kalgoorlie,3,PIAZZA Enrico,Exhausted,1.0,X_NMV,EXH
+wa-2021,Kalgoorlie,4,RENNIE Sam,CARMODY Jack,92.0,LDP,SFF
+wa-2021,Kalgoorlie,4,RENNIE Sam,O'DONNELL Kyran,64.0,LDP,LIB
+wa-2021,Kalgoorlie,4,RENNIE Sam,REDREAU Patrick,17.0,LDP,ONP
+wa-2021,Kalgoorlie,4,RENNIE Sam,WALLACE Alex,5.0,LDP,GRN
+wa-2021,Kalgoorlie,4,RENNIE Sam,OLSEN Rowena,19.0,LDP,NAT
+wa-2021,Kalgoorlie,4,RENNIE Sam,KENT Ali,24.0,LDP,ALP
+wa-2021,Kalgoorlie,5,WALLACE Alex,CARMODY Jack,40.0,GRN,SFF
+wa-2021,Kalgoorlie,5,WALLACE Alex,O'DONNELL Kyran,38.0,GRN,LIB
+wa-2021,Kalgoorlie,5,WALLACE Alex,REDREAU Patrick,27.0,GRN,ONP
+wa-2021,Kalgoorlie,5,WALLACE Alex,OLSEN Rowena,40.0,GRN,NAT
+wa-2021,Kalgoorlie,5,WALLACE Alex,KENT Ali,218.0,GRN,ALP
+wa-2021,Kalgoorlie,6,REDREAU Patrick,CARMODY Jack,279.0,ONP,SFF
+wa-2021,Kalgoorlie,6,REDREAU Patrick,O'DONNELL Kyran,123.0,ONP,LIB
+wa-2021,Kalgoorlie,6,REDREAU Patrick,OLSEN Rowena,84.0,ONP,NAT
+wa-2021,Kalgoorlie,6,REDREAU Patrick,KENT Ali,93.0,ONP,ALP
+wa-2021,Kalgoorlie,6,REDREAU Patrick,Exhausted,1.0,ONP,EXH
+wa-2021,Kalgoorlie,7,CARMODY Jack,O'DONNELL Kyran,409.0,SFF,LIB
+wa-2021,Kalgoorlie,7,CARMODY Jack,OLSEN Rowena,255.0,SFF,NAT
+wa-2021,Kalgoorlie,7,CARMODY Jack,KENT Ali,247.0,SFF,ALP
+wa-2021,Kalgoorlie,7,CARMODY Jack,Exhausted,1.0,SFF,EXH
+wa-2021,Kalgoorlie,8,OLSEN Rowena,O'DONNELL Kyran,1256.0,NAT,LIB
+wa-2021,Kalgoorlie,8,OLSEN Rowena,KENT Ali,767.0,NAT,ALP
+wa-2021,Kalgoorlie,8,OLSEN Rowena,Exhausted,4.0,NAT,EXH
+wa-2021,Kimberley,2,FEHLAUER Karl Neil,HAEREWA Geoff,12.0,X_WAP,LIB
+wa-2021,Kimberley,2,FEHLAUER Karl Neil,JONES Kai,6.0,X_WAP,IND
+wa-2021,Kimberley,2,FEHLAUER Karl Neil,MODOLO Roger,8.0,X_WAP,ONP
+wa-2021,Kimberley,2,FEHLAUER Karl Neil,HERMAN A,3.0,X_WAP,X_NMV
+wa-2021,Kimberley,2,FEHLAUER Karl Neil,HILLS Millie,8.0,X_WAP,NAT
+wa-2021,Kimberley,2,FEHLAUER Karl Neil,D'ANNA Divina,21.0,X_WAP,ALP
+wa-2021,Kimberley,2,FEHLAUER Karl Neil,PIGRAM Naomi,10.0,X_WAP,GRN
+wa-2021,Kimberley,3,HERMAN A,HAEREWA Geoff,9.0,X_NMV,LIB
+wa-2021,Kimberley,3,HERMAN A,JONES Kai,11.0,X_NMV,IND
+wa-2021,Kimberley,3,HERMAN A,MODOLO Roger,27.0,X_NMV,ONP
+wa-2021,Kimberley,3,HERMAN A,HILLS Millie,4.0,X_NMV,NAT
+wa-2021,Kimberley,3,HERMAN A,D'ANNA Divina,17.0,X_NMV,ALP
+wa-2021,Kimberley,3,HERMAN A,PIGRAM Naomi,19.0,X_NMV,GRN
+wa-2021,Kimberley,3,HERMAN A,Exhausted,1.0,X_NMV,EXH
+wa-2021,Kimberley,4,JONES Kai,HAEREWA Geoff,23.0,IND,LIB
+wa-2021,Kimberley,4,JONES Kai,MODOLO Roger,18.0,IND,ONP
+wa-2021,Kimberley,4,JONES Kai,HILLS Millie,24.0,IND,NAT
+wa-2021,Kimberley,4,JONES Kai,D'ANNA Divina,31.0,IND,ALP
+wa-2021,Kimberley,4,JONES Kai,PIGRAM Naomi,18.0,IND,GRN
+wa-2021,Kimberley,4,JONES Kai,Exhausted,1.0,IND,EXH
+wa-2021,Kimberley,5,MODOLO Roger,HAEREWA Geoff,109.0,ONP,LIB
+wa-2021,Kimberley,5,MODOLO Roger,HILLS Millie,84.0,ONP,NAT
+wa-2021,Kimberley,5,MODOLO Roger,D'ANNA Divina,50.0,ONP,ALP
+wa-2021,Kimberley,5,MODOLO Roger,PIGRAM Naomi,31.0,ONP,GRN
+wa-2021,Kimberley,6,HILLS Millie,HAEREWA Geoff,435.0,NAT,LIB
+wa-2021,Kimberley,6,HILLS Millie,D'ANNA Divina,228.0,NAT,ALP
+wa-2021,Kimberley,6,HILLS Millie,PIGRAM Naomi,114.0,NAT,GRN
+wa-2021,Kimberley,6,HILLS Millie,Exhausted,1.0,NAT,EXH
+wa-2021,Kimberley,7,PIGRAM Naomi,HAEREWA Geoff,269.0,GRN,LIB
+wa-2021,Kimberley,7,PIGRAM Naomi,D'ANNA Divina,1524.0,GRN,ALP
+wa-2021,Kingsley,2,McGARRY Dianne Kerry,WEBBER Concetta,28.0,X_W,ONP
+wa-2021,Kingsley,2,McGARRY Dianne Kerry,STOJKOVSKI Jessica,55.0,X_W,ALP
+wa-2021,Kingsley,2,McGARRY Dianne Kerry,CRAWFORD Lynda,9.0,X_W,X_NMV
+wa-2021,Kingsley,2,McGARRY Dianne Kerry,EDWARDES Scott,38.0,X_W,LIB
+wa-2021,Kingsley,2,McGARRY Dianne Kerry,TRIPP Isabella,32.0,X_W,GRN
+wa-2021,Kingsley,2,McGARRY Dianne Kerry,Exhausted,2.0,X_W,EXH
+wa-2021,Kingsley,3,CRAWFORD Lynda,WEBBER Concetta,162.0,X_NMV,ONP
+wa-2021,Kingsley,3,CRAWFORD Lynda,STOJKOVSKI Jessica,64.0,X_NMV,ALP
+wa-2021,Kingsley,3,CRAWFORD Lynda,EDWARDES Scott,83.0,X_NMV,LIB
+wa-2021,Kingsley,3,CRAWFORD Lynda,TRIPP Isabella,71.0,X_NMV,GRN
+wa-2021,Kingsley,3,CRAWFORD Lynda,Exhausted,2.0,X_NMV,EXH
+wa-2021,Kingsley,4,WEBBER Concetta,STOJKOVSKI Jessica,236.0,ONP,ALP
+wa-2021,Kingsley,4,WEBBER Concetta,EDWARDES Scott,267.0,ONP,LIB
+wa-2021,Kingsley,4,WEBBER Concetta,TRIPP Isabella,121.0,ONP,GRN
+wa-2021,Kingsley,4,WEBBER Concetta,Exhausted,2.0,ONP,EXH
+wa-2021,Kingsley,5,TRIPP Isabella,STOJKOVSKI Jessica,1310.0,GRN,ALP
+wa-2021,Kingsley,5,TRIPP Isabella,EDWARDES Scott,374.0,GRN,LIB
+wa-2021,Kingsley,5,TRIPP Isabella,Exhausted,1.0,GRN,EXH
+wa-2021,Kwinana,2,DEVARAPALLI Venkat,SUMMERELL Steven,25.0,X_WAP,ONP
+wa-2021,Kwinana,2,DEVARAPALLI Venkat,BURNET Christopher,18.0,X_WAP,X_W
+wa-2021,Kwinana,2,DEVARAPALLI Venkat,TALBOT Bianca,31.0,X_WAP,LIB
+wa-2021,Kwinana,2,DEVARAPALLI Venkat,RICKERT Lauren,20.0,X_WAP,GRN
+wa-2021,Kwinana,2,DEVARAPALLI Venkat,VELLNAGEL Christopher,17.0,X_WAP,LDP
+wa-2021,Kwinana,2,DEVARAPALLI Venkat,COOK Roger,47.0,X_WAP,ALP
+wa-2021,Kwinana,2,DEVARAPALLI Venkat,PORTELLI Connie,7.0,X_WAP,X_NMV
+wa-2021,Kwinana,3,VELLNAGEL Christopher,SUMMERELL Steven,27.0,LDP,ONP
+wa-2021,Kwinana,3,VELLNAGEL Christopher,BURNET Christopher,9.0,LDP,X_W
+wa-2021,Kwinana,3,VELLNAGEL Christopher,TALBOT Bianca,57.0,LDP,LIB
+wa-2021,Kwinana,3,VELLNAGEL Christopher,RICKERT Lauren,17.0,LDP,GRN
+wa-2021,Kwinana,3,VELLNAGEL Christopher,COOK Roger,68.0,LDP,ALP
+wa-2021,Kwinana,3,VELLNAGEL Christopher,PORTELLI Connie,13.0,LDP,X_NMV
+wa-2021,Kwinana,3,VELLNAGEL Christopher,Exhausted,1.0,LDP,EXH
+wa-2021,Kwinana,4,BURNET Christopher,SUMMERELL Steven,68.0,X_W,ONP
+wa-2021,Kwinana,4,BURNET Christopher,TALBOT Bianca,42.0,X_W,LIB
+wa-2021,Kwinana,4,BURNET Christopher,RICKERT Lauren,29.0,X_W,GRN
+wa-2021,Kwinana,4,BURNET Christopher,COOK Roger,73.0,X_W,ALP
+wa-2021,Kwinana,4,BURNET Christopher,PORTELLI Connie,22.0,X_W,X_NMV
+wa-2021,Kwinana,4,BURNET Christopher,Exhausted,1.0,X_W,EXH
+wa-2021,Kwinana,5,PORTELLI Connie,SUMMERELL Steven,172.0,X_NMV,ONP
+wa-2021,Kwinana,5,PORTELLI Connie,TALBOT Bianca,48.0,X_NMV,LIB
+wa-2021,Kwinana,5,PORTELLI Connie,RICKERT Lauren,88.0,X_NMV,GRN
+wa-2021,Kwinana,5,PORTELLI Connie,COOK Roger,139.0,X_NMV,ALP
+wa-2021,Kwinana,6,SUMMERELL Steven,TALBOT Bianca,545.0,ONP,LIB
+wa-2021,Kwinana,6,SUMMERELL Steven,RICKERT Lauren,150.0,ONP,GRN
+wa-2021,Kwinana,6,SUMMERELL Steven,COOK Roger,293.0,ONP,ALP
+wa-2021,Kwinana,6,SUMMERELL Steven,Exhausted,3.0,ONP,EXH
+wa-2021,Kwinana,7,RICKERT Lauren,TALBOT Bianca,294.0,GRN,LIB
+wa-2021,Kwinana,7,RICKERT Lauren,COOK Roger,1198.0,GRN,ALP
+wa-2021,Kwinana,7,RICKERT Lauren,Exhausted,1.0,GRN,EXH
+wa-2021,Landsdale,2,DOOBREE Sareeta,DESAI Shailee Mitesh,84.0,X_W,X_WAP
+wa-2021,Landsdale,2,DOOBREE Sareeta,RAPONI Brett,36.0,X_W,LIB
+wa-2021,Landsdale,2,DOOBREE Sareeta,BEEDHAM Leah,32.0,X_W,X_NMV
+wa-2021,Landsdale,2,DOOBREE Sareeta,HOUSE Katrina,20.0,X_W,GRN
+wa-2021,Landsdale,2,DOOBREE Sareeta,QUIRK Margaret,64.0,X_W,ALP
+wa-2021,Landsdale,3,BEEDHAM Leah,DESAI Shailee Mitesh,171.0,X_NMV,X_WAP
+wa-2021,Landsdale,3,BEEDHAM Leah,RAPONI Brett,176.0,X_NMV,LIB
+wa-2021,Landsdale,3,BEEDHAM Leah,HOUSE Katrina,116.0,X_NMV,GRN
+wa-2021,Landsdale,3,BEEDHAM Leah,QUIRK Margaret,148.0,X_NMV,ALP
+wa-2021,Landsdale,4,DESAI Shailee Mitesh,RAPONI Brett,595.0,X_WAP,LIB
+wa-2021,Landsdale,4,DESAI Shailee Mitesh,HOUSE Katrina,168.0,X_WAP,GRN
+wa-2021,Landsdale,4,DESAI Shailee Mitesh,QUIRK Margaret,368.0,X_WAP,ALP
+wa-2021,Landsdale,4,DESAI Shailee Mitesh,Exhausted,2.0,X_WAP,EXH
+wa-2021,Landsdale,5,HOUSE Katrina,RAPONI Brett,371.0,GRN,LIB
+wa-2021,Landsdale,5,HOUSE Katrina,QUIRK Margaret,1023.0,GRN,ALP
+wa-2021,Mandurah,2,TIMIS Marius,BLEVIN Ian,9.0,X_W,SFF
+wa-2021,Mandurah,2,TIMIS Marius,ORTHEIL Cons,1.0,X_W,NAT
+wa-2021,Mandurah,2,TIMIS Marius,TURNER Xanthe,3.0,X_W,GRN
+wa-2021,Mandurah,2,TIMIS Marius,BURNS Ryan,6.0,X_W,LIB
+wa-2021,Mandurah,2,TIMIS Marius,REGTERSCHOT Haydn,4.0,X_W,ONP
+wa-2021,Mandurah,2,TIMIS Marius,TEMPLEMAN David,16.0,X_W,ALP
+wa-2021,Mandurah,2,TIMIS Marius,SPINOLA Samy,7.0,X_W,X_NMV
+wa-2021,Mandurah,2,TIMIS Marius,SUMMERS Katherine,3.0,X_W,SAP
+wa-2021,Mandurah,2,TIMIS Marius,FARBEY Gavin,3.0,X_W,IND
+wa-2021,Mandurah,2,TIMIS Marius,BEATON Rodney,8.0,X_W,LCP
+wa-2021,Mandurah,3,SUMMERS Katherine,BLEVIN Ian,8.0,SAP,SFF
+wa-2021,Mandurah,3,SUMMERS Katherine,ORTHEIL Cons,1.0,SAP,NAT
+wa-2021,Mandurah,3,SUMMERS Katherine,TURNER Xanthe,15.0,SAP,GRN
+wa-2021,Mandurah,3,SUMMERS Katherine,BURNS Ryan,18.0,SAP,LIB
+wa-2021,Mandurah,3,SUMMERS Katherine,REGTERSCHOT Haydn,9.0,SAP,ONP
+wa-2021,Mandurah,3,SUMMERS Katherine,TEMPLEMAN David,19.0,SAP,ALP
+wa-2021,Mandurah,3,SUMMERS Katherine,SPINOLA Samy,19.0,SAP,X_NMV
+wa-2021,Mandurah,3,SUMMERS Katherine,FARBEY Gavin,18.0,SAP,IND
+wa-2021,Mandurah,3,SUMMERS Katherine,BEATON Rodney,13.0,SAP,LCP
+wa-2021,Mandurah,4,ORTHEIL Cons,BLEVIN Ian,28.0,NAT,SFF
+wa-2021,Mandurah,4,ORTHEIL Cons,TURNER Xanthe,6.0,NAT,GRN
+wa-2021,Mandurah,4,ORTHEIL Cons,BURNS Ryan,80.0,NAT,LIB
+wa-2021,Mandurah,4,ORTHEIL Cons,REGTERSCHOT Haydn,11.0,NAT,ONP
+wa-2021,Mandurah,4,ORTHEIL Cons,TEMPLEMAN David,10.0,NAT,ALP
+wa-2021,Mandurah,4,ORTHEIL Cons,SPINOLA Samy,3.0,NAT,X_NMV
+wa-2021,Mandurah,4,ORTHEIL Cons,FARBEY Gavin,6.0,NAT,IND
+wa-2021,Mandurah,4,ORTHEIL Cons,BEATON Rodney,2.0,NAT,LCP
+wa-2021,Mandurah,5,FARBEY Gavin,BLEVIN Ian,21.0,IND,SFF
+wa-2021,Mandurah,5,FARBEY Gavin,TURNER Xanthe,26.0,IND,GRN
+wa-2021,Mandurah,5,FARBEY Gavin,BURNS Ryan,27.0,IND,LIB
+wa-2021,Mandurah,5,FARBEY Gavin,REGTERSCHOT Haydn,11.0,IND,ONP
+wa-2021,Mandurah,5,FARBEY Gavin,TEMPLEMAN David,63.0,IND,ALP
+wa-2021,Mandurah,5,FARBEY Gavin,SPINOLA Samy,12.0,IND,X_NMV
+wa-2021,Mandurah,5,FARBEY Gavin,BEATON Rodney,43.0,IND,LCP
+wa-2021,Mandurah,5,FARBEY Gavin,Exhausted,1.0,IND,EXH
+wa-2021,Mandurah,6,SPINOLA Samy,BLEVIN Ian,34.0,X_NMV,SFF
+wa-2021,Mandurah,6,SPINOLA Samy,TURNER Xanthe,26.0,X_NMV,GRN
+wa-2021,Mandurah,6,SPINOLA Samy,BURNS Ryan,30.0,X_NMV,LIB
+wa-2021,Mandurah,6,SPINOLA Samy,REGTERSCHOT Haydn,38.0,X_NMV,ONP
+wa-2021,Mandurah,6,SPINOLA Samy,TEMPLEMAN David,45.0,X_NMV,ALP
+wa-2021,Mandurah,6,SPINOLA Samy,BEATON Rodney,82.0,X_NMV,LCP
+wa-2021,Mandurah,7,REGTERSCHOT Haydn,BLEVIN Ian,177.0,ONP,SFF
+wa-2021,Mandurah,7,REGTERSCHOT Haydn,TURNER Xanthe,26.0,ONP,GRN
+wa-2021,Mandurah,7,REGTERSCHOT Haydn,BURNS Ryan,109.0,ONP,LIB
+wa-2021,Mandurah,7,REGTERSCHOT Haydn,TEMPLEMAN David,82.0,ONP,ALP
+wa-2021,Mandurah,7,REGTERSCHOT Haydn,BEATON Rodney,67.0,ONP,LCP
+wa-2021,Mandurah,8,BEATON Rodney,BLEVIN Ian,202.0,LCP,SFF
+wa-2021,Mandurah,8,BEATON Rodney,TURNER Xanthe,129.0,LCP,GRN
+wa-2021,Mandurah,8,BEATON Rodney,BURNS Ryan,71.0,LCP,LIB
+wa-2021,Mandurah,8,BEATON Rodney,TEMPLEMAN David,224.0,LCP,ALP
+wa-2021,Mandurah,8,BEATON Rodney,Exhausted,1.0,LCP,EXH
+wa-2021,Mandurah,9,TURNER Xanthe,BLEVIN Ian,169.0,GRN,SFF
+wa-2021,Mandurah,9,TURNER Xanthe,BURNS Ryan,131.0,GRN,LIB
+wa-2021,Mandurah,9,TURNER Xanthe,TEMPLEMAN David,656.0,GRN,ALP
+wa-2021,Mandurah,9,TURNER Xanthe,Exhausted,1.0,GRN,EXH
+wa-2021,Mandurah,10,BLEVIN Ian,BURNS Ryan,702.0,SFF,LIB
+wa-2021,Mandurah,10,BLEVIN Ian,TEMPLEMAN David,477.0,SFF,ALP
+wa-2021,Maylands,2,BAKER Lisa,ADDINK Carmel,28.0,ALP,X_NMV
+wa-2021,Maylands,2,BAKER Lisa,BAKER Lisa,81.0,ALP,ALP
+wa-2021,Maylands,2,BAKER Lisa,ANDREEVA Maria,38.0,ALP,ONP
+wa-2021,Maylands,2,BAKER Lisa,PRINGLE Emma,41.0,ALP,GRN
+wa-2021,Maylands,2,BAKER Lisa,IEMMA Justin,29.0,ALP,LIB
+wa-2021,Maylands,2,BAKER Lisa,BURNETT Gaye,8.0,ALP,CHR
+wa-2021,Maylands,2,BAKER Lisa,Exhausted,1.0,ALP,EXH
+wa-2021,Maylands,3,ANDREEVA Maria,ADDINK Carmel,67.0,ONP,X_NMV
+wa-2021,Maylands,3,ANDREEVA Maria,BAKER Lisa,101.0,ONP,ALP
+wa-2021,Maylands,3,ANDREEVA Maria,PRINGLE Emma,40.0,ONP,GRN
+wa-2021,Maylands,3,ANDREEVA Maria,IEMMA Justin,111.0,ONP,LIB
+wa-2021,Maylands,3,ANDREEVA Maria,BURNETT Gaye,55.0,ONP,CHR
+wa-2021,Maylands,3,ANDREEVA Maria,Exhausted,3.0,ONP,EXH
+wa-2021,Maylands,4,BURNETT Gaye,ADDINK Carmel,86.0,CHR,X_NMV
+wa-2021,Maylands,4,BURNETT Gaye,BAKER Lisa,92.0,CHR,ALP
+wa-2021,Maylands,4,BURNETT Gaye,PRINGLE Emma,45.0,CHR,GRN
+wa-2021,Maylands,4,BURNETT Gaye,IEMMA Justin,289.0,CHR,LIB
+wa-2021,Maylands,5,ADDINK Carmel,BAKER Lisa,314.0,X_NMV,ALP
+wa-2021,Maylands,5,ADDINK Carmel,PRINGLE Emma,184.0,X_NMV,GRN
+wa-2021,Maylands,5,ADDINK Carmel,IEMMA Justin,207.0,X_NMV,LIB
+wa-2021,Maylands,5,ADDINK Carmel,Exhausted,4.0,X_NMV,EXH
+wa-2021,Maylands,6,PRINGLE Emma,BAKER Lisa,3675.0,GRN,ALP
+wa-2021,Maylands,6,PRINGLE Emma,IEMMA Justin,619.0,GRN,LIB
+wa-2021,Maylands,6,PRINGLE Emma,Exhausted,1.0,GRN,EXH
+wa-2021,Midland,2,BHASIN Mohit,NABATE Ester,8.0,X_W,CHR
+wa-2021,Midland,2,BHASIN Mohit,STURCKE Brendan,10.0,X_W,GRN
+wa-2021,Midland,2,BHASIN Mohit,KELLY Steve,4.0,X_W,X_NMV
+wa-2021,Midland,2,BHASIN Mohit,ROBERTS Michelle,28.0,X_W,ALP
+wa-2021,Midland,2,BHASIN Mohit,BEDFORD Brad,17.0,X_W,X_WAP
+wa-2021,Midland,2,BHASIN Mohit,CICCHINI Jo,11.0,X_W,LIB
+wa-2021,Midland,2,BHASIN Mohit,OLOW Teresa,25.0,X_W,ONP
+wa-2021,Midland,2,BHASIN Mohit,Exhausted,1.0,X_W,EXH
+wa-2021,Midland,3,BEDFORD Brad,NABATE Ester,26.0,X_WAP,CHR
+wa-2021,Midland,3,BEDFORD Brad,STURCKE Brendan,58.0,X_WAP,GRN
+wa-2021,Midland,3,BEDFORD Brad,KELLY Steve,39.0,X_WAP,X_NMV
+wa-2021,Midland,3,BEDFORD Brad,ROBERTS Michelle,116.0,X_WAP,ALP
+wa-2021,Midland,3,BEDFORD Brad,CICCHINI Jo,90.0,X_WAP,LIB
+wa-2021,Midland,3,BEDFORD Brad,OLOW Teresa,48.0,X_WAP,ONP
+wa-2021,Midland,4,KELLY Steve,NABATE Ester,71.0,X_NMV,CHR
+wa-2021,Midland,4,KELLY Steve,STURCKE Brendan,94.0,X_NMV,GRN
+wa-2021,Midland,4,KELLY Steve,ROBERTS Michelle,81.0,X_NMV,ALP
+wa-2021,Midland,4,KELLY Steve,CICCHINI Jo,53.0,X_NMV,LIB
+wa-2021,Midland,4,KELLY Steve,OLOW Teresa,141.0,X_NMV,ONP
+wa-2021,Midland,4,KELLY Steve,Exhausted,2.0,X_NMV,EXH
+wa-2021,Midland,5,OLOW Teresa,NABATE Ester,197.0,ONP,CHR
+wa-2021,Midland,5,OLOW Teresa,STURCKE Brendan,79.0,ONP,GRN
+wa-2021,Midland,5,OLOW Teresa,ROBERTS Michelle,220.0,ONP,ALP
+wa-2021,Midland,5,OLOW Teresa,CICCHINI Jo,262.0,ONP,LIB
+wa-2021,Midland,5,OLOW Teresa,Exhausted,1.0,ONP,EXH
+wa-2021,Midland,6,NABATE Ester,STURCKE Brendan,251.0,CHR,GRN
+wa-2021,Midland,6,NABATE Ester,ROBERTS Michelle,201.0,CHR,ALP
+wa-2021,Midland,6,NABATE Ester,CICCHINI Jo,525.0,CHR,LIB
+wa-2021,Midland,6,NABATE Ester,Exhausted,10.0,CHR,EXH
+wa-2021,Midland,7,STURCKE Brendan,ROBERTS Michelle,1801.0,GRN,ALP
+wa-2021,Midland,7,STURCKE Brendan,CICCHINI Jo,388.0,GRN,LIB
+wa-2021,Mirrabooka,2,CHHINA Devinder,MABOOD Michael,16.0,X_W,ONP
+wa-2021,Mirrabooka,2,CHHINA Devinder,DUNNE Peter,7.0,X_W,IND
+wa-2021,Mirrabooka,2,CHHINA Devinder,MUBARAK Kim,7.0,X_W,IND
+wa-2021,Mirrabooka,2,CHHINA Devinder,COOPER Mark,11.0,X_W,GRN
+wa-2021,Mirrabooka,2,CHHINA Devinder,HAMMAT Meredith,40.0,X_W,ALP
+wa-2021,Mirrabooka,2,CHHINA Devinder,RANDALL Dwight,13.0,X_W,CHR
+wa-2021,Mirrabooka,2,CHHINA Devinder,SAWMADAL Aaron,27.0,X_W,LIB
+wa-2021,Mirrabooka,2,CHHINA Devinder,AYRE Jessica,19.0,X_W,X_NMV
+wa-2021,Mirrabooka,3,MUBARAK Kim,MABOOD Michael,36.0,IND,ONP
+wa-2021,Mirrabooka,3,MUBARAK Kim,DUNNE Peter,58.0,IND,IND
+wa-2021,Mirrabooka,3,MUBARAK Kim,COOPER Mark,34.0,IND,GRN
+wa-2021,Mirrabooka,3,MUBARAK Kim,HAMMAT Meredith,45.0,IND,ALP
+wa-2021,Mirrabooka,3,MUBARAK Kim,RANDALL Dwight,15.0,IND,CHR
+wa-2021,Mirrabooka,3,MUBARAK Kim,SAWMADAL Aaron,10.0,IND,LIB
+wa-2021,Mirrabooka,3,MUBARAK Kim,AYRE Jessica,8.0,IND,X_NMV
+wa-2021,Mirrabooka,3,MUBARAK Kim,Exhausted,1.0,IND,EXH
+wa-2021,Mirrabooka,4,DUNNE Peter,MABOOD Michael,81.0,IND,ONP
+wa-2021,Mirrabooka,4,DUNNE Peter,COOPER Mark,83.0,IND,GRN
+wa-2021,Mirrabooka,4,DUNNE Peter,HAMMAT Meredith,82.0,IND,ALP
+wa-2021,Mirrabooka,4,DUNNE Peter,RANDALL Dwight,23.0,IND,CHR
+wa-2021,Mirrabooka,4,DUNNE Peter,SAWMADAL Aaron,30.0,IND,LIB
+wa-2021,Mirrabooka,4,DUNNE Peter,AYRE Jessica,21.0,IND,X_NMV
+wa-2021,Mirrabooka,4,DUNNE Peter,Exhausted,2.0,IND,EXH
+wa-2021,Mirrabooka,5,AYRE Jessica,MABOOD Michael,153.0,X_NMV,ONP
+wa-2021,Mirrabooka,5,AYRE Jessica,COOPER Mark,89.0,X_NMV,GRN
+wa-2021,Mirrabooka,5,AYRE Jessica,HAMMAT Meredith,110.0,X_NMV,ALP
+wa-2021,Mirrabooka,5,AYRE Jessica,RANDALL Dwight,63.0,X_NMV,CHR
+wa-2021,Mirrabooka,5,AYRE Jessica,SAWMADAL Aaron,107.0,X_NMV,LIB
+wa-2021,Mirrabooka,5,AYRE Jessica,Exhausted,3.0,X_NMV,EXH
+wa-2021,Mirrabooka,6,RANDALL Dwight,MABOOD Michael,174.0,CHR,ONP
+wa-2021,Mirrabooka,6,RANDALL Dwight,COOPER Mark,71.0,CHR,GRN
+wa-2021,Mirrabooka,6,RANDALL Dwight,HAMMAT Meredith,199.0,CHR,ALP
+wa-2021,Mirrabooka,6,RANDALL Dwight,SAWMADAL Aaron,460.0,CHR,LIB
+wa-2021,Mirrabooka,7,MABOOD Michael,COOPER Mark,657.0,ONP,GRN
+wa-2021,Mirrabooka,7,MABOOD Michael,HAMMAT Meredith,388.0,ONP,ALP
+wa-2021,Mirrabooka,7,MABOOD Michael,SAWMADAL Aaron,334.0,ONP,LIB
+wa-2021,Mirrabooka,7,MABOOD Michael,Exhausted,20.0,ONP,EXH
+wa-2021,Mirrabooka,8,COOPER Mark,HAMMAT Meredith,1841.0,GRN,ALP
+wa-2021,Mirrabooka,8,COOPER Mark,SAWMADAL Aaron,432.0,GRN,LIB
+wa-2021,Mirrabooka,8,COOPER Mark,Exhausted,5.0,GRN,EXH
+wa-2021,Moore,2,BANKA Richard,SLYNS Darren,11.0,X_W,LIB
+wa-2021,Moore,2,BANKA Richard,LOVE Shane,23.0,X_W,NAT
+wa-2021,Moore,2,BANKA Richard,FRIZZELL Ian Henry,12.0,X_W,ONP
+wa-2021,Moore,2,BANKA Richard,ASMUTAITIS T,8.0,X_W,X_NMV
+wa-2021,Moore,2,BANKA Richard,NORTON Barni,14.0,X_W,ALP
+wa-2021,Moore,2,BANKA Richard,WILLIAMSON Ross,10.0,X_W,SFF
+wa-2021,Moore,2,BANKA Richard,SPITTLES Brian,8.0,X_W,GRN
+wa-2021,Moore,3,ASMUTAITIS T,SLYNS Darren,16.0,X_NMV,LIB
+wa-2021,Moore,3,ASMUTAITIS T,LOVE Shane,31.0,X_NMV,NAT
+wa-2021,Moore,3,ASMUTAITIS T,FRIZZELL Ian Henry,85.0,X_NMV,ONP
+wa-2021,Moore,3,ASMUTAITIS T,NORTON Barni,23.0,X_NMV,ALP
+wa-2021,Moore,3,ASMUTAITIS T,WILLIAMSON Ross,59.0,X_NMV,SFF
+wa-2021,Moore,3,ASMUTAITIS T,SPITTLES Brian,27.0,X_NMV,GRN
+wa-2021,Moore,4,SPITTLES Brian,SLYNS Darren,51.0,GRN,LIB
+wa-2021,Moore,4,SPITTLES Brian,LOVE Shane,103.0,GRN,NAT
+wa-2021,Moore,4,SPITTLES Brian,FRIZZELL Ian Henry,21.0,GRN,ONP
+wa-2021,Moore,4,SPITTLES Brian,NORTON Barni,394.0,GRN,ALP
+wa-2021,Moore,4,SPITTLES Brian,WILLIAMSON Ross,104.0,GRN,SFF
+wa-2021,Moore,5,FRIZZELL Ian Henry,SLYNS Darren,98.0,ONP,LIB
+wa-2021,Moore,5,FRIZZELL Ian Henry,LOVE Shane,198.0,ONP,NAT
+wa-2021,Moore,5,FRIZZELL Ian Henry,NORTON Barni,129.0,ONP,ALP
+wa-2021,Moore,5,FRIZZELL Ian Henry,WILLIAMSON Ross,272.0,ONP,SFF
+wa-2021,Moore,6,WILLIAMSON Ross,SLYNS Darren,296.0,SFF,LIB
+wa-2021,Moore,6,WILLIAMSON Ross,LOVE Shane,617.0,SFF,NAT
+wa-2021,Moore,6,WILLIAMSON Ross,NORTON Barni,515.0,SFF,ALP
+wa-2021,Moore,6,WILLIAMSON Ross,Exhausted,1.0,SFF,EXH
+wa-2021,Moore,7,SLYNS Darren,LOVE Shane,3545.0,LIB,NAT
+wa-2021,Moore,7,SLYNS Darren,NORTON Barni,625.0,LIB,ALP
+wa-2021,Moore,7,SLYNS Darren,Exhausted,3.0,LIB,EXH
+wa-2021,Morley,2,SINGH Aman,WELLS Alan,23.0,X_W,CHR
+wa-2021,Morley,2,SINGH Aman,SETH Jim,37.0,X_W,LIB
+wa-2021,Morley,2,SINGH Aman,SCULLY Julian,30.0,X_W,ONP
+wa-2021,Morley,2,SINGH Aman,MARCINKOWSKI Thomas,35.0,X_W,GRN
+wa-2021,Morley,2,SINGH Aman,KERSLAKE Rhonda,21.0,X_W,X_NMV
+wa-2021,Morley,2,SINGH Aman,SANDERSON Amber-Jade,66.0,X_W,ALP
+wa-2021,Morley,2,SINGH Aman,Exhausted,5.0,X_W,EXH
+wa-2021,Morley,3,KERSLAKE Rhonda,WELLS Alan,57.0,X_NMV,CHR
+wa-2021,Morley,3,KERSLAKE Rhonda,SETH Jim,42.0,X_NMV,LIB
+wa-2021,Morley,3,KERSLAKE Rhonda,SCULLY Julian,98.0,X_NMV,ONP
+wa-2021,Morley,3,KERSLAKE Rhonda,MARCINKOWSKI Thomas,93.0,X_NMV,GRN
+wa-2021,Morley,3,KERSLAKE Rhonda,SANDERSON Amber-Jade,127.0,X_NMV,ALP
+wa-2021,Morley,4,SCULLY Julian,WELLS Alan,173.0,ONP,CHR
+wa-2021,Morley,4,SCULLY Julian,SETH Jim,177.0,ONP,LIB
+wa-2021,Morley,4,SCULLY Julian,MARCINKOWSKI Thomas,91.0,ONP,GRN
+wa-2021,Morley,4,SCULLY Julian,SANDERSON Amber-Jade,139.0,ONP,ALP
+wa-2021,Morley,5,WELLS Alan,SETH Jim,732.0,CHR,LIB
+wa-2021,Morley,5,WELLS Alan,MARCINKOWSKI Thomas,116.0,CHR,GRN
+wa-2021,Morley,5,WELLS Alan,SANDERSON Amber-Jade,213.0,CHR,ALP
+wa-2021,Morley,5,WELLS Alan,Exhausted,7.0,CHR,EXH
+wa-2021,Morley,6,MARCINKOWSKI Thomas,SETH Jim,392.0,GRN,LIB
+wa-2021,Morley,6,MARCINKOWSKI Thomas,SANDERSON Amber-Jade,1466.0,GRN,ALP
+wa-2021,Morley,6,MARCINKOWSKI Thomas,Exhausted,2.0,GRN,EXH
+wa-2021,Mount Lawley,2,SANGHA Gurjant Singh,WATT John,9.0,X_W,X_NMV
+wa-2021,Mount Lawley,2,SANGHA Gurjant Singh,JOUBERT Ellen,11.0,X_W,CHR
+wa-2021,Mount Lawley,2,SANGHA Gurjant Singh,MIGDALE Suzanne,18.0,X_W,LIB
+wa-2021,Mount Lawley,2,SANGHA Gurjant Singh,MILLMAN Simon,32.0,X_W,ALP
+wa-2021,Mount Lawley,2,SANGHA Gurjant Singh,GOODRICK Russell,13.0,X_W,X_WAP
+wa-2021,Mount Lawley,2,SANGHA Gurjant Singh,SCHAAL Herbie,12.0,X_W,ONP
+wa-2021,Mount Lawley,2,SANGHA Gurjant Singh,NICOL Lucy,13.0,X_W,GRN
+wa-2021,Mount Lawley,3,SCHAAL Herbie,WATT John,35.0,ONP,X_NMV
+wa-2021,Mount Lawley,3,SCHAAL Herbie,JOUBERT Ellen,18.0,ONP,CHR
+wa-2021,Mount Lawley,3,SCHAAL Herbie,MIGDALE Suzanne,52.0,ONP,LIB
+wa-2021,Mount Lawley,3,SCHAAL Herbie,MILLMAN Simon,40.0,ONP,ALP
+wa-2021,Mount Lawley,3,SCHAAL Herbie,GOODRICK Russell,45.0,ONP,X_WAP
+wa-2021,Mount Lawley,3,SCHAAL Herbie,NICOL Lucy,25.0,ONP,GRN
+wa-2021,Mount Lawley,4,GOODRICK Russell,WATT John,40.0,X_WAP,X_NMV
+wa-2021,Mount Lawley,4,GOODRICK Russell,JOUBERT Ellen,42.0,X_WAP,CHR
+wa-2021,Mount Lawley,4,GOODRICK Russell,MIGDALE Suzanne,100.0,X_WAP,LIB
+wa-2021,Mount Lawley,4,GOODRICK Russell,MILLMAN Simon,131.0,X_WAP,ALP
+wa-2021,Mount Lawley,4,GOODRICK Russell,NICOL Lucy,65.0,X_WAP,GRN
+wa-2021,Mount Lawley,4,GOODRICK Russell,Exhausted,1.0,X_WAP,EXH
+wa-2021,Mount Lawley,5,JOUBERT Ellen,WATT John,106.0,CHR,X_NMV
+wa-2021,Mount Lawley,5,JOUBERT Ellen,MIGDALE Suzanne,257.0,CHR,LIB
+wa-2021,Mount Lawley,5,JOUBERT Ellen,MILLMAN Simon,97.0,CHR,ALP
+wa-2021,Mount Lawley,5,JOUBERT Ellen,NICOL Lucy,36.0,CHR,GRN
+wa-2021,Mount Lawley,6,WATT John,MIGDALE Suzanne,335.0,X_NMV,LIB
+wa-2021,Mount Lawley,6,WATT John,MILLMAN Simon,182.0,X_NMV,ALP
+wa-2021,Mount Lawley,6,WATT John,NICOL Lucy,221.0,X_NMV,GRN
+wa-2021,Mount Lawley,6,WATT John,Exhausted,1.0,X_NMV,EXH
+wa-2021,Mount Lawley,7,NICOL Lucy,MIGDALE Suzanne,494.0,GRN,LIB
+wa-2021,Mount Lawley,7,NICOL Lucy,MILLMAN Simon,2633.0,GRN,ALP
+wa-2021,Mount Lawley,7,NICOL Lucy,Exhausted,1.0,GRN,EXH
+wa-2021,Murray-Wellington,2,GOLEM Dinko,CARNEY Shaun,8.0,X_W,LCP
+wa-2021,Murray-Wellington,2,GOLEM Dinko,McCALL Mark,7.0,X_W,SFF
+wa-2021,Murray-Wellington,2,GOLEM Dinko,BOYLAN Michelle,10.0,X_W,LIB
+wa-2021,Murray-Wellington,2,GOLEM Dinko,WANSBROUGH Bernie,7.0,X_W,ONP
+wa-2021,Murray-Wellington,2,GOLEM Dinko,BROWN Andrew,6.0,X_W,SAP
+wa-2021,Murray-Wellington,2,GOLEM Dinko,STASZEWSKI Jayden,2.0,X_W,LDP
+wa-2021,Murray-Wellington,2,GOLEM Dinko,PUCCIO Vince,7.0,X_W,GRN
+wa-2021,Murray-Wellington,2,GOLEM Dinko,CLARKE Robyn,10.0,X_W,ALP
+wa-2021,Murray-Wellington,2,GOLEM Dinko,HERRIOT Aimee,4.0,X_W,X_NMV
+wa-2021,Murray-Wellington,2,GOLEM Dinko,LEMMEY Leonie,5.0,X_W,NAT
+wa-2021,Murray-Wellington,3,STASZEWSKI Jayden,CARNEY Shaun,9.0,LDP,LCP
+wa-2021,Murray-Wellington,3,STASZEWSKI Jayden,McCALL Mark,9.0,LDP,SFF
+wa-2021,Murray-Wellington,3,STASZEWSKI Jayden,BOYLAN Michelle,23.0,LDP,LIB
+wa-2021,Murray-Wellington,3,STASZEWSKI Jayden,WANSBROUGH Bernie,8.0,LDP,ONP
+wa-2021,Murray-Wellington,3,STASZEWSKI Jayden,BROWN Andrew,4.0,LDP,SAP
+wa-2021,Murray-Wellington,3,STASZEWSKI Jayden,PUCCIO Vince,15.0,LDP,GRN
+wa-2021,Murray-Wellington,3,STASZEWSKI Jayden,CLARKE Robyn,19.0,LDP,ALP
+wa-2021,Murray-Wellington,3,STASZEWSKI Jayden,HERRIOT Aimee,6.0,LDP,X_NMV
+wa-2021,Murray-Wellington,3,STASZEWSKI Jayden,LEMMEY Leonie,19.0,LDP,NAT
+wa-2021,Murray-Wellington,4,BROWN Andrew,CARNEY Shaun,20.0,SAP,LCP
+wa-2021,Murray-Wellington,4,BROWN Andrew,McCALL Mark,17.0,SAP,SFF
+wa-2021,Murray-Wellington,4,BROWN Andrew,BOYLAN Michelle,23.0,SAP,LIB
+wa-2021,Murray-Wellington,4,BROWN Andrew,WANSBROUGH Bernie,20.0,SAP,ONP
+wa-2021,Murray-Wellington,4,BROWN Andrew,PUCCIO Vince,34.0,SAP,GRN
+wa-2021,Murray-Wellington,4,BROWN Andrew,CLARKE Robyn,40.0,SAP,ALP
+wa-2021,Murray-Wellington,4,BROWN Andrew,HERRIOT Aimee,8.0,SAP,X_NMV
+wa-2021,Murray-Wellington,4,BROWN Andrew,LEMMEY Leonie,12.0,SAP,NAT
+wa-2021,Murray-Wellington,5,HERRIOT Aimee,CARNEY Shaun,69.0,X_NMV,LCP
+wa-2021,Murray-Wellington,5,HERRIOT Aimee,McCALL Mark,49.0,X_NMV,SFF
+wa-2021,Murray-Wellington,5,HERRIOT Aimee,BOYLAN Michelle,23.0,X_NMV,LIB
+wa-2021,Murray-Wellington,5,HERRIOT Aimee,WANSBROUGH Bernie,60.0,X_NMV,ONP
+wa-2021,Murray-Wellington,5,HERRIOT Aimee,PUCCIO Vince,32.0,X_NMV,GRN
+wa-2021,Murray-Wellington,5,HERRIOT Aimee,CLARKE Robyn,40.0,X_NMV,ALP
+wa-2021,Murray-Wellington,5,HERRIOT Aimee,LEMMEY Leonie,24.0,X_NMV,NAT
+wa-2021,Murray-Wellington,5,HERRIOT Aimee,Exhausted,2.0,X_NMV,EXH
+wa-2021,Murray-Wellington,6,WANSBROUGH Bernie,CARNEY Shaun,89.0,ONP,LCP
+wa-2021,Murray-Wellington,6,WANSBROUGH Bernie,McCALL Mark,214.0,ONP,SFF
+wa-2021,Murray-Wellington,6,WANSBROUGH Bernie,BOYLAN Michelle,111.0,ONP,LIB
+wa-2021,Murray-Wellington,6,WANSBROUGH Bernie,PUCCIO Vince,36.0,ONP,GRN
+wa-2021,Murray-Wellington,6,WANSBROUGH Bernie,CLARKE Robyn,85.0,ONP,ALP
+wa-2021,Murray-Wellington,6,WANSBROUGH Bernie,LEMMEY Leonie,71.0,ONP,NAT
+wa-2021,Murray-Wellington,6,WANSBROUGH Bernie,Exhausted,2.0,ONP,EXH
+wa-2021,Murray-Wellington,7,PUCCIO Vince,CARNEY Shaun,198.0,GRN,LCP
+wa-2021,Murray-Wellington,7,PUCCIO Vince,McCALL Mark,53.0,GRN,SFF
+wa-2021,Murray-Wellington,7,PUCCIO Vince,BOYLAN Michelle,69.0,GRN,LIB
+wa-2021,Murray-Wellington,7,PUCCIO Vince,CLARKE Robyn,461.0,GRN,ALP
+wa-2021,Murray-Wellington,7,PUCCIO Vince,LEMMEY Leonie,48.0,GRN,NAT
+wa-2021,Murray-Wellington,7,PUCCIO Vince,Exhausted,1.0,GRN,EXH
+wa-2021,Murray-Wellington,8,LEMMEY Leonie,CARNEY Shaun,50.0,NAT,LCP
+wa-2021,Murray-Wellington,8,LEMMEY Leonie,McCALL Mark,120.0,NAT,SFF
+wa-2021,Murray-Wellington,8,LEMMEY Leonie,BOYLAN Michelle,531.0,NAT,LIB
+wa-2021,Murray-Wellington,8,LEMMEY Leonie,CLARKE Robyn,206.0,NAT,ALP
+wa-2021,Murray-Wellington,9,CARNEY Shaun,McCALL Mark,576.0,LCP,SFF
+wa-2021,Murray-Wellington,9,CARNEY Shaun,BOYLAN Michelle,159.0,LCP,LIB
+wa-2021,Murray-Wellington,9,CARNEY Shaun,CLARKE Robyn,424.0,LCP,ALP
+wa-2021,Murray-Wellington,9,CARNEY Shaun,Exhausted,10.0,LCP,EXH
+wa-2021,Murray-Wellington,10,McCALL Mark,BOYLAN Michelle,1145.0,SFF,LIB
+wa-2021,Murray-Wellington,10,McCALL Mark,CLARKE Robyn,1045.0,SFF,ALP
+wa-2021,Murray-Wellington,10,McCALL Mark,Exhausted,4.0,SFF,EXH
+wa-2021,Nedlands,2,JENNINGS Dennis,FORREST Vivien,23.0,X_W,X_NMV
+wa-2021,Nedlands,2,JENNINGS Dennis,ARGYLE Fiona,39.0,X_W,IND
+wa-2021,Nedlands,2,JENNINGS Dennis,MANGANO Andrew,25.0,X_W,IND
+wa-2021,Nedlands,2,JENNINGS Dennis,STRATTON Katrina,34.0,X_W,ALP
+wa-2021,Nedlands,2,JENNINGS Dennis,MARMION Bill,45.0,X_W,LIB
+wa-2021,Nedlands,2,JENNINGS Dennis,ALDERDICE Tamara,13.0,X_W,GRN
+wa-2021,Nedlands,3,FORREST Vivien,ARGYLE Fiona,184.0,X_NMV,IND
+wa-2021,Nedlands,3,FORREST Vivien,MANGANO Andrew,38.0,X_NMV,IND
+wa-2021,Nedlands,3,FORREST Vivien,STRATTON Katrina,70.0,X_NMV,ALP
+wa-2021,Nedlands,3,FORREST Vivien,MARMION Bill,85.0,X_NMV,LIB
+wa-2021,Nedlands,3,FORREST Vivien,ALDERDICE Tamara,57.0,X_NMV,GRN
+wa-2021,Nedlands,3,FORREST Vivien,Exhausted,1.0,X_NMV,EXH
+wa-2021,Nedlands,4,MANGANO Andrew,ARGYLE Fiona,390.0,IND,IND
+wa-2021,Nedlands,4,MANGANO Andrew,STRATTON Katrina,72.0,IND,ALP
+wa-2021,Nedlands,4,MANGANO Andrew,MARMION Bill,163.0,IND,LIB
+wa-2021,Nedlands,4,MANGANO Andrew,ALDERDICE Tamara,70.0,IND,GRN
+wa-2021,Nedlands,5,ARGYLE Fiona,STRATTON Katrina,811.0,IND,ALP
+wa-2021,Nedlands,5,ARGYLE Fiona,MARMION Bill,2005.0,IND,LIB
+wa-2021,Nedlands,5,ARGYLE Fiona,ALDERDICE Tamara,677.0,IND,GRN
+wa-2021,Nedlands,5,ARGYLE Fiona,Exhausted,3.0,IND,EXH
+wa-2021,Nedlands,6,ALDERDICE Tamara,STRATTON Katrina,3491.0,GRN,ALP
+wa-2021,Nedlands,6,ALDERDICE Tamara,MARMION Bill,872.0,GRN,LIB
+wa-2021,Nedlands,6,ALDERDICE Tamara,Exhausted,3.0,GRN,EXH
+wa-2021,North West Central,2,McKAY Brendan,CATANIA Vince,11.0,X_W,NAT
+wa-2021,North West Central,2,McKAY Brendan,TONKIN Robert,4.0,X_W,ONP
+wa-2021,North West Central,2,McKAY Brendan,McKEOUGH Alys,5.0,X_W,LIB
+wa-2021,North West Central,2,McKAY Brendan,AGYPUTRI A,4.0,X_W,X_NMV
+wa-2021,North West Central,2,McKAY Brendan,COLAGIURI Stefan,7.0,X_W,SFF
+wa-2021,North West Central,2,McKAY Brendan,SIBOSADO Cherie,1.0,X_W,ALP
+wa-2021,North West Central,2,McKAY Brendan,BURT Sandy,3.0,X_W,GRN
+wa-2021,North West Central,2,McKAY Brendan,SEDDON Henry,1.0,X_W,IND
+wa-2021,North West Central,2,McKAY Brendan,Exhausted,1.0,X_W,EXH
+wa-2021,North West Central,3,SEDDON Henry,CATANIA Vince,3.0,IND,NAT
+wa-2021,North West Central,3,SEDDON Henry,TONKIN Robert,4.0,IND,ONP
+wa-2021,North West Central,3,SEDDON Henry,McKEOUGH Alys,4.0,IND,LIB
+wa-2021,North West Central,3,SEDDON Henry,COLAGIURI Stefan,6.0,IND,SFF
+wa-2021,North West Central,3,SEDDON Henry,SIBOSADO Cherie,9.0,IND,ALP
+wa-2021,North West Central,3,SEDDON Henry,BURT Sandy,15.0,IND,GRN
+wa-2021,North West Central,4,AGYPUTRI A,CATANIA Vince,17.0,X_NMV,NAT
+wa-2021,North West Central,4,AGYPUTRI A,TONKIN Robert,25.0,X_NMV,ONP
+wa-2021,North West Central,4,AGYPUTRI A,McKEOUGH Alys,8.0,X_NMV,LIB
+wa-2021,North West Central,4,AGYPUTRI A,COLAGIURI Stefan,17.0,X_NMV,SFF
+wa-2021,North West Central,4,AGYPUTRI A,SIBOSADO Cherie,6.0,X_NMV,ALP
+wa-2021,North West Central,4,AGYPUTRI A,BURT Sandy,11.0,X_NMV,GRN
+wa-2021,North West Central,4,AGYPUTRI A,Exhausted,1.0,X_NMV,EXH
+wa-2021,North West Central,5,COLAGIURI Stefan,CATANIA Vince,61.0,SFF,NAT
+wa-2021,North West Central,5,COLAGIURI Stefan,TONKIN Robert,56.0,SFF,ONP
+wa-2021,North West Central,5,COLAGIURI Stefan,McKEOUGH Alys,23.0,SFF,LIB
+wa-2021,North West Central,5,COLAGIURI Stefan,SIBOSADO Cherie,91.0,SFF,ALP
+wa-2021,North West Central,5,COLAGIURI Stefan,BURT Sandy,32.0,SFF,GRN
+wa-2021,North West Central,6,TONKIN Robert,CATANIA Vince,134.0,ONP,NAT
+wa-2021,North West Central,6,TONKIN Robert,McKEOUGH Alys,78.0,ONP,LIB
+wa-2021,North West Central,6,TONKIN Robert,SIBOSADO Cherie,70.0,ONP,ALP
+wa-2021,North West Central,6,TONKIN Robert,BURT Sandy,37.0,ONP,GRN
+wa-2021,North West Central,6,TONKIN Robert,Exhausted,2.0,ONP,EXH
+wa-2021,North West Central,7,BURT Sandy,CATANIA Vince,105.0,GRN,NAT
+wa-2021,North West Central,7,BURT Sandy,McKEOUGH Alys,47.0,GRN,LIB
+wa-2021,North West Central,7,BURT Sandy,SIBOSADO Cherie,264.0,GRN,ALP
+wa-2021,North West Central,8,McKEOUGH Alys,CATANIA Vince,591.0,LIB,NAT
+wa-2021,North West Central,8,McKEOUGH Alys,SIBOSADO Cherie,183.0,LIB,ALP
+wa-2021,North West Central,8,McKEOUGH Alys,Exhausted,2.0,LIB,EXH
+wa-2021,Perth,2,MINNITI Angelo,PANDOLFINO Francesca,48.0,X_W,GRN
+wa-2021,Perth,2,MINNITI Angelo,CAREY John,56.0,X_W,ALP
+wa-2021,Perth,2,MINNITI Angelo,VESKOVICH Kylee,72.0,X_W,LIB
+wa-2021,Perth,2,MINNITI Angelo,BEARD Scott,49.0,X_W,X_NMV
+wa-2021,Perth,3,BEARD Scott,PANDOLFINO Francesca,153.0,X_NMV,GRN
+wa-2021,Perth,3,BEARD Scott,CAREY John,143.0,X_NMV,ALP
+wa-2021,Perth,3,BEARD Scott,VESKOVICH Kylee,229.0,X_NMV,LIB
+wa-2021,Perth,4,PANDOLFINO Francesca,CAREY John,3926.0,GRN,ALP
+wa-2021,Perth,4,PANDOLFINO Francesca,VESKOVICH Kylee,451.0,GRN,LIB
+wa-2021,Perth,4,PANDOLFINO Francesca,Exhausted,1.0,GRN,EXH
+wa-2021,Pilbara,2,JAWANDA Navneet Kaur,MICHEL Kevin,14.0,X_W,ALP
+wa-2021,Pilbara,2,JAWANDA Navneet Kaur,VAUGHAN-CARTNER Machelle,1.0,X_W,GRN
+wa-2021,Pilbara,2,JAWANDA Navneet Kaur,CROUCH Sandi,9.0,X_W,ONP
+wa-2021,Pilbara,2,JAWANDA Navneet Kaur,BLANCO Camilo,6.0,X_W,LIB
+wa-2021,Pilbara,2,JAWANDA Navneet Kaur,ALLISON-FORREST David,3.0,X_W,SFF
+wa-2021,Pilbara,2,JAWANDA Navneet Kaur,BOURNE Scott,2.0,X_W,NAT
+wa-2021,Pilbara,2,JAWANDA Navneet Kaur,ELLIOTT Max,5.0,X_W,X_NMV
+wa-2021,Pilbara,2,JAWANDA Navneet Kaur,HYLAND Don,28.0,X_W,X_WAP
+wa-2021,Pilbara,3,HYLAND Don,MICHEL Kevin,37.0,X_WAP,ALP
+wa-2021,Pilbara,3,HYLAND Don,VAUGHAN-CARTNER Machelle,11.0,X_WAP,GRN
+wa-2021,Pilbara,3,HYLAND Don,CROUCH Sandi,8.0,X_WAP,ONP
+wa-2021,Pilbara,3,HYLAND Don,BLANCO Camilo,11.0,X_WAP,LIB
+wa-2021,Pilbara,3,HYLAND Don,ALLISON-FORREST David,28.0,X_WAP,SFF
+wa-2021,Pilbara,3,HYLAND Don,BOURNE Scott,26.0,X_WAP,NAT
+wa-2021,Pilbara,3,HYLAND Don,ELLIOTT Max,22.0,X_WAP,X_NMV
+wa-2021,Pilbara,4,ELLIOTT Max,MICHEL Kevin,33.0,X_NMV,ALP
+wa-2021,Pilbara,4,ELLIOTT Max,VAUGHAN-CARTNER Machelle,35.0,X_NMV,GRN
+wa-2021,Pilbara,4,ELLIOTT Max,CROUCH Sandi,103.0,X_NMV,ONP
+wa-2021,Pilbara,4,ELLIOTT Max,BLANCO Camilo,17.0,X_NMV,LIB
+wa-2021,Pilbara,4,ELLIOTT Max,ALLISON-FORREST David,61.0,X_NMV,SFF
+wa-2021,Pilbara,4,ELLIOTT Max,BOURNE Scott,48.0,X_NMV,NAT
+wa-2021,Pilbara,5,ALLISON-FORREST David,MICHEL Kevin,160.0,SFF,ALP
+wa-2021,Pilbara,5,ALLISON-FORREST David,VAUGHAN-CARTNER Machelle,51.0,SFF,GRN
+wa-2021,Pilbara,5,ALLISON-FORREST David,CROUCH Sandi,153.0,SFF,ONP
+wa-2021,Pilbara,5,ALLISON-FORREST David,BLANCO Camilo,62.0,SFF,LIB
+wa-2021,Pilbara,5,ALLISON-FORREST David,BOURNE Scott,117.0,SFF,NAT
+wa-2021,Pilbara,5,ALLISON-FORREST David,Exhausted,2.0,SFF,EXH
+wa-2021,Pilbara,6,VAUGHAN-CARTNER Machelle,MICHEL Kevin,371.0,GRN,ALP
+wa-2021,Pilbara,6,VAUGHAN-CARTNER Machelle,CROUCH Sandi,63.0,GRN,ONP
+wa-2021,Pilbara,6,VAUGHAN-CARTNER Machelle,BLANCO Camilo,50.0,GRN,LIB
+wa-2021,Pilbara,6,VAUGHAN-CARTNER Machelle,BOURNE Scott,118.0,GRN,NAT
+wa-2021,Pilbara,7,CROUCH Sandi,MICHEL Kevin,285.0,ONP,ALP
+wa-2021,Pilbara,7,CROUCH Sandi,BLANCO Camilo,170.0,ONP,LIB
+wa-2021,Pilbara,7,CROUCH Sandi,BOURNE Scott,310.0,ONP,NAT
+wa-2021,Pilbara,7,CROUCH Sandi,Exhausted,3.0,ONP,EXH
+wa-2021,Pilbara,8,BLANCO Camilo,MICHEL Kevin,484.0,LIB,ALP
+wa-2021,Pilbara,8,BLANCO Camilo,BOURNE Scott,1072.0,LIB,NAT
+wa-2021,Pilbara,8,BLANCO Camilo,Exhausted,1.0,LIB,EXH
+wa-2021,Riverton,2,SCULL Penelope,BLACKBURN Simon,56.0,X_NMV,GRN
+wa-2021,Riverton,2,SCULL Penelope,HOLMAN Chris,17.0,X_NMV,LDP
+wa-2021,Riverton,2,SCULL Penelope,LEE Terry,61.0,X_NMV,X_WAP
+wa-2021,Riverton,2,SCULL Penelope,GOWER Dena,51.0,X_NMV,CHR
+wa-2021,Riverton,2,SCULL Penelope,KRISHNAN Jags,29.0,X_NMV,ALP
+wa-2021,Riverton,2,SCULL Penelope,SPAGNOLO Anthony,28.0,X_NMV,LIB
+wa-2021,Riverton,3,LEE Terry,BLACKBURN Simon,73.0,X_WAP,GRN
+wa-2021,Riverton,3,LEE Terry,HOLMAN Chris,71.0,X_WAP,LDP
+wa-2021,Riverton,3,LEE Terry,GOWER Dena,47.0,X_WAP,CHR
+wa-2021,Riverton,3,LEE Terry,KRISHNAN Jags,101.0,X_WAP,ALP
+wa-2021,Riverton,3,LEE Terry,SPAGNOLO Anthony,62.0,X_WAP,LIB
+wa-2021,Riverton,4,HOLMAN Chris,BLACKBURN Simon,96.0,LDP,GRN
+wa-2021,Riverton,4,HOLMAN Chris,GOWER Dena,80.0,LDP,CHR
+wa-2021,Riverton,4,HOLMAN Chris,KRISHNAN Jags,160.0,LDP,ALP
+wa-2021,Riverton,4,HOLMAN Chris,SPAGNOLO Anthony,196.0,LDP,LIB
+wa-2021,Riverton,5,GOWER Dena,BLACKBURN Simon,109.0,CHR,GRN
+wa-2021,Riverton,5,GOWER Dena,KRISHNAN Jags,230.0,CHR,ALP
+wa-2021,Riverton,5,GOWER Dena,SPAGNOLO Anthony,792.0,CHR,LIB
+wa-2021,Riverton,5,GOWER Dena,Exhausted,2.0,CHR,EXH
+wa-2021,Riverton,6,BLACKBURN Simon,KRISHNAN Jags,1787.0,GRN,ALP
+wa-2021,Riverton,6,BLACKBURN Simon,SPAGNOLO Anthony,531.0,GRN,LIB
+wa-2021,Riverton,6,BLACKBURN Simon,Exhausted,5.0,GRN,EXH
+wa-2021,Rockingham,2,LOFTS William Dean,GEORGE Geoff,38.0,LDP,ONP
+wa-2021,Rockingham,2,LOFTS William Dean,HAWKINS Tom,20.0,LDP,X_NMV
+wa-2021,Rockingham,2,LOFTS William Dean,McGOWAN Mark,34.0,LDP,ALP
+wa-2021,Rockingham,2,LOFTS William Dean,MORGAN Breanna,15.0,LDP,GRN
+wa-2021,Rockingham,2,LOFTS William Dean,McCLURE Michael,43.0,LDP,LIB
+wa-2021,Rockingham,2,LOFTS William Dean,Exhausted,1.0,LDP,EXH
+wa-2021,Rockingham,3,HAWKINS Tom,GEORGE Geoff,165.0,X_NMV,ONP
+wa-2021,Rockingham,3,HAWKINS Tom,McGOWAN Mark,103.0,X_NMV,ALP
+wa-2021,Rockingham,3,HAWKINS Tom,MORGAN Breanna,87.0,X_NMV,GRN
+wa-2021,Rockingham,3,HAWKINS Tom,McCLURE Michael,48.0,X_NMV,LIB
+wa-2021,Rockingham,4,GEORGE Geoff,McGOWAN Mark,270.0,ONP,ALP
+wa-2021,Rockingham,4,GEORGE Geoff,MORGAN Breanna,100.0,ONP,GRN
+wa-2021,Rockingham,4,GEORGE Geoff,McCLURE Michael,317.0,ONP,LIB
+wa-2021,Rockingham,4,GEORGE Geoff,Exhausted,5.0,ONP,EXH
+wa-2021,Rockingham,5,MORGAN Breanna,McGOWAN Mark,768.0,GRN,ALP
+wa-2021,Rockingham,5,MORGAN Breanna,McCLURE Michael,186.0,GRN,LIB
+wa-2021,Rockingham,5,MORGAN Breanna,Exhausted,1.0,GRN,EXH
+wa-2021,Roe,2,THAKRAR Nita,JAMMU Gary,14.0,X_NMV,X_W
+wa-2021,Roe,2,THAKRAR Nita,DWYER David,1.0,X_NMV,LIB
+wa-2021,Roe,2,THAKRAR Nita,WILLIS Bradley,12.0,X_NMV,ALP
+wa-2021,Roe,2,THAKRAR Nita,STARR Nikki,15.0,X_NMV,GRN
+wa-2021,Roe,2,THAKRAR Nita,BUSHBY Graham,24.0,X_NMV,ONP
+wa-2021,Roe,2,THAKRAR Nita,STEELE Bevan,25.0,X_NMV,SFF
+wa-2021,Roe,2,THAKRAR Nita,RUNDLE Peter,11.0,X_NMV,NAT
+wa-2021,Roe,2,THAKRAR Nita,KELLY Cathie,27.0,X_NMV,CHR
+wa-2021,Roe,2,THAKRAR Nita,Exhausted,2.0,X_NMV,EXH
+wa-2021,Roe,3,JAMMU Gary,DWYER David,90.0,X_W,LIB
+wa-2021,Roe,3,JAMMU Gary,WILLIS Bradley,34.0,X_W,ALP
+wa-2021,Roe,3,JAMMU Gary,STARR Nikki,15.0,X_W,GRN
+wa-2021,Roe,3,JAMMU Gary,BUSHBY Graham,15.0,X_W,ONP
+wa-2021,Roe,3,JAMMU Gary,STEELE Bevan,15.0,X_W,SFF
+wa-2021,Roe,3,JAMMU Gary,RUNDLE Peter,17.0,X_W,NAT
+wa-2021,Roe,3,JAMMU Gary,KELLY Cathie,7.0,X_W,CHR
+wa-2021,Roe,3,JAMMU Gary,Exhausted,1.0,X_W,EXH
+wa-2021,Roe,4,BUSHBY Graham,DWYER David,44.0,ONP,LIB
+wa-2021,Roe,4,BUSHBY Graham,WILLIS Bradley,51.0,ONP,ALP
+wa-2021,Roe,4,BUSHBY Graham,STARR Nikki,20.0,ONP,GRN
+wa-2021,Roe,4,BUSHBY Graham,STEELE Bevan,156.0,ONP,SFF
+wa-2021,Roe,4,BUSHBY Graham,RUNDLE Peter,83.0,ONP,NAT
+wa-2021,Roe,4,BUSHBY Graham,KELLY Cathie,37.0,ONP,CHR
+wa-2021,Roe,5,KELLY Cathie,DWYER David,214.0,CHR,LIB
+wa-2021,Roe,5,KELLY Cathie,WILLIS Bradley,35.0,CHR,ALP
+wa-2021,Roe,5,KELLY Cathie,STARR Nikki,23.0,CHR,GRN
+wa-2021,Roe,5,KELLY Cathie,STEELE Bevan,127.0,CHR,SFF
+wa-2021,Roe,5,KELLY Cathie,RUNDLE Peter,174.0,CHR,NAT
+wa-2021,Roe,6,STARR Nikki,DWYER David,104.0,GRN,LIB
+wa-2021,Roe,6,STARR Nikki,WILLIS Bradley,526.0,GRN,ALP
+wa-2021,Roe,6,STARR Nikki,STEELE Bevan,74.0,GRN,SFF
+wa-2021,Roe,6,STARR Nikki,RUNDLE Peter,176.0,GRN,NAT
+wa-2021,Roe,6,STARR Nikki,Exhausted,2.0,GRN,EXH
+wa-2021,Roe,7,STEELE Bevan,DWYER David,242.0,SFF,LIB
+wa-2021,Roe,7,STEELE Bevan,WILLIS Bradley,412.0,SFF,ALP
+wa-2021,Roe,7,STEELE Bevan,RUNDLE Peter,722.0,SFF,NAT
+wa-2021,Roe,7,STEELE Bevan,Exhausted,3.0,SFF,EXH
+wa-2021,Roe,8,DWYER David,WILLIS Bradley,897.0,LIB,ALP
+wa-2021,Roe,8,DWYER David,RUNDLE Peter,2794.0,LIB,NAT
+wa-2021,Roe,8,DWYER David,Exhausted,8.0,LIB,EXH
+wa-2021,Scarborough,2,BOCCARDI Johnny,VOS Dave,11.0,X_W,IND
+wa-2021,Scarborough,2,BOCCARDI Johnny,HARVEY Liza,28.0,X_W,LIB
+wa-2021,Scarborough,2,BOCCARDI Johnny,BECKER SP,21.0,X_W,GRN
+wa-2021,Scarborough,2,BOCCARDI Johnny,COWARD Troy Anthony,23.0,X_W,X_WAP
+wa-2021,Scarborough,2,BOCCARDI Johnny,AUBREY Stuart,28.0,X_W,ALP
+wa-2021,Scarborough,2,BOCCARDI Johnny,BRIDGEWATER Daniel John,3.0,X_W,X_LFC
+wa-2021,Scarborough,2,BOCCARDI Johnny,MARKOVINA Vanya,10.0,X_W,X_NMV
+wa-2021,Scarborough,2,BOCCARDI Johnny,Exhausted,1.0,X_W,EXH
+wa-2021,Scarborough,3,BRIDGEWATER Daniel John,VOS Dave,22.0,X_LFC,IND
+wa-2021,Scarborough,3,BRIDGEWATER Daniel John,HARVEY Liza,53.0,X_LFC,LIB
+wa-2021,Scarborough,3,BRIDGEWATER Daniel John,BECKER SP,57.0,X_LFC,GRN
+wa-2021,Scarborough,3,BRIDGEWATER Daniel John,COWARD Troy Anthony,15.0,X_LFC,X_WAP
+wa-2021,Scarborough,3,BRIDGEWATER Daniel John,AUBREY Stuart,53.0,X_LFC,ALP
+wa-2021,Scarborough,3,BRIDGEWATER Daniel John,MARKOVINA Vanya,15.0,X_LFC,X_NMV
+wa-2021,Scarborough,3,BRIDGEWATER Daniel John,Exhausted,1.0,X_LFC,EXH
+wa-2021,Scarborough,4,COWARD Troy Anthony,VOS Dave,84.0,X_WAP,IND
+wa-2021,Scarborough,4,COWARD Troy Anthony,HARVEY Liza,101.0,X_WAP,LIB
+wa-2021,Scarborough,4,COWARD Troy Anthony,BECKER SP,45.0,X_WAP,GRN
+wa-2021,Scarborough,4,COWARD Troy Anthony,AUBREY Stuart,82.0,X_WAP,ALP
+wa-2021,Scarborough,4,COWARD Troy Anthony,MARKOVINA Vanya,26.0,X_WAP,X_NMV
+wa-2021,Scarborough,5,VOS Dave,HARVEY Liza,232.0,IND,LIB
+wa-2021,Scarborough,5,VOS Dave,BECKER SP,96.0,IND,GRN
+wa-2021,Scarborough,5,VOS Dave,AUBREY Stuart,94.0,IND,ALP
+wa-2021,Scarborough,5,VOS Dave,MARKOVINA Vanya,31.0,IND,X_NMV
+wa-2021,Scarborough,5,VOS Dave,Exhausted,1.0,IND,EXH
+wa-2021,Scarborough,6,MARKOVINA Vanya,HARVEY Liza,227.0,X_NMV,LIB
+wa-2021,Scarborough,6,MARKOVINA Vanya,BECKER SP,229.0,X_NMV,GRN
+wa-2021,Scarborough,6,MARKOVINA Vanya,AUBREY Stuart,123.0,X_NMV,ALP
+wa-2021,Scarborough,6,MARKOVINA Vanya,Exhausted,1.0,X_NMV,EXH
+wa-2021,Scarborough,7,BECKER SP,HARVEY Liza,590.0,GRN,LIB
+wa-2021,Scarborough,7,BECKER SP,AUBREY Stuart,2185.0,GRN,ALP
+wa-2021,Scarborough,7,BECKER SP,Exhausted,4.0,GRN,EXH
+wa-2021,South Perth,2,HILL Dwain J,BAKER Geoff,111.0,X_NMV,ALP
+wa-2021,South Perth,2,HILL Dwain J,CHORLEY Ryan,126.0,X_NMV,LIB
+wa-2021,South Perth,2,HILL Dwain J,TAYLOR Jack,93.0,X_NMV,LDP
+wa-2021,South Perth,2,HILL Dwain J,BROGAN Mark,109.0,X_NMV,GRN
+wa-2021,South Perth,2,HILL Dwain J,Exhausted,1.0,X_NMV,EXH
+wa-2021,South Perth,3,TAYLOR Jack,BAKER Geoff,136.0,LDP,ALP
+wa-2021,South Perth,3,TAYLOR Jack,CHORLEY Ryan,468.0,LDP,LIB
+wa-2021,South Perth,3,TAYLOR Jack,BROGAN Mark,105.0,LDP,GRN
+wa-2021,South Perth,3,TAYLOR Jack,Exhausted,1.0,LDP,EXH
+wa-2021,South Perth,4,BROGAN Mark,BAKER Geoff,2287.0,GRN,ALP
+wa-2021,South Perth,4,BROGAN Mark,CHORLEY Ryan,522.0,GRN,LIB
+wa-2021,South Perth,4,BROGAN Mark,Exhausted,2.0,GRN,EXH
+wa-2021,Southern River,2,WALSH Julia,SIDDIQUI Shazi,8.0,IND,X_W
+wa-2021,Southern River,2,WALSH Julia,HAWKES Katie,19.0,IND,X_NMV
+wa-2021,Southern River,2,WALSH Julia,HEALY Terry,58.0,IND,ALP
+wa-2021,Southern River,2,WALSH Julia,COLLINS Simone,39.0,IND,GRN
+wa-2021,Southern River,2,WALSH Julia,HEFFERNAN Malcolm,20.0,IND,ONP
+wa-2021,Southern River,2,WALSH Julia,DU PREEZ Wesley Jerome,13.0,IND,LDP
+wa-2021,Southern River,2,WALSH Julia,SPOELSTRA Gerard,13.0,IND,CHR
+wa-2021,Southern River,2,WALSH Julia,ZANDMAN Ruben,18.0,IND,LIB
+wa-2021,Southern River,3,DU PREEZ Wesley Jerome,SIDDIQUI Shazi,32.0,LDP,X_W
+wa-2021,Southern River,3,DU PREEZ Wesley Jerome,HAWKES Katie,12.0,LDP,X_NMV
+wa-2021,Southern River,3,DU PREEZ Wesley Jerome,HEALY Terry,58.0,LDP,ALP
+wa-2021,Southern River,3,DU PREEZ Wesley Jerome,COLLINS Simone,16.0,LDP,GRN
+wa-2021,Southern River,3,DU PREEZ Wesley Jerome,HEFFERNAN Malcolm,24.0,LDP,ONP
+wa-2021,Southern River,3,DU PREEZ Wesley Jerome,SPOELSTRA Gerard,23.0,LDP,CHR
+wa-2021,Southern River,3,DU PREEZ Wesley Jerome,ZANDMAN Ruben,104.0,LDP,LIB
+wa-2021,Southern River,3,DU PREEZ Wesley Jerome,Exhausted,1.0,LDP,EXH
+wa-2021,Southern River,4,SIDDIQUI Shazi,HAWKES Katie,127.0,X_W,X_NMV
+wa-2021,Southern River,4,SIDDIQUI Shazi,HEALY Terry,113.0,X_W,ALP
+wa-2021,Southern River,4,SIDDIQUI Shazi,COLLINS Simone,27.0,X_W,GRN
+wa-2021,Southern River,4,SIDDIQUI Shazi,HEFFERNAN Malcolm,14.0,X_W,ONP
+wa-2021,Southern River,4,SIDDIQUI Shazi,SPOELSTRA Gerard,14.0,X_W,CHR
+wa-2021,Southern River,4,SIDDIQUI Shazi,ZANDMAN Ruben,25.0,X_W,LIB
+wa-2021,Southern River,4,SIDDIQUI Shazi,Exhausted,3.0,X_W,EXH
+wa-2021,Southern River,5,HEFFERNAN Malcolm,HAWKES Katie,76.0,ONP,X_NMV
+wa-2021,Southern River,5,HEFFERNAN Malcolm,HEALY Terry,130.0,ONP,ALP
+wa-2021,Southern River,5,HEFFERNAN Malcolm,COLLINS Simone,37.0,ONP,GRN
+wa-2021,Southern River,5,HEFFERNAN Malcolm,SPOELSTRA Gerard,48.0,ONP,CHR
+wa-2021,Southern River,5,HEFFERNAN Malcolm,ZANDMAN Ruben,99.0,ONP,LIB
+wa-2021,Southern River,5,HEFFERNAN Malcolm,Exhausted,2.0,ONP,EXH
+wa-2021,Southern River,6,HAWKES Katie,HEALY Terry,200.0,X_NMV,ALP
+wa-2021,Southern River,6,HAWKES Katie,COLLINS Simone,125.0,X_NMV,GRN
+wa-2021,Southern River,6,HAWKES Katie,SPOELSTRA Gerard,134.0,X_NMV,CHR
+wa-2021,Southern River,6,HAWKES Katie,ZANDMAN Ruben,79.0,X_NMV,LIB
+wa-2021,Southern River,6,HAWKES Katie,Exhausted,3.0,X_NMV,EXH
+wa-2021,Southern River,7,SPOELSTRA Gerard,HEALY Terry,226.0,CHR,ALP
+wa-2021,Southern River,7,SPOELSTRA Gerard,COLLINS Simone,87.0,CHR,GRN
+wa-2021,Southern River,7,SPOELSTRA Gerard,ZANDMAN Ruben,717.0,CHR,LIB
+wa-2021,Southern River,7,SPOELSTRA Gerard,Exhausted,1.0,CHR,EXH
+wa-2021,Southern River,8,COLLINS Simone,HEALY Terry,969.0,GRN,ALP
+wa-2021,Southern River,8,COLLINS Simone,ZANDMAN Ruben,234.0,GRN,LIB
+wa-2021,Southern River,8,COLLINS Simone,Exhausted,3.0,GRN,EXH
+wa-2021,Swan Hills,2,ALI Asif,BUNTON Timothy,58.0,X_W,X_NMV
+wa-2021,Swan Hills,2,ALI Asif,SHAW Jessica,93.0,X_W,ALP
+wa-2021,Swan Hills,2,ALI Asif,HENDERSON Rod,48.0,X_W,LIB
+wa-2021,Swan Hills,2,ALI Asif,STRAUSS Magdeleen,37.0,X_W,CHR
+wa-2021,Swan Hills,2,ALI Asif,WAWRIK Melanye,20.0,X_W,GRN
+wa-2021,Swan Hills,3,STRAUSS Magdeleen,BUNTON Timothy,136.0,CHR,X_NMV
+wa-2021,Swan Hills,3,STRAUSS Magdeleen,SHAW Jessica,148.0,CHR,ALP
+wa-2021,Swan Hills,3,STRAUSS Magdeleen,HENDERSON Rod,381.0,CHR,LIB
+wa-2021,Swan Hills,3,STRAUSS Magdeleen,WAWRIK Melanye,46.0,CHR,GRN
+wa-2021,Swan Hills,3,STRAUSS Magdeleen,Exhausted,1.0,CHR,EXH
+wa-2021,Swan Hills,4,BUNTON Timothy,SHAW Jessica,442.0,X_NMV,ALP
+wa-2021,Swan Hills,4,BUNTON Timothy,HENDERSON Rod,282.0,X_NMV,LIB
+wa-2021,Swan Hills,4,BUNTON Timothy,WAWRIK Melanye,250.0,X_NMV,GRN
+wa-2021,Swan Hills,4,BUNTON Timothy,Exhausted,2.0,X_NMV,EXH
+wa-2021,Swan Hills,5,WAWRIK Melanye,SHAW Jessica,1131.0,GRN,ALP
+wa-2021,Swan Hills,5,WAWRIK Melanye,HENDERSON Rod,373.0,GRN,LIB
+wa-2021,Swan Hills,5,WAWRIK Melanye,Exhausted,1.0,GRN,EXH
+wa-2021,Thornlie,2,MASIH JS,TALLENTIRE Chris,58.0,X_W,ALP
+wa-2021,Thornlie,2,MASIH JS,HALL Rachael,47.0,X_W,X_NMV
+wa-2021,Thornlie,2,MASIH JS,GOIRAN Madeleine,24.0,X_W,CHR
+wa-2021,Thornlie,2,MASIH JS,McDONALD Kevin,29.0,X_W,LIB
+wa-2021,Thornlie,2,MASIH JS,WRIGHT Rachel,16.0,X_W,GRN
+wa-2021,Thornlie,2,MASIH JS,Exhausted,3.0,X_W,EXH
+wa-2021,Thornlie,3,HALL Rachael,TALLENTIRE Chris,169.0,X_NMV,ALP
+wa-2021,Thornlie,3,HALL Rachael,GOIRAN Madeleine,179.0,X_NMV,CHR
+wa-2021,Thornlie,3,HALL Rachael,McDONALD Kevin,83.0,X_NMV,LIB
+wa-2021,Thornlie,3,HALL Rachael,WRIGHT Rachel,101.0,X_NMV,GRN
+wa-2021,Thornlie,3,HALL Rachael,Exhausted,3.0,X_NMV,EXH
+wa-2021,Thornlie,4,GOIRAN Madeleine,TALLENTIRE Chris,292.0,CHR,ALP
+wa-2021,Thornlie,4,GOIRAN Madeleine,McDONALD Kevin,794.0,CHR,LIB
+wa-2021,Thornlie,4,GOIRAN Madeleine,WRIGHT Rachel,118.0,CHR,GRN
+wa-2021,Thornlie,4,GOIRAN Madeleine,Exhausted,1.0,CHR,EXH
+wa-2021,Thornlie,5,WRIGHT Rachel,TALLENTIRE Chris,1061.0,GRN,ALP
+wa-2021,Thornlie,5,WRIGHT Rachel,McDONALD Kevin,329.0,GRN,LIB
+wa-2021,Thornlie,5,WRIGHT Rachel,Exhausted,4.0,GRN,EXH
+wa-2021,Vasse,2,OANCEA Nicolas,KRASENSTEIN Mia,7.0,X_W,GRN
+wa-2021,Vasse,2,OANCEA Nicolas,JUDD AW,4.0,X_W,X_NMV
+wa-2021,Vasse,2,OANCEA Nicolas,METTAM Libby,1.0,X_W,LIB
+wa-2021,Vasse,2,OANCEA Nicolas,VAN VEEN Cameron,2.0,X_W,SFF
+wa-2021,Vasse,2,OANCEA Nicolas,RICH Neridah,4.0,X_W,LCP
+wa-2021,Vasse,2,OANCEA Nicolas,HOSSEN Chris,5.0,X_W,ALP
+wa-2021,Vasse,2,OANCEA Nicolas,SATCHELL Brad,4.0,X_W,SAP
+wa-2021,Vasse,2,OANCEA Nicolas,WREFORD Jackson,9.0,X_W,ONP
+wa-2021,Vasse,2,OANCEA Nicolas,GORDON Peter,10.0,X_W,NAT
+wa-2021,Vasse,3,SATCHELL Brad,KRASENSTEIN Mia,73.0,SAP,GRN
+wa-2021,Vasse,3,SATCHELL Brad,JUDD AW,10.0,SAP,X_NMV
+wa-2021,Vasse,3,SATCHELL Brad,METTAM Libby,14.0,SAP,LIB
+wa-2021,Vasse,3,SATCHELL Brad,VAN VEEN Cameron,10.0,SAP,SFF
+wa-2021,Vasse,3,SATCHELL Brad,RICH Neridah,20.0,SAP,LCP
+wa-2021,Vasse,3,SATCHELL Brad,HOSSEN Chris,45.0,SAP,ALP
+wa-2021,Vasse,3,SATCHELL Brad,WREFORD Jackson,13.0,SAP,ONP
+wa-2021,Vasse,3,SATCHELL Brad,GORDON Peter,9.0,SAP,NAT
+wa-2021,Vasse,3,SATCHELL Brad,Exhausted,1.0,SAP,EXH
+wa-2021,Vasse,4,WREFORD Jackson,KRASENSTEIN Mia,13.0,ONP,GRN
+wa-2021,Vasse,4,WREFORD Jackson,JUDD AW,48.0,ONP,X_NMV
+wa-2021,Vasse,4,WREFORD Jackson,METTAM Libby,56.0,ONP,LIB
+wa-2021,Vasse,4,WREFORD Jackson,VAN VEEN Cameron,51.0,ONP,SFF
+wa-2021,Vasse,4,WREFORD Jackson,RICH Neridah,19.0,ONP,LCP
+wa-2021,Vasse,4,WREFORD Jackson,HOSSEN Chris,41.0,ONP,ALP
+wa-2021,Vasse,4,WREFORD Jackson,GORDON Peter,47.0,ONP,NAT
+wa-2021,Vasse,5,RICH Neridah,KRASENSTEIN Mia,117.0,LCP,GRN
+wa-2021,Vasse,5,RICH Neridah,JUDD AW,66.0,LCP,X_NMV
+wa-2021,Vasse,5,RICH Neridah,METTAM Libby,53.0,LCP,LIB
+wa-2021,Vasse,5,RICH Neridah,VAN VEEN Cameron,96.0,LCP,SFF
+wa-2021,Vasse,5,RICH Neridah,HOSSEN Chris,97.0,LCP,ALP
+wa-2021,Vasse,5,RICH Neridah,GORDON Peter,16.0,LCP,NAT
+wa-2021,Vasse,5,RICH Neridah,Exhausted,1.0,LCP,EXH
+wa-2021,Vasse,6,JUDD AW,KRASENSTEIN Mia,204.0,X_NMV,GRN
+wa-2021,Vasse,6,JUDD AW,METTAM Libby,96.0,X_NMV,LIB
+wa-2021,Vasse,6,JUDD AW,VAN VEEN Cameron,180.0,X_NMV,SFF
+wa-2021,Vasse,6,JUDD AW,HOSSEN Chris,70.0,X_NMV,ALP
+wa-2021,Vasse,6,JUDD AW,GORDON Peter,67.0,X_NMV,NAT
+wa-2021,Vasse,7,VAN VEEN Cameron,KRASENSTEIN Mia,159.0,SFF,GRN
+wa-2021,Vasse,7,VAN VEEN Cameron,METTAM Libby,266.0,SFF,LIB
+wa-2021,Vasse,7,VAN VEEN Cameron,HOSSEN Chris,227.0,SFF,ALP
+wa-2021,Vasse,7,VAN VEEN Cameron,GORDON Peter,208.0,SFF,NAT
+wa-2021,Vasse,8,GORDON Peter,KRASENSTEIN Mia,151.0,NAT,GRN
+wa-2021,Vasse,8,GORDON Peter,METTAM Libby,1014.0,NAT,LIB
+wa-2021,Vasse,8,GORDON Peter,HOSSEN Chris,326.0,NAT,ALP
+wa-2021,Vasse,8,GORDON Peter,Exhausted,1.0,NAT,EXH
+wa-2021,Vasse,9,KRASENSTEIN Mia,METTAM Libby,1190.0,GRN,LIB
+wa-2021,Vasse,9,KRASENSTEIN Mia,HOSSEN Chris,2298.0,GRN,ALP
+wa-2021,Vasse,9,KRASENSTEIN Mia,Exhausted,1.0,GRN,EXH
+wa-2021,Victoria Park,2,SANDOW Darren,FARRELL Aaron,37.0,ONP,LDP
+wa-2021,Victoria Park,2,SANDOW Darren,CONNOLLY Sue-Ann,45.0,ONP,X_NMV
+wa-2021,Victoria Park,2,SANDOW Darren,MARKHAM Amanda-Sue,67.0,ONP,LIB
+wa-2021,Victoria Park,2,SANDOW Darren,SIERO Gerard,19.0,ONP,GRN
+wa-2021,Victoria Park,2,SANDOW Darren,BEAZLEY Hannah,76.0,ONP,ALP
+wa-2021,Victoria Park,2,SANDOW Darren,VANDER VEN Janine,63.0,ONP,CHR
+wa-2021,Victoria Park,3,CONNOLLY Sue-Ann,FARRELL Aaron,60.0,X_NMV,LDP
+wa-2021,Victoria Park,3,CONNOLLY Sue-Ann,MARKHAM Amanda-Sue,56.0,X_NMV,LIB
+wa-2021,Victoria Park,3,CONNOLLY Sue-Ann,SIERO Gerard,98.0,X_NMV,GRN
+wa-2021,Victoria Park,3,CONNOLLY Sue-Ann,BEAZLEY Hannah,88.0,X_NMV,ALP
+wa-2021,Victoria Park,3,CONNOLLY Sue-Ann,VANDER VEN Janine,92.0,X_NMV,CHR
+wa-2021,Victoria Park,3,CONNOLLY Sue-Ann,Exhausted,1.0,X_NMV,EXH
+wa-2021,Victoria Park,4,FARRELL Aaron,MARKHAM Amanda-Sue,403.0,LDP,LIB
+wa-2021,Victoria Park,4,FARRELL Aaron,SIERO Gerard,62.0,LDP,GRN
+wa-2021,Victoria Park,4,FARRELL Aaron,BEAZLEY Hannah,107.0,LDP,ALP
+wa-2021,Victoria Park,4,FARRELL Aaron,VANDER VEN Janine,67.0,LDP,CHR
+wa-2021,Victoria Park,5,VANDER VEN Janine,MARKHAM Amanda-Sue,462.0,CHR,LIB
+wa-2021,Victoria Park,5,VANDER VEN Janine,SIERO Gerard,97.0,CHR,GRN
+wa-2021,Victoria Park,5,VANDER VEN Janine,BEAZLEY Hannah,184.0,CHR,ALP
+wa-2021,Victoria Park,5,VANDER VEN Janine,Exhausted,1.0,CHR,EXH
+wa-2021,Victoria Park,6,SIERO Gerard,MARKHAM Amanda-Sue,384.0,GRN,LIB
+wa-2021,Victoria Park,6,SIERO Gerard,BEAZLEY Hannah,2804.0,GRN,ALP
+wa-2021,Wanneroo,2,CULUM-BUZAK Sandy,WARD Matthew,140.0,X_W,GRN
+wa-2021,Wanneroo,2,CULUM-BUZAK Sandy,WINTON Sabine,73.0,X_W,ALP
+wa-2021,Wanneroo,2,CULUM-BUZAK Sandy,MILES Paul,30.0,X_W,LIB
+wa-2021,Wanneroo,2,CULUM-BUZAK Sandy,BULLOCK J,43.0,X_W,X_NMV
+wa-2021,Wanneroo,2,CULUM-BUZAK Sandy,SIVIOUR Lilian,48.0,X_W,X_WAP
+wa-2021,Wanneroo,2,CULUM-BUZAK Sandy,Exhausted,1.0,X_W,EXH
+wa-2021,Wanneroo,3,SIVIOUR Lilian,WARD Matthew,75.0,X_WAP,GRN
+wa-2021,Wanneroo,3,SIVIOUR Lilian,WINTON Sabine,141.0,X_WAP,ALP
+wa-2021,Wanneroo,3,SIVIOUR Lilian,MILES Paul,135.0,X_WAP,LIB
+wa-2021,Wanneroo,3,SIVIOUR Lilian,BULLOCK J,101.0,X_WAP,X_NMV
+wa-2021,Wanneroo,4,BULLOCK J,WARD Matthew,241.0,X_NMV,GRN
+wa-2021,Wanneroo,4,BULLOCK J,WINTON Sabine,212.0,X_NMV,ALP
+wa-2021,Wanneroo,4,BULLOCK J,MILES Paul,326.0,X_NMV,LIB
+wa-2021,Wanneroo,4,BULLOCK J,Exhausted,2.0,X_NMV,EXH
+wa-2021,Wanneroo,5,WARD Matthew,WINTON Sabine,1267.0,GRN,ALP
+wa-2021,Wanneroo,5,WARD Matthew,MILES Paul,339.0,GRN,LIB
+wa-2021,Warnbro,2,McMASTER Cameron,VELEV Bob,9.0,LDP,X_W
+wa-2021,Warnbro,2,McMASTER Cameron,HALL Liam,31.0,LDP,ONP
+wa-2021,Warnbro,2,McMASTER Cameron,PAPALIA Paul,32.0,LDP,ALP
+wa-2021,Warnbro,2,McMASTER Cameron,JONES Mark,60.0,LDP,LIB
+wa-2021,Warnbro,2,McMASTER Cameron,SUCHALLA-YOUNG Brandon,14.0,LDP,X_NMV
+wa-2021,Warnbro,2,McMASTER Cameron,DELVES Robert,25.0,LDP,GRN
+wa-2021,Warnbro,3,VELEV Bob,HALL Liam,113.0,X_W,ONP
+wa-2021,Warnbro,3,VELEV Bob,PAPALIA Paul,52.0,X_W,ALP
+wa-2021,Warnbro,3,VELEV Bob,JONES Mark,24.0,X_W,LIB
+wa-2021,Warnbro,3,VELEV Bob,SUCHALLA-YOUNG Brandon,9.0,X_W,X_NMV
+wa-2021,Warnbro,3,VELEV Bob,DELVES Robert,29.0,X_W,GRN
+wa-2021,Warnbro,4,SUCHALLA-YOUNG Brandon,HALL Liam,197.0,X_NMV,ONP
+wa-2021,Warnbro,4,SUCHALLA-YOUNG Brandon,PAPALIA Paul,122.0,X_NMV,ALP
+wa-2021,Warnbro,4,SUCHALLA-YOUNG Brandon,JONES Mark,65.0,X_NMV,LIB
+wa-2021,Warnbro,4,SUCHALLA-YOUNG Brandon,DELVES Robert,101.0,X_NMV,GRN
+wa-2021,Warnbro,4,SUCHALLA-YOUNG Brandon,Exhausted,1.0,X_NMV,EXH
+wa-2021,Warnbro,5,HALL Liam,PAPALIA Paul,446.0,ONP,ALP
+wa-2021,Warnbro,5,HALL Liam,JONES Mark,365.0,ONP,LIB
+wa-2021,Warnbro,5,HALL Liam,DELVES Robert,143.0,ONP,GRN
+wa-2021,Warnbro,5,HALL Liam,Exhausted,3.0,ONP,EXH
+wa-2021,Warnbro,6,DELVES Robert,PAPALIA Paul,993.0,GRN,ALP
+wa-2021,Warnbro,6,DELVES Robert,JONES Mark,319.0,GRN,LIB
+wa-2021,Warnbro,6,DELVES Robert,Exhausted,2.0,GRN,EXH
+wa-2021,Warren-Blackwood,2,STRACHAN Peter,DA SILVA Paul,25.0,SAP,SFF
+wa-2021,Warren-Blackwood,2,STRACHAN Peter,LETHBRIDGE Nick,25.0,SAP,LCP
+wa-2021,Warren-Blackwood,2,STRACHAN Peter,POW Jeff,95.0,SAP,GRN
+wa-2021,Warren-Blackwood,2,STRACHAN Peter,O'DEA Marie,17.0,SAP,LIB
+wa-2021,Warren-Blackwood,2,STRACHAN Peter,KELSBIE Jane,44.0,SAP,ALP
+wa-2021,Warren-Blackwood,2,STRACHAN Peter,REDMAN Terry,32.0,SAP,NAT
+wa-2021,Warren-Blackwood,2,STRACHAN Peter,REGTERSCHOT Steven,21.0,SAP,ONP
+wa-2021,Warren-Blackwood,2,STRACHAN Peter,ALLAN Helen,50.0,SAP,X_NMV
+wa-2021,Warren-Blackwood,3,REGTERSCHOT Steven,DA SILVA Paul,121.0,ONP,SFF
+wa-2021,Warren-Blackwood,3,REGTERSCHOT Steven,LETHBRIDGE Nick,38.0,ONP,LCP
+wa-2021,Warren-Blackwood,3,REGTERSCHOT Steven,POW Jeff,12.0,ONP,GRN
+wa-2021,Warren-Blackwood,3,REGTERSCHOT Steven,O'DEA Marie,41.0,ONP,LIB
+wa-2021,Warren-Blackwood,3,REGTERSCHOT Steven,KELSBIE Jane,47.0,ONP,ALP
+wa-2021,Warren-Blackwood,3,REGTERSCHOT Steven,REDMAN Terry,87.0,ONP,NAT
+wa-2021,Warren-Blackwood,3,REGTERSCHOT Steven,ALLAN Helen,92.0,ONP,X_NMV
+wa-2021,Warren-Blackwood,3,REGTERSCHOT Steven,Exhausted,2.0,ONP,EXH
+wa-2021,Warren-Blackwood,4,LETHBRIDGE Nick,DA SILVA Paul,173.0,LCP,SFF
+wa-2021,Warren-Blackwood,4,LETHBRIDGE Nick,POW Jeff,191.0,LCP,GRN
+wa-2021,Warren-Blackwood,4,LETHBRIDGE Nick,O'DEA Marie,41.0,LCP,LIB
+wa-2021,Warren-Blackwood,4,LETHBRIDGE Nick,KELSBIE Jane,125.0,LCP,ALP
+wa-2021,Warren-Blackwood,4,LETHBRIDGE Nick,REDMAN Terry,39.0,LCP,NAT
+wa-2021,Warren-Blackwood,4,LETHBRIDGE Nick,ALLAN Helen,81.0,LCP,X_NMV
+wa-2021,Warren-Blackwood,4,LETHBRIDGE Nick,Exhausted,1.0,LCP,EXH
+wa-2021,Warren-Blackwood,5,ALLAN Helen,DA SILVA Paul,252.0,X_NMV,SFF
+wa-2021,Warren-Blackwood,5,ALLAN Helen,POW Jeff,228.0,X_NMV,GRN
+wa-2021,Warren-Blackwood,5,ALLAN Helen,O'DEA Marie,48.0,X_NMV,LIB
+wa-2021,Warren-Blackwood,5,ALLAN Helen,KELSBIE Jane,80.0,X_NMV,ALP
+wa-2021,Warren-Blackwood,5,ALLAN Helen,REDMAN Terry,140.0,X_NMV,NAT
+wa-2021,Warren-Blackwood,5,ALLAN Helen,Exhausted,1.0,X_NMV,EXH
+wa-2021,Warren-Blackwood,6,DA SILVA Paul,POW Jeff,411.0,SFF,GRN
+wa-2021,Warren-Blackwood,6,DA SILVA Paul,O'DEA Marie,345.0,SFF,LIB
+wa-2021,Warren-Blackwood,6,DA SILVA Paul,KELSBIE Jane,337.0,SFF,ALP
+wa-2021,Warren-Blackwood,6,DA SILVA Paul,REDMAN Terry,522.0,SFF,NAT
+wa-2021,Warren-Blackwood,6,DA SILVA Paul,Exhausted,4.0,SFF,EXH
+wa-2021,Warren-Blackwood,7,O'DEA Marie,POW Jeff,336.0,LIB,GRN
+wa-2021,Warren-Blackwood,7,O'DEA Marie,KELSBIE Jane,436.0,LIB,ALP
+wa-2021,Warren-Blackwood,7,O'DEA Marie,REDMAN Terry,2232.0,LIB,NAT
+wa-2021,Warren-Blackwood,7,O'DEA Marie,Exhausted,1.0,LIB,EXH
+wa-2021,Warren-Blackwood,8,POW Jeff,KELSBIE Jane,3637.0,GRN,ALP
+wa-2021,Warren-Blackwood,8,POW Jeff,REDMAN Terry,995.0,GRN,NAT
+wa-2021,Warren-Blackwood,8,POW Jeff,Exhausted,3.0,GRN,EXH
+wa-2021,West Swan,2,SAINI Lucky,SAFFIOTI Rita,224.0,X_W,ALP
+wa-2021,West Swan,2,SAINI Lucky,WARBURTON Brian William,38.0,X_W,CHR
+wa-2021,West Swan,2,SAINI Lucky,NESBIT Dave,58.0,X_W,LIB
+wa-2021,West Swan,2,SAINI Lucky,SINGH Manjot,54.0,X_W,GRN
+wa-2021,West Swan,2,SAINI Lucky,COCLIFF Genevieve,46.0,X_W,X_NMV
+wa-2021,West Swan,2,SAINI Lucky,Exhausted,1.0,X_W,EXH
+wa-2021,West Swan,3,COCLIFF Genevieve,SAFFIOTI Rita,106.0,X_NMV,ALP
+wa-2021,West Swan,3,COCLIFF Genevieve,WARBURTON Brian William,167.0,X_NMV,CHR
+wa-2021,West Swan,3,COCLIFF Genevieve,NESBIT Dave,98.0,X_NMV,LIB
+wa-2021,West Swan,3,COCLIFF Genevieve,SINGH Manjot,111.0,X_NMV,GRN
+wa-2021,West Swan,3,COCLIFF Genevieve,Exhausted,2.0,X_NMV,EXH
+wa-2021,West Swan,4,WARBURTON Brian William,SAFFIOTI Rita,312.0,CHR,ALP
+wa-2021,West Swan,4,WARBURTON Brian William,NESBIT Dave,591.0,CHR,LIB
+wa-2021,West Swan,4,WARBURTON Brian William,SINGH Manjot,124.0,CHR,GRN
+wa-2021,West Swan,4,WARBURTON Brian William,Exhausted,1.0,CHR,EXH
+wa-2021,West Swan,5,SINGH Manjot,SAFFIOTI Rita,1001.0,GRN,ALP
+wa-2021,West Swan,5,SINGH Manjot,NESBIT Dave,325.0,GRN,LIB
+wa-2021,West Swan,5,SINGH Manjot,Exhausted,1.0,GRN,EXH
+wa-2021,Willagee,2,MITCHELL Michael,JONES Barry,162.0,LDP,LIB
+wa-2021,Willagee,2,MITCHELL Michael,TINLEY Peter,67.0,LDP,ALP
+wa-2021,Willagee,2,MITCHELL Michael,POOLE Susan,25.0,LDP,X_NMV
+wa-2021,Willagee,2,MITCHELL Michael,DALRYMPLE Mark,27.0,LDP,ONP
+wa-2021,Willagee,2,MITCHELL Michael,TOWNSEND Felicity,28.0,LDP,GRN
+wa-2021,Willagee,2,MITCHELL Michael,Exhausted,1.0,LDP,EXH
+wa-2021,Willagee,3,DALRYMPLE Mark,JONES Barry,141.0,ONP,LIB
+wa-2021,Willagee,3,DALRYMPLE Mark,TINLEY Peter,141.0,ONP,ALP
+wa-2021,Willagee,3,DALRYMPLE Mark,POOLE Susan,118.0,ONP,X_NMV
+wa-2021,Willagee,3,DALRYMPLE Mark,TOWNSEND Felicity,61.0,ONP,GRN
+wa-2021,Willagee,4,POOLE Susan,JONES Barry,211.0,X_NMV,LIB
+wa-2021,Willagee,4,POOLE Susan,TINLEY Peter,199.0,X_NMV,ALP
+wa-2021,Willagee,4,POOLE Susan,TOWNSEND Felicity,240.0,X_NMV,GRN
+wa-2021,Willagee,5,TOWNSEND Felicity,JONES Barry,348.0,GRN,LIB
+wa-2021,Willagee,5,TOWNSEND Felicity,TINLEY Peter,2173.0,GRN,ALP
+wa-2021,Willagee,5,TOWNSEND Felicity,Exhausted,5.0,GRN,EXH

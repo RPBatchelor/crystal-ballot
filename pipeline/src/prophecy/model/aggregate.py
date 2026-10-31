@@ -107,10 +107,13 @@ def prepare(polls: pl.DataFrame, previous: Election, election: Election,
 
 
 def fit(polls: pl.DataFrame, previous: Election, election: Election,
-        start_share: dict[str, float], seed: int = 20261128, **sample_kw) -> AggregateFit:
+        start_share: dict[str, float], seed: int = 20261128,
+        model_name: str = "poll_aggregator", **sample_kw) -> AggregateFit:
+    """``model_name``: ``poll_aggregator`` (independent party trends, fixed house
+    effects) or ``poll_aggregator_corr`` (correlated trends, drifting house effects)."""
     parties = modelled_parties(polls)
     data, pollsters, weeks = prepare(polls, previous, election, start_share, parties)
-    model = stan_model("poll_aggregator")
+    model = stan_model(model_name)
     kw = {"chains": 4, "parallel_chains": 4, "iter_warmup": 1000, "iter_sampling": 1000,
               "adapt_delta": 0.99, "max_treedepth": 12, "show_progress": False}
     kw.update(sample_kw)
@@ -138,6 +141,7 @@ def fit(polls: pl.DataFrame, previous: Election, election: Election,
     }
     return AggregateFit(
         parties=parties, weeks=weeks, shares=shares, house=pl.DataFrame(rows),
-        params={k: draws[k] for k in ("sigma_vel", "phi", "tau", "sigma_house")},
+        params={k: draws[k] for k in ("sigma_vel", "phi", "tau", "sigma_house", "sigma_drift", "Omega_vel")
+                if k in draws},
         diagnostics=diagnostics, pollsters=pollsters,
     )

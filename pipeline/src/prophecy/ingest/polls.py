@@ -83,7 +83,7 @@ class Event:
 # Download
 # --------------------------------------------------------------------------------------
 
-def fetch_wikitext(title: str, dest: Path) -> Path:
+def fetch_wikitext(title: str, dest: Path, oldid: int | None = None) -> Path:
     user_agent = os.environ.get(USER_AGENT_ENV)
     if not user_agent:
         raise RuntimeError(
@@ -91,6 +91,8 @@ def fetch_wikitext(title: str, dest: Path) -> Path:
             "Wikipedia (see https://w.wiki/4wJS), or rerun with --no-refresh."
         )
     url = WIKI_RAW_URL.format(title=title.replace(" ", "_"))
+    if oldid is not None:
+        url += f"&oldid={oldid}"
     resp = httpx.get(url, headers={"User-Agent": user_agent}, follow_redirects=True, timeout=60)
     resp.raise_for_status()
     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -192,21 +194,29 @@ LABEL_PATTERNS: list[tuple[str, str]] = [
     (r"^(und|undecided|unsure|don't know)$", "undecided"),
     (r"client|commission|sponsor|publication|media", "client"),
     (r"sample", "sample"),
-    (r"^(l/?np|lnp|coalition|lib/nat|liberal[-–/ ]national)$", "COAL"),
+    (r"^(l/?np|lnp|coalition|lib/nat|liberal[-–/ ]national|clp|country liberals?)$", "COAL"),
     (r"^(lib|liberal)$", "LIB"),
     (r"^(nat|nationals?)$", "NAT"),
     (r"^(alp|labor)$", "ALP"),
     (r"^(grn|greens?)$", "GRN"),
-    (r"^(onp|one nation|phon)$", "ONP"),
+    (r"^(onp|on|one nation|phon)$", "ONP"),
     (r"^(ind|independents?)$", "IND"),
     (r"^(oth|others?)$", "OTH"),
+    # Combined and named minor columns (Tasmania: "Ind/Other", Lambie Network).
+    (r"^(ind(ependents?)?\s*/\s*oth(ers?)?|oth(ers?)?\s*/\s*ind(ependents?)?)$", "OTH"),
+    (r"^(jln|lambie( network)?)$", "OTH"),
 ]
 TPP_HEADER = re.compile(r"\b(tpp|2pp|two[- ]party)", re.IGNORECASE)
 INCLUDE_HEADING = re.compile(r"voting intention|opinion poll|^polling$|^data table$", re.IGNORECASE)
 EXCLUDE_HEADING = re.compile(
-    r"council|premier|satisfaction|leader|seat|electorate|sub-state|three-party|"
-    r"approval|preferred|metropolitan|regional|referendum", re.IGNORECASE)
+    r"council|premier|satisfaction|leader|seat|electorate|district|sub-state|three-party|"
+    r"approval|(?<!party[ -])preferred|metropolitan|regional|referendum", re.IGNORECASE)
 PCT = re.compile(r"\d\s*%")
+# Where the Nationals stand against the Liberals rather than in coalition (Tasmania
+# from 2025), their vote counts with Others, not the Coalition.
+SEPARATE_NATIONALS = {"TAS"}
+# Sections for single divisions, named only by the division.
+DIVISION_HEADINGS = {"TAS": {"Bass", "Braddon", "Clark", "Denison", "Franklin", "Lyons"}}
 
 
 def _label_code(text: str) -> str | None:
@@ -306,6 +316,8 @@ def parse_poll_page(
             continue
         if any(EXCLUDE_HEADING.search(t) for t in titles if t != chamber_heading):
             continue
+        if set(titles) & DIVISION_HEADINGS.get(jurisdiction, set()):
+            continue  # polls of one multi-member division (Tasmania)
         year_heading = next((t for t in reversed(titles) if t.isdigit()), "")
         default_year = int(year_heading) if year_heading else date.today().year
         grid = table.grid()
@@ -438,6 +450,8 @@ def _row_to_poll(
         if sec != "primary" or cell is None:
             continue
         key = id(cell) if not cell.inherited else hash((cell.origin, cell.raw))
+        if code == "NAT" and jurisdiction in SEPARATE_NATIONALS:
+            code = "OTH"
         seen.setdefault(key, []).append(code)
         values[key] = parse_number(cell.text)
     for key, codes in seen.items():
@@ -480,6 +494,7 @@ POLLSTER_ALIASES: list[tuple[str, str]] = [
     (r"^demosau", "DemosAU"),
     (r"^yougov.*mrp|^yougov \(mrp\)", "YouGov MRP"),
     (r"^lonergan", "Lonergan"),
+    (r"^private polling", "Private polling"),
 ]
 
 
@@ -518,15 +533,17 @@ def _merge_continuation(base: Poll, cont: Poll) -> None:
 def ingest_wikipedia_polls(
     title: str, jurisdiction: str, slug: str, refresh: bool = True,
     window: tuple[date, date] | None = None, cycle: str | None = None,
+    oldid: int | None = None,
 ) -> tuple[pl.DataFrame, pl.DataFrame, pl.DataFrame]:
     """Polls, events and election-result rows from one Wikipedia page.
 
     ``window`` (previous election, this election] keeps only this cycle's polls; pages
-    often repeat polls from adjacent cycles.
+    often repeat polls from adjacent cycles. ``oldid`` reads a pinned revision.
     """
     raw_path = RAW_DIR / "wikipedia" / f"{slug}.wiki"
-    if refresh or not raw_path.exists():
-        fetch_wikitext(title, raw_path)
+    # A pinned revision never changes: download it once.
+    if (refresh and oldid is None) or not raw_path.exists():
+        fetch_wikitext(title, raw_path, oldid)
     parsed, events = parse_poll_page(raw_path.read_text(encoding="utf-8"), jurisdiction)
     if not parsed:
         empty = pl.DataFrame(schema={"pollster": pl.String, "field_end": pl.Date})
@@ -553,23 +570,26 @@ def ingest_wikipedia_polls(
                            | ((pl.col("event_date") > lo) & (pl.col("event_date") <= hi)))
     if cycle is not None:
         df = df.with_columns(pl.lit(cycle).alias("cycle"))
-    df = apply_corrections(df)
+    df = apply_corrections(df).with_columns(pl.sum_horizontal(PRIMARY_FIELDS).round(1).alias("primary_sum"))
     return df, ev, results
 
 
 def apply_corrections(df: pl.DataFrame) -> pl.DataFrame:
-    """Apply hand corrections keyed by (pollster, field_end)."""
+    """Apply hand corrections keyed by (jurisdiction, pollster, field_end)."""
     path = CURATED_DIR / "poll_corrections.csv"
-    if not path.exists():
+    if not path.exists() or df.height == 0:
         return df
-    fixes = pl.read_csv(path, try_parse_dates=True)
+    fixes = pl.read_csv(path, try_parse_dates=True, schema_overrides={"value": pl.String})
     for fix in fixes.iter_rows(named=True):
-        mask = (pl.col("pollster") == fix["pollster"]) & (pl.col("field_end") == fix["field_end"])
+        mask = ((pl.col("jurisdiction") == fix["jurisdiction"]) & (pl.col("pollster") == fix["pollster"])
+                & (pl.col("field_end") == fix["field_end"]))
         if fix["field"] == "DROP":
             df = df.filter(~mask)
             continue
         value = fix["value"]
+        # A column with no values in this table has no type of its own yet.
+        dtype = pl.Float64 if df.schema[fix["field"]] == pl.Null else df.schema[fix["field"]]
         df = df.with_columns(
-            pl.when(mask).then(pl.lit(value).cast(df.schema[fix["field"]])).otherwise(pl.col(fix["field"])).alias(fix["field"])
+            pl.when(mask).then(pl.lit(value).cast(dtype)).otherwise(pl.col(fix["field"])).alias(fix["field"])
         )
     return df

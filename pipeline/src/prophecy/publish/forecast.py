@@ -70,7 +70,8 @@ def publish_retrospective(election: Election) -> str | None:
 
         if merge_coal:
             return "COAL" if code in COAL_CODES else bloc(code)
-        return code if code in COAL_CODES or bloc(code) != "OTH" else "OTH"
+        # As simulated: minor-party members such as KAP count as independents.
+        return code if code in COAL_CODES else bloc(code)
 
     # Actual per-seat winners and first preferences (by bloc).
     actual_dir = processed / election.election_id

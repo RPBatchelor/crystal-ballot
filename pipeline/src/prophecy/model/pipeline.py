@@ -62,11 +62,119 @@ def run_aggregate(election: Election, previous: Election, polls: pl.DataFrame,
     f.house.write_csv(out_dir / "house_effects.csv")
     (out_dir / "aggregate_meta.json").write_text(json.dumps(
         {"diagnostics": diag, "start_share": start, "pollsters": f.pollsters,
-         "dynamics": {k: [round(float(x), 4) for x in np.atleast_1d(np.median(v, axis=0))]
+         "dynamics": {k: [round(float(x), 4) for x in np.ravel(np.median(v, axis=0))]
                       for k, v in f.params.items()},
          "parties": f.parties, "weeks": [w.isoformat() for w in f.weeks]}, indent=1))
     summarise(f, polls).write_csv(out_dir / "poll_trend.csv")
     return f
+
+
+SWING_FLOOR = {"ALP": 3.0, "COAL": 3.0, "GRN": 1.5}  # points, for the no-polls prior
+
+
+def swing_prior(election: Election, previous: Election, out_dir: Path, run_dir: Path,
+                polls: pl.DataFrame | None = None, n_draws: int = 4000, seed: int = 20261128,
+                log: Callable[[str], None] = print) -> None:
+    """Stand-in for the poll aggregate when an election had too few public polls to fit
+    it (none for the ACT in 2024; two for the NT): a centre plus a swing drawn from the
+    jurisdiction's own election-to-election changes (root mean square, floored), saved
+    in the aggregator's format. The centre is the previous result, or for each party the
+    average of the polls of the last year that report it."""
+    code = election.jurisdiction.lower()
+    hist = (pl.read_csv(PROCESSED / f"election_results_{code}.csv", try_parse_dates=True)
+            .filter(pl.col("year") < election.date.year).sort("year"))
+    start = start_shares(previous)
+    parties = ["ALP", "COAL", "GRN", "OTH"]
+    start = {"ALP": start["ALP"], "COAL": start["COAL"], "GRN": start["GRN"],
+             "OTH": start["OTH"] + start["ONP"]}
+    used = []
+    if polls is not None and polls.height:
+        from datetime import timedelta
+
+        recent = polls.filter(pl.col("field_end") >= election.date - timedelta(days=365))
+        for p in parties[:-1]:
+            v = recent[p].drop_nulls() if p in recent.columns else pl.Series([])
+            if len(v):
+                start[p] = float(v.mean())
+                used.append(p)
+        start["OTH"] = 100 - sum(start[p] for p in parties[:-1])
+    # The government's vote tends to fall: shift its centre by the average change in
+    # governing parties' primary votes at earlier elections (unless polls set it).
+    gov = governing_bloc(previous)
+    shift = government_swing(election.date) if gov and gov not in used else 0.0
+    if shift:
+        start[gov] += shift
+        start["OTH"] -= shift
+        log(f"no polls for the governing party ({gov}): centre shifted {shift:+.1f} points")
+    rng = np.random.default_rng(seed)
+    shares = np.zeros((n_draws, 1, len(parties)))
+    sd = {}
+    for k, p in enumerate(parties[:-1]):
+        changes = hist[p].diff().drop_nulls().to_numpy()
+        rms = float(np.sqrt(np.mean(changes ** 2))) if len(changes) else 0.0
+        sd[p] = round(max(rms, SWING_FLOOR[p]), 2)
+        shares[:, 0, k] = start[p] + rng.normal(0, sd[p], n_draws)
+    shares[:, 0, :-1] = np.clip(shares[:, 0, :-1], 0.5, None)
+    shares[:, 0, -1] = np.clip(100 - shares[:, 0, :-1].sum(axis=1), 1.0, None)
+    shares[:, 0, :] *= 100 / shares[:, 0, :].sum(axis=1, keepdims=True)
+    run_dir.mkdir(parents=True, exist_ok=True)
+    np.savez_compressed(run_dir / "aggregate_draws.npz", shares=shares.astype(np.float32),
+                        parties=np.array(parties))
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "aggregate_meta.json").write_text(json.dumps(
+        {"no_polls": True, "poll_average_for": used, "start_share": start, "swing_sd": sd,
+         "government": gov, "government_shift": shift,
+         "swing_from": hist["year"].to_list()}, indent=1))
+    log(f"too few polls: centre {({k: round(v, 1) for k, v in start.items()})} "
+        f"(poll average for {used or 'none'}, else previous result) "
+        f"plus swing sd {sd} (from {len(hist)} past results)")
+
+
+GOV_SHRINK = 10  # pseudo-elections shrinking the average government swing toward zero
+
+
+def governing_bloc(election: Election) -> str | None:
+    """ALP or COAL, whichever won more seats at ``election`` (None if neither)."""
+    path = PROCESSED / election.election_id / "districts.csv"
+    if not path.exists():
+        return None
+    d = pl.read_csv(path, infer_schema_length=None)
+    party = "elected_party" if "elected_party" in d.columns else None
+    if party is None:  # Hare-Clark: one row per division, members listed in members.csv
+        m = PROCESSED / election.election_id / "members.csv"
+        if not m.exists():
+            return None
+        parties = pl.read_csv(m)["party"].to_list()
+    else:
+        parties = [x for v in d[party].to_list() for x in str(v).split("; ")]
+    n = {"ALP": 0, "COAL": 0}
+    for x in parties:
+        b = bloc(x)
+        if b in n:
+            n[b] += 1
+    return max(n, key=n.get) if max(n.values()) > 0 else None
+
+
+def government_swing(before) -> float:
+    """Average change in the governing bloc's primary vote (points) at elections before
+    ``before``, in every jurisdiction, shrunk toward zero."""
+    from prophecy.jurisdictions import in_jurisdiction
+
+    changes = []
+    for j in ("VIC", "NSW", "QLD", "WA", "SA", "TAS", "ACT", "NT", "FED"):
+        path = PROCESSED / f"election_results_{j.lower()}.csv"
+        if not path.exists():
+            continue
+        res = {r["year"]: r for r in pl.read_csv(path, try_parse_dates=True).iter_rows(named=True)}
+        els = [e for e in in_jurisdiction(j) if e.date < before and e.date.year in res]
+        for prev, e in zip(els, els[1:]):
+            g = governing_bloc(prev)
+            a, b = res[prev.date.year].get(g), res[e.date.year].get(g)
+            if g and a is not None and b is not None:
+                changes.append(b - a)
+    if not changes:
+        return 0.0
+    return round(float(np.sum(changes) / (len(changes) + GOV_SHRINK)), 2)
 
 
 def load_draws(run_dir: Path) -> tuple[np.ndarray, list[str]]:

@@ -1,0 +1,387 @@
+<!doctype html><html><head><meta charset="utf8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><script type='text/javascript' nonce='eQVnjFiB1W3zwjQDtkwg1Q==' src='https://7596286c-4b21-4e32-bc90-841e92b2f101.frame.claudeusercontent.com/m3ZZFNXA9Y3GndALv6TLDnbm3qMFp_-pz9S_XJSiRPTE6cZ0ADcv30vkWilz8XVcFAFbZLnOdygS4ItwmONaxEKQR6e6rEtKNwl28oTEEJpBrsPrsKP2c__69mH7HU0Qf-56jb0FJrGYWZQoQexMewacaKFMXiJ_pZJZs5TndcL8VIBVu-AhlJ0_jJIzfMF_n3YhwR-1OHhasBfz7WaW-jurDyrWXtqTJ9sYNOn_GPaeOWaz5_CPmQfm80bsgeCrlG5gssDicXHeBIwiD6MxwkrI-pn58zHKr_L16xuNdIwRURXWEGgCJpYn3SSy1O5FvI0fO8af9E6oMPBLmDBhVo0L4yW8-Mo16Cff11-jtYWDKVVER1F5HCAkdpaa8lbZqkGQxmf37Z66jvxlAeLKcQG4G7rFQqyE9s4rS3nupT_DUJ8VrDLUV1nlpiwmHtdZRA0pzrJGmkDQ-aNogd5HwRz3g8P9jB2Y_UYLAgjEn366qj_McMRrLaiYfFunBwwzHZbBhI7Oee_sPc2gCqsI96FIcLd8XR89ia2Gr9wfAPV8AdPIUDwmiy4qgmkSskfzwXMZYxu7JLkwsIhGDE4Xti_OfQLcLJQAiI47R5TFIgRMe_PEfdn-F_3qcsP3EMVaXWocrXggQW9EG1QINyK043h57jjFhuGF0yaM8uMwZ__VroqvM4Fh2vPezsY8r87IkwXfv9xNs4Mh8D3pWg-C4w'></script></head><body>
+<title>Prophecy Model Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;display=swap">
+<style>
+/* Layout: a single refereed-report column, findings graded by severity, tables scroll inside their own frames. */
+:root {
+  --paper: #f6f7f9;
+  --ink: #1b2330;
+  --muted: #586273;
+  --rule: #d5dae2;
+  --panel: #eceff4;
+  --accent: #1f4e8c;
+  --major: #a3362b;
+  --moderate: #9a6a12;
+  --minor: #3d6b4f;
+  --major-bg: #f6e3e0;
+  --moderate-bg: #f5ecd9;
+  --minor-bg: #e2eee6;
+  --display: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #13171d; --ink: #e3e7ee; --muted: #9aa4b4; --rule: #2c333e; --panel: #1b2029;
+    --accent: #7fa7e0; --major: #e48a7f; --moderate: #d9ad5c; --minor: #86c29b;
+    --major-bg: #3a2220; --moderate-bg: #352b18; --minor-bg: #1d3125; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #13171d; --ink: #e3e7ee; --muted: #9aa4b4; --rule: #2c333e; --panel: #1b2029;
+  --accent: #7fa7e0; --major: #e48a7f; --moderate: #d9ad5c; --minor: #86c29b;
+  --major-bg: #3a2220; --moderate-bg: #352b18; --minor-bg: #1d3125; color-scheme: dark;
+}
+body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+.wrap { max-width: 860px; margin: 0 auto; padding-block: 48px 96px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header { border-bottom: 2px solid var(--ink); padding-bottom: 20px; display: grid; gap: 8px; }
+.eyebrow { font-family: var(--display); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+h1 { font-family: var(--display); font-weight: 600; font-size: 34px; line-height: 1.15; margin: 0; text-wrap: balance; }
+.meta { font-family: var(--display); font-size: 14px; color: var(--muted); }
+h2 { font-family: var(--display); font-weight: 600; font-size: 23px; margin: 56px 0 12px; padding-top: 12px; border-top: 1px solid var(--rule); text-wrap: balance; }
+h3 { font-family: var(--display); font-weight: 600; font-size: 18px; margin: 32px 0 8px; text-wrap: balance; }
+p, li { max-width: 68ch; }
+p { margin: 0 0 14px; }
+ul, ol { padding-left: 22px; margin: 0 0 14px; }
+li { margin-bottom: 6px; }
+code, .num { font-family: var(--mono); font-size: .86em; }
+.num { font-variant-numeric: tabular-nums; }
+a { color: var(--accent); }
+.verdict { background: var(--panel); border-left: 4px solid var(--accent); padding: 18px 22px; margin: 28px 0; }
+.verdict p:last-child { margin-bottom: 0; }
+.finding { margin: 22px 0; display: grid; gap: 6px; }
+.finding h3 { margin: 0; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.sev { font-family: var(--display); font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  padding: 2px 8px; border-radius: 3px; white-space: nowrap; }
+.sev.major { color: var(--major); background: var(--major-bg); }
+.sev.moderate { color: var(--moderate); background: var(--moderate-bg); }
+.sev.minor { color: var(--minor); background: var(--minor-bg); }
+.finding p { margin: 0; }
+.rec { font-family: var(--display); font-size: 15px; color: var(--ink); }
+.rec b { color: var(--accent); font-weight: 600; }
+.table-frame { overflow-x: auto; margin: 16px 0 8px; border: 1px solid var(--rule); }
+table { border-collapse: collapse; width: 100%; font-family: var(--display); font-size: 14px; font-variant-numeric: tabular-nums; }
+th, td { padding: 7px 10px; text-align: right; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+thead th { background: var(--panel); font-weight: 600; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+tbody tr:last-child td { border-bottom: 0; }
+td.bad { color: var(--major); font-weight: 600; }
+td.wrapcell { white-space: normal; text-align: left; min-width: 220px; }
+.caption { font-family: var(--display); font-size: 13px; color: var(--muted); margin: 0 0 18px; max-width: 72ch; }
+figure { margin: 24px 0; }
+.chart { width: 100%; max-width: 560px; height: auto; display: block; }
+.chart text { font-family: var(--display); font-size: 12px; fill: var(--muted); }
+.chart .lbl { fill: var(--ink); font-weight: 500; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 20px 0; }
+.stat { border-top: 2px solid var(--ink); padding-top: 8px; min-width: 0; }
+.stat .v { font-family: var(--mono); font-size: 26px; font-variant-numeric: tabular-nums; }
+.stat .k { font-family: var(--display); font-size: 13px; color: var(--muted); }
+.toc { font-family: var(--display); font-size: 15px; columns: 2 220px; margin: 20px 0 0; padding-left: 20px; }
+footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--rule); font-family: var(--display); font-size: 13px; color: var(--muted); }
+@media (max-width: 520px) { h1 { font-size: 27px; } body { font-size: 16px; } }
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Independent statistical review</div>
+  <h1>Prophecy: an Australian election forecasting model</h1>
+  <div class="meta">Reviewed 31 October 2026 · Code at the working tree of <code>main</code> (a64ee1c plus uncommitted work) · Ten blind backtests, 2018–2026</div>
+</header>
+
+<div class="verdict">
+  <p><strong>Overall assessment.</strong> The architecture is sound and close to current good practice: a Bayesian state-space poll aggregator, a calibrated systematic polling error, seat-level simulation with explicit preference counting, and an honest backtest harness. Statewide vote forecasts are well calibrated. The seat layer is where the model falls short. Its seat probabilities are overconfident by about 12 points in the 50–90% range, it is no better than "nothing changes" at picking winners, and it systematically misses independents and new or surging minor parties.</p>
+  <p>Most of the shortfall traces to about 30 hand-set parameters that the team now has the data to estimate. The single highest-value change is to estimate the seat-level swing distribution from the 40+ historical election pairs already in the repository, rather than setting it by judgement.</p>
+</div>
+
+<ol class="toc">
+  <li><a href="#evidence">Evidence base</a></li>
+  <li><a href="#results">Results against actuals</a></li>
+  <li><a href="#method">Methodology, by component</a></li>
+  <li><a href="#data">Data sources and validity</a></li>
+  <li><a href="#validation">Validation design</a></li>
+  <li><a href="#recs">Prioritised recommendations</a></li>
+  <li><a href="#constants">Appendix: hand-set constants</a></li>
+</ol>
+
+<h2 id="evidence">1. Evidence base</h2>
+<p>I reviewed the pipeline source (poll ingest, the Stan aggregator, the seat simulation, preference estimation, the Hare-Clark count, redistribution notionals and scoring) and the outputs of ten blind backtests. Each backtest forecasts an election using only polls published before polling day, the previous result, by-elections and the ballot, then scores against the declared result.</p>
+<ul>
+  <li><strong>Single-member electorates (7):</strong> Victoria 2018, NSW 2023, Queensland 2024, WA 2025, SA 2026, NT 2024, federal 2025. 555 seats in all.</li>
+  <li><strong>Hare-Clark (3):</strong> Tasmania 2024 and 2025, ACT 2024. 15 multi-member divisions.</li>
+</ul>
+<p>I also ran three analyses of my own for this review: pooled reliability across all 555 seats, a bootstrap that resamples whole elections, and an empirical estimate of seat-level swing dispersion from five election pairs held on unchanged boundaries.</p>
+
+<h2 id="results">2. Results against actuals</h2>
+
+<h3>2.1 Statewide primary vote</h3>
+<p>Forecast median minus actual, in percentage points. NT and ACT had too few polls and used the no-polls swing prior.</p>
+<div class="table-frame"><table>
+  <thead><tr><th>Election</th><th>ALP</th><th>Coalition</th><th>Greens</th><th>ALP 2PP</th><th>All primaries in 90% interval</th></tr></thead>
+  <tbody>
+    <tr><td>Victoria 2018</td><td>−1.6</td><td>+3.5</td><td>+0.7</td><td>−2.2</td><td>Yes (Coalition at the edge)</td></tr>
+    <tr><td>NSW 2023</td><td>−0.2</td><td>+0.5</td><td>+0.2</td><td>−0.7</td><td>Yes</td></tr>
+    <tr><td>Queensland 2024</td><td>−1.1</td><td>−0.8</td><td>+1.5</td><td>+1.9</td><td>Yes</td></tr>
+    <tr><td>WA 2025</td><td>+2.6</td><td>−0.1</td><td>−0.4</td><td>+1.9</td><td>Yes</td></tr>
+    <tr><td>SA 2026</td><td>−0.7</td><td>−1.5</td><td>+0.5</td><td class="bad">+5.9</td><td>Yes</td></tr>
+    <tr><td>Federal 2025</td><td class="bad">−3.7</td><td>+2.8</td><td>+0.9</td><td>−3.3</td><td class="bad">No (ALP)</td></tr>
+    <tr><td>Tasmania 2024</td><td>−3.6</td><td>+1.8</td><td>−1.1</td><td>n/a</td><td>Yes</td></tr>
+    <tr><td>Tasmania 2025</td><td>+1.2</td><td>−4.6</td><td>−0.1</td><td>n/a</td><td>Yes (Coalition at the edge)</td></tr>
+    <tr><td>NT 2024 (no-polls prior)</td><td>−4.5</td><td>−9.1</td><td>+2.9</td><td>+2.5</td><td>Yes (very wide)</td></tr>
+    <tr><td>ACT 2024 (no-polls prior)</td><td>+3.7</td><td>+0.4</td><td>+1.3</td><td>n/a</td><td>Yes</td></tr>
+  </tbody>
+</table></div>
+<p class="caption">29 of 30 primary-vote intervals contain the actual result, against 27 expected at 90%. In the eight polled elections the ALP error has a mean of −0.9 and an RMS of 2.2 points. The model's implied ALP standard deviation is about 2.1, so the statewide layer is well calibrated, if anything slightly wide.</p>
+<p>The 2PP figure for SA 2026 (90% interval 49.6–75.0) is not a meaningful quantity: One Nation outpolled the Liberals, so a Labor v Liberal two-party count describes few seats. The 2PP summary should be suppressed, or redefined, when a major party is not in the top two.</p>
+
+<h3>2.2 Seat outcomes</h3>
+<div class="table-frame"><table>
+  <thead><tr><th>Election</th><th>Seats</th><th>Brier</th><th>Favourite won</th><th>No change</th><th>ALP seats (median / actual)</th><th>Coalition</th><th>Outcome called</th></tr></thead>
+  <tbody>
+    <tr><td>Victoria 2018</td><td>88</td><td>0.175</td><td>86.4%</td><td>86.4%</td><td>49 / 55</td><td>35 / 27</td><td>ALP majority 85% ✓</td></tr>
+    <tr><td>NSW 2023</td><td>93</td><td>0.178</td><td>87.1%</td><td class="bad">90.3%</td><td>46 / 45</td><td>38 / 36</td><td>Hung 57% ✓</td></tr>
+    <tr><td>Queensland 2024</td><td>93</td><td>0.204</td><td>84.9%</td><td>76.3%</td><td>35 / 36</td><td>49 / 52</td><td>LNP majority 63% ✓</td></tr>
+    <tr><td>WA 2025</td><td>59</td><td>0.173</td><td>86.4%</td><td>86.4%</td><td>43 / 46</td><td>15 / 13</td><td>ALP majority 99.8% ✓</td></tr>
+    <tr><td>SA 2026</td><td>47</td><td>0.292</td><td>76.6%</td><td class="bad">78.7%</td><td>31 / 34</td><td class="bad">0 / 5</td><td>ALP majority 98% ✓</td></tr>
+    <tr><td>Federal 2025</td><td>150</td><td>0.235</td><td>83.3%</td><td class="bad">87.3%</td><td class="bad">75 / 94</td><td>59 / 43</td><td>ALP majority 47% ✓</td></tr>
+    <tr><td>NT 2024</td><td>25</td><td class="bad">0.460</td><td>68.0%</td><td>52.0%</td><td>5 / 4</td><td>15 / 17</td><td>CLP majority 72% ✓</td></tr>
+    <tr><td><strong>Pooled</strong></td><td><strong>555</strong></td><td><strong>0.219</strong></td><td><strong>83.8%</strong></td><td><strong>83.4%</strong></td><td colspan="3" style="text-align:left">Every headline outcome had the plurality of probability</td></tr>
+  </tbody>
+</table></div>
+<p class="caption">Brier is the multi-category score (0 is perfect, 2 the worst). "No change" means predicting that every seat stays with its current holder. Federal seats are scored at bloc level.</p>
+
+<div class="stats">
+  <div class="stat"><div class="v">46%</div><div class="k">of the 92 seats that changed hands had the eventual winner as favourite</div></div>
+  <div class="stat"><div class="v">40</div><div class="k">of 463 retained seats were forecast to change hands</div></div>
+  <div class="stat"><div class="v">+0.12</div><div class="k">overconfidence in the 50–90% range (election-bootstrap 90% CI 0.09–0.17)</div></div>
+  <div class="stat"><div class="v">31%</div><div class="k">Brier skill over a tuned status-quo forecast (90% CI 17–44%)</div></div>
+</div>
+
+<p>The model adds real value in the probabilities. Its Brier score is about 31% better than the best status-quo forecast (90% to the incumbent). It adds none in categorical calls: favourite accuracy equals the status quo, 83.8% against 83.4%. In plain terms, the model knows which seats are in doubt but is not yet good at saying which way they will fall.</p>
+
+<figure>
+<svg class="chart" viewbox="0 0 500 350" role="img" aria-labelledby="rel-t rel-d">
+  <title id="rel-t">Reliability of favourite probabilities, pooled over 555 seats</title>
+  <desc id="rel-d">Forecasts of 60% won 51%; forecasts of 80% won 66%; forecasts of 96% won 93%; forecasts of 99.8% won 98.7%. The two middle bins fall well below the diagonal.</desc>
+  <g stroke="var(--rule)" stroke-width="1">
+    <line x1="60" y1="20" x2="460" y2="20"/><line x1="60" y1="113.3" x2="460" y2="113.3"/>
+    <line x1="60" y1="206.7" x2="460" y2="206.7"/><line x1="60" y1="300" x2="460" y2="300"/>
+  </g>
+  <line x1="60" y1="253.3" x2="460" y2="20" stroke="var(--muted)" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="300" y="104" class="lbl" transform="rotate(-30 300 104)">perfect calibration</text>
+  <g stroke="var(--major)" stroke-width="2">
+    <line x1="144" y1="291.6" x2="144" y2="202.5"/>
+    <line x1="301.6" y1="212.3" x2="301.6" y2="145.1"/>
+    <line x1="424.8" y1="71.3" x2="424.8" y2="38.2"/>
+    <line x1="458.4" y1="34.9" x2="458.4" y2="22.3"/>
+  </g>
+  <g fill="var(--major)">
+    <circle cx="144" cy="246.8" r="5"/><circle cx="301.6" cy="176.8" r="5"/>
+    <circle cx="424.8" cy="50.8" r="5"/><circle cx="458.4" cy="26.1" r="4"/>
+  </g>
+  <text x="152" y="243" class="lbl">n=72</text>
+  <text x="310" y="180" class="lbl">n=113</text>
+  <text x="372" y="62" class="lbl">n=136</text>
+  <text x="404" y="15" class="lbl">n=229</text>
+  <g text-anchor="middle">
+    <text x="60" y="320">0.5</text><text x="140" y="320">0.6</text><text x="220" y="320">0.7</text>
+    <text x="300" y="320">0.8</text><text x="380" y="320">0.9</text><text x="460" y="320">1.0</text>
+    <text x="260" y="342">Probability given to the favourite</text>
+  </g>
+  <g text-anchor="end">
+    <text x="52" y="304">0.4</text><text x="52" y="211">0.6</text><text x="52" y="117">0.8</text><text x="52" y="24">1.0</text>
+  </g>
+  <text x="14" y="160" transform="rotate(-90 14 160)" text-anchor="middle">Share the favourite won</text>
+</svg>
+<p class="caption">Points are pooled bins; bars are 90% Wilson intervals, which treat seats as independent and so understate the uncertainty. Resampling whole elections gives a 50–90% gap of +0.12 (0.09–0.17), which excludes zero.</p>
+</figure>
+
+<h3>2.3 Systematic seat-level patterns</h3>
+<ul>
+  <li><strong>Independents are under-forecast:</strong> NSW 6 forecast against 9 won, Victoria 1 against 3, Tasmania 2025 2 against 5, NT 1 against 3. In three of these the actual total fell outside the 90% interval. The ACT's Independents for Canberra and Tasmania's Jacqui Lambie Network (3 seats) were given almost no chance.</li>
+  <li><strong>Greens seats are over-forecast:</strong> federal 5 against 1, Queensland 4 against 1, NT 3 against 1. Seats where the Greens were favourite went to them 8 times in 17 (47%), even though their statewide vote was forecast accurately.</li>
+  <li><strong>One Nation favourites won 3 of 12 seats</strong>, mostly in SA. The model had no basis for locating One Nation's vote there (finding M5).</li>
+  <li><strong>An asymmetry between the majors:</strong> ALP favourites won 93% of the time, Coalition favourites 77%. Federal 2025 and Victoria 2018 both over-forecast Coalition seats, by 16 and 8.</li>
+</ul>
+
+<h3>2.4 Hare-Clark</h3>
+<div class="table-frame"><table>
+  <thead><tr><th>Election</th><th>Seat-level Brier</th><th>Mean p(actual party count)</th><th>Main misses</th></tr></thead>
+  <tbody>
+    <tr><td>ACT 2024 (no polls)</td><td>0.138</td><td>0.89</td><td class="wrapcell">ALP 10, LIB 9 and GRN 4 exact; missed Independents for Canberra (1) and Fiona Carrick</td></tr>
+    <tr><td>Tasmania 2024</td><td>0.353</td><td>0.72</td><td class="wrapcell">Lambie Network 0 against 3; Liberals 16 against 14</td></tr>
+    <tr><td>Tasmania 2025</td><td>0.386</td><td>0.67</td><td class="wrapcell">Independents 2 against 5 (outside the 90% interval)</td></tr>
+  </tbody>
+</table></div>
+<p>The Hare-Clark layer gets the major parties right and misses the minor ones. Tasmanian independents and minor parties are a recurring feature of the electorate, not one-off events, so this is a structural gap and not bad luck.</p>
+
+<h2 id="method">3. Methodology, by component</h2>
+<p>Findings are graded <span class="sev major">Major</span> where they materially distort published probabilities, <span class="sev moderate">Moderate</span> where they bias specific situations, and <span class="sev minor">Minor</span> for refinements.</p>
+
+<h3>3.1 Poll aggregation (Stan state-space model)</h3>
+<p>The aggregator is the strongest part of the system. Latent weekly shares follow a damped local linear trend on the additive log-ratio scale. Polls carry binomial sampling error, a design effect, extra non-sampling error and sum-to-zero house effects. Diagnostics are monitored (R-hat ≤ 1.009, bulk ESS ≥ 839 across fits). Isolated divergences in WA, SA and Tasmania 2025 deserve a check but are not alarming at <code>adapt_delta = 0.99</code>.</p>
+
+<div class="finding"><h3><span class="sev moderate">Moderate</span> M1. Party trends are independent a priori</h3>
+<p>Each party's velocity innovations are independent normals. In reality ALP and Coalition movements are strongly negatively correlated, and Greens and Labor trade votes. The softmax couples the shares weakly, but the model cannot learn that a fall in one major is likely to be a rise in the other. That matters most early in a cycle and for pollsters reporting only some parties.</p>
+<p class="rec"><b>Recommend:</b> give the velocity innovations a multivariate normal with an LKJ prior on the correlation matrix. This is a small change to the Stan code.</p></div>
+
+<div class="finding"><h3><span class="sev moderate">Moderate</span> M2. House effects are constant over a cycle and identified only up to the industry mean</h3>
+<p>House effects are fixed for the whole cycle and sum to zero, so the aggregate tracks the industry average. Pollsters change methods within cycles: many did after 2019, and newer firms such as DemosAU and Fox &amp; Hedgehog are unproven. The sum-to-zero constraint also means industry-wide error is handled entirely downstream (M3), from a different estimator.</p>
+<p class="rec"><b>Recommend:</b> let house effects drift slowly (a random walk with a small step), or allow method-change breakpoints. Pool each national pollster's house effects across jurisdictions hierarchically, since Newspoll, Resolve, YouGov and Roy Morgan poll most states.</p></div>
+
+<div class="finding"><h3><span class="sev minor">Minor</span> M3a. Fixed design effect and default sample size</h3>
+<p>A design effect of 1.5 is applied to all polls, and <code>n = 1000</code> wherever Wikipedia omits the sample size. MRP-style online panels and IVR robopolls differ widely in effective precision.</p>
+<p class="rec"><b>Recommend:</b> estimate a design effect per pollster or mode, or rely on <code>tau</code> alone. Record which sample sizes were imputed and check the result's sensitivity to that.</p></div>
+
+<h3>3.2 Systematic polling error</h3>
+<div class="finding"><h3><span class="sev major">Major</span> M3. Polling error is estimated per jurisdiction from four to six elections, and the floors do most of the work</h3>
+<p>The polling-error SD is the RMS of final-month simple poll averages minus results, floored at 2.0 points for the majors and 1.2 for the Greens. With four to six elections per jurisdiction the floor binds in most cases: ALP and Coalition sit at exactly 2.0 in Victoria, NSW, Queensland, SA and the NT. The bias correction (half the historical mean error) rests on the same few points. Federally it pushed the 2025 ALP estimate the wrong way, after 2019's overstatement of Labor.</p>
+<p>Two further problems:</p>
+<ul>
+  <li><strong>Different estimators:</strong> the error is measured on a simple 28-day average but applied to the aggregator's output, which has its own house-effect correction and smoothing.</li>
+  <li><strong>Independent errors:</strong> errors are drawn independently by party, but historical ALP and Coalition errors are negatively correlated.</li>
+</ul>
+<p class="rec"><b>Recommend:</b> fit one hierarchical model of polling error across all nine jurisdictions (about 40 elections now in the repository): a national mean and covariance, jurisdiction random effects and t-distributed errors. Measure error on the aggregator's own out-of-sample election-eve estimate. Drop the ad hoc bias shrinkage in favour of the hierarchical posterior.</p></div>
+
+<h3>3.3 Seat model</h3>
+<div class="finding"><h3><span class="sev major">Major</span> M4. Seat-level uncertainty is set by hand and is about half what the data show</h3>
+<p>Seat primaries move by the statewide logit swing plus a regional effect (SD 0.06) and seat noise (SD 0.12 for the majors). Together that is about 0.13 on the logit scale. I measured the actual residual seat swing, after removing the statewide swing, in five election pairs on unchanged boundaries (Victoria 2014→18, NSW 2015→19, Queensland 2012→15, 2017→20 and 2020→24):</p>
+<div class="table-frame"><table>
+  <thead><tr><th>Party</th><th>Residual SD (logit)</th><th>Robust SD (MAD)</th><th>Excess kurtosis</th><th>Slope on baseline share</th><th>Model assumes</th></tr></thead>
+  <tbody>
+    <tr><td>ALP</td><td>0.247</td><td>0.192</td><td>+2.0</td><td>−0.07</td><td>0.13, Gaussian, slope 0</td></tr>
+    <tr><td>Coalition</td><td>0.249</td><td>0.206</td><td>+1.1</td><td>−0.20</td><td>0.13, Gaussian, slope 0</td></tr>
+    <tr><td>Greens</td><td>0.244</td><td>0.200</td><td>+0.8</td><td>−0.07</td><td>0.19, Gaussian, slope 0</td></tr>
+  </tbody>
+</table></div>
+<p class="caption">Medians across the five pairs. Part of the raw residual is explained by retirements, first-term members and ballot changes that the model does handle. Even so, the robust SD of about 0.20 is half as large again as the model's total. The data show three things the model leaves out: heavy tails, regression to the mean (strong seats swing against the party), and unstable cross-party correlation (from −0.41 to +0.43).</p>
+<p>This one finding explains most of section 2: overconfidence in the 70–90% range, too few seats changing hands, and low favourite accuracy in close seats. The Victorian "noise grid" tuning found the score flat because one election cannot identify the parameter.</p>
+<p class="rec"><b>Recommend:</b> estimate the seat-swing distribution directly from historical pairs. Use a hierarchical model with Student-t errors, party-specific scales, a regression-to-the-mean term, and covariates for retirement, first-term members, by-elections and redistribution share. Fit it on pairs before each backtested election. Notional results on new boundaries can supply more pairs.</p></div>
+
+<div class="finding"><h3><span class="sev major">Major</span> M5. One Nation's geography in state models carries no information when One Nation did not stand last time</h3>
+<p>The simulation's docstring describes One Nation's seat share as the statewide figure times "the seat's relative federal-2025 ONP strength". In the state path, though, <code>state_inputs</code> builds the index from the previous <em>state</em> primary. Seats One Nation did not contest get an index of 1.0, a uniform spread. In SA 2026 that spread One Nation's 24% evenly, so it was favourite in rural Liberal seats it did not win (Chaffey 98%, Schubert 88%). The Liberals got a median of 0 seats against 5 actual. The code and its documentation disagree, and the gap drove the worst seat result in the backtests.</p>
+<p class="rec"><b>Recommend:</b> build a party-geography prior for every minor party from the most recent federal (and Senate) booth results mapped onto state seats, as is already done for Victoria. Use the previous state result only where the party stood broadly.</p></div>
+
+<div class="finding"><h3><span class="sev major">Major</span> M6. No model for new independents or new parties</h3>
+<p>Independents carry forward from the previous result with a random decay, or around a curated prior. Anyone not standing last time starts at almost nothing. That guarantees the under-forecast in 2.3: teal and community independents, Lambie Network candidates, Independents for Canberra. These candidacies are known when nominations close, and their success is fairly predictable from observable features.</p>
+<p class="rec"><b>Recommend:</b> fit a hurdle model for a new candidate's vote from features observable at nomination. Useful features include a high-profile or former-member flag, local-government office, a funded "Voices" campaign, party registration and federal success in an overlapping division. Train on past state and federal independents and minor parties, and pass the result through the seat simulation as a heavy-tailed prior.</p></div>
+
+<div class="finding"><h3><span class="sev moderate">Moderate</span> M7. The Coalition is one swing bloc</h3>
+<p>Liberals and Nationals swing together, and the seat's leading Coalition party takes the label. Three-cornered contests (Albany in WA, several NSW and Victorian country seats) and Liberal-v-National finals cannot be represented. In Tasmania the Nationals are mapped to Others.</p>
+<p class="rec"><b>Recommend:</b> split the Coalition into Liberal and National sub-blocs inside the Coalition swing, with a within-Coalition share that varies by seat.</p></div>
+
+<div class="finding"><h3><span class="sev moderate">Moderate</span> M8. Regional effects have one scale and are independent across parties</h3>
+<p>Region effects share one SD (0.06) and are drawn independently for each party. The regions themselves were hand-drawn for this project, for example the five SA regions. The data in M4 suggest regional structure is present but varies by election.</p>
+<p class="rec"><b>Recommend:</b> estimate regional variance components in the same hierarchical swing model as M4. Use a shared factor so that a region swinging to Labor also swings away from the Coalition.</p></div>
+
+<div class="finding"><h3><span class="sev minor">Minor</span> M9. Candidate effects are fixed priors</h3>
+<p>Retirement −0.08, first-term member +0.05, defector keeps 50% and by-election persistence 50% are reasonable values from the literature. They are now estimable from the data in the repository (several hundred retirements across the jurisdictions).</p>
+<p class="rec"><b>Recommend:</b> estimate them inside the M4 model.</p></div>
+
+<h3>3.4 Preference flows</h3>
+<div class="finding"><h3><span class="sev moderate">Moderate</span> M10. Flows come from one previous election, with uncertainty set by hand</h3>
+<p>Bloc-to-bloc Luce weights are estimated from the previous distribution of preferences, then calibrated so that replaying the previous count reproduces its results. That is a good, principled step. However:</p>
+<ul>
+  <li><strong>Hand-set uncertainty:</strong> Dirichlet concentrations of 60 for parties and 15 for One Nation and independents are judgements, not estimates.</li>
+  <li><strong>No seat-level variation:</strong> how-to-vote cards differ by seat, but every seat in a simulation uses the same flows.</li>
+  <li><strong>Federal flows for Hare-Clark:</strong> Tasmania, the ACT and the NT borrow federal flows, though leakage under Hare-Clark behaves differently.</li>
+  <li><strong>"Others" is one bloc:</strong> it pools minor parties whose preferences differ sharply (Legalise Cannabis against Family First, for example).</li>
+</ul>
+<p class="rec"><b>Recommend:</b> estimate flow uncertainty from how flows changed between elections, where two or more distributions exist (NSW, Queensland, Victoria, federal). Split "Others" into left- and right-leaning minor blocs. Add a seat-level random effect on flows.</p></div>
+
+<h3>3.5 Hare-Clark count</h3>
+<div class="finding"><h3><span class="sev moderate">Moderate</span> M11. The party-unit simplification and fixed exhaustion</h3>
+<p>Party tickets are counted as units that keep their surplus, independents are capped at one seat, exhaustion is fixed at 0.1 and same-bloc flows at 0.15. This is a sensible first approximation, but within-ticket leakage and a ticket's vote spreading thinly over too many candidates do decide final seats in Tasmania. The new-party and new-independent defaults (1.5% and 1.0%) explain the misses on the Lambie Network and on Tasmanian independents.</p>
+<p class="rec"><b>Recommend:</b> calibrate exhaustion and leakage against the published TEC and Elections ACT distributions (2016–2025 are ingested). Use the M6 new-candidate model in place of the flat defaults.</p></div>
+
+<h3>3.6 Jurisdictions with few or no polls</h3>
+<div class="finding"><h3><span class="sev moderate">Moderate</span> M12. The no-polls prior is honest but carries little information</h3>
+<p>With fewer than three polls the forecast centres on the previous result or a recent poll average, with a spread equal to the RMS of historical changes. In the NT the CLP's SD was 13.1 points and its seat interval 4–22: correct, but of little use. Two polls are averaged without house-effect adjustment.</p>
+<p class="rec"><b>Recommend:</b> add covariates that are available: the federal swing in the territory's divisions since the last state election, the national polling environment relative to the governing party, and the length of the government's tenure. The literature on "fundamentals" models shows these narrow the uncertainty for small jurisdictions. Treat <code>MIN_POLLS = 3</code> as a smooth weighting, not a switch.</p></div>
+
+<h2 id="data">4. Data sources and validity</h2>
+<div class="table-frame"><table>
+  <thead><tr><th>Source</th><th>Use</th><th>Assessment</th></tr></thead>
+  <tbody>
+    <tr><td>Electoral commissions (VEC, NSWEC, ECQ, ECSA, WAEC, TEC, Elections ACT, AEC)</td><td>Results, booths, distributions of preferences</td><td class="wrapcell">Primary sources, the right choice. Seat totals checked against official declarations. Parsers have tests for WA and Tasmania only.</td></tr>
+    <tr><td>Wikipedia poll tables</td><td>All voting-intention polls</td><td class="wrapcell">A secondary source. Sample sizes, modes and fieldwork dates are often missing, and coverage of older cycles depends on what editors kept (two NSW cycles needed pinned revisions). A corrections file exists. The weakest link in the data chain.</td></tr>
+    <tr><td>Wikipedia NT results articles</td><td>NT results 2016–2024</td><td class="wrapcell">Tertiary, but they cite the NTEC, and seat totals match. NTEC itself refuses automated access. Spot-check a sample of seats by hand against NTEC PDFs.</td></tr>
+    <tr><td>NT 2024 notional</td><td>2020 on 2023 boundaries</td><td class="wrapcell">Reconstructed from rounded "change" figures (0.1-point precision) in post-election articles. The information was public before the election, but the reconstruction is approximate and lumps all minor parties together.</td></tr>
+    <tr><td>Booth-level notionals (NSW, WA, SA)</td><td>Redistributions</td><td class="wrapcell">A standard method. SA 2026 was checked against Antony Green's pendulum (mean absolute difference 0.9 points over 41 seats). In SA 2022 about 40% of votes are not published by booth and were spread pro rata, which ignores the known lean of postal and pre-poll votes.</td></tr>
+    <tr><td>Hand-curated tables</td><td>By-elections, regions, defections, results supplements</td><td class="wrapcell">Small and transparent. They need a documented source for every row and a second-person check.</td></tr>
+  </tbody>
+</table></div>
+<p>Party classification into six blocs is coded by name-matching rules, and several mistakes surfaced during development: "Canberra Liberals" read as a new party, CLP columns ignored, the Nationals merged into the Coalition in Tasmania. All were fixed. A table of every party label to its bloc, reviewed once, would be safer than pattern rules.</p>
+
+<h2 id="validation">5. Validation design</h2>
+
+<div class="finding"><h3><span class="sev major">Major</span> V1. The backtests are blind to the outcome but not to the development process</h3>
+<p>Each backtest uses only pre-election inputs, which is correct, and the polling-error tables exclude the target election. However, the model's structure and constants were developed in the same project, by people who could see the backtest results. Examples are the Victorian noise grid, the no-polls centring rule and the Tasmanian Nationals rule. Some changes were bug fixes, which is legitimate. Others were design choices made with outcomes in view. This is the "garden of forking paths": reported skill is probably optimistic, especially for Victoria 2018, which tuned the noise settings.</p>
+<p class="rec"><b>Recommend:</b> freeze a model version and record its hash. Then run it once on elections it has never been scored on, and report those scores separately as the headline. Keep a changelog of every change made after viewing a backtest.</p></div>
+
+<div class="finding"><h3><span class="sev major">Major</span> V2. Ten elections is a small sample, and only the most recent election in each jurisdiction is tested</h3>
+<p>Seats within an election share a statewide error, so the effective sample is closer to ten than to 555. The repository holds results and polls for about 25 more elections that could be backtested: Victoria 2014 and 2022, NSW 2015 and 2019, Queensland 2017 and 2020, WA 2017 and 2021, SA 2018 and 2022, federal 2010–2022 and others.</p>
+<p class="rec"><b>Recommend:</b> rolling-origin backtests of every election with a usable previous election, with all estimates (M3, M4) fitted only on earlier data. Report metrics with election-level bootstrap intervals.</p></div>
+
+<div class="finding"><h3><span class="sev moderate">Moderate</span> V3. Scoring is too narrow</h3>
+<ul>
+  <li><strong>Categorical scores only:</strong> Brier and log loss on winners use one bit per seat. The model forecasts each seat's full vote, which allows far sharper tests. Score seat primaries and two-candidate margins with CRPS and probability-integral-transform (PIT) histograms; the PIT diagnoses M4 directly.</li>
+  <li><strong>Reliability on favourites only:</strong> extend it to all party-seat probabilities and to seat totals.</li>
+  <li><strong>One baseline:</strong> status quo is the only one. Add a Mackerras pendulum with uniform swing from the final poll average, betting markets where archived, and, where published, other modellers' seat probabilities.</li>
+  <li><strong>Election eve only:</strong> score forecasts at 90, 30 and 7 days out as well, to test the dynamic part of the aggregator.</li>
+</ul></div>
+
+<div class="finding"><h3><span class="sev minor">Minor</span> V4. Reproducibility</h3>
+<p>Seeds are fixed and draws are saved, which is good. The backtest outputs do not record the code version, input data hashes or the configuration used, and most of the work is not yet committed.</p>
+<p class="rec"><b>Recommend:</b> write a run manifest (git hash, input hashes, the full <code>SimConfig</code>) beside every backtest output, and commit before scoring.</p></div>
+
+<h2 id="recs">6. Prioritised recommendations</h2>
+<div class="table-frame"><table>
+  <thead><tr><th>Priority</th><th>Change</th><th>Findings addressed</th><th>Expected effect</th><th>Effort</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td class="wrapcell">Estimate the seat-swing distribution (Student-t, regression to the mean, candidate covariates) from historical pairs</td><td>M4, M8, M9</td><td class="wrapcell">Removes most of the overconfidence; more seats forecast to change hands</td><td>Medium</td></tr>
+    <tr><td>2</td><td class="wrapcell">Freeze the model and run rolling-origin backtests over about 25 more elections</td><td>V1, V2</td><td class="wrapcell">Credible skill estimates; enough data to fit priority 1 properly</td><td>Medium</td></tr>
+    <tr><td>3</td><td class="wrapcell">Minor-party geography from federal booths, for every state</td><td>M5</td><td class="wrapcell">Fixes SA-type failures; essential while One Nation is surging</td><td>Medium</td></tr>
+    <tr><td>4</td><td class="wrapcell">New-candidate model for independents and new parties, fitted at nomination</td><td>M6, M11</td><td class="wrapcell">Fixes the systematic independent and minor-party under-forecast</td><td>Medium–high</td></tr>
+    <tr><td>5</td><td class="wrapcell">Pooled hierarchical polling-error model measured on the aggregator's own output</td><td>M3</td><td class="wrapcell">Replaces floors and shrinkage with estimates; correlated errors</td><td>Low–medium</td></tr>
+    <tr><td>6</td><td class="wrapcell">Seat-vote scoring (CRPS, PIT) and more baselines</td><td>V3</td><td class="wrapcell">Sharper diagnostics for every later change</td><td>Low</td></tr>
+    <tr><td>7</td><td class="wrapcell">Correlated trends and drifting, pooled house effects in Stan</td><td>M1, M2</td><td class="wrapcell">Better early-cycle trends; handles new pollsters</td><td>Low–medium</td></tr>
+    <tr><td>8</td><td class="wrapcell">Liberal and National sub-blocs; left and right "Others"; flow uncertainty from repeated distributions</td><td>M7, M10</td><td class="wrapcell">Country seats and three-cornered contests</td><td>Medium</td></tr>
+    <tr><td>9</td><td class="wrapcell">Fundamentals covariates for jurisdictions with few polls</td><td>M12</td><td class="wrapcell">Narrower NT and ACT forecasts</td><td>Low</td></tr>
+    <tr><td>10</td><td class="wrapcell">Run manifests, party-to-bloc table, parser tests, a source for every curated row</td><td>V4, data</td><td class="wrapcell">Auditability</td><td>Low</td></tr>
+  </tbody>
+</table></div>
+<p>Priorities 1 and 2 belong together: rolling-origin backtests supply the training pairs that the seat-swing model needs, and the frozen design ensures its evaluation is honest. I suggest delaying publication of seat-level probabilities with their current precision until priority 1 is in place. The statewide vote and headline outcome probabilities are fit to publish as they stand.</p>
+
+<h2 id="constants">Appendix: hand-set constants</h2>
+<p>Each of these is a judgement, not an estimate. Those marked "estimable" can now be fitted from data in the repository.</p>
+<div class="table-frame"><table>
+  <thead><tr><th>Constant</th><th>Value</th><th>Where</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td>Seat noise SD (ALP, Coalition / GRN / OTH, ONP)</td><td>0.12 / 0.18 / 0.25</td><td>SimConfig</td><td>Estimable; data suggest about 0.20 or more (M4)</td></tr>
+    <tr><td>Region SD</td><td>0.06</td><td>SimConfig</td><td>Estimable</td></tr>
+    <tr><td>Polling error floors (ALP, Coalition / GRN / ONP)</td><td>2.0 / 1.2 / 2.5</td><td>SimConfig</td><td>Estimable when pooled (M3)</td></tr>
+    <tr><td>Polling error t degrees of freedom</td><td>5</td><td>SimConfig</td><td>Estimable when pooled</td></tr>
+    <tr><td>Bias shrinkage</td><td>0.5</td><td>backtest.py</td><td>Replace with a hierarchical posterior</td></tr>
+    <tr><td>Retirement / first-term effects</td><td>−0.08 / +0.05</td><td>SimConfig</td><td>Estimable</td></tr>
+    <tr><td>Independent decay mean / SD; retiring independent; first-term independent; prior SD</td><td>−0.2 / 0.4; −1.2; +0.15; 0.35</td><td>SimConfig</td><td>Estimable</td></tr>
+    <tr><td>Defector keeps personal vote</td><td>0.5</td><td>states.py, hareclark.py</td><td>Few cases; keep as a prior</td></tr>
+    <tr><td>By-election persistence</td><td>0.5</td><td>pipeline.py</td><td>Estimable</td></tr>
+    <tr><td>Flow Dirichlet concentration (parties / ONP, IND); ONP flow noise; exhaustion SD</td><td>60 / 15; 0.25; 0.2</td><td>preferences.py</td><td>Estimable from repeated distributions</td></tr>
+    <tr><td>Design effect; default sample size</td><td>1.5; 1000</td><td>aggregate.py</td><td>Estimable per pollster</td></tr>
+    <tr><td>Week-1 prior SDs (ALP, Coalition / GRN / ONP)</td><td>0.05 / 0.08 / 0.6</td><td>aggregate.py</td><td>Reasonable</td></tr>
+    <tr><td>Trend priors (velocity SD, damping)</td><td>normal(0, 0.01); beta(8, 2)</td><td>Stan</td><td>Check sensitivity with prior predictive checks</td></tr>
+    <tr><td>Hare-Clark exhaustion; same-bloc flow</td><td>0.10; 0.15</td><td>hareclark.py</td><td>Estimable from TEC and ACT distributions</td></tr>
+    <tr><td>New party / new independent share; new independent SD</td><td>1.5%, 1.0%; 0.8</td><td>hareclark.py</td><td>Replace with M6</td></tr>
+    <tr><td>No-polls swing floors (ALP, Coalition / GRN); minimum polls</td><td>3.0 / 1.5; 3</td><td>pipeline.py, cli.py</td><td>Replace with M12</td></tr>
+    <tr><td>One Nation starting level</td><td>3.0%</td><td>pipeline.py</td><td>Reasonable</td></tr>
+    <tr><td>"Mostly unchanged" seat threshold</td><td>0.8</td><td>states.py</td><td>Reasonable</td></tr>
+  </tbody>
+</table></div>
+
+<footer>Analyses for this review: pooled reliability over 555 seats in seven single-member backtests; 4,000 election-level bootstrap resamples; residual logit swings from five same-boundary election pairs (453 seat-party observations per party). Backtest outputs are in <code>data/processed/backtest-*</code>.</footer>
+</div>
+
+</body></html>

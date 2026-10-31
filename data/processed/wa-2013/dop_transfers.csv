@@ -1,0 +1,687 @@
+election_id,district,count,from_candidate,to_candidate,votes,from_party,to_party
+wa-2013,Albany,2,CRITCHISON Barry,VERMEULEN Hans,224.0,FFP,CHR
+wa-2013,Albany,2,CRITCHISON Barry,SUTTON Robert,52.0,FFP,NAT
+wa-2013,Albany,2,CRITCHISON Barry,WATSON Peter,51.0,FFP,ALP
+wa-2013,Albany,2,CRITCHISON Barry,EVERS Diane,18.0,FFP,GRN
+wa-2013,Albany,2,CRITCHISON Barry,COSH Trevor,41.0,FFP,LIB
+wa-2013,Albany,3,VERMEULEN Hans,SUTTON Robert,281.0,CHR,NAT
+wa-2013,Albany,3,VERMEULEN Hans,WATSON Peter,125.0,CHR,ALP
+wa-2013,Albany,3,VERMEULEN Hans,EVERS Diane,34.0,CHR,GRN
+wa-2013,Albany,3,VERMEULEN Hans,COSH Trevor,613.0,CHR,LIB
+wa-2013,Albany,3,VERMEULEN Hans,Exhausted,2.0,CHR,EXH
+wa-2013,Albany,4,EVERS Diane,SUTTON Robert,231.0,GRN,NAT
+wa-2013,Albany,4,EVERS Diane,WATSON Peter,841.0,GRN,ALP
+wa-2013,Albany,4,EVERS Diane,COSH Trevor,117.0,GRN,LIB
+wa-2013,Albany,5,SUTTON Robert,WATSON Peter,1656.0,NAT,ALP
+wa-2013,Albany,5,SUTTON Robert,COSH Trevor,3262.0,NAT,LIB
+wa-2013,Albany,5,SUTTON Robert,Exhausted,3.0,NAT,EXH
+wa-2013,Alfred Cove,2,GOM Estelle,HARMAN Ros,92.0,IND,GRN
+wa-2013,Alfred Cove,2,GOM Estelle,NALDER Dean,23.0,IND,LIB
+wa-2013,Alfred Cove,2,GOM Estelle,WOOLLARD Janet,20.0,IND,IND
+wa-2013,Alfred Cove,2,GOM Estelle,HOUSTON David,25.0,IND,ALP
+wa-2013,Alfred Cove,2,GOM Estelle,Exhausted,1.0,IND,EXH
+wa-2013,Alfred Cove,3,HARMAN Ros,NALDER Dean,368.0,GRN,LIB
+wa-2013,Alfred Cove,3,HARMAN Ros,WOOLLARD Janet,353.0,GRN,IND
+wa-2013,Alfred Cove,3,HARMAN Ros,HOUSTON David,1032.0,GRN,ALP
+wa-2013,Alfred Cove,3,HARMAN Ros,Exhausted,4.0,GRN,EXH
+wa-2013,Alfred Cove,4,WOOLLARD Janet,NALDER Dean,1531.0,IND,LIB
+wa-2013,Alfred Cove,4,WOOLLARD Janet,HOUSTON David,955.0,IND,ALP
+wa-2013,Alfred Cove,4,WOOLLARD Janet,Exhausted,1.0,IND,EXH
+wa-2013,Armadale,2,PAGES-OLIVER Damon,WEBSTER Katherine,314.0,GRN,LIB
+wa-2013,Armadale,2,PAGES-OLIVER Damon,BUTI Tony,791.0,GRN,ALP
+wa-2013,Armadale,2,PAGES-OLIVER Damon,VAN BURGEL Jamie,225.0,GRN,CHR
+wa-2013,Armadale,2,PAGES-OLIVER Damon,Exhausted,3.0,GRN,EXH
+wa-2013,Armadale,3,VAN BURGEL Jamie,WEBSTER Katherine,1222.0,CHR,LIB
+wa-2013,Armadale,3,VAN BURGEL Jamie,BUTI Tony,405.0,CHR,ALP
+wa-2013,Armadale,3,VAN BURGEL Jamie,Exhausted,1.0,CHR,EXH
+wa-2013,Balcatta,2,KIDIMA Mubarak Kim,YOUNG Sheridan,16.0,IND,GRN
+wa-2013,Balcatta,2,KIDIMA Mubarak Kim,HATTON Chris,21.0,IND,LIB
+wa-2013,Balcatta,2,KIDIMA Mubarak Kim,DODD Peter,10.0,IND,CHR
+wa-2013,Balcatta,2,KIDIMA Mubarak Kim,RUZZI Joe,52.0,IND,IND
+wa-2013,Balcatta,2,KIDIMA Mubarak Kim,PETTIGREW Janet,18.0,IND,ALP
+wa-2013,Balcatta,2,KIDIMA Mubarak Kim,CROLL Lesley,5.0,IND,FFP
+wa-2013,Balcatta,3,CROLL Lesley,YOUNG Sheridan,53.0,FFP,GRN
+wa-2013,Balcatta,3,CROLL Lesley,HATTON Chris,46.0,FFP,LIB
+wa-2013,Balcatta,3,CROLL Lesley,DODD Peter,55.0,FFP,CHR
+wa-2013,Balcatta,3,CROLL Lesley,RUZZI Joe,39.0,FFP,IND
+wa-2013,Balcatta,3,CROLL Lesley,PETTIGREW Janet,74.0,FFP,ALP
+wa-2013,Balcatta,3,CROLL Lesley,Exhausted,2.0,FFP,EXH
+wa-2013,Balcatta,4,RUZZI Joe,YOUNG Sheridan,99.0,IND,GRN
+wa-2013,Balcatta,4,RUZZI Joe,HATTON Chris,70.0,IND,LIB
+wa-2013,Balcatta,4,RUZZI Joe,DODD Peter,59.0,IND,CHR
+wa-2013,Balcatta,4,RUZZI Joe,PETTIGREW Janet,93.0,IND,ALP
+wa-2013,Balcatta,4,RUZZI Joe,Exhausted,4.0,IND,EXH
+wa-2013,Balcatta,5,DODD Peter,YOUNG Sheridan,82.0,CHR,GRN
+wa-2013,Balcatta,5,DODD Peter,HATTON Chris,273.0,CHR,LIB
+wa-2013,Balcatta,5,DODD Peter,PETTIGREW Janet,89.0,CHR,ALP
+wa-2013,Balcatta,5,DODD Peter,Exhausted,2.0,CHR,EXH
+wa-2013,Balcatta,6,YOUNG Sheridan,HATTON Chris,720.0,GRN,LIB
+wa-2013,Balcatta,6,YOUNG Sheridan,PETTIGREW Janet,1226.0,GRN,ALP
+wa-2013,Balcatta,6,YOUNG Sheridan,Exhausted,9.0,GRN,EXH
+wa-2013,Bassendean,2,MEWHOR Paul,BROWN Bob,409.0,CHR,LIB
+wa-2013,Bassendean,2,MEWHOR Paul,CARTER Jennie,168.0,CHR,GRN
+wa-2013,Bassendean,2,MEWHOR Paul,KELLY Dave,153.0,CHR,ALP
+wa-2013,Bassendean,2,MEWHOR Paul,Exhausted,3.0,CHR,EXH
+wa-2013,Bassendean,3,CARTER Jennie,BROWN Bob,697.0,GRN,LIB
+wa-2013,Bassendean,3,CARTER Jennie,KELLY Dave,1581.0,GRN,ALP
+wa-2013,Bassendean,3,CARTER Jennie,Exhausted,9.0,GRN,EXH
+wa-2013,Bateman,2,LEIGHTON Rebecca,TAYLOR Matt,748.0,GRN,LIB
+wa-2013,Bateman,2,LEIGHTON Rebecca,CHASLAND Rob,1328.0,GRN,ALP
+wa-2013,Bateman,2,LEIGHTON Rebecca,Exhausted,5.0,GRN,EXH
+wa-2013,Belmont,2,KLOMP Steve,ROWE Cassie,84.0,CHR,ALP
+wa-2013,Belmont,2,KLOMP Steve,WOLFF Steve,88.0,CHR,GRN
+wa-2013,Belmont,2,KLOMP Steve,GODFREY Glenys,248.0,CHR,LIB
+wa-2013,Belmont,2,KLOMP Steve,Exhausted,1.0,CHR,EXH
+wa-2013,Belmont,3,WOLFF Steve,ROWE Cassie,1137.0,GRN,ALP
+wa-2013,Belmont,3,WOLFF Steve,GODFREY Glenys,451.0,GRN,LIB
+wa-2013,Belmont,3,WOLFF Steve,Exhausted,4.0,GRN,EXH
+wa-2013,Butler,2,LEEDER Steven,WEBSTER Thomas,125.0,CHR,GRN
+wa-2013,Butler,2,LEEDER Steven,AITKEN Linda,286.0,CHR,LIB
+wa-2013,Butler,2,LEEDER Steven,QUIGLEY John,116.0,CHR,ALP
+wa-2013,Butler,2,LEEDER Steven,Exhausted,2.0,CHR,EXH
+wa-2013,Butler,3,WEBSTER Thomas,AITKEN Linda,859.0,GRN,LIB
+wa-2013,Butler,3,WEBSTER Thomas,QUIGLEY John,1325.0,GRN,ALP
+wa-2013,Butler,3,WEBSTER Thomas,Exhausted,8.0,GRN,EXH
+wa-2013,Bunbury,2,DABROWSKI Edward,CANEDOLI Lui Alfa,8.0,CHR,IND
+wa-2013,Bunbury,2,DABROWSKI Edward,STEELE Karen,19.0,CHR,ALP
+wa-2013,Bunbury,2,DABROWSKI Edward,HUTCHINS Mitchella,13.0,CHR,GRN
+wa-2013,Bunbury,2,DABROWSKI Edward,ROSE Linda,150.0,CHR,FFP
+wa-2013,Bunbury,2,DABROWSKI Edward,CASTRILLI John,43.0,CHR,LIB
+wa-2013,Bunbury,2,DABROWSKI Edward,FORSYTH James,10.0,CHR,NAT
+wa-2013,Bunbury,3,CANEDOLI Lui Alfa,STEELE Karen,123.0,IND,ALP
+wa-2013,Bunbury,3,CANEDOLI Lui Alfa,HUTCHINS Mitchella,61.0,IND,GRN
+wa-2013,Bunbury,3,CANEDOLI Lui Alfa,ROSE Linda,43.0,IND,FFP
+wa-2013,Bunbury,3,CANEDOLI Lui Alfa,CASTRILLI John,32.0,IND,LIB
+wa-2013,Bunbury,3,CANEDOLI Lui Alfa,FORSYTH James,32.0,IND,NAT
+wa-2013,Bunbury,3,CANEDOLI Lui Alfa,Exhausted,2.0,IND,EXH
+wa-2013,Bunbury,4,ROSE Linda,STEELE Karen,94.0,FFP,ALP
+wa-2013,Bunbury,4,ROSE Linda,HUTCHINS Mitchella,106.0,FFP,GRN
+wa-2013,Bunbury,4,ROSE Linda,CASTRILLI John,263.0,FFP,LIB
+wa-2013,Bunbury,4,ROSE Linda,FORSYTH James,103.0,FFP,NAT
+wa-2013,Bunbury,4,ROSE Linda,Exhausted,1.0,FFP,EXH
+wa-2013,Bunbury,5,HUTCHINS Mitchella,STEELE Karen,796.0,GRN,ALP
+wa-2013,Bunbury,5,HUTCHINS Mitchella,CASTRILLI John,280.0,GRN,LIB
+wa-2013,Bunbury,5,HUTCHINS Mitchella,FORSYTH James,351.0,GRN,NAT
+wa-2013,Bunbury,5,HUTCHINS Mitchella,Exhausted,3.0,GRN,EXH
+wa-2013,Bunbury,6,FORSYTH James,STEELE Karen,628.0,NAT,ALP
+wa-2013,Bunbury,6,FORSYTH James,CASTRILLI John,1427.0,NAT,LIB
+wa-2013,Bunbury,6,FORSYTH James,Exhausted,3.0,NAT,EXH
+wa-2013,Cannington,2,HARRINGTON Mark,CUNNINGHAM Christine,252.0,IND,GRN
+wa-2013,Cannington,2,HARRINGTON Mark,JACOBS Jesse,221.0,IND,LIB
+wa-2013,Cannington,2,HARRINGTON Mark,JOHNSTON Bill,228.0,IND,ALP
+wa-2013,Cannington,2,HARRINGTON Mark,Exhausted,1.0,IND,EXH
+wa-2013,Cannington,3,CUNNINGHAM Christine,JACOBS Jesse,728.0,GRN,LIB
+wa-2013,Cannington,3,CUNNINGHAM Christine,JOHNSTON Bill,1369.0,GRN,ALP
+wa-2013,Cannington,3,CUNNINGHAM Christine,Exhausted,5.0,GRN,EXH
+wa-2013,Carine,2,DAVEY Rick,WEBB Sharon,103.0,CHR,ALP
+wa-2013,Carine,2,DAVEY Rick,CATTANEO Nathalie,68.0,CHR,GRN
+wa-2013,Carine,2,DAVEY Rick,KRSTICEVIC Tony,409.0,CHR,LIB
+wa-2013,Carine,2,DAVEY Rick,Exhausted,1.0,CHR,EXH
+wa-2013,Carine,3,CATTANEO Nathalie,WEBB Sharon,1458.0,GRN,ALP
+wa-2013,Carine,3,CATTANEO Nathalie,KRSTICEVIC Tony,634.0,GRN,LIB
+wa-2013,Central Wheatbelt,2,ADAIR Bob,DAVIES Mia,82.0,CHR,NAT
+wa-2013,Central Wheatbelt,2,ADAIR Bob,WALTERS Tricia,19.0,CHR,GRN
+wa-2013,Central Wheatbelt,2,ADAIR Bob,STURMAN Gerald,30.0,CHR,IND
+wa-2013,Central Wheatbelt,2,ADAIR Bob,STRANGE Stephen,168.0,CHR,LIB
+wa-2013,Central Wheatbelt,2,ADAIR Bob,WATTERS John,25.0,CHR,ALP
+wa-2013,Central Wheatbelt,2,ADAIR Bob,Exhausted,4.0,CHR,EXH
+wa-2013,Central Wheatbelt,3,STURMAN Gerald,DAVIES Mia,204.0,IND,NAT
+wa-2013,Central Wheatbelt,3,STURMAN Gerald,WALTERS Tricia,120.0,IND,GRN
+wa-2013,Central Wheatbelt,3,STURMAN Gerald,STRANGE Stephen,91.0,IND,LIB
+wa-2013,Central Wheatbelt,3,STURMAN Gerald,WATTERS John,88.0,IND,ALP
+wa-2013,Central Wheatbelt,3,STURMAN Gerald,Exhausted,1.0,IND,EXH
+wa-2013,Central Wheatbelt,4,WALTERS Tricia,DAVIES Mia,365.0,GRN,NAT
+wa-2013,Central Wheatbelt,4,WALTERS Tricia,STRANGE Stephen,104.0,GRN,LIB
+wa-2013,Central Wheatbelt,4,WALTERS Tricia,WATTERS John,295.0,GRN,ALP
+wa-2013,Central Wheatbelt,4,WALTERS Tricia,Exhausted,12.0,GRN,EXH
+wa-2013,Central Wheatbelt,5,WATTERS John,DAVIES Mia,2103.0,ALP,NAT
+wa-2013,Central Wheatbelt,5,WATTERS John,STRANGE Stephen,1659.0,ALP,LIB
+wa-2013,Central Wheatbelt,5,WATTERS John,Exhausted,21.0,ALP,EXH
+wa-2013,Churchlands,2,SEYMOUR Pat,ASHFORTH Patrick,22.0,CHR,ALP
+wa-2013,Churchlands,2,SEYMOUR Pat,MONKS Wayne,11.0,CHR,IND
+wa-2013,Churchlands,2,SEYMOUR Pat,BIVOLTSIS Jim,17.0,CHR,IND
+wa-2013,Churchlands,2,SEYMOUR Pat,RE Elizabeth,50.0,CHR,IND
+wa-2013,Churchlands,2,SEYMOUR Pat,PIDGEON Cameron,31.0,CHR,GRN
+wa-2013,Churchlands,2,SEYMOUR Pat,L'ESTRANGE Sean,195.0,CHR,LIB
+wa-2013,Churchlands,2,SEYMOUR Pat,Exhausted,1.0,CHR,EXH
+wa-2013,Churchlands,3,BIVOLTSIS Jim,ASHFORTH Patrick,60.0,IND,ALP
+wa-2013,Churchlands,3,BIVOLTSIS Jim,MONKS Wayne,397.0,IND,IND
+wa-2013,Churchlands,3,BIVOLTSIS Jim,RE Elizabeth,122.0,IND,IND
+wa-2013,Churchlands,3,BIVOLTSIS Jim,PIDGEON Cameron,36.0,IND,GRN
+wa-2013,Churchlands,3,BIVOLTSIS Jim,L'ESTRANGE Sean,184.0,IND,LIB
+wa-2013,Churchlands,3,BIVOLTSIS Jim,Exhausted,1.0,IND,EXH
+wa-2013,Churchlands,4,RE Elizabeth,ASHFORTH Patrick,149.0,IND,ALP
+wa-2013,Churchlands,4,RE Elizabeth,MONKS Wayne,406.0,IND,IND
+wa-2013,Churchlands,4,RE Elizabeth,PIDGEON Cameron,318.0,IND,GRN
+wa-2013,Churchlands,4,RE Elizabeth,L'ESTRANGE Sean,367.0,IND,LIB
+wa-2013,Churchlands,4,RE Elizabeth,Exhausted,4.0,IND,EXH
+wa-2013,Churchlands,5,PIDGEON Cameron,ASHFORTH Patrick,749.0,GRN,ALP
+wa-2013,Churchlands,5,PIDGEON Cameron,MONKS Wayne,891.0,GRN,IND
+wa-2013,Churchlands,5,PIDGEON Cameron,L'ESTRANGE Sean,480.0,GRN,LIB
+wa-2013,Churchlands,5,PIDGEON Cameron,Exhausted,5.0,GRN,EXH
+wa-2013,Churchlands,6,MONKS Wayne,ASHFORTH Patrick,2233.0,IND,ALP
+wa-2013,Churchlands,6,MONKS Wayne,L'ESTRANGE Sean,1295.0,IND,LIB
+wa-2013,Churchlands,6,MONKS Wayne,Exhausted,5.0,IND,EXH
+wa-2013,Cockburn,2,ROSBOROUGH Derek,LOGAN Fran,184.0,IND,ALP
+wa-2013,Cockburn,2,ROSBOROUGH Derek,BARRETT Don,194.0,IND,LIB
+wa-2013,Cockburn,2,ROSBOROUGH Derek,HEWITT Shannon,192.0,IND,GRN
+wa-2013,Cockburn,2,ROSBOROUGH Derek,Exhausted,7.0,IND,EXH
+wa-2013,Cockburn,3,HEWITT Shannon,LOGAN Fran,1203.0,GRN,ALP
+wa-2013,Cockburn,3,HEWITT Shannon,BARRETT Don,658.0,GRN,LIB
+wa-2013,Cockburn,3,HEWITT Shannon,Exhausted,12.0,GRN,EXH
+wa-2013,Collie-Preston,2,KNOP Clinton,MOTION Jaimee,37.0,IND,LIB
+wa-2013,Collie-Preston,2,KNOP Clinton,HARPER Alice,40.0,IND,FFP
+wa-2013,Collie-Preston,2,KNOP Clinton,HUTCHINSON Peter,25.0,IND,NAT
+wa-2013,Collie-Preston,2,KNOP Clinton,MURRAY Mick,38.0,IND,ALP
+wa-2013,Collie-Preston,2,KNOP Clinton,GIBSON Kingsley,18.0,IND,GRN
+wa-2013,Collie-Preston,3,HARPER Alice,MOTION Jaimee,264.0,FFP,LIB
+wa-2013,Collie-Preston,3,HARPER Alice,HUTCHINSON Peter,102.0,FFP,NAT
+wa-2013,Collie-Preston,3,HARPER Alice,MURRAY Mick,89.0,FFP,ALP
+wa-2013,Collie-Preston,3,HARPER Alice,GIBSON Kingsley,113.0,FFP,GRN
+wa-2013,Collie-Preston,3,HARPER Alice,Exhausted,1.0,FFP,EXH
+wa-2013,Collie-Preston,4,GIBSON Kingsley,MOTION Jaimee,205.0,GRN,LIB
+wa-2013,Collie-Preston,4,GIBSON Kingsley,HUTCHINSON Peter,312.0,GRN,NAT
+wa-2013,Collie-Preston,4,GIBSON Kingsley,MURRAY Mick,622.0,GRN,ALP
+wa-2013,Collie-Preston,4,GIBSON Kingsley,Exhausted,2.0,GRN,EXH
+wa-2013,Collie-Preston,5,HUTCHINSON Peter,MOTION Jaimee,1296.0,NAT,LIB
+wa-2013,Collie-Preston,5,HUTCHINSON Peter,MURRAY Mick,651.0,NAT,ALP
+wa-2013,Collie-Preston,5,HUTCHINSON Peter,Exhausted,5.0,NAT,EXH
+wa-2013,Cottesloe,2,FEARIS Neil,BOLAND Greg,24.0,CHR,GRN
+wa-2013,Cottesloe,2,FEARIS Neil,WILLIAMS Emma,19.0,CHR,ALP
+wa-2013,Cottesloe,2,FEARIS Neil,MORGAN Kevin,83.0,CHR,IND
+wa-2013,Cottesloe,2,FEARIS Neil,BARNETT Colin,155.0,CHR,LIB
+wa-2013,Cottesloe,3,BOLAND Greg,WILLIAMS Emma,1070.0,GRN,ALP
+wa-2013,Cottesloe,3,BOLAND Greg,MORGAN Kevin,867.0,GRN,IND
+wa-2013,Cottesloe,3,BOLAND Greg,BARNETT Colin,329.0,GRN,LIB
+wa-2013,Cottesloe,3,BOLAND Greg,Exhausted,4.0,GRN,EXH
+wa-2013,Cottesloe,4,MORGAN Kevin,WILLIAMS Emma,2568.0,IND,ALP
+wa-2013,Cottesloe,4,MORGAN Kevin,BARNETT Colin,860.0,IND,LIB
+wa-2013,Cottesloe,4,MORGAN Kevin,Exhausted,4.0,IND,EXH
+wa-2013,Darling Range,2,GOIRAN Madeleine,SIMPSON Tony,916.0,CHR,LIB
+wa-2013,Darling Range,2,GOIRAN Madeleine,HARDIE Denise,108.0,CHR,GRN
+wa-2013,Darling Range,2,GOIRAN Madeleine,URBAN Barry,130.0,CHR,ALP
+wa-2013,Darling Range,3,HARDIE Denise,SIMPSON Tony,808.0,GRN,LIB
+wa-2013,Darling Range,3,HARDIE Denise,URBAN Barry,1441.0,GRN,ALP
+wa-2013,Darling Range,3,HARDIE Denise,Exhausted,3.0,GRN,EXH
+wa-2013,Dawesville,2,BAKER Brenton,BUTLER Bryn,42.0,FFP,NAT
+wa-2013,Dawesville,2,BAKER Brenton,HAMES Kim,121.0,FFP,LIB
+wa-2013,Dawesville,2,BAKER Brenton,RIEBELING Fred,71.0,FFP,ALP
+wa-2013,Dawesville,2,BAKER Brenton,SCHUMACHER Dave,67.0,FFP,IND
+wa-2013,Dawesville,2,BAKER Brenton,ARMSTRONG Patricia,53.0,FFP,GRN
+wa-2013,Dawesville,2,BAKER Brenton,Exhausted,3.0,FFP,EXH
+wa-2013,Dawesville,3,BUTLER Bryn,HAMES Kim,350.0,NAT,LIB
+wa-2013,Dawesville,3,BUTLER Bryn,RIEBELING Fred,58.0,NAT,ALP
+wa-2013,Dawesville,3,BUTLER Bryn,SCHUMACHER Dave,79.0,NAT,IND
+wa-2013,Dawesville,3,BUTLER Bryn,ARMSTRONG Patricia,43.0,NAT,GRN
+wa-2013,Dawesville,4,ARMSTRONG Patricia,HAMES Kim,198.0,GRN,LIB
+wa-2013,Dawesville,4,ARMSTRONG Patricia,RIEBELING Fred,400.0,GRN,ALP
+wa-2013,Dawesville,4,ARMSTRONG Patricia,SCHUMACHER Dave,566.0,GRN,IND
+wa-2013,Dawesville,5,SCHUMACHER Dave,HAMES Kim,719.0,IND,LIB
+wa-2013,Dawesville,5,SCHUMACHER Dave,RIEBELING Fred,1220.0,IND,ALP
+wa-2013,Dawesville,5,SCHUMACHER Dave,Exhausted,9.0,IND,EXH
+wa-2013,Eyre,2,HILTON Brett,JOHNSON Giorgia,39.0,CHR,GRN
+wa-2013,Eyre,2,HILTON Brett,SMITH Greg,29.0,CHR,ALP
+wa-2013,Eyre,2,HILTON Brett,JACOBS Graham,201.0,CHR,LIB
+wa-2013,Eyre,2,HILTON Brett,DE GRUSSA Colin,96.0,CHR,NAT
+wa-2013,Eyre,2,HILTON Brett,Exhausted,1.0,CHR,EXH
+wa-2013,Eyre,3,JOHNSON Giorgia,SMITH Greg,420.0,GRN,ALP
+wa-2013,Eyre,3,JOHNSON Giorgia,JACOBS Graham,100.0,GRN,LIB
+wa-2013,Eyre,3,JOHNSON Giorgia,DE GRUSSA Colin,228.0,GRN,NAT
+wa-2013,Eyre,3,JOHNSON Giorgia,Exhausted,6.0,GRN,EXH
+wa-2013,Eyre,4,SMITH Greg,JACOBS Graham,1032.0,ALP,LIB
+wa-2013,Eyre,4,SMITH Greg,DE GRUSSA Colin,1496.0,ALP,NAT
+wa-2013,Eyre,4,SMITH Greg,Exhausted,3.0,ALP,EXH
+wa-2013,Forrestfield,2,EIKELBOOM Troy,MUNRO Mike,362.0,CHR,FFP
+wa-2013,Forrestfield,2,EIKELBOOM Troy,WADDELL Andrew,93.0,CHR,ALP
+wa-2013,Forrestfield,2,EIKELBOOM Troy,MORTON Nathan,144.0,CHR,LIB
+wa-2013,Forrestfield,2,EIKELBOOM Troy,BURRELL Peter,34.0,CHR,GRN
+wa-2013,Forrestfield,3,MUNRO Mike,WADDELL Andrew,322.0,FFP,ALP
+wa-2013,Forrestfield,3,MUNRO Mike,MORTON Nathan,468.0,FFP,LIB
+wa-2013,Forrestfield,3,MUNRO Mike,BURRELL Peter,248.0,FFP,GRN
+wa-2013,Forrestfield,3,MUNRO Mike,Exhausted,2.0,FFP,EXH
+wa-2013,Forrestfield,4,BURRELL Peter,WADDELL Andrew,1114.0,GRN,ALP
+wa-2013,Forrestfield,4,BURRELL Peter,MORTON Nathan,598.0,GRN,LIB
+wa-2013,Forrestfield,4,BURRELL Peter,Exhausted,4.0,GRN,EXH
+wa-2013,Fremantle,2,TER HORST Jan,SULLIVAN Andrew,35.0,IND,GRN
+wa-2013,Fremantle,2,TER HORST Jan,HANSSEN Matthew,29.0,IND,LIB
+wa-2013,Fremantle,2,TER HORST Jan,CARLES Adele,51.0,IND,IND
+wa-2013,Fremantle,2,TER HORST Jan,ANDREW Sanna,40.0,IND,IND
+wa-2013,Fremantle,2,TER HORST Jan,McGURK Simone,70.0,IND,ALP
+wa-2013,Fremantle,3,ANDREW Sanna,SULLIVAN Andrew,147.0,IND,GRN
+wa-2013,Fremantle,3,ANDREW Sanna,HANSSEN Matthew,33.0,IND,LIB
+wa-2013,Fremantle,3,ANDREW Sanna,CARLES Adele,46.0,IND,IND
+wa-2013,Fremantle,3,ANDREW Sanna,McGURK Simone,63.0,IND,ALP
+wa-2013,Fremantle,3,ANDREW Sanna,Exhausted,3.0,IND,EXH
+wa-2013,Fremantle,4,CARLES Adele,SULLIVAN Andrew,612.0,IND,GRN
+wa-2013,Fremantle,4,CARLES Adele,HANSSEN Matthew,300.0,IND,LIB
+wa-2013,Fremantle,4,CARLES Adele,McGURK Simone,366.0,IND,ALP
+wa-2013,Fremantle,4,CARLES Adele,Exhausted,5.0,IND,EXH
+wa-2013,Fremantle,5,SULLIVAN Andrew,HANSSEN Matthew,972.0,GRN,LIB
+wa-2013,Fremantle,5,SULLIVAN Andrew,McGURK Simone,3740.0,GRN,ALP
+wa-2013,Fremantle,5,SULLIVAN Andrew,Exhausted,7.0,GRN,EXH
+wa-2013,Geraldton,2,BURDETT Carmen,VAN STYN Shane,98.0,CHR,NAT
+wa-2013,Geraldton,2,BURDETT Carmen,CONNOLLY Paul,47.0,CHR,GRN
+wa-2013,Geraldton,2,BURDETT Carmen,BLAYNEY Ian,270.0,CHR,LIB
+wa-2013,Geraldton,2,BURDETT Carmen,MANNION Kathryn,54.0,CHR,ALP
+wa-2013,Geraldton,3,CONNOLLY Paul,VAN STYN Shane,425.0,GRN,NAT
+wa-2013,Geraldton,3,CONNOLLY Paul,BLAYNEY Ian,284.0,GRN,LIB
+wa-2013,Geraldton,3,CONNOLLY Paul,MANNION Kathryn,573.0,GRN,ALP
+wa-2013,Geraldton,3,CONNOLLY Paul,Exhausted,4.0,GRN,EXH
+wa-2013,Geraldton,4,MANNION Kathryn,VAN STYN Shane,1913.0,ALP,NAT
+wa-2013,Geraldton,4,MANNION Kathryn,BLAYNEY Ian,1990.0,ALP,LIB
+wa-2013,Geraldton,4,MANNION Kathryn,Exhausted,23.0,ALP,EXH
+wa-2013,Girrawheen,2,DAVEY Mel,KAFAMI Saba,187.0,CHR,GRN
+wa-2013,Girrawheen,2,DAVEY Mel,QUIRK Margaret,124.0,CHR,ALP
+wa-2013,Girrawheen,2,DAVEY Mel,NGUYEN Che Tam,291.0,CHR,FFP
+wa-2013,Girrawheen,2,DAVEY Mel,HALLIGAN John,195.0,CHR,LIB
+wa-2013,Girrawheen,2,DAVEY Mel,Exhausted,4.0,CHR,EXH
+wa-2013,Girrawheen,3,NGUYEN Che Tam,KAFAMI Saba,268.0,FFP,GRN
+wa-2013,Girrawheen,3,NGUYEN Che Tam,QUIRK Margaret,415.0,FFP,ALP
+wa-2013,Girrawheen,3,NGUYEN Che Tam,HALLIGAN John,453.0,FFP,LIB
+wa-2013,Girrawheen,3,NGUYEN Che Tam,Exhausted,2.0,FFP,EXH
+wa-2013,Girrawheen,4,KAFAMI Saba,QUIRK Margaret,1294.0,GRN,ALP
+wa-2013,Girrawheen,4,KAFAMI Saba,HALLIGAN John,445.0,GRN,LIB
+wa-2013,Girrawheen,4,KAFAMI Saba,Exhausted,5.0,GRN,EXH
+wa-2013,Gosnells,2,BUTLER Debbie,FERNANDEZ Chris,346.0,IND,IND
+wa-2013,Gosnells,2,BUTLER Debbie,GOODE David,55.0,IND,LIB
+wa-2013,Gosnells,2,BUTLER Debbie,STAER Mark,13.0,IND,CHR
+wa-2013,Gosnells,2,BUTLER Debbie,TALLENTIRE Chris,46.0,IND,ALP
+wa-2013,Gosnells,2,BUTLER Debbie,EDMONDS Luke,37.0,IND,GRN
+wa-2013,Gosnells,2,BUTLER Debbie,Exhausted,4.0,IND,EXH
+wa-2013,Gosnells,3,STAER Mark,FERNANDEZ Chris,366.0,CHR,IND
+wa-2013,Gosnells,3,STAER Mark,GOODE David,267.0,CHR,LIB
+wa-2013,Gosnells,3,STAER Mark,TALLENTIRE Chris,108.0,CHR,ALP
+wa-2013,Gosnells,3,STAER Mark,EDMONDS Luke,51.0,CHR,GRN
+wa-2013,Gosnells,3,STAER Mark,Exhausted,3.0,CHR,EXH
+wa-2013,Gosnells,4,EDMONDS Luke,FERNANDEZ Chris,339.0,GRN,IND
+wa-2013,Gosnells,4,EDMONDS Luke,GOODE David,171.0,GRN,LIB
+wa-2013,Gosnells,4,EDMONDS Luke,TALLENTIRE Chris,782.0,GRN,ALP
+wa-2013,Gosnells,4,EDMONDS Luke,Exhausted,3.0,GRN,EXH
+wa-2013,Gosnells,5,FERNANDEZ Chris,GOODE David,1168.0,IND,LIB
+wa-2013,Gosnells,5,FERNANDEZ Chris,TALLENTIRE Chris,723.0,IND,ALP
+wa-2013,Gosnells,5,FERNANDEZ Chris,Exhausted,10.0,IND,EXH
+wa-2013,Hillarys,2,FORD Michael,JOHNSON Rob,362.0,CHR,LIB
+wa-2013,Hillarys,2,FORD Michael,COLLINS Adam,94.0,CHR,GRN
+wa-2013,Hillarys,2,FORD Michael,THOMAS Sam,87.0,CHR,ALP
+wa-2013,Hillarys,2,FORD Michael,Exhausted,2.0,CHR,EXH
+wa-2013,Hillarys,3,COLLINS Adam,JOHNSON Rob,617.0,GRN,LIB
+wa-2013,Hillarys,3,COLLINS Adam,THOMAS Sam,1486.0,GRN,ALP
+wa-2013,Hillarys,3,COLLINS Adam,Exhausted,6.0,GRN,EXH
+wa-2013,Jandakot,2,HAYNES John,ANDRIC Klara,1251.0,GRN,ALP
+wa-2013,Jandakot,2,HAYNES John,FRANCIS Joe,586.0,GRN,LIB
+wa-2013,Jandakot,2,HAYNES John,Exhausted,4.0,GRN,EXH
+wa-2013,Joondalup,2,McDAVITT Geoff,NORBERGER Jan,290.0,CHR,LIB
+wa-2013,Joondalup,2,McDAVITT Geoff,O'GORMAN Tony,132.0,CHR,ALP
+wa-2013,Joondalup,2,McDAVITT Geoff,YOUNG Brittany,81.0,CHR,GRN
+wa-2013,Joondalup,3,YOUNG Brittany,NORBERGER Jan,545.0,GRN,LIB
+wa-2013,Joondalup,3,YOUNG Brittany,O'GORMAN Tony,1372.0,GRN,ALP
+wa-2013,Joondalup,3,YOUNG Brittany,Exhausted,1.0,GRN,EXH
+wa-2013,Kalamunda,2,WILLIAMS Hannah,ROSS Greg,52.0,CHR,IND
+wa-2013,Kalamunda,2,WILLIAMS Hannah,STALLARD Geoff,244.0,CHR,IND
+wa-2013,Kalamunda,2,WILLIAMS Hannah,WARDEN Toni,25.0,CHR,GRN
+wa-2013,Kalamunda,2,WILLIAMS Hannah,DAY John,237.0,CHR,LIB
+wa-2013,Kalamunda,2,WILLIAMS Hannah,WAINWRIGHT Mick,51.0,CHR,ALP
+wa-2013,Kalamunda,2,WILLIAMS Hannah,Exhausted,3.0,CHR,EXH
+wa-2013,Kalamunda,3,ROSS Greg,STALLARD Geoff,760.0,IND,IND
+wa-2013,Kalamunda,3,ROSS Greg,WARDEN Toni,137.0,IND,GRN
+wa-2013,Kalamunda,3,ROSS Greg,DAY John,151.0,IND,LIB
+wa-2013,Kalamunda,3,ROSS Greg,WAINWRIGHT Mick,124.0,IND,ALP
+wa-2013,Kalamunda,4,WARDEN Toni,STALLARD Geoff,670.0,GRN,IND
+wa-2013,Kalamunda,4,WARDEN Toni,DAY John,306.0,GRN,LIB
+wa-2013,Kalamunda,4,WARDEN Toni,WAINWRIGHT Mick,841.0,GRN,ALP
+wa-2013,Kalamunda,4,WARDEN Toni,Exhausted,3.0,GRN,EXH
+wa-2013,Kalamunda,5,STALLARD Geoff,DAY John,1923.0,IND,LIB
+wa-2013,Kalamunda,5,STALLARD Geoff,WAINWRIGHT Mick,2512.0,IND,ALP
+wa-2013,Kalamunda,5,STALLARD Geoff,Exhausted,19.0,IND,EXH
+wa-2013,Kalgoorlie,2,PATTERSON Ross,WINNER Terrence,24.0,CHR,ALP
+wa-2013,Kalgoorlie,2,PATTERSON Ross,DUNCAN Wendy,80.0,CHR,NAT
+wa-2013,Kalgoorlie,2,PATTERSON Ross,PRICE Melissa,73.0,CHR,LIB
+wa-2013,Kalgoorlie,2,PATTERSON Ross,HALL Tim,24.0,CHR,GRN
+wa-2013,Kalgoorlie,2,PATTERSON Ross,Exhausted,1.0,CHR,EXH
+wa-2013,Kalgoorlie,3,HALL Tim,WINNER Terrence,209.0,GRN,ALP
+wa-2013,Kalgoorlie,3,HALL Tim,DUNCAN Wendy,157.0,GRN,NAT
+wa-2013,Kalgoorlie,3,HALL Tim,PRICE Melissa,107.0,GRN,LIB
+wa-2013,Kalgoorlie,3,HALL Tim,Exhausted,1.0,GRN,EXH
+wa-2013,Kalgoorlie,4,WINNER Terrence,DUNCAN Wendy,1697.0,ALP,NAT
+wa-2013,Kalgoorlie,4,WINNER Terrence,PRICE Melissa,451.0,ALP,LIB
+wa-2013,Kalgoorlie,4,WINNER Terrence,Exhausted,13.0,ALP,EXH
+wa-2013,Kimberley,2,SIMONS Craig,OGILVIE Rod,30.0,CHR,IND
+wa-2013,Kimberley,2,SIMONS Craig,BLOOM Jenny,47.0,CHR,LIB
+wa-2013,Kimberley,2,SIMONS Craig,PUCCI Michele,34.0,CHR,NAT
+wa-2013,Kimberley,2,SIMONS Craig,FARRER Josie,28.0,CHR,ALP
+wa-2013,Kimberley,2,SIMONS Craig,MAHER Chris,19.0,CHR,GRN
+wa-2013,Kimberley,3,OGILVIE Rod,BLOOM Jenny,132.0,IND,LIB
+wa-2013,Kimberley,3,OGILVIE Rod,PUCCI Michele,90.0,IND,NAT
+wa-2013,Kimberley,3,OGILVIE Rod,FARRER Josie,139.0,IND,ALP
+wa-2013,Kimberley,3,OGILVIE Rod,MAHER Chris,166.0,IND,GRN
+wa-2013,Kimberley,3,OGILVIE Rod,Exhausted,2.0,IND,EXH
+wa-2013,Kimberley,4,PUCCI Michele,BLOOM Jenny,1406.0,NAT,LIB
+wa-2013,Kimberley,4,PUCCI Michele,FARRER Josie,409.0,NAT,ALP
+wa-2013,Kimberley,4,PUCCI Michele,MAHER Chris,392.0,NAT,GRN
+wa-2013,Kimberley,4,PUCCI Michele,Exhausted,2.0,NAT,EXH
+wa-2013,Kimberley,5,MAHER Chris,BLOOM Jenny,591.0,GRN,LIB
+wa-2013,Kimberley,5,MAHER Chris,FARRER Josie,2649.0,GRN,ALP
+wa-2013,Kimberley,5,MAHER Chris,Exhausted,1.0,GRN,EXH
+wa-2013,Kingsley,2,MASON Sophie Ann,MITCHELL Andrea,332.0,CHR,LIB
+wa-2013,Kingsley,2,MASON Sophie Ann,MACTIERNAN Diana,72.0,CHR,GRN
+wa-2013,Kingsley,2,MASON Sophie Ann,CORR Brian,99.0,CHR,ALP
+wa-2013,Kingsley,2,MASON Sophie Ann,Exhausted,7.0,CHR,EXH
+wa-2013,Kingsley,3,MACTIERNAN Diana,MITCHELL Andrea,694.0,GRN,LIB
+wa-2013,Kingsley,3,MACTIERNAN Diana,CORR Brian,1215.0,GRN,ALP
+wa-2013,Kingsley,3,MACTIERNAN Diana,Exhausted,9.0,GRN,EXH
+wa-2013,Kwinana,2,WARDELL-JOHNSON Stephen,BOSKAMP Iwan,41.0,CHR,GRN
+wa-2013,Kwinana,2,WARDELL-JOHNSON Stephen,JAMIESON John,162.0,CHR,LIB
+wa-2013,Kwinana,2,WARDELL-JOHNSON Stephen,COOK Roger,67.0,CHR,ALP
+wa-2013,Kwinana,2,WARDELL-JOHNSON Stephen,ADAMS Carol,265.0,CHR,IND
+wa-2013,Kwinana,2,WARDELL-JOHNSON Stephen,Exhausted,1.0,CHR,EXH
+wa-2013,Kwinana,3,BOSKAMP Iwan,JAMIESON John,302.0,GRN,LIB
+wa-2013,Kwinana,3,BOSKAMP Iwan,COOK Roger,624.0,GRN,ALP
+wa-2013,Kwinana,3,BOSKAMP Iwan,ADAMS Carol,452.0,GRN,IND
+wa-2013,Kwinana,3,BOSKAMP Iwan,Exhausted,3.0,GRN,EXH
+wa-2013,Kwinana,4,JAMIESON John,COOK Roger,1273.0,LIB,ALP
+wa-2013,Kwinana,4,JAMIESON John,ADAMS Carol,4510.0,LIB,IND
+wa-2013,Kwinana,4,JAMIESON John,Exhausted,11.0,LIB,EXH
+wa-2013,Mandurah,2,BRYANT Charles,SOLIN Tony,7.0,IND,LIB
+wa-2013,Mandurah,2,BRYANT Charles,NEWHOUSE Andrew,6.0,IND,FFP
+wa-2013,Mandurah,2,BRYANT Charles,HUGHES John,45.0,IND,IND
+wa-2013,Mandurah,2,BRYANT Charles,BULBECK Chilla,13.0,IND,GRN
+wa-2013,Mandurah,2,BRYANT Charles,ASH Jake,15.0,IND,NAT
+wa-2013,Mandurah,2,BRYANT Charles,TEMPLEMAN David,16.0,IND,ALP
+wa-2013,Mandurah,3,HUGHES John,SOLIN Tony,62.0,IND,LIB
+wa-2013,Mandurah,3,HUGHES John,NEWHOUSE Andrew,80.0,IND,FFP
+wa-2013,Mandurah,3,HUGHES John,BULBECK Chilla,55.0,IND,GRN
+wa-2013,Mandurah,3,HUGHES John,ASH Jake,50.0,IND,NAT
+wa-2013,Mandurah,3,HUGHES John,TEMPLEMAN David,58.0,IND,ALP
+wa-2013,Mandurah,3,HUGHES John,Exhausted,1.0,IND,EXH
+wa-2013,Mandurah,4,ASH Jake,SOLIN Tony,228.0,NAT,LIB
+wa-2013,Mandurah,4,ASH Jake,NEWHOUSE Andrew,48.0,NAT,FFP
+wa-2013,Mandurah,4,ASH Jake,BULBECK Chilla,60.0,NAT,GRN
+wa-2013,Mandurah,4,ASH Jake,TEMPLEMAN David,95.0,NAT,ALP
+wa-2013,Mandurah,4,ASH Jake,Exhausted,1.0,NAT,EXH
+wa-2013,Mandurah,5,NEWHOUSE Andrew,SOLIN Tony,301.0,FFP,LIB
+wa-2013,Mandurah,5,NEWHOUSE Andrew,BULBECK Chilla,165.0,FFP,GRN
+wa-2013,Mandurah,5,NEWHOUSE Andrew,TEMPLEMAN David,195.0,FFP,ALP
+wa-2013,Mandurah,6,BULBECK Chilla,SOLIN Tony,336.0,GRN,LIB
+wa-2013,Mandurah,6,BULBECK Chilla,TEMPLEMAN David,679.0,GRN,ALP
+wa-2013,Mandurah,6,BULBECK Chilla,Exhausted,2.0,GRN,EXH
+wa-2013,Maylands,2,MADDEN Paul,ALBERT Sylvan,328.0,CHR,LIB
+wa-2013,Maylands,2,MADDEN Paul,O'NEILL Dee,103.0,CHR,GRN
+wa-2013,Maylands,2,MADDEN Paul,BAKER Lisa,99.0,CHR,ALP
+wa-2013,Maylands,2,MADDEN Paul,Exhausted,3.0,CHR,EXH
+wa-2013,Maylands,3,O'NEILL Dee,ALBERT Sylvan,530.0,GRN,LIB
+wa-2013,Maylands,3,O'NEILL Dee,BAKER Lisa,2125.0,GRN,ALP
+wa-2013,Maylands,3,O'NEILL Dee,Exhausted,2.0,GRN,EXH
+wa-2013,Midland,2,MORAN Isaac,PARASILITI Daniel,265.0,CHR,LIB
+wa-2013,Midland,2,MORAN Isaac,ROBERTS Michelle,145.0,CHR,ALP
+wa-2013,Midland,2,MORAN Isaac,TANDY Pippa,105.0,CHR,GRN
+wa-2013,Midland,2,MORAN Isaac,Exhausted,5.0,CHR,EXH
+wa-2013,Midland,3,TANDY Pippa,PARASILITI Daniel,491.0,GRN,LIB
+wa-2013,Midland,3,TANDY Pippa,ROBERTS Michelle,1508.0,GRN,ALP
+wa-2013,Midland,3,TANDY Pippa,Exhausted,11.0,GRN,EXH
+wa-2013,Mirrabooka,2,HOST Lois,COOPER Mark William,334.0,CHR,GRN
+wa-2013,Mirrabooka,2,HOST Lois,CREADO Andrea,434.0,CHR,LIB
+wa-2013,Mirrabooka,2,HOST Lois,FREEMAN Janine,184.0,CHR,ALP
+wa-2013,Mirrabooka,2,HOST Lois,Exhausted,2.0,CHR,EXH
+wa-2013,Mirrabooka,3,COOPER Mark William,CREADO Andrea,882.0,GRN,LIB
+wa-2013,Mirrabooka,3,COOPER Mark William,FREEMAN Janine,1200.0,GRN,ALP
+wa-2013,Mirrabooka,3,COOPER Mark William,Exhausted,9.0,GRN,EXH
+wa-2013,Moore,2,PORTER Wes,JOHNSON Peter,46.0,CHR,ALP
+wa-2013,Moore,2,PORTER Wes,MARGETTS Dee,49.0,CHR,GRN
+wa-2013,Moore,2,PORTER Wes,LOVE Shane,162.0,CHR,NAT
+wa-2013,Moore,2,PORTER Wes,WILKINS Chris,127.0,CHR,LIB
+wa-2013,Moore,2,PORTER Wes,Exhausted,2.0,CHR,EXH
+wa-2013,Moore,3,MARGETTS Dee,JOHNSON Peter,581.0,GRN,ALP
+wa-2013,Moore,3,MARGETTS Dee,LOVE Shane,432.0,GRN,NAT
+wa-2013,Moore,3,MARGETTS Dee,WILKINS Chris,164.0,GRN,LIB
+wa-2013,Moore,3,MARGETTS Dee,Exhausted,3.0,GRN,EXH
+wa-2013,Moore,4,JOHNSON Peter,LOVE Shane,3195.0,ALP,NAT
+wa-2013,Moore,4,JOHNSON Peter,WILKINS Chris,736.0,ALP,LIB
+wa-2013,Moore,4,JOHNSON Peter,Exhausted,12.0,ALP,EXH
+wa-2013,Morley,2,HALLS Greg,PALMER Sally Irene,88.0,FFP,GRN
+wa-2013,Morley,2,HALLS Greg,FRASER Ross,80.0,FFP,CHR
+wa-2013,Morley,2,HALLS Greg,BRITZA Ian,52.0,FFP,LIB
+wa-2013,Morley,2,HALLS Greg,WHITBY Reece,82.0,FFP,ALP
+wa-2013,Morley,2,HALLS Greg,Exhausted,3.0,FFP,EXH
+wa-2013,Morley,3,FRASER Ross,PALMER Sally Irene,91.0,CHR,GRN
+wa-2013,Morley,3,FRASER Ross,BRITZA Ian,311.0,CHR,LIB
+wa-2013,Morley,3,FRASER Ross,WHITBY Reece,106.0,CHR,ALP
+wa-2013,Morley,3,FRASER Ross,Exhausted,2.0,CHR,EXH
+wa-2013,Morley,4,PALMER Sally Irene,BRITZA Ian,594.0,GRN,LIB
+wa-2013,Morley,4,PALMER Sally Irene,WHITBY Reece,947.0,GRN,ALP
+wa-2013,Morley,4,PALMER Sally Irene,Exhausted,9.0,GRN,EXH
+wa-2013,Mount Lawley,2,BOLT Dave,CONNELLY Paul,52.0,FFP,CHR
+wa-2013,Mount Lawley,2,BOLT Dave,CLIFFORD Tim,54.0,FFP,GRN
+wa-2013,Mount Lawley,2,BOLT Dave,SUTHERLAND Michael,48.0,FFP,LIB
+wa-2013,Mount Lawley,2,BOLT Dave,KUCERA Bob,33.0,FFP,ALP
+wa-2013,Mount Lawley,3,CONNELLY Paul,CLIFFORD Tim,130.0,CHR,GRN
+wa-2013,Mount Lawley,3,CONNELLY Paul,SUTHERLAND Michael,302.0,CHR,LIB
+wa-2013,Mount Lawley,3,CONNELLY Paul,KUCERA Bob,71.0,CHR,ALP
+wa-2013,Mount Lawley,3,CONNELLY Paul,Exhausted,1.0,CHR,EXH
+wa-2013,Mount Lawley,4,CLIFFORD Tim,SUTHERLAND Michael,664.0,GRN,LIB
+wa-2013,Mount Lawley,4,CLIFFORD Tim,KUCERA Bob,1602.0,GRN,ALP
+wa-2013,Mount Lawley,4,CLIFFORD Tim,Exhausted,4.0,GRN,EXH
+wa-2013,Murray-Wellington,2,HESLINGTON Norm,ROSE Michael,59.0,IND,NAT
+wa-2013,Murray-Wellington,2,HESLINGTON Norm,SCAIFE David,63.0,IND,ALP
+wa-2013,Murray-Wellington,2,HESLINGTON Norm,FULLER Deni,79.0,IND,GRN
+wa-2013,Murray-Wellington,2,HESLINGTON Norm,COWPER Murray,60.0,IND,LIB
+wa-2013,Murray-Wellington,2,HESLINGTON Norm,RANKIN Laurie,122.0,IND,FFP
+wa-2013,Murray-Wellington,3,RANKIN Laurie,ROSE Michael,138.0,FFP,NAT
+wa-2013,Murray-Wellington,3,RANKIN Laurie,SCAIFE David,119.0,FFP,ALP
+wa-2013,Murray-Wellington,3,RANKIN Laurie,FULLER Deni,197.0,FFP,GRN
+wa-2013,Murray-Wellington,3,RANKIN Laurie,COWPER Murray,285.0,FFP,LIB
+wa-2013,Murray-Wellington,3,RANKIN Laurie,Exhausted,4.0,FFP,EXH
+wa-2013,Murray-Wellington,4,FULLER Deni,ROSE Michael,451.0,GRN,NAT
+wa-2013,Murray-Wellington,4,FULLER Deni,SCAIFE David,697.0,GRN,ALP
+wa-2013,Murray-Wellington,4,FULLER Deni,COWPER Murray,261.0,GRN,LIB
+wa-2013,Murray-Wellington,4,FULLER Deni,Exhausted,1.0,GRN,EXH
+wa-2013,Murray-Wellington,5,ROSE Michael,SCAIFE David,1100.0,NAT,ALP
+wa-2013,Murray-Wellington,5,ROSE Michael,COWPER Murray,1826.0,NAT,LIB
+wa-2013,Murray-Wellington,5,ROSE Michael,Exhausted,2.0,NAT,EXH
+wa-2013,Nedlands,2,FORDER Gail,MARMION Bill,138.0,CHR,LIB
+wa-2013,Nedlands,2,FORDER Gail,CRISP George,30.0,CHR,GRN
+wa-2013,Nedlands,2,FORDER Gail,WALKER Tony,47.0,CHR,ALP
+wa-2013,Nedlands,2,FORDER Gail,HIPKINS Max,101.0,CHR,IND
+wa-2013,Nedlands,3,CRISP George,MARMION Bill,466.0,GRN,LIB
+wa-2013,Nedlands,3,CRISP George,WALKER Tony,1147.0,GRN,ALP
+wa-2013,Nedlands,3,CRISP George,HIPKINS Max,1167.0,GRN,IND
+wa-2013,Nedlands,3,CRISP George,Exhausted,2.0,GRN,EXH
+wa-2013,Nedlands,4,HIPKINS Max,MARMION Bill,1667.0,IND,LIB
+wa-2013,Nedlands,4,HIPKINS Max,WALKER Tony,2348.0,IND,ALP
+wa-2013,Nedlands,4,HIPKINS Max,Exhausted,11.0,IND,EXH
+wa-2013,North West Central,2,EDDISON Andrew,CATANIA Vince,51.0,CHR,NAT
+wa-2013,North West Central,2,EDDISON Andrew,PIKE Des,9.0,CHR,GRN
+wa-2013,North West Central,2,EDDISON Andrew,MAITRE Tami,26.0,CHR,LIB
+wa-2013,North West Central,3,PIKE Des,SHELTON Jennifer,79.0,GRN,ALP
+wa-2013,North West Central,3,PIKE Des,CATANIA Vince,203.0,GRN,NAT
+wa-2013,North West Central,3,PIKE Des,MAITRE Tami,91.0,GRN,LIB
+wa-2013,North West Central,4,SHELTON Jennifer,CATANIA Vince,905.0,ALP,NAT
+wa-2013,North West Central,4,SHELTON Jennifer,MAITRE Tami,694.0,ALP,LIB
+wa-2013,North West Central,4,SHELTON Jennifer,Exhausted,3.0,ALP,EXH
+wa-2013,Ocean Reef,2,CROLL Aliné,JACOB Albert,50.0,FFP,LIB
+wa-2013,Ocean Reef,2,CROLL Aliné,KENNEDY Lyn,73.0,FFP,CHR
+wa-2013,Ocean Reef,2,CROLL Aliné,TAYLOR Philippa,42.0,FFP,ALP
+wa-2013,Ocean Reef,2,CROLL Aliné,O'BYRNE Mary,78.0,FFP,GRN
+wa-2013,Ocean Reef,3,KENNEDY Lyn,JACOB Albert,231.0,CHR,LIB
+wa-2013,Ocean Reef,3,KENNEDY Lyn,TAYLOR Philippa,77.0,CHR,ALP
+wa-2013,Ocean Reef,3,KENNEDY Lyn,O'BYRNE Mary,66.0,CHR,GRN
+wa-2013,Ocean Reef,4,O'BYRNE Mary,JACOB Albert,526.0,GRN,LIB
+wa-2013,Ocean Reef,4,O'BYRNE Mary,TAYLOR Philippa,1024.0,GRN,ALP
+wa-2013,Ocean Reef,4,O'BYRNE Mary,Exhausted,3.0,GRN,EXH
+wa-2013,Perth,2,IQBAL Farida,HYDE John,41.0,IND,ALP
+wa-2013,Perth,2,IQBAL Farida,EVANGEL Eleni,34.0,IND,LIB
+wa-2013,Perth,2,IQBAL Farida,HALLETT Jonathan,94.0,IND,GRN
+wa-2013,Perth,2,IQBAL Farida,HOST Kevin,29.0,IND,CHR
+wa-2013,Perth,3,HOST Kevin,HYDE John,87.0,CHR,ALP
+wa-2013,Perth,3,HOST Kevin,EVANGEL Eleni,191.0,CHR,LIB
+wa-2013,Perth,3,HOST Kevin,HALLETT Jonathan,75.0,CHR,GRN
+wa-2013,Perth,4,HALLETT Jonathan,HYDE John,2251.0,GRN,ALP
+wa-2013,Perth,4,HALLETT Jonathan,EVANGEL Eleni,622.0,GRN,LIB
+wa-2013,Perth,4,HALLETT Jonathan,Exhausted,2.0,GRN,EXH
+wa-2013,Pilbara,2,RICHARDS Bruce,LEVISSIANOS George,44.0,CHR,LIB
+wa-2013,Pilbara,2,RICHARDS Bruce,MATHESON Julie Christine,25.0,CHR,GRN
+wa-2013,Pilbara,2,RICHARDS Bruce,GRYLLS Brendon,46.0,CHR,NAT
+wa-2013,Pilbara,2,RICHARDS Bruce,HOWLETT Kelly,16.0,CHR,ALP
+wa-2013,Pilbara,2,RICHARDS Bruce,McKENNA Brent,36.0,CHR,IND
+wa-2013,Pilbara,2,RICHARDS Bruce,Exhausted,1.0,CHR,EXH
+wa-2013,Pilbara,3,McKENNA Brent,LEVISSIANOS George,59.0,IND,LIB
+wa-2013,Pilbara,3,McKENNA Brent,MATHESON Julie Christine,59.0,IND,GRN
+wa-2013,Pilbara,3,McKENNA Brent,GRYLLS Brendon,88.0,IND,NAT
+wa-2013,Pilbara,3,McKENNA Brent,HOWLETT Kelly,95.0,IND,ALP
+wa-2013,Pilbara,3,McKENNA Brent,Exhausted,2.0,IND,EXH
+wa-2013,Pilbara,4,MATHESON Julie Christine,LEVISSIANOS George,119.0,GRN,LIB
+wa-2013,Pilbara,4,MATHESON Julie Christine,GRYLLS Brendon,247.0,GRN,NAT
+wa-2013,Pilbara,4,MATHESON Julie Christine,HOWLETT Kelly,343.0,GRN,ALP
+wa-2013,Pilbara,4,MATHESON Julie Christine,Exhausted,3.0,GRN,EXH
+wa-2013,Pilbara,5,LEVISSIANOS George,GRYLLS Brendon,2492.0,LIB,NAT
+wa-2013,Pilbara,5,LEVISSIANOS George,HOWLETT Kelly,638.0,LIB,ALP
+wa-2013,Pilbara,5,LEVISSIANOS George,Exhausted,3.0,LIB,EXH
+wa-2013,Riverton,2,DELLE DONNE Joe,ATKINSON Marcus,135.0,IND,GRN
+wa-2013,Riverton,2,DELLE DONNE Joe,NAHAN Mike,132.0,IND,LIB
+wa-2013,Riverton,2,DELLE DONNE Joe,BEAZLEY Hannah,208.0,IND,ALP
+wa-2013,Riverton,2,DELLE DONNE Joe,Exhausted,2.0,IND,EXH
+wa-2013,Riverton,3,ATKINSON Marcus,NAHAN Mike,466.0,GRN,LIB
+wa-2013,Riverton,3,ATKINSON Marcus,BEAZLEY Hannah,957.0,GRN,ALP
+wa-2013,Riverton,3,ATKINSON Marcus,Exhausted,3.0,GRN,EXH
+wa-2013,Rockingham,2,WIESKE John,POLLOCK Matthew,255.0,CHR,LIB
+wa-2013,Rockingham,2,WIESKE John,WHITFIELD Matthew,84.0,CHR,IND
+wa-2013,Rockingham,2,WIESKE John,McGOWAN Mark,69.0,CHR,ALP
+wa-2013,Rockingham,2,WIESKE John,JECKS Dawn,30.0,CHR,GRN
+wa-2013,Rockingham,3,WHITFIELD Matthew,POLLOCK Matthew,237.0,IND,LIB
+wa-2013,Rockingham,3,WHITFIELD Matthew,McGOWAN Mark,230.0,IND,ALP
+wa-2013,Rockingham,3,WHITFIELD Matthew,JECKS Dawn,223.0,IND,GRN
+wa-2013,Rockingham,3,WHITFIELD Matthew,Exhausted,4.0,IND,EXH
+wa-2013,Rockingham,4,JECKS Dawn,POLLOCK Matthew,405.0,GRN,LIB
+wa-2013,Rockingham,4,JECKS Dawn,McGOWAN Mark,1112.0,GRN,ALP
+wa-2013,Rockingham,4,JECKS Dawn,Exhausted,1.0,GRN,EXH
+wa-2013,Scarborough,2,OLSEN Bruce,LENNIE Eddie,72.0,CHR,ALP
+wa-2013,Scarborough,2,OLSEN Bruce,HARVEY Liza,323.0,CHR,LIB
+wa-2013,Scarborough,2,OLSEN Bruce,CULLITY Judith,99.0,CHR,GRN
+wa-2013,Scarborough,2,OLSEN Bruce,Exhausted,1.0,CHR,EXH
+wa-2013,Scarborough,3,CULLITY Judith,LENNIE Eddie,1597.0,GRN,ALP
+wa-2013,Scarborough,3,CULLITY Judith,HARVEY Liza,788.0,GRN,LIB
+wa-2013,Scarborough,3,CULLITY Judith,Exhausted,8.0,GRN,EXH
+wa-2013,South Perth,2,MANGINI David J,MCGRATH John,225.0,IND,LIB
+wa-2013,South Perth,2,MANGINI David J,BEST Peter John,184.0,IND,GRN
+wa-2013,South Perth,2,MANGINI David J,RAFFERTY Dustin,91.0,IND,ALP
+wa-2013,South Perth,2,MANGINI David J,Exhausted,1.0,IND,EXH
+wa-2013,South Perth,3,BEST Peter John,MCGRATH John,615.0,GRN,LIB
+wa-2013,South Perth,3,BEST Peter John,RAFFERTY Dustin,1367.0,GRN,ALP
+wa-2013,South Perth,3,BEST Peter John,Exhausted,2.0,GRN,EXH
+wa-2013,Southern River,2,POSTHUMA Damian,THOMAS Susy,78.0,CHR,ALP
+wa-2013,Southern River,2,POSTHUMA Damian,ABETZ Peter,377.0,CHR,LIB
+wa-2013,Southern River,2,POSTHUMA Damian,GNANAPRAGASAM Kate,96.0,CHR,GRN
+wa-2013,Southern River,2,POSTHUMA Damian,Exhausted,19.0,CHR,EXH
+wa-2013,Southern River,3,GNANAPRAGASAM Kate,THOMAS Susy,787.0,GRN,ALP
+wa-2013,Southern River,3,GNANAPRAGASAM Kate,ABETZ Peter,451.0,GRN,LIB
+wa-2013,Southern River,3,GNANAPRAGASAM Kate,Exhausted,34.0,GRN,EXH
+wa-2013,Swan Hills,2,SHARRIN Kyran,LIEB Dominique,122.0,FFP,GRN
+wa-2013,Swan Hills,2,SHARRIN Kyran,RADISICH Ian,71.0,FFP,ALP
+wa-2013,Swan Hills,2,SHARRIN Kyran,TAPLEY John,137.0,FFP,CHR
+wa-2013,Swan Hills,2,SHARRIN Kyran,ALBAN Frank,130.0,FFP,LIB
+wa-2013,Swan Hills,3,TAPLEY John,LIEB Dominique,83.0,CHR,GRN
+wa-2013,Swan Hills,3,TAPLEY John,RADISICH Ian,107.0,CHR,ALP
+wa-2013,Swan Hills,3,TAPLEY John,ALBAN Frank,427.0,CHR,LIB
+wa-2013,Swan Hills,3,TAPLEY John,Exhausted,1.0,CHR,EXH
+wa-2013,Swan Hills,4,LIEB Dominique,RADISICH Ian,1621.0,GRN,ALP
+wa-2013,Swan Hills,4,LIEB Dominique,ALBAN Frank,607.0,GRN,LIB
+wa-2013,Swan Hills,4,LIEB Dominique,Exhausted,5.0,GRN,EXH
+wa-2013,Vasse,2,WESTBROOK Julie,EDMUNDSON Lee,43.0,FFP,ALP
+wa-2013,Vasse,2,WESTBROOK Julie,MASTERS Bernie,50.0,FFP,IND
+wa-2013,Vasse,2,WESTBROOK Julie,NORDEN Gary,29.0,FFP,IND
+wa-2013,Vasse,2,WESTBROOK Julie,BALDOCK Michael,57.0,FFP,GRN
+wa-2013,Vasse,2,WESTBROOK Julie,WISHART James,52.0,FFP,NAT
+wa-2013,Vasse,2,WESTBROOK Julie,BUSWELL Troy,180.0,FFP,LIB
+wa-2013,Vasse,2,WESTBROOK Julie,Exhausted,1.0,FFP,EXH
+wa-2013,Vasse,3,NORDEN Gary,EDMUNDSON Lee,63.0,IND,ALP
+wa-2013,Vasse,3,NORDEN Gary,MASTERS Bernie,157.0,IND,IND
+wa-2013,Vasse,3,NORDEN Gary,BALDOCK Michael,120.0,IND,GRN
+wa-2013,Vasse,3,NORDEN Gary,WISHART James,203.0,IND,NAT
+wa-2013,Vasse,3,NORDEN Gary,BUSWELL Troy,86.0,IND,LIB
+wa-2013,Vasse,3,NORDEN Gary,Exhausted,1.0,IND,EXH
+wa-2013,Vasse,4,WISHART James,EDMUNDSON Lee,113.0,NAT,ALP
+wa-2013,Vasse,4,WISHART James,MASTERS Bernie,301.0,NAT,IND
+wa-2013,Vasse,4,WISHART James,BALDOCK Michael,346.0,NAT,GRN
+wa-2013,Vasse,4,WISHART James,BUSWELL Troy,968.0,NAT,LIB
+wa-2013,Vasse,4,WISHART James,Exhausted,1.0,NAT,EXH
+wa-2013,Vasse,5,MASTERS Bernie,EDMUNDSON Lee,810.0,IND,ALP
+wa-2013,Vasse,5,MASTERS Bernie,BALDOCK Michael,692.0,IND,GRN
+wa-2013,Vasse,5,MASTERS Bernie,BUSWELL Troy,626.0,IND,LIB
+wa-2013,Vasse,5,MASTERS Bernie,Exhausted,4.0,IND,EXH
+wa-2013,Vasse,6,BALDOCK Michael,EDMUNDSON Lee,2292.0,GRN,ALP
+wa-2013,Vasse,6,BALDOCK Michael,BUSWELL Troy,943.0,GRN,LIB
+wa-2013,Vasse,6,BALDOCK Michael,Exhausted,6.0,GRN,EXH
+wa-2013,Victoria Park,2,NEWBOLD Sarah,WYATT Ben,1887.0,GRN,ALP
+wa-2013,Victoria Park,2,NEWBOLD Sarah,ZAMAN Haider,635.0,GRN,LIB
+wa-2013,Victoria Park,2,NEWBOLD Sarah,Exhausted,6.0,GRN,EXH
+wa-2013,Wagin,2,YOUNG Jacky,COLLINS Shirley,78.0,CHR,GRN
+wa-2013,Wagin,2,YOUNG Jacky,BLIGHT Phillip,248.0,CHR,LIB
+wa-2013,Wagin,2,YOUNG Jacky,STOKES Josh,67.0,CHR,ALP
+wa-2013,Wagin,2,YOUNG Jacky,WALDRON Terry,226.0,CHR,NAT
+wa-2013,Wagin,2,YOUNG Jacky,Exhausted,1.0,CHR,EXH
+wa-2013,Wagin,3,COLLINS Shirley,BLIGHT Phillip,243.0,GRN,LIB
+wa-2013,Wagin,3,COLLINS Shirley,STOKES Josh,371.0,GRN,ALP
+wa-2013,Wagin,3,COLLINS Shirley,WALDRON Terry,313.0,GRN,NAT
+wa-2013,Wagin,4,STOKES Josh,BLIGHT Phillip,583.0,ALP,LIB
+wa-2013,Wagin,4,STOKES Josh,WALDRON Terry,1976.0,ALP,NAT
+wa-2013,Wagin,4,STOKES Josh,Exhausted,1.0,ALP,EXH
+wa-2013,Wanneroo,2,RAPP Moyna,PHILLIPS Rob,116.0,FFP,GRN
+wa-2013,Wanneroo,2,RAPP Moyna,TREBY Brett,78.0,FFP,ALP
+wa-2013,Wanneroo,2,RAPP Moyna,MILES Paul,95.0,FFP,LIB
+wa-2013,Wanneroo,2,RAPP Moyna,BIRCH Meg,155.0,FFP,CHR
+wa-2013,Wanneroo,2,RAPP Moyna,Exhausted,2.0,FFP,EXH
+wa-2013,Wanneroo,3,BIRCH Meg,PHILLIPS Rob,96.0,CHR,GRN
+wa-2013,Wanneroo,3,BIRCH Meg,TREBY Brett,140.0,CHR,ALP
+wa-2013,Wanneroo,3,BIRCH Meg,MILES Paul,467.0,CHR,LIB
+wa-2013,Wanneroo,3,BIRCH Meg,Exhausted,2.0,CHR,EXH
+wa-2013,Wanneroo,4,PHILLIPS Rob,TREBY Brett,1223.0,GRN,ALP
+wa-2013,Wanneroo,4,PHILLIPS Rob,MILES Paul,595.0,GRN,LIB
+wa-2013,Wanneroo,4,PHILLIPS Rob,Exhausted,5.0,GRN,EXH
+wa-2013,Warnbro,2,STEELE-JOHN Jordon,PAPALIA Paul,1381.0,GRN,ALP
+wa-2013,Warnbro,2,STEELE-JOHN Jordon,MARKS Joel,635.0,GRN,LIB
+wa-2013,Warren-Blackwood,2,REDMAN K.,COLYER Ray,36.0,IND,LIB
+wa-2013,Warren-Blackwood,2,REDMAN K.,BOSHAMMER Nerilee,77.0,IND,GRN
+wa-2013,Warren-Blackwood,2,REDMAN K.,SCIBILIA Louie,33.0,IND,IND
+wa-2013,Warren-Blackwood,2,REDMAN K.,DOUGLASS Phillip,11.0,IND,FFP
+wa-2013,Warren-Blackwood,2,REDMAN K.,THORPE John,44.0,IND,ALP
+wa-2013,Warren-Blackwood,2,REDMAN K.,REDMAN Terry,72.0,IND,NAT
+wa-2013,Warren-Blackwood,3,DOUGLASS Phillip,COLYER Ray,103.0,FFP,LIB
+wa-2013,Warren-Blackwood,3,DOUGLASS Phillip,BOSHAMMER Nerilee,65.0,FFP,GRN
+wa-2013,Warren-Blackwood,3,DOUGLASS Phillip,SCIBILIA Louie,99.0,FFP,IND
+wa-2013,Warren-Blackwood,3,DOUGLASS Phillip,THORPE John,56.0,FFP,ALP
+wa-2013,Warren-Blackwood,3,DOUGLASS Phillip,REDMAN Terry,90.0,FFP,NAT
+wa-2013,Warren-Blackwood,3,DOUGLASS Phillip,Exhausted,1.0,FFP,EXH
+wa-2013,Warren-Blackwood,4,SCIBILIA Louie,COLYER Ray,106.0,IND,LIB
+wa-2013,Warren-Blackwood,4,SCIBILIA Louie,BOSHAMMER Nerilee,210.0,IND,GRN
+wa-2013,Warren-Blackwood,4,SCIBILIA Louie,THORPE John,98.0,IND,ALP
+wa-2013,Warren-Blackwood,4,SCIBILIA Louie,REDMAN Terry,141.0,IND,NAT
+wa-2013,Warren-Blackwood,4,SCIBILIA Louie,Exhausted,2.0,IND,EXH
+wa-2013,Warren-Blackwood,5,THORPE John,COLYER Ray,293.0,ALP,LIB
+wa-2013,Warren-Blackwood,5,THORPE John,BOSHAMMER Nerilee,2264.0,ALP,GRN
+wa-2013,Warren-Blackwood,5,THORPE John,REDMAN Terry,970.0,ALP,NAT
+wa-2013,Warren-Blackwood,5,THORPE John,Exhausted,2.0,ALP,EXH
+wa-2013,Warren-Blackwood,6,BOSHAMMER Nerilee,COLYER Ray,3156.0,GRN,LIB
+wa-2013,Warren-Blackwood,6,BOSHAMMER Nerilee,REDMAN Terry,3057.0,GRN,NAT
+wa-2013,Warren-Blackwood,6,BOSHAMMER Nerilee,Exhausted,15.0,GRN,EXH
+wa-2013,West Swan,2,WIESKE Esther,SAFFIOTI Rita,118.0,CHR,ALP
+wa-2013,West Swan,2,WIESKE Esther,LEAM Peter,92.0,CHR,GRN
+wa-2013,West Swan,2,WIESKE Esther,CHEUNG Natasha,347.0,CHR,LIB
+wa-2013,West Swan,3,LEAM Peter,SAFFIOTI Rita,752.0,GRN,ALP
+wa-2013,West Swan,3,LEAM Peter,CHEUNG Natasha,397.0,GRN,LIB
+wa-2013,West Swan,3,LEAM Peter,Exhausted,2.0,GRN,EXH
+wa-2013,Willagee,2,SHORTLAND Wayne D.,RYANS-TAYLOR Alisha,32.0,IND,GRN
+wa-2013,Willagee,2,SHORTLAND Wayne D.,WAINWRIGHT Sam,16.0,IND,IND
+wa-2013,Willagee,2,SHORTLAND Wayne D.,VAN LIESHOUT Teresa,73.0,IND,IND
+wa-2013,Willagee,2,SHORTLAND Wayne D.,TINLEY Peter,25.0,IND,ALP
+wa-2013,Willagee,2,SHORTLAND Wayne D.,PIIPPONEN Samuel,35.0,IND,LIB
+wa-2013,Willagee,3,WAINWRIGHT Sam,RYANS-TAYLOR Alisha,209.0,IND,GRN
+wa-2013,Willagee,3,WAINWRIGHT Sam,VAN LIESHOUT Teresa,80.0,IND,IND
+wa-2013,Willagee,3,WAINWRIGHT Sam,TINLEY Peter,96.0,IND,ALP
+wa-2013,Willagee,3,WAINWRIGHT Sam,PIIPPONEN Samuel,27.0,IND,LIB
+wa-2013,Willagee,3,WAINWRIGHT Sam,Exhausted,1.0,IND,EXH
+wa-2013,Willagee,4,VAN LIESHOUT Teresa,RYANS-TAYLOR Alisha,203.0,IND,GRN
+wa-2013,Willagee,4,VAN LIESHOUT Teresa,TINLEY Peter,139.0,IND,ALP
+wa-2013,Willagee,4,VAN LIESHOUT Teresa,PIIPPONEN Samuel,169.0,IND,LIB
+wa-2013,Willagee,4,VAN LIESHOUT Teresa,Exhausted,3.0,IND,EXH
+wa-2013,Willagee,5,RYANS-TAYLOR Alisha,TINLEY Peter,2540.0,GRN,ALP
+wa-2013,Willagee,5,RYANS-TAYLOR Alisha,PIIPPONEN Samuel,528.0,GRN,LIB
+wa-2013,Willagee,5,RYANS-TAYLOR Alisha,Exhausted,10.0,GRN,EXH
