@@ -33,6 +33,10 @@ export interface ModelFile {
 
 const SOURCES = [
 	{ code: 'vic', name: 'Victoria' },
+	{ code: 'nsw', name: 'New South Wales' },
+	{ code: 'qld', name: 'Queensland' },
+	{ code: 'sa', name: 'South Australia' },
+	{ code: 'wa', name: 'Western Australia' },
 	{ code: 'federal', name: 'Federal' }
 ];
 

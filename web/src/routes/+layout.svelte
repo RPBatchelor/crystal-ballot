@@ -68,8 +68,9 @@
 <footer>
 	<p>
 		Prophecy is an independent, non-partisan forecasting project. Results data from the Victorian
-		Electoral Commission and the Australian Electoral Commission; polls from published pollster
-		releases.
+		Electoral Commission, the NSW Electoral Commission, the Electoral Commission of Queensland, the
+		Electoral Commission of South Australia and the Australian Electoral Commission; polls from published
+		pollster releases.
 	</p>
 </footer>
 

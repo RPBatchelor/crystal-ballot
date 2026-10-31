@@ -1,0 +1,6461 @@
+{
+ "election_id": "qld-2017",
+ "jurisdiction": "QLD",
+ "date": "2017-11-25",
+ "seats_total": 93,
+ "majority": 47,
+ "seat_counts": {
+  "ALP": 48,
+  "LNP": 39,
+  "KAP": 3,
+  "GRN": 1,
+  "IND": 1,
+  "ONP": 1
+ },
+ "primary_share": {
+  "ALP": 35.43,
+  "COAL": 33.69,
+  "ONP": 13.73,
+  "GRN": 10.0,
+  "IND": 6.89,
+  "OTH": 0.27
+ },
+ "party_share": {
+  "ALP": 35.43,
+  "LNP": 33.69,
+  "ONP": 13.73,
+  "GRN": 10.0,
+  "IND": 4.58,
+  "KAP": 2.32,
+  "X_CLCRNT": 0.27
+ },
+ "tpp_alp": 51.2,
+ "seats": [
+  {
+   "name": "Algester",
+   "slug": "algester",
+   "elected": "ENOCH Leeanne",
+   "party": "ALP",
+   "enrolment": 33643,
+   "formal": 27781,
+   "informal": 1537,
+   "primary": [
+    {
+     "candidate": "ENOCH Leeanne",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14424,
+     "pct": 51.92
+    },
+    {
+     "candidate": "PATTISON Clinton",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 6025,
+     "pct": 21.687
+    },
+    {
+     "candidate": "LANYON Darryl",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5055,
+     "pct": 18.196
+    },
+    {
+     "candidate": "O'BRIEN Patsy",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2277,
+     "pct": 8.196
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ENOCH Leeanne",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 17898,
+     "pct": 64.425
+    },
+    {
+     "candidate": "PATTISON Clinton",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 9883,
+     "pct": 35.575
+    }
+   ],
+   "margin": 14.42,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 64.425,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Aspley",
+   "slug": "aspley",
+   "elected": "MELLISH Bart",
+   "party": "ALP",
+   "enrolment": 36873,
+   "formal": 32108,
+   "informal": 1278,
+   "primary": [
+    {
+     "candidate": "DAVIS Tracy",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12757,
+     "pct": 39.732
+    },
+    {
+     "candidate": "MELLISH Bart",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12046,
+     "pct": 37.517
+    },
+    {
+     "candidate": "BYRNE Shaun",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 3081,
+     "pct": 9.596
+    },
+    {
+     "candidate": "HANSEN James",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3037,
+     "pct": 9.459
+    },
+    {
+     "candidate": "KING Zachary",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 494,
+     "pct": 1.539
+    },
+    {
+     "candidate": "SKILBECK Neil",
+     "party": "X_CLCRNT",
+     "party_name": "Civil Liberties, Consumer Rights, No-Tolls",
+     "votes": 458,
+     "pct": 1.426
+    },
+    {
+     "candidate": "ROSS Steve",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 235,
+     "pct": 0.732
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MELLISH Bart",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16430,
+     "pct": 51.171
+    },
+    {
+     "candidate": "DAVIS Tracy",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15678,
+     "pct": 48.829
+    }
+   ],
+   "margin": 1.17,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 51.171,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Bancroft",
+   "slug": "bancroft",
+   "elected": "WHITING Chris",
+   "party": "ALP",
+   "enrolment": 34056,
+   "formal": 28518,
+   "informal": 1270,
+   "primary": [
+    {
+     "candidate": "WHITING Chris",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12252,
+     "pct": 42.962
+    },
+    {
+     "candidate": "THOMAS Kara",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 7631,
+     "pct": 26.759
+    },
+    {
+     "candidate": "BOULIS Christopher",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5438,
+     "pct": 19.069
+    },
+    {
+     "candidate": "DEJUN Simone",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1772,
+     "pct": 6.214
+    },
+    {
+     "candidate": "GRANT Barry",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1425,
+     "pct": 4.997
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WHITING Chris",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16029,
+     "pct": 56.207
+    },
+    {
+     "candidate": "THOMAS Kara",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12489,
+     "pct": 43.793
+    }
+   ],
+   "margin": 6.21,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 56.207,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Barron River",
+   "slug": "barron-river",
+   "elected": "CRAWFORD Craig",
+   "party": "ALP",
+   "enrolment": 35423,
+   "formal": 28359,
+   "informal": 1380,
+   "primary": [
+    {
+     "candidate": "CRAWFORD Craig",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9497,
+     "pct": 33.488
+    },
+    {
+     "candidate": "TROUT Michael",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 8686,
+     "pct": 30.629
+    },
+    {
+     "candidate": "SCHEBELLA Andrew",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4760,
+     "pct": 16.785
+    },
+    {
+     "candidate": "BOYD Cameron",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3551,
+     "pct": 12.522
+    },
+    {
+     "candidate": "TONKIN Cheryl",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1039,
+     "pct": 3.664
+    },
+    {
+     "candidate": "HODGETTS Andrew",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 826,
+     "pct": 2.913
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CRAWFORD Craig",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14707,
+     "pct": 51.86
+    },
+    {
+     "candidate": "TROUT Michael",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13652,
+     "pct": 48.14
+    }
+   ],
+   "margin": 1.86,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 51.86,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Bonney",
+   "slug": "bonney",
+   "elected": "O'CONNOR Sam",
+   "party": "LNP",
+   "enrolment": 33230,
+   "formal": 25999,
+   "informal": 1633,
+   "primary": [
+    {
+     "candidate": "O'CONNOR Sam",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11405,
+     "pct": 43.867
+    },
+    {
+     "candidate": "HOLZBERGER Rowan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9279,
+     "pct": 35.69
+    },
+    {
+     "candidate": "JAVANMARD Amin",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2540,
+     "pct": 9.77
+    },
+    {
+     "candidate": "BUEGGE Robert",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1680,
+     "pct": 6.462
+    },
+    {
+     "candidate": "NIGHTINGALE Ron",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1095,
+     "pct": 4.212
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "O'CONNOR Sam",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13439,
+     "pct": 51.69
+    },
+    {
+     "candidate": "HOLZBERGER Rowan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12560,
+     "pct": 48.31
+    }
+   ],
+   "margin": 1.69,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 48.31,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Broadwater",
+   "slug": "broadwater",
+   "elected": "CRISAFULLI David",
+   "party": "LNP",
+   "enrolment": 33511,
+   "formal": 27843,
+   "informal": 1100,
+   "primary": [
+    {
+     "candidate": "CRISAFULLI David",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13499,
+     "pct": 48.483
+    },
+    {
+     "candidate": "FLORI Peter",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 6477,
+     "pct": 23.263
+    },
+    {
+     "candidate": "BALL Brenden",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5959,
+     "pct": 21.402
+    },
+    {
+     "candidate": "KWON Daniel",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1908,
+     "pct": 6.853
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CRISAFULLI David",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 18928,
+     "pct": 67.981
+    },
+    {
+     "candidate": "FLORI Peter",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 8915,
+     "pct": 32.019
+    }
+   ],
+   "margin": 17.98,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 32.019,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Buderim",
+   "slug": "buderim",
+   "elected": "MICKELBERG Brent",
+   "party": "LNP",
+   "enrolment": 34822,
+   "formal": 29588,
+   "informal": 1091,
+   "primary": [
+    {
+     "candidate": "MICKELBERG Brent",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 10911,
+     "pct": 36.876
+    },
+    {
+     "candidate": "DICKSON Steve",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8452,
+     "pct": 28.566
+    },
+    {
+     "candidate": "MACKENZIE Ken",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 6638,
+     "pct": 22.435
+    },
+    {
+     "candidate": "BURTON Tracy",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3587,
+     "pct": 12.123
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MICKELBERG Brent",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 18169,
+     "pct": 61.407
+    },
+    {
+     "candidate": "MACKENZIE Ken",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11419,
+     "pct": 38.593
+    }
+   ],
+   "margin": 11.41,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 38.593,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Bulimba",
+   "slug": "bulimba",
+   "elected": "FARMER Di",
+   "party": "ALP",
+   "enrolment": 37824,
+   "formal": 32082,
+   "informal": 1140,
+   "primary": [
+    {
+     "candidate": "FARMER Di",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15678,
+     "pct": 48.869
+    },
+    {
+     "candidate": "WARD Fiona",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11080,
+     "pct": 34.537
+    },
+    {
+     "candidate": "JODELL Felicity",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 4211,
+     "pct": 13.126
+    },
+    {
+     "candidate": "LE GOULLON Bernadette",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 642,
+     "pct": 2.001
+    },
+    {
+     "candidate": "JELL Angus",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 471,
+     "pct": 1.468
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "FARMER Di",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 19499,
+     "pct": 60.779
+    },
+    {
+     "candidate": "WARD Fiona",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12583,
+     "pct": 39.221
+    }
+   ],
+   "margin": 10.78,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 60.779,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Bundaberg",
+   "slug": "bundaberg",
+   "elected": "BATT David",
+   "party": "LNP",
+   "enrolment": 34757,
+   "formal": 29783,
+   "informal": 1476,
+   "primary": [
+    {
+     "candidate": "BATT David",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 10578,
+     "pct": 35.517
+    },
+    {
+     "candidate": "DONALDSON Leanne",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10232,
+     "pct": 34.355
+    },
+    {
+     "candidate": "TRUSCOTT Jane",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6681,
+     "pct": 22.432
+    },
+    {
+     "candidate": "BUCHANAN Marianne",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1050,
+     "pct": 3.526
+    },
+    {
+     "candidate": "CORBETT Alan",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 681,
+     "pct": 2.287
+    },
+    {
+     "candidate": "GLASS Richard",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 313,
+     "pct": 1.051
+    },
+    {
+     "candidate": "SMITH Richard William",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 248,
+     "pct": 0.833
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BATT David",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 16142,
+     "pct": 54.199
+    },
+    {
+     "candidate": "DONALDSON Leanne",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13641,
+     "pct": 45.801
+    }
+   ],
+   "margin": 4.2,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 45.801,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Bundamba",
+   "slug": "bundamba",
+   "elected": "MILLER Jo-Ann",
+   "party": "ALP",
+   "enrolment": 33639,
+   "formal": 26024,
+   "informal": 2337,
+   "primary": [
+    {
+     "candidate": "MILLER Jo-Ann",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13883,
+     "pct": 53.347
+    },
+    {
+     "candidate": "HERBERT Patrick",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 3949,
+     "pct": 15.174
+    },
+    {
+     "candidate": "DUNCAN Michelle",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2842,
+     "pct": 10.921
+    },
+    {
+     "candidate": "PETERSEN Patricia",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2599,
+     "pct": 9.987
+    },
+    {
+     "candidate": "LIN Shan-Ju",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1413,
+     "pct": 5.43
+    },
+    {
+     "candidate": "JUDD Trevor",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1338,
+     "pct": 5.141
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MILLER Jo-Ann",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 18621,
+     "pct": 71.553
+    },
+    {
+     "candidate": "HERBERT Patrick",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 7403,
+     "pct": 28.447
+    }
+   ],
+   "margin": 21.55,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 71.553,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Burdekin",
+   "slug": "burdekin",
+   "elected": "LAST Dale",
+   "party": "LNP",
+   "enrolment": 34295,
+   "formal": 29265,
+   "informal": 997,
+   "primary": [
+    {
+     "candidate": "BRUNKER Michael",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10524,
+     "pct": 35.961
+    },
+    {
+     "candidate": "LAST Dale",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 9274,
+     "pct": 31.69
+    },
+    {
+     "candidate": "COX Sam",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8587,
+     "pct": 29.342
+    },
+    {
+     "candidate": "BING Mathew",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 880,
+     "pct": 3.007
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LAST Dale",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 14866,
+     "pct": 50.798
+    },
+    {
+     "candidate": "BRUNKER Michael",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14399,
+     "pct": 49.202
+    }
+   ],
+   "margin": 0.8,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 49.202,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Burleigh",
+   "slug": "burleigh",
+   "elected": "HART Michael",
+   "party": "LNP",
+   "enrolment": 34812,
+   "formal": 27586,
+   "informal": 1625,
+   "primary": [
+    {
+     "candidate": "HART Michael",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13717,
+     "pct": 49.724
+    },
+    {
+     "candidate": "HISLOP Gail",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9435,
+     "pct": 34.202
+    },
+    {
+     "candidate": "BURGOYNE Peter",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 4434,
+     "pct": 16.073
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HART Michael",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15132,
+     "pct": 54.854
+    },
+    {
+     "candidate": "HISLOP Gail",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12454,
+     "pct": 45.146
+    }
+   ],
+   "margin": 4.85,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 45.146,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Burnett",
+   "slug": "burnett",
+   "elected": "BENNETT Stephen",
+   "party": "LNP",
+   "enrolment": 34015,
+   "formal": 29614,
+   "informal": 1205,
+   "primary": [
+    {
+     "candidate": "BENNETT Stephen",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12570,
+     "pct": 42.446
+    },
+    {
+     "candidate": "LYNCH Ashley",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7907,
+     "pct": 26.7
+    },
+    {
+     "candidate": "HARVEY Lee",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 7491,
+     "pct": 25.295
+    },
+    {
+     "candidate": "ROBERTS Tim",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1646,
+     "pct": 5.558
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BENNETT Stephen",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 17962,
+     "pct": 60.654
+    },
+    {
+     "candidate": "HARVEY Lee",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11652,
+     "pct": 39.346
+    }
+   ],
+   "margin": 10.65,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 39.346,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Cairns",
+   "slug": "cairns",
+   "elected": "HEALY Michael",
+   "party": "ALP",
+   "enrolment": 36569,
+   "formal": 28407,
+   "informal": 1206,
+   "primary": [
+    {
+     "candidate": "HEALY Michael",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 8649,
+     "pct": 30.447
+    },
+    {
+     "candidate": "MARINO Sam",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 7871,
+     "pct": 27.708
+    },
+    {
+     "candidate": "PYNE Rob",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 5440,
+     "pct": 19.15
+    },
+    {
+     "candidate": "HODGE Ian",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4157,
+     "pct": 14.634
+    },
+    {
+     "candidate": "MCDONALD Aaron",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2290,
+     "pct": 8.061
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HEALY Michael",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15167,
+     "pct": 53.392
+    },
+    {
+     "candidate": "MARINO Sam",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13240,
+     "pct": 46.608
+    }
+   ],
+   "margin": 3.39,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 53.392,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Callide",
+   "slug": "callide",
+   "elected": "BOYCE Colin",
+   "party": "LNP",
+   "enrolment": 33540,
+   "formal": 28905,
+   "informal": 1089,
+   "primary": [
+    {
+     "candidate": "BOYCE Colin",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 9663,
+     "pct": 33.43
+    },
+    {
+     "candidate": "LOHSE Sharon",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7408,
+     "pct": 25.629
+    },
+    {
+     "candidate": "BLACKWOOD Darren",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 6404,
+     "pct": 22.155
+    },
+    {
+     "candidate": "RADEL Robbie",
+     "party": "KAP",
+     "party_name": "Katter's Australian Party",
+     "votes": 3761,
+     "pct": 13.012
+    },
+    {
+     "candidate": "BAKER Jaiben",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 987,
+     "pct": 3.415
+    },
+    {
+     "candidate": "ANDERSON Sandra",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 682,
+     "pct": 2.359
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BOYCE Colin",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 16220,
+     "pct": 56.115
+    },
+    {
+     "candidate": "LOHSE Sharon",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 12685,
+     "pct": 43.885
+    }
+   ],
+   "margin": 6.12,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Caloundra",
+   "slug": "caloundra",
+   "elected": "MCARDLE Mark",
+   "party": "LNP",
+   "enrolment": 34268,
+   "formal": 29090,
+   "informal": 1234,
+   "primary": [
+    {
+     "candidate": "MCARDLE Mark",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11068,
+     "pct": 38.047
+    },
+    {
+     "candidate": "HUNT Jason",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 8348,
+     "pct": 28.697
+    },
+    {
+     "candidate": "JONES Rod",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6576,
+     "pct": 22.606
+    },
+    {
+     "candidate": "FINCH Marcus",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3098,
+     "pct": 10.65
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MCARDLE Mark",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15536,
+     "pct": 53.407
+    },
+    {
+     "candidate": "HUNT Jason",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13554,
+     "pct": 46.593
+    }
+   ],
+   "margin": 3.41,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 46.593,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Capalaba",
+   "slug": "capalaba",
+   "elected": "BROWN Don",
+   "party": "ALP",
+   "enrolment": 35913,
+   "formal": 31021,
+   "informal": 1400,
+   "primary": [
+    {
+     "candidate": "BROWN Don",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13292,
+     "pct": 42.848
+    },
+    {
+     "candidate": "LEAFE Cameron",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 7863,
+     "pct": 25.347
+    },
+    {
+     "candidate": "TAYLOR Paul",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6049,
+     "pct": 19.5
+    },
+    {
+     "candidate": "SANDERSON Joshua",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2617,
+     "pct": 8.436
+    },
+    {
+     "candidate": "LAVENDER Jason",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1200,
+     "pct": 3.868
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BROWN Don",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 17948,
+     "pct": 57.858
+    },
+    {
+     "candidate": "LEAFE Cameron",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13073,
+     "pct": 42.142
+    }
+   ],
+   "margin": 7.86,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 57.858,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Chatsworth",
+   "slug": "chatsworth",
+   "elected": "MINNIKIN Steve",
+   "party": "LNP",
+   "enrolment": 34815,
+   "formal": 30090,
+   "informal": 1280,
+   "primary": [
+    {
+     "candidate": "MINNIKIN Steve",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 14993,
+     "pct": 49.827
+    },
+    {
+     "candidate": "KEENE Paul",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11442,
+     "pct": 38.026
+    },
+    {
+     "candidate": "NELSON Dave",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3655,
+     "pct": 12.147
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MINNIKIN Steve",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15918,
+     "pct": 52.901
+    },
+    {
+     "candidate": "KEENE Paul",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14172,
+     "pct": 47.099
+    }
+   ],
+   "margin": 2.9,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 47.099,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Clayfield",
+   "slug": "clayfield",
+   "elected": "NICHOLLS Tim",
+   "party": "LNP",
+   "enrolment": 38454,
+   "formal": 32108,
+   "informal": 1256,
+   "primary": [
+    {
+     "candidate": "NICHOLLS Tim",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15359,
+     "pct": 47.835
+    },
+    {
+     "candidate": "ANTHONY Philip",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10559,
+     "pct": 32.886
+    },
+    {
+     "candidate": "OGDEN Claire",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 6190,
+     "pct": 19.279
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "NICHOLLS Tim",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 16829,
+     "pct": 52.414
+    },
+    {
+     "candidate": "ANTHONY Philip",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15279,
+     "pct": 47.586
+    }
+   ],
+   "margin": 2.41,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 47.586,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Condamine",
+   "slug": "condamine",
+   "elected": "WEIR Pat",
+   "party": "LNP",
+   "enrolment": 36525,
+   "formal": 32421,
+   "informal": 1117,
+   "primary": [
+    {
+     "candidate": "WEIR Pat",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13554,
+     "pct": 41.806
+    },
+    {
+     "candidate": "ASHMAN Frank",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7709,
+     "pct": 23.778
+    },
+    {
+     "candidate": "HUYBREGTS Brendon",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 5848,
+     "pct": 18.038
+    },
+    {
+     "candidate": "HILL John",
+     "party": "KAP",
+     "party_name": "Katter's Australian Party",
+     "votes": 3694,
+     "pct": 11.394
+    },
+    {
+     "candidate": "TURNBULL Chris",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1616,
+     "pct": 4.984
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WEIR Pat",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 19421,
+     "pct": 59.903
+    },
+    {
+     "candidate": "ASHMAN Frank",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 13000,
+     "pct": 40.097
+    }
+   ],
+   "margin": 9.9,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Cook",
+   "slug": "cook",
+   "elected": "LUI Cynthia",
+   "party": "ALP",
+   "enrolment": 32394,
+   "formal": 25200,
+   "informal": 1124,
+   "primary": [
+    {
+     "candidate": "LUI Cynthia",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10105,
+     "pct": 40.099
+    },
+    {
+     "candidate": "SACKLEY Jen",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4639,
+     "pct": 18.409
+    },
+    {
+     "candidate": "JOHNSON Penny",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 4475,
+     "pct": 17.758
+    },
+    {
+     "candidate": "RASMUSSEN Gordon",
+     "party": "KAP",
+     "party_name": "Katter's Australian Party",
+     "votes": 4278,
+     "pct": 16.976
+    },
+    {
+     "candidate": "MATHEWS Brynn",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1703,
+     "pct": 6.758
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LUI Cynthia",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14071,
+     "pct": 55.837
+    },
+    {
+     "candidate": "SACKLEY Jen",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 11129,
+     "pct": 44.163
+    }
+   ],
+   "margin": 5.84,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Coomera",
+   "slug": "coomera",
+   "elected": "CRANDON Michael",
+   "party": "LNP",
+   "enrolment": 37009,
+   "formal": 29311,
+   "informal": 1806,
+   "primary": [
+    {
+     "candidate": "CRANDON Michael",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11535,
+     "pct": 39.354
+    },
+    {
+     "candidate": "JOHNSON Christopher",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9158,
+     "pct": 31.244
+    },
+    {
+     "candidate": "PIGDON Ronald",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5998,
+     "pct": 20.463
+    },
+    {
+     "candidate": "KERWIN Tayla",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2620,
+     "pct": 8.939
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CRANDON Michael",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15673,
+     "pct": 53.471
+    },
+    {
+     "candidate": "JOHNSON Christopher",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13638,
+     "pct": 46.529
+    }
+   ],
+   "margin": 3.47,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 46.529,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Cooper",
+   "slug": "cooper",
+   "elected": "JONES Kate",
+   "party": "ALP",
+   "enrolment": 36850,
+   "formal": 32341,
+   "informal": 809,
+   "primary": [
+    {
+     "candidate": "JONES Kate",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13205,
+     "pct": 40.831
+    },
+    {
+     "candidate": "SHEARMAN Robert",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11510,
+     "pct": 35.589
+    },
+    {
+     "candidate": "WALTERS Reece",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 6666,
+     "pct": 20.612
+    },
+    {
+     "candidate": "WILTSHIRE Robert",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 960,
+     "pct": 2.968
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "JONES Kate",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 19614,
+     "pct": 60.647
+    },
+    {
+     "candidate": "SHEARMAN Robert",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12727,
+     "pct": 39.353
+    }
+   ],
+   "margin": 10.65,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 60.647,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Currumbin",
+   "slug": "currumbin",
+   "elected": "STUCKEY Jann",
+   "party": "LNP",
+   "enrolment": 34409,
+   "formal": 27713,
+   "informal": 1352,
+   "primary": [
+    {
+     "candidate": "STUCKEY Jann",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13215,
+     "pct": 47.685
+    },
+    {
+     "candidate": "LEADER Georgi",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9874,
+     "pct": 35.629
+    },
+    {
+     "candidate": "WYATT David",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3249,
+     "pct": 11.724
+    },
+    {
+     "candidate": "SEMPLE Andrew",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1375,
+     "pct": 4.962
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "STUCKEY Jann",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 14775,
+     "pct": 53.314
+    },
+    {
+     "candidate": "LEADER Georgi",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12938,
+     "pct": 46.686
+    }
+   ],
+   "margin": 3.31,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 46.686,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Everton",
+   "slug": "everton",
+   "elected": "MANDER Tim",
+   "party": "LNP",
+   "enrolment": 36833,
+   "formal": 32369,
+   "informal": 1273,
+   "primary": [
+    {
+     "candidate": "MANDER Tim",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 16756,
+     "pct": 51.766
+    },
+    {
+     "candidate": "GREENE David",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11616,
+     "pct": 35.886
+    },
+    {
+     "candidate": "CLINCH Bridget",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3997,
+     "pct": 12.348
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MANDER Tim",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 17784,
+     "pct": 54.941
+    },
+    {
+     "candidate": "GREENE David",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14585,
+     "pct": 45.059
+    }
+   ],
+   "margin": 4.94,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 45.059,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Ferny Grove",
+   "slug": "ferny-grove",
+   "elected": "FURNER Mark",
+   "party": "ALP",
+   "enrolment": 35461,
+   "formal": 31064,
+   "informal": 978,
+   "primary": [
+    {
+     "candidate": "FURNER Mark",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12590,
+     "pct": 40.529
+    },
+    {
+     "candidate": "ELSTON Nick",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12446,
+     "pct": 40.066
+    },
+    {
+     "candidate": "WORLD Elizabeth",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 4820,
+     "pct": 15.516
+    },
+    {
+     "candidate": "FOO Lisa",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1208,
+     "pct": 3.889
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "FURNER Mark",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16971,
+     "pct": 54.632
+    },
+    {
+     "candidate": "ELSTON Nick",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 14093,
+     "pct": 45.368
+    }
+   ],
+   "margin": 4.63,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 54.632,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Gaven",
+   "slug": "gaven",
+   "elected": "SCANLON Meaghan",
+   "party": "ALP",
+   "enrolment": 32785,
+   "formal": 26482,
+   "informal": 1848,
+   "primary": [
+    {
+     "candidate": "CRAMP Sid",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12210,
+     "pct": 46.107
+    },
+    {
+     "candidate": "SCANLON Meaghan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11406,
+     "pct": 43.071
+    },
+    {
+     "candidate": "SPAIN Sally",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2866,
+     "pct": 10.822
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SCANLON Meaghan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13430,
+     "pct": 50.714
+    },
+    {
+     "candidate": "CRAMP Sid",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13052,
+     "pct": 49.286
+    }
+   ],
+   "margin": 0.71,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 50.714,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Gladstone",
+   "slug": "gladstone",
+   "elected": "BUTCHER Glenn",
+   "party": "ALP",
+   "enrolment": 32216,
+   "formal": 26915,
+   "informal": 929,
+   "primary": [
+    {
+     "candidate": "BUTCHER Glenn",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 17307,
+     "pct": 64.302
+    },
+    {
+     "candidate": "LOHSE Amy",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5497,
+     "pct": 20.424
+    },
+    {
+     "candidate": "CONAGLEN Chay",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 3113,
+     "pct": 11.566
+    },
+    {
+     "candidate": "BAKER Peta",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 998,
+     "pct": 3.708
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BUTCHER Glenn",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 19028,
+     "pct": 70.697
+    },
+    {
+     "candidate": "LOHSE Amy",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7887,
+     "pct": 29.303
+    }
+   ],
+   "margin": 20.7,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Glass House",
+   "slug": "glass-house",
+   "elected": "POWELL Andrew",
+   "party": "LNP",
+   "enrolment": 33365,
+   "formal": 28773,
+   "informal": 1068,
+   "primary": [
+    {
+     "candidate": "POWELL Andrew",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 10221,
+     "pct": 35.523
+    },
+    {
+     "candidate": "HAMPSTEAD Brent",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 7557,
+     "pct": 26.264
+    },
+    {
+     "candidate": "BELL-HENSELIN Tracey",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6525,
+     "pct": 22.678
+    },
+    {
+     "candidate": "WEBER Sue",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3705,
+     "pct": 12.877
+    },
+    {
+     "candidate": "MUREAU Sue",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 765,
+     "pct": 2.659
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "POWELL Andrew",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15373,
+     "pct": 53.429
+    },
+    {
+     "candidate": "HAMPSTEAD Brent",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13400,
+     "pct": 46.571
+    }
+   ],
+   "margin": 3.43,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 46.571,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Greenslopes",
+   "slug": "greenslopes",
+   "elected": "KELLY Joe",
+   "party": "ALP",
+   "enrolment": 35771,
+   "formal": 30538,
+   "informal": 1114,
+   "primary": [
+    {
+     "candidate": "KELLY Joe",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12930,
+     "pct": 42.341
+    },
+    {
+     "candidate": "KAYE Ian",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11110,
+     "pct": 36.381
+    },
+    {
+     "candidate": "HUML Victor",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 6498,
+     "pct": 21.278
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "KELLY Joe",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 18364,
+     "pct": 60.135
+    },
+    {
+     "candidate": "KAYE Ian",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12174,
+     "pct": 39.865
+    }
+   ],
+   "margin": 10.13,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 60.135,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Gregory",
+   "slug": "gregory",
+   "elected": "MILLAR Lachlan",
+   "party": "LNP",
+   "enrolment": 24862,
+   "formal": 21112,
+   "informal": 703,
+   "primary": [
+    {
+     "candidate": "MILLAR Lachlan",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 9556,
+     "pct": 45.263
+    },
+    {
+     "candidate": "HIGGINS Mark",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5113,
+     "pct": 24.218
+    },
+    {
+     "candidate": "KERRIGAN Dave",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 4422,
+     "pct": 20.945
+    },
+    {
+     "candidate": "CURRIE Bruce",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1376,
+     "pct": 6.518
+    },
+    {
+     "candidate": "WESTON Norman",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 645,
+     "pct": 3.055
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MILLAR Lachlan",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13499,
+     "pct": 63.94
+    },
+    {
+     "candidate": "HIGGINS Mark",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7613,
+     "pct": 36.06
+    }
+   ],
+   "margin": 13.94,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Gympie",
+   "slug": "gympie",
+   "elected": "PERRETT Tony",
+   "party": "LNP",
+   "enrolment": 36955,
+   "formal": 31765,
+   "informal": 1392,
+   "primary": [
+    {
+     "candidate": "PERRETT Tony",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11829,
+     "pct": 37.239
+    },
+    {
+     "candidate": "DOBSON Chelle",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 9444,
+     "pct": 29.731
+    },
+    {
+     "candidate": "MCWILLIAM Tracey",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 7109,
+     "pct": 22.38
+    },
+    {
+     "candidate": "KENNEDY-PERRIMAN Roxanne",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1809,
+     "pct": 5.695
+    },
+    {
+     "candidate": "REARDON Donna",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1574,
+     "pct": 4.955
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PERRETT Tony",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 18640,
+     "pct": 58.681
+    },
+    {
+     "candidate": "DOBSON Chelle",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 13125,
+     "pct": 41.319
+    }
+   ],
+   "margin": 8.68,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Hervey Bay",
+   "slug": "hervey-bay",
+   "elected": "SORENSEN Ted",
+   "party": "LNP",
+   "enrolment": 37620,
+   "formal": 31946,
+   "informal": 1345,
+   "primary": [
+    {
+     "candidate": "SORENSEN Ted",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12049,
+     "pct": 37.717
+    },
+    {
+     "candidate": "TANTARI Adrian",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9282,
+     "pct": 29.055
+    },
+    {
+     "candidate": "HUXHAM Damian",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8059,
+     "pct": 25.227
+    },
+    {
+     "candidate": "CAMERON Jenni",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1619,
+     "pct": 5.068
+    },
+    {
+     "candidate": "DEAN Jannean",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 937,
+     "pct": 2.933
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SORENSEN Ted",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 18880,
+     "pct": 59.1
+    },
+    {
+     "candidate": "TANTARI Adrian",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13066,
+     "pct": 40.9
+    }
+   ],
+   "margin": 9.1,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 40.9,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Hill",
+   "slug": "hill",
+   "elected": "KNUTH Shane",
+   "party": "KAP",
+   "enrolment": 36893,
+   "formal": 31276,
+   "informal": 1153,
+   "primary": [
+    {
+     "candidate": "KNUTH Shane",
+     "party": "KAP",
+     "party_name": "Katter's Australian Party",
+     "votes": 15065,
+     "pct": 48.168
+    },
+    {
+     "candidate": "QUAGLIATA Mario",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 7136,
+     "pct": 22.816
+    },
+    {
+     "candidate": "O'BRIEN Diana",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 5923,
+     "pct": 18.938
+    },
+    {
+     "candidate": "KLOOT Johanna",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2052,
+     "pct": 6.561
+    },
+    {
+     "candidate": "WORTH Stewart",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 857,
+     "pct": 2.74
+    },
+    {
+     "candidate": "TUXFORD Chester Gordon",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 243,
+     "pct": 0.777
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "KNUTH Shane",
+     "party": "KAP",
+     "party_name": "Katter's Australian Party",
+     "votes": 21815,
+     "pct": 69.75
+    },
+    {
+     "candidate": "QUAGLIATA Mario",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 9461,
+     "pct": 30.25
+    }
+   ],
+   "margin": 19.75,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Hinchinbrook",
+   "slug": "hinchinbrook",
+   "elected": "DAMETTO Nick",
+   "party": "KAP",
+   "enrolment": 33488,
+   "formal": 28301,
+   "informal": 1208,
+   "primary": [
+    {
+     "candidate": "CRIPPS Andrew",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 8523,
+     "pct": 30.116
+    },
+    {
+     "candidate": "BELL Margaret",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6232,
+     "pct": 22.02
+    },
+    {
+     "candidate": "DAMETTO Nick",
+     "party": "KAP",
+     "party_name": "Katter's Australian Party",
+     "votes": 5929,
+     "pct": 20.95
+    },
+    {
+     "candidate": "JACOB Paul",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 5384,
+     "pct": 19.024
+    },
+    {
+     "candidate": "RAFFLES Peter",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1316,
+     "pct": 4.65
+    },
+    {
+     "candidate": "BURNESS Lyle",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 917,
+     "pct": 3.24
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "DAMETTO Nick",
+     "party": "KAP",
+     "party_name": "Katter's Australian Party",
+     "votes": 16288,
+     "pct": 57.553
+    },
+    {
+     "candidate": "CRIPPS Andrew",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12013,
+     "pct": 42.447
+    }
+   ],
+   "margin": 7.55,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Inala",
+   "slug": "inala",
+   "elected": "PALASZCZUK Annastacia",
+   "party": "ALP",
+   "enrolment": 33970,
+   "formal": 27306,
+   "informal": 2105,
+   "primary": [
+    {
+     "candidate": "PALASZCZUK Annastacia",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 18558,
+     "pct": 67.963
+    },
+    {
+     "candidate": "MCFARLANE Leanne",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 5651,
+     "pct": 20.695
+    },
+    {
+     "candidate": "SIDHU Nav Singh",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3097,
+     "pct": 11.342
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PALASZCZUK Annastacia",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 20778,
+     "pct": 76.093
+    },
+    {
+     "candidate": "MCFARLANE Leanne",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 6528,
+     "pct": 23.907
+    }
+   ],
+   "margin": 26.09,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 76.093,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Ipswich",
+   "slug": "ipswich",
+   "elected": "HOWARD Jennifer",
+   "party": "ALP",
+   "enrolment": 31774,
+   "formal": 26709,
+   "informal": 1473,
+   "primary": [
+    {
+     "candidate": "HOWARD Jennifer",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12815,
+     "pct": 47.98
+    },
+    {
+     "candidate": "ROBERTS Malcolm",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7106,
+     "pct": 26.605
+    },
+    {
+     "candidate": "CASWELL Andrew",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 3712,
+     "pct": 13.898
+    },
+    {
+     "candidate": "MORRISSEY Brett",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2319,
+     "pct": 8.682
+    },
+    {
+     "candidate": "AGGETT Troy",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 757,
+     "pct": 2.834
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HOWARD Jennifer",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16262,
+     "pct": 60.886
+    },
+    {
+     "candidate": "ROBERTS Malcolm",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 10447,
+     "pct": 39.114
+    }
+   ],
+   "margin": 10.89,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Ipswich West",
+   "slug": "ipswich-west",
+   "elected": "MADDEN Jim",
+   "party": "ALP",
+   "enrolment": 33898,
+   "formal": 28687,
+   "informal": 1427,
+   "primary": [
+    {
+     "candidate": "MADDEN Jim",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13560,
+     "pct": 47.269
+    },
+    {
+     "candidate": "TRUSSELL Brad",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8078,
+     "pct": 28.159
+    },
+    {
+     "candidate": "O'NEILL Anna",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 4746,
+     "pct": 16.544
+    },
+    {
+     "candidate": "MULLER Keith",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2303,
+     "pct": 8.028
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MADDEN Jim",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16844,
+     "pct": 58.716
+    },
+    {
+     "candidate": "TRUSSELL Brad",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 11843,
+     "pct": 41.284
+    }
+   ],
+   "margin": 8.72,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Jordan",
+   "slug": "jordan",
+   "elected": "MULLEN Charis",
+   "party": "ALP",
+   "enrolment": 33336,
+   "formal": 27825,
+   "informal": 1858,
+   "primary": [
+    {
+     "candidate": "MULLEN Charis",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11026,
+     "pct": 39.626
+    },
+    {
+     "candidate": "PUCCI Michael",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5255,
+     "pct": 18.886
+    },
+    {
+     "candidate": "MURRAY Duncan",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 4012,
+     "pct": 14.419
+    },
+    {
+     "candidate": "CUTCLIFFE Phil",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2682,
+     "pct": 9.639
+    },
+    {
+     "candidate": "HODGSON Steve",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2293,
+     "pct": 8.241
+    },
+    {
+     "candidate": "PURCELL Steven",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2068,
+     "pct": 7.432
+    },
+    {
+     "candidate": "ERVIK Peter",
+     "party": "X_CLCRNT",
+     "party_name": "Civil Liberties, Consumer Rights, No-Tolls",
+     "votes": 489,
+     "pct": 1.757
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MULLEN Charis",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16669,
+     "pct": 59.907
+    },
+    {
+     "candidate": "PUCCI Michael",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 11156,
+     "pct": 40.093
+    }
+   ],
+   "margin": 9.91,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Kawana",
+   "slug": "kawana",
+   "elected": "BLEIJIE Jarrod",
+   "party": "LNP",
+   "enrolment": 34844,
+   "formal": 29100,
+   "informal": 1499,
+   "primary": [
+    {
+     "candidate": "BLEIJIE Jarrod",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 16268,
+     "pct": 55.904
+    },
+    {
+     "candidate": "MOSS Mark",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 7415,
+     "pct": 25.481
+    },
+    {
+     "candidate": "SPENDLOVE Annette",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3058,
+     "pct": 10.509
+    },
+    {
+     "candidate": "JESSOP Michael",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1472,
+     "pct": 5.058
+    },
+    {
+     "candidate": "DAVEY Jeremy",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 887,
+     "pct": 3.048
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BLEIJIE Jarrod",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 18354,
+     "pct": 63.072
+    },
+    {
+     "candidate": "MOSS Mark",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10746,
+     "pct": 36.928
+    }
+   ],
+   "margin": 13.07,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 36.928,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Keppel",
+   "slug": "keppel",
+   "elected": "LAUGA Brittany",
+   "party": "ALP",
+   "enrolment": 35307,
+   "formal": 30899,
+   "informal": 1098,
+   "primary": [
+    {
+     "candidate": "LAUGA Brittany",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13304,
+     "pct": 43.056
+    },
+    {
+     "candidate": "LOTH Matt",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7865,
+     "pct": 25.454
+    },
+    {
+     "candidate": "BLUNDELL Peter",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 7691,
+     "pct": 24.891
+    },
+    {
+     "candidate": "MULLBRICK Clancy",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2039,
+     "pct": 6.599
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LAUGA Brittany",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16419,
+     "pct": 53.138
+    },
+    {
+     "candidate": "LOTH Matt",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 14480,
+     "pct": 46.862
+    }
+   ],
+   "margin": 3.14,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Kurwongbah",
+   "slug": "kurwongbah",
+   "elected": "KING Shane",
+   "party": "ALP",
+   "enrolment": 34780,
+   "formal": 29607,
+   "informal": 1374,
+   "primary": [
+    {
+     "candidate": "KING Shane",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12255,
+     "pct": 41.392
+    },
+    {
+     "candidate": "COOK Allan",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 7247,
+     "pct": 24.477
+    },
+    {
+     "candidate": "HADDOCK Karen",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6452,
+     "pct": 21.792
+    },
+    {
+     "candidate": "DOHERTY Rachel",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2519,
+     "pct": 8.508
+    },
+    {
+     "candidate": "PROHASKA Thor",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1134,
+     "pct": 3.83
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "KING Shane",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16874,
+     "pct": 56.993
+    },
+    {
+     "candidate": "COOK Allan",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12733,
+     "pct": 43.007
+    }
+   ],
+   "margin": 6.99,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 56.993,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Lockyer",
+   "slug": "lockyer",
+   "elected": "MCDONALD Jim",
+   "party": "LNP",
+   "enrolment": 33559,
+   "formal": 28972,
+   "informal": 1176,
+   "primary": [
+    {
+     "candidate": "MCDONALD Jim",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 10377,
+     "pct": 35.817
+    },
+    {
+     "candidate": "SAVAGE Jim",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 9960,
+     "pct": 34.378
+    },
+    {
+     "candidate": "LINCOLN Nicole",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 6635,
+     "pct": 22.901
+    },
+    {
+     "candidate": "SIMONS Ian",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1317,
+     "pct": 4.546
+    },
+    {
+     "candidate": "PARR Tony",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 683,
+     "pct": 2.357
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MCDONALD Jim",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15666,
+     "pct": 54.073
+    },
+    {
+     "candidate": "SAVAGE Jim",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 13306,
+     "pct": 45.927
+    }
+   ],
+   "margin": 4.07,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Logan",
+   "slug": "logan",
+   "elected": "POWER Linus",
+   "party": "ALP",
+   "enrolment": 33002,
+   "formal": 27146,
+   "informal": 1638,
+   "primary": [
+    {
+     "candidate": "POWER Linus",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11488,
+     "pct": 42.319
+    },
+    {
+     "candidate": "BANNAN Scott",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8387,
+     "pct": 30.896
+    },
+    {
+     "candidate": "VICARIO Gloria",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 4968,
+     "pct": 18.301
+    },
+    {
+     "candidate": "JENKINSON Liam",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1327,
+     "pct": 4.888
+    },
+    {
+     "candidate": "COX Danielle",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 616,
+     "pct": 2.269
+    },
+    {
+     "candidate": "MURPHY Daniel",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 360,
+     "pct": 1.326
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "POWER Linus",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15426,
+     "pct": 56.826
+    },
+    {
+     "candidate": "BANNAN Scott",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 11720,
+     "pct": 43.174
+    }
+   ],
+   "margin": 6.83,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Lytton",
+   "slug": "lytton",
+   "elected": "PEASE Joan",
+   "party": "ALP",
+   "enrolment": 36237,
+   "formal": 31506,
+   "informal": 1057,
+   "primary": [
+    {
+     "candidate": "PEASE Joan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15416,
+     "pct": 48.93
+    },
+    {
+     "candidate": "STRAHAN Karren",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 7663,
+     "pct": 24.322
+    },
+    {
+     "candidate": "BLACK Suzanne",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4854,
+     "pct": 15.407
+    },
+    {
+     "candidate": "AUSTIN Ken",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3573,
+     "pct": 11.341
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PEASE Joan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 19541,
+     "pct": 62.023
+    },
+    {
+     "candidate": "STRAHAN Karren",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11965,
+     "pct": 37.977
+    }
+   ],
+   "margin": 12.02,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 62.023,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Macalister",
+   "slug": "macalister",
+   "elected": "MCMAHON Melissa",
+   "party": "ALP",
+   "enrolment": 34898,
+   "formal": 27849,
+   "informal": 1973,
+   "primary": [
+    {
+     "candidate": "MCMAHON Melissa",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10210,
+     "pct": 36.662
+    },
+    {
+     "candidate": "VAN MANEN Judi",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 7421,
+     "pct": 26.647
+    },
+    {
+     "candidate": "JOHNSTON Hetty",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 6448,
+     "pct": 23.153
+    },
+    {
+     "candidate": "NEHRING Gabi",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1851,
+     "pct": 6.647
+    },
+    {
+     "candidate": "MUSGRAVE Ben",
+     "party": "X_CLCRNT",
+     "party_name": "Civil Liberties, Consumer Rights, No-Tolls",
+     "votes": 917,
+     "pct": 3.293
+    },
+    {
+     "candidate": "BRADLEY Greg",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 522,
+     "pct": 1.874
+    },
+    {
+     "candidate": "CLANCY Janelle",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 480,
+     "pct": 1.724
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MCMAHON Melissa",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15999,
+     "pct": 57.449
+    },
+    {
+     "candidate": "VAN MANEN Judi",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11850,
+     "pct": 42.551
+    }
+   ],
+   "margin": 7.45,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 57.449,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Mackay",
+   "slug": "mackay",
+   "elected": "GILBERT Julieanne",
+   "party": "ALP",
+   "enrolment": 37259,
+   "formal": 30948,
+   "informal": 1445,
+   "primary": [
+    {
+     "candidate": "GILBERT Julieanne",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13281,
+     "pct": 42.914
+    },
+    {
+     "candidate": "BATZLOFF Nicole",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 7657,
+     "pct": 24.742
+    },
+    {
+     "candidate": "KEIOSKIE Jeff",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7009,
+     "pct": 22.648
+    },
+    {
+     "candidate": "JENNINGS Elliot",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1542,
+     "pct": 4.983
+    },
+    {
+     "candidate": "McCANN Martin",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1459,
+     "pct": 4.714
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "GILBERT Julieanne",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 18054,
+     "pct": 58.337
+    },
+    {
+     "candidate": "BATZLOFF Nicole",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12894,
+     "pct": 41.663
+    }
+   ],
+   "margin": 8.34,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 58.337,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Maiwar",
+   "slug": "maiwar",
+   "elected": "BERKMAN Michael",
+   "party": "GRN",
+   "enrolment": 37608,
+   "formal": 31862,
+   "informal": 785,
+   "primary": [
+    {
+     "candidate": "EMERSON Scott",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13352,
+     "pct": 41.906
+    },
+    {
+     "candidate": "BERKMAN Michael",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 8850,
+     "pct": 27.776
+    },
+    {
+     "candidate": "KING Ali",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 8772,
+     "pct": 27.531
+    },
+    {
+     "candidate": "DIAMOND Anita",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 888,
+     "pct": 2.787
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BERKMAN Michael",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 16449,
+     "pct": 51.626
+    },
+    {
+     "candidate": "EMERSON Scott",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15413,
+     "pct": 48.374
+    }
+   ],
+   "margin": 1.63,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Mansfield",
+   "slug": "mansfield",
+   "elected": "MCMILLAN Corrine",
+   "party": "ALP",
+   "enrolment": 33859,
+   "formal": 28879,
+   "informal": 1243,
+   "primary": [
+    {
+     "candidate": "WALKER Ian",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11610,
+     "pct": 40.202
+    },
+    {
+     "candidate": "MCMILLAN Corrine",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11375,
+     "pct": 39.388
+    },
+    {
+     "candidate": "BELL Barbara",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3263,
+     "pct": 11.299
+    },
+    {
+     "candidate": "SYMES Neil",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 2631,
+     "pct": 9.11
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MCMILLAN Corrine",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14908,
+     "pct": 51.622
+    },
+    {
+     "candidate": "WALKER Ian",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13971,
+     "pct": 48.378
+    }
+   ],
+   "margin": 1.62,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 51.622,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Maroochydore",
+   "slug": "maroochydore",
+   "elected": "SIMPSON Fiona",
+   "party": "LNP",
+   "enrolment": 34346,
+   "formal": 28346,
+   "informal": 1101,
+   "primary": [
+    {
+     "candidate": "SIMPSON Fiona",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12661,
+     "pct": 44.666
+    },
+    {
+     "candidate": "MCGLONE Julie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 7157,
+     "pct": 25.249
+    },
+    {
+     "candidate": "YOUNG Cam",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4592,
+     "pct": 16.2
+    },
+    {
+     "candidate": "BRYAR Daniel",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3936,
+     "pct": 13.886
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SIMPSON Fiona",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 16587,
+     "pct": 58.516
+    },
+    {
+     "candidate": "MCGLONE Julie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11759,
+     "pct": 41.484
+    }
+   ],
+   "margin": 8.52,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 41.484,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Maryborough",
+   "slug": "maryborough",
+   "elected": "SAUNDERS Bruce",
+   "party": "ALP",
+   "enrolment": 36130,
+   "formal": 31446,
+   "informal": 1237,
+   "primary": [
+    {
+     "candidate": "SAUNDERS Bruce",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14208,
+     "pct": 45.182
+    },
+    {
+     "candidate": "HANSEN James",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 9546,
+     "pct": 30.357
+    },
+    {
+     "candidate": "KINGSTON Richard",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 5671,
+     "pct": 18.034
+    },
+    {
+     "candidate": "ARMSTRONG Craig",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1102,
+     "pct": 3.504
+    },
+    {
+     "candidate": "CURRIE Roger M",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 919,
+     "pct": 2.922
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SAUNDERS Bruce",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16497,
+     "pct": 52.461
+    },
+    {
+     "candidate": "HANSEN James",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 14949,
+     "pct": 47.539
+    }
+   ],
+   "margin": 2.46,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "McConnel",
+   "slug": "mcconnel",
+   "elected": "GRACE Grace",
+   "party": "ALP",
+   "enrolment": 35013,
+   "formal": 27433,
+   "informal": 1128,
+   "primary": [
+    {
+     "candidate": "FORSTER Jamie",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 10017,
+     "pct": 36.514
+    },
+    {
+     "candidate": "GRACE Grace",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9238,
+     "pct": 33.675
+    },
+    {
+     "candidate": "LOVEJOY Kirsten",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 7436,
+     "pct": 27.106
+    },
+    {
+     "candidate": "DOBINSON John",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 283,
+     "pct": 1.032
+    },
+    {
+     "candidate": "GILMOUR Edward",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 242,
+     "pct": 0.882
+    },
+    {
+     "candidate": "EMANUEL Kamala",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 217,
+     "pct": 0.791
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "GRACE Grace",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15874,
+     "pct": 57.865
+    },
+    {
+     "candidate": "FORSTER Jamie",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11559,
+     "pct": 42.135
+    }
+   ],
+   "margin": 7.87,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 57.865,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Mermaid Beach",
+   "slug": "mermaid-beach",
+   "elected": "STEVENS Ray",
+   "party": "LNP",
+   "enrolment": 34479,
+   "formal": 26857,
+   "informal": 1910,
+   "primary": [
+    {
+     "candidate": "STEVENS Ray",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12232,
+     "pct": 45.545
+    },
+    {
+     "candidate": "BLUNDELL-THORNTON Joshua",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 6646,
+     "pct": 24.746
+    },
+    {
+     "candidate": "HECKE Mona",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 3162,
+     "pct": 11.773
+    },
+    {
+     "candidate": "WAINWRIGHT Helen",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2599,
+     "pct": 9.677
+    },
+    {
+     "candidate": "BERIC Saraya",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1286,
+     "pct": 4.788
+    },
+    {
+     "candidate": "ALLPORT Ric",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 541,
+     "pct": 2.014
+    },
+    {
+     "candidate": "PEAD Gary",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 391,
+     "pct": 1.456
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "STEVENS Ray",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15110,
+     "pct": 56.261
+    },
+    {
+     "candidate": "BLUNDELL-THORNTON Joshua",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11747,
+     "pct": 43.739
+    }
+   ],
+   "margin": 6.26,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 43.739,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Miller",
+   "slug": "miller",
+   "elected": "BAILEY Mark",
+   "party": "ALP",
+   "enrolment": 34567,
+   "formal": 29972,
+   "informal": 816,
+   "primary": [
+    {
+     "candidate": "BAILEY Mark",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11403,
+     "pct": 38.046
+    },
+    {
+     "candidate": "KIPPEN Belinda",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 10969,
+     "pct": 36.597
+    },
+    {
+     "candidate": "CLARKE Deniz",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 6567,
+     "pct": 21.91
+    },
+    {
+     "candidate": "STARR Ted",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1033,
+     "pct": 3.447
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BAILEY Mark",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 17439,
+     "pct": 58.184
+    },
+    {
+     "candidate": "KIPPEN Belinda",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12533,
+     "pct": 41.816
+    }
+   ],
+   "margin": 8.18,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 58.184,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Mirani",
+   "slug": "mirani",
+   "elected": "ANDREW Stephen",
+   "party": "ONP",
+   "enrolment": 32764,
+   "formal": 28826,
+   "informal": 1033,
+   "primary": [
+    {
+     "candidate": "PEARCE Jim",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10592,
+     "pct": 36.745
+    },
+    {
+     "candidate": "ANDREW Stephen",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 9234,
+     "pct": 32.034
+    },
+    {
+     "candidate": "LATTER Kerry",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 7753,
+     "pct": 26.896
+    },
+    {
+     "candidate": "CARLISLE Christine",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1247,
+     "pct": 4.326
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ANDREW Stephen",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 15801,
+     "pct": 54.815
+    },
+    {
+     "candidate": "PEARCE Jim",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13025,
+     "pct": 45.185
+    }
+   ],
+   "margin": 4.81,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Moggill",
+   "slug": "moggill",
+   "elected": "ROWAN Christian",
+   "party": "LNP",
+   "enrolment": 34904,
+   "formal": 30991,
+   "informal": 873,
+   "primary": [
+    {
+     "candidate": "ROWAN Christian",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15085,
+     "pct": 48.675
+    },
+    {
+     "candidate": "JONES Evan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 8212,
+     "pct": 26.498
+    },
+    {
+     "candidate": "MCCANE Lawson",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 6479,
+     "pct": 20.906
+    },
+    {
+     "candidate": "RAYWARD Amy",
+     "party": "X_CLCRNT",
+     "party_name": "Civil Liberties, Consumer Rights, No-Tolls",
+     "votes": 1215,
+     "pct": 3.92
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ROWAN Christian",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 17055,
+     "pct": 55.032
+    },
+    {
+     "candidate": "JONES Evan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13936,
+     "pct": 44.968
+    }
+   ],
+   "margin": 5.03,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 44.968,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Morayfield",
+   "slug": "morayfield",
+   "elected": "RYAN Mark",
+   "party": "ALP",
+   "enrolment": 34615,
+   "formal": 28632,
+   "informal": 1335,
+   "primary": [
+    {
+     "candidate": "RYAN Mark",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13101,
+     "pct": 45.756
+    },
+    {
+     "candidate": "HANSEN Rodney",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7223,
+     "pct": 25.227
+    },
+    {
+     "candidate": "SNOW Jason",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 5744,
+     "pct": 20.061
+    },
+    {
+     "candidate": "BEHRENS Gavin",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1727,
+     "pct": 6.032
+    },
+    {
+     "candidate": "JANULEWICZ Jamie",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 837,
+     "pct": 2.923
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "RYAN Mark",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16814,
+     "pct": 58.725
+    },
+    {
+     "candidate": "HANSEN Rodney",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 11818,
+     "pct": 41.275
+    }
+   ],
+   "margin": 8.73,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Mount Ommaney",
+   "slug": "mount-ommaney",
+   "elected": "PUGH Jess",
+   "party": "ALP",
+   "enrolment": 35305,
+   "formal": 30946,
+   "informal": 1088,
+   "primary": [
+    {
+     "candidate": "PUGH Jess",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13215,
+     "pct": 42.703
+    },
+    {
+     "candidate": "SMITH Tarnya",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11270,
+     "pct": 36.418
+    },
+    {
+     "candidate": "MULKEARNS Jenny",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 4211,
+     "pct": 13.608
+    },
+    {
+     "candidate": "EUGARDE Ian",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 2250,
+     "pct": 7.271
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PUGH Jess",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 17255,
+     "pct": 55.758
+    },
+    {
+     "candidate": "SMITH Tarnya",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13691,
+     "pct": 44.242
+    }
+   ],
+   "margin": 5.76,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 55.758,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Mudgeeraba",
+   "slug": "mudgeeraba",
+   "elected": "BATES Ros",
+   "party": "LNP",
+   "enrolment": 36268,
+   "formal": 29733,
+   "informal": 1605,
+   "primary": [
+    {
+     "candidate": "BATES Ros",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13695,
+     "pct": 46.06
+    },
+    {
+     "candidate": "TAYLOR Paul",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 6977,
+     "pct": 23.466
+    },
+    {
+     "candidate": "LIDDELL Andrew",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5288,
+     "pct": 17.785
+    },
+    {
+     "candidate": "DUNCAN Rod",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2763,
+     "pct": 9.293
+    },
+    {
+     "candidate": "SHERWOOD Bill",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 625,
+     "pct": 2.102
+    },
+    {
+     "candidate": "PEAD Jill",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 385,
+     "pct": 1.295
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BATES Ros",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 17795,
+     "pct": 59.849
+    },
+    {
+     "candidate": "TAYLOR Paul",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11938,
+     "pct": 40.151
+    }
+   ],
+   "margin": 9.85,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 40.151,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Mulgrave",
+   "slug": "mulgrave",
+   "elected": "PITT Curtis",
+   "party": "ALP",
+   "enrolment": 34190,
+   "formal": 27558,
+   "informal": 1416,
+   "primary": [
+    {
+     "candidate": "PITT Curtis",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13256,
+     "pct": 48.102
+    },
+    {
+     "candidate": "SAMPERI Karina",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 6287,
+     "pct": 22.814
+    },
+    {
+     "candidate": "BERTUCH Sue",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6158,
+     "pct": 22.346
+    },
+    {
+     "candidate": "MURRAY Carmel",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1857,
+     "pct": 6.739
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PITT Curtis",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16789,
+     "pct": 60.922
+    },
+    {
+     "candidate": "SAMPERI Karina",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 10769,
+     "pct": 39.078
+    }
+   ],
+   "margin": 10.92,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 60.922,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Mundingburra",
+   "slug": "mundingburra",
+   "elected": "O'ROURKE Coralee",
+   "party": "ALP",
+   "enrolment": 33801,
+   "formal": 27907,
+   "informal": 1423,
+   "primary": [
+    {
+     "candidate": "O'ROURKE Coralee",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 8768,
+     "pct": 31.419
+    },
+    {
+     "candidate": "DERLAGEN Matthew",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 7290,
+     "pct": 26.122
+    },
+    {
+     "candidate": "CHARLWOOD Mal",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4652,
+     "pct": 16.67
+    },
+    {
+     "candidate": "ABRAHAM Mike",
+     "party": "KAP",
+     "party_name": "Katter's Australian Party",
+     "votes": 3874,
+     "pct": 13.882
+    },
+    {
+     "candidate": "BROWN Jenny",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2130,
+     "pct": 7.632
+    },
+    {
+     "candidate": "EASZON Dennis",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 468,
+     "pct": 1.677
+    },
+    {
+     "candidate": "BIRRELL Alan R",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 365,
+     "pct": 1.308
+    },
+    {
+     "candidate": "VIRGO Geoff",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 360,
+     "pct": 1.29
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "O'ROURKE Coralee",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14268,
+     "pct": 51.127
+    },
+    {
+     "candidate": "DERLAGEN Matthew",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13639,
+     "pct": 48.873
+    }
+   ],
+   "margin": 1.13,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 51.127,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Murrumba",
+   "slug": "murrumba",
+   "elected": "MILES Steven",
+   "party": "ALP",
+   "enrolment": 37050,
+   "formal": 30907,
+   "informal": 1437,
+   "primary": [
+    {
+     "candidate": "MILES Steven",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14111,
+     "pct": 45.656
+    },
+    {
+     "candidate": "GULLEY Reg",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 7953,
+     "pct": 25.732
+    },
+    {
+     "candidate": "DARE Scott",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6002,
+     "pct": 19.42
+    },
+    {
+     "candidate": "KENNEDY Jason",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2841,
+     "pct": 9.192
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MILES Steven",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 18396,
+     "pct": 59.52
+    },
+    {
+     "candidate": "GULLEY Reg",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12511,
+     "pct": 40.48
+    }
+   ],
+   "margin": 9.52,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 59.52,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Nanango",
+   "slug": "nanango",
+   "elected": "FRECKLINGTON Deb",
+   "party": "LNP",
+   "enrolment": 36217,
+   "formal": 31361,
+   "informal": 1091,
+   "primary": [
+    {
+     "candidate": "FRECKLINGTON Deb",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15053,
+     "pct": 47.999
+    },
+    {
+     "candidate": "GRANT Douglas",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8606,
+     "pct": 27.442
+    },
+    {
+     "candidate": "RANKIN Ben",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 6044,
+     "pct": 19.272
+    },
+    {
+     "candidate": "HARBISON John",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1658,
+     "pct": 5.287
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "FRECKLINGTON Deb",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 19871,
+     "pct": 63.362
+    },
+    {
+     "candidate": "GRANT Douglas",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 11490,
+     "pct": 36.638
+    }
+   ],
+   "margin": 13.36,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Nicklin",
+   "slug": "nicklin",
+   "elected": "HUNT Marty",
+   "party": "LNP",
+   "enrolment": 32813,
+   "formal": 27546,
+   "informal": 1278,
+   "primary": [
+    {
+     "candidate": "HUNT Marty",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 8732,
+     "pct": 31.7
+    },
+    {
+     "candidate": "RAETHEL Justin",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 6931,
+     "pct": 25.162
+    },
+    {
+     "candidate": "FORD Steven",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5790,
+     "pct": 21.019
+    },
+    {
+     "candidate": "TYRRELL Mick",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3413,
+     "pct": 12.39
+    },
+    {
+     "candidate": "HODGES Jeffrey",
+     "party": "X_CLCRNT",
+     "party_name": "Civil Liberties, Consumer Rights, No-Tolls",
+     "votes": 1003,
+     "pct": 3.641
+    },
+    {
+     "candidate": "MOORE Tony R.",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 972,
+     "pct": 3.529
+    },
+    {
+     "candidate": "RADIC Rachel",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 705,
+     "pct": 2.559
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HUNT Marty",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15227,
+     "pct": 55.278
+    },
+    {
+     "candidate": "RAETHEL Justin",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12319,
+     "pct": 44.722
+    }
+   ],
+   "margin": 5.28,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 44.722,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Ninderry",
+   "slug": "ninderry",
+   "elected": "PURDIE Dan",
+   "party": "LNP",
+   "enrolment": 35706,
+   "formal": 29636,
+   "informal": 1546,
+   "primary": [
+    {
+     "candidate": "PURDIE Dan",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 10703,
+     "pct": 36.115
+    },
+    {
+     "candidate": "GISSANE Bill",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 6744,
+     "pct": 22.756
+    },
+    {
+     "candidate": "WARD Barry",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5529,
+     "pct": 18.656
+    },
+    {
+     "candidate": "ETHERIDGE Sue",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 4237,
+     "pct": 14.297
+    },
+    {
+     "candidate": "BRUINSMA Richard",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1479,
+     "pct": 4.991
+    },
+    {
+     "candidate": "RILEY Jamila",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 944,
+     "pct": 3.185
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PURDIE Dan",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 17301,
+     "pct": 58.378
+    },
+    {
+     "candidate": "GISSANE Bill",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12335,
+     "pct": 41.622
+    }
+   ],
+   "margin": 8.38,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 41.622,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Noosa",
+   "slug": "noosa",
+   "elected": "BOLTON Sandy",
+   "party": "IND",
+   "enrolment": 35759,
+   "formal": 30194,
+   "informal": 1171,
+   "primary": [
+    {
+     "candidate": "BOLTON Sandy",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 9479,
+     "pct": 31.394
+    },
+    {
+     "candidate": "ELMES Glen",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 8892,
+     "pct": 29.45
+    },
+    {
+     "candidate": "DENHAM Mark",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 3869,
+     "pct": 12.814
+    },
+    {
+     "candidate": "WHITESIDE Eve-Marie",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 3551,
+     "pct": 11.761
+    },
+    {
+     "candidate": "JENKINS Phillip",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3492,
+     "pct": 11.565
+    },
+    {
+     "candidate": "WHITE Aaron",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 610,
+     "pct": 2.02
+    },
+    {
+     "candidate": "BRISTOW Robin",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 301,
+     "pct": 0.997
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BOLTON Sandy",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 18578,
+     "pct": 61.529
+    },
+    {
+     "candidate": "ELMES Glen",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11616,
+     "pct": 38.471
+    }
+   ],
+   "margin": 11.53,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Nudgee",
+   "slug": "nudgee",
+   "elected": "LINARD Leanne",
+   "party": "ALP",
+   "enrolment": 36606,
+   "formal": 30999,
+   "informal": 1277,
+   "primary": [
+    {
+     "candidate": "LINARD Leanne",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16074,
+     "pct": 51.853
+    },
+    {
+     "candidate": "GLAZE Debbie",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 8896,
+     "pct": 28.698
+    },
+    {
+     "candidate": "ACKERMAN Ell-Leigh",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 4130,
+     "pct": 13.323
+    },
+    {
+     "candidate": "SIMPSON Anthony",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1899,
+     "pct": 6.126
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LINARD Leanne",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 19940,
+     "pct": 64.325
+    },
+    {
+     "candidate": "GLAZE Debbie",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11059,
+     "pct": 35.675
+    }
+   ],
+   "margin": 14.33,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 64.325,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Oodgeroo",
+   "slug": "oodgeroo",
+   "elected": "ROBINSON Mark",
+   "party": "LNP",
+   "enrolment": 32116,
+   "formal": 27750,
+   "informal": 1282,
+   "primary": [
+    {
+     "candidate": "ROBINSON Mark",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 14549,
+     "pct": 52.429
+    },
+    {
+     "candidate": "AUSTIN Tony",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9389,
+     "pct": 33.834
+    },
+    {
+     "candidate": "SCOTT Brad",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3812,
+     "pct": 13.737
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ROBINSON Mark",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15883,
+     "pct": 57.236
+    },
+    {
+     "candidate": "AUSTIN Tony",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11867,
+     "pct": 42.764
+    }
+   ],
+   "margin": 7.24,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 42.764,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Pine Rivers",
+   "slug": "pine-rivers",
+   "elected": "BOYD Nikki",
+   "party": "ALP",
+   "enrolment": 37031,
+   "formal": 32489,
+   "informal": 1314,
+   "primary": [
+    {
+     "candidate": "BOYD Nikki",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12002,
+     "pct": 36.942
+    },
+    {
+     "candidate": "THOMPSON Chris",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 8727,
+     "pct": 26.861
+    },
+    {
+     "candidate": "WARREN Peter",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 3956,
+     "pct": 12.176
+    },
+    {
+     "candidate": "MARGARITIS Jack",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2849,
+     "pct": 8.769
+    },
+    {
+     "candidate": "HOLSWICH Seath",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2545,
+     "pct": 7.833
+    },
+    {
+     "candidate": "KOSENKO Michael",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2055,
+     "pct": 6.325
+    },
+    {
+     "candidate": "FRENCH Greg",
+     "party": "X_CLCRNT",
+     "party_name": "Civil Liberties, Consumer Rights, No-Tolls",
+     "votes": 355,
+     "pct": 1.093
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BOYD Nikki",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 18255,
+     "pct": 56.188
+    },
+    {
+     "candidate": "THOMPSON Chris",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 14234,
+     "pct": 43.812
+    }
+   ],
+   "margin": 6.19,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 56.188,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Pumicestone",
+   "slug": "pumicestone",
+   "elected": "WILSON Simone",
+   "party": "LNP",
+   "enrolment": 35004,
+   "formal": 29535,
+   "informal": 1287,
+   "primary": [
+    {
+     "candidate": "HOOGWAERTS Michael",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10506,
+     "pct": 35.571
+    },
+    {
+     "candidate": "WILSON Simone",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 8825,
+     "pct": 29.88
+    },
+    {
+     "candidate": "FAHEY Greg",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6894,
+     "pct": 23.342
+    },
+    {
+     "candidate": "LONGLAND Tony",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1464,
+     "pct": 4.957
+    },
+    {
+     "candidate": "WILLIAMS Rick",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1347,
+     "pct": 4.561
+    },
+    {
+     "candidate": "BURGESS Jason",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 499,
+     "pct": 1.69
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WILSON Simone",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15015,
+     "pct": 50.838
+    },
+    {
+     "candidate": "HOOGWAERTS Michael",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14520,
+     "pct": 49.162
+    }
+   ],
+   "margin": 0.84,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 49.162,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Redcliffe",
+   "slug": "redcliffe",
+   "elected": "D'ATH Yvette",
+   "party": "ALP",
+   "enrolment": 36684,
+   "formal": 30646,
+   "informal": 1498,
+   "primary": [
+    {
+     "candidate": "D'ATH Yvette",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13851,
+     "pct": 45.197
+    },
+    {
+     "candidate": "DOOLEY Kerri-Anne",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11414,
+     "pct": 37.245
+    },
+    {
+     "candidate": "BOVILL James",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2446,
+     "pct": 7.981
+    },
+    {
+     "candidate": "PHILP Ian",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1087,
+     "pct": 3.547
+    },
+    {
+     "candidate": "YOUNG Graham",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1078,
+     "pct": 3.518
+    },
+    {
+     "candidate": "JARVIS Shayne",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 770,
+     "pct": 2.513
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "D'ATH Yvette",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16811,
+     "pct": 54.855
+    },
+    {
+     "candidate": "DOOLEY Kerri-Anne",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13835,
+     "pct": 45.145
+    }
+   ],
+   "margin": 4.85,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 54.855,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Redlands",
+   "slug": "redlands",
+   "elected": "RICHARDS Kim",
+   "party": "ALP",
+   "enrolment": 34632,
+   "formal": 29704,
+   "informal": 1243,
+   "primary": [
+    {
+     "candidate": "RICHARDS Kim",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9591,
+     "pct": 32.289
+    },
+    {
+     "candidate": "MCEACHAN Matt",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 9435,
+     "pct": 31.763
+    },
+    {
+     "candidate": "QUICK Jason",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5262,
+     "pct": 17.715
+    },
+    {
+     "candidate": "DOWLING Peter",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2889,
+     "pct": 9.726
+    },
+    {
+     "candidate": "KEOGH David",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2527,
+     "pct": 8.507
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "RICHARDS Kim",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15760,
+     "pct": 53.057
+    },
+    {
+     "candidate": "MCEACHAN Matt",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13944,
+     "pct": 46.943
+    }
+   ],
+   "margin": 3.06,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 53.057,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Rockhampton",
+   "slug": "rockhampton",
+   "elected": "O'ROURKE Barry",
+   "party": "ALP",
+   "enrolment": 35801,
+   "formal": 30486,
+   "informal": 1362,
+   "primary": [
+    {
+     "candidate": "O'ROURKE Barry",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9675,
+     "pct": 31.736
+    },
+    {
+     "candidate": "STRELOW Margaret",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 7174,
+     "pct": 23.532
+    },
+    {
+     "candidate": "ROTHERY Wade",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6521,
+     "pct": 21.39
+    },
+    {
+     "candidate": "RODGERS Douglas",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 5442,
+     "pct": 17.851
+    },
+    {
+     "candidate": "GIAMARELOS Kate",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1674,
+     "pct": 5.491
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "O'ROURKE Barry",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16825,
+     "pct": 55.189
+    },
+    {
+     "candidate": "ROTHERY Wade",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 13661,
+     "pct": 44.811
+    }
+   ],
+   "margin": 5.19,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Sandgate",
+   "slug": "sandgate",
+   "elected": "HINCHLIFFE Stirling",
+   "party": "ALP",
+   "enrolment": 36123,
+   "formal": 31456,
+   "informal": 1150,
+   "primary": [
+    {
+     "candidate": "HINCHLIFFE Stirling",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15460,
+     "pct": 49.148
+    },
+    {
+     "candidate": "VAN DER HOEK Jessie",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 7308,
+     "pct": 23.232
+    },
+    {
+     "candidate": "STEPHEN Matthew",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4703,
+     "pct": 14.951
+    },
+    {
+     "candidate": "LE ROY Miree",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3985,
+     "pct": 12.668
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HINCHLIFFE Stirling",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 19969,
+     "pct": 63.482
+    },
+    {
+     "candidate": "VAN DER HOEK Jessie",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11487,
+     "pct": 36.518
+    }
+   ],
+   "margin": 13.48,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 63.482,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Scenic Rim",
+   "slug": "scenic-rim",
+   "elected": "KRAUSE Jon",
+   "party": "LNP",
+   "enrolment": 36245,
+   "formal": 31397,
+   "informal": 1267,
+   "primary": [
+    {
+     "candidate": "KRAUSE Jon",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12878,
+     "pct": 41.017
+    },
+    {
+     "candidate": "SMITH Rod",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8662,
+     "pct": 27.589
+    },
+    {
+     "candidate": "BUCHAN Carolyn",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 6748,
+     "pct": 21.492
+    },
+    {
+     "candidate": "GIRARD Shannon",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3109,
+     "pct": 9.902
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "KRAUSE Jon",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 19819,
+     "pct": 63.124
+    },
+    {
+     "candidate": "SMITH Rod",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 11578,
+     "pct": 36.876
+    }
+   ],
+   "margin": 13.12,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "South Brisbane",
+   "slug": "south-brisbane",
+   "elected": "TRAD Jackie",
+   "party": "ALP",
+   "enrolment": 34460,
+   "formal": 27799,
+   "informal": 1052,
+   "primary": [
+    {
+     "candidate": "TRAD Jackie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10007,
+     "pct": 35.998
+    },
+    {
+     "candidate": "MACMAHON Amy",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 9549,
+     "pct": 34.35
+    },
+    {
+     "candidate": "QUINN Simon",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 6764,
+     "pct": 24.332
+    },
+    {
+     "candidate": "MURRAY Cameron",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 516,
+     "pct": 1.856
+    },
+    {
+     "candidate": "BOELE Karel",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 484,
+     "pct": 1.741
+    },
+    {
+     "candidate": "KELLY Karagh-Mae",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 249,
+     "pct": 0.896
+    },
+    {
+     "candidate": "JORDAN Frank",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 230,
+     "pct": 0.827
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "TRAD Jackie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14887,
+     "pct": 53.552
+    },
+    {
+     "candidate": "MACMAHON Amy",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 12912,
+     "pct": 46.448
+    }
+   ],
+   "margin": 3.55,
+   "tcp_estimated": false,
+   "runner_up_party": "GRN",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Southern Downs",
+   "slug": "southern-downs",
+   "elected": "LISTER James",
+   "party": "LNP",
+   "enrolment": 35622,
+   "formal": 31055,
+   "informal": 1181,
+   "primary": [
+    {
+     "candidate": "LISTER James",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12797,
+     "pct": 41.208
+    },
+    {
+     "candidate": "COYNE Joshua",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6331,
+     "pct": 20.386
+    },
+    {
+     "candidate": "RICHTERS Joel",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 5245,
+     "pct": 16.889
+    },
+    {
+     "candidate": "MACKENZIE Rob",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 5042,
+     "pct": 16.236
+    },
+    {
+     "candidate": "VAN GEUNS Antonia",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1340,
+     "pct": 4.315
+    },
+    {
+     "candidate": "NAUSS Jay",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 300,
+     "pct": 0.966
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LISTER James",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 19584,
+     "pct": 63.062
+    },
+    {
+     "candidate": "COYNE Joshua",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 11471,
+     "pct": 36.938
+    }
+   ],
+   "margin": 13.06,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Southport",
+   "slug": "southport",
+   "elected": "MOLHOEK Rob",
+   "party": "LNP",
+   "enrolment": 34005,
+   "formal": 26548,
+   "informal": 1458,
+   "primary": [
+    {
+     "candidate": "MOLHOEK Rob",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12499,
+     "pct": 47.081
+    },
+    {
+     "candidate": "SEARLE Judy",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 7877,
+     "pct": 29.671
+    },
+    {
+     "candidate": "LE PLASTRIER Michelle",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2806,
+     "pct": 10.57
+    },
+    {
+     "candidate": "FLORI Rick",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2597,
+     "pct": 9.782
+    },
+    {
+     "candidate": "JOUBERT Johan",
+     "party": "X_CLCRNT",
+     "party_name": "Civil Liberties, Consumer Rights, No-Tolls",
+     "votes": 769,
+     "pct": 2.897
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MOLHOEK Rob",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 15197,
+     "pct": 57.243
+    },
+    {
+     "candidate": "SEARLE Judy",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11351,
+     "pct": 42.757
+    }
+   ],
+   "margin": 7.24,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 42.757,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Springwood",
+   "slug": "springwood",
+   "elected": "DE BRENNI Mick",
+   "party": "ALP",
+   "enrolment": 35319,
+   "formal": 30088,
+   "informal": 1490,
+   "primary": [
+    {
+     "candidate": "DE BRENNI Mick",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13289,
+     "pct": 44.167
+    },
+    {
+     "candidate": "TALTY Julie",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12117,
+     "pct": 40.272
+    },
+    {
+     "candidate": "COTTER Neil",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2721,
+     "pct": 9.043
+    },
+    {
+     "candidate": "TAYLOR John",
+     "party": "X_CLCRNT",
+     "party_name": "Civil Liberties, Consumer Rights, No-Tolls",
+     "votes": 1961,
+     "pct": 6.518
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "DE BRENNI Mick",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16125,
+     "pct": 53.593
+    },
+    {
+     "candidate": "TALTY Julie",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13963,
+     "pct": 46.407
+    }
+   ],
+   "margin": 3.59,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 53.593,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Stafford",
+   "slug": "stafford",
+   "elected": "LYNHAM Anthony",
+   "party": "ALP",
+   "enrolment": 37641,
+   "formal": 31931,
+   "informal": 1296,
+   "primary": [
+    {
+     "candidate": "LYNHAM Anthony",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15357,
+     "pct": 48.094
+    },
+    {
+     "candidate": "SANGJITPHUN Ed",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 10739,
+     "pct": 33.632
+    },
+    {
+     "candidate": "MEYER John",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 5835,
+     "pct": 18.274
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LYNHAM Anthony",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 19830,
+     "pct": 62.103
+    },
+    {
+     "candidate": "SANGJITPHUN Ed",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 12101,
+     "pct": 37.897
+    }
+   ],
+   "margin": 12.1,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 62.103,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Stretton",
+   "slug": "stretton",
+   "elected": "PEGG Duncan",
+   "party": "ALP",
+   "enrolment": 33547,
+   "formal": 27786,
+   "informal": 1454,
+   "primary": [
+    {
+     "candidate": "PEGG Duncan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14061,
+     "pct": 50.605
+    },
+    {
+     "candidate": "OSTAPOVITCH Freya",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 7884,
+     "pct": 28.374
+    },
+    {
+     "candidate": "HOLLEY Shane",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 3298,
+     "pct": 11.869
+    },
+    {
+     "candidate": "NANDAULA Anisa",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2059,
+     "pct": 7.41
+    },
+    {
+     "candidate": "REDDY Shyamal",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 484,
+     "pct": 1.742
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PEGG Duncan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16640,
+     "pct": 59.886
+    },
+    {
+     "candidate": "OSTAPOVITCH Freya",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11146,
+     "pct": 40.114
+    }
+   ],
+   "margin": 9.89,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 59.886,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Surfers Paradise",
+   "slug": "surfers-paradise",
+   "elected": "LANGBROEK John-Paul",
+   "party": "LNP",
+   "enrolment": 33354,
+   "formal": 25506,
+   "informal": 1497,
+   "primary": [
+    {
+     "candidate": "LANGBROEK John-Paul",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 16127,
+     "pct": 63.228
+    },
+    {
+     "candidate": "WALKER Tony",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 5715,
+     "pct": 22.406
+    },
+    {
+     "candidate": "TURNER Scott",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2323,
+     "pct": 9.108
+    },
+    {
+     "candidate": "MANLEY Chris",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 785,
+     "pct": 3.078
+    },
+    {
+     "candidate": "BAKER-PEARCE Tylere",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 556,
+     "pct": 2.18
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LANGBROEK John-Paul",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 17799,
+     "pct": 69.784
+    },
+    {
+     "candidate": "WALKER Tony",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 7707,
+     "pct": 30.216
+    }
+   ],
+   "margin": 19.78,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 30.216,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Theodore",
+   "slug": "theodore",
+   "elected": "BOOTHMAN Mark",
+   "party": "LNP",
+   "enrolment": 33243,
+   "formal": 26888,
+   "informal": 1525,
+   "primary": [
+    {
+     "candidate": "BOOTHMAN Mark",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 10678,
+     "pct": 39.713
+    },
+    {
+     "candidate": "STANTON Luz",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 8462,
+     "pct": 31.471
+    },
+    {
+     "candidate": "LANE Darrell",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5114,
+     "pct": 19.02
+    },
+    {
+     "candidate": "MENI Tina",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2634,
+     "pct": 9.796
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BOOTHMAN Mark",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 14445,
+     "pct": 53.723
+    },
+    {
+     "candidate": "STANTON Luz",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12443,
+     "pct": 46.277
+    }
+   ],
+   "margin": 3.72,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 46.277,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Thuringowa",
+   "slug": "thuringowa",
+   "elected": "HARPER Aaron",
+   "party": "ALP",
+   "enrolment": 35418,
+   "formal": 29169,
+   "informal": 1572,
+   "primary": [
+    {
+     "candidate": "HARPER Aaron",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9394,
+     "pct": 32.205
+    },
+    {
+     "candidate": "MARTINEZ Nick",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 6191,
+     "pct": 21.225
+    },
+    {
+     "candidate": "THORNTON Mark",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5878,
+     "pct": 20.152
+    },
+    {
+     "candidate": "FOX Terry",
+     "party": "KAP",
+     "party_name": "Katter's Australian Party",
+     "votes": 4546,
+     "pct": 15.585
+    },
+    {
+     "candidate": "RUBENACH Mike",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1633,
+     "pct": 5.598
+    },
+    {
+     "candidate": "LANE Stephen",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1527,
+     "pct": 5.235
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HARPER Aaron",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15795,
+     "pct": 54.15
+    },
+    {
+     "candidate": "THORNTON Mark",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 13374,
+     "pct": 45.85
+    }
+   ],
+   "margin": 4.15,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Toohey",
+   "slug": "toohey",
+   "elected": "RUSSO Peter",
+   "party": "ALP",
+   "enrolment": 33588,
+   "formal": 27537,
+   "informal": 1398,
+   "primary": [
+    {
+     "candidate": "RUSSO Peter",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12284,
+     "pct": 44.609
+    },
+    {
+     "candidate": "SHORTEN Anthony",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 8336,
+     "pct": 30.272
+    },
+    {
+     "candidate": "KING Gordon",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 4026,
+     "pct": 14.62
+    },
+    {
+     "candidate": "ZHANG Guansheng (Victor)",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 2891,
+     "pct": 10.499
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "RUSSO Peter",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16526,
+     "pct": 60.014
+    },
+    {
+     "candidate": "SHORTEN Anthony",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11011,
+     "pct": 39.986
+    }
+   ],
+   "margin": 10.01,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 60.014,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Toowoomba North",
+   "slug": "toowoomba-north",
+   "elected": "WATTS Trevor",
+   "party": "LNP",
+   "enrolment": 36602,
+   "formal": 31114,
+   "informal": 1166,
+   "primary": [
+    {
+     "candidate": "WATTS Trevor",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13128,
+     "pct": 42.193
+    },
+    {
+     "candidate": "SHINE Kerry",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10274,
+     "pct": 33.021
+    },
+    {
+     "candidate": "WILSON Paul",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4561,
+     "pct": 14.659
+    },
+    {
+     "candidate": "CHIDLEY Emmeline",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2033,
+     "pct": 6.534
+    },
+    {
+     "candidate": "TOWNSEND Josie",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1118,
+     "pct": 3.593
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WATTS Trevor",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 17337,
+     "pct": 55.721
+    },
+    {
+     "candidate": "SHINE Kerry",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13777,
+     "pct": 44.279
+    }
+   ],
+   "margin": 5.72,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 44.279,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Toowoomba South",
+   "slug": "toowoomba-south",
+   "elected": "JANETZKI David",
+   "party": "LNP",
+   "enrolment": 37415,
+   "formal": 32023,
+   "informal": 1243,
+   "primary": [
+    {
+     "candidate": "JANETZKI David",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 14893,
+     "pct": 46.507
+    },
+    {
+     "candidate": "KRAUSE Susan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 8626,
+     "pct": 26.937
+    },
+    {
+     "candidate": "SCAMP Jeremy",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5273,
+     "pct": 16.466
+    },
+    {
+     "candidate": "NELLIGAN Alyce",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2308,
+     "pct": 7.207
+    },
+    {
+     "candidate": "BERRY Rob",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 923,
+     "pct": 2.882
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "JANETZKI David",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 19208,
+     "pct": 59.982
+    },
+    {
+     "candidate": "KRAUSE Susan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12815,
+     "pct": 40.018
+    }
+   ],
+   "margin": 9.98,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 40.018,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Townsville",
+   "slug": "townsville",
+   "elected": "STEWART Scott",
+   "party": "ALP",
+   "enrolment": 34926,
+   "formal": 28164,
+   "informal": 1153,
+   "primary": [
+    {
+     "candidate": "STEWART Scott",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9457,
+     "pct": 33.578
+    },
+    {
+     "candidate": "SCOTT Casie",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 8709,
+     "pct": 30.922
+    },
+    {
+     "candidate": "EVANS Allan",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5611,
+     "pct": 19.923
+    },
+    {
+     "candidate": "RYAN Rebecca",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 3057,
+     "pct": 10.854
+    },
+    {
+     "candidate": "COLLINS Lindy",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1330,
+     "pct": 4.722
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "STEWART Scott",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14189,
+     "pct": 50.38
+    },
+    {
+     "candidate": "SCOTT Casie",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13975,
+     "pct": 49.62
+    }
+   ],
+   "margin": 0.38,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 50.38,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Traeger",
+   "slug": "traeger",
+   "elected": "KATTER Robbie",
+   "party": "KAP",
+   "enrolment": 26132,
+   "formal": 20593,
+   "informal": 847,
+   "primary": [
+    {
+     "candidate": "KATTER Robbie",
+     "party": "KAP",
+     "party_name": "Katter's Australian Party",
+     "votes": 13638,
+     "pct": 66.226
+    },
+    {
+     "candidate": "SLADE Danielle",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 3416,
+     "pct": 16.588
+    },
+    {
+     "candidate": "BIRD Ronald",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 2071,
+     "pct": 10.057
+    },
+    {
+     "candidate": "ISAACS Sarah",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 683,
+     "pct": 3.317
+    },
+    {
+     "candidate": "RELPH Peter",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 443,
+     "pct": 2.151
+    },
+    {
+     "candidate": "SCRIVEN Craig",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 342,
+     "pct": 1.661
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "KATTER Robbie",
+     "party": "KAP",
+     "party_name": "Katter's Australian Party",
+     "votes": 16163,
+     "pct": 78.488
+    },
+    {
+     "candidate": "SLADE Danielle",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 4430,
+     "pct": 21.512
+    }
+   ],
+   "margin": 28.49,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Warrego",
+   "slug": "warrego",
+   "elected": "LEAHY Ann",
+   "party": "LNP",
+   "enrolment": 29615,
+   "formal": 25089,
+   "informal": 1100,
+   "primary": [
+    {
+     "candidate": "LEAHY Ann",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 11949,
+     "pct": 47.626
+    },
+    {
+     "candidate": "O'BRIEN Mark",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 5441,
+     "pct": 21.687
+    },
+    {
+     "candidate": "LOUGHNAN Rob",
+     "party": "KAP",
+     "party_name": "Katter's Australian Party",
+     "votes": 5329,
+     "pct": 21.24
+    },
+    {
+     "candidate": "STONE Mark",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 863,
+     "pct": 3.44
+    },
+    {
+     "candidate": "MAZLIN Ian",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 775,
+     "pct": 3.089
+    },
+    {
+     "candidate": "BAMBERRY Sandra",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 732,
+     "pct": 2.918
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LEAHY Ann",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 14917,
+     "pct": 59.456
+    },
+    {
+     "candidate": "LOUGHNAN Rob",
+     "party": "KAP",
+     "party_name": "Katter's Australian Party",
+     "votes": 10172,
+     "pct": 40.544
+    }
+   ],
+   "margin": 9.46,
+   "tcp_estimated": false,
+   "runner_up_party": "KAP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Waterford",
+   "slug": "waterford",
+   "elected": "FENTIMAN Shannon",
+   "party": "ALP",
+   "enrolment": 33029,
+   "formal": 26203,
+   "informal": 1681,
+   "primary": [
+    {
+     "candidate": "FENTIMAN Shannon",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12501,
+     "pct": 47.708
+    },
+    {
+     "candidate": "MILLER Kim",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5423,
+     "pct": 20.696
+    },
+    {
+     "candidate": "WESTGUARD Felicity",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 5248,
+     "pct": 20.028
+    },
+    {
+     "candidate": "PETERSEN Kirsty",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1918,
+     "pct": 7.32
+    },
+    {
+     "candidate": "McKENZIE McKINNON Lee",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1113,
+     "pct": 4.248
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "FENTIMAN Shannon",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15918,
+     "pct": 60.749
+    },
+    {
+     "candidate": "MILLER Kim",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 10285,
+     "pct": 39.251
+    }
+   ],
+   "margin": 10.75,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Whitsunday",
+   "slug": "whitsunday",
+   "elected": "COSTIGAN Jason",
+   "party": "LNP",
+   "enrolment": 32939,
+   "formal": 27286,
+   "informal": 1147,
+   "primary": [
+    {
+     "candidate": "COSTIGAN Jason",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 8774,
+     "pct": 32.156
+    },
+    {
+     "candidate": "TAHA Bronwyn",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 8503,
+     "pct": 31.163
+    },
+    {
+     "candidate": "SKIPPEN Noel",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5471,
+     "pct": 20.051
+    },
+    {
+     "candidate": "WHITNEY Jenny",
+     "party": "KAP",
+     "party_name": "Katter's Australian Party",
+     "votes": 2499,
+     "pct": 9.159
+    },
+    {
+     "candidate": "LINDENBERG Imogen",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 1562,
+     "pct": 5.725
+    },
+    {
+     "candidate": "VAN BLARCOM Dan",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 477,
+     "pct": 1.748
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "COSTIGAN Jason",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 13829,
+     "pct": 50.682
+    },
+    {
+     "candidate": "TAHA Bronwyn",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13457,
+     "pct": 49.318
+    }
+   ],
+   "margin": 0.68,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 49.318,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Woodridge",
+   "slug": "woodridge",
+   "elected": "DICK Cameron",
+   "party": "ALP",
+   "enrolment": 36286,
+   "formal": 27416,
+   "informal": 2340,
+   "primary": [
+    {
+     "candidate": "DICK Cameron",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 17837,
+     "pct": 65.061
+    },
+    {
+     "candidate": "ROOMS Michael",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 4122,
+     "pct": 15.035
+    },
+    {
+     "candidate": "PALMER Trevor",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 3385,
+     "pct": 12.347
+    },
+    {
+     "candidate": "RICE Jacob",
+     "party": "GRN",
+     "party_name": "Queensland Greens",
+     "votes": 2072,
+     "pct": 7.558
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "DICK Cameron",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 20937,
+     "pct": 76.368
+    },
+    {
+     "candidate": "ROOMS Michael",
+     "party": "LNP",
+     "party_name": "Liberal National Party of Queensland",
+     "votes": 6479,
+     "pct": 23.632
+    }
+   ],
+   "margin": 26.37,
+   "tcp_estimated": false,
+   "runner_up_party": "LNP",
+   "tpp_alp": 76.368,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  }
+ ]
+}

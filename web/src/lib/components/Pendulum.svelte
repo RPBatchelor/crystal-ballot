@@ -19,9 +19,11 @@
 	const maxMargin = 25;
 
 	const columns = $derived.by(() => {
+		// The opposition is the other major side; everyone else sits on the crossbench.
+		const opposition = government === 'COAL' ? 'ALP' : 'COAL';
 		const gov = seats.filter((s) => bloc(s.party) === government);
-		const opp = seats.filter((s) => bloc(s.party) !== government && bloc(s.party) === 'COAL');
-		const cross = seats.filter((s) => bloc(s.party) !== government && bloc(s.party) !== 'COAL');
+		const opp = seats.filter((s) => bloc(s.party) === opposition);
+		const cross = seats.filter((s) => bloc(s.party) !== government && bloc(s.party) !== opposition);
 		const banded = (list: SeatResult[]) =>
 			BANDS.map((b, i) => ({
 				...b,
@@ -31,7 +33,7 @@
 			}));
 		return [
 			{ title: `${party(government).short} government`, count: gov.length, bands: banded(gov) },
-			{ title: 'Coalition opposition', count: opp.length, bands: banded(opp) },
+			{ title: `${party(opposition).short} opposition`, count: opp.length, bands: banded(opp) },
 			{ title: 'Crossbench', count: cross.length, bands: banded(cross) }
 		].filter((c) => c.count > 0);
 	});

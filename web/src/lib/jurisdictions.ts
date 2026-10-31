@@ -16,6 +16,10 @@ export interface Jurisdiction {
 	/** Who formed government after a hung parliament, where seat counts alone mislead. */
 	minorityGovernments?: Record<number, string>;
 	hasPolls: boolean;
+	/** Electoral commission credited for results (short form). */
+	commission?: string;
+	/** Optional preferential voting: ballots can exhaust before the final count. */
+	optionalPreferential?: boolean;
 }
 
 export const JURISDICTIONS: Jurisdiction[] = [
@@ -29,7 +33,8 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		resultYears: [2007, 2010, 2013, 2016, 2019, 2022, 2025],
 		retroYears: [2025],
 		minorityGovernments: { 2010: 'ALP' },
-		hasPolls: true
+		hasPolls: true,
+		commission: 'AEC'
 	},
 	{
 		code: 'nsw',
@@ -39,8 +44,13 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		chamber: 'Legislative Assembly',
 		seats: 93,
 		nextElection: '2027-03-27',
-		resultYears: [],
-		hasPolls: false
+		resultYears: [2015, 2019, 2023],
+		retroYears: [2023],
+		// 2023: Labor short of a majority (45 of 93), governing with crossbench support.
+		minorityGovernments: { 2023: 'ALP' },
+		hasPolls: true,
+		commission: 'NSWEC',
+		optionalPreferential: true
 	},
 	{
 		code: 'vic',
@@ -53,7 +63,8 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		resultYears: [2014, 2018, 2022],
 		forecastYears: [2026],
 		retroYears: [2018],
-		hasPolls: true
+		hasPolls: true,
+		commission: 'VEC'
 	},
 	{
 		code: 'qld',
@@ -62,8 +73,11 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		kind: 'state',
 		chamber: 'Legislative Assembly',
 		seats: 93,
-		resultYears: [],
-		hasPolls: false
+		nextElection: '2028-10-28',
+		resultYears: [2012, 2015, 2017, 2020, 2024],
+		retroYears: [2024],
+		hasPolls: true,
+		commission: 'ECQ'
 	},
 	{
 		code: 'wa',
@@ -72,8 +86,11 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		kind: 'state',
 		chamber: 'Legislative Assembly',
 		seats: 59,
-		resultYears: [],
-		hasPolls: false
+		nextElection: '2029-03-10',
+		resultYears: [2008, 2013, 2017, 2021, 2025],
+		retroYears: [2025],
+		hasPolls: true,
+		commission: 'WAEC'
 	},
 	{
 		code: 'sa',
@@ -82,8 +99,10 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		kind: 'state',
 		chamber: 'House of Assembly',
 		seats: 47,
-		resultYears: [],
-		hasPolls: false
+		nextElection: '2030-03-16',
+		resultYears: [2014, 2018, 2022, 2026],
+		hasPolls: true,
+		commission: 'ECSA'
 	},
 	{
 		code: 'tas',

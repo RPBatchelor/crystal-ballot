@@ -1,0 +1,4401 @@
+{
+ "election_id": "sa-2026",
+ "jurisdiction": "SA",
+ "date": "2026-03-21",
+ "seats_total": 47,
+ "majority": 24,
+ "seat_counts": {
+  "ALP": 34,
+  "LIB": 5,
+  "IND": 4,
+  "ONP": 4
+ },
+ "primary_share": {
+  "ALP": 37.47,
+  "ONP": 22.88,
+  "COAL": 19.05,
+  "GRN": 10.37,
+  "IND": 5.46,
+  "OTH": 4.76
+ },
+ "party_share": {
+  "ALP": 37.47,
+  "ONP": 22.88,
+  "LIB": 18.92,
+  "GRN": 10.37,
+  "IND": 5.46,
+  "FFP": 1.75,
+  "LCP": 0.97,
+  "X_AFP": 0.83,
+  "AJP": 0.5,
+  "X_SPRCS": 0.27,
+  "X_SGFGA": 0.24,
+  "X_UVA": 0.18,
+  "NAT": 0.13,
+  "X_SB": 0.02
+ },
+ "tpp_alp": 55.7,
+ "seats": [
+  {
+   "name": "Adelaide",
+   "slug": "adelaide",
+   "elected": "HOOD Lucy",
+   "party": "ALP",
+   "enrolment": 28039,
+   "formal": 23894,
+   "informal": 452,
+   "primary": [
+    {
+     "candidate": "HOOD Lucy",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10189,
+     "pct": 42.643
+    },
+    {
+     "candidate": "AMATO Julian",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 5084,
+     "pct": 21.277
+    },
+    {
+     "candidate": "COLMER Bronte",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 3531,
+     "pct": 14.778
+    },
+    {
+     "candidate": "BAXTER Aoi",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 2771,
+     "pct": 11.597
+    },
+    {
+     "candidate": "SNAPE Keiran",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2002,
+     "pct": 8.379
+    },
+    {
+     "candidate": "CASEY Dan",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 317,
+     "pct": 1.327
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HOOD Lucy",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16307,
+     "pct": 68.247
+    },
+    {
+     "candidate": "AMATO Julian",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 7587,
+     "pct": 31.753
+    }
+   ],
+   "margin": 18.25,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 68.247,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Badcoe",
+   "slug": "badcoe",
+   "elected": "STINSON Jayne",
+   "party": "ALP",
+   "enrolment": 27336,
+   "formal": 23470,
+   "informal": 519,
+   "primary": [
+    {
+     "candidate": "STINSON Jayne",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11508,
+     "pct": 49.033
+    },
+    {
+     "candidate": "SHEPHERD Daniel",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4181,
+     "pct": 17.814
+    },
+    {
+     "candidate": "ANDERSEN-WARD Joshua",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 3889,
+     "pct": 16.57
+    },
+    {
+     "candidate": "SINGH Amar",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 3240,
+     "pct": 13.805
+    },
+    {
+     "candidate": "JOVANOVIC Radosav",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 469,
+     "pct": 1.998
+    },
+    {
+     "candidate": "ATTARD Jonathan",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 183,
+     "pct": 0.78
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "STINSON Jayne",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16700,
+     "pct": 71.155
+    },
+    {
+     "candidate": "SHEPHERD Daniel",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6770,
+     "pct": 28.845
+    }
+   ],
+   "margin": 21.16,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Black",
+   "slug": "black",
+   "elected": "DIGHTON Alex",
+   "party": "ALP",
+   "enrolment": 26694,
+   "formal": 23930,
+   "informal": 684,
+   "primary": [
+    {
+     "candidate": "DIGHTON Alex",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10286,
+     "pct": 42.984
+    },
+    {
+     "candidate": "WILSON Paula",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4469,
+     "pct": 18.675
+    },
+    {
+     "candidate": "SPEIRS David",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 3317,
+     "pct": 13.861
+    },
+    {
+     "candidate": "LUSCOMBE Sarah",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2929,
+     "pct": 12.24
+    },
+    {
+     "candidate": "BISHOP Rhees",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 2475,
+     "pct": 10.343
+    },
+    {
+     "candidate": "SQUIRRELL Dianne",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 271,
+     "pct": 1.132
+    },
+    {
+     "candidate": "GAME Jennifer",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 107,
+     "pct": 0.447
+    },
+    {
+     "candidate": "ATTARD Jethro",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 76,
+     "pct": 0.318
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "DIGHTON Alex",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15647,
+     "pct": 65.387
+    },
+    {
+     "candidate": "WILSON Paula",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8283,
+     "pct": 34.613
+    }
+   ],
+   "margin": 15.39,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Bragg",
+   "slug": "bragg",
+   "elected": "BATTY Jack",
+   "party": "LIB",
+   "enrolment": 26852,
+   "formal": 24170,
+   "informal": 327,
+   "primary": [
+    {
+     "candidate": "BATTY Jack",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11684,
+     "pct": 48.341
+    },
+    {
+     "candidate": "SARRE Rick",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 6814,
+     "pct": 28.192
+    },
+    {
+     "candidate": "DITTER Susan",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 3219,
+     "pct": 13.318
+    },
+    {
+     "candidate": "PATERSON Russell James",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 2211,
+     "pct": 9.148
+    },
+    {
+     "candidate": "WALKER Robert",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 242,
+     "pct": 1.001
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BATTY Jack",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 14145,
+     "pct": 58.523
+    },
+    {
+     "candidate": "SARRE Rick",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10025,
+     "pct": 41.477
+    }
+   ],
+   "margin": 8.52,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 41.477,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Chaffey",
+   "slug": "chaffey",
+   "elected": "WHETSTONE Tim",
+   "party": "LIB",
+   "enrolment": 26677,
+   "formal": 22141,
+   "informal": 1263,
+   "primary": [
+    {
+     "candidate": "WHETSTONE Tim",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 7839,
+     "pct": 35.405
+    },
+    {
+     "candidate": "TROETH Jenny",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7506,
+     "pct": 33.901
+    },
+    {
+     "candidate": "HARDING Oscar",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 3420,
+     "pct": 15.446
+    },
+    {
+     "candidate": "KUERSCH Alice",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 1018,
+     "pct": 4.598
+    },
+    {
+     "candidate": "PERRIN Jason",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 842,
+     "pct": 3.803
+    },
+    {
+     "candidate": "OAKLEY Tim",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 593,
+     "pct": 2.678
+    },
+    {
+     "candidate": "KNIPE Jeff",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 550,
+     "pct": 2.484
+    },
+    {
+     "candidate": "ADAMSON AGARS Imelda",
+     "party": "NAT",
+     "party_name": "The Nationals",
+     "votes": 190,
+     "pct": 0.858
+    },
+    {
+     "candidate": "GAMERTSFELDER Jakob",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 183,
+     "pct": 0.827
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WHETSTONE Tim",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 12392,
+     "pct": 55.969
+    },
+    {
+     "candidate": "TROETH Jenny",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 9749,
+     "pct": 44.031
+    }
+   ],
+   "margin": 5.97,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Cheltenham",
+   "slug": "cheltenham",
+   "elected": "SZAKACS Joe",
+   "party": "ALP",
+   "enrolment": 28641,
+   "formal": 23910,
+   "informal": 982,
+   "primary": [
+    {
+     "candidate": "SZAKACS Joe",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11434,
+     "pct": 47.821
+    },
+    {
+     "candidate": "HIGGINS Melissa",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5045,
+     "pct": 21.1
+    },
+    {
+     "candidate": "MEDROW Steffi",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 3159,
+     "pct": 13.212
+    },
+    {
+     "candidate": "PIKE Helen",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 2195,
+     "pct": 9.18
+    },
+    {
+     "candidate": "HADJIMARKOU Kosta",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 809,
+     "pct": 3.384
+    },
+    {
+     "candidate": "TENNIKOFF Alex",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 569,
+     "pct": 2.38
+    },
+    {
+     "candidate": "BROWN Karoline",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 418,
+     "pct": 1.748
+    },
+    {
+     "candidate": "MARTIN John",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 281,
+     "pct": 1.175
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SZAKACS Joe",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16028,
+     "pct": 67.035
+    },
+    {
+     "candidate": "HIGGINS Melissa",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7882,
+     "pct": 32.965
+    }
+   ],
+   "margin": 17.03,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Colton",
+   "slug": "colton",
+   "elected": "BOLKUS Aria",
+   "party": "ALP",
+   "enrolment": 28710,
+   "formal": 24834,
+   "informal": 865,
+   "primary": [
+    {
+     "candidate": "BOLKUS Aria",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10988,
+     "pct": 44.246
+    },
+    {
+     "candidate": "SUTTON Bec",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 6047,
+     "pct": 24.35
+    },
+    {
+     "candidate": "DEANGELIS Rocco",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4407,
+     "pct": 17.746
+    },
+    {
+     "candidate": "XERRI Adelaide",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2087,
+     "pct": 8.404
+    },
+    {
+     "candidate": "HALL-EVANS Jake",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 441,
+     "pct": 1.776
+    },
+    {
+     "candidate": "PARSONS Lili",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 309,
+     "pct": 1.244
+    },
+    {
+     "candidate": "SCHULZ Mathew",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 297,
+     "pct": 1.196
+    },
+    {
+     "candidate": "LLOYD Brad",
+     "party": "X_SPRCS",
+     "party_name": "STEPHEN PALLARAS REAL CHANGE SA",
+     "votes": 140,
+     "pct": 0.564
+    },
+    {
+     "candidate": "SCHIRRIPA Tony",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 118,
+     "pct": 0.475
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BOLKUS Aria",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14869,
+     "pct": 59.874
+    },
+    {
+     "candidate": "SUTTON Bec",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9965,
+     "pct": 40.126
+    }
+   ],
+   "margin": 9.87,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 59.874,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Croydon",
+   "slug": "croydon",
+   "elected": "MALINAUSKAS Peter",
+   "party": "ALP",
+   "enrolment": 28995,
+   "formal": 23056,
+   "informal": 1025,
+   "primary": [
+    {
+     "candidate": "MALINAUSKAS Peter",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12774,
+     "pct": 55.404
+    },
+    {
+     "candidate": "BLACKEBY Dale",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 2934,
+     "pct": 12.726
+    },
+    {
+     "candidate": "DOLLING Ruby",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2686,
+     "pct": 11.65
+    },
+    {
+     "candidate": "SANTAGATA Michael",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 1797,
+     "pct": 7.794
+    },
+    {
+     "candidate": "AZHAR Ahmed",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1308,
+     "pct": 5.673
+    },
+    {
+     "candidate": "PHAM Hieu",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 1017,
+     "pct": 4.411
+    },
+    {
+     "candidate": "POPE Suzanne",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 334,
+     "pct": 1.449
+    },
+    {
+     "candidate": "ELMS Joey",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 122,
+     "pct": 0.529
+    },
+    {
+     "candidate": "BETTINELLI Daniel",
+     "party": "X_UVA",
+     "party_name": "United Voice Australia",
+     "votes": 84,
+     "pct": 0.364
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MALINAUSKAS Peter",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 17067,
+     "pct": 74.024
+    },
+    {
+     "candidate": "DOLLING Ruby",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 5989,
+     "pct": 25.976
+    }
+   ],
+   "margin": 24.02,
+   "tcp_estimated": false,
+   "runner_up_party": "GRN",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Davenport",
+   "slug": "davenport",
+   "elected": "THOMPSON Erin",
+   "party": "ALP",
+   "enrolment": 27256,
+   "formal": 24353,
+   "informal": 532,
+   "primary": [
+    {
+     "candidate": "THOMPSON Erin",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11829,
+     "pct": 48.573
+    },
+    {
+     "candidate": "HOWELL Jon",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4921,
+     "pct": 20.207
+    },
+    {
+     "candidate": "BURNARD Trent",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 3601,
+     "pct": 14.787
+    },
+    {
+     "candidate": "PHOTAKIS John",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2737,
+     "pct": 11.239
+    },
+    {
+     "candidate": "GOLDING Dan",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 718,
+     "pct": 2.948
+    },
+    {
+     "candidate": "FRANCIS Mathew",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 400,
+     "pct": 1.643
+    },
+    {
+     "candidate": "SMITH Rachel",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 147,
+     "pct": 0.604
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "THOMPSON Erin",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16171,
+     "pct": 66.402
+    },
+    {
+     "candidate": "HOWELL Jon",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8182,
+     "pct": 33.598
+    }
+   ],
+   "margin": 16.4,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Dunstan",
+   "slug": "dunstan",
+   "elected": "O'HANLON Cressida",
+   "party": "ALP",
+   "enrolment": 27050,
+   "formal": 23305,
+   "informal": 807,
+   "primary": [
+    {
+     "candidate": "O'HANLON Cressida",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 8824,
+     "pct": 37.863
+    },
+    {
+     "candidate": "FINIZIO Anna",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 6593,
+     "pct": 28.29
+    },
+    {
+     "candidate": "MEX Christel",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 3839,
+     "pct": 16.473
+    },
+    {
+     "candidate": "POLLIFRONE Victoria",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 2725,
+     "pct": 11.693
+    },
+    {
+     "candidate": "MCBRYDE Ian",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 443,
+     "pct": 1.901
+    },
+    {
+     "candidate": "SMITH Miranda",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 429,
+     "pct": 1.841
+    },
+    {
+     "candidate": "LESLIE Fiona",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 276,
+     "pct": 1.184
+    },
+    {
+     "candidate": "ZOLLO Nick",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 94,
+     "pct": 0.403
+    },
+    {
+     "candidate": "STANLEY Ricci",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 82,
+     "pct": 0.352
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "O'HANLON Cressida",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13532,
+     "pct": 58.065
+    },
+    {
+     "candidate": "FINIZIO Anna",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9773,
+     "pct": 41.935
+    }
+   ],
+   "margin": 8.06,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 58.065,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Elder",
+   "slug": "elder",
+   "elected": "CLANCY Nadia",
+   "party": "ALP",
+   "enrolment": 28014,
+   "formal": 24639,
+   "informal": 600,
+   "primary": [
+    {
+     "candidate": "CLANCY Nadia",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12364,
+     "pct": 50.181
+    },
+    {
+     "candidate": "VAN GROESEN Shawn",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 4450,
+     "pct": 18.061
+    },
+    {
+     "candidate": "ROZITIS Stef",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 3569,
+     "pct": 14.485
+    },
+    {
+     "candidate": "MANGELSDORF Matt",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 3540,
+     "pct": 14.367
+    },
+    {
+     "candidate": "WALSTON-LEO Rosanne",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 399,
+     "pct": 1.619
+    },
+    {
+     "candidate": "CHENG Linda",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 178,
+     "pct": 0.722
+    },
+    {
+     "candidate": "LONIE Robert",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 139,
+     "pct": 0.564
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CLANCY Nadia",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 17032,
+     "pct": 69.126
+    },
+    {
+     "candidate": "VAN GROESEN Shawn",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 7607,
+     "pct": 30.874
+    }
+   ],
+   "margin": 19.13,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 69.126,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Elizabeth",
+   "slug": "elizabeth",
+   "elected": "SHAW Ella",
+   "party": "ALP",
+   "enrolment": 28323,
+   "formal": 21306,
+   "informal": 1282,
+   "primary": [
+    {
+     "candidate": "SHAW Ella",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 8506,
+     "pct": 39.923
+    },
+    {
+     "candidate": "HANTON Kym",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7090,
+     "pct": 33.277
+    },
+    {
+     "candidate": "DEEX David",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2208,
+     "pct": 10.363
+    },
+    {
+     "candidate": "JURCZAK Dawid",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 1368,
+     "pct": 6.421
+    },
+    {
+     "candidate": "HENDRICK Sanja",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 887,
+     "pct": 4.163
+    },
+    {
+     "candidate": "FIELD Matthew",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 729,
+     "pct": 3.422
+    },
+    {
+     "candidate": "MCKEE Brae",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 197,
+     "pct": 0.925
+    },
+    {
+     "candidate": "ROJAS Angela",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 174,
+     "pct": 0.817
+    },
+    {
+     "candidate": "LORENZI Marco",
+     "party": "X_UVA",
+     "party_name": "United Voice Australia",
+     "votes": 147,
+     "pct": 0.69
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SHAW Ella",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11607,
+     "pct": 54.478
+    },
+    {
+     "candidate": "HANTON Kym",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 9699,
+     "pct": 45.522
+    }
+   ],
+   "margin": 4.48,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Enfield",
+   "slug": "enfield",
+   "elected": "BEN Lawrence",
+   "party": "ALP",
+   "enrolment": 28104,
+   "formal": 23537,
+   "informal": 870,
+   "primary": [
+    {
+     "candidate": "BEN Lawrence",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10792,
+     "pct": 45.851
+    },
+    {
+     "candidate": "MORRELL Paul",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4344,
+     "pct": 18.456
+    },
+    {
+     "candidate": "ONG Oscar",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 3503,
+     "pct": 14.883
+    },
+    {
+     "candidate": "SICLARI Chris",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2727,
+     "pct": 11.586
+    },
+    {
+     "candidate": "CLENDON Leila",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1172,
+     "pct": 4.979
+    },
+    {
+     "candidate": "SOLOMON Daniel",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 575,
+     "pct": 2.443
+    },
+    {
+     "candidate": "RIGLIN Andrew",
+     "party": "X_UVA",
+     "party_name": "United Voice Australia",
+     "votes": 287,
+     "pct": 1.219
+    },
+    {
+     "candidate": "MERRETT Ariah",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 137,
+     "pct": 0.582
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BEN Lawrence",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16184,
+     "pct": 68.76
+    },
+    {
+     "candidate": "MORRELL Paul",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7353,
+     "pct": 31.24
+    }
+   ],
+   "margin": 18.76,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Finniss",
+   "slug": "finniss",
+   "elected": "NICHOLSON Lou",
+   "party": "IND",
+   "enrolment": 29543,
+   "formal": 25551,
+   "informal": 1125,
+   "primary": [
+    {
+     "candidate": "BASHAM David",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 6940,
+     "pct": 27.161
+    },
+    {
+     "candidate": "POWELL Greg",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5842,
+     "pct": 22.864
+    },
+    {
+     "candidate": "REDINGTON Phoebe",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 4725,
+     "pct": 18.492
+    },
+    {
+     "candidate": "NICHOLSON Lou",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 4617,
+     "pct": 18.07
+    },
+    {
+     "candidate": "ASTILL-PEARCE Bartholomew Jon",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 1603,
+     "pct": 6.274
+    },
+    {
+     "candidate": "LEWIS Bron",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1045,
+     "pct": 4.09
+    },
+    {
+     "candidate": "HUSSEY Tanya",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 417,
+     "pct": 1.632
+    },
+    {
+     "candidate": "ABRAM David",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 264,
+     "pct": 1.033
+    },
+    {
+     "candidate": "SCOTT Michael",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 98,
+     "pct": 0.384
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "NICHOLSON Lou",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 14102,
+     "pct": 55.192
+    },
+    {
+     "candidate": "BASHAM David",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11449,
+     "pct": 44.808
+    }
+   ],
+   "margin": 5.19,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Flinders",
+   "slug": "flinders",
+   "elected": "TELFER Sam",
+   "party": "LIB",
+   "enrolment": 26388,
+   "formal": 21398,
+   "informal": 1443,
+   "primary": [
+    {
+     "candidate": "TELFER Sam",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 7232,
+     "pct": 33.798
+    },
+    {
+     "candidate": "HINCKS Brenton",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6042,
+     "pct": 28.236
+    },
+    {
+     "candidate": "PETHERICK Meghan",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2870,
+     "pct": 13.412
+    },
+    {
+     "candidate": "ANCHOR Ben",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 1959,
+     "pct": 9.155
+    },
+    {
+     "candidate": "HASLAM Craig William",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1190,
+     "pct": 5.561
+    },
+    {
+     "candidate": "HARDWICK-FRANCO Kathryn Gay",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 760,
+     "pct": 3.552
+    },
+    {
+     "candidate": "COWLEY Dylan",
+     "party": "NAT",
+     "party_name": "The Nationals",
+     "votes": 460,
+     "pct": 2.15
+    },
+    {
+     "candidate": "KEOGH Rod",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 308,
+     "pct": 1.439
+    },
+    {
+     "candidate": "MCNAB Thomas",
+     "party": "X_SB",
+     "party_name": "SA-BEST",
+     "votes": 257,
+     "pct": 1.201
+    },
+    {
+     "candidate": "FULWOOD Sam",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 175,
+     "pct": 0.818
+    },
+    {
+     "candidate": "MANOLAKIS Spiro",
+     "party": "X_SPRCS",
+     "party_name": "STEPHEN PALLARAS REAL CHANGE SA",
+     "votes": 145,
+     "pct": 0.678
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "TELFER Sam",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 12762,
+     "pct": 59.641
+    },
+    {
+     "candidate": "HINCKS Brenton",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8636,
+     "pct": 40.359
+    }
+   ],
+   "margin": 9.64,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Florey",
+   "slug": "florey",
+   "elected": "BROWN Michael",
+   "party": "ALP",
+   "enrolment": 26335,
+   "formal": 21936,
+   "informal": 1105,
+   "primary": [
+    {
+     "candidate": "BROWN Michael",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10376,
+     "pct": 47.301
+    },
+    {
+     "candidate": "SIZE Riley",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5038,
+     "pct": 22.967
+    },
+    {
+     "candidate": "MCGEE Alexandra",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2344,
+     "pct": 10.686
+    },
+    {
+     "candidate": "GEORGE Denise",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 2054,
+     "pct": 9.364
+    },
+    {
+     "candidate": "BEDFORD Frances",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1059,
+     "pct": 4.828
+    },
+    {
+     "candidate": "HAWKE Mark",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 707,
+     "pct": 3.223
+    },
+    {
+     "candidate": "FISCHER Dieter",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 206,
+     "pct": 0.939
+    },
+    {
+     "candidate": "JAMESON Robert",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 87,
+     "pct": 0.397
+    },
+    {
+     "candidate": "WILTON Trent Mark",
+     "party": "X_UVA",
+     "party_name": "United Voice Australia",
+     "votes": 65,
+     "pct": 0.296
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BROWN Michael",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14505,
+     "pct": 66.124
+    },
+    {
+     "candidate": "SIZE Riley",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7431,
+     "pct": 33.876
+    }
+   ],
+   "margin": 16.12,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Gibson",
+   "slug": "gibson",
+   "elected": "ANDREWS Sarah",
+   "party": "ALP",
+   "enrolment": 28646,
+   "formal": 24659,
+   "informal": 600,
+   "primary": [
+    {
+     "candidate": "ANDREWS Sarah",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11335,
+     "pct": 45.967
+    },
+    {
+     "candidate": "FLEMING Jane",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 5758,
+     "pct": 23.351
+    },
+    {
+     "candidate": "ANANIJEV Zoran",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 3625,
+     "pct": 14.701
+    },
+    {
+     "candidate": "TREWARTHA Mike",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 3092,
+     "pct": 12.539
+    },
+    {
+     "candidate": "LIU Bin",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 356,
+     "pct": 1.444
+    },
+    {
+     "candidate": "EASTHER Darryl",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 303,
+     "pct": 1.229
+    },
+    {
+     "candidate": "O'ROURKE Glenn",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 116,
+     "pct": 0.47
+    },
+    {
+     "candidate": "LUTMAN John",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 74,
+     "pct": 0.3
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ANDREWS Sarah",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15706,
+     "pct": 63.693
+    },
+    {
+     "candidate": "FLEMING Jane",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 8953,
+     "pct": 36.307
+    }
+   ],
+   "margin": 13.69,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 63.693,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Giles",
+   "slug": "giles",
+   "elected": "HUGHES Eddie",
+   "party": "ALP",
+   "enrolment": 27240,
+   "formal": 21460,
+   "informal": 689,
+   "primary": [
+    {
+     "candidate": "HUGHES Eddie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10450,
+     "pct": 48.695
+    },
+    {
+     "candidate": "DRAGE Barry",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7122,
+     "pct": 33.187
+    },
+    {
+     "candidate": "SINGH Sunny",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 2005,
+     "pct": 9.343
+    },
+    {
+     "candidate": "TAYLOR Alex",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 1150,
+     "pct": 5.359
+    },
+    {
+     "candidate": "BALFORT Gary",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 491,
+     "pct": 2.288
+    },
+    {
+     "candidate": "PRICE Jasper",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 242,
+     "pct": 1.128
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HUGHES Eddie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12547,
+     "pct": 58.467
+    },
+    {
+     "candidate": "DRAGE Barry",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8913,
+     "pct": 41.533
+    }
+   ],
+   "margin": 8.47,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Hammond",
+   "slug": "hammond",
+   "elected": "ROYLANCE Robert",
+   "party": "ONP",
+   "enrolment": 29166,
+   "formal": 23522,
+   "informal": 1717,
+   "primary": [
+    {
+     "candidate": "ROYLANCE Robert",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6440,
+     "pct": 27.379
+    },
+    {
+     "candidate": "BAILEY Simone",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 6355,
+     "pct": 27.017
+    },
+    {
+     "candidate": "PEDERICK Adrian",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 5244,
+     "pct": 22.294
+    },
+    {
+     "candidate": "KEEN Airlie",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2294,
+     "pct": 9.753
+    },
+    {
+     "candidate": "PALACHICKY Nicole",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 1166,
+     "pct": 4.957
+    },
+    {
+     "candidate": "MURPHY James",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 780,
+     "pct": 3.316
+    },
+    {
+     "candidate": "NORTH Robert",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 422,
+     "pct": 1.794
+    },
+    {
+     "candidate": "ECKERMANN Ruby",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 356,
+     "pct": 1.513
+    },
+    {
+     "candidate": "HOPE Lucas",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 229,
+     "pct": 0.974
+    },
+    {
+     "candidate": "HICKS Bruce",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 114,
+     "pct": 0.485
+    },
+    {
+     "candidate": "GRAZIANO Carmelo",
+     "party": "X_UVA",
+     "party_name": "United Voice Australia",
+     "votes": 88,
+     "pct": 0.374
+    },
+    {
+     "candidate": "IVESON Tristan",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 34,
+     "pct": 0.145
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ROYLANCE Robert",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 12913,
+     "pct": 54.898
+    },
+    {
+     "candidate": "BAILEY Simone",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10609,
+     "pct": 45.102
+    }
+   ],
+   "margin": 4.9,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Hartley",
+   "slug": "hartley",
+   "elected": "ROBERTS Jenn",
+   "party": "ALP",
+   "enrolment": 26791,
+   "formal": 22768,
+   "informal": 1054,
+   "primary": [
+    {
+     "candidate": "ROBERTS Jenn",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 8374,
+     "pct": 36.78
+    },
+    {
+     "candidate": "TARZIA Vincent",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 6761,
+     "pct": 29.695
+    },
+    {
+     "candidate": "DWYER David",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 3644,
+     "pct": 16.005
+    },
+    {
+     "candidate": "SEARLE Melanie",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2883,
+     "pct": 12.663
+    },
+    {
+     "candidate": "THOMPSON Hugh",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 460,
+     "pct": 2.02
+    },
+    {
+     "candidate": "DOTTORE Mara",
+     "party": "X_SPRCS",
+     "party_name": "STEPHEN PALLARAS REAL CHANGE SA",
+     "votes": 344,
+     "pct": 1.511
+    },
+    {
+     "candidate": "SALERNO Peter",
+     "party": "X_UVA",
+     "party_name": "United Voice Australia",
+     "votes": 126,
+     "pct": 0.553
+    },
+    {
+     "candidate": "SMITH Bruce",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 101,
+     "pct": 0.444
+    },
+    {
+     "candidate": "MILL Robert James Henry",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 75,
+     "pct": 0.329
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ROBERTS Jenn",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12455,
+     "pct": 54.704
+    },
+    {
+     "candidate": "TARZIA Vincent",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 10313,
+     "pct": 45.296
+    }
+   ],
+   "margin": 4.7,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 54.704,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Heysen",
+   "slug": "heysen",
+   "elected": "TEAGUE Josh",
+   "party": "LIB",
+   "enrolment": 30054,
+   "formal": 26715,
+   "informal": 868,
+   "primary": [
+    {
+     "candidate": "TEAGUE Josh",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 8697,
+     "pct": 32.555
+    },
+    {
+     "candidate": "BELL Marisa",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 6472,
+     "pct": 24.226
+    },
+    {
+     "candidate": "DAWSON-SCOTT Genevieve",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 5838,
+     "pct": 21.853
+    },
+    {
+     "candidate": "KOVAC Tom",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4331,
+     "pct": 16.212
+    },
+    {
+     "candidate": "DAVIS Gregory",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 477,
+     "pct": 1.786
+    },
+    {
+     "candidate": "GRANGER Andrew",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 454,
+     "pct": 1.699
+    },
+    {
+     "candidate": "BAKER Chris",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 285,
+     "pct": 1.067
+    },
+    {
+     "candidate": "WILSON Craig",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 90,
+     "pct": 0.337
+    },
+    {
+     "candidate": "SCOTT Tonya Lee",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 71,
+     "pct": 0.266
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "TEAGUE Josh",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 13531,
+     "pct": 50.649
+    },
+    {
+     "candidate": "BELL Marisa",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13184,
+     "pct": 49.351
+    }
+   ],
+   "margin": 0.65,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 49.351,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Hurtle Vale",
+   "slug": "hurtle-vale",
+   "elected": "COOK Nat",
+   "party": "ALP",
+   "enrolment": 29405,
+   "formal": 24971,
+   "informal": 715,
+   "primary": [
+    {
+     "candidate": "COOK Nat",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11245,
+     "pct": 45.032
+    },
+    {
+     "candidate": "EMMERSON Katrina",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6700,
+     "pct": 26.831
+    },
+    {
+     "candidate": "GRUNDY Charlotte",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 2531,
+     "pct": 10.136
+    },
+    {
+     "candidate": "SCOTT Tammy",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2407,
+     "pct": 9.639
+    },
+    {
+     "candidate": "KOPEIKIN Sarah",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 851,
+     "pct": 3.408
+    },
+    {
+     "candidate": "SAVAGE Jane",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 683,
+     "pct": 2.735
+    },
+    {
+     "candidate": "FAHIZ Jannah",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 355,
+     "pct": 1.422
+    },
+    {
+     "candidate": "MITCHARD Michael",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 199,
+     "pct": 0.797
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "COOK Nat",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15181,
+     "pct": 60.795
+    },
+    {
+     "candidate": "EMMERSON Katrina",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 9790,
+     "pct": 39.205
+    }
+   ],
+   "margin": 10.8,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Kaurna",
+   "slug": "kaurna",
+   "elected": "PICTON Chris",
+   "party": "ALP",
+   "enrolment": 28871,
+   "formal": 24320,
+   "informal": 982,
+   "primary": [
+    {
+     "candidate": "PICTON Chris",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10935,
+     "pct": 44.963
+    },
+    {
+     "candidate": "JONES Zoe",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6551,
+     "pct": 26.937
+    },
+    {
+     "candidate": "WEATHERLY Sean",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2875,
+     "pct": 11.822
+    },
+    {
+     "candidate": "CARTER Shane",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 1970,
+     "pct": 8.1
+    },
+    {
+     "candidate": "BROHIER Amanda",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 686,
+     "pct": 2.821
+    },
+    {
+     "candidate": "HADDRELL Gary",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 595,
+     "pct": 2.447
+    },
+    {
+     "candidate": "MANOLAKIS Anastasios",
+     "party": "X_SPRCS",
+     "party_name": "STEPHEN PALLARAS REAL CHANGE SA",
+     "votes": 572,
+     "pct": 2.352
+    },
+    {
+     "candidate": "AMADIO Patrick",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 136,
+     "pct": 0.559
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PICTON Chris",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15071,
+     "pct": 61.97
+    },
+    {
+     "candidate": "JONES Zoe",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 9249,
+     "pct": 38.03
+    }
+   ],
+   "margin": 11.97,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Kavel",
+   "slug": "kavel",
+   "elected": "SCHULTZ Matt",
+   "party": "IND",
+   "enrolment": 28971,
+   "formal": 25064,
+   "informal": 1257,
+   "primary": [
+    {
+     "candidate": "LEACH David",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 5901,
+     "pct": 23.544
+    },
+    {
+     "candidate": "SCHULTZ Matt",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 5227,
+     "pct": 20.855
+    },
+    {
+     "candidate": "ORR Bradley",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 4990,
+     "pct": 19.909
+    },
+    {
+     "candidate": "LOCH Christiaan",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4890,
+     "pct": 19.51
+    },
+    {
+     "candidate": "TYLER Sam",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2767,
+     "pct": 11.04
+    },
+    {
+     "candidate": "CHAPLIN Padma",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 392,
+     "pct": 1.564
+    },
+    {
+     "candidate": "BAKER Dayle",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 351,
+     "pct": 1.4
+    },
+    {
+     "candidate": "MOULE Ashley",
+     "party": "X_SPRCS",
+     "party_name": "STEPHEN PALLARAS REAL CHANGE SA",
+     "votes": 256,
+     "pct": 1.021
+    },
+    {
+     "candidate": "VAN RAALTE Jacob Nicholas",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 127,
+     "pct": 0.507
+    },
+    {
+     "candidate": "ASHMAN Baden",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 115,
+     "pct": 0.459
+    },
+    {
+     "candidate": "STONE David",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 48,
+     "pct": 0.192
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SCHULTZ Matt",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 15182,
+     "pct": 60.573
+    },
+    {
+     "candidate": "LEACH David",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9882,
+     "pct": 39.427
+    }
+   ],
+   "margin": 10.57,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "King",
+   "slug": "king",
+   "elected": "PEARCE Rhiannon",
+   "party": "ALP",
+   "enrolment": 29715,
+   "formal": 25584,
+   "informal": 814,
+   "primary": [
+    {
+     "candidate": "PEARCE Rhiannon",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10901,
+     "pct": 42.609
+    },
+    {
+     "candidate": "KERRISON David",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7921,
+     "pct": 30.961
+    },
+    {
+     "candidate": "HENDRY Amanda",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 3108,
+     "pct": 12.148
+    },
+    {
+     "candidate": "MOORE Samuel",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2392,
+     "pct": 9.35
+    },
+    {
+     "candidate": "GLASGOW Julie",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 646,
+     "pct": 2.525
+    },
+    {
+     "candidate": "HAYNES Adriana",
+     "party": "X_SPRCS",
+     "party_name": "STEPHEN PALLARAS REAL CHANGE SA",
+     "votes": 190,
+     "pct": 0.743
+    },
+    {
+     "candidate": "ZAKARIAS Angela",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 162,
+     "pct": 0.633
+    },
+    {
+     "candidate": "GLEESON Lukas",
+     "party": "X_UVA",
+     "party_name": "United Voice Australia",
+     "votes": 145,
+     "pct": 0.567
+    },
+    {
+     "candidate": "FINLAY Tyla Jane",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 119,
+     "pct": 0.465
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PEARCE Rhiannon",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14125,
+     "pct": 55.21
+    },
+    {
+     "candidate": "KERRISON David",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 11459,
+     "pct": 44.79
+    }
+   ],
+   "margin": 5.21,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Lee",
+   "slug": "lee",
+   "elected": "WILKINS David",
+   "party": "ALP",
+   "enrolment": 27108,
+   "formal": 23022,
+   "informal": 931,
+   "primary": [
+    {
+     "candidate": "WILKINS David",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10072,
+     "pct": 43.749
+    },
+    {
+     "candidate": "STURM Fabio",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5844,
+     "pct": 25.384
+    },
+    {
+     "candidate": "FARDONE Merlindie",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 3685,
+     "pct": 16.006
+    },
+    {
+     "candidate": "FERRIS Brett",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2302,
+     "pct": 9.999
+    },
+    {
+     "candidate": "SCHULZ Krystal",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 482,
+     "pct": 2.094
+    },
+    {
+     "candidate": "VUKOJE Vasko",
+     "party": "X_SPRCS",
+     "party_name": "STEPHEN PALLARAS REAL CHANGE SA",
+     "votes": 269,
+     "pct": 1.168
+    },
+    {
+     "candidate": "MCGRATH Sarah",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 214,
+     "pct": 0.93
+    },
+    {
+     "candidate": "DAY Bill",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 154,
+     "pct": 0.669
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WILKINS David",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13666,
+     "pct": 59.361
+    },
+    {
+     "candidate": "STURM Fabio",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 9356,
+     "pct": 40.639
+    }
+   ],
+   "margin": 9.36,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Light",
+   "slug": "light",
+   "elected": "AGNESS James",
+   "party": "ALP",
+   "enrolment": 29303,
+   "formal": 24103,
+   "informal": 819,
+   "primary": [
+    {
+     "candidate": "AGNESS James",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 8878,
+     "pct": 36.834
+    },
+    {
+     "candidate": "BANKS Alexander",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8320,
+     "pct": 34.519
+    },
+    {
+     "candidate": "WILLIAMSON Andrew",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 2961,
+     "pct": 12.285
+    },
+    {
+     "candidate": "SCALZI James",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2182,
+     "pct": 9.053
+    },
+    {
+     "candidate": "ROBERTS Jacinta",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 837,
+     "pct": 3.473
+    },
+    {
+     "candidate": "MORGAN Liam",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 665,
+     "pct": 2.759
+    },
+    {
+     "candidate": "HALE Dan",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 260,
+     "pct": 1.079
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "AGNESS James",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12445,
+     "pct": 51.633
+    },
+    {
+     "candidate": "BANKS Alexander",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 11658,
+     "pct": 48.367
+    }
+   ],
+   "margin": 1.63,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "MacKillop",
+   "slug": "mackillop",
+   "elected": "VIRGO Jason",
+   "party": "ONP",
+   "enrolment": 27886,
+   "formal": 23843,
+   "informal": 1120,
+   "primary": [
+    {
+     "candidate": "VIRGO Jason",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8407,
+     "pct": 35.26
+    },
+    {
+     "candidate": "ROSSER Rebekah",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 5623,
+     "pct": 23.583
+    },
+    {
+     "candidate": "BRAES Mark",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 3715,
+     "pct": 15.581
+    },
+    {
+     "candidate": "MCBRIDE Nick",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 3398,
+     "pct": 14.252
+    },
+    {
+     "candidate": "OLSSON Cathy",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 862,
+     "pct": 3.615
+    },
+    {
+     "candidate": "PIETZSCH Jonathan",
+     "party": "NAT",
+     "party_name": "The Nationals",
+     "votes": 780,
+     "pct": 3.271
+    },
+    {
+     "candidate": "GREEN Tim",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 528,
+     "pct": 2.214
+    },
+    {
+     "candidate": "DAY Joanna",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 350,
+     "pct": 1.468
+    },
+    {
+     "candidate": "DAVIES Steven",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 180,
+     "pct": 0.755
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "VIRGO Jason",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 12123,
+     "pct": 50.845
+    },
+    {
+     "candidate": "ROSSER Rebekah",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11720,
+     "pct": 49.155
+    }
+   ],
+   "margin": 0.84,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Mawson",
+   "slug": "mawson",
+   "elected": "MITTON Jenni",
+   "party": "ALP",
+   "enrolment": 29275,
+   "formal": 25118,
+   "informal": 795,
+   "primary": [
+    {
+     "candidate": "MITTON Jenni",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9394,
+     "pct": 37.399
+    },
+    {
+     "candidate": "GREEN Tyler",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6554,
+     "pct": 26.093
+    },
+    {
+     "candidate": "HOLDEN Mike",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 4331,
+     "pct": 17.243
+    },
+    {
+     "candidate": "JOHNSON Lawrence",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 3220,
+     "pct": 12.819
+    },
+    {
+     "candidate": "GRAY Lesley",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 1051,
+     "pct": 4.184
+    },
+    {
+     "candidate": "IERACI Peter",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 294,
+     "pct": 1.17
+    },
+    {
+     "candidate": "SCHUMACHER Kelly",
+     "party": "X_SPRCS",
+     "party_name": "STEPHEN PALLARAS REAL CHANGE SA",
+     "votes": 274,
+     "pct": 1.091
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MITTON Jenni",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14224,
+     "pct": 56.629
+    },
+    {
+     "candidate": "GREEN Tyler",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 10894,
+     "pct": 43.371
+    }
+   ],
+   "margin": 6.63,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Morialta",
+   "slug": "morialta",
+   "elected": "MAROZZI Matthew",
+   "party": "ALP",
+   "enrolment": 27235,
+   "formal": 23682,
+   "informal": 693,
+   "primary": [
+    {
+     "candidate": "MAROZZI Matthew",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9610,
+     "pct": 40.579
+    },
+    {
+     "candidate": "KENNEDY Scott",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 5974,
+     "pct": 25.226
+    },
+    {
+     "candidate": "ELLERY Peter",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4343,
+     "pct": 18.339
+    },
+    {
+     "candidate": "TRANTER Jenn",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2695,
+     "pct": 11.38
+    },
+    {
+     "candidate": "CIROCCO Rosie",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 574,
+     "pct": 2.424
+    },
+    {
+     "candidate": "HUTCHISON Janice",
+     "party": "X_SPRCS",
+     "party_name": "STEPHEN PALLARAS REAL CHANGE SA",
+     "votes": 314,
+     "pct": 1.326
+    },
+    {
+     "candidate": "BODYCOTE James",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 97,
+     "pct": 0.41
+    },
+    {
+     "candidate": "MARLEY-DUNCAN Casey Robert",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 75,
+     "pct": 0.317
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MAROZZI Matthew",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13846,
+     "pct": 58.466
+    },
+    {
+     "candidate": "KENNEDY Scott",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9836,
+     "pct": 41.534
+    }
+   ],
+   "margin": 8.47,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 58.466,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Morphett",
+   "slug": "morphett",
+   "elected": "PRIEST Toby",
+   "party": "ALP",
+   "enrolment": 26066,
+   "formal": 22414,
+   "informal": 688,
+   "primary": [
+    {
+     "candidate": "PRIEST Toby",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 8052,
+     "pct": 35.924
+    },
+    {
+     "candidate": "PATTERSON Stephen",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 7857,
+     "pct": 35.054
+    },
+    {
+     "candidate": "MARCH Tim",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 3413,
+     "pct": 15.227
+    },
+    {
+     "candidate": "LITT Isabella",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2303,
+     "pct": 10.275
+    },
+    {
+     "candidate": "RYBA Ren",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 288,
+     "pct": 1.285
+    },
+    {
+     "candidate": "ATTARD Craig",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 274,
+     "pct": 1.222
+    },
+    {
+     "candidate": "BIRDSEYE Tom",
+     "party": "X_SPRCS",
+     "party_name": "STEPHEN PALLARAS REAL CHANGE SA",
+     "votes": 155,
+     "pct": 0.692
+    },
+    {
+     "candidate": "RUTA Maria",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 72,
+     "pct": 0.321
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PRIEST Toby",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11360,
+     "pct": 50.683
+    },
+    {
+     "candidate": "PATTERSON Stephen",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11054,
+     "pct": 49.317
+    }
+   ],
+   "margin": 0.68,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 50.683,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Mount Gambier",
+   "slug": "mount-gambier",
+   "elected": "FATCHEN Travis",
+   "party": "IND",
+   "enrolment": 26738,
+   "formal": 22104,
+   "informal": 1605,
+   "primary": [
+    {
+     "candidate": "FATCHEN Travis",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 5979,
+     "pct": 27.049
+    },
+    {
+     "candidate": "LOEF Anne-Marie",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5939,
+     "pct": 26.868
+    },
+    {
+     "candidate": "KEY Matthew",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 3319,
+     "pct": 15.015
+    },
+    {
+     "candidate": "ALEXANDER Lamorna",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 2768,
+     "pct": 12.523
+    },
+    {
+     "candidate": "SCHOLES Cody",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1401,
+     "pct": 6.338
+    },
+    {
+     "candidate": "HOLMES Sharon",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 1050,
+     "pct": 4.75
+    },
+    {
+     "candidate": "AMOROSO Kate",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 930,
+     "pct": 4.207
+    },
+    {
+     "candidate": "GODFREY Martin",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 271,
+     "pct": 1.226
+    },
+    {
+     "candidate": "KENYON Rachael",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 221,
+     "pct": 1.0
+    },
+    {
+     "candidate": "THOMSON James",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 141,
+     "pct": 0.638
+    },
+    {
+     "candidate": "DAY Eleanor",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 85,
+     "pct": 0.385
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "FATCHEN Travis",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 13349,
+     "pct": 60.392
+    },
+    {
+     "candidate": "LOEF Anne-Marie",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8755,
+     "pct": 39.608
+    }
+   ],
+   "margin": 10.39,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Narungga",
+   "slug": "narungga",
+   "elected": "THOMAS Chantelle",
+   "party": "ONP",
+   "enrolment": 28266,
+   "formal": 24088,
+   "informal": 1330,
+   "primary": [
+    {
+     "candidate": "THOMAS Chantelle",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 9044,
+     "pct": 37.546
+    },
+    {
+     "candidate": "STOCK Tania",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 5404,
+     "pct": 22.434
+    },
+    {
+     "candidate": "ELLIS Fraser",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 4101,
+     "pct": 17.025
+    },
+    {
+     "candidate": "SHORT Esther",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 3749,
+     "pct": 15.564
+    },
+    {
+     "candidate": "SCRIVEN Jessica",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 692,
+     "pct": 2.873
+    },
+    {
+     "candidate": "LORNIE Nicole",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 453,
+     "pct": 1.881
+    },
+    {
+     "candidate": "BENNETT John",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 335,
+     "pct": 1.391
+    },
+    {
+     "candidate": "VOTTARI Maria",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 132,
+     "pct": 0.548
+    },
+    {
+     "candidate": "TAYLERSON Joanne",
+     "party": "X_SPRCS",
+     "party_name": "STEPHEN PALLARAS REAL CHANGE SA",
+     "votes": 122,
+     "pct": 0.506
+    },
+    {
+     "candidate": "ILLINGWORTH Peter",
+     "party": "X_UVA",
+     "party_name": "United Voice Australia",
+     "votes": 56,
+     "pct": 0.232
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "THOMAS Chantelle",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 12073,
+     "pct": 50.12
+    },
+    {
+     "candidate": "STOCK Tania",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 12015,
+     "pct": 49.88
+    }
+   ],
+   "margin": 0.12,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Newland",
+   "slug": "newland",
+   "elected": "SAVVAS Olivia",
+   "party": "ALP",
+   "enrolment": 27020,
+   "formal": 23603,
+   "informal": 636,
+   "primary": [
+    {
+     "candidate": "SAVVAS Olivia",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10927,
+     "pct": 46.295
+    },
+    {
+     "candidate": "DEW-FENNELL Alison",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5844,
+     "pct": 24.76
+    },
+    {
+     "candidate": "BIRCH Sarai",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 3561,
+     "pct": 15.087
+    },
+    {
+     "candidate": "WRIGHT Helen",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2091,
+     "pct": 8.859
+    },
+    {
+     "candidate": "MATHEW Rachel",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 645,
+     "pct": 2.733
+    },
+    {
+     "candidate": "STANFORD Colin",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 203,
+     "pct": 0.86
+    },
+    {
+     "candidate": "LAZOOTIN Abe",
+     "party": "X_UVA",
+     "party_name": "United Voice Australia",
+     "votes": 200,
+     "pct": 0.847
+    },
+    {
+     "candidate": "MARLEY-DUNCAN Hayley",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 132,
+     "pct": 0.559
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SAVVAS Olivia",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14221,
+     "pct": 60.251
+    },
+    {
+     "candidate": "DEW-FENNELL Alison",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 9382,
+     "pct": 39.749
+    }
+   ],
+   "margin": 10.25,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Ngadjuri",
+   "slug": "ngadjuri",
+   "elected": "PATON David",
+   "party": "ONP",
+   "enrolment": 28021,
+   "formal": 24440,
+   "informal": 831,
+   "primary": [
+    {
+     "candidate": "PATON David",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8522,
+     "pct": 34.869
+    },
+    {
+     "candidate": "PICCOLO Tony",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 7200,
+     "pct": 29.46
+    },
+    {
+     "candidate": "PRATT Penny",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 6182,
+     "pct": 25.295
+    },
+    {
+     "candidate": "EVERY Danielle",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 1139,
+     "pct": 4.66
+    },
+    {
+     "candidate": "LOBBAN Mark",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 447,
+     "pct": 1.829
+    },
+    {
+     "candidate": "STEELE Cherie",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 392,
+     "pct": 1.604
+    },
+    {
+     "candidate": "PEARCE Sharon",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 361,
+     "pct": 1.477
+    },
+    {
+     "candidate": "JENKINS Jonathan",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 110,
+     "pct": 0.45
+    },
+    {
+     "candidate": "OLSSON Shari Lynnette",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 87,
+     "pct": 0.356
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PATON David",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 13944,
+     "pct": 57.054
+    },
+    {
+     "candidate": "PICCOLO Tony",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10496,
+     "pct": 42.946
+    }
+   ],
+   "margin": 7.05,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Playford",
+   "slug": "playford",
+   "elected": "FULBROOK John",
+   "party": "ALP",
+   "enrolment": 26897,
+   "formal": 22048,
+   "informal": 1008,
+   "primary": [
+    {
+     "candidate": "FULBROOK John",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11209,
+     "pct": 50.839
+    },
+    {
+     "candidate": "TSENTIDIS Nickolas",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5344,
+     "pct": 24.238
+    },
+    {
+     "candidate": "WRIGHT David",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 1988,
+     "pct": 9.017
+    },
+    {
+     "candidate": "JONES Christopher",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 1764,
+     "pct": 8.001
+    },
+    {
+     "candidate": "RANGEL Antonio",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 765,
+     "pct": 3.47
+    },
+    {
+     "candidate": "OEHME Trent",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 525,
+     "pct": 2.381
+    },
+    {
+     "candidate": "BUNTING Richard",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 247,
+     "pct": 1.12
+    },
+    {
+     "candidate": "BAWDEN Grace",
+     "party": "X_UVA",
+     "party_name": "United Voice Australia",
+     "votes": 206,
+     "pct": 0.934
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "FULBROOK John",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14809,
+     "pct": 67.167
+    },
+    {
+     "candidate": "TSENTIDIS Nickolas",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7239,
+     "pct": 32.833
+    }
+   ],
+   "margin": 17.17,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Port Adelaide",
+   "slug": "port-adelaide",
+   "elected": "RICH Cheyne",
+   "party": "ALP",
+   "enrolment": 28778,
+   "formal": 23700,
+   "informal": 1657,
+   "primary": [
+    {
+     "candidate": "RICH Cheyne",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9312,
+     "pct": 39.291
+    },
+    {
+     "candidate": "HENDRIE Joel",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5080,
+     "pct": 21.435
+    },
+    {
+     "candidate": "BOAN Claire",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 3097,
+     "pct": 13.068
+    },
+    {
+     "candidate": "SHAW Hayden",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2425,
+     "pct": 10.232
+    },
+    {
+     "candidate": "ANDERSON Scott",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 1724,
+     "pct": 7.274
+    },
+    {
+     "candidate": "KEEN Sallyann",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 511,
+     "pct": 2.156
+    },
+    {
+     "candidate": "JOHANSON Gary",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 446,
+     "pct": 1.882
+    },
+    {
+     "candidate": "MCMENAMIN Anne",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 341,
+     "pct": 1.439
+    },
+    {
+     "candidate": "SNELLING Lucia",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 332,
+     "pct": 1.401
+    },
+    {
+     "candidate": "BRUNOLI Galina",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 253,
+     "pct": 1.068
+    },
+    {
+     "candidate": "DAY Tom",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 135,
+     "pct": 0.57
+    },
+    {
+     "candidate": "MACHADO Aaron",
+     "party": "X_UVA",
+     "party_name": "United Voice Australia",
+     "votes": 44,
+     "pct": 0.186
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "RICH Cheyne",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15272,
+     "pct": 64.439
+    },
+    {
+     "candidate": "HENDRIE Joel",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8428,
+     "pct": 35.561
+    }
+   ],
+   "margin": 14.44,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Ramsay",
+   "slug": "ramsay",
+   "elected": "BETTISON Zoe",
+   "party": "ALP",
+   "enrolment": 28453,
+   "formal": 22240,
+   "informal": 1198,
+   "primary": [
+    {
+     "candidate": "BETTISON Zoe",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10896,
+     "pct": 48.993
+    },
+    {
+     "candidate": "CHAMBERS Ralph",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6231,
+     "pct": 28.017
+    },
+    {
+     "candidate": "SKINNER Luke",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 1791,
+     "pct": 8.053
+    },
+    {
+     "candidate": "MCCANN Daryl",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 1386,
+     "pct": 6.232
+    },
+    {
+     "candidate": "ECKERMANN Mark",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 769,
+     "pct": 3.458
+    },
+    {
+     "candidate": "VELASQUEZ Luz Mutya",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 683,
+     "pct": 3.071
+    },
+    {
+     "candidate": "OWEN Nic",
+     "party": "X_UVA",
+     "party_name": "United Voice Australia",
+     "votes": 199,
+     "pct": 0.895
+    },
+    {
+     "candidate": "GAYLOR Ashley",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 178,
+     "pct": 0.8
+    },
+    {
+     "candidate": "DEMITRIOU Leo",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 107,
+     "pct": 0.481
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BETTISON Zoe",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13996,
+     "pct": 62.932
+    },
+    {
+     "candidate": "CHAMBERS Ralph",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8244,
+     "pct": 37.068
+    }
+   ],
+   "margin": 12.93,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Reynell",
+   "slug": "reynell",
+   "elected": "HILDYARD Katrine",
+   "party": "ALP",
+   "enrolment": 28178,
+   "formal": 23297,
+   "informal": 859,
+   "primary": [
+    {
+     "candidate": "HILDYARD Katrine",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10279,
+     "pct": 44.122
+    },
+    {
+     "candidate": "HEGGIE Peter",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6457,
+     "pct": 27.716
+    },
+    {
+     "candidate": "TAIT Miya",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2535,
+     "pct": 10.881
+    },
+    {
+     "candidate": "ZAMAN Haseen",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 1903,
+     "pct": 8.168
+    },
+    {
+     "candidate": "KRASNIQI Adnan",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 1118,
+     "pct": 4.799
+    },
+    {
+     "candidate": "FARMER Andy",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 783,
+     "pct": 3.361
+    },
+    {
+     "candidate": "O'ROURKE Aaron",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 222,
+     "pct": 0.953
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HILDYARD Katrine",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 14013,
+     "pct": 60.149
+    },
+    {
+     "candidate": "HEGGIE Peter",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 9284,
+     "pct": 39.851
+    }
+   ],
+   "margin": 10.15,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Schubert",
+   "slug": "schubert",
+   "elected": "HURN Ashton",
+   "party": "LIB",
+   "enrolment": 29369,
+   "formal": 26627,
+   "informal": 688,
+   "primary": [
+    {
+     "candidate": "HURN Ashton",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 12512,
+     "pct": 46.99
+    },
+    {
+     "candidate": "PREECE Bruce",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6078,
+     "pct": 22.826
+    },
+    {
+     "candidate": "ROTHE James",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 5355,
+     "pct": 20.111
+    },
+    {
+     "candidate": "MORRIS Beverley",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 1856,
+     "pct": 6.97
+    },
+    {
+     "candidate": "SHORE Alice",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 421,
+     "pct": 1.581
+    },
+    {
+     "candidate": "WILLIAMS Matt",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 297,
+     "pct": 1.115
+    },
+    {
+     "candidate": "DUNCAN David",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 108,
+     "pct": 0.406
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HURN Ashton",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 17946,
+     "pct": 67.398
+    },
+    {
+     "candidate": "ROTHE James",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 8681,
+     "pct": 32.602
+    }
+   ],
+   "margin": 17.4,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 32.602,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Stuart",
+   "slug": "stuart",
+   "elected": "BROCK Geoff",
+   "party": "IND",
+   "enrolment": 28417,
+   "formal": 22410,
+   "informal": 888,
+   "primary": [
+    {
+     "candidate": "BROCK Geoff",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 8603,
+     "pct": 38.389
+    },
+    {
+     "candidate": "TURTON Brandon",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6236,
+     "pct": 27.827
+    },
+    {
+     "candidate": "STEPHENS Leon",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 3836,
+     "pct": 17.117
+    },
+    {
+     "candidate": "EWINGS David",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 1988,
+     "pct": 8.871
+    },
+    {
+     "candidate": "PILMORE Poppy",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 875,
+     "pct": 3.905
+    },
+    {
+     "candidate": "MCKINNON Jessica",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 473,
+     "pct": 2.111
+    },
+    {
+     "candidate": "TONKIN Stephen",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 219,
+     "pct": 0.977
+    },
+    {
+     "candidate": "PARNELL Robyn",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 180,
+     "pct": 0.803
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BROCK Geoff",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 12757,
+     "pct": 56.925
+    },
+    {
+     "candidate": "TURTON Brandon",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 9653,
+     "pct": 43.075
+    }
+   ],
+   "margin": 6.92,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Taylor",
+   "slug": "taylor",
+   "elected": "CHAMPION Nick",
+   "party": "ALP",
+   "enrolment": 29557,
+   "formal": 23188,
+   "informal": 878,
+   "primary": [
+    {
+     "candidate": "CHAMPION Nick",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9201,
+     "pct": 39.68
+    },
+    {
+     "candidate": "RENTOULIS Peter",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7957,
+     "pct": 34.315
+    },
+    {
+     "candidate": "OSBORNE Xander",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 1887,
+     "pct": 8.138
+    },
+    {
+     "candidate": "BOUL HOSN Ted",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 1869,
+     "pct": 8.06
+    },
+    {
+     "candidate": "EVANS Kylie",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 1288,
+     "pct": 5.555
+    },
+    {
+     "candidate": "STEPHENS Brett",
+     "party": "LCP",
+     "party_name": "Legalise Cannabis South Australia Party",
+     "votes": 725,
+     "pct": 3.127
+    },
+    {
+     "candidate": "ATTARD John",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 261,
+     "pct": 1.126
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CHAMPION Nick",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12577,
+     "pct": 54.239
+    },
+    {
+     "candidate": "RENTOULIS Peter",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 10611,
+     "pct": 45.761
+    }
+   ],
+   "margin": 4.24,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Torrens",
+   "slug": "torrens",
+   "elected": "SPENCER Meagan",
+   "party": "ALP",
+   "enrolment": 28133,
+   "formal": 23739,
+   "informal": 718,
+   "primary": [
+    {
+     "candidate": "SPENCER Meagan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 10294,
+     "pct": 43.363
+    },
+    {
+     "candidate": "MEDLOCK David",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4920,
+     "pct": 20.725
+    },
+    {
+     "candidate": "YARA Haritha",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 3781,
+     "pct": 15.927
+    },
+    {
+     "candidate": "SALVEMINI Stella",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 3430,
+     "pct": 14.449
+    },
+    {
+     "candidate": "JOSHUA Mervin",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 786,
+     "pct": 3.311
+    },
+    {
+     "candidate": "WARREN Bradley",
+     "party": "X_UVA",
+     "party_name": "United Voice Australia",
+     "votes": 292,
+     "pct": 1.23
+    },
+    {
+     "candidate": "REYNOLDS Malcolm",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 236,
+     "pct": 0.994
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SPENCER Meagan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15582,
+     "pct": 65.639
+    },
+    {
+     "candidate": "MEDLOCK David",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8157,
+     "pct": 34.361
+    }
+   ],
+   "margin": 15.64,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Unley",
+   "slug": "unley",
+   "elected": "ROLLS Alice",
+   "party": "ALP",
+   "enrolment": 27510,
+   "formal": 24460,
+   "informal": 581,
+   "primary": [
+    {
+     "candidate": "ROLLS Alice",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 9390,
+     "pct": 38.389
+    },
+    {
+     "candidate": "ROTOLO Rosalie",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 7740,
+     "pct": 31.643
+    },
+    {
+     "candidate": "KIERNAN Dylan",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 3344,
+     "pct": 13.671
+    },
+    {
+     "candidate": "WILKINSON Jason",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 2288,
+     "pct": 9.354
+    },
+    {
+     "candidate": "HARRISON Ryan",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1059,
+     "pct": 4.33
+    },
+    {
+     "candidate": "IVKA Josip",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 314,
+     "pct": 1.284
+    },
+    {
+     "candidate": "PATERSON Emma",
+     "party": "X_SPRCS",
+     "party_name": "STEPHEN PALLARAS REAL CHANGE SA",
+     "votes": 183,
+     "pct": 0.748
+    },
+    {
+     "candidate": "ATTARD Peter",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 142,
+     "pct": 0.581
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ROLLS Alice",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 13905,
+     "pct": 56.848
+    },
+    {
+     "candidate": "ROTOLO Rosalie",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 10555,
+     "pct": 43.152
+    }
+   ],
+   "margin": 6.85,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 56.848,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Waite",
+   "slug": "waite",
+   "elected": "HUTCHESSON Catherine",
+   "party": "ALP",
+   "enrolment": 28553,
+   "formal": 25851,
+   "informal": 505,
+   "primary": [
+    {
+     "candidate": "HUTCHESSON Catherine",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 12742,
+     "pct": 49.29
+    },
+    {
+     "candidate": "PANGALLO Frank",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 4769,
+     "pct": 18.448
+    },
+    {
+     "candidate": "BRUMFIELD Declan",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 4199,
+     "pct": 16.243
+    },
+    {
+     "candidate": "VON FRATTNER Aaron",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 3070,
+     "pct": 11.876
+    },
+    {
+     "candidate": "GARGETT Alec",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 751,
+     "pct": 2.905
+    },
+    {
+     "candidate": "PAWLEY Ross",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 259,
+     "pct": 1.002
+    },
+    {
+     "candidate": "RUTA Mark",
+     "party": "X_SGFGA",
+     "party_name": "Sarah Game Fair Go for Australians",
+     "votes": 61,
+     "pct": 0.236
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HUTCHESSON Catherine",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 18012,
+     "pct": 69.676
+    },
+    {
+     "candidate": "PANGALLO Frank",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 7839,
+     "pct": 30.324
+    }
+   ],
+   "margin": 19.68,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 69.676,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "West Torrens",
+   "slug": "west-torrens",
+   "elected": "KOUTSANTONIS Tom",
+   "party": "ALP",
+   "enrolment": 26020,
+   "formal": 22444,
+   "informal": 449,
+   "primary": [
+    {
+     "candidate": "KOUTSANTONIS Tom",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11802,
+     "pct": 52.584
+    },
+    {
+     "candidate": "ALDRIDGE Judith",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4045,
+     "pct": 18.023
+    },
+    {
+     "candidate": "BANNON Sam",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 3854,
+     "pct": 17.172
+    },
+    {
+     "candidate": "SHARMA Sarika",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 2174,
+     "pct": 9.686
+    },
+    {
+     "candidate": "WAMAYI Anna",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 390,
+     "pct": 1.738
+    },
+    {
+     "candidate": "WILSON Mathew",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 179,
+     "pct": 0.798
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "KOUTSANTONIS Tom",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 16439,
+     "pct": 73.245
+    },
+    {
+     "candidate": "ALDRIDGE Judith",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 6005,
+     "pct": 26.755
+    }
+   ],
+   "margin": 23.25,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Wright",
+   "slug": "wright",
+   "elected": "BOYER Blair",
+   "party": "ALP",
+   "enrolment": 28587,
+   "formal": 24820,
+   "informal": 900,
+   "primary": [
+    {
+     "candidate": "BOYER Blair",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 11939,
+     "pct": 48.102
+    },
+    {
+     "candidate": "PORTER Sean",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 7062,
+     "pct": 28.453
+    },
+    {
+     "candidate": "KEONG-WOODHOUSE Carston",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 2170,
+     "pct": 8.743
+    },
+    {
+     "candidate": "SKINNER Samantha",
+     "party": "GRN",
+     "party_name": "The Greens",
+     "votes": 2145,
+     "pct": 8.642
+    },
+    {
+     "candidate": "NANCARROW Sue",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 672,
+     "pct": 2.707
+    },
+    {
+     "candidate": "HORLEY Deb",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 373,
+     "pct": 1.503
+    },
+    {
+     "candidate": "HILL Robin",
+     "party": "X_AFP",
+     "party_name": "Australian Family Party",
+     "votes": 352,
+     "pct": 1.418
+    },
+    {
+     "candidate": "WILTON Rosalind",
+     "party": "X_UVA",
+     "party_name": "United Voice Australia",
+     "votes": 107,
+     "pct": 0.431
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BOYER Blair",
+     "party": "ALP",
+     "party_name": "Australian Labor Party",
+     "votes": 15512,
+     "pct": 62.498
+    },
+    {
+     "candidate": "PORTER Sean",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 9308,
+     "pct": 37.502
+    }
+   ],
+   "margin": 12.5,
+   "tcp_estimated": false,
+   "runner_up_party": "ONP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  }
+ ]
+}

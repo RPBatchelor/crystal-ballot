@@ -1,0 +1,290 @@
+{
+ "backtests": [
+  {
+   "election_id": "wa-2025",
+   "n_seats": 59,
+   "brier": 0.1726,
+   "log_loss": 0.3244,
+   "favourite_accuracy": 0.8644,
+   "status_quo_accuracy": 0.8644,
+   "seats": {
+    "ALP": {
+     "actual": 46,
+     "median": 43.0,
+     "p90": [
+      37.0,
+      48.0
+     ],
+     "covered_90": true
+    },
+    "COAL": {
+     "actual": 13,
+     "median": 15.0,
+     "p90": [
+      10.0,
+      21.0
+     ],
+     "covered_90": true
+    },
+    "GRN": {
+     "actual": 0,
+     "median": 1.0,
+     "p90": [
+      0.0,
+      3.0
+     ],
+     "covered_90": true
+    },
+    "IND": {
+     "actual": 0,
+     "median": 0.0,
+     "p90": [
+      0.0,
+      0.0
+     ],
+     "covered_90": true
+    }
+   },
+   "calibration": [
+    {
+     "bin": "0.50-0.70",
+     "n": 8,
+     "mean_prob": 0.619,
+     "hit_rate": 0.5
+    },
+    {
+     "bin": "0.70-0.90",
+     "n": 5,
+     "mean_prob": 0.822,
+     "hit_rate": 0.2
+    },
+    {
+     "bin": "0.90-0.99",
+     "n": 13,
+     "mean_prob": 0.957,
+     "hit_rate": 1.0
+    },
+    {
+     "bin": "0.99-1.00",
+     "n": 33,
+     "mean_prob": 0.999,
+     "hit_rate": 1.0
+    }
+   ],
+   "misses": [
+    {
+     "district": "Albany",
+     "won": "NAT",
+     "favourite": "LIB",
+     "p_fav": 0.614,
+     "p_won": 0.0,
+     "incumbent": "ALP"
+    },
+    {
+     "district": "Bateman",
+     "won": "ALP",
+     "favourite": "LIB",
+     "p_fav": 0.858,
+     "p_won": 0.142,
+     "incumbent": "ALP"
+    },
+    {
+     "district": "Fremantle",
+     "won": "ALP",
+     "favourite": "GRN",
+     "p_fav": 0.562,
+     "p_won": 0.435,
+     "incumbent": "ALP"
+    },
+    {
+     "district": "Kalamunda",
+     "won": "LIB",
+     "favourite": "ALP",
+     "p_fav": 0.787,
+     "p_won": 0.213,
+     "incumbent": "ALP"
+    },
+    {
+     "district": "Kalgoorlie",
+     "won": "ALP",
+     "favourite": "LIB",
+     "p_fav": 0.829,
+     "p_won": 0.171,
+     "incumbent": "ALP"
+    },
+    {
+     "district": "Murray-Wellington",
+     "won": "LIB",
+     "favourite": "ALP",
+     "p_fav": 0.82,
+     "p_won": 0.18,
+     "incumbent": "ALP"
+    },
+    {
+     "district": "Scarborough",
+     "won": "ALP",
+     "favourite": "LIB",
+     "p_fav": 0.675,
+     "p_won": 0.325,
+     "incumbent": "ALP"
+    },
+    {
+     "district": "South Perth",
+     "won": "ALP",
+     "favourite": "LIB",
+     "p_fav": 0.518,
+     "p_won": 0.482,
+     "incumbent": "ALP"
+    }
+   ],
+   "statewide": {
+    "ALP": {
+     "forecast": [
+      38.8,
+      44.0,
+      49.0
+     ],
+     "actual": 41.43
+    },
+    "COAL": {
+     "forecast": [
+      29.3,
+      33.1,
+      37.2
+     ],
+     "actual": 33.17
+    },
+    "GRN": {
+     "forecast": [
+      8.4,
+      10.7,
+      13.0
+     ],
+     "actual": 11.06
+    },
+    "tpp": {
+     "forecast": [
+      54.3,
+      59.0,
+      63.4
+     ],
+     "actual": 57.1
+    }
+   },
+   "outcome": {
+    "alp_majority": 0.99795,
+    "coal_majority": 0.0014,
+    "hung": 0.00065,
+    "alp_most_seats": 0.99825,
+    "coal_most_seats": 0.0015
+   }
+  }
+ ],
+ "poll_error": [
+  {
+   "year": 2008,
+   "n_polls": 2,
+   "pollsters": "Newspoll",
+   "ALP_poll": 38.5,
+   "ALP_result": 35.84,
+   "ALP_error": 2.66,
+   "COAL_poll": 42.5,
+   "COAL_result": 43.27,
+   "COAL_error": -0.77,
+   "GRN_poll": 11.0,
+   "GRN_result": 11.92,
+   "GRN_error": -0.92,
+   "tpp_poll": 50.5,
+   "tpp_result": 48.1,
+   "tpp_error": 2.4
+  },
+  {
+   "year": 2013,
+   "n_polls": 1,
+   "pollsters": "Newspoll",
+   "ALP_poll": 32.0,
+   "ALP_result": 33.13,
+   "ALP_error": -1.13,
+   "COAL_poll": 54.0,
+   "COAL_result": 53.16,
+   "COAL_error": 0.84,
+   "GRN_poll": null,
+   "GRN_result": 8.39,
+   "GRN_error": null,
+   "tpp_poll": 40.5,
+   "tpp_result": 42.7,
+   "tpp_error": -2.2
+  },
+  {
+   "year": 2017,
+   "n_polls": 5,
+   "pollsters": "Galaxy, Newspoll, ReachTEL",
+   "ALP_poll": 38.6,
+   "ALP_result": 42.2,
+   "ALP_error": -3.6,
+   "COAL_poll": 39.62,
+   "COAL_result": 36.62,
+   "COAL_error": 3.0,
+   "GRN_poll": 7.64,
+   "GRN_result": 8.91,
+   "GRN_error": -1.27,
+   "tpp_poll": 52.8,
+   "tpp_result": 55.5,
+   "tpp_error": -2.7
+  },
+  {
+   "year": 2021,
+   "n_polls": 4,
+   "pollsters": "Newspoll, Online Research Unit, uComms",
+   "ALP_poll": 52.95,
+   "ALP_result": 59.94,
+   "ALP_error": -6.99,
+   "COAL_poll": 27.65,
+   "COAL_result": 25.3,
+   "COAL_error": 2.35,
+   "GRN_poll": 8.57,
+   "GRN_result": 6.92,
+   "GRN_error": 1.65,
+   "tpp_poll": 65.0,
+   "tpp_result": 69.7,
+   "tpp_error": -4.7
+  },
+  {
+   "year": 2025,
+   "n_polls": 2,
+   "pollsters": "Demos AU, Newspoll",
+   "ALP_poll": 43.5,
+   "ALP_result": 41.43,
+   "ALP_error": 2.07,
+   "COAL_poll": 34.5,
+   "COAL_result": 33.17,
+   "COAL_error": 1.33,
+   "GRN_poll": 10.5,
+   "GRN_result": 11.06,
+   "GRN_error": -0.56,
+   "tpp_poll": 57.25,
+   "tpp_result": 57.1,
+   "tpp_error": 0.15
+  }
+ ],
+ "poll_error_settings": {
+  "sd": {
+   "ALP": 3.86,
+   "COAL": 2.0,
+   "GRN": 1.2
+  },
+  "bias": {
+   "ALP": -0.7,
+   "COAL": 0.68,
+   "GRN": -0.14
+  },
+  "elections": [
+   2008,
+   2013,
+   2017,
+   2021,
+   2025
+  ],
+  "window_days": 28
+ }
+}

@@ -5,7 +5,7 @@
 	import Pendulum from '$lib/components/Pendulum.svelte';
 	import SeatTable from '$lib/components/SeatTable.svelte';
 	import { displayName, fmtDate } from '$lib/format';
-	import { chamberSeats, swingColour, tppColour, TPP_GRADIENT } from '$lib/maps';
+	import { chamberSeats, swingColour, tppColour, TPP_GRADIENT, mapFrame } from '$lib/maps';
 	import { party, partyColour } from '$lib/parties';
 
 	let { data }: { data: PageData } = $props();
@@ -143,6 +143,7 @@
 		<SeatMap
 			title="Winning party by district, {data.year}"
 			geo={data.geo}
+			frame={mapFrame(data.jurisdiction.code)}
 			fill={(slug) => partyColour(bySlug[slug]?.party ?? 'OTH')}
 			tooltip={seatTip}
 			href={(slug) => `${base}/${slug}/`}
@@ -152,6 +153,7 @@
 		<SeatMap
 			title="Labor two-party-preferred vote by district, {data.year}"
 			geo={data.geo}
+			frame={mapFrame(data.jurisdiction.code)}
 			fill={(slug) => (bySlug[slug]?.tpp_alp != null ? tppColour(bySlug[slug].tpp_alp!) : 'var(--rule)')}
 			tooltip={seatTip}
 			href={(slug) => `${base}/${slug}/`}
@@ -161,6 +163,7 @@
 		<SeatMap
 			title="Two-party-preferred swing by district, {data.prevYear} to {data.year}"
 			geo={data.geo}
+			frame={mapFrame(data.jurisdiction.code)}
 			fill={(slug) => (swing[slug] != null ? swingColour(swing[slug]!) : 'var(--rule)')}
 			tooltip={seatTip}
 			href={(slug) => `${base}/${slug}/`}
