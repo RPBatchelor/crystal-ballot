@@ -1,0 +1,4133 @@
+{
+ "election_id": "wa-2013",
+ "jurisdiction": "WA",
+ "date": "2013-03-09",
+ "seats_total": 59,
+ "majority": 30,
+ "seat_counts": {
+  "LIB": 31,
+  "ALP": 21,
+  "NAT": 7
+ },
+ "primary_share": {
+  "COAL": 53.16,
+  "ALP": 33.13,
+  "GRN": 8.39,
+  "IND": 2.91,
+  "OTH": 2.41
+ },
+ "party_share": {
+  "LIB": 47.1,
+  "ALP": 33.13,
+  "GRN": 8.39,
+  "NAT": 6.05,
+  "IND": 2.91,
+  "CHR": 1.81,
+  "FFP": 0.59
+ },
+ "tpp_alp": 42.7,
+ "seats": [
+  {
+   "name": "Albany",
+   "slug": "albany",
+   "elected": "WATSON Peter",
+   "party": "ALP",
+   "enrolment": 23572,
+   "formal": 21056,
+   "informal": 828,
+   "primary": [
+    {
+     "candidate": "WATSON Peter",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 8284,
+     "pct": 39.343
+    },
+    {
+     "candidate": "COSH Trevor",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 6061,
+     "pct": 28.785
+    },
+    {
+     "candidate": "SUTTON Robert",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 4357,
+     "pct": 20.692
+    },
+    {
+     "candidate": "EVERS Diane",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1137,
+     "pct": 5.4
+    },
+    {
+     "candidate": "VERMEULEN Hans",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 831,
+     "pct": 3.947
+    },
+    {
+     "candidate": "CRITCHISON Barry",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 386,
+     "pct": 1.833
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WATSON Peter",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 10957,
+     "pct": 52.05
+    },
+    {
+     "candidate": "COSH Trevor",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 10094,
+     "pct": 47.95
+    }
+   ],
+   "margin": 2.05,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 52.05,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Alfred Cove",
+   "slug": "alfred-cove",
+   "elected": "NALDER Dean",
+   "party": "LIB",
+   "enrolment": 24128,
+   "formal": 20995,
+   "informal": 1047,
+   "primary": [
+    {
+     "candidate": "NALDER Dean",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 13523,
+     "pct": 64.411
+    },
+    {
+     "candidate": "HOUSTON David",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 3532,
+     "pct": 16.823
+    },
+    {
+     "candidate": "WOOLLARD Janet",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2114,
+     "pct": 10.069
+    },
+    {
+     "candidate": "HARMAN Ros",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1665,
+     "pct": 7.93
+    },
+    {
+     "candidate": "GOM Estelle",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 161,
+     "pct": 0.767
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "NALDER Dean",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 15445,
+     "pct": 73.586
+    },
+    {
+     "candidate": "HOUSTON David",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 5544,
+     "pct": 26.414
+    }
+   ],
+   "margin": 23.59,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 26.414,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Armadale",
+   "slug": "armadale",
+   "elected": "BUTI Tony",
+   "party": "ALP",
+   "enrolment": 24757,
+   "formal": 20185,
+   "informal": 1562,
+   "primary": [
+    {
+     "candidate": "BUTI Tony",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 10836,
+     "pct": 53.683
+    },
+    {
+     "candidate": "WEBSTER Katherine",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 6613,
+     "pct": 32.762
+    },
+    {
+     "candidate": "VAN BURGEL Jamie",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 1403,
+     "pct": 6.951
+    },
+    {
+     "candidate": "PAGES-OLIVER Damon",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1333,
+     "pct": 6.604
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BUTI Tony",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 12032,
+     "pct": 59.62
+    },
+    {
+     "candidate": "WEBSTER Katherine",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 8149,
+     "pct": 40.38
+    }
+   ],
+   "margin": 9.62,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 59.62,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Balcatta",
+   "slug": "balcatta",
+   "elected": "HATTON Chris",
+   "party": "LIB",
+   "enrolment": 25071,
+   "formal": 20744,
+   "informal": 1727,
+   "primary": [
+    {
+     "candidate": "HATTON Chris",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 10756,
+     "pct": 51.851
+    },
+    {
+     "candidate": "PETTIGREW Janet",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 7341,
+     "pct": 35.389
+    },
+    {
+     "candidate": "YOUNG Sheridan",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1705,
+     "pct": 8.219
+    },
+    {
+     "candidate": "DODD Peter",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 322,
+     "pct": 1.552
+    },
+    {
+     "candidate": "CROLL Lesley",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 264,
+     "pct": 1.273
+    },
+    {
+     "candidate": "RUZZI Joe",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 234,
+     "pct": 1.128
+    },
+    {
+     "candidate": "KIDIMA Mubarak Kim",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 122,
+     "pct": 0.588
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HATTON Chris",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11886,
+     "pct": 57.345
+    },
+    {
+     "candidate": "PETTIGREW Janet",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 8841,
+     "pct": 42.655
+    }
+   ],
+   "margin": 7.34,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 42.655,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Bassendean",
+   "slug": "bassendean",
+   "elected": "KELLY Dave",
+   "party": "ALP",
+   "enrolment": 25011,
+   "formal": 20682,
+   "informal": 1854,
+   "primary": [
+    {
+     "candidate": "KELLY Dave",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 9663,
+     "pct": 46.722
+    },
+    {
+     "candidate": "BROWN Bob",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 8167,
+     "pct": 39.488
+    },
+    {
+     "candidate": "CARTER Jennie",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2119,
+     "pct": 10.246
+    },
+    {
+     "candidate": "MEWHOR Paul",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 733,
+     "pct": 3.544
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "KELLY Dave",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 11397,
+     "pct": 55.138
+    },
+    {
+     "candidate": "BROWN Bob",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9273,
+     "pct": 44.862
+    }
+   ],
+   "margin": 5.14,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 55.138,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Bateman",
+   "slug": "bateman",
+   "elected": "TAYLOR Matt",
+   "party": "LIB",
+   "enrolment": 23196,
+   "formal": 19817,
+   "informal": 1452,
+   "primary": [
+    {
+     "candidate": "TAYLOR Matt",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 12692,
+     "pct": 64.046
+    },
+    {
+     "candidate": "CHASLAND Rob",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 5044,
+     "pct": 25.453
+    },
+    {
+     "candidate": "LEIGHTON Rebecca",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2081,
+     "pct": 10.501
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "TAYLOR Matt",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 13440,
+     "pct": 67.838
+    },
+    {
+     "candidate": "CHASLAND Rob",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 6372,
+     "pct": 32.162
+    }
+   ],
+   "margin": 17.84,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 32.162,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Belmont",
+   "slug": "belmont",
+   "elected": "GODFREY Glenys",
+   "party": "LIB",
+   "enrolment": 22570,
+   "formal": 18431,
+   "informal": 1317,
+   "primary": [
+    {
+     "candidate": "GODFREY Glenys",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 8679,
+     "pct": 47.089
+    },
+    {
+     "candidate": "ROWE Cassie",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 7827,
+     "pct": 42.466
+    },
+    {
+     "candidate": "WOLFF Steve",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1504,
+     "pct": 8.16
+    },
+    {
+     "candidate": "KLOMP Steve",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 421,
+     "pct": 2.284
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "GODFREY Glenys",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9378,
+     "pct": 50.895
+    },
+    {
+     "candidate": "ROWE Cassie",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 9048,
+     "pct": 49.105
+    }
+   ],
+   "margin": 0.9,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 49.105,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Bunbury",
+   "slug": "bunbury",
+   "elected": "CASTRILLI John",
+   "party": "LIB",
+   "enrolment": 23534,
+   "formal": 19684,
+   "informal": 1320,
+   "primary": [
+    {
+     "candidate": "CASTRILLI John",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 10375,
+     "pct": 52.708
+    },
+    {
+     "candidate": "STEELE Karen",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 5595,
+     "pct": 28.424
+    },
+    {
+     "candidate": "FORSYTH James",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 1562,
+     "pct": 7.935
+    },
+    {
+     "candidate": "HUTCHINS Mitchella",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1250,
+     "pct": 6.35
+    },
+    {
+     "candidate": "ROSE Linda",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 374,
+     "pct": 1.9
+    },
+    {
+     "candidate": "CANEDOLI Lui Alfa",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 285,
+     "pct": 1.448
+    },
+    {
+     "candidate": "DABROWSKI Edward",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 243,
+     "pct": 1.235
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CASTRILLI John",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 12420,
+     "pct": 63.126
+    },
+    {
+     "candidate": "STEELE Karen",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 7255,
+     "pct": 36.874
+    }
+   ],
+   "margin": 13.13,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 36.874,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Butler",
+   "slug": "butler",
+   "elected": "QUIGLEY John",
+   "party": "ALP",
+   "enrolment": 28575,
+   "formal": 23097,
+   "informal": 1699,
+   "primary": [
+    {
+     "candidate": "QUIGLEY John",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 10510,
+     "pct": 45.504
+    },
+    {
+     "candidate": "AITKEN Linda",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9991,
+     "pct": 43.257
+    },
+    {
+     "candidate": "WEBSTER Thomas",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2067,
+     "pct": 8.949
+    },
+    {
+     "candidate": "LEEDER Steven",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 529,
+     "pct": 2.29
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "QUIGLEY John",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 11951,
+     "pct": 51.765
+    },
+    {
+     "candidate": "AITKEN Linda",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11136,
+     "pct": 48.235
+    }
+   ],
+   "margin": 1.77,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 51.765,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Cannington",
+   "slug": "cannington",
+   "elected": "JOHNSTON Bill",
+   "party": "ALP",
+   "enrolment": 23753,
+   "formal": 19319,
+   "informal": 1536,
+   "primary": [
+    {
+     "candidate": "JOHNSTON Bill",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 8457,
+     "pct": 43.776
+    },
+    {
+     "candidate": "JACOBS Jesse",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 8310,
+     "pct": 43.015
+    },
+    {
+     "candidate": "CUNNINGHAM Christine",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1850,
+     "pct": 9.576
+    },
+    {
+     "candidate": "HARRINGTON Mark",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 702,
+     "pct": 3.634
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "JOHNSTON Bill",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 10054,
+     "pct": 52.058
+    },
+    {
+     "candidate": "JACOBS Jesse",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9259,
+     "pct": 47.942
+    }
+   ],
+   "margin": 2.06,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 52.058,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Carine",
+   "slug": "carine",
+   "elected": "KRSTICEVIC Tony",
+   "party": "LIB",
+   "enrolment": 24458,
+   "formal": 21465,
+   "informal": 959,
+   "primary": [
+    {
+     "candidate": "KRSTICEVIC Tony",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 13582,
+     "pct": 63.275
+    },
+    {
+     "candidate": "WEBB Sharon",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 5278,
+     "pct": 24.589
+    },
+    {
+     "candidate": "CATTANEO Nathalie",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2024,
+     "pct": 9.429
+    },
+    {
+     "candidate": "DAVEY Rick",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 581,
+     "pct": 2.707
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "KRSTICEVIC Tony",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 14625,
+     "pct": 68.137
+    },
+    {
+     "candidate": "WEBB Sharon",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 6839,
+     "pct": 31.863
+    }
+   ],
+   "margin": 18.14,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 31.863,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Central Wheatbelt",
+   "slug": "central-wheatbelt",
+   "elected": "DAVIES Mia",
+   "party": "NAT",
+   "enrolment": 22496,
+   "formal": 19316,
+   "informal": 1076,
+   "primary": [
+    {
+     "candidate": "DAVIES Mia",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 8414,
+     "pct": 43.56
+    },
+    {
+     "candidate": "STRANGE Stephen",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 6088,
+     "pct": 31.518
+    },
+    {
+     "candidate": "WATTERS John",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 3375,
+     "pct": 17.473
+    },
+    {
+     "candidate": "WALTERS Tricia",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 637,
+     "pct": 3.298
+    },
+    {
+     "candidate": "STURMAN Gerald",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 474,
+     "pct": 2.454
+    },
+    {
+     "candidate": "ADAIR Bob",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 328,
+     "pct": 1.698
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "DAVIES Mia",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 11168,
+     "pct": 57.931
+    },
+    {
+     "candidate": "STRANGE Stephen",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 8110,
+     "pct": 42.069
+    }
+   ],
+   "margin": 7.93,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Churchlands",
+   "slug": "churchlands",
+   "elected": "L'ESTRANGE Sean",
+   "party": "LIB",
+   "enrolment": 25702,
+   "formal": 22659,
+   "informal": 829,
+   "primary": [
+    {
+     "candidate": "L'ESTRANGE Sean",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 13366,
+     "pct": 58.988
+    },
+    {
+     "candidate": "ASHFORTH Patrick",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 3543,
+     "pct": 15.636
+    },
+    {
+     "candidate": "MONKS Wayne",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1828,
+     "pct": 8.067
+    },
+    {
+     "candidate": "PIDGEON Cameron",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1740,
+     "pct": 7.679
+    },
+    {
+     "candidate": "RE Elizabeth",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1072,
+     "pct": 4.731
+    },
+    {
+     "candidate": "BIVOLTSIS Jim",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 783,
+     "pct": 3.456
+    },
+    {
+     "candidate": "SEYMOUR Pat",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 327,
+     "pct": 1.443
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "L'ESTRANGE Sean",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 15887,
+     "pct": 70.163
+    },
+    {
+     "candidate": "ASHFORTH Patrick",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 6756,
+     "pct": 29.837
+    }
+   ],
+   "margin": 20.16,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 29.837,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Cockburn",
+   "slug": "cockburn",
+   "elected": "LOGAN Fran",
+   "party": "ALP",
+   "enrolment": 25875,
+   "formal": 22191,
+   "informal": 1314,
+   "primary": [
+    {
+     "candidate": "LOGAN Fran",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 10606,
+     "pct": 47.794
+    },
+    {
+     "candidate": "BARRETT Don",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9327,
+     "pct": 42.031
+    },
+    {
+     "candidate": "HEWITT Shannon",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1681,
+     "pct": 7.575
+    },
+    {
+     "candidate": "ROSBOROUGH Derek",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 577,
+     "pct": 2.6
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LOGAN Fran",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 11993,
+     "pct": 54.091
+    },
+    {
+     "candidate": "BARRETT Don",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 10179,
+     "pct": 45.909
+    }
+   ],
+   "margin": 4.09,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 54.091,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Collie-Preston",
+   "slug": "collie-preston",
+   "elected": "MURRAY Mick",
+   "party": "ALP",
+   "enrolment": 23155,
+   "formal": 20168,
+   "informal": 1069,
+   "primary": [
+    {
+     "candidate": "MURRAY Mick",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 8708,
+     "pct": 43.177
+    },
+    {
+     "candidate": "MOTION Jaimee",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 8250,
+     "pct": 40.906
+    },
+    {
+     "candidate": "HUTCHINSON Peter",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 1513,
+     "pct": 7.502
+    },
+    {
+     "candidate": "GIBSON Kingsley",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1010,
+     "pct": 5.008
+    },
+    {
+     "candidate": "HARPER Alice",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 529,
+     "pct": 2.623
+    },
+    {
+     "candidate": "KNOP Clinton",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 158,
+     "pct": 0.783
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MURRAY Mick",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 10108,
+     "pct": 50.139
+    },
+    {
+     "candidate": "MOTION Jaimee",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 10052,
+     "pct": 49.861
+    }
+   ],
+   "margin": 0.14,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 50.139,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Cottesloe",
+   "slug": "cottesloe",
+   "elected": "BARNETT Colin",
+   "party": "LIB",
+   "enrolment": 24964,
+   "formal": 21695,
+   "informal": 781,
+   "primary": [
+    {
+     "candidate": "BARNETT Colin",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 14036,
+     "pct": 64.697
+    },
+    {
+     "candidate": "WILLIAMS Emma",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 2650,
+     "pct": 12.215
+    },
+    {
+     "candidate": "MORGAN Kevin",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2482,
+     "pct": 11.44
+    },
+    {
+     "candidate": "BOLAND Greg",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2246,
+     "pct": 10.353
+    },
+    {
+     "candidate": "FEARIS Neil",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 281,
+     "pct": 1.295
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BARNETT Colin",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 15380,
+     "pct": 70.918
+    },
+    {
+     "candidate": "WILLIAMS Emma",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 6307,
+     "pct": 29.082
+    }
+   ],
+   "margin": 20.92,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 29.082,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Darling Range",
+   "slug": "darling-range",
+   "elected": "SIMPSON Tony",
+   "party": "LIB",
+   "enrolment": 27041,
+   "formal": 23246,
+   "informal": 1539,
+   "primary": [
+    {
+     "candidate": "SIMPSON Tony",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 13454,
+     "pct": 57.877
+    },
+    {
+     "candidate": "URBAN Barry",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 6494,
+     "pct": 27.936
+    },
+    {
+     "candidate": "HARDIE Denise",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2144,
+     "pct": 9.223
+    },
+    {
+     "candidate": "GOIRAN Madeleine",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 1154,
+     "pct": 4.964
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SIMPSON Tony",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 15178,
+     "pct": 65.301
+    },
+    {
+     "candidate": "URBAN Barry",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 8065,
+     "pct": 34.699
+    }
+   ],
+   "margin": 15.3,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 34.699,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Dawesville",
+   "slug": "dawesville",
+   "elected": "HAMES Kim",
+   "party": "LIB",
+   "enrolment": 24778,
+   "formal": 20899,
+   "informal": 1297,
+   "primary": [
+    {
+     "candidate": "HAMES Kim",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11700,
+     "pct": 55.984
+    },
+    {
+     "candidate": "RIEBELING Fred",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 6050,
+     "pct": 28.949
+    },
+    {
+     "candidate": "SCHUMACHER Dave",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1236,
+     "pct": 5.914
+    },
+    {
+     "candidate": "ARMSTRONG Patricia",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1068,
+     "pct": 5.11
+    },
+    {
+     "candidate": "BUTLER Bryn",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 488,
+     "pct": 2.335
+    },
+    {
+     "candidate": "BAKER Brenton",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 357,
+     "pct": 1.708
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HAMES Kim",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 13088,
+     "pct": 62.661
+    },
+    {
+     "candidate": "RIEBELING Fred",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 7799,
+     "pct": 37.339
+    }
+   ],
+   "margin": 12.66,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 37.339,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Eyre",
+   "slug": "eyre",
+   "elected": "JACOBS Graham",
+   "party": "LIB",
+   "enrolment": 17309,
+   "formal": 14291,
+   "informal": 816,
+   "primary": [
+    {
+     "candidate": "JACOBS Graham",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 5870,
+     "pct": 41.075
+    },
+    {
+     "candidate": "DE GRUSSA Colin",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 5258,
+     "pct": 36.792
+    },
+    {
+     "candidate": "SMITH Greg",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 2082,
+     "pct": 14.569
+    },
+    {
+     "candidate": "JOHNSON Giorgia",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 715,
+     "pct": 5.003
+    },
+    {
+     "candidate": "HILTON Brett",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 366,
+     "pct": 2.561
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "JACOBS Graham",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 7203,
+     "pct": 50.438
+    },
+    {
+     "candidate": "DE GRUSSA Colin",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 7078,
+     "pct": 49.562
+    }
+   ],
+   "margin": 0.44,
+   "tcp_estimated": false,
+   "runner_up_party": "NAT",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Forrestfield",
+   "slug": "forrestfield",
+   "elected": "MORTON Nathan",
+   "party": "LIB",
+   "enrolment": 25453,
+   "formal": 21267,
+   "informal": 1600,
+   "primary": [
+    {
+     "candidate": "MORTON Nathan",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9866,
+     "pct": 46.391
+    },
+    {
+     "candidate": "WADDELL Andrew",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 8656,
+     "pct": 40.702
+    },
+    {
+     "candidate": "BURRELL Peter",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1434,
+     "pct": 6.743
+    },
+    {
+     "candidate": "MUNRO Mike",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 678,
+     "pct": 3.188
+    },
+    {
+     "candidate": "EIKELBOOM Troy",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 633,
+     "pct": 2.976
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MORTON Nathan",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11076,
+     "pct": 52.095
+    },
+    {
+     "candidate": "WADDELL Andrew",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 10185,
+     "pct": 47.905
+    }
+   ],
+   "margin": 2.09,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 47.905,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Fremantle",
+   "slug": "fremantle",
+   "elected": "McGURK Simone",
+   "party": "ALP",
+   "enrolment": 25922,
+   "formal": 21597,
+   "informal": 1219,
+   "primary": [
+    {
+     "candidate": "McGURK Simone",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 8249,
+     "pct": 38.195
+    },
+    {
+     "candidate": "HANSSEN Matthew",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 7760,
+     "pct": 35.931
+    },
+    {
+     "candidate": "SULLIVAN Andrew",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 3925,
+     "pct": 18.174
+    },
+    {
+     "candidate": "CARLES Adele",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1186,
+     "pct": 5.492
+    },
+    {
+     "candidate": "ANDREW Sanna",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 252,
+     "pct": 1.167
+    },
+    {
+     "candidate": "TER HORST Jan",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 225,
+     "pct": 1.042
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "McGURK Simone",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 12488,
+     "pct": 57.863
+    },
+    {
+     "candidate": "HANSSEN Matthew",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9094,
+     "pct": 42.137
+    }
+   ],
+   "margin": 7.86,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 57.863,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Geraldton",
+   "slug": "geraldton",
+   "elected": "BLAYNEY Ian",
+   "party": "LIB",
+   "enrolment": 22752,
+   "formal": 19255,
+   "informal": 1161,
+   "primary": [
+    {
+     "candidate": "BLAYNEY Ian",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9167,
+     "pct": 47.608
+    },
+    {
+     "candidate": "VAN STYN Shane",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 5081,
+     "pct": 26.388
+    },
+    {
+     "candidate": "MANNION Kathryn",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 3299,
+     "pct": 17.133
+    },
+    {
+     "candidate": "CONNOLLY Paul",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1239,
+     "pct": 6.435
+    },
+    {
+     "candidate": "BURDETT Carmen",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 469,
+     "pct": 2.436
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BLAYNEY Ian",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11711,
+     "pct": 60.906
+    },
+    {
+     "candidate": "VAN STYN Shane",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 7517,
+     "pct": 39.094
+    }
+   ],
+   "margin": 10.91,
+   "tcp_estimated": false,
+   "runner_up_party": "NAT",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Girrawheen",
+   "slug": "girrawheen",
+   "elected": "QUIRK Margaret",
+   "party": "ALP",
+   "enrolment": 26514,
+   "formal": 22069,
+   "informal": 1824,
+   "primary": [
+    {
+     "candidate": "QUIRK Margaret",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 9724,
+     "pct": 44.062
+    },
+    {
+     "candidate": "HALLIGAN John",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9408,
+     "pct": 42.63
+    },
+    {
+     "candidate": "KAFAMI Saba",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1289,
+     "pct": 5.841
+    },
+    {
+     "candidate": "NGUYEN Che Tam",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 847,
+     "pct": 3.838
+    },
+    {
+     "candidate": "DAVEY Mel",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 801,
+     "pct": 3.63
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "QUIRK Margaret",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 11557,
+     "pct": 52.394
+    },
+    {
+     "candidate": "HALLIGAN John",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 10501,
+     "pct": 47.606
+    }
+   ],
+   "margin": 2.39,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 52.394,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Gosnells",
+   "slug": "gosnells",
+   "elected": "TALLENTIRE Chris",
+   "party": "ALP",
+   "enrolment": 24976,
+   "formal": 20617,
+   "informal": 1682,
+   "primary": [
+    {
+     "candidate": "TALLENTIRE Chris",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 9237,
+     "pct": 44.803
+    },
+    {
+     "candidate": "GOODE David",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 8040,
+     "pct": 38.997
+    },
+    {
+     "candidate": "EDMONDS Luke",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1207,
+     "pct": 5.854
+    },
+    {
+     "candidate": "FERNANDEZ Chris",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 850,
+     "pct": 4.123
+    },
+    {
+     "candidate": "STAER Mark",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 782,
+     "pct": 3.793
+    },
+    {
+     "candidate": "BUTLER Debbie",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 501,
+     "pct": 2.43
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "TALLENTIRE Chris",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 10896,
+     "pct": 52.901
+    },
+    {
+     "candidate": "GOODE David",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9701,
+     "pct": 47.099
+    }
+   ],
+   "margin": 2.9,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 52.901,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Hillarys",
+   "slug": "hillarys",
+   "elected": "JOHNSON Rob",
+   "party": "LIB",
+   "enrolment": 24584,
+   "formal": 20978,
+   "informal": 1232,
+   "primary": [
+    {
+     "candidate": "JOHNSON Rob",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 13484,
+     "pct": 64.277
+    },
+    {
+     "candidate": "THOMAS Sam",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 4934,
+     "pct": 23.52
+    },
+    {
+     "candidate": "COLLINS Adam",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2015,
+     "pct": 9.605
+    },
+    {
+     "candidate": "FORD Michael",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 545,
+     "pct": 2.598
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "JOHNSON Rob",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 14463,
+     "pct": 68.97
+    },
+    {
+     "candidate": "THOMAS Sam",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 6507,
+     "pct": 31.03
+    }
+   ],
+   "margin": 18.97,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 31.03,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Jandakot",
+   "slug": "jandakot",
+   "elected": "FRANCIS Joe",
+   "party": "LIB",
+   "enrolment": 25129,
+   "formal": 21673,
+   "informal": 1351,
+   "primary": [
+    {
+     "candidate": "FRANCIS Joe",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11998,
+     "pct": 55.359
+    },
+    {
+     "candidate": "ANDRIC Klara",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 7834,
+     "pct": 36.146
+    },
+    {
+     "candidate": "HAYNES John",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1841,
+     "pct": 8.494
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "FRANCIS Joe",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 12584,
+     "pct": 58.074
+    },
+    {
+     "candidate": "ANDRIC Klara",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 9085,
+     "pct": 41.926
+    }
+   ],
+   "margin": 8.07,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 41.926,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Joondalup",
+   "slug": "joondalup",
+   "elected": "NORBERGER Jan",
+   "party": "LIB",
+   "enrolment": 23832,
+   "formal": 19820,
+   "informal": 1349,
+   "primary": [
+    {
+     "candidate": "NORBERGER Jan",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9961,
+     "pct": 50.257
+    },
+    {
+     "candidate": "O'GORMAN Tony",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 7519,
+     "pct": 37.936
+    },
+    {
+     "candidate": "YOUNG Brittany",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1837,
+     "pct": 9.268
+    },
+    {
+     "candidate": "McDAVITT Geoff",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 503,
+     "pct": 2.538
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "NORBERGER Jan",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 10796,
+     "pct": 54.473
+    },
+    {
+     "candidate": "O'GORMAN Tony",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 9023,
+     "pct": 45.527
+    }
+   ],
+   "margin": 4.47,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 45.527,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Kalamunda",
+   "slug": "kalamunda",
+   "elected": "DAY John",
+   "party": "LIB",
+   "enrolment": 23739,
+   "formal": 20274,
+   "informal": 1213,
+   "primary": [
+    {
+     "candidate": "DAY John",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9624,
+     "pct": 47.47
+    },
+    {
+     "candidate": "WAINWRIGHT Mick",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 4480,
+     "pct": 22.097
+    },
+    {
+     "candidate": "STALLARD Geoff",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2780,
+     "pct": 13.712
+    },
+    {
+     "candidate": "WARDEN Toni",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1658,
+     "pct": 8.178
+    },
+    {
+     "candidate": "ROSS Greg",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1120,
+     "pct": 5.524
+    },
+    {
+     "candidate": "WILLIAMS Hannah",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 612,
+     "pct": 3.019
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "DAY John",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 12241,
+     "pct": 60.452
+    },
+    {
+     "candidate": "WAINWRIGHT Mick",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 8008,
+     "pct": 39.548
+    }
+   ],
+   "margin": 10.45,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 39.548,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Kalgoorlie",
+   "slug": "kalgoorlie",
+   "elected": "DUNCAN Wendy",
+   "party": "NAT",
+   "enrolment": 13195,
+   "formal": 10045,
+   "informal": 602,
+   "primary": [
+    {
+     "candidate": "PRICE Melissa",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 3748,
+     "pct": 37.312
+    },
+    {
+     "candidate": "DUNCAN Wendy",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 3717,
+     "pct": 37.003
+    },
+    {
+     "candidate": "WINNER Terrence",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 1928,
+     "pct": 19.194
+    },
+    {
+     "candidate": "HALL Tim",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 450,
+     "pct": 4.48
+    },
+    {
+     "candidate": "PATTERSON Ross",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 202,
+     "pct": 2.011
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "DUNCAN Wendy",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 5651,
+     "pct": 56.341
+    },
+    {
+     "candidate": "PRICE Melissa",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 4379,
+     "pct": 43.659
+    }
+   ],
+   "margin": 6.34,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Kimberley",
+   "slug": "kimberley",
+   "elected": "FARRER Josie",
+   "party": "ALP",
+   "enrolment": 16387,
+   "formal": 11360,
+   "informal": 595,
+   "primary": [
+    {
+     "candidate": "FARRER Josie",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 3030,
+     "pct": 26.673
+    },
+    {
+     "candidate": "BLOOM Jenny",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 2924,
+     "pct": 25.739
+    },
+    {
+     "candidate": "MAHER Chris",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2664,
+     "pct": 23.451
+    },
+    {
+     "candidate": "PUCCI Michele",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 2085,
+     "pct": 18.354
+    },
+    {
+     "candidate": "OGILVIE Rod",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 499,
+     "pct": 4.393
+    },
+    {
+     "candidate": "SIMONS Craig",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 158,
+     "pct": 1.391
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "FARRER Josie",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 6255,
+     "pct": 55.086
+    },
+    {
+     "candidate": "BLOOM Jenny",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 5100,
+     "pct": 44.914
+    }
+   ],
+   "margin": 5.09,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 55.086,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Kingsley",
+   "slug": "kingsley",
+   "elected": "MITCHELL Andrea",
+   "party": "LIB",
+   "enrolment": 24866,
+   "formal": 21712,
+   "informal": 1207,
+   "primary": [
+    {
+     "candidate": "MITCHELL Andrea",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 13030,
+     "pct": 60.013
+    },
+    {
+     "candidate": "CORR Brian",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 6326,
+     "pct": 29.136
+    },
+    {
+     "candidate": "MACTIERNAN Diana",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1846,
+     "pct": 8.502
+    },
+    {
+     "candidate": "MASON Sophie Ann",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 510,
+     "pct": 2.349
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MITCHELL Andrea",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 14056,
+     "pct": 64.786
+    },
+    {
+     "candidate": "CORR Brian",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 7640,
+     "pct": 35.214
+    }
+   ],
+   "margin": 14.79,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 35.214,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Kwinana",
+   "slug": "kwinana",
+   "elected": "COOK Roger",
+   "party": "ALP",
+   "enrolment": 27393,
+   "formal": 22431,
+   "informal": 1633,
+   "primary": [
+    {
+     "candidate": "COOK Roger",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 9819,
+     "pct": 43.774
+    },
+    {
+     "candidate": "ADAMS Carol",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 5406,
+     "pct": 24.101
+    },
+    {
+     "candidate": "JAMIESON John",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 5330,
+     "pct": 23.762
+    },
+    {
+     "candidate": "BOSKAMP Iwan",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1340,
+     "pct": 5.974
+    },
+    {
+     "candidate": "WARDELL-JOHNSON Stephen",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 536,
+     "pct": 2.39
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "COOK Roger",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 11783,
+     "pct": 52.565
+    },
+    {
+     "candidate": "ADAMS Carol",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 10633,
+     "pct": 47.435
+    }
+   ],
+   "margin": 2.56,
+   "tcp_estimated": false,
+   "runner_up_party": "IND",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Mandurah",
+   "slug": "mandurah",
+   "elected": "TEMPLEMAN David",
+   "party": "ALP",
+   "enrolment": 23789,
+   "formal": 20019,
+   "informal": 957,
+   "primary": [
+    {
+     "candidate": "TEMPLEMAN David",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 10507,
+     "pct": 52.485
+    },
+    {
+     "candidate": "SOLIN Tony",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 7531,
+     "pct": 37.619
+    },
+    {
+     "candidate": "BULBECK Chilla",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 724,
+     "pct": 3.617
+    },
+    {
+     "candidate": "NEWHOUSE Andrew",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 527,
+     "pct": 2.632
+    },
+    {
+     "candidate": "ASH Jake",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 367,
+     "pct": 1.833
+    },
+    {
+     "candidate": "HUGHES John",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 261,
+     "pct": 1.304
+    },
+    {
+     "candidate": "BRYANT Charles",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 102,
+     "pct": 0.51
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "TEMPLEMAN David",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 11550,
+     "pct": 57.707
+    },
+    {
+     "candidate": "SOLIN Tony",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 8465,
+     "pct": 42.293
+    }
+   ],
+   "margin": 7.71,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 57.707,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Maylands",
+   "slug": "maylands",
+   "elected": "BAKER Lisa",
+   "party": "ALP",
+   "enrolment": 25037,
+   "formal": 20776,
+   "informal": 1445,
+   "primary": [
+    {
+     "candidate": "ALBERT Sylvan",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 8893,
+     "pct": 42.804
+    },
+    {
+     "candidate": "BAKER Lisa",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 8796,
+     "pct": 42.337
+    },
+    {
+     "candidate": "O'NEILL Dee",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2554,
+     "pct": 12.293
+    },
+    {
+     "candidate": "MADDEN Paul",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 533,
+     "pct": 2.565
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BAKER Lisa",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 11020,
+     "pct": 53.055
+    },
+    {
+     "candidate": "ALBERT Sylvan",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9751,
+     "pct": 46.945
+    }
+   ],
+   "margin": 3.05,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 53.055,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Midland",
+   "slug": "midland",
+   "elected": "ROBERTS Michelle",
+   "party": "ALP",
+   "enrolment": 24209,
+   "formal": 20276,
+   "informal": 1386,
+   "primary": [
+    {
+     "candidate": "PARASILITI Daniel",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9362,
+     "pct": 46.173
+    },
+    {
+     "candidate": "ROBERTS Michelle",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 8489,
+     "pct": 41.867
+    },
+    {
+     "candidate": "TANDY Pippa",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1905,
+     "pct": 9.395
+    },
+    {
+     "candidate": "MORAN Isaac",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 520,
+     "pct": 2.565
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ROBERTS Michelle",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 10142,
+     "pct": 50.059
+    },
+    {
+     "candidate": "PARASILITI Daniel",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 10118,
+     "pct": 49.941
+    }
+   ],
+   "margin": 0.06,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 50.059,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Mirrabooka",
+   "slug": "mirrabooka",
+   "elected": "FREEMAN Janine",
+   "party": "ALP",
+   "enrolment": 25691,
+   "formal": 20251,
+   "informal": 2239,
+   "primary": [
+    {
+     "candidate": "FREEMAN Janine",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 9661,
+     "pct": 47.706
+    },
+    {
+     "candidate": "CREADO Andrea",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 7879,
+     "pct": 38.907
+    },
+    {
+     "candidate": "COOPER Mark William",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1757,
+     "pct": 8.676
+    },
+    {
+     "candidate": "HOST Lois",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 954,
+     "pct": 4.711
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "FREEMAN Janine",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 11045,
+     "pct": 54.57
+    },
+    {
+     "candidate": "CREADO Andrea",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9195,
+     "pct": 45.43
+    }
+   ],
+   "margin": 4.57,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 54.57,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Moore",
+   "slug": "moore",
+   "elected": "LOVE Shane",
+   "party": "NAT",
+   "enrolment": 23506,
+   "formal": 20239,
+   "informal": 1059,
+   "primary": [
+    {
+     "candidate": "WILKINS Chris",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 7896,
+     "pct": 39.014
+    },
+    {
+     "candidate": "LOVE Shane",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 7510,
+     "pct": 37.107
+    },
+    {
+     "candidate": "JOHNSON Peter",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 3316,
+     "pct": 16.384
+    },
+    {
+     "candidate": "MARGETTS Dee",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1131,
+     "pct": 5.588
+    },
+    {
+     "candidate": "PORTER Wes",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 386,
+     "pct": 1.907
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LOVE Shane",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 11299,
+     "pct": 55.875
+    },
+    {
+     "candidate": "WILKINS Chris",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 8923,
+     "pct": 44.125
+    }
+   ],
+   "margin": 5.88,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Morley",
+   "slug": "morley",
+   "elected": "BRITZA Ian",
+   "party": "LIB",
+   "enrolment": 24212,
+   "formal": 19906,
+   "informal": 1851,
+   "primary": [
+    {
+     "candidate": "BRITZA Ian",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9932,
+     "pct": 49.895
+    },
+    {
+     "candidate": "WHITBY Reece",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 7868,
+     "pct": 39.526
+    },
+    {
+     "candidate": "PALMER Sally Irene",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1371,
+     "pct": 6.887
+    },
+    {
+     "candidate": "FRASER Ross",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 430,
+     "pct": 2.16
+    },
+    {
+     "candidate": "HALLS Greg",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 305,
+     "pct": 1.532
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BRITZA Ian",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 10889,
+     "pct": 54.741
+    },
+    {
+     "candidate": "WHITBY Reece",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 9003,
+     "pct": 45.259
+    }
+   ],
+   "margin": 4.74,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 45.259,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Mount Lawley",
+   "slug": "mount-lawley",
+   "elected": "SUTHERLAND Michael",
+   "party": "LIB",
+   "enrolment": 25282,
+   "formal": 21150,
+   "informal": 1446,
+   "primary": [
+    {
+     "candidate": "SUTHERLAND Michael",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11537,
+     "pct": 54.548
+    },
+    {
+     "candidate": "KUCERA Bob",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 6888,
+     "pct": 32.567
+    },
+    {
+     "candidate": "CLIFFORD Tim",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2086,
+     "pct": 9.863
+    },
+    {
+     "candidate": "CONNELLY Paul",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 452,
+     "pct": 2.137
+    },
+    {
+     "candidate": "BOLT Dave",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 187,
+     "pct": 0.884
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SUTHERLAND Michael",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 12551,
+     "pct": 59.357
+    },
+    {
+     "candidate": "KUCERA Bob",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 8594,
+     "pct": 40.643
+    }
+   ],
+   "margin": 9.36,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 40.643,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Murray-Wellington",
+   "slug": "murray-wellington",
+   "elected": "COWPER Murray",
+   "party": "LIB",
+   "enrolment": 23919,
+   "formal": 20136,
+   "informal": 1507,
+   "primary": [
+    {
+     "candidate": "COWPER Murray",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 10044,
+     "pct": 49.881
+    },
+    {
+     "candidate": "SCAIFE David",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 5674,
+     "pct": 28.178
+    },
+    {
+     "candidate": "ROSE Michael",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 2280,
+     "pct": 11.323
+    },
+    {
+     "candidate": "FULLER Deni",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1134,
+     "pct": 5.632
+    },
+    {
+     "candidate": "RANKIN Laurie",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 621,
+     "pct": 3.084
+    },
+    {
+     "candidate": "HESLINGTON Norm",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 383,
+     "pct": 1.902
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "COWPER Murray",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 12476,
+     "pct": 61.98
+    },
+    {
+     "candidate": "SCAIFE David",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 7653,
+     "pct": 38.02
+    }
+   ],
+   "margin": 11.98,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 38.02,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Nedlands",
+   "slug": "nedlands",
+   "elected": "MARMION Bill",
+   "party": "LIB",
+   "enrolment": 24440,
+   "formal": 21164,
+   "informal": 827,
+   "primary": [
+    {
+     "candidate": "MARMION Bill",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 12351,
+     "pct": 58.359
+    },
+    {
+     "candidate": "WALKER Tony",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 2987,
+     "pct": 14.114
+    },
+    {
+     "candidate": "HIPKINS Max",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2758,
+     "pct": 13.032
+    },
+    {
+     "candidate": "CRISP George",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2752,
+     "pct": 13.003
+    },
+    {
+     "candidate": "FORDER Gail",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 316,
+     "pct": 1.493
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MARMION Bill",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 14622,
+     "pct": 69.131
+    },
+    {
+     "candidate": "WALKER Tony",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 6529,
+     "pct": 30.869
+    }
+   ],
+   "margin": 19.13,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 30.869,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "North West Central",
+   "slug": "north-west-central",
+   "elected": "CATANIA Vince",
+   "party": "NAT",
+   "enrolment": 9730,
+   "formal": 7262,
+   "informal": 454,
+   "primary": [
+    {
+     "candidate": "CATANIA Vince",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 3175,
+     "pct": 43.721
+    },
+    {
+     "candidate": "MAITRE Tami",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 2114,
+     "pct": 29.11
+    },
+    {
+     "candidate": "SHELTON Jennifer",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 1523,
+     "pct": 20.972
+    },
+    {
+     "candidate": "PIKE Des",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 364,
+     "pct": 5.012
+    },
+    {
+     "candidate": "EDDISON Andrew",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 86,
+     "pct": 1.184
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CATANIA Vince",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 4334,
+     "pct": 59.705
+    },
+    {
+     "candidate": "MAITRE Tami",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 2925,
+     "pct": 40.295
+    }
+   ],
+   "margin": 9.7,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Ocean Reef",
+   "slug": "ocean-reef",
+   "elected": "JACOB Albert",
+   "party": "LIB",
+   "enrolment": 24931,
+   "formal": 21037,
+   "informal": 1430,
+   "primary": [
+    {
+     "candidate": "JACOB Albert",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 13700,
+     "pct": 65.123
+    },
+    {
+     "candidate": "TAYLOR Philippa",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 5384,
+     "pct": 25.593
+    },
+    {
+     "candidate": "O'BYRNE Mary",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1409,
+     "pct": 6.698
+    },
+    {
+     "candidate": "KENNEDY Lyn",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 301,
+     "pct": 1.431
+    },
+    {
+     "candidate": "CROLL Alin\u00e9",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 243,
+     "pct": 1.155
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "JACOB Albert",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 14507,
+     "pct": 68.969
+    },
+    {
+     "candidate": "TAYLOR Philippa",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 6527,
+     "pct": 31.031
+    }
+   ],
+   "margin": 18.97,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 31.031,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Perth",
+   "slug": "perth",
+   "elected": "EVANGEL Eleni",
+   "party": "LIB",
+   "enrolment": 26063,
+   "formal": 21212,
+   "informal": 1300,
+   "primary": [
+    {
+     "candidate": "EVANGEL Eleni",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 10318,
+     "pct": 48.642
+    },
+    {
+     "candidate": "HYDE John",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 7666,
+     "pct": 36.14
+    },
+    {
+     "candidate": "HALLETT Jonathan",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2706,
+     "pct": 12.757
+    },
+    {
+     "candidate": "HOST Kevin",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 324,
+     "pct": 1.527
+    },
+    {
+     "candidate": "IQBAL Farida",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 198,
+     "pct": 0.933
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "EVANGEL Eleni",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11165,
+     "pct": 52.64
+    },
+    {
+     "candidate": "HYDE John",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 10045,
+     "pct": 47.36
+    }
+   ],
+   "margin": 2.64,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 47.36,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Pilbara",
+   "slug": "pilbara",
+   "elected": "GRYLLS Brendon",
+   "party": "NAT",
+   "enrolment": 17292,
+   "formal": 12598,
+   "informal": 663,
+   "primary": [
+    {
+     "candidate": "GRYLLS Brendon",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 4866,
+     "pct": 38.625
+    },
+    {
+     "candidate": "HOWLETT Kelly",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 3758,
+     "pct": 29.83
+    },
+    {
+     "candidate": "LEVISSIANOS George",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 2911,
+     "pct": 23.107
+    },
+    {
+     "candidate": "MATHESON Julie Christine",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 628,
+     "pct": 4.985
+    },
+    {
+     "candidate": "McKENNA Brent",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 267,
+     "pct": 2.119
+    },
+    {
+     "candidate": "RICHARDS Bruce",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 168,
+     "pct": 1.334
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "GRYLLS Brendon",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 7739,
+     "pct": 61.474
+    },
+    {
+     "candidate": "HOWLETT Kelly",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 4850,
+     "pct": 38.526
+    }
+   ],
+   "margin": 11.47,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 38.526,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Riverton",
+   "slug": "riverton",
+   "elected": "NAHAN Mike",
+   "party": "LIB",
+   "enrolment": 24090,
+   "formal": 20963,
+   "informal": 1237,
+   "primary": [
+    {
+     "candidate": "NAHAN Mike",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11807,
+     "pct": 56.323
+    },
+    {
+     "candidate": "BEAZLEY Hannah",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 7388,
+     "pct": 35.243
+    },
+    {
+     "candidate": "ATKINSON Marcus",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1291,
+     "pct": 6.158
+    },
+    {
+     "candidate": "DELLE DONNE Joe",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 477,
+     "pct": 2.275
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "NAHAN Mike",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 12405,
+     "pct": 59.19
+    },
+    {
+     "candidate": "BEAZLEY Hannah",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 8553,
+     "pct": 40.81
+    }
+   ],
+   "margin": 9.19,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 40.81,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Rockingham",
+   "slug": "rockingham",
+   "elected": "McGOWAN Mark",
+   "party": "ALP",
+   "enrolment": 25134,
+   "formal": 20773,
+   "informal": 1341,
+   "primary": [
+    {
+     "candidate": "McGOWAN Mark",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 11716,
+     "pct": 56.4
+    },
+    {
+     "candidate": "POLLOCK Matthew",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 6744,
+     "pct": 32.465
+    },
+    {
+     "candidate": "JECKS Dawn",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1265,
+     "pct": 6.09
+    },
+    {
+     "candidate": "WHITFIELD Matthew",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 610,
+     "pct": 2.937
+    },
+    {
+     "candidate": "WIESKE John",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 438,
+     "pct": 2.109
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "McGOWAN Mark",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 13127,
+     "pct": 63.208
+    },
+    {
+     "candidate": "POLLOCK Matthew",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 7641,
+     "pct": 36.792
+    }
+   ],
+   "margin": 13.21,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 63.208,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Scarborough",
+   "slug": "scarborough",
+   "elected": "HARVEY Liza",
+   "party": "LIB",
+   "enrolment": 24670,
+   "formal": 20506,
+   "informal": 1156,
+   "primary": [
+    {
+     "candidate": "HARVEY Liza",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 12681,
+     "pct": 61.84
+    },
+    {
+     "candidate": "LENNIE Eddie",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 5036,
+     "pct": 24.559
+    },
+    {
+     "candidate": "CULLITY Judith",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2294,
+     "pct": 11.187
+    },
+    {
+     "candidate": "OLSEN Bruce",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 495,
+     "pct": 2.414
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HARVEY Liza",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 13792,
+     "pct": 67.288
+    },
+    {
+     "candidate": "LENNIE Eddie",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 6705,
+     "pct": 32.712
+    }
+   ],
+   "margin": 17.29,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 32.712,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "South Perth",
+   "slug": "south-perth",
+   "elected": "MCGRATH John",
+   "party": "LIB",
+   "enrolment": 24249,
+   "formal": 20387,
+   "informal": 1095,
+   "primary": [
+    {
+     "candidate": "MCGRATH John",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 13654,
+     "pct": 66.974
+    },
+    {
+     "candidate": "RAFFERTY Dustin",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 4432,
+     "pct": 21.739
+    },
+    {
+     "candidate": "BEST Peter John",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1800,
+     "pct": 8.829
+    },
+    {
+     "candidate": "MANGINI David J",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 501,
+     "pct": 2.457
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MCGRATH John",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 14494,
+     "pct": 71.105
+    },
+    {
+     "candidate": "RAFFERTY Dustin",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 5890,
+     "pct": 28.895
+    }
+   ],
+   "margin": 21.11,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 28.895,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Southern River",
+   "slug": "southern-river",
+   "elected": "ABETZ Peter",
+   "party": "LIB",
+   "enrolment": 25958,
+   "formal": 22116,
+   "informal": 1464,
+   "primary": [
+    {
+     "candidate": "ABETZ Peter",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 13949,
+     "pct": 63.072
+    },
+    {
+     "candidate": "THOMAS Susy",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 6421,
+     "pct": 29.033
+    },
+    {
+     "candidate": "GNANAPRAGASAM Kate",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1176,
+     "pct": 5.317
+    },
+    {
+     "candidate": "POSTHUMA Damian",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 570,
+     "pct": 2.577
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ABETZ Peter",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 14777,
+     "pct": 66.976
+    },
+    {
+     "candidate": "THOMAS Susy",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 7286,
+     "pct": 33.024
+    }
+   ],
+   "margin": 16.98,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 33.024,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Swan Hills",
+   "slug": "swan-hills",
+   "elected": "ALBAN Frank",
+   "party": "LIB",
+   "enrolment": 26121,
+   "formal": 22574,
+   "informal": 1312,
+   "primary": [
+    {
+     "candidate": "ALBAN Frank",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11446,
+     "pct": 50.704
+    },
+    {
+     "candidate": "RADISICH Ian",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 8159,
+     "pct": 36.143
+    },
+    {
+     "candidate": "LIEB Dominique",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2028,
+     "pct": 8.984
+    },
+    {
+     "candidate": "TAPLEY John",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 481,
+     "pct": 2.131
+    },
+    {
+     "candidate": "SHARRIN Kyran",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 460,
+     "pct": 2.038
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ALBAN Frank",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 12610,
+     "pct": 55.876
+    },
+    {
+     "candidate": "RADISICH Ian",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 9958,
+     "pct": 44.124
+    }
+   ],
+   "margin": 5.88,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 44.124,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Vasse",
+   "slug": "vasse",
+   "elected": "BUSWELL Troy",
+   "party": "LIB",
+   "enrolment": 23114,
+   "formal": 20231,
+   "informal": 848,
+   "primary": [
+    {
+     "candidate": "BUSWELL Troy",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11593,
+     "pct": 57.303
+    },
+    {
+     "candidate": "EDMUNDSON Lee",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 2501,
+     "pct": 12.362
+    },
+    {
+     "candidate": "BALDOCK Michael",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2026,
+     "pct": 10.014
+    },
+    {
+     "candidate": "MASTERS Bernie",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1624,
+     "pct": 8.027
+    },
+    {
+     "candidate": "WISHART James",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 1474,
+     "pct": 7.286
+    },
+    {
+     "candidate": "NORDEN Gary",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 601,
+     "pct": 2.971
+    },
+    {
+     "candidate": "WESTBROOK Julie",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 412,
+     "pct": 2.036
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BUSWELL Troy",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 14396,
+     "pct": 71.204
+    },
+    {
+     "candidate": "EDMUNDSON Lee",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 5822,
+     "pct": 28.796
+    }
+   ],
+   "margin": 21.2,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 28.796,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Victoria Park",
+   "slug": "victoria-park",
+   "elected": "WYATT Ben",
+   "party": "ALP",
+   "enrolment": 25119,
+   "formal": 20097,
+   "informal": 1402,
+   "primary": [
+    {
+     "candidate": "WYATT Ben",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 8978,
+     "pct": 44.673
+    },
+    {
+     "candidate": "ZAMAN Haider",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 8591,
+     "pct": 42.748
+    },
+    {
+     "candidate": "NEWBOLD Sarah",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2528,
+     "pct": 12.579
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WYATT Ben",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 10865,
+     "pct": 54.079
+    },
+    {
+     "candidate": "ZAMAN Haider",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9226,
+     "pct": 45.921
+    }
+   ],
+   "margin": 4.08,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 54.079,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Wagin",
+   "slug": "wagin",
+   "elected": "WALDRON Terry",
+   "party": "NAT",
+   "enrolment": 21921,
+   "formal": 19015,
+   "informal": 869,
+   "primary": [
+    {
+     "candidate": "WALDRON Terry",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 12108,
+     "pct": 63.676
+    },
+    {
+     "candidate": "BLIGHT Phillip",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 3316,
+     "pct": 17.439
+    },
+    {
+     "candidate": "STOKES Josh",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 2122,
+     "pct": 11.16
+    },
+    {
+     "candidate": "COLLINS Shirley",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 849,
+     "pct": 4.465
+    },
+    {
+     "candidate": "YOUNG Jacky",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 620,
+     "pct": 3.261
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WALDRON Terry",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 14623,
+     "pct": 76.911
+    },
+    {
+     "candidate": "BLIGHT Phillip",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 4390,
+     "pct": 23.089
+    }
+   ],
+   "margin": 26.91,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Wanneroo",
+   "slug": "wanneroo",
+   "elected": "MILES Paul",
+   "party": "LIB",
+   "enrolment": 25407,
+   "formal": 21426,
+   "informal": 1504,
+   "primary": [
+    {
+     "candidate": "MILES Paul",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 11932,
+     "pct": 55.689
+    },
+    {
+     "candidate": "TREBY Brett",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 6887,
+     "pct": 32.143
+    },
+    {
+     "candidate": "PHILLIPS Rob",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1611,
+     "pct": 7.519
+    },
+    {
+     "candidate": "BIRCH Meg",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 550,
+     "pct": 2.567
+    },
+    {
+     "candidate": "RAPP Moyna",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 446,
+     "pct": 2.082
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MILES Paul",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 13089,
+     "pct": 61.115
+    },
+    {
+     "candidate": "TREBY Brett",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 8328,
+     "pct": 38.885
+    }
+   ],
+   "margin": 11.12,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 38.885,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Warnbro",
+   "slug": "warnbro",
+   "elected": "PAPALIA Paul",
+   "party": "ALP",
+   "enrolment": 28087,
+   "formal": 23015,
+   "informal": 1800,
+   "primary": [
+    {
+     "candidate": "PAPALIA Paul",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 12153,
+     "pct": 52.805
+    },
+    {
+     "candidate": "MARKS Joel",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 8846,
+     "pct": 38.436
+    },
+    {
+     "candidate": "STEELE-JOHN Jordon",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2016,
+     "pct": 8.76
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PAPALIA Paul",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 13534,
+     "pct": 58.805
+    },
+    {
+     "candidate": "MARKS Joel",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9481,
+     "pct": 41.195
+    }
+   ],
+   "margin": 8.8,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 58.805,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Warren-Blackwood",
+   "slug": "warren-blackwood",
+   "elected": "REDMAN Terry",
+   "party": "NAT",
+   "enrolment": 25730,
+   "formal": 22182,
+   "informal": 1322,
+   "primary": [
+    {
+     "candidate": "REDMAN Terry",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 7439,
+     "pct": 33.536
+    },
+    {
+     "candidate": "COLYER Ray",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 6699,
+     "pct": 30.2
+    },
+    {
+     "candidate": "BOSHAMMER Nerilee",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 3612,
+     "pct": 16.283
+    },
+    {
+     "candidate": "THORPE John",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 3331,
+     "pct": 15.017
+    },
+    {
+     "candidate": "SCIBILIA Louie",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 425,
+     "pct": 1.916
+    },
+    {
+     "candidate": "DOUGLASS Phillip",
+     "party": "FFP",
+     "party_name": "Family First",
+     "votes": 403,
+     "pct": 1.817
+    },
+    {
+     "candidate": "REDMAN K.",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 273,
+     "pct": 1.231
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "REDMAN Terry",
+     "party": "NAT",
+     "party_name": "THE NATIONALS",
+     "votes": 11769,
+     "pct": 53.104
+    },
+    {
+     "candidate": "COLYER Ray",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 10393,
+     "pct": 46.896
+    }
+   ],
+   "margin": 3.1,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "West Swan",
+   "slug": "west-swan",
+   "elected": "SAFFIOTI Rita",
+   "party": "ALP",
+   "enrolment": 26251,
+   "formal": 22133,
+   "informal": 1622,
+   "primary": [
+    {
+     "candidate": "SAFFIOTI Rita",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 10617,
+     "pct": 47.969
+    },
+    {
+     "candidate": "CHEUNG Natasha",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 9900,
+     "pct": 44.73
+    },
+    {
+     "candidate": "LEAM Peter",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 1059,
+     "pct": 4.785
+    },
+    {
+     "candidate": "WIESKE Esther",
+     "party": "CHR",
+     "party_name": "Australian Christians",
+     "votes": 557,
+     "pct": 2.517
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SAFFIOTI Rita",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 11487,
+     "pct": 51.905
+    },
+    {
+     "candidate": "CHEUNG Natasha",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 10644,
+     "pct": 48.095
+    }
+   ],
+   "margin": 1.91,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 51.905,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Willagee",
+   "slug": "willagee",
+   "elected": "TINLEY Peter",
+   "party": "ALP",
+   "enrolment": 23894,
+   "formal": 19950,
+   "informal": 1431,
+   "primary": [
+    {
+     "candidate": "TINLEY Peter",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 9280,
+     "pct": 46.516
+    },
+    {
+     "candidate": "PIIPPONEN Samuel",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 7097,
+     "pct": 35.574
+    },
+    {
+     "candidate": "RYANS-TAYLOR Alisha",
+     "party": "GRN",
+     "party_name": "The Greens (WA)",
+     "votes": 2634,
+     "pct": 13.203
+    },
+    {
+     "candidate": "WAINWRIGHT Sam",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 397,
+     "pct": 1.99
+    },
+    {
+     "candidate": "VAN LIESHOUT Teresa",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 361,
+     "pct": 1.81
+    },
+    {
+     "candidate": "SHORTLAND Wayne D.",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 181,
+     "pct": 0.907
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "TINLEY Peter",
+     "party": "ALP",
+     "party_name": "WA Labor",
+     "votes": 12080,
+     "pct": 60.594
+    },
+    {
+     "candidate": "PIIPPONEN Samuel",
+     "party": "LIB",
+     "party_name": "Liberal Party",
+     "votes": 7856,
+     "pct": 39.406
+    }
+   ],
+   "margin": 10.59,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 60.594,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  }
+ ]
+}

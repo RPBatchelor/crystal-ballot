@@ -1,0 +1,61 @@
+{
+ "election": "nt-2024",
+ "run_at": "2026-10-31T10:18:58+00:00",
+ "git_commit": "a691a1253f10bb9f81b5638c0eb1400306477f7d",
+ "uncommitted_changes": false,
+ "config": {
+  "n_per_draw": 5,
+  "seed": 20261128,
+  "poll_error_sd": {},
+  "poll_error_df": 5.0,
+  "poll_error_corr": null,
+  "poll_error_corr_parties": [],
+  "poll_bias": {},
+  "region_sd": 0.0998,
+  "seat_sd": {
+   "ALP": 0.1994,
+   "COAL": 0.2378,
+   "GRN": 0.1999,
+   "OTH": 0.25,
+   "ONP": 0.25
+  },
+  "seat_df": {
+   "ALP": 8.03,
+   "COAL": 5.18,
+   "GRN": 6.85,
+   "OTH": 5.18
+  },
+  "seat_beta": {
+   "ALP": -0.0385,
+   "COAL": -0.0601,
+   "GRN": -0.0338
+  },
+  "ind_decay_mean": -0.2,
+  "ind_decay_sd": 0.4,
+  "retire_effect": -0.0889,
+  "sophomore_effect": 0.1492,
+  "ind_prior_sd": 0.35,
+  "ind_sophomore_log": 0.15,
+  "ind_retire_log": -1.2
+ },
+ "inputs": {
+  "nt-2024\\districts.csv": "559746301f58530a",
+  "nt-2024\\final.csv": "199521d0d6630cd8",
+  "nt-2024\\primary.csv": "a7eef96ff488e2ad",
+  "nt-2024\\primary_changes.csv": "c913d1f2f30f8ee0",
+  "nt-2024\\tcp.csv": "199521d0d6630cd8",
+  "nt-2024\\tpp.csv": "1bd217e90b8a2c30",
+  "nt-2020\\districts.csv": "a0c2ae0c3d927a8b",
+  "nt-2020\\final.csv": "c839ab000cad8e8d",
+  "nt-2020\\primary.csv": "4fe252f3e4ad6f20",
+  "nt-2020\\primary_changes.csv": "64404996b2bab489",
+  "nt-2020\\tcp.csv": "c839ab000cad8e8d",
+  "nt-2020\\tpp.csv": "ff828bafb46b24b5",
+  "nt-2024-notional\\districts.csv": "06a4bc199fc9c47c",
+  "nt-2024-notional\\primary.csv": "64400b59bbd6ce25",
+  "polls_nt-2024.csv": "28561e7e06819e54",
+  "election_results_nt.csv": "13561b7a04a1f272"
+ },
+ "hand_set": false,
+ "no_polls": true
+}

@@ -1,0 +1,9625 @@
+{
+ "election_id": "nsw-2027",
+ "jurisdiction": "NSW",
+ "election_date": "2027-03-27",
+ "election_date_known": true,
+ "generated_at": "2026-10-30T03:11:23+00:00",
+ "cycles": [
+  {
+   "election_id": "nsw-2011",
+   "date": "2011-03-26"
+  },
+  {
+   "election_id": "nsw-2015",
+   "date": "2015-03-28"
+  },
+  {
+   "election_id": "nsw-2019",
+   "date": "2019-03-23"
+  },
+  {
+   "election_id": "nsw-2023",
+   "date": "2023-03-25"
+  },
+  {
+   "election_id": "nsw-2027",
+   "date": "2027-03-27"
+  }
+ ],
+ "polls": [
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2026-08-09",
+   "field_end": "2026-09-12",
+   "sample_size": "1650",
+   "ALP": 29.0,
+   "COAL": 24.0,
+   "GRN": 11.0,
+   "ONP": "25.0",
+   "IND": "5.0",
+   "OTH": 5.0,
+   "tpp_alp_vs_coal": 55.2,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "DemosAU",
+   "client": null,
+   "field_start": "2026-08-19",
+   "field_end": "2026-08-26",
+   "sample_size": "1028",
+   "ALP": 32.0,
+   "COAL": 25.0,
+   "GRN": 13.0,
+   "ONP": "23.0",
+   "IND": null,
+   "OTH": 7.0,
+   "tpp_alp_vs_coal": 57.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Insightfully",
+   "client": "Minerals Council of Australia",
+   "field_start": "2026-08-05",
+   "field_end": "2026-08-12",
+   "sample_size": "1000",
+   "ALP": 29.0,
+   "COAL": 18.0,
+   "GRN": 13.0,
+   "ONP": "29.0",
+   "IND": null,
+   "OTH": null,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2026-07-12",
+   "field_end": "2026-07-12",
+   "sample_size": "1100",
+   "ALP": 29.0,
+   "COAL": 23.0,
+   "GRN": 11.0,
+   "ONP": "25.0",
+   "IND": "8.0",
+   "OTH": 4.0,
+   "tpp_alp_vs_coal": 55.6,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "DemosAU",
+   "client": "rowspan=\"3\"",
+   "field_start": "2026-06-15",
+   "field_end": "2026-06-18",
+   "sample_size": "1038",
+   "ALP": 32.0,
+   "COAL": 20.0,
+   "GRN": 13.0,
+   "ONP": "27.0",
+   "IND": "3.0",
+   "OTH": 8.0,
+   "tpp_alp_vs_coal": 59.7,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": null,
+   "field_start": "2026-05-20",
+   "field_end": "2026-05-20",
+   "sample_size": "1000",
+   "ALP": 32.0,
+   "COAL": 26.0,
+   "GRN": 10.0,
+   "ONP": "22.0",
+   "IND": "6.0",
+   "OTH": 4.0,
+   "tpp_alp_vs_coal": 55.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2026-03-09",
+   "field_end": "2026-03-14",
+   "sample_size": "1100",
+   "ALP": 29.0,
+   "COAL": 25.0,
+   "GRN": 10.0,
+   "ONP": "23.0",
+   "IND": "8.0",
+   "OTH": 5.0,
+   "tpp_alp_vs_coal": 52.8,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "DemosAU",
+   "client": null,
+   "field_start": "2026-02-24",
+   "field_end": "2026-03-04",
+   "sample_size": "1032",
+   "ALP": 34.0,
+   "COAL": 23.0,
+   "GRN": 15.0,
+   "ONP": "21.0",
+   "IND": null,
+   "OTH": 7.0,
+   "tpp_alp_vs_coal": 61.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": "rowspan=\"3\"",
+   "field_start": "2026-02-16",
+   "field_end": "2026-02-19",
+   "sample_size": "2108",
+   "ALP": 25.0,
+   "COAL": 19.0,
+   "GRN": 12.5,
+   "ONP": "30.0",
+   "IND": "2.5",
+   "OTH": 11.0,
+   "tpp_alp_vs_coal": 54.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2026-01-17",
+   "field_end": "2026-01-17",
+   "sample_size": "1145",
+   "ALP": 37.0,
+   "COAL": 27.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": "11.0",
+   "OTH": 15.0,
+   "tpp_alp_vs_coal": 60.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Spectre Strategy",
+   "client": null,
+   "field_start": "2025-12-14",
+   "field_end": "2025-12-14",
+   "sample_size": null,
+   "ALP": 34.0,
+   "COAL": 26.0,
+   "GRN": 11.0,
+   "ONP": "16.0",
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 56.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "RedBridge/Accent",
+   "client": "Daily Telegraph",
+   "field_start": "2025-11-24",
+   "field_end": "2025-12-08",
+   "sample_size": "1293",
+   "ALP": 38.0,
+   "COAL": 30.0,
+   "GRN": 10.0,
+   "ONP": "4.0",
+   "IND": null,
+   "OTH": 18.0,
+   "tpp_alp_vs_coal": 57.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2025-11-09",
+   "field_end": "2025-11-09",
+   "sample_size": "1145",
+   "ALP": 37.0,
+   "COAL": 28.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": "15.0",
+   "OTH": 11.0,
+   "tpp_alp_vs_coal": 58.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "DemosAU",
+   "client": null,
+   "field_start": "2025-10-17",
+   "field_end": "2025-10-22",
+   "sample_size": "1016",
+   "ALP": 37.0,
+   "COAL": 30.0,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 20.0,
+   "tpp_alp_vs_coal": 59.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2025-09-09",
+   "field_end": "2025-09-13",
+   "sample_size": null,
+   "ALP": 38.0,
+   "COAL": 28.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": "11.0",
+   "OTH": 12.0,
+   "tpp_alp_vs_coal": 59.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2025-07-13",
+   "field_end": "2025-07-18",
+   "sample_size": "1054",
+   "ALP": 38.0,
+   "COAL": 32.0,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": "8.0",
+   "OTH": 10.0,
+   "tpp_alp_vs_coal": 57.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "RedBridge/Accent",
+   "client": "Australian Financial Review",
+   "field_start": "2025-06-01",
+   "field_end": "2025-06-30",
+   "sample_size": null,
+   "ALP": 43.0,
+   "COAL": 32.0,
+   "GRN": null,
+   "ONP": null,
+   "IND": null,
+   "OTH": null,
+   "tpp_alp_vs_coal": 58.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2025-03-14",
+   "field_end": "2025-04-30",
+   "sample_size": "1123",
+   "ALP": 33.0,
+   "COAL": 36.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": "14.0",
+   "OTH": 6.0,
+   "tpp_alp_vs_coal": 51.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2025-02-18",
+   "field_end": "2025-02-23",
+   "sample_size": null,
+   "ALP": 29.0,
+   "COAL": 38.0,
+   "GRN": 14.0,
+   "ONP": null,
+   "IND": "11.0",
+   "OTH": 8.0,
+   "tpp_alp_vs_coal": 49.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2024-12-08",
+   "field_end": "2024-12-08",
+   "sample_size": null,
+   "ALP": 33.0,
+   "COAL": 37.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": "13.0",
+   "OTH": 7.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "RedBridge/Accent",
+   "client": "Australian Financial Review",
+   "field_start": "2024-11-06",
+   "field_end": "2024-11-20",
+   "sample_size": "1088",
+   "ALP": 37.0,
+   "COAL": 41.0,
+   "GRN": 9.0,
+   "ONP": null,
+   "IND": "13.0",
+   "OTH": null,
+   "tpp_alp_vs_coal": 50.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2024-09-01",
+   "field_end": "2024-10-31",
+   "sample_size": "1111",
+   "ALP": 32.0,
+   "COAL": 37.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": "14.0",
+   "OTH": 6.0,
+   "tpp_alp_vs_coal": 50.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Wolf & Smith",
+   "client": null,
+   "field_start": "2024-08-06",
+   "field_end": "2024-08-29",
+   "sample_size": null,
+   "ALP": 32.0,
+   "COAL": 38.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": "14.0",
+   "OTH": 4.0,
+   "tpp_alp_vs_coal": 50.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2024-08-11",
+   "field_end": "2024-08-11",
+   "sample_size": "1000",
+   "ALP": 30.0,
+   "COAL": 38.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": "14.0",
+   "OTH": 6.0,
+   "tpp_alp_vs_coal": 49.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2024-06-16",
+   "field_end": "2024-06-16",
+   "sample_size": "1000",
+   "ALP": 32.0,
+   "COAL": 35.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": "15.0",
+   "OTH": 7.0,
+   "tpp_alp_vs_coal": 52.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "RedBridge/Accent",
+   "client": "Daily Telegraph",
+   "field_start": "2024-02-01",
+   "field_end": "2024-05-31",
+   "sample_size": "1376",
+   "ALP": 35.0,
+   "COAL": 40.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 50.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": null,
+   "field_start": "2024-03-21",
+   "field_end": "2024-04-21",
+   "sample_size": "1000",
+   "ALP": 33.0,
+   "COAL": 36.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": "14.0",
+   "OTH": 5.0,
+   "tpp_alp_vs_coal": 52.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2024-02-25",
+   "field_end": "2024-02-25",
+   "sample_size": "1035",
+   "ALP": 34.0,
+   "COAL": 38.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": "12.0",
+   "OTH": 5.0,
+   "tpp_alp_vs_coal": 51.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2023-11-11",
+   "field_end": "2023-11-11",
+   "sample_size": "1100",
+   "ALP": 36.0,
+   "COAL": 32.0,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": "12.0",
+   "OTH": 7.0,
+   "tpp_alp_vs_coal": 57.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2023-09-10",
+   "field_end": "2023-09-10",
+   "sample_size": "1019",
+   "ALP": 38.0,
+   "COAL": 36.0,
+   "GRN": 9.0,
+   "ONP": null,
+   "IND": "13.0",
+   "OTH": 4.0,
+   "tpp_alp_vs_coal": 54.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2023-07-16",
+   "field_end": "2023-07-16",
+   "sample_size": "1012",
+   "ALP": 41.0,
+   "COAL": 32.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": "11.0",
+   "OTH": 5.0,
+   "tpp_alp_vs_coal": 58.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Resolve",
+   "client": "Sydney Morning Herald",
+   "field_start": "2023-05-14",
+   "field_end": "2023-05-14",
+   "sample_size": "1102",
+   "ALP": 44.0,
+   "COAL": 31.0,
+   "GRN": 9.0,
+   "ONP": null,
+   "IND": "10.0",
+   "OTH": 5.0,
+   "tpp_alp_vs_coal": 60.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2027"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2023-03-24",
+   "field_end": "2023-03-24",
+   "sample_size": null,
+   "ALP": 38.0,
+   "COAL": 35.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 16.0,
+   "tpp_alp_vs_coal": 54.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Freshwater",
+   "client": null,
+   "field_start": "2023-03-22",
+   "field_end": "2023-03-22",
+   "sample_size": null,
+   "ALP": 37.0,
+   "COAL": 37.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 16.0,
+   "tpp_alp_vs_coal": 53.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Resolve",
+   "client": null,
+   "field_start": "2023-03-19",
+   "field_end": "2023-03-19",
+   "sample_size": null,
+   "ALP": 38.0,
+   "COAL": 38.0,
+   "GRN": 8.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 16.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2023-03-10",
+   "field_end": "2023-03-14",
+   "sample_size": null,
+   "ALP": 34.0,
+   "COAL": 34.0,
+   "GRN": 13.0,
+   "ONP": "2.0",
+   "IND": null,
+   "OTH": 17.0,
+   "tpp_alp_vs_coal": 53.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2023-02-24",
+   "field_end": "2023-02-28",
+   "sample_size": null,
+   "ALP": 33.5,
+   "COAL": 32.5,
+   "GRN": 11.0,
+   "ONP": "8.5",
+   "IND": null,
+   "OTH": 14.5,
+   "tpp_alp_vs_coal": 52.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Resolve",
+   "client": null,
+   "field_start": "2023-02-28",
+   "field_end": "2023-02-28",
+   "sample_size": null,
+   "ALP": 38.0,
+   "COAL": 32.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 20.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Freshwater",
+   "client": null,
+   "field_start": "2023-02-27",
+   "field_end": "2023-02-27",
+   "sample_size": null,
+   "ALP": 39.0,
+   "COAL": 37.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 53.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2023-02-26",
+   "field_end": "2023-02-26",
+   "sample_size": null,
+   "ALP": 36.0,
+   "COAL": 37.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 15.0,
+   "tpp_alp_vs_coal": 52.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2023-02-21",
+   "field_end": "2023-02-21",
+   "sample_size": null,
+   "ALP": 32.5,
+   "COAL": 35.0,
+   "GRN": 9.5,
+   "ONP": "6.5",
+   "IND": null,
+   "OTH": 16.5,
+   "tpp_alp_vs_coal": 52.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2023-01-31",
+   "field_end": "2023-01-31",
+   "sample_size": null,
+   "ALP": 33.5,
+   "COAL": 33.5,
+   "GRN": 12.0,
+   "ONP": "4.5",
+   "IND": null,
+   "OTH": 16.5,
+   "tpp_alp_vs_coal": 55.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Resolve",
+   "client": null,
+   "field_start": "2023-01-22",
+   "field_end": "2023-01-22",
+   "sample_size": null,
+   "ALP": 37.0,
+   "COAL": 34.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 18.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "YouGov",
+   "client": null,
+   "field_start": "2023-01-14",
+   "field_end": "2023-01-17",
+   "sample_size": null,
+   "ALP": 39.0,
+   "COAL": 33.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 17.0,
+   "tpp_alp_vs_coal": 56.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2022-12-20",
+   "field_end": "2022-12-20",
+   "sample_size": null,
+   "ALP": 35.0,
+   "COAL": 37.0,
+   "GRN": 11.5,
+   "ONP": "5.0",
+   "IND": null,
+   "OTH": 11.5,
+   "tpp_alp_vs_coal": 52.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2022-10-01",
+   "field_end": "2022-10-31",
+   "sample_size": null,
+   "ALP": 36.5,
+   "COAL": 32.0,
+   "GRN": 9.5,
+   "ONP": "5.5",
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 57.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Resolve",
+   "client": null,
+   "field_start": "2022-10-30",
+   "field_end": "2022-10-30",
+   "sample_size": null,
+   "ALP": 38.0,
+   "COAL": 35.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 16.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Freshwater",
+   "client": null,
+   "field_start": "2022-10-13",
+   "field_end": "2022-10-16",
+   "sample_size": null,
+   "ALP": 37.0,
+   "COAL": 36.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 16.0,
+   "tpp_alp_vs_coal": 54.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2022-09-01",
+   "field_end": "2022-09-30",
+   "sample_size": null,
+   "ALP": 34.0,
+   "COAL": 34.0,
+   "GRN": 12.5,
+   "ONP": "3.5",
+   "IND": null,
+   "OTH": 16.5,
+   "tpp_alp_vs_coal": 53.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2022-09-23",
+   "field_end": "2022-09-23",
+   "sample_size": null,
+   "ALP": 40.0,
+   "COAL": 35.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 54.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Resolve",
+   "client": null,
+   "field_start": "2022-09-18",
+   "field_end": "2022-09-18",
+   "sample_size": null,
+   "ALP": 43.0,
+   "COAL": 30.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 17.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Essential",
+   "client": null,
+   "field_start": "2022-09-12",
+   "field_end": "2022-09-12",
+   "sample_size": null,
+   "ALP": 36.78,
+   "COAL": 41.84,
+   "GRN": 9.77,
+   "ONP": null,
+   "IND": null,
+   "OTH": null,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Essential",
+   "client": null,
+   "field_start": "2022-07-02",
+   "field_end": "2022-07-02",
+   "sample_size": null,
+   "ALP": 33.0,
+   "COAL": 37.0,
+   "GRN": null,
+   "ONP": null,
+   "IND": null,
+   "OTH": null,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Resolve",
+   "client": null,
+   "field_start": "2022-02-20",
+   "field_end": "2022-02-20",
+   "sample_size": null,
+   "ALP": 34.0,
+   "COAL": 37.0,
+   "GRN": 8.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 21.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Resolve",
+   "client": null,
+   "field_start": "2021-11-25",
+   "field_end": "2021-11-25",
+   "sample_size": null,
+   "ALP": 31.0,
+   "COAL": 41.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 18.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Resolve",
+   "client": null,
+   "field_start": "2021-09-23",
+   "field_end": "2021-09-23",
+   "sample_size": null,
+   "ALP": 30.0,
+   "COAL": 41.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 18.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Resolve",
+   "client": null,
+   "field_start": "2021-07-18",
+   "field_end": "2021-07-18",
+   "sample_size": null,
+   "ALP": 28.0,
+   "COAL": 43.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 17.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Resolve",
+   "client": null,
+   "field_start": "2021-05-16",
+   "field_end": "2021-05-16",
+   "sample_size": null,
+   "ALP": 28.0,
+   "COAL": 44.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 16.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "RedBridge/Accent",
+   "client": null,
+   "field_start": "2021-03-01",
+   "field_end": "2021-03-31",
+   "sample_size": null,
+   "ALP": 29.47,
+   "COAL": 49.45,
+   "GRN": 8.26,
+   "ONP": "5.3",
+   "IND": null,
+   "OTH": 7.52,
+   "tpp_alp_vs_coal": 41.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2023"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2019-03-22",
+   "field_end": "2019-03-22",
+   "sample_size": null,
+   "ALP": 35.0,
+   "COAL": 41.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 49.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "YouGov\u2013Galaxy",
+   "client": null,
+   "field_start": "2019-03-19",
+   "field_end": "2019-03-19",
+   "sample_size": null,
+   "ALP": 38.0,
+   "COAL": 41.0,
+   "GRN": 9.0,
+   "ONP": "1.0",
+   "IND": null,
+   "OTH": 10.0,
+   "tpp_alp_vs_coal": 50.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2019-03-10",
+   "field_end": "2019-03-10",
+   "sample_size": null,
+   "ALP": 36.0,
+   "COAL": 40.0,
+   "GRN": 10.0,
+   "ONP": "5.0",
+   "IND": null,
+   "OTH": 9.0,
+   "tpp_alp_vs_coal": 50.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "UComms\u2013ReachTEL",
+   "client": null,
+   "field_start": "2019-03-10",
+   "field_end": "2019-03-10",
+   "sample_size": null,
+   "ALP": 34.1,
+   "COAL": 35.7,
+   "GRN": 9.6,
+   "ONP": "5.6",
+   "IND": null,
+   "OTH": 10.4,
+   "tpp_alp_vs_coal": 51.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Essential",
+   "client": null,
+   "field_start": "2019-02-18",
+   "field_end": "2019-02-18",
+   "sample_size": null,
+   "ALP": 36.0,
+   "COAL": 39.0,
+   "GRN": 9.0,
+   "ONP": "8.0",
+   "IND": null,
+   "OTH": 9.0,
+   "tpp_alp_vs_coal": 51.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2019-01-30",
+   "field_end": "2019-01-30",
+   "sample_size": null,
+   "ALP": 36.0,
+   "COAL": 39.0,
+   "GRN": 10.0,
+   "ONP": "6.0",
+   "IND": null,
+   "OTH": 9.0,
+   "tpp_alp_vs_coal": 50.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "YouGov\u2013Galaxy",
+   "client": null,
+   "field_start": "2018-11-29",
+   "field_end": "2018-11-30",
+   "sample_size": null,
+   "ALP": 39.0,
+   "COAL": 37.0,
+   "GRN": 9.0,
+   "ONP": "8.0",
+   "IND": null,
+   "OTH": 7.0,
+   "tpp_alp_vs_coal": 52.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Fairfax\u2013ReachTEL",
+   "client": null,
+   "field_start": "2018-11-29",
+   "field_end": "2018-11-29",
+   "sample_size": null,
+   "ALP": 34.1,
+   "COAL": 36.5,
+   "GRN": 9.6,
+   "ONP": "7.5",
+   "IND": null,
+   "OTH": 9.1,
+   "tpp_alp_vs_coal": 51.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Fairfax\u2013ReachTEL",
+   "client": null,
+   "field_start": "2018-09-10",
+   "field_end": "2018-09-10",
+   "sample_size": null,
+   "ALP": 31.5,
+   "COAL": 35.1,
+   "GRN": 10.5,
+   "ONP": "4.2",
+   "IND": null,
+   "OTH": 17.3,
+   "tpp_alp_vs_coal": 50.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Fairfax\u2013ReachTEL",
+   "client": null,
+   "field_start": "2018-03-15",
+   "field_end": "2018-03-15",
+   "sample_size": null,
+   "ALP": 32.5,
+   "COAL": 41.9,
+   "GRN": 9.4,
+   "ONP": "5.1",
+   "IND": null,
+   "OTH": 10.0,
+   "tpp_alp_vs_coal": 48.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2018-03-05",
+   "field_end": "2018-03-05",
+   "sample_size": null,
+   "ALP": 34.0,
+   "COAL": 38.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 17.0,
+   "tpp_alp_vs_coal": 50.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Essential",
+   "client": null,
+   "field_start": "2017-10-01",
+   "field_end": "2017-12-31",
+   "sample_size": null,
+   "ALP": 39.0,
+   "COAL": 40.0,
+   "GRN": 9.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 12.0,
+   "tpp_alp_vs_coal": 51.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Fairfax\u2013ReachTEL",
+   "client": null,
+   "field_start": "2017-10-05",
+   "field_end": "2017-10-05",
+   "sample_size": null,
+   "ALP": 31.0,
+   "COAL": 37.6,
+   "GRN": 9.1,
+   "ONP": null,
+   "IND": null,
+   "OTH": 22.3,
+   "tpp_alp_vs_coal": 48.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2017-02-01",
+   "field_end": "2017-03-31",
+   "sample_size": null,
+   "ALP": 34.0,
+   "COAL": 40.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 16.0,
+   "tpp_alp_vs_coal": 49.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Fairfax\u2013ReachTEL",
+   "client": null,
+   "field_start": "2017-01-19",
+   "field_end": "2017-01-19",
+   "sample_size": null,
+   "ALP": 28.0,
+   "COAL": 42.7,
+   "GRN": 8.4,
+   "ONP": null,
+   "IND": null,
+   "OTH": 20.9,
+   "tpp_alp_vs_coal": 45.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Fairfax\u2013ReachTEL",
+   "client": null,
+   "field_start": "2016-12-01",
+   "field_end": "2016-12-31",
+   "sample_size": null,
+   "ALP": 32.4,
+   "COAL": 40.6,
+   "GRN": 8.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 19.0,
+   "tpp_alp_vs_coal": 47.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2016-10-01",
+   "field_end": "2016-10-31",
+   "sample_size": null,
+   "ALP": 31.5,
+   "COAL": 37.0,
+   "GRN": 14.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 17.5,
+   "tpp_alp_vs_coal": 51.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2016-08-01",
+   "field_end": "2016-09-30",
+   "sample_size": null,
+   "ALP": 36.0,
+   "COAL": 42.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 11.0,
+   "tpp_alp_vs_coal": 49.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2016-08-01",
+   "field_end": "2016-08-31",
+   "sample_size": null,
+   "ALP": 30.5,
+   "COAL": 39.0,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 17.5,
+   "tpp_alp_vs_coal": 49.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Fairfax\u2013ReachTEL",
+   "client": null,
+   "field_start": "2016-08-27",
+   "field_end": "2016-08-27",
+   "sample_size": null,
+   "ALP": 34.9,
+   "COAL": 39.4,
+   "GRN": 8.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 9.6,
+   "tpp_alp_vs_coal": 50.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2016-05-01",
+   "field_end": "2016-05-31",
+   "sample_size": null,
+   "ALP": 29.0,
+   "COAL": 46.0,
+   "GRN": 17.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 8.0,
+   "tpp_alp_vs_coal": 46.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2016-03-01",
+   "field_end": "2016-03-31",
+   "sample_size": null,
+   "ALP": 27.0,
+   "COAL": 46.0,
+   "GRN": 15.5,
+   "ONP": null,
+   "IND": null,
+   "OTH": 11.5,
+   "tpp_alp_vs_coal": 45.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2016-01-29",
+   "field_end": "2016-02-01",
+   "sample_size": null,
+   "ALP": 24.5,
+   "COAL": 52.0,
+   "GRN": 14.5,
+   "ONP": null,
+   "IND": null,
+   "OTH": 9.0,
+   "tpp_alp_vs_coal": 40.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2015-12-04",
+   "field_end": "2015-12-07",
+   "sample_size": null,
+   "ALP": 22.5,
+   "COAL": 52.0,
+   "GRN": 15.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 10.5,
+   "tpp_alp_vs_coal": 39.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2015-10-16",
+   "field_end": "2015-10-16",
+   "sample_size": null,
+   "ALP": 24.5,
+   "COAL": 54.0,
+   "GRN": 13.5,
+   "ONP": null,
+   "IND": null,
+   "OTH": 8.0,
+   "tpp_alp_vs_coal": 39.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2015-09-01",
+   "field_end": "2015-09-30",
+   "sample_size": null,
+   "ALP": 33.0,
+   "COAL": 47.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 9.0,
+   "tpp_alp_vs_coal": 44.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2015-08-28",
+   "field_end": "2015-08-31",
+   "sample_size": null,
+   "ALP": 25.0,
+   "COAL": 49.0,
+   "GRN": 17.5,
+   "ONP": null,
+   "IND": null,
+   "OTH": 8.5,
+   "tpp_alp_vs_coal": 43.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2015-06-25",
+   "field_end": "2015-06-25",
+   "sample_size": null,
+   "ALP": 27.5,
+   "COAL": 49.5,
+   "GRN": 14.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 9.0,
+   "tpp_alp_vs_coal": 43.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2015-05-27",
+   "field_end": "2015-05-27",
+   "sample_size": null,
+   "ALP": 29.5,
+   "COAL": 53.5,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 5.0,
+   "tpp_alp_vs_coal": 41.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2015-04-15",
+   "field_end": "2015-04-15",
+   "sample_size": null,
+   "ALP": 31.0,
+   "COAL": 47.5,
+   "GRN": 12.5,
+   "ONP": null,
+   "IND": null,
+   "OTH": 9.0,
+   "tpp_alp_vs_coal": 45.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2019"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2015-03-23",
+   "field_end": "2015-03-26",
+   "sample_size": null,
+   "ALP": 34.0,
+   "COAL": 44.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 11.0,
+   "tpp_alp_vs_coal": 45.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2015-03-26",
+   "field_end": "2015-03-26",
+   "sample_size": null,
+   "ALP": 29.0,
+   "COAL": 49.0,
+   "GRN": 12.5,
+   "ONP": null,
+   "IND": null,
+   "OTH": 9.5,
+   "tpp_alp_vs_coal": 42.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "ReachTEL",
+   "client": null,
+   "field_start": "2015-03-26",
+   "field_end": "2015-03-26",
+   "sample_size": null,
+   "ALP": 33.8,
+   "COAL": 45.5,
+   "GRN": 10.5,
+   "ONP": null,
+   "IND": null,
+   "OTH": 10.2,
+   "tpp_alp_vs_coal": 46.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Galaxy",
+   "client": null,
+   "field_start": "2015-03-24",
+   "field_end": "2015-03-25",
+   "sample_size": null,
+   "ALP": 34.0,
+   "COAL": 45.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 10.0,
+   "tpp_alp_vs_coal": 45.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2015-03-20",
+   "field_end": "2015-03-23",
+   "sample_size": null,
+   "ALP": 32.5,
+   "COAL": 45.5,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 10.0,
+   "tpp_alp_vs_coal": 44.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Ipsos",
+   "client": null,
+   "field_start": "2015-03-19",
+   "field_end": "2015-03-21",
+   "sample_size": null,
+   "ALP": 32.0,
+   "COAL": 47.0,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 9.0,
+   "tpp_alp_vs_coal": 46.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Galaxy",
+   "client": null,
+   "field_start": "2015-03-18",
+   "field_end": "2015-03-19",
+   "sample_size": null,
+   "ALP": 36.0,
+   "COAL": 44.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 10.0,
+   "tpp_alp_vs_coal": 46.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2015-03-13",
+   "field_end": "2015-03-15",
+   "sample_size": null,
+   "ALP": 33.5,
+   "COAL": 46.5,
+   "GRN": 11.5,
+   "ONP": null,
+   "IND": null,
+   "OTH": 8.5,
+   "tpp_alp_vs_coal": 44.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "ReachTEL",
+   "client": null,
+   "field_start": "2015-03-05",
+   "field_end": "2015-03-05",
+   "sample_size": null,
+   "ALP": 34.8,
+   "COAL": 44.0,
+   "GRN": 10.2,
+   "ONP": null,
+   "IND": null,
+   "OTH": 11.0,
+   "tpp_alp_vs_coal": 47.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2015-02-23",
+   "field_end": "2015-02-26",
+   "sample_size": null,
+   "ALP": 36.0,
+   "COAL": 43.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 10.0,
+   "tpp_alp_vs_coal": 46.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Galaxy",
+   "client": null,
+   "field_start": "2015-02-18",
+   "field_end": "2015-02-19",
+   "sample_size": null,
+   "ALP": 36.0,
+   "COAL": 43.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 11.0,
+   "tpp_alp_vs_coal": 47.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2015-02-13",
+   "field_end": "2015-02-16",
+   "sample_size": null,
+   "ALP": 34.0,
+   "COAL": 45.0,
+   "GRN": 9.5,
+   "ONP": null,
+   "IND": null,
+   "OTH": 11.5,
+   "tpp_alp_vs_coal": 44.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Ipsos",
+   "client": null,
+   "field_start": "2015-02-05",
+   "field_end": "2015-02-07",
+   "sample_size": null,
+   "ALP": 34.0,
+   "COAL": 46.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 9.0,
+   "tpp_alp_vs_coal": 47.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2015-01-16",
+   "field_end": "2015-01-18",
+   "sample_size": null,
+   "ALP": 35.0,
+   "COAL": 44.5,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 9.5,
+   "tpp_alp_vs_coal": 46.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2014-11-01",
+   "field_end": "2014-12-31",
+   "sample_size": null,
+   "ALP": 33.0,
+   "COAL": 44.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 12.0,
+   "tpp_alp_vs_coal": 44.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2014-11-21",
+   "field_end": "2014-11-24",
+   "sample_size": null,
+   "ALP": 32.5,
+   "COAL": 44.0,
+   "GRN": 12.5,
+   "ONP": null,
+   "IND": null,
+   "OTH": 11.0,
+   "tpp_alp_vs_coal": 45.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Ipsos",
+   "client": null,
+   "field_start": "2014-11-20",
+   "field_end": "2014-11-22",
+   "sample_size": null,
+   "ALP": 36.0,
+   "COAL": 44.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 9.0,
+   "tpp_alp_vs_coal": 46.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2014-10-01",
+   "field_end": "2014-10-31",
+   "sample_size": null,
+   "ALP": 34.0,
+   "COAL": 46.0,
+   "GRN": 10.5,
+   "ONP": null,
+   "IND": null,
+   "OTH": 9.5,
+   "tpp_alp_vs_coal": 44.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2014-09-01",
+   "field_end": "2014-10-31",
+   "sample_size": null,
+   "ALP": 33.0,
+   "COAL": 42.0,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 12.0,
+   "tpp_alp_vs_coal": 45.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2014-10-24",
+   "field_end": "2014-10-27",
+   "sample_size": null,
+   "ALP": 34.0,
+   "COAL": 46.0,
+   "GRN": 10.5,
+   "ONP": null,
+   "IND": null,
+   "OTH": 9.5,
+   "tpp_alp_vs_coal": 44.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2014-09-26",
+   "field_end": "2014-09-29",
+   "sample_size": null,
+   "ALP": 32.5,
+   "COAL": 46.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 9.5,
+   "tpp_alp_vs_coal": 47.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2014-07-01",
+   "field_end": "2014-08-31",
+   "sample_size": null,
+   "ALP": 33.0,
+   "COAL": 40.0,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 46.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2014-05-01",
+   "field_end": "2014-06-30",
+   "sample_size": null,
+   "ALP": 31.0,
+   "COAL": 43.0,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 43.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2014-01-01",
+   "field_end": "2014-02-28",
+   "sample_size": null,
+   "ALP": 31.0,
+   "COAL": 46.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 42.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Nielsen",
+   "client": null,
+   "field_start": "2014-02-22",
+   "field_end": "2014-02-26",
+   "sample_size": null,
+   "ALP": 35.0,
+   "COAL": 40.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 51.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2013-09-01",
+   "field_end": "2013-10-31",
+   "sample_size": null,
+   "ALP": 32.0,
+   "COAL": 45.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 43.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2013-05-01",
+   "field_end": "2013-06-30",
+   "sample_size": null,
+   "ALP": 28.0,
+   "COAL": 49.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 39.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2013-03-01",
+   "field_end": "2013-04-30",
+   "sample_size": null,
+   "ALP": 28.0,
+   "COAL": 48.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 39.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Nielsen",
+   "client": null,
+   "field_start": "2013-03-22",
+   "field_end": "2013-03-24",
+   "sample_size": null,
+   "ALP": 23.0,
+   "COAL": 52.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 37.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2013-01-01",
+   "field_end": "2013-02-28",
+   "sample_size": null,
+   "ALP": 27.0,
+   "COAL": 46.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 16.0,
+   "tpp_alp_vs_coal": 40.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2012-11-01",
+   "field_end": "2012-12-31",
+   "sample_size": null,
+   "ALP": 29.0,
+   "COAL": 45.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 15.0,
+   "tpp_alp_vs_coal": 41.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2012-09-01",
+   "field_end": "2012-10-31",
+   "sample_size": null,
+   "ALP": 28.0,
+   "COAL": 45.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 16.0,
+   "tpp_alp_vs_coal": 41.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2012-07-01",
+   "field_end": "2012-08-31",
+   "sample_size": null,
+   "ALP": 27.0,
+   "COAL": 47.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 39.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2012-07-10",
+   "field_end": "2012-08-15",
+   "sample_size": null,
+   "ALP": 27.0,
+   "COAL": 53.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 10.0,
+   "tpp_alp_vs_coal": 40.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2012-06-05",
+   "field_end": "2012-06-13",
+   "sample_size": null,
+   "ALP": 23.5,
+   "COAL": 50.0,
+   "GRN": 10.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 11.5,
+   "tpp_alp_vs_coal": 39.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2012-03-01",
+   "field_end": "2012-04-30",
+   "sample_size": null,
+   "ALP": 24.0,
+   "COAL": 47.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 17.0,
+   "tpp_alp_vs_coal": 37.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2012-03-20",
+   "field_end": "2012-03-28",
+   "sample_size": null,
+   "ALP": 24.5,
+   "COAL": 49.0,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.5,
+   "tpp_alp_vs_coal": 41.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2012-01-01",
+   "field_end": "2012-02-29",
+   "sample_size": null,
+   "ALP": 25.0,
+   "COAL": 49.0,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 36.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2011-11-01",
+   "field_end": "2011-12-31",
+   "sample_size": null,
+   "ALP": 24.0,
+   "COAL": 49.0,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 36.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2011-09-01",
+   "field_end": "2011-10-31",
+   "sample_size": null,
+   "ALP": 22.0,
+   "COAL": 51.0,
+   "GRN": 14.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 34.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2011-04-05",
+   "field_end": "2011-04-10",
+   "sample_size": null,
+   "ALP": 19.0,
+   "COAL": 56.5,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 11.5,
+   "tpp_alp_vs_coal": 29.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2015"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2011-03-21",
+   "field_end": "2011-03-24",
+   "sample_size": null,
+   "ALP": 23.0,
+   "COAL": 49.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 15.0,
+   "tpp_alp_vs_coal": 35.9,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Galaxy",
+   "client": null,
+   "field_start": "2011-03-23",
+   "field_end": "2011-03-23",
+   "sample_size": null,
+   "ALP": 22.0,
+   "COAL": 51.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 15.0,
+   "tpp_alp_vs_coal": 34.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Essential",
+   "client": null,
+   "field_start": "2011-03-23",
+   "field_end": "2011-03-23",
+   "sample_size": null,
+   "ALP": 23.0,
+   "COAL": 55.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 11.0,
+   "tpp_alp_vs_coal": 34.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Essential",
+   "client": null,
+   "field_start": "2011-03-18",
+   "field_end": "2011-03-18",
+   "sample_size": null,
+   "ALP": 24.0,
+   "COAL": 54.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 11.0,
+   "tpp_alp_vs_coal": 35.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2011-03-09",
+   "field_end": "2011-03-11",
+   "sample_size": null,
+   "ALP": 26.0,
+   "COAL": 50.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 37.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Galaxy",
+   "client": null,
+   "field_start": "2011-03-04",
+   "field_end": "2011-03-04",
+   "sample_size": null,
+   "ALP": 23.0,
+   "COAL": 50.0,
+   "GRN": 14.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 36.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2011-01-01",
+   "field_end": "2011-02-28",
+   "sample_size": null,
+   "ALP": 23.0,
+   "COAL": 46.0,
+   "GRN": 17.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 38.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Essential",
+   "client": null,
+   "field_start": "2011-02-18",
+   "field_end": "2011-02-18",
+   "sample_size": null,
+   "ALP": 27.0,
+   "COAL": 51.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 10.0,
+   "tpp_alp_vs_coal": 41.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Nielsen",
+   "client": null,
+   "field_start": "2011-02-16",
+   "field_end": "2011-02-16",
+   "sample_size": null,
+   "ALP": 22.0,
+   "COAL": 53.0,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 12.0,
+   "tpp_alp_vs_coal": 34.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Nielsen",
+   "client": null,
+   "field_start": "2011-01-20",
+   "field_end": "2011-01-20",
+   "sample_size": null,
+   "ALP": 20.0,
+   "COAL": 51.0,
+   "GRN": 15.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 34.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2010-11-01",
+   "field_end": "2010-12-31",
+   "sample_size": null,
+   "ALP": 23.0,
+   "COAL": 46.0,
+   "GRN": 17.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 37.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Roy Morgan",
+   "client": null,
+   "field_start": "2010-10-01",
+   "field_end": "2010-12-31",
+   "sample_size": null,
+   "ALP": 22.0,
+   "COAL": 53.0,
+   "GRN": 13.5,
+   "ONP": null,
+   "IND": null,
+   "OTH": 11.5,
+   "tpp_alp_vs_coal": 35.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2010-09-01",
+   "field_end": "2010-10-31",
+   "sample_size": null,
+   "ALP": 23.0,
+   "COAL": 46.0,
+   "GRN": 17.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 37.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2010-07-01",
+   "field_end": "2010-08-31",
+   "sample_size": null,
+   "ALP": 25.0,
+   "COAL": 46.0,
+   "GRN": 14.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 15.0,
+   "tpp_alp_vs_coal": 39.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2010-05-01",
+   "field_end": "2010-06-30",
+   "sample_size": null,
+   "ALP": 25.0,
+   "COAL": 46.0,
+   "GRN": 16.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 12.0,
+   "tpp_alp_vs_coal": 39.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2010-03-01",
+   "field_end": "2010-04-30",
+   "sample_size": null,
+   "ALP": 31.0,
+   "COAL": 42.0,
+   "GRN": 14.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 45.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Galaxy",
+   "client": null,
+   "field_start": "2010-03-22",
+   "field_end": "2010-03-22",
+   "sample_size": null,
+   "ALP": 29.0,
+   "COAL": 44.0,
+   "GRN": 14.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 43.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Galaxy",
+   "client": null,
+   "field_start": "2010-01-14",
+   "field_end": "2010-01-14",
+   "sample_size": null,
+   "ALP": 29.0,
+   "COAL": 43.0,
+   "GRN": 15.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 44.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2009-11-01",
+   "field_end": "2009-12-31",
+   "sample_size": null,
+   "ALP": 26.0,
+   "COAL": 44.0,
+   "GRN": 17.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 41.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Taverner",
+   "client": null,
+   "field_start": "2009-11-28",
+   "field_end": "2009-11-28",
+   "sample_size": null,
+   "ALP": 31.0,
+   "COAL": 43.0,
+   "GRN": null,
+   "ONP": null,
+   "IND": null,
+   "OTH": 26.0,
+   "tpp_alp_vs_coal": 45.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2009-09-01",
+   "field_end": "2009-10-31",
+   "sample_size": null,
+   "ALP": 30.0,
+   "COAL": 42.0,
+   "GRN": 12.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 16.0,
+   "tpp_alp_vs_coal": 45.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2009-07-01",
+   "field_end": "2009-08-31",
+   "sample_size": null,
+   "ALP": 32.0,
+   "COAL": 41.0,
+   "GRN": 14.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 46.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2009-05-01",
+   "field_end": "2009-06-30",
+   "sample_size": null,
+   "ALP": 31.0,
+   "COAL": 41.0,
+   "GRN": 14.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 45.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2009-03-01",
+   "field_end": "2009-04-30",
+   "sample_size": null,
+   "ALP": 33.0,
+   "COAL": 40.0,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 47.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2009-01-01",
+   "field_end": "2009-02-28",
+   "sample_size": null,
+   "ALP": 30.0,
+   "COAL": 42.0,
+   "GRN": 15.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 44.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2008-11-01",
+   "field_end": "2008-12-31",
+   "sample_size": null,
+   "ALP": 26.0,
+   "COAL": 43.0,
+   "GRN": 14.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 17.0,
+   "tpp_alp_vs_coal": 41.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2008-09-01",
+   "field_end": "2008-10-31",
+   "sample_size": null,
+   "ALP": 29.0,
+   "COAL": 42.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 18.0,
+   "tpp_alp_vs_coal": 44.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2008-07-01",
+   "field_end": "2008-08-31",
+   "sample_size": null,
+   "ALP": 33.0,
+   "COAL": 40.0,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 48.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2008-05-01",
+   "field_end": "2008-06-30",
+   "sample_size": null,
+   "ALP": 32.0,
+   "COAL": 41.0,
+   "GRN": 13.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 14.0,
+   "tpp_alp_vs_coal": 48.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Taverner",
+   "client": null,
+   "field_start": "2008-06-29",
+   "field_end": "2008-06-29",
+   "sample_size": null,
+   "ALP": 28.0,
+   "COAL": 46.0,
+   "GRN": null,
+   "ONP": null,
+   "IND": null,
+   "OTH": 26.0,
+   "tpp_alp_vs_coal": 44.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2008-03-01",
+   "field_end": "2008-04-30",
+   "sample_size": null,
+   "ALP": 35.0,
+   "COAL": 38.0,
+   "GRN": 14.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 51.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2008-01-01",
+   "field_end": "2008-03-31",
+   "sample_size": null,
+   "ALP": 34.0,
+   "COAL": 39.0,
+   "GRN": 14.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 50.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  },
+  {
+   "pollster": "Nielsen",
+   "client": null,
+   "field_start": "2008-02-15",
+   "field_end": "2008-02-19",
+   "sample_size": null,
+   "ALP": 38.0,
+   "COAL": 42.0,
+   "GRN": 11.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 9.0,
+   "tpp_alp_vs_coal": 50.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nsw-2011"
+  }
+ ],
+ "trend": [
+  {
+   "date": "2008-02-15",
+   "ALP": 35.25,
+   "COAL": 40.06,
+   "GRN": 12.92,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.94
+  },
+  {
+   "date": "2008-02-22",
+   "ALP": 35.14,
+   "COAL": 40.07,
+   "GRN": 12.94,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.88
+  },
+  {
+   "date": "2008-02-29",
+   "ALP": 35.01,
+   "COAL": 40.1,
+   "GRN": 12.96,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.81
+  },
+  {
+   "date": "2008-03-07",
+   "ALP": 34.87,
+   "COAL": 40.14,
+   "GRN": 12.99,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.73
+  },
+  {
+   "date": "2008-03-14",
+   "ALP": 34.7,
+   "COAL": 40.19,
+   "GRN": 13.01,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.63
+  },
+  {
+   "date": "2008-03-21",
+   "ALP": 34.52,
+   "COAL": 40.26,
+   "GRN": 13.03,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.51
+  },
+  {
+   "date": "2008-03-28",
+   "ALP": 34.31,
+   "COAL": 40.34,
+   "GRN": 13.05,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.38
+  },
+  {
+   "date": "2008-04-04",
+   "ALP": 34.09,
+   "COAL": 40.44,
+   "GRN": 13.07,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.23
+  },
+  {
+   "date": "2008-04-11",
+   "ALP": 33.85,
+   "COAL": 40.55,
+   "GRN": 13.08,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.06
+  },
+  {
+   "date": "2008-04-18",
+   "ALP": 33.6,
+   "COAL": 40.67,
+   "GRN": 13.09,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.87
+  },
+  {
+   "date": "2008-04-25",
+   "ALP": 33.34,
+   "COAL": 40.81,
+   "GRN": 13.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.68
+  },
+  {
+   "date": "2008-05-02",
+   "ALP": 33.07,
+   "COAL": 40.95,
+   "GRN": 13.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.47
+  },
+  {
+   "date": "2008-05-09",
+   "ALP": 32.81,
+   "COAL": 41.1,
+   "GRN": 13.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.26
+  },
+  {
+   "date": "2008-05-16",
+   "ALP": 32.55,
+   "COAL": 41.25,
+   "GRN": 13.09,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.05
+  },
+  {
+   "date": "2008-05-23",
+   "ALP": 32.31,
+   "COAL": 41.4,
+   "GRN": 13.07,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.83
+  },
+  {
+   "date": "2008-05-30",
+   "ALP": 32.08,
+   "COAL": 41.53,
+   "GRN": 13.05,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.63
+  },
+  {
+   "date": "2008-06-06",
+   "ALP": 31.86,
+   "COAL": 41.66,
+   "GRN": 13.02,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.43
+  },
+  {
+   "date": "2008-06-13",
+   "ALP": 31.66,
+   "COAL": 41.77,
+   "GRN": 12.98,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.24
+  },
+  {
+   "date": "2008-06-20",
+   "ALP": 31.48,
+   "COAL": 41.86,
+   "GRN": 12.94,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.06
+  },
+  {
+   "date": "2008-06-27",
+   "ALP": 31.32,
+   "COAL": 41.94,
+   "GRN": 12.89,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.89
+  },
+  {
+   "date": "2008-07-04",
+   "ALP": 31.17,
+   "COAL": 42.01,
+   "GRN": 12.84,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.73
+  },
+  {
+   "date": "2008-07-11",
+   "ALP": 31.04,
+   "COAL": 42.06,
+   "GRN": 12.79,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.58
+  },
+  {
+   "date": "2008-07-18",
+   "ALP": 30.91,
+   "COAL": 42.09,
+   "GRN": 12.73,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.42
+  },
+  {
+   "date": "2008-07-25",
+   "ALP": 30.79,
+   "COAL": 42.12,
+   "GRN": 12.67,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.27
+  },
+  {
+   "date": "2008-08-01",
+   "ALP": 30.66,
+   "COAL": 42.13,
+   "GRN": 12.62,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.12
+  },
+  {
+   "date": "2008-08-08",
+   "ALP": 30.54,
+   "COAL": 42.13,
+   "GRN": 12.57,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.95
+  },
+  {
+   "date": "2008-08-15",
+   "ALP": 30.41,
+   "COAL": 42.13,
+   "GRN": 12.52,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.79
+  },
+  {
+   "date": "2008-08-22",
+   "ALP": 30.27,
+   "COAL": 42.13,
+   "GRN": 12.49,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.61
+  },
+  {
+   "date": "2008-08-29",
+   "ALP": 30.12,
+   "COAL": 42.13,
+   "GRN": 12.46,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.42
+  },
+  {
+   "date": "2008-09-05",
+   "ALP": 29.96,
+   "COAL": 42.13,
+   "GRN": 12.45,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.22
+  },
+  {
+   "date": "2008-09-12",
+   "ALP": 29.8,
+   "COAL": 42.13,
+   "GRN": 12.45,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.01
+  },
+  {
+   "date": "2008-09-19",
+   "ALP": 29.62,
+   "COAL": 42.13,
+   "GRN": 12.47,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.8
+  },
+  {
+   "date": "2008-09-26",
+   "ALP": 29.44,
+   "COAL": 42.14,
+   "GRN": 12.51,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.58
+  },
+  {
+   "date": "2008-10-03",
+   "ALP": 29.26,
+   "COAL": 42.16,
+   "GRN": 12.55,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.36
+  },
+  {
+   "date": "2008-10-10",
+   "ALP": 29.09,
+   "COAL": 42.17,
+   "GRN": 12.62,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.14
+  },
+  {
+   "date": "2008-10-17",
+   "ALP": 28.93,
+   "COAL": 42.19,
+   "GRN": 12.7,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.93
+  },
+  {
+   "date": "2008-10-24",
+   "ALP": 28.78,
+   "COAL": 42.21,
+   "GRN": 12.79,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.75
+  },
+  {
+   "date": "2008-10-31",
+   "ALP": 28.66,
+   "COAL": 42.23,
+   "GRN": 12.9,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.58
+  },
+  {
+   "date": "2008-11-07",
+   "ALP": 28.56,
+   "COAL": 42.25,
+   "GRN": 13.01,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.43
+  },
+  {
+   "date": "2008-11-14",
+   "ALP": 28.49,
+   "COAL": 42.26,
+   "GRN": 13.13,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.32
+  },
+  {
+   "date": "2008-11-21",
+   "ALP": 28.45,
+   "COAL": 42.26,
+   "GRN": 13.25,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.24
+  },
+  {
+   "date": "2008-11-28",
+   "ALP": 28.45,
+   "COAL": 42.25,
+   "GRN": 13.37,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.19
+  },
+  {
+   "date": "2008-12-05",
+   "ALP": 28.49,
+   "COAL": 42.23,
+   "GRN": 13.48,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.18
+  },
+  {
+   "date": "2008-12-12",
+   "ALP": 28.56,
+   "COAL": 42.2,
+   "GRN": 13.59,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.2
+  },
+  {
+   "date": "2008-12-19",
+   "ALP": 28.66,
+   "COAL": 42.16,
+   "GRN": 13.69,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.25
+  },
+  {
+   "date": "2008-12-26",
+   "ALP": 28.8,
+   "COAL": 42.1,
+   "GRN": 13.77,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.34
+  },
+  {
+   "date": "2009-01-02",
+   "ALP": 28.96,
+   "COAL": 42.04,
+   "GRN": 13.85,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.45
+  },
+  {
+   "date": "2009-01-09",
+   "ALP": 29.14,
+   "COAL": 41.96,
+   "GRN": 13.91,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.58
+  },
+  {
+   "date": "2009-01-16",
+   "ALP": 29.34,
+   "COAL": 41.88,
+   "GRN": 13.95,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.73
+  },
+  {
+   "date": "2009-01-23",
+   "ALP": 29.56,
+   "COAL": 41.79,
+   "GRN": 13.98,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.9
+  },
+  {
+   "date": "2009-01-30",
+   "ALP": 29.78,
+   "COAL": 41.7,
+   "GRN": 14.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.08
+  },
+  {
+   "date": "2009-02-06",
+   "ALP": 30.0,
+   "COAL": 41.6,
+   "GRN": 14.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.26
+  },
+  {
+   "date": "2009-02-13",
+   "ALP": 30.22,
+   "COAL": 41.5,
+   "GRN": 13.99,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.44
+  },
+  {
+   "date": "2009-02-20",
+   "ALP": 30.43,
+   "COAL": 41.4,
+   "GRN": 13.98,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.62
+  },
+  {
+   "date": "2009-02-27",
+   "ALP": 30.63,
+   "COAL": 41.3,
+   "GRN": 13.95,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.79
+  },
+  {
+   "date": "2009-03-06",
+   "ALP": 30.82,
+   "COAL": 41.21,
+   "GRN": 13.93,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.95
+  },
+  {
+   "date": "2009-03-13",
+   "ALP": 30.99,
+   "COAL": 41.13,
+   "GRN": 13.9,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.09
+  },
+  {
+   "date": "2009-03-20",
+   "ALP": 31.13,
+   "COAL": 41.06,
+   "GRN": 13.87,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.22
+  },
+  {
+   "date": "2009-03-27",
+   "ALP": 31.26,
+   "COAL": 40.99,
+   "GRN": 13.84,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.33
+  },
+  {
+   "date": "2009-04-03",
+   "ALP": 31.37,
+   "COAL": 40.94,
+   "GRN": 13.81,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.43
+  },
+  {
+   "date": "2009-04-10",
+   "ALP": 31.46,
+   "COAL": 40.89,
+   "GRN": 13.79,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.5
+  },
+  {
+   "date": "2009-04-17",
+   "ALP": 31.52,
+   "COAL": 40.86,
+   "GRN": 13.77,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.56
+  },
+  {
+   "date": "2009-04-24",
+   "ALP": 31.57,
+   "COAL": 40.84,
+   "GRN": 13.75,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.61
+  },
+  {
+   "date": "2009-05-01",
+   "ALP": 31.6,
+   "COAL": 40.83,
+   "GRN": 13.74,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.63
+  },
+  {
+   "date": "2009-05-08",
+   "ALP": 31.62,
+   "COAL": 40.83,
+   "GRN": 13.74,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.65
+  },
+  {
+   "date": "2009-05-15",
+   "ALP": 31.62,
+   "COAL": 40.84,
+   "GRN": 13.73,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.66
+  },
+  {
+   "date": "2009-05-22",
+   "ALP": 31.61,
+   "COAL": 40.86,
+   "GRN": 13.73,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.65
+  },
+  {
+   "date": "2009-05-29",
+   "ALP": 31.59,
+   "COAL": 40.88,
+   "GRN": 13.72,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.64
+  },
+  {
+   "date": "2009-06-05",
+   "ALP": 31.56,
+   "COAL": 40.92,
+   "GRN": 13.72,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.62
+  },
+  {
+   "date": "2009-06-12",
+   "ALP": 31.52,
+   "COAL": 40.96,
+   "GRN": 13.71,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.6
+  },
+  {
+   "date": "2009-06-19",
+   "ALP": 31.47,
+   "COAL": 41.0,
+   "GRN": 13.71,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.57
+  },
+  {
+   "date": "2009-06-26",
+   "ALP": 31.42,
+   "COAL": 41.06,
+   "GRN": 13.7,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.54
+  },
+  {
+   "date": "2009-07-03",
+   "ALP": 31.36,
+   "COAL": 41.12,
+   "GRN": 13.69,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.5
+  },
+  {
+   "date": "2009-07-10",
+   "ALP": 31.28,
+   "COAL": 41.19,
+   "GRN": 13.67,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.46
+  },
+  {
+   "date": "2009-07-17",
+   "ALP": 31.2,
+   "COAL": 41.27,
+   "GRN": 13.66,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.41
+  },
+  {
+   "date": "2009-07-24",
+   "ALP": 31.11,
+   "COAL": 41.35,
+   "GRN": 13.64,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.35
+  },
+  {
+   "date": "2009-07-31",
+   "ALP": 31.0,
+   "COAL": 41.44,
+   "GRN": 13.63,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.28
+  },
+  {
+   "date": "2009-08-07",
+   "ALP": 30.88,
+   "COAL": 41.54,
+   "GRN": 13.63,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.2
+  },
+  {
+   "date": "2009-08-14",
+   "ALP": 30.76,
+   "COAL": 41.65,
+   "GRN": 13.63,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.12
+  },
+  {
+   "date": "2009-08-21",
+   "ALP": 30.63,
+   "COAL": 41.76,
+   "GRN": 13.64,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.02
+  },
+  {
+   "date": "2009-08-28",
+   "ALP": 30.48,
+   "COAL": 41.87,
+   "GRN": 13.67,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.92
+  },
+  {
+   "date": "2009-09-04",
+   "ALP": 30.34,
+   "COAL": 41.99,
+   "GRN": 13.71,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.81
+  },
+  {
+   "date": "2009-09-11",
+   "ALP": 30.19,
+   "COAL": 42.1,
+   "GRN": 13.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.69
+  },
+  {
+   "date": "2009-09-18",
+   "ALP": 30.05,
+   "COAL": 42.22,
+   "GRN": 13.83,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.58
+  },
+  {
+   "date": "2009-09-25",
+   "ALP": 29.91,
+   "COAL": 42.33,
+   "GRN": 13.92,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.46
+  },
+  {
+   "date": "2009-10-02",
+   "ALP": 29.77,
+   "COAL": 42.44,
+   "GRN": 14.01,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.35
+  },
+  {
+   "date": "2009-10-09",
+   "ALP": 29.65,
+   "COAL": 42.54,
+   "GRN": 14.12,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.24
+  },
+  {
+   "date": "2009-10-16",
+   "ALP": 29.53,
+   "COAL": 42.63,
+   "GRN": 14.24,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.13
+  },
+  {
+   "date": "2009-10-23",
+   "ALP": 29.43,
+   "COAL": 42.72,
+   "GRN": 14.36,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.04
+  },
+  {
+   "date": "2009-10-30",
+   "ALP": 29.33,
+   "COAL": 42.8,
+   "GRN": 14.48,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.95
+  },
+  {
+   "date": "2009-11-06",
+   "ALP": 29.25,
+   "COAL": 42.87,
+   "GRN": 14.59,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.87
+  },
+  {
+   "date": "2009-11-13",
+   "ALP": 29.18,
+   "COAL": 42.93,
+   "GRN": 14.7,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.81
+  },
+  {
+   "date": "2009-11-20",
+   "ALP": 29.12,
+   "COAL": 42.99,
+   "GRN": 14.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.75
+  },
+  {
+   "date": "2009-11-27",
+   "ALP": 29.08,
+   "COAL": 43.03,
+   "GRN": 14.88,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.7
+  },
+  {
+   "date": "2009-12-04",
+   "ALP": 29.04,
+   "COAL": 43.07,
+   "GRN": 14.95,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.66
+  },
+  {
+   "date": "2009-12-11",
+   "ALP": 29.02,
+   "COAL": 43.11,
+   "GRN": 14.99,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.62
+  },
+  {
+   "date": "2009-12-18",
+   "ALP": 29.0,
+   "COAL": 43.14,
+   "GRN": 15.02,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.6
+  },
+  {
+   "date": "2009-12-25",
+   "ALP": 28.99,
+   "COAL": 43.16,
+   "GRN": 15.03,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.57
+  },
+  {
+   "date": "2010-01-01",
+   "ALP": 29.0,
+   "COAL": 43.18,
+   "GRN": 15.03,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.56
+  },
+  {
+   "date": "2010-01-08",
+   "ALP": 29.0,
+   "COAL": 43.2,
+   "GRN": 15.01,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.54
+  },
+  {
+   "date": "2010-01-15",
+   "ALP": 29.01,
+   "COAL": 43.22,
+   "GRN": 14.98,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.53
+  },
+  {
+   "date": "2010-01-22",
+   "ALP": 29.03,
+   "COAL": 43.24,
+   "GRN": 14.94,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.52
+  },
+  {
+   "date": "2010-01-29",
+   "ALP": 29.04,
+   "COAL": 43.26,
+   "GRN": 14.89,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.5
+  },
+  {
+   "date": "2010-02-05",
+   "ALP": 29.04,
+   "COAL": 43.28,
+   "GRN": 14.84,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.47
+  },
+  {
+   "date": "2010-02-12",
+   "ALP": 29.04,
+   "COAL": 43.3,
+   "GRN": 14.79,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.44
+  },
+  {
+   "date": "2010-02-19",
+   "ALP": 29.04,
+   "COAL": 43.34,
+   "GRN": 14.75,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.39
+  },
+  {
+   "date": "2010-02-26",
+   "ALP": 29.01,
+   "COAL": 43.37,
+   "GRN": 14.71,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.34
+  },
+  {
+   "date": "2010-03-05",
+   "ALP": 28.98,
+   "COAL": 43.42,
+   "GRN": 14.67,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.27
+  },
+  {
+   "date": "2010-03-12",
+   "ALP": 28.92,
+   "COAL": 43.48,
+   "GRN": 14.65,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.18
+  },
+  {
+   "date": "2010-03-19",
+   "ALP": 28.85,
+   "COAL": 43.54,
+   "GRN": 14.63,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.07
+  },
+  {
+   "date": "2010-03-26",
+   "ALP": 28.76,
+   "COAL": 43.61,
+   "GRN": 14.62,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.95
+  },
+  {
+   "date": "2010-04-02",
+   "ALP": 28.64,
+   "COAL": 43.7,
+   "GRN": 14.62,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.81
+  },
+  {
+   "date": "2010-04-09",
+   "ALP": 28.51,
+   "COAL": 43.79,
+   "GRN": 14.63,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.65
+  },
+  {
+   "date": "2010-04-16",
+   "ALP": 28.35,
+   "COAL": 43.9,
+   "GRN": 14.64,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.47
+  },
+  {
+   "date": "2010-04-23",
+   "ALP": 28.18,
+   "COAL": 44.02,
+   "GRN": 14.67,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.27
+  },
+  {
+   "date": "2010-04-30",
+   "ALP": 27.98,
+   "COAL": 44.14,
+   "GRN": 14.69,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.06
+  },
+  {
+   "date": "2010-05-07",
+   "ALP": 27.76,
+   "COAL": 44.28,
+   "GRN": 14.72,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.83
+  },
+  {
+   "date": "2010-05-14",
+   "ALP": 27.53,
+   "COAL": 44.42,
+   "GRN": 14.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.58
+  },
+  {
+   "date": "2010-05-21",
+   "ALP": 27.29,
+   "COAL": 44.58,
+   "GRN": 14.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.32
+  },
+  {
+   "date": "2010-05-28",
+   "ALP": 27.03,
+   "COAL": 44.73,
+   "GRN": 14.83,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.05
+  },
+  {
+   "date": "2010-06-04",
+   "ALP": 26.76,
+   "COAL": 44.9,
+   "GRN": 14.87,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.78
+  },
+  {
+   "date": "2010-06-11",
+   "ALP": 26.49,
+   "COAL": 45.06,
+   "GRN": 14.91,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.5
+  },
+  {
+   "date": "2010-06-18",
+   "ALP": 26.22,
+   "COAL": 45.23,
+   "GRN": 14.94,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.22
+  },
+  {
+   "date": "2010-06-25",
+   "ALP": 25.95,
+   "COAL": 45.4,
+   "GRN": 14.98,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.94
+  },
+  {
+   "date": "2010-07-02",
+   "ALP": 25.68,
+   "COAL": 45.57,
+   "GRN": 15.02,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.66
+  },
+  {
+   "date": "2010-07-09",
+   "ALP": 25.41,
+   "COAL": 45.75,
+   "GRN": 15.05,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.38
+  },
+  {
+   "date": "2010-07-16",
+   "ALP": 25.16,
+   "COAL": 45.92,
+   "GRN": 15.09,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.12
+  },
+  {
+   "date": "2010-07-23",
+   "ALP": 24.91,
+   "COAL": 46.1,
+   "GRN": 15.13,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.85
+  },
+  {
+   "date": "2010-07-30",
+   "ALP": 24.68,
+   "COAL": 46.29,
+   "GRN": 15.17,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.6
+  },
+  {
+   "date": "2010-08-06",
+   "ALP": 24.45,
+   "COAL": 46.47,
+   "GRN": 15.21,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.36
+  },
+  {
+   "date": "2010-08-13",
+   "ALP": 24.24,
+   "COAL": 46.67,
+   "GRN": 15.24,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.13
+  },
+  {
+   "date": "2010-08-20",
+   "ALP": 24.04,
+   "COAL": 46.86,
+   "GRN": 15.28,
+   "ONP": null,
+   "tpp_alp_vs_coal": 37.91
+  },
+  {
+   "date": "2010-08-27",
+   "ALP": 23.85,
+   "COAL": 47.06,
+   "GRN": 15.31,
+   "ONP": null,
+   "tpp_alp_vs_coal": 37.7
+  },
+  {
+   "date": "2010-09-03",
+   "ALP": 23.67,
+   "COAL": 47.27,
+   "GRN": 15.33,
+   "ONP": null,
+   "tpp_alp_vs_coal": 37.5
+  },
+  {
+   "date": "2010-09-10",
+   "ALP": 23.52,
+   "COAL": 47.48,
+   "GRN": 15.34,
+   "ONP": null,
+   "tpp_alp_vs_coal": 37.32
+  },
+  {
+   "date": "2010-09-17",
+   "ALP": 23.37,
+   "COAL": 47.68,
+   "GRN": 15.35,
+   "ONP": null,
+   "tpp_alp_vs_coal": 37.15
+  },
+  {
+   "date": "2010-09-24",
+   "ALP": 23.25,
+   "COAL": 47.89,
+   "GRN": 15.33,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.99
+  },
+  {
+   "date": "2010-10-01",
+   "ALP": 23.14,
+   "COAL": 48.09,
+   "GRN": 15.31,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.85
+  },
+  {
+   "date": "2010-10-08",
+   "ALP": 23.05,
+   "COAL": 48.29,
+   "GRN": 15.27,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.73
+  },
+  {
+   "date": "2010-10-15",
+   "ALP": 22.97,
+   "COAL": 48.49,
+   "GRN": 15.22,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.62
+  },
+  {
+   "date": "2010-10-22",
+   "ALP": 22.92,
+   "COAL": 48.68,
+   "GRN": 15.15,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.53
+  },
+  {
+   "date": "2010-10-29",
+   "ALP": 22.88,
+   "COAL": 48.86,
+   "GRN": 15.06,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.45
+  },
+  {
+   "date": "2010-11-05",
+   "ALP": 22.85,
+   "COAL": 49.04,
+   "GRN": 14.96,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.39
+  },
+  {
+   "date": "2010-11-12",
+   "ALP": 22.84,
+   "COAL": 49.21,
+   "GRN": 14.85,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.33
+  },
+  {
+   "date": "2010-11-19",
+   "ALP": 22.84,
+   "COAL": 49.37,
+   "GRN": 14.73,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.29
+  },
+  {
+   "date": "2010-11-26",
+   "ALP": 22.86,
+   "COAL": 49.52,
+   "GRN": 14.61,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.25
+  },
+  {
+   "date": "2010-12-03",
+   "ALP": 22.88,
+   "COAL": 49.66,
+   "GRN": 14.47,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.22
+  },
+  {
+   "date": "2010-12-10",
+   "ALP": 22.91,
+   "COAL": 49.8,
+   "GRN": 14.34,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.19
+  },
+  {
+   "date": "2010-12-17",
+   "ALP": 22.95,
+   "COAL": 49.93,
+   "GRN": 14.2,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.17
+  },
+  {
+   "date": "2010-12-24",
+   "ALP": 22.99,
+   "COAL": 50.05,
+   "GRN": 14.07,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.15
+  },
+  {
+   "date": "2010-12-31",
+   "ALP": 23.03,
+   "COAL": 50.17,
+   "GRN": 13.93,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.13
+  },
+  {
+   "date": "2011-01-07",
+   "ALP": 23.07,
+   "COAL": 50.27,
+   "GRN": 13.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.11
+  },
+  {
+   "date": "2011-01-14",
+   "ALP": 23.11,
+   "COAL": 50.37,
+   "GRN": 13.68,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.09
+  },
+  {
+   "date": "2011-01-21",
+   "ALP": 23.15,
+   "COAL": 50.47,
+   "GRN": 13.56,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.07
+  },
+  {
+   "date": "2011-01-28",
+   "ALP": 23.19,
+   "COAL": 50.56,
+   "GRN": 13.44,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.05
+  },
+  {
+   "date": "2011-02-04",
+   "ALP": 23.23,
+   "COAL": 50.64,
+   "GRN": 13.34,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.03
+  },
+  {
+   "date": "2011-02-11",
+   "ALP": 23.26,
+   "COAL": 50.71,
+   "GRN": 13.24,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.01
+  },
+  {
+   "date": "2011-02-18",
+   "ALP": 23.29,
+   "COAL": 50.78,
+   "GRN": 13.14,
+   "ONP": null,
+   "tpp_alp_vs_coal": 35.99
+  },
+  {
+   "date": "2011-02-25",
+   "ALP": 23.32,
+   "COAL": 50.85,
+   "GRN": 13.05,
+   "ONP": null,
+   "tpp_alp_vs_coal": 35.96
+  },
+  {
+   "date": "2011-03-04",
+   "ALP": 23.34,
+   "COAL": 50.91,
+   "GRN": 12.97,
+   "ONP": null,
+   "tpp_alp_vs_coal": 35.94
+  },
+  {
+   "date": "2011-03-11",
+   "ALP": 23.37,
+   "COAL": 50.97,
+   "GRN": 12.89,
+   "ONP": null,
+   "tpp_alp_vs_coal": 35.91
+  },
+  {
+   "date": "2011-03-18",
+   "ALP": 23.39,
+   "COAL": 51.02,
+   "GRN": 12.82,
+   "ONP": null,
+   "tpp_alp_vs_coal": 35.89
+  },
+  {
+   "date": "2011-03-23",
+   "ALP": 23.4,
+   "COAL": 51.06,
+   "GRN": 12.77,
+   "ONP": null,
+   "tpp_alp_vs_coal": 35.87
+  },
+  {
+   "date": "2011-04-07"
+  },
+  {
+   "date": "2011-04-07",
+   "ALP": 19.04,
+   "COAL": 56.43,
+   "GRN": 13.01,
+   "ONP": null,
+   "tpp_alp_vs_coal": 29.56
+  },
+  {
+   "date": "2011-04-14",
+   "ALP": 19.06,
+   "COAL": 56.4,
+   "GRN": 13.02,
+   "ONP": null,
+   "tpp_alp_vs_coal": 29.58
+  },
+  {
+   "date": "2011-04-21",
+   "ALP": 19.08,
+   "COAL": 56.36,
+   "GRN": 13.02,
+   "ONP": null,
+   "tpp_alp_vs_coal": 29.62
+  },
+  {
+   "date": "2011-04-28",
+   "ALP": 19.11,
+   "COAL": 56.3,
+   "GRN": 13.03,
+   "ONP": null,
+   "tpp_alp_vs_coal": 29.67
+  },
+  {
+   "date": "2011-05-05",
+   "ALP": 19.16,
+   "COAL": 56.22,
+   "GRN": 13.05,
+   "ONP": null,
+   "tpp_alp_vs_coal": 29.73
+  },
+  {
+   "date": "2011-05-12",
+   "ALP": 19.22,
+   "COAL": 56.1,
+   "GRN": 13.07,
+   "ONP": null,
+   "tpp_alp_vs_coal": 29.83
+  },
+  {
+   "date": "2011-05-19",
+   "ALP": 19.3,
+   "COAL": 55.95,
+   "GRN": 13.09,
+   "ONP": null,
+   "tpp_alp_vs_coal": 29.95
+  },
+  {
+   "date": "2011-05-26",
+   "ALP": 19.42,
+   "COAL": 55.75,
+   "GRN": 13.12,
+   "ONP": null,
+   "tpp_alp_vs_coal": 30.12
+  },
+  {
+   "date": "2011-06-02",
+   "ALP": 19.56,
+   "COAL": 55.49,
+   "GRN": 13.17,
+   "ONP": null,
+   "tpp_alp_vs_coal": 30.33
+  },
+  {
+   "date": "2011-06-09",
+   "ALP": 19.75,
+   "COAL": 55.16,
+   "GRN": 13.22,
+   "ONP": null,
+   "tpp_alp_vs_coal": 30.61
+  },
+  {
+   "date": "2011-06-16",
+   "ALP": 19.98,
+   "COAL": 54.75,
+   "GRN": 13.28,
+   "ONP": null,
+   "tpp_alp_vs_coal": 30.94
+  },
+  {
+   "date": "2011-06-23",
+   "ALP": 20.24,
+   "COAL": 54.29,
+   "GRN": 13.35,
+   "ONP": null,
+   "tpp_alp_vs_coal": 31.32
+  },
+  {
+   "date": "2011-06-30",
+   "ALP": 20.54,
+   "COAL": 53.78,
+   "GRN": 13.42,
+   "ONP": null,
+   "tpp_alp_vs_coal": 31.75
+  },
+  {
+   "date": "2011-07-07",
+   "ALP": 20.84,
+   "COAL": 53.25,
+   "GRN": 13.49,
+   "ONP": null,
+   "tpp_alp_vs_coal": 32.19
+  },
+  {
+   "date": "2011-07-14",
+   "ALP": 21.14,
+   "COAL": 52.74,
+   "GRN": 13.56,
+   "ONP": null,
+   "tpp_alp_vs_coal": 32.61
+  },
+  {
+   "date": "2011-07-21",
+   "ALP": 21.42,
+   "COAL": 52.27,
+   "GRN": 13.61,
+   "ONP": null,
+   "tpp_alp_vs_coal": 33.01
+  },
+  {
+   "date": "2011-07-28",
+   "ALP": 21.67,
+   "COAL": 51.85,
+   "GRN": 13.65,
+   "ONP": null,
+   "tpp_alp_vs_coal": 33.36
+  },
+  {
+   "date": "2011-08-04",
+   "ALP": 21.89,
+   "COAL": 51.5,
+   "GRN": 13.68,
+   "ONP": null,
+   "tpp_alp_vs_coal": 33.65
+  },
+  {
+   "date": "2011-08-11",
+   "ALP": 22.07,
+   "COAL": 51.22,
+   "GRN": 13.7,
+   "ONP": null,
+   "tpp_alp_vs_coal": 33.89
+  },
+  {
+   "date": "2011-08-18",
+   "ALP": 22.23,
+   "COAL": 50.99,
+   "GRN": 13.7,
+   "ONP": null,
+   "tpp_alp_vs_coal": 34.1
+  },
+  {
+   "date": "2011-08-25",
+   "ALP": 22.36,
+   "COAL": 50.8,
+   "GRN": 13.69,
+   "ONP": null,
+   "tpp_alp_vs_coal": 34.26
+  },
+  {
+   "date": "2011-09-01",
+   "ALP": 22.48,
+   "COAL": 50.65,
+   "GRN": 13.68,
+   "ONP": null,
+   "tpp_alp_vs_coal": 34.4
+  },
+  {
+   "date": "2011-09-08",
+   "ALP": 22.59,
+   "COAL": 50.52,
+   "GRN": 13.66,
+   "ONP": null,
+   "tpp_alp_vs_coal": 34.52
+  },
+  {
+   "date": "2011-09-15",
+   "ALP": 22.69,
+   "COAL": 50.4,
+   "GRN": 13.63,
+   "ONP": null,
+   "tpp_alp_vs_coal": 34.64
+  },
+  {
+   "date": "2011-09-22",
+   "ALP": 22.78,
+   "COAL": 50.3,
+   "GRN": 13.6,
+   "ONP": null,
+   "tpp_alp_vs_coal": 34.74
+  },
+  {
+   "date": "2011-09-29",
+   "ALP": 22.88,
+   "COAL": 50.2,
+   "GRN": 13.57,
+   "ONP": null,
+   "tpp_alp_vs_coal": 34.84
+  },
+  {
+   "date": "2011-10-06",
+   "ALP": 22.98,
+   "COAL": 50.11,
+   "GRN": 13.53,
+   "ONP": null,
+   "tpp_alp_vs_coal": 34.94
+  },
+  {
+   "date": "2011-10-13",
+   "ALP": 23.08,
+   "COAL": 50.02,
+   "GRN": 13.5,
+   "ONP": null,
+   "tpp_alp_vs_coal": 35.05
+  },
+  {
+   "date": "2011-10-20",
+   "ALP": 23.18,
+   "COAL": 49.93,
+   "GRN": 13.45,
+   "ONP": null,
+   "tpp_alp_vs_coal": 35.15
+  },
+  {
+   "date": "2011-10-27",
+   "ALP": 23.28,
+   "COAL": 49.84,
+   "GRN": 13.41,
+   "ONP": null,
+   "tpp_alp_vs_coal": 35.27
+  },
+  {
+   "date": "2011-11-03",
+   "ALP": 23.38,
+   "COAL": 49.75,
+   "GRN": 13.37,
+   "ONP": null,
+   "tpp_alp_vs_coal": 35.39
+  },
+  {
+   "date": "2011-11-10",
+   "ALP": 23.49,
+   "COAL": 49.65,
+   "GRN": 13.32,
+   "ONP": null,
+   "tpp_alp_vs_coal": 35.52
+  },
+  {
+   "date": "2011-11-17",
+   "ALP": 23.59,
+   "COAL": 49.56,
+   "GRN": 13.27,
+   "ONP": null,
+   "tpp_alp_vs_coal": 35.65
+  },
+  {
+   "date": "2011-11-24",
+   "ALP": 23.7,
+   "COAL": 49.47,
+   "GRN": 13.23,
+   "ONP": null,
+   "tpp_alp_vs_coal": 35.79
+  },
+  {
+   "date": "2011-12-01",
+   "ALP": 23.8,
+   "COAL": 49.38,
+   "GRN": 13.18,
+   "ONP": null,
+   "tpp_alp_vs_coal": 35.94
+  },
+  {
+   "date": "2011-12-08",
+   "ALP": 23.89,
+   "COAL": 49.29,
+   "GRN": 13.13,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.1
+  },
+  {
+   "date": "2011-12-15",
+   "ALP": 23.98,
+   "COAL": 49.2,
+   "GRN": 13.08,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.27
+  },
+  {
+   "date": "2011-12-22",
+   "ALP": 24.06,
+   "COAL": 49.11,
+   "GRN": 13.03,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.43
+  },
+  {
+   "date": "2011-12-29",
+   "ALP": 24.14,
+   "COAL": 49.03,
+   "GRN": 12.98,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.61
+  },
+  {
+   "date": "2012-01-05",
+   "ALP": 24.2,
+   "COAL": 48.96,
+   "GRN": 12.93,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.78
+  },
+  {
+   "date": "2012-01-12",
+   "ALP": 24.25,
+   "COAL": 48.89,
+   "GRN": 12.88,
+   "ONP": null,
+   "tpp_alp_vs_coal": 36.96
+  },
+  {
+   "date": "2012-01-19",
+   "ALP": 24.3,
+   "COAL": 48.82,
+   "GRN": 12.83,
+   "ONP": null,
+   "tpp_alp_vs_coal": 37.13
+  },
+  {
+   "date": "2012-01-26",
+   "ALP": 24.33,
+   "COAL": 48.77,
+   "GRN": 12.78,
+   "ONP": null,
+   "tpp_alp_vs_coal": 37.3
+  },
+  {
+   "date": "2012-02-02",
+   "ALP": 24.36,
+   "COAL": 48.72,
+   "GRN": 12.72,
+   "ONP": null,
+   "tpp_alp_vs_coal": 37.47
+  },
+  {
+   "date": "2012-02-09",
+   "ALP": 24.38,
+   "COAL": 48.68,
+   "GRN": 12.67,
+   "ONP": null,
+   "tpp_alp_vs_coal": 37.63
+  },
+  {
+   "date": "2012-02-16",
+   "ALP": 24.39,
+   "COAL": 48.64,
+   "GRN": 12.61,
+   "ONP": null,
+   "tpp_alp_vs_coal": 37.79
+  },
+  {
+   "date": "2012-02-23",
+   "ALP": 24.41,
+   "COAL": 48.62,
+   "GRN": 12.54,
+   "ONP": null,
+   "tpp_alp_vs_coal": 37.93
+  },
+  {
+   "date": "2012-03-01",
+   "ALP": 24.41,
+   "COAL": 48.6,
+   "GRN": 12.48,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.07
+  },
+  {
+   "date": "2012-03-08",
+   "ALP": 24.42,
+   "COAL": 48.6,
+   "GRN": 12.4,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.2
+  },
+  {
+   "date": "2012-03-15",
+   "ALP": 24.43,
+   "COAL": 48.6,
+   "GRN": 12.33,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.32
+  },
+  {
+   "date": "2012-03-22",
+   "ALP": 24.45,
+   "COAL": 48.62,
+   "GRN": 12.24,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.43
+  },
+  {
+   "date": "2012-03-29",
+   "ALP": 24.46,
+   "COAL": 48.65,
+   "GRN": 12.15,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.54
+  },
+  {
+   "date": "2012-04-05",
+   "ALP": 24.49,
+   "COAL": 48.68,
+   "GRN": 12.06,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.64
+  },
+  {
+   "date": "2012-04-12",
+   "ALP": 24.53,
+   "COAL": 48.73,
+   "GRN": 11.96,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.73
+  },
+  {
+   "date": "2012-04-19",
+   "ALP": 24.58,
+   "COAL": 48.79,
+   "GRN": 11.85,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.82
+  },
+  {
+   "date": "2012-04-26",
+   "ALP": 24.64,
+   "COAL": 48.85,
+   "GRN": 11.75,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.9
+  },
+  {
+   "date": "2012-05-03",
+   "ALP": 24.71,
+   "COAL": 48.92,
+   "GRN": 11.64,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.97
+  },
+  {
+   "date": "2012-05-10",
+   "ALP": 24.8,
+   "COAL": 48.98,
+   "GRN": 11.53,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.05
+  },
+  {
+   "date": "2012-05-17",
+   "ALP": 24.9,
+   "COAL": 49.05,
+   "GRN": 11.43,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.12
+  },
+  {
+   "date": "2012-05-24",
+   "ALP": 25.01,
+   "COAL": 49.11,
+   "GRN": 11.34,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.19
+  },
+  {
+   "date": "2012-05-31",
+   "ALP": 25.14,
+   "COAL": 49.16,
+   "GRN": 11.25,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.25
+  },
+  {
+   "date": "2012-06-07",
+   "ALP": 25.27,
+   "COAL": 49.2,
+   "GRN": 11.17,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.32
+  },
+  {
+   "date": "2012-06-14",
+   "ALP": 25.41,
+   "COAL": 49.23,
+   "GRN": 11.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.38
+  },
+  {
+   "date": "2012-06-21",
+   "ALP": 25.56,
+   "COAL": 49.23,
+   "GRN": 11.05,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.44
+  },
+  {
+   "date": "2012-06-28",
+   "ALP": 25.7,
+   "COAL": 49.22,
+   "GRN": 11.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.51
+  },
+  {
+   "date": "2012-07-05",
+   "ALP": 25.85,
+   "COAL": 49.19,
+   "GRN": 10.97,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.57
+  },
+  {
+   "date": "2012-07-12",
+   "ALP": 26.0,
+   "COAL": 49.14,
+   "GRN": 10.94,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.63
+  },
+  {
+   "date": "2012-07-19",
+   "ALP": 26.14,
+   "COAL": 49.06,
+   "GRN": 10.92,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.69
+  },
+  {
+   "date": "2012-07-26",
+   "ALP": 26.29,
+   "COAL": 48.96,
+   "GRN": 10.91,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.75
+  },
+  {
+   "date": "2012-08-02",
+   "ALP": 26.43,
+   "COAL": 48.85,
+   "GRN": 10.91,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.81
+  },
+  {
+   "date": "2012-08-09",
+   "ALP": 26.57,
+   "COAL": 48.71,
+   "GRN": 10.9,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.87
+  },
+  {
+   "date": "2012-08-16",
+   "ALP": 26.7,
+   "COAL": 48.55,
+   "GRN": 10.91,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.94
+  },
+  {
+   "date": "2012-08-23",
+   "ALP": 26.84,
+   "COAL": 48.37,
+   "GRN": 10.91,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.0
+  },
+  {
+   "date": "2012-08-30",
+   "ALP": 26.97,
+   "COAL": 48.18,
+   "GRN": 10.92,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.07
+  },
+  {
+   "date": "2012-09-06",
+   "ALP": 27.09,
+   "COAL": 47.98,
+   "GRN": 10.93,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.13
+  },
+  {
+   "date": "2012-09-13",
+   "ALP": 27.21,
+   "COAL": 47.76,
+   "GRN": 10.94,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.19
+  },
+  {
+   "date": "2012-09-20",
+   "ALP": 27.33,
+   "COAL": 47.54,
+   "GRN": 10.95,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.25
+  },
+  {
+   "date": "2012-09-27",
+   "ALP": 27.44,
+   "COAL": 47.32,
+   "GRN": 10.95,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.31
+  },
+  {
+   "date": "2012-10-04",
+   "ALP": 27.54,
+   "COAL": 47.11,
+   "GRN": 10.96,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.36
+  },
+  {
+   "date": "2012-10-11",
+   "ALP": 27.62,
+   "COAL": 46.9,
+   "GRN": 10.96,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.4
+  },
+  {
+   "date": "2012-10-18",
+   "ALP": 27.7,
+   "COAL": 46.71,
+   "GRN": 10.96,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.44
+  },
+  {
+   "date": "2012-10-25",
+   "ALP": 27.76,
+   "COAL": 46.55,
+   "GRN": 10.96,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.46
+  },
+  {
+   "date": "2012-11-01",
+   "ALP": 27.8,
+   "COAL": 46.41,
+   "GRN": 10.95,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.46
+  },
+  {
+   "date": "2012-11-08",
+   "ALP": 27.81,
+   "COAL": 46.31,
+   "GRN": 10.95,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.45
+  },
+  {
+   "date": "2012-11-15",
+   "ALP": 27.81,
+   "COAL": 46.25,
+   "GRN": 10.93,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.43
+  },
+  {
+   "date": "2012-11-22",
+   "ALP": 27.78,
+   "COAL": 46.23,
+   "GRN": 10.92,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.39
+  },
+  {
+   "date": "2012-11-29",
+   "ALP": 27.74,
+   "COAL": 46.24,
+   "GRN": 10.9,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.32
+  },
+  {
+   "date": "2012-12-06",
+   "ALP": 27.67,
+   "COAL": 46.3,
+   "GRN": 10.87,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.25
+  },
+  {
+   "date": "2012-12-13",
+   "ALP": 27.58,
+   "COAL": 46.39,
+   "GRN": 10.85,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.16
+  },
+  {
+   "date": "2012-12-20",
+   "ALP": 27.48,
+   "COAL": 46.52,
+   "GRN": 10.82,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.05
+  },
+  {
+   "date": "2012-12-27",
+   "ALP": 27.36,
+   "COAL": 46.67,
+   "GRN": 10.79,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.94
+  },
+  {
+   "date": "2013-01-03",
+   "ALP": 27.24,
+   "COAL": 46.84,
+   "GRN": 10.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.82
+  },
+  {
+   "date": "2013-01-10",
+   "ALP": 27.12,
+   "COAL": 47.02,
+   "GRN": 10.72,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.7
+  },
+  {
+   "date": "2013-01-17",
+   "ALP": 27.0,
+   "COAL": 47.22,
+   "GRN": 10.69,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.57
+  },
+  {
+   "date": "2013-01-24",
+   "ALP": 26.88,
+   "COAL": 47.42,
+   "GRN": 10.66,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.45
+  },
+  {
+   "date": "2013-01-31",
+   "ALP": 26.78,
+   "COAL": 47.62,
+   "GRN": 10.63,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.33
+  },
+  {
+   "date": "2013-02-07",
+   "ALP": 26.68,
+   "COAL": 47.81,
+   "GRN": 10.61,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.22
+  },
+  {
+   "date": "2013-02-14",
+   "ALP": 26.59,
+   "COAL": 48.0,
+   "GRN": 10.58,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.12
+  },
+  {
+   "date": "2013-02-21",
+   "ALP": 26.52,
+   "COAL": 48.17,
+   "GRN": 10.57,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.02
+  },
+  {
+   "date": "2013-02-28",
+   "ALP": 26.46,
+   "COAL": 48.33,
+   "GRN": 10.56,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.94
+  },
+  {
+   "date": "2013-03-07",
+   "ALP": 26.42,
+   "COAL": 48.48,
+   "GRN": 10.55,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.86
+  },
+  {
+   "date": "2013-03-14",
+   "ALP": 26.39,
+   "COAL": 48.61,
+   "GRN": 10.55,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.8
+  },
+  {
+   "date": "2013-03-21",
+   "ALP": 26.38,
+   "COAL": 48.72,
+   "GRN": 10.56,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.75
+  },
+  {
+   "date": "2013-03-28",
+   "ALP": 26.39,
+   "COAL": 48.82,
+   "GRN": 10.57,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.7
+  },
+  {
+   "date": "2013-04-04",
+   "ALP": 26.4,
+   "COAL": 48.91,
+   "GRN": 10.59,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.67
+  },
+  {
+   "date": "2013-04-11",
+   "ALP": 26.43,
+   "COAL": 48.98,
+   "GRN": 10.62,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.65
+  },
+  {
+   "date": "2013-04-18",
+   "ALP": 26.48,
+   "COAL": 49.03,
+   "GRN": 10.65,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.64
+  },
+  {
+   "date": "2013-04-25",
+   "ALP": 26.53,
+   "COAL": 49.07,
+   "GRN": 10.68,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.63
+  },
+  {
+   "date": "2013-05-02",
+   "ALP": 26.61,
+   "COAL": 49.09,
+   "GRN": 10.72,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.65
+  },
+  {
+   "date": "2013-05-09",
+   "ALP": 26.69,
+   "COAL": 49.1,
+   "GRN": 10.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.67
+  },
+  {
+   "date": "2013-05-16",
+   "ALP": 26.79,
+   "COAL": 49.09,
+   "GRN": 10.81,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.7
+  },
+  {
+   "date": "2013-05-23",
+   "ALP": 26.91,
+   "COAL": 49.07,
+   "GRN": 10.85,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.76
+  },
+  {
+   "date": "2013-05-30",
+   "ALP": 27.05,
+   "COAL": 49.02,
+   "GRN": 10.9,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.82
+  },
+  {
+   "date": "2013-06-06",
+   "ALP": 27.21,
+   "COAL": 48.95,
+   "GRN": 10.93,
+   "ONP": null,
+   "tpp_alp_vs_coal": 38.91
+  },
+  {
+   "date": "2013-06-13",
+   "ALP": 27.39,
+   "COAL": 48.86,
+   "GRN": 10.97,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.03
+  },
+  {
+   "date": "2013-06-20",
+   "ALP": 27.59,
+   "COAL": 48.73,
+   "GRN": 10.99,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.17
+  },
+  {
+   "date": "2013-06-27",
+   "ALP": 27.83,
+   "COAL": 48.58,
+   "GRN": 11.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.33
+  },
+  {
+   "date": "2013-07-04",
+   "ALP": 28.09,
+   "COAL": 48.39,
+   "GRN": 11.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.53
+  },
+  {
+   "date": "2013-07-11",
+   "ALP": 28.38,
+   "COAL": 48.18,
+   "GRN": 10.98,
+   "ONP": null,
+   "tpp_alp_vs_coal": 39.76
+  },
+  {
+   "date": "2013-07-18",
+   "ALP": 28.7,
+   "COAL": 47.93,
+   "GRN": 10.95,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.02
+  },
+  {
+   "date": "2013-07-25",
+   "ALP": 29.04,
+   "COAL": 47.66,
+   "GRN": 10.9,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.3
+  },
+  {
+   "date": "2013-08-01",
+   "ALP": 29.38,
+   "COAL": 47.37,
+   "GRN": 10.84,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.6
+  },
+  {
+   "date": "2013-08-08",
+   "ALP": 29.73,
+   "COAL": 47.07,
+   "GRN": 10.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 40.91
+  },
+  {
+   "date": "2013-08-15",
+   "ALP": 30.06,
+   "COAL": 46.78,
+   "GRN": 10.68,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.21
+  },
+  {
+   "date": "2013-08-22",
+   "ALP": 30.38,
+   "COAL": 46.5,
+   "GRN": 10.6,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.5
+  },
+  {
+   "date": "2013-08-29",
+   "ALP": 30.66,
+   "COAL": 46.24,
+   "GRN": 10.52,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.78
+  },
+  {
+   "date": "2013-09-05",
+   "ALP": 30.92,
+   "COAL": 46.0,
+   "GRN": 10.44,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.03
+  },
+  {
+   "date": "2013-09-12",
+   "ALP": 31.14,
+   "COAL": 45.78,
+   "GRN": 10.38,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.26
+  },
+  {
+   "date": "2013-09-19",
+   "ALP": 31.32,
+   "COAL": 45.6,
+   "GRN": 10.33,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.47
+  },
+  {
+   "date": "2013-09-26",
+   "ALP": 31.48,
+   "COAL": 45.43,
+   "GRN": 10.29,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.66
+  },
+  {
+   "date": "2013-10-03",
+   "ALP": 31.61,
+   "COAL": 45.29,
+   "GRN": 10.26,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.84
+  },
+  {
+   "date": "2013-10-10",
+   "ALP": 31.73,
+   "COAL": 45.15,
+   "GRN": 10.24,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.01
+  },
+  {
+   "date": "2013-10-17",
+   "ALP": 31.82,
+   "COAL": 45.03,
+   "GRN": 10.24,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.18
+  },
+  {
+   "date": "2013-10-24",
+   "ALP": 31.91,
+   "COAL": 44.91,
+   "GRN": 10.26,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.36
+  },
+  {
+   "date": "2013-10-31",
+   "ALP": 31.98,
+   "COAL": 44.79,
+   "GRN": 10.28,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.54
+  },
+  {
+   "date": "2013-11-07",
+   "ALP": 32.05,
+   "COAL": 44.67,
+   "GRN": 10.32,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.73
+  },
+  {
+   "date": "2013-11-14",
+   "ALP": 32.12,
+   "COAL": 44.55,
+   "GRN": 10.36,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.93
+  },
+  {
+   "date": "2013-11-21",
+   "ALP": 32.19,
+   "COAL": 44.42,
+   "GRN": 10.41,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.14
+  },
+  {
+   "date": "2013-11-28",
+   "ALP": 32.25,
+   "COAL": 44.29,
+   "GRN": 10.47,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.35
+  },
+  {
+   "date": "2013-12-05",
+   "ALP": 32.32,
+   "COAL": 44.16,
+   "GRN": 10.53,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.56
+  },
+  {
+   "date": "2013-12-12",
+   "ALP": 32.38,
+   "COAL": 44.03,
+   "GRN": 10.59,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.77
+  },
+  {
+   "date": "2013-12-19",
+   "ALP": 32.45,
+   "COAL": 43.9,
+   "GRN": 10.65,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.98
+  },
+  {
+   "date": "2013-12-26",
+   "ALP": 32.51,
+   "COAL": 43.78,
+   "GRN": 10.72,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.17
+  },
+  {
+   "date": "2014-01-02",
+   "ALP": 32.56,
+   "COAL": 43.66,
+   "GRN": 10.78,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.35
+  },
+  {
+   "date": "2014-01-09",
+   "ALP": 32.62,
+   "COAL": 43.54,
+   "GRN": 10.84,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.51
+  },
+  {
+   "date": "2014-01-16",
+   "ALP": 32.67,
+   "COAL": 43.43,
+   "GRN": 10.9,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.66
+  },
+  {
+   "date": "2014-01-23",
+   "ALP": 32.71,
+   "COAL": 43.32,
+   "GRN": 10.97,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.79
+  },
+  {
+   "date": "2014-01-30",
+   "ALP": 32.74,
+   "COAL": 43.22,
+   "GRN": 11.03,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.91
+  },
+  {
+   "date": "2014-02-06",
+   "ALP": 32.77,
+   "COAL": 43.12,
+   "GRN": 11.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.0
+  },
+  {
+   "date": "2014-02-13",
+   "ALP": 32.79,
+   "COAL": 43.03,
+   "GRN": 11.17,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.08
+  },
+  {
+   "date": "2014-02-20",
+   "ALP": 32.8,
+   "COAL": 42.94,
+   "GRN": 11.24,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.13
+  },
+  {
+   "date": "2014-02-27",
+   "ALP": 32.81,
+   "COAL": 42.86,
+   "GRN": 11.32,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.16
+  },
+  {
+   "date": "2014-03-06",
+   "ALP": 32.8,
+   "COAL": 42.78,
+   "GRN": 11.41,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.17
+  },
+  {
+   "date": "2014-03-13",
+   "ALP": 32.78,
+   "COAL": 42.71,
+   "GRN": 11.5,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.15
+  },
+  {
+   "date": "2014-03-20",
+   "ALP": 32.74,
+   "COAL": 42.64,
+   "GRN": 11.6,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.1
+  },
+  {
+   "date": "2014-03-27",
+   "ALP": 32.7,
+   "COAL": 42.57,
+   "GRN": 11.71,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.03
+  },
+  {
+   "date": "2014-04-03",
+   "ALP": 32.65,
+   "COAL": 42.51,
+   "GRN": 11.82,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.94
+  },
+  {
+   "date": "2014-04-10",
+   "ALP": 32.59,
+   "COAL": 42.46,
+   "GRN": 11.93,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.83
+  },
+  {
+   "date": "2014-04-17",
+   "ALP": 32.53,
+   "COAL": 42.41,
+   "GRN": 12.04,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.7
+  },
+  {
+   "date": "2014-04-24",
+   "ALP": 32.47,
+   "COAL": 42.38,
+   "GRN": 12.15,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.56
+  },
+  {
+   "date": "2014-05-01",
+   "ALP": 32.41,
+   "COAL": 42.35,
+   "GRN": 12.25,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.43
+  },
+  {
+   "date": "2014-05-08",
+   "ALP": 32.37,
+   "COAL": 42.33,
+   "GRN": 12.34,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.3
+  },
+  {
+   "date": "2014-05-15",
+   "ALP": 32.34,
+   "COAL": 42.32,
+   "GRN": 12.41,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.19
+  },
+  {
+   "date": "2014-05-22",
+   "ALP": 32.32,
+   "COAL": 42.33,
+   "GRN": 12.47,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.1
+  },
+  {
+   "date": "2014-05-29",
+   "ALP": 32.33,
+   "COAL": 42.36,
+   "GRN": 12.51,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.03
+  },
+  {
+   "date": "2014-06-05",
+   "ALP": 32.35,
+   "COAL": 42.4,
+   "GRN": 12.53,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.99
+  },
+  {
+   "date": "2014-06-12",
+   "ALP": 32.4,
+   "COAL": 42.46,
+   "GRN": 12.53,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.97
+  },
+  {
+   "date": "2014-06-19",
+   "ALP": 32.46,
+   "COAL": 42.54,
+   "GRN": 12.51,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.97
+  },
+  {
+   "date": "2014-06-26",
+   "ALP": 32.53,
+   "COAL": 42.63,
+   "GRN": 12.48,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.98
+  },
+  {
+   "date": "2014-07-03",
+   "ALP": 32.61,
+   "COAL": 42.74,
+   "GRN": 12.43,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.01
+  },
+  {
+   "date": "2014-07-10",
+   "ALP": 32.7,
+   "COAL": 42.87,
+   "GRN": 12.38,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.04
+  },
+  {
+   "date": "2014-07-17",
+   "ALP": 32.79,
+   "COAL": 43.0,
+   "GRN": 12.31,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.07
+  },
+  {
+   "date": "2014-07-24",
+   "ALP": 32.87,
+   "COAL": 43.14,
+   "GRN": 12.24,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.1
+  },
+  {
+   "date": "2014-07-31",
+   "ALP": 32.96,
+   "COAL": 43.28,
+   "GRN": 12.17,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.12
+  },
+  {
+   "date": "2014-08-07",
+   "ALP": 33.04,
+   "COAL": 43.42,
+   "GRN": 12.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.14
+  },
+  {
+   "date": "2014-08-14",
+   "ALP": 33.12,
+   "COAL": 43.55,
+   "GRN": 12.03,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.16
+  },
+  {
+   "date": "2014-08-21",
+   "ALP": 33.19,
+   "COAL": 43.68,
+   "GRN": 11.96,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.17
+  },
+  {
+   "date": "2014-08-28",
+   "ALP": 33.26,
+   "COAL": 43.8,
+   "GRN": 11.89,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.17
+  },
+  {
+   "date": "2014-09-04",
+   "ALP": 33.32,
+   "COAL": 43.91,
+   "GRN": 11.83,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.17
+  },
+  {
+   "date": "2014-09-11",
+   "ALP": 33.39,
+   "COAL": 44.02,
+   "GRN": 11.77,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.17
+  },
+  {
+   "date": "2014-09-18",
+   "ALP": 33.44,
+   "COAL": 44.11,
+   "GRN": 11.71,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.17
+  },
+  {
+   "date": "2014-09-25",
+   "ALP": 33.5,
+   "COAL": 44.19,
+   "GRN": 11.66,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.16
+  },
+  {
+   "date": "2014-10-02",
+   "ALP": 33.55,
+   "COAL": 44.26,
+   "GRN": 11.61,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.16
+  },
+  {
+   "date": "2014-10-09",
+   "ALP": 33.6,
+   "COAL": 44.32,
+   "GRN": 11.56,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.16
+  },
+  {
+   "date": "2014-10-16",
+   "ALP": 33.65,
+   "COAL": 44.38,
+   "GRN": 11.51,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.16
+  },
+  {
+   "date": "2014-10-23",
+   "ALP": 33.7,
+   "COAL": 44.43,
+   "GRN": 11.47,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.17
+  },
+  {
+   "date": "2014-10-30",
+   "ALP": 33.74,
+   "COAL": 44.47,
+   "GRN": 11.42,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.18
+  },
+  {
+   "date": "2014-11-06",
+   "ALP": 33.79,
+   "COAL": 44.51,
+   "GRN": 11.38,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.2
+  },
+  {
+   "date": "2014-11-13",
+   "ALP": 33.83,
+   "COAL": 44.54,
+   "GRN": 11.34,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.22
+  },
+  {
+   "date": "2014-11-20",
+   "ALP": 33.87,
+   "COAL": 44.57,
+   "GRN": 11.31,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.24
+  },
+  {
+   "date": "2014-11-27",
+   "ALP": 33.91,
+   "COAL": 44.61,
+   "GRN": 11.27,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.27
+  },
+  {
+   "date": "2014-12-04",
+   "ALP": 33.94,
+   "COAL": 44.64,
+   "GRN": 11.24,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.29
+  },
+  {
+   "date": "2014-12-11",
+   "ALP": 33.97,
+   "COAL": 44.67,
+   "GRN": 11.21,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.32
+  },
+  {
+   "date": "2014-12-18",
+   "ALP": 33.99,
+   "COAL": 44.7,
+   "GRN": 11.18,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.35
+  },
+  {
+   "date": "2014-12-25",
+   "ALP": 34.0,
+   "COAL": 44.74,
+   "GRN": 11.16,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.37
+  },
+  {
+   "date": "2015-01-01",
+   "ALP": 34.01,
+   "COAL": 44.77,
+   "GRN": 11.14,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.4
+  },
+  {
+   "date": "2015-01-08",
+   "ALP": 34.02,
+   "COAL": 44.81,
+   "GRN": 11.12,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.41
+  },
+  {
+   "date": "2015-01-15",
+   "ALP": 34.01,
+   "COAL": 44.84,
+   "GRN": 11.11,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.43
+  },
+  {
+   "date": "2015-01-22",
+   "ALP": 34.01,
+   "COAL": 44.88,
+   "GRN": 11.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.44
+  },
+  {
+   "date": "2015-01-29",
+   "ALP": 33.99,
+   "COAL": 44.92,
+   "GRN": 11.09,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.44
+  },
+  {
+   "date": "2015-02-05",
+   "ALP": 33.98,
+   "COAL": 44.95,
+   "GRN": 11.09,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.44
+  },
+  {
+   "date": "2015-02-12",
+   "ALP": 33.96,
+   "COAL": 44.99,
+   "GRN": 11.09,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.44
+  },
+  {
+   "date": "2015-02-19",
+   "ALP": 33.94,
+   "COAL": 45.02,
+   "GRN": 11.09,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.43
+  },
+  {
+   "date": "2015-02-26",
+   "ALP": 33.91,
+   "COAL": 45.05,
+   "GRN": 11.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.43
+  },
+  {
+   "date": "2015-03-05",
+   "ALP": 33.88,
+   "COAL": 45.08,
+   "GRN": 11.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.42
+  },
+  {
+   "date": "2015-03-12",
+   "ALP": 33.86,
+   "COAL": 45.11,
+   "GRN": 11.11,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.4
+  },
+  {
+   "date": "2015-03-19",
+   "ALP": 33.83,
+   "COAL": 45.14,
+   "GRN": 11.11,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.39
+  },
+  {
+   "date": "2015-03-26",
+   "ALP": 33.8,
+   "COAL": 45.17,
+   "GRN": 11.12,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.37
+  },
+  {
+   "date": "2015-04-15"
+  },
+  {
+   "date": "2015-04-15",
+   "ALP": 29.6,
+   "COAL": 49.93,
+   "GRN": 12.79,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.55
+  },
+  {
+   "date": "2015-04-22",
+   "ALP": 29.51,
+   "COAL": 49.99,
+   "GRN": 12.84,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.48
+  },
+  {
+   "date": "2015-04-29",
+   "ALP": 29.41,
+   "COAL": 50.05,
+   "GRN": 12.89,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.4
+  },
+  {
+   "date": "2015-05-06",
+   "ALP": 29.31,
+   "COAL": 50.09,
+   "GRN": 12.95,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.33
+  },
+  {
+   "date": "2015-05-13",
+   "ALP": 29.21,
+   "COAL": 50.13,
+   "GRN": 13.01,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.26
+  },
+  {
+   "date": "2015-05-20",
+   "ALP": 29.1,
+   "COAL": 50.15,
+   "GRN": 13.08,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.19
+  },
+  {
+   "date": "2015-05-27",
+   "ALP": 28.99,
+   "COAL": 50.16,
+   "GRN": 13.16,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.13
+  },
+  {
+   "date": "2015-06-03",
+   "ALP": 28.88,
+   "COAL": 50.16,
+   "GRN": 13.23,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.06
+  },
+  {
+   "date": "2015-06-10",
+   "ALP": 28.77,
+   "COAL": 50.15,
+   "GRN": 13.31,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.01
+  },
+  {
+   "date": "2015-06-17",
+   "ALP": 28.66,
+   "COAL": 50.13,
+   "GRN": 13.39,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.95
+  },
+  {
+   "date": "2015-06-24",
+   "ALP": 28.55,
+   "COAL": 50.11,
+   "GRN": 13.47,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.9
+  },
+  {
+   "date": "2015-07-01",
+   "ALP": 28.44,
+   "COAL": 50.08,
+   "GRN": 13.55,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.85
+  },
+  {
+   "date": "2015-07-08",
+   "ALP": 28.33,
+   "COAL": 50.05,
+   "GRN": 13.63,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.79
+  },
+  {
+   "date": "2015-07-15",
+   "ALP": 28.23,
+   "COAL": 50.02,
+   "GRN": 13.7,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.74
+  },
+  {
+   "date": "2015-07-22",
+   "ALP": 28.12,
+   "COAL": 49.99,
+   "GRN": 13.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.68
+  },
+  {
+   "date": "2015-07-29",
+   "ALP": 28.01,
+   "COAL": 49.97,
+   "GRN": 13.81,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.62
+  },
+  {
+   "date": "2015-08-05",
+   "ALP": 27.9,
+   "COAL": 49.96,
+   "GRN": 13.86,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.55
+  },
+  {
+   "date": "2015-08-12",
+   "ALP": 27.79,
+   "COAL": 49.97,
+   "GRN": 13.9,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.48
+  },
+  {
+   "date": "2015-08-19",
+   "ALP": 27.68,
+   "COAL": 49.99,
+   "GRN": 13.93,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.4
+  },
+  {
+   "date": "2015-08-26",
+   "ALP": 27.56,
+   "COAL": 50.02,
+   "GRN": 13.95,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.32
+  },
+  {
+   "date": "2015-09-02",
+   "ALP": 27.43,
+   "COAL": 50.07,
+   "GRN": 13.97,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.22
+  },
+  {
+   "date": "2015-09-09",
+   "ALP": 27.3,
+   "COAL": 50.14,
+   "GRN": 13.98,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.12
+  },
+  {
+   "date": "2015-09-16",
+   "ALP": 27.16,
+   "COAL": 50.21,
+   "GRN": 13.99,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.02
+  },
+  {
+   "date": "2015-09-23",
+   "ALP": 27.0,
+   "COAL": 50.3,
+   "GRN": 14.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.91
+  },
+  {
+   "date": "2015-09-30",
+   "ALP": 26.84,
+   "COAL": 50.4,
+   "GRN": 14.01,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.79
+  },
+  {
+   "date": "2015-10-07",
+   "ALP": 26.67,
+   "COAL": 50.5,
+   "GRN": 14.02,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.67
+  },
+  {
+   "date": "2015-10-14",
+   "ALP": 26.49,
+   "COAL": 50.61,
+   "GRN": 14.04,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.56
+  },
+  {
+   "date": "2015-10-21",
+   "ALP": 26.31,
+   "COAL": 50.71,
+   "GRN": 14.06,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.44
+  },
+  {
+   "date": "2015-10-28",
+   "ALP": 26.12,
+   "COAL": 50.81,
+   "GRN": 14.08,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.34
+  },
+  {
+   "date": "2015-11-04",
+   "ALP": 25.93,
+   "COAL": 50.9,
+   "GRN": 14.11,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.24
+  },
+  {
+   "date": "2015-11-11",
+   "ALP": 25.75,
+   "COAL": 50.98,
+   "GRN": 14.15,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.15
+  },
+  {
+   "date": "2015-11-18",
+   "ALP": 25.57,
+   "COAL": 51.04,
+   "GRN": 14.2,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.08
+  },
+  {
+   "date": "2015-11-25",
+   "ALP": 25.41,
+   "COAL": 51.08,
+   "GRN": 14.25,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.03
+  },
+  {
+   "date": "2015-12-02",
+   "ALP": 25.27,
+   "COAL": 51.09,
+   "GRN": 14.31,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.0
+  },
+  {
+   "date": "2015-12-09",
+   "ALP": 25.15,
+   "COAL": 51.08,
+   "GRN": 14.37,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.0
+  },
+  {
+   "date": "2015-12-16",
+   "ALP": 25.06,
+   "COAL": 51.03,
+   "GRN": 14.43,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.03
+  },
+  {
+   "date": "2015-12-23",
+   "ALP": 25.0,
+   "COAL": 50.95,
+   "GRN": 14.5,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.09
+  },
+  {
+   "date": "2015-12-30",
+   "ALP": 24.97,
+   "COAL": 50.84,
+   "GRN": 14.58,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.18
+  },
+  {
+   "date": "2016-01-06",
+   "ALP": 24.98,
+   "COAL": 50.7,
+   "GRN": 14.65,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.3
+  },
+  {
+   "date": "2016-01-13",
+   "ALP": 25.02,
+   "COAL": 50.53,
+   "GRN": 14.73,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.45
+  },
+  {
+   "date": "2016-01-20",
+   "ALP": 25.1,
+   "COAL": 50.33,
+   "GRN": 14.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.62
+  },
+  {
+   "date": "2016-01-27",
+   "ALP": 25.2,
+   "COAL": 50.1,
+   "GRN": 14.88,
+   "ONP": null,
+   "tpp_alp_vs_coal": 41.82
+  },
+  {
+   "date": "2016-02-03",
+   "ALP": 25.33,
+   "COAL": 49.86,
+   "GRN": 14.95,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.05
+  },
+  {
+   "date": "2016-02-10",
+   "ALP": 25.48,
+   "COAL": 49.59,
+   "GRN": 15.02,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.29
+  },
+  {
+   "date": "2016-02-17",
+   "ALP": 25.66,
+   "COAL": 49.32,
+   "GRN": 15.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.54
+  },
+  {
+   "date": "2016-02-24",
+   "ALP": 25.85,
+   "COAL": 49.03,
+   "GRN": 15.17,
+   "ONP": null,
+   "tpp_alp_vs_coal": 42.81
+  },
+  {
+   "date": "2016-03-02",
+   "ALP": 26.06,
+   "COAL": 48.73,
+   "GRN": 15.23,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.09
+  },
+  {
+   "date": "2016-03-09",
+   "ALP": 26.29,
+   "COAL": 48.42,
+   "GRN": 15.29,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.37
+  },
+  {
+   "date": "2016-03-16",
+   "ALP": 26.53,
+   "COAL": 48.1,
+   "GRN": 15.33,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.67
+  },
+  {
+   "date": "2016-03-23",
+   "ALP": 26.79,
+   "COAL": 47.77,
+   "GRN": 15.37,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.97
+  },
+  {
+   "date": "2016-03-30",
+   "ALP": 27.06,
+   "COAL": 47.43,
+   "GRN": 15.38,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.28
+  },
+  {
+   "date": "2016-04-06",
+   "ALP": 27.36,
+   "COAL": 47.08,
+   "GRN": 15.37,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.6
+  },
+  {
+   "date": "2016-04-13",
+   "ALP": 27.67,
+   "COAL": 46.7,
+   "GRN": 15.34,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.93
+  },
+  {
+   "date": "2016-04-20",
+   "ALP": 28.0,
+   "COAL": 46.31,
+   "GRN": 15.27,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.26
+  },
+  {
+   "date": "2016-04-27",
+   "ALP": 28.36,
+   "COAL": 45.9,
+   "GRN": 15.16,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.6
+  },
+  {
+   "date": "2016-05-04",
+   "ALP": 28.73,
+   "COAL": 45.46,
+   "GRN": 15.01,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.95
+  },
+  {
+   "date": "2016-05-11",
+   "ALP": 29.12,
+   "COAL": 45.01,
+   "GRN": 14.82,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.3
+  },
+  {
+   "date": "2016-05-18",
+   "ALP": 29.52,
+   "COAL": 44.54,
+   "GRN": 14.59,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.65
+  },
+  {
+   "date": "2016-05-25",
+   "ALP": 29.93,
+   "COAL": 44.06,
+   "GRN": 14.32,
+   "ONP": null,
+   "tpp_alp_vs_coal": 46.99
+  },
+  {
+   "date": "2016-06-01",
+   "ALP": 30.33,
+   "COAL": 43.59,
+   "GRN": 14.04,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.32
+  },
+  {
+   "date": "2016-06-08",
+   "ALP": 30.72,
+   "COAL": 43.12,
+   "GRN": 13.74,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.64
+  },
+  {
+   "date": "2016-06-15",
+   "ALP": 31.09,
+   "COAL": 42.68,
+   "GRN": 13.43,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.93
+  },
+  {
+   "date": "2016-06-22",
+   "ALP": 31.43,
+   "COAL": 42.26,
+   "GRN": 13.13,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.2
+  },
+  {
+   "date": "2016-06-29",
+   "ALP": 31.74,
+   "COAL": 41.88,
+   "GRN": 12.85,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.45
+  },
+  {
+   "date": "2016-07-06",
+   "ALP": 32.02,
+   "COAL": 41.53,
+   "GRN": 12.59,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.66
+  },
+  {
+   "date": "2016-07-13",
+   "ALP": 32.25,
+   "COAL": 41.22,
+   "GRN": 12.35,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.85
+  },
+  {
+   "date": "2016-07-20",
+   "ALP": 32.45,
+   "COAL": 40.95,
+   "GRN": 12.15,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.0
+  },
+  {
+   "date": "2016-07-27",
+   "ALP": 32.61,
+   "COAL": 40.71,
+   "GRN": 11.97,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.14
+  },
+  {
+   "date": "2016-08-03",
+   "ALP": 32.74,
+   "COAL": 40.51,
+   "GRN": 11.81,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.25
+  },
+  {
+   "date": "2016-08-10",
+   "ALP": 32.85,
+   "COAL": 40.34,
+   "GRN": 11.69,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.34
+  },
+  {
+   "date": "2016-08-17",
+   "ALP": 32.92,
+   "COAL": 40.19,
+   "GRN": 11.58,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.41
+  },
+  {
+   "date": "2016-08-24",
+   "ALP": 32.97,
+   "COAL": 40.07,
+   "GRN": 11.49,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.46
+  },
+  {
+   "date": "2016-08-31",
+   "ALP": 32.99,
+   "COAL": 39.97,
+   "GRN": 11.41,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.49
+  },
+  {
+   "date": "2016-09-07",
+   "ALP": 33.0,
+   "COAL": 39.88,
+   "GRN": 11.34,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.51
+  },
+  {
+   "date": "2016-09-14",
+   "ALP": 32.98,
+   "COAL": 39.81,
+   "GRN": 11.27,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.51
+  },
+  {
+   "date": "2016-09-21",
+   "ALP": 32.95,
+   "COAL": 39.76,
+   "GRN": 11.2,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.49
+  },
+  {
+   "date": "2016-09-28",
+   "ALP": 32.89,
+   "COAL": 39.73,
+   "GRN": 11.14,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.45
+  },
+  {
+   "date": "2016-10-05",
+   "ALP": 32.82,
+   "COAL": 39.71,
+   "GRN": 11.06,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.4
+  },
+  {
+   "date": "2016-10-12",
+   "ALP": 32.74,
+   "COAL": 39.71,
+   "GRN": 10.98,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.32
+  },
+  {
+   "date": "2016-10-19",
+   "ALP": 32.64,
+   "COAL": 39.72,
+   "GRN": 10.89,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.22
+  },
+  {
+   "date": "2016-10-26",
+   "ALP": 32.52,
+   "COAL": 39.76,
+   "GRN": 10.78,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.1
+  },
+  {
+   "date": "2016-11-02",
+   "ALP": 32.4,
+   "COAL": 39.81,
+   "GRN": 10.66,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.96
+  },
+  {
+   "date": "2016-11-09",
+   "ALP": 32.27,
+   "COAL": 39.87,
+   "GRN": 10.53,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.81
+  },
+  {
+   "date": "2016-11-16",
+   "ALP": 32.14,
+   "COAL": 39.95,
+   "GRN": 10.39,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.65
+  },
+  {
+   "date": "2016-11-23",
+   "ALP": 32.0,
+   "COAL": 40.04,
+   "GRN": 10.25,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.47
+  },
+  {
+   "date": "2016-11-30",
+   "ALP": 31.88,
+   "COAL": 40.14,
+   "GRN": 10.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.3
+  },
+  {
+   "date": "2016-12-07",
+   "ALP": 31.76,
+   "COAL": 40.25,
+   "GRN": 9.96,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.13
+  },
+  {
+   "date": "2016-12-14",
+   "ALP": 31.66,
+   "COAL": 40.35,
+   "GRN": 9.82,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.97
+  },
+  {
+   "date": "2016-12-21",
+   "ALP": 31.57,
+   "COAL": 40.45,
+   "GRN": 9.69,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.82
+  },
+  {
+   "date": "2016-12-28",
+   "ALP": 31.5,
+   "COAL": 40.55,
+   "GRN": 9.58,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.68
+  },
+  {
+   "date": "2017-01-04",
+   "ALP": 31.44,
+   "COAL": 40.64,
+   "GRN": 9.48,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.57
+  },
+  {
+   "date": "2017-01-11",
+   "ALP": 31.41,
+   "COAL": 40.71,
+   "GRN": 9.39,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.48
+  },
+  {
+   "date": "2017-01-18",
+   "ALP": 31.39,
+   "COAL": 40.78,
+   "GRN": 9.32,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.41
+  },
+  {
+   "date": "2017-01-25",
+   "ALP": 31.39,
+   "COAL": 40.83,
+   "GRN": 9.27,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.36
+  },
+  {
+   "date": "2017-02-01",
+   "ALP": 31.4,
+   "COAL": 40.87,
+   "GRN": 9.23,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.32
+  },
+  {
+   "date": "2017-02-08",
+   "ALP": 31.43,
+   "COAL": 40.9,
+   "GRN": 9.21,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.31
+  },
+  {
+   "date": "2017-02-15",
+   "ALP": 31.47,
+   "COAL": 40.92,
+   "GRN": 9.2,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.31
+  },
+  {
+   "date": "2017-02-22",
+   "ALP": 31.53,
+   "COAL": 40.93,
+   "GRN": 9.2,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.32
+  },
+  {
+   "date": "2017-03-01",
+   "ALP": 31.59,
+   "COAL": 40.93,
+   "GRN": 9.2,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.35
+  },
+  {
+   "date": "2017-03-08",
+   "ALP": 31.66,
+   "COAL": 40.92,
+   "GRN": 9.22,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.38
+  },
+  {
+   "date": "2017-03-15",
+   "ALP": 31.73,
+   "COAL": 40.91,
+   "GRN": 9.24,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.43
+  },
+  {
+   "date": "2017-03-22",
+   "ALP": 31.82,
+   "COAL": 40.89,
+   "GRN": 9.26,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.48
+  },
+  {
+   "date": "2017-03-29",
+   "ALP": 31.9,
+   "COAL": 40.86,
+   "GRN": 9.29,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.54
+  },
+  {
+   "date": "2017-04-05",
+   "ALP": 31.99,
+   "COAL": 40.82,
+   "GRN": 9.32,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.6
+  },
+  {
+   "date": "2017-04-12",
+   "ALP": 32.08,
+   "COAL": 40.78,
+   "GRN": 9.35,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.66
+  },
+  {
+   "date": "2017-04-19",
+   "ALP": 32.16,
+   "COAL": 40.73,
+   "GRN": 9.38,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.73
+  },
+  {
+   "date": "2017-04-26",
+   "ALP": 32.25,
+   "COAL": 40.67,
+   "GRN": 9.41,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.8
+  },
+  {
+   "date": "2017-05-03",
+   "ALP": 32.33,
+   "COAL": 40.59,
+   "GRN": 9.44,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.87
+  },
+  {
+   "date": "2017-05-10",
+   "ALP": 32.41,
+   "COAL": 40.49,
+   "GRN": 9.46,
+   "ONP": null,
+   "tpp_alp_vs_coal": 47.94
+  },
+  {
+   "date": "2017-05-17",
+   "ALP": 32.48,
+   "COAL": 40.36,
+   "GRN": 9.48,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.02
+  },
+  {
+   "date": "2017-05-24",
+   "ALP": 32.54,
+   "COAL": 40.2,
+   "GRN": 9.48,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.09
+  },
+  {
+   "date": "2017-05-31",
+   "ALP": 32.59,
+   "COAL": 39.99,
+   "GRN": 9.47,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.18
+  },
+  {
+   "date": "2017-06-07",
+   "ALP": 32.64,
+   "COAL": 39.74,
+   "GRN": 9.44,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.26
+  },
+  {
+   "date": "2017-06-14",
+   "ALP": 32.67,
+   "COAL": 39.47,
+   "GRN": 9.4,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.34
+  },
+  {
+   "date": "2017-06-21",
+   "ALP": 32.71,
+   "COAL": 39.19,
+   "GRN": 9.35,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.42
+  },
+  {
+   "date": "2017-06-28",
+   "ALP": 32.76,
+   "COAL": 38.93,
+   "GRN": 9.3,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.5
+  },
+  {
+   "date": "2017-07-05",
+   "ALP": 32.82,
+   "COAL": 38.72,
+   "GRN": 9.24,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.57
+  },
+  {
+   "date": "2017-07-12",
+   "ALP": 32.9,
+   "COAL": 38.56,
+   "GRN": 9.2,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.64
+  },
+  {
+   "date": "2017-07-19",
+   "ALP": 32.99,
+   "COAL": 38.46,
+   "GRN": 9.16,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.7
+  },
+  {
+   "date": "2017-07-26",
+   "ALP": 33.1,
+   "COAL": 38.4,
+   "GRN": 9.13,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.76
+  },
+  {
+   "date": "2017-08-02",
+   "ALP": 33.22,
+   "COAL": 38.38,
+   "GRN": 9.11,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.81
+  },
+  {
+   "date": "2017-08-09",
+   "ALP": 33.34,
+   "COAL": 38.38,
+   "GRN": 9.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.87
+  },
+  {
+   "date": "2017-08-16",
+   "ALP": 33.47,
+   "COAL": 38.39,
+   "GRN": 9.09,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.92
+  },
+  {
+   "date": "2017-08-23",
+   "ALP": 33.61,
+   "COAL": 38.42,
+   "GRN": 9.09,
+   "ONP": null,
+   "tpp_alp_vs_coal": 48.98
+  },
+  {
+   "date": "2017-08-30",
+   "ALP": 33.75,
+   "COAL": 38.45,
+   "GRN": 9.09,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.03
+  },
+  {
+   "date": "2017-09-06",
+   "ALP": 33.89,
+   "COAL": 38.49,
+   "GRN": 9.08,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.09
+  },
+  {
+   "date": "2017-09-13",
+   "ALP": 34.04,
+   "COAL": 38.54,
+   "GRN": 9.09,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.14
+  },
+  {
+   "date": "2017-09-20",
+   "ALP": 34.18,
+   "COAL": 38.58,
+   "GRN": 9.09,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.2
+  },
+  {
+   "date": "2017-09-27",
+   "ALP": 34.33,
+   "COAL": 38.63,
+   "GRN": 9.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.26
+  },
+  {
+   "date": "2017-10-04",
+   "ALP": 34.47,
+   "COAL": 38.69,
+   "GRN": 9.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.31
+  },
+  {
+   "date": "2017-10-11",
+   "ALP": 34.61,
+   "COAL": 38.74,
+   "GRN": 9.12,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.37
+  },
+  {
+   "date": "2017-10-18",
+   "ALP": 34.74,
+   "COAL": 38.8,
+   "GRN": 9.13,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.42
+  },
+  {
+   "date": "2017-10-25",
+   "ALP": 34.87,
+   "COAL": 38.86,
+   "GRN": 9.15,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.47
+  },
+  {
+   "date": "2017-11-01",
+   "ALP": 34.98,
+   "COAL": 38.92,
+   "GRN": 9.17,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.52
+  },
+  {
+   "date": "2017-11-08",
+   "ALP": 35.07,
+   "COAL": 38.98,
+   "GRN": 9.2,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.56
+  },
+  {
+   "date": "2017-11-15",
+   "ALP": 35.15,
+   "COAL": 39.05,
+   "GRN": 9.24,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.6
+  },
+  {
+   "date": "2017-11-22",
+   "ALP": 35.2,
+   "COAL": 39.11,
+   "GRN": 9.28,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.62
+  },
+  {
+   "date": "2017-11-29",
+   "ALP": 35.22,
+   "COAL": 39.18,
+   "GRN": 9.33,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.64
+  },
+  {
+   "date": "2017-12-06",
+   "ALP": 35.21,
+   "COAL": 39.25,
+   "GRN": 9.39,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.65
+  },
+  {
+   "date": "2017-12-13",
+   "ALP": 35.17,
+   "COAL": 39.32,
+   "GRN": 9.45,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.64
+  },
+  {
+   "date": "2017-12-20",
+   "ALP": 35.1,
+   "COAL": 39.39,
+   "GRN": 9.52,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.63
+  },
+  {
+   "date": "2017-12-27",
+   "ALP": 35.0,
+   "COAL": 39.45,
+   "GRN": 9.59,
+   "ONP": null,
+   "tpp_alp_vs_coal": 49.6
+  },
+  {
+   "date": "2018-01-03",
+   "ALP": 34.87,
+   "COAL": 39.52,
+   "GRN": 9.67,
+   "ONP": 5.1,
+   "tpp_alp_vs_coal": 49.57
+  },
+  {
+   "date": "2018-01-10",
+   "ALP": 34.73,
+   "COAL": 39.58,
+   "GRN": 9.74,
+   "ONP": 5.1,
+   "tpp_alp_vs_coal": 49.52
+  },
+  {
+   "date": "2018-01-17",
+   "ALP": 34.58,
+   "COAL": 39.63,
+   "GRN": 9.81,
+   "ONP": 5.1,
+   "tpp_alp_vs_coal": 49.47
+  },
+  {
+   "date": "2018-01-24",
+   "ALP": 34.42,
+   "COAL": 39.68,
+   "GRN": 9.87,
+   "ONP": 5.1,
+   "tpp_alp_vs_coal": 49.42
+  },
+  {
+   "date": "2018-01-31",
+   "ALP": 34.27,
+   "COAL": 39.73,
+   "GRN": 9.92,
+   "ONP": 5.1,
+   "tpp_alp_vs_coal": 49.37
+  },
+  {
+   "date": "2018-02-07",
+   "ALP": 34.12,
+   "COAL": 39.77,
+   "GRN": 9.97,
+   "ONP": 5.1,
+   "tpp_alp_vs_coal": 49.32
+  },
+  {
+   "date": "2018-02-14",
+   "ALP": 33.99,
+   "COAL": 39.81,
+   "GRN": 10.01,
+   "ONP": 5.1,
+   "tpp_alp_vs_coal": 49.27
+  },
+  {
+   "date": "2018-02-21",
+   "ALP": 33.87,
+   "COAL": 39.84,
+   "GRN": 10.04,
+   "ONP": 5.1,
+   "tpp_alp_vs_coal": 49.23
+  },
+  {
+   "date": "2018-02-28",
+   "ALP": 33.76,
+   "COAL": 39.86,
+   "GRN": 10.07,
+   "ONP": 5.1,
+   "tpp_alp_vs_coal": 49.18
+  },
+  {
+   "date": "2018-03-07",
+   "ALP": 33.66,
+   "COAL": 39.89,
+   "GRN": 10.09,
+   "ONP": 5.09,
+   "tpp_alp_vs_coal": 49.15
+  },
+  {
+   "date": "2018-03-14",
+   "ALP": 33.58,
+   "COAL": 39.91,
+   "GRN": 10.11,
+   "ONP": 5.09,
+   "tpp_alp_vs_coal": 49.12
+  },
+  {
+   "date": "2018-03-21",
+   "ALP": 33.51,
+   "COAL": 39.92,
+   "GRN": 10.12,
+   "ONP": 5.09,
+   "tpp_alp_vs_coal": 49.09
+  },
+  {
+   "date": "2018-03-28",
+   "ALP": 33.44,
+   "COAL": 39.93,
+   "GRN": 10.13,
+   "ONP": 5.08,
+   "tpp_alp_vs_coal": 49.06
+  },
+  {
+   "date": "2018-04-04",
+   "ALP": 33.38,
+   "COAL": 39.93,
+   "GRN": 10.13,
+   "ONP": 5.07,
+   "tpp_alp_vs_coal": 49.05
+  },
+  {
+   "date": "2018-04-11",
+   "ALP": 33.33,
+   "COAL": 39.91,
+   "GRN": 10.14,
+   "ONP": 5.06,
+   "tpp_alp_vs_coal": 49.03
+  },
+  {
+   "date": "2018-04-18",
+   "ALP": 33.28,
+   "COAL": 39.89,
+   "GRN": 10.14,
+   "ONP": 5.05,
+   "tpp_alp_vs_coal": 49.02
+  },
+  {
+   "date": "2018-04-25",
+   "ALP": 33.23,
+   "COAL": 39.84,
+   "GRN": 10.14,
+   "ONP": 5.03,
+   "tpp_alp_vs_coal": 49.02
+  },
+  {
+   "date": "2018-05-02",
+   "ALP": 33.17,
+   "COAL": 39.77,
+   "GRN": 10.14,
+   "ONP": 5.01,
+   "tpp_alp_vs_coal": 49.03
+  },
+  {
+   "date": "2018-05-09",
+   "ALP": 33.11,
+   "COAL": 39.65,
+   "GRN": 10.15,
+   "ONP": 4.98,
+   "tpp_alp_vs_coal": 49.04
+  },
+  {
+   "date": "2018-05-16",
+   "ALP": 33.05,
+   "COAL": 39.5,
+   "GRN": 10.15,
+   "ONP": 4.95,
+   "tpp_alp_vs_coal": 49.07
+  },
+  {
+   "date": "2018-05-23",
+   "ALP": 32.97,
+   "COAL": 39.29,
+   "GRN": 10.16,
+   "ONP": 4.92,
+   "tpp_alp_vs_coal": 49.12
+  },
+  {
+   "date": "2018-05-30",
+   "ALP": 32.89,
+   "COAL": 39.01,
+   "GRN": 10.17,
+   "ONP": 4.88,
+   "tpp_alp_vs_coal": 49.19
+  },
+  {
+   "date": "2018-06-06",
+   "ALP": 32.81,
+   "COAL": 38.67,
+   "GRN": 10.19,
+   "ONP": 4.84,
+   "tpp_alp_vs_coal": 49.27
+  },
+  {
+   "date": "2018-06-13",
+   "ALP": 32.72,
+   "COAL": 38.27,
+   "GRN": 10.2,
+   "ONP": 4.82,
+   "tpp_alp_vs_coal": 49.38
+  },
+  {
+   "date": "2018-06-20",
+   "ALP": 32.65,
+   "COAL": 37.84,
+   "GRN": 10.22,
+   "ONP": 4.8,
+   "tpp_alp_vs_coal": 49.5
+  },
+  {
+   "date": "2018-06-27",
+   "ALP": 32.6,
+   "COAL": 37.41,
+   "GRN": 10.23,
+   "ONP": 4.81,
+   "tpp_alp_vs_coal": 49.63
+  },
+  {
+   "date": "2018-07-04",
+   "ALP": 32.58,
+   "COAL": 37.0,
+   "GRN": 10.23,
+   "ONP": 4.83,
+   "tpp_alp_vs_coal": 49.77
+  },
+  {
+   "date": "2018-07-11",
+   "ALP": 32.59,
+   "COAL": 36.65,
+   "GRN": 10.23,
+   "ONP": 4.88,
+   "tpp_alp_vs_coal": 49.9
+  },
+  {
+   "date": "2018-07-18",
+   "ALP": 32.64,
+   "COAL": 36.37,
+   "GRN": 10.22,
+   "ONP": 4.94,
+   "tpp_alp_vs_coal": 50.02
+  },
+  {
+   "date": "2018-07-25",
+   "ALP": 32.73,
+   "COAL": 36.16,
+   "GRN": 10.2,
+   "ONP": 5.02,
+   "tpp_alp_vs_coal": 50.13
+  },
+  {
+   "date": "2018-08-01",
+   "ALP": 32.85,
+   "COAL": 36.02,
+   "GRN": 10.18,
+   "ONP": 5.11,
+   "tpp_alp_vs_coal": 50.23
+  },
+  {
+   "date": "2018-08-08",
+   "ALP": 33.0,
+   "COAL": 35.95,
+   "GRN": 10.14,
+   "ONP": 5.22,
+   "tpp_alp_vs_coal": 50.31
+  },
+  {
+   "date": "2018-08-15",
+   "ALP": 33.16,
+   "COAL": 35.92,
+   "GRN": 10.11,
+   "ONP": 5.33,
+   "tpp_alp_vs_coal": 50.39
+  },
+  {
+   "date": "2018-08-22",
+   "ALP": 33.35,
+   "COAL": 35.93,
+   "GRN": 10.07,
+   "ONP": 5.46,
+   "tpp_alp_vs_coal": 50.46
+  },
+  {
+   "date": "2018-08-29",
+   "ALP": 33.55,
+   "COAL": 35.96,
+   "GRN": 10.02,
+   "ONP": 5.59,
+   "tpp_alp_vs_coal": 50.53
+  },
+  {
+   "date": "2018-09-05",
+   "ALP": 33.75,
+   "COAL": 36.03,
+   "GRN": 9.98,
+   "ONP": 5.72,
+   "tpp_alp_vs_coal": 50.59
+  },
+  {
+   "date": "2018-09-12",
+   "ALP": 33.96,
+   "COAL": 36.11,
+   "GRN": 9.93,
+   "ONP": 5.85,
+   "tpp_alp_vs_coal": 50.65
+  },
+  {
+   "date": "2018-09-19",
+   "ALP": 34.18,
+   "COAL": 36.2,
+   "GRN": 9.88,
+   "ONP": 5.98,
+   "tpp_alp_vs_coal": 50.7
+  },
+  {
+   "date": "2018-09-26",
+   "ALP": 34.39,
+   "COAL": 36.31,
+   "GRN": 9.83,
+   "ONP": 6.1,
+   "tpp_alp_vs_coal": 50.75
+  },
+  {
+   "date": "2018-10-03",
+   "ALP": 34.6,
+   "COAL": 36.43,
+   "GRN": 9.79,
+   "ONP": 6.22,
+   "tpp_alp_vs_coal": 50.79
+  },
+  {
+   "date": "2018-10-10",
+   "ALP": 34.8,
+   "COAL": 36.56,
+   "GRN": 9.75,
+   "ONP": 6.32,
+   "tpp_alp_vs_coal": 50.82
+  },
+  {
+   "date": "2018-10-17",
+   "ALP": 34.98,
+   "COAL": 36.69,
+   "GRN": 9.71,
+   "ONP": 6.41,
+   "tpp_alp_vs_coal": 50.85
+  },
+  {
+   "date": "2018-10-24",
+   "ALP": 35.16,
+   "COAL": 36.83,
+   "GRN": 9.67,
+   "ONP": 6.49,
+   "tpp_alp_vs_coal": 50.87
+  },
+  {
+   "date": "2018-10-31",
+   "ALP": 35.31,
+   "COAL": 36.98,
+   "GRN": 9.64,
+   "ONP": 6.54,
+   "tpp_alp_vs_coal": 50.88
+  },
+  {
+   "date": "2018-11-07",
+   "ALP": 35.45,
+   "COAL": 37.12,
+   "GRN": 9.61,
+   "ONP": 6.58,
+   "tpp_alp_vs_coal": 50.88
+  },
+  {
+   "date": "2018-11-14",
+   "ALP": 35.57,
+   "COAL": 37.27,
+   "GRN": 9.59,
+   "ONP": 6.59,
+   "tpp_alp_vs_coal": 50.87
+  },
+  {
+   "date": "2018-11-21",
+   "ALP": 35.67,
+   "COAL": 37.43,
+   "GRN": 9.57,
+   "ONP": 6.59,
+   "tpp_alp_vs_coal": 50.85
+  },
+  {
+   "date": "2018-11-28",
+   "ALP": 35.75,
+   "COAL": 37.58,
+   "GRN": 9.56,
+   "ONP": 6.57,
+   "tpp_alp_vs_coal": 50.82
+  },
+  {
+   "date": "2018-12-05",
+   "ALP": 35.82,
+   "COAL": 37.72,
+   "GRN": 9.55,
+   "ONP": 6.53,
+   "tpp_alp_vs_coal": 50.79
+  },
+  {
+   "date": "2018-12-12",
+   "ALP": 35.86,
+   "COAL": 37.87,
+   "GRN": 9.54,
+   "ONP": 6.47,
+   "tpp_alp_vs_coal": 50.76
+  },
+  {
+   "date": "2018-12-19",
+   "ALP": 35.9,
+   "COAL": 38.01,
+   "GRN": 9.54,
+   "ONP": 6.4,
+   "tpp_alp_vs_coal": 50.71
+  },
+  {
+   "date": "2018-12-26",
+   "ALP": 35.92,
+   "COAL": 38.14,
+   "GRN": 9.54,
+   "ONP": 6.32,
+   "tpp_alp_vs_coal": 50.67
+  },
+  {
+   "date": "2019-01-02",
+   "ALP": 35.94,
+   "COAL": 38.27,
+   "GRN": 9.54,
+   "ONP": 6.23,
+   "tpp_alp_vs_coal": 50.63
+  },
+  {
+   "date": "2019-01-09",
+   "ALP": 35.94,
+   "COAL": 38.39,
+   "GRN": 9.54,
+   "ONP": 6.14,
+   "tpp_alp_vs_coal": 50.58
+  },
+  {
+   "date": "2019-01-16",
+   "ALP": 35.94,
+   "COAL": 38.5,
+   "GRN": 9.54,
+   "ONP": 6.04,
+   "tpp_alp_vs_coal": 50.54
+  },
+  {
+   "date": "2019-01-23",
+   "ALP": 35.94,
+   "COAL": 38.6,
+   "GRN": 9.55,
+   "ONP": 5.94,
+   "tpp_alp_vs_coal": 50.49
+  },
+  {
+   "date": "2019-01-30",
+   "ALP": 35.93,
+   "COAL": 38.7,
+   "GRN": 9.55,
+   "ONP": 5.83,
+   "tpp_alp_vs_coal": 50.45
+  },
+  {
+   "date": "2019-02-06",
+   "ALP": 35.93,
+   "COAL": 38.78,
+   "GRN": 9.56,
+   "ONP": 5.73,
+   "tpp_alp_vs_coal": 50.41
+  },
+  {
+   "date": "2019-02-13",
+   "ALP": 35.92,
+   "COAL": 38.86,
+   "GRN": 9.56,
+   "ONP": 5.63,
+   "tpp_alp_vs_coal": 50.38
+  },
+  {
+   "date": "2019-02-20",
+   "ALP": 35.91,
+   "COAL": 38.93,
+   "GRN": 9.56,
+   "ONP": 5.54,
+   "tpp_alp_vs_coal": 50.35
+  },
+  {
+   "date": "2019-02-27",
+   "ALP": 35.9,
+   "COAL": 38.99,
+   "GRN": 9.57,
+   "ONP": 5.45,
+   "tpp_alp_vs_coal": 50.32
+  },
+  {
+   "date": "2019-03-06",
+   "ALP": 35.89,
+   "COAL": 39.05,
+   "GRN": 9.57,
+   "ONP": 5.36,
+   "tpp_alp_vs_coal": 50.29
+  },
+  {
+   "date": "2019-03-13",
+   "ALP": 35.89,
+   "COAL": 39.1,
+   "GRN": 9.57,
+   "ONP": 5.27,
+   "tpp_alp_vs_coal": 50.26
+  },
+  {
+   "date": "2019-03-20",
+   "ALP": 35.88,
+   "COAL": 39.15,
+   "GRN": 9.57,
+   "ONP": 5.19,
+   "tpp_alp_vs_coal": 50.24
+  },
+  {
+   "date": "2019-03-22",
+   "ALP": 35.88,
+   "COAL": 39.16,
+   "GRN": 9.58,
+   "ONP": 5.17,
+   "tpp_alp_vs_coal": 50.23
+  },
+  {
+   "date": "2021-03-16"
+  },
+  {
+   "date": "2021-03-16",
+   "ALP": 28.86,
+   "COAL": 47.09,
+   "GRN": 9.82,
+   "ONP": 5.3,
+   "tpp_alp_vs_coal": 41.0
+  },
+  {
+   "date": "2021-03-23",
+   "ALP": 28.81,
+   "COAL": 46.88,
+   "GRN": 9.95,
+   "ONP": 5.3,
+   "tpp_alp_vs_coal": 41.0
+  },
+  {
+   "date": "2021-03-30",
+   "ALP": 28.76,
+   "COAL": 46.66,
+   "GRN": 10.09,
+   "ONP": 5.3,
+   "tpp_alp_vs_coal": 41.0
+  },
+  {
+   "date": "2021-04-06",
+   "ALP": 28.71,
+   "COAL": 46.43,
+   "GRN": 10.22,
+   "ONP": 5.3,
+   "tpp_alp_vs_coal": 41.0
+  },
+  {
+   "date": "2021-04-13",
+   "ALP": 28.67,
+   "COAL": 46.2,
+   "GRN": 10.36,
+   "ONP": 5.3,
+   "tpp_alp_vs_coal": 41.0
+  },
+  {
+   "date": "2021-04-20",
+   "ALP": 28.62,
+   "COAL": 45.96,
+   "GRN": 10.5,
+   "ONP": 5.3,
+   "tpp_alp_vs_coal": 41.0
+  },
+  {
+   "date": "2021-04-27",
+   "ALP": 28.57,
+   "COAL": 45.72,
+   "GRN": 10.63,
+   "ONP": 5.3,
+   "tpp_alp_vs_coal": 41.0
+  },
+  {
+   "date": "2021-05-04",
+   "ALP": 28.53,
+   "COAL": 45.47,
+   "GRN": 10.76,
+   "ONP": 5.3,
+   "tpp_alp_vs_coal": 41.0
+  },
+  {
+   "date": "2021-05-11",
+   "ALP": 28.5,
+   "COAL": 45.22,
+   "GRN": 10.89,
+   "ONP": 5.3,
+   "tpp_alp_vs_coal": 41.0
+  },
+  {
+   "date": "2021-05-18",
+   "ALP": 28.47,
+   "COAL": 44.97,
+   "GRN": 11.0,
+   "ONP": 5.3,
+   "tpp_alp_vs_coal": 41.0
+  },
+  {
+   "date": "2021-05-25",
+   "ALP": 28.45,
+   "COAL": 44.73,
+   "GRN": 11.11,
+   "ONP": 5.3,
+   "tpp_alp_vs_coal": 41.0
+  },
+  {
+   "date": "2021-06-01",
+   "ALP": 28.44,
+   "COAL": 44.48,
+   "GRN": 11.21,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-06-08",
+   "ALP": 28.44,
+   "COAL": 44.25,
+   "GRN": 11.29,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-06-15",
+   "ALP": 28.45,
+   "COAL": 44.02,
+   "GRN": 11.36,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-06-22",
+   "ALP": 28.47,
+   "COAL": 43.79,
+   "GRN": 11.42,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-06-29",
+   "ALP": 28.5,
+   "COAL": 43.58,
+   "GRN": 11.46,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-07-06",
+   "ALP": 28.55,
+   "COAL": 43.37,
+   "GRN": 11.49,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-07-13",
+   "ALP": 28.61,
+   "COAL": 43.17,
+   "GRN": 11.5,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-07-20",
+   "ALP": 28.68,
+   "COAL": 42.97,
+   "GRN": 11.49,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-07-27",
+   "ALP": 28.77,
+   "COAL": 42.79,
+   "GRN": 11.47,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-08-03",
+   "ALP": 28.87,
+   "COAL": 42.61,
+   "GRN": 11.44,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-08-10",
+   "ALP": 28.97,
+   "COAL": 42.44,
+   "GRN": 11.4,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-08-17",
+   "ALP": 29.09,
+   "COAL": 42.28,
+   "GRN": 11.35,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-08-24",
+   "ALP": 29.21,
+   "COAL": 42.13,
+   "GRN": 11.29,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-08-31",
+   "ALP": 29.33,
+   "COAL": 41.98,
+   "GRN": 11.22,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-09-07",
+   "ALP": 29.46,
+   "COAL": 41.84,
+   "GRN": 11.15,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-09-14",
+   "ALP": 29.6,
+   "COAL": 41.71,
+   "GRN": 11.07,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-09-21",
+   "ALP": 29.73,
+   "COAL": 41.58,
+   "GRN": 10.98,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-09-28",
+   "ALP": 29.87,
+   "COAL": 41.46,
+   "GRN": 10.9,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-10-05",
+   "ALP": 30.01,
+   "COAL": 41.34,
+   "GRN": 10.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-10-12",
+   "ALP": 30.15,
+   "COAL": 41.23,
+   "GRN": 10.71,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-10-19",
+   "ALP": 30.29,
+   "COAL": 41.11,
+   "GRN": 10.61,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-10-26",
+   "ALP": 30.43,
+   "COAL": 40.99,
+   "GRN": 10.51,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-11-02",
+   "ALP": 30.58,
+   "COAL": 40.87,
+   "GRN": 10.41,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-11-09",
+   "ALP": 30.72,
+   "COAL": 40.74,
+   "GRN": 10.3,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-11-16",
+   "ALP": 30.88,
+   "COAL": 40.6,
+   "GRN": 10.19,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-11-23",
+   "ALP": 31.04,
+   "COAL": 40.46,
+   "GRN": 10.07,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-11-30",
+   "ALP": 31.2,
+   "COAL": 40.3,
+   "GRN": 9.95,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-12-07",
+   "ALP": 31.37,
+   "COAL": 40.13,
+   "GRN": 9.83,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-12-14",
+   "ALP": 31.55,
+   "COAL": 39.95,
+   "GRN": 9.71,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-12-21",
+   "ALP": 31.72,
+   "COAL": 39.76,
+   "GRN": 9.58,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2021-12-28",
+   "ALP": 31.9,
+   "COAL": 39.56,
+   "GRN": 9.45,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-01-04",
+   "ALP": 32.09,
+   "COAL": 39.36,
+   "GRN": 9.32,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-01-11",
+   "ALP": 32.26,
+   "COAL": 39.15,
+   "GRN": 9.2,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-01-18",
+   "ALP": 32.44,
+   "COAL": 38.94,
+   "GRN": 9.08,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-01-25",
+   "ALP": 32.6,
+   "COAL": 38.74,
+   "GRN": 8.97,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-02-01",
+   "ALP": 32.76,
+   "COAL": 38.54,
+   "GRN": 8.86,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-02-08",
+   "ALP": 32.91,
+   "COAL": 38.35,
+   "GRN": 8.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-02-15",
+   "ALP": 33.05,
+   "COAL": 38.17,
+   "GRN": 8.67,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-02-22",
+   "ALP": 33.18,
+   "COAL": 38.0,
+   "GRN": 8.6,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-03-01",
+   "ALP": 33.3,
+   "COAL": 37.84,
+   "GRN": 8.53,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-03-08",
+   "ALP": 33.41,
+   "COAL": 37.69,
+   "GRN": 8.48,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-03-15",
+   "ALP": 33.51,
+   "COAL": 37.56,
+   "GRN": 8.45,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-03-22",
+   "ALP": 33.61,
+   "COAL": 37.42,
+   "GRN": 8.45,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-03-29",
+   "ALP": 33.72,
+   "COAL": 37.3,
+   "GRN": 8.47,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-04-05",
+   "ALP": 33.83,
+   "COAL": 37.18,
+   "GRN": 8.53,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-04-12",
+   "ALP": 33.96,
+   "COAL": 37.05,
+   "GRN": 8.63,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-04-19",
+   "ALP": 34.11,
+   "COAL": 36.93,
+   "GRN": 8.79,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-04-26",
+   "ALP": 34.28,
+   "COAL": 36.81,
+   "GRN": 9.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-05-03",
+   "ALP": 34.48,
+   "COAL": 36.69,
+   "GRN": 9.25,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-05-10",
+   "ALP": 34.69,
+   "COAL": 36.57,
+   "GRN": 9.54,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-05-17",
+   "ALP": 34.92,
+   "COAL": 36.45,
+   "GRN": 9.82,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-05-24",
+   "ALP": 35.16,
+   "COAL": 36.33,
+   "GRN": 10.08,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2022-05-31",
+   "ALP": 35.41,
+   "COAL": 36.21,
+   "GRN": 10.3,
+   "ONP": null,
+   "tpp_alp_vs_coal": 54.01
+  },
+  {
+   "date": "2022-06-07",
+   "ALP": 35.64,
+   "COAL": 36.1,
+   "GRN": 10.47,
+   "ONP": null,
+   "tpp_alp_vs_coal": 54.03
+  },
+  {
+   "date": "2022-06-14",
+   "ALP": 35.88,
+   "COAL": 35.99,
+   "GRN": 10.6,
+   "ONP": null,
+   "tpp_alp_vs_coal": 54.05
+  },
+  {
+   "date": "2022-06-21",
+   "ALP": 36.1,
+   "COAL": 35.89,
+   "GRN": 10.69,
+   "ONP": 4.11,
+   "tpp_alp_vs_coal": 54.08
+  },
+  {
+   "date": "2022-06-28",
+   "ALP": 36.3,
+   "COAL": 35.79,
+   "GRN": 10.76,
+   "ONP": 4.14,
+   "tpp_alp_vs_coal": 54.1
+  },
+  {
+   "date": "2022-07-05",
+   "ALP": 36.49,
+   "COAL": 35.69,
+   "GRN": 10.8,
+   "ONP": 4.17,
+   "tpp_alp_vs_coal": 54.12
+  },
+  {
+   "date": "2022-07-12",
+   "ALP": 36.66,
+   "COAL": 35.6,
+   "GRN": 10.83,
+   "ONP": 4.2,
+   "tpp_alp_vs_coal": 54.14
+  },
+  {
+   "date": "2022-07-19",
+   "ALP": 36.82,
+   "COAL": 35.52,
+   "GRN": 10.85,
+   "ONP": 4.23,
+   "tpp_alp_vs_coal": 54.17
+  },
+  {
+   "date": "2022-07-26",
+   "ALP": 36.95,
+   "COAL": 35.44,
+   "GRN": 10.86,
+   "ONP": 4.27,
+   "tpp_alp_vs_coal": 54.19
+  },
+  {
+   "date": "2022-08-02",
+   "ALP": 37.07,
+   "COAL": 35.37,
+   "GRN": 10.87,
+   "ONP": 4.3,
+   "tpp_alp_vs_coal": 54.21
+  },
+  {
+   "date": "2022-08-09",
+   "ALP": 37.18,
+   "COAL": 35.3,
+   "GRN": 10.87,
+   "ONP": 4.34,
+   "tpp_alp_vs_coal": 54.22
+  },
+  {
+   "date": "2022-08-16",
+   "ALP": 37.26,
+   "COAL": 35.23,
+   "GRN": 10.88,
+   "ONP": 4.38,
+   "tpp_alp_vs_coal": 54.24
+  },
+  {
+   "date": "2022-08-23",
+   "ALP": 37.33,
+   "COAL": 35.18,
+   "GRN": 10.88,
+   "ONP": 4.42,
+   "tpp_alp_vs_coal": 54.25
+  },
+  {
+   "date": "2022-08-30",
+   "ALP": 37.39,
+   "COAL": 35.12,
+   "GRN": 10.88,
+   "ONP": 4.46,
+   "tpp_alp_vs_coal": 54.27
+  },
+  {
+   "date": "2022-09-06",
+   "ALP": 37.42,
+   "COAL": 35.07,
+   "GRN": 10.88,
+   "ONP": 4.5,
+   "tpp_alp_vs_coal": 54.27
+  },
+  {
+   "date": "2022-09-13",
+   "ALP": 37.45,
+   "COAL": 35.03,
+   "GRN": 10.89,
+   "ONP": 4.55,
+   "tpp_alp_vs_coal": 54.28
+  },
+  {
+   "date": "2022-09-20",
+   "ALP": 37.46,
+   "COAL": 34.99,
+   "GRN": 10.89,
+   "ONP": 4.59,
+   "tpp_alp_vs_coal": 54.28
+  },
+  {
+   "date": "2022-09-27",
+   "ALP": 37.45,
+   "COAL": 34.95,
+   "GRN": 10.9,
+   "ONP": 4.64,
+   "tpp_alp_vs_coal": 54.27
+  },
+  {
+   "date": "2022-10-04",
+   "ALP": 37.43,
+   "COAL": 34.91,
+   "GRN": 10.91,
+   "ONP": 4.7,
+   "tpp_alp_vs_coal": 54.26
+  },
+  {
+   "date": "2022-10-11",
+   "ALP": 37.39,
+   "COAL": 34.88,
+   "GRN": 10.92,
+   "ONP": 4.75,
+   "tpp_alp_vs_coal": 54.24
+  },
+  {
+   "date": "2022-10-18",
+   "ALP": 37.34,
+   "COAL": 34.85,
+   "GRN": 10.93,
+   "ONP": 4.8,
+   "tpp_alp_vs_coal": 54.22
+  },
+  {
+   "date": "2022-10-25",
+   "ALP": 37.28,
+   "COAL": 34.83,
+   "GRN": 10.94,
+   "ONP": 4.86,
+   "tpp_alp_vs_coal": 54.19
+  },
+  {
+   "date": "2022-11-01",
+   "ALP": 37.21,
+   "COAL": 34.81,
+   "GRN": 10.95,
+   "ONP": 4.91,
+   "tpp_alp_vs_coal": 54.15
+  },
+  {
+   "date": "2022-11-08",
+   "ALP": 37.12,
+   "COAL": 34.79,
+   "GRN": 10.96,
+   "ONP": 4.97,
+   "tpp_alp_vs_coal": 54.1
+  },
+  {
+   "date": "2022-11-15",
+   "ALP": 37.03,
+   "COAL": 34.78,
+   "GRN": 10.97,
+   "ONP": 5.02,
+   "tpp_alp_vs_coal": 54.05
+  },
+  {
+   "date": "2022-11-22",
+   "ALP": 36.93,
+   "COAL": 34.77,
+   "GRN": 10.99,
+   "ONP": 5.07,
+   "tpp_alp_vs_coal": 53.99
+  },
+  {
+   "date": "2022-11-29",
+   "ALP": 36.83,
+   "COAL": 34.76,
+   "GRN": 10.99,
+   "ONP": 5.12,
+   "tpp_alp_vs_coal": 53.93
+  },
+  {
+   "date": "2022-12-06",
+   "ALP": 36.74,
+   "COAL": 34.76,
+   "GRN": 11.0,
+   "ONP": 5.17,
+   "tpp_alp_vs_coal": 53.87
+  },
+  {
+   "date": "2022-12-13",
+   "ALP": 36.65,
+   "COAL": 34.76,
+   "GRN": 11.01,
+   "ONP": 5.21,
+   "tpp_alp_vs_coal": 53.81
+  },
+  {
+   "date": "2022-12-20",
+   "ALP": 36.56,
+   "COAL": 34.76,
+   "GRN": 11.01,
+   "ONP": 5.24,
+   "tpp_alp_vs_coal": 53.75
+  },
+  {
+   "date": "2022-12-27",
+   "ALP": 36.49,
+   "COAL": 34.77,
+   "GRN": 11.0,
+   "ONP": 5.27,
+   "tpp_alp_vs_coal": 53.69
+  },
+  {
+   "date": "2023-01-03",
+   "ALP": 36.42,
+   "COAL": 34.78,
+   "GRN": 11.0,
+   "ONP": 5.3,
+   "tpp_alp_vs_coal": 53.64
+  },
+  {
+   "date": "2023-01-10",
+   "ALP": 36.37,
+   "COAL": 34.79,
+   "GRN": 10.99,
+   "ONP": 5.32,
+   "tpp_alp_vs_coal": 53.59
+  },
+  {
+   "date": "2023-01-17",
+   "ALP": 36.32,
+   "COAL": 34.81,
+   "GRN": 10.98,
+   "ONP": 5.34,
+   "tpp_alp_vs_coal": 53.55
+  },
+  {
+   "date": "2023-01-24",
+   "ALP": 36.29,
+   "COAL": 34.83,
+   "GRN": 10.97,
+   "ONP": 5.35,
+   "tpp_alp_vs_coal": 53.51
+  },
+  {
+   "date": "2023-01-31",
+   "ALP": 36.26,
+   "COAL": 34.85,
+   "GRN": 10.95,
+   "ONP": 5.36,
+   "tpp_alp_vs_coal": 53.47
+  },
+  {
+   "date": "2023-02-07",
+   "ALP": 36.25,
+   "COAL": 34.87,
+   "GRN": 10.93,
+   "ONP": 5.36,
+   "tpp_alp_vs_coal": 53.44
+  },
+  {
+   "date": "2023-02-14",
+   "ALP": 36.23,
+   "COAL": 34.9,
+   "GRN": 10.92,
+   "ONP": 5.37,
+   "tpp_alp_vs_coal": 53.41
+  },
+  {
+   "date": "2023-02-21",
+   "ALP": 36.23,
+   "COAL": 34.92,
+   "GRN": 10.9,
+   "ONP": 5.36,
+   "tpp_alp_vs_coal": 53.39
+  },
+  {
+   "date": "2023-02-28",
+   "ALP": 36.23,
+   "COAL": 34.95,
+   "GRN": 10.88,
+   "ONP": 5.36,
+   "tpp_alp_vs_coal": 53.37
+  },
+  {
+   "date": "2023-03-07",
+   "ALP": 36.23,
+   "COAL": 34.98,
+   "GRN": 10.86,
+   "ONP": 5.35,
+   "tpp_alp_vs_coal": 53.35
+  },
+  {
+   "date": "2023-03-14",
+   "ALP": 36.24,
+   "COAL": 35.0,
+   "GRN": 10.84,
+   "ONP": 5.34,
+   "tpp_alp_vs_coal": 53.33
+  },
+  {
+   "date": "2023-03-21",
+   "ALP": 36.25,
+   "COAL": 35.03,
+   "GRN": 10.83,
+   "ONP": 5.33,
+   "tpp_alp_vs_coal": 53.32
+  },
+  {
+   "date": "2023-03-24",
+   "ALP": 36.25,
+   "COAL": 35.04,
+   "GRN": 10.82,
+   "ONP": 5.32,
+   "tpp_alp_vs_coal": 53.31
+  },
+  {
+   "date": "2023-05-14"
+  },
+  {
+   "date": "2023-05-14",
+   "ALP": 42.5,
+   "COAL": 31.73,
+   "GRN": 9.35,
+   "ONP": null,
+   "tpp_alp_vs_coal": 58.86
+  },
+  {
+   "date": "2023-05-21",
+   "ALP": 42.34,
+   "COAL": 31.82,
+   "GRN": 9.38,
+   "ONP": null,
+   "tpp_alp_vs_coal": 58.72
+  },
+  {
+   "date": "2023-05-28",
+   "ALP": 42.16,
+   "COAL": 31.93,
+   "GRN": 9.41,
+   "ONP": null,
+   "tpp_alp_vs_coal": 58.58
+  },
+  {
+   "date": "2023-06-04",
+   "ALP": 41.97,
+   "COAL": 32.04,
+   "GRN": 9.44,
+   "ONP": null,
+   "tpp_alp_vs_coal": 58.43
+  },
+  {
+   "date": "2023-06-11",
+   "ALP": 41.77,
+   "COAL": 32.16,
+   "GRN": 9.47,
+   "ONP": null,
+   "tpp_alp_vs_coal": 58.26
+  },
+  {
+   "date": "2023-06-18",
+   "ALP": 41.56,
+   "COAL": 32.28,
+   "GRN": 9.5,
+   "ONP": null,
+   "tpp_alp_vs_coal": 58.09
+  },
+  {
+   "date": "2023-06-25",
+   "ALP": 41.34,
+   "COAL": 32.42,
+   "GRN": 9.54,
+   "ONP": null,
+   "tpp_alp_vs_coal": 57.91
+  },
+  {
+   "date": "2023-07-02",
+   "ALP": 41.11,
+   "COAL": 32.55,
+   "GRN": 9.58,
+   "ONP": null,
+   "tpp_alp_vs_coal": 57.73
+  },
+  {
+   "date": "2023-07-09",
+   "ALP": 40.87,
+   "COAL": 32.69,
+   "GRN": 9.62,
+   "ONP": null,
+   "tpp_alp_vs_coal": 57.54
+  },
+  {
+   "date": "2023-07-16",
+   "ALP": 40.62,
+   "COAL": 32.83,
+   "GRN": 9.67,
+   "ONP": null,
+   "tpp_alp_vs_coal": 57.35
+  },
+  {
+   "date": "2023-07-23",
+   "ALP": 40.37,
+   "COAL": 32.97,
+   "GRN": 9.72,
+   "ONP": null,
+   "tpp_alp_vs_coal": 57.17
+  },
+  {
+   "date": "2023-07-30",
+   "ALP": 40.12,
+   "COAL": 33.1,
+   "GRN": 9.78,
+   "ONP": null,
+   "tpp_alp_vs_coal": 56.99
+  },
+  {
+   "date": "2023-08-06",
+   "ALP": 39.86,
+   "COAL": 33.22,
+   "GRN": 9.84,
+   "ONP": null,
+   "tpp_alp_vs_coal": 56.82
+  },
+  {
+   "date": "2023-08-13",
+   "ALP": 39.61,
+   "COAL": 33.34,
+   "GRN": 9.92,
+   "ONP": null,
+   "tpp_alp_vs_coal": 56.66
+  },
+  {
+   "date": "2023-08-20",
+   "ALP": 39.35,
+   "COAL": 33.44,
+   "GRN": 10.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 56.51
+  },
+  {
+   "date": "2023-08-27",
+   "ALP": 39.1,
+   "COAL": 33.52,
+   "GRN": 10.09,
+   "ONP": null,
+   "tpp_alp_vs_coal": 56.37
+  },
+  {
+   "date": "2023-09-03",
+   "ALP": 38.85,
+   "COAL": 33.6,
+   "GRN": 10.19,
+   "ONP": null,
+   "tpp_alp_vs_coal": 56.25
+  },
+  {
+   "date": "2023-09-10",
+   "ALP": 38.61,
+   "COAL": 33.65,
+   "GRN": 10.3,
+   "ONP": null,
+   "tpp_alp_vs_coal": 56.15
+  },
+  {
+   "date": "2023-09-17",
+   "ALP": 38.38,
+   "COAL": 33.7,
+   "GRN": 10.42,
+   "ONP": null,
+   "tpp_alp_vs_coal": 56.06
+  },
+  {
+   "date": "2023-09-24",
+   "ALP": 38.14,
+   "COAL": 33.73,
+   "GRN": 10.55,
+   "ONP": null,
+   "tpp_alp_vs_coal": 55.98
+  },
+  {
+   "date": "2023-10-01",
+   "ALP": 37.92,
+   "COAL": 33.76,
+   "GRN": 10.68,
+   "ONP": null,
+   "tpp_alp_vs_coal": 55.9
+  },
+  {
+   "date": "2023-10-08",
+   "ALP": 37.69,
+   "COAL": 33.78,
+   "GRN": 10.82,
+   "ONP": null,
+   "tpp_alp_vs_coal": 55.83
+  },
+  {
+   "date": "2023-10-15",
+   "ALP": 37.47,
+   "COAL": 33.81,
+   "GRN": 10.96,
+   "ONP": null,
+   "tpp_alp_vs_coal": 55.76
+  },
+  {
+   "date": "2023-10-22",
+   "ALP": 37.26,
+   "COAL": 33.85,
+   "GRN": 11.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 55.69
+  },
+  {
+   "date": "2023-10-29",
+   "ALP": 37.04,
+   "COAL": 33.9,
+   "GRN": 11.23,
+   "ONP": null,
+   "tpp_alp_vs_coal": 55.59
+  },
+  {
+   "date": "2023-11-05",
+   "ALP": 36.82,
+   "COAL": 33.98,
+   "GRN": 11.37,
+   "ONP": null,
+   "tpp_alp_vs_coal": 55.48
+  },
+  {
+   "date": "2023-11-12",
+   "ALP": 36.6,
+   "COAL": 34.09,
+   "GRN": 11.49,
+   "ONP": null,
+   "tpp_alp_vs_coal": 55.34
+  },
+  {
+   "date": "2023-11-19",
+   "ALP": 36.37,
+   "COAL": 34.24,
+   "GRN": 11.6,
+   "ONP": null,
+   "tpp_alp_vs_coal": 55.16
+  },
+  {
+   "date": "2023-11-26",
+   "ALP": 36.14,
+   "COAL": 34.43,
+   "GRN": 11.7,
+   "ONP": null,
+   "tpp_alp_vs_coal": 54.95
+  },
+  {
+   "date": "2023-12-03",
+   "ALP": 35.91,
+   "COAL": 34.66,
+   "GRN": 11.78,
+   "ONP": null,
+   "tpp_alp_vs_coal": 54.7
+  },
+  {
+   "date": "2023-12-10",
+   "ALP": 35.69,
+   "COAL": 34.93,
+   "GRN": 11.84,
+   "ONP": null,
+   "tpp_alp_vs_coal": 54.42
+  },
+  {
+   "date": "2023-12-17",
+   "ALP": 35.46,
+   "COAL": 35.23,
+   "GRN": 11.88,
+   "ONP": null,
+   "tpp_alp_vs_coal": 54.11
+  },
+  {
+   "date": "2023-12-24",
+   "ALP": 35.25,
+   "COAL": 35.54,
+   "GRN": 11.9,
+   "ONP": null,
+   "tpp_alp_vs_coal": 53.79
+  },
+  {
+   "date": "2023-12-31",
+   "ALP": 35.05,
+   "COAL": 35.87,
+   "GRN": 11.91,
+   "ONP": null,
+   "tpp_alp_vs_coal": 53.46
+  },
+  {
+   "date": "2024-01-07",
+   "ALP": 34.87,
+   "COAL": 36.18,
+   "GRN": 11.9,
+   "ONP": null,
+   "tpp_alp_vs_coal": 53.15
+  },
+  {
+   "date": "2024-01-14",
+   "ALP": 34.71,
+   "COAL": 36.47,
+   "GRN": 11.88,
+   "ONP": null,
+   "tpp_alp_vs_coal": 52.85
+  },
+  {
+   "date": "2024-01-21",
+   "ALP": 34.56,
+   "COAL": 36.74,
+   "GRN": 11.85,
+   "ONP": null,
+   "tpp_alp_vs_coal": 52.59
+  },
+  {
+   "date": "2024-01-28",
+   "ALP": 34.44,
+   "COAL": 36.97,
+   "GRN": 11.82,
+   "ONP": null,
+   "tpp_alp_vs_coal": 52.35
+  },
+  {
+   "date": "2024-02-04",
+   "ALP": 34.33,
+   "COAL": 37.16,
+   "GRN": 11.79,
+   "ONP": null,
+   "tpp_alp_vs_coal": 52.15
+  },
+  {
+   "date": "2024-02-11",
+   "ALP": 34.23,
+   "COAL": 37.32,
+   "GRN": 11.75,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.97
+  },
+  {
+   "date": "2024-02-18",
+   "ALP": 34.15,
+   "COAL": 37.44,
+   "GRN": 11.72,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.83
+  },
+  {
+   "date": "2024-02-25",
+   "ALP": 34.08,
+   "COAL": 37.53,
+   "GRN": 11.69,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.72
+  },
+  {
+   "date": "2024-03-03",
+   "ALP": 34.0,
+   "COAL": 37.59,
+   "GRN": 11.67,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.62
+  },
+  {
+   "date": "2024-03-10",
+   "ALP": 33.94,
+   "COAL": 37.63,
+   "GRN": 11.64,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.55
+  },
+  {
+   "date": "2024-03-17",
+   "ALP": 33.87,
+   "COAL": 37.65,
+   "GRN": 11.62,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.48
+  },
+  {
+   "date": "2024-03-24",
+   "ALP": 33.79,
+   "COAL": 37.64,
+   "GRN": 11.6,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.43
+  },
+  {
+   "date": "2024-03-31",
+   "ALP": 33.72,
+   "COAL": 37.63,
+   "GRN": 11.58,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.39
+  },
+  {
+   "date": "2024-04-07",
+   "ALP": 33.63,
+   "COAL": 37.6,
+   "GRN": 11.56,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.35
+  },
+  {
+   "date": "2024-04-14",
+   "ALP": 33.54,
+   "COAL": 37.56,
+   "GRN": 11.54,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.31
+  },
+  {
+   "date": "2024-04-21",
+   "ALP": 33.43,
+   "COAL": 37.51,
+   "GRN": 11.53,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.27
+  },
+  {
+   "date": "2024-04-28",
+   "ALP": 33.32,
+   "COAL": 37.46,
+   "GRN": 11.52,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.23
+  },
+  {
+   "date": "2024-05-05",
+   "ALP": 33.2,
+   "COAL": 37.4,
+   "GRN": 11.51,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.19
+  },
+  {
+   "date": "2024-05-12",
+   "ALP": 33.07,
+   "COAL": 37.35,
+   "GRN": 11.5,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.14
+  },
+  {
+   "date": "2024-05-19",
+   "ALP": 32.93,
+   "COAL": 37.3,
+   "GRN": 11.5,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.08
+  },
+  {
+   "date": "2024-05-26",
+   "ALP": 32.78,
+   "COAL": 37.25,
+   "GRN": 11.49,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.02
+  },
+  {
+   "date": "2024-06-02",
+   "ALP": 32.64,
+   "COAL": 37.22,
+   "GRN": 11.49,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.95
+  },
+  {
+   "date": "2024-06-09",
+   "ALP": 32.5,
+   "COAL": 37.19,
+   "GRN": 11.49,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.87
+  },
+  {
+   "date": "2024-06-16",
+   "ALP": 32.37,
+   "COAL": 37.18,
+   "GRN": 11.49,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.78
+  },
+  {
+   "date": "2024-06-23",
+   "ALP": 32.26,
+   "COAL": 37.19,
+   "GRN": 11.49,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.7
+  },
+  {
+   "date": "2024-06-30",
+   "ALP": 32.16,
+   "COAL": 37.21,
+   "GRN": 11.48,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.61
+  },
+  {
+   "date": "2024-07-07",
+   "ALP": 32.08,
+   "COAL": 37.24,
+   "GRN": 11.48,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.53
+  },
+  {
+   "date": "2024-07-14",
+   "ALP": 32.02,
+   "COAL": 37.28,
+   "GRN": 11.47,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.45
+  },
+  {
+   "date": "2024-07-21",
+   "ALP": 31.99,
+   "COAL": 37.33,
+   "GRN": 11.45,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.37
+  },
+  {
+   "date": "2024-07-28",
+   "ALP": 31.98,
+   "COAL": 37.4,
+   "GRN": 11.43,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.3
+  },
+  {
+   "date": "2024-08-04",
+   "ALP": 31.99,
+   "COAL": 37.46,
+   "GRN": 11.41,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.24
+  },
+  {
+   "date": "2024-08-11",
+   "ALP": 32.03,
+   "COAL": 37.53,
+   "GRN": 11.38,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.19
+  },
+  {
+   "date": "2024-08-18",
+   "ALP": 32.08,
+   "COAL": 37.61,
+   "GRN": 11.34,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.14
+  },
+  {
+   "date": "2024-08-25",
+   "ALP": 32.16,
+   "COAL": 37.68,
+   "GRN": 11.29,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.1
+  },
+  {
+   "date": "2024-09-01",
+   "ALP": 32.25,
+   "COAL": 37.75,
+   "GRN": 11.24,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.08
+  },
+  {
+   "date": "2024-09-08",
+   "ALP": 32.35,
+   "COAL": 37.83,
+   "GRN": 11.19,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.05
+  },
+  {
+   "date": "2024-09-15",
+   "ALP": 32.46,
+   "COAL": 37.9,
+   "GRN": 11.14,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.04
+  },
+  {
+   "date": "2024-09-22",
+   "ALP": 32.58,
+   "COAL": 37.97,
+   "GRN": 11.08,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.03
+  },
+  {
+   "date": "2024-09-29",
+   "ALP": 32.7,
+   "COAL": 38.03,
+   "GRN": 11.02,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.03
+  },
+  {
+   "date": "2024-10-06",
+   "ALP": 32.82,
+   "COAL": 38.09,
+   "GRN": 10.97,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.03
+  },
+  {
+   "date": "2024-10-13",
+   "ALP": 32.94,
+   "COAL": 38.15,
+   "GRN": 10.92,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.03
+  },
+  {
+   "date": "2024-10-20",
+   "ALP": 33.04,
+   "COAL": 38.2,
+   "GRN": 10.88,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.03
+  },
+  {
+   "date": "2024-10-27",
+   "ALP": 33.14,
+   "COAL": 38.24,
+   "GRN": 10.85,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.04
+  },
+  {
+   "date": "2024-11-03",
+   "ALP": 33.21,
+   "COAL": 38.27,
+   "GRN": 10.83,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.04
+  },
+  {
+   "date": "2024-11-10",
+   "ALP": 33.27,
+   "COAL": 38.29,
+   "GRN": 10.82,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.05
+  },
+  {
+   "date": "2024-11-17",
+   "ALP": 33.3,
+   "COAL": 38.31,
+   "GRN": 10.83,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.05
+  },
+  {
+   "date": "2024-11-24",
+   "ALP": 33.31,
+   "COAL": 38.31,
+   "GRN": 10.85,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.05
+  },
+  {
+   "date": "2024-12-01",
+   "ALP": 33.3,
+   "COAL": 38.29,
+   "GRN": 10.89,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.05
+  },
+  {
+   "date": "2024-12-08",
+   "ALP": 33.25,
+   "COAL": 38.27,
+   "GRN": 10.94,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.05
+  },
+  {
+   "date": "2024-12-15",
+   "ALP": 33.19,
+   "COAL": 38.23,
+   "GRN": 11.01,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.05
+  },
+  {
+   "date": "2024-12-22",
+   "ALP": 33.1,
+   "COAL": 38.17,
+   "GRN": 11.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.05
+  },
+  {
+   "date": "2024-12-29",
+   "ALP": 33.0,
+   "COAL": 38.1,
+   "GRN": 11.2,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.06
+  },
+  {
+   "date": "2025-01-05",
+   "ALP": 32.89,
+   "COAL": 38.01,
+   "GRN": 11.31,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.08
+  },
+  {
+   "date": "2025-01-12",
+   "ALP": 32.77,
+   "COAL": 37.91,
+   "GRN": 11.42,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.12
+  },
+  {
+   "date": "2025-01-19",
+   "ALP": 32.67,
+   "COAL": 37.79,
+   "GRN": 11.53,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.17
+  },
+  {
+   "date": "2025-01-26",
+   "ALP": 32.59,
+   "COAL": 37.66,
+   "GRN": 11.64,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.24
+  },
+  {
+   "date": "2025-02-02",
+   "ALP": 32.54,
+   "COAL": 37.51,
+   "GRN": 11.75,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.34
+  },
+  {
+   "date": "2025-02-09",
+   "ALP": 32.52,
+   "COAL": 37.35,
+   "GRN": 11.84,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.47
+  },
+  {
+   "date": "2025-02-16",
+   "ALP": 32.56,
+   "COAL": 37.17,
+   "GRN": 11.93,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.62
+  },
+  {
+   "date": "2025-02-23",
+   "ALP": 32.64,
+   "COAL": 36.98,
+   "GRN": 12.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.8
+  },
+  {
+   "date": "2025-03-02",
+   "ALP": 32.79,
+   "COAL": 36.77,
+   "GRN": 12.05,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.02
+  },
+  {
+   "date": "2025-03-09",
+   "ALP": 32.99,
+   "COAL": 36.55,
+   "GRN": 12.09,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.26
+  },
+  {
+   "date": "2025-03-16",
+   "ALP": 33.25,
+   "COAL": 36.31,
+   "GRN": 12.12,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.53
+  },
+  {
+   "date": "2025-03-23",
+   "ALP": 33.56,
+   "COAL": 36.06,
+   "GRN": 12.13,
+   "ONP": null,
+   "tpp_alp_vs_coal": 51.84
+  },
+  {
+   "date": "2025-03-30",
+   "ALP": 33.92,
+   "COAL": 35.79,
+   "GRN": 12.14,
+   "ONP": null,
+   "tpp_alp_vs_coal": 52.17
+  },
+  {
+   "date": "2025-04-06",
+   "ALP": 34.32,
+   "COAL": 35.51,
+   "GRN": 12.14,
+   "ONP": null,
+   "tpp_alp_vs_coal": 52.52
+  },
+  {
+   "date": "2025-04-13",
+   "ALP": 34.76,
+   "COAL": 35.21,
+   "GRN": 12.13,
+   "ONP": null,
+   "tpp_alp_vs_coal": 52.9
+  },
+  {
+   "date": "2025-04-20",
+   "ALP": 35.21,
+   "COAL": 34.91,
+   "GRN": 12.12,
+   "ONP": null,
+   "tpp_alp_vs_coal": 53.3
+  },
+  {
+   "date": "2025-04-27",
+   "ALP": 35.67,
+   "COAL": 34.59,
+   "GRN": 12.11,
+   "ONP": null,
+   "tpp_alp_vs_coal": 53.71
+  },
+  {
+   "date": "2025-05-04",
+   "ALP": 36.13,
+   "COAL": 34.28,
+   "GRN": 12.1,
+   "ONP": null,
+   "tpp_alp_vs_coal": 54.12
+  },
+  {
+   "date": "2025-05-11",
+   "ALP": 36.57,
+   "COAL": 33.96,
+   "GRN": 12.08,
+   "ONP": null,
+   "tpp_alp_vs_coal": 54.53
+  },
+  {
+   "date": "2025-05-18",
+   "ALP": 36.98,
+   "COAL": 33.63,
+   "GRN": 12.07,
+   "ONP": null,
+   "tpp_alp_vs_coal": 54.93
+  },
+  {
+   "date": "2025-05-25",
+   "ALP": 37.36,
+   "COAL": 33.32,
+   "GRN": 12.05,
+   "ONP": null,
+   "tpp_alp_vs_coal": 55.32
+  },
+  {
+   "date": "2025-06-01",
+   "ALP": 37.69,
+   "COAL": 33.0,
+   "GRN": 12.03,
+   "ONP": null,
+   "tpp_alp_vs_coal": 55.69
+  },
+  {
+   "date": "2025-06-08",
+   "ALP": 37.97,
+   "COAL": 32.69,
+   "GRN": 12.01,
+   "ONP": null,
+   "tpp_alp_vs_coal": 56.04
+  },
+  {
+   "date": "2025-06-15",
+   "ALP": 38.2,
+   "COAL": 32.39,
+   "GRN": 11.97,
+   "ONP": null,
+   "tpp_alp_vs_coal": 56.35
+  },
+  {
+   "date": "2025-06-22",
+   "ALP": 38.37,
+   "COAL": 32.1,
+   "GRN": 11.93,
+   "ONP": null,
+   "tpp_alp_vs_coal": 56.64
+  },
+  {
+   "date": "2025-06-29",
+   "ALP": 38.49,
+   "COAL": 31.81,
+   "GRN": 11.89,
+   "ONP": null,
+   "tpp_alp_vs_coal": 56.9
+  },
+  {
+   "date": "2025-07-06",
+   "ALP": 38.56,
+   "COAL": 31.53,
+   "GRN": 11.83,
+   "ONP": null,
+   "tpp_alp_vs_coal": 57.14
+  },
+  {
+   "date": "2025-07-13",
+   "ALP": 38.57,
+   "COAL": 31.26,
+   "GRN": 11.77,
+   "ONP": null,
+   "tpp_alp_vs_coal": 57.34
+  },
+  {
+   "date": "2025-07-20",
+   "ALP": 38.55,
+   "COAL": 30.99,
+   "GRN": 11.7,
+   "ONP": null,
+   "tpp_alp_vs_coal": 57.51
+  },
+  {
+   "date": "2025-07-27",
+   "ALP": 38.48,
+   "COAL": 30.74,
+   "GRN": 11.63,
+   "ONP": null,
+   "tpp_alp_vs_coal": 57.66
+  },
+  {
+   "date": "2025-08-03",
+   "ALP": 38.39,
+   "COAL": 30.49,
+   "GRN": 11.56,
+   "ONP": null,
+   "tpp_alp_vs_coal": 57.79
+  },
+  {
+   "date": "2025-08-10",
+   "ALP": 38.27,
+   "COAL": 30.24,
+   "GRN": 11.49,
+   "ONP": null,
+   "tpp_alp_vs_coal": 57.89
+  },
+  {
+   "date": "2025-08-17",
+   "ALP": 38.13,
+   "COAL": 30.01,
+   "GRN": 11.42,
+   "ONP": null,
+   "tpp_alp_vs_coal": 57.97
+  },
+  {
+   "date": "2025-08-24",
+   "ALP": 37.98,
+   "COAL": 29.79,
+   "GRN": 11.36,
+   "ONP": 9.63,
+   "tpp_alp_vs_coal": 58.03
+  },
+  {
+   "date": "2025-08-31",
+   "ALP": 37.82,
+   "COAL": 29.58,
+   "GRN": 11.29,
+   "ONP": 9.86,
+   "tpp_alp_vs_coal": 58.07
+  },
+  {
+   "date": "2025-09-07",
+   "ALP": 37.65,
+   "COAL": 29.37,
+   "GRN": 11.24,
+   "ONP": 10.12,
+   "tpp_alp_vs_coal": 58.09
+  },
+  {
+   "date": "2025-09-14",
+   "ALP": 37.48,
+   "COAL": 29.18,
+   "GRN": 11.19,
+   "ONP": 10.41,
+   "tpp_alp_vs_coal": 58.1
+  },
+  {
+   "date": "2025-09-21",
+   "ALP": 37.3,
+   "COAL": 28.99,
+   "GRN": 11.14,
+   "ONP": 10.71,
+   "tpp_alp_vs_coal": 58.09
+  },
+  {
+   "date": "2025-09-28",
+   "ALP": 37.12,
+   "COAL": 28.8,
+   "GRN": 11.1,
+   "ONP": 11.05,
+   "tpp_alp_vs_coal": 58.07
+  },
+  {
+   "date": "2025-10-05",
+   "ALP": 36.94,
+   "COAL": 28.62,
+   "GRN": 11.07,
+   "ONP": 11.42,
+   "tpp_alp_vs_coal": 58.04
+  },
+  {
+   "date": "2025-10-12",
+   "ALP": 36.76,
+   "COAL": 28.44,
+   "GRN": 11.04,
+   "ONP": 11.82,
+   "tpp_alp_vs_coal": 58.0
+  },
+  {
+   "date": "2025-10-19",
+   "ALP": 36.56,
+   "COAL": 28.26,
+   "GRN": 11.02,
+   "ONP": 12.26,
+   "tpp_alp_vs_coal": 57.96
+  },
+  {
+   "date": "2025-10-26",
+   "ALP": 36.36,
+   "COAL": 28.07,
+   "GRN": 11.01,
+   "ONP": 12.73,
+   "tpp_alp_vs_coal": 57.91
+  },
+  {
+   "date": "2025-11-02",
+   "ALP": 36.15,
+   "COAL": 27.87,
+   "GRN": 11.0,
+   "ONP": 13.23,
+   "tpp_alp_vs_coal": 57.85
+  },
+  {
+   "date": "2025-11-09",
+   "ALP": 35.93,
+   "COAL": 27.67,
+   "GRN": 11.01,
+   "ONP": 13.77,
+   "tpp_alp_vs_coal": 57.78
+  },
+  {
+   "date": "2025-11-16",
+   "ALP": 35.69,
+   "COAL": 27.45,
+   "GRN": 11.02,
+   "ONP": 14.33,
+   "tpp_alp_vs_coal": 57.72
+  },
+  {
+   "date": "2025-11-23",
+   "ALP": 35.44,
+   "COAL": 27.23,
+   "GRN": 11.03,
+   "ONP": 14.93,
+   "tpp_alp_vs_coal": 57.65
+  },
+  {
+   "date": "2025-11-30",
+   "ALP": 35.18,
+   "COAL": 26.99,
+   "GRN": 11.06,
+   "ONP": 15.55,
+   "tpp_alp_vs_coal": 57.58
+  },
+  {
+   "date": "2025-12-07",
+   "ALP": 34.91,
+   "COAL": 26.74,
+   "GRN": 11.09,
+   "ONP": 16.18,
+   "tpp_alp_vs_coal": 57.5
+  },
+  {
+   "date": "2025-12-14",
+   "ALP": 34.62,
+   "COAL": 26.49,
+   "GRN": 11.12,
+   "ONP": 16.83,
+   "tpp_alp_vs_coal": 57.43
+  },
+  {
+   "date": "2025-12-21",
+   "ALP": 34.32,
+   "COAL": 26.23,
+   "GRN": 11.17,
+   "ONP": 17.48,
+   "tpp_alp_vs_coal": 57.35
+  },
+  {
+   "date": "2025-12-28",
+   "ALP": 34.02,
+   "COAL": 25.96,
+   "GRN": 11.22,
+   "ONP": 18.13,
+   "tpp_alp_vs_coal": 57.27
+  },
+  {
+   "date": "2026-01-04",
+   "ALP": 33.71,
+   "COAL": 25.7,
+   "GRN": 11.27,
+   "ONP": 18.77,
+   "tpp_alp_vs_coal": 57.19
+  },
+  {
+   "date": "2026-01-11",
+   "ALP": 33.4,
+   "COAL": 25.44,
+   "GRN": 11.32,
+   "ONP": 19.38,
+   "tpp_alp_vs_coal": 57.11
+  },
+  {
+   "date": "2026-01-18",
+   "ALP": 33.1,
+   "COAL": 25.18,
+   "GRN": 11.37,
+   "ONP": 19.98,
+   "tpp_alp_vs_coal": 57.03
+  },
+  {
+   "date": "2026-01-25",
+   "ALP": 32.8,
+   "COAL": 24.94,
+   "GRN": 11.43,
+   "ONP": 20.54,
+   "tpp_alp_vs_coal": 56.95
+  },
+  {
+   "date": "2026-02-01",
+   "ALP": 32.52,
+   "COAL": 24.71,
+   "GRN": 11.48,
+   "ONP": 21.06,
+   "tpp_alp_vs_coal": 56.88
+  },
+  {
+   "date": "2026-02-08",
+   "ALP": 32.25,
+   "COAL": 24.49,
+   "GRN": 11.53,
+   "ONP": 21.54,
+   "tpp_alp_vs_coal": 56.8
+  },
+  {
+   "date": "2026-02-15",
+   "ALP": 32.0,
+   "COAL": 24.28,
+   "GRN": 11.58,
+   "ONP": 21.98,
+   "tpp_alp_vs_coal": 56.73
+  },
+  {
+   "date": "2026-02-22",
+   "ALP": 31.77,
+   "COAL": 24.1,
+   "GRN": 11.62,
+   "ONP": 22.38,
+   "tpp_alp_vs_coal": 56.67
+  },
+  {
+   "date": "2026-03-01",
+   "ALP": 31.56,
+   "COAL": 23.93,
+   "GRN": 11.65,
+   "ONP": 22.73,
+   "tpp_alp_vs_coal": 56.6
+  },
+  {
+   "date": "2026-03-08",
+   "ALP": 31.37,
+   "COAL": 23.78,
+   "GRN": 11.68,
+   "ONP": 23.04,
+   "tpp_alp_vs_coal": 56.55
+  },
+  {
+   "date": "2026-03-15",
+   "ALP": 31.21,
+   "COAL": 23.64,
+   "GRN": 11.7,
+   "ONP": 23.32,
+   "tpp_alp_vs_coal": 56.5
+  },
+  {
+   "date": "2026-03-22",
+   "ALP": 31.07,
+   "COAL": 23.52,
+   "GRN": 11.72,
+   "ONP": 23.56,
+   "tpp_alp_vs_coal": 56.46
+  },
+  {
+   "date": "2026-03-29",
+   "ALP": 30.96,
+   "COAL": 23.42,
+   "GRN": 11.73,
+   "ONP": 23.77,
+   "tpp_alp_vs_coal": 56.43
+  },
+  {
+   "date": "2026-04-05",
+   "ALP": 30.86,
+   "COAL": 23.32,
+   "GRN": 11.73,
+   "ONP": 23.95,
+   "tpp_alp_vs_coal": 56.4
+  },
+  {
+   "date": "2026-04-12",
+   "ALP": 30.79,
+   "COAL": 23.23,
+   "GRN": 11.73,
+   "ONP": 24.11,
+   "tpp_alp_vs_coal": 56.39
+  },
+  {
+   "date": "2026-04-19",
+   "ALP": 30.73,
+   "COAL": 23.15,
+   "GRN": 11.73,
+   "ONP": 24.25,
+   "tpp_alp_vs_coal": 56.39
+  },
+  {
+   "date": "2026-04-26",
+   "ALP": 30.69,
+   "COAL": 23.08,
+   "GRN": 11.73,
+   "ONP": 24.38,
+   "tpp_alp_vs_coal": 56.39
+  },
+  {
+   "date": "2026-05-03",
+   "ALP": 30.66,
+   "COAL": 23.01,
+   "GRN": 11.73,
+   "ONP": 24.49,
+   "tpp_alp_vs_coal": 56.4
+  },
+  {
+   "date": "2026-05-10",
+   "ALP": 30.63,
+   "COAL": 22.94,
+   "GRN": 11.73,
+   "ONP": 24.6,
+   "tpp_alp_vs_coal": 56.42
+  },
+  {
+   "date": "2026-05-17",
+   "ALP": 30.6,
+   "COAL": 22.87,
+   "GRN": 11.73,
+   "ONP": 24.71,
+   "tpp_alp_vs_coal": 56.44
+  },
+  {
+   "date": "2026-05-24",
+   "ALP": 30.58,
+   "COAL": 22.81,
+   "GRN": 11.74,
+   "ONP": 24.8,
+   "tpp_alp_vs_coal": 56.46
+  },
+  {
+   "date": "2026-05-31",
+   "ALP": 30.55,
+   "COAL": 22.75,
+   "GRN": 11.75,
+   "ONP": 24.89,
+   "tpp_alp_vs_coal": 56.47
+  },
+  {
+   "date": "2026-06-07",
+   "ALP": 30.52,
+   "COAL": 22.7,
+   "GRN": 11.77,
+   "ONP": 24.98,
+   "tpp_alp_vs_coal": 56.49
+  },
+  {
+   "date": "2026-06-14",
+   "ALP": 30.48,
+   "COAL": 22.65,
+   "GRN": 11.79,
+   "ONP": 25.05,
+   "tpp_alp_vs_coal": 56.5
+  },
+  {
+   "date": "2026-06-21",
+   "ALP": 30.44,
+   "COAL": 22.61,
+   "GRN": 11.81,
+   "ONP": 25.12,
+   "tpp_alp_vs_coal": 56.5
+  },
+  {
+   "date": "2026-06-28",
+   "ALP": 30.41,
+   "COAL": 22.57,
+   "GRN": 11.83,
+   "ONP": 25.18,
+   "tpp_alp_vs_coal": 56.5
+  },
+  {
+   "date": "2026-07-05",
+   "ALP": 30.36,
+   "COAL": 22.55,
+   "GRN": 11.85,
+   "ONP": 25.24,
+   "tpp_alp_vs_coal": 56.49
+  },
+  {
+   "date": "2026-07-12",
+   "ALP": 30.32,
+   "COAL": 22.53,
+   "GRN": 11.87,
+   "ONP": 25.28,
+   "tpp_alp_vs_coal": 56.48
+  },
+  {
+   "date": "2026-07-19",
+   "ALP": 30.28,
+   "COAL": 22.51,
+   "GRN": 11.89,
+   "ONP": 25.32,
+   "tpp_alp_vs_coal": 56.46
+  },
+  {
+   "date": "2026-07-26",
+   "ALP": 30.25,
+   "COAL": 22.51,
+   "GRN": 11.91,
+   "ONP": 25.35,
+   "tpp_alp_vs_coal": 56.44
+  },
+  {
+   "date": "2026-08-02",
+   "ALP": 30.21,
+   "COAL": 22.51,
+   "GRN": 11.93,
+   "ONP": 25.37,
+   "tpp_alp_vs_coal": 56.42
+  },
+  {
+   "date": "2026-08-09",
+   "ALP": 30.18,
+   "COAL": 22.51,
+   "GRN": 11.94,
+   "ONP": 25.39,
+   "tpp_alp_vs_coal": 56.39
+  },
+  {
+   "date": "2026-08-16",
+   "ALP": 30.15,
+   "COAL": 22.52,
+   "GRN": 11.96,
+   "ONP": 25.4,
+   "tpp_alp_vs_coal": 56.36
+  },
+  {
+   "date": "2026-08-23",
+   "ALP": 30.12,
+   "COAL": 22.54,
+   "GRN": 11.97,
+   "ONP": 25.41,
+   "tpp_alp_vs_coal": 56.33
+  },
+  {
+   "date": "2026-08-26",
+   "ALP": 30.11,
+   "COAL": 22.55,
+   "GRN": 11.97,
+   "ONP": 25.41,
+   "tpp_alp_vs_coal": 56.32
+  }
+ ],
+ "trend_method": "Current cycle: Bayesian poll aggregate (a smooth, damped trend from the previous result, adjusting for each pollster's house effect and sample size; bands are 90% credible intervals; 2PP implied from primaries via estimated preference flows). Earlier cycles: simple 60-day kernel average of published polls.",
+ "results": [
+  {
+   "year": 2007,
+   "date": "2007-03-24",
+   "ALP": 38.98,
+   "COAL": 36.99,
+   "GRN": 8.95,
+   "ONP": null,
+   "OTH": 15.08,
+   "tpp_alp_vs_coal": 52.26
+  },
+  {
+   "year": 2011,
+   "date": "2011-03-26",
+   "ALP": 25.6,
+   "COAL": 51.2,
+   "GRN": 10.3,
+   "ONP": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 35.8
+  },
+  {
+   "year": 2015,
+   "date": "2015-03-28",
+   "ALP": 34.08,
+   "COAL": 45.63,
+   "GRN": 10.29,
+   "ONP": null,
+   "OTH": 10.0,
+   "tpp_alp_vs_coal": 45.68
+  },
+  {
+   "year": 2019,
+   "date": "2019-03-23",
+   "ALP": 33.31,
+   "COAL": 41.58,
+   "GRN": 9.57,
+   "ONP": 1.1,
+   "OTH": 14.45,
+   "tpp_alp_vs_coal": 47.98
+  },
+  {
+   "year": 2023,
+   "date": "2023-03-25",
+   "ALP": 36.97,
+   "COAL": 35.37,
+   "GRN": 9.7,
+   "ONP": 1.8,
+   "OTH": 16.16,
+   "tpp_alp_vs_coal": 54.27
+  }
+ ],
+ "house_effects": [],
+ "events": [
+  {
+   "event_date": "2007-04-04",
+   "description": "Barry O'Farrell succeeds Peter Debnam as Liberal leader and Leader of the Opposition"
+  },
+  {
+   "event_date": "2009-12-04",
+   "description": "Kristina Keneally replaces Nathan Rees as Labor leader and Premier"
+  },
+  {
+   "event_date": "2011-03-31",
+   "description": "John Robertson becomes Labor leader and leader of the opposition"
+  },
+  {
+   "event_date": "2014-04-17",
+   "description": "Mike Baird becomes Liberal leader and New South Wales Premier"
+  },
+  {
+   "event_date": "2015-01-05",
+   "description": "Luke Foley becomes Labor leader and leader of the opposition"
+  },
+  {
+   "event_date": "2017-01-18",
+   "description": "Mike Baird announces resignation as Liberal leader and New South Wales Premier"
+  },
+  {
+   "event_date": "2017-01-23",
+   "description": "Gladys Berejiklian becomes Liberal leader and New South Wales Premier"
+  },
+  {
+   "event_date": "2018-03-31",
+   "description": "Mark Latham is named as leader of One Nation NSW"
+  },
+  {
+   "event_date": "2018-11-10",
+   "description": "Michael Daley succeeds Luke Foley as leader of the Labor Party"
+  },
+  {
+   "event_date": "2019-06-29",
+   "description": "Jodi McKay succeeds Michael Daley becomes Labor leader and Leader of the Opposition"
+  },
+  {
+   "event_date": "2021-06-04",
+   "description": "Chris Minns succeeds Jodi McKay as Labor leader and Leader of the Opposition"
+  },
+  {
+   "event_date": "2021-10-05",
+   "description": "Dominic Perrottet succeeds Gladys Berejiklian as Liberal leader and Premier"
+  },
+  {
+   "event_date": "2025-11-21",
+   "description": "Kellie Sloane becomes Liberal leader and leader of the opposition"
+  }
+ ]
+}

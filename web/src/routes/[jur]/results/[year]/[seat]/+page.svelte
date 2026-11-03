@@ -85,8 +85,9 @@
 {#if data.preferences.length}
 	<h2>How preferences flowed</h2>
 	<p class="muted small">
-		The {j.kind === 'federal' ? 'AEC' : 'VEC'}'s full distribution of preferences: at each count the lowest candidate is excluded and their
-		ballots pass to the next preference still in the count.
+		The {j.commission ?? 'electoral commission'}'s full distribution of preferences: at each count the lowest candidate is excluded and their
+		ballots pass to the next preference still in the count.{#if j.optionalPreferential}
+			Voters need only number one box, so ballots with no further preference exhaust and leave the count.{/if}
 	</p>
 	<ol class="counts">
 		{#each data.preferences as c (c.count)}

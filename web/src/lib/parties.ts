@@ -19,6 +19,9 @@ const PARTIES: Record<string, PartyMeta> = {
 	UAP: { code: 'UAP', short: 'Palmer (UAP)', name: 'Palmer United / United Australia Party' },
 	GRN: { code: 'GRN', short: 'Greens', name: 'Australian Greens' },
 	ONP: { code: 'ONP', short: 'One Nation', name: "Pauline Hanson's One Nation" },
+	SFF: { code: 'SFF', short: 'Shooters (SFF)', name: 'Shooters, Fishers and Farmers Party' },
+	// Optional preferential voting (NSW): ballots with no further preference.
+	EXH: { code: 'EXH', short: 'Exhausted', name: 'Exhausted ballots' },
 	IND: { code: 'IND', short: 'Independent', name: 'Independent' },
 	OTH: { code: 'OTH', short: 'Others', name: 'Other parties' }
 };

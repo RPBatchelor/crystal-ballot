@@ -1,0 +1,61 @@
+{
+ "election": "nt-2020",
+ "run_at": "2026-10-31T10:17:28+00:00",
+ "git_commit": "a691a1253f10bb9f81b5638c0eb1400306477f7d",
+ "uncommitted_changes": false,
+ "config": {
+  "n_per_draw": 5,
+  "seed": 20261128,
+  "poll_error_sd": {
+   "ALP": 2.0,
+   "COAL": 2.0,
+   "GRN": 1.2,
+   "ONP": 2.5
+  },
+  "poll_error_df": 5.0,
+  "poll_error_corr": null,
+  "poll_error_corr_parties": [],
+  "poll_bias": {
+   "ALP": 0.0,
+   "COAL": 0.0,
+   "GRN": 0.0
+  },
+  "region_sd": 0.06,
+  "seat_sd": {
+   "ALP": 0.12,
+   "COAL": 0.12,
+   "GRN": 0.18,
+   "OTH": 0.25,
+   "ONP": 0.25
+  },
+  "seat_df": {},
+  "seat_beta": {},
+  "ind_decay_mean": -0.2,
+  "ind_decay_sd": 0.4,
+  "retire_effect": -0.08,
+  "sophomore_effect": 0.05,
+  "ind_prior_sd": 0.35,
+  "ind_sophomore_log": 0.15,
+  "ind_retire_log": -1.2
+ },
+ "inputs": {
+  "nt-2020\\districts.csv": "a0c2ae0c3d927a8b",
+  "nt-2020\\final.csv": "c839ab000cad8e8d",
+  "nt-2020\\primary.csv": "4fe252f3e4ad6f20",
+  "nt-2020\\primary_changes.csv": "64404996b2bab489",
+  "nt-2020\\tcp.csv": "c839ab000cad8e8d",
+  "nt-2020\\tpp.csv": "ff828bafb46b24b5",
+  "nt-2016\\districts.csv": "5d217c486be68f1e",
+  "nt-2016\\final.csv": "4c31a23c9227c3c6",
+  "nt-2016\\primary.csv": "dfa6fac76eff1395",
+  "nt-2016\\primary_changes.csv": "ad6b9a32ffa02218",
+  "nt-2016\\tcp.csv": "4c31a23c9227c3c6",
+  "nt-2016\\tpp.csv": "c61e6864b7a940c3",
+  "nt-2020-notional\\districts.csv": "28d4dd8bc2be2ca8",
+  "nt-2020-notional\\primary.csv": "34936e843242b24b",
+  "polls_nt-2020.csv": "b2003a5ede480521",
+  "election_results_nt.csv": "13561b7a04a1f272"
+ },
+ "hand_set": true,
+ "no_polls": false
+}

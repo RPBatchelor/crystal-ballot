@@ -1,0 +1,202 @@
+{
+ "n_seats": 25,
+ "brier": 0.3608,
+ "log_loss": 0.8347,
+ "favourite_accuracy": 0.84,
+ "status_quo_accuracy": 0.72,
+ "seats": {
+  "ALP": {
+   "actual": 14,
+   "median": 15.0,
+   "p90": [
+    7.0,
+    23.0
+   ],
+   "covered_90": true
+  },
+  "COAL": {
+   "actual": 8,
+   "median": 6.0,
+   "p90": [
+    1.0,
+    15.0
+   ],
+   "covered_90": true
+  },
+  "GRN": {
+   "actual": 0,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    4.0
+   ],
+   "covered_90": true
+  },
+  "IND": {
+   "actual": 2,
+   "median": 2.0,
+   "p90": [
+    1.0,
+    6.0
+   ],
+   "covered_90": true
+  }
+ },
+ "calibration": [
+  {
+   "bin": "0.50-0.70",
+   "n": 7,
+   "mean_prob": 0.553,
+   "hit_rate": 0.857
+  },
+  {
+   "bin": "0.70-0.90",
+   "n": 4,
+   "mean_prob": 0.824,
+   "hit_rate": 1.0
+  },
+  {
+   "bin": "0.90-0.99",
+   "n": 7,
+   "mean_prob": 0.957,
+   "hit_rate": 0.857
+  },
+  {
+   "bin": "0.99-1.00",
+   "n": 1,
+   "mean_prob": 0.996,
+   "hit_rate": 1.0
+  }
+ ],
+ "misses": [
+  {
+   "district": "Araluen",
+   "won": "OTH",
+   "favourite": "CLP",
+   "p_fav": 0.383,
+   "p_won": 0.0,
+   "incumbent": "IND"
+  },
+  {
+   "district": "Barkly",
+   "won": "CLP",
+   "favourite": "ALP",
+   "p_fav": 0.961,
+   "p_won": 0.017,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Braitling",
+   "won": "CLP",
+   "favourite": "ALP",
+   "p_fav": 0.429,
+   "p_won": 0.303,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Brennan",
+   "won": "CLP",
+   "favourite": "ALP",
+   "p_fav": 0.56,
+   "p_won": 0.44,
+   "incumbent": "ALP"
+  }
+ ],
+ "seat_vote": {
+  "ALP": {
+   "n": 25,
+   "crps": 4.198,
+   "cover50": 0.48,
+   "cover90": 0.88,
+   "pit_hist": [
+    3,
+    2,
+    1,
+    2,
+    3,
+    4,
+    3,
+    1,
+    4,
+    2
+   ]
+  },
+  "COAL": {
+   "n": 24,
+   "crps": 5.422,
+   "cover50": 0.625,
+   "cover90": 0.75,
+   "pit_hist": [
+    3,
+    2,
+    3,
+    1,
+    2,
+    3,
+    3,
+    3,
+    0,
+    4
+   ]
+  },
+  "GRN": {
+   "n": 10,
+   "crps": 7.182,
+   "cover50": 0.0,
+   "cover90": 0.5,
+   "pit_hist": [
+    2,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5
+   ]
+  }
+ },
+ "statewide": {
+  "ALP": {
+   "forecast": [
+    31.0,
+    37.5,
+    43.9
+   ],
+   "actual": 39.43
+  },
+  "COAL": {
+   "forecast": [
+    22.9,
+    30.0,
+    36.9
+   ],
+   "actual": 31.34
+  },
+  "GRN": {
+   "forecast": [
+    1.5,
+    5.3,
+    9.8
+   ],
+   "actual": 4.36
+  },
+  "tpp": {
+   "forecast": [
+    38.2,
+    58.3,
+    72.5
+   ],
+   "actual": 53.3
+  }
+ },
+ "outcome": {
+  "alp_majority": 0.6338,
+  "coal_majority": 0.1721,
+  "hung": 0.1941,
+  "alp_most_seats": 0.7315,
+  "coal_most_seats": 0.23875
+ }
+}

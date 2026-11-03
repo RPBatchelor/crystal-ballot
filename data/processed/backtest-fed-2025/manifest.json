@@ -1,0 +1,89 @@
+{
+ "election": "fed-2025",
+ "run_at": "2026-10-31T10:19:25+00:00",
+ "git_commit": "a691a1253f10bb9f81b5638c0eb1400306477f7d",
+ "uncommitted_changes": false,
+ "config": {
+  "n_per_draw": 5,
+  "seed": 20261128,
+  "poll_error_sd": {
+   "ALP": 2.2,
+   "COAL": 1.93,
+   "GRN": 1.37,
+   "ONP": 2.5
+  },
+  "poll_error_df": 5.0,
+  "poll_error_corr": [
+   [
+    1.0,
+    -0.459,
+    -0.249
+   ],
+   [
+    -0.459,
+    1.0,
+    -0.33
+   ],
+   [
+    -0.249,
+    -0.33,
+    1.0
+   ]
+  ],
+  "poll_error_corr_parties": [
+   "ALP",
+   "COAL",
+   "GRN"
+  ],
+  "poll_bias": {
+   "ALP": 0.63,
+   "COAL": -0.83,
+   "GRN": 0.5
+  },
+  "region_sd": 0.098,
+  "seat_sd": {
+   "ALP": 0.1826,
+   "COAL": 0.1967,
+   "GRN": 0.2035,
+   "OTH": 0.25,
+   "ONP": 0.25
+  },
+  "seat_df": {
+   "ALP": 5.34,
+   "COAL": 4.88,
+   "GRN": 6.55,
+   "OTH": 4.88
+  },
+  "seat_beta": {
+   "ALP": -0.0596,
+   "COAL": -0.0773,
+   "GRN": -0.0748
+  },
+  "ind_decay_mean": -0.2,
+  "ind_decay_sd": 0.4,
+  "retire_effect": -0.0932,
+  "sophomore_effect": 0.1407,
+  "ind_prior_sd": 0.35,
+  "ind_sophomore_log": 0.15,
+  "ind_retire_log": -1.2
+ },
+ "inputs": {
+  "fed-2025\\districts.csv": "a10c6add89dc5e33",
+  "fed-2025\\dop_transfers.csv": "22a93505f0e4e7e4",
+  "fed-2025\\primary.csv": "bb7958e138f325ab",
+  "fed-2025\\tcp.csv": "adf2c1bbadf4bddf",
+  "fed-2025\\tpp.csv": "5bbf1c2419f1a9b6",
+  "fed-2022\\districts.csv": "5fecbb466bf21297",
+  "fed-2022\\dop_transfers.csv": "afc730bb3a574350",
+  "fed-2022\\primary.csv": "fd08cd4f79847b58",
+  "fed-2022\\tcp.csv": "2f177b568e7d9d66",
+  "fed-2022\\tpp.csv": "b4be996b5fc71471",
+  "fed-2025-notional\\ballot.csv": "0dca8486ca418568",
+  "fed-2025-notional\\districts.csv": "32a35f04c2eef45c",
+  "fed-2025-notional\\primary.csv": "53a30b97844406cd",
+  "polls_fed-2025.csv": "4ba6cbabf14d876c",
+  "election_results_fed.csv": "c5dd4baa66135dc3"
+ },
+ "hand_set": false,
+ "no_polls": false
+}

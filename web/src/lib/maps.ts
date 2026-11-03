@@ -2,10 +2,46 @@ import { interpolateLab } from 'd3-interpolate';
 import { bloc, party, partyColour } from './parties';
 import type { HemiSeat } from './components/charts/Hemicycle.svelte';
 
-/** Boundary set (Vicmap layer) in force at each election. */
+/** Boundary set (Vicmap layer; NSW redistribution) in force at each election. */
 const BOUNDARIES: Record<string, Record<number, string>> = {
-	vic: { 2014: 'assembly2013', 2018: 'assembly2013', 2022: 'assembly2022', 2026: 'assembly2022' }
+	vic: { 2014: 'assembly2013', 2018: 'assembly2013', 2022: 'assembly2022', 2026: 'assembly2022' },
+	nsw: { 2015: 'nsw-2013', 2019: 'nsw-2013', 2023: 'nsw-2021', 2027: 'nsw-2021' },
+	qld: { 2012: 'qld-2008', 2015: 'qld-2008', 2017: 'qld-2017', 2020: 'qld-2017', 2024: 'qld-2017' },
+	sa: { 2014: 'sa-2012', 2018: 'sa-2016', 2022: 'sa-2020', 2026: 'sa-2024' }
 };
+
+/** Seat map layout: the state, its height/width, and an inset on the capital. */
+export interface MapFrame {
+	state: string;
+	aspect: number;
+	/** ``aspect``: inset height/width beside the main map (default 0.95). */
+	inset: { label: string; west: number; south: number; east: number; north: number; aspect?: number };
+}
+
+const FRAMES: Record<string, MapFrame> = {
+	vic: {
+		state: 'Victoria',
+		aspect: 0.64,
+		inset: { label: 'Metropolitan Melbourne', west: 144.58, south: -38.12, east: 145.42, north: -37.58 }
+	},
+	nsw: {
+		state: 'New South Wales',
+		aspect: 0.86,
+		inset: { label: 'Greater Sydney', west: 150.62, south: -34.12, east: 151.36, north: -33.56 }
+	},
+	qld: {
+		state: 'Queensland',
+		aspect: 1.3,
+		inset: { label: 'South East Queensland', west: 152.6, south: -28.2, east: 153.58, north: -26.35, aspect: 1.75 }
+	},
+	sa: {
+		state: 'South Australia',
+		aspect: 1.15,
+		inset: { label: 'Greater Adelaide', west: 138.45, south: -35.25, east: 138.85, north: -34.6, aspect: 1.5 }
+	}
+};
+
+export const mapFrame = (jur: string): MapFrame => FRAMES[jur] ?? FRAMES.vic;
 
 export function boundarySet(jur: string, year: number): string | undefined {
 	return BOUNDARIES[jur]?.[year];

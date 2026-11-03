@@ -8,6 +8,12 @@ under many different sets of remaining candidates.
 One Nation barely contested 2022, so flows *to* and *from* ONP are set to reproduce the
 ALP-v-Coalition and ALP-v-ONP two-party-preferred figures reported by 2026 pollsters
 (see ``ONP_FLOW_TARGETS``) and given wide uncertainty.
+
+Optional preferential voting (NSW): a ballot with no further preference *exhausts*.
+Exhaustion is one more Luce option, always available, with weight ``exhaust[i]`` on the
+same scale as row i of the flow weights (which sum to 1 over all blocs). The fewer
+candidates remain, the larger its share, as in real counts. ``exhaust=None`` is full
+preferential voting.
 """
 
 from __future__ import annotations
@@ -41,19 +47,30 @@ PRIOR_ROWS = {
 }
 
 
+EXH = "EXH"  # to_bloc of exhausted ballots in DoP transfers
+
+
 def estimate_weights(transfers: pl.DataFrame, iters: int = 200) -> np.ndarray:
     """MM estimation of Luce weights w[from, to] from DoP transfer events.
 
     ``transfers`` has one row per (district, count, from_bloc, to_bloc) with votes,
     including zero-vote receivers so the choice set is known.
     """
-    w = np.ones((B, B))
+    return estimate_flows(transfers, iters)[0]
+
+
+def estimate_flows(transfers: pl.DataFrame, iters: int = 200) -> tuple[np.ndarray, np.ndarray | None]:
+    """Flow weights and, when the DoPs record exhausted ballots, exhaustion weights."""
+    opv = EXH in set(transfers["to_bloc"].unique())
+    K = B + 1 if opv else B  # exhaustion is column B
+    col = {**IDX, EXH: B}
+    w = np.ones((B, K))
     np.fill_diagonal(w, 0.0)
     events = []
     for (_, _, frm), g in transfers.group_by("district", "count", "from_bloc"):
         # Aggregate receivers by bloc (several minor parties can share a bloc).
         by = g.group_by("to_bloc").agg(pl.col("votes").sum())
-        to = np.array([IDX[b] for b in by["to_bloc"]])
+        to = np.array([col[b] for b in by["to_bloc"]])
         v = by["votes"].to_numpy().astype(float)
         if v.sum() <= 0:
             continue
@@ -61,8 +78,8 @@ def estimate_weights(transfers: pl.DataFrame, iters: int = 200) -> np.ndarray:
         # multiplicity is ignored (minor-party blocs only).
         events.append((IDX[frm], to, v))
     for _ in range(iters):
-        num = np.zeros((B, B))
-        den = np.zeros((B, B))
+        num = np.zeros((B, K))
+        den = np.zeros((B, K))
         for i, to, v in events:
             total = v.sum()
             num[i, to] += v
@@ -73,15 +90,23 @@ def estimate_weights(transfers: pl.DataFrame, iters: int = 200) -> np.ndarray:
         np.fill_diagonal(new, 0.0)
         w = new / new.sum(axis=1, keepdims=True)
     observed = {i for i, _, _ in events}
+    exhaust = None
+    if opv:
+        # Rescale so flow weights sum to 1 over blocs; exhaustion on the same scale.
+        exhaust = w[:, B] / w[:, :B].sum(axis=1)
+        w = w[:, :B] / w[:, :B].sum(axis=1, keepdims=True)
+        seen = [i for i in range(B) if i in observed]
+        exhaust[[i for i in range(B) if i not in observed]] = np.median(exhaust[seen])
     for name, row in PRIOR_ROWS.items():
         if IDX[name] not in observed:
             w[IDX[name]] = [row.get(b, 0.0) for b in BLOCS]
-    return w
+    return w, exhaust
 
 
 def calibrate_to_results(w: np.ndarray, primaries: np.ndarray, alp_tcp: np.ndarray,
                          origins: tuple[str, ...] = ("GRN", "OTH", "IND"),
-                         outlier: float = 15.0) -> tuple[np.ndarray, dict]:
+                         outlier: float = 15.0,
+                         exhaust: np.ndarray | None = None) -> tuple[np.ndarray, dict]:
     """Tilt each origin's ALP-v-COAL split so replayed counts match actual 2CPs.
 
     The DoPs cover only 39 seats and lump heterogeneous minor parties together; every
@@ -106,7 +131,8 @@ def calibrate_to_results(w: np.ndarray, primaries: np.ndarray, alp_tcp: np.ndarr
         return t
 
     def errors(theta: np.ndarray) -> np.ndarray:
-        _, final = count(primaries[None], tilted(theta)[None])
+        ex = None if exhaust is None else exhaust[None]
+        _, final = count(primaries[None], tilted(theta)[None], ex)
         return final[0, :, a] * 100 - alp_tcp
 
     keep = mask & (np.abs(errors(np.zeros(len(rows)))) < outlier)
@@ -159,12 +185,21 @@ def draw_weights(w: np.ndarray, n: int, rng: np.random.Generator,
     return out
 
 
-def count(shares: np.ndarray, weights: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+def draw_exhaust(exhaust: np.ndarray, n: int, rng: np.random.Generator,
+                 sd: float = 0.2) -> np.ndarray:
+    """Exhaustion weights per simulation (n x B), log-normal around the estimate."""
+    return exhaust[None, :] * np.exp(rng.normal(0, sd, size=(n, B)))
+
+
+def count(shares: np.ndarray, weights: np.ndarray,
+          exhaust: np.ndarray | None = None) -> tuple[np.ndarray, np.ndarray]:
     """Run an exclusion count for every simulation and seat.
 
     shares:  S x D x B primary shares (0 where a bloc has no candidate)
     weights: S x B x B flow weights (one set per simulation)
-    Returns (winner index S x D, final two-candidate shares S x D x B).
+    exhaust: S x B exhaustion weights (optional preferential voting), or None
+    Returns (winner index S x D, final two-candidate shares S x D x B; under optional
+    preferential voting these are shares of the ballots still in the count).
     """
     votes = shares.astype(float).copy()
     alive = votes > 0
@@ -187,6 +222,8 @@ def count(shares: np.ndarray, weights: np.ndarray) -> tuple[np.ndarray, np.ndarr
         np.put_along_axis(survivors, loser[..., None], False, axis=2)
         w_from = np.where(survivors, w_from, 0.0)
         tot = w_from.sum(axis=2, keepdims=True)
+        if exhaust is not None:
+            tot = tot + exhaust[np.arange(S)[:, None], loser][..., None]
         tot[tot == 0] = 1.0
         transfer = loser_votes[..., None] * w_from / tot
         votes = np.where(active[..., None], votes + transfer, votes)
@@ -198,12 +235,14 @@ def count(shares: np.ndarray, weights: np.ndarray) -> tuple[np.ndarray, np.ndarr
     return winner, votes / np.where(total > 0, total, 1)
 
 
-def two_party(primary: np.ndarray, weights: np.ndarray, a: str, b: str) -> np.ndarray:
+def two_party(primary: np.ndarray, weights: np.ndarray, a: str, b: str,
+              exhaust: np.ndarray | None = None) -> np.ndarray:
     """Head-to-head share (%) for party ``a`` against ``b`` (S,).
 
     Runs a sequential count in which every other bloc is excluded, smallest first
     (Others first), so preferences pass through intermediate parties exactly as in a
     real count. Direct pairwise flows understate this (e.g. Others -> Greens -> Labor).
+    With ``exhaust`` (S x B), exhausted ballots leave the count, as in NSW's 2PP.
     """
     ia, ib = IDX[a], IDX[b]
     votes = primary.astype(float).copy()
@@ -224,6 +263,8 @@ def two_party(primary: np.ndarray, weights: np.ndarray, a: str, b: str) -> np.nd
         alive[rows, loser] = np.where(has, False, alive[rows, loser])
         w_from = np.where(alive, weights[rows, loser], 0.0)
         tot = w_from.sum(axis=1, keepdims=True)
+        if exhaust is not None:
+            tot = tot + exhaust[rows, loser][:, None]
         votes += moving[:, None] * w_from / np.where(tot > 0, tot, 1)
         votes[rows, loser] = np.where(has, 0.0, votes[rows, loser])
     return 100 * votes[:, ia] / (votes[:, ia] + votes[:, ib])

@@ -4,7 +4,7 @@
 	import Hemicycle from '$lib/components/charts/Hemicycle.svelte';
 	import SeatMap from '$lib/components/charts/SeatMap.svelte';
 	import { fmtDate } from '$lib/format';
-	import { chamberSeats, tierOpacity } from '$lib/maps';
+	import { chamberSeats, tierOpacity, mapFrame } from '$lib/maps';
 	import { party, partyColour } from '$lib/parties';
 
 	let { data }: { data: PageData } = $props();
@@ -242,6 +242,7 @@
 	<SeatMap
 		title="Where the forecast favourite lost"
 		geo={data.geo}
+		frame={mapFrame(data.jurisdiction.code)}
 		fill={(slug) => partyColour(bySlug[slug]?.actual_winner ?? 'OTH')}
 		opacity={(slug) => (bySlug[slug] && bySlug[slug].leader !== bySlug[slug].actual_winner ? 1 : 0.18)}
 		tooltip={seatTip}

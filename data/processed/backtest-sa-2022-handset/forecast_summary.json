@@ -1,0 +1,2414 @@
+{
+ "n_sims": 20000,
+ "majority": 24,
+ "outcome": {
+  "alp_majority": 0.8316,
+  "coal_majority": 0.0474,
+  "hung": 0.121,
+  "alp_most_seats": 0.897,
+  "coal_most_seats": 0.0702
+ },
+ "seats": {
+  "ALP": [
+   22.0,
+   24.0,
+   26.0,
+   28.0,
+   33.0
+  ],
+  "LIB": [
+   11.0,
+   16.0,
+   19.0,
+   21.0,
+   23.0
+  ],
+  "NAT": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "GRN": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "ONP": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "IND": [
+   1.0,
+   2.0,
+   2.0,
+   3.0,
+   4.0
+  ],
+  "OTH": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "COAL": [
+   11.0,
+   16.0,
+   19.0,
+   21.0,
+   23.0
+  ]
+ },
+ "seat_hist": {
+  "ALP": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   2,
+   0,
+   2,
+   2,
+   3,
+   2,
+   12,
+   24,
+   92,
+   193,
+   454,
+   866,
+   1715,
+   2933,
+   2837,
+   2429,
+   1979,
+   1574,
+   1247,
+   945,
+   759,
+   586,
+   411,
+   336,
+   221,
+   152,
+   85,
+   50,
+   31,
+   18,
+   16,
+   7,
+   7,
+   6,
+   1,
+   2,
+   0
+  ],
+  "GRN": [
+   19786,
+   198,
+   13,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "ONP": [
+   19982,
+   9,
+   3,
+   3,
+   0,
+   2,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IND": [
+   107,
+   4282,
+   7532,
+   5709,
+   2077,
+   292,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "COAL": [
+   2,
+   9,
+   11,
+   9,
+   16,
+   34,
+   42,
+   82,
+   126,
+   205,
+   290,
+   414,
+   493,
+   658,
+   878,
+   1064,
+   1387,
+   1674,
+   2062,
+   2285,
+   2498,
+   2279,
+   1632,
+   902,
+   464,
+   266,
+   121,
+   58,
+   19,
+   8,
+   3,
+   2,
+   2,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "statewide_primary": {
+  "ALP": [
+   35.1,
+   39.2,
+   43.4
+  ],
+  "COAL": [
+   29.9,
+   34.9,
+   39.5
+  ],
+  "GRN": [
+   6.8,
+   8.9,
+   11.2
+  ],
+  "ONP": [
+   0.3,
+   3.0,
+   7.7
+  ],
+  "IND": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "OTH": [
+   10.2,
+   13.7,
+   17.2
+  ]
+ },
+ "tpp_alp": [
+  49.5,
+  54.7,
+  60.0
+ ],
+ "districts": [
+  {
+   "district": "Adelaide",
+   "region": "Western Adelaide",
+   "incumbent": "LIB",
+   "notes": [],
+   "probs": {
+    "ALP": 0.8446,
+    "LIB": 0.1554
+   },
+   "primary": {
+    "ALP": [
+     36.7,
+     41.2,
+     45.9
+    ],
+    "COAL": [
+     35.7,
+     40.7,
+     45.5
+    ],
+    "GRN": [
+     12.1,
+     15.7,
+     19.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.3,
+     2.2,
+     3.5
+    ]
+   }
+  },
+  {
+   "district": "Badcoe",
+   "region": "Western Adelaide",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2018)"
+   ],
+   "probs": {
+    "ALP": 0.9956,
+    "LIB": 0.0043,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     42.7,
+     47.5,
+     52.3
+    ],
+    "COAL": [
+     26.0,
+     30.8,
+     35.7
+    ],
+    "GRN": [
+     7.6,
+     10.2,
+     13.3
+    ],
+    "ONP": [
+     0.3,
+     2.9,
+     6.9
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     4.7,
+     7.7,
+     11.6
+    ]
+   }
+  },
+  {
+   "district": "Black",
+   "region": "Southern Adelaide",
+   "incumbent": "LIB",
+   "notes": [],
+   "probs": {
+    "ALP": 0.2406,
+    "LIB": 0.7594
+   },
+   "primary": {
+    "ALP": [
+     35.7,
+     40.4,
+     45.3
+    ],
+    "COAL": [
+     44.9,
+     50.1,
+     55.0
+    ],
+    "GRN": [
+     7.0,
+     9.4,
+     12.3
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Bragg",
+   "region": "Eastern Adelaide and Hills",
+   "incumbent": "LIB",
+   "notes": [],
+   "probs": {
+    "ALP": 0.0035,
+    "LIB": 0.9965
+   },
+   "primary": {
+    "ALP": [
+     24.6,
+     28.6,
+     32.9
+    ],
+    "COAL": [
+     52.1,
+     56.9,
+     61.4
+    ],
+    "GRN": [
+     8.4,
+     11.2,
+     14.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.7,
+     2.9,
+     4.6
+    ]
+   }
+  },
+  {
+   "district": "Chaffey",
+   "region": "Regional SA",
+   "incumbent": "LIB",
+   "notes": [],
+   "probs": {
+    "ALP": 0.0097,
+    "LIB": 0.9886,
+    "NAT": 0.0018
+   },
+   "primary": {
+    "ALP": [
+     22.5,
+     26.9,
+     31.7
+    ],
+    "COAL": [
+     42.4,
+     48.4,
+     54.4
+    ],
+    "GRN": [
+     2.2,
+     3.1,
+     4.3
+    ],
+    "ONP": [
+     0.4,
+     3.2,
+     7.7
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     11.3,
+     17.5,
+     24.3
+    ]
+   }
+  },
+  {
+   "district": "Cheltenham",
+   "region": "Western Adelaide",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2018)"
+   ],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     58.0,
+     62.4,
+     66.6
+    ],
+    "COAL": [
+     16.2,
+     19.8,
+     23.7
+    ],
+    "GRN": [
+     6.2,
+     8.3,
+     10.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.7,
+     1.1,
+     1.9
+    ],
+    "OTH": [
+     4.8,
+     7.9,
+     11.8
+    ]
+   }
+  },
+  {
+   "district": "Colton",
+   "region": "Western Adelaide",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2018)"
+   ],
+   "probs": {
+    "ALP": 0.5297,
+    "LIB": 0.4703
+   },
+   "primary": {
+    "ALP": [
+     39.5,
+     44.4,
+     49.4
+    ],
+    "COAL": [
+     42.3,
+     47.5,
+     52.5
+    ],
+    "GRN": [
+     5.9,
+     8.0,
+     10.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Croydon",
+   "region": "Western Adelaide",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2018)"
+   ],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     60.8,
+     65.2,
+     69.4
+    ],
+    "COAL": [
+     12.9,
+     16.0,
+     19.5
+    ],
+    "GRN": [
+     7.7,
+     10.2,
+     13.3
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     5.0,
+     8.1,
+     12.1
+    ]
+   }
+  },
+  {
+   "district": "Davenport",
+   "region": "Southern Adelaide",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2018)"
+   ],
+   "probs": {
+    "ALP": 0.3982,
+    "LIB": 0.6018
+   },
+   "primary": {
+    "ALP": [
+     32.8,
+     37.7,
+     42.9
+    ],
+    "COAL": [
+     40.0,
+     45.5,
+     51.0
+    ],
+    "GRN": [
+     8.1,
+     10.9,
+     14.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     3.2,
+     5.3,
+     8.5
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Dunstan",
+   "region": "Eastern Adelaide and Hills",
+   "incumbent": "LIB",
+   "notes": [],
+   "probs": {
+    "ALP": 0.2266,
+    "LIB": 0.7733,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     31.0,
+     35.6,
+     40.3
+    ],
+    "COAL": [
+     41.2,
+     46.5,
+     51.5
+    ],
+    "GRN": [
+     8.9,
+     11.8,
+     15.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.5,
+     5.8,
+     8.9
+    ]
+   }
+  },
+  {
+   "district": "Elder",
+   "region": "Southern Adelaide",
+   "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9041,
+    "LIB": 0.0959
+   },
+   "primary": {
+    "ALP": [
+     37.8,
+     42.7,
+     47.7
+    ],
+    "COAL": [
+     31.6,
+     37.0,
+     42.2
+    ],
+    "GRN": [
+     8.0,
+     10.7,
+     13.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     5.7,
+     9.2,
+     13.6
+    ]
+   }
+  },
+  {
+   "district": "Elizabeth",
+   "region": "Northern Adelaide",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 0.9999,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     54.2,
+     58.9,
+     63.4
+    ],
+    "COAL": [
+     13.3,
+     16.6,
+     20.3
+    ],
+    "GRN": [
+     6.8,
+     9.2,
+     12.0
+    ],
+    "ONP": [
+     0.3,
+     2.9,
+     6.9
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     7.2,
+     11.5,
+     16.6
+    ]
+   }
+  },
+  {
+   "district": "Enfield",
+   "region": "Western Adelaide",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2018)"
+   ],
+   "probs": {
+    "ALP": 0.9992,
+    "LIB": 0.0006,
+    "ONP": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     44.8,
+     49.7,
+     54.5
+    ],
+    "COAL": [
+     21.7,
+     26.3,
+     31.1
+    ],
+    "GRN": [
+     7.8,
+     10.5,
+     13.6
+    ],
+    "ONP": [
+     0.3,
+     3.0,
+     7.1
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     6.0,
+     9.7,
+     14.3
+    ]
+   }
+  },
+  {
+   "district": "Finniss",
+   "region": "Regional SA",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2018)"
+   ],
+   "probs": {
+    "ALP": 0.0307,
+    "LIB": 0.9668,
+    "NAT": 0.0019,
+    "GRN": 0.0004,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     19.5,
+     23.4,
+     27.9
+    ],
+    "COAL": [
+     38.9,
+     44.9,
+     50.6
+    ],
+    "GRN": [
+     8.2,
+     11.1,
+     14.5
+    ],
+    "ONP": [
+     0.3,
+     3.1,
+     7.5
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     10.8,
+     16.6,
+     23.2
+    ]
+   }
+  },
+  {
+   "district": "Flinders",
+   "region": "Regional SA",
+   "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0008,
+    "LIB": 0.9974,
+    "NAT": 0.0018
+   },
+   "primary": {
+    "ALP": [
+     20.9,
+     24.5,
+     28.6
+    ],
+    "COAL": [
+     57.7,
+     62.4,
+     66.6
+    ],
+    "GRN": [
+     6.9,
+     9.3,
+     12.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.0,
+     3.5,
+     5.4
+    ]
+   }
+  },
+  {
+   "district": "Florey",
+   "region": "Northern Adelaide",
+   "incumbent": "IND",
+   "notes": [
+    "sitting member BEDFORD Frances (IND) contesting Newland",
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9999,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     48.9,
+     54.1,
+     59.1
+    ],
+    "COAL": [
+     17.9,
+     22.0,
+     26.4
+    ],
+    "GRN": [
+     6.5,
+     8.8,
+     11.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     3.2,
+     5.2,
+     8.3
+    ],
+    "OTH": [
+     5.6,
+     9.1,
+     13.5
+    ]
+   }
+  },
+  {
+   "district": "Frome",
+   "region": "Regional SA",
+   "incumbent": "IND",
+   "notes": [
+    "new seat, notionally IND"
+   ],
+   "probs": {
+    "ALP": 0.0035,
+    "LIB": 0.9922,
+    "NAT": 0.0022,
+    "ONP": 0.0001,
+    "IND": 0.0019
+   },
+   "primary": {
+    "ALP": [
+     23.7,
+     28.3,
+     33.4
+    ],
+    "COAL": [
+     48.9,
+     55.4,
+     61.3
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.4,
+     3.2,
+     7.4
+    ],
+    "IND": [
+     7.5,
+     12.0,
+     18.7
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Gibson",
+   "region": "Southern Adelaide",
+   "incumbent": "LIB",
+   "notes": [],
+   "probs": {
+    "ALP": 0.1183,
+    "LIB": 0.8817
+   },
+   "primary": {
+    "ALP": [
+     29.2,
+     33.8,
+     38.7
+    ],
+    "COAL": [
+     41.6,
+     47.2,
+     52.4
+    ],
+    "GRN": [
+     6.0,
+     8.2,
+     10.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.9,
+     1.5,
+     2.5
+    ],
+    "OTH": [
+     5.5,
+     8.8,
+     13.1
+    ]
+   }
+  },
+  {
+   "district": "Giles",
+   "region": "Regional SA",
+   "incumbent": "LIB",
+   "notes": [
+    "notionally LIB after the redistribution"
+   ],
+   "probs": {
+    "ALP": 1.0,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     52.5,
+     57.6,
+     62.4
+    ],
+    "COAL": [
+     15.1,
+     18.8,
+     22.8
+    ],
+    "GRN": [
+     4.1,
+     5.6,
+     7.5
+    ],
+    "ONP": [
+     0.3,
+     3.1,
+     7.2
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     9.0,
+     14.1,
+     20.0
+    ]
+   }
+  },
+  {
+   "district": "Hammond",
+   "region": "Regional SA",
+   "incumbent": "LIB",
+   "notes": [],
+   "probs": {
+    "ALP": 0.0057,
+    "LIB": 0.9921,
+    "NAT": 0.0021,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     19.4,
+     23.4,
+     27.8
+    ],
+    "COAL": [
+     44.1,
+     49.9,
+     55.5
+    ],
+    "GRN": [
+     6.2,
+     8.4,
+     11.2
+    ],
+    "ONP": [
+     0.3,
+     3.1,
+     7.5
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     9.0,
+     14.2,
+     20.1
+    ]
+   }
+  },
+  {
+   "district": "Hartley",
+   "region": "Eastern Adelaide and Hills",
+   "incumbent": "LIB",
+   "notes": [],
+   "probs": {
+    "ALP": 0.4057,
+    "LIB": 0.5943
+   },
+   "primary": {
+    "ALP": [
+     36.8,
+     42.1,
+     47.5
+    ],
+    "COAL": [
+     42.6,
+     48.4,
+     53.9
+    ],
+    "GRN": [
+     6.9,
+     9.4,
+     12.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Heysen",
+   "region": "Eastern Adelaide and Hills",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2018)"
+   ],
+   "probs": {
+    "ALP": 0.159,
+    "LIB": 0.8324,
+    "GRN": 0.0084,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     21.0,
+     25.1,
+     29.6
+    ],
+    "COAL": [
+     35.1,
+     40.8,
+     46.4
+    ],
+    "GRN": [
+     12.1,
+     15.8,
+     20.0
+    ],
+    "ONP": [
+     0.3,
+     3.1,
+     7.3
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     9.2,
+     14.3,
+     20.3
+    ]
+   }
+  },
+  {
+   "district": "Hurtle Vale",
+   "region": "Southern Adelaide",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 0.9995,
+    "LIB": 0.0005
+   },
+   "primary": {
+    "ALP": [
+     49.0,
+     53.7,
+     58.3
+    ],
+    "COAL": [
+     24.8,
+     29.4,
+     34.0
+    ],
+    "GRN": [
+     6.8,
+     9.2,
+     12.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.2,
+     0.4,
+     0.6
+    ],
+    "OTH": [
+     4.2,
+     6.9,
+     10.4
+    ]
+   }
+  },
+  {
+   "district": "Kaurna",
+   "region": "Southern Adelaide",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     54.3,
+     58.5,
+     62.7
+    ],
+    "COAL": [
+     20.2,
+     24.3,
+     28.4
+    ],
+    "GRN": [
+     8.6,
+     11.4,
+     14.6
+    ],
+    "ONP": [
+     0.3,
+     2.7,
+     6.3
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.5,
+     2.5,
+     4.0
+    ]
+   }
+  },
+  {
+   "district": "Kavel",
+   "region": "Eastern Adelaide and Hills",
+   "incumbent": "IND",
+   "notes": [
+    "sitting member CREGAN Dan elected as LIB, recontesting as an independent",
+    "first-term member recontesting (since 2018)"
+   ],
+   "probs": {
+    "ALP": 0.0283,
+    "LIB": 0.609,
+    "GRN": 0.001,
+    "ONP": 0.0001,
+    "IND": 0.3615
+   },
+   "primary": {
+    "ALP": [
+     14.3,
+     17.6,
+     21.4
+    ],
+    "COAL": [
+     31.5,
+     37.1,
+     42.8
+    ],
+    "GRN": [
+     7.6,
+     10.2,
+     13.4
+    ],
+    "ONP": [
+     0.3,
+     2.4,
+     5.8
+    ],
+    "IND": [
+     13.9,
+     20.3,
+     28.8
+    ],
+    "OTH": [
+     6.7,
+     10.8,
+     15.8
+    ]
+   }
+  },
+  {
+   "district": "King",
+   "region": "Northern Adelaide",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2018)"
+   ],
+   "probs": {
+    "ALP": 0.9456,
+    "LIB": 0.0544
+   },
+   "primary": {
+    "ALP": [
+     39.8,
+     44.9,
+     49.9
+    ],
+    "COAL": [
+     30.4,
+     35.6,
+     40.8
+    ],
+    "GRN": [
+     6.0,
+     8.2,
+     10.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     6.9,
+     11.0,
+     16.0
+    ]
+   }
+  },
+  {
+   "district": "Lee",
+   "region": "Western Adelaide",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 0.9991,
+    "LIB": 0.0009
+   },
+   "primary": {
+    "ALP": [
+     48.9,
+     53.7,
+     58.5
+    ],
+    "COAL": [
+     26.6,
+     31.3,
+     36.2
+    ],
+    "GRN": [
+     4.6,
+     6.3,
+     8.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     5.1,
+     8.2,
+     12.3
+    ]
+   }
+  },
+  {
+   "district": "Light",
+   "region": "Northern Adelaide",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 0.9998,
+    "LIB": 0.0001,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     51.2,
+     55.6,
+     59.8
+    ],
+    "COAL": [
+     24.9,
+     29.3,
+     33.8
+    ],
+    "GRN": [
+     6.4,
+     8.6,
+     11.3
+    ],
+    "ONP": [
+     0.3,
+     2.7,
+     6.4
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.8,
+     3.1,
+     4.9
+    ]
+   }
+  },
+  {
+   "district": "MacKillop",
+   "region": "Regional SA",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2018)"
+   ],
+   "probs": {
+    "ALP": 0.0001,
+    "LIB": 0.9982,
+    "NAT": 0.0016
+   },
+   "primary": {
+    "ALP": [
+     13.1,
+     16.2,
+     19.9
+    ],
+    "COAL": [
+     57.8,
+     64.1,
+     69.7
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.4,
+     3.5,
+     8.3
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     9.8,
+     15.4,
+     21.9
+    ]
+   }
+  },
+  {
+   "district": "Mawson",
+   "region": "Southern Adelaide",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 0.9791,
+    "LIB": 0.0207,
+    "GRN": 0.0001,
+    "ONP": 0.0002
+   },
+   "primary": {
+    "ALP": [
+     38.4,
+     43.2,
+     48.3
+    ],
+    "COAL": [
+     27.0,
+     31.9,
+     37.0
+    ],
+    "GRN": [
+     8.2,
+     11.0,
+     14.3
+    ],
+    "ONP": [
+     0.3,
+     3.0,
+     7.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     6.1,
+     10.0,
+     14.7
+    ]
+   }
+  },
+  {
+   "district": "Morialta",
+   "region": "Eastern Adelaide and Hills",
+   "incumbent": "LIB",
+   "notes": [],
+   "probs": {
+    "ALP": 0.1579,
+    "LIB": 0.8421
+   },
+   "primary": {
+    "ALP": [
+     28.9,
+     33.7,
+     38.7
+    ],
+    "COAL": [
+     39.1,
+     44.9,
+     50.4
+    ],
+    "GRN": [
+     6.1,
+     8.3,
+     11.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     8.1,
+     12.7,
+     18.2
+    ]
+   }
+  },
+  {
+   "district": "Morphett",
+   "region": "Western Adelaide",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2018)"
+   ],
+   "probs": {
+    "ALP": 0.2343,
+    "LIB": 0.7657
+   },
+   "primary": {
+    "ALP": [
+     35.1,
+     40.3,
+     45.7
+    ],
+    "COAL": [
+     44.9,
+     50.6,
+     56.0
+    ],
+    "GRN": [
+     6.6,
+     9.0,
+     11.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Mount Gambier",
+   "region": "Regional SA",
+   "incumbent": "IND",
+   "notes": [],
+   "probs": {
+    "ALP": 0.0011,
+    "LIB": 0.0108,
+    "IND": 0.9881
+   },
+   "primary": {
+    "ALP": [
+     10.4,
+     14.6,
+     19.6
+    ],
+    "COAL": [
+     17.3,
+     24.3,
+     32.1
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     37.8,
+     51.1,
+     64.1
+    ],
+    "OTH": [
+     5.1,
+     9.1,
+     14.6
+    ]
+   }
+  },
+  {
+   "district": "Narungga",
+   "region": "Regional SA",
+   "incumbent": "IND",
+   "notes": [
+    "sitting member ELLIS Fraser elected as LIB, recontesting as an independent",
+    "first-term member recontesting (since 2018)"
+   ],
+   "probs": {
+    "ALP": 0.006,
+    "LIB": 0.7467,
+    "NAT": 0.0016,
+    "ONP": 0.0003,
+    "IND": 0.2455
+   },
+   "primary": {
+    "ALP": [
+     15.5,
+     19.2,
+     23.5
+    ],
+    "COAL": [
+     34.0,
+     40.3,
+     46.5
+    ],
+    "GRN": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ONP": [
+     0.3,
+     2.7,
+     6.4
+    ],
+    "IND": [
+     15.1,
+     22.1,
+     31.2
+    ],
+    "OTH": [
+     9.1,
+     14.3,
+     20.3
+    ]
+   }
+  },
+  {
+   "district": "Newland",
+   "region": "Northern Adelaide",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2018)"
+   ],
+   "probs": {
+    "ALP": 0.9152,
+    "LIB": 0.0847,
+    "ONP": 0.0002
+   },
+   "primary": {
+    "ALP": [
+     36.1,
+     41.0,
+     46.0
+    ],
+    "COAL": [
+     27.4,
+     32.5,
+     37.6
+    ],
+    "GRN": [
+     5.5,
+     7.5,
+     10.0
+    ],
+    "ONP": [
+     0.3,
+     2.9,
+     7.0
+    ],
+    "IND": [
+     3.4,
+     5.5,
+     8.9
+    ],
+    "OTH": [
+     5.7,
+     9.3,
+     13.8
+    ]
+   }
+  },
+  {
+   "district": "Playford",
+   "region": "Northern Adelaide",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member BROWN Michael (ALP) contesting Florey",
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     54.9,
+     59.9,
+     64.6
+    ],
+    "COAL": [
+     14.3,
+     17.8,
+     21.6
+    ],
+    "GRN": [
+     5.5,
+     7.5,
+     10.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     1.5,
+     2.5,
+     4.0
+    ],
+    "OTH": [
+     7.4,
+     11.8,
+     16.9
+    ]
+   }
+  },
+  {
+   "district": "Port Adelaide",
+   "region": "Western Adelaide",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     54.4,
+     59.6,
+     64.5
+    ],
+    "COAL": [
+     14.4,
+     17.9,
+     21.8
+    ],
+    "GRN": [
+     6.2,
+     8.4,
+     11.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     8.9,
+     13.7,
+     19.3
+    ]
+   }
+  },
+  {
+   "district": "Ramsay",
+   "region": "Northern Adelaide",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     57.3,
+     62.4,
+     67.1
+    ],
+    "COAL": [
+     13.3,
+     16.7,
+     20.4
+    ],
+    "GRN": [
+     6.2,
+     8.4,
+     11.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     7.7,
+     12.1,
+     17.4
+    ]
+   }
+  },
+  {
+   "district": "Reynell",
+   "region": "Southern Adelaide",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 0.9999,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     50.4,
+     55.5,
+     60.4
+    ],
+    "COAL": [
+     20.2,
+     24.6,
+     29.1
+    ],
+    "GRN": [
+     6.0,
+     8.1,
+     10.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     7.2,
+     11.4,
+     16.5
+    ]
+   }
+  },
+  {
+   "district": "Schubert",
+   "region": "Regional SA",
+   "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0527,
+    "LIB": 0.9457,
+    "NAT": 0.0015,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     25.0,
+     29.4,
+     34.1
+    ],
+    "COAL": [
+     40.9,
+     46.6,
+     52.0
+    ],
+    "GRN": [
+     5.7,
+     7.8,
+     10.4
+    ],
+    "ONP": [
+     0.3,
+     3.1,
+     7.4
+    ],
+    "IND": [
+     0.1,
+     0.2,
+     0.4
+    ],
+    "OTH": [
+     7.4,
+     11.9,
+     17.3
+    ]
+   }
+  },
+  {
+   "district": "Stuart",
+   "region": "Regional SA",
+   "incumbent": "IND",
+   "notes": [],
+   "probs": {
+    "ALP": 0.0057,
+    "LIB": 0.4538,
+    "ONP": 0.0001,
+    "IND": 0.5404
+   },
+   "primary": {
+    "ALP": [
+     15.0,
+     19.3,
+     24.1
+    ],
+    "COAL": [
+     33.1,
+     41.0,
+     48.5
+    ],
+    "GRN": [
+     3.9,
+     5.5,
+     7.7
+    ],
+    "ONP": [
+     0.3,
+     2.7,
+     6.5
+    ],
+    "IND": [
+     20.6,
+     30.2,
+     42.1
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Taylor",
+   "region": "Northern Adelaide",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9997,
+    "LIB": 0.0001,
+    "GRN": 0.0001,
+    "ONP": 0.0002
+   },
+   "primary": {
+    "ALP": [
+     48.3,
+     53.4,
+     58.3
+    ],
+    "COAL": [
+     15.9,
+     19.7,
+     23.9
+    ],
+    "GRN": [
+     7.2,
+     9.7,
+     12.7
+    ],
+    "ONP": [
+     0.3,
+     3.0,
+     7.2
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     8.4,
+     13.2,
+     18.9
+    ]
+   }
+  },
+  {
+   "district": "Torrens",
+   "region": "Northern Adelaide",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 0.9977,
+    "LIB": 0.0023
+   },
+   "primary": {
+    "ALP": [
+     47.7,
+     52.3,
+     56.9
+    ],
+    "COAL": [
+     29.8,
+     34.6,
+     39.3
+    ],
+    "GRN": [
+     7.5,
+     10.0,
+     13.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.7,
+     2.9,
+     4.5
+    ]
+   }
+  },
+  {
+   "district": "Unley",
+   "region": "Eastern Adelaide and Hills",
+   "incumbent": "LIB",
+   "notes": [],
+   "probs": {
+    "ALP": 0.0511,
+    "LIB": 0.9489
+   },
+   "primary": {
+    "ALP": [
+     28.6,
+     33.2,
+     38.0
+    ],
+    "COAL": [
+     47.7,
+     53.1,
+     58.3
+    ],
+    "GRN": [
+     10.2,
+     13.6,
+     17.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Waite",
+   "region": "Eastern Adelaide and Hills",
+   "incumbent": "IND",
+   "notes": [
+    "sitting member DULUK Sam elected as LIB, recontesting as an independent"
+   ],
+   "probs": {
+    "ALP": 0.2555,
+    "LIB": 0.568,
+    "GRN": 0.0015,
+    "IND": 0.1749
+   },
+   "primary": {
+    "ALP": [
+     21.6,
+     25.8,
+     30.3
+    ],
+    "COAL": [
+     29.4,
+     34.7,
+     39.9
+    ],
+    "GRN": [
+     8.6,
+     11.5,
+     14.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     13.1,
+     19.1,
+     27.2
+    ],
+    "OTH": [
+     4.7,
+     7.7,
+     11.6
+    ]
+   }
+  },
+  {
+   "district": "West Torrens",
+   "region": "Western Adelaide",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     53.2,
+     57.7,
+     62.2
+    ],
+    "COAL": [
+     23.1,
+     27.5,
+     31.9
+    ],
+    "GRN": [
+     11.3,
+     14.7,
+     18.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Wright",
+   "region": "Northern Adelaide",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2018)"
+   ],
+   "probs": {
+    "ALP": 0.998,
+    "LIB": 0.0021
+   },
+   "primary": {
+    "ALP": [
+     45.2,
+     50.3,
+     55.4
+    ],
+    "COAL": [
+     25.3,
+     30.2,
+     35.2
+    ],
+    "GRN": [
+     6.1,
+     8.3,
+     11.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     6.8,
+     10.7,
+     15.8
+    ]
+   }
+  }
+ ]
+}

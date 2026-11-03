@@ -1,0 +1,259 @@
+{
+ "n_seats": 93,
+ "brier": 0.1664,
+ "log_loss": 0.2818,
+ "favourite_accuracy": 0.8817,
+ "status_quo_accuracy": 0.9032,
+ "seats": {
+  "ALP": {
+   "actual": 45,
+   "median": 47.0,
+   "p90": [
+    39.0,
+    55.0
+   ],
+   "covered_90": true
+  },
+  "COAL": {
+   "actual": 36,
+   "median": 37.0,
+   "p90": [
+    29.0,
+    45.0
+   ],
+   "covered_90": true
+  },
+  "GRN": {
+   "actual": 3,
+   "median": 2.0,
+   "p90": [
+    0.0,
+    4.0
+   ],
+   "covered_90": true
+  },
+  "IND": {
+   "actual": 9,
+   "median": 7.0,
+   "p90": [
+    5.0,
+    9.0
+   ],
+   "covered_90": true
+  }
+ },
+ "calibration": [
+  {
+   "bin": "0.50-0.70",
+   "n": 15,
+   "mean_prob": 0.597,
+   "hit_rate": 0.533
+  },
+  {
+   "bin": "0.70-0.90",
+   "n": 16,
+   "mean_prob": 0.838,
+   "hit_rate": 0.875
+  },
+  {
+   "bin": "0.90-0.99",
+   "n": 31,
+   "mean_prob": 0.961,
+   "hit_rate": 0.935
+  },
+  {
+   "bin": "0.99-1.00",
+   "n": 31,
+   "mean_prob": 0.997,
+   "hit_rate": 1.0
+  }
+ ],
+ "misses": [
+  {
+   "district": "Camden",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.663,
+   "p_won": 0.337,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Goulburn",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.586,
+   "p_won": 0.414,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Kiama",
+   "won": "IND",
+   "favourite": "LIB",
+   "p_fav": 0.642,
+   "p_won": 0.188,
+   "incumbent": "IND"
+  },
+  {
+   "district": "Monaro",
+   "won": "ALP",
+   "favourite": "NAT",
+   "p_fav": 0.917,
+   "p_won": 0.083,
+   "incumbent": "NAT"
+  },
+  {
+   "district": "Oatley",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.508,
+   "p_won": 0.484,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "South Coast",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.698,
+   "p_won": 0.302,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Tweed",
+   "won": "NAT",
+   "favourite": "ALP",
+   "p_fav": 0.529,
+   "p_won": 0.469,
+   "incumbent": "NAT"
+  },
+  {
+   "district": "Upper Hunter",
+   "won": "NAT",
+   "favourite": "ALP",
+   "p_fav": 0.8,
+   "p_won": 0.185,
+   "incumbent": "NAT"
+  },
+  {
+   "district": "Wakehurst",
+   "won": "IND",
+   "favourite": "LIB",
+   "p_fav": 0.983,
+   "p_won": 0.011,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Winston Hills",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.642,
+   "p_won": 0.358,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Wollondilly",
+   "won": "IND",
+   "favourite": "LIB",
+   "p_fav": 0.85,
+   "p_won": 0.116,
+   "incumbent": "LIB"
+  }
+ ],
+ "seat_vote": {
+  "ALP": {
+   "n": 93,
+   "crps": 3.08,
+   "cover50": 0.473,
+   "cover90": 0.882,
+   "pit_hist": [
+    18,
+    16,
+    8,
+    6,
+    10,
+    10,
+    9,
+    7,
+    5,
+    4
+   ]
+  },
+  "COAL": {
+   "n": 93,
+   "crps": 3.473,
+   "cover50": 0.462,
+   "cover90": 0.839,
+   "pit_hist": [
+    18,
+    13,
+    10,
+    17,
+    8,
+    7,
+    6,
+    4,
+    6,
+    4
+   ]
+  },
+  "GRN": {
+   "n": 93,
+   "crps": 1.209,
+   "cover50": 0.624,
+   "cover90": 0.946,
+   "pit_hist": [
+    6,
+    9,
+    10,
+    8,
+    15,
+    12,
+    14,
+    14,
+    3,
+    2
+   ]
+  }
+ },
+ "pendulum_accuracy": 0.8602,
+ "statewide": {
+  "ALP": {
+   "forecast": [
+    33.1,
+    36.9,
+    40.8
+   ],
+   "actual": 36.97
+  },
+  "COAL": {
+   "forecast": [
+    32.3,
+    36.0,
+    39.9
+   ],
+   "actual": 35.37
+  },
+  "GRN": {
+   "forecast": [
+    6.9,
+    9.7,
+    12.5
+   ],
+   "actual": 9.7
+  },
+  "tpp": {
+   "forecast": [
+    48.8,
+    53.3,
+    57.5
+   ],
+   "actual": 54.27
+  }
+ },
+ "outcome": {
+  "alp_majority": 0.5006,
+  "coal_majority": 0.02815,
+  "hung": 0.47125,
+  "alp_most_seats": 0.83145,
+  "coal_most_seats": 0.1428
+ }
+}

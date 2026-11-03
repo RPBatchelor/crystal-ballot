@@ -1,0 +1,92 @@
+{
+ "election": "sa-2022",
+ "run_at": "2026-10-31T10:16:59+00:00",
+ "git_commit": "a691a1253f10bb9f81b5638c0eb1400306477f7d",
+ "uncommitted_changes": false,
+ "config": {
+  "n_per_draw": 5,
+  "seed": 20261128,
+  "poll_error_sd": {
+   "ALP": 2.33,
+   "COAL": 3.05,
+   "GRN": 1.69,
+   "ONP": 2.5
+  },
+  "poll_error_df": 5.0,
+  "poll_error_corr": [
+   [
+    1.0,
+    -0.569,
+    -0.264
+   ],
+   [
+    -0.569,
+    1.0,
+    -0.348
+   ],
+   [
+    -0.264,
+    -0.348,
+    1.0
+   ]
+  ],
+  "poll_error_corr_parties": [
+   "ALP",
+   "COAL",
+   "GRN"
+  ],
+  "poll_bias": {
+   "ALP": -1.08,
+   "COAL": -0.69,
+   "GRN": 0.33
+  },
+  "region_sd": 0.0948,
+  "seat_sd": {
+   "ALP": 0.1903,
+   "COAL": 0.2173,
+   "GRN": 0.1981,
+   "OTH": 0.25,
+   "ONP": 0.25
+  },
+  "seat_df": {
+   "ALP": 7.42,
+   "COAL": 6.32,
+   "GRN": 6.23,
+   "OTH": 6.23
+  },
+  "seat_beta": {
+   "ALP": -0.0454,
+   "COAL": -0.0535,
+   "GRN": -0.0185
+  },
+  "ind_decay_mean": -0.2,
+  "ind_decay_sd": 0.4,
+  "retire_effect": -0.0852,
+  "sophomore_effect": 0.1438,
+  "ind_prior_sd": 0.35,
+  "ind_sophomore_log": 0.15,
+  "ind_retire_log": -1.2
+ },
+ "inputs": {
+  "sa-2022\\booths.csv": "9803b9f49a9abae7",
+  "sa-2022\\districts.csv": "0112bde7529a8a26",
+  "sa-2022\\dop_transfers.csv": "38688cec35056c9a",
+  "sa-2022\\final.csv": "26316d2a93393d7f",
+  "sa-2022\\primary.csv": "c31cd58c2be33312",
+  "sa-2022\\tcp.csv": "26316d2a93393d7f",
+  "sa-2022\\tpp.csv": "d314794c81862613",
+  "sa-2018\\booths.csv": "afd63750025e8df8",
+  "sa-2018\\districts.csv": "af5dcd03a540127e",
+  "sa-2018\\final.csv": "58a644b8f3b0239e",
+  "sa-2018\\primary.csv": "f4609b1c4a346a30",
+  "sa-2018\\tcp.csv": "58a644b8f3b0239e",
+  "sa-2018\\tpp.csv": "26f34d6ad5339efd",
+  "sa-2022-notional\\districts.csv": "3169956e349c0303",
+  "sa-2022-notional\\primary.csv": "782dd6278bf3d5f1",
+  "sa-2022-notional\\venue_map.csv": "68b83c46f57494a4",
+  "polls_sa-2022.csv": "756d438419bca95e",
+  "election_results_sa.csv": "67395f71e00f1fe8"
+ },
+ "hand_set": false,
+ "no_polls": false
+}

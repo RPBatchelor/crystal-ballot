@@ -1,0 +1,61 @@
+{
+ "election": "qld-2015",
+ "run_at": "2026-10-31T10:15:38+00:00",
+ "git_commit": "a691a1253f10bb9f81b5638c0eb1400306477f7d",
+ "uncommitted_changes": false,
+ "config": {
+  "n_per_draw": 5,
+  "seed": 20261128,
+  "poll_error_sd": {
+   "ALP": 2.0,
+   "COAL": 2.0,
+   "GRN": 1.5,
+   "ONP": 2.5
+  },
+  "poll_error_df": 5.0,
+  "poll_error_corr": null,
+  "poll_error_corr_parties": [],
+  "poll_bias": {
+   "ALP": 0.65,
+   "COAL": 0.15,
+   "GRN": -0.75
+  },
+  "region_sd": 0.06,
+  "seat_sd": {
+   "ALP": 0.12,
+   "COAL": 0.12,
+   "GRN": 0.18,
+   "OTH": 0.25,
+   "ONP": 0.25
+  },
+  "seat_df": {},
+  "seat_beta": {},
+  "ind_decay_mean": -0.2,
+  "ind_decay_sd": 0.4,
+  "retire_effect": -0.08,
+  "sophomore_effect": 0.05,
+  "ind_prior_sd": 0.35,
+  "ind_sophomore_log": 0.15,
+  "ind_retire_log": -1.2
+ },
+ "inputs": {
+  "qld-2015\\booths.csv": "f18e72679cf5e5bb",
+  "qld-2015\\districts.csv": "259b1ad3765bb4b2",
+  "qld-2015\\dop_transfers.csv": "f14a0ddcb5545029",
+  "qld-2015\\final.csv": "41683988bce13ed8",
+  "qld-2015\\primary.csv": "567fe3ebd058e525",
+  "qld-2015\\tcp.csv": "41683988bce13ed8",
+  "qld-2015\\tpp.csv": "6aa532ff8b254708",
+  "qld-2012\\booths.csv": "717ef0aa0cb6302b",
+  "qld-2012\\districts.csv": "23af92a5e48f01e1",
+  "qld-2012\\dop_transfers.csv": "d4b176ec36ee42e9",
+  "qld-2012\\final.csv": "b71a8b36090612cf",
+  "qld-2012\\primary.csv": "8ab74c8de842eb4d",
+  "qld-2012\\tcp.csv": "b71a8b36090612cf",
+  "qld-2012\\tpp.csv": "71020ce37f381516",
+  "polls_qld-2015.csv": "cfc51d0bb36dec75",
+  "election_results_qld.csv": "d5036ea5fb14a05b"
+ },
+ "hand_set": true,
+ "no_polls": false
+}

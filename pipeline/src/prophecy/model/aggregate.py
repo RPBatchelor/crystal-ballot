@@ -106,14 +106,46 @@ def prepare(polls: pl.DataFrame, previous: Election, election: Election,
     return data, pollsters, weeks
 
 
+def inits(data: dict, model_name: str, chains: int, seed: int) -> list[dict]:
+    """Starting values, jittered per chain. Stan's default (uniform on (-2, 2) for
+    unconstrained parameters) can start sigma_vel near 7 log-ratio/week; integrated over
+    a ~200-week cycle the trend overflows the softmax, and warmup spends a long time
+    recovering. These start the trend near flat and the error scales near typical."""
+    rng = np.random.default_rng(seed)
+    K1, T, J = data["K"] - 1, data["T"], data["J"]
+    corr = model_name == "poll_aggregator_corr"
+    out = []
+    for _ in range(chains):
+        init = {
+            "eta0_raw": rng.normal(0, 0.5, K1),
+            "z": rng.normal(0, 0.2, (K1, T - 1) if corr else (T - 1, K1)),
+            "sigma_vel": rng.uniform(0.002, 0.01, K1),
+            "phi": rng.uniform(0.6, 0.9),
+            "tau": rng.uniform(0.5, 2.0, K1),
+            "sigma_house": rng.uniform(0.5, 2.0, K1),
+            "house_raw": rng.normal(0, 0.5, (K1, J)),
+        }
+        if corr:
+            init |= {"L_vel": np.eye(K1), "sigma_drift": rng.uniform(0.2, 1.0, K1),
+                     "drift_raw": rng.normal(0, 0.5, (K1, J))}
+        out.append({k: np.asarray(v).tolist() for k, v in init.items()})
+    return out
+
+
 def fit(polls: pl.DataFrame, previous: Election, election: Election,
-        start_share: dict[str, float], seed: int = 20261128, **sample_kw) -> AggregateFit:
+        start_share: dict[str, float], seed: int = 20261128,
+        model_name: str = "poll_aggregator", **sample_kw) -> AggregateFit:
+    """``model_name``: ``poll_aggregator`` (independent party trends, fixed house
+    effects) or ``poll_aggregator_corr`` (correlated trends, drifting house effects)."""
     parties = modelled_parties(polls)
     data, pollsters, weeks = prepare(polls, previous, election, start_share, parties)
-    model = stan_model("poll_aggregator")
-    kw = {"chains": 4, "parallel_chains": 4, "iter_warmup": 1000, "iter_sampling": 1000,
+    model = stan_model(model_name)
+    # With the inits, 500 warmup iterations adapt as well as 1000 (vic-2026, Nov 2026:
+    # same R-hat and ESS, no divergences). adapt_delta below 0.99 brings divergences back.
+    kw = {"chains": 4, "parallel_chains": 4, "iter_warmup": 500, "iter_sampling": 1000,
               "adapt_delta": 0.99, "max_treedepth": 12, "show_progress": False}
     kw.update(sample_kw)
+    kw.setdefault("inits", inits(data, model_name, kw["chains"], seed))
     mcmc = model.sample(data=data, seed=seed, **kw)
 
     draws = mcmc.stan_variables()
@@ -138,6 +170,7 @@ def fit(polls: pl.DataFrame, previous: Election, election: Election,
     }
     return AggregateFit(
         parties=parties, weeks=weeks, shares=shares, house=pl.DataFrame(rows),
-        params={k: draws[k] for k in ("sigma_vel", "phi", "tau", "sigma_house")},
+        params={k: draws[k] for k in ("sigma_vel", "phi", "tau", "sigma_house", "sigma_drift", "Omega_vel")
+                if k in draws},
         diagnostics=diagnostics, pollsters=pollsters,
     )

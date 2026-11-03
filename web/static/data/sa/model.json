@@ -1,0 +1,92 @@
+{
+ "backtests": [],
+ "poll_error": [
+  {
+   "year": 2014,
+   "n_polls": 2,
+   "pollsters": "Newspoll",
+   "ALP_poll": 34.0,
+   "ALP_result": 35.8,
+   "ALP_error": -1.8,
+   "COAL_poll": 47.5,
+   "COAL_result": 44.9,
+   "COAL_error": 2.6,
+   "GRN_poll": 8.0,
+   "GRN_result": 8.7,
+   "GRN_error": -0.7,
+   "tpp_poll": 46.85,
+   "tpp_result": 47.0,
+   "tpp_error": -0.15
+  },
+  {
+   "year": 2018,
+   "n_polls": 3,
+   "pollsters": "Newspoll, ReachTEL",
+   "ALP_poll": 30.67,
+   "ALP_result": 32.8,
+   "ALP_error": -2.13,
+   "COAL_poll": 33.33,
+   "COAL_result": 38.0,
+   "COAL_error": -4.67,
+   "GRN_poll": 7.67,
+   "GRN_result": 6.7,
+   "GRN_error": 0.97,
+   "tpp_poll": 52.0,
+   "tpp_result": 48.1,
+   "tpp_error": 3.9
+  },
+  {
+   "year": 2022,
+   "n_polls": 3,
+   "pollsters": "Newspoll, YouGov",
+   "ALP_poll": 40.33,
+   "ALP_result": 40.0,
+   "ALP_error": 0.33,
+   "COAL_poll": 36.0,
+   "COAL_result": 35.7,
+   "COAL_error": 0.3,
+   "GRN_poll": 10.0,
+   "GRN_result": 9.1,
+   "GRN_error": 0.9,
+   "tpp_poll": 54.33,
+   "tpp_result": 54.6,
+   "tpp_error": -0.27
+  },
+  {
+   "year": 2026,
+   "n_polls": 6,
+   "pollsters": "DemosAU, Fox & Hedgehog, Newspoll, Resolve, Roy Morgan, YouGov",
+   "ALP_poll": 36.67,
+   "ALP_result": 37.5,
+   "ALP_error": -0.83,
+   "COAL_poll": 17.42,
+   "COAL_result": 18.9,
+   "COAL_error": -1.48,
+   "GRN_poll": 11.17,
+   "GRN_result": 10.4,
+   "GRN_error": 0.77,
+   "tpp_poll": 60.0,
+   "tpp_result": 55.7,
+   "tpp_error": 4.3
+  }
+ ],
+ "poll_error_settings": {
+  "sd": {
+   "ALP": 2.0,
+   "COAL": 2.78,
+   "GRN": 1.2
+  },
+  "bias": {
+   "ALP": -0.55,
+   "COAL": -0.41,
+   "GRN": 0.24
+  },
+  "elections": [
+   2014,
+   2018,
+   2022,
+   2026
+  ],
+  "window_days": 28
+ }
+}

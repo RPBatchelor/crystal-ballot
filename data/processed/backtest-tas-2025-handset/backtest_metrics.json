@@ -1,0 +1,305 @@
+{
+ "n_divisions": 5,
+ "seat_brier": 0.3857,
+ "mean_p_actual_seats": 0.6654,
+ "median_abs_error": 0.367,
+ "seats": {
+  "ALP": {
+   "actual": 10,
+   "median": 11.0,
+   "p90": [
+    9.0,
+    14.0
+   ],
+   "covered_90": true
+  },
+  "GRN": {
+   "actual": 5,
+   "median": 6.0,
+   "p90": [
+    4.0,
+    7.0
+   ],
+   "covered_90": true
+  },
+  "IND": {
+   "actual": 5,
+   "median": 2.0,
+   "p90": [
+    0.0,
+    3.0
+   ],
+   "covered_90": false
+  },
+  "LIB": {
+   "actual": 14,
+   "median": 14.0,
+   "p90": [
+    11.0,
+    16.0
+   ],
+   "covered_90": true
+  },
+  "NAT": {
+   "actual": 0,
+   "median": 1.0,
+   "p90": [
+    0.0,
+    1.0
+   ],
+   "covered_90": true
+  },
+  "SFF": {
+   "actual": 1,
+   "median": 1.0,
+   "p90": [
+    0.0,
+    3.0
+   ],
+   "covered_90": true
+  }
+ },
+ "by_division": [
+  {
+   "division": "Bass",
+   "party": "ALP",
+   "actual": 2,
+   "median": 2.0,
+   "mean": 2.29,
+   "p_actual": 0.687
+  },
+  {
+   "division": "Bass",
+   "party": "GRN",
+   "actual": 1,
+   "median": 1.0,
+   "mean": 1.01,
+   "p_actual": 0.956
+  },
+  {
+   "division": "Bass",
+   "party": "IND",
+   "actual": 1,
+   "median": 0.0,
+   "mean": 0.03,
+   "p_actual": 0.027
+  },
+  {
+   "division": "Bass",
+   "party": "LIB",
+   "actual": 3,
+   "median": 3.0,
+   "mean": 2.97,
+   "p_actual": 0.829
+  },
+  {
+   "division": "Bass",
+   "party": "NAT",
+   "actual": 0,
+   "median": 0.0,
+   "mean": 0.04,
+   "p_actual": 0.963
+  },
+  {
+   "division": "Bass",
+   "party": "SFF",
+   "actual": 0,
+   "median": 1.0,
+   "mean": 0.66,
+   "p_actual": 0.337
+  },
+  {
+   "division": "Braddon",
+   "party": "ALP",
+   "actual": 2,
+   "median": 2.0,
+   "mean": 1.89,
+   "p_actual": 0.846
+  },
+  {
+   "division": "Braddon",
+   "party": "GRN",
+   "actual": 0,
+   "median": 1.0,
+   "mean": 0.54,
+   "p_actual": 0.465
+  },
+  {
+   "division": "Braddon",
+   "party": "IND",
+   "actual": 1,
+   "median": 0.0,
+   "mean": 0.36,
+   "p_actual": 0.356
+  },
+  {
+   "division": "Braddon",
+   "party": "LIB",
+   "actual": 4,
+   "median": 3.0,
+   "mean": 3.32,
+   "p_actual": 0.335
+  },
+  {
+   "division": "Braddon",
+   "party": "NAT",
+   "actual": 0,
+   "median": 1.0,
+   "mean": 0.71,
+   "p_actual": 0.288
+  },
+  {
+   "division": "Braddon",
+   "party": "SFF",
+   "actual": 0,
+   "median": 0.0,
+   "mean": 0.18,
+   "p_actual": 0.817
+  },
+  {
+   "division": "Clark",
+   "party": "ALP",
+   "actual": 2,
+   "median": 2.0,
+   "mean": 2.41,
+   "p_actual": 0.583
+  },
+  {
+   "division": "Clark",
+   "party": "GRN",
+   "actual": 2,
+   "median": 2.0,
+   "mean": 1.86,
+   "p_actual": 0.797
+  },
+  {
+   "division": "Clark",
+   "party": "IND",
+   "actual": 1,
+   "median": 1.0,
+   "mean": 0.63,
+   "p_actual": 0.627
+  },
+  {
+   "division": "Clark",
+   "party": "LIB",
+   "actual": 2,
+   "median": 2.0,
+   "mean": 2.1,
+   "p_actual": 0.823
+  },
+  {
+   "division": "Franklin",
+   "party": "ALP",
+   "actual": 2,
+   "median": 2.0,
+   "mean": 2.06,
+   "p_actual": 0.852
+  },
+  {
+   "division": "Franklin",
+   "party": "GRN",
+   "actual": 1,
+   "median": 2.0,
+   "mean": 1.66,
+   "p_actual": 0.346
+  },
+  {
+   "division": "Franklin",
+   "party": "IND",
+   "actual": 2,
+   "median": 1.0,
+   "mean": 0.7,
+   "p_actual": 0.008
+  },
+  {
+   "division": "Franklin",
+   "party": "LIB",
+   "actual": 2,
+   "median": 3.0,
+   "mean": 2.58,
+   "p_actual": 0.42
+  },
+  {
+   "division": "Lyons",
+   "party": "ALP",
+   "actual": 2,
+   "median": 3.0,
+   "mean": 2.58,
+   "p_actual": 0.421
+  },
+  {
+   "division": "Lyons",
+   "party": "GRN",
+   "actual": 1,
+   "median": 1.0,
+   "mean": 0.98,
+   "p_actual": 0.961
+  },
+  {
+   "division": "Lyons",
+   "party": "IND",
+   "actual": 0,
+   "median": 0.0,
+   "mean": 0.04,
+   "p_actual": 0.959
+  },
+  {
+   "division": "Lyons",
+   "party": "LIB",
+   "actual": 3,
+   "median": 3.0,
+   "mean": 2.95,
+   "p_actual": 0.837
+  },
+  {
+   "division": "Lyons",
+   "party": "NAT",
+   "actual": 0,
+   "median": 0.0,
+   "mean": 0.02,
+   "p_actual": 0.984
+  },
+  {
+   "division": "Lyons",
+   "party": "SFF",
+   "actual": 1,
+   "median": 0.0,
+   "mean": 0.44,
+   "p_actual": 0.438
+  }
+ ],
+ "statewide": {
+  "ALP": {
+   "forecast": [
+    22.2,
+    27.1,
+    32.1
+   ],
+   "actual": 25.87
+  },
+  "COAL": {
+   "forecast": [
+    29.8,
+    35.3,
+    40.3
+   ],
+   "actual": 39.87
+  },
+  "GRN": {
+   "forecast": [
+    11.2,
+    14.3,
+    17.5
+   ],
+   "actual": 14.44
+  }
+ },
+ "outcome": {
+  "lib_majority": 0.0145,
+  "alp_majority": 0.0003,
+  "hung": 0.9852,
+  "lib_most_seats": 0.818,
+  "alp_most_seats": 0.1039
+ }
+}

@@ -1,0 +1,4690 @@
+{
+ "n_sims": 20000,
+ "majority": 47,
+ "outcome": {
+  "alp_majority": 0.0414,
+  "coal_majority": 0.8074,
+  "hung": 0.1512,
+  "alp_most_seats": 0.07935,
+  "coal_most_seats": 0.9034
+ },
+ "seats": {
+  "ALP": [
+   34.0,
+   37.0,
+   39.0,
+   42.0,
+   46.0
+  ],
+  "LIB": [
+   29.0,
+   33.0,
+   34.0,
+   35.0,
+   37.0
+  ],
+  "NAT": [
+   13.0,
+   14.0,
+   16.0,
+   17.0,
+   19.0
+  ],
+  "GRN": [
+   0.0,
+   1.0,
+   2.0,
+   3.0,
+   4.0
+  ],
+  "ONP": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "IND": [
+   1.0,
+   2.0,
+   2.0,
+   2.0,
+   3.0
+  ],
+  "OTH": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "COAL": [
+   43.0,
+   47.0,
+   50.0,
+   52.0,
+   55.0
+  ]
+ },
+ "seat_hist": {
+  "ALP": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   3,
+   0,
+   2,
+   3,
+   5,
+   10,
+   28,
+   45,
+   99,
+   199,
+   405,
+   723,
+   1252,
+   1689,
+   2069,
+   2237,
+   2182,
+   2111,
+   1820,
+   1438,
+   1080,
+   796,
+   577,
+   397,
+   255,
+   187,
+   126,
+   71,
+   63,
+   30,
+   24,
+   11,
+   15,
+   11,
+   11,
+   8,
+   6,
+   3,
+   3,
+   0,
+   0,
+   2,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "GRN": [
+   1495,
+   4322,
+   6172,
+   5079,
+   2844,
+   76,
+   9,
+   2,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "ONP": [
+   19853,
+   131,
+   10,
+   2,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IND": [
+   89,
+   2527,
+   14627,
+   2612,
+   142,
+   2,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "COAL": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   2,
+   0,
+   1,
+   3,
+   5,
+   8,
+   6,
+   10,
+   12,
+   18,
+   23,
+   30,
+   54,
+   65,
+   113,
+   167,
+   280,
+   410,
+   618,
+   841,
+   1184,
+   1595,
+   1927,
+   2219,
+   2400,
+   2204,
+   1867,
+   1567,
+   1030,
+   619,
+   364,
+   162,
+   100,
+   53,
+   14,
+   12,
+   6,
+   3,
+   2,
+   0,
+   1,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "statewide_primary": {
+  "ALP": [
+   32.2,
+   35.5,
+   38.8
+  ],
+  "COAL": [
+   36.5,
+   40.1,
+   43.6
+  ],
+  "GRN": [
+   6.3,
+   9.2,
+   12.0
+  ],
+  "ONP": [
+   1.6,
+   5.7,
+   9.5
+  ],
+  "IND": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "OTH": [
+   7.5,
+   9.5,
+   11.8
+  ]
+ },
+ "tpp_alp": [
+  44.4,
+  48.9,
+  53.5
+ ],
+ "districts": [
+  {
+   "district": "Albury",
+   "region": "Inland NSW",
+   "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0062,
+    "LIB": 0.9938
+   },
+   "primary": {
+    "ALP": [
+     31.7,
+     35.8,
+     39.9
+    ],
+    "COAL": [
+     49.5,
+     53.8,
+     58.0
+    ],
+    "GRN": [
+     3.6,
+     5.3,
+     7.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.9,
+     4.8,
+     7.3
+    ]
+   }
+  },
+  {
+   "district": "Auburn",
+   "region": "Western Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9929,
+    "LIB": 0.0072
+   },
+   "primary": {
+    "ALP": [
+     43.2,
+     47.8,
+     52.2
+    ],
+    "COAL": [
+     28.3,
+     32.4,
+     36.7
+    ],
+    "GRN": [
+     3.9,
+     5.8,
+     8.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     3.0,
+     5.0,
+     8.1
+    ],
+    "OTH": [
+     5.2,
+     8.3,
+     12.3
+    ]
+   }
+  },
+  {
+   "district": "Ballina",
+   "region": "North Coast",
+   "incumbent": "GRN",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.4062,
+    "NAT": 0.1772,
+    "GRN": 0.4167
+   },
+   "primary": {
+    "ALP": [
+     26.2,
+     30.6,
+     35.7
+    ],
+    "COAL": [
+     31.9,
+     36.9,
+     42.2
+    ],
+    "GRN": [
+     23.4,
+     30.0,
+     36.3
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.3,
+     2.2,
+     3.5
+    ]
+   }
+  },
+  {
+   "district": "Balmain",
+   "region": "Inner Sydney",
+   "incumbent": "GRN",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.3735,
+    "GRN": 0.6264
+   },
+   "primary": {
+    "ALP": [
+     30.3,
+     35.0,
+     40.2
+    ],
+    "COAL": [
+     18.1,
+     21.6,
+     25.8
+    ],
+    "GRN": [
+     30.7,
+     37.3,
+     43.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.5,
+     5.7,
+     8.7
+    ]
+   }
+  },
+  {
+   "district": "Bankstown",
+   "region": "Western Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 1.0,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     61.7,
+     65.5,
+     69.2
+    ],
+    "COAL": [
+     25.3,
+     28.9,
+     32.7
+    ],
+    "GRN": [
+     2.9,
+     4.3,
+     6.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.6,
+     1.1,
+     1.8
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Barwon",
+   "region": "Inland NSW",
+   "incumbent": "NAT",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0344,
+    "NAT": 0.9554,
+    "IND": 0.0102
+   },
+   "primary": {
+    "ALP": [
+     23.5,
+     27.9,
+     32.5
+    ],
+    "COAL": [
+     39.9,
+     45.7,
+     50.9
+    ],
+    "GRN": [
+     4.1,
+     6.0,
+     8.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     9.9,
+     15.5,
+     23.5
+    ],
+    "OTH": [
+     2.3,
+     3.9,
+     6.1
+    ]
+   }
+  },
+  {
+   "district": "Bathurst",
+   "region": "Inland NSW",
+   "incumbent": "NAT",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0004,
+    "NAT": 0.9996
+   },
+   "primary": {
+    "ALP": [
+     26.2,
+     30.0,
+     33.8
+    ],
+    "COAL": [
+     53.7,
+     57.8,
+     61.8
+    ],
+    "GRN": [
+     5.9,
+     8.4,
+     11.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.1,
+     3.4,
+     5.3
+    ]
+   }
+  },
+  {
+   "district": "Baulkham Hills",
+   "region": "Western Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "LIB": 1.0
+   },
+   "primary": {
+    "ALP": [
+     21.0,
+     24.3,
+     27.9
+    ],
+    "COAL": [
+     58.9,
+     62.9,
+     66.7
+    ],
+    "GRN": [
+     5.1,
+     7.3,
+     9.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.2,
+     5.1,
+     7.8
+    ]
+   }
+  },
+  {
+   "district": "Bega",
+   "region": "Illawarra and South Coast",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0357,
+    "LIB": 0.9643
+   },
+   "primary": {
+    "ALP": [
+     31.8,
+     35.9,
+     40.1
+    ],
+    "COAL": [
+     46.5,
+     50.8,
+     55.0
+    ],
+    "GRN": [
+     6.6,
+     9.3,
+     12.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.2,
+     3.6,
+     5.7
+    ]
+   }
+  },
+  {
+   "district": "Blacktown",
+   "region": "Western Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 1.0,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     51.2,
+     55.4,
+     59.5
+    ],
+    "COAL": [
+     21.6,
+     25.2,
+     29.0
+    ],
+    "GRN": [
+     3.7,
+     5.5,
+     7.5
+    ],
+    "ONP": [
+     2.4,
+     5.4,
+     9.1
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     5.0,
+     8.0,
+     11.8
+    ]
+   }
+  },
+  {
+   "district": "Blue Mountains",
+   "region": "Western Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.9991,
+    "LIB": 0.0008,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     42.9,
+     47.5,
+     52.1
+    ],
+    "COAL": [
+     28.3,
+     32.6,
+     36.9
+    ],
+    "GRN": [
+     11.4,
+     15.6,
+     20.3
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.4,
+     3.9,
+     6.1
+    ]
+   }
+  },
+  {
+   "district": "Cabramatta",
+   "region": "Western Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     65.3,
+     69.0,
+     72.4
+    ],
+    "COAL": [
+     22.5,
+     25.8,
+     29.5
+    ],
+    "GRN": [
+     3.4,
+     5.0,
+     6.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Camden",
+   "region": "Southern and South-West Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0001,
+    "LIB": 0.9999
+   },
+   "primary": {
+    "ALP": [
+     25.2,
+     28.9,
+     32.9
+    ],
+    "COAL": [
+     50.2,
+     54.5,
+     58.7
+    ],
+    "GRN": [
+     3.2,
+     4.7,
+     6.6
+    ],
+    "ONP": [
+     2.5,
+     5.6,
+     9.4
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.5,
+     5.7,
+     8.6
+    ]
+   }
+  },
+  {
+   "district": "Campbelltown",
+   "region": "Southern and South-West Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.9998,
+    "LIB": 0.0002
+   },
+   "primary": {
+    "ALP": [
+     51.0,
+     55.2,
+     59.2
+    ],
+    "COAL": [
+     29.6,
+     33.5,
+     37.6
+    ],
+    "GRN": [
+     3.5,
+     5.1,
+     7.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.7,
+     5.9,
+     8.9
+    ]
+   }
+  },
+  {
+   "district": "Canterbury",
+   "region": "Southern and South-West Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 1.0,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     50.3,
+     55.1,
+     59.6
+    ],
+    "COAL": [
+     19.8,
+     23.2,
+     27.0
+    ],
+    "GRN": [
+     6.2,
+     8.9,
+     12.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     8.1,
+     12.4,
+     17.7
+    ]
+   }
+  },
+  {
+   "district": "Castle Hill",
+   "region": "Western Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "LIB": 1.0
+   },
+   "primary": {
+    "ALP": [
+     14.9,
+     17.6,
+     20.5
+    ],
+    "COAL": [
+     66.3,
+     69.9,
+     73.4
+    ],
+    "GRN": [
+     4.4,
+     6.4,
+     8.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.6,
+     5.7,
+     8.7
+    ]
+   }
+  },
+  {
+   "district": "Cessnock",
+   "region": "Hunter and Central Coast",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     62.9,
+     66.7,
+     70.3
+    ],
+    "COAL": [
+     16.7,
+     19.6,
+     22.9
+    ],
+    "GRN": [
+     5.3,
+     7.6,
+     10.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.5,
+     5.7,
+     8.6
+    ]
+   }
+  },
+  {
+   "district": "Charlestown",
+   "region": "Hunter and Central Coast",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 1.0,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     52.7,
+     57.1,
+     61.4
+    ],
+    "COAL": [
+     24.5,
+     28.4,
+     32.5
+    ],
+    "GRN": [
+     7.7,
+     10.9,
+     14.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.0,
+     3.3,
+     5.2
+    ]
+   }
+  },
+  {
+   "district": "Clarence",
+   "region": "North Coast",
+   "incumbent": "NAT",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0262,
+    "NAT": 0.9738
+   },
+   "primary": {
+    "ALP": [
+     27.4,
+     31.5,
+     35.7
+    ],
+    "COAL": [
+     43.6,
+     48.3,
+     52.9
+    ],
+    "GRN": [
+     5.9,
+     8.5,
+     11.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     4.7,
+     7.6,
+     12.3
+    ],
+    "OTH": [
+     1.9,
+     3.2,
+     5.0
+    ]
+   }
+  },
+  {
+   "district": "Coffs Harbour",
+   "region": "North Coast",
+   "incumbent": "NAT",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0072,
+    "NAT": 0.9928
+   },
+   "primary": {
+    "ALP": [
+     25.7,
+     29.6,
+     33.9
+    ],
+    "COAL": [
+     46.2,
+     50.9,
+     55.4
+    ],
+    "GRN": [
+     9.4,
+     13.2,
+     17.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.7,
+     5.9,
+     9.1
+    ]
+   }
+  },
+  {
+   "district": "Coogee",
+   "region": "Inner Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.3913,
+    "LIB": 0.6071,
+    "GRN": 0.0015
+   },
+   "primary": {
+    "ALP": [
+     31.6,
+     35.8,
+     40.3
+    ],
+    "COAL": [
+     39.4,
+     44.1,
+     48.8
+    ],
+    "GRN": [
+     12.9,
+     17.5,
+     22.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.3,
+     2.2,
+     3.5
+    ]
+   }
+  },
+  {
+   "district": "Cootamundra",
+   "region": "Inland NSW",
+   "incumbent": "NAT",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0001,
+    "NAT": 1.0
+   },
+   "primary": {
+    "ALP": [
+     24.8,
+     28.3,
+     32.0
+    ],
+    "COAL": [
+     60.1,
+     63.9,
+     67.6
+    ],
+    "GRN": [
+     2.1,
+     3.2,
+     4.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.7,
+     4.4,
+     6.7
+    ]
+   }
+  },
+  {
+   "district": "Cronulla",
+   "region": "Southern and South-West Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0001,
+    "LIB": 1.0
+   },
+   "primary": {
+    "ALP": [
+     20.8,
+     24.1,
+     27.8
+    ],
+    "COAL": [
+     56.0,
+     60.3,
+     64.3
+    ],
+    "GRN": [
+     5.9,
+     8.4,
+     11.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     4.2,
+     6.7,
+     10.1
+    ]
+   }
+  },
+  {
+   "district": "Davidson",
+   "region": "North Shore and Northern Beaches",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "LIB": 1.0
+   },
+   "primary": {
+    "ALP": [
+     11.7,
+     14.1,
+     16.7
+    ],
+    "COAL": [
+     64.9,
+     69.0,
+     72.9
+    ],
+    "GRN": [
+     9.1,
+     12.6,
+     16.5
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.5,
+     4.0,
+     6.2
+    ]
+   }
+  },
+  {
+   "district": "Drummoyne",
+   "region": "Inner Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0001,
+    "LIB": 1.0
+   },
+   "primary": {
+    "ALP": [
+     22.6,
+     26.1,
+     29.9
+    ],
+    "COAL": [
+     55.1,
+     59.3,
+     63.4
+    ],
+    "GRN": [
+     7.2,
+     10.2,
+     13.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.4,
+     4.0,
+     6.2
+    ]
+   }
+  },
+  {
+   "district": "Dubbo",
+   "region": "Inland NSW",
+   "incumbent": "NAT",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0001,
+    "NAT": 1.0
+   },
+   "primary": {
+    "ALP": [
+     23.2,
+     26.8,
+     30.7
+    ],
+    "COAL": [
+     52.8,
+     57.3,
+     61.5
+    ],
+    "GRN": [
+     2.9,
+     4.2,
+     5.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     3.5,
+     5.7,
+     9.2
+    ],
+    "OTH": [
+     3.2,
+     5.3,
+     8.1
+    ]
+   }
+  },
+  {
+   "district": "East Hills",
+   "region": "Southern and South-West Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9262,
+    "LIB": 0.0738
+   },
+   "primary": {
+    "ALP": [
+     42.6,
+     47.1,
+     51.3
+    ],
+    "COAL": [
+     35.0,
+     39.3,
+     43.6
+    ],
+    "GRN": [
+     4.3,
+     6.3,
+     8.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     4.4,
+     7.0,
+     10.5
+    ]
+   }
+  },
+  {
+   "district": "Epping",
+   "region": "North Shore and Northern Beaches",
+   "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0008,
+    "LIB": 0.999,
+    "GRN": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     19.4,
+     22.9,
+     26.7
+    ],
+    "COAL": [
+     46.2,
+     51.1,
+     55.8
+    ],
+    "GRN": [
+     10.0,
+     13.9,
+     18.3
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     3.8,
+     6.1,
+     9.9
+    ],
+    "OTH": [
+     3.1,
+     5.1,
+     7.9
+    ]
+   }
+  },
+  {
+   "district": "Fairfield",
+   "region": "Western Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     53.4,
+     58.5,
+     63.2
+    ],
+    "COAL": [
+     17.3,
+     20.5,
+     24.0
+    ],
+    "GRN": [
+     3.2,
+     4.7,
+     6.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     10.8,
+     16.0,
+     22.0
+    ]
+   }
+  },
+  {
+   "district": "Gosford",
+   "region": "Hunter and Central Coast",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.8922,
+    "LIB": 0.1077
+   },
+   "primary": {
+    "ALP": [
+     41.5,
+     45.9,
+     50.3
+    ],
+    "COAL": [
+     36.3,
+     40.7,
+     45.2
+    ],
+    "GRN": [
+     6.2,
+     8.8,
+     11.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.6,
+     4.2,
+     6.5
+    ]
+   }
+  },
+  {
+   "district": "Goulburn",
+   "region": "Inland NSW",
+   "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.3239,
+    "LIB": 0.6758,
+    "ONP": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     32.2,
+     36.5,
+     40.9
+    ],
+    "COAL": [
+     37.2,
+     41.6,
+     46.1
+    ],
+    "GRN": [
+     4.9,
+     7.1,
+     9.8
+    ],
+    "ONP": [
+     2.5,
+     5.6,
+     9.5
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     5.4,
+     8.5,
+     12.6
+    ]
+   }
+  },
+  {
+   "district": "Granville",
+   "region": "Western Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.9691,
+    "LIB": 0.0309
+   },
+   "primary": {
+    "ALP": [
+     41.2,
+     45.9,
+     50.5
+    ],
+    "COAL": [
+     29.3,
+     33.6,
+     37.9
+    ],
+    "GRN": [
+     3.4,
+     4.9,
+     6.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     1.0,
+     1.6,
+     2.7
+    ],
+    "OTH": [
+     8.9,
+     13.5,
+     18.9
+    ]
+   }
+  },
+  {
+   "district": "Hawkesbury",
+   "region": "Western Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "sitting member PERROTTET Dominic (LIB) contesting Epping",
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0004,
+    "LIB": 0.9996
+   },
+   "primary": {
+    "ALP": [
+     22.1,
+     25.9,
+     29.8
+    ],
+    "COAL": [
+     48.6,
+     53.4,
+     57.9
+    ],
+    "GRN": [
+     5.0,
+     7.3,
+     10.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     4.9,
+     8.0,
+     12.7
+    ],
+    "OTH": [
+     2.8,
+     4.6,
+     7.2
+    ]
+   }
+  },
+  {
+   "district": "Heathcote",
+   "region": "Southern and South-West Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0794,
+    "LIB": 0.9206
+   },
+   "primary": {
+    "ALP": [
+     33.0,
+     37.2,
+     41.4
+    ],
+    "COAL": [
+     44.9,
+     49.2,
+     53.6
+    ],
+    "GRN": [
+     6.2,
+     8.9,
+     12.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.6,
+     4.3,
+     6.7
+    ]
+   }
+  },
+  {
+   "district": "Heffron",
+   "region": "Inner Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.9999,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     44.6,
+     49.3,
+     54.0
+    ],
+    "COAL": [
+     22.1,
+     25.9,
+     30.0
+    ],
+    "GRN": [
+     14.8,
+     19.8,
+     25.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.9,
+     4.6,
+     7.1
+    ]
+   }
+  },
+  {
+   "district": "Holsworthy",
+   "region": "Southern and South-West Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.1965,
+    "LIB": 0.8034,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     34.3,
+     38.5,
+     42.7
+    ],
+    "COAL": [
+     40.9,
+     45.3,
+     49.7
+    ],
+    "GRN": [
+     2.7,
+     4.0,
+     5.6
+    ],
+    "ONP": [
+     2.5,
+     5.5,
+     9.5
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.7,
+     6.0,
+     9.1
+    ]
+   }
+  },
+  {
+   "district": "Hornsby",
+   "region": "North Shore and Northern Beaches",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "LIB": 0.9999,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     17.2,
+     20.3,
+     23.8
+    ],
+    "COAL": [
+     49.1,
+     53.7,
+     58.2
+    ],
+    "GRN": [
+     8.8,
+     12.4,
+     16.3
+    ],
+    "ONP": [
+     2.5,
+     5.5,
+     9.3
+    ],
+    "IND": [
+     2.4,
+     4.0,
+     6.5
+    ],
+    "OTH": [
+     2.0,
+     3.3,
+     5.1
+    ]
+   }
+  },
+  {
+   "district": "Keira",
+   "region": "Illawarra and South Coast",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 1.0,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     53.7,
+     58.0,
+     62.2
+    ],
+    "COAL": [
+     20.4,
+     23.8,
+     27.5
+    ],
+    "GRN": [
+     9.3,
+     12.9,
+     17.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.0,
+     4.8,
+     7.4
+    ]
+   }
+  },
+  {
+   "district": "Kiama",
+   "region": "Illawarra and South Coast",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0526,
+    "LIB": 0.9474
+   },
+   "primary": {
+    "ALP": [
+     31.0,
+     35.1,
+     39.3
+    ],
+    "COAL": [
+     44.8,
+     49.2,
+     53.5
+    ],
+    "GRN": [
+     7.2,
+     10.3,
+     13.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.1,
+     5.1,
+     7.7
+    ]
+   }
+  },
+  {
+   "district": "Kogarah",
+   "region": "Southern and South-West Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.997,
+    "LIB": 0.0019,
+    "ONP": 0.0011
+   },
+   "primary": {
+    "ALP": [
+     42.9,
+     47.5,
+     52.0
+    ],
+    "COAL": [
+     24.5,
+     28.4,
+     32.4
+    ],
+    "GRN": [
+     3.8,
+     5.6,
+     7.8
+    ],
+    "ONP": [
+     2.4,
+     5.4,
+     9.2
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     8.2,
+     12.5,
+     17.8
+    ]
+   }
+  },
+  {
+   "district": "Ku-ring-gai",
+   "region": "North Shore and Northern Beaches",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "LIB": 1.0
+   },
+   "primary": {
+    "ALP": [
+     15.3,
+     18.2,
+     21.5
+    ],
+    "COAL": [
+     56.9,
+     61.4,
+     65.7
+    ],
+    "GRN": [
+     10.8,
+     14.9,
+     19.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.1,
+     5.1,
+     7.8
+    ]
+   }
+  },
+  {
+   "district": "Lake Macquarie",
+   "region": "Hunter and Central Coast",
+   "incumbent": "IND",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.1009,
+    "IND": 0.8991
+   },
+   "primary": {
+    "ALP": [
+     22.7,
+     30.3,
+     38.3
+    ],
+    "COAL": [
+     9.3,
+     12.8,
+     16.9
+    ],
+    "GRN": [
+     2.6,
+     4.1,
+     6.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     34.9,
+     47.5,
+     60.4
+    ],
+    "OTH": [
+     2.5,
+     4.4,
+     7.3
+    ]
+   }
+  },
+  {
+   "district": "Lakemba",
+   "region": "Southern and South-West Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     57.0,
+     61.8,
+     66.3
+    ],
+    "COAL": [
+     14.6,
+     17.4,
+     20.5
+    ],
+    "GRN": [
+     4.7,
+     6.7,
+     9.3
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     9.0,
+     13.6,
+     19.1
+    ]
+   }
+  },
+  {
+   "district": "Lane Cove",
+   "region": "North Shore and Northern Beaches",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0001,
+    "LIB": 0.9999
+   },
+   "primary": {
+    "ALP": [
+     19.0,
+     22.5,
+     26.2
+    ],
+    "COAL": [
+     51.1,
+     55.7,
+     60.1
+    ],
+    "GRN": [
+     10.1,
+     14.0,
+     18.3
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     2.2,
+     3.7,
+     6.1
+    ],
+    "OTH": [
+     2.2,
+     3.6,
+     5.6
+    ]
+   }
+  },
+  {
+   "district": "Lismore",
+   "region": "North Coast",
+   "incumbent": "NAT",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.3741,
+    "NAT": 0.3966,
+    "GRN": 0.2293
+   },
+   "primary": {
+    "ALP": [
+     25.3,
+     29.5,
+     34.2
+    ],
+    "COAL": [
+     33.5,
+     38.3,
+     43.3
+    ],
+    "GRN": [
+     20.3,
+     26.3,
+     32.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.4,
+     5.5,
+     8.5
+    ]
+   }
+  },
+  {
+   "district": "Liverpool",
+   "region": "Western Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     60.2,
+     64.7,
+     68.8
+    ],
+    "COAL": [
+     16.9,
+     20.0,
+     23.3
+    ],
+    "GRN": [
+     2.6,
+     3.8,
+     5.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     7.3,
+     11.1,
+     16.0
+    ]
+   }
+  },
+  {
+   "district": "Londonderry",
+   "region": "Western Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.9998,
+    "LIB": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     51.5,
+     55.8,
+     59.8
+    ],
+    "COAL": [
+     27.7,
+     31.6,
+     35.6
+    ],
+    "GRN": [
+     3.0,
+     4.4,
+     6.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     5.0,
+     7.9,
+     11.7
+    ]
+   }
+  },
+  {
+   "district": "Macquarie Fields",
+   "region": "Southern and South-West Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.9998,
+    "LIB": 0.0002
+   },
+   "primary": {
+    "ALP": [
+     51.6,
+     55.8,
+     59.8
+    ],
+    "COAL": [
+     28.3,
+     32.2,
+     36.2
+    ],
+    "GRN": [
+     2.3,
+     3.4,
+     4.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     2.0,
+     3.4,
+     5.5
+    ],
+    "OTH": [
+     2.9,
+     4.7,
+     7.2
+    ]
+   }
+  },
+  {
+   "district": "Maitland",
+   "region": "Hunter and Central Coast",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.9998,
+    "LIB": 0.0001,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     51.6,
+     56.5,
+     61.2
+    ],
+    "COAL": [
+     21.6,
+     25.6,
+     29.8
+    ],
+    "GRN": [
+     4.7,
+     7.0,
+     9.7
+    ],
+    "ONP": [
+     3.0,
+     6.8,
+     11.5
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.1,
+     3.5,
+     5.5
+    ]
+   }
+  },
+  {
+   "district": "Manly",
+   "region": "North Shore and Northern Beaches",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "LIB": 1.0
+   },
+   "primary": {
+    "ALP": [
+     11.9,
+     14.3,
+     17.1
+    ],
+    "COAL": [
+     63.0,
+     67.4,
+     71.5
+    ],
+    "GRN": [
+     11.9,
+     16.2,
+     20.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.1,
+     1.9,
+     3.0
+    ]
+   }
+  },
+  {
+   "district": "Maroubra",
+   "region": "Inner Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 1.0,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     53.2,
+     57.4,
+     61.4
+    ],
+    "COAL": [
+     27.2,
+     31.1,
+     35.1
+    ],
+    "GRN": [
+     5.6,
+     8.1,
+     10.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.9,
+     3.2,
+     5.0
+    ]
+   }
+  },
+  {
+   "district": "Miranda",
+   "region": "Southern and South-West Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0028,
+    "LIB": 0.9971,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     27.3,
+     31.2,
+     35.3
+    ],
+    "COAL": [
+     46.6,
+     51.0,
+     55.3
+    ],
+    "GRN": [
+     4.3,
+     6.2,
+     8.6
+    ],
+    "ONP": [
+     2.5,
+     5.5,
+     9.4
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.3,
+     5.4,
+     8.2
+    ]
+   }
+  },
+  {
+   "district": "Monaro",
+   "region": "Inland NSW",
+   "incumbent": "NAT",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.5501,
+    "NAT": 0.45
+   },
+   "primary": {
+    "ALP": [
+     39.8,
+     44.1,
+     48.2
+    ],
+    "COAL": [
+     41.6,
+     45.8,
+     50.0
+    ],
+    "GRN": [
+     5.0,
+     7.2,
+     9.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.6,
+     2.7,
+     4.2
+    ]
+   }
+  },
+  {
+   "district": "Mount Druitt",
+   "region": "Western Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     57.2,
+     61.4,
+     65.3
+    ],
+    "COAL": [
+     21.7,
+     25.1,
+     28.8
+    ],
+    "GRN": [
+     3.1,
+     4.6,
+     6.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     5.4,
+     8.5,
+     12.5
+    ]
+   }
+  },
+  {
+   "district": "Mulgoa",
+   "region": "Western Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0369,
+    "LIB": 0.963
+   },
+   "primary": {
+    "ALP": [
+     34.1,
+     38.1,
+     42.3
+    ],
+    "COAL": [
+     46.3,
+     50.6,
+     54.8
+    ],
+    "GRN": [
+     2.6,
+     3.8,
+     5.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     4.5,
+     7.1,
+     10.6
+    ]
+   }
+  },
+  {
+   "district": "Murray",
+   "region": "Inland NSW",
+   "incumbent": "NAT",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0001,
+    "NAT": 0.9794,
+    "ONP": 0.0015,
+    "IND": 0.0189
+   },
+   "primary": {
+    "ALP": [
+     14.5,
+     17.9,
+     21.6
+    ],
+    "COAL": [
+     43.2,
+     50.0,
+     56.1
+    ],
+    "GRN": [
+     1.3,
+     2.0,
+     2.9
+    ],
+    "ONP": [
+     2.6,
+     5.7,
+     9.8
+    ],
+    "IND": [
+     12.9,
+     20.0,
+     29.3
+    ],
+    "OTH": [
+     1.9,
+     3.2,
+     5.1
+    ]
+   }
+  },
+  {
+   "district": "Myall Lakes",
+   "region": "North Coast",
+   "incumbent": "NAT",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0736,
+    "NAT": 0.9217,
+    "IND": 0.0046
+   },
+   "primary": {
+    "ALP": [
+     26.7,
+     31.2,
+     35.7
+    ],
+    "COAL": [
+     39.6,
+     44.9,
+     49.9
+    ],
+    "GRN": [
+     4.2,
+     6.2,
+     8.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     8.4,
+     13.5,
+     20.7
+    ],
+    "OTH": [
+     2.0,
+     3.3,
+     5.2
+    ]
+   }
+  },
+  {
+   "district": "Newcastle",
+   "region": "Hunter and Central Coast",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.9976,
+    "LIB": 0.0021,
+    "GRN": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     40.4,
+     45.0,
+     49.7
+    ],
+    "COAL": [
+     27.4,
+     31.6,
+     35.9
+    ],
+    "GRN": [
+     12.6,
+     17.2,
+     22.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.6,
+     5.8,
+     8.8
+    ]
+   }
+  },
+  {
+   "district": "Newtown",
+   "region": "Inner Sydney",
+   "incumbent": "GRN",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0917,
+    "GRN": 0.9083
+   },
+   "primary": {
+    "ALP": [
+     29.1,
+     33.6,
+     38.9
+    ],
+    "COAL": [
+     12.4,
+     15.1,
+     18.4
+    ],
+    "GRN": [
+     38.8,
+     45.4,
+     51.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.4,
+     5.6,
+     8.5
+    ]
+   }
+  },
+  {
+   "district": "North Shore",
+   "region": "North Shore and Northern Beaches",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "LIB": 1.0
+   },
+   "primary": {
+    "ALP": [
+     12.9,
+     15.6,
+     18.6
+    ],
+    "COAL": [
+     52.1,
+     57.2,
+     62.1
+    ],
+    "GRN": [
+     10.0,
+     13.9,
+     18.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     5.6,
+     9.0,
+     14.2
+    ],
+    "OTH": [
+     2.0,
+     3.4,
+     5.3
+    ]
+   }
+  },
+  {
+   "district": "Northern Tablelands",
+   "region": "Inland NSW",
+   "incumbent": "NAT",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "NAT": 1.0
+   },
+   "primary": {
+    "ALP": [
+     15.8,
+     18.7,
+     21.8
+    ],
+    "COAL": [
+     66.8,
+     70.5,
+     74.0
+    ],
+    "GRN": [
+     4.9,
+     7.1,
+     9.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.1,
+     3.4,
+     5.3
+    ]
+   }
+  },
+  {
+   "district": "Oatley",
+   "region": "Southern and South-West Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.1665,
+    "LIB": 0.8335,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     33.3,
+     37.4,
+     41.6
+    ],
+    "COAL": [
+     41.4,
+     45.7,
+     49.9
+    ],
+    "GRN": [
+     4.4,
+     6.5,
+     8.9
+    ],
+    "ONP": [
+     2.4,
+     5.4,
+     9.2
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.7,
+     4.5,
+     6.9
+    ]
+   }
+  },
+  {
+   "district": "Orange",
+   "region": "Inland NSW",
+   "incumbent": "SFF",
+   "notes": [
+    "won by SFF at a by-election",
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0001,
+    "NAT": 1.0
+   },
+   "primary": {
+    "ALP": [
+     22.4,
+     25.8,
+     29.4
+    ],
+    "COAL": [
+     59.4,
+     63.3,
+     67.1
+    ],
+    "GRN": [
+     4.3,
+     6.3,
+     8.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.6,
+     4.3,
+     6.6
+    ]
+   }
+  },
+  {
+   "district": "Oxley",
+   "region": "North Coast",
+   "incumbent": "NAT",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0084,
+    "NAT": 0.9915,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     25.6,
+     29.5,
+     33.7
+    ],
+    "COAL": [
+     46.0,
+     50.6,
+     55.1
+    ],
+    "GRN": [
+     10.3,
+     14.2,
+     18.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.3,
+     5.3,
+     8.1
+    ]
+   }
+  },
+  {
+   "district": "Parramatta",
+   "region": "Western Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0053,
+    "LIB": 0.9947
+   },
+   "primary": {
+    "ALP": [
+     27.8,
+     31.7,
+     35.7
+    ],
+    "COAL": [
+     47.3,
+     51.6,
+     55.9
+    ],
+    "GRN": [
+     5.4,
+     7.8,
+     10.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     2.2,
+     3.7,
+     6.0
+    ],
+    "OTH": [
+     2.8,
+     4.6,
+     7.0
+    ]
+   }
+  },
+  {
+   "district": "Penrith",
+   "region": "Western Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.2344,
+    "LIB": 0.7604,
+    "ONP": 0.0052,
+    "IND": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     29.9,
+     34.2,
+     38.5
+    ],
+    "COAL": [
+     36.1,
+     40.7,
+     45.4
+    ],
+    "GRN": [
+     3.3,
+     4.8,
+     6.8
+    ],
+    "ONP": [
+     2.4,
+     5.5,
+     9.3
+    ],
+    "IND": [
+     5.1,
+     8.3,
+     13.2
+    ],
+    "OTH": [
+     3.3,
+     5.3,
+     8.1
+    ]
+   }
+  },
+  {
+   "district": "Pittwater",
+   "region": "North Shore and Northern Beaches",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "LIB": 1.0
+   },
+   "primary": {
+    "ALP": [
+     11.8,
+     14.2,
+     16.9
+    ],
+    "COAL": [
+     62.8,
+     67.1,
+     71.2
+    ],
+    "GRN": [
+     11.1,
+     15.1,
+     19.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.0,
+     3.2,
+     5.1
+    ]
+   }
+  },
+  {
+   "district": "Port Macquarie",
+   "region": "North Coast",
+   "incumbent": "NAT",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "NAT": 1.0
+   },
+   "primary": {
+    "ALP": [
+     22.9,
+     26.5,
+     30.2
+    ],
+    "COAL": [
+     56.2,
+     60.3,
+     64.3
+    ],
+    "GRN": [
+     5.7,
+     8.2,
+     11.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.8,
+     4.7,
+     7.2
+    ]
+   }
+  },
+  {
+   "district": "Port Stephens",
+   "region": "Hunter and Central Coast",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.9959,
+    "LIB": 0.0041
+   },
+   "primary": {
+    "ALP": [
+     47.7,
+     52.0,
+     56.1
+    ],
+    "COAL": [
+     32.5,
+     36.6,
+     40.7
+    ],
+    "GRN": [
+     4.2,
+     6.1,
+     8.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.0,
+     5.0,
+     7.6
+    ]
+   }
+  },
+  {
+   "district": "Prospect",
+   "region": "Western Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.9935,
+    "LIB": 0.0066
+   },
+   "primary": {
+    "ALP": [
+     45.2,
+     49.7,
+     54.1
+    ],
+    "COAL": [
+     30.1,
+     34.2,
+     38.5
+    ],
+    "GRN": [
+     4.3,
+     6.2,
+     8.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     6.0,
+     9.5,
+     13.8
+    ]
+   }
+  },
+  {
+   "district": "Riverstone",
+   "region": "Western Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0046,
+    "LIB": 0.9954
+   },
+   "primary": {
+    "ALP": [
+     33.2,
+     37.3,
+     41.6
+    ],
+    "COAL": [
+     52.9,
+     57.2,
+     61.3
+    ],
+    "GRN": [
+     3.7,
+     5.4,
+     7.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Rockdale",
+   "region": "Southern and South-West Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.997,
+    "LIB": 0.0031
+   },
+   "primary": {
+    "ALP": [
+     46.6,
+     50.8,
+     55.0
+    ],
+    "COAL": [
+     31.0,
+     35.0,
+     39.2
+    ],
+    "GRN": [
+     4.4,
+     6.3,
+     8.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     1.1,
+     1.9,
+     3.1
+    ],
+    "OTH": [
+     3.4,
+     5.4,
+     8.3
+    ]
+   }
+  },
+  {
+   "district": "Ryde",
+   "region": "North Shore and Northern Beaches",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0076,
+    "LIB": 0.9923
+   },
+   "primary": {
+    "ALP": [
+     27.8,
+     31.8,
+     35.9
+    ],
+    "COAL": [
+     47.1,
+     51.5,
+     55.8
+    ],
+    "GRN": [
+     7.5,
+     10.7,
+     14.3
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.5,
+     5.6,
+     8.6
+    ]
+   }
+  },
+  {
+   "district": "Seven Hills",
+   "region": "Western Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0815,
+    "LIB": 0.9184
+   },
+   "primary": {
+    "ALP": [
+     31.6,
+     35.7,
+     39.9
+    ],
+    "COAL": [
+     42.8,
+     47.2,
+     51.6
+    ],
+    "GRN": [
+     4.5,
+     6.6,
+     9.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     2.1,
+     3.4,
+     5.6
+    ],
+    "OTH": [
+     4.0,
+     6.4,
+     9.7
+    ]
+   }
+  },
+  {
+   "district": "Shellharbour",
+   "region": "Illawarra and South Coast",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     57.8,
+     62.0,
+     66.0
+    ],
+    "COAL": [
+     20.3,
+     23.7,
+     27.5
+    ],
+    "GRN": [
+     6.4,
+     9.2,
+     12.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.9,
+     4.7,
+     7.2
+    ]
+   }
+  },
+  {
+   "district": "South Coast",
+   "region": "Illawarra and South Coast",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0291,
+    "LIB": 0.9708,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     30.7,
+     34.9,
+     39.2
+    ],
+    "COAL": [
+     47.7,
+     52.4,
+     57.0
+    ],
+    "GRN": [
+     9.0,
+     12.6,
+     16.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "district": "Strathfield",
+   "region": "Inner Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9033,
+    "LIB": 0.0967
+   },
+   "primary": {
+    "ALP": [
+     41.0,
+     45.4,
+     49.8
+    ],
+    "COAL": [
+     35.4,
+     39.8,
+     44.2
+    ],
+    "GRN": [
+     6.2,
+     8.8,
+     12.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.5,
+     5.6,
+     8.5
+    ]
+   }
+  },
+  {
+   "district": "Summer Hill",
+   "region": "Inner Sydney",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.9964,
+    "GRN": 0.0036
+   },
+   "primary": {
+    "ALP": [
+     43.4,
+     48.4,
+     53.5
+    ],
+    "COAL": [
+     17.3,
+     20.6,
+     24.4
+    ],
+    "GRN": [
+     20.0,
+     25.9,
+     31.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.9,
+     4.7,
+     7.3
+    ]
+   }
+  },
+  {
+   "district": "Swansea",
+   "region": "Hunter and Central Coast",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 1.0,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     54.3,
+     59.0,
+     63.4
+    ],
+    "COAL": [
+     22.6,
+     26.5,
+     30.6
+    ],
+    "GRN": [
+     4.3,
+     6.3,
+     8.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     4.9,
+     7.8,
+     11.6
+    ]
+   }
+  },
+  {
+   "district": "Sydney",
+   "region": "Inner Sydney",
+   "incumbent": "IND",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.0012,
+    "LIB": 0.0553,
+    "GRN": 0.0001,
+    "IND": 0.9435
+   },
+   "primary": {
+    "ALP": [
+     11.0,
+     15.2,
+     19.9
+    ],
+    "COAL": [
+     20.2,
+     27.1,
+     34.4
+    ],
+    "GRN": [
+     5.3,
+     8.3,
+     12.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     34.3,
+     46.9,
+     59.8
+    ],
+    "OTH": [
+     1.0,
+     1.8,
+     3.0
+    ]
+   }
+  },
+  {
+   "district": "Tamworth",
+   "region": "Inland NSW",
+   "incumbent": "NAT",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "NAT": 0.9004,
+    "IND": 0.0996
+   },
+   "primary": {
+    "ALP": [
+     5.1,
+     6.8,
+     8.7
+    ],
+    "COAL": [
+     45.7,
+     56.1,
+     65.1
+    ],
+    "GRN": [
+     1.3,
+     2.1,
+     3.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     22.3,
+     32.5,
+     44.8
+    ],
+    "OTH": [
+     1.1,
+     2.0,
+     3.2
+    ]
+   }
+  },
+  {
+   "district": "Terrigal",
+   "region": "Hunter and Central Coast",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.043,
+    "LIB": 0.9569
+   },
+   "primary": {
+    "ALP": [
+     30.3,
+     34.5,
+     38.6
+    ],
+    "COAL": [
+     44.9,
+     49.4,
+     53.7
+    ],
+    "GRN": [
+     7.8,
+     11.0,
+     14.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.0,
+     4.8,
+     7.3
+    ]
+   }
+  },
+  {
+   "district": "The Entrance",
+   "region": "Hunter and Central Coast",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.9422,
+    "LIB": 0.0578
+   },
+   "primary": {
+    "ALP": [
+     42.4,
+     46.7,
+     51.0
+    ],
+    "COAL": [
+     35.4,
+     39.7,
+     44.0
+    ],
+    "GRN": [
+     6.0,
+     8.7,
+     11.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.8,
+     4.6,
+     7.1
+    ]
+   }
+  },
+  {
+   "district": "Tweed",
+   "region": "North Coast",
+   "incumbent": "NAT",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.4578,
+    "NAT": 0.5422
+   },
+   "primary": {
+    "ALP": [
+     35.0,
+     39.3,
+     43.7
+    ],
+    "COAL": [
+     40.0,
+     44.4,
+     48.9
+    ],
+    "GRN": [
+     8.8,
+     12.4,
+     16.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.2,
+     3.6,
+     5.6
+    ]
+   }
+  },
+  {
+   "district": "Upper Hunter",
+   "region": "Inland NSW",
+   "incumbent": "NAT",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.5866,
+    "NAT": 0.4134
+   },
+   "primary": {
+    "ALP": [
+     39.5,
+     44.2,
+     49.0
+    ],
+    "COAL": [
+     40.0,
+     44.7,
+     49.5
+    ],
+    "GRN": [
+     4.3,
+     6.3,
+     8.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.6,
+     4.3,
+     6.8
+    ]
+   }
+  },
+  {
+   "district": "Vaucluse",
+   "region": "Inner Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "LIB": 1.0
+   },
+   "primary": {
+    "ALP": [
+     12.2,
+     14.7,
+     17.6
+    ],
+    "COAL": [
+     60.2,
+     64.8,
+     69.3
+    ],
+    "GRN": [
+     13.1,
+     17.6,
+     22.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.5,
+     2.6,
+     4.1
+    ]
+   }
+  },
+  {
+   "district": "Wagga Wagga",
+   "region": "Inland NSW",
+   "incumbent": "IND",
+   "notes": [
+    "won by IND at a by-election",
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.014,
+    "NAT": 0.9853,
+    "IND": 0.0007
+   },
+   "primary": {
+    "ALP": [
+     26.2,
+     30.3,
+     34.6
+    ],
+    "COAL": [
+     44.1,
+     49.3,
+     54.0
+    ],
+    "GRN": [
+     3.0,
+     4.5,
+     6.3
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     7.4,
+     11.9,
+     18.3
+    ],
+    "OTH": [
+     2.0,
+     3.3,
+     5.1
+    ]
+   }
+  },
+  {
+   "district": "Wakehurst",
+   "region": "North Shore and Northern Beaches",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "LIB": 1.0
+   },
+   "primary": {
+    "ALP": [
+     14.4,
+     17.2,
+     20.3
+    ],
+    "COAL": [
+     58.6,
+     62.9,
+     67.0
+    ],
+    "GRN": [
+     8.0,
+     11.2,
+     14.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     2.3,
+     3.8,
+     6.2
+    ],
+    "OTH": [
+     2.6,
+     4.2,
+     6.5
+    ]
+   }
+  },
+  {
+   "district": "Wallsend",
+   "region": "Hunter and Central Coast",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     59.0,
+     63.1,
+     67.0
+    ],
+    "COAL": [
+     17.9,
+     21.0,
+     24.4
+    ],
+    "GRN": [
+     6.9,
+     9.8,
+     13.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.5,
+     5.7,
+     8.7
+    ]
+   }
+  },
+  {
+   "district": "Willoughby",
+   "region": "North Shore and Northern Beaches",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "LIB": 1.0
+   },
+   "primary": {
+    "ALP": [
+     14.8,
+     17.7,
+     20.9
+    ],
+    "COAL": [
+     57.9,
+     62.5,
+     66.8
+    ],
+    "GRN": [
+     10.9,
+     15.0,
+     19.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.8,
+     4.5,
+     7.0
+    ]
+   }
+  },
+  {
+   "district": "Wollondilly",
+   "region": "Southern and South-West Sydney",
+   "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.0004,
+    "LIB": 0.9993,
+    "ONP": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     22.4,
+     26.1,
+     30.0
+    ],
+    "COAL": [
+     46.8,
+     51.3,
+     55.7
+    ],
+    "GRN": [
+     5.3,
+     7.6,
+     10.4
+    ],
+    "ONP": [
+     2.5,
+     5.6,
+     9.5
+    ],
+    "IND": [
+     2.0,
+     3.3,
+     5.4
+    ],
+    "OTH": [
+     3.2,
+     5.2,
+     8.0
+    ]
+   }
+  },
+  {
+   "district": "Wollongong",
+   "region": "Illawarra and South Coast",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9658,
+    "LIB": 0.0007,
+    "IND": 0.0335
+   },
+   "primary": {
+    "ALP": [
+     37.5,
+     43.7,
+     49.6
+    ],
+    "COAL": [
+     15.3,
+     18.8,
+     22.6
+    ],
+    "GRN": [
+     6.3,
+     9.2,
+     12.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     11.9,
+     18.6,
+     27.8
+    ],
+    "OTH": [
+     5.3,
+     8.5,
+     12.8
+    ]
+   }
+  },
+  {
+   "district": "Wyong",
+   "region": "Hunter and Central Coast",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2015)"
+   ],
+   "probs": {
+    "ALP": 0.9998,
+    "LIB": 0.0002
+   },
+   "primary": {
+    "ALP": [
+     52.7,
+     56.8,
+     60.9
+    ],
+    "COAL": [
+     28.9,
+     32.9,
+     36.9
+    ],
+    "GRN": [
+     4.3,
+     6.2,
+     8.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.3,
+     3.8,
+     5.9
+    ]
+   }
+  }
+ ]
+}

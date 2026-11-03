@@ -1,0 +1,7275 @@
+{
+ "election_id": "nsw-2019",
+ "jurisdiction": "NSW",
+ "date": "2019-03-23",
+ "seats_total": 93,
+ "majority": 47,
+ "seat_counts": {
+  "ALP": 36,
+  "LIB": 35,
+  "NAT": 13,
+  "GRN": 3,
+  "IND": 3,
+  "SFF": 3
+ },
+ "primary_share": {
+  "COAL": 41.58,
+  "ALP": 33.31,
+  "OTH": 9.67,
+  "GRN": 9.57,
+  "IND": 4.77,
+  "ONP": 1.1
+ },
+ "party_share": {
+  "ALP": 33.31,
+  "LIB": 31.99,
+  "NAT": 9.6,
+  "GRN": 9.57,
+  "IND": 4.77,
+  "SFF": 3.46,
+  "SAP": 1.53,
+  "X_KSOP": 1.52,
+  "AJP": 1.51,
+  "ONP": 1.1,
+  "CHR": 0.8,
+  "X_ACN": 0.5,
+  "LDP": 0.23,
+  "X_TSBP": 0.07,
+  "VS": 0.03,
+  "X_FN": 0.02
+ },
+ "tpp_alp": 47.98,
+ "seats": [
+  {
+   "name": "Albury",
+   "slug": "albury",
+   "elected": "CLANCY Justin",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 47632,
+   "informal": 2393,
+   "primary": [
+    {
+     "candidate": "CLANCY Justin",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 27039,
+     "pct": 56.766
+    },
+    {
+     "candidate": "MUIRHEAD Lauriston",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 11840,
+     "pct": 24.857
+    },
+    {
+     "candidate": "MOSS Dean",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 4411,
+     "pct": 9.261
+    },
+    {
+     "candidate": "HAMILTON Ross",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 3335,
+     "pct": 7.002
+    },
+    {
+     "candidate": "MCNAIR Reuben",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1007,
+     "pct": 2.114
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CLANCY Justin",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 28258,
+     "pct": 65.977
+    },
+    {
+     "candidate": "MUIRHEAD Lauriston",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 14572,
+     "pct": 34.023
+    }
+   ],
+   "margin": 15.98,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 34.023,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Auburn",
+   "slug": "auburn",
+   "elected": "VOLTZ Lynda",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 44842,
+   "informal": 2875,
+   "primary": [
+    {
+     "candidate": "VOLTZ Lynda",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 22396,
+     "pct": 49.944
+    },
+    {
+     "candidate": "KANG Kyoung Hee (Christina)",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 16094,
+     "pct": 35.89
+    },
+    {
+     "candidate": "CASTLE Janet",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3357,
+     "pct": 7.486
+    },
+    {
+     "candidate": "AHERN Luke",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1635,
+     "pct": 3.646
+    },
+    {
+     "candidate": "LEE Kieron",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1360,
+     "pct": 3.033
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "VOLTZ Lynda",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 24419,
+     "pct": 59.133
+    },
+    {
+     "candidate": "KANG Kyoung Hee (Christina)",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 16876,
+     "pct": 40.867
+    }
+   ],
+   "margin": 9.13,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 59.133,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Ballina",
+   "slug": "ballina",
+   "elected": "SMITH Tamara",
+   "party": "GRN",
+   "enrolment": null,
+   "formal": 50127,
+   "informal": 1359,
+   "primary": [
+    {
+     "candidate": "FRANKLIN Ben",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 18550,
+     "pct": 37.006
+    },
+    {
+     "candidate": "SMITH Tamara",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 15895,
+     "pct": 31.709
+    },
+    {
+     "candidate": "PUGH Asren",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 12457,
+     "pct": 24.851
+    },
+    {
+     "candidate": "BLASONATO Cathy",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1256,
+     "pct": 2.506
+    },
+    {
+     "candidate": "McDERMOTT Lisa",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1119,
+     "pct": 2.232
+    },
+    {
+     "candidate": "WRIGHT James",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 850,
+     "pct": 1.696
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SMITH Tamara",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 24645,
+     "pct": 55.421
+    },
+    {
+     "candidate": "FRANKLIN Ben",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 19824,
+     "pct": 44.579
+    }
+   ],
+   "margin": 5.42,
+   "tcp_estimated": false,
+   "runner_up_party": "NAT",
+   "tpp_alp": 54.308,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Balmain",
+   "slug": "balmain",
+   "elected": "PARKER Jamie",
+   "party": "GRN",
+   "enrolment": null,
+   "formal": 49299,
+   "informal": 781,
+   "primary": [
+    {
+     "candidate": "PARKER Jamie",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 21065,
+     "pct": 42.729
+    },
+    {
+     "candidate": "HOWSE Elly",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 14227,
+     "pct": 28.859
+    },
+    {
+     "candidate": "ZHANG Wenjie (Ben)",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 9875,
+     "pct": 20.031
+    },
+    {
+     "candidate": "LEONETTI Emilia",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 2268,
+     "pct": 4.6
+    },
+    {
+     "candidate": "FINLAYSON Anita",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1103,
+     "pct": 2.237
+    },
+    {
+     "candidate": "DUNNETT Angela",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 761,
+     "pct": 1.544
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PARKER Jamie",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 24074,
+     "pct": 60.018
+    },
+    {
+     "candidate": "HOWSE Elly",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 16037,
+     "pct": 39.982
+    }
+   ],
+   "margin": 10.02,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 70.455,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Bankstown",
+   "slug": "bankstown",
+   "elected": "MIHAILUK Tania",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 43730,
+   "informal": 2867,
+   "primary": [
+    {
+     "candidate": "MIHAILUK Tania",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 23897,
+     "pct": 54.647
+    },
+    {
+     "candidate": "ZAKHIA George",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 13293,
+     "pct": 30.398
+    },
+    {
+     "candidate": "ABU-SAMEN Saud",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 3856,
+     "pct": 8.818
+    },
+    {
+     "candidate": "ROONEY James",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2684,
+     "pct": 6.138
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MIHAILUK Tania",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 25735,
+     "pct": 63.819
+    },
+    {
+     "candidate": "ZAKHIA George",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 14590,
+     "pct": 36.181
+    }
+   ],
+   "margin": 13.82,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 63.819,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Barwon",
+   "slug": "barwon",
+   "elected": "BUTLER Roy",
+   "party": "SFF",
+   "enrolment": null,
+   "formal": 46174,
+   "informal": 1701,
+   "primary": [
+    {
+     "candidate": "BUTLER Roy",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 15218,
+     "pct": 32.958
+    },
+    {
+     "candidate": "SCHIER Andrew",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 14027,
+     "pct": 30.379
+    },
+    {
+     "candidate": "TURLEY Darriea",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 9661,
+     "pct": 20.923
+    },
+    {
+     "candidate": "NADEN Phil",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2565,
+     "pct": 5.555
+    },
+    {
+     "candidate": "FLEISHER Andrew",
+     "party": "LDP",
+     "party_name": "Liberal Democratic Party",
+     "votes": 1571,
+     "pct": 3.402
+    },
+    {
+     "candidate": "WILLIAMS Leigh",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 1395,
+     "pct": 3.021
+    },
+    {
+     "candidate": "WHYMAN Owen",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 735,
+     "pct": 1.592
+    },
+    {
+     "candidate": "ALAN Jason",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 558,
+     "pct": 1.208
+    },
+    {
+     "candidate": "MCDONALD-PRITCHARD Maree",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 444,
+     "pct": 0.962
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BUTLER Roy",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 19901,
+     "pct": 56.603
+    },
+    {
+     "candidate": "SCHIER Andrew",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 15258,
+     "pct": 43.397
+    }
+   ],
+   "margin": 6.6,
+   "tcp_estimated": false,
+   "runner_up_party": "NAT",
+   "tpp_alp": 47.485,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Bathurst",
+   "slug": "bathurst",
+   "elected": "TOOLE Paul",
+   "party": "NAT",
+   "enrolment": null,
+   "formal": 50833,
+   "informal": 1574,
+   "primary": [
+    {
+     "candidate": "TOOLE Paul",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 28030,
+     "pct": 55.141
+    },
+    {
+     "candidate": "RILEY Beau",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 10438,
+     "pct": 20.534
+    },
+    {
+     "candidate": "MAY Brenden",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 7498,
+     "pct": 14.75
+    },
+    {
+     "candidate": "HARVEY David",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2815,
+     "pct": 5.538
+    },
+    {
+     "candidate": "BEGG Michael",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1317,
+     "pct": 2.591
+    },
+    {
+     "candidate": "HANSEN Timothy",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 735,
+     "pct": 1.446
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "TOOLE Paul",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 30130,
+     "pct": 67.903
+    },
+    {
+     "candidate": "RILEY Beau",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 14242,
+     "pct": 32.097
+    }
+   ],
+   "margin": 17.9,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 32.097,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Baulkham Hills",
+   "slug": "baulkham-hills",
+   "elected": "ELLIOTT David",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 50310,
+   "informal": 1302,
+   "primary": [
+    {
+     "candidate": "ELLIOTT David",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 30040,
+     "pct": 59.71
+    },
+    {
+     "candidate": "TRACEY Ryan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 11600,
+     "pct": 23.057
+    },
+    {
+     "candidate": "HOCKLEY Erica",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3937,
+     "pct": 7.825
+    },
+    {
+     "candidate": "HALL Craig",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 1868,
+     "pct": 3.713
+    },
+    {
+     "candidate": "NEWFIELD Linda",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1485,
+     "pct": 2.952
+    },
+    {
+     "candidate": "BOYD Heather",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1380,
+     "pct": 2.743
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ELLIOTT David",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 31658,
+     "pct": 68.684
+    },
+    {
+     "candidate": "TRACEY Ryan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 14434,
+     "pct": 31.316
+    }
+   ],
+   "margin": 18.68,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 31.316,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Bega",
+   "slug": "bega",
+   "elected": "CONSTANCE Andrew",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 50701,
+   "informal": 1472,
+   "primary": [
+    {
+     "candidate": "CONSTANCE Andrew",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 24796,
+     "pct": 48.906
+    },
+    {
+     "candidate": "ATKINSON Leanne",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 15508,
+     "pct": 30.587
+    },
+    {
+     "candidate": "DOUGLAS William",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 4945,
+     "pct": 9.753
+    },
+    {
+     "candidate": "THOMAS Eric",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 3275,
+     "pct": 6.459
+    },
+    {
+     "candidate": "ANDERSON Coral",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1371,
+     "pct": 2.704
+    },
+    {
+     "candidate": "SHOOBRIDGE Joshua",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 806,
+     "pct": 1.59
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CONSTANCE Andrew",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 26210,
+     "pct": 56.929
+    },
+    {
+     "candidate": "ATKINSON Leanne",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 19830,
+     "pct": 43.071
+    }
+   ],
+   "margin": 6.93,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 43.071,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Blacktown",
+   "slug": "blacktown",
+   "elected": "BALI Stephen",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 46909,
+   "informal": 1942,
+   "primary": [
+    {
+     "candidate": "BALI Stephen",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 25618,
+     "pct": 54.612
+    },
+    {
+     "candidate": "GREEN Allan",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 11668,
+     "pct": 24.874
+    },
+    {
+     "candidate": "BATISH Amit",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 3368,
+     "pct": 7.18
+    },
+    {
+     "candidate": "GREEN Josh",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 3287,
+     "pct": 7.007
+    },
+    {
+     "candidate": "GIBBS Kirsten",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2968,
+     "pct": 6.327
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BALI Stephen",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 28020,
+     "pct": 67.734
+    },
+    {
+     "candidate": "GREEN Allan",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 13348,
+     "pct": 32.266
+    }
+   ],
+   "margin": 17.73,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 67.734,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Blue Mountains",
+   "slug": "blue-mountains",
+   "elected": "DOYLE Trish",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 49228,
+   "informal": 1250,
+   "primary": [
+    {
+     "candidate": "DOYLE Trish",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 23022,
+     "pct": 46.766
+    },
+    {
+     "candidate": "LAFFIN Owen",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 13982,
+     "pct": 28.403
+    },
+    {
+     "candidate": "LIU Kingsley",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 5993,
+     "pct": 12.174
+    },
+    {
+     "candidate": "KEIGHTLEY Gregory",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 2008,
+     "pct": 4.079
+    },
+    {
+     "candidate": "PHILLIPS Cameron",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 1786,
+     "pct": 3.628
+    },
+    {
+     "candidate": "MARSCHALL Richard",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1496,
+     "pct": 3.039
+    },
+    {
+     "candidate": "PIGOTT Mark",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 941,
+     "pct": 1.912
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "DOYLE Trish",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 28834,
+     "pct": 64.863
+    },
+    {
+     "candidate": "LAFFIN Owen",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 15620,
+     "pct": 35.137
+    }
+   ],
+   "margin": 14.86,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 64.863,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Cabramatta",
+   "slug": "cabramatta",
+   "elected": "LALICH Nick",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 47343,
+   "informal": 2102,
+   "primary": [
+    {
+     "candidate": "LALICH Nick",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 23616,
+     "pct": 49.883
+    },
+    {
+     "candidate": "LE Dai",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 12250,
+     "pct": 25.875
+    },
+    {
+     "candidate": "LE Austin",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 7018,
+     "pct": 14.824
+    },
+    {
+     "candidate": "JAMES Christopher",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2384,
+     "pct": 5.036
+    },
+    {
+     "candidate": "VO Phuoc",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2075,
+     "pct": 4.383
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LALICH Nick",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 25089,
+     "pct": 62.869
+    },
+    {
+     "candidate": "LE Dai",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 14818,
+     "pct": 37.131
+    }
+   ],
+   "margin": 12.87,
+   "tcp_estimated": false,
+   "runner_up_party": "IND",
+   "tpp_alp": 75.526,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Camden",
+   "slug": "camden",
+   "elected": "SIDGREAVES Peter",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 62772,
+   "informal": 2520,
+   "primary": [
+    {
+     "candidate": "SIDGREAVES Peter",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 26999,
+     "pct": 43.011
+    },
+    {
+     "candidate": "QUINNELL Sally",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 18886,
+     "pct": 30.087
+    },
+    {
+     "candidate": "CASEY Ben",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 8330,
+     "pct": 13.27
+    },
+    {
+     "candidate": "SIMPSON Andrew",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 4048,
+     "pct": 6.449
+    },
+    {
+     "candidate": "STEWART Karen",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2359,
+     "pct": 3.758
+    },
+    {
+     "candidate": "ARAGONA Daniel",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1432,
+     "pct": 2.281
+    },
+    {
+     "candidate": "SAJN Danica",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 718,
+     "pct": 1.144
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SIDGREAVES Peter",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 29556,
+     "pct": 57.556
+    },
+    {
+     "candidate": "QUINNELL Sally",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 21796,
+     "pct": 42.444
+    }
+   ],
+   "margin": 7.56,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 42.444,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Campbelltown",
+   "slug": "campbelltown",
+   "elected": "WARREN Greg",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 45526,
+   "informal": 2411,
+   "primary": [
+    {
+     "candidate": "WARREN Greg",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 24476,
+     "pct": 53.763
+    },
+    {
+     "candidate": "MUNRO Riley",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 12069,
+     "pct": 26.51
+    },
+    {
+     "candidate": "RIVERA Jayden",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2339,
+     "pct": 5.138
+    },
+    {
+     "candidate": "GENT James",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 2001,
+     "pct": 4.395
+    },
+    {
+     "candidate": "STELLINO Matthew",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1822,
+     "pct": 4.002
+    },
+    {
+     "candidate": "O'SULLIVAN Martin",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1723,
+     "pct": 3.785
+    },
+    {
+     "candidate": "CLARK Michael",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1096,
+     "pct": 2.407
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WARREN Greg",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 27026,
+     "pct": 67.01
+    },
+    {
+     "candidate": "MUNRO Riley",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 13305,
+     "pct": 32.99
+    }
+   ],
+   "margin": 17.01,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 67.01,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Canterbury",
+   "slug": "canterbury",
+   "elected": "COTSIS Sophie",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 48756,
+   "informal": 2247,
+   "primary": [
+    {
+     "candidate": "COTSIS Sophie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 24674,
+     "pct": 50.607
+    },
+    {
+     "candidate": "HARRISON Matt",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 15376,
+     "pct": 31.537
+    },
+    {
+     "candidate": "EISLER Linda",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 6146,
+     "pct": 12.606
+    },
+    {
+     "candidate": "FIGUEIRA Fatima",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 2560,
+     "pct": 5.251
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "COTSIS Sophie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 28358,
+     "pct": 63.029
+    },
+    {
+     "candidate": "HARRISON Matt",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 16634,
+     "pct": 36.971
+    }
+   ],
+   "margin": 13.03,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 63.029,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Castle Hill",
+   "slug": "castle-hill",
+   "elected": "WILLIAMS Raymond",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 52571,
+   "informal": 1354,
+   "primary": [
+    {
+     "candidate": "WILLIAMS Raymond",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 36047,
+     "pct": 68.568
+    },
+    {
+     "candidate": "AGER David",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 10455,
+     "pct": 19.887
+    },
+    {
+     "candidate": "FIELD David",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 4116,
+     "pct": 7.829
+    },
+    {
+     "candidate": "KUIPERS Herman",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1953,
+     "pct": 3.715
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WILLIAMS Raymond",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 37043,
+     "pct": 74.677
+    },
+    {
+     "candidate": "AGER David",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 12561,
+     "pct": 25.323
+    }
+   ],
+   "margin": 24.68,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 25.323,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Cessnock",
+   "slug": "cessnock",
+   "elected": "BARR Clayton",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 49781,
+   "informal": 2643,
+   "primary": [
+    {
+     "candidate": "BARR Clayton",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 27122,
+     "pct": 54.483
+    },
+    {
+     "candidate": "ANGUS Josh",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 12081,
+     "pct": 24.268
+    },
+    {
+     "candidate": "MURRAY Janet",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 4010,
+     "pct": 8.055
+    },
+    {
+     "candidate": "PARKER Chris",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 3949,
+     "pct": 7.933
+    },
+    {
+     "candidate": "RUSSELL Steve",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 2619,
+     "pct": 5.261
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BARR Clayton",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 30229,
+     "pct": 69.344
+    },
+    {
+     "candidate": "ANGUS Josh",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 13364,
+     "pct": 30.656
+    }
+   ],
+   "margin": 19.34,
+   "tcp_estimated": false,
+   "runner_up_party": "NAT",
+   "tpp_alp": 69.344,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Charlestown",
+   "slug": "charlestown",
+   "elected": "HARRISON Jodie",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 48874,
+   "informal": 1787,
+   "primary": [
+    {
+     "candidate": "HARRISON Jodie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 24590,
+     "pct": 50.313
+    },
+    {
+     "candidate": "BARRIE Jennifer",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 16220,
+     "pct": 33.187
+    },
+    {
+     "candidate": "DOYLE Therese",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 5539,
+     "pct": 11.333
+    },
+    {
+     "candidate": "TURNER Richard",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 2525,
+     "pct": 5.166
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HARRISON Jodie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 28270,
+     "pct": 62.353
+    },
+    {
+     "candidate": "BARRIE Jennifer",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 17069,
+     "pct": 37.647
+    }
+   ],
+   "margin": 12.35,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 62.353,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Clarence",
+   "slug": "clarence",
+   "elected": "GULAPTIS Chris",
+   "party": "NAT",
+   "enrolment": null,
+   "formal": 49355,
+   "informal": 1657,
+   "primary": [
+    {
+     "candidate": "GULAPTIS Chris",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 22965,
+     "pct": 46.53
+    },
+    {
+     "candidate": "GILBERT Trent",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 10342,
+     "pct": 20.954
+    },
+    {
+     "candidate": "CANSDELL Steve",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 8308,
+     "pct": 16.833
+    },
+    {
+     "candidate": "CLANCY Gregory",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3914,
+     "pct": 7.93
+    },
+    {
+     "candidate": "NOVAK Debrah",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 3038,
+     "pct": 6.155
+    },
+    {
+     "candidate": "KOTIS Thom",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 788,
+     "pct": 1.597
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "GULAPTIS Chris",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 25985,
+     "pct": 64.468
+    },
+    {
+     "candidate": "GILBERT Trent",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 14322,
+     "pct": 35.532
+    }
+   ],
+   "margin": 14.47,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 35.532,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Coffs Harbour",
+   "slug": "coffs-harbour",
+   "elected": "SINGH Gurmesh",
+   "party": "NAT",
+   "enrolment": null,
+   "formal": 47333,
+   "informal": 1846,
+   "primary": [
+    {
+     "candidate": "SINGH Gurmesh",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 20268,
+     "pct": 42.82
+    },
+    {
+     "candidate": "JUDGE Tony",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 8371,
+     "pct": 17.685
+    },
+    {
+     "candidate": "TOWNLEY Sally",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 8247,
+     "pct": 17.423
+    },
+    {
+     "candidate": "DAVIDSON Stuart",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 3405,
+     "pct": 7.194
+    },
+    {
+     "candidate": "CASSELL Jonathan",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3090,
+     "pct": 6.528
+    },
+    {
+     "candidate": "RENET Gregory",
+     "party": "LDP",
+     "party_name": "Liberal Democratic Party",
+     "votes": 1542,
+     "pct": 3.258
+    },
+    {
+     "candidate": "MARCHANT Robyn",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1278,
+     "pct": 2.7
+    },
+    {
+     "candidate": "LEONARD Ann",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1132,
+     "pct": 2.392
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SINGH Gurmesh",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 22375,
+     "pct": 60.302
+    },
+    {
+     "candidate": "TOWNLEY Sally",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 14730,
+     "pct": 39.698
+    }
+   ],
+   "margin": 10.3,
+   "tcp_estimated": false,
+   "runner_up_party": "IND",
+   "tpp_alp": 39.229,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Coogee",
+   "slug": "coogee",
+   "elected": "O'NEILL Marjorie",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 46035,
+   "informal": 879,
+   "primary": [
+    {
+     "candidate": "NOTLEY-SMITH Bruce",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 18937,
+     "pct": 41.136
+    },
+    {
+     "candidate": "O'NEILL Marjorie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 15819,
+     "pct": 34.363
+    },
+    {
+     "candidate": "SHUREY Lindsay",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 6687,
+     "pct": 14.526
+    },
+    {
+     "candidate": "O'DONOGHUE Joseph",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 2232,
+     "pct": 4.848
+    },
+    {
+     "candidate": "GARROD Simon",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 804,
+     "pct": 1.746
+    },
+    {
+     "candidate": "MURRAY Lluisa",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 650,
+     "pct": 1.412
+    },
+    {
+     "candidate": "O'BRIEN Ciaran",
+     "party": "X_TSBP",
+     "party_name": "The Small Business Party",
+     "votes": 473,
+     "pct": 1.027
+    },
+    {
+     "candidate": "TURNBULL Josh",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 433,
+     "pct": 0.941
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "O'NEILL Marjorie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 21510,
+     "pct": 51.643
+    },
+    {
+     "candidate": "NOTLEY-SMITH Bruce",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 20141,
+     "pct": 48.357
+    }
+   ],
+   "margin": 1.64,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 51.643,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Cootamundra",
+   "slug": "cootamundra",
+   "elected": "COOKE Steph",
+   "party": "NAT",
+   "enrolment": null,
+   "formal": 47448,
+   "informal": 1319,
+   "primary": [
+    {
+     "candidate": "COOKE Steph",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 30206,
+     "pct": 63.661
+    },
+    {
+     "candidate": "STADTMILLER Matthew",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 7447,
+     "pct": 15.695
+    },
+    {
+     "candidate": "DOUGLASS Mark",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 7302,
+     "pct": 15.389
+    },
+    {
+     "candidate": "PASSLOW Jeffrey",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 1380,
+     "pct": 2.908
+    },
+    {
+     "candidate": "COSTELLO Joseph",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 660,
+     "pct": 1.391
+    },
+    {
+     "candidate": "SALEAM Jim",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 453,
+     "pct": 0.955
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "COOKE Steph",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 32504,
+     "pct": 77.066
+    },
+    {
+     "candidate": "DOUGLASS Mark",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 9673,
+     "pct": 22.934
+    }
+   ],
+   "margin": 27.07,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 22.934,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Cronulla",
+   "slug": "cronulla",
+   "elected": "SPEAKMAN Mark",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 51141,
+   "informal": 1321,
+   "primary": [
+    {
+     "candidate": "SPEAKMAN Mark",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 32484,
+     "pct": 63.519
+    },
+    {
+     "candidate": "FARHART Teressa",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 11866,
+     "pct": 23.203
+    },
+    {
+     "candidate": "DOIG Jon",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3789,
+     "pct": 7.409
+    },
+    {
+     "candidate": "BURRIEL Phillip",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1738,
+     "pct": 3.398
+    },
+    {
+     "candidate": "MORAN Richard",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1264,
+     "pct": 2.472
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SPEAKMAN Mark",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 33349,
+     "pct": 69.615
+    },
+    {
+     "candidate": "FARHART Teressa",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 14556,
+     "pct": 30.385
+    }
+   ],
+   "margin": 19.61,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 30.385,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Davidson",
+   "slug": "davidson",
+   "elected": "O'DEA Jonathan",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 49169,
+   "informal": 1021,
+   "primary": [
+    {
+     "candidate": "O'DEA Jonathan",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 32023,
+     "pct": 65.128
+    },
+    {
+     "candidate": "DAVIS Felicity",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 6652,
+     "pct": 13.529
+    },
+    {
+     "candidate": "VON BORNEMANN Joe",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 6645,
+     "pct": 13.515
+    },
+    {
+     "candidate": "SHTEYMAN Jacob",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1984,
+     "pct": 4.035
+    },
+    {
+     "candidate": "MOLLOY Stephen",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1865,
+     "pct": 3.793
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "O'DEA Jonathan",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 33440,
+     "pct": 75.241
+    },
+    {
+     "candidate": "DAVIS Felicity",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 11004,
+     "pct": 24.759
+    }
+   ],
+   "margin": 25.24,
+   "tcp_estimated": false,
+   "runner_up_party": "GRN",
+   "tpp_alp": 24.525,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Drummoyne",
+   "slug": "drummoyne",
+   "elected": "SIDOTI John",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 47464,
+   "informal": 1102,
+   "primary": [
+    {
+     "candidate": "SIDOTI John",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 27922,
+     "pct": 58.828
+    },
+    {
+     "candidate": "HORE Tom",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 12012,
+     "pct": 25.308
+    },
+    {
+     "candidate": "JAGO Charles",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 4461,
+     "pct": 9.399
+    },
+    {
+     "candidate": "ROBERTS David",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1781,
+     "pct": 3.752
+    },
+    {
+     "candidate": "SAIDI Maurice",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1288,
+     "pct": 2.714
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SIDOTI John",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 28878,
+     "pct": 64.997
+    },
+    {
+     "candidate": "HORE Tom",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 15552,
+     "pct": 35.003
+    }
+   ],
+   "margin": 15.0,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 35.003,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Dubbo",
+   "slug": "dubbo",
+   "elected": "SAUNDERS Dugald",
+   "party": "NAT",
+   "enrolment": null,
+   "formal": 48455,
+   "informal": 1900,
+   "primary": [
+    {
+     "candidate": "SAUNDERS Dugald",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 18131,
+     "pct": 37.418
+    },
+    {
+     "candidate": "DICKERSON Mathew",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 13771,
+     "pct": 28.42
+    },
+    {
+     "candidate": "LAWRENCE Stephen",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 7151,
+     "pct": 14.758
+    },
+    {
+     "candidate": "QUEALY Lara",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 6636,
+     "pct": 13.695
+    },
+    {
+     "candidate": "PRYOR Rod",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 1771,
+     "pct": 3.655
+    },
+    {
+     "candidate": "SALTER April",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 681,
+     "pct": 1.405
+    },
+    {
+     "candidate": "COTTERILL Joanne",
+     "party": "X_FN",
+     "party_name": "Flux NSW",
+     "votes": 314,
+     "pct": 0.648
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SAUNDERS Dugald",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 19920,
+     "pct": 52.024
+    },
+    {
+     "candidate": "DICKERSON Mathew",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 18370,
+     "pct": 47.976
+    }
+   ],
+   "margin": 2.02,
+   "tcp_estimated": false,
+   "runner_up_party": "IND",
+   "tpp_alp": 31.842,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "East Hills",
+   "slug": "east-hills",
+   "elected": "LINDSAY Wendy",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 47623,
+   "informal": 2292,
+   "primary": [
+    {
+     "candidate": "LINDSAY Wendy",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 19963,
+     "pct": 41.919
+    },
+    {
+     "candidate": "MURPHY Cameron",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 19152,
+     "pct": 40.216
+    },
+    {
+     "candidate": "VIRAGO Suzan",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2298,
+     "pct": 4.825
+    },
+    {
+     "candidate": "BUTT Owen",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 2159,
+     "pct": 4.534
+    },
+    {
+     "candidate": "MADDOCK Lisa",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1773,
+     "pct": 3.723
+    },
+    {
+     "candidate": "BROGAN Chris",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1346,
+     "pct": 2.826
+    },
+    {
+     "candidate": "BARNES Heather",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 932,
+     "pct": 1.957
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LINDSAY Wendy",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 21646,
+     "pct": 50.5
+    },
+    {
+     "candidate": "MURPHY Cameron",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 21217,
+     "pct": 49.5
+    }
+   ],
+   "margin": 0.5,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 49.5,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Epping",
+   "slug": "epping",
+   "elected": "PERROTTET Dominic",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 49224,
+   "informal": 1145,
+   "primary": [
+    {
+     "candidate": "PERROTTET Dominic",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 27506,
+     "pct": 55.879
+    },
+    {
+     "candidate": "MASCARENHAS Alan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 13652,
+     "pct": 27.734
+    },
+    {
+     "candidate": "MARGAN Simon",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 5143,
+     "pct": 10.448
+    },
+    {
+     "candidate": "WATERSON Victor",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1544,
+     "pct": 3.137
+    },
+    {
+     "candidate": "LYNDON Samuel",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1379,
+     "pct": 2.801
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PERROTTET Dominic",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 28584,
+     "pct": 62.381
+    },
+    {
+     "candidate": "MASCARENHAS Alan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 17238,
+     "pct": 37.619
+    }
+   ],
+   "margin": 12.38,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 37.619,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Fairfield",
+   "slug": "fairfield",
+   "elected": "ZANGARI Guy",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 44075,
+   "informal": 2719,
+   "primary": [
+    {
+     "candidate": "ZANGARI Guy",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 25225,
+     "pct": 57.232
+    },
+    {
+     "candidate": "YOUKHANA Sabah (Sam)",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 11231,
+     "pct": 25.482
+    },
+    {
+     "candidate": "GEORGIS Sam",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 4257,
+     "pct": 9.659
+    },
+    {
+     "candidate": "O'NEILL Astrid",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3362,
+     "pct": 7.628
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ZANGARI Guy",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 26848,
+     "pct": 67.93
+    },
+    {
+     "candidate": "YOUKHANA Sabah (Sam)",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 12675,
+     "pct": 32.07
+    }
+   ],
+   "margin": 17.93,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 67.93,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Gosford",
+   "slug": "gosford",
+   "elected": "TESCH Liesl",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 48637,
+   "informal": 1788,
+   "primary": [
+    {
+     "candidate": "TESCH Liesl",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 21505,
+     "pct": 44.215
+    },
+    {
+     "candidate": "DENGATE Susan",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 17529,
+     "pct": 36.04
+    },
+    {
+     "candidate": "MORRIS Hillary",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 4405,
+     "pct": 9.057
+    },
+    {
+     "candidate": "FREEMAN Larry",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 2307,
+     "pct": 4.743
+    },
+    {
+     "candidate": "MURPHY Patrick",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1678,
+     "pct": 3.45
+    },
+    {
+     "candidate": "SINGER Judy",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1213,
+     "pct": 2.494
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "TESCH Liesl",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 25048,
+     "pct": 57.267
+    },
+    {
+     "candidate": "DENGATE Susan",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 18691,
+     "pct": 42.733
+    }
+   ],
+   "margin": 7.27,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 57.267,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Goulburn",
+   "slug": "goulburn",
+   "elected": "TUCKERMAN Wendy",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 51057,
+   "informal": 1616,
+   "primary": [
+    {
+     "candidate": "TUCKERMAN Wendy",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 19957,
+     "pct": 39.088
+    },
+    {
+     "candidate": "STEPHENS Ursula",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 15355,
+     "pct": 30.074
+    },
+    {
+     "candidate": "WOOD Andy",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 4847,
+     "pct": 9.493
+    },
+    {
+     "candidate": "ORCHARD Richard",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 4723,
+     "pct": 9.25
+    },
+    {
+     "candidate": "ECKER Saan",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 4100,
+     "pct": 8.03
+    },
+    {
+     "candidate": "KEENAN Tracey",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1247,
+     "pct": 2.442
+    },
+    {
+     "candidate": "McCRAE Dean",
+     "party": "LDP",
+     "party_name": "Liberal Democratic Party",
+     "votes": 828,
+     "pct": 1.622
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "TUCKERMAN Wendy",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 22359,
+     "pct": 53.546
+    },
+    {
+     "candidate": "STEPHENS Ursula",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 19398,
+     "pct": 46.454
+    }
+   ],
+   "margin": 3.55,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 46.454,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Granville",
+   "slug": "granville",
+   "elected": "FINN Julia",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 44191,
+   "informal": 2154,
+   "primary": [
+    {
+     "candidate": "FINN Julia",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 22012,
+     "pct": 49.811
+    },
+    {
+     "candidate": "ISSA Tony",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 16522,
+     "pct": 37.388
+    },
+    {
+     "candidate": "PROCIV Benjamin",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 1638,
+     "pct": 3.707
+    },
+    {
+     "candidate": "PIPER Keith",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 1631,
+     "pct": 3.691
+    },
+    {
+     "candidate": "CHARAF Abdul",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 740,
+     "pct": 1.675
+    },
+    {
+     "candidate": "LOPEZ Steven",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 682,
+     "pct": 1.543
+    },
+    {
+     "candidate": "LAXMANALAL Rohan",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 652,
+     "pct": 1.475
+    },
+    {
+     "candidate": "HARRIS Linda",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 314,
+     "pct": 0.711
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "FINN Julia",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 23629,
+     "pct": 57.64
+    },
+    {
+     "candidate": "ISSA Tony",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 17365,
+     "pct": 42.36
+    }
+   ],
+   "margin": 7.64,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 57.64,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Hawkesbury",
+   "slug": "hawkesbury",
+   "elected": "PRESTON Robyn",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 48941,
+   "informal": 1972,
+   "primary": [
+    {
+     "candidate": "PRESTON Robyn",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 25127,
+     "pct": 51.341
+    },
+    {
+     "candidate": "REYNOLDS Peter",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 9325,
+     "pct": 19.054
+    },
+    {
+     "candidate": "DJURIC Shane",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 4385,
+     "pct": 8.96
+    },
+    {
+     "candidate": "WHEELER Danielle",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3102,
+     "pct": 6.338
+    },
+    {
+     "candidate": "BOWYER Marie-Jeanne",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2290,
+     "pct": 4.679
+    },
+    {
+     "candidate": "COOGANS Sarah",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1394,
+     "pct": 2.848
+    },
+    {
+     "candidate": "DOGRAMACI Eddie",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1312,
+     "pct": 2.681
+    },
+    {
+     "candidate": "CARREY Elissa",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1217,
+     "pct": 2.487
+    },
+    {
+     "candidate": "COSTI Perran",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 789,
+     "pct": 1.612
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PRESTON Robyn",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 26935,
+     "pct": 67.478
+    },
+    {
+     "candidate": "REYNOLDS Peter",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 12982,
+     "pct": 32.522
+    }
+   ],
+   "margin": 17.48,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 32.522,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Heathcote",
+   "slug": "heathcote",
+   "elected": "EVANS Lee",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 51334,
+   "informal": 1424,
+   "primary": [
+    {
+     "candidate": "EVANS Lee",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 25057,
+     "pct": 48.812
+    },
+    {
+     "candidate": "STUART Maryanne",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 17842,
+     "pct": 34.757
+    },
+    {
+     "candidate": "SHAKESPEARE Mitchell",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 4604,
+     "pct": 8.969
+    },
+    {
+     "candidate": "MCMANUS Joel",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 1959,
+     "pct": 3.816
+    },
+    {
+     "candidate": "ASPEY James",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1872,
+     "pct": 3.647
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "EVANS Lee",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 26174,
+     "pct": 54.96
+    },
+    {
+     "candidate": "STUART Maryanne",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 21450,
+     "pct": 45.04
+    }
+   ],
+   "margin": 4.96,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 45.04,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Heffron",
+   "slug": "heffron",
+   "elected": "HOENIG Ron",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 50010,
+   "informal": 1292,
+   "primary": [
+    {
+     "candidate": "HOENIG Ron",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 20409,
+     "pct": 40.81
+    },
+    {
+     "candidate": "ANDRUSKA Alexander",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 13863,
+     "pct": 27.72
+    },
+    {
+     "candidate": "CHAPPLE Kym",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 9565,
+     "pct": 19.126
+    },
+    {
+     "candidate": "RYAN Chris",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 4575,
+     "pct": 9.148
+    },
+    {
+     "candidate": "DELLO-IACOVO Michael",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1598,
+     "pct": 3.195
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HOENIG Ron",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 28874,
+     "pct": 65.125
+    },
+    {
+     "candidate": "ANDRUSKA Alexander",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 15462,
+     "pct": 34.875
+    }
+   ],
+   "margin": 15.12,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 65.125,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Holsworthy",
+   "slug": "holsworthy",
+   "elected": "GIBBONS Melanie",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 48244,
+   "informal": 2256,
+   "primary": [
+    {
+     "candidate": "GIBBONS Melanie",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 21481,
+     "pct": 44.526
+    },
+    {
+     "candidate": "KALIYANDA Charishma",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 18152,
+     "pct": 37.625
+    },
+    {
+     "candidate": "BYRNE Michael",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 3905,
+     "pct": 8.094
+    },
+    {
+     "candidate": "KERLE Chris",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2191,
+     "pct": 4.541
+    },
+    {
+     "candidate": "CONSTABLE Gae",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1901,
+     "pct": 3.94
+    },
+    {
+     "candidate": "BARBER Roland",
+     "party": "LDP",
+     "party_name": "Liberal Democratic Party",
+     "votes": 614,
+     "pct": 1.273
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "GIBBONS Melanie",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 22861,
+     "pct": 53.285
+    },
+    {
+     "candidate": "KALIYANDA Charishma",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 20042,
+     "pct": 46.715
+    }
+   ],
+   "margin": 3.28,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 46.715,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Hornsby",
+   "slug": "hornsby",
+   "elected": "KEAN Matthew",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 50003,
+   "informal": 1268,
+   "primary": [
+    {
+     "candidate": "KEAN Matthew",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 26269,
+     "pct": 52.535
+    },
+    {
+     "candidate": "GOMPERTZ Katie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 9683,
+     "pct": 19.365
+    },
+    {
+     "candidate": "NICITA Joe",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 6131,
+     "pct": 12.261
+    },
+    {
+     "candidate": "GALLAGHER Mick",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2287,
+     "pct": 4.574
+    },
+    {
+     "candidate": "EROS Emma",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 2250,
+     "pct": 4.5
+    },
+    {
+     "candidate": "GRAY Hayden",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1192,
+     "pct": 2.384
+    },
+    {
+     "candidate": "ISAAC Andrew",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 893,
+     "pct": 1.786
+    },
+    {
+     "candidate": "THOMAS Justin",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 835,
+     "pct": 1.67
+    },
+    {
+     "candidate": "MURRAY John",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 463,
+     "pct": 0.926
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "KEAN Matthew",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 28700,
+     "pct": 66.305
+    },
+    {
+     "candidate": "GOMPERTZ Katie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 14585,
+     "pct": 33.695
+    }
+   ],
+   "margin": 16.31,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 33.695,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Keira",
+   "slug": "keira",
+   "elected": "PARK Ryan",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 51936,
+   "informal": 1567,
+   "primary": [
+    {
+     "candidate": "PARK Ryan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 27884,
+     "pct": 53.689
+    },
+    {
+     "candidate": "ATLEE Chris",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 13736,
+     "pct": 26.448
+    },
+    {
+     "candidate": "OSBORN Kaye",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 8248,
+     "pct": 15.881
+    },
+    {
+     "candidate": "GILL John",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 2068,
+     "pct": 3.982
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PARK Ryan",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 33744,
+     "pct": 69.749
+    },
+    {
+     "candidate": "ATLEE Chris",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 14635,
+     "pct": 30.251
+    }
+   ],
+   "margin": 19.75,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 69.749,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Kiama",
+   "slug": "kiama",
+   "elected": "WARD Gareth",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 48946,
+   "informal": 1603,
+   "primary": [
+    {
+     "candidate": "WARD Gareth",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 26230,
+     "pct": 53.59
+    },
+    {
+     "candidate": "HIGGINS Anthony (Andy)",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 13803,
+     "pct": 28.2
+    },
+    {
+     "candidate": "DIGIGLIO Nina",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 5815,
+     "pct": 11.88
+    },
+    {
+     "candidate": "KADWELL John",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 1671,
+     "pct": 3.414
+    },
+    {
+     "candidate": "WHATMAN Anne",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1427,
+     "pct": 2.915
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WARD Gareth",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 28016,
+     "pct": 62.006
+    },
+    {
+     "candidate": "HIGGINS Anthony (Andy)",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 17167,
+     "pct": 37.994
+    }
+   ],
+   "margin": 12.01,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 37.994,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Kogarah",
+   "slug": "kogarah",
+   "elected": "MINNS Chris",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 45576,
+   "informal": 2120,
+   "primary": [
+    {
+     "candidate": "MINNS Chris",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 19254,
+     "pct": 42.246
+    },
+    {
+     "candidate": "YUNG Scott",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 19185,
+     "pct": 42.095
+    },
+    {
+     "candidate": "WERNER Greta",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2950,
+     "pct": 6.473
+    },
+    {
+     "candidate": "POLLARD Phillip",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 2790,
+     "pct": 6.122
+    },
+    {
+     "candidate": "RESMAN Natalie",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1397,
+     "pct": 3.065
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MINNS Chris",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 21544,
+     "pct": 51.767
+    },
+    {
+     "candidate": "YUNG Scott",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 20073,
+     "pct": 48.233
+    }
+   ],
+   "margin": 1.77,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 51.767,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Ku-ring-gai",
+   "slug": "ku-ring-gai",
+   "elected": "HENSKENS Alister",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 48730,
+   "informal": 1101,
+   "primary": [
+    {
+     "candidate": "HENSKENS Alister",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 29369,
+     "pct": 60.269
+    },
+    {
+     "candidate": "KEELING Amanda",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 8891,
+     "pct": 18.245
+    },
+    {
+     "candidate": "ZHANG Qiu Yue (Viki)",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 6315,
+     "pct": 12.959
+    },
+    {
+     "candidate": "FERRIS Mark",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1636,
+     "pct": 3.357
+    },
+    {
+     "candidate": "BLOOD Liam",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1466,
+     "pct": 3.008
+    },
+    {
+     "candidate": "STRAHAN Mitchell",
+     "party": "LDP",
+     "party_name": "Liberal Democratic Party",
+     "votes": 1053,
+     "pct": 2.161
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HENSKENS Alister",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 31027,
+     "pct": 70.522
+    },
+    {
+     "candidate": "KEELING Amanda",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 12969,
+     "pct": 29.478
+    }
+   ],
+   "margin": 20.52,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 29.478,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Lake Macquarie",
+   "slug": "lake-macquarie",
+   "elected": "PIPER Greg",
+   "party": "IND",
+   "enrolment": null,
+   "formal": 50082,
+   "informal": 1827,
+   "primary": [
+    {
+     "candidate": "PIPER Greg",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 26811,
+     "pct": 53.534
+    },
+    {
+     "candidate": "SMITH Jo",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 10735,
+     "pct": 21.435
+    },
+    {
+     "candidate": "PATERSON Lindsay",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 7742,
+     "pct": 15.459
+    },
+    {
+     "candidate": "GRIERSON Kim",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2517,
+     "pct": 5.026
+    },
+    {
+     "candidate": "TARANTO Laurance",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1481,
+     "pct": 2.957
+    },
+    {
+     "candidate": "ROLFE Marie",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 796,
+     "pct": 1.589
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PIPER Greg",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 31164,
+     "pct": 72.111
+    },
+    {
+     "candidate": "SMITH Jo",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 12053,
+     "pct": 27.889
+    }
+   ],
+   "margin": 22.11,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 57.368,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Lakemba",
+   "slug": "lakemba",
+   "elected": "DIB Jihad",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 44615,
+   "informal": 2916,
+   "primary": [
+    {
+     "candidate": "DIB Jihad",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 27528,
+     "pct": 61.701
+    },
+    {
+     "candidate": "BHUIYAN Rashid",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 10031,
+     "pct": 22.483
+    },
+    {
+     "candidate": "SCHUBERT Karl",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 3170,
+     "pct": 7.105
+    },
+    {
+     "candidate": "de BHALDRAITHE Emmet",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2041,
+     "pct": 4.575
+    },
+    {
+     "candidate": "NAJJAR Omar",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 988,
+     "pct": 2.215
+    },
+    {
+     "candidate": "ABOU-HAIDAR Dorlene",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 857,
+     "pct": 1.921
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "DIB Jihad",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 29245,
+     "pct": 72.423
+    },
+    {
+     "candidate": "BHUIYAN Rashid",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 11136,
+     "pct": 27.577
+    }
+   ],
+   "margin": 22.42,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 72.423,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Lane Cove",
+   "slug": "lane-cove",
+   "elected": "ROBERTS Anthony",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 50941,
+   "informal": 1081,
+   "primary": [
+    {
+     "candidate": "ROBERTS Anthony",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 26388,
+     "pct": 51.801
+    },
+    {
+     "candidate": "ZBIK Andrew",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 10281,
+     "pct": 20.182
+    },
+    {
+     "candidate": "QUINN Richard",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 5959,
+     "pct": 11.698
+    },
+    {
+     "candidate": "MASSE Pierre",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 5441,
+     "pct": 10.681
+    },
+    {
+     "candidate": "SPITERI Joanne",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1836,
+     "pct": 3.604
+    },
+    {
+     "candidate": "FLEMING Murray",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1036,
+     "pct": 2.034
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ROBERTS Anthony",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 29042,
+     "pct": 64.346
+    },
+    {
+     "candidate": "ZBIK Andrew",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 16092,
+     "pct": 35.654
+    }
+   ],
+   "margin": 14.35,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 35.654,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Lismore",
+   "slug": "lismore",
+   "elected": "SAFFIN Janelle",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 48145,
+   "informal": 1508,
+   "primary": [
+    {
+     "candidate": "CURTIN Austin",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 19104,
+     "pct": 39.68
+    },
+    {
+     "candidate": "SAFFIN Janelle",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 12328,
+     "pct": 25.606
+    },
+    {
+     "candidate": "HIGGINSON Sue",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 11693,
+     "pct": 24.287
+    },
+    {
+     "candidate": "BENNETT Greg",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2530,
+     "pct": 5.255
+    },
+    {
+     "candidate": "WATERS Alison",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1184,
+     "pct": 2.459
+    },
+    {
+     "candidate": "TAYLOR David",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 742,
+     "pct": 1.541
+    },
+    {
+     "candidate": "COLLITS Paul",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 564,
+     "pct": 1.171
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SAFFIN Janelle",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 21856,
+     "pct": 51.346
+    },
+    {
+     "candidate": "CURTIN Austin",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 20710,
+     "pct": 48.654
+    }
+   ],
+   "margin": 1.35,
+   "tcp_estimated": false,
+   "runner_up_party": "NAT",
+   "tpp_alp": 51.346,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Liverpool",
+   "slug": "liverpool",
+   "elected": "LYNCH Paul",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 47035,
+   "informal": 2700,
+   "primary": [
+    {
+     "candidate": "LYNCH Paul",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 26141,
+     "pct": 55.578
+    },
+    {
+     "candidate": "ZADRO Paul",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 12692,
+     "pct": 26.984
+    },
+    {
+     "candidate": "ANDJELKOVIC Michael",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 3274,
+     "pct": 6.961
+    },
+    {
+     "candidate": "WESTERBERG Signe",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2421,
+     "pct": 5.147
+    },
+    {
+     "candidate": "CHAND Ravneel",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1256,
+     "pct": 2.67
+    },
+    {
+     "candidate": "NOVEK Adam",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 1251,
+     "pct": 2.66
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LYNCH Paul",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 27951,
+     "pct": 66.715
+    },
+    {
+     "candidate": "ZADRO Paul",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 13945,
+     "pct": 33.285
+    }
+   ],
+   "margin": 16.72,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 66.715,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Londonderry",
+   "slug": "londonderry",
+   "elected": "CAR Prue",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 52686,
+   "informal": 2749,
+   "primary": [
+    {
+     "candidate": "CAR Prue",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 25809,
+     "pct": 48.986
+    },
+    {
+     "candidate": "HILL Belinda",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 20066,
+     "pct": 38.086
+    },
+    {
+     "candidate": "PIERCE Charlie",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2650,
+     "pct": 5.03
+    },
+    {
+     "candidate": "BOWEN David",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 2206,
+     "pct": 4.187
+    },
+    {
+     "candidate": "MODARELLI Don",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 1955,
+     "pct": 3.711
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CAR Prue",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 27442,
+     "pct": 56.459
+    },
+    {
+     "candidate": "HILL Belinda",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 21163,
+     "pct": 43.541
+    }
+   ],
+   "margin": 6.46,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 56.459,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Macquarie Fields",
+   "slug": "macquarie-fields",
+   "elected": "CHANTHIVONG Anoulack",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 52789,
+   "informal": 2558,
+   "primary": [
+    {
+     "candidate": "CHANTHIVONG Anoulack",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 27942,
+     "pct": 52.931
+    },
+    {
+     "candidate": "QUAZI Zahurul",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 15057,
+     "pct": 28.523
+    },
+    {
+     "candidate": "ALLEN Mick",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 3361,
+     "pct": 6.367
+    },
+    {
+     "candidate": "SINGH Scott",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 2403,
+     "pct": 4.552
+    },
+    {
+     "candidate": "EAGAR-DEITZ Stephen",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2247,
+     "pct": 4.257
+    },
+    {
+     "candidate": "AHMED Syed",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1779,
+     "pct": 3.37
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CHANTHIVONG Anoulack",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 29944,
+     "pct": 64.751
+    },
+    {
+     "candidate": "QUAZI Zahurul",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 16301,
+     "pct": 35.249
+    }
+   ],
+   "margin": 14.75,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 64.751,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Maitland",
+   "slug": "maitland",
+   "elected": "AITCHISON Jenny",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 53050,
+   "informal": 2146,
+   "primary": [
+    {
+     "candidate": "AITCHISON Jenny",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 23465,
+     "pct": 44.232
+    },
+    {
+     "candidate": "HALLIDAY Sally",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 14137,
+     "pct": 26.648
+    },
+    {
+     "candidate": "TURNER Neil",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5785,
+     "pct": 10.905
+    },
+    {
+     "candidate": "BROWN John",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3428,
+     "pct": 6.462
+    },
+    {
+     "candidate": "SARKIS Nadrra",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 2842,
+     "pct": 5.357
+    },
+    {
+     "candidate": "JOHNSON Amy",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1454,
+     "pct": 2.741
+    },
+    {
+     "candidate": "LAWSON James",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1108,
+     "pct": 2.089
+    },
+    {
+     "candidate": "FERGUSON Sam",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 831,
+     "pct": 1.566
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "AITCHISON Jenny",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 27211,
+     "pct": 63.214
+    },
+    {
+     "candidate": "HALLIDAY Sally",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 15835,
+     "pct": 36.786
+    }
+   ],
+   "margin": 13.21,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 63.214,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Manly",
+   "slug": "manly",
+   "elected": "GRIFFIN James",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 48316,
+   "informal": 1061,
+   "primary": [
+    {
+     "candidate": "GRIFFIN James",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 25418,
+     "pct": 52.608
+    },
+    {
+     "candidate": "GLANVILLE Kristyn",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 9137,
+     "pct": 18.911
+    },
+    {
+     "candidate": "PHILLIPS-MASON Natasha",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 8619,
+     "pct": 17.839
+    },
+    {
+     "candidate": "MURRAY Dane",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 2456,
+     "pct": 5.083
+    },
+    {
+     "candidate": "PALETTO Emanuele",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1502,
+     "pct": 3.109
+    },
+    {
+     "candidate": "PATERSON Kate",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1184,
+     "pct": 2.451
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "GRIFFIN James",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 26628,
+     "pct": 62.9
+    },
+    {
+     "candidate": "GLANVILLE Kristyn",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 15706,
+     "pct": 37.1
+    }
+   ],
+   "margin": 12.9,
+   "tcp_estimated": false,
+   "runner_up_party": "GRN",
+   "tpp_alp": 35.296,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Maroubra",
+   "slug": "maroubra",
+   "elected": "DALEY Michael",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 48278,
+   "informal": 1364,
+   "primary": [
+    {
+     "candidate": "DALEY Michael",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 20243,
+     "pct": 41.93
+    },
+    {
+     "candidate": "FARMER Patrick",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 15329,
+     "pct": 31.752
+    },
+    {
+     "candidate": "D'SOUZA Noel",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 6492,
+     "pct": 13.447
+    },
+    {
+     "candidate": "CRUZ James",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3517,
+     "pct": 7.285
+    },
+    {
+     "candidate": "KOS Rowan",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1242,
+     "pct": 2.573
+    },
+    {
+     "candidate": "CAMPBELL Petra",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 923,
+     "pct": 1.912
+    },
+    {
+     "candidate": "SIMONS Caroline",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 532,
+     "pct": 1.102
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "DALEY Michael",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 24026,
+     "pct": 58.465
+    },
+    {
+     "candidate": "FARMER Patrick",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 17069,
+     "pct": 41.535
+    }
+   ],
+   "margin": 8.47,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 58.465,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Miranda",
+   "slug": "miranda",
+   "elected": "PETINOS Eleni",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 49066,
+   "informal": 1336,
+   "primary": [
+    {
+     "candidate": "PETINOS Eleni",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 26417,
+     "pct": 53.84
+    },
+    {
+     "candidate": "ARMSTRONG Jen",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 13213,
+     "pct": 26.929
+    },
+    {
+     "candidate": "CAMERON Gaye",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 3461,
+     "pct": 7.054
+    },
+    {
+     "candidate": "HUNT Nathan",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3333,
+     "pct": 6.793
+    },
+    {
+     "candidate": "CAPSIS George",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 1604,
+     "pct": 3.269
+    },
+    {
+     "candidate": "HUGHES Nick",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1038,
+     "pct": 2.116
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PETINOS Eleni",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 28414,
+     "pct": 64.567
+    },
+    {
+     "candidate": "ARMSTRONG Jen",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 15593,
+     "pct": 35.433
+    }
+   ],
+   "margin": 14.57,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 35.433,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Monaro",
+   "slug": "monaro",
+   "elected": "BARILARO John",
+   "party": "NAT",
+   "enrolment": null,
+   "formal": 49448,
+   "informal": 1310,
+   "primary": [
+    {
+     "candidate": "BARILARO John",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 25868,
+     "pct": 52.314
+    },
+    {
+     "candidate": "WILSON Bryce",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 13431,
+     "pct": 27.162
+    },
+    {
+     "candidate": "MARSHALL Peter",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3913,
+     "pct": 7.913
+    },
+    {
+     "candidate": "HOLTON Mick",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 3848,
+     "pct": 7.782
+    },
+    {
+     "candidate": "THALER Andrew",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1229,
+     "pct": 2.485
+    },
+    {
+     "candidate": "SEYMOUR Frankie",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1159,
+     "pct": 2.344
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BARILARO John",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 27723,
+     "pct": 61.608
+    },
+    {
+     "candidate": "WILSON Bryce",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 17276,
+     "pct": 38.392
+    }
+   ],
+   "margin": 11.61,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 38.392,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Mount Druitt",
+   "slug": "mount-druitt",
+   "elected": "ATALLA Edmond",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 47031,
+   "informal": 2413,
+   "primary": [
+    {
+     "candidate": "ATALLA Edmond",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 26869,
+     "pct": 57.13
+    },
+    {
+     "candidate": "RUSEV Mark",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 13209,
+     "pct": 28.086
+    },
+    {
+     "candidate": "ROBERTSON Brent",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3231,
+     "pct": 6.87
+    },
+    {
+     "candidate": "GREWAL Samraat",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 2204,
+     "pct": 4.686
+    },
+    {
+     "candidate": "LANG George",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 1518,
+     "pct": 3.228
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ATALLA Edmond",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 28505,
+     "pct": 66.422
+    },
+    {
+     "candidate": "RUSEV Mark",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 14410,
+     "pct": 33.578
+    }
+   ],
+   "margin": 16.42,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 66.422,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Mulgoa",
+   "slug": "mulgoa",
+   "elected": "DAVIES Tanya",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 51375,
+   "informal": 2213,
+   "primary": [
+    {
+     "candidate": "DAVIES Tanya",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 29379,
+     "pct": 57.185
+    },
+    {
+     "candidate": "CARNEY Todd",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 17270,
+     "pct": 33.616
+    },
+    {
+     "candidate": "SHIELD Rob",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2897,
+     "pct": 5.639
+    },
+    {
+     "candidate": "BIJOK Jessie",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1829,
+     "pct": 3.56
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "DAVIES Tanya",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 29910,
+     "pct": 61.331
+    },
+    {
+     "candidate": "CARNEY Todd",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 18858,
+     "pct": 38.669
+    }
+   ],
+   "margin": 11.33,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 38.669,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Murray",
+   "slug": "murray",
+   "elected": "DALTON Helen",
+   "party": "SFF",
+   "enrolment": null,
+   "formal": 47233,
+   "informal": 1889,
+   "primary": [
+    {
+     "candidate": "DALTON Helen",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 18305,
+     "pct": 38.755
+    },
+    {
+     "candidate": "EVANS Austin",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 16636,
+     "pct": 35.221
+    },
+    {
+     "candidate": "PURTILL Alan",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 4134,
+     "pct": 8.752
+    },
+    {
+     "candidate": "WEYRICH Tom",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 3949,
+     "pct": 8.361
+    },
+    {
+     "candidate": "DE SILVA Nivanka",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 1238,
+     "pct": 2.621
+    },
+    {
+     "candidate": "LANDINI David",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 976,
+     "pct": 2.066
+    },
+    {
+     "candidate": "LANGFIELD Philip",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 715,
+     "pct": 1.514
+    },
+    {
+     "candidate": "MILLS Brian",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 633,
+     "pct": 1.34
+    },
+    {
+     "candidate": "KENDALL Carl",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 455,
+     "pct": 0.963
+    },
+    {
+     "candidate": "DAVIES Liam",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 192,
+     "pct": 0.406
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "DALTON Helen",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 20765,
+     "pct": 53.539
+    },
+    {
+     "candidate": "EVANS Austin",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 18020,
+     "pct": 46.461
+    }
+   ],
+   "margin": 3.54,
+   "tcp_estimated": false,
+   "runner_up_party": "NAT",
+   "tpp_alp": 25.086,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Myall Lakes",
+   "slug": "myall-lakes",
+   "elected": "BROMHEAD Stephen",
+   "party": "NAT",
+   "enrolment": null,
+   "formal": 50315,
+   "informal": 1715,
+   "primary": [
+    {
+     "candidate": "BROMHEAD Stephen",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 24367,
+     "pct": 48.429
+    },
+    {
+     "candidate": "KEEGAN David",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 14691,
+     "pct": 29.198
+    },
+    {
+     "candidate": "SANDILANDS Paul",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 4169,
+     "pct": 8.286
+    },
+    {
+     "candidate": "ELLIOTT Heather",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 3518,
+     "pct": 6.992
+    },
+    {
+     "candidate": "SPENCE Eleanor (Ellie)",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2797,
+     "pct": 5.559
+    },
+    {
+     "candidate": "BYE Quentin",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 773,
+     "pct": 1.536
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BROMHEAD Stephen",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 25990,
+     "pct": 59.195
+    },
+    {
+     "candidate": "KEEGAN David",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 17916,
+     "pct": 40.805
+    }
+   ],
+   "margin": 9.2,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 40.805,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Newcastle",
+   "slug": "newcastle",
+   "elected": "CRAKANTHORP Tim",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 50319,
+   "informal": 1703,
+   "primary": [
+    {
+     "candidate": "CRAKANTHORP Tim",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 23231,
+     "pct": 46.167
+    },
+    {
+     "candidate": "KEATING Blake",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 13224,
+     "pct": 26.28
+    },
+    {
+     "candidate": "McCABE Charlotte",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 8281,
+     "pct": 16.457
+    },
+    {
+     "candidate": "BREMNER YOUNG Sean",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1478,
+     "pct": 2.937
+    },
+    {
+     "candidate": "JELFS Beverley",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1219,
+     "pct": 2.423
+    },
+    {
+     "candidate": "FREDERICKS Glen",
+     "party": "X_TSBP",
+     "party_name": "The Small Business Party",
+     "votes": 1178,
+     "pct": 2.341
+    },
+    {
+     "candidate": "O'BRIEN Steve",
+     "party": "VS",
+     "party_name": "Socialist Alliance",
+     "votes": 854,
+     "pct": 1.697
+    },
+    {
+     "candidate": "LOOKER Claudia",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 854,
+     "pct": 1.697
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CRAKANTHORP Tim",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 29843,
+     "pct": 67.703
+    },
+    {
+     "candidate": "KEATING Blake",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 14236,
+     "pct": 32.297
+    }
+   ],
+   "margin": 17.7,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 67.703,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Newtown",
+   "slug": "newtown",
+   "elected": "LEONG Jenny",
+   "party": "GRN",
+   "enrolment": null,
+   "formal": 46312,
+   "informal": 1004,
+   "primary": [
+    {
+     "candidate": "LEONG Jenny",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 21326,
+     "pct": 46.049
+    },
+    {
+     "candidate": "INGRAM Norma",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 12202,
+     "pct": 26.347
+    },
+    {
+     "candidate": "INDRAGHANTI Rohan",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 6730,
+     "pct": 14.532
+    },
+    {
+     "candidate": "WHITE Laura",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 3295,
+     "pct": 7.115
+    },
+    {
+     "candidate": "BUCKMASTER Michelle",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1105,
+     "pct": 2.386
+    },
+    {
+     "candidate": "WATSON Hugh",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 967,
+     "pct": 2.088
+    },
+    {
+     "candidate": "LE SAUX Aaron",
+     "party": "X_TSBP",
+     "party_name": "The Small Business Party",
+     "votes": 687,
+     "pct": 1.483
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LEONG Jenny",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 24849,
+     "pct": 63.835
+    },
+    {
+     "candidate": "INGRAM Norma",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 14078,
+     "pct": 36.165
+    }
+   ],
+   "margin": 13.84,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 77.664,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "North Shore",
+   "slug": "north-shore",
+   "elected": "WILSON Felicity",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 47774,
+   "informal": 719,
+   "primary": [
+    {
+     "candidate": "WILSON Felicity",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 22261,
+     "pct": 46.596
+    },
+    {
+     "candidate": "CORRIGAN Carolyn",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 9341,
+     "pct": 19.552
+    },
+    {
+     "candidate": "LESTER Michael",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 5900,
+     "pct": 12.35
+    },
+    {
+     "candidate": "PETTIGREW Toby",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 5393,
+     "pct": 11.289
+    },
+    {
+     "candidate": "FURPHY Colin",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1993,
+     "pct": 4.172
+    },
+    {
+     "candidate": "BOUCHIER Olivia",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 827,
+     "pct": 1.731
+    },
+    {
+     "candidate": "GUNNING Sam",
+     "party": "LDP",
+     "party_name": "Liberal Democratic Party",
+     "votes": 785,
+     "pct": 1.643
+    },
+    {
+     "candidate": "BOAST Victoria",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 661,
+     "pct": 1.384
+    },
+    {
+     "candidate": "GRIMSHAW Jeffrey",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 613,
+     "pct": 1.283
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WILSON Felicity",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 23917,
+     "pct": 61.128
+    },
+    {
+     "candidate": "CORRIGAN Carolyn",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 15209,
+     "pct": 38.872
+    }
+   ],
+   "margin": 11.13,
+   "tcp_estimated": false,
+   "runner_up_party": "IND",
+   "tpp_alp": 32.153,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Northern Tablelands",
+   "slug": "northern-tablelands",
+   "elected": "MARSHALL Adam",
+   "party": "NAT",
+   "enrolment": null,
+   "formal": 48678,
+   "informal": 979,
+   "primary": [
+    {
+     "candidate": "MARSHALL Adam",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 35766,
+     "pct": 73.475
+    },
+    {
+     "candidate": "O'BRIEN Debra",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 5503,
+     "pct": 11.305
+    },
+    {
+     "candidate": "SINGLE Rayne",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 4616,
+     "pct": 9.483
+    },
+    {
+     "candidate": "ROBINSON Dorothy",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2793,
+     "pct": 5.738
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MARSHALL Adam",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 37727,
+     "pct": 82.842
+    },
+    {
+     "candidate": "O'BRIEN Debra",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 7814,
+     "pct": 17.158
+    }
+   ],
+   "margin": 32.84,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 17.158,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Oatley",
+   "slug": "oatley",
+   "elected": "COURE Mark",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 48120,
+   "informal": 1481,
+   "primary": [
+    {
+     "candidate": "COURE Mark",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 26311,
+     "pct": 54.678
+    },
+    {
+     "candidate": "MANNERING Lucy",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 15767,
+     "pct": 32.766
+    },
+    {
+     "candidate": "DRAGONE Gianluca",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3080,
+     "pct": 6.401
+    },
+    {
+     "candidate": "PRESTON Mark",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 2165,
+     "pct": 4.499
+    },
+    {
+     "candidate": "BONGOMIN Raphael",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 797,
+     "pct": 1.656
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "COURE Mark",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 27321,
+     "pct": 60.548
+    },
+    {
+     "candidate": "MANNERING Lucy",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 17802,
+     "pct": 39.452
+    }
+   ],
+   "margin": 10.55,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 39.452,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Orange",
+   "slug": "orange",
+   "elected": "DONATO Philip",
+   "party": "SFF",
+   "enrolment": null,
+   "formal": 50295,
+   "informal": 1811,
+   "primary": [
+    {
+     "candidate": "DONATO Philip",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 24718,
+     "pct": 49.146
+    },
+    {
+     "candidate": "HAZELTON Kate",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 12987,
+     "pct": 25.822
+    },
+    {
+     "candidate": "SANGER Luke",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 5126,
+     "pct": 10.192
+    },
+    {
+     "candidate": "NUGENT Stephen",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2615,
+     "pct": 5.199
+    },
+    {
+     "candidate": "DAVEY Maurice",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 1627,
+     "pct": 3.235
+    },
+    {
+     "candidate": "BISGROVE Stephen",
+     "party": "LDP",
+     "party_name": "Liberal Democratic Party",
+     "votes": 1037,
+     "pct": 2.062
+    },
+    {
+     "candidate": "BAXTER Terri",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 896,
+     "pct": 1.781
+    },
+    {
+     "candidate": "McMAHON Garry",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 873,
+     "pct": 1.736
+    },
+    {
+     "candidate": "O'BRIEN David",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 416,
+     "pct": 0.827
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "DONATO Philip",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 27746,
+     "pct": 65.182
+    },
+    {
+     "candidate": "HAZELTON Kate",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 14821,
+     "pct": 34.818
+    }
+   ],
+   "margin": 15.18,
+   "tcp_estimated": false,
+   "runner_up_party": "NAT",
+   "tpp_alp": 34.948,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Oxley",
+   "slug": "oxley",
+   "elected": "PAVEY Melinda",
+   "party": "NAT",
+   "enrolment": null,
+   "formal": 48540,
+   "informal": 1761,
+   "primary": [
+    {
+     "candidate": "PAVEY Melinda",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 25115,
+     "pct": 51.741
+    },
+    {
+     "candidate": "JENVEY Susan",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 9904,
+     "pct": 20.404
+    },
+    {
+     "candidate": "BAIN Arthur",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 6179,
+     "pct": 12.73
+    },
+    {
+     "candidate": "SAUL Dean",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 5644,
+     "pct": 11.628
+    },
+    {
+     "candidate": "SMYTHE Debbie",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1698,
+     "pct": 3.498
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PAVEY Melinda",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 27111,
+     "pct": 64.885
+    },
+    {
+     "candidate": "JENVEY Susan",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 14672,
+     "pct": 35.115
+    }
+   ],
+   "margin": 14.89,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 35.115,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Parramatta",
+   "slug": "parramatta",
+   "elected": "LEE Geoffrey",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 48728,
+   "informal": 1621,
+   "primary": [
+    {
+     "candidate": "LEE Geoffrey",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 26322,
+     "pct": 54.018
+    },
+    {
+     "candidate": "SCULLY Liz",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 14736,
+     "pct": 30.241
+    },
+    {
+     "candidate": "BRADLEY Phil",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3637,
+     "pct": 7.464
+    },
+    {
+     "candidate": "GARRARD Michelle",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1955,
+     "pct": 4.012
+    },
+    {
+     "candidate": "BELLWOOD Samuel",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1023,
+     "pct": 2.099
+    },
+    {
+     "candidate": "MOLTTER Jasmina",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 701,
+     "pct": 1.439
+    },
+    {
+     "candidate": "PRICE Susan",
+     "party": "VS",
+     "party_name": "Socialist Alliance",
+     "votes": 354,
+     "pct": 0.726
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LEE Geoffrey",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 27330,
+     "pct": 60.648
+    },
+    {
+     "candidate": "SCULLY Liz",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 17733,
+     "pct": 39.352
+    }
+   ],
+   "margin": 10.65,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 39.352,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Penrith",
+   "slug": "penrith",
+   "elected": "AYRES Stuart",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 48853,
+   "informal": 1819,
+   "primary": [
+    {
+     "candidate": "AYRES Stuart",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 19561,
+     "pct": 40.041
+    },
+    {
+     "candidate": "McKEOWN Karen",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 17415,
+     "pct": 35.648
+    },
+    {
+     "candidate": "HALLEY Carl",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 3510,
+     "pct": 7.185
+    },
+    {
+     "candidate": "BEST Nick",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2454,
+     "pct": 5.023
+    },
+    {
+     "candidate": "TYNDALL Mark",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1415,
+     "pct": 2.896
+    },
+    {
+     "candidate": "FRANICH Rod",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 1276,
+     "pct": 2.612
+    },
+    {
+     "candidate": "BURTON David",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 1095,
+     "pct": 2.241
+    },
+    {
+     "candidate": "MCBETH Kaj",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 885,
+     "pct": 1.812
+    },
+    {
+     "candidate": "CORNISH Marcus",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 665,
+     "pct": 1.361
+    },
+    {
+     "candidate": "BROWN Geoff",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 577,
+     "pct": 1.181
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "AYRES Stuart",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 21204,
+     "pct": 51.341
+    },
+    {
+     "candidate": "McKEOWN Karen",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 20096,
+     "pct": 48.659
+    }
+   ],
+   "margin": 1.34,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 48.659,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Pittwater",
+   "slug": "pittwater",
+   "elected": "STOKES Robert",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 49119,
+   "informal": 1346,
+   "primary": [
+    {
+     "candidate": "STOKES Robert",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 28170,
+     "pct": 57.351
+    },
+    {
+     "candidate": "KORZY Miranda",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 7518,
+     "pct": 15.306
+    },
+    {
+     "candidate": "TURKINGTON Jared",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 6168,
+     "pct": 12.557
+    },
+    {
+     "candidate": "DALY Suzanne",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1832,
+     "pct": 3.73
+    },
+    {
+     "candidate": "NEWMAN Michael",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1644,
+     "pct": 3.347
+    },
+    {
+     "candidate": "MATKOVIC Natalie",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1417,
+     "pct": 2.885
+    },
+    {
+     "candidate": "MITCHELL Stacey",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 1283,
+     "pct": 2.612
+    },
+    {
+     "candidate": "MATTHEWS Stewart",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1087,
+     "pct": 2.213
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "STOKES Robert",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 29696,
+     "pct": 70.838
+    },
+    {
+     "candidate": "KORZY Miranda",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 12225,
+     "pct": 29.162
+    }
+   ],
+   "margin": 20.84,
+   "tcp_estimated": false,
+   "runner_up_party": "GRN",
+   "tpp_alp": 27.64,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Port Macquarie",
+   "slug": "port-macquarie",
+   "elected": "WILLIAMS Leslie",
+   "party": "NAT",
+   "enrolment": null,
+   "formal": 52735,
+   "informal": 1971,
+   "primary": [
+    {
+     "candidate": "WILLIAMS Leslie",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 33538,
+     "pct": 63.597
+    },
+    {
+     "candidate": "ALLEY Peter",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 12220,
+     "pct": 23.172
+    },
+    {
+     "candidate": "MEGGET Drusi",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 4119,
+     "pct": 7.811
+    },
+    {
+     "candidate": "BURGESS Jan",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 2858,
+     "pct": 5.42
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WILLIAMS Leslie",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 34725,
+     "pct": 70.272
+    },
+    {
+     "candidate": "ALLEY Peter",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 14690,
+     "pct": 29.728
+    }
+   ],
+   "margin": 20.27,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 29.728,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Port Stephens",
+   "slug": "port-stephens",
+   "elected": "WASHINGTON Kate",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 49642,
+   "informal": 1790,
+   "primary": [
+    {
+     "candidate": "WASHINGTON Kate",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 23896,
+     "pct": 48.137
+    },
+    {
+     "candidate": "ABBOTT Jaimie",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 19818,
+     "pct": 39.922
+    },
+    {
+     "candidate": "MAGEE Maureen",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 1885,
+     "pct": 3.797
+    },
+    {
+     "candidate": "DORAN Bill",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1756,
+     "pct": 3.537
+    },
+    {
+     "candidate": "TAYLOR Theresa",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1303,
+     "pct": 2.625
+    },
+    {
+     "candidate": "JELFS Bradley",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 984,
+     "pct": 1.982
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WASHINGTON Kate",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 25766,
+     "pct": 55.754
+    },
+    {
+     "candidate": "ABBOTT Jaimie",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 20448,
+     "pct": 44.246
+    }
+   ],
+   "margin": 5.75,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 55.754,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Prospect",
+   "slug": "prospect",
+   "elected": "McDERMOTT Hugh",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 46845,
+   "informal": 2242,
+   "primary": [
+    {
+     "candidate": "McDERMOTT Hugh",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 24235,
+     "pct": 51.734
+    },
+    {
+     "candidate": "HANA Matthew",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 15851,
+     "pct": 33.837
+    },
+    {
+     "candidate": "MAKSIMOVIC Milan",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2950,
+     "pct": 6.297
+    },
+    {
+     "candidate": "NEWLAND Dorothea",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2345,
+     "pct": 5.006
+    },
+    {
+     "candidate": "WARD Catherine",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1464,
+     "pct": 3.125
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "McDERMOTT Hugh",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 26008,
+     "pct": 60.66
+    },
+    {
+     "candidate": "HANA Matthew",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 16867,
+     "pct": 39.34
+    }
+   ],
+   "margin": 10.66,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 60.66,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Riverstone",
+   "slug": "riverstone",
+   "elected": "CONOLLY Kevin",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 53510,
+   "informal": 1612,
+   "primary": [
+    {
+     "candidate": "CONOLLY Kevin",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 28956,
+     "pct": 54.113
+    },
+    {
+     "candidate": "CHRISTIE Annemarie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 21328,
+     "pct": 39.858
+    },
+    {
+     "candidate": "VAN VUCHT Alex",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3226,
+     "pct": 6.029
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CONOLLY Kevin",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 29337,
+     "pct": 56.339
+    },
+    {
+     "candidate": "CHRISTIE Annemarie",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 22735,
+     "pct": 43.661
+    }
+   ],
+   "margin": 6.34,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 43.661,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Rockdale",
+   "slug": "rockdale",
+   "elected": "KAMPER Steve",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 47892,
+   "informal": 2318,
+   "primary": [
+    {
+     "candidate": "KAMPER Steve",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 21945,
+     "pct": 45.822
+    },
+    {
+     "candidate": "HASSAN Sam",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 16118,
+     "pct": 33.655
+    },
+    {
+     "candidate": "STRONG Peter",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3829,
+     "pct": 7.995
+    },
+    {
+     "candidate": "TULLOCH George",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 2865,
+     "pct": 5.982
+    },
+    {
+     "candidate": "COLLAROS Paul",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1800,
+     "pct": 3.758
+    },
+    {
+     "candidate": "FARAJ Hussein",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1335,
+     "pct": 2.788
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "KAMPER Steve",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 25077,
+     "pct": 59.546
+    },
+    {
+     "candidate": "HASSAN Sam",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 17037,
+     "pct": 40.454
+    }
+   ],
+   "margin": 9.55,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 59.546,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Ryde",
+   "slug": "ryde",
+   "elected": "DOMINELLO Victor",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 48492,
+   "informal": 1351,
+   "primary": [
+    {
+     "candidate": "DOMINELLO Victor",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 24045,
+     "pct": 49.585
+    },
+    {
+     "candidate": "LAXALE Jerome",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 14750,
+     "pct": 30.417
+    },
+    {
+     "candidate": "PETERS Lindsay",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 4206,
+     "pct": 8.674
+    },
+    {
+     "candidate": "WORSLEY Julie",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 2058,
+     "pct": 4.244
+    },
+    {
+     "candidate": "KHATCHIGIAN Sophie",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1336,
+     "pct": 2.755
+    },
+    {
+     "candidate": "BUSCH Steve",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 850,
+     "pct": 1.753
+    },
+    {
+     "candidate": "LARSEN Mark",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 835,
+     "pct": 1.722
+    },
+    {
+     "candidate": "DE BRUYNE Christopher",
+     "party": "LDP",
+     "party_name": "Liberal Democratic Party",
+     "votes": 412,
+     "pct": 0.85
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "DOMINELLO Victor",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 26032,
+     "pct": 58.956
+    },
+    {
+     "candidate": "LAXALE Jerome",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 18123,
+     "pct": 41.044
+    }
+   ],
+   "margin": 8.96,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 41.044,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Seven Hills",
+   "slug": "seven-hills",
+   "elected": "TAYLOR Mark",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 46977,
+   "informal": 1572,
+   "primary": [
+    {
+     "candidate": "TAYLOR Mark",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 23548,
+     "pct": 50.127
+    },
+    {
+     "candidate": "OWEN Durga",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 16909,
+     "pct": 35.994
+    },
+    {
+     "candidate": "ATKINS Damien",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3038,
+     "pct": 6.467
+    },
+    {
+     "candidate": "SEXTON Alan",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1844,
+     "pct": 3.925
+    },
+    {
+     "candidate": "CLAUS Eric",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 863,
+     "pct": 1.837
+    },
+    {
+     "candidate": "D'CRUZ Jude",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 775,
+     "pct": 1.65
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "TAYLOR Mark",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 24518,
+     "pct": 56.355
+    },
+    {
+     "candidate": "OWEN Durga",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 18988,
+     "pct": 43.645
+    }
+   ],
+   "margin": 6.35,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 43.645,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Shellharbour",
+   "slug": "shellharbour",
+   "elected": "WATSON Anna",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 54840,
+   "informal": 2783,
+   "primary": [
+    {
+     "candidate": "WATSON Anna",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 31532,
+     "pct": 57.498
+    },
+    {
+     "candidate": "BITSCHKAT Shane",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 14924,
+     "pct": 27.214
+    },
+    {
+     "candidate": "DIXON Jamie",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 5158,
+     "pct": 9.406
+    },
+    {
+     "candidate": "DAVIS Ken",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 3226,
+     "pct": 5.883
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "WATSON Anna",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 34435,
+     "pct": 68.269
+    },
+    {
+     "candidate": "BITSCHKAT Shane",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 16005,
+     "pct": 31.731
+    }
+   ],
+   "margin": 18.27,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 68.269,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "South Coast",
+   "slug": "south-coast",
+   "elected": "HANCOCK Shelley",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 48880,
+   "informal": 2007,
+   "primary": [
+    {
+     "candidate": "HANCOCK Shelley",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 27143,
+     "pct": 55.53
+    },
+    {
+     "candidate": "ALLDRICK Annette",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 15256,
+     "pct": 31.211
+    },
+    {
+     "candidate": "STEPHENSON Kim",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 6481,
+     "pct": 13.259
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HANCOCK Shelley",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 27902,
+     "pct": 60.551
+    },
+    {
+     "candidate": "ALLDRICK Annette",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 18178,
+     "pct": 39.449
+    }
+   ],
+   "margin": 10.55,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 39.449,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Strathfield",
+   "slug": "strathfield",
+   "elected": "MCKAY Jodi",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 46217,
+   "informal": 1437,
+   "primary": [
+    {
+     "candidate": "MCKAY Jodi",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 20475,
+     "pct": 44.302
+    },
+    {
+     "candidate": "MADIRAZZA Philip",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 17972,
+     "pct": 38.886
+    },
+    {
+     "candidate": "MacLEOD Crisetta",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 4061,
+     "pct": 8.787
+    },
+    {
+     "candidate": "OREKONDY Vinay",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1443,
+     "pct": 3.122
+    },
+    {
+     "candidate": "LIANG Jack",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 1237,
+     "pct": 2.677
+    },
+    {
+     "candidate": "FLETCHER Simon",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1029,
+     "pct": 2.226
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MCKAY Jodi",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 23519,
+     "pct": 54.997
+    },
+    {
+     "candidate": "MADIRAZZA Philip",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 19245,
+     "pct": 45.003
+    }
+   ],
+   "margin": 5.0,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 54.997,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Summer Hill",
+   "slug": "summer-hill",
+   "elected": "HAYLEN Jo",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 48785,
+   "informal": 1451,
+   "primary": [
+    {
+     "candidate": "HAYLEN Jo",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 22639,
+     "pct": 46.406
+    },
+    {
+     "candidate": "WEI Leo",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 11380,
+     "pct": 23.327
+    },
+    {
+     "candidate": "RAUE Tom",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 10055,
+     "pct": 20.611
+    },
+    {
+     "candidate": "MAKRIS Andrea",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 2791,
+     "pct": 5.721
+    },
+    {
+     "candidate": "ROMANOVSKY Teresa",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1227,
+     "pct": 2.515
+    },
+    {
+     "candidate": "SINDEN Dale",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 693,
+     "pct": 1.421
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HAYLEN Jo",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 32023,
+     "pct": 72.296
+    },
+    {
+     "candidate": "WEI Leo",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 12271,
+     "pct": 27.704
+    }
+   ],
+   "margin": 22.3,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 72.296,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Swansea",
+   "slug": "swansea",
+   "elected": "CATLEY Yasmin",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 49192,
+   "informal": 2224,
+   "primary": [
+    {
+     "candidate": "CATLEY Yasmin",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 24371,
+     "pct": 49.543
+    },
+    {
+     "candidate": "BOWMAN Dean",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 16123,
+     "pct": 32.776
+    },
+    {
+     "candidate": "WILLIAMSON Doug",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3428,
+     "pct": 6.969
+    },
+    {
+     "candidate": "RISELEY Julia",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 2714,
+     "pct": 5.517
+    },
+    {
+     "candidate": "SEDDON Glenn",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 2556,
+     "pct": 5.196
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CATLEY Yasmin",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 26792,
+     "pct": 60.559
+    },
+    {
+     "candidate": "BOWMAN Dean",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 17449,
+     "pct": 39.441
+    }
+   ],
+   "margin": 10.56,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 60.559,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Sydney",
+   "slug": "sydney",
+   "elected": "GREENWICH Alex",
+   "party": "IND",
+   "enrolment": null,
+   "formal": 43201,
+   "informal": 807,
+   "primary": [
+    {
+     "candidate": "GREENWICH Alex",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 17905,
+     "pct": 41.446
+    },
+    {
+     "candidate": "GANNON Lyndon",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 13089,
+     "pct": 30.298
+    },
+    {
+     "candidate": "HOLDER Jo",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 6370,
+     "pct": 14.745
+    },
+    {
+     "candidate": "HARMS Jonathan",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 4124,
+     "pct": 9.546
+    },
+    {
+     "candidate": "DOUSKOU Fiona",
+     "party": "X_TSBP",
+     "party_name": "The Small Business Party",
+     "votes": 1017,
+     "pct": 2.354
+    },
+    {
+     "candidate": "THOMAS Christopher",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 696,
+     "pct": 1.611
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "GREENWICH Alex",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 22841,
+     "pct": 61.774
+    },
+    {
+     "candidate": "GANNON Lyndon",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 14134,
+     "pct": 38.226
+    }
+   ],
+   "margin": 11.77,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 47.044,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Tamworth",
+   "slug": "tamworth",
+   "elected": "ANDERSON Kevin",
+   "party": "NAT",
+   "enrolment": null,
+   "formal": 50578,
+   "informal": 1136,
+   "primary": [
+    {
+     "candidate": "ANDERSON Kevin",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 27855,
+     "pct": 55.073
+    },
+    {
+     "candidate": "RODDA Mark",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 8283,
+     "pct": 16.377
+    },
+    {
+     "candidate": "BACON Jeff",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 8180,
+     "pct": 16.173
+    },
+    {
+     "candidate": "MEARS Steve",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 4133,
+     "pct": 8.172
+    },
+    {
+     "candidate": "GUNNING Robin",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 1367,
+     "pct": 2.703
+    },
+    {
+     "candidate": "HALL Emma",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 760,
+     "pct": 1.503
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ANDERSON Kevin",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 30522,
+     "pct": 71.105
+    },
+    {
+     "candidate": "RODDA Mark",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 12403,
+     "pct": 28.895
+    }
+   ],
+   "margin": 21.11,
+   "tcp_estimated": false,
+   "runner_up_party": "IND",
+   "tpp_alp": 20.531,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Terrigal",
+   "slug": "terrigal",
+   "elected": "CROUCH Adam",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 50284,
+   "informal": 1682,
+   "primary": [
+    {
+     "candidate": "CROUCH Adam",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 26580,
+     "pct": 52.86
+    },
+    {
+     "candidate": "SUNDSTROM Jeff",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 13134,
+     "pct": 26.12
+    },
+    {
+     "candidate": "DOYLE Bob",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 5073,
+     "pct": 10.089
+    },
+    {
+     "candidate": "CHESTNUT Gary",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1758,
+     "pct": 3.496
+    },
+    {
+     "candidate": "COLEMAN Flavia",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1542,
+     "pct": 3.067
+    },
+    {
+     "candidate": "BLAIKIE Ross",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 1202,
+     "pct": 2.39
+    },
+    {
+     "candidate": "RIGG Wayne",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 995,
+     "pct": 1.979
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CROUCH Adam",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 27802,
+     "pct": 62.342
+    },
+    {
+     "candidate": "SUNDSTROM Jeff",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 16794,
+     "pct": 37.658
+    }
+   ],
+   "margin": 12.34,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 37.658,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "The Entrance",
+   "slug": "the-entrance",
+   "elected": "MEHAN David",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 48086,
+   "informal": 2130,
+   "primary": [
+    {
+     "candidate": "MEHAN David",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 20744,
+     "pct": 43.139
+    },
+    {
+     "candidate": "PERREM Brian",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 18145,
+     "pct": 37.734
+    },
+    {
+     "candidate": "PEARSON Stephen",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 3691,
+     "pct": 7.676
+    },
+    {
+     "candidate": "RICHARDS Maddy",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 2034,
+     "pct": 4.23
+    },
+    {
+     "candidate": "FITZPATRICK Jake",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1263,
+     "pct": 2.627
+    },
+    {
+     "candidate": "JONES Margaret",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1218,
+     "pct": 2.533
+    },
+    {
+     "candidate": "ERVIN Hadden",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 991,
+     "pct": 2.061
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MEHAN David",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 23661,
+     "pct": 55.218
+    },
+    {
+     "candidate": "PERREM Brian",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 19189,
+     "pct": 44.782
+    }
+   ],
+   "margin": 5.22,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 55.218,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Tweed",
+   "slug": "tweed",
+   "elected": "PROVEST Geoff",
+   "party": "NAT",
+   "enrolment": null,
+   "formal": 46661,
+   "informal": 1937,
+   "primary": [
+    {
+     "candidate": "PROVEST Geoff",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 22185,
+     "pct": 47.545
+    },
+    {
+     "candidate": "ELLIOT Craig",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 14449,
+     "pct": 30.966
+    },
+    {
+     "candidate": "FENELON Bill",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 6461,
+     "pct": 13.847
+    },
+    {
+     "candidate": "HEARDER Susie",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1790,
+     "pct": 3.836
+    },
+    {
+     "candidate": "McDONALD Ronald",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1776,
+     "pct": 3.806
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PROVEST Geoff",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 23243,
+     "pct": 54.97
+    },
+    {
+     "candidate": "ELLIOT Craig",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 19040,
+     "pct": 45.03
+    }
+   ],
+   "margin": 4.97,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 45.03,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Upper Hunter",
+   "slug": "upper-hunter",
+   "elected": "JOHNSEN Michael",
+   "party": "NAT",
+   "enrolment": null,
+   "formal": 48525,
+   "informal": 1701,
+   "primary": [
+    {
+     "candidate": "JOHNSEN Michael",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 16492,
+     "pct": 33.987
+    },
+    {
+     "candidate": "DAGG Melanie",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 13900,
+     "pct": 28.645
+    },
+    {
+     "candidate": "WATTS Lee",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 10697,
+     "pct": 22.044
+    },
+    {
+     "candidate": "LONERGAN Tony",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2320,
+     "pct": 4.781
+    },
+    {
+     "candidate": "ELLIS Mark",
+     "party": "LDP",
+     "party_name": "Liberal Democratic Party",
+     "votes": 2151,
+     "pct": 4.433
+    },
+    {
+     "candidate": "BLAIR Calum",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1077,
+     "pct": 2.219
+    },
+    {
+     "candidate": "ROBERTSON Claire",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 961,
+     "pct": 1.98
+    },
+    {
+     "candidate": "STRETTON Richard",
+     "party": "CHR",
+     "party_name": "Christian Democratic Party (Fred Nile Group)",
+     "votes": 927,
+     "pct": 1.91
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "JOHNSEN Michael",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 19341,
+     "pct": 52.561
+    },
+    {
+     "candidate": "DAGG Melanie",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 17456,
+     "pct": 47.439
+    }
+   ],
+   "margin": 2.56,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 47.439,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Vaucluse",
+   "slug": "vaucluse",
+   "elected": "UPTON Gabrielle",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 46023,
+   "informal": 856,
+   "primary": [
+    {
+     "candidate": "UPTON Gabrielle",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 26397,
+     "pct": 57.356
+    },
+    {
+     "candidate": "McEWIN Megan",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 6494,
+     "pct": 14.11
+    },
+    {
+     "candidate": "KULAKAUSKAS Lenore",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 5881,
+     "pct": 12.778
+    },
+    {
+     "candidate": "MACSMITH Mark",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 3683,
+     "pct": 8.003
+    },
+    {
+     "candidate": "GUTTMAN-JONES Miriam",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2284,
+     "pct": 4.963
+    },
+    {
+     "candidate": "DOYLE Deb",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 664,
+     "pct": 1.443
+    },
+    {
+     "candidate": "DUNNE Kay",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 620,
+     "pct": 1.347
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "UPTON Gabrielle",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 28260,
+     "pct": 69.322
+    },
+    {
+     "candidate": "McEWIN Megan",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 12506,
+     "pct": 30.678
+    }
+   ],
+   "margin": 19.32,
+   "tcp_estimated": false,
+   "runner_up_party": "GRN",
+   "tpp_alp": 29.418,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Wagga Wagga",
+   "slug": "wagga-wagga",
+   "elected": "McGIRR Joe",
+   "party": "IND",
+   "enrolment": null,
+   "formal": 48578,
+   "informal": 1607,
+   "primary": [
+    {
+     "candidate": "McGIRR Joe",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 21682,
+     "pct": 44.633
+    },
+    {
+     "candidate": "POWELL Mackenna",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 12635,
+     "pct": 26.01
+    },
+    {
+     "candidate": "HAYES Dan",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 7141,
+     "pct": 14.7
+    },
+    {
+     "candidate": "MCDONAGH Seb",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 4242,
+     "pct": 8.732
+    },
+    {
+     "candidate": "GOODLASS Ray",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 1346,
+     "pct": 2.771
+    },
+    {
+     "candidate": "TAGGART Colin",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 843,
+     "pct": 1.735
+    },
+    {
+     "candidate": "QUADE Matt",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 689,
+     "pct": 1.418
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "McGIRR Joe",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 26869,
+     "pct": 65.473
+    },
+    {
+     "candidate": "POWELL Mackenna",
+     "party": "NAT",
+     "party_name": "National Party of Australia - NSW",
+     "votes": 14169,
+     "pct": 34.527
+    }
+   ],
+   "margin": 15.47,
+   "tcp_estimated": false,
+   "runner_up_party": "NAT",
+   "tpp_alp": 42.487,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Wakehurst",
+   "slug": "wakehurst",
+   "elected": "HAZZARD Brad",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 48712,
+   "informal": 1537,
+   "primary": [
+    {
+     "candidate": "HAZZARD Brad",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 28704,
+     "pct": 58.926
+    },
+    {
+     "candidate": "SHARPE Chris",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 8600,
+     "pct": 17.655
+    },
+    {
+     "candidate": "ZAHARIAS Lilith",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 4867,
+     "pct": 9.991
+    },
+    {
+     "candidate": "SCHULTZ Katika",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1928,
+     "pct": 3.958
+    },
+    {
+     "candidate": "SORENSEN Susan",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1685,
+     "pct": 3.459
+    },
+    {
+     "candidate": "HOUGH Darren",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1606,
+     "pct": 3.297
+    },
+    {
+     "candidate": "MAWSON Greg",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 1322,
+     "pct": 2.714
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HAZZARD Brad",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 30182,
+     "pct": 71.003
+    },
+    {
+     "candidate": "SHARPE Chris",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 12326,
+     "pct": 28.997
+    }
+   ],
+   "margin": 21.0,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 28.997,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Wallsend",
+   "slug": "wallsend",
+   "elected": "HORNERY Sonia",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 51351,
+   "informal": 1851,
+   "primary": [
+    {
+     "candidate": "HORNERY Sonia",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 31998,
+     "pct": 62.312
+    },
+    {
+     "candidate": "TRAPPETT Nicholas",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 10458,
+     "pct": 20.366
+    },
+    {
+     "candidate": "FRANCIS-COAN Sinead",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 4756,
+     "pct": 9.262
+    },
+    {
+     "candidate": "GUNDRY Toni",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 2170,
+     "pct": 4.226
+    },
+    {
+     "candidate": "DE VRIES Fiona",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 1969,
+     "pct": 3.834
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HORNERY Sonia",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 35605,
+     "pct": 75.441
+    },
+    {
+     "candidate": "TRAPPETT Nicholas",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 11591,
+     "pct": 24.559
+    }
+   ],
+   "margin": 25.44,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 75.441,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Willoughby",
+   "slug": "willoughby",
+   "elected": "BEREJIKLIAN Gladys",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 47857,
+   "informal": 934,
+   "primary": [
+    {
+     "candidate": "BEREJIKLIAN Gladys",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 27292,
+     "pct": 57.028
+    },
+    {
+     "candidate": "REISS Justin",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 6875,
+     "pct": 14.366
+    },
+    {
+     "candidate": "KEOGH Daniel",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 5342,
+     "pct": 11.162
+    },
+    {
+     "candidate": "PENN Larissa",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 4742,
+     "pct": 9.909
+    },
+    {
+     "candidate": "CROWLEY Tom",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1403,
+     "pct": 2.932
+    },
+    {
+     "candidate": "BENNETT Emma",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1040,
+     "pct": 2.173
+    },
+    {
+     "candidate": "GRAHAM Greg",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 779,
+     "pct": 1.628
+    },
+    {
+     "candidate": "MEOW-MEOW Meow-Ludo",
+     "party": "X_FN",
+     "party_name": "Flux NSW",
+     "votes": 384,
+     "pct": 0.802
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BEREJIKLIAN Gladys",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 29142,
+     "pct": 71.031
+    },
+    {
+     "candidate": "REISS Justin",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 11885,
+     "pct": 28.969
+    }
+   ],
+   "margin": 21.03,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 28.969,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Wollondilly",
+   "slug": "wollondilly",
+   "elected": "SMITH Nathaniel",
+   "party": "LIB",
+   "enrolment": null,
+   "formal": 50989,
+   "informal": 1934,
+   "primary": [
+    {
+     "candidate": "SMITH Nathaniel",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 19351,
+     "pct": 37.951
+    },
+    {
+     "candidate": "HANNAN Judy",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 10258,
+     "pct": 20.118
+    },
+    {
+     "candidate": "DAVIDSON Jo-Ann",
+     "party": "ALP",
+     "party_name": "Country Labor Party",
+     "votes": 7723,
+     "pct": 15.146
+    },
+    {
+     "candidate": "FENTON Charlie",
+     "party": "ONP",
+     "party_name": "Pauline Hanson's One Nation",
+     "votes": 5712,
+     "pct": 11.202
+    },
+    {
+     "candidate": "BOLWELL Jason",
+     "party": "SFF",
+     "party_name": "Shooters, Fishers and Farmers Party (NSW) Incorporated",
+     "votes": 3235,
+     "pct": 6.345
+    },
+    {
+     "candidate": "POWELL David",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 2847,
+     "pct": 5.584
+    },
+    {
+     "candidate": "EDWARDS Heather",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1326,
+     "pct": 2.601
+    },
+    {
+     "candidate": "BLACK Mitchell",
+     "party": "LDP",
+     "party_name": "Liberal Democratic Party",
+     "votes": 537,
+     "pct": 1.053
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SMITH Nathaniel",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 21113,
+     "pct": 55.496
+    },
+    {
+     "candidate": "HANNAN Judy",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 16931,
+     "pct": 44.504
+    }
+   ],
+   "margin": 5.5,
+   "tcp_estimated": false,
+   "runner_up_party": "IND",
+   "tpp_alp": 36.165,
+   "tpp_method": "tcp",
+   "classic": false,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Wollongong",
+   "slug": "wollongong",
+   "elected": "SCULLY Paul",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 51435,
+   "informal": 2400,
+   "primary": [
+    {
+     "candidate": "SCULLY Paul",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 25776,
+     "pct": 50.114
+    },
+    {
+     "candidate": "FITZPATRICK Zachary",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 11427,
+     "pct": 22.216
+    },
+    {
+     "candidate": "ARCIONI Benjamin",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 6583,
+     "pct": 12.799
+    },
+    {
+     "candidate": "NASTOSKI Nikola",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2830,
+     "pct": 5.502
+    },
+    {
+     "candidate": "ANTHONY Andrew",
+     "party": "SAP",
+     "party_name": "Sustainable Australia (NSW)",
+     "votes": 2242,
+     "pct": 4.359
+    },
+    {
+     "candidate": "BANK Benjamin",
+     "party": "AJP",
+     "party_name": "Animal Justice Party",
+     "votes": 1541,
+     "pct": 2.996
+    },
+    {
+     "candidate": "HEHIR James",
+     "party": "X_KSOP",
+     "party_name": "Keep Sydney Open Party",
+     "votes": 1036,
+     "pct": 2.014
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "SCULLY Paul",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 31357,
+     "pct": 71.368
+    },
+    {
+     "candidate": "FITZPATRICK Zachary",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 12580,
+     "pct": 28.632
+    }
+   ],
+   "margin": 21.37,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 71.368,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  },
+  {
+   "name": "Wyong",
+   "slug": "wyong",
+   "elected": "HARRIS David",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 48121,
+   "informal": 2655,
+   "primary": [
+    {
+     "candidate": "HARRIS David",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 25077,
+     "pct": 52.112
+    },
+    {
+     "candidate": "LI-CANTWELL Ying Shu",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 15338,
+     "pct": 31.874
+    },
+    {
+     "candidate": "WYNN Sue",
+     "party": "GRN",
+     "party_name": "The Greens NSW",
+     "votes": 4553,
+     "pct": 9.462
+    },
+    {
+     "candidate": "STEVENSON Martin",
+     "party": "X_ACN",
+     "party_name": "Australian Conservatives (NSW)",
+     "votes": 3153,
+     "pct": 6.552
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HARRIS David",
+     "party": "ALP",
+     "party_name": "Australian Labor Party (NSW Branch)",
+     "votes": 27296,
+     "pct": 62.447
+    },
+    {
+     "candidate": "LI-CANTWELL Ying Shu",
+     "party": "LIB",
+     "party_name": "The Liberal Party of Australia, New South Wales Division",
+     "votes": 16415,
+     "pct": 37.553
+    }
+   ],
+   "margin": 12.45,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 62.447,
+   "tpp_method": "tcp",
+   "classic": true,
+   "has_dop": true,
+   "by_election": null
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+{
+ "n_seats": 59,
+ "brier": 0.0519,
+ "log_loss": 0.0971,
+ "favourite_accuracy": 0.9661,
+ "status_quo_accuracy": 0.7627,
+ "seats": {
+  "ALP": {
+   "actual": 53,
+   "median": 51.0,
+   "p90": [
+    47.0,
+    55.0
+   ],
+   "covered_90": true
+  },
+  "COAL": {
+   "actual": 6,
+   "median": 8.0,
+   "p90": [
+    4.0,
+    12.0
+   ],
+   "covered_90": true
+  },
+  "GRN": {
+   "actual": 0,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    0.0
+   ],
+   "covered_90": true
+  },
+  "IND": {
+   "actual": 0,
+   "median": 0.0,
+   "p90": [
+    0.0,
+    1.0
+   ],
+   "covered_90": true
+  }
+ },
+ "calibration": [
+  {
+   "bin": "0.50-0.70",
+   "n": 2,
+   "mean_prob": 0.579,
+   "hit_rate": 0.5
+  },
+  {
+   "bin": "0.70-0.90",
+   "n": 7,
+   "mean_prob": 0.845,
+   "hit_rate": 1.0
+  },
+  {
+   "bin": "0.90-0.99",
+   "n": 7,
+   "mean_prob": 0.954,
+   "hit_rate": 1.0
+  },
+  {
+   "bin": "0.99-1.00",
+   "n": 41,
+   "mean_prob": 1.0,
+   "hit_rate": 1.0
+  }
+ ],
+ "misses": [
+  {
+   "district": "Kalgoorlie",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.499,
+   "p_won": 0.153,
+   "incumbent": "LIB"
+  },
+  {
+   "district": "Warren-Blackwood",
+   "won": "ALP",
+   "favourite": "NAT",
+   "p_fav": 0.593,
+   "p_won": 0.354,
+   "incumbent": "NAT"
+  }
+ ],
+ "seat_vote": {
+  "ALP": {
+   "n": 59,
+   "crps": 5.285,
+   "cover50": 0.169,
+   "cover90": 0.441,
+   "pit_hist": [
+    1,
+    2,
+    0,
+    1,
+    0,
+    1,
+    2,
+    7,
+    8,
+    37
+   ]
+  },
+  "COAL": {
+   "n": 59,
+   "crps": 2.94,
+   "cover50": 0.254,
+   "cover90": 0.678,
+   "pit_hist": [
+    25,
+    7,
+    7,
+    2,
+    4,
+    5,
+    2,
+    0,
+    3,
+    4
+   ]
+  },
+  "GRN": {
+   "n": 59,
+   "crps": 1.796,
+   "cover50": 0.136,
+   "cover90": 0.525,
+   "pit_hist": [
+    38,
+    8,
+    5,
+    2,
+    2,
+    2,
+    0,
+    1,
+    0,
+    1
+   ]
+  }
+ },
+ "pendulum_accuracy": 0.9322,
+ "statewide": {
+  "ALP": {
+   "forecast": [
+    47.7,
+    52.2,
+    56.6
+   ],
+   "actual": 59.94
+  },
+  "COAL": {
+   "forecast": [
+    24.0,
+    27.6,
+    31.3
+   ],
+   "actual": 25.3
+  },
+  "GRN": {
+   "forecast": [
+    7.0,
+    9.2,
+    11.4
+   ],
+   "actual": 6.92
+  },
+  "tpp": {
+   "forecast": [
+    60.9,
+    65.3,
+    69.4
+   ],
+   "actual": 69.7
+  }
+ },
+ "outcome": {
+  "alp_majority": 0.99995,
+  "coal_majority": 5e-05,
+  "hung": 0.0,
+  "alp_most_seats": 0.99995,
+  "coal_most_seats": 5e-05
+ }
+}

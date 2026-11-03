@@ -5,7 +5,7 @@
 	import Hemicycle from '$lib/components/charts/Hemicycle.svelte';
 	import SeatMap from '$lib/components/charts/SeatMap.svelte';
 	import { fmtDate } from '$lib/format';
-	import { chamberSeats, tierOpacity, TIERS } from '$lib/maps';
+	import { chamberSeats, tierOpacity, TIERS, mapFrame } from '$lib/maps';
 	import { party, partyColour } from '$lib/parties';
 
 	let { data }: { data: PageData } = $props();
@@ -30,10 +30,10 @@
 	const voteMax = $derived(Math.ceil(Math.max(...voteOrder.map((k) => f.statewide_primary[k]?.[2] ?? 0)) / 5) * 5);
 
 	// Seat table
-	const partyOrder = ['ALP', 'GRN', 'IND', 'OTH', 'ONP', 'NAT', 'LIB', 'COAL'];
+	const partyOrder = ['ALP', 'GRN', 'IND', 'OTH', 'ONP', 'NAT', 'LIB', 'LNP', 'COAL'];
 	let sortKey = $state<'name' | 'certainty' | 'alp' | 'coal'>('certainty');
 	let query = $state('');
-	const coalP = (d: (typeof f.districts)[number]) => (d.probs.LIB ?? 0) + (d.probs.NAT ?? 0) + (d.probs.COAL ?? 0);
+	const coalP = (d: (typeof f.districts)[number]) => (d.probs.LIB ?? 0) + (d.probs.NAT ?? 0) + (d.probs.LNP ?? 0) + (d.probs.COAL ?? 0);
 	const rows = $derived(
 		f.districts
 			.filter((d) => !query || d.district.toLowerCase().includes(query.toLowerCase()))
@@ -153,6 +153,7 @@
 	<SeatMap
 		title="Forecast favourite by district"
 		geo={data.geo}
+		frame={mapFrame(data.jurisdiction.code)}
 		fill={(slug) => partyColour(bySlug[slug]?.leader ?? 'OTH')}
 		opacity={(slug) => tierOpacity(bySlug[slug]?.leader_prob ?? 0)}
 		tooltip={seatTip}

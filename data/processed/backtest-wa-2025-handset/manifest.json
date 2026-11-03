@@ -1,0 +1,64 @@
+{
+ "election": "wa-2025",
+ "run_at": "2026-10-31T10:18:32+00:00",
+ "git_commit": "a691a1253f10bb9f81b5638c0eb1400306477f7d",
+ "uncommitted_changes": false,
+ "config": {
+  "n_per_draw": 5,
+  "seed": 20261128,
+  "poll_error_sd": {
+   "ALP": 4.19,
+   "COAL": 2.0,
+   "GRN": 1.31,
+   "ONP": 2.5
+  },
+  "poll_error_df": 5.0,
+  "poll_error_corr": null,
+  "poll_error_corr_parties": [],
+  "poll_bias": {
+   "ALP": -1.13,
+   "COAL": 0.68,
+   "GRN": -0.09
+  },
+  "region_sd": 0.06,
+  "seat_sd": {
+   "ALP": 0.12,
+   "COAL": 0.12,
+   "GRN": 0.18,
+   "OTH": 0.25,
+   "ONP": 0.25
+  },
+  "seat_df": {},
+  "seat_beta": {},
+  "ind_decay_mean": -0.2,
+  "ind_decay_sd": 0.4,
+  "retire_effect": -0.08,
+  "sophomore_effect": 0.05,
+  "ind_prior_sd": 0.35,
+  "ind_sophomore_log": 0.15,
+  "ind_retire_log": -1.2
+ },
+ "inputs": {
+  "wa-2025\\booths.csv": "5b13feb7fb558197",
+  "wa-2025\\districts.csv": "ad0888d2e59bd2bd",
+  "wa-2025\\dop_transfers.csv": "54b870b318d7a5c4",
+  "wa-2025\\final.csv": "a998549403ac04dc",
+  "wa-2025\\primary.csv": "022ff6d7b3b533a9",
+  "wa-2025\\tcp.csv": "a998549403ac04dc",
+  "wa-2025\\tpp.csv": "6d5d9dc08ce34098",
+  "wa-2021\\booths.csv": "c5ffb5bccb50f0ad",
+  "wa-2021\\districts.csv": "096c284f05455173",
+  "wa-2021\\dop_transfers.csv": "0f698a1422719cc3",
+  "wa-2021\\final.csv": "213fd11b2a2f3409",
+  "wa-2021\\primary.csv": "0c778c9822e79c00",
+  "wa-2021\\tcp.csv": "213fd11b2a2f3409",
+  "wa-2021\\tpp.csv": "4e190cb94220ae5f",
+  "wa-2025-notional\\districts.csv": "fd4ce4159e55a0b1",
+  "wa-2025-notional\\primary.csv": "02d7bcbe69cb2914",
+  "wa-2025-notional\\venue_map.csv": "44054d18e3f0ca2e",
+  "polls_wa-2025.csv": "6ed596dd9be458ee",
+  "election_results_wa.csv": "fea62c1c6f6d2a12"
+ },
+ "hand_set": true,
+ "no_polls": false
+}

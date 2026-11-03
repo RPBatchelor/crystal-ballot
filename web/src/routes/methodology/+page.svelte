@@ -3,7 +3,8 @@
 	import { party } from '$lib/parties';
 
 	let { data }: { data: PageData } = $props();
-	const adjective = (name: string) => (name === 'Victoria' ? 'Victorian' : name.toLowerCase());
+	const ADJECTIVES: Record<string, string> = { Victoria: 'Victorian', 'New South Wales': 'NSW', Queensland: 'Queensland', 'South Australia': 'SA', 'Western Australia': 'WA' };
+	const adjective = (name: string) => ADJECTIVES[name] ?? name.toLowerCase();
 	const pct = (p: number) => `${Math.round(p * 100)}%`;
 	const signed = (v: number | null) => (v == null ? '–' : `${v > 0 ? '+' : ''}${v.toFixed(1)}`);
 </script>
@@ -15,7 +16,7 @@
 <p class="eyebrow">How it works</p>
 <h1>Methodology</h1>
 <p class="lede">
-	The model has three layers, each checked against past Victorian and federal elections. Everything below is
+	The model has three layers, each checked against past Victorian, NSW, Queensland and federal elections. Everything below is
 	reproducible from the open pipeline.
 </p>
 
@@ -44,6 +45,19 @@
 		result in each area. Every candidate's primary vote is simulated, then preferences are distributed
 		as in a real count, with flows estimated from the electoral commission's full preference
 		distributions and calibrated so that replaying the last election reproduces each seat's result.
+	</p>
+	<p>
+		New South Wales uses optional preferential voting: a voter need only number one box, so many
+		ballots exhaust instead of reaching the final two. The NSW model treats exhausting as one more
+		choice at every exclusion, estimated from the NSW Electoral Commission's distributions; it becomes
+		likelier as fewer candidates remain. NSW redraws its boundaries between elections, so the previous
+		result is first re-cut onto the new districts, polling place by polling place, with pre-poll,
+		postal and other declaration votes following each old district's polling-place votes.
+	</p>
+	<p>
+		Queensland has used full preferential voting since 2016, and its 2020 and 2024 elections were held on
+		the same boundaries, so its seats start directly from the previous result. Katter's Australian Party
+		members are modelled like independents: their vote is largely personal.
 	</p>
 </div>
 

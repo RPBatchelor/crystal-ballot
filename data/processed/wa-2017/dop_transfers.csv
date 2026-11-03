@@ -1,0 +1,1433 @@
+election_id,district,count,from_candidate,to_candidate,votes,from_party,to_party
+wa-2017,Albany,2,'t HART Ian,RASTRICK David,35.0,CHR,GRN
+wa-2017,Albany,2,'t HART Ian,SUTTON Robert,199.0,CHR,NAT
+wa-2017,Albany,2,'t HART Ian,WATSON Peter,106.0,CHR,ALP
+wa-2017,Albany,2,'t HART Ian,STOCKS Greg,703.0,CHR,LIB
+wa-2017,Albany,2,'t HART Ian,GRIFFITHS Anthony,122.0,CHR,ONP
+wa-2017,Albany,2,'t HART Ian,Exhausted,2.0,CHR,EXH
+wa-2017,Albany,3,RASTRICK David,SUTTON Robert,338.0,GRN,NAT
+wa-2017,Albany,3,RASTRICK David,WATSON Peter,1070.0,GRN,ALP
+wa-2017,Albany,3,RASTRICK David,STOCKS Greg,76.0,GRN,LIB
+wa-2017,Albany,3,RASTRICK David,GRIFFITHS Anthony,95.0,GRN,ONP
+wa-2017,Albany,3,RASTRICK David,Exhausted,3.0,GRN,EXH
+wa-2017,Albany,4,GRIFFITHS Anthony,SUTTON Robert,697.0,ONP,NAT
+wa-2017,Albany,4,GRIFFITHS Anthony,WATSON Peter,475.0,ONP,ALP
+wa-2017,Albany,4,GRIFFITHS Anthony,STOCKS Greg,667.0,ONP,LIB
+wa-2017,Albany,4,GRIFFITHS Anthony,Exhausted,2.0,ONP,EXH
+wa-2017,Albany,5,STOCKS Greg,SUTTON Robert,4601.0,LIB,NAT
+wa-2017,Albany,5,STOCKS Greg,WATSON Peter,988.0,LIB,ALP
+wa-2017,Albany,5,STOCKS Greg,Exhausted,6.0,LIB,EXH
+wa-2017,Armadale,2,FLAHERTY Edward,BUTI Tony,49.0,X_MBP,ALP
+wa-2017,Armadale,2,FLAHERTY Edward,JEFFERY Wendy,48.0,X_MBP,LIB
+wa-2017,Armadale,2,FLAHERTY Edward,NAIDU Nitasha,50.0,X_MBP,CHR
+wa-2017,Armadale,2,FLAHERTY Edward,PYLE Anthony,41.0,X_MBP,GRN
+wa-2017,Armadale,2,FLAHERTY Edward,HUYNH Cameron,81.0,X_MBP,IND
+wa-2017,Armadale,3,HUYNH Cameron,BUTI Tony,173.0,IND,ALP
+wa-2017,Armadale,3,HUYNH Cameron,JEFFERY Wendy,72.0,IND,LIB
+wa-2017,Armadale,3,HUYNH Cameron,NAIDU Nitasha,183.0,IND,CHR
+wa-2017,Armadale,3,HUYNH Cameron,PYLE Anthony,207.0,IND,GRN
+wa-2017,Armadale,3,HUYNH Cameron,Exhausted,2.0,IND,EXH
+wa-2017,Armadale,4,NAIDU Nitasha,BUTI Tony,263.0,CHR,ALP
+wa-2017,Armadale,4,NAIDU Nitasha,JEFFERY Wendy,1187.0,CHR,LIB
+wa-2017,Armadale,4,NAIDU Nitasha,PYLE Anthony,228.0,CHR,GRN
+wa-2017,Armadale,4,NAIDU Nitasha,Exhausted,3.0,CHR,EXH
+wa-2017,Armadale,5,PYLE Anthony,BUTI Tony,1432.0,GRN,ALP
+wa-2017,Armadale,5,PYLE Anthony,JEFFERY Wendy,498.0,GRN,LIB
+wa-2017,Armadale,5,PYLE Anthony,Exhausted,2.0,GRN,EXH
+wa-2017,Balcatta,2,TAIT Richard,McENCROE Keith John,30.0,LDP,CHR
+wa-2017,Balcatta,2,TAIT Richard,HATTON Chris,115.0,LDP,LIB
+wa-2017,Balcatta,2,TAIT Richard,MICHAEL David,46.0,LDP,ALP
+wa-2017,Balcatta,2,TAIT Richard,NASTESKI Mile,32.0,LDP,X_MBP
+wa-2017,Balcatta,2,TAIT Richard,HARVEY Nicole,28.0,LDP,GRN
+wa-2017,Balcatta,2,TAIT Richard,Exhausted,1.0,LDP,EXH
+wa-2017,Balcatta,3,NASTESKI Mile,McENCROE Keith John,121.0,X_MBP,CHR
+wa-2017,Balcatta,3,NASTESKI Mile,HATTON Chris,129.0,X_MBP,LIB
+wa-2017,Balcatta,3,NASTESKI Mile,MICHAEL David,177.0,X_MBP,ALP
+wa-2017,Balcatta,3,NASTESKI Mile,HARVEY Nicole,149.0,X_MBP,GRN
+wa-2017,Balcatta,4,McENCROE Keith John,HATTON Chris,591.0,CHR,LIB
+wa-2017,Balcatta,4,McENCROE Keith John,MICHAEL David,185.0,CHR,ALP
+wa-2017,Balcatta,4,McENCROE Keith John,HARVEY Nicole,123.0,CHR,GRN
+wa-2017,Balcatta,4,McENCROE Keith John,Exhausted,1.0,CHR,EXH
+wa-2017,Balcatta,5,HARVEY Nicole,HATTON Chris,527.0,GRN,LIB
+wa-2017,Balcatta,5,HARVEY Nicole,MICHAEL David,2277.0,GRN,ALP
+wa-2017,Balcatta,5,HARVEY Nicole,Exhausted,4.0,GRN,EXH
+wa-2017,Baldivis,2,SUMMERS Kath,GEORGE Malcolm,32.0,IND,LIB
+wa-2017,Baldivis,2,SUMMERS Kath,FEGEBANK Christine,33.0,IND,GRN
+wa-2017,Baldivis,2,SUMMERS Kath,WHITFIELD Matt,94.0,IND,IND
+wa-2017,Baldivis,2,SUMMERS Kath,ZURAKOWSKI John Carl,8.0,IND,ONP
+wa-2017,Baldivis,2,SUMMERS Kath,WHITBY Reece,18.0,IND,ALP
+wa-2017,Baldivis,2,SUMMERS Kath,HOLMES Yvette,6.0,IND,CHR
+wa-2017,Baldivis,2,SUMMERS Kath,MAKKAR Prabhpreet Singh,3.0,IND,X_MBP
+wa-2017,Baldivis,2,SUMMERS Kath,HAMERSLEY Craig,43.0,IND,IND
+wa-2017,Baldivis,3,MAKKAR Prabhpreet Singh,GEORGE Malcolm,40.0,X_MBP,LIB
+wa-2017,Baldivis,3,MAKKAR Prabhpreet Singh,FEGEBANK Christine,17.0,X_MBP,GRN
+wa-2017,Baldivis,3,MAKKAR Prabhpreet Singh,WHITFIELD Matt,40.0,X_MBP,IND
+wa-2017,Baldivis,3,MAKKAR Prabhpreet Singh,ZURAKOWSKI John Carl,14.0,X_MBP,ONP
+wa-2017,Baldivis,3,MAKKAR Prabhpreet Singh,WHITBY Reece,82.0,X_MBP,ALP
+wa-2017,Baldivis,3,MAKKAR Prabhpreet Singh,HOLMES Yvette,21.0,X_MBP,CHR
+wa-2017,Baldivis,3,MAKKAR Prabhpreet Singh,HAMERSLEY Craig,38.0,X_MBP,IND
+wa-2017,Baldivis,4,HAMERSLEY Craig,GEORGE Malcolm,51.0,IND,LIB
+wa-2017,Baldivis,4,HAMERSLEY Craig,FEGEBANK Christine,49.0,IND,GRN
+wa-2017,Baldivis,4,HAMERSLEY Craig,WHITFIELD Matt,160.0,IND,IND
+wa-2017,Baldivis,4,HAMERSLEY Craig,ZURAKOWSKI John Carl,25.0,IND,ONP
+wa-2017,Baldivis,4,HAMERSLEY Craig,WHITBY Reece,121.0,IND,ALP
+wa-2017,Baldivis,4,HAMERSLEY Craig,HOLMES Yvette,65.0,IND,CHR
+wa-2017,Baldivis,5,HOLMES Yvette,GEORGE Malcolm,302.0,CHR,LIB
+wa-2017,Baldivis,5,HOLMES Yvette,FEGEBANK Christine,34.0,CHR,GRN
+wa-2017,Baldivis,5,HOLMES Yvette,WHITFIELD Matt,142.0,CHR,IND
+wa-2017,Baldivis,5,HOLMES Yvette,ZURAKOWSKI John Carl,81.0,CHR,ONP
+wa-2017,Baldivis,5,HOLMES Yvette,WHITBY Reece,147.0,CHR,ALP
+wa-2017,Baldivis,6,FEGEBANK Christine,GEORGE Malcolm,149.0,GRN,LIB
+wa-2017,Baldivis,6,FEGEBANK Christine,WHITFIELD Matt,435.0,GRN,IND
+wa-2017,Baldivis,6,FEGEBANK Christine,ZURAKOWSKI John Carl,92.0,GRN,ONP
+wa-2017,Baldivis,6,FEGEBANK Christine,WHITBY Reece,868.0,GRN,ALP
+wa-2017,Baldivis,6,FEGEBANK Christine,Exhausted,1.0,GRN,EXH
+wa-2017,Baldivis,7,ZURAKOWSKI John Carl,GEORGE Malcolm,715.0,ONP,LIB
+wa-2017,Baldivis,7,ZURAKOWSKI John Carl,WHITFIELD Matt,780.0,ONP,IND
+wa-2017,Baldivis,7,ZURAKOWSKI John Carl,WHITBY Reece,578.0,ONP,ALP
+wa-2017,Baldivis,7,ZURAKOWSKI John Carl,Exhausted,1.0,ONP,EXH
+wa-2017,Baldivis,8,GEORGE Malcolm,WHITFIELD Matt,3698.0,LIB,IND
+wa-2017,Baldivis,8,GEORGE Malcolm,WHITBY Reece,1153.0,LIB,ALP
+wa-2017,Baldivis,8,GEORGE Malcolm,Exhausted,9.0,LIB,EXH
+wa-2017,Bassendean,2,MARTIN Graeme,SETH Jim,251.0,X_MBP,LIB
+wa-2017,Bassendean,2,MARTIN Graeme,KELLY Dave,174.0,X_MBP,ALP
+wa-2017,Bassendean,2,MARTIN Graeme,MEWHOR Paul William,134.0,X_MBP,CHR
+wa-2017,Bassendean,2,MARTIN Graeme,QUINTON Sarah,119.0,X_MBP,GRN
+wa-2017,Bassendean,2,MARTIN Graeme,Exhausted,2.0,X_MBP,EXH
+wa-2017,Bassendean,3,MEWHOR Paul William,SETH Jim,406.0,CHR,LIB
+wa-2017,Bassendean,3,MEWHOR Paul William,KELLY Dave,289.0,CHR,ALP
+wa-2017,Bassendean,3,MEWHOR Paul William,QUINTON Sarah,171.0,CHR,GRN
+wa-2017,Bassendean,3,MEWHOR Paul William,Exhausted,3.0,CHR,EXH
+wa-2017,Bassendean,4,QUINTON Sarah,SETH Jim,516.0,GRN,LIB
+wa-2017,Bassendean,4,QUINTON Sarah,KELLY Dave,2301.0,GRN,ALP
+wa-2017,Bassendean,4,QUINTON Sarah,Exhausted,5.0,GRN,EXH
+wa-2017,Bateman,2,ARNOLD Adrian,NALDER Dean,40.0,X_WAP,LIB
+wa-2017,Bateman,2,ARNOLD Adrian,HUGGINS Don,16.0,X_WAP,CHR
+wa-2017,Bateman,2,ARNOLD Adrian,MASIH Jonathan,44.0,X_WAP,X_MBP
+wa-2017,Bateman,2,ARNOLD Adrian,MEYERS Michelle,16.0,X_WAP,ONP
+wa-2017,Bateman,2,ARNOLD Adrian,FITZGERALD Tomas,38.0,X_WAP,ALP
+wa-2017,Bateman,2,ARNOLD Adrian,WILMOT Adie,52.0,X_WAP,GRN
+wa-2017,Bateman,3,MASIH Jonathan,NALDER Dean,104.0,X_MBP,LIB
+wa-2017,Bateman,3,MASIH Jonathan,HUGGINS Don,76.0,X_MBP,CHR
+wa-2017,Bateman,3,MASIH Jonathan,MEYERS Michelle,52.0,X_MBP,ONP
+wa-2017,Bateman,3,MASIH Jonathan,FITZGERALD Tomas,81.0,X_MBP,ALP
+wa-2017,Bateman,3,MASIH Jonathan,WILMOT Adie,65.0,X_MBP,GRN
+wa-2017,Bateman,4,HUGGINS Don,NALDER Dean,472.0,CHR,LIB
+wa-2017,Bateman,4,HUGGINS Don,MEYERS Michelle,103.0,CHR,ONP
+wa-2017,Bateman,4,HUGGINS Don,FITZGERALD Tomas,137.0,CHR,ALP
+wa-2017,Bateman,4,HUGGINS Don,WILMOT Adie,78.0,CHR,GRN
+wa-2017,Bateman,5,MEYERS Michelle,NALDER Dean,771.0,ONP,LIB
+wa-2017,Bateman,5,MEYERS Michelle,FITZGERALD Tomas,226.0,ONP,ALP
+wa-2017,Bateman,5,MEYERS Michelle,WILMOT Adie,205.0,ONP,GRN
+wa-2017,Bateman,5,MEYERS Michelle,Exhausted,1.0,ONP,EXH
+wa-2017,Bateman,6,WILMOT Adie,NALDER Dean,516.0,GRN,LIB
+wa-2017,Bateman,6,WILMOT Adie,FITZGERALD Tomas,2197.0,GRN,ALP
+wa-2017,Bateman,6,WILMOT Adie,Exhausted,2.0,GRN,EXH
+wa-2017,Bicton,2,KORFANTY Richard,DICKMANN Louise,25.0,X_MBP,GRN
+wa-2017,Bicton,2,KORFANTY Richard,O'MALLEY Lisa,32.0,X_MBP,ALP
+wa-2017,Bicton,2,KORFANTY Richard,KEPERT Steve,69.0,X_MBP,IND
+wa-2017,Bicton,2,KORFANTY Richard,SAPORITA Colleen,26.0,X_MBP,AJP
+wa-2017,Bicton,2,KORFANTY Richard,WARDELL-JOHNSON Stephen,24.0,X_MBP,CHR
+wa-2017,Bicton,2,KORFANTY Richard,TAYLOR Matt,50.0,X_MBP,LIB
+wa-2017,Bicton,3,WARDELL-JOHNSON Stephen,DICKMANN Louise,13.0,CHR,GRN
+wa-2017,Bicton,3,WARDELL-JOHNSON Stephen,O'MALLEY Lisa,36.0,CHR,ALP
+wa-2017,Bicton,3,WARDELL-JOHNSON Stephen,KEPERT Steve,62.0,CHR,IND
+wa-2017,Bicton,3,WARDELL-JOHNSON Stephen,SAPORITA Colleen,24.0,CHR,AJP
+wa-2017,Bicton,3,WARDELL-JOHNSON Stephen,TAYLOR Matt,125.0,CHR,LIB
+wa-2017,Bicton,3,WARDELL-JOHNSON Stephen,Exhausted,1.0,CHR,EXH
+wa-2017,Bicton,4,SAPORITA Colleen,DICKMANN Louise,123.0,AJP,GRN
+wa-2017,Bicton,4,SAPORITA Colleen,O'MALLEY Lisa,79.0,AJP,ALP
+wa-2017,Bicton,4,SAPORITA Colleen,KEPERT Steve,115.0,AJP,IND
+wa-2017,Bicton,4,SAPORITA Colleen,TAYLOR Matt,57.0,AJP,LIB
+wa-2017,Bicton,4,SAPORITA Colleen,Exhausted,1.0,AJP,EXH
+wa-2017,Bicton,5,KEPERT Steve,DICKMANN Louise,349.0,IND,GRN
+wa-2017,Bicton,5,KEPERT Steve,O'MALLEY Lisa,358.0,IND,ALP
+wa-2017,Bicton,5,KEPERT Steve,TAYLOR Matt,272.0,IND,LIB
+wa-2017,Bicton,5,KEPERT Steve,Exhausted,1.0,IND,EXH
+wa-2017,Bicton,6,DICKMANN Louise,O'MALLEY Lisa,2508.0,GRN,ALP
+wa-2017,Bicton,6,DICKMANN Louise,TAYLOR Matt,403.0,GRN,LIB
+wa-2017,Bicton,6,DICKMANN Louise,Exhausted,5.0,GRN,EXH
+wa-2017,Belmont,2,SOBOH Miral,ROWE Cassie,87.0,X_MBP,ALP
+wa-2017,Belmont,2,SOBOH Miral,GODFREY Glenys,36.0,X_MBP,LIB
+wa-2017,Belmont,2,SOBOH Miral,ANDERSON Brigit,21.0,X_MBP,AJP
+wa-2017,Belmont,2,SOBOH Miral,FRASER Sue,14.0,X_MBP,CHR
+wa-2017,Belmont,2,SOBOH Miral,KHADKA Bhuwan,60.0,X_MBP,GRN
+wa-2017,Belmont,2,SOBOH Miral,MITCHELL Julie,27.0,X_MBP,ONP
+wa-2017,Belmont,2,SOBOH Miral,BLEVIN Ian,34.0,X_MBP,SFF
+wa-2017,Belmont,2,SOBOH Miral,Exhausted,1.0,X_MBP,EXH
+wa-2017,Belmont,3,ANDERSON Brigit,ROWE Cassie,86.0,AJP,ALP
+wa-2017,Belmont,3,ANDERSON Brigit,GODFREY Glenys,46.0,AJP,LIB
+wa-2017,Belmont,3,ANDERSON Brigit,FRASER Sue,32.0,AJP,CHR
+wa-2017,Belmont,3,ANDERSON Brigit,KHADKA Bhuwan,136.0,AJP,GRN
+wa-2017,Belmont,3,ANDERSON Brigit,MITCHELL Julie,34.0,AJP,ONP
+wa-2017,Belmont,3,ANDERSON Brigit,BLEVIN Ian,42.0,AJP,SFF
+wa-2017,Belmont,4,BLEVIN Ian,ROWE Cassie,89.0,SFF,ALP
+wa-2017,Belmont,4,BLEVIN Ian,GODFREY Glenys,79.0,SFF,LIB
+wa-2017,Belmont,4,BLEVIN Ian,FRASER Sue,43.0,SFF,CHR
+wa-2017,Belmont,4,BLEVIN Ian,KHADKA Bhuwan,90.0,SFF,GRN
+wa-2017,Belmont,4,BLEVIN Ian,MITCHELL Julie,130.0,SFF,ONP
+wa-2017,Belmont,4,BLEVIN Ian,Exhausted,1.0,SFF,EXH
+wa-2017,Belmont,5,FRASER Sue,ROWE Cassie,93.0,CHR,ALP
+wa-2017,Belmont,5,FRASER Sue,GODFREY Glenys,214.0,CHR,LIB
+wa-2017,Belmont,5,FRASER Sue,KHADKA Bhuwan,93.0,CHR,GRN
+wa-2017,Belmont,5,FRASER Sue,MITCHELL Julie,82.0,CHR,ONP
+wa-2017,Belmont,5,FRASER Sue,Exhausted,1.0,CHR,EXH
+wa-2017,Belmont,6,MITCHELL Julie,ROWE Cassie,484.0,ONP,ALP
+wa-2017,Belmont,6,MITCHELL Julie,GODFREY Glenys,836.0,ONP,LIB
+wa-2017,Belmont,6,MITCHELL Julie,KHADKA Bhuwan,341.0,ONP,GRN
+wa-2017,Belmont,6,MITCHELL Julie,Exhausted,9.0,ONP,EXH
+wa-2017,Belmont,7,KHADKA Bhuwan,ROWE Cassie,1776.0,GRN,ALP
+wa-2017,Belmont,7,KHADKA Bhuwan,GODFREY Glenys,562.0,GRN,LIB
+wa-2017,Belmont,7,KHADKA Bhuwan,Exhausted,3.0,GRN,EXH
+wa-2017,Burns Beach,2,CULUM-BUZAK Sandy,MADDOX Carl,47.0,X_MBP,X_WAP
+wa-2017,Burns Beach,2,CULUM-BUZAK Sandy,JACOB Albert,64.0,X_MBP,LIB
+wa-2017,Burns Beach,2,CULUM-BUZAK Sandy,FOLKARD Mark,53.0,X_MBP,ALP
+wa-2017,Burns Beach,2,CULUM-BUZAK Sandy,CROUS Rudolph Johannes,20.0,X_MBP,CHR
+wa-2017,Burns Beach,2,CULUM-BUZAK Sandy,COOPER Mark,33.0,X_MBP,GRN
+wa-2017,Burns Beach,2,CULUM-BUZAK Sandy,DRENNAN Joy,49.0,X_MBP,FFP
+wa-2017,Burns Beach,3,CROUS Rudolph Johannes,MADDOX Carl,18.0,CHR,X_WAP
+wa-2017,Burns Beach,3,CROUS Rudolph Johannes,JACOB Albert,170.0,CHR,LIB
+wa-2017,Burns Beach,3,CROUS Rudolph Johannes,FOLKARD Mark,47.0,CHR,ALP
+wa-2017,Burns Beach,3,CROUS Rudolph Johannes,COOPER Mark,36.0,CHR,GRN
+wa-2017,Burns Beach,3,CROUS Rudolph Johannes,DRENNAN Joy,224.0,CHR,FFP
+wa-2017,Burns Beach,3,CROUS Rudolph Johannes,Exhausted,1.0,CHR,EXH
+wa-2017,Burns Beach,4,MADDOX Carl,JACOB Albert,211.0,X_WAP,LIB
+wa-2017,Burns Beach,4,MADDOX Carl,FOLKARD Mark,121.0,X_WAP,ALP
+wa-2017,Burns Beach,4,MADDOX Carl,COOPER Mark,68.0,X_WAP,GRN
+wa-2017,Burns Beach,4,MADDOX Carl,DRENNAN Joy,136.0,X_WAP,FFP
+wa-2017,Burns Beach,5,DRENNAN Joy,JACOB Albert,360.0,FFP,LIB
+wa-2017,Burns Beach,5,DRENNAN Joy,FOLKARD Mark,209.0,FFP,ALP
+wa-2017,Burns Beach,5,DRENNAN Joy,COOPER Mark,343.0,FFP,GRN
+wa-2017,Burns Beach,5,DRENNAN Joy,Exhausted,1.0,FFP,EXH
+wa-2017,Burns Beach,6,COOPER Mark,JACOB Albert,634.0,GRN,LIB
+wa-2017,Burns Beach,6,COOPER Mark,FOLKARD Mark,1901.0,GRN,ALP
+wa-2017,Burns Beach,6,COOPER Mark,Exhausted,5.0,GRN,EXH
+wa-2017,Butler,2,SMITH Ron,VAN NIEKERK Jan,27.0,X_WAP,SFF
+wa-2017,Butler,2,SMITH Ron,SOMMER Ola,28.0,X_WAP,X_MBP
+wa-2017,Butler,2,SMITH Ron,QUIGLEY John,54.0,X_WAP,ALP
+wa-2017,Butler,2,SMITH Ron,AITKEN Linda,18.0,X_WAP,LIB
+wa-2017,Butler,2,SMITH Ron,JOUBERT Ryno Frederick,13.0,X_WAP,CHR
+wa-2017,Butler,2,SMITH Ron,HODDINOTT Susan,38.0,X_WAP,ONP
+wa-2017,Butler,2,SMITH Ron,WEBSTER Tom,46.0,X_WAP,GRN
+wa-2017,Butler,3,SOMMER Ola,VAN NIEKERK Jan,75.0,X_MBP,SFF
+wa-2017,Butler,3,SOMMER Ola,QUIGLEY John,70.0,X_MBP,ALP
+wa-2017,Butler,3,SOMMER Ola,AITKEN Linda,40.0,X_MBP,LIB
+wa-2017,Butler,3,SOMMER Ola,JOUBERT Ryno Frederick,11.0,X_MBP,CHR
+wa-2017,Butler,3,SOMMER Ola,HODDINOTT Susan,26.0,X_MBP,ONP
+wa-2017,Butler,3,SOMMER Ola,WEBSTER Tom,37.0,X_MBP,GRN
+wa-2017,Butler,4,JOUBERT Ryno Frederick,VAN NIEKERK Jan,62.0,CHR,SFF
+wa-2017,Butler,4,JOUBERT Ryno Frederick,QUIGLEY John,67.0,CHR,ALP
+wa-2017,Butler,4,JOUBERT Ryno Frederick,AITKEN Linda,227.0,CHR,LIB
+wa-2017,Butler,4,JOUBERT Ryno Frederick,HODDINOTT Susan,63.0,CHR,ONP
+wa-2017,Butler,4,JOUBERT Ryno Frederick,WEBSTER Tom,43.0,CHR,GRN
+wa-2017,Butler,4,JOUBERT Ryno Frederick,Exhausted,1.0,CHR,EXH
+wa-2017,Butler,5,VAN NIEKERK Jan,QUIGLEY John,413.0,SFF,ALP
+wa-2017,Butler,5,VAN NIEKERK Jan,AITKEN Linda,159.0,SFF,LIB
+wa-2017,Butler,5,VAN NIEKERK Jan,HODDINOTT Susan,294.0,SFF,ONP
+wa-2017,Butler,5,VAN NIEKERK Jan,WEBSTER Tom,181.0,SFF,GRN
+wa-2017,Butler,5,VAN NIEKERK Jan,Exhausted,1.0,SFF,EXH
+wa-2017,Butler,6,WEBSTER Tom,QUIGLEY John,1357.0,GRN,ALP
+wa-2017,Butler,6,WEBSTER Tom,AITKEN Linda,273.0,GRN,LIB
+wa-2017,Butler,6,WEBSTER Tom,HODDINOTT Susan,336.0,GRN,ONP
+wa-2017,Butler,7,HODDINOTT Susan,QUIGLEY John,1288.0,ONP,ALP
+wa-2017,Butler,7,HODDINOTT Susan,AITKEN Linda,1598.0,ONP,LIB
+wa-2017,Butler,7,HODDINOTT Susan,Exhausted,2.0,ONP,EXH
+wa-2017,Bunbury,2,DEL POPOLO Aldo,MORISON Ian,7.0,X_MBP,LIB
+wa-2017,Bunbury,2,DEL POPOLO Aldo,BROWN Samuel Jewell,5.0,X_MBP,ONP
+wa-2017,Bunbury,2,DEL POPOLO Aldo,SHANNON Anthony G,12.0,X_MBP,X_FTS
+wa-2017,Bunbury,2,DEL POPOLO Aldo,BALDOCK Michael,16.0,X_MBP,GRN
+wa-2017,Bunbury,2,DEL POPOLO Aldo,HAYWARD James,7.0,X_MBP,NAT
+wa-2017,Bunbury,2,DEL POPOLO Aldo,PUNCH Don,6.0,X_MBP,ALP
+wa-2017,Bunbury,2,DEL POPOLO Aldo,MASTERS Bernie,12.0,X_MBP,SFF
+wa-2017,Bunbury,3,SHANNON Anthony G,MORISON Ian,15.0,X_FTS,LIB
+wa-2017,Bunbury,3,SHANNON Anthony G,BROWN Samuel Jewell,29.0,X_FTS,ONP
+wa-2017,Bunbury,3,SHANNON Anthony G,BALDOCK Michael,54.0,X_FTS,GRN
+wa-2017,Bunbury,3,SHANNON Anthony G,HAYWARD James,19.0,X_FTS,NAT
+wa-2017,Bunbury,3,SHANNON Anthony G,PUNCH Don,26.0,X_FTS,ALP
+wa-2017,Bunbury,3,SHANNON Anthony G,MASTERS Bernie,41.0,X_FTS,SFF
+wa-2017,Bunbury,4,MASTERS Bernie,MORISON Ian,150.0,SFF,LIB
+wa-2017,Bunbury,4,MASTERS Bernie,BROWN Samuel Jewell,213.0,SFF,ONP
+wa-2017,Bunbury,4,MASTERS Bernie,BALDOCK Michael,111.0,SFF,GRN
+wa-2017,Bunbury,4,MASTERS Bernie,HAYWARD James,112.0,SFF,NAT
+wa-2017,Bunbury,4,MASTERS Bernie,PUNCH Don,267.0,SFF,ALP
+wa-2017,Bunbury,4,MASTERS Bernie,Exhausted,4.0,SFF,EXH
+wa-2017,Bunbury,5,BALDOCK Michael,MORISON Ian,159.0,GRN,LIB
+wa-2017,Bunbury,5,BALDOCK Michael,BROWN Samuel Jewell,158.0,GRN,ONP
+wa-2017,Bunbury,5,BALDOCK Michael,HAYWARD James,362.0,GRN,NAT
+wa-2017,Bunbury,5,BALDOCK Michael,PUNCH Don,1060.0,GRN,ALP
+wa-2017,Bunbury,5,BALDOCK Michael,Exhausted,1.0,GRN,EXH
+wa-2017,Bunbury,6,BROWN Samuel Jewell,MORISON Ian,883.0,ONP,LIB
+wa-2017,Bunbury,6,BROWN Samuel Jewell,HAYWARD James,876.0,ONP,NAT
+wa-2017,Bunbury,6,BROWN Samuel Jewell,PUNCH Don,688.0,ONP,ALP
+wa-2017,Bunbury,6,BROWN Samuel Jewell,Exhausted,8.0,ONP,EXH
+wa-2017,Bunbury,7,HAYWARD James,MORISON Ian,2678.0,NAT,LIB
+wa-2017,Bunbury,7,HAYWARD James,PUNCH Don,1857.0,NAT,ALP
+wa-2017,Bunbury,7,HAYWARD James,Exhausted,3.0,NAT,EXH
+wa-2017,Cannington,2,VIRK Mohsin,JACOBS Jesse,25.0,IND,LIB
+wa-2017,Cannington,2,VIRK Mohsin,THOMPSON Elliot,24.0,IND,GRN
+wa-2017,Cannington,2,VIRK Mohsin,SMITH Gary,36.0,IND,CHR
+wa-2017,Cannington,2,VIRK Mohsin,RIHANI Zena,59.0,IND,X_MBP
+wa-2017,Cannington,2,VIRK Mohsin,JOHNSTON Bill,56.0,IND,ALP
+wa-2017,Cannington,2,VIRK Mohsin,BEZUIDENHOUT Rozane,9.0,IND,ONP
+wa-2017,Cannington,2,VIRK Mohsin,Exhausted,1.0,IND,EXH
+wa-2017,Cannington,3,RIHANI Zena,JACOBS Jesse,64.0,X_MBP,LIB
+wa-2017,Cannington,3,RIHANI Zena,THOMPSON Elliot,80.0,X_MBP,GRN
+wa-2017,Cannington,3,RIHANI Zena,SMITH Gary,57.0,X_MBP,CHR
+wa-2017,Cannington,3,RIHANI Zena,JOHNSTON Bill,111.0,X_MBP,ALP
+wa-2017,Cannington,3,RIHANI Zena,BEZUIDENHOUT Rozane,45.0,X_MBP,ONP
+wa-2017,Cannington,3,RIHANI Zena,Exhausted,5.0,X_MBP,EXH
+wa-2017,Cannington,4,SMITH Gary,JACOBS Jesse,344.0,CHR,LIB
+wa-2017,Cannington,4,SMITH Gary,THOMPSON Elliot,124.0,CHR,GRN
+wa-2017,Cannington,4,SMITH Gary,JOHNSTON Bill,200.0,CHR,ALP
+wa-2017,Cannington,4,SMITH Gary,BEZUIDENHOUT Rozane,116.0,CHR,ONP
+wa-2017,Cannington,4,SMITH Gary,Exhausted,1.0,CHR,EXH
+wa-2017,Cannington,5,BEZUIDENHOUT Rozane,JACOBS Jesse,760.0,ONP,LIB
+wa-2017,Cannington,5,BEZUIDENHOUT Rozane,THOMPSON Elliot,249.0,ONP,GRN
+wa-2017,Cannington,5,BEZUIDENHOUT Rozane,JOHNSTON Bill,524.0,ONP,ALP
+wa-2017,Cannington,5,BEZUIDENHOUT Rozane,Exhausted,9.0,ONP,EXH
+wa-2017,Cannington,6,THOMPSON Elliot,JACOBS Jesse,499.0,GRN,LIB
+wa-2017,Cannington,6,THOMPSON Elliot,JOHNSTON Bill,1825.0,GRN,ALP
+wa-2017,Cannington,6,THOMPSON Elliot,Exhausted,3.0,GRN,EXH
+wa-2017,Carine,2,ALMOND Annette,TSIRIGOTIS Athan,54.0,X_WAP,X_MBP
+wa-2017,Carine,2,ALMOND Annette,POPHAM Terry,33.0,X_WAP,ONP
+wa-2017,Carine,2,ALMOND Annette,KRSTICEVIC Tony,66.0,X_WAP,LIB
+wa-2017,Carine,2,ALMOND Annette,REEVES-HENNESSEY Nadine,58.0,X_WAP,GRN
+wa-2017,Carine,2,ALMOND Annette,OWENS Andrew,53.0,X_WAP,ALP
+wa-2017,Carine,2,ALMOND Annette,MORAN Ray,23.0,X_WAP,CHR
+wa-2017,Carine,2,ALMOND Annette,Exhausted,2.0,X_WAP,EXH
+wa-2017,Carine,3,TSIRIGOTIS Athan,POPHAM Terry,122.0,X_MBP,ONP
+wa-2017,Carine,3,TSIRIGOTIS Athan,KRSTICEVIC Tony,123.0,X_MBP,LIB
+wa-2017,Carine,3,TSIRIGOTIS Athan,REEVES-HENNESSEY Nadine,76.0,X_MBP,GRN
+wa-2017,Carine,3,TSIRIGOTIS Athan,OWENS Andrew,93.0,X_MBP,ALP
+wa-2017,Carine,3,TSIRIGOTIS Athan,MORAN Ray,64.0,X_MBP,CHR
+wa-2017,Carine,4,MORAN Ray,POPHAM Terry,117.0,CHR,ONP
+wa-2017,Carine,4,MORAN Ray,KRSTICEVIC Tony,323.0,CHR,LIB
+wa-2017,Carine,4,MORAN Ray,REEVES-HENNESSEY Nadine,62.0,CHR,GRN
+wa-2017,Carine,4,MORAN Ray,OWENS Andrew,88.0,CHR,ALP
+wa-2017,Carine,4,MORAN Ray,Exhausted,2.0,CHR,EXH
+wa-2017,Carine,5,POPHAM Terry,KRSTICEVIC Tony,968.0,ONP,LIB
+wa-2017,Carine,5,POPHAM Terry,REEVES-HENNESSEY Nadine,254.0,ONP,GRN
+wa-2017,Carine,5,POPHAM Terry,OWENS Andrew,279.0,ONP,ALP
+wa-2017,Carine,5,POPHAM Terry,Exhausted,2.0,ONP,EXH
+wa-2017,Carine,6,REEVES-HENNESSEY Nadine,KRSTICEVIC Tony,670.0,GRN,LIB
+wa-2017,Carine,6,REEVES-HENNESSEY Nadine,OWENS Andrew,2507.0,GRN,ALP
+wa-2017,Carine,6,REEVES-HENNESSEY Nadine,Exhausted,1.0,GRN,EXH
+wa-2017,Central Wheatbelt,2,GOM Estelle,REID Shaun,18.0,IND,ONP
+wa-2017,Central Wheatbelt,2,GOM Estelle,DAVIES Mia,21.0,IND,NAT
+wa-2017,Central Wheatbelt,2,GOM Estelle,PEASE Dennis,20.0,IND,CHR
+wa-2017,Central Wheatbelt,2,GOM Estelle,TEMPLEMAN Gary,35.0,IND,ALP
+wa-2017,Central Wheatbelt,2,GOM Estelle,CRABTREE Bill,5.0,IND,LIB
+wa-2017,Central Wheatbelt,2,GOM Estelle,FOOTE Audrey,25.0,IND,GRN
+wa-2017,Central Wheatbelt,2,GOM Estelle,REYNDERS Diff,26.0,IND,SFF
+wa-2017,Central Wheatbelt,3,PEASE Dennis,REID Shaun,74.0,CHR,ONP
+wa-2017,Central Wheatbelt,3,PEASE Dennis,DAVIES Mia,142.0,CHR,NAT
+wa-2017,Central Wheatbelt,3,PEASE Dennis,TEMPLEMAN Gary,38.0,CHR,ALP
+wa-2017,Central Wheatbelt,3,PEASE Dennis,CRABTREE Bill,143.0,CHR,LIB
+wa-2017,Central Wheatbelt,3,PEASE Dennis,FOOTE Audrey,19.0,CHR,GRN
+wa-2017,Central Wheatbelt,3,PEASE Dennis,REYNDERS Diff,52.0,CHR,SFF
+wa-2017,Central Wheatbelt,4,FOOTE Audrey,REID Shaun,44.0,GRN,ONP
+wa-2017,Central Wheatbelt,4,FOOTE Audrey,DAVIES Mia,156.0,GRN,NAT
+wa-2017,Central Wheatbelt,4,FOOTE Audrey,TEMPLEMAN Gary,354.0,GRN,ALP
+wa-2017,Central Wheatbelt,4,FOOTE Audrey,CRABTREE Bill,41.0,GRN,LIB
+wa-2017,Central Wheatbelt,4,FOOTE Audrey,REYNDERS Diff,132.0,GRN,SFF
+wa-2017,Central Wheatbelt,4,FOOTE Audrey,Exhausted,1.0,GRN,EXH
+wa-2017,Central Wheatbelt,5,REYNDERS Diff,REID Shaun,460.0,SFF,ONP
+wa-2017,Central Wheatbelt,5,REYNDERS Diff,DAVIES Mia,392.0,SFF,NAT
+wa-2017,Central Wheatbelt,5,REYNDERS Diff,TEMPLEMAN Gary,272.0,SFF,ALP
+wa-2017,Central Wheatbelt,5,REYNDERS Diff,CRABTREE Bill,243.0,SFF,LIB
+wa-2017,Central Wheatbelt,5,REYNDERS Diff,Exhausted,1.0,SFF,EXH
+wa-2017,Central Wheatbelt,6,CRABTREE Bill,REID Shaun,637.0,LIB,ONP
+wa-2017,Central Wheatbelt,6,CRABTREE Bill,DAVIES Mia,2019.0,LIB,NAT
+wa-2017,Central Wheatbelt,6,CRABTREE Bill,TEMPLEMAN Gary,269.0,LIB,ALP
+wa-2017,Central Wheatbelt,6,CRABTREE Bill,Exhausted,3.0,LIB,EXH
+wa-2017,Central Wheatbelt,7,REID Shaun,DAVIES Mia,2947.0,ONP,NAT
+wa-2017,Central Wheatbelt,7,REID Shaun,TEMPLEMAN Gary,846.0,ONP,ALP
+wa-2017,Central Wheatbelt,7,REID Shaun,Exhausted,11.0,ONP,EXH
+wa-2017,Churchlands,2,GARBER Jack,L'ESTRANGE Sean,45.0,X_WAP,LIB
+wa-2017,Churchlands,2,GARBER Jack,BIVOLTSIS Jim,56.0,X_WAP,IND
+wa-2017,Churchlands,2,GARBER Jack,PHILLIPS Paul,14.0,X_WAP,CHR
+wa-2017,Churchlands,2,GARBER Jack,GURAK Joanna,36.0,X_WAP,GRN
+wa-2017,Churchlands,2,GARBER Jack,GILL Daljeet,59.0,X_WAP,X_MBP
+wa-2017,Churchlands,2,GARBER Jack,LILBURNE Paul,35.0,X_WAP,ALP
+wa-2017,Churchlands,3,GILL Daljeet,L'ESTRANGE Sean,73.0,X_MBP,LIB
+wa-2017,Churchlands,3,GILL Daljeet,BIVOLTSIS Jim,128.0,X_MBP,IND
+wa-2017,Churchlands,3,GILL Daljeet,PHILLIPS Paul,38.0,X_MBP,CHR
+wa-2017,Churchlands,3,GILL Daljeet,GURAK Joanna,90.0,X_MBP,GRN
+wa-2017,Churchlands,3,GILL Daljeet,LILBURNE Paul,78.0,X_MBP,ALP
+wa-2017,Churchlands,4,PHILLIPS Paul,L'ESTRANGE Sean,295.0,CHR,LIB
+wa-2017,Churchlands,4,PHILLIPS Paul,BIVOLTSIS Jim,129.0,CHR,IND
+wa-2017,Churchlands,4,PHILLIPS Paul,GURAK Joanna,35.0,CHR,GRN
+wa-2017,Churchlands,4,PHILLIPS Paul,LILBURNE Paul,72.0,CHR,ALP
+wa-2017,Churchlands,4,PHILLIPS Paul,Exhausted,2.0,CHR,EXH
+wa-2017,Churchlands,5,BIVOLTSIS Jim,L'ESTRANGE Sean,765.0,IND,LIB
+wa-2017,Churchlands,5,BIVOLTSIS Jim,GURAK Joanna,337.0,IND,GRN
+wa-2017,Churchlands,5,BIVOLTSIS Jim,LILBURNE Paul,265.0,IND,ALP
+wa-2017,Churchlands,5,BIVOLTSIS Jim,Exhausted,2.0,IND,EXH
+wa-2017,Churchlands,6,GURAK Joanna,L'ESTRANGE Sean,759.0,GRN,LIB
+wa-2017,Churchlands,6,GURAK Joanna,LILBURNE Paul,2839.0,GRN,ALP
+wa-2017,Churchlands,6,GURAK Joanna,Exhausted,3.0,GRN,EXH
+wa-2017,Cockburn,2,STANFIELD Erinn,RAJA-YOGAM Lavin,20.0,X_FTS,LIB
+wa-2017,Cockburn,2,STANFIELD Erinn,ROOSE Edward,16.0,X_FTS,CHR
+wa-2017,Cockburn,2,STANFIELD Erinn,PORTELLI Steve,35.0,X_FTS,IND
+wa-2017,Cockburn,2,STANFIELD Erinn,LOGAN Fran,44.0,X_FTS,ALP
+wa-2017,Cockburn,2,STANFIELD Erinn,McHUGH Connor,69.0,X_FTS,X_MBP
+wa-2017,Cockburn,2,STANFIELD Erinn,HEWITT Shannon,79.0,X_FTS,GRN
+wa-2017,Cockburn,2,STANFIELD Erinn,Exhausted,1.0,X_FTS,EXH
+wa-2017,Cockburn,3,McHUGH Connor,RAJA-YOGAM Lavin,54.0,X_MBP,LIB
+wa-2017,Cockburn,3,McHUGH Connor,ROOSE Edward,22.0,X_MBP,CHR
+wa-2017,Cockburn,3,McHUGH Connor,PORTELLI Steve,116.0,X_MBP,IND
+wa-2017,Cockburn,3,McHUGH Connor,LOGAN Fran,79.0,X_MBP,ALP
+wa-2017,Cockburn,3,McHUGH Connor,HEWITT Shannon,62.0,X_MBP,GRN
+wa-2017,Cockburn,4,ROOSE Edward,RAJA-YOGAM Lavin,273.0,CHR,LIB
+wa-2017,Cockburn,4,ROOSE Edward,PORTELLI Steve,161.0,CHR,IND
+wa-2017,Cockburn,4,ROOSE Edward,LOGAN Fran,136.0,CHR,ALP
+wa-2017,Cockburn,4,ROOSE Edward,HEWITT Shannon,58.0,CHR,GRN
+wa-2017,Cockburn,4,ROOSE Edward,Exhausted,2.0,CHR,EXH
+wa-2017,Cockburn,5,PORTELLI Steve,RAJA-YOGAM Lavin,679.0,IND,LIB
+wa-2017,Cockburn,5,PORTELLI Steve,LOGAN Fran,489.0,IND,ALP
+wa-2017,Cockburn,5,PORTELLI Steve,HEWITT Shannon,334.0,IND,GRN
+wa-2017,Cockburn,5,PORTELLI Steve,Exhausted,4.0,IND,EXH
+wa-2017,Cockburn,6,HEWITT Shannon,RAJA-YOGAM Lavin,496.0,GRN,LIB
+wa-2017,Cockburn,6,HEWITT Shannon,LOGAN Fran,2103.0,GRN,ALP
+wa-2017,Cockburn,6,HEWITT Shannon,Exhausted,5.0,GRN,EXH
+wa-2017,Collie-Preston,2,HYLAND Don,TAYLER Gordon,77.0,IND,GRN
+wa-2017,Collie-Preston,2,HYLAND Don,WARNOCK Monique,23.0,IND,NAT
+wa-2017,Collie-Preston,2,HYLAND Don,HARVERSON Elysia,15.0,IND,LIB
+wa-2017,Collie-Preston,2,HYLAND Don,THOMAS Clinton,15.0,IND,SFF
+wa-2017,Collie-Preston,2,HYLAND Don,MURRAY Mick,30.0,IND,ALP
+wa-2017,Collie-Preston,2,HYLAND Don,SCIBILIA Louie,52.0,IND,IND
+wa-2017,Collie-Preston,2,HYLAND Don,MILLER David,17.0,IND,ONP
+wa-2017,Collie-Preston,2,HYLAND Don,Exhausted,1.0,IND,EXH
+wa-2017,Collie-Preston,3,SCIBILIA Louie,TAYLER Gordon,79.0,IND,GRN
+wa-2017,Collie-Preston,3,SCIBILIA Louie,WARNOCK Monique,46.0,IND,NAT
+wa-2017,Collie-Preston,3,SCIBILIA Louie,HARVERSON Elysia,37.0,IND,LIB
+wa-2017,Collie-Preston,3,SCIBILIA Louie,THOMAS Clinton,73.0,IND,SFF
+wa-2017,Collie-Preston,3,SCIBILIA Louie,MURRAY Mick,96.0,IND,ALP
+wa-2017,Collie-Preston,3,SCIBILIA Louie,MILLER David,66.0,IND,ONP
+wa-2017,Collie-Preston,3,SCIBILIA Louie,Exhausted,2.0,IND,EXH
+wa-2017,Collie-Preston,4,THOMAS Clinton,TAYLER Gordon,113.0,SFF,GRN
+wa-2017,Collie-Preston,4,THOMAS Clinton,WARNOCK Monique,141.0,SFF,NAT
+wa-2017,Collie-Preston,4,THOMAS Clinton,HARVERSON Elysia,129.0,SFF,LIB
+wa-2017,Collie-Preston,4,THOMAS Clinton,MURRAY Mick,344.0,SFF,ALP
+wa-2017,Collie-Preston,4,THOMAS Clinton,MILLER David,333.0,SFF,ONP
+wa-2017,Collie-Preston,4,THOMAS Clinton,Exhausted,3.0,SFF,EXH
+wa-2017,Collie-Preston,5,TAYLER Gordon,WARNOCK Monique,403.0,GRN,NAT
+wa-2017,Collie-Preston,5,TAYLER Gordon,HARVERSON Elysia,93.0,GRN,LIB
+wa-2017,Collie-Preston,5,TAYLER Gordon,MURRAY Mick,870.0,GRN,ALP
+wa-2017,Collie-Preston,5,TAYLER Gordon,MILLER David,70.0,GRN,ONP
+wa-2017,Collie-Preston,5,TAYLER Gordon,Exhausted,3.0,GRN,EXH
+wa-2017,Collie-Preston,6,MILLER David,WARNOCK Monique,918.0,ONP,NAT
+wa-2017,Collie-Preston,6,MILLER David,HARVERSON Elysia,769.0,ONP,LIB
+wa-2017,Collie-Preston,6,MILLER David,MURRAY Mick,859.0,ONP,ALP
+wa-2017,Collie-Preston,6,MILLER David,Exhausted,9.0,ONP,EXH
+wa-2017,Collie-Preston,7,WARNOCK Monique,HARVERSON Elysia,3277.0,NAT,LIB
+wa-2017,Collie-Preston,7,WARNOCK Monique,MURRAY Mick,1558.0,NAT,ALP
+wa-2017,Collie-Preston,7,WARNOCK Monique,Exhausted,2.0,NAT,EXH
+wa-2017,Cottesloe,2,MALOV Dmitry,LANCEE Alida,38.0,IND,IND
+wa-2017,Cottesloe,2,MALOV Dmitry,POPPAS Nicole,12.0,IND,X_MBP
+wa-2017,Cottesloe,2,MALOV Dmitry,BOLAND Greg,17.0,IND,GRN
+wa-2017,Cottesloe,2,MALOV Dmitry,BARNETT Colin,9.0,IND,LIB
+wa-2017,Cottesloe,2,MALOV Dmitry,GROENEWALD Riaan,5.0,IND,CHR
+wa-2017,Cottesloe,2,MALOV Dmitry,WATSON Michael,15.0,IND,IND
+wa-2017,Cottesloe,2,MALOV Dmitry,COLLINS Caitlin,7.0,IND,ALP
+wa-2017,Cottesloe,3,WATSON Michael,LANCEE Alida,51.0,IND,IND
+wa-2017,Cottesloe,3,WATSON Michael,POPPAS Nicole,18.0,IND,X_MBP
+wa-2017,Cottesloe,3,WATSON Michael,BOLAND Greg,25.0,IND,GRN
+wa-2017,Cottesloe,3,WATSON Michael,BARNETT Colin,53.0,IND,LIB
+wa-2017,Cottesloe,3,WATSON Michael,GROENEWALD Riaan,16.0,IND,CHR
+wa-2017,Cottesloe,3,WATSON Michael,COLLINS Caitlin,28.0,IND,ALP
+wa-2017,Cottesloe,4,POPPAS Nicole,LANCEE Alida,107.0,X_MBP,IND
+wa-2017,Cottesloe,4,POPPAS Nicole,BOLAND Greg,41.0,X_MBP,GRN
+wa-2017,Cottesloe,4,POPPAS Nicole,BARNETT Colin,35.0,X_MBP,LIB
+wa-2017,Cottesloe,4,POPPAS Nicole,GROENEWALD Riaan,18.0,X_MBP,CHR
+wa-2017,Cottesloe,4,POPPAS Nicole,COLLINS Caitlin,27.0,X_MBP,ALP
+wa-2017,Cottesloe,5,GROENEWALD Riaan,LANCEE Alida,53.0,CHR,IND
+wa-2017,Cottesloe,5,GROENEWALD Riaan,BOLAND Greg,23.0,CHR,GRN
+wa-2017,Cottesloe,5,GROENEWALD Riaan,BARNETT Colin,145.0,CHR,LIB
+wa-2017,Cottesloe,5,GROENEWALD Riaan,COLLINS Caitlin,41.0,CHR,ALP
+wa-2017,Cottesloe,5,GROENEWALD Riaan,Exhausted,3.0,CHR,EXH
+wa-2017,Cottesloe,6,LANCEE Alida,BOLAND Greg,582.0,IND,GRN
+wa-2017,Cottesloe,6,LANCEE Alida,BARNETT Colin,536.0,IND,LIB
+wa-2017,Cottesloe,6,LANCEE Alida,COLLINS Caitlin,458.0,IND,ALP
+wa-2017,Cottesloe,6,LANCEE Alida,Exhausted,5.0,IND,EXH
+wa-2017,Cottesloe,7,BOLAND Greg,BARNETT Colin,757.0,GRN,LIB
+wa-2017,Cottesloe,7,BOLAND Greg,COLLINS Caitlin,2749.0,GRN,ALP
+wa-2017,Cottesloe,7,BOLAND Greg,Exhausted,8.0,GRN,EXH
+wa-2017,Darling Range,2,FROUMIS Manamal M,BALLINGER Craig,18.0,IND,X_MBP
+wa-2017,Darling Range,2,FROUMIS Manamal M,BOSKAMP Iwan,22.0,IND,GRN
+wa-2017,Darling Range,2,FROUMIS Manamal M,OSTLE Stuart W,18.0,IND,SFF
+wa-2017,Darling Range,2,FROUMIS Manamal M,URBAN Barry,30.0,IND,ALP
+wa-2017,Darling Range,2,FROUMIS Manamal M,BRUNING Derek,9.0,IND,CHR
+wa-2017,Darling Range,2,FROUMIS Manamal M,MCCOULL Jake Adkins,7.0,IND,LDP
+wa-2017,Darling Range,2,FROUMIS Manamal M,POLGAR Sharon,14.0,IND,ONP
+wa-2017,Darling Range,2,FROUMIS Manamal M,SIMPSON Tony,8.0,IND,LIB
+wa-2017,Darling Range,2,FROUMIS Manamal M,BARKER Chris,8.0,IND,X_FTS
+wa-2017,Darling Range,3,MCCOULL Jake Adkins,BALLINGER Craig,6.0,LDP,X_MBP
+wa-2017,Darling Range,3,MCCOULL Jake Adkins,BOSKAMP Iwan,10.0,LDP,GRN
+wa-2017,Darling Range,3,MCCOULL Jake Adkins,OSTLE Stuart W,20.0,LDP,SFF
+wa-2017,Darling Range,3,MCCOULL Jake Adkins,URBAN Barry,27.0,LDP,ALP
+wa-2017,Darling Range,3,MCCOULL Jake Adkins,BRUNING Derek,9.0,LDP,CHR
+wa-2017,Darling Range,3,MCCOULL Jake Adkins,POLGAR Sharon,34.0,LDP,ONP
+wa-2017,Darling Range,3,MCCOULL Jake Adkins,SIMPSON Tony,60.0,LDP,LIB
+wa-2017,Darling Range,3,MCCOULL Jake Adkins,BARKER Chris,4.0,LDP,X_FTS
+wa-2017,Darling Range,4,BARKER Chris,BALLINGER Craig,30.0,X_FTS,X_MBP
+wa-2017,Darling Range,4,BARKER Chris,BOSKAMP Iwan,43.0,X_FTS,GRN
+wa-2017,Darling Range,4,BARKER Chris,OSTLE Stuart W,25.0,X_FTS,SFF
+wa-2017,Darling Range,4,BARKER Chris,URBAN Barry,36.0,X_FTS,ALP
+wa-2017,Darling Range,4,BARKER Chris,BRUNING Derek,14.0,X_FTS,CHR
+wa-2017,Darling Range,4,BARKER Chris,POLGAR Sharon,30.0,X_FTS,ONP
+wa-2017,Darling Range,4,BARKER Chris,SIMPSON Tony,27.0,X_FTS,LIB
+wa-2017,Darling Range,4,BARKER Chris,Exhausted,1.0,X_FTS,EXH
+wa-2017,Darling Range,5,BALLINGER Craig,BOSKAMP Iwan,151.0,X_MBP,GRN
+wa-2017,Darling Range,5,BALLINGER Craig,OSTLE Stuart W,94.0,X_MBP,SFF
+wa-2017,Darling Range,5,BALLINGER Craig,URBAN Barry,52.0,X_MBP,ALP
+wa-2017,Darling Range,5,BALLINGER Craig,BRUNING Derek,16.0,X_MBP,CHR
+wa-2017,Darling Range,5,BALLINGER Craig,POLGAR Sharon,24.0,X_MBP,ONP
+wa-2017,Darling Range,5,BALLINGER Craig,SIMPSON Tony,34.0,X_MBP,LIB
+wa-2017,Darling Range,6,BRUNING Derek,BOSKAMP Iwan,46.0,CHR,GRN
+wa-2017,Darling Range,6,BRUNING Derek,OSTLE Stuart W,682.0,CHR,SFF
+wa-2017,Darling Range,6,BRUNING Derek,URBAN Barry,82.0,CHR,ALP
+wa-2017,Darling Range,6,BRUNING Derek,POLGAR Sharon,91.0,CHR,ONP
+wa-2017,Darling Range,6,BRUNING Derek,SIMPSON Tony,319.0,CHR,LIB
+wa-2017,Darling Range,6,BRUNING Derek,Exhausted,2.0,CHR,EXH
+wa-2017,Darling Range,7,OSTLE Stuart W,BOSKAMP Iwan,261.0,SFF,GRN
+wa-2017,Darling Range,7,OSTLE Stuart W,URBAN Barry,365.0,SFF,ALP
+wa-2017,Darling Range,7,OSTLE Stuart W,POLGAR Sharon,461.0,SFF,ONP
+wa-2017,Darling Range,7,OSTLE Stuart W,SIMPSON Tony,869.0,SFF,LIB
+wa-2017,Darling Range,7,OSTLE Stuart W,Exhausted,6.0,SFF,EXH
+wa-2017,Darling Range,8,BOSKAMP Iwan,URBAN Barry,1901.0,GRN,ALP
+wa-2017,Darling Range,8,BOSKAMP Iwan,POLGAR Sharon,308.0,GRN,ONP
+wa-2017,Darling Range,8,BOSKAMP Iwan,SIMPSON Tony,353.0,GRN,LIB
+wa-2017,Darling Range,8,BOSKAMP Iwan,Exhausted,4.0,GRN,EXH
+wa-2017,Darling Range,9,POLGAR Sharon,URBAN Barry,1283.0,ONP,ALP
+wa-2017,Darling Range,9,POLGAR Sharon,SIMPSON Tony,1986.0,ONP,LIB
+wa-2017,Darling Range,9,POLGAR Sharon,Exhausted,6.0,ONP,EXH
+wa-2017,Dawesville,2,SPENCE Liam,SCHUMACHER Dave,21.0,X_FTS,IND
+wa-2017,Dawesville,2,SPENCE Liam,KIRKUP Zak,12.0,X_FTS,LIB
+wa-2017,Dawesville,2,SPENCE Liam,WOODAGE Adam,16.0,X_FTS,ALP
+wa-2017,Dawesville,2,SPENCE Liam,SHAVE Lawrence,14.0,X_FTS,ONP
+wa-2017,Dawesville,2,SPENCE Liam,BLUNDELL-CAMDEN Aeron,24.0,X_FTS,GRN
+wa-2017,Dawesville,2,SPENCE Liam,PILKINGTON Luke,7.0,X_FTS,NAT
+wa-2017,Dawesville,2,SPENCE Liam,SVILICIC Alan,9.0,X_FTS,X_MBP
+wa-2017,Dawesville,2,SPENCE Liam,McCARTHY Russell,23.0,X_FTS,SFF
+wa-2017,Dawesville,3,SVILICIC Alan,SCHUMACHER Dave,76.0,X_MBP,IND
+wa-2017,Dawesville,3,SVILICIC Alan,KIRKUP Zak,17.0,X_MBP,LIB
+wa-2017,Dawesville,3,SVILICIC Alan,WOODAGE Adam,11.0,X_MBP,ALP
+wa-2017,Dawesville,3,SVILICIC Alan,SHAVE Lawrence,14.0,X_MBP,ONP
+wa-2017,Dawesville,3,SVILICIC Alan,BLUNDELL-CAMDEN Aeron,19.0,X_MBP,GRN
+wa-2017,Dawesville,3,SVILICIC Alan,PILKINGTON Luke,12.0,X_MBP,NAT
+wa-2017,Dawesville,3,SVILICIC Alan,McCARTHY Russell,29.0,X_MBP,SFF
+wa-2017,Dawesville,4,PILKINGTON Luke,SCHUMACHER Dave,66.0,NAT,IND
+wa-2017,Dawesville,4,PILKINGTON Luke,KIRKUP Zak,294.0,NAT,LIB
+wa-2017,Dawesville,4,PILKINGTON Luke,WOODAGE Adam,49.0,NAT,ALP
+wa-2017,Dawesville,4,PILKINGTON Luke,SHAVE Lawrence,60.0,NAT,ONP
+wa-2017,Dawesville,4,PILKINGTON Luke,BLUNDELL-CAMDEN Aeron,63.0,NAT,GRN
+wa-2017,Dawesville,4,PILKINGTON Luke,McCARTHY Russell,46.0,NAT,SFF
+wa-2017,Dawesville,5,McCARTHY Russell,SCHUMACHER Dave,160.0,SFF,IND
+wa-2017,Dawesville,5,McCARTHY Russell,KIRKUP Zak,93.0,SFF,LIB
+wa-2017,Dawesville,5,McCARTHY Russell,WOODAGE Adam,142.0,SFF,ALP
+wa-2017,Dawesville,5,McCARTHY Russell,SHAVE Lawrence,203.0,SFF,ONP
+wa-2017,Dawesville,5,McCARTHY Russell,BLUNDELL-CAMDEN Aeron,139.0,SFF,GRN
+wa-2017,Dawesville,5,McCARTHY Russell,Exhausted,2.0,SFF,EXH
+wa-2017,Dawesville,6,BLUNDELL-CAMDEN Aeron,SCHUMACHER Dave,307.0,GRN,IND
+wa-2017,Dawesville,6,BLUNDELL-CAMDEN Aeron,KIRKUP Zak,139.0,GRN,LIB
+wa-2017,Dawesville,6,BLUNDELL-CAMDEN Aeron,WOODAGE Adam,708.0,GRN,ALP
+wa-2017,Dawesville,6,BLUNDELL-CAMDEN Aeron,SHAVE Lawrence,176.0,GRN,ONP
+wa-2017,Dawesville,7,SHAVE Lawrence,SCHUMACHER Dave,1074.0,ONP,IND
+wa-2017,Dawesville,7,SHAVE Lawrence,KIRKUP Zak,886.0,ONP,LIB
+wa-2017,Dawesville,7,SHAVE Lawrence,WOODAGE Adam,811.0,ONP,ALP
+wa-2017,Dawesville,7,SHAVE Lawrence,Exhausted,7.0,ONP,EXH
+wa-2017,Dawesville,8,SCHUMACHER Dave,KIRKUP Zak,2016.0,IND,LIB
+wa-2017,Dawesville,8,SCHUMACHER Dave,WOODAGE Adam,2177.0,IND,ALP
+wa-2017,Dawesville,8,SCHUMACHER Dave,Exhausted,5.0,IND,EXH
+wa-2017,Forrestfield,2,SHAHALAM M,JAGO Ashley,38.0,X_MBP,AJP
+wa-2017,Forrestfield,2,SHAHALAM M,PRICE Stephen,50.0,X_MBP,ALP
+wa-2017,Forrestfield,2,SHAHALAM M,CROOK Brett,15.0,X_MBP,CHR
+wa-2017,Forrestfield,2,SHAHALAM M,MORTON Nathan,42.0,X_MBP,LIB
+wa-2017,Forrestfield,2,SHAHALAM M,BENNETT Jenny,35.0,X_MBP,ONP
+wa-2017,Forrestfield,2,SHAHALAM M,MARSHALL Eugene,42.0,X_MBP,GRN
+wa-2017,Forrestfield,3,CROOK Brett,JAGO Ashley,53.0,CHR,AJP
+wa-2017,Forrestfield,3,CROOK Brett,PRICE Stephen,86.0,CHR,ALP
+wa-2017,Forrestfield,3,CROOK Brett,MORTON Nathan,398.0,CHR,LIB
+wa-2017,Forrestfield,3,CROOK Brett,BENNETT Jenny,90.0,CHR,ONP
+wa-2017,Forrestfield,3,CROOK Brett,MARSHALL Eugene,19.0,CHR,GRN
+wa-2017,Forrestfield,4,JAGO Ashley,PRICE Stephen,311.0,AJP,ALP
+wa-2017,Forrestfield,4,JAGO Ashley,MORTON Nathan,94.0,AJP,LIB
+wa-2017,Forrestfield,4,JAGO Ashley,BENNETT Jenny,129.0,AJP,ONP
+wa-2017,Forrestfield,4,JAGO Ashley,MARSHALL Eugene,303.0,AJP,GRN
+wa-2017,Forrestfield,4,JAGO Ashley,Exhausted,1.0,AJP,EXH
+wa-2017,Forrestfield,5,MARSHALL Eugene,PRICE Stephen,1282.0,GRN,ALP
+wa-2017,Forrestfield,5,MARSHALL Eugene,MORTON Nathan,239.0,GRN,LIB
+wa-2017,Forrestfield,5,MARSHALL Eugene,BENNETT Jenny,282.0,GRN,ONP
+wa-2017,Forrestfield,5,MARSHALL Eugene,Exhausted,4.0,GRN,EXH
+wa-2017,Forrestfield,6,BENNETT Jenny,PRICE Stephen,1195.0,ONP,ALP
+wa-2017,Forrestfield,6,BENNETT Jenny,MORTON Nathan,1585.0,ONP,LIB
+wa-2017,Fremantle,2,AYRE Andrew,van der LINDE Gabrielle,18.0,X_MBP,CHR
+wa-2017,Fremantle,2,AYRE Andrew,JENKINS Chris,6.0,X_MBP,VS
+wa-2017,Fremantle,2,AYRE Andrew,SHENTON Hayden,26.0,X_MBP,LIB
+wa-2017,Fremantle,2,AYRE Andrew,KNAPP Janetia,16.0,X_MBP,X_WAP
+wa-2017,Fremantle,2,AYRE Andrew,SPENCER Martin,29.0,X_MBP,GRN
+wa-2017,Fremantle,2,AYRE Andrew,DUFFY Warren,21.0,X_MBP,ONP
+wa-2017,Fremantle,2,AYRE Andrew,McGURK Simone,28.0,X_MBP,ALP
+wa-2017,Fremantle,3,KNAPP Janetia,van der LINDE Gabrielle,20.0,X_WAP,CHR
+wa-2017,Fremantle,3,KNAPP Janetia,JENKINS Chris,18.0,X_WAP,VS
+wa-2017,Fremantle,3,KNAPP Janetia,SHENTON Hayden,40.0,X_WAP,LIB
+wa-2017,Fremantle,3,KNAPP Janetia,SPENCER Martin,41.0,X_WAP,GRN
+wa-2017,Fremantle,3,KNAPP Janetia,DUFFY Warren,17.0,X_WAP,ONP
+wa-2017,Fremantle,3,KNAPP Janetia,McGURK Simone,39.0,X_WAP,ALP
+wa-2017,Fremantle,3,KNAPP Janetia,Exhausted,1.0,X_WAP,EXH
+wa-2017,Fremantle,4,van der LINDE Gabrielle,JENKINS Chris,182.0,CHR,VS
+wa-2017,Fremantle,4,van der LINDE Gabrielle,SHENTON Hayden,162.0,CHR,LIB
+wa-2017,Fremantle,4,van der LINDE Gabrielle,SPENCER Martin,26.0,CHR,GRN
+wa-2017,Fremantle,4,van der LINDE Gabrielle,DUFFY Warren,48.0,CHR,ONP
+wa-2017,Fremantle,4,van der LINDE Gabrielle,McGURK Simone,66.0,CHR,ALP
+wa-2017,Fremantle,4,van der LINDE Gabrielle,Exhausted,7.0,CHR,EXH
+wa-2017,Fremantle,5,JENKINS Chris,SHENTON Hayden,193.0,VS,LIB
+wa-2017,Fremantle,5,JENKINS Chris,SPENCER Martin,353.0,VS,GRN
+wa-2017,Fremantle,5,JENKINS Chris,DUFFY Warren,25.0,VS,ONP
+wa-2017,Fremantle,5,JENKINS Chris,McGURK Simone,115.0,VS,ALP
+wa-2017,Fremantle,5,JENKINS Chris,Exhausted,2.0,VS,EXH
+wa-2017,Fremantle,6,DUFFY Warren,SHENTON Hayden,613.0,ONP,LIB
+wa-2017,Fremantle,6,DUFFY Warren,SPENCER Martin,177.0,ONP,GRN
+wa-2017,Fremantle,6,DUFFY Warren,McGURK Simone,324.0,ONP,ALP
+wa-2017,Fremantle,6,DUFFY Warren,Exhausted,1.0,ONP,EXH
+wa-2017,Fremantle,7,SPENCER Martin,SHENTON Hayden,485.0,GRN,LIB
+wa-2017,Fremantle,7,SPENCER Martin,McGURK Simone,4547.0,GRN,ALP
+wa-2017,Fremantle,7,SPENCER Martin,Exhausted,2.0,GRN,EXH
+wa-2017,Geraldton,2,TANTI Victor,CONNOLLY Paul,52.0,IND,GRN
+wa-2017,Geraldton,2,TANTI Victor,BROWN Paul,59.0,IND,NAT
+wa-2017,Geraldton,2,TANTI Victor,CAUDWELL David,38.0,IND,SFF
+wa-2017,Geraldton,2,TANTI Victor,BLAYNEY Ian,62.0,IND,LIB
+wa-2017,Geraldton,2,TANTI Victor,DALTON Lara,93.0,IND,ALP
+wa-2017,Geraldton,2,TANTI Victor,MARTIN Wayne,58.0,IND,ONP
+wa-2017,Geraldton,2,TANTI Victor,HALL Greg,31.0,IND,CHR
+wa-2017,Geraldton,2,TANTI Victor,Exhausted,1.0,IND,EXH
+wa-2017,Geraldton,3,HALL Greg,CONNOLLY Paul,17.0,CHR,GRN
+wa-2017,Geraldton,3,HALL Greg,BROWN Paul,63.0,CHR,NAT
+wa-2017,Geraldton,3,HALL Greg,CAUDWELL David,31.0,CHR,SFF
+wa-2017,Geraldton,3,HALL Greg,BLAYNEY Ian,231.0,CHR,LIB
+wa-2017,Geraldton,3,HALL Greg,DALTON Lara,35.0,CHR,ALP
+wa-2017,Geraldton,3,HALL Greg,MARTIN Wayne,67.0,CHR,ONP
+wa-2017,Geraldton,4,CAUDWELL David,CONNOLLY Paul,111.0,SFF,GRN
+wa-2017,Geraldton,4,CAUDWELL David,BROWN Paul,213.0,SFF,NAT
+wa-2017,Geraldton,4,CAUDWELL David,BLAYNEY Ian,112.0,SFF,LIB
+wa-2017,Geraldton,4,CAUDWELL David,DALTON Lara,145.0,SFF,ALP
+wa-2017,Geraldton,4,CAUDWELL David,MARTIN Wayne,277.0,SFF,ONP
+wa-2017,Geraldton,4,CAUDWELL David,Exhausted,2.0,SFF,EXH
+wa-2017,Geraldton,5,CONNOLLY Paul,BROWN Paul,347.0,GRN,NAT
+wa-2017,Geraldton,5,CONNOLLY Paul,BLAYNEY Ian,116.0,GRN,LIB
+wa-2017,Geraldton,5,CONNOLLY Paul,DALTON Lara,482.0,GRN,ALP
+wa-2017,Geraldton,5,CONNOLLY Paul,MARTIN Wayne,82.0,GRN,ONP
+wa-2017,Geraldton,5,CONNOLLY Paul,Exhausted,2.0,GRN,EXH
+wa-2017,Geraldton,6,MARTIN Wayne,BROWN Paul,991.0,ONP,NAT
+wa-2017,Geraldton,6,MARTIN Wayne,BLAYNEY Ian,821.0,ONP,LIB
+wa-2017,Geraldton,6,MARTIN Wayne,DALTON Lara,649.0,ONP,ALP
+wa-2017,Geraldton,6,MARTIN Wayne,Exhausted,2.0,ONP,EXH
+wa-2017,Geraldton,7,BROWN Paul,BLAYNEY Ian,3609.0,NAT,LIB
+wa-2017,Geraldton,7,BROWN Paul,DALTON Lara,1726.0,NAT,ALP
+wa-2017,Geraldton,7,BROWN Paul,Exhausted,7.0,NAT,EXH
+wa-2017,Girrawheen,2,SINGH Sahaj,QUIRK Margaret,128.0,X_MBP,ALP
+wa-2017,Girrawheen,2,SINGH Sahaj,SHAH Mushfiq,70.0,X_MBP,GRN
+wa-2017,Girrawheen,2,SINGH Sahaj,PHILLIPS David,32.0,X_MBP,CHR
+wa-2017,Girrawheen,2,SINGH Sahaj,NGUYEN Che Tam,39.0,X_MBP,FFP
+wa-2017,Girrawheen,2,SINGH Sahaj,ROACH Raymond,22.0,X_MBP,SFF
+wa-2017,Girrawheen,2,SINGH Sahaj,KRCOSKI Dame,65.0,X_MBP,LIB
+wa-2017,Girrawheen,3,ROACH Raymond,QUIRK Margaret,175.0,SFF,ALP
+wa-2017,Girrawheen,3,ROACH Raymond,SHAH Mushfiq,74.0,SFF,GRN
+wa-2017,Girrawheen,3,ROACH Raymond,PHILLIPS David,64.0,SFF,CHR
+wa-2017,Girrawheen,3,ROACH Raymond,NGUYEN Che Tam,160.0,SFF,FFP
+wa-2017,Girrawheen,3,ROACH Raymond,KRCOSKI Dame,156.0,SFF,LIB
+wa-2017,Girrawheen,4,NGUYEN Che Tam,QUIRK Margaret,272.0,FFP,ALP
+wa-2017,Girrawheen,4,NGUYEN Che Tam,SHAH Mushfiq,187.0,FFP,GRN
+wa-2017,Girrawheen,4,NGUYEN Che Tam,PHILLIPS David,237.0,FFP,CHR
+wa-2017,Girrawheen,4,NGUYEN Che Tam,KRCOSKI Dame,162.0,FFP,LIB
+wa-2017,Girrawheen,4,NGUYEN Che Tam,Exhausted,3.0,FFP,EXH
+wa-2017,Girrawheen,5,PHILLIPS David,QUIRK Margaret,380.0,CHR,ALP
+wa-2017,Girrawheen,5,PHILLIPS David,SHAH Mushfiq,230.0,CHR,GRN
+wa-2017,Girrawheen,5,PHILLIPS David,KRCOSKI Dame,626.0,CHR,LIB
+wa-2017,Girrawheen,5,PHILLIPS David,Exhausted,2.0,CHR,EXH
+wa-2017,Girrawheen,6,SHAH Mushfiq,QUIRK Margaret,1476.0,GRN,ALP
+wa-2017,Girrawheen,6,SHAH Mushfiq,KRCOSKI Dame,434.0,GRN,LIB
+wa-2017,Girrawheen,6,SHAH Mushfiq,Exhausted,4.0,GRN,EXH
+wa-2017,Hillarys,2,ROBINSON Elisabete,KATSAMBANIS Peter,294.0,CHR,LIB
+wa-2017,Hillarys,2,ROBINSON Elisabete,JOHNSON Rob,148.0,CHR,IND
+wa-2017,Hillarys,2,ROBINSON Elisabete,RITCHIE Teresa,70.0,CHR,ALP
+wa-2017,Hillarys,2,ROBINSON Elisabete,LLOYD Louahna,77.0,CHR,GRN
+wa-2017,Hillarys,2,ROBINSON Elisabete,Exhausted,1.0,CHR,EXH
+wa-2017,Hillarys,3,LLOYD Louahna,KATSAMBANIS Peter,266.0,GRN,LIB
+wa-2017,Hillarys,3,LLOYD Louahna,JOHNSON Rob,571.0,GRN,IND
+wa-2017,Hillarys,3,LLOYD Louahna,RITCHIE Teresa,1362.0,GRN,ALP
+wa-2017,Hillarys,3,LLOYD Louahna,Exhausted,2.0,GRN,EXH
+wa-2017,Hillarys,4,JOHNSON Rob,KATSAMBANIS Peter,2846.0,IND,LIB
+wa-2017,Hillarys,4,JOHNSON Rob,RITCHIE Teresa,2615.0,IND,ALP
+wa-2017,Hillarys,4,JOHNSON Rob,Exhausted,3.0,IND,EXH
+wa-2017,Jandakot,2,SAMRA Sat,MUBARAKAI Yaz,151.0,X_MBP,ALP
+wa-2017,Jandakot,2,SAMRA Sat,GOBBERT Francesca,39.0,X_MBP,AJP
+wa-2017,Jandakot,2,SAMRA Sat,SPYKER Warnar,54.0,X_MBP,CHR
+wa-2017,Jandakot,2,SAMRA Sat,FRANCIS Joe,91.0,X_MBP,LIB
+wa-2017,Jandakot,2,SAMRA Sat,COX Dorinda,71.0,X_MBP,GRN
+wa-2017,Jandakot,2,SAMRA Sat,MURPHY John Manfred,50.0,X_MBP,ONP
+wa-2017,Jandakot,3,GOBBERT Francesca,MUBARAKAI Yaz,180.0,AJP,ALP
+wa-2017,Jandakot,3,GOBBERT Francesca,SPYKER Warnar,84.0,AJP,CHR
+wa-2017,Jandakot,3,GOBBERT Francesca,FRANCIS Joe,71.0,AJP,LIB
+wa-2017,Jandakot,3,GOBBERT Francesca,COX Dorinda,236.0,AJP,GRN
+wa-2017,Jandakot,3,GOBBERT Francesca,MURPHY John Manfred,55.0,AJP,ONP
+wa-2017,Jandakot,4,SPYKER Warnar,MUBARAKAI Yaz,196.0,CHR,ALP
+wa-2017,Jandakot,4,SPYKER Warnar,FRANCIS Joe,603.0,CHR,LIB
+wa-2017,Jandakot,4,SPYKER Warnar,COX Dorinda,146.0,CHR,GRN
+wa-2017,Jandakot,4,SPYKER Warnar,MURPHY John Manfred,94.0,CHR,ONP
+wa-2017,Jandakot,5,MURPHY John Manfred,MUBARAKAI Yaz,483.0,ONP,ALP
+wa-2017,Jandakot,5,MURPHY John Manfred,FRANCIS Joe,1038.0,ONP,LIB
+wa-2017,Jandakot,5,MURPHY John Manfred,COX Dorinda,356.0,ONP,GRN
+wa-2017,Jandakot,5,MURPHY John Manfred,Exhausted,3.0,ONP,EXH
+wa-2017,Jandakot,6,COX Dorinda,MUBARAKAI Yaz,1852.0,GRN,ALP
+wa-2017,Jandakot,6,COX Dorinda,FRANCIS Joe,690.0,GRN,LIB
+wa-2017,Jandakot,6,COX Dorinda,Exhausted,2.0,GRN,EXH
+wa-2017,Joondalup,2,MALLOY Aaron,NORBERGER Jan,35.0,X_WAP,LIB
+wa-2017,Joondalup,2,MALLOY Aaron,HART Nicholas,15.0,X_WAP,FFP
+wa-2017,Joondalup,2,MALLOY Aaron,HOST Rex,6.0,X_WAP,CHR
+wa-2017,Joondalup,2,MALLOY Aaron,WEBB Lisa,10.0,X_WAP,GRN
+wa-2017,Joondalup,2,MALLOY Aaron,MARTIN Peter,20.0,X_WAP,X_MBP
+wa-2017,Joondalup,2,MALLOY Aaron,HAMILTON Emily,38.0,X_WAP,ALP
+wa-2017,Joondalup,2,MALLOY Aaron,BRIGHTMAN Brian,58.0,X_WAP,IND
+wa-2017,Joondalup,2,MALLOY Aaron,Exhausted,1.0,X_WAP,EXH
+wa-2017,Joondalup,3,MARTIN Peter,NORBERGER Jan,31.0,X_MBP,LIB
+wa-2017,Joondalup,3,MARTIN Peter,HART Nicholas,32.0,X_MBP,FFP
+wa-2017,Joondalup,3,MARTIN Peter,HOST Rex,12.0,X_MBP,CHR
+wa-2017,Joondalup,3,MARTIN Peter,WEBB Lisa,30.0,X_MBP,GRN
+wa-2017,Joondalup,3,MARTIN Peter,HAMILTON Emily,41.0,X_MBP,ALP
+wa-2017,Joondalup,3,MARTIN Peter,BRIGHTMAN Brian,58.0,X_MBP,IND
+wa-2017,Joondalup,3,MARTIN Peter,Exhausted,1.0,X_MBP,EXH
+wa-2017,Joondalup,4,HART Nicholas,NORBERGER Jan,71.0,FFP,LIB
+wa-2017,Joondalup,4,HART Nicholas,HOST Rex,73.0,FFP,CHR
+wa-2017,Joondalup,4,HART Nicholas,WEBB Lisa,73.0,FFP,GRN
+wa-2017,Joondalup,4,HART Nicholas,HAMILTON Emily,46.0,FFP,ALP
+wa-2017,Joondalup,4,HART Nicholas,BRIGHTMAN Brian,60.0,FFP,IND
+wa-2017,Joondalup,4,HART Nicholas,Exhausted,1.0,FFP,EXH
+wa-2017,Joondalup,5,HOST Rex,NORBERGER Jan,266.0,CHR,LIB
+wa-2017,Joondalup,5,HOST Rex,WEBB Lisa,40.0,CHR,GRN
+wa-2017,Joondalup,5,HOST Rex,HAMILTON Emily,72.0,CHR,ALP
+wa-2017,Joondalup,5,HOST Rex,BRIGHTMAN Brian,100.0,CHR,IND
+wa-2017,Joondalup,6,BRIGHTMAN Brian,NORBERGER Jan,438.0,IND,LIB
+wa-2017,Joondalup,6,BRIGHTMAN Brian,WEBB Lisa,285.0,IND,GRN
+wa-2017,Joondalup,6,BRIGHTMAN Brian,HAMILTON Emily,255.0,IND,ALP
+wa-2017,Joondalup,6,BRIGHTMAN Brian,Exhausted,1.0,IND,EXH
+wa-2017,Joondalup,7,WEBB Lisa,NORBERGER Jan,582.0,GRN,LIB
+wa-2017,Joondalup,7,WEBB Lisa,HAMILTON Emily,1862.0,GRN,ALP
+wa-2017,Joondalup,7,WEBB Lisa,Exhausted,3.0,GRN,EXH
+wa-2017,Kalamunda,2,COLYVAS Evazelia,HUGHES Matthew,30.0,X_MBP,ALP
+wa-2017,Kalamunda,2,COLYVAS Evazelia,MILES Lee-Anne,36.0,X_MBP,GRN
+wa-2017,Kalamunda,2,COLYVAS Evazelia,BOWYER Murray,64.0,X_MBP,X_WAP
+wa-2017,Kalamunda,2,COLYVAS Evazelia,DAY John,38.0,X_MBP,LIB
+wa-2017,Kalamunda,2,COLYVAS Evazelia,WILLIAMS Brady John,25.0,X_MBP,CHR
+wa-2017,Kalamunda,2,COLYVAS Evazelia,GOULD Ray,41.0,X_MBP,ONP
+wa-2017,Kalamunda,3,BOWYER Murray,HUGHES Matthew,53.0,X_WAP,ALP
+wa-2017,Kalamunda,3,BOWYER Murray,MILES Lee-Anne,108.0,X_WAP,GRN
+wa-2017,Kalamunda,3,BOWYER Murray,DAY John,71.0,X_WAP,LIB
+wa-2017,Kalamunda,3,BOWYER Murray,WILLIAMS Brady John,76.0,X_WAP,CHR
+wa-2017,Kalamunda,3,BOWYER Murray,GOULD Ray,61.0,X_WAP,ONP
+wa-2017,Kalamunda,4,WILLIAMS Brady John,HUGHES Matthew,87.0,CHR,ALP
+wa-2017,Kalamunda,4,WILLIAMS Brady John,MILES Lee-Anne,88.0,CHR,GRN
+wa-2017,Kalamunda,4,WILLIAMS Brady John,DAY John,317.0,CHR,LIB
+wa-2017,Kalamunda,4,WILLIAMS Brady John,GOULD Ray,261.0,CHR,ONP
+wa-2017,Kalamunda,4,WILLIAMS Brady John,Exhausted,1.0,CHR,EXH
+wa-2017,Kalamunda,5,GOULD Ray,HUGHES Matthew,466.0,ONP,ALP
+wa-2017,Kalamunda,5,GOULD Ray,MILES Lee-Anne,368.0,ONP,GRN
+wa-2017,Kalamunda,5,GOULD Ray,DAY John,1218.0,ONP,LIB
+wa-2017,Kalamunda,5,GOULD Ray,Exhausted,2.0,ONP,EXH
+wa-2017,Kalamunda,6,MILES Lee-Anne,HUGHES Matthew,2949.0,GRN,ALP
+wa-2017,Kalamunda,6,MILES Lee-Anne,DAY John,688.0,GRN,LIB
+wa-2017,Kalamunda,6,MILES Lee-Anne,Exhausted,2.0,GRN,EXH
+wa-2017,Kalgoorlie,2,ERWIN James,O'DONNELL Kyran,12.0,X_FTS,LIB
+wa-2017,Kalgoorlie,2,ERWIN James,CROOK Tony,23.0,X_FTS,NAT
+wa-2017,Kalgoorlie,2,ERWIN James,BOLTON Richard,16.0,X_FTS,ONP
+wa-2017,Kalgoorlie,2,ERWIN James,SPURLING Jacqueline,20.0,X_FTS,GRN
+wa-2017,Kalgoorlie,2,ERWIN James,LUCAS Mike,41.0,X_FTS,SFF
+wa-2017,Kalgoorlie,2,ERWIN James,FORSTER Darren,37.0,X_FTS,ALP
+wa-2017,Kalgoorlie,3,LUCAS Mike,O'DONNELL Kyran,96.0,SFF,LIB
+wa-2017,Kalgoorlie,3,LUCAS Mike,CROOK Tony,131.0,SFF,NAT
+wa-2017,Kalgoorlie,3,LUCAS Mike,BOLTON Richard,256.0,SFF,ONP
+wa-2017,Kalgoorlie,3,LUCAS Mike,SPURLING Jacqueline,55.0,SFF,GRN
+wa-2017,Kalgoorlie,3,LUCAS Mike,FORSTER Darren,125.0,SFF,ALP
+wa-2017,Kalgoorlie,4,SPURLING Jacqueline,O'DONNELL Kyran,122.0,GRN,LIB
+wa-2017,Kalgoorlie,4,SPURLING Jacqueline,CROOK Tony,131.0,GRN,NAT
+wa-2017,Kalgoorlie,4,SPURLING Jacqueline,BOLTON Richard,78.0,GRN,ONP
+wa-2017,Kalgoorlie,4,SPURLING Jacqueline,FORSTER Darren,390.0,GRN,ALP
+wa-2017,Kalgoorlie,5,BOLTON Richard,O'DONNELL Kyran,792.0,ONP,LIB
+wa-2017,Kalgoorlie,5,BOLTON Richard,CROOK Tony,814.0,ONP,NAT
+wa-2017,Kalgoorlie,5,BOLTON Richard,FORSTER Darren,585.0,ONP,ALP
+wa-2017,Kalgoorlie,5,BOLTON Richard,Exhausted,5.0,ONP,EXH
+wa-2017,Kalgoorlie,6,CROOK Tony,O'DONNELL Kyran,3255.0,NAT,LIB
+wa-2017,Kalgoorlie,6,CROOK Tony,FORSTER Darren,1554.0,NAT,ALP
+wa-2017,Kalgoorlie,6,CROOK Tony,Exhausted,3.0,NAT,EXH
+wa-2017,Kimberley,2,ALBREY Ryan,JONES Kai,18.0,X_FTS,IND
+wa-2017,Kimberley,2,ALBREY Ryan,CHAPMAN Graham,18.0,X_FTS,IND
+wa-2017,Kimberley,2,ALBREY Ryan,VAUGHAN Liz,21.0,X_FTS,GRN
+wa-2017,Kimberley,2,ALBREY Ryan,WRIGHT Keith David,10.0,X_FTS,ONP
+wa-2017,Kimberley,2,ALBREY Ryan,GREATOREX Warren,11.0,X_FTS,LIB
+wa-2017,Kimberley,2,ALBREY Ryan,FARRER Josie,5.0,X_FTS,ALP
+wa-2017,Kimberley,2,ALBREY Ryan,HOUSTON Rob,9.0,X_FTS,NAT
+wa-2017,Kimberley,3,CHAPMAN Graham,JONES Kai,82.0,IND,IND
+wa-2017,Kimberley,3,CHAPMAN Graham,VAUGHAN Liz,16.0,IND,GRN
+wa-2017,Kimberley,3,CHAPMAN Graham,WRIGHT Keith David,19.0,IND,ONP
+wa-2017,Kimberley,3,CHAPMAN Graham,GREATOREX Warren,19.0,IND,LIB
+wa-2017,Kimberley,3,CHAPMAN Graham,FARRER Josie,28.0,IND,ALP
+wa-2017,Kimberley,3,CHAPMAN Graham,HOUSTON Rob,19.0,IND,NAT
+wa-2017,Kimberley,4,JONES Kai,VAUGHAN Liz,151.0,IND,GRN
+wa-2017,Kimberley,4,JONES Kai,WRIGHT Keith David,46.0,IND,ONP
+wa-2017,Kimberley,4,JONES Kai,GREATOREX Warren,33.0,IND,LIB
+wa-2017,Kimberley,4,JONES Kai,FARRER Josie,48.0,IND,ALP
+wa-2017,Kimberley,4,JONES Kai,HOUSTON Rob,43.0,IND,NAT
+wa-2017,Kimberley,4,JONES Kai,Exhausted,1.0,IND,EXH
+wa-2017,Kimberley,5,WRIGHT Keith David,VAUGHAN Liz,167.0,ONP,GRN
+wa-2017,Kimberley,5,WRIGHT Keith David,GREATOREX Warren,410.0,ONP,LIB
+wa-2017,Kimberley,5,WRIGHT Keith David,FARRER Josie,158.0,ONP,ALP
+wa-2017,Kimberley,5,WRIGHT Keith David,HOUSTON Rob,288.0,ONP,NAT
+wa-2017,Kimberley,5,WRIGHT Keith David,Exhausted,4.0,ONP,EXH
+wa-2017,Kimberley,6,VAUGHAN Liz,GREATOREX Warren,217.0,GRN,LIB
+wa-2017,Kimberley,6,VAUGHAN Liz,FARRER Josie,898.0,GRN,ALP
+wa-2017,Kimberley,6,VAUGHAN Liz,HOUSTON Rob,325.0,GRN,NAT
+wa-2017,Kimberley,7,HOUSTON Rob,GREATOREX Warren,1605.0,NAT,LIB
+wa-2017,Kimberley,7,HOUSTON Rob,FARRER Josie,994.0,NAT,ALP
+wa-2017,Kingsley,2,STALTARI Dominic,McNAIR John,110.0,X_MBP,X_WAP
+wa-2017,Kingsley,2,STALTARI Dominic,MITCHELL Andrea,67.0,X_MBP,LIB
+wa-2017,Kingsley,2,STALTARI Dominic,BURNSIDE Gilbert Graeme,32.0,X_MBP,CHR
+wa-2017,Kingsley,2,STALTARI Dominic,WARD Matthew,47.0,X_MBP,GRN
+wa-2017,Kingsley,2,STALTARI Dominic,STOJKOVSKI Jessica,66.0,X_MBP,ALP
+wa-2017,Kingsley,2,STALTARI Dominic,Exhausted,1.0,X_MBP,EXH
+wa-2017,Kingsley,3,McNAIR John,MITCHELL Andrea,228.0,X_WAP,LIB
+wa-2017,Kingsley,3,McNAIR John,BURNSIDE Gilbert Graeme,148.0,X_WAP,CHR
+wa-2017,Kingsley,3,McNAIR John,WARD Matthew,84.0,X_WAP,GRN
+wa-2017,Kingsley,3,McNAIR John,STOJKOVSKI Jessica,123.0,X_WAP,ALP
+wa-2017,Kingsley,4,BURNSIDE Gilbert Graeme,MITCHELL Andrea,542.0,CHR,LIB
+wa-2017,Kingsley,4,BURNSIDE Gilbert Graeme,WARD Matthew,154.0,CHR,GRN
+wa-2017,Kingsley,4,BURNSIDE Gilbert Graeme,STOJKOVSKI Jessica,139.0,CHR,ALP
+wa-2017,Kingsley,5,WARD Matthew,MITCHELL Andrea,583.0,GRN,LIB
+wa-2017,Kingsley,5,WARD Matthew,STOJKOVSKI Jessica,1908.0,GRN,ALP
+wa-2017,Kingsley,5,WARD Matthew,Exhausted,2.0,GRN,EXH
+wa-2017,Kwinana,2,HYDE Joshua,COOK Roger,69.0,X_MBP,ALP
+wa-2017,Kwinana,2,HYDE Joshua,TALBOT Bianca,36.0,X_MBP,LIB
+wa-2017,Kwinana,2,HYDE Joshua,TAYLOR Tim,49.0,X_MBP,ONP
+wa-2017,Kwinana,2,HYDE Joshua,MOREL Eleanor Charmaine,45.0,X_MBP,CHR
+wa-2017,Kwinana,2,HYDE Joshua,FREEMAN Jody,99.0,X_MBP,GRN
+wa-2017,Kwinana,3,MOREL Eleanor Charmaine,COOK Roger,149.0,CHR,ALP
+wa-2017,Kwinana,3,MOREL Eleanor Charmaine,TALBOT Bianca,220.0,CHR,LIB
+wa-2017,Kwinana,3,MOREL Eleanor Charmaine,TAYLOR Tim,97.0,CHR,ONP
+wa-2017,Kwinana,3,MOREL Eleanor Charmaine,FREEMAN Jody,95.0,CHR,GRN
+wa-2017,Kwinana,4,FREEMAN Jody,COOK Roger,1415.0,GRN,ALP
+wa-2017,Kwinana,4,FREEMAN Jody,TALBOT Bianca,274.0,GRN,LIB
+wa-2017,Kwinana,4,FREEMAN Jody,TAYLOR Tim,244.0,GRN,ONP
+wa-2017,Kwinana,4,FREEMAN Jody,Exhausted,3.0,GRN,EXH
+wa-2017,Kwinana,5,TAYLOR Tim,COOK Roger,1026.0,ONP,ALP
+wa-2017,Kwinana,5,TAYLOR Tim,TALBOT Bianca,1329.0,ONP,LIB
+wa-2017,Kwinana,5,TAYLOR Tim,Exhausted,3.0,ONP,EXH
+wa-2017,Mandurah,2,BATSIOUDIS Paul,CARRIE-WILSON Seb,38.0,X_MBP,X_FTS
+wa-2017,Mandurah,2,BATSIOUDIS Paul,ROWLANDS Lynne,15.0,X_MBP,LIB
+wa-2017,Mandurah,2,BATSIOUDIS Paul,SHAW Doug,39.0,X_MBP,ONP
+wa-2017,Mandurah,2,BATSIOUDIS Paul,TURNER Jason,19.0,X_MBP,NAT
+wa-2017,Mandurah,2,BATSIOUDIS Paul,TEMPLEMAN David,31.0,X_MBP,ALP
+wa-2017,Mandurah,2,BATSIOUDIS Paul,MOFFAT Jodie,13.0,X_MBP,GRN
+wa-2017,Mandurah,3,CARRIE-WILSON Seb,ROWLANDS Lynne,107.0,X_FTS,LIB
+wa-2017,Mandurah,3,CARRIE-WILSON Seb,SHAW Doug,67.0,X_FTS,ONP
+wa-2017,Mandurah,3,CARRIE-WILSON Seb,TURNER Jason,32.0,X_FTS,NAT
+wa-2017,Mandurah,3,CARRIE-WILSON Seb,TEMPLEMAN David,52.0,X_FTS,ALP
+wa-2017,Mandurah,3,CARRIE-WILSON Seb,MOFFAT Jodie,63.0,X_FTS,GRN
+wa-2017,Mandurah,3,CARRIE-WILSON Seb,Exhausted,2.0,X_FTS,EXH
+wa-2017,Mandurah,4,TURNER Jason,ROWLANDS Lynne,253.0,NAT,LIB
+wa-2017,Mandurah,4,TURNER Jason,SHAW Doug,90.0,NAT,ONP
+wa-2017,Mandurah,4,TURNER Jason,TEMPLEMAN David,128.0,NAT,ALP
+wa-2017,Mandurah,4,TURNER Jason,MOFFAT Jodie,65.0,NAT,GRN
+wa-2017,Mandurah,4,TURNER Jason,Exhausted,2.0,NAT,EXH
+wa-2017,Mandurah,5,MOFFAT Jodie,ROWLANDS Lynne,157.0,GRN,LIB
+wa-2017,Mandurah,5,MOFFAT Jodie,SHAW Doug,174.0,GRN,ONP
+wa-2017,Mandurah,5,MOFFAT Jodie,TEMPLEMAN David,880.0,GRN,ALP
+wa-2017,Mandurah,5,MOFFAT Jodie,Exhausted,2.0,GRN,EXH
+wa-2017,Mandurah,6,SHAW Doug,ROWLANDS Lynne,1904.0,ONP,LIB
+wa-2017,Mandurah,6,SHAW Doug,TEMPLEMAN David,1472.0,ONP,ALP
+wa-2017,Mandurah,6,SHAW Doug,Exhausted,2.0,ONP,EXH
+wa-2017,Maylands,2,FENSOME Benny,SMITH Greg,73.0,X_MBP,X_WAP
+wa-2017,Maylands,2,FENSOME Benny,PERKS Caroline,61.0,X_MBP,GRN
+wa-2017,Maylands,2,FENSOME Benny,BAKER Lisa,70.0,X_MBP,ALP
+wa-2017,Maylands,2,FENSOME Benny,KLEYN Matt,48.0,X_MBP,CHR
+wa-2017,Maylands,2,FENSOME Benny,MADDEN Amanda,63.0,X_MBP,LIB
+wa-2017,Maylands,2,FENSOME Benny,Exhausted,1.0,X_MBP,EXH
+wa-2017,Maylands,3,KLEYN Matt,SMITH Greg,111.0,CHR,X_WAP
+wa-2017,Maylands,3,KLEYN Matt,PERKS Caroline,55.0,CHR,GRN
+wa-2017,Maylands,3,KLEYN Matt,BAKER Lisa,89.0,CHR,ALP
+wa-2017,Maylands,3,KLEYN Matt,MADDEN Amanda,244.0,CHR,LIB
+wa-2017,Maylands,3,KLEYN Matt,Exhausted,2.0,CHR,EXH
+wa-2017,Maylands,4,SMITH Greg,PERKS Caroline,315.0,X_WAP,GRN
+wa-2017,Maylands,4,SMITH Greg,BAKER Lisa,219.0,X_WAP,ALP
+wa-2017,Maylands,4,SMITH Greg,MADDEN Amanda,187.0,X_WAP,LIB
+wa-2017,Maylands,4,SMITH Greg,Exhausted,2.0,X_WAP,EXH
+wa-2017,Maylands,5,PERKS Caroline,BAKER Lisa,3753.0,GRN,ALP
+wa-2017,Maylands,5,PERKS Caroline,MADDEN Amanda,596.0,GRN,LIB
+wa-2017,Maylands,5,PERKS Caroline,Exhausted,2.0,GRN,EXH
+wa-2017,Midland,2,ROSS Greg,PARASILITI Daniel,29.0,X_WAP,LIB
+wa-2017,Midland,2,ROSS Greg,BILTOFT John,32.0,X_WAP,X_MBP
+wa-2017,Midland,2,ROSS Greg,ROBERTS Michelle,49.0,X_WAP,ALP
+wa-2017,Midland,2,ROSS Greg,D'ANGELO Tony,22.0,X_WAP,ONP
+wa-2017,Midland,2,ROSS Greg,BIGGS Matthew,38.0,X_WAP,GRN
+wa-2017,Midland,2,ROSS Greg,PASSMORE Trent,59.0,X_WAP,SFF
+wa-2017,Midland,2,ROSS Greg,Exhausted,1.0,X_WAP,EXH
+wa-2017,Midland,3,BILTOFT John,PARASILITI Daniel,55.0,X_MBP,LIB
+wa-2017,Midland,3,BILTOFT John,ROBERTS Michelle,76.0,X_MBP,ALP
+wa-2017,Midland,3,BILTOFT John,D'ANGELO Tony,41.0,X_MBP,ONP
+wa-2017,Midland,3,BILTOFT John,BIGGS Matthew,45.0,X_MBP,GRN
+wa-2017,Midland,3,BILTOFT John,PASSMORE Trent,64.0,X_MBP,SFF
+wa-2017,Midland,4,PASSMORE Trent,PARASILITI Daniel,167.0,SFF,LIB
+wa-2017,Midland,4,PASSMORE Trent,ROBERTS Michelle,168.0,SFF,ALP
+wa-2017,Midland,4,PASSMORE Trent,D'ANGELO Tony,257.0,SFF,ONP
+wa-2017,Midland,4,PASSMORE Trent,BIGGS Matthew,220.0,SFF,GRN
+wa-2017,Midland,4,PASSMORE Trent,Exhausted,1.0,SFF,EXH
+wa-2017,Midland,5,D'ANGELO Tony,PARASILITI Daniel,1099.0,ONP,LIB
+wa-2017,Midland,5,D'ANGELO Tony,ROBERTS Michelle,641.0,ONP,ALP
+wa-2017,Midland,5,D'ANGELO Tony,BIGGS Matthew,487.0,ONP,GRN
+wa-2017,Midland,5,D'ANGELO Tony,Exhausted,8.0,ONP,EXH
+wa-2017,Midland,6,BIGGS Matthew,PARASILITI Daniel,594.0,GRN,LIB
+wa-2017,Midland,6,BIGGS Matthew,ROBERTS Michelle,2321.0,GRN,ALP
+wa-2017,Midland,6,BIGGS Matthew,Exhausted,2.0,GRN,EXH
+wa-2017,Mirrabooka,2,LUKE Matueny Marial,MUBARAK Kim,135.0,IND,IND
+wa-2017,Mirrabooka,2,LUKE Matueny Marial,CHEN Lily,27.0,IND,LIB
+wa-2017,Mirrabooka,2,LUKE Matueny Marial,IGBOKWE Chukwudumebi Sydney,11.0,IND,CHR
+wa-2017,Mirrabooka,2,LUKE Matueny Marial,DOOBREE Sareeta,20.0,IND,X_MBP
+wa-2017,Mirrabooka,2,LUKE Matueny Marial,FREEMAN Janine,53.0,IND,ALP
+wa-2017,Mirrabooka,2,LUKE Matueny Marial,ISMAIL Rafeif,63.0,IND,GRN
+wa-2017,Mirrabooka,3,DOOBREE Sareeta,MUBARAK Kim,95.0,X_MBP,IND
+wa-2017,Mirrabooka,3,DOOBREE Sareeta,CHEN Lily,56.0,X_MBP,LIB
+wa-2017,Mirrabooka,3,DOOBREE Sareeta,IGBOKWE Chukwudumebi Sydney,48.0,X_MBP,CHR
+wa-2017,Mirrabooka,3,DOOBREE Sareeta,FREEMAN Janine,140.0,X_MBP,ALP
+wa-2017,Mirrabooka,3,DOOBREE Sareeta,ISMAIL Rafeif,67.0,X_MBP,GRN
+wa-2017,Mirrabooka,4,IGBOKWE Chukwudumebi Sydney,MUBARAK Kim,121.0,CHR,IND
+wa-2017,Mirrabooka,4,IGBOKWE Chukwudumebi Sydney,CHEN Lily,389.0,CHR,LIB
+wa-2017,Mirrabooka,4,IGBOKWE Chukwudumebi Sydney,FREEMAN Janine,157.0,CHR,ALP
+wa-2017,Mirrabooka,4,IGBOKWE Chukwudumebi Sydney,ISMAIL Rafeif,62.0,CHR,GRN
+wa-2017,Mirrabooka,4,IGBOKWE Chukwudumebi Sydney,Exhausted,1.0,CHR,EXH
+wa-2017,Mirrabooka,5,MUBARAK Kim,CHEN Lily,387.0,IND,LIB
+wa-2017,Mirrabooka,5,MUBARAK Kim,FREEMAN Janine,235.0,IND,ALP
+wa-2017,Mirrabooka,5,MUBARAK Kim,ISMAIL Rafeif,269.0,IND,GRN
+wa-2017,Mirrabooka,5,MUBARAK Kim,Exhausted,6.0,IND,EXH
+wa-2017,Mirrabooka,6,ISMAIL Rafeif,CHEN Lily,434.0,GRN,LIB
+wa-2017,Mirrabooka,6,ISMAIL Rafeif,FREEMAN Janine,1596.0,GRN,ALP
+wa-2017,Mirrabooka,6,ISMAIL Rafeif,Exhausted,6.0,GRN,EXH
+wa-2017,Moore,2,PORTER Wes,KELLY James Joseph,166.0,CHR,ONP
+wa-2017,Moore,2,PORTER Wes,WILLIAMSON Ross,55.0,CHR,SFF
+wa-2017,Moore,2,PORTER Wes,LEAM Peter,16.0,CHR,GRN
+wa-2017,Moore,2,PORTER Wes,SLYNS Darren,52.0,CHR,LIB
+wa-2017,Moore,2,PORTER Wes,LOVE Shane,96.0,CHR,NAT
+wa-2017,Moore,2,PORTER Wes,NORTON Barni,34.0,CHR,ALP
+wa-2017,Moore,2,PORTER Wes,Exhausted,3.0,CHR,EXH
+wa-2017,Moore,3,LEAM Peter,KELLY James Joseph,79.0,GRN,ONP
+wa-2017,Moore,3,LEAM Peter,WILLIAMSON Ross,103.0,GRN,SFF
+wa-2017,Moore,3,LEAM Peter,SLYNS Darren,80.0,GRN,LIB
+wa-2017,Moore,3,LEAM Peter,LOVE Shane,197.0,GRN,NAT
+wa-2017,Moore,3,LEAM Peter,NORTON Barni,420.0,GRN,ALP
+wa-2017,Moore,3,LEAM Peter,Exhausted,1.0,GRN,EXH
+wa-2017,Moore,4,WILLIAMSON Ross,KELLY James Joseph,523.0,SFF,ONP
+wa-2017,Moore,4,WILLIAMSON Ross,SLYNS Darren,180.0,SFF,LIB
+wa-2017,Moore,4,WILLIAMSON Ross,LOVE Shane,435.0,SFF,NAT
+wa-2017,Moore,4,WILLIAMSON Ross,NORTON Barni,256.0,SFF,ALP
+wa-2017,Moore,4,WILLIAMSON Ross,Exhausted,2.0,SFF,EXH
+wa-2017,Moore,5,KELLY James Joseph,SLYNS Darren,1492.0,ONP,LIB
+wa-2017,Moore,5,KELLY James Joseph,LOVE Shane,1392.0,ONP,NAT
+wa-2017,Moore,5,KELLY James Joseph,NORTON Barni,638.0,ONP,ALP
+wa-2017,Moore,5,KELLY James Joseph,Exhausted,8.0,ONP,EXH
+wa-2017,Moore,6,NORTON Barni,SLYNS Darren,1755.0,ALP,LIB
+wa-2017,Moore,6,NORTON Barni,LOVE Shane,4008.0,ALP,NAT
+wa-2017,Moore,6,NORTON Barni,Exhausted,9.0,ALP,EXH
+wa-2017,Morley,2,BOKSMATI Nasim,RICCIARDI Anne-Marie,46.0,X_MBP,GRN
+wa-2017,Morley,2,BOKSMATI Nasim,BRITZA Ian,115.0,X_MBP,LIB
+wa-2017,Morley,2,BOKSMATI Nasim,HOST Lois,36.0,X_MBP,CHR
+wa-2017,Morley,2,BOKSMATI Nasim,SANDERSON Amber-Jade,114.0,X_MBP,ALP
+wa-2017,Morley,2,BOKSMATI Nasim,LONGO Paul,39.0,X_MBP,SFF
+wa-2017,Morley,2,BOKSMATI Nasim,Exhausted,1.0,X_MBP,EXH
+wa-2017,Morley,3,LONGO Paul,RICCIARDI Anne-Marie,73.0,SFF,GRN
+wa-2017,Morley,3,LONGO Paul,BRITZA Ian,186.0,SFF,LIB
+wa-2017,Morley,3,LONGO Paul,HOST Lois,80.0,SFF,CHR
+wa-2017,Morley,3,LONGO Paul,SANDERSON Amber-Jade,217.0,SFF,ALP
+wa-2017,Morley,3,LONGO Paul,Exhausted,6.0,SFF,EXH
+wa-2017,Morley,4,HOST Lois,RICCIARDI Anne-Marie,90.0,CHR,GRN
+wa-2017,Morley,4,HOST Lois,BRITZA Ian,421.0,CHR,LIB
+wa-2017,Morley,4,HOST Lois,SANDERSON Amber-Jade,184.0,CHR,ALP
+wa-2017,Morley,4,HOST Lois,Exhausted,1.0,CHR,EXH
+wa-2017,Morley,5,RICCIARDI Anne-Marie,BRITZA Ian,621.0,GRN,LIB
+wa-2017,Morley,5,RICCIARDI Anne-Marie,SANDERSON Amber-Jade,1603.0,GRN,ALP
+wa-2017,Morley,5,RICCIARDI Anne-Marie,Exhausted,2.0,GRN,EXH
+wa-2017,Mount Lawley,2,FARSALAS Alexandra,VAN BURGEL Janelle,58.0,X_MBP,CHR
+wa-2017,Mount Lawley,2,FARSALAS Alexandra,SUTHERLAND Michael,68.0,X_MBP,LIB
+wa-2017,Mount Lawley,2,FARSALAS Alexandra,ROBERTS Matt,52.0,X_MBP,GRN
+wa-2017,Mount Lawley,2,FARSALAS Alexandra,REVIAN Kandi,73.0,X_MBP,AJP
+wa-2017,Mount Lawley,2,FARSALAS Alexandra,MILLMAN Simon,100.0,X_MBP,ALP
+wa-2017,Mount Lawley,2,FARSALAS Alexandra,Exhausted,1.0,X_MBP,EXH
+wa-2017,Mount Lawley,3,REVIAN Kandi,VAN BURGEL Janelle,84.0,AJP,CHR
+wa-2017,Mount Lawley,3,REVIAN Kandi,SUTHERLAND Michael,87.0,AJP,LIB
+wa-2017,Mount Lawley,3,REVIAN Kandi,ROBERTS Matt,260.0,AJP,GRN
+wa-2017,Mount Lawley,3,REVIAN Kandi,MILLMAN Simon,138.0,AJP,ALP
+wa-2017,Mount Lawley,3,REVIAN Kandi,Exhausted,1.0,AJP,EXH
+wa-2017,Mount Lawley,4,VAN BURGEL Janelle,SUTHERLAND Michael,426.0,CHR,LIB
+wa-2017,Mount Lawley,4,VAN BURGEL Janelle,ROBERTS Matt,155.0,CHR,GRN
+wa-2017,Mount Lawley,4,VAN BURGEL Janelle,MILLMAN Simon,140.0,CHR,ALP
+wa-2017,Mount Lawley,4,VAN BURGEL Janelle,Exhausted,4.0,CHR,EXH
+wa-2017,Mount Lawley,5,ROBERTS Matt,SUTHERLAND Michael,656.0,GRN,LIB
+wa-2017,Mount Lawley,5,ROBERTS Matt,MILLMAN Simon,2747.0,GRN,ALP
+wa-2017,Mount Lawley,5,ROBERTS Matt,Exhausted,2.0,GRN,EXH
+wa-2017,Murray-Wellington,2,RADLEY Daniel,BURWOOD Callum,114.0,X_FTS,GRN
+wa-2017,Murray-Wellington,2,RADLEY Daniel,GILLETT Paul,31.0,X_FTS,NAT
+wa-2017,Murray-Wellington,2,RADLEY Daniel,COWPER Murray,17.0,X_FTS,LIB
+wa-2017,Murray-Wellington,2,RADLEY Daniel,CLARKE Robyn,34.0,X_FTS,ALP
+wa-2017,Murray-Wellington,2,RADLEY Daniel,McCALL Mark,47.0,X_FTS,SFF
+wa-2017,Murray-Wellington,2,RADLEY Daniel,SLATER Ross,28.0,X_FTS,ONP
+wa-2017,Murray-Wellington,2,RADLEY Daniel,Exhausted,3.0,X_FTS,EXH
+wa-2017,Murray-Wellington,3,BURWOOD Callum,GILLETT Paul,308.0,GRN,NAT
+wa-2017,Murray-Wellington,3,BURWOOD Callum,COWPER Murray,83.0,GRN,LIB
+wa-2017,Murray-Wellington,3,BURWOOD Callum,CLARKE Robyn,606.0,GRN,ALP
+wa-2017,Murray-Wellington,3,BURWOOD Callum,McCALL Mark,116.0,GRN,SFF
+wa-2017,Murray-Wellington,3,BURWOOD Callum,SLATER Ross,61.0,GRN,ONP
+wa-2017,Murray-Wellington,3,BURWOOD Callum,Exhausted,1.0,GRN,EXH
+wa-2017,Murray-Wellington,4,McCALL Mark,GILLETT Paul,276.0,SFF,NAT
+wa-2017,Murray-Wellington,4,McCALL Mark,COWPER Murray,384.0,SFF,LIB
+wa-2017,Murray-Wellington,4,McCALL Mark,CLARKE Robyn,402.0,SFF,ALP
+wa-2017,Murray-Wellington,4,McCALL Mark,SLATER Ross,616.0,SFF,ONP
+wa-2017,Murray-Wellington,4,McCALL Mark,Exhausted,1.0,SFF,EXH
+wa-2017,Murray-Wellington,5,GILLETT Paul,COWPER Murray,1906.0,NAT,LIB
+wa-2017,Murray-Wellington,5,GILLETT Paul,CLARKE Robyn,744.0,NAT,ALP
+wa-2017,Murray-Wellington,5,GILLETT Paul,SLATER Ross,590.0,NAT,ONP
+wa-2017,Murray-Wellington,5,GILLETT Paul,Exhausted,3.0,NAT,EXH
+wa-2017,Murray-Wellington,6,SLATER Ross,COWPER Murray,2130.0,ONP,LIB
+wa-2017,Murray-Wellington,6,SLATER Ross,CLARKE Robyn,1812.0,ONP,ALP
+wa-2017,Murray-Wellington,6,SLATER Ross,Exhausted,5.0,ONP,EXH
+wa-2017,Nedlands,2,GINBEY Keith,SHAW Christopher,41.0,X_MBP,CHR
+wa-2017,Nedlands,2,GINBEY Keith,TAYLOR Penny,57.0,X_MBP,ALP
+wa-2017,Nedlands,2,GINBEY Keith,MANGANO Andrew,92.0,X_MBP,X_WAP
+wa-2017,Nedlands,2,GINBEY Keith,GROSSO Daniel,50.0,X_MBP,GRN
+wa-2017,Nedlands,2,GINBEY Keith,MARMION Bill,89.0,X_MBP,LIB
+wa-2017,Nedlands,3,SHAW Christopher,TAYLOR Penny,127.0,CHR,ALP
+wa-2017,Nedlands,3,SHAW Christopher,MANGANO Andrew,117.0,CHR,X_WAP
+wa-2017,Nedlands,3,SHAW Christopher,GROSSO Daniel,57.0,CHR,GRN
+wa-2017,Nedlands,3,SHAW Christopher,MARMION Bill,264.0,CHR,LIB
+wa-2017,Nedlands,3,SHAW Christopher,Exhausted,1.0,CHR,EXH
+wa-2017,Nedlands,4,MANGANO Andrew,TAYLOR Penny,218.0,X_WAP,ALP
+wa-2017,Nedlands,4,MANGANO Andrew,GROSSO Daniel,240.0,X_WAP,GRN
+wa-2017,Nedlands,4,MANGANO Andrew,MARMION Bill,357.0,X_WAP,LIB
+wa-2017,Nedlands,4,MANGANO Andrew,Exhausted,2.0,X_WAP,EXH
+wa-2017,Nedlands,5,GROSSO Daniel,TAYLOR Penny,3201.0,GRN,ALP
+wa-2017,Nedlands,5,GROSSO Daniel,MARMION Bill,785.0,GRN,LIB
+wa-2017,Nedlands,5,GROSSO Daniel,Exhausted,2.0,GRN,EXH
+wa-2017,North West Central,2,HOOPER Angela,HILL Shane,1.0,X_MBP,ALP
+wa-2017,North West Central,2,HOOPER Angela,CATANIA Vince,2.0,X_MBP,NAT
+wa-2017,North West Central,2,HOOPER Angela,GREEN Carol,2.0,X_MBP,GRN
+wa-2017,North West Central,2,HOOPER Angela,DAVIES Sandy,6.0,X_MBP,IND
+wa-2017,North West Central,2,HOOPER Angela,WESTCOTT Julee,6.0,X_MBP,LIB
+wa-2017,North West Central,2,HOOPER Angela,D'CUNHA Adrian,7.0,X_MBP,X_FTS
+wa-2017,North West Central,3,D'CUNHA Adrian,HILL Shane,12.0,X_FTS,ALP
+wa-2017,North West Central,3,D'CUNHA Adrian,CATANIA Vince,9.0,X_FTS,NAT
+wa-2017,North West Central,3,D'CUNHA Adrian,SORENSEN Dane,8.0,X_FTS,ONP
+wa-2017,North West Central,3,D'CUNHA Adrian,GREEN Carol,11.0,X_FTS,GRN
+wa-2017,North West Central,3,D'CUNHA Adrian,DAVIES Sandy,25.0,X_FTS,IND
+wa-2017,North West Central,3,D'CUNHA Adrian,WESTCOTT Julee,15.0,X_FTS,LIB
+wa-2017,North West Central,4,DAVIES Sandy,HILL Shane,78.0,IND,ALP
+wa-2017,North West Central,4,DAVIES Sandy,CATANIA Vince,44.0,IND,NAT
+wa-2017,North West Central,4,DAVIES Sandy,SORENSEN Dane,36.0,IND,ONP
+wa-2017,North West Central,4,DAVIES Sandy,GREEN Carol,63.0,IND,GRN
+wa-2017,North West Central,4,DAVIES Sandy,WESTCOTT Julee,29.0,IND,LIB
+wa-2017,North West Central,4,DAVIES Sandy,Exhausted,2.0,IND,EXH
+wa-2017,North West Central,5,GREEN Carol,HILL Shane,275.0,GRN,ALP
+wa-2017,North West Central,5,GREEN Carol,CATANIA Vince,125.0,GRN,NAT
+wa-2017,North West Central,5,GREEN Carol,SORENSEN Dane,50.0,GRN,ONP
+wa-2017,North West Central,5,GREEN Carol,WESTCOTT Julee,50.0,GRN,LIB
+wa-2017,North West Central,5,GREEN Carol,Exhausted,2.0,GRN,EXH
+wa-2017,North West Central,6,SORENSEN Dane,HILL Shane,232.0,ONP,ALP
+wa-2017,North West Central,6,SORENSEN Dane,CATANIA Vince,375.0,ONP,NAT
+wa-2017,North West Central,6,SORENSEN Dane,WESTCOTT Julee,304.0,ONP,LIB
+wa-2017,North West Central,6,SORENSEN Dane,Exhausted,1.0,ONP,EXH
+wa-2017,North West Central,7,WESTCOTT Julee,HILL Shane,370.0,LIB,ALP
+wa-2017,North West Central,7,WESTCOTT Julee,CATANIA Vince,1211.0,LIB,NAT
+wa-2017,North West Central,7,WESTCOTT Julee,Exhausted,2.0,LIB,EXH
+wa-2017,Perth,2,MOLYNEUX Ian,CAREY John,25.0,X_WAP,ALP
+wa-2017,Perth,2,MOLYNEUX Ian,BALLINGALL Ben,17.0,X_WAP,X_FTS
+wa-2017,Perth,2,MOLYNEUX Ian,HANSON Matt,16.0,X_WAP,AJP
+wa-2017,Perth,2,MOLYNEUX Ian,MILLIGAN Hannah,25.0,X_WAP,GRN
+wa-2017,Perth,2,MOLYNEUX Ian,HYDE Archie,28.0,X_WAP,X_MBP
+wa-2017,Perth,2,MOLYNEUX Ian,LIM Ken Ivan,12.0,X_WAP,CHR
+wa-2017,Perth,2,MOLYNEUX Ian,EVANGEL Eleni,25.0,X_WAP,LIB
+wa-2017,Perth,3,HYDE Archie,CAREY John,44.0,X_MBP,ALP
+wa-2017,Perth,3,HYDE Archie,BALLINGALL Ben,29.0,X_MBP,X_FTS
+wa-2017,Perth,3,HYDE Archie,HANSON Matt,41.0,X_MBP,AJP
+wa-2017,Perth,3,HYDE Archie,MILLIGAN Hannah,32.0,X_MBP,GRN
+wa-2017,Perth,3,HYDE Archie,LIM Ken Ivan,39.0,X_MBP,CHR
+wa-2017,Perth,3,HYDE Archie,EVANGEL Eleni,48.0,X_MBP,LIB
+wa-2017,Perth,4,BALLINGALL Ben,CAREY John,65.0,X_FTS,ALP
+wa-2017,Perth,4,BALLINGALL Ben,HANSON Matt,81.0,X_FTS,AJP
+wa-2017,Perth,4,BALLINGALL Ben,MILLIGAN Hannah,110.0,X_FTS,GRN
+wa-2017,Perth,4,BALLINGALL Ben,LIM Ken Ivan,12.0,X_FTS,CHR
+wa-2017,Perth,4,BALLINGALL Ben,EVANGEL Eleni,44.0,X_FTS,LIB
+wa-2017,Perth,5,LIM Ken Ivan,CAREY John,63.0,CHR,ALP
+wa-2017,Perth,5,LIM Ken Ivan,HANSON Matt,64.0,CHR,AJP
+wa-2017,Perth,5,LIM Ken Ivan,MILLIGAN Hannah,39.0,CHR,GRN
+wa-2017,Perth,5,LIM Ken Ivan,EVANGEL Eleni,237.0,CHR,LIB
+wa-2017,Perth,5,LIM Ken Ivan,Exhausted,1.0,CHR,EXH
+wa-2017,Perth,6,HANSON Matt,CAREY John,140.0,AJP,ALP
+wa-2017,Perth,6,HANSON Matt,MILLIGAN Hannah,279.0,AJP,GRN
+wa-2017,Perth,6,HANSON Matt,EVANGEL Eleni,105.0,AJP,LIB
+wa-2017,Perth,6,HANSON Matt,Exhausted,3.0,AJP,EXH
+wa-2017,Perth,7,MILLIGAN Hannah,CAREY John,3341.0,GRN,ALP
+wa-2017,Perth,7,MILLIGAN Hannah,EVANGEL Eleni,589.0,GRN,LIB
+wa-2017,Perth,7,MILLIGAN Hannah,Exhausted,4.0,GRN,EXH
+wa-2017,Pilbara,2,HOOPER Davyd Cameron,ALCHIN Mark,12.0,X_MBP,LIB
+wa-2017,Pilbara,2,HOOPER Davyd Cameron,WHITE-HARTIG Fiona,7.0,X_MBP,SFF
+wa-2017,Pilbara,2,HOOPER Davyd Cameron,MICHEL Kevin,11.0,X_MBP,ALP
+wa-2017,Pilbara,2,HOOPER Davyd Cameron,GRYLLS Brendon,3.0,X_MBP,NAT
+wa-2017,Pilbara,2,HOOPER Davyd Cameron,McKENNA Brent,9.0,X_MBP,GRN
+wa-2017,Pilbara,2,HOOPER Davyd Cameron,ARCHIBALD David,4.0,X_MBP,ONP
+wa-2017,Pilbara,2,HOOPER Davyd Cameron,DUNN Mark A,19.0,X_MBP,X_FTS
+wa-2017,Pilbara,3,DUNN Mark A,ALCHIN Mark,16.0,X_FTS,LIB
+wa-2017,Pilbara,3,DUNN Mark A,WHITE-HARTIG Fiona,41.0,X_FTS,SFF
+wa-2017,Pilbara,3,DUNN Mark A,MICHEL Kevin,22.0,X_FTS,ALP
+wa-2017,Pilbara,3,DUNN Mark A,GRYLLS Brendon,19.0,X_FTS,NAT
+wa-2017,Pilbara,3,DUNN Mark A,McKENNA Brent,28.0,X_FTS,GRN
+wa-2017,Pilbara,3,DUNN Mark A,ARCHIBALD David,26.0,X_FTS,ONP
+wa-2017,Pilbara,4,McKENNA Brent,ALCHIN Mark,53.0,GRN,LIB
+wa-2017,Pilbara,4,McKENNA Brent,WHITE-HARTIG Fiona,77.0,GRN,SFF
+wa-2017,Pilbara,4,McKENNA Brent,MICHEL Kevin,283.0,GRN,ALP
+wa-2017,Pilbara,4,McKENNA Brent,GRYLLS Brendon,158.0,GRN,NAT
+wa-2017,Pilbara,4,McKENNA Brent,ARCHIBALD David,50.0,GRN,ONP
+wa-2017,Pilbara,5,WHITE-HARTIG Fiona,ALCHIN Mark,254.0,SFF,LIB
+wa-2017,Pilbara,5,WHITE-HARTIG Fiona,MICHEL Kevin,398.0,SFF,ALP
+wa-2017,Pilbara,5,WHITE-HARTIG Fiona,GRYLLS Brendon,302.0,SFF,NAT
+wa-2017,Pilbara,5,WHITE-HARTIG Fiona,ARCHIBALD David,522.0,SFF,ONP
+wa-2017,Pilbara,5,WHITE-HARTIG Fiona,Exhausted,1.0,SFF,EXH
+wa-2017,Pilbara,6,ARCHIBALD David,ALCHIN Mark,739.0,ONP,LIB
+wa-2017,Pilbara,6,ARCHIBALD David,MICHEL Kevin,675.0,ONP,ALP
+wa-2017,Pilbara,6,ARCHIBALD David,GRYLLS Brendon,793.0,ONP,NAT
+wa-2017,Pilbara,6,ARCHIBALD David,Exhausted,1.0,ONP,EXH
+wa-2017,Pilbara,7,ALCHIN Mark,MICHEL Kevin,1618.0,LIB,ALP
+wa-2017,Pilbara,7,ALCHIN Mark,GRYLLS Brendon,1613.0,LIB,NAT
+wa-2017,Pilbara,7,ALCHIN Mark,Exhausted,1.0,LIB,EXH
+wa-2017,Riverton,2,PASHA Zeeshan,REGNARD Susan,22.0,X_MBP,CHR
+wa-2017,Riverton,2,PASHA Zeeshan,BOSWELL Marion,45.0,X_MBP,ALP
+wa-2017,Riverton,2,PASHA Zeeshan,WAUGH Gavin,39.0,X_MBP,X_WAP
+wa-2017,Riverton,2,PASHA Zeeshan,KERR Thor,35.0,X_MBP,GRN
+wa-2017,Riverton,2,PASHA Zeeshan,NAHAN Mike,50.0,X_MBP,LIB
+wa-2017,Riverton,2,PASHA Zeeshan,CHANG Tshung-Hui,13.0,X_MBP,ONP
+wa-2017,Riverton,3,WAUGH Gavin,REGNARD Susan,49.0,X_WAP,CHR
+wa-2017,Riverton,3,WAUGH Gavin,BOSWELL Marion,70.0,X_WAP,ALP
+wa-2017,Riverton,3,WAUGH Gavin,KERR Thor,81.0,X_WAP,GRN
+wa-2017,Riverton,3,WAUGH Gavin,NAHAN Mike,67.0,X_WAP,LIB
+wa-2017,Riverton,3,WAUGH Gavin,CHANG Tshung-Hui,46.0,X_WAP,ONP
+wa-2017,Riverton,4,REGNARD Susan,BOSWELL Marion,255.0,CHR,ALP
+wa-2017,Riverton,4,REGNARD Susan,KERR Thor,111.0,CHR,GRN
+wa-2017,Riverton,4,REGNARD Susan,NAHAN Mike,647.0,CHR,LIB
+wa-2017,Riverton,4,REGNARD Susan,CHANG Tshung-Hui,113.0,CHR,ONP
+wa-2017,Riverton,4,REGNARD Susan,Exhausted,3.0,CHR,EXH
+wa-2017,Riverton,5,CHANG Tshung-Hui,BOSWELL Marion,301.0,ONP,ALP
+wa-2017,Riverton,5,CHANG Tshung-Hui,KERR Thor,208.0,ONP,GRN
+wa-2017,Riverton,5,CHANG Tshung-Hui,NAHAN Mike,747.0,ONP,LIB
+wa-2017,Riverton,5,CHANG Tshung-Hui,Exhausted,2.0,ONP,EXH
+wa-2017,Riverton,6,KERR Thor,BOSWELL Marion,1990.0,GRN,ALP
+wa-2017,Riverton,6,KERR Thor,NAHAN Mike,534.0,GRN,LIB
+wa-2017,Riverton,6,KERR Thor,Exhausted,1.0,GRN,EXH
+wa-2017,Rockingham,2,CHARLES Mark,BAUMANN Wendy,11.0,X_MBP,LIB
+wa-2017,Rockingham,2,CHARLES Mark,MUMME James,19.0,X_MBP,GRN
+wa-2017,Rockingham,2,CHARLES Mark,OMALLEY James,13.0,X_MBP,ONP
+wa-2017,Rockingham,2,CHARLES Mark,BUCHANAN Craig,45.0,X_MBP,IND
+wa-2017,Rockingham,2,CHARLES Mark,STONEHOUSE Sylvia,30.0,X_MBP,CHR
+wa-2017,Rockingham,2,CHARLES Mark,McGOWAN Mark,29.0,X_MBP,ALP
+wa-2017,Rockingham,3,STONEHOUSE Sylvia,BAUMANN Wendy,190.0,CHR,LIB
+wa-2017,Rockingham,3,STONEHOUSE Sylvia,MUMME James,18.0,CHR,GRN
+wa-2017,Rockingham,3,STONEHOUSE Sylvia,OMALLEY James,71.0,CHR,ONP
+wa-2017,Rockingham,3,STONEHOUSE Sylvia,BUCHANAN Craig,78.0,CHR,IND
+wa-2017,Rockingham,3,STONEHOUSE Sylvia,McGOWAN Mark,84.0,CHR,ALP
+wa-2017,Rockingham,3,STONEHOUSE Sylvia,Exhausted,2.0,CHR,EXH
+wa-2017,Rockingham,4,BUCHANAN Craig,BAUMANN Wendy,121.0,IND,LIB
+wa-2017,Rockingham,4,BUCHANAN Craig,MUMME James,146.0,IND,GRN
+wa-2017,Rockingham,4,BUCHANAN Craig,OMALLEY James,134.0,IND,ONP
+wa-2017,Rockingham,4,BUCHANAN Craig,McGOWAN Mark,155.0,IND,ALP
+wa-2017,Rockingham,5,MUMME James,BAUMANN Wendy,223.0,GRN,LIB
+wa-2017,Rockingham,5,MUMME James,OMALLEY James,283.0,GRN,ONP
+wa-2017,Rockingham,5,MUMME James,McGOWAN Mark,1279.0,GRN,ALP
+wa-2017,Rockingham,5,MUMME James,Exhausted,3.0,GRN,EXH
+wa-2017,Rockingham,6,OMALLEY James,BAUMANN Wendy,1359.0,ONP,LIB
+wa-2017,Rockingham,6,OMALLEY James,McGOWAN Mark,1051.0,ONP,ALP
+wa-2017,Rockingham,6,OMALLEY James,Exhausted,6.0,ONP,EXH
+wa-2017,Roe,2,FELS Tony,JACOBS Graham,13.0,IND,LIB
+wa-2017,Roe,2,FELS Tony,STACEY Peter,21.0,IND,SFF
+wa-2017,Roe,2,FELS Tony,ZACKLOVA Eketerina,12.0,IND,ONP
+wa-2017,Roe,2,FELS Tony,RUNDLE Peter,11.0,IND,NAT
+wa-2017,Roe,2,FELS Tony,MCINNES Simone,8.0,IND,GRN
+wa-2017,Roe,2,FELS Tony,WILLIS Bradley,8.0,IND,ALP
+wa-2017,Roe,2,FELS Tony,KELLY Cathie,3.0,IND,CHR
+wa-2017,Roe,3,KELLY Cathie,JACOBS Graham,245.0,CHR,LIB
+wa-2017,Roe,3,KELLY Cathie,STACEY Peter,45.0,CHR,SFF
+wa-2017,Roe,3,KELLY Cathie,ZACKLOVA Eketerina,52.0,CHR,ONP
+wa-2017,Roe,3,KELLY Cathie,RUNDLE Peter,122.0,CHR,NAT
+wa-2017,Roe,3,KELLY Cathie,MCINNES Simone,24.0,CHR,GRN
+wa-2017,Roe,3,KELLY Cathie,WILLIS Bradley,50.0,CHR,ALP
+wa-2017,Roe,3,KELLY Cathie,Exhausted,1.0,CHR,EXH
+wa-2017,Roe,4,MCINNES Simone,JACOBS Graham,74.0,GRN,LIB
+wa-2017,Roe,4,MCINNES Simone,STACEY Peter,70.0,GRN,SFF
+wa-2017,Roe,4,MCINNES Simone,ZACKLOVA Eketerina,52.0,GRN,ONP
+wa-2017,Roe,4,MCINNES Simone,RUNDLE Peter,227.0,GRN,NAT
+wa-2017,Roe,4,MCINNES Simone,WILLIS Bradley,366.0,GRN,ALP
+wa-2017,Roe,4,MCINNES Simone,Exhausted,2.0,GRN,EXH
+wa-2017,Roe,5,STACEY Peter,JACOBS Graham,260.0,SFF,LIB
+wa-2017,Roe,5,STACEY Peter,ZACKLOVA Eketerina,471.0,SFF,ONP
+wa-2017,Roe,5,STACEY Peter,RUNDLE Peter,388.0,SFF,NAT
+wa-2017,Roe,5,STACEY Peter,WILLIS Bradley,197.0,SFF,ALP
+wa-2017,Roe,5,STACEY Peter,Exhausted,2.0,SFF,EXH
+wa-2017,Roe,6,ZACKLOVA Eketerina,JACOBS Graham,850.0,ONP,LIB
+wa-2017,Roe,6,ZACKLOVA Eketerina,RUNDLE Peter,1128.0,ONP,NAT
+wa-2017,Roe,6,ZACKLOVA Eketerina,WILLIS Bradley,398.0,ONP,ALP
+wa-2017,Roe,6,ZACKLOVA Eketerina,Exhausted,3.0,ONP,EXH
+wa-2017,Roe,7,WILLIS Bradley,JACOBS Graham,1172.0,ALP,LIB
+wa-2017,Roe,7,WILLIS Bradley,RUNDLE Peter,3045.0,ALP,NAT
+wa-2017,Roe,7,WILLIS Bradley,Exhausted,5.0,ALP,EXH
+wa-2017,Scarborough,2,PYNT Steven,HARVEY Liza,56.0,X_WAP,LIB
+wa-2017,Scarborough,2,PYNT Steven,BAILEY Dan,70.0,X_WAP,X_MBP
+wa-2017,Scarborough,2,PYNT Steven,HOST Kevin,19.0,X_WAP,CHR
+wa-2017,Scarborough,2,PYNT Steven,WALKER Tony,59.0,X_WAP,ALP
+wa-2017,Scarborough,2,PYNT Steven,DODD Margaret,24.0,X_WAP,ONP
+wa-2017,Scarborough,2,PYNT Steven,CULLITY Judith,50.0,X_WAP,GRN
+wa-2017,Scarborough,3,BAILEY Dan,HARVEY Liza,100.0,X_MBP,LIB
+wa-2017,Scarborough,3,BAILEY Dan,HOST Kevin,63.0,X_MBP,CHR
+wa-2017,Scarborough,3,BAILEY Dan,WALKER Tony,78.0,X_MBP,ALP
+wa-2017,Scarborough,3,BAILEY Dan,DODD Margaret,37.0,X_MBP,ONP
+wa-2017,Scarborough,3,BAILEY Dan,CULLITY Judith,99.0,X_MBP,GRN
+wa-2017,Scarborough,4,HOST Kevin,HARVEY Liza,293.0,CHR,LIB
+wa-2017,Scarborough,4,HOST Kevin,WALKER Tony,93.0,CHR,ALP
+wa-2017,Scarborough,4,HOST Kevin,DODD Margaret,80.0,CHR,ONP
+wa-2017,Scarborough,4,HOST Kevin,CULLITY Judith,46.0,CHR,GRN
+wa-2017,Scarborough,5,DODD Margaret,HARVEY Liza,526.0,ONP,LIB
+wa-2017,Scarborough,5,DODD Margaret,WALKER Tony,290.0,ONP,ALP
+wa-2017,Scarborough,5,DODD Margaret,CULLITY Judith,233.0,ONP,GRN
+wa-2017,Scarborough,5,DODD Margaret,Exhausted,2.0,ONP,EXH
+wa-2017,Scarborough,6,CULLITY Judith,HARVEY Liza,825.0,GRN,LIB
+wa-2017,Scarborough,6,CULLITY Judith,WALKER Tony,2912.0,GRN,ALP
+wa-2017,Scarborough,6,CULLITY Judith,Exhausted,2.0,GRN,EXH
+wa-2017,South Perth,2,FRANCIS M,ST MARTIN Jason Brett,43.0,IND,X_MBP
+wa-2017,South Perth,2,FRANCIS M,BROGAN Mark,31.0,IND,GRN
+wa-2017,South Perth,2,FRANCIS M,McGRATH John,37.0,IND,LIB
+wa-2017,South Perth,2,FRANCIS M,REID Fiona,99.0,IND,IND
+wa-2017,South Perth,2,FRANCIS M,STEINECK Rosemary Frances Capon,7.0,IND,CHR
+wa-2017,South Perth,2,FRANCIS M,VOROS Michael,27.0,IND,ALP
+wa-2017,South Perth,3,STEINECK Rosemary Frances Capon,ST MARTIN Jason Brett,44.0,CHR,X_MBP
+wa-2017,South Perth,3,STEINECK Rosemary Frances Capon,BROGAN Mark,36.0,CHR,GRN
+wa-2017,South Perth,3,STEINECK Rosemary Frances Capon,McGRATH John,231.0,CHR,LIB
+wa-2017,South Perth,3,STEINECK Rosemary Frances Capon,REID Fiona,69.0,CHR,IND
+wa-2017,South Perth,3,STEINECK Rosemary Frances Capon,VOROS Michael,68.0,CHR,ALP
+wa-2017,South Perth,4,ST MARTIN Jason Brett,BROGAN Mark,167.0,X_MBP,GRN
+wa-2017,South Perth,4,ST MARTIN Jason Brett,McGRATH John,127.0,X_MBP,LIB
+wa-2017,South Perth,4,ST MARTIN Jason Brett,REID Fiona,166.0,X_MBP,IND
+wa-2017,South Perth,4,ST MARTIN Jason Brett,VOROS Michael,68.0,X_MBP,ALP
+wa-2017,South Perth,4,ST MARTIN Jason Brett,Exhausted,2.0,X_MBP,EXH
+wa-2017,South Perth,5,REID Fiona,BROGAN Mark,392.0,IND,GRN
+wa-2017,South Perth,5,REID Fiona,McGRATH John,441.0,IND,LIB
+wa-2017,South Perth,5,REID Fiona,VOROS Michael,382.0,IND,ALP
+wa-2017,South Perth,5,REID Fiona,Exhausted,3.0,IND,EXH
+wa-2017,South Perth,6,BROGAN Mark,McGRATH John,850.0,GRN,LIB
+wa-2017,South Perth,6,BROGAN Mark,VOROS Michael,2580.0,GRN,ALP
+wa-2017,South Perth,6,BROGAN Mark,Exhausted,2.0,GRN,EXH
+wa-2017,Southern River,2,FISHLOCK David L,ABETZ Peter,65.0,LDP,LIB
+wa-2017,Southern River,2,FISHLOCK David L,HEALY Terry,16.0,LDP,ALP
+wa-2017,Southern River,2,FISHLOCK David L,PIKOS-SALLIE Toni,9.0,LDP,GRN
+wa-2017,Southern River,2,FISHLOCK David L,SECKER Steven,20.0,LDP,IND
+wa-2017,Southern River,2,FISHLOCK David L,HARLEY Craig,17.0,LDP,IND
+wa-2017,Southern River,2,FISHLOCK David L,SINGH Aman,13.0,LDP,X_MBP
+wa-2017,Southern River,2,FISHLOCK David L,SRIVASTAVA Ash,5.0,LDP,X_WAP
+wa-2017,Southern River,2,FISHLOCK David L,Exhausted,1.0,LDP,EXH
+wa-2017,Southern River,3,SRIVASTAVA Ash,ABETZ Peter,28.0,X_WAP,LIB
+wa-2017,Southern River,3,SRIVASTAVA Ash,HEALY Terry,26.0,X_WAP,ALP
+wa-2017,Southern River,3,SRIVASTAVA Ash,PIKOS-SALLIE Toni,14.0,X_WAP,GRN
+wa-2017,Southern River,3,SRIVASTAVA Ash,SECKER Steven,16.0,X_WAP,IND
+wa-2017,Southern River,3,SRIVASTAVA Ash,HARLEY Craig,42.0,X_WAP,IND
+wa-2017,Southern River,3,SRIVASTAVA Ash,SINGH Aman,100.0,X_WAP,X_MBP
+wa-2017,Southern River,3,SRIVASTAVA Ash,Exhausted,1.0,X_WAP,EXH
+wa-2017,Southern River,4,HARLEY Craig,ABETZ Peter,30.0,IND,LIB
+wa-2017,Southern River,4,HARLEY Craig,HEALY Terry,30.0,IND,ALP
+wa-2017,Southern River,4,HARLEY Craig,PIKOS-SALLIE Toni,15.0,IND,GRN
+wa-2017,Southern River,4,HARLEY Craig,SECKER Steven,183.0,IND,IND
+wa-2017,Southern River,4,HARLEY Craig,SINGH Aman,53.0,IND,X_MBP
+wa-2017,Southern River,5,SINGH Aman,ABETZ Peter,68.0,X_MBP,LIB
+wa-2017,Southern River,5,SINGH Aman,HEALY Terry,64.0,X_MBP,ALP
+wa-2017,Southern River,5,SINGH Aman,PIKOS-SALLIE Toni,63.0,X_MBP,GRN
+wa-2017,Southern River,5,SINGH Aman,SECKER Steven,198.0,X_MBP,IND
+wa-2017,Southern River,6,SECKER Steven,ABETZ Peter,167.0,IND,LIB
+wa-2017,Southern River,6,SECKER Steven,HEALY Terry,193.0,IND,ALP
+wa-2017,Southern River,6,SECKER Steven,PIKOS-SALLIE Toni,367.0,IND,GRN
+wa-2017,Southern River,6,SECKER Steven,Exhausted,1.0,IND,EXH
+wa-2017,Southern River,7,PIKOS-SALLIE Toni,ABETZ Peter,380.0,GRN,LIB
+wa-2017,Southern River,7,PIKOS-SALLIE Toni,HEALY Terry,1530.0,GRN,ALP
+wa-2017,Southern River,7,PIKOS-SALLIE Toni,Exhausted,1.0,GRN,EXH
+wa-2017,Swan Hills,2,BHOWANIAH Danusha,SHAW Jessica,63.0,X_WAP,ALP
+wa-2017,Swan Hills,2,BHOWANIAH Danusha,OLD Sandra,58.0,X_WAP,ONP
+wa-2017,Swan Hills,2,BHOWANIAH Danusha,ALBAN Frank,44.0,X_WAP,LIB
+wa-2017,Swan Hills,2,BHOWANIAH Danusha,SINGH Lucky,72.0,X_WAP,X_MBP
+wa-2017,Swan Hills,2,BHOWANIAH Danusha,WEBB Evan,38.0,X_WAP,GRN
+wa-2017,Swan Hills,3,SINGH Lucky,SHAW Jessica,178.0,X_MBP,ALP
+wa-2017,Swan Hills,3,SINGH Lucky,OLD Sandra,110.0,X_MBP,ONP
+wa-2017,Swan Hills,3,SINGH Lucky,ALBAN Frank,115.0,X_MBP,LIB
+wa-2017,Swan Hills,3,SINGH Lucky,WEBB Evan,181.0,X_MBP,GRN
+wa-2017,Swan Hills,4,WEBB Evan,SHAW Jessica,1511.0,GRN,ALP
+wa-2017,Swan Hills,4,WEBB Evan,OLD Sandra,260.0,GRN,ONP
+wa-2017,Swan Hills,4,WEBB Evan,ALBAN Frank,366.0,GRN,LIB
+wa-2017,Swan Hills,4,WEBB Evan,Exhausted,3.0,GRN,EXH
+wa-2017,Swan Hills,5,OLD Sandra,SHAW Jessica,1616.0,ONP,ALP
+wa-2017,Swan Hills,5,OLD Sandra,ALBAN Frank,1821.0,ONP,LIB
+wa-2017,Swan Hills,5,OLD Sandra,Exhausted,2.0,ONP,EXH
+wa-2017,Thornlie,2,VAN DAM Andrew,COALES Rob,14.0,X_FTS,LIB
+wa-2017,Thornlie,2,VAN DAM Andrew,BARAIOLO Sandy,19.0,X_FTS,ONP
+wa-2017,Thornlie,2,VAN DAM Andrew,BENNETT Sibel,37.0,X_FTS,X_MBP
+wa-2017,Thornlie,2,VAN DAM Andrew,HAMMOND Gary,30.0,X_FTS,SFF
+wa-2017,Thornlie,2,VAN DAM Andrew,GOIRAN Madeleine,7.0,X_FTS,CHR
+wa-2017,Thornlie,2,VAN DAM Andrew,TALLENTIRE Chris,17.0,X_FTS,ALP
+wa-2017,Thornlie,2,VAN DAM Andrew,McALEESE Donna,34.0,X_FTS,GRN
+wa-2017,Thornlie,2,VAN DAM Andrew,Exhausted,2.0,X_FTS,EXH
+wa-2017,Thornlie,3,BENNETT Sibel,COALES Rob,52.0,X_MBP,LIB
+wa-2017,Thornlie,3,BENNETT Sibel,BARAIOLO Sandy,29.0,X_MBP,ONP
+wa-2017,Thornlie,3,BENNETT Sibel,HAMMOND Gary,64.0,X_MBP,SFF
+wa-2017,Thornlie,3,BENNETT Sibel,GOIRAN Madeleine,29.0,X_MBP,CHR
+wa-2017,Thornlie,3,BENNETT Sibel,TALLENTIRE Chris,112.0,X_MBP,ALP
+wa-2017,Thornlie,3,BENNETT Sibel,McALEESE Donna,58.0,X_MBP,GRN
+wa-2017,Thornlie,3,BENNETT Sibel,Exhausted,2.0,X_MBP,EXH
+wa-2017,Thornlie,4,HAMMOND Gary,COALES Rob,75.0,SFF,LIB
+wa-2017,Thornlie,4,HAMMOND Gary,BARAIOLO Sandy,175.0,SFF,ONP
+wa-2017,Thornlie,4,HAMMOND Gary,GOIRAN Madeleine,100.0,SFF,CHR
+wa-2017,Thornlie,4,HAMMOND Gary,TALLENTIRE Chris,171.0,SFF,ALP
+wa-2017,Thornlie,4,HAMMOND Gary,McALEESE Donna,96.0,SFF,GRN
+wa-2017,Thornlie,4,HAMMOND Gary,Exhausted,3.0,SFF,EXH
+wa-2017,Thornlie,5,GOIRAN Madeleine,COALES Rob,496.0,CHR,LIB
+wa-2017,Thornlie,5,GOIRAN Madeleine,BARAIOLO Sandy,151.0,CHR,ONP
+wa-2017,Thornlie,5,GOIRAN Madeleine,TALLENTIRE Chris,181.0,CHR,ALP
+wa-2017,Thornlie,5,GOIRAN Madeleine,McALEESE Donna,102.0,CHR,GRN
+wa-2017,Thornlie,5,GOIRAN Madeleine,Exhausted,4.0,CHR,EXH
+wa-2017,Thornlie,6,McALEESE Donna,COALES Rob,202.0,GRN,LIB
+wa-2017,Thornlie,6,McALEESE Donna,BARAIOLO Sandy,228.0,GRN,ONP
+wa-2017,Thornlie,6,McALEESE Donna,TALLENTIRE Chris,1419.0,GRN,ALP
+wa-2017,Thornlie,6,McALEESE Donna,Exhausted,4.0,GRN,EXH
+wa-2017,Thornlie,7,BARAIOLO Sandy,COALES Rob,1260.0,ONP,LIB
+wa-2017,Thornlie,7,BARAIOLO Sandy,TALLENTIRE Chris,1082.0,ONP,ALP
+wa-2017,Thornlie,7,BARAIOLO Sandy,Exhausted,7.0,ONP,EXH
+wa-2017,Vasse,2,O'CONNELL Luke,METTAM Libby,654.0,GRN,LIB
+wa-2017,Vasse,2,O'CONNELL Luke,GORDON Peter,894.0,GRN,NAT
+wa-2017,Vasse,2,O'CONNELL Luke,HARTLEY Wes,1746.0,GRN,ALP
+wa-2017,Vasse,2,O'CONNELL Luke,Exhausted,3.0,GRN,EXH
+wa-2017,Vasse,3,GORDON Peter,METTAM Libby,3743.0,NAT,LIB
+wa-2017,Vasse,3,GORDON Peter,HARTLEY Wes,1757.0,NAT,ALP
+wa-2017,Victoria Park,2,NOYE Jennifer,STAER Mark Rohan,109.0,X_MBP,CHR
+wa-2017,Victoria Park,2,NOYE Jennifer,QUINN Ryan,139.0,X_MBP,GRN
+wa-2017,Victoria Park,2,NOYE Jennifer,WYATT Ben,141.0,X_MBP,ALP
+wa-2017,Victoria Park,2,NOYE Jennifer,JACOBS Julian,129.0,X_MBP,LIB
+wa-2017,Victoria Park,2,NOYE Jennifer,Exhausted,2.0,X_MBP,EXH
+wa-2017,Victoria Park,3,STAER Mark Rohan,QUINN Ryan,269.0,CHR,GRN
+wa-2017,Victoria Park,3,STAER Mark Rohan,WYATT Ben,186.0,CHR,ALP
+wa-2017,Victoria Park,3,STAER Mark Rohan,JACOBS Julian,561.0,CHR,LIB
+wa-2017,Victoria Park,3,STAER Mark Rohan,Exhausted,8.0,CHR,EXH
+wa-2017,Victoria Park,4,QUINN Ryan,WYATT Ben,3163.0,GRN,ALP
+wa-2017,Victoria Park,4,QUINN Ryan,JACOBS Julian,509.0,GRN,LIB
+wa-2017,Victoria Park,4,QUINN Ryan,Exhausted,8.0,GRN,EXH
+wa-2017,Wanneroo,2,MACPHERSON Greg,WILSON Max,36.0,X_WAP,IND
+wa-2017,Wanneroo,2,MACPHERSON Greg,TREACY Robyn,15.0,X_WAP,GRN
+wa-2017,Wanneroo,2,MACPHERSON Greg,DARCY Joseph Laurence,16.0,X_WAP,ONP
+wa-2017,Wanneroo,2,MACPHERSON Greg,PASS Linley Anne,8.0,X_WAP,CHR
+wa-2017,Wanneroo,2,MACPHERSON Greg,ROSENGRAVE Peter W,23.0,X_WAP,X_MBP
+wa-2017,Wanneroo,2,MACPHERSON Greg,MILES Paul,26.0,X_WAP,LIB
+wa-2017,Wanneroo,2,MACPHERSON Greg,WINTON Sabine,36.0,X_WAP,ALP
+wa-2017,Wanneroo,3,ROSENGRAVE Peter W,WILSON Max,51.0,X_MBP,IND
+wa-2017,Wanneroo,3,ROSENGRAVE Peter W,TREACY Robyn,30.0,X_MBP,GRN
+wa-2017,Wanneroo,3,ROSENGRAVE Peter W,DARCY Joseph Laurence,31.0,X_MBP,ONP
+wa-2017,Wanneroo,3,ROSENGRAVE Peter W,PASS Linley Anne,28.0,X_MBP,CHR
+wa-2017,Wanneroo,3,ROSENGRAVE Peter W,MILES Paul,16.0,X_MBP,LIB
+wa-2017,Wanneroo,3,ROSENGRAVE Peter W,WINTON Sabine,38.0,X_MBP,ALP
+wa-2017,Wanneroo,3,ROSENGRAVE Peter W,Exhausted,2.0,X_MBP,EXH
+wa-2017,Wanneroo,4,PASS Linley Anne,WILSON Max,72.0,CHR,IND
+wa-2017,Wanneroo,4,PASS Linley Anne,TREACY Robyn,39.0,CHR,GRN
+wa-2017,Wanneroo,4,PASS Linley Anne,DARCY Joseph Laurence,124.0,CHR,ONP
+wa-2017,Wanneroo,4,PASS Linley Anne,MILES Paul,357.0,CHR,LIB
+wa-2017,Wanneroo,4,PASS Linley Anne,WINTON Sabine,72.0,CHR,ALP
+wa-2017,Wanneroo,4,PASS Linley Anne,Exhausted,1.0,CHR,EXH
+wa-2017,Wanneroo,5,WILSON Max,TREACY Robyn,297.0,IND,GRN
+wa-2017,Wanneroo,5,WILSON Max,DARCY Joseph Laurence,172.0,IND,ONP
+wa-2017,Wanneroo,5,WILSON Max,MILES Paul,152.0,IND,LIB
+wa-2017,Wanneroo,5,WILSON Max,WINTON Sabine,132.0,IND,ALP
+wa-2017,Wanneroo,5,WILSON Max,Exhausted,1.0,IND,EXH
+wa-2017,Wanneroo,6,TREACY Robyn,DARCY Joseph Laurence,437.0,GRN,ONP
+wa-2017,Wanneroo,6,TREACY Robyn,MILES Paul,388.0,GRN,LIB
+wa-2017,Wanneroo,6,TREACY Robyn,WINTON Sabine,1105.0,GRN,ALP
+wa-2017,Wanneroo,6,TREACY Robyn,Exhausted,3.0,GRN,EXH
+wa-2017,Wanneroo,7,DARCY Joseph Laurence,MILES Paul,2019.0,ONP,LIB
+wa-2017,Wanneroo,7,DARCY Joseph Laurence,WINTON Sabine,1048.0,ONP,ALP
+wa-2017,Wanneroo,7,DARCY Joseph Laurence,Exhausted,1.0,ONP,EXH
+wa-2017,Warnbro,2,FIGGINS Samantha,SCHOLZ Alexander J,25.0,X_MBP,ONP
+wa-2017,Warnbro,2,FIGGINS Samantha,MUSCEDERE Luke,19.0,X_MBP,LIB
+wa-2017,Warnbro,2,FIGGINS Samantha,KINGSFORD Deonne,19.0,X_MBP,CHR
+wa-2017,Warnbro,2,FIGGINS Samantha,HUNTER Thomas,42.0,X_MBP,X_WAP
+wa-2017,Warnbro,2,FIGGINS Samantha,PAPALIA Paul,36.0,X_MBP,ALP
+wa-2017,Warnbro,2,FIGGINS Samantha,CAIN Jillian,76.0,X_MBP,GRN
+wa-2017,Warnbro,2,FIGGINS Samantha,Exhausted,1.0,X_MBP,EXH
+wa-2017,Warnbro,3,HUNTER Thomas,SCHOLZ Alexander J,62.0,X_WAP,ONP
+wa-2017,Warnbro,3,HUNTER Thomas,MUSCEDERE Luke,37.0,X_WAP,LIB
+wa-2017,Warnbro,3,HUNTER Thomas,KINGSFORD Deonne,62.0,X_WAP,CHR
+wa-2017,Warnbro,3,HUNTER Thomas,PAPALIA Paul,96.0,X_WAP,ALP
+wa-2017,Warnbro,3,HUNTER Thomas,CAIN Jillian,70.0,X_WAP,GRN
+wa-2017,Warnbro,3,HUNTER Thomas,Exhausted,1.0,X_WAP,EXH
+wa-2017,Warnbro,4,KINGSFORD Deonne,SCHOLZ Alexander J,135.0,CHR,ONP
+wa-2017,Warnbro,4,KINGSFORD Deonne,MUSCEDERE Luke,297.0,CHR,LIB
+wa-2017,Warnbro,4,KINGSFORD Deonne,PAPALIA Paul,111.0,CHR,ALP
+wa-2017,Warnbro,4,KINGSFORD Deonne,CAIN Jillian,76.0,CHR,GRN
+wa-2017,Warnbro,4,KINGSFORD Deonne,Exhausted,2.0,CHR,EXH
+wa-2017,Warnbro,5,CAIN Jillian,SCHOLZ Alexander J,226.0,GRN,ONP
+wa-2017,Warnbro,5,CAIN Jillian,MUSCEDERE Luke,228.0,GRN,LIB
+wa-2017,Warnbro,5,CAIN Jillian,PAPALIA Paul,1347.0,GRN,ALP
+wa-2017,Warnbro,5,CAIN Jillian,Exhausted,3.0,GRN,EXH
+wa-2017,Warnbro,6,SCHOLZ Alexander J,MUSCEDERE Luke,1776.0,ONP,LIB
+wa-2017,Warnbro,6,SCHOLZ Alexander J,PAPALIA Paul,1389.0,ONP,ALP
+wa-2017,Warnbro,6,SCHOLZ Alexander J,Exhausted,4.0,ONP,EXH
+wa-2017,Warren-Blackwood,2,DEAS Marc,REDMAN Terry,436.0,SFF,NAT
+wa-2017,Warren-Blackwood,2,DEAS Marc,MORONEY Greg,425.0,SFF,ONP
+wa-2017,Warren-Blackwood,2,DEAS Marc,HUNTLEY Andrew,127.0,SFF,GRN
+wa-2017,Warren-Blackwood,2,DEAS Marc,LITSON Hugh,208.0,SFF,ALP
+wa-2017,Warren-Blackwood,2,DEAS Marc,WOODHOUSE Ross,146.0,SFF,LIB
+wa-2017,Warren-Blackwood,2,DEAS Marc,Exhausted,2.0,SFF,EXH
+wa-2017,Warren-Blackwood,3,MORONEY Greg,REDMAN Terry,963.0,ONP,NAT
+wa-2017,Warren-Blackwood,3,MORONEY Greg,HUNTLEY Andrew,292.0,ONP,GRN
+wa-2017,Warren-Blackwood,3,MORONEY Greg,LITSON Hugh,312.0,ONP,ALP
+wa-2017,Warren-Blackwood,3,MORONEY Greg,WOODHOUSE Ross,495.0,ONP,LIB
+wa-2017,Warren-Blackwood,3,MORONEY Greg,Exhausted,4.0,ONP,EXH
+wa-2017,Warren-Blackwood,4,HUNTLEY Andrew,REDMAN Terry,998.0,GRN,NAT
+wa-2017,Warren-Blackwood,4,HUNTLEY Andrew,LITSON Hugh,2597.0,GRN,ALP
+wa-2017,Warren-Blackwood,4,HUNTLEY Andrew,WOODHOUSE Ross,213.0,GRN,LIB
+wa-2017,Warren-Blackwood,4,HUNTLEY Andrew,Exhausted,2.0,GRN,EXH
+wa-2017,Warren-Blackwood,5,WOODHOUSE Ross,REDMAN Terry,3906.0,LIB,NAT
+wa-2017,Warren-Blackwood,5,WOODHOUSE Ross,LITSON Hugh,651.0,LIB,ALP
+wa-2017,West Swan,2,LAWRENCE James,McMULLAN Beth,213.0,X_WAP,GRN
+wa-2017,West Swan,2,LAWRENCE James,MORAN Isaac,75.0,X_WAP,CHR
+wa-2017,West Swan,2,LAWRENCE James,HENDERSON Rod,72.0,X_WAP,LIB
+wa-2017,West Swan,2,LAWRENCE James,SAFFIOTI Rita,77.0,X_WAP,ALP
+wa-2017,West Swan,2,LAWRENCE James,RUWOLDT Trevor,128.0,X_WAP,SFF
+wa-2017,West Swan,2,LAWRENCE James,Exhausted,4.0,X_WAP,EXH
+wa-2017,West Swan,3,MORAN Isaac,McMULLAN Beth,118.0,CHR,GRN
+wa-2017,West Swan,3,MORAN Isaac,HENDERSON Rod,377.0,CHR,LIB
+wa-2017,West Swan,3,MORAN Isaac,SAFFIOTI Rita,159.0,CHR,ALP
+wa-2017,West Swan,3,MORAN Isaac,RUWOLDT Trevor,117.0,CHR,SFF
+wa-2017,West Swan,4,RUWOLDT Trevor,McMULLAN Beth,287.0,SFF,GRN
+wa-2017,West Swan,4,RUWOLDT Trevor,HENDERSON Rod,426.0,SFF,LIB
+wa-2017,West Swan,4,RUWOLDT Trevor,SAFFIOTI Rita,514.0,SFF,ALP
+wa-2017,West Swan,4,RUWOLDT Trevor,Exhausted,3.0,SFF,EXH
+wa-2017,West Swan,5,McMULLAN Beth,HENDERSON Rod,728.0,GRN,LIB
+wa-2017,West Swan,5,McMULLAN Beth,SAFFIOTI Rita,1606.0,GRN,ALP
+wa-2017,West Swan,5,McMULLAN Beth,Exhausted,5.0,GRN,EXH
+wa-2017,Willagee,2,ABRAHAM Corina,McGEORGE Felicity,108.0,VS,GRN
+wa-2017,Willagee,2,ABRAHAM Corina,TINLEY Peter,44.0,VS,ALP
+wa-2017,Willagee,2,ABRAHAM Corina,POTTER Paul John,32.0,VS,X_MBP
+wa-2017,Willagee,2,ABRAHAM Corina,HOSKING Robin,22.0,VS,CHR
+wa-2017,Willagee,2,ABRAHAM Corina,AUBREY Rebecca,6.0,VS,LIB
+wa-2017,Willagee,3,POTTER Paul John,McGEORGE Felicity,91.0,X_MBP,GRN
+wa-2017,Willagee,3,POTTER Paul John,TINLEY Peter,101.0,X_MBP,ALP
+wa-2017,Willagee,3,POTTER Paul John,HOSKING Robin,94.0,X_MBP,CHR
+wa-2017,Willagee,3,POTTER Paul John,AUBREY Rebecca,80.0,X_MBP,LIB
+wa-2017,Willagee,4,HOSKING Robin,McGEORGE Felicity,119.0,CHR,GRN
+wa-2017,Willagee,4,HOSKING Robin,TINLEY Peter,144.0,CHR,ALP
+wa-2017,Willagee,4,HOSKING Robin,AUBREY Rebecca,366.0,CHR,LIB
+wa-2017,Willagee,4,HOSKING Robin,Exhausted,1.0,CHR,EXH
+wa-2017,Willagee,5,McGEORGE Felicity,TINLEY Peter,2430.0,GRN,ALP
+wa-2017,Willagee,5,McGEORGE Felicity,AUBREY Rebecca,352.0,GRN,LIB
+wa-2017,Willagee,5,McGEORGE Felicity,Exhausted,6.0,GRN,EXH

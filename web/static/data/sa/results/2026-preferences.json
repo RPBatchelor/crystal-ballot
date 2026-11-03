@@ -1,0 +1,10914 @@
+{
+ "adelaide": [
+  {
+   "count": 2,
+   "excluded": "CASEY Dan",
+   "excluded_party": "X_AFP",
+   "votes": 317.0,
+   "to": [
+    {
+     "candidate": "BAXTER Aoi",
+     "party": "ONP",
+     "votes": 137.0,
+     "pct": 43.2
+    },
+    {
+     "candidate": "AMATO Julian",
+     "party": "LIB",
+     "votes": 71.0,
+     "pct": 22.4
+    },
+    {
+     "candidate": "HOOD Lucy",
+     "party": "ALP",
+     "votes": 54.0,
+     "pct": 17.0
+    },
+    {
+     "candidate": "SNAPE Keiran",
+     "party": "IND",
+     "votes": 28.0,
+     "pct": 8.8
+    },
+    {
+     "candidate": "COLMER Bronte",
+     "party": "GRN",
+     "votes": 27.0,
+     "pct": 8.5
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "SNAPE Keiran",
+   "excluded_party": "IND",
+   "votes": 2030.0,
+   "to": [
+    {
+     "candidate": "COLMER Bronte",
+     "party": "GRN",
+     "votes": 1138.0,
+     "pct": 56.1
+    },
+    {
+     "candidate": "HOOD Lucy",
+     "party": "ALP",
+     "votes": 472.0,
+     "pct": 23.3
+    },
+    {
+     "candidate": "AMATO Julian",
+     "party": "LIB",
+     "votes": 302.0,
+     "pct": 14.9
+    },
+    {
+     "candidate": "BAXTER Aoi",
+     "party": "ONP",
+     "votes": 118.0,
+     "pct": 5.8
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "BAXTER Aoi",
+   "excluded_party": "ONP",
+   "votes": 3026.0,
+   "to": [
+    {
+     "candidate": "AMATO Julian",
+     "party": "LIB",
+     "votes": 1800.0,
+     "pct": 59.5
+    },
+    {
+     "candidate": "HOOD Lucy",
+     "party": "ALP",
+     "votes": 791.0,
+     "pct": 26.1
+    },
+    {
+     "candidate": "COLMER Bronte",
+     "party": "GRN",
+     "votes": 435.0,
+     "pct": 14.4
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "COLMER Bronte",
+   "excluded_party": "GRN",
+   "votes": 5131.0,
+   "to": [
+    {
+     "candidate": "HOOD Lucy",
+     "party": "ALP",
+     "votes": 4801.0,
+     "pct": 93.6
+    },
+    {
+     "candidate": "AMATO Julian",
+     "party": "LIB",
+     "votes": 330.0,
+     "pct": 6.4
+    }
+   ]
+  }
+ ],
+ "badcoe": [
+  {
+   "count": 2,
+   "excluded": "ATTARD Jonathan",
+   "excluded_party": "X_AFP",
+   "votes": 183.0,
+   "to": [
+    {
+     "candidate": "JOVANOVIC Radosav",
+     "party": "FFP",
+     "votes": 89.0,
+     "pct": 48.6
+    },
+    {
+     "candidate": "ANDERSEN-WARD Joshua",
+     "party": "GRN",
+     "votes": 32.0,
+     "pct": 17.5
+    },
+    {
+     "candidate": "SHEPHERD Daniel",
+     "party": "ONP",
+     "votes": 27.0,
+     "pct": 14.8
+    },
+    {
+     "candidate": "STINSON Jayne",
+     "party": "ALP",
+     "votes": 24.0,
+     "pct": 13.1
+    },
+    {
+     "candidate": "SINGH Amar",
+     "party": "LIB",
+     "votes": 11.0,
+     "pct": 6.0
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "JOVANOVIC Radosav",
+   "excluded_party": "FFP",
+   "votes": 558.0,
+   "to": [
+    {
+     "candidate": "SHEPHERD Daniel",
+     "party": "ONP",
+     "votes": 198.0,
+     "pct": 35.5
+    },
+    {
+     "candidate": "SINGH Amar",
+     "party": "LIB",
+     "votes": 131.0,
+     "pct": 23.5
+    },
+    {
+     "candidate": "STINSON Jayne",
+     "party": "ALP",
+     "votes": 115.0,
+     "pct": 20.6
+    },
+    {
+     "candidate": "ANDERSEN-WARD Joshua",
+     "party": "GRN",
+     "votes": 114.0,
+     "pct": 20.4
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "SINGH Amar",
+   "excluded_party": "LIB",
+   "votes": 3382.0,
+   "to": [
+    {
+     "candidate": "SHEPHERD Daniel",
+     "party": "ONP",
+     "votes": 1980.0,
+     "pct": 58.5
+    },
+    {
+     "candidate": "STINSON Jayne",
+     "party": "ALP",
+     "votes": 917.0,
+     "pct": 27.1
+    },
+    {
+     "candidate": "ANDERSEN-WARD Joshua",
+     "party": "GRN",
+     "votes": 485.0,
+     "pct": 14.3
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "ANDERSEN-WARD Joshua",
+   "excluded_party": "GRN",
+   "votes": 4520.0,
+   "to": [
+    {
+     "candidate": "STINSON Jayne",
+     "party": "ALP",
+     "votes": 4136.0,
+     "pct": 91.5
+    },
+    {
+     "candidate": "SHEPHERD Daniel",
+     "party": "ONP",
+     "votes": 384.0,
+     "pct": 8.5
+    }
+   ]
+  }
+ ],
+ "black": [
+  {
+   "count": 2,
+   "excluded": "ATTARD Jethro",
+   "excluded_party": "X_AFP",
+   "votes": 76.0,
+   "to": [
+    {
+     "candidate": "SQUIRRELL Dianne",
+     "party": "FFP",
+     "votes": 32.0,
+     "pct": 42.1
+    },
+    {
+     "candidate": "GAME Jennifer",
+     "party": "X_SGFGA",
+     "votes": 10.0,
+     "pct": 13.2
+    },
+    {
+     "candidate": "LUSCOMBE Sarah",
+     "party": "GRN",
+     "votes": 9.0,
+     "pct": 11.8
+    },
+    {
+     "candidate": "DIGHTON Alex",
+     "party": "ALP",
+     "votes": 8.0,
+     "pct": 10.5
+    },
+    {
+     "candidate": "WILSON Paula",
+     "party": "ONP",
+     "votes": 7.0,
+     "pct": 9.2
+    },
+    {
+     "candidate": "SPEIRS David",
+     "party": "IND",
+     "votes": 7.0,
+     "pct": 9.2
+    },
+    {
+     "candidate": "BISHOP Rhees",
+     "party": "LIB",
+     "votes": 3.0,
+     "pct": 3.9
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "GAME Jennifer",
+   "excluded_party": "X_SGFGA",
+   "votes": 117.0,
+   "to": [
+    {
+     "candidate": "WILSON Paula",
+     "party": "ONP",
+     "votes": 29.0,
+     "pct": 24.8
+    },
+    {
+     "candidate": "SQUIRRELL Dianne",
+     "party": "FFP",
+     "votes": 25.0,
+     "pct": 21.4
+    },
+    {
+     "candidate": "LUSCOMBE Sarah",
+     "party": "GRN",
+     "votes": 20.0,
+     "pct": 17.1
+    },
+    {
+     "candidate": "BISHOP Rhees",
+     "party": "LIB",
+     "votes": 16.0,
+     "pct": 13.7
+    },
+    {
+     "candidate": "SPEIRS David",
+     "party": "IND",
+     "votes": 15.0,
+     "pct": 12.8
+    },
+    {
+     "candidate": "DIGHTON Alex",
+     "party": "ALP",
+     "votes": 12.0,
+     "pct": 10.3
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "SQUIRRELL Dianne",
+   "excluded_party": "FFP",
+   "votes": 328.0,
+   "to": [
+    {
+     "candidate": "WILSON Paula",
+     "party": "ONP",
+     "votes": 133.0,
+     "pct": 40.5
+    },
+    {
+     "candidate": "SPEIRS David",
+     "party": "IND",
+     "votes": 58.0,
+     "pct": 17.7
+    },
+    {
+     "candidate": "BISHOP Rhees",
+     "party": "LIB",
+     "votes": 51.0,
+     "pct": 15.5
+    },
+    {
+     "candidate": "LUSCOMBE Sarah",
+     "party": "GRN",
+     "votes": 47.0,
+     "pct": 14.3
+    },
+    {
+     "candidate": "DIGHTON Alex",
+     "party": "ALP",
+     "votes": 39.0,
+     "pct": 11.9
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "BISHOP Rhees",
+   "excluded_party": "LIB",
+   "votes": 2545.0,
+   "to": [
+    {
+     "candidate": "WILSON Paula",
+     "party": "ONP",
+     "votes": 1267.0,
+     "pct": 49.8
+    },
+    {
+     "candidate": "SPEIRS David",
+     "party": "IND",
+     "votes": 545.0,
+     "pct": 21.4
+    },
+    {
+     "candidate": "DIGHTON Alex",
+     "party": "ALP",
+     "votes": 467.0,
+     "pct": 18.3
+    },
+    {
+     "candidate": "LUSCOMBE Sarah",
+     "party": "GRN",
+     "votes": 266.0,
+     "pct": 10.5
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "LUSCOMBE Sarah",
+   "excluded_party": "GRN",
+   "votes": 3271.0,
+   "to": [
+    {
+     "candidate": "DIGHTON Alex",
+     "party": "ALP",
+     "votes": 2344.0,
+     "pct": 71.7
+    },
+    {
+     "candidate": "SPEIRS David",
+     "party": "IND",
+     "votes": 558.0,
+     "pct": 17.1
+    },
+    {
+     "candidate": "WILSON Paula",
+     "party": "ONP",
+     "votes": 369.0,
+     "pct": 11.3
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "SPEIRS David",
+   "excluded_party": "IND",
+   "votes": 4500.0,
+   "to": [
+    {
+     "candidate": "DIGHTON Alex",
+     "party": "ALP",
+     "votes": 2491.0,
+     "pct": 55.4
+    },
+    {
+     "candidate": "WILSON Paula",
+     "party": "ONP",
+     "votes": 2009.0,
+     "pct": 44.6
+    }
+   ]
+  }
+ ],
+ "bragg": [
+  {
+   "count": 2,
+   "excluded": "WALKER Robert",
+   "excluded_party": "X_AFP",
+   "votes": 242.0,
+   "to": [
+    {
+     "candidate": "PATERSON Russell James",
+     "party": "ONP",
+     "votes": 84.0,
+     "pct": 34.7
+    },
+    {
+     "candidate": "SARRE Rick",
+     "party": "ALP",
+     "votes": 82.0,
+     "pct": 33.9
+    },
+    {
+     "candidate": "BATTY Jack",
+     "party": "LIB",
+     "votes": 44.0,
+     "pct": 18.2
+    },
+    {
+     "candidate": "DITTER Susan",
+     "party": "GRN",
+     "votes": 32.0,
+     "pct": 13.2
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "PATERSON Russell James",
+   "excluded_party": "ONP",
+   "votes": 2295.0,
+   "to": [
+    {
+     "candidate": "BATTY Jack",
+     "party": "LIB",
+     "votes": 1718.0,
+     "pct": 74.9
+    },
+    {
+     "candidate": "SARRE Rick",
+     "party": "ALP",
+     "votes": 316.0,
+     "pct": 13.8
+    },
+    {
+     "candidate": "DITTER Susan",
+     "party": "GRN",
+     "votes": 261.0,
+     "pct": 11.4
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "DITTER Susan",
+   "excluded_party": "GRN",
+   "votes": 3512.0,
+   "to": [
+    {
+     "candidate": "SARRE Rick",
+     "party": "ALP",
+     "votes": 2813.0,
+     "pct": 80.1
+    },
+    {
+     "candidate": "BATTY Jack",
+     "party": "LIB",
+     "votes": 699.0,
+     "pct": 19.9
+    }
+   ]
+  }
+ ],
+ "chaffey": [
+  {
+   "count": 2,
+   "excluded": "GAMERTSFELDER Jakob",
+   "excluded_party": "IND",
+   "votes": 183.0,
+   "to": [
+    {
+     "candidate": "PERRIN Jason",
+     "party": "IND",
+     "votes": 52.0,
+     "pct": 28.4
+    },
+    {
+     "candidate": "HARDING Oscar",
+     "party": "ALP",
+     "votes": 44.0,
+     "pct": 24.0
+    },
+    {
+     "candidate": "TROETH Jenny",
+     "party": "ONP",
+     "votes": 26.0,
+     "pct": 14.2
+    },
+    {
+     "candidate": "WHETSTONE Tim",
+     "party": "LIB",
+     "votes": 17.0,
+     "pct": 9.3
+    },
+    {
+     "candidate": "OAKLEY Tim",
+     "party": "X_AFP",
+     "votes": 15.0,
+     "pct": 8.2
+    },
+    {
+     "candidate": "KUERSCH Alice",
+     "party": "GRN",
+     "votes": 14.0,
+     "pct": 7.7
+    },
+    {
+     "candidate": "KNIPE Jeff",
+     "party": "LCP",
+     "votes": 13.0,
+     "pct": 7.1
+    },
+    {
+     "candidate": "ADAMSON AGARS Imelda",
+     "party": "NAT",
+     "votes": 2.0,
+     "pct": 1.1
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "ADAMSON AGARS Imelda",
+   "excluded_party": "NAT",
+   "votes": 192.0,
+   "to": [
+    {
+     "candidate": "WHETSTONE Tim",
+     "party": "LIB",
+     "votes": 59.0,
+     "pct": 30.7
+    },
+    {
+     "candidate": "TROETH Jenny",
+     "party": "ONP",
+     "votes": 38.0,
+     "pct": 19.8
+    },
+    {
+     "candidate": "PERRIN Jason",
+     "party": "IND",
+     "votes": 35.0,
+     "pct": 18.2
+    },
+    {
+     "candidate": "OAKLEY Tim",
+     "party": "X_AFP",
+     "votes": 32.0,
+     "pct": 16.7
+    },
+    {
+     "candidate": "KUERSCH Alice",
+     "party": "GRN",
+     "votes": 12.0,
+     "pct": 6.2
+    },
+    {
+     "candidate": "KNIPE Jeff",
+     "party": "LCP",
+     "votes": 9.0,
+     "pct": 4.7
+    },
+    {
+     "candidate": "HARDING Oscar",
+     "party": "ALP",
+     "votes": 7.0,
+     "pct": 3.6
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "KNIPE Jeff",
+   "excluded_party": "LCP",
+   "votes": 572.0,
+   "to": [
+    {
+     "candidate": "TROETH Jenny",
+     "party": "ONP",
+     "votes": 143.0,
+     "pct": 25.0
+    },
+    {
+     "candidate": "KUERSCH Alice",
+     "party": "GRN",
+     "votes": 113.0,
+     "pct": 19.8
+    },
+    {
+     "candidate": "WHETSTONE Tim",
+     "party": "LIB",
+     "votes": 94.0,
+     "pct": 16.4
+    },
+    {
+     "candidate": "HARDING Oscar",
+     "party": "ALP",
+     "votes": 84.0,
+     "pct": 14.7
+    },
+    {
+     "candidate": "PERRIN Jason",
+     "party": "IND",
+     "votes": 70.0,
+     "pct": 12.2
+    },
+    {
+     "candidate": "OAKLEY Tim",
+     "party": "X_AFP",
+     "votes": 68.0,
+     "pct": 11.9
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "OAKLEY Tim",
+   "excluded_party": "X_AFP",
+   "votes": 708.0,
+   "to": [
+    {
+     "candidate": "PERRIN Jason",
+     "party": "IND",
+     "votes": 299.0,
+     "pct": 42.2
+    },
+    {
+     "candidate": "WHETSTONE Tim",
+     "party": "LIB",
+     "votes": 163.0,
+     "pct": 23.0
+    },
+    {
+     "candidate": "TROETH Jenny",
+     "party": "ONP",
+     "votes": 105.0,
+     "pct": 14.8
+    },
+    {
+     "candidate": "KUERSCH Alice",
+     "party": "GRN",
+     "votes": 78.0,
+     "pct": 11.0
+    },
+    {
+     "candidate": "HARDING Oscar",
+     "party": "ALP",
+     "votes": 63.0,
+     "pct": 8.9
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "KUERSCH Alice",
+   "excluded_party": "GRN",
+   "votes": 1235.0,
+   "to": [
+    {
+     "candidate": "HARDING Oscar",
+     "party": "ALP",
+     "votes": 612.0,
+     "pct": 49.6
+    },
+    {
+     "candidate": "PERRIN Jason",
+     "party": "IND",
+     "votes": 299.0,
+     "pct": 24.2
+    },
+    {
+     "candidate": "WHETSTONE Tim",
+     "party": "LIB",
+     "votes": 165.0,
+     "pct": 13.4
+    },
+    {
+     "candidate": "TROETH Jenny",
+     "party": "ONP",
+     "votes": 159.0,
+     "pct": 12.9
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "PERRIN Jason",
+   "excluded_party": "IND",
+   "votes": 1597.0,
+   "to": [
+    {
+     "candidate": "WHETSTONE Tim",
+     "party": "LIB",
+     "votes": 750.0,
+     "pct": 47.0
+    },
+    {
+     "candidate": "HARDING Oscar",
+     "party": "ALP",
+     "votes": 437.0,
+     "pct": 27.4
+    },
+    {
+     "candidate": "TROETH Jenny",
+     "party": "ONP",
+     "votes": 410.0,
+     "pct": 25.7
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "HARDING Oscar",
+   "excluded_party": "ALP",
+   "votes": 4667.0,
+   "to": [
+    {
+     "candidate": "WHETSTONE Tim",
+     "party": "LIB",
+     "votes": 3305.0,
+     "pct": 70.8
+    },
+    {
+     "candidate": "TROETH Jenny",
+     "party": "ONP",
+     "votes": 1362.0,
+     "pct": 29.2
+    }
+   ]
+  }
+ ],
+ "cheltenham": [
+  {
+   "count": 2,
+   "excluded": "MARTIN John",
+   "excluded_party": "X_AFP",
+   "votes": 281.0,
+   "to": [
+    {
+     "candidate": "TENNIKOFF Alex",
+     "party": "FFP",
+     "votes": 86.0,
+     "pct": 30.6
+    },
+    {
+     "candidate": "BROWN Karoline",
+     "party": "X_SGFGA",
+     "votes": 61.0,
+     "pct": 21.7
+    },
+    {
+     "candidate": "MEDROW Steffi",
+     "party": "GRN",
+     "votes": 51.0,
+     "pct": 18.1
+    },
+    {
+     "candidate": "SZAKACS Joe",
+     "party": "ALP",
+     "votes": 29.0,
+     "pct": 10.3
+    },
+    {
+     "candidate": "HIGGINS Melissa",
+     "party": "ONP",
+     "votes": 24.0,
+     "pct": 8.5
+    },
+    {
+     "candidate": "HADJIMARKOU Kosta",
+     "party": "IND",
+     "votes": 17.0,
+     "pct": 6.0
+    },
+    {
+     "candidate": "PIKE Helen",
+     "party": "LIB",
+     "votes": 13.0,
+     "pct": 4.6
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "BROWN Karoline",
+   "excluded_party": "X_SGFGA",
+   "votes": 479.0,
+   "to": [
+    {
+     "candidate": "MEDROW Steffi",
+     "party": "GRN",
+     "votes": 254.0,
+     "pct": 53.0
+    },
+    {
+     "candidate": "HIGGINS Melissa",
+     "party": "ONP",
+     "votes": 87.0,
+     "pct": 18.2
+    },
+    {
+     "candidate": "PIKE Helen",
+     "party": "LIB",
+     "votes": 53.0,
+     "pct": 11.1
+    },
+    {
+     "candidate": "SZAKACS Joe",
+     "party": "ALP",
+     "votes": 34.0,
+     "pct": 7.1
+    },
+    {
+     "candidate": "TENNIKOFF Alex",
+     "party": "FFP",
+     "votes": 29.0,
+     "pct": 6.1
+    },
+    {
+     "candidate": "HADJIMARKOU Kosta",
+     "party": "IND",
+     "votes": 22.0,
+     "pct": 4.6
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "TENNIKOFF Alex",
+   "excluded_party": "FFP",
+   "votes": 684.0,
+   "to": [
+    {
+     "candidate": "HADJIMARKOU Kosta",
+     "party": "IND",
+     "votes": 185.0,
+     "pct": 27.0
+    },
+    {
+     "candidate": "HIGGINS Melissa",
+     "party": "ONP",
+     "votes": 138.0,
+     "pct": 20.2
+    },
+    {
+     "candidate": "SZAKACS Joe",
+     "party": "ALP",
+     "votes": 138.0,
+     "pct": 20.2
+    },
+    {
+     "candidate": "MEDROW Steffi",
+     "party": "GRN",
+     "votes": 118.0,
+     "pct": 17.3
+    },
+    {
+     "candidate": "PIKE Helen",
+     "party": "LIB",
+     "votes": 105.0,
+     "pct": 15.4
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "HADJIMARKOU Kosta",
+   "excluded_party": "IND",
+   "votes": 1033.0,
+   "to": [
+    {
+     "candidate": "HIGGINS Melissa",
+     "party": "ONP",
+     "votes": 337.0,
+     "pct": 32.6
+    },
+    {
+     "candidate": "SZAKACS Joe",
+     "party": "ALP",
+     "votes": 249.0,
+     "pct": 24.1
+    },
+    {
+     "candidate": "PIKE Helen",
+     "party": "LIB",
+     "votes": 226.0,
+     "pct": 21.9
+    },
+    {
+     "candidate": "MEDROW Steffi",
+     "party": "GRN",
+     "votes": 221.0,
+     "pct": 21.4
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "PIKE Helen",
+   "excluded_party": "LIB",
+   "votes": 2592.0,
+   "to": [
+    {
+     "candidate": "HIGGINS Melissa",
+     "party": "ONP",
+     "votes": 1331.0,
+     "pct": 51.4
+    },
+    {
+     "candidate": "SZAKACS Joe",
+     "party": "ALP",
+     "votes": 799.0,
+     "pct": 30.8
+    },
+    {
+     "candidate": "MEDROW Steffi",
+     "party": "GRN",
+     "votes": 462.0,
+     "pct": 17.8
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "MEDROW Steffi",
+   "excluded_party": "GRN",
+   "votes": 4265.0,
+   "to": [
+    {
+     "candidate": "SZAKACS Joe",
+     "party": "ALP",
+     "votes": 3345.0,
+     "pct": 78.4
+    },
+    {
+     "candidate": "HIGGINS Melissa",
+     "party": "ONP",
+     "votes": 920.0,
+     "pct": 21.6
+    }
+   ]
+  }
+ ],
+ "colton": [
+  {
+   "count": 2,
+   "excluded": "SCHIRRIPA Tony",
+   "excluded_party": "X_AFP",
+   "votes": 118.0,
+   "to": [
+    {
+     "candidate": "SCHULZ Mathew",
+     "party": "FFP",
+     "votes": 37.0,
+     "pct": 31.4
+    },
+    {
+     "candidate": "DEANGELIS Rocco",
+     "party": "ONP",
+     "votes": 35.0,
+     "pct": 29.7
+    },
+    {
+     "candidate": "BOLKUS Aria",
+     "party": "ALP",
+     "votes": 24.0,
+     "pct": 20.3
+    },
+    {
+     "candidate": "SUTTON Bec",
+     "party": "LIB",
+     "votes": 8.0,
+     "pct": 6.8
+    },
+    {
+     "candidate": "XERRI Adelaide",
+     "party": "GRN",
+     "votes": 5.0,
+     "pct": 4.2
+    },
+    {
+     "candidate": "PARSONS Lili",
+     "party": "AJP",
+     "votes": 4.0,
+     "pct": 3.4
+    },
+    {
+     "candidate": "HALL-EVANS Jake",
+     "party": "IND",
+     "votes": 4.0,
+     "pct": 3.4
+    },
+    {
+     "candidate": "LLOYD Brad",
+     "party": "X_SPRCS",
+     "votes": 1.0,
+     "pct": 0.8
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "LLOYD Brad",
+   "excluded_party": "X_SPRCS",
+   "votes": 141.0,
+   "to": [
+    {
+     "candidate": "BOLKUS Aria",
+     "party": "ALP",
+     "votes": 38.0,
+     "pct": 27.0
+    },
+    {
+     "candidate": "XERRI Adelaide",
+     "party": "GRN",
+     "votes": 28.0,
+     "pct": 19.9
+    },
+    {
+     "candidate": "SUTTON Bec",
+     "party": "LIB",
+     "votes": 24.0,
+     "pct": 17.0
+    },
+    {
+     "candidate": "HALL-EVANS Jake",
+     "party": "IND",
+     "votes": 24.0,
+     "pct": 17.0
+    },
+    {
+     "candidate": "DEANGELIS Rocco",
+     "party": "ONP",
+     "votes": 15.0,
+     "pct": 10.6
+    },
+    {
+     "candidate": "SCHULZ Mathew",
+     "party": "FFP",
+     "votes": 7.0,
+     "pct": 5.0
+    },
+    {
+     "candidate": "PARSONS Lili",
+     "party": "AJP",
+     "votes": 5.0,
+     "pct": 3.5
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "PARSONS Lili",
+   "excluded_party": "AJP",
+   "votes": 318.0,
+   "to": [
+    {
+     "candidate": "XERRI Adelaide",
+     "party": "GRN",
+     "votes": 122.0,
+     "pct": 38.4
+    },
+    {
+     "candidate": "BOLKUS Aria",
+     "party": "ALP",
+     "votes": 56.0,
+     "pct": 17.6
+    },
+    {
+     "candidate": "DEANGELIS Rocco",
+     "party": "ONP",
+     "votes": 52.0,
+     "pct": 16.4
+    },
+    {
+     "candidate": "HALL-EVANS Jake",
+     "party": "IND",
+     "votes": 33.0,
+     "pct": 10.4
+    },
+    {
+     "candidate": "SUTTON Bec",
+     "party": "LIB",
+     "votes": 29.0,
+     "pct": 9.1
+    },
+    {
+     "candidate": "SCHULZ Mathew",
+     "party": "FFP",
+     "votes": 26.0,
+     "pct": 8.2
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "SCHULZ Mathew",
+   "excluded_party": "FFP",
+   "votes": 367.0,
+   "to": [
+    {
+     "candidate": "DEANGELIS Rocco",
+     "party": "ONP",
+     "votes": 142.0,
+     "pct": 38.7
+    },
+    {
+     "candidate": "SUTTON Bec",
+     "party": "LIB",
+     "votes": 77.0,
+     "pct": 21.0
+    },
+    {
+     "candidate": "HALL-EVANS Jake",
+     "party": "IND",
+     "votes": 53.0,
+     "pct": 14.4
+    },
+    {
+     "candidate": "BOLKUS Aria",
+     "party": "ALP",
+     "votes": 51.0,
+     "pct": 13.9
+    },
+    {
+     "candidate": "XERRI Adelaide",
+     "party": "GRN",
+     "votes": 44.0,
+     "pct": 12.0
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "HALL-EVANS Jake",
+   "excluded_party": "IND",
+   "votes": 555.0,
+   "to": [
+    {
+     "candidate": "SUTTON Bec",
+     "party": "LIB",
+     "votes": 193.0,
+     "pct": 34.8
+    },
+    {
+     "candidate": "XERRI Adelaide",
+     "party": "GRN",
+     "votes": 144.0,
+     "pct": 25.9
+    },
+    {
+     "candidate": "BOLKUS Aria",
+     "party": "ALP",
+     "votes": 126.0,
+     "pct": 22.7
+    },
+    {
+     "candidate": "DEANGELIS Rocco",
+     "party": "ONP",
+     "votes": 92.0,
+     "pct": 16.6
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "XERRI Adelaide",
+   "excluded_party": "GRN",
+   "votes": 2430.0,
+   "to": [
+    {
+     "candidate": "BOLKUS Aria",
+     "party": "ALP",
+     "votes": 2007.0,
+     "pct": 82.6
+    },
+    {
+     "candidate": "SUTTON Bec",
+     "party": "LIB",
+     "votes": 291.0,
+     "pct": 12.0
+    },
+    {
+     "candidate": "DEANGELIS Rocco",
+     "party": "ONP",
+     "votes": 132.0,
+     "pct": 5.4
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "DEANGELIS Rocco",
+   "excluded_party": "ONP",
+   "votes": 4875.0,
+   "to": [
+    {
+     "candidate": "SUTTON Bec",
+     "party": "LIB",
+     "votes": 3296.0,
+     "pct": 67.6
+    },
+    {
+     "candidate": "BOLKUS Aria",
+     "party": "ALP",
+     "votes": 1579.0,
+     "pct": 32.4
+    }
+   ]
+  }
+ ],
+ "croydon": [
+  {
+   "count": 2,
+   "excluded": "BETTINELLI Daniel",
+   "excluded_party": "X_UVA",
+   "votes": 84.0,
+   "to": [
+    {
+     "candidate": "ELMS Joey",
+     "party": "X_AFP",
+     "votes": 21.0,
+     "pct": 25.0
+    },
+    {
+     "candidate": "MALINAUSKAS Peter",
+     "party": "ALP",
+     "votes": 14.0,
+     "pct": 16.7
+    },
+    {
+     "candidate": "BLACKEBY Dale",
+     "party": "ONP",
+     "votes": 11.0,
+     "pct": 13.1
+    },
+    {
+     "candidate": "PHAM Hieu",
+     "party": "FFP",
+     "votes": 9.0,
+     "pct": 10.7
+    },
+    {
+     "candidate": "DOLLING Ruby",
+     "party": "GRN",
+     "votes": 8.0,
+     "pct": 9.5
+    },
+    {
+     "candidate": "AZHAR Ahmed",
+     "party": "IND",
+     "votes": 7.0,
+     "pct": 8.3
+    },
+    {
+     "candidate": "SANTAGATA Michael",
+     "party": "LIB",
+     "votes": 7.0,
+     "pct": 8.3
+    },
+    {
+     "candidate": "POPE Suzanne",
+     "party": "AJP",
+     "votes": 7.0,
+     "pct": 8.3
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "ELMS Joey",
+   "excluded_party": "X_AFP",
+   "votes": 143.0,
+   "to": [
+    {
+     "candidate": "PHAM Hieu",
+     "party": "FFP",
+     "votes": 42.0,
+     "pct": 29.4
+    },
+    {
+     "candidate": "POPE Suzanne",
+     "party": "AJP",
+     "votes": 36.0,
+     "pct": 25.2
+    },
+    {
+     "candidate": "BLACKEBY Dale",
+     "party": "ONP",
+     "votes": 17.0,
+     "pct": 11.9
+    },
+    {
+     "candidate": "MALINAUSKAS Peter",
+     "party": "ALP",
+     "votes": 14.0,
+     "pct": 9.8
+    },
+    {
+     "candidate": "SANTAGATA Michael",
+     "party": "LIB",
+     "votes": 14.0,
+     "pct": 9.8
+    },
+    {
+     "candidate": "DOLLING Ruby",
+     "party": "GRN",
+     "votes": 14.0,
+     "pct": 9.8
+    },
+    {
+     "candidate": "AZHAR Ahmed",
+     "party": "IND",
+     "votes": 6.0,
+     "pct": 4.2
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "POPE Suzanne",
+   "excluded_party": "AJP",
+   "votes": 377.0,
+   "to": [
+    {
+     "candidate": "DOLLING Ruby",
+     "party": "GRN",
+     "votes": 202.0,
+     "pct": 53.6
+    },
+    {
+     "candidate": "MALINAUSKAS Peter",
+     "party": "ALP",
+     "votes": 55.0,
+     "pct": 14.6
+    },
+    {
+     "candidate": "BLACKEBY Dale",
+     "party": "ONP",
+     "votes": 41.0,
+     "pct": 10.9
+    },
+    {
+     "candidate": "PHAM Hieu",
+     "party": "FFP",
+     "votes": 32.0,
+     "pct": 8.5
+    },
+    {
+     "candidate": "AZHAR Ahmed",
+     "party": "IND",
+     "votes": 27.0,
+     "pct": 7.2
+    },
+    {
+     "candidate": "SANTAGATA Michael",
+     "party": "LIB",
+     "votes": 20.0,
+     "pct": 5.3
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "PHAM Hieu",
+   "excluded_party": "FFP",
+   "votes": 1100.0,
+   "to": [
+    {
+     "candidate": "MALINAUSKAS Peter",
+     "party": "ALP",
+     "votes": 488.0,
+     "pct": 44.4
+    },
+    {
+     "candidate": "BLACKEBY Dale",
+     "party": "ONP",
+     "votes": 244.0,
+     "pct": 22.2
+    },
+    {
+     "candidate": "AZHAR Ahmed",
+     "party": "IND",
+     "votes": 138.0,
+     "pct": 12.5
+    },
+    {
+     "candidate": "SANTAGATA Michael",
+     "party": "LIB",
+     "votes": 127.0,
+     "pct": 11.5
+    },
+    {
+     "candidate": "DOLLING Ruby",
+     "party": "GRN",
+     "votes": 103.0,
+     "pct": 9.4
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "AZHAR Ahmed",
+   "excluded_party": "IND",
+   "votes": 1486.0,
+   "to": [
+    {
+     "candidate": "DOLLING Ruby",
+     "party": "GRN",
+     "votes": 983.0,
+     "pct": 66.2
+    },
+    {
+     "candidate": "MALINAUSKAS Peter",
+     "party": "ALP",
+     "votes": 345.0,
+     "pct": 23.2
+    },
+    {
+     "candidate": "SANTAGATA Michael",
+     "party": "LIB",
+     "votes": 80.0,
+     "pct": 5.4
+    },
+    {
+     "candidate": "BLACKEBY Dale",
+     "party": "ONP",
+     "votes": 78.0,
+     "pct": 5.2
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "SANTAGATA Michael",
+   "excluded_party": "LIB",
+   "votes": 2045.0,
+   "to": [
+    {
+     "candidate": "BLACKEBY Dale",
+     "party": "ONP",
+     "votes": 905.0,
+     "pct": 44.3
+    },
+    {
+     "candidate": "MALINAUSKAS Peter",
+     "party": "ALP",
+     "votes": 767.0,
+     "pct": 37.5
+    },
+    {
+     "candidate": "DOLLING Ruby",
+     "party": "GRN",
+     "votes": 373.0,
+     "pct": 18.2
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "BLACKEBY Dale",
+   "excluded_party": "ONP",
+   "votes": 4230.0,
+   "to": [
+    {
+     "candidate": "MALINAUSKAS Peter",
+     "party": "ALP",
+     "votes": 2610.0,
+     "pct": 61.7
+    },
+    {
+     "candidate": "DOLLING Ruby",
+     "party": "GRN",
+     "votes": 1620.0,
+     "pct": 38.3
+    }
+   ]
+  }
+ ],
+ "davenport": [
+  {
+   "count": 2,
+   "excluded": "SMITH Rachel",
+   "excluded_party": "X_AFP",
+   "votes": 147.0,
+   "to": [
+    {
+     "candidate": "FRANCIS Mathew",
+     "party": "FFP",
+     "votes": 70.0,
+     "pct": 47.6
+    },
+    {
+     "candidate": "THOMPSON Erin",
+     "party": "ALP",
+     "votes": 43.0,
+     "pct": 29.3
+    },
+    {
+     "candidate": "HOWELL Jon",
+     "party": "ONP",
+     "votes": 13.0,
+     "pct": 8.8
+    },
+    {
+     "candidate": "GOLDING Dan",
+     "party": "IND",
+     "votes": 8.0,
+     "pct": 5.4
+    },
+    {
+     "candidate": "PHOTAKIS John",
+     "party": "GRN",
+     "votes": 7.0,
+     "pct": 4.8
+    },
+    {
+     "candidate": "BURNARD Trent",
+     "party": "LIB",
+     "votes": 6.0,
+     "pct": 4.1
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "FRANCIS Mathew",
+   "excluded_party": "FFP",
+   "votes": 470.0,
+   "to": [
+    {
+     "candidate": "HOWELL Jon",
+     "party": "ONP",
+     "votes": 202.0,
+     "pct": 43.0
+    },
+    {
+     "candidate": "BURNARD Trent",
+     "party": "LIB",
+     "votes": 89.0,
+     "pct": 18.9
+    },
+    {
+     "candidate": "THOMPSON Erin",
+     "party": "ALP",
+     "votes": 86.0,
+     "pct": 18.3
+    },
+    {
+     "candidate": "GOLDING Dan",
+     "party": "IND",
+     "votes": 54.0,
+     "pct": 11.5
+    },
+    {
+     "candidate": "PHOTAKIS John",
+     "party": "GRN",
+     "votes": 39.0,
+     "pct": 8.3
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "GOLDING Dan",
+   "excluded_party": "IND",
+   "votes": 780.0,
+   "to": [
+    {
+     "candidate": "PHOTAKIS John",
+     "party": "GRN",
+     "votes": 251.0,
+     "pct": 32.2
+    },
+    {
+     "candidate": "THOMPSON Erin",
+     "party": "ALP",
+     "votes": 249.0,
+     "pct": 31.9
+    },
+    {
+     "candidate": "HOWELL Jon",
+     "party": "ONP",
+     "votes": 149.0,
+     "pct": 19.1
+    },
+    {
+     "candidate": "BURNARD Trent",
+     "party": "LIB",
+     "votes": 131.0,
+     "pct": 16.8
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "PHOTAKIS John",
+   "excluded_party": "GRN",
+   "votes": 3034.0,
+   "to": [
+    {
+     "candidate": "THOMPSON Erin",
+     "party": "ALP",
+     "votes": 2601.0,
+     "pct": 85.7
+    },
+    {
+     "candidate": "BURNARD Trent",
+     "party": "LIB",
+     "votes": 239.0,
+     "pct": 7.9
+    },
+    {
+     "candidate": "HOWELL Jon",
+     "party": "ONP",
+     "votes": 194.0,
+     "pct": 6.4
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "BURNARD Trent",
+   "excluded_party": "LIB",
+   "votes": 4066.0,
+   "to": [
+    {
+     "candidate": "HOWELL Jon",
+     "party": "ONP",
+     "votes": 2703.0,
+     "pct": 66.5
+    },
+    {
+     "candidate": "THOMPSON Erin",
+     "party": "ALP",
+     "votes": 1363.0,
+     "pct": 33.5
+    }
+   ]
+  }
+ ],
+ "dunstan": [
+  {
+   "count": 2,
+   "excluded": "STANLEY Ricci",
+   "excluded_party": "X_SGFGA",
+   "votes": 82.0,
+   "to": [
+    {
+     "candidate": "POLLIFRONE Victoria",
+     "party": "ONP",
+     "votes": 39.0,
+     "pct": 47.6
+    },
+    {
+     "candidate": "FINIZIO Anna",
+     "party": "LIB",
+     "votes": 13.0,
+     "pct": 15.9
+    },
+    {
+     "candidate": "O'HANLON Cressida",
+     "party": "ALP",
+     "votes": 8.0,
+     "pct": 9.8
+    },
+    {
+     "candidate": "LESLIE Fiona",
+     "party": "FFP",
+     "votes": 6.0,
+     "pct": 7.3
+    },
+    {
+     "candidate": "MEX Christel",
+     "party": "GRN",
+     "votes": 6.0,
+     "pct": 7.3
+    },
+    {
+     "candidate": "ZOLLO Nick",
+     "party": "X_AFP",
+     "votes": 4.0,
+     "pct": 4.9
+    },
+    {
+     "candidate": "MCBRYDE Ian",
+     "party": "IND",
+     "votes": 4.0,
+     "pct": 4.9
+    },
+    {
+     "candidate": "SMITH Miranda",
+     "party": "AJP",
+     "votes": 2.0,
+     "pct": 2.4
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "ZOLLO Nick",
+   "excluded_party": "X_AFP",
+   "votes": 98.0,
+   "to": [
+    {
+     "candidate": "LESLIE Fiona",
+     "party": "FFP",
+     "votes": 40.0,
+     "pct": 40.8
+    },
+    {
+     "candidate": "POLLIFRONE Victoria",
+     "party": "ONP",
+     "votes": 18.0,
+     "pct": 18.4
+    },
+    {
+     "candidate": "FINIZIO Anna",
+     "party": "LIB",
+     "votes": 13.0,
+     "pct": 13.3
+    },
+    {
+     "candidate": "SMITH Miranda",
+     "party": "AJP",
+     "votes": 11.0,
+     "pct": 11.2
+    },
+    {
+     "candidate": "MCBRYDE Ian",
+     "party": "IND",
+     "votes": 10.0,
+     "pct": 10.2
+    },
+    {
+     "candidate": "O'HANLON Cressida",
+     "party": "ALP",
+     "votes": 3.0,
+     "pct": 3.1
+    },
+    {
+     "candidate": "MEX Christel",
+     "party": "GRN",
+     "votes": 3.0,
+     "pct": 3.1
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "LESLIE Fiona",
+   "excluded_party": "FFP",
+   "votes": 322.0,
+   "to": [
+    {
+     "candidate": "POLLIFRONE Victoria",
+     "party": "ONP",
+     "votes": 118.0,
+     "pct": 36.6
+    },
+    {
+     "candidate": "FINIZIO Anna",
+     "party": "LIB",
+     "votes": 79.0,
+     "pct": 24.5
+    },
+    {
+     "candidate": "MCBRYDE Ian",
+     "party": "IND",
+     "votes": 42.0,
+     "pct": 13.0
+    },
+    {
+     "candidate": "O'HANLON Cressida",
+     "party": "ALP",
+     "votes": 37.0,
+     "pct": 11.5
+    },
+    {
+     "candidate": "MEX Christel",
+     "party": "GRN",
+     "votes": 26.0,
+     "pct": 8.1
+    },
+    {
+     "candidate": "SMITH Miranda",
+     "party": "AJP",
+     "votes": 20.0,
+     "pct": 6.2
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "SMITH Miranda",
+   "excluded_party": "AJP",
+   "votes": 462.0,
+   "to": [
+    {
+     "candidate": "MEX Christel",
+     "party": "GRN",
+     "votes": 187.0,
+     "pct": 40.5
+    },
+    {
+     "candidate": "POLLIFRONE Victoria",
+     "party": "ONP",
+     "votes": 120.0,
+     "pct": 26.0
+    },
+    {
+     "candidate": "O'HANLON Cressida",
+     "party": "ALP",
+     "votes": 60.0,
+     "pct": 13.0
+    },
+    {
+     "candidate": "MCBRYDE Ian",
+     "party": "IND",
+     "votes": 56.0,
+     "pct": 12.1
+    },
+    {
+     "candidate": "FINIZIO Anna",
+     "party": "LIB",
+     "votes": 39.0,
+     "pct": 8.4
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "MCBRYDE Ian",
+   "excluded_party": "IND",
+   "votes": 555.0,
+   "to": [
+    {
+     "candidate": "MEX Christel",
+     "party": "GRN",
+     "votes": 218.0,
+     "pct": 39.3
+    },
+    {
+     "candidate": "FINIZIO Anna",
+     "party": "LIB",
+     "votes": 129.0,
+     "pct": 23.2
+    },
+    {
+     "candidate": "O'HANLON Cressida",
+     "party": "ALP",
+     "votes": 118.0,
+     "pct": 21.3
+    },
+    {
+     "candidate": "POLLIFRONE Victoria",
+     "party": "ONP",
+     "votes": 90.0,
+     "pct": 16.2
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "POLLIFRONE Victoria",
+   "excluded_party": "ONP",
+   "votes": 3110.0,
+   "to": [
+    {
+     "candidate": "FINIZIO Anna",
+     "party": "LIB",
+     "votes": 2158.0,
+     "pct": 69.4
+    },
+    {
+     "candidate": "O'HANLON Cressida",
+     "party": "ALP",
+     "votes": 516.0,
+     "pct": 16.6
+    },
+    {
+     "candidate": "MEX Christel",
+     "party": "GRN",
+     "votes": 436.0,
+     "pct": 14.0
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "MEX Christel",
+   "excluded_party": "GRN",
+   "votes": 4715.0,
+   "to": [
+    {
+     "candidate": "O'HANLON Cressida",
+     "party": "ALP",
+     "votes": 3966.0,
+     "pct": 84.1
+    },
+    {
+     "candidate": "FINIZIO Anna",
+     "party": "LIB",
+     "votes": 749.0,
+     "pct": 15.9
+    }
+   ]
+  }
+ ],
+ "elder": [
+  {
+   "count": 2,
+   "excluded": "LONIE Robert",
+   "excluded_party": "X_AFP",
+   "votes": 139.0,
+   "to": [
+    {
+     "candidate": "WALSTON-LEO Rosanne",
+     "party": "FFP",
+     "votes": 73.0,
+     "pct": 52.5
+    },
+    {
+     "candidate": "MANGELSDORF Matt",
+     "party": "ONP",
+     "votes": 15.0,
+     "pct": 10.8
+    },
+    {
+     "candidate": "CLANCY Nadia",
+     "party": "ALP",
+     "votes": 15.0,
+     "pct": 10.8
+    },
+    {
+     "candidate": "VAN GROESEN Shawn",
+     "party": "LIB",
+     "votes": 14.0,
+     "pct": 10.1
+    },
+    {
+     "candidate": "ROZITIS Stef",
+     "party": "GRN",
+     "votes": 12.0,
+     "pct": 8.6
+    },
+    {
+     "candidate": "CHENG Linda",
+     "party": "X_SGFGA",
+     "votes": 10.0,
+     "pct": 7.2
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "CHENG Linda",
+   "excluded_party": "X_SGFGA",
+   "votes": 188.0,
+   "to": [
+    {
+     "candidate": "MANGELSDORF Matt",
+     "party": "ONP",
+     "votes": 43.0,
+     "pct": 22.9
+    },
+    {
+     "candidate": "ROZITIS Stef",
+     "party": "GRN",
+     "votes": 42.0,
+     "pct": 22.3
+    },
+    {
+     "candidate": "WALSTON-LEO Rosanne",
+     "party": "FFP",
+     "votes": 40.0,
+     "pct": 21.3
+    },
+    {
+     "candidate": "VAN GROESEN Shawn",
+     "party": "LIB",
+     "votes": 35.0,
+     "pct": 18.6
+    },
+    {
+     "candidate": "CLANCY Nadia",
+     "party": "ALP",
+     "votes": 28.0,
+     "pct": 14.9
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "WALSTON-LEO Rosanne",
+   "excluded_party": "FFP",
+   "votes": 512.0,
+   "to": [
+    {
+     "candidate": "MANGELSDORF Matt",
+     "party": "ONP",
+     "votes": 171.0,
+     "pct": 33.4
+    },
+    {
+     "candidate": "VAN GROESEN Shawn",
+     "party": "LIB",
+     "votes": 147.0,
+     "pct": 28.7
+    },
+    {
+     "candidate": "CLANCY Nadia",
+     "party": "ALP",
+     "votes": 110.0,
+     "pct": 21.5
+    },
+    {
+     "candidate": "ROZITIS Stef",
+     "party": "GRN",
+     "votes": 84.0,
+     "pct": 16.4
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "ROZITIS Stef",
+   "excluded_party": "GRN",
+   "votes": 3707.0,
+   "to": [
+    {
+     "candidate": "CLANCY Nadia",
+     "party": "ALP",
+     "votes": 3199.0,
+     "pct": 86.3
+    },
+    {
+     "candidate": "VAN GROESEN Shawn",
+     "party": "LIB",
+     "votes": 315.0,
+     "pct": 8.5
+    },
+    {
+     "candidate": "MANGELSDORF Matt",
+     "party": "ONP",
+     "votes": 193.0,
+     "pct": 5.2
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "MANGELSDORF Matt",
+   "excluded_party": "ONP",
+   "votes": 3962.0,
+   "to": [
+    {
+     "candidate": "VAN GROESEN Shawn",
+     "party": "LIB",
+     "votes": 2646.0,
+     "pct": 66.8
+    },
+    {
+     "candidate": "CLANCY Nadia",
+     "party": "ALP",
+     "votes": 1316.0,
+     "pct": 33.2
+    }
+   ]
+  }
+ ],
+ "elizabeth": [
+  {
+   "count": 2,
+   "excluded": "LORENZI Marco",
+   "excluded_party": "X_UVA",
+   "votes": 147.0,
+   "to": [
+    {
+     "candidate": "MCKEE Brae",
+     "party": "X_AFP",
+     "votes": 39.0,
+     "pct": 26.5
+    },
+    {
+     "candidate": "HANTON Kym",
+     "party": "ONP",
+     "votes": 25.0,
+     "pct": 17.0
+    },
+    {
+     "candidate": "DEEX David",
+     "party": "GRN",
+     "votes": 24.0,
+     "pct": 16.3
+    },
+    {
+     "candidate": "FIELD Matthew",
+     "party": "LCP",
+     "votes": 23.0,
+     "pct": 15.6
+    },
+    {
+     "candidate": "ROJAS Angela",
+     "party": "X_SGFGA",
+     "votes": 13.0,
+     "pct": 8.8
+    },
+    {
+     "candidate": "HENDRICK Sanja",
+     "party": "FFP",
+     "votes": 11.0,
+     "pct": 7.5
+    },
+    {
+     "candidate": "SHAW Ella",
+     "party": "ALP",
+     "votes": 8.0,
+     "pct": 5.4
+    },
+    {
+     "candidate": "JURCZAK Dawid",
+     "party": "LIB",
+     "votes": 4.0,
+     "pct": 2.7
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "ROJAS Angela",
+   "excluded_party": "X_SGFGA",
+   "votes": 187.0,
+   "to": [
+    {
+     "candidate": "SHAW Ella",
+     "party": "ALP",
+     "votes": 35.0,
+     "pct": 18.7
+    },
+    {
+     "candidate": "HENDRICK Sanja",
+     "party": "FFP",
+     "votes": 33.0,
+     "pct": 17.6
+    },
+    {
+     "candidate": "JURCZAK Dawid",
+     "party": "LIB",
+     "votes": 32.0,
+     "pct": 17.1
+    },
+    {
+     "candidate": "FIELD Matthew",
+     "party": "LCP",
+     "votes": 26.0,
+     "pct": 13.9
+    },
+    {
+     "candidate": "HANTON Kym",
+     "party": "ONP",
+     "votes": 23.0,
+     "pct": 12.3
+    },
+    {
+     "candidate": "DEEX David",
+     "party": "GRN",
+     "votes": 21.0,
+     "pct": 11.2
+    },
+    {
+     "candidate": "MCKEE Brae",
+     "party": "X_AFP",
+     "votes": 17.0,
+     "pct": 9.1
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "MCKEE Brae",
+   "excluded_party": "X_AFP",
+   "votes": 253.0,
+   "to": [
+    {
+     "candidate": "SHAW Ella",
+     "party": "ALP",
+     "votes": 81.0,
+     "pct": 32.0
+    },
+    {
+     "candidate": "HENDRICK Sanja",
+     "party": "FFP",
+     "votes": 78.0,
+     "pct": 30.8
+    },
+    {
+     "candidate": "DEEX David",
+     "party": "GRN",
+     "votes": 31.0,
+     "pct": 12.3
+    },
+    {
+     "candidate": "FIELD Matthew",
+     "party": "LCP",
+     "votes": 26.0,
+     "pct": 10.3
+    },
+    {
+     "candidate": "HANTON Kym",
+     "party": "ONP",
+     "votes": 24.0,
+     "pct": 9.5
+    },
+    {
+     "candidate": "JURCZAK Dawid",
+     "party": "LIB",
+     "votes": 13.0,
+     "pct": 5.1
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "FIELD Matthew",
+   "excluded_party": "LCP",
+   "votes": 804.0,
+   "to": [
+    {
+     "candidate": "DEEX David",
+     "party": "GRN",
+     "votes": 211.0,
+     "pct": 26.2
+    },
+    {
+     "candidate": "HANTON Kym",
+     "party": "ONP",
+     "votes": 191.0,
+     "pct": 23.8
+    },
+    {
+     "candidate": "SHAW Ella",
+     "party": "ALP",
+     "votes": 181.0,
+     "pct": 22.5
+    },
+    {
+     "candidate": "HENDRICK Sanja",
+     "party": "FFP",
+     "votes": 152.0,
+     "pct": 18.9
+    },
+    {
+     "candidate": "JURCZAK Dawid",
+     "party": "LIB",
+     "votes": 69.0,
+     "pct": 8.6
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "HENDRICK Sanja",
+   "excluded_party": "FFP",
+   "votes": 1161.0,
+   "to": [
+    {
+     "candidate": "HANTON Kym",
+     "party": "ONP",
+     "votes": 395.0,
+     "pct": 34.0
+    },
+    {
+     "candidate": "SHAW Ella",
+     "party": "ALP",
+     "votes": 281.0,
+     "pct": 24.2
+    },
+    {
+     "candidate": "DEEX David",
+     "party": "GRN",
+     "votes": 274.0,
+     "pct": 23.6
+    },
+    {
+     "candidate": "JURCZAK Dawid",
+     "party": "LIB",
+     "votes": 211.0,
+     "pct": 18.2
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "JURCZAK Dawid",
+   "excluded_party": "LIB",
+   "votes": 1697.0,
+   "to": [
+    {
+     "candidate": "HANTON Kym",
+     "party": "ONP",
+     "votes": 926.0,
+     "pct": 54.6
+    },
+    {
+     "candidate": "SHAW Ella",
+     "party": "ALP",
+     "votes": 448.0,
+     "pct": 26.4
+    },
+    {
+     "candidate": "DEEX David",
+     "party": "GRN",
+     "votes": 323.0,
+     "pct": 19.0
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "DEEX David",
+   "excluded_party": "GRN",
+   "votes": 3092.0,
+   "to": [
+    {
+     "candidate": "SHAW Ella",
+     "party": "ALP",
+     "votes": 2067.0,
+     "pct": 66.8
+    },
+    {
+     "candidate": "HANTON Kym",
+     "party": "ONP",
+     "votes": 1025.0,
+     "pct": 33.2
+    }
+   ]
+  }
+ ],
+ "enfield": [
+  {
+   "count": 2,
+   "excluded": "MERRETT Ariah",
+   "excluded_party": "X_AFP",
+   "votes": 137.0,
+   "to": [
+    {
+     "candidate": "SOLOMON Daniel",
+     "party": "FFP",
+     "votes": 60.0,
+     "pct": 43.8
+    },
+    {
+     "candidate": "SICLARI Chris",
+     "party": "GRN",
+     "votes": 22.0,
+     "pct": 16.1
+    },
+    {
+     "candidate": "BEN Lawrence",
+     "party": "ALP",
+     "votes": 16.0,
+     "pct": 11.7
+    },
+    {
+     "candidate": "CLENDON Leila",
+     "party": "IND",
+     "votes": 14.0,
+     "pct": 10.2
+    },
+    {
+     "candidate": "ONG Oscar",
+     "party": "LIB",
+     "votes": 11.0,
+     "pct": 8.0
+    },
+    {
+     "candidate": "MORRELL Paul",
+     "party": "ONP",
+     "votes": 8.0,
+     "pct": 5.8
+    },
+    {
+     "candidate": "RIGLIN Andrew",
+     "party": "X_UVA",
+     "votes": 6.0,
+     "pct": 4.4
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "RIGLIN Andrew",
+   "excluded_party": "X_UVA",
+   "votes": 293.0,
+   "to": [
+    {
+     "candidate": "MORRELL Paul",
+     "party": "ONP",
+     "votes": 156.0,
+     "pct": 53.2
+    },
+    {
+     "candidate": "BEN Lawrence",
+     "party": "ALP",
+     "votes": 59.0,
+     "pct": 20.1
+    },
+    {
+     "candidate": "CLENDON Leila",
+     "party": "IND",
+     "votes": 41.0,
+     "pct": 14.0
+    },
+    {
+     "candidate": "ONG Oscar",
+     "party": "LIB",
+     "votes": 18.0,
+     "pct": 6.1
+    },
+    {
+     "candidate": "SOLOMON Daniel",
+     "party": "FFP",
+     "votes": 13.0,
+     "pct": 4.4
+    },
+    {
+     "candidate": "SICLARI Chris",
+     "party": "GRN",
+     "votes": 6.0,
+     "pct": 2.0
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "SOLOMON Daniel",
+   "excluded_party": "FFP",
+   "votes": 648.0,
+   "to": [
+    {
+     "candidate": "MORRELL Paul",
+     "party": "ONP",
+     "votes": 242.0,
+     "pct": 37.3
+    },
+    {
+     "candidate": "ONG Oscar",
+     "party": "LIB",
+     "votes": 143.0,
+     "pct": 22.1
+    },
+    {
+     "candidate": "BEN Lawrence",
+     "party": "ALP",
+     "votes": 110.0,
+     "pct": 17.0
+    },
+    {
+     "candidate": "SICLARI Chris",
+     "party": "GRN",
+     "votes": 96.0,
+     "pct": 14.8
+    },
+    {
+     "candidate": "CLENDON Leila",
+     "party": "IND",
+     "votes": 57.0,
+     "pct": 8.8
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "CLENDON Leila",
+   "excluded_party": "IND",
+   "votes": 1284.0,
+   "to": [
+    {
+     "candidate": "SICLARI Chris",
+     "party": "GRN",
+     "votes": 818.0,
+     "pct": 63.7
+    },
+    {
+     "candidate": "BEN Lawrence",
+     "party": "ALP",
+     "votes": 234.0,
+     "pct": 18.2
+    },
+    {
+     "candidate": "ONG Oscar",
+     "party": "LIB",
+     "votes": 194.0,
+     "pct": 15.1
+    },
+    {
+     "candidate": "MORRELL Paul",
+     "party": "ONP",
+     "votes": 38.0,
+     "pct": 3.0
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "SICLARI Chris",
+   "excluded_party": "GRN",
+   "votes": 3669.0,
+   "to": [
+    {
+     "candidate": "BEN Lawrence",
+     "party": "ALP",
+     "votes": 2920.0,
+     "pct": 79.6
+    },
+    {
+     "candidate": "ONG Oscar",
+     "party": "LIB",
+     "votes": 496.0,
+     "pct": 13.5
+    },
+    {
+     "candidate": "MORRELL Paul",
+     "party": "ONP",
+     "votes": 253.0,
+     "pct": 6.9
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "ONG Oscar",
+   "excluded_party": "LIB",
+   "votes": 4365.0,
+   "to": [
+    {
+     "candidate": "MORRELL Paul",
+     "party": "ONP",
+     "votes": 2312.0,
+     "pct": 53.0
+    },
+    {
+     "candidate": "BEN Lawrence",
+     "party": "ALP",
+     "votes": 2053.0,
+     "pct": 47.0
+    }
+   ]
+  }
+ ],
+ "finniss": [
+  {
+   "count": 2,
+   "excluded": "SCOTT Michael",
+   "excluded_party": "X_SGFGA",
+   "votes": 98.0,
+   "to": [
+    {
+     "candidate": "BASHAM David",
+     "party": "LIB",
+     "votes": 25.0,
+     "pct": 25.5
+    },
+    {
+     "candidate": "POWELL Greg",
+     "party": "ONP",
+     "votes": 24.0,
+     "pct": 24.5
+    },
+    {
+     "candidate": "ABRAM David",
+     "party": "X_AFP",
+     "votes": 15.0,
+     "pct": 15.3
+    },
+    {
+     "candidate": "NICHOLSON Lou",
+     "party": "IND",
+     "votes": 10.0,
+     "pct": 10.2
+    },
+    {
+     "candidate": "ASTILL-PEARCE Bartholomew Jon",
+     "party": "GRN",
+     "votes": 8.0,
+     "pct": 8.2
+    },
+    {
+     "candidate": "REDINGTON Phoebe",
+     "party": "ALP",
+     "votes": 7.0,
+     "pct": 7.1
+    },
+    {
+     "candidate": "LEWIS Bron",
+     "party": "IND",
+     "votes": 5.0,
+     "pct": 5.1
+    },
+    {
+     "candidate": "HUSSEY Tanya",
+     "party": "AJP",
+     "votes": 4.0,
+     "pct": 4.1
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "ABRAM David",
+   "excluded_party": "X_AFP",
+   "votes": 279.0,
+   "to": [
+    {
+     "candidate": "POWELL Greg",
+     "party": "ONP",
+     "votes": 80.0,
+     "pct": 28.7
+    },
+    {
+     "candidate": "BASHAM David",
+     "party": "LIB",
+     "votes": 67.0,
+     "pct": 24.0
+    },
+    {
+     "candidate": "NICHOLSON Lou",
+     "party": "IND",
+     "votes": 34.0,
+     "pct": 12.2
+    },
+    {
+     "candidate": "LEWIS Bron",
+     "party": "IND",
+     "votes": 33.0,
+     "pct": 11.8
+    },
+    {
+     "candidate": "ASTILL-PEARCE Bartholomew Jon",
+     "party": "GRN",
+     "votes": 30.0,
+     "pct": 10.8
+    },
+    {
+     "candidate": "REDINGTON Phoebe",
+     "party": "ALP",
+     "votes": 18.0,
+     "pct": 6.5
+    },
+    {
+     "candidate": "HUSSEY Tanya",
+     "party": "AJP",
+     "votes": 17.0,
+     "pct": 6.1
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "HUSSEY Tanya",
+   "excluded_party": "AJP",
+   "votes": 438.0,
+   "to": [
+    {
+     "candidate": "ASTILL-PEARCE Bartholomew Jon",
+     "party": "GRN",
+     "votes": 170.0,
+     "pct": 38.8
+    },
+    {
+     "candidate": "POWELL Greg",
+     "party": "ONP",
+     "votes": 65.0,
+     "pct": 14.8
+    },
+    {
+     "candidate": "NICHOLSON Lou",
+     "party": "IND",
+     "votes": 63.0,
+     "pct": 14.4
+    },
+    {
+     "candidate": "REDINGTON Phoebe",
+     "party": "ALP",
+     "votes": 61.0,
+     "pct": 13.9
+    },
+    {
+     "candidate": "LEWIS Bron",
+     "party": "IND",
+     "votes": 40.0,
+     "pct": 9.1
+    },
+    {
+     "candidate": "BASHAM David",
+     "party": "LIB",
+     "votes": 39.0,
+     "pct": 8.9
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "LEWIS Bron",
+   "excluded_party": "IND",
+   "votes": 1123.0,
+   "to": [
+    {
+     "candidate": "NICHOLSON Lou",
+     "party": "IND",
+     "votes": 611.0,
+     "pct": 54.4
+    },
+    {
+     "candidate": "BASHAM David",
+     "party": "LIB",
+     "votes": 174.0,
+     "pct": 15.5
+    },
+    {
+     "candidate": "REDINGTON Phoebe",
+     "party": "ALP",
+     "votes": 142.0,
+     "pct": 12.6
+    },
+    {
+     "candidate": "ASTILL-PEARCE Bartholomew Jon",
+     "party": "GRN",
+     "votes": 103.0,
+     "pct": 9.2
+    },
+    {
+     "candidate": "POWELL Greg",
+     "party": "ONP",
+     "votes": 93.0,
+     "pct": 8.3
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "ASTILL-PEARCE Bartholomew Jon",
+   "excluded_party": "GRN",
+   "votes": 1914.0,
+   "to": [
+    {
+     "candidate": "NICHOLSON Lou",
+     "party": "IND",
+     "votes": 1149.0,
+     "pct": 60.0
+    },
+    {
+     "candidate": "REDINGTON Phoebe",
+     "party": "ALP",
+     "votes": 576.0,
+     "pct": 30.1
+    },
+    {
+     "candidate": "POWELL Greg",
+     "party": "ONP",
+     "votes": 96.0,
+     "pct": 5.0
+    },
+    {
+     "candidate": "BASHAM David",
+     "party": "LIB",
+     "votes": 93.0,
+     "pct": 4.9
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "REDINGTON Phoebe",
+   "excluded_party": "ALP",
+   "votes": 5529.0,
+   "to": [
+    {
+     "candidate": "NICHOLSON Lou",
+     "party": "IND",
+     "votes": 3848.0,
+     "pct": 69.6
+    },
+    {
+     "candidate": "BASHAM David",
+     "party": "LIB",
+     "votes": 1001.0,
+     "pct": 18.1
+    },
+    {
+     "candidate": "POWELL Greg",
+     "party": "ONP",
+     "votes": 680.0,
+     "pct": 12.3
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "POWELL Greg",
+   "excluded_party": "ONP",
+   "votes": 6880.0,
+   "to": [
+    {
+     "candidate": "NICHOLSON Lou",
+     "party": "IND",
+     "votes": 3770.0,
+     "pct": 54.8
+    },
+    {
+     "candidate": "BASHAM David",
+     "party": "LIB",
+     "votes": 3110.0,
+     "pct": 45.2
+    }
+   ]
+  }
+ ],
+ "flinders": [
+  {
+   "count": 2,
+   "excluded": "MANOLAKIS Spiro",
+   "excluded_party": "X_SPRCS",
+   "votes": 145.0,
+   "to": [
+    {
+     "candidate": "TELFER Sam",
+     "party": "LIB",
+     "votes": 27.0,
+     "pct": 18.6
+    },
+    {
+     "candidate": "MCNAB Thomas",
+     "party": "X_SB",
+     "votes": 27.0,
+     "pct": 18.6
+    },
+    {
+     "candidate": "PETHERICK Meghan",
+     "party": "IND",
+     "votes": 23.0,
+     "pct": 15.9
+    },
+    {
+     "candidate": "ANCHOR Ben",
+     "party": "ALP",
+     "votes": 20.0,
+     "pct": 13.8
+    },
+    {
+     "candidate": "HINCKS Brenton",
+     "party": "ONP",
+     "votes": 15.0,
+     "pct": 10.3
+    },
+    {
+     "candidate": "HASLAM Craig William",
+     "party": "IND",
+     "votes": 11.0,
+     "pct": 7.6
+    },
+    {
+     "candidate": "KEOGH Rod",
+     "party": "IND",
+     "votes": 9.0,
+     "pct": 6.2
+    },
+    {
+     "candidate": "FULWOOD Sam",
+     "party": "X_AFP",
+     "votes": 6.0,
+     "pct": 4.1
+    },
+    {
+     "candidate": "COWLEY Dylan",
+     "party": "NAT",
+     "votes": 4.0,
+     "pct": 2.8
+    },
+    {
+     "candidate": "HARDWICK-FRANCO Kathryn Gay",
+     "party": "GRN",
+     "votes": 3.0,
+     "pct": 2.1
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "FULWOOD Sam",
+   "excluded_party": "X_AFP",
+   "votes": 181.0,
+   "to": [
+    {
+     "candidate": "HINCKS Brenton",
+     "party": "ONP",
+     "votes": 46.0,
+     "pct": 25.4
+    },
+    {
+     "candidate": "TELFER Sam",
+     "party": "LIB",
+     "votes": 43.0,
+     "pct": 23.8
+    },
+    {
+     "candidate": "ANCHOR Ben",
+     "party": "ALP",
+     "votes": 20.0,
+     "pct": 11.0
+    },
+    {
+     "candidate": "PETHERICK Meghan",
+     "party": "IND",
+     "votes": 18.0,
+     "pct": 9.9
+    },
+    {
+     "candidate": "MCNAB Thomas",
+     "party": "X_SB",
+     "votes": 17.0,
+     "pct": 9.4
+    },
+    {
+     "candidate": "KEOGH Rod",
+     "party": "IND",
+     "votes": 10.0,
+     "pct": 5.5
+    },
+    {
+     "candidate": "HARDWICK-FRANCO Kathryn Gay",
+     "party": "GRN",
+     "votes": 10.0,
+     "pct": 5.5
+    },
+    {
+     "candidate": "HASLAM Craig William",
+     "party": "IND",
+     "votes": 9.0,
+     "pct": 5.0
+    },
+    {
+     "candidate": "COWLEY Dylan",
+     "party": "NAT",
+     "votes": 8.0,
+     "pct": 4.4
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "MCNAB Thomas",
+   "excluded_party": "X_SB",
+   "votes": 301.0,
+   "to": [
+    {
+     "candidate": "HINCKS Brenton",
+     "party": "ONP",
+     "votes": 75.0,
+     "pct": 24.9
+    },
+    {
+     "candidate": "TELFER Sam",
+     "party": "LIB",
+     "votes": 52.0,
+     "pct": 17.3
+    },
+    {
+     "candidate": "HASLAM Craig William",
+     "party": "IND",
+     "votes": 41.0,
+     "pct": 13.6
+    },
+    {
+     "candidate": "PETHERICK Meghan",
+     "party": "IND",
+     "votes": 39.0,
+     "pct": 13.0
+    },
+    {
+     "candidate": "ANCHOR Ben",
+     "party": "ALP",
+     "votes": 35.0,
+     "pct": 11.6
+    },
+    {
+     "candidate": "COWLEY Dylan",
+     "party": "NAT",
+     "votes": 33.0,
+     "pct": 11.0
+    },
+    {
+     "candidate": "KEOGH Rod",
+     "party": "IND",
+     "votes": 16.0,
+     "pct": 5.3
+    },
+    {
+     "candidate": "HARDWICK-FRANCO Kathryn Gay",
+     "party": "GRN",
+     "votes": 10.0,
+     "pct": 3.3
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "KEOGH Rod",
+   "excluded_party": "IND",
+   "votes": 343.0,
+   "to": [
+    {
+     "candidate": "HASLAM Craig William",
+     "party": "IND",
+     "votes": 106.0,
+     "pct": 30.9
+    },
+    {
+     "candidate": "PETHERICK Meghan",
+     "party": "IND",
+     "votes": 79.0,
+     "pct": 23.0
+    },
+    {
+     "candidate": "TELFER Sam",
+     "party": "LIB",
+     "votes": 62.0,
+     "pct": 18.1
+    },
+    {
+     "candidate": "HARDWICK-FRANCO Kathryn Gay",
+     "party": "GRN",
+     "votes": 34.0,
+     "pct": 9.9
+    },
+    {
+     "candidate": "HINCKS Brenton",
+     "party": "ONP",
+     "votes": 33.0,
+     "pct": 9.6
+    },
+    {
+     "candidate": "COWLEY Dylan",
+     "party": "NAT",
+     "votes": 16.0,
+     "pct": 4.7
+    },
+    {
+     "candidate": "ANCHOR Ben",
+     "party": "ALP",
+     "votes": 13.0,
+     "pct": 3.8
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "COWLEY Dylan",
+   "excluded_party": "NAT",
+   "votes": 521.0,
+   "to": [
+    {
+     "candidate": "TELFER Sam",
+     "party": "LIB",
+     "votes": 125.0,
+     "pct": 24.0
+    },
+    {
+     "candidate": "HASLAM Craig William",
+     "party": "IND",
+     "votes": 111.0,
+     "pct": 21.3
+    },
+    {
+     "candidate": "PETHERICK Meghan",
+     "party": "IND",
+     "votes": 91.0,
+     "pct": 17.5
+    },
+    {
+     "candidate": "HINCKS Brenton",
+     "party": "ONP",
+     "votes": 78.0,
+     "pct": 15.0
+    },
+    {
+     "candidate": "HARDWICK-FRANCO Kathryn Gay",
+     "party": "GRN",
+     "votes": 66.0,
+     "pct": 12.7
+    },
+    {
+     "candidate": "ANCHOR Ben",
+     "party": "ALP",
+     "votes": 50.0,
+     "pct": 9.6
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "HARDWICK-FRANCO Kathryn Gay",
+   "excluded_party": "GRN",
+   "votes": 883.0,
+   "to": [
+    {
+     "candidate": "ANCHOR Ben",
+     "party": "ALP",
+     "votes": 298.0,
+     "pct": 33.7
+    },
+    {
+     "candidate": "HASLAM Craig William",
+     "party": "IND",
+     "votes": 242.0,
+     "pct": 27.4
+    },
+    {
+     "candidate": "PETHERICK Meghan",
+     "party": "IND",
+     "votes": 203.0,
+     "pct": 23.0
+    },
+    {
+     "candidate": "TELFER Sam",
+     "party": "LIB",
+     "votes": 90.0,
+     "pct": 10.2
+    },
+    {
+     "candidate": "HINCKS Brenton",
+     "party": "ONP",
+     "votes": 50.0,
+     "pct": 5.7
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "HASLAM Craig William",
+   "excluded_party": "IND",
+   "votes": 1710.0,
+   "to": [
+    {
+     "candidate": "PETHERICK Meghan",
+     "party": "IND",
+     "votes": 734.0,
+     "pct": 42.9
+    },
+    {
+     "candidate": "ANCHOR Ben",
+     "party": "ALP",
+     "votes": 380.0,
+     "pct": 22.2
+    },
+    {
+     "candidate": "TELFER Sam",
+     "party": "LIB",
+     "votes": 373.0,
+     "pct": 21.8
+    },
+    {
+     "candidate": "HINCKS Brenton",
+     "party": "ONP",
+     "votes": 223.0,
+     "pct": 13.0
+    }
+   ]
+  },
+  {
+   "count": 9,
+   "excluded": "ANCHOR Ben",
+   "excluded_party": "ALP",
+   "votes": 2775.0,
+   "to": [
+    {
+     "candidate": "PETHERICK Meghan",
+     "party": "IND",
+     "votes": 1694.0,
+     "pct": 61.0
+    },
+    {
+     "candidate": "TELFER Sam",
+     "party": "LIB",
+     "votes": 570.0,
+     "pct": 20.5
+    },
+    {
+     "candidate": "HINCKS Brenton",
+     "party": "ONP",
+     "votes": 511.0,
+     "pct": 18.4
+    }
+   ]
+  },
+  {
+   "count": 10,
+   "excluded": "PETHERICK Meghan",
+   "excluded_party": "IND",
+   "votes": 5751.0,
+   "to": [
+    {
+     "candidate": "TELFER Sam",
+     "party": "LIB",
+     "votes": 4188.0,
+     "pct": 72.8
+    },
+    {
+     "candidate": "HINCKS Brenton",
+     "party": "ONP",
+     "votes": 1563.0,
+     "pct": 27.2
+    }
+   ]
+  }
+ ],
+ "florey": [
+  {
+   "count": 2,
+   "excluded": "WILTON Trent Mark",
+   "excluded_party": "X_UVA",
+   "votes": 65.0,
+   "to": [
+    {
+     "candidate": "SIZE Riley",
+     "party": "ONP",
+     "votes": 14.0,
+     "pct": 21.5
+    },
+    {
+     "candidate": "BEDFORD Frances",
+     "party": "IND",
+     "votes": 14.0,
+     "pct": 21.5
+    },
+    {
+     "candidate": "MCGEE Alexandra",
+     "party": "GRN",
+     "votes": 9.0,
+     "pct": 13.8
+    },
+    {
+     "candidate": "JAMESON Robert",
+     "party": "X_SGFGA",
+     "votes": 8.0,
+     "pct": 12.3
+    },
+    {
+     "candidate": "FISCHER Dieter",
+     "party": "X_AFP",
+     "votes": 7.0,
+     "pct": 10.8
+    },
+    {
+     "candidate": "BROWN Michael",
+     "party": "ALP",
+     "votes": 6.0,
+     "pct": 9.2
+    },
+    {
+     "candidate": "GEORGE Denise",
+     "party": "LIB",
+     "votes": 4.0,
+     "pct": 6.2
+    },
+    {
+     "candidate": "HAWKE Mark",
+     "party": "FFP",
+     "votes": 3.0,
+     "pct": 4.6
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "JAMESON Robert",
+   "excluded_party": "X_SGFGA",
+   "votes": 95.0,
+   "to": [
+    {
+     "candidate": "SIZE Riley",
+     "party": "ONP",
+     "votes": 27.0,
+     "pct": 28.4
+    },
+    {
+     "candidate": "FISCHER Dieter",
+     "party": "X_AFP",
+     "votes": 20.0,
+     "pct": 21.1
+    },
+    {
+     "candidate": "GEORGE Denise",
+     "party": "LIB",
+     "votes": 14.0,
+     "pct": 14.7
+    },
+    {
+     "candidate": "BROWN Michael",
+     "party": "ALP",
+     "votes": 12.0,
+     "pct": 12.6
+    },
+    {
+     "candidate": "HAWKE Mark",
+     "party": "FFP",
+     "votes": 11.0,
+     "pct": 11.6
+    },
+    {
+     "candidate": "BEDFORD Frances",
+     "party": "IND",
+     "votes": 7.0,
+     "pct": 7.4
+    },
+    {
+     "candidate": "MCGEE Alexandra",
+     "party": "GRN",
+     "votes": 4.0,
+     "pct": 4.2
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "FISCHER Dieter",
+   "excluded_party": "X_AFP",
+   "votes": 233.0,
+   "to": [
+    {
+     "candidate": "HAWKE Mark",
+     "party": "FFP",
+     "votes": 84.0,
+     "pct": 36.1
+    },
+    {
+     "candidate": "SIZE Riley",
+     "party": "ONP",
+     "votes": 45.0,
+     "pct": 19.3
+    },
+    {
+     "candidate": "BROWN Michael",
+     "party": "ALP",
+     "votes": 32.0,
+     "pct": 13.7
+    },
+    {
+     "candidate": "GEORGE Denise",
+     "party": "LIB",
+     "votes": 28.0,
+     "pct": 12.0
+    },
+    {
+     "candidate": "MCGEE Alexandra",
+     "party": "GRN",
+     "votes": 26.0,
+     "pct": 11.2
+    },
+    {
+     "candidate": "BEDFORD Frances",
+     "party": "IND",
+     "votes": 18.0,
+     "pct": 7.7
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "HAWKE Mark",
+   "excluded_party": "FFP",
+   "votes": 805.0,
+   "to": [
+    {
+     "candidate": "SIZE Riley",
+     "party": "ONP",
+     "votes": 305.0,
+     "pct": 37.9
+    },
+    {
+     "candidate": "BEDFORD Frances",
+     "party": "IND",
+     "votes": 149.0,
+     "pct": 18.5
+    },
+    {
+     "candidate": "BROWN Michael",
+     "party": "ALP",
+     "votes": 141.0,
+     "pct": 17.5
+    },
+    {
+     "candidate": "GEORGE Denise",
+     "party": "LIB",
+     "votes": 112.0,
+     "pct": 13.9
+    },
+    {
+     "candidate": "MCGEE Alexandra",
+     "party": "GRN",
+     "votes": 98.0,
+     "pct": 12.2
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "BEDFORD Frances",
+   "excluded_party": "IND",
+   "votes": 1247.0,
+   "to": [
+    {
+     "candidate": "BROWN Michael",
+     "party": "ALP",
+     "votes": 427.0,
+     "pct": 34.2
+    },
+    {
+     "candidate": "SIZE Riley",
+     "party": "ONP",
+     "votes": 309.0,
+     "pct": 24.8
+    },
+    {
+     "candidate": "MCGEE Alexandra",
+     "party": "GRN",
+     "votes": 295.0,
+     "pct": 23.7
+    },
+    {
+     "candidate": "GEORGE Denise",
+     "party": "LIB",
+     "votes": 216.0,
+     "pct": 17.3
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "GEORGE Denise",
+   "excluded_party": "LIB",
+   "votes": 2428.0,
+   "to": [
+    {
+     "candidate": "SIZE Riley",
+     "party": "ONP",
+     "votes": 1216.0,
+     "pct": 50.1
+    },
+    {
+     "candidate": "BROWN Michael",
+     "party": "ALP",
+     "votes": 732.0,
+     "pct": 30.1
+    },
+    {
+     "candidate": "MCGEE Alexandra",
+     "party": "GRN",
+     "votes": 480.0,
+     "pct": 19.8
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "MCGEE Alexandra",
+   "excluded_party": "GRN",
+   "votes": 3256.0,
+   "to": [
+    {
+     "candidate": "BROWN Michael",
+     "party": "ALP",
+     "votes": 2779.0,
+     "pct": 85.4
+    },
+    {
+     "candidate": "SIZE Riley",
+     "party": "ONP",
+     "votes": 477.0,
+     "pct": 14.6
+    }
+   ]
+  }
+ ],
+ "gibson": [
+  {
+   "count": 2,
+   "excluded": "LUTMAN John",
+   "excluded_party": "X_SGFGA",
+   "votes": 74.0,
+   "to": [
+    {
+     "candidate": "FLEMING Jane",
+     "party": "LIB",
+     "votes": 19.0,
+     "pct": 25.7
+    },
+    {
+     "candidate": "ANDREWS Sarah",
+     "party": "ALP",
+     "votes": 14.0,
+     "pct": 18.9
+    },
+    {
+     "candidate": "ANANIJEV Zoran",
+     "party": "ONP",
+     "votes": 11.0,
+     "pct": 14.9
+    },
+    {
+     "candidate": "TREWARTHA Mike",
+     "party": "GRN",
+     "votes": 10.0,
+     "pct": 13.5
+    },
+    {
+     "candidate": "EASTHER Darryl",
+     "party": "FFP",
+     "votes": 8.0,
+     "pct": 10.8
+    },
+    {
+     "candidate": "O'ROURKE Glenn",
+     "party": "X_AFP",
+     "votes": 6.0,
+     "pct": 8.1
+    },
+    {
+     "candidate": "LIU Bin",
+     "party": "AJP",
+     "votes": 6.0,
+     "pct": 8.1
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "O'ROURKE Glenn",
+   "excluded_party": "X_AFP",
+   "votes": 122.0,
+   "to": [
+    {
+     "candidate": "EASTHER Darryl",
+     "party": "FFP",
+     "votes": 48.0,
+     "pct": 39.3
+    },
+    {
+     "candidate": "TREWARTHA Mike",
+     "party": "GRN",
+     "votes": 20.0,
+     "pct": 16.4
+    },
+    {
+     "candidate": "ANDREWS Sarah",
+     "party": "ALP",
+     "votes": 18.0,
+     "pct": 14.8
+    },
+    {
+     "candidate": "ANANIJEV Zoran",
+     "party": "ONP",
+     "votes": 16.0,
+     "pct": 13.1
+    },
+    {
+     "candidate": "LIU Bin",
+     "party": "AJP",
+     "votes": 15.0,
+     "pct": 12.3
+    },
+    {
+     "candidate": "FLEMING Jane",
+     "party": "LIB",
+     "votes": 5.0,
+     "pct": 4.1
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "EASTHER Darryl",
+   "excluded_party": "FFP",
+   "votes": 359.0,
+   "to": [
+    {
+     "candidate": "FLEMING Jane",
+     "party": "LIB",
+     "votes": 124.0,
+     "pct": 34.5
+    },
+    {
+     "candidate": "ANANIJEV Zoran",
+     "party": "ONP",
+     "votes": 110.0,
+     "pct": 30.6
+    },
+    {
+     "candidate": "ANDREWS Sarah",
+     "party": "ALP",
+     "votes": 46.0,
+     "pct": 12.8
+    },
+    {
+     "candidate": "TREWARTHA Mike",
+     "party": "GRN",
+     "votes": 41.0,
+     "pct": 11.4
+    },
+    {
+     "candidate": "LIU Bin",
+     "party": "AJP",
+     "votes": 38.0,
+     "pct": 10.6
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "LIU Bin",
+   "excluded_party": "AJP",
+   "votes": 415.0,
+   "to": [
+    {
+     "candidate": "TREWARTHA Mike",
+     "party": "GRN",
+     "votes": 226.0,
+     "pct": 54.5
+    },
+    {
+     "candidate": "ANDREWS Sarah",
+     "party": "ALP",
+     "votes": 82.0,
+     "pct": 19.8
+    },
+    {
+     "candidate": "ANANIJEV Zoran",
+     "party": "ONP",
+     "votes": 59.0,
+     "pct": 14.2
+    },
+    {
+     "candidate": "FLEMING Jane",
+     "party": "LIB",
+     "votes": 48.0,
+     "pct": 11.6
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "TREWARTHA Mike",
+   "excluded_party": "GRN",
+   "votes": 3389.0,
+   "to": [
+    {
+     "candidate": "ANDREWS Sarah",
+     "party": "ALP",
+     "votes": 2721.0,
+     "pct": 80.3
+    },
+    {
+     "candidate": "FLEMING Jane",
+     "party": "LIB",
+     "votes": 336.0,
+     "pct": 9.9
+    },
+    {
+     "candidate": "ANANIJEV Zoran",
+     "party": "ONP",
+     "votes": 332.0,
+     "pct": 9.8
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "ANANIJEV Zoran",
+   "excluded_party": "ONP",
+   "votes": 4153.0,
+   "to": [
+    {
+     "candidate": "FLEMING Jane",
+     "party": "LIB",
+     "votes": 2663.0,
+     "pct": 64.1
+    },
+    {
+     "candidate": "ANDREWS Sarah",
+     "party": "ALP",
+     "votes": 1490.0,
+     "pct": 35.9
+    }
+   ]
+  }
+ ],
+ "giles": [
+  {
+   "count": 2,
+   "excluded": "PRICE Jasper",
+   "excluded_party": "X_AFP",
+   "votes": 242.0,
+   "to": [
+    {
+     "candidate": "BALFORT Gary",
+     "party": "FFP",
+     "votes": 114.0,
+     "pct": 47.1
+    },
+    {
+     "candidate": "HUGHES Eddie",
+     "party": "ALP",
+     "votes": 65.0,
+     "pct": 26.9
+    },
+    {
+     "candidate": "TAYLOR Alex",
+     "party": "GRN",
+     "votes": 25.0,
+     "pct": 10.3
+    },
+    {
+     "candidate": "DRAGE Barry",
+     "party": "ONP",
+     "votes": 20.0,
+     "pct": 8.3
+    },
+    {
+     "candidate": "SINGH Sunny",
+     "party": "LIB",
+     "votes": 18.0,
+     "pct": 7.4
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "BALFORT Gary",
+   "excluded_party": "FFP",
+   "votes": 605.0,
+   "to": [
+    {
+     "candidate": "DRAGE Barry",
+     "party": "ONP",
+     "votes": 288.0,
+     "pct": 47.6
+    },
+    {
+     "candidate": "HUGHES Eddie",
+     "party": "ALP",
+     "votes": 149.0,
+     "pct": 24.6
+    },
+    {
+     "candidate": "TAYLOR Alex",
+     "party": "GRN",
+     "votes": 101.0,
+     "pct": 16.7
+    },
+    {
+     "candidate": "SINGH Sunny",
+     "party": "LIB",
+     "votes": 67.0,
+     "pct": 11.1
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "TAYLOR Alex",
+   "excluded_party": "GRN",
+   "votes": 1276.0,
+   "to": [
+    {
+     "candidate": "HUGHES Eddie",
+     "party": "ALP",
+     "votes": 901.0,
+     "pct": 70.6
+    },
+    {
+     "candidate": "DRAGE Barry",
+     "party": "ONP",
+     "votes": 201.0,
+     "pct": 15.8
+    },
+    {
+     "candidate": "SINGH Sunny",
+     "party": "LIB",
+     "votes": 174.0,
+     "pct": 13.6
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "SINGH Sunny",
+   "excluded_party": "LIB",
+   "votes": 2264.0,
+   "to": [
+    {
+     "candidate": "DRAGE Barry",
+     "party": "ONP",
+     "votes": 1282.0,
+     "pct": 56.6
+    },
+    {
+     "candidate": "HUGHES Eddie",
+     "party": "ALP",
+     "votes": 982.0,
+     "pct": 43.4
+    }
+   ]
+  }
+ ],
+ "hammond": [
+  {
+   "count": 2,
+   "excluded": "IVESON Tristan",
+   "excluded_party": "X_SGFGA",
+   "votes": 34.0,
+   "to": [
+    {
+     "candidate": "HICKS Bruce",
+     "party": "X_AFP",
+     "votes": 8.0,
+     "pct": 23.5
+    },
+    {
+     "candidate": "ROYLANCE Robert",
+     "party": "ONP",
+     "votes": 4.0,
+     "pct": 11.8
+    },
+    {
+     "candidate": "PEDERICK Adrian",
+     "party": "LIB",
+     "votes": 4.0,
+     "pct": 11.8
+    },
+    {
+     "candidate": "PALACHICKY Nicole",
+     "party": "GRN",
+     "votes": 4.0,
+     "pct": 11.8
+    },
+    {
+     "candidate": "BAILEY Simone",
+     "party": "ALP",
+     "votes": 4.0,
+     "pct": 11.8
+    },
+    {
+     "candidate": "KEEN Airlie",
+     "party": "IND",
+     "votes": 4.0,
+     "pct": 11.8
+    },
+    {
+     "candidate": "ECKERMANN Ruby",
+     "party": "AJP",
+     "votes": 3.0,
+     "pct": 8.8
+    },
+    {
+     "candidate": "NORTH Robert",
+     "party": "FFP",
+     "votes": 2.0,
+     "pct": 5.9
+    },
+    {
+     "candidate": "HOPE Lucas",
+     "party": "IND",
+     "votes": 1.0,
+     "pct": 2.9
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "GRAZIANO Carmelo",
+   "excluded_party": "X_UVA",
+   "votes": 88.0,
+   "to": [
+    {
+     "candidate": "KEEN Airlie",
+     "party": "IND",
+     "votes": 15.0,
+     "pct": 17.0
+    },
+    {
+     "candidate": "ECKERMANN Ruby",
+     "party": "AJP",
+     "votes": 13.0,
+     "pct": 14.8
+    },
+    {
+     "candidate": "MURPHY James",
+     "party": "LCP",
+     "votes": 12.0,
+     "pct": 13.6
+    },
+    {
+     "candidate": "PEDERICK Adrian",
+     "party": "LIB",
+     "votes": 12.0,
+     "pct": 13.6
+    },
+    {
+     "candidate": "HOPE Lucas",
+     "party": "IND",
+     "votes": 11.0,
+     "pct": 12.5
+    },
+    {
+     "candidate": "ROYLANCE Robert",
+     "party": "ONP",
+     "votes": 10.0,
+     "pct": 11.4
+    },
+    {
+     "candidate": "NORTH Robert",
+     "party": "FFP",
+     "votes": 6.0,
+     "pct": 6.8
+    },
+    {
+     "candidate": "PALACHICKY Nicole",
+     "party": "GRN",
+     "votes": 5.0,
+     "pct": 5.7
+    },
+    {
+     "candidate": "BAILEY Simone",
+     "party": "ALP",
+     "votes": 3.0,
+     "pct": 3.4
+    },
+    {
+     "candidate": "HICKS Bruce",
+     "party": "X_AFP",
+     "votes": 1.0,
+     "pct": 1.1
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "HICKS Bruce",
+   "excluded_party": "X_AFP",
+   "votes": 123.0,
+   "to": [
+    {
+     "candidate": "NORTH Robert",
+     "party": "FFP",
+     "votes": 33.0,
+     "pct": 26.8
+    },
+    {
+     "candidate": "KEEN Airlie",
+     "party": "IND",
+     "votes": 26.0,
+     "pct": 21.1
+    },
+    {
+     "candidate": "BAILEY Simone",
+     "party": "ALP",
+     "votes": 15.0,
+     "pct": 12.2
+    },
+    {
+     "candidate": "MURPHY James",
+     "party": "LCP",
+     "votes": 12.0,
+     "pct": 9.8
+    },
+    {
+     "candidate": "ROYLANCE Robert",
+     "party": "ONP",
+     "votes": 11.0,
+     "pct": 8.9
+    },
+    {
+     "candidate": "PALACHICKY Nicole",
+     "party": "GRN",
+     "votes": 10.0,
+     "pct": 8.1
+    },
+    {
+     "candidate": "PEDERICK Adrian",
+     "party": "LIB",
+     "votes": 8.0,
+     "pct": 6.5
+    },
+    {
+     "candidate": "ECKERMANN Ruby",
+     "party": "AJP",
+     "votes": 5.0,
+     "pct": 4.1
+    },
+    {
+     "candidate": "HOPE Lucas",
+     "party": "IND",
+     "votes": 3.0,
+     "pct": 2.4
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "HOPE Lucas",
+   "excluded_party": "IND",
+   "votes": 244.0,
+   "to": [
+    {
+     "candidate": "KEEN Airlie",
+     "party": "IND",
+     "votes": 92.0,
+     "pct": 37.7
+    },
+    {
+     "candidate": "PEDERICK Adrian",
+     "party": "LIB",
+     "votes": 32.0,
+     "pct": 13.1
+    },
+    {
+     "candidate": "PALACHICKY Nicole",
+     "party": "GRN",
+     "votes": 31.0,
+     "pct": 12.7
+    },
+    {
+     "candidate": "ROYLANCE Robert",
+     "party": "ONP",
+     "votes": 28.0,
+     "pct": 11.5
+    },
+    {
+     "candidate": "BAILEY Simone",
+     "party": "ALP",
+     "votes": 28.0,
+     "pct": 11.5
+    },
+    {
+     "candidate": "ECKERMANN Ruby",
+     "party": "AJP",
+     "votes": 14.0,
+     "pct": 5.7
+    },
+    {
+     "candidate": "MURPHY James",
+     "party": "LCP",
+     "votes": 13.0,
+     "pct": 5.3
+    },
+    {
+     "candidate": "NORTH Robert",
+     "party": "FFP",
+     "votes": 6.0,
+     "pct": 2.5
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "ECKERMANN Ruby",
+   "excluded_party": "AJP",
+   "votes": 391.0,
+   "to": [
+    {
+     "candidate": "PALACHICKY Nicole",
+     "party": "GRN",
+     "votes": 126.0,
+     "pct": 32.2
+    },
+    {
+     "candidate": "MURPHY James",
+     "party": "LCP",
+     "votes": 66.0,
+     "pct": 16.9
+    },
+    {
+     "candidate": "KEEN Airlie",
+     "party": "IND",
+     "votes": 49.0,
+     "pct": 12.5
+    },
+    {
+     "candidate": "ROYLANCE Robert",
+     "party": "ONP",
+     "votes": 46.0,
+     "pct": 11.8
+    },
+    {
+     "candidate": "BAILEY Simone",
+     "party": "ALP",
+     "votes": 43.0,
+     "pct": 11.0
+    },
+    {
+     "candidate": "NORTH Robert",
+     "party": "FFP",
+     "votes": 37.0,
+     "pct": 9.5
+    },
+    {
+     "candidate": "PEDERICK Adrian",
+     "party": "LIB",
+     "votes": 24.0,
+     "pct": 6.1
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "NORTH Robert",
+   "excluded_party": "FFP",
+   "votes": 506.0,
+   "to": [
+    {
+     "candidate": "ROYLANCE Robert",
+     "party": "ONP",
+     "votes": 208.0,
+     "pct": 41.1
+    },
+    {
+     "candidate": "PEDERICK Adrian",
+     "party": "LIB",
+     "votes": 109.0,
+     "pct": 21.5
+    },
+    {
+     "candidate": "KEEN Airlie",
+     "party": "IND",
+     "votes": 52.0,
+     "pct": 10.3
+    },
+    {
+     "candidate": "PALACHICKY Nicole",
+     "party": "GRN",
+     "votes": 51.0,
+     "pct": 10.1
+    },
+    {
+     "candidate": "BAILEY Simone",
+     "party": "ALP",
+     "votes": 46.0,
+     "pct": 9.1
+    },
+    {
+     "candidate": "MURPHY James",
+     "party": "LCP",
+     "votes": 40.0,
+     "pct": 7.9
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "MURPHY James",
+   "excluded_party": "LCP",
+   "votes": 923.0,
+   "to": [
+    {
+     "candidate": "ROYLANCE Robert",
+     "party": "ONP",
+     "votes": 411.0,
+     "pct": 44.5
+    },
+    {
+     "candidate": "PALACHICKY Nicole",
+     "party": "GRN",
+     "votes": 171.0,
+     "pct": 18.5
+    },
+    {
+     "candidate": "BAILEY Simone",
+     "party": "ALP",
+     "votes": 136.0,
+     "pct": 14.7
+    },
+    {
+     "candidate": "KEEN Airlie",
+     "party": "IND",
+     "votes": 117.0,
+     "pct": 12.7
+    },
+    {
+     "candidate": "PEDERICK Adrian",
+     "party": "LIB",
+     "votes": 88.0,
+     "pct": 9.5
+    }
+   ]
+  },
+  {
+   "count": 9,
+   "excluded": "PALACHICKY Nicole",
+   "excluded_party": "GRN",
+   "votes": 1564.0,
+   "to": [
+    {
+     "candidate": "BAILEY Simone",
+     "party": "ALP",
+     "votes": 900.0,
+     "pct": 57.5
+    },
+    {
+     "candidate": "KEEN Airlie",
+     "party": "IND",
+     "votes": 432.0,
+     "pct": 27.6
+    },
+    {
+     "candidate": "ROYLANCE Robert",
+     "party": "ONP",
+     "votes": 127.0,
+     "pct": 8.1
+    },
+    {
+     "candidate": "PEDERICK Adrian",
+     "party": "LIB",
+     "votes": 105.0,
+     "pct": 6.7
+    }
+   ]
+  },
+  {
+   "count": 10,
+   "excluded": "KEEN Airlie",
+   "excluded_party": "IND",
+   "votes": 3081.0,
+   "to": [
+    {
+     "candidate": "BAILEY Simone",
+     "party": "ALP",
+     "votes": 1280.0,
+     "pct": 41.5
+    },
+    {
+     "candidate": "PEDERICK Adrian",
+     "party": "LIB",
+     "votes": 1151.0,
+     "pct": 37.4
+    },
+    {
+     "candidate": "ROYLANCE Robert",
+     "party": "ONP",
+     "votes": 650.0,
+     "pct": 21.1
+    }
+   ]
+  },
+  {
+   "count": 11,
+   "excluded": "PEDERICK Adrian",
+   "excluded_party": "LIB",
+   "votes": 6777.0,
+   "to": [
+    {
+     "candidate": "ROYLANCE Robert",
+     "party": "ONP",
+     "votes": 4978.0,
+     "pct": 73.5
+    },
+    {
+     "candidate": "BAILEY Simone",
+     "party": "ALP",
+     "votes": 1799.0,
+     "pct": 26.5
+    }
+   ]
+  }
+ ],
+ "hartley": [
+  {
+   "count": 2,
+   "excluded": "MILL Robert James Henry",
+   "excluded_party": "X_SGFGA",
+   "votes": 75.0,
+   "to": [
+    {
+     "candidate": "SMITH Bruce",
+     "party": "X_AFP",
+     "votes": 25.0,
+     "pct": 33.3
+    },
+    {
+     "candidate": "DOTTORE Mara",
+     "party": "X_SPRCS",
+     "votes": 11.0,
+     "pct": 14.7
+    },
+    {
+     "candidate": "SALERNO Peter",
+     "party": "X_UVA",
+     "votes": 9.0,
+     "pct": 12.0
+    },
+    {
+     "candidate": "DWYER David",
+     "party": "ONP",
+     "votes": 9.0,
+     "pct": 12.0
+    },
+    {
+     "candidate": "SEARLE Melanie",
+     "party": "GRN",
+     "votes": 9.0,
+     "pct": 12.0
+    },
+    {
+     "candidate": "TARZIA Vincent",
+     "party": "LIB",
+     "votes": 7.0,
+     "pct": 9.3
+    },
+    {
+     "candidate": "THOMPSON Hugh",
+     "party": "FFP",
+     "votes": 3.0,
+     "pct": 4.0
+    },
+    {
+     "candidate": "ROBERTS Jenn",
+     "party": "ALP",
+     "votes": 2.0,
+     "pct": 2.7
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "SMITH Bruce",
+   "excluded_party": "X_AFP",
+   "votes": 126.0,
+   "to": [
+    {
+     "candidate": "THOMPSON Hugh",
+     "party": "FFP",
+     "votes": 45.0,
+     "pct": 35.7
+    },
+    {
+     "candidate": "TARZIA Vincent",
+     "party": "LIB",
+     "votes": 23.0,
+     "pct": 18.3
+    },
+    {
+     "candidate": "SEARLE Melanie",
+     "party": "GRN",
+     "votes": 20.0,
+     "pct": 15.9
+    },
+    {
+     "candidate": "ROBERTS Jenn",
+     "party": "ALP",
+     "votes": 14.0,
+     "pct": 11.1
+    },
+    {
+     "candidate": "DOTTORE Mara",
+     "party": "X_SPRCS",
+     "votes": 10.0,
+     "pct": 7.9
+    },
+    {
+     "candidate": "DWYER David",
+     "party": "ONP",
+     "votes": 9.0,
+     "pct": 7.1
+    },
+    {
+     "candidate": "SALERNO Peter",
+     "party": "X_UVA",
+     "votes": 5.0,
+     "pct": 4.0
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "SALERNO Peter",
+   "excluded_party": "X_UVA",
+   "votes": 140.0,
+   "to": [
+    {
+     "candidate": "DOTTORE Mara",
+     "party": "X_SPRCS",
+     "votes": 52.0,
+     "pct": 37.1
+    },
+    {
+     "candidate": "THOMPSON Hugh",
+     "party": "FFP",
+     "votes": 21.0,
+     "pct": 15.0
+    },
+    {
+     "candidate": "SEARLE Melanie",
+     "party": "GRN",
+     "votes": 21.0,
+     "pct": 15.0
+    },
+    {
+     "candidate": "DWYER David",
+     "party": "ONP",
+     "votes": 18.0,
+     "pct": 12.9
+    },
+    {
+     "candidate": "TARZIA Vincent",
+     "party": "LIB",
+     "votes": 15.0,
+     "pct": 10.7
+    },
+    {
+     "candidate": "ROBERTS Jenn",
+     "party": "ALP",
+     "votes": 13.0,
+     "pct": 9.3
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "DOTTORE Mara",
+   "excluded_party": "X_SPRCS",
+   "votes": 417.0,
+   "to": [
+    {
+     "candidate": "THOMPSON Hugh",
+     "party": "FFP",
+     "votes": 144.0,
+     "pct": 34.5
+    },
+    {
+     "candidate": "SEARLE Melanie",
+     "party": "GRN",
+     "votes": 111.0,
+     "pct": 26.6
+    },
+    {
+     "candidate": "TARZIA Vincent",
+     "party": "LIB",
+     "votes": 60.0,
+     "pct": 14.4
+    },
+    {
+     "candidate": "ROBERTS Jenn",
+     "party": "ALP",
+     "votes": 59.0,
+     "pct": 14.1
+    },
+    {
+     "candidate": "DWYER David",
+     "party": "ONP",
+     "votes": 43.0,
+     "pct": 10.3
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "THOMPSON Hugh",
+   "excluded_party": "FFP",
+   "votes": 673.0,
+   "to": [
+    {
+     "candidate": "DWYER David",
+     "party": "ONP",
+     "votes": 265.0,
+     "pct": 39.4
+    },
+    {
+     "candidate": "TARZIA Vincent",
+     "party": "LIB",
+     "votes": 216.0,
+     "pct": 32.1
+    },
+    {
+     "candidate": "ROBERTS Jenn",
+     "party": "ALP",
+     "votes": 108.0,
+     "pct": 16.0
+    },
+    {
+     "candidate": "SEARLE Melanie",
+     "party": "GRN",
+     "votes": 84.0,
+     "pct": 12.5
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "SEARLE Melanie",
+   "excluded_party": "GRN",
+   "votes": 3128.0,
+   "to": [
+    {
+     "candidate": "ROBERTS Jenn",
+     "party": "ALP",
+     "votes": 2485.0,
+     "pct": 79.4
+    },
+    {
+     "candidate": "TARZIA Vincent",
+     "party": "LIB",
+     "votes": 461.0,
+     "pct": 14.7
+    },
+    {
+     "candidate": "DWYER David",
+     "party": "ONP",
+     "votes": 182.0,
+     "pct": 5.8
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "DWYER David",
+   "excluded_party": "ONP",
+   "votes": 4170.0,
+   "to": [
+    {
+     "candidate": "TARZIA Vincent",
+     "party": "LIB",
+     "votes": 2770.0,
+     "pct": 66.4
+    },
+    {
+     "candidate": "ROBERTS Jenn",
+     "party": "ALP",
+     "votes": 1400.0,
+     "pct": 33.6
+    }
+   ]
+  }
+ ],
+ "heysen": [
+  {
+   "count": 2,
+   "excluded": "SCOTT Tonya Lee",
+   "excluded_party": "X_SGFGA",
+   "votes": 71.0,
+   "to": [
+    {
+     "candidate": "KOVAC Tom",
+     "party": "ONP",
+     "votes": 15.0,
+     "pct": 21.1
+    },
+    {
+     "candidate": "TEAGUE Josh",
+     "party": "LIB",
+     "votes": 13.0,
+     "pct": 18.3
+    },
+    {
+     "candidate": "GRANGER Andrew",
+     "party": "IND",
+     "votes": 11.0,
+     "pct": 15.5
+    },
+    {
+     "candidate": "BAKER Chris",
+     "party": "FFP",
+     "votes": 8.0,
+     "pct": 11.3
+    },
+    {
+     "candidate": "DAVIS Gregory",
+     "party": "AJP",
+     "votes": 8.0,
+     "pct": 11.3
+    },
+    {
+     "candidate": "DAWSON-SCOTT Genevieve",
+     "party": "GRN",
+     "votes": 7.0,
+     "pct": 9.9
+    },
+    {
+     "candidate": "BELL Marisa",
+     "party": "ALP",
+     "votes": 6.0,
+     "pct": 8.5
+    },
+    {
+     "candidate": "WILSON Craig",
+     "party": "X_AFP",
+     "votes": 3.0,
+     "pct": 4.2
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "WILSON Craig",
+   "excluded_party": "X_AFP",
+   "votes": 93.0,
+   "to": [
+    {
+     "candidate": "BAKER Chris",
+     "party": "FFP",
+     "votes": 37.0,
+     "pct": 39.8
+    },
+    {
+     "candidate": "DAVIS Gregory",
+     "party": "AJP",
+     "votes": 17.0,
+     "pct": 18.3
+    },
+    {
+     "candidate": "TEAGUE Josh",
+     "party": "LIB",
+     "votes": 13.0,
+     "pct": 14.0
+    },
+    {
+     "candidate": "BELL Marisa",
+     "party": "ALP",
+     "votes": 9.0,
+     "pct": 9.7
+    },
+    {
+     "candidate": "GRANGER Andrew",
+     "party": "IND",
+     "votes": 7.0,
+     "pct": 7.5
+    },
+    {
+     "candidate": "KOVAC Tom",
+     "party": "ONP",
+     "votes": 6.0,
+     "pct": 6.5
+    },
+    {
+     "candidate": "DAWSON-SCOTT Genevieve",
+     "party": "GRN",
+     "votes": 4.0,
+     "pct": 4.3
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "BAKER Chris",
+   "excluded_party": "FFP",
+   "votes": 330.0,
+   "to": [
+    {
+     "candidate": "KOVAC Tom",
+     "party": "ONP",
+     "votes": 148.0,
+     "pct": 44.8
+    },
+    {
+     "candidate": "TEAGUE Josh",
+     "party": "LIB",
+     "votes": 90.0,
+     "pct": 27.3
+    },
+    {
+     "candidate": "BELL Marisa",
+     "party": "ALP",
+     "votes": 32.0,
+     "pct": 9.7
+    },
+    {
+     "candidate": "DAVIS Gregory",
+     "party": "AJP",
+     "votes": 25.0,
+     "pct": 7.6
+    },
+    {
+     "candidate": "GRANGER Andrew",
+     "party": "IND",
+     "votes": 21.0,
+     "pct": 6.4
+    },
+    {
+     "candidate": "DAWSON-SCOTT Genevieve",
+     "party": "GRN",
+     "votes": 14.0,
+     "pct": 4.2
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "GRANGER Andrew",
+   "excluded_party": "IND",
+   "votes": 493.0,
+   "to": [
+    {
+     "candidate": "KOVAC Tom",
+     "party": "ONP",
+     "votes": 143.0,
+     "pct": 29.0
+    },
+    {
+     "candidate": "DAWSON-SCOTT Genevieve",
+     "party": "GRN",
+     "votes": 107.0,
+     "pct": 21.7
+    },
+    {
+     "candidate": "TEAGUE Josh",
+     "party": "LIB",
+     "votes": 101.0,
+     "pct": 20.5
+    },
+    {
+     "candidate": "BELL Marisa",
+     "party": "ALP",
+     "votes": 91.0,
+     "pct": 18.5
+    },
+    {
+     "candidate": "DAVIS Gregory",
+     "party": "AJP",
+     "votes": 51.0,
+     "pct": 10.3
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "DAVIS Gregory",
+   "excluded_party": "AJP",
+   "votes": 578.0,
+   "to": [
+    {
+     "candidate": "DAWSON-SCOTT Genevieve",
+     "party": "GRN",
+     "votes": 343.0,
+     "pct": 59.3
+    },
+    {
+     "candidate": "KOVAC Tom",
+     "party": "ONP",
+     "votes": 80.0,
+     "pct": 13.8
+    },
+    {
+     "candidate": "BELL Marisa",
+     "party": "ALP",
+     "votes": 79.0,
+     "pct": 13.7
+    },
+    {
+     "candidate": "TEAGUE Josh",
+     "party": "LIB",
+     "votes": 76.0,
+     "pct": 13.1
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "KOVAC Tom",
+   "excluded_party": "ONP",
+   "votes": 4723.0,
+   "to": [
+    {
+     "candidate": "TEAGUE Josh",
+     "party": "LIB",
+     "votes": 3074.0,
+     "pct": 65.1
+    },
+    {
+     "candidate": "DAWSON-SCOTT Genevieve",
+     "party": "GRN",
+     "votes": 963.0,
+     "pct": 20.4
+    },
+    {
+     "candidate": "BELL Marisa",
+     "party": "ALP",
+     "votes": 686.0,
+     "pct": 14.5
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "DAWSON-SCOTT Genevieve",
+   "excluded_party": "GRN",
+   "votes": 7276.0,
+   "to": [
+    {
+     "candidate": "BELL Marisa",
+     "party": "ALP",
+     "votes": 5809.0,
+     "pct": 79.8
+    },
+    {
+     "candidate": "TEAGUE Josh",
+     "party": "LIB",
+     "votes": 1467.0,
+     "pct": 20.2
+    }
+   ]
+  }
+ ],
+ "hurtle-vale": [
+  {
+   "count": 2,
+   "excluded": "MITCHARD Michael",
+   "excluded_party": "X_AFP",
+   "votes": 199.0,
+   "to": [
+    {
+     "candidate": "KOPEIKIN Sarah",
+     "party": "FFP",
+     "votes": 81.0,
+     "pct": 40.7
+    },
+    {
+     "candidate": "GRUNDY Charlotte",
+     "party": "LIB",
+     "votes": 33.0,
+     "pct": 16.6
+    },
+    {
+     "candidate": "COOK Nat",
+     "party": "ALP",
+     "votes": 25.0,
+     "pct": 12.6
+    },
+    {
+     "candidate": "FAHIZ Jannah",
+     "party": "AJP",
+     "votes": 21.0,
+     "pct": 10.6
+    },
+    {
+     "candidate": "SCOTT Tammy",
+     "party": "GRN",
+     "votes": 17.0,
+     "pct": 8.5
+    },
+    {
+     "candidate": "EMMERSON Katrina",
+     "party": "ONP",
+     "votes": 16.0,
+     "pct": 8.0
+    },
+    {
+     "candidate": "SAVAGE Jane",
+     "party": "LCP",
+     "votes": 6.0,
+     "pct": 3.0
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "FAHIZ Jannah",
+   "excluded_party": "AJP",
+   "votes": 376.0,
+   "to": [
+    {
+     "candidate": "SCOTT Tammy",
+     "party": "GRN",
+     "votes": 128.0,
+     "pct": 34.0
+    },
+    {
+     "candidate": "SAVAGE Jane",
+     "party": "LCP",
+     "votes": 63.0,
+     "pct": 16.8
+    },
+    {
+     "candidate": "COOK Nat",
+     "party": "ALP",
+     "votes": 59.0,
+     "pct": 15.7
+    },
+    {
+     "candidate": "KOPEIKIN Sarah",
+     "party": "FFP",
+     "votes": 51.0,
+     "pct": 13.6
+    },
+    {
+     "candidate": "EMMERSON Katrina",
+     "party": "ONP",
+     "votes": 43.0,
+     "pct": 11.4
+    },
+    {
+     "candidate": "GRUNDY Charlotte",
+     "party": "LIB",
+     "votes": 32.0,
+     "pct": 8.5
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "SAVAGE Jane",
+   "excluded_party": "LCP",
+   "votes": 752.0,
+   "to": [
+    {
+     "candidate": "SCOTT Tammy",
+     "party": "GRN",
+     "votes": 288.0,
+     "pct": 38.3
+    },
+    {
+     "candidate": "COOK Nat",
+     "party": "ALP",
+     "votes": 155.0,
+     "pct": 20.6
+    },
+    {
+     "candidate": "EMMERSON Katrina",
+     "party": "ONP",
+     "votes": 149.0,
+     "pct": 19.8
+    },
+    {
+     "candidate": "KOPEIKIN Sarah",
+     "party": "FFP",
+     "votes": 121.0,
+     "pct": 16.1
+    },
+    {
+     "candidate": "GRUNDY Charlotte",
+     "party": "LIB",
+     "votes": 39.0,
+     "pct": 5.2
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "KOPEIKIN Sarah",
+   "excluded_party": "FFP",
+   "votes": 1104.0,
+   "to": [
+    {
+     "candidate": "EMMERSON Katrina",
+     "party": "ONP",
+     "votes": 379.0,
+     "pct": 34.3
+    },
+    {
+     "candidate": "SCOTT Tammy",
+     "party": "GRN",
+     "votes": 372.0,
+     "pct": 33.7
+    },
+    {
+     "candidate": "COOK Nat",
+     "party": "ALP",
+     "votes": 178.0,
+     "pct": 16.1
+    },
+    {
+     "candidate": "GRUNDY Charlotte",
+     "party": "LIB",
+     "votes": 175.0,
+     "pct": 15.9
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "GRUNDY Charlotte",
+   "excluded_party": "LIB",
+   "votes": 2810.0,
+   "to": [
+    {
+     "candidate": "EMMERSON Katrina",
+     "party": "ONP",
+     "votes": 1679.0,
+     "pct": 59.8
+    },
+    {
+     "candidate": "COOK Nat",
+     "party": "ALP",
+     "votes": 692.0,
+     "pct": 24.6
+    },
+    {
+     "candidate": "SCOTT Tammy",
+     "party": "GRN",
+     "votes": 439.0,
+     "pct": 15.6
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "SCOTT Tammy",
+   "excluded_party": "GRN",
+   "votes": 3651.0,
+   "to": [
+    {
+     "candidate": "COOK Nat",
+     "party": "ALP",
+     "votes": 2827.0,
+     "pct": 77.4
+    },
+    {
+     "candidate": "EMMERSON Katrina",
+     "party": "ONP",
+     "votes": 824.0,
+     "pct": 22.6
+    }
+   ]
+  }
+ ],
+ "kaurna": [
+  {
+   "count": 2,
+   "excluded": "AMADIO Patrick",
+   "excluded_party": "X_AFP",
+   "votes": 136.0,
+   "to": [
+    {
+     "candidate": "BROHIER Amanda",
+     "party": "FFP",
+     "votes": 50.0,
+     "pct": 36.8
+    },
+    {
+     "candidate": "JONES Zoe",
+     "party": "ONP",
+     "votes": 25.0,
+     "pct": 18.4
+    },
+    {
+     "candidate": "PICTON Chris",
+     "party": "ALP",
+     "votes": 16.0,
+     "pct": 11.8
+    },
+    {
+     "candidate": "HADDRELL Gary",
+     "party": "LCP",
+     "votes": 14.0,
+     "pct": 10.3
+    },
+    {
+     "candidate": "CARTER Shane",
+     "party": "LIB",
+     "votes": 14.0,
+     "pct": 10.3
+    },
+    {
+     "candidate": "WEATHERLY Sean",
+     "party": "GRN",
+     "votes": 12.0,
+     "pct": 8.8
+    },
+    {
+     "candidate": "MANOLAKIS Anastasios",
+     "party": "X_SPRCS",
+     "votes": 5.0,
+     "pct": 3.7
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "MANOLAKIS Anastasios",
+   "excluded_party": "X_SPRCS",
+   "votes": 577.0,
+   "to": [
+    {
+     "candidate": "PICTON Chris",
+     "party": "ALP",
+     "votes": 293.0,
+     "pct": 50.8
+    },
+    {
+     "candidate": "JONES Zoe",
+     "party": "ONP",
+     "votes": 66.0,
+     "pct": 11.4
+    },
+    {
+     "candidate": "HADDRELL Gary",
+     "party": "LCP",
+     "votes": 66.0,
+     "pct": 11.4
+    },
+    {
+     "candidate": "WEATHERLY Sean",
+     "party": "GRN",
+     "votes": 64.0,
+     "pct": 11.1
+    },
+    {
+     "candidate": "CARTER Shane",
+     "party": "LIB",
+     "votes": 45.0,
+     "pct": 7.8
+    },
+    {
+     "candidate": "BROHIER Amanda",
+     "party": "FFP",
+     "votes": 43.0,
+     "pct": 7.5
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "HADDRELL Gary",
+   "excluded_party": "LCP",
+   "votes": 675.0,
+   "to": [
+    {
+     "candidate": "WEATHERLY Sean",
+     "party": "GRN",
+     "votes": 290.0,
+     "pct": 43.0
+    },
+    {
+     "candidate": "PICTON Chris",
+     "party": "ALP",
+     "votes": 139.0,
+     "pct": 20.6
+    },
+    {
+     "candidate": "JONES Zoe",
+     "party": "ONP",
+     "votes": 128.0,
+     "pct": 19.0
+    },
+    {
+     "candidate": "BROHIER Amanda",
+     "party": "FFP",
+     "votes": 74.0,
+     "pct": 11.0
+    },
+    {
+     "candidate": "CARTER Shane",
+     "party": "LIB",
+     "votes": 44.0,
+     "pct": 6.5
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "BROHIER Amanda",
+   "excluded_party": "FFP",
+   "votes": 853.0,
+   "to": [
+    {
+     "candidate": "JONES Zoe",
+     "party": "ONP",
+     "votes": 334.0,
+     "pct": 39.2
+    },
+    {
+     "candidate": "WEATHERLY Sean",
+     "party": "GRN",
+     "votes": 284.0,
+     "pct": 33.3
+    },
+    {
+     "candidate": "PICTON Chris",
+     "party": "ALP",
+     "votes": 139.0,
+     "pct": 16.3
+    },
+    {
+     "candidate": "CARTER Shane",
+     "party": "LIB",
+     "votes": 96.0,
+     "pct": 11.3
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "CARTER Shane",
+   "excluded_party": "LIB",
+   "votes": 2169.0,
+   "to": [
+    {
+     "candidate": "JONES Zoe",
+     "party": "ONP",
+     "votes": 1288.0,
+     "pct": 59.4
+    },
+    {
+     "candidate": "PICTON Chris",
+     "party": "ALP",
+     "votes": 516.0,
+     "pct": 23.8
+    },
+    {
+     "candidate": "WEATHERLY Sean",
+     "party": "GRN",
+     "votes": 365.0,
+     "pct": 16.8
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "WEATHERLY Sean",
+   "excluded_party": "GRN",
+   "votes": 3890.0,
+   "to": [
+    {
+     "candidate": "PICTON Chris",
+     "party": "ALP",
+     "votes": 3033.0,
+     "pct": 78.0
+    },
+    {
+     "candidate": "JONES Zoe",
+     "party": "ONP",
+     "votes": 857.0,
+     "pct": 22.0
+    }
+   ]
+  }
+ ],
+ "kavel": [
+  {
+   "count": 2,
+   "excluded": "STONE David",
+   "excluded_party": "X_SGFGA",
+   "votes": 48.0,
+   "to": [
+    {
+     "candidate": "LOCH Christiaan",
+     "party": "ONP",
+     "votes": 13.0,
+     "pct": 27.1
+    },
+    {
+     "candidate": "MOULE Ashley",
+     "party": "X_SPRCS",
+     "votes": 8.0,
+     "pct": 16.7
+    },
+    {
+     "candidate": "BAKER Dayle",
+     "party": "FFP",
+     "votes": 8.0,
+     "pct": 16.7
+    },
+    {
+     "candidate": "SCHULTZ Matt",
+     "party": "IND",
+     "votes": 6.0,
+     "pct": 12.5
+    },
+    {
+     "candidate": "ORR Bradley",
+     "party": "LIB",
+     "votes": 3.0,
+     "pct": 6.2
+    },
+    {
+     "candidate": "VAN RAALTE Jacob Nicholas",
+     "party": "IND",
+     "votes": 3.0,
+     "pct": 6.2
+    },
+    {
+     "candidate": "CHAPLIN Padma",
+     "party": "AJP",
+     "votes": 2.0,
+     "pct": 4.2
+    },
+    {
+     "candidate": "ASHMAN Baden",
+     "party": "X_AFP",
+     "votes": 2.0,
+     "pct": 4.2
+    },
+    {
+     "candidate": "LEACH David",
+     "party": "ALP",
+     "votes": 2.0,
+     "pct": 4.2
+    },
+    {
+     "candidate": "TYLER Sam",
+     "party": "GRN",
+     "votes": 1.0,
+     "pct": 2.1
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "ASHMAN Baden",
+   "excluded_party": "X_AFP",
+   "votes": 117.0,
+   "to": [
+    {
+     "candidate": "BAKER Dayle",
+     "party": "FFP",
+     "votes": 42.0,
+     "pct": 35.9
+    },
+    {
+     "candidate": "LOCH Christiaan",
+     "party": "ONP",
+     "votes": 27.0,
+     "pct": 23.1
+    },
+    {
+     "candidate": "CHAPLIN Padma",
+     "party": "AJP",
+     "votes": 14.0,
+     "pct": 12.0
+    },
+    {
+     "candidate": "ORR Bradley",
+     "party": "LIB",
+     "votes": 9.0,
+     "pct": 7.7
+    },
+    {
+     "candidate": "LEACH David",
+     "party": "ALP",
+     "votes": 8.0,
+     "pct": 6.8
+    },
+    {
+     "candidate": "SCHULTZ Matt",
+     "party": "IND",
+     "votes": 6.0,
+     "pct": 5.1
+    },
+    {
+     "candidate": "MOULE Ashley",
+     "party": "X_SPRCS",
+     "votes": 5.0,
+     "pct": 4.3
+    },
+    {
+     "candidate": "TYLER Sam",
+     "party": "GRN",
+     "votes": 5.0,
+     "pct": 4.3
+    },
+    {
+     "candidate": "VAN RAALTE Jacob Nicholas",
+     "party": "IND",
+     "votes": 1.0,
+     "pct": 0.9
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "VAN RAALTE Jacob Nicholas",
+   "excluded_party": "IND",
+   "votes": 131.0,
+   "to": [
+    {
+     "candidate": "SCHULTZ Matt",
+     "party": "IND",
+     "votes": 57.0,
+     "pct": 43.5
+    },
+    {
+     "candidate": "BAKER Dayle",
+     "party": "FFP",
+     "votes": 23.0,
+     "pct": 17.6
+    },
+    {
+     "candidate": "LOCH Christiaan",
+     "party": "ONP",
+     "votes": 17.0,
+     "pct": 13.0
+    },
+    {
+     "candidate": "ORR Bradley",
+     "party": "LIB",
+     "votes": 10.0,
+     "pct": 7.6
+    },
+    {
+     "candidate": "TYLER Sam",
+     "party": "GRN",
+     "votes": 10.0,
+     "pct": 7.6
+    },
+    {
+     "candidate": "LEACH David",
+     "party": "ALP",
+     "votes": 6.0,
+     "pct": 4.6
+    },
+    {
+     "candidate": "CHAPLIN Padma",
+     "party": "AJP",
+     "votes": 5.0,
+     "pct": 3.8
+    },
+    {
+     "candidate": "MOULE Ashley",
+     "party": "X_SPRCS",
+     "votes": 3.0,
+     "pct": 2.3
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "MOULE Ashley",
+   "excluded_party": "X_SPRCS",
+   "votes": 272.0,
+   "to": [
+    {
+     "candidate": "SCHULTZ Matt",
+     "party": "IND",
+     "votes": 131.0,
+     "pct": 48.2
+    },
+    {
+     "candidate": "TYLER Sam",
+     "party": "GRN",
+     "votes": 36.0,
+     "pct": 13.2
+    },
+    {
+     "candidate": "CHAPLIN Padma",
+     "party": "AJP",
+     "votes": 33.0,
+     "pct": 12.1
+    },
+    {
+     "candidate": "ORR Bradley",
+     "party": "LIB",
+     "votes": 25.0,
+     "pct": 9.2
+    },
+    {
+     "candidate": "LOCH Christiaan",
+     "party": "ONP",
+     "votes": 22.0,
+     "pct": 8.1
+    },
+    {
+     "candidate": "LEACH David",
+     "party": "ALP",
+     "votes": 18.0,
+     "pct": 6.6
+    },
+    {
+     "candidate": "BAKER Dayle",
+     "party": "FFP",
+     "votes": 7.0,
+     "pct": 2.6
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "BAKER Dayle",
+   "excluded_party": "FFP",
+   "votes": 431.0,
+   "to": [
+    {
+     "candidate": "LOCH Christiaan",
+     "party": "ONP",
+     "votes": 169.0,
+     "pct": 39.2
+    },
+    {
+     "candidate": "ORR Bradley",
+     "party": "LIB",
+     "votes": 80.0,
+     "pct": 18.6
+    },
+    {
+     "candidate": "TYLER Sam",
+     "party": "GRN",
+     "votes": 65.0,
+     "pct": 15.1
+    },
+    {
+     "candidate": "SCHULTZ Matt",
+     "party": "IND",
+     "votes": 57.0,
+     "pct": 13.2
+    },
+    {
+     "candidate": "LEACH David",
+     "party": "ALP",
+     "votes": 36.0,
+     "pct": 8.4
+    },
+    {
+     "candidate": "CHAPLIN Padma",
+     "party": "AJP",
+     "votes": 24.0,
+     "pct": 5.6
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "CHAPLIN Padma",
+   "excluded_party": "AJP",
+   "votes": 470.0,
+   "to": [
+    {
+     "candidate": "TYLER Sam",
+     "party": "GRN",
+     "votes": 203.0,
+     "pct": 43.2
+    },
+    {
+     "candidate": "SCHULTZ Matt",
+     "party": "IND",
+     "votes": 117.0,
+     "pct": 24.9
+    },
+    {
+     "candidate": "LOCH Christiaan",
+     "party": "ONP",
+     "votes": 69.0,
+     "pct": 14.7
+    },
+    {
+     "candidate": "LEACH David",
+     "party": "ALP",
+     "votes": 52.0,
+     "pct": 11.1
+    },
+    {
+     "candidate": "ORR Bradley",
+     "party": "LIB",
+     "votes": 29.0,
+     "pct": 6.2
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "TYLER Sam",
+   "excluded_party": "GRN",
+   "votes": 3087.0,
+   "to": [
+    {
+     "candidate": "LEACH David",
+     "party": "ALP",
+     "votes": 1755.0,
+     "pct": 56.9
+    },
+    {
+     "candidate": "SCHULTZ Matt",
+     "party": "IND",
+     "votes": 990.0,
+     "pct": 32.1
+    },
+    {
+     "candidate": "ORR Bradley",
+     "party": "LIB",
+     "votes": 229.0,
+     "pct": 7.4
+    },
+    {
+     "candidate": "LOCH Christiaan",
+     "party": "ONP",
+     "votes": 113.0,
+     "pct": 3.7
+    }
+   ]
+  },
+  {
+   "count": 9,
+   "excluded": "LOCH Christiaan",
+   "excluded_party": "ONP",
+   "votes": 5320.0,
+   "to": [
+    {
+     "candidate": "SCHULTZ Matt",
+     "party": "IND",
+     "votes": 2753.0,
+     "pct": 51.7
+    },
+    {
+     "candidate": "ORR Bradley",
+     "party": "LIB",
+     "votes": 1951.0,
+     "pct": 36.7
+    },
+    {
+     "candidate": "LEACH David",
+     "party": "ALP",
+     "votes": 616.0,
+     "pct": 11.6
+    }
+   ]
+  },
+  {
+   "count": 10,
+   "excluded": "ORR Bradley",
+   "excluded_party": "LIB",
+   "votes": 7326.0,
+   "to": [
+    {
+     "candidate": "SCHULTZ Matt",
+     "party": "IND",
+     "votes": 5838.0,
+     "pct": 79.7
+    },
+    {
+     "candidate": "LEACH David",
+     "party": "ALP",
+     "votes": 1488.0,
+     "pct": 20.3
+    }
+   ]
+  }
+ ],
+ "king": [
+  {
+   "count": 2,
+   "excluded": "FINLAY Tyla Jane",
+   "excluded_party": "X_SGFGA",
+   "votes": 119.0,
+   "to": [
+    {
+     "candidate": "GLEESON Lukas",
+     "party": "X_UVA",
+     "votes": 22.0,
+     "pct": 18.5
+    },
+    {
+     "candidate": "MOORE Samuel",
+     "party": "GRN",
+     "votes": 21.0,
+     "pct": 17.6
+    },
+    {
+     "candidate": "KERRISON David",
+     "party": "ONP",
+     "votes": 19.0,
+     "pct": 16.0
+    },
+    {
+     "candidate": "HENDRY Amanda",
+     "party": "LIB",
+     "votes": 18.0,
+     "pct": 15.1
+    },
+    {
+     "candidate": "HAYNES Adriana",
+     "party": "X_SPRCS",
+     "votes": 14.0,
+     "pct": 11.8
+    },
+    {
+     "candidate": "GLASGOW Julie",
+     "party": "FFP",
+     "votes": 11.0,
+     "pct": 9.2
+    },
+    {
+     "candidate": "PEARCE Rhiannon",
+     "party": "ALP",
+     "votes": 10.0,
+     "pct": 8.4
+    },
+    {
+     "candidate": "ZAKARIAS Angela",
+     "party": "X_AFP",
+     "votes": 4.0,
+     "pct": 3.4
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "ZAKARIAS Angela",
+   "excluded_party": "X_AFP",
+   "votes": 166.0,
+   "to": [
+    {
+     "candidate": "GLASGOW Julie",
+     "party": "FFP",
+     "votes": 75.0,
+     "pct": 45.2
+    },
+    {
+     "candidate": "PEARCE Rhiannon",
+     "party": "ALP",
+     "votes": 40.0,
+     "pct": 24.1
+    },
+    {
+     "candidate": "KERRISON David",
+     "party": "ONP",
+     "votes": 17.0,
+     "pct": 10.2
+    },
+    {
+     "candidate": "MOORE Samuel",
+     "party": "GRN",
+     "votes": 14.0,
+     "pct": 8.4
+    },
+    {
+     "candidate": "HENDRY Amanda",
+     "party": "LIB",
+     "votes": 12.0,
+     "pct": 7.2
+    },
+    {
+     "candidate": "HAYNES Adriana",
+     "party": "X_SPRCS",
+     "votes": 7.0,
+     "pct": 4.2
+    },
+    {
+     "candidate": "GLEESON Lukas",
+     "party": "X_UVA",
+     "votes": 1.0,
+     "pct": 0.6
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "GLEESON Lukas",
+   "excluded_party": "X_UVA",
+   "votes": 168.0,
+   "to": [
+    {
+     "candidate": "KERRISON David",
+     "party": "ONP",
+     "votes": 50.0,
+     "pct": 29.8
+    },
+    {
+     "candidate": "HAYNES Adriana",
+     "party": "X_SPRCS",
+     "votes": 45.0,
+     "pct": 26.8
+    },
+    {
+     "candidate": "HENDRY Amanda",
+     "party": "LIB",
+     "votes": 25.0,
+     "pct": 14.9
+    },
+    {
+     "candidate": "MOORE Samuel",
+     "party": "GRN",
+     "votes": 24.0,
+     "pct": 14.3
+    },
+    {
+     "candidate": "PEARCE Rhiannon",
+     "party": "ALP",
+     "votes": 13.0,
+     "pct": 7.7
+    },
+    {
+     "candidate": "GLASGOW Julie",
+     "party": "FFP",
+     "votes": 11.0,
+     "pct": 6.5
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "HAYNES Adriana",
+   "excluded_party": "X_SPRCS",
+   "votes": 256.0,
+   "to": [
+    {
+     "candidate": "MOORE Samuel",
+     "party": "GRN",
+     "votes": 72.0,
+     "pct": 28.1
+    },
+    {
+     "candidate": "HENDRY Amanda",
+     "party": "LIB",
+     "votes": 67.0,
+     "pct": 26.2
+    },
+    {
+     "candidate": "KERRISON David",
+     "party": "ONP",
+     "votes": 43.0,
+     "pct": 16.8
+    },
+    {
+     "candidate": "PEARCE Rhiannon",
+     "party": "ALP",
+     "votes": 41.0,
+     "pct": 16.0
+    },
+    {
+     "candidate": "GLASGOW Julie",
+     "party": "FFP",
+     "votes": 33.0,
+     "pct": 12.9
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "GLASGOW Julie",
+   "excluded_party": "FFP",
+   "votes": 776.0,
+   "to": [
+    {
+     "candidate": "KERRISON David",
+     "party": "ONP",
+     "votes": 313.0,
+     "pct": 40.3
+    },
+    {
+     "candidate": "HENDRY Amanda",
+     "party": "LIB",
+     "votes": 176.0,
+     "pct": 22.7
+    },
+    {
+     "candidate": "PEARCE Rhiannon",
+     "party": "ALP",
+     "votes": 168.0,
+     "pct": 21.6
+    },
+    {
+     "candidate": "MOORE Samuel",
+     "party": "GRN",
+     "votes": 119.0,
+     "pct": 15.3
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "MOORE Samuel",
+   "excluded_party": "GRN",
+   "votes": 2642.0,
+   "to": [
+    {
+     "candidate": "PEARCE Rhiannon",
+     "party": "ALP",
+     "votes": 1823.0,
+     "pct": 69.0
+    },
+    {
+     "candidate": "KERRISON David",
+     "party": "ONP",
+     "votes": 547.0,
+     "pct": 20.7
+    },
+    {
+     "candidate": "HENDRY Amanda",
+     "party": "LIB",
+     "votes": 272.0,
+     "pct": 10.3
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "HENDRY Amanda",
+   "excluded_party": "LIB",
+   "votes": 3678.0,
+   "to": [
+    {
+     "candidate": "KERRISON David",
+     "party": "ONP",
+     "votes": 2549.0,
+     "pct": 69.3
+    },
+    {
+     "candidate": "PEARCE Rhiannon",
+     "party": "ALP",
+     "votes": 1129.0,
+     "pct": 30.7
+    }
+   ]
+  }
+ ],
+ "lee": [
+  {
+   "count": 2,
+   "excluded": "DAY Bill",
+   "excluded_party": "X_AFP",
+   "votes": 154.0,
+   "to": [
+    {
+     "candidate": "SCHULZ Krystal",
+     "party": "FFP",
+     "votes": 84.0,
+     "pct": 54.5
+    },
+    {
+     "candidate": "WILKINS David",
+     "party": "ALP",
+     "votes": 14.0,
+     "pct": 9.1
+    },
+    {
+     "candidate": "FARDONE Merlindie",
+     "party": "LIB",
+     "votes": 14.0,
+     "pct": 9.1
+    },
+    {
+     "candidate": "VUKOJE Vasko",
+     "party": "X_SPRCS",
+     "votes": 14.0,
+     "pct": 9.1
+    },
+    {
+     "candidate": "STURM Fabio",
+     "party": "ONP",
+     "votes": 10.0,
+     "pct": 6.5
+    },
+    {
+     "candidate": "FERRIS Brett",
+     "party": "GRN",
+     "votes": 10.0,
+     "pct": 6.5
+    },
+    {
+     "candidate": "MCGRATH Sarah",
+     "party": "X_SGFGA",
+     "votes": 8.0,
+     "pct": 5.2
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "MCGRATH Sarah",
+   "excluded_party": "X_SGFGA",
+   "votes": 222.0,
+   "to": [
+    {
+     "candidate": "STURM Fabio",
+     "party": "ONP",
+     "votes": 58.0,
+     "pct": 26.1
+    },
+    {
+     "candidate": "FARDONE Merlindie",
+     "party": "LIB",
+     "votes": 53.0,
+     "pct": 23.9
+    },
+    {
+     "candidate": "WILKINS David",
+     "party": "ALP",
+     "votes": 35.0,
+     "pct": 15.8
+    },
+    {
+     "candidate": "SCHULZ Krystal",
+     "party": "FFP",
+     "votes": 33.0,
+     "pct": 14.9
+    },
+    {
+     "candidate": "FERRIS Brett",
+     "party": "GRN",
+     "votes": 26.0,
+     "pct": 11.7
+    },
+    {
+     "candidate": "VUKOJE Vasko",
+     "party": "X_SPRCS",
+     "votes": 17.0,
+     "pct": 7.7
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "VUKOJE Vasko",
+   "excluded_party": "X_SPRCS",
+   "votes": 300.0,
+   "to": [
+    {
+     "candidate": "FERRIS Brett",
+     "party": "GRN",
+     "votes": 79.0,
+     "pct": 26.3
+    },
+    {
+     "candidate": "WILKINS David",
+     "party": "ALP",
+     "votes": 59.0,
+     "pct": 19.7
+    },
+    {
+     "candidate": "SCHULZ Krystal",
+     "party": "FFP",
+     "votes": 58.0,
+     "pct": 19.3
+    },
+    {
+     "candidate": "STURM Fabio",
+     "party": "ONP",
+     "votes": 55.0,
+     "pct": 18.3
+    },
+    {
+     "candidate": "FARDONE Merlindie",
+     "party": "LIB",
+     "votes": 49.0,
+     "pct": 16.3
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "SCHULZ Krystal",
+   "excluded_party": "FFP",
+   "votes": 657.0,
+   "to": [
+    {
+     "candidate": "STURM Fabio",
+     "party": "ONP",
+     "votes": 239.0,
+     "pct": 36.4
+    },
+    {
+     "candidate": "FARDONE Merlindie",
+     "party": "LIB",
+     "votes": 166.0,
+     "pct": 25.3
+    },
+    {
+     "candidate": "WILKINS David",
+     "party": "ALP",
+     "votes": 133.0,
+     "pct": 20.2
+    },
+    {
+     "candidate": "FERRIS Brett",
+     "party": "GRN",
+     "votes": 119.0,
+     "pct": 18.1
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "FERRIS Brett",
+   "excluded_party": "GRN",
+   "votes": 2536.0,
+   "to": [
+    {
+     "candidate": "WILKINS David",
+     "party": "ALP",
+     "votes": 2018.0,
+     "pct": 79.6
+    },
+    {
+     "candidate": "FARDONE Merlindie",
+     "party": "LIB",
+     "votes": 263.0,
+     "pct": 10.4
+    },
+    {
+     "candidate": "STURM Fabio",
+     "party": "ONP",
+     "votes": 255.0,
+     "pct": 10.1
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "FARDONE Merlindie",
+   "excluded_party": "LIB",
+   "votes": 4230.0,
+   "to": [
+    {
+     "candidate": "STURM Fabio",
+     "party": "ONP",
+     "votes": 2895.0,
+     "pct": 68.4
+    },
+    {
+     "candidate": "WILKINS David",
+     "party": "ALP",
+     "votes": 1335.0,
+     "pct": 31.6
+    }
+   ]
+  }
+ ],
+ "light": [
+  {
+   "count": 2,
+   "excluded": "HALE Dan",
+   "excluded_party": "X_AFP",
+   "votes": 260.0,
+   "to": [
+    {
+     "candidate": "ROBERTS Jacinta",
+     "party": "FFP",
+     "votes": 111.0,
+     "pct": 42.7
+    },
+    {
+     "candidate": "BANKS Alexander",
+     "party": "ONP",
+     "votes": 42.0,
+     "pct": 16.2
+    },
+    {
+     "candidate": "SCALZI James",
+     "party": "GRN",
+     "votes": 35.0,
+     "pct": 13.5
+    },
+    {
+     "candidate": "WILLIAMSON Andrew",
+     "party": "LIB",
+     "votes": 30.0,
+     "pct": 11.5
+    },
+    {
+     "candidate": "MORGAN Liam",
+     "party": "LCP",
+     "votes": 23.0,
+     "pct": 8.8
+    },
+    {
+     "candidate": "AGNESS James",
+     "party": "ALP",
+     "votes": 19.0,
+     "pct": 7.3
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "MORGAN Liam",
+   "excluded_party": "LCP",
+   "votes": 688.0,
+   "to": [
+    {
+     "candidate": "SCALZI James",
+     "party": "GRN",
+     "votes": 283.0,
+     "pct": 41.1
+    },
+    {
+     "candidate": "BANKS Alexander",
+     "party": "ONP",
+     "votes": 149.0,
+     "pct": 21.7
+    },
+    {
+     "candidate": "AGNESS James",
+     "party": "ALP",
+     "votes": 136.0,
+     "pct": 19.8
+    },
+    {
+     "candidate": "ROBERTS Jacinta",
+     "party": "FFP",
+     "votes": 84.0,
+     "pct": 12.2
+    },
+    {
+     "candidate": "WILLIAMSON Andrew",
+     "party": "LIB",
+     "votes": 36.0,
+     "pct": 5.2
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "ROBERTS Jacinta",
+   "excluded_party": "FFP",
+   "votes": 1032.0,
+   "to": [
+    {
+     "candidate": "BANKS Alexander",
+     "party": "ONP",
+     "votes": 378.0,
+     "pct": 36.6
+    },
+    {
+     "candidate": "SCALZI James",
+     "party": "GRN",
+     "votes": 248.0,
+     "pct": 24.0
+    },
+    {
+     "candidate": "AGNESS James",
+     "party": "ALP",
+     "votes": 241.0,
+     "pct": 23.4
+    },
+    {
+     "candidate": "WILLIAMSON Andrew",
+     "party": "LIB",
+     "votes": 165.0,
+     "pct": 16.0
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "SCALZI James",
+   "excluded_party": "GRN",
+   "votes": 2748.0,
+   "to": [
+    {
+     "candidate": "AGNESS James",
+     "party": "ALP",
+     "votes": 2070.0,
+     "pct": 75.3
+    },
+    {
+     "candidate": "BANKS Alexander",
+     "party": "ONP",
+     "votes": 402.0,
+     "pct": 14.6
+    },
+    {
+     "candidate": "WILLIAMSON Andrew",
+     "party": "LIB",
+     "votes": 276.0,
+     "pct": 10.0
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "WILLIAMSON Andrew",
+   "excluded_party": "LIB",
+   "votes": 3468.0,
+   "to": [
+    {
+     "candidate": "BANKS Alexander",
+     "party": "ONP",
+     "votes": 2367.0,
+     "pct": 68.3
+    },
+    {
+     "candidate": "AGNESS James",
+     "party": "ALP",
+     "votes": 1101.0,
+     "pct": 31.7
+    }
+   ]
+  }
+ ],
+ "mackillop": [
+  {
+   "count": 2,
+   "excluded": "DAVIES Steven",
+   "excluded_party": "IND",
+   "votes": 180.0,
+   "to": [
+    {
+     "candidate": "MCBRIDE Nick",
+     "party": "IND",
+     "votes": 44.0,
+     "pct": 24.4
+    },
+    {
+     "candidate": "DAY Joanna",
+     "party": "X_AFP",
+     "votes": 26.0,
+     "pct": 14.4
+    },
+    {
+     "candidate": "PIETZSCH Jonathan",
+     "party": "NAT",
+     "votes": 26.0,
+     "pct": 14.4
+    },
+    {
+     "candidate": "VIRGO Jason",
+     "party": "ONP",
+     "votes": 23.0,
+     "pct": 12.8
+    },
+    {
+     "candidate": "GREEN Tim",
+     "party": "LCP",
+     "votes": 18.0,
+     "pct": 10.0
+    },
+    {
+     "candidate": "ROSSER Rebekah",
+     "party": "LIB",
+     "votes": 15.0,
+     "pct": 8.3
+    },
+    {
+     "candidate": "OLSSON Cathy",
+     "party": "GRN",
+     "votes": 14.0,
+     "pct": 7.8
+    },
+    {
+     "candidate": "BRAES Mark",
+     "party": "ALP",
+     "votes": 14.0,
+     "pct": 7.8
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "DAY Joanna",
+   "excluded_party": "X_AFP",
+   "votes": 376.0,
+   "to": [
+    {
+     "candidate": "VIRGO Jason",
+     "party": "ONP",
+     "votes": 90.0,
+     "pct": 23.9
+    },
+    {
+     "candidate": "PIETZSCH Jonathan",
+     "party": "NAT",
+     "votes": 86.0,
+     "pct": 22.9
+    },
+    {
+     "candidate": "OLSSON Cathy",
+     "party": "GRN",
+     "votes": 60.0,
+     "pct": 16.0
+    },
+    {
+     "candidate": "MCBRIDE Nick",
+     "party": "IND",
+     "votes": 38.0,
+     "pct": 10.1
+    },
+    {
+     "candidate": "ROSSER Rebekah",
+     "party": "LIB",
+     "votes": 37.0,
+     "pct": 9.8
+    },
+    {
+     "candidate": "BRAES Mark",
+     "party": "ALP",
+     "votes": 33.0,
+     "pct": 8.8
+    },
+    {
+     "candidate": "GREEN Tim",
+     "party": "LCP",
+     "votes": 32.0,
+     "pct": 8.5
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "GREEN Tim",
+   "excluded_party": "LCP",
+   "votes": 578.0,
+   "to": [
+    {
+     "candidate": "OLSSON Cathy",
+     "party": "GRN",
+     "votes": 156.0,
+     "pct": 27.0
+    },
+    {
+     "candidate": "VIRGO Jason",
+     "party": "ONP",
+     "votes": 130.0,
+     "pct": 22.5
+    },
+    {
+     "candidate": "BRAES Mark",
+     "party": "ALP",
+     "votes": 111.0,
+     "pct": 19.2
+    },
+    {
+     "candidate": "ROSSER Rebekah",
+     "party": "LIB",
+     "votes": 73.0,
+     "pct": 12.6
+    },
+    {
+     "candidate": "MCBRIDE Nick",
+     "party": "IND",
+     "votes": 59.0,
+     "pct": 10.2
+    },
+    {
+     "candidate": "PIETZSCH Jonathan",
+     "party": "NAT",
+     "votes": 49.0,
+     "pct": 8.5
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "PIETZSCH Jonathan",
+   "excluded_party": "NAT",
+   "votes": 941.0,
+   "to": [
+    {
+     "candidate": "ROSSER Rebekah",
+     "party": "LIB",
+     "votes": 420.0,
+     "pct": 44.6
+    },
+    {
+     "candidate": "VIRGO Jason",
+     "party": "ONP",
+     "votes": 251.0,
+     "pct": 26.7
+    },
+    {
+     "candidate": "MCBRIDE Nick",
+     "party": "IND",
+     "votes": 136.0,
+     "pct": 14.5
+    },
+    {
+     "candidate": "OLSSON Cathy",
+     "party": "GRN",
+     "votes": 67.0,
+     "pct": 7.1
+    },
+    {
+     "candidate": "BRAES Mark",
+     "party": "ALP",
+     "votes": 67.0,
+     "pct": 7.1
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "OLSSON Cathy",
+   "excluded_party": "GRN",
+   "votes": 1159.0,
+   "to": [
+    {
+     "candidate": "BRAES Mark",
+     "party": "ALP",
+     "votes": 605.0,
+     "pct": 52.2
+    },
+    {
+     "candidate": "MCBRIDE Nick",
+     "party": "IND",
+     "votes": 234.0,
+     "pct": 20.2
+    },
+    {
+     "candidate": "ROSSER Rebekah",
+     "party": "LIB",
+     "votes": 188.0,
+     "pct": 16.2
+    },
+    {
+     "candidate": "VIRGO Jason",
+     "party": "ONP",
+     "votes": 132.0,
+     "pct": 11.4
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "MCBRIDE Nick",
+   "excluded_party": "IND",
+   "votes": 3909.0,
+   "to": [
+    {
+     "candidate": "VIRGO Jason",
+     "party": "ONP",
+     "votes": 1636.0,
+     "pct": 41.9
+    },
+    {
+     "candidate": "ROSSER Rebekah",
+     "party": "LIB",
+     "votes": 1588.0,
+     "pct": 40.6
+    },
+    {
+     "candidate": "BRAES Mark",
+     "party": "ALP",
+     "votes": 685.0,
+     "pct": 17.5
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "BRAES Mark",
+   "excluded_party": "ALP",
+   "votes": 5230.0,
+   "to": [
+    {
+     "candidate": "ROSSER Rebekah",
+     "party": "LIB",
+     "votes": 3776.0,
+     "pct": 72.2
+    },
+    {
+     "candidate": "VIRGO Jason",
+     "party": "ONP",
+     "votes": 1454.0,
+     "pct": 27.8
+    }
+   ]
+  }
+ ],
+ "mawson": [
+  {
+   "count": 2,
+   "excluded": "SCHUMACHER Kelly",
+   "excluded_party": "X_SPRCS",
+   "votes": 274.0,
+   "to": [
+    {
+     "candidate": "GRAY Lesley",
+     "party": "LCP",
+     "votes": 64.0,
+     "pct": 23.4
+    },
+    {
+     "candidate": "JOHNSON Lawrence",
+     "party": "GRN",
+     "votes": 57.0,
+     "pct": 20.8
+    },
+    {
+     "candidate": "MITTON Jenni",
+     "party": "ALP",
+     "votes": 51.0,
+     "pct": 18.6
+    },
+    {
+     "candidate": "GREEN Tyler",
+     "party": "ONP",
+     "votes": 41.0,
+     "pct": 15.0
+    },
+    {
+     "candidate": "IERACI Peter",
+     "party": "X_AFP",
+     "votes": 40.0,
+     "pct": 14.6
+    },
+    {
+     "candidate": "HOLDEN Mike",
+     "party": "LIB",
+     "votes": 21.0,
+     "pct": 7.7
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "IERACI Peter",
+   "excluded_party": "X_AFP",
+   "votes": 334.0,
+   "to": [
+    {
+     "candidate": "GREEN Tyler",
+     "party": "ONP",
+     "votes": 118.0,
+     "pct": 35.3
+    },
+    {
+     "candidate": "MITTON Jenni",
+     "party": "ALP",
+     "votes": 66.0,
+     "pct": 19.8
+    },
+    {
+     "candidate": "JOHNSON Lawrence",
+     "party": "GRN",
+     "votes": 61.0,
+     "pct": 18.3
+    },
+    {
+     "candidate": "HOLDEN Mike",
+     "party": "LIB",
+     "votes": 49.0,
+     "pct": 14.7
+    },
+    {
+     "candidate": "GRAY Lesley",
+     "party": "LCP",
+     "votes": 40.0,
+     "pct": 12.0
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "GRAY Lesley",
+   "excluded_party": "LCP",
+   "votes": 1155.0,
+   "to": [
+    {
+     "candidate": "JOHNSON Lawrence",
+     "party": "GRN",
+     "votes": 440.0,
+     "pct": 38.1
+    },
+    {
+     "candidate": "GREEN Tyler",
+     "party": "ONP",
+     "votes": 254.0,
+     "pct": 22.0
+    },
+    {
+     "candidate": "MITTON Jenni",
+     "party": "ALP",
+     "votes": 252.0,
+     "pct": 21.8
+    },
+    {
+     "candidate": "HOLDEN Mike",
+     "party": "LIB",
+     "votes": 209.0,
+     "pct": 18.1
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "JOHNSON Lawrence",
+   "excluded_party": "GRN",
+   "votes": 3778.0,
+   "to": [
+    {
+     "candidate": "MITTON Jenni",
+     "party": "ALP",
+     "votes": 3087.0,
+     "pct": 81.7
+    },
+    {
+     "candidate": "HOLDEN Mike",
+     "party": "LIB",
+     "votes": 358.0,
+     "pct": 9.5
+    },
+    {
+     "candidate": "GREEN Tyler",
+     "party": "ONP",
+     "votes": 333.0,
+     "pct": 8.8
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "HOLDEN Mike",
+   "excluded_party": "LIB",
+   "votes": 4968.0,
+   "to": [
+    {
+     "candidate": "GREEN Tyler",
+     "party": "ONP",
+     "votes": 3594.0,
+     "pct": 72.3
+    },
+    {
+     "candidate": "MITTON Jenni",
+     "party": "ALP",
+     "votes": 1374.0,
+     "pct": 27.7
+    }
+   ]
+  }
+ ],
+ "morialta": [
+  {
+   "count": 2,
+   "excluded": "MARLEY-DUNCAN Casey Robert",
+   "excluded_party": "X_SGFGA",
+   "votes": 75.0,
+   "to": [
+    {
+     "candidate": "HUTCHISON Janice",
+     "party": "X_SPRCS",
+     "votes": 15.0,
+     "pct": 20.0
+    },
+    {
+     "candidate": "KENNEDY Scott",
+     "party": "LIB",
+     "votes": 15.0,
+     "pct": 20.0
+    },
+    {
+     "candidate": "CIROCCO Rosie",
+     "party": "FFP",
+     "votes": 12.0,
+     "pct": 16.0
+    },
+    {
+     "candidate": "MAROZZI Matthew",
+     "party": "ALP",
+     "votes": 11.0,
+     "pct": 14.7
+    },
+    {
+     "candidate": "BODYCOTE James",
+     "party": "X_AFP",
+     "votes": 10.0,
+     "pct": 13.3
+    },
+    {
+     "candidate": "TRANTER Jenn",
+     "party": "GRN",
+     "votes": 6.0,
+     "pct": 8.0
+    },
+    {
+     "candidate": "ELLERY Peter",
+     "party": "ONP",
+     "votes": 6.0,
+     "pct": 8.0
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "BODYCOTE James",
+   "excluded_party": "X_AFP",
+   "votes": 107.0,
+   "to": [
+    {
+     "candidate": "CIROCCO Rosie",
+     "party": "FFP",
+     "votes": 52.0,
+     "pct": 48.6
+    },
+    {
+     "candidate": "TRANTER Jenn",
+     "party": "GRN",
+     "votes": 16.0,
+     "pct": 15.0
+    },
+    {
+     "candidate": "ELLERY Peter",
+     "party": "ONP",
+     "votes": 13.0,
+     "pct": 12.1
+    },
+    {
+     "candidate": "KENNEDY Scott",
+     "party": "LIB",
+     "votes": 12.0,
+     "pct": 11.2
+    },
+    {
+     "candidate": "MAROZZI Matthew",
+     "party": "ALP",
+     "votes": 9.0,
+     "pct": 8.4
+    },
+    {
+     "candidate": "HUTCHISON Janice",
+     "party": "X_SPRCS",
+     "votes": 5.0,
+     "pct": 4.7
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "HUTCHISON Janice",
+   "excluded_party": "X_SPRCS",
+   "votes": 334.0,
+   "to": [
+    {
+     "candidate": "MAROZZI Matthew",
+     "party": "ALP",
+     "votes": 144.0,
+     "pct": 43.1
+    },
+    {
+     "candidate": "TRANTER Jenn",
+     "party": "GRN",
+     "votes": 83.0,
+     "pct": 24.9
+    },
+    {
+     "candidate": "KENNEDY Scott",
+     "party": "LIB",
+     "votes": 44.0,
+     "pct": 13.2
+    },
+    {
+     "candidate": "CIROCCO Rosie",
+     "party": "FFP",
+     "votes": 35.0,
+     "pct": 10.5
+    },
+    {
+     "candidate": "ELLERY Peter",
+     "party": "ONP",
+     "votes": 28.0,
+     "pct": 8.4
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "CIROCCO Rosie",
+   "excluded_party": "FFP",
+   "votes": 673.0,
+   "to": [
+    {
+     "candidate": "ELLERY Peter",
+     "party": "ONP",
+     "votes": 244.0,
+     "pct": 36.3
+    },
+    {
+     "candidate": "MAROZZI Matthew",
+     "party": "ALP",
+     "votes": 185.0,
+     "pct": 27.5
+    },
+    {
+     "candidate": "KENNEDY Scott",
+     "party": "LIB",
+     "votes": 136.0,
+     "pct": 20.2
+    },
+    {
+     "candidate": "TRANTER Jenn",
+     "party": "GRN",
+     "votes": 108.0,
+     "pct": 16.0
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "TRANTER Jenn",
+   "excluded_party": "GRN",
+   "votes": 2908.0,
+   "to": [
+    {
+     "candidate": "MAROZZI Matthew",
+     "party": "ALP",
+     "votes": 2374.0,
+     "pct": 81.6
+    },
+    {
+     "candidate": "KENNEDY Scott",
+     "party": "LIB",
+     "votes": 343.0,
+     "pct": 11.8
+    },
+    {
+     "candidate": "ELLERY Peter",
+     "party": "ONP",
+     "votes": 191.0,
+     "pct": 6.6
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "ELLERY Peter",
+   "excluded_party": "ONP",
+   "votes": 4825.0,
+   "to": [
+    {
+     "candidate": "KENNEDY Scott",
+     "party": "LIB",
+     "votes": 3312.0,
+     "pct": 68.6
+    },
+    {
+     "candidate": "MAROZZI Matthew",
+     "party": "ALP",
+     "votes": 1513.0,
+     "pct": 31.4
+    }
+   ]
+  }
+ ],
+ "morphett": [
+  {
+   "count": 2,
+   "excluded": "RUTA Maria",
+   "excluded_party": "X_SGFGA",
+   "votes": 72.0,
+   "to": [
+    {
+     "candidate": "PATTERSON Stephen",
+     "party": "LIB",
+     "votes": 14.0,
+     "pct": 19.4
+    },
+    {
+     "candidate": "RYBA Ren",
+     "party": "AJP",
+     "votes": 13.0,
+     "pct": 18.1
+    },
+    {
+     "candidate": "PRIEST Toby",
+     "party": "ALP",
+     "votes": 11.0,
+     "pct": 15.3
+    },
+    {
+     "candidate": "MARCH Tim",
+     "party": "ONP",
+     "votes": 11.0,
+     "pct": 15.3
+    },
+    {
+     "candidate": "LITT Isabella",
+     "party": "GRN",
+     "votes": 9.0,
+     "pct": 12.5
+    },
+    {
+     "candidate": "BIRDSEYE Tom",
+     "party": "X_SPRCS",
+     "votes": 8.0,
+     "pct": 11.1
+    },
+    {
+     "candidate": "ATTARD Craig",
+     "party": "X_AFP",
+     "votes": 6.0,
+     "pct": 8.3
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "BIRDSEYE Tom",
+   "excluded_party": "X_SPRCS",
+   "votes": 163.0,
+   "to": [
+    {
+     "candidate": "LITT Isabella",
+     "party": "GRN",
+     "votes": 48.0,
+     "pct": 29.4
+    },
+    {
+     "candidate": "RYBA Ren",
+     "party": "AJP",
+     "votes": 34.0,
+     "pct": 20.9
+    },
+    {
+     "candidate": "PATTERSON Stephen",
+     "party": "LIB",
+     "votes": 26.0,
+     "pct": 16.0
+    },
+    {
+     "candidate": "ATTARD Craig",
+     "party": "X_AFP",
+     "votes": 22.0,
+     "pct": 13.5
+    },
+    {
+     "candidate": "PRIEST Toby",
+     "party": "ALP",
+     "votes": 17.0,
+     "pct": 10.4
+    },
+    {
+     "candidate": "MARCH Tim",
+     "party": "ONP",
+     "votes": 16.0,
+     "pct": 9.8
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "ATTARD Craig",
+   "excluded_party": "X_AFP",
+   "votes": 302.0,
+   "to": [
+    {
+     "candidate": "RYBA Ren",
+     "party": "AJP",
+     "votes": 120.0,
+     "pct": 39.7
+    },
+    {
+     "candidate": "PATTERSON Stephen",
+     "party": "LIB",
+     "votes": 75.0,
+     "pct": 24.8
+    },
+    {
+     "candidate": "MARCH Tim",
+     "party": "ONP",
+     "votes": 51.0,
+     "pct": 16.9
+    },
+    {
+     "candidate": "PRIEST Toby",
+     "party": "ALP",
+     "votes": 34.0,
+     "pct": 11.3
+    },
+    {
+     "candidate": "LITT Isabella",
+     "party": "GRN",
+     "votes": 22.0,
+     "pct": 7.3
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "RYBA Ren",
+   "excluded_party": "AJP",
+   "votes": 455.0,
+   "to": [
+    {
+     "candidate": "LITT Isabella",
+     "party": "GRN",
+     "votes": 190.0,
+     "pct": 41.8
+    },
+    {
+     "candidate": "PATTERSON Stephen",
+     "party": "LIB",
+     "votes": 139.0,
+     "pct": 30.5
+    },
+    {
+     "candidate": "PRIEST Toby",
+     "party": "ALP",
+     "votes": 79.0,
+     "pct": 17.4
+    },
+    {
+     "candidate": "MARCH Tim",
+     "party": "ONP",
+     "votes": 47.0,
+     "pct": 10.3
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "LITT Isabella",
+   "excluded_party": "GRN",
+   "votes": 2572.0,
+   "to": [
+    {
+     "candidate": "PRIEST Toby",
+     "party": "ALP",
+     "votes": 2065.0,
+     "pct": 80.3
+    },
+    {
+     "candidate": "PATTERSON Stephen",
+     "party": "LIB",
+     "votes": 329.0,
+     "pct": 12.8
+    },
+    {
+     "candidate": "MARCH Tim",
+     "party": "ONP",
+     "votes": 178.0,
+     "pct": 6.9
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "MARCH Tim",
+   "excluded_party": "ONP",
+   "votes": 3716.0,
+   "to": [
+    {
+     "candidate": "PATTERSON Stephen",
+     "party": "LIB",
+     "votes": 2614.0,
+     "pct": 70.3
+    },
+    {
+     "candidate": "PRIEST Toby",
+     "party": "ALP",
+     "votes": 1102.0,
+     "pct": 29.7
+    }
+   ]
+  }
+ ],
+ "mount-gambier": [
+  {
+   "count": 2,
+   "excluded": "DAY Eleanor",
+   "excluded_party": "X_AFP",
+   "votes": 85.0,
+   "to": [
+    {
+     "candidate": "KENYON Rachael",
+     "party": "FFP",
+     "votes": 22.0,
+     "pct": 25.9
+    },
+    {
+     "candidate": "KEY Matthew",
+     "party": "ALP",
+     "votes": 19.0,
+     "pct": 22.4
+    },
+    {
+     "candidate": "FATCHEN Travis",
+     "party": "IND",
+     "votes": 10.0,
+     "pct": 11.8
+    },
+    {
+     "candidate": "LOEF Anne-Marie",
+     "party": "ONP",
+     "votes": 10.0,
+     "pct": 11.8
+    },
+    {
+     "candidate": "GODFREY Martin",
+     "party": "LCP",
+     "votes": 5.0,
+     "pct": 5.9
+    },
+    {
+     "candidate": "THOMSON James",
+     "party": "AJP",
+     "votes": 5.0,
+     "pct": 5.9
+    },
+    {
+     "candidate": "HOLMES Sharon",
+     "party": "GRN",
+     "votes": 5.0,
+     "pct": 5.9
+    },
+    {
+     "candidate": "ALEXANDER Lamorna",
+     "party": "LIB",
+     "votes": 4.0,
+     "pct": 4.7
+    },
+    {
+     "candidate": "AMOROSO Kate",
+     "party": "IND",
+     "votes": 4.0,
+     "pct": 4.7
+    },
+    {
+     "candidate": "SCHOLES Cody",
+     "party": "IND",
+     "votes": 1.0,
+     "pct": 1.2
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "THOMSON James",
+   "excluded_party": "AJP",
+   "votes": 146.0,
+   "to": [
+    {
+     "candidate": "HOLMES Sharon",
+     "party": "GRN",
+     "votes": 34.0,
+     "pct": 23.3
+    },
+    {
+     "candidate": "GODFREY Martin",
+     "party": "LCP",
+     "votes": 25.0,
+     "pct": 17.1
+    },
+    {
+     "candidate": "FATCHEN Travis",
+     "party": "IND",
+     "votes": 22.0,
+     "pct": 15.1
+    },
+    {
+     "candidate": "KEY Matthew",
+     "party": "ALP",
+     "votes": 18.0,
+     "pct": 12.3
+    },
+    {
+     "candidate": "KENYON Rachael",
+     "party": "FFP",
+     "votes": 14.0,
+     "pct": 9.6
+    },
+    {
+     "candidate": "SCHOLES Cody",
+     "party": "IND",
+     "votes": 11.0,
+     "pct": 7.5
+    },
+    {
+     "candidate": "LOEF Anne-Marie",
+     "party": "ONP",
+     "votes": 10.0,
+     "pct": 6.8
+    },
+    {
+     "candidate": "ALEXANDER Lamorna",
+     "party": "LIB",
+     "votes": 7.0,
+     "pct": 4.8
+    },
+    {
+     "candidate": "AMOROSO Kate",
+     "party": "IND",
+     "votes": 5.0,
+     "pct": 3.4
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "KENYON Rachael",
+   "excluded_party": "FFP",
+   "votes": 257.0,
+   "to": [
+    {
+     "candidate": "LOEF Anne-Marie",
+     "party": "ONP",
+     "votes": 65.0,
+     "pct": 25.3
+    },
+    {
+     "candidate": "FATCHEN Travis",
+     "party": "IND",
+     "votes": 37.0,
+     "pct": 14.4
+    },
+    {
+     "candidate": "AMOROSO Kate",
+     "party": "IND",
+     "votes": 36.0,
+     "pct": 14.0
+    },
+    {
+     "candidate": "KEY Matthew",
+     "party": "ALP",
+     "votes": 31.0,
+     "pct": 12.1
+    },
+    {
+     "candidate": "ALEXANDER Lamorna",
+     "party": "LIB",
+     "votes": 30.0,
+     "pct": 11.7
+    },
+    {
+     "candidate": "HOLMES Sharon",
+     "party": "GRN",
+     "votes": 23.0,
+     "pct": 8.9
+    },
+    {
+     "candidate": "GODFREY Martin",
+     "party": "LCP",
+     "votes": 18.0,
+     "pct": 7.0
+    },
+    {
+     "candidate": "SCHOLES Cody",
+     "party": "IND",
+     "votes": 17.0,
+     "pct": 6.6
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "GODFREY Martin",
+   "excluded_party": "LCP",
+   "votes": 319.0,
+   "to": [
+    {
+     "candidate": "LOEF Anne-Marie",
+     "party": "ONP",
+     "votes": 66.0,
+     "pct": 20.7
+    },
+    {
+     "candidate": "HOLMES Sharon",
+     "party": "GRN",
+     "votes": 60.0,
+     "pct": 18.8
+    },
+    {
+     "candidate": "KEY Matthew",
+     "party": "ALP",
+     "votes": 48.0,
+     "pct": 15.0
+    },
+    {
+     "candidate": "FATCHEN Travis",
+     "party": "IND",
+     "votes": 47.0,
+     "pct": 14.7
+    },
+    {
+     "candidate": "AMOROSO Kate",
+     "party": "IND",
+     "votes": 44.0,
+     "pct": 13.8
+    },
+    {
+     "candidate": "SCHOLES Cody",
+     "party": "IND",
+     "votes": 29.0,
+     "pct": 9.1
+    },
+    {
+     "candidate": "ALEXANDER Lamorna",
+     "party": "LIB",
+     "votes": 25.0,
+     "pct": 7.8
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "AMOROSO Kate",
+   "excluded_party": "IND",
+   "votes": 1019.0,
+   "to": [
+    {
+     "candidate": "SCHOLES Cody",
+     "party": "IND",
+     "votes": 349.0,
+     "pct": 34.2
+    },
+    {
+     "candidate": "FATCHEN Travis",
+     "party": "IND",
+     "votes": 223.0,
+     "pct": 21.9
+    },
+    {
+     "candidate": "LOEF Anne-Marie",
+     "party": "ONP",
+     "votes": 128.0,
+     "pct": 12.6
+    },
+    {
+     "candidate": "HOLMES Sharon",
+     "party": "GRN",
+     "votes": 122.0,
+     "pct": 12.0
+    },
+    {
+     "candidate": "KEY Matthew",
+     "party": "ALP",
+     "votes": 119.0,
+     "pct": 11.7
+    },
+    {
+     "candidate": "ALEXANDER Lamorna",
+     "party": "LIB",
+     "votes": 78.0,
+     "pct": 7.7
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "HOLMES Sharon",
+   "excluded_party": "GRN",
+   "votes": 1294.0,
+   "to": [
+    {
+     "candidate": "KEY Matthew",
+     "party": "ALP",
+     "votes": 522.0,
+     "pct": 40.3
+    },
+    {
+     "candidate": "FATCHEN Travis",
+     "party": "IND",
+     "votes": 380.0,
+     "pct": 29.4
+    },
+    {
+     "candidate": "SCHOLES Cody",
+     "party": "IND",
+     "votes": 238.0,
+     "pct": 18.4
+    },
+    {
+     "candidate": "LOEF Anne-Marie",
+     "party": "ONP",
+     "votes": 80.0,
+     "pct": 6.2
+    },
+    {
+     "candidate": "ALEXANDER Lamorna",
+     "party": "LIB",
+     "votes": 74.0,
+     "pct": 5.7
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "SCHOLES Cody",
+   "excluded_party": "IND",
+   "votes": 2046.0,
+   "to": [
+    {
+     "candidate": "FATCHEN Travis",
+     "party": "IND",
+     "votes": 869.0,
+     "pct": 42.5
+    },
+    {
+     "candidate": "KEY Matthew",
+     "party": "ALP",
+     "votes": 509.0,
+     "pct": 24.9
+    },
+    {
+     "candidate": "LOEF Anne-Marie",
+     "party": "ONP",
+     "votes": 458.0,
+     "pct": 22.4
+    },
+    {
+     "candidate": "ALEXANDER Lamorna",
+     "party": "LIB",
+     "votes": 210.0,
+     "pct": 10.3
+    }
+   ]
+  },
+  {
+   "count": 9,
+   "excluded": "ALEXANDER Lamorna",
+   "excluded_party": "LIB",
+   "votes": 3196.0,
+   "to": [
+    {
+     "candidate": "FATCHEN Travis",
+     "party": "IND",
+     "votes": 1974.0,
+     "pct": 61.8
+    },
+    {
+     "candidate": "LOEF Anne-Marie",
+     "party": "ONP",
+     "votes": 752.0,
+     "pct": 23.5
+    },
+    {
+     "candidate": "KEY Matthew",
+     "party": "ALP",
+     "votes": 470.0,
+     "pct": 14.7
+    }
+   ]
+  },
+  {
+   "count": 10,
+   "excluded": "KEY Matthew",
+   "excluded_party": "ALP",
+   "votes": 5055.0,
+   "to": [
+    {
+     "candidate": "FATCHEN Travis",
+     "party": "IND",
+     "votes": 3808.0,
+     "pct": 75.3
+    },
+    {
+     "candidate": "LOEF Anne-Marie",
+     "party": "ONP",
+     "votes": 1247.0,
+     "pct": 24.7
+    }
+   ]
+  }
+ ],
+ "narungga": [
+  {
+   "count": 2,
+   "excluded": "ILLINGWORTH Peter",
+   "excluded_party": "X_UVA",
+   "votes": 56.0,
+   "to": [
+    {
+     "candidate": "THOMAS Chantelle",
+     "party": "ONP",
+     "votes": 19.0,
+     "pct": 33.9
+    },
+    {
+     "candidate": "BENNETT John",
+     "party": "FFP",
+     "votes": 10.0,
+     "pct": 17.9
+    },
+    {
+     "candidate": "SHORT Esther",
+     "party": "ALP",
+     "votes": 7.0,
+     "pct": 12.5
+    },
+    {
+     "candidate": "LORNIE Nicole",
+     "party": "LCP",
+     "votes": 5.0,
+     "pct": 8.9
+    },
+    {
+     "candidate": "STOCK Tania",
+     "party": "LIB",
+     "votes": 4.0,
+     "pct": 7.1
+    },
+    {
+     "candidate": "TAYLERSON Joanne",
+     "party": "X_SPRCS",
+     "votes": 4.0,
+     "pct": 7.1
+    },
+    {
+     "candidate": "VOTTARI Maria",
+     "party": "X_AFP",
+     "votes": 3.0,
+     "pct": 5.4
+    },
+    {
+     "candidate": "ELLIS Fraser",
+     "party": "IND",
+     "votes": 2.0,
+     "pct": 3.6
+    },
+    {
+     "candidate": "SCRIVEN Jessica",
+     "party": "GRN",
+     "votes": 2.0,
+     "pct": 3.6
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "TAYLERSON Joanne",
+   "excluded_party": "X_SPRCS",
+   "votes": 126.0,
+   "to": [
+    {
+     "candidate": "THOMAS Chantelle",
+     "party": "ONP",
+     "votes": 24.0,
+     "pct": 19.0
+    },
+    {
+     "candidate": "STOCK Tania",
+     "party": "LIB",
+     "votes": 19.0,
+     "pct": 15.1
+    },
+    {
+     "candidate": "ELLIS Fraser",
+     "party": "IND",
+     "votes": 18.0,
+     "pct": 14.3
+    },
+    {
+     "candidate": "LORNIE Nicole",
+     "party": "LCP",
+     "votes": 18.0,
+     "pct": 14.3
+    },
+    {
+     "candidate": "SHORT Esther",
+     "party": "ALP",
+     "votes": 18.0,
+     "pct": 14.3
+    },
+    {
+     "candidate": "SCRIVEN Jessica",
+     "party": "GRN",
+     "votes": 15.0,
+     "pct": 11.9
+    },
+    {
+     "candidate": "BENNETT John",
+     "party": "FFP",
+     "votes": 8.0,
+     "pct": 6.3
+    },
+    {
+     "candidate": "VOTTARI Maria",
+     "party": "X_AFP",
+     "votes": 6.0,
+     "pct": 4.8
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "VOTTARI Maria",
+   "excluded_party": "X_AFP",
+   "votes": 141.0,
+   "to": [
+    {
+     "candidate": "BENNETT John",
+     "party": "FFP",
+     "votes": 45.0,
+     "pct": 31.9
+    },
+    {
+     "candidate": "STOCK Tania",
+     "party": "LIB",
+     "votes": 31.0,
+     "pct": 22.0
+    },
+    {
+     "candidate": "LORNIE Nicole",
+     "party": "LCP",
+     "votes": 19.0,
+     "pct": 13.5
+    },
+    {
+     "candidate": "ELLIS Fraser",
+     "party": "IND",
+     "votes": 17.0,
+     "pct": 12.1
+    },
+    {
+     "candidate": "SHORT Esther",
+     "party": "ALP",
+     "votes": 15.0,
+     "pct": 10.6
+    },
+    {
+     "candidate": "THOMAS Chantelle",
+     "party": "ONP",
+     "votes": 9.0,
+     "pct": 6.4
+    },
+    {
+     "candidate": "SCRIVEN Jessica",
+     "party": "GRN",
+     "votes": 5.0,
+     "pct": 3.5
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "BENNETT John",
+   "excluded_party": "FFP",
+   "votes": 398.0,
+   "to": [
+    {
+     "candidate": "THOMAS Chantelle",
+     "party": "ONP",
+     "votes": 129.0,
+     "pct": 32.4
+    },
+    {
+     "candidate": "ELLIS Fraser",
+     "party": "IND",
+     "votes": 103.0,
+     "pct": 25.9
+    },
+    {
+     "candidate": "STOCK Tania",
+     "party": "LIB",
+     "votes": 69.0,
+     "pct": 17.3
+    },
+    {
+     "candidate": "SCRIVEN Jessica",
+     "party": "GRN",
+     "votes": 58.0,
+     "pct": 14.6
+    },
+    {
+     "candidate": "LORNIE Nicole",
+     "party": "LCP",
+     "votes": 26.0,
+     "pct": 6.5
+    },
+    {
+     "candidate": "SHORT Esther",
+     "party": "ALP",
+     "votes": 13.0,
+     "pct": 3.3
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "LORNIE Nicole",
+   "excluded_party": "LCP",
+   "votes": 521.0,
+   "to": [
+    {
+     "candidate": "THOMAS Chantelle",
+     "party": "ONP",
+     "votes": 141.0,
+     "pct": 27.1
+    },
+    {
+     "candidate": "SCRIVEN Jessica",
+     "party": "GRN",
+     "votes": 118.0,
+     "pct": 22.6
+    },
+    {
+     "candidate": "STOCK Tania",
+     "party": "LIB",
+     "votes": 97.0,
+     "pct": 18.6
+    },
+    {
+     "candidate": "SHORT Esther",
+     "party": "ALP",
+     "votes": 93.0,
+     "pct": 17.9
+    },
+    {
+     "candidate": "ELLIS Fraser",
+     "party": "IND",
+     "votes": 72.0,
+     "pct": 13.8
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "SCRIVEN Jessica",
+   "excluded_party": "GRN",
+   "votes": 890.0,
+   "to": [
+    {
+     "candidate": "SHORT Esther",
+     "party": "ALP",
+     "votes": 483.0,
+     "pct": 54.3
+    },
+    {
+     "candidate": "ELLIS Fraser",
+     "party": "IND",
+     "votes": 174.0,
+     "pct": 19.6
+    },
+    {
+     "candidate": "THOMAS Chantelle",
+     "party": "ONP",
+     "votes": 140.0,
+     "pct": 15.7
+    },
+    {
+     "candidate": "STOCK Tania",
+     "party": "LIB",
+     "votes": 93.0,
+     "pct": 10.4
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "SHORT Esther",
+   "excluded_party": "ALP",
+   "votes": 4378.0,
+   "to": [
+    {
+     "candidate": "STOCK Tania",
+     "party": "LIB",
+     "votes": 1754.0,
+     "pct": 40.1
+    },
+    {
+     "candidate": "ELLIS Fraser",
+     "party": "IND",
+     "votes": 1596.0,
+     "pct": 36.5
+    },
+    {
+     "candidate": "THOMAS Chantelle",
+     "party": "ONP",
+     "votes": 1028.0,
+     "pct": 23.5
+    }
+   ]
+  },
+  {
+   "count": 9,
+   "excluded": "ELLIS Fraser",
+   "excluded_party": "IND",
+   "votes": 6083.0,
+   "to": [
+    {
+     "candidate": "STOCK Tania",
+     "party": "LIB",
+     "votes": 4544.0,
+     "pct": 74.7
+    },
+    {
+     "candidate": "THOMAS Chantelle",
+     "party": "ONP",
+     "votes": 1539.0,
+     "pct": 25.3
+    }
+   ]
+  }
+ ],
+ "newland": [
+  {
+   "count": 2,
+   "excluded": "MARLEY-DUNCAN Hayley",
+   "excluded_party": "X_SGFGA",
+   "votes": 132.0,
+   "to": [
+    {
+     "candidate": "MATHEW Rachel",
+     "party": "FFP",
+     "votes": 31.0,
+     "pct": 23.5
+    },
+    {
+     "candidate": "BIRCH Sarai",
+     "party": "LIB",
+     "votes": 26.0,
+     "pct": 19.7
+    },
+    {
+     "candidate": "SAVVAS Olivia",
+     "party": "ALP",
+     "votes": 18.0,
+     "pct": 13.6
+    },
+    {
+     "candidate": "LAZOOTIN Abe",
+     "party": "X_UVA",
+     "votes": 16.0,
+     "pct": 12.1
+    },
+    {
+     "candidate": "WRIGHT Helen",
+     "party": "GRN",
+     "votes": 16.0,
+     "pct": 12.1
+    },
+    {
+     "candidate": "DEW-FENNELL Alison",
+     "party": "ONP",
+     "votes": 13.0,
+     "pct": 9.8
+    },
+    {
+     "candidate": "STANFORD Colin",
+     "party": "X_AFP",
+     "votes": 12.0,
+     "pct": 9.1
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "STANFORD Colin",
+   "excluded_party": "X_AFP",
+   "votes": 215.0,
+   "to": [
+    {
+     "candidate": "MATHEW Rachel",
+     "party": "FFP",
+     "votes": 93.0,
+     "pct": 43.3
+    },
+    {
+     "candidate": "SAVVAS Olivia",
+     "party": "ALP",
+     "votes": 36.0,
+     "pct": 16.7
+    },
+    {
+     "candidate": "DEW-FENNELL Alison",
+     "party": "ONP",
+     "votes": 26.0,
+     "pct": 12.1
+    },
+    {
+     "candidate": "BIRCH Sarai",
+     "party": "LIB",
+     "votes": 24.0,
+     "pct": 11.2
+    },
+    {
+     "candidate": "WRIGHT Helen",
+     "party": "GRN",
+     "votes": 21.0,
+     "pct": 9.8
+    },
+    {
+     "candidate": "LAZOOTIN Abe",
+     "party": "X_UVA",
+     "votes": 15.0,
+     "pct": 7.0
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "LAZOOTIN Abe",
+   "excluded_party": "X_UVA",
+   "votes": 231.0,
+   "to": [
+    {
+     "candidate": "DEW-FENNELL Alison",
+     "party": "ONP",
+     "votes": 122.0,
+     "pct": 52.8
+    },
+    {
+     "candidate": "SAVVAS Olivia",
+     "party": "ALP",
+     "votes": 33.0,
+     "pct": 14.3
+    },
+    {
+     "candidate": "BIRCH Sarai",
+     "party": "LIB",
+     "votes": 31.0,
+     "pct": 13.4
+    },
+    {
+     "candidate": "MATHEW Rachel",
+     "party": "FFP",
+     "votes": 25.0,
+     "pct": 10.8
+    },
+    {
+     "candidate": "WRIGHT Helen",
+     "party": "GRN",
+     "votes": 20.0,
+     "pct": 8.7
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "MATHEW Rachel",
+   "excluded_party": "FFP",
+   "votes": 794.0,
+   "to": [
+    {
+     "candidate": "DEW-FENNELL Alison",
+     "party": "ONP",
+     "votes": 352.0,
+     "pct": 44.3
+    },
+    {
+     "candidate": "BIRCH Sarai",
+     "party": "LIB",
+     "votes": 195.0,
+     "pct": 24.6
+    },
+    {
+     "candidate": "SAVVAS Olivia",
+     "party": "ALP",
+     "votes": 131.0,
+     "pct": 16.5
+    },
+    {
+     "candidate": "WRIGHT Helen",
+     "party": "GRN",
+     "votes": 116.0,
+     "pct": 14.6
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "WRIGHT Helen",
+   "excluded_party": "GRN",
+   "votes": 2264.0,
+   "to": [
+    {
+     "candidate": "SAVVAS Olivia",
+     "party": "ALP",
+     "votes": 1734.0,
+     "pct": 76.6
+    },
+    {
+     "candidate": "BIRCH Sarai",
+     "party": "LIB",
+     "votes": 332.0,
+     "pct": 14.7
+    },
+    {
+     "candidate": "DEW-FENNELL Alison",
+     "party": "ONP",
+     "votes": 198.0,
+     "pct": 8.7
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "BIRCH Sarai",
+   "excluded_party": "LIB",
+   "votes": 4169.0,
+   "to": [
+    {
+     "candidate": "DEW-FENNELL Alison",
+     "party": "ONP",
+     "votes": 2827.0,
+     "pct": 67.8
+    },
+    {
+     "candidate": "SAVVAS Olivia",
+     "party": "ALP",
+     "votes": 1342.0,
+     "pct": 32.2
+    }
+   ]
+  }
+ ],
+ "ngadjuri": [
+  {
+   "count": 2,
+   "excluded": "OLSSON Shari Lynnette",
+   "excluded_party": "X_SGFGA",
+   "votes": 87.0,
+   "to": [
+    {
+     "candidate": "PICCOLO Tony",
+     "party": "ALP",
+     "votes": 19.0,
+     "pct": 21.8
+    },
+    {
+     "candidate": "PATON David",
+     "party": "ONP",
+     "votes": 14.0,
+     "pct": 16.1
+    },
+    {
+     "candidate": "PRATT Penny",
+     "party": "LIB",
+     "votes": 14.0,
+     "pct": 16.1
+    },
+    {
+     "candidate": "STEELE Cherie",
+     "party": "AJP",
+     "votes": 12.0,
+     "pct": 13.8
+    },
+    {
+     "candidate": "EVERY Danielle",
+     "party": "GRN",
+     "votes": 8.0,
+     "pct": 9.2
+    },
+    {
+     "candidate": "PEARCE Sharon",
+     "party": "FFP",
+     "votes": 8.0,
+     "pct": 9.2
+    },
+    {
+     "candidate": "LOBBAN Mark",
+     "party": "LCP",
+     "votes": 7.0,
+     "pct": 8.0
+    },
+    {
+     "candidate": "JENKINS Jonathan",
+     "party": "X_AFP",
+     "votes": 5.0,
+     "pct": 5.7
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "JENKINS Jonathan",
+   "excluded_party": "X_AFP",
+   "votes": 115.0,
+   "to": [
+    {
+     "candidate": "PEARCE Sharon",
+     "party": "FFP",
+     "votes": 61.0,
+     "pct": 53.0
+    },
+    {
+     "candidate": "PATON David",
+     "party": "ONP",
+     "votes": 13.0,
+     "pct": 11.3
+    },
+    {
+     "candidate": "PRATT Penny",
+     "party": "LIB",
+     "votes": 13.0,
+     "pct": 11.3
+    },
+    {
+     "candidate": "STEELE Cherie",
+     "party": "AJP",
+     "votes": 10.0,
+     "pct": 8.7
+    },
+    {
+     "candidate": "PICCOLO Tony",
+     "party": "ALP",
+     "votes": 10.0,
+     "pct": 8.7
+    },
+    {
+     "candidate": "EVERY Danielle",
+     "party": "GRN",
+     "votes": 4.0,
+     "pct": 3.5
+    },
+    {
+     "candidate": "LOBBAN Mark",
+     "party": "LCP",
+     "votes": 4.0,
+     "pct": 3.5
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "STEELE Cherie",
+   "excluded_party": "AJP",
+   "votes": 414.0,
+   "to": [
+    {
+     "candidate": "EVERY Danielle",
+     "party": "GRN",
+     "votes": 131.0,
+     "pct": 31.6
+    },
+    {
+     "candidate": "PICCOLO Tony",
+     "party": "ALP",
+     "votes": 127.0,
+     "pct": 30.7
+    },
+    {
+     "candidate": "LOBBAN Mark",
+     "party": "LCP",
+     "votes": 57.0,
+     "pct": 13.8
+    },
+    {
+     "candidate": "PATON David",
+     "party": "ONP",
+     "votes": 47.0,
+     "pct": 11.4
+    },
+    {
+     "candidate": "PEARCE Sharon",
+     "party": "FFP",
+     "votes": 40.0,
+     "pct": 9.7
+    },
+    {
+     "candidate": "PRATT Penny",
+     "party": "LIB",
+     "votes": 12.0,
+     "pct": 2.9
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "PEARCE Sharon",
+   "excluded_party": "FFP",
+   "votes": 470.0,
+   "to": [
+    {
+     "candidate": "PATON David",
+     "party": "ONP",
+     "votes": 188.0,
+     "pct": 40.0
+    },
+    {
+     "candidate": "PRATT Penny",
+     "party": "LIB",
+     "votes": 97.0,
+     "pct": 20.6
+    },
+    {
+     "candidate": "EVERY Danielle",
+     "party": "GRN",
+     "votes": 78.0,
+     "pct": 16.6
+    },
+    {
+     "candidate": "PICCOLO Tony",
+     "party": "ALP",
+     "votes": 72.0,
+     "pct": 15.3
+    },
+    {
+     "candidate": "LOBBAN Mark",
+     "party": "LCP",
+     "votes": 35.0,
+     "pct": 7.4
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "LOBBAN Mark",
+   "excluded_party": "LCP",
+   "votes": 550.0,
+   "to": [
+    {
+     "candidate": "EVERY Danielle",
+     "party": "GRN",
+     "votes": 194.0,
+     "pct": 35.3
+    },
+    {
+     "candidate": "PATON David",
+     "party": "ONP",
+     "votes": 148.0,
+     "pct": 26.9
+    },
+    {
+     "candidate": "PICCOLO Tony",
+     "party": "ALP",
+     "votes": 136.0,
+     "pct": 24.7
+    },
+    {
+     "candidate": "PRATT Penny",
+     "party": "LIB",
+     "votes": 72.0,
+     "pct": 13.1
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "EVERY Danielle",
+   "excluded_party": "GRN",
+   "votes": 1554.0,
+   "to": [
+    {
+     "candidate": "PICCOLO Tony",
+     "party": "ALP",
+     "votes": 1113.0,
+     "pct": 71.6
+    },
+    {
+     "candidate": "PATON David",
+     "party": "ONP",
+     "votes": 234.0,
+     "pct": 15.1
+    },
+    {
+     "candidate": "PRATT Penny",
+     "party": "LIB",
+     "votes": 207.0,
+     "pct": 13.3
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "PRATT Penny",
+   "excluded_party": "LIB",
+   "votes": 6597.0,
+   "to": [
+    {
+     "candidate": "PATON David",
+     "party": "ONP",
+     "votes": 4778.0,
+     "pct": 72.4
+    },
+    {
+     "candidate": "PICCOLO Tony",
+     "party": "ALP",
+     "votes": 1819.0,
+     "pct": 27.6
+    }
+   ]
+  }
+ ],
+ "playford": [
+  {
+   "count": 2,
+   "excluded": "BAWDEN Grace",
+   "excluded_party": "X_UVA",
+   "votes": 206.0,
+   "to": [
+    {
+     "candidate": "FULBROOK John",
+     "party": "ALP",
+     "votes": 54.0,
+     "pct": 26.2
+    },
+    {
+     "candidate": "BUNTING Richard",
+     "party": "X_AFP",
+     "votes": 51.0,
+     "pct": 24.8
+    },
+    {
+     "candidate": "WRIGHT David",
+     "party": "GRN",
+     "votes": 37.0,
+     "pct": 18.0
+    },
+    {
+     "candidate": "TSENTIDIS Nickolas",
+     "party": "ONP",
+     "votes": 30.0,
+     "pct": 14.6
+    },
+    {
+     "candidate": "RANGEL Antonio",
+     "party": "FFP",
+     "votes": 19.0,
+     "pct": 9.2
+    },
+    {
+     "candidate": "OEHME Trent",
+     "party": "LCP",
+     "votes": 9.0,
+     "pct": 4.4
+    },
+    {
+     "candidate": "JONES Christopher",
+     "party": "LIB",
+     "votes": 6.0,
+     "pct": 2.9
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "BUNTING Richard",
+   "excluded_party": "X_AFP",
+   "votes": 298.0,
+   "to": [
+    {
+     "candidate": "RANGEL Antonio",
+     "party": "FFP",
+     "votes": 97.0,
+     "pct": 32.6
+    },
+    {
+     "candidate": "FULBROOK John",
+     "party": "ALP",
+     "votes": 87.0,
+     "pct": 29.2
+    },
+    {
+     "candidate": "WRIGHT David",
+     "party": "GRN",
+     "votes": 54.0,
+     "pct": 18.1
+    },
+    {
+     "candidate": "OEHME Trent",
+     "party": "LCP",
+     "votes": 27.0,
+     "pct": 9.1
+    },
+    {
+     "candidate": "JONES Christopher",
+     "party": "LIB",
+     "votes": 19.0,
+     "pct": 6.4
+    },
+    {
+     "candidate": "TSENTIDIS Nickolas",
+     "party": "ONP",
+     "votes": 14.0,
+     "pct": 4.7
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "OEHME Trent",
+   "excluded_party": "LCP",
+   "votes": 561.0,
+   "to": [
+    {
+     "candidate": "TSENTIDIS Nickolas",
+     "party": "ONP",
+     "votes": 170.0,
+     "pct": 30.3
+    },
+    {
+     "candidate": "WRIGHT David",
+     "party": "GRN",
+     "votes": 162.0,
+     "pct": 28.9
+    },
+    {
+     "candidate": "FULBROOK John",
+     "party": "ALP",
+     "votes": 130.0,
+     "pct": 23.2
+    },
+    {
+     "candidate": "RANGEL Antonio",
+     "party": "FFP",
+     "votes": 57.0,
+     "pct": 10.2
+    },
+    {
+     "candidate": "JONES Christopher",
+     "party": "LIB",
+     "votes": 42.0,
+     "pct": 7.5
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "RANGEL Antonio",
+   "excluded_party": "FFP",
+   "votes": 938.0,
+   "to": [
+    {
+     "candidate": "TSENTIDIS Nickolas",
+     "party": "ONP",
+     "votes": 317.0,
+     "pct": 33.8
+    },
+    {
+     "candidate": "FULBROOK John",
+     "party": "ALP",
+     "votes": 242.0,
+     "pct": 25.8
+    },
+    {
+     "candidate": "WRIGHT David",
+     "party": "GRN",
+     "votes": 196.0,
+     "pct": 20.9
+    },
+    {
+     "candidate": "JONES Christopher",
+     "party": "LIB",
+     "votes": 183.0,
+     "pct": 19.5
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "JONES Christopher",
+   "excluded_party": "LIB",
+   "votes": 2014.0,
+   "to": [
+    {
+     "candidate": "TSENTIDIS Nickolas",
+     "party": "ONP",
+     "votes": 920.0,
+     "pct": 45.7
+    },
+    {
+     "candidate": "FULBROOK John",
+     "party": "ALP",
+     "votes": 675.0,
+     "pct": 33.5
+    },
+    {
+     "candidate": "WRIGHT David",
+     "party": "GRN",
+     "votes": 419.0,
+     "pct": 20.8
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "WRIGHT David",
+   "excluded_party": "GRN",
+   "votes": 2856.0,
+   "to": [
+    {
+     "candidate": "FULBROOK John",
+     "party": "ALP",
+     "votes": 2412.0,
+     "pct": 84.5
+    },
+    {
+     "candidate": "TSENTIDIS Nickolas",
+     "party": "ONP",
+     "votes": 444.0,
+     "pct": 15.5
+    }
+   ]
+  }
+ ],
+ "port-adelaide": [
+  {
+   "count": 2,
+   "excluded": "MACHADO Aaron",
+   "excluded_party": "X_UVA",
+   "votes": 44.0,
+   "to": [
+    {
+     "candidate": "RICH Cheyne",
+     "party": "ALP",
+     "votes": 9.0,
+     "pct": 20.5
+    },
+    {
+     "candidate": "JOHANSON Gary",
+     "party": "IND",
+     "votes": 6.0,
+     "pct": 13.6
+    },
+    {
+     "candidate": "KEEN Sallyann",
+     "party": "LCP",
+     "votes": 6.0,
+     "pct": 13.6
+    },
+    {
+     "candidate": "ANDERSON Scott",
+     "party": "LIB",
+     "votes": 6.0,
+     "pct": 13.6
+    },
+    {
+     "candidate": "HENDRIE Joel",
+     "party": "ONP",
+     "votes": 5.0,
+     "pct": 11.4
+    },
+    {
+     "candidate": "DAY Tom",
+     "party": "X_AFP",
+     "votes": 4.0,
+     "pct": 9.1
+    },
+    {
+     "candidate": "SHAW Hayden",
+     "party": "GRN",
+     "votes": 3.0,
+     "pct": 6.8
+    },
+    {
+     "candidate": "BOAN Claire",
+     "party": "IND",
+     "votes": 2.0,
+     "pct": 4.5
+    },
+    {
+     "candidate": "MCMENAMIN Anne",
+     "party": "IND",
+     "votes": 2.0,
+     "pct": 4.5
+    },
+    {
+     "candidate": "SNELLING Lucia",
+     "party": "FFP",
+     "votes": 1.0,
+     "pct": 2.3
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "DAY Tom",
+   "excluded_party": "X_AFP",
+   "votes": 139.0,
+   "to": [
+    {
+     "candidate": "RICH Cheyne",
+     "party": "ALP",
+     "votes": 48.0,
+     "pct": 34.5
+    },
+    {
+     "candidate": "SNELLING Lucia",
+     "party": "FFP",
+     "votes": 46.0,
+     "pct": 33.1
+    },
+    {
+     "candidate": "ANDERSON Scott",
+     "party": "LIB",
+     "votes": 9.0,
+     "pct": 6.5
+    },
+    {
+     "candidate": "KEEN Sallyann",
+     "party": "LCP",
+     "votes": 8.0,
+     "pct": 5.8
+    },
+    {
+     "candidate": "HENDRIE Joel",
+     "party": "ONP",
+     "votes": 7.0,
+     "pct": 5.0
+    },
+    {
+     "candidate": "MCMENAMIN Anne",
+     "party": "IND",
+     "votes": 6.0,
+     "pct": 4.3
+    },
+    {
+     "candidate": "SHAW Hayden",
+     "party": "GRN",
+     "votes": 6.0,
+     "pct": 4.3
+    },
+    {
+     "candidate": "BRUNOLI Galina",
+     "party": "X_SGFGA",
+     "votes": 3.0,
+     "pct": 2.2
+    },
+    {
+     "candidate": "JOHANSON Gary",
+     "party": "IND",
+     "votes": 3.0,
+     "pct": 2.2
+    },
+    {
+     "candidate": "BOAN Claire",
+     "party": "IND",
+     "votes": 3.0,
+     "pct": 2.2
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "BRUNOLI Galina",
+   "excluded_party": "X_SGFGA",
+   "votes": 256.0,
+   "to": [
+    {
+     "candidate": "JOHANSON Gary",
+     "party": "IND",
+     "votes": 159.0,
+     "pct": 62.1
+    },
+    {
+     "candidate": "HENDRIE Joel",
+     "party": "ONP",
+     "votes": 35.0,
+     "pct": 13.7
+    },
+    {
+     "candidate": "SNELLING Lucia",
+     "party": "FFP",
+     "votes": 17.0,
+     "pct": 6.6
+    },
+    {
+     "candidate": "ANDERSON Scott",
+     "party": "LIB",
+     "votes": 14.0,
+     "pct": 5.5
+    },
+    {
+     "candidate": "RICH Cheyne",
+     "party": "ALP",
+     "votes": 10.0,
+     "pct": 3.9
+    },
+    {
+     "candidate": "SHAW Hayden",
+     "party": "GRN",
+     "votes": 9.0,
+     "pct": 3.5
+    },
+    {
+     "candidate": "BOAN Claire",
+     "party": "IND",
+     "votes": 6.0,
+     "pct": 2.3
+    },
+    {
+     "candidate": "KEEN Sallyann",
+     "party": "LCP",
+     "votes": 4.0,
+     "pct": 1.6
+    },
+    {
+     "candidate": "MCMENAMIN Anne",
+     "party": "IND",
+     "votes": 2.0,
+     "pct": 0.8
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "MCMENAMIN Anne",
+   "excluded_party": "IND",
+   "votes": 351.0,
+   "to": [
+    {
+     "candidate": "SHAW Hayden",
+     "party": "GRN",
+     "votes": 178.0,
+     "pct": 50.7
+    },
+    {
+     "candidate": "BOAN Claire",
+     "party": "IND",
+     "votes": 64.0,
+     "pct": 18.2
+    },
+    {
+     "candidate": "RICH Cheyne",
+     "party": "ALP",
+     "votes": 37.0,
+     "pct": 10.5
+    },
+    {
+     "candidate": "KEEN Sallyann",
+     "party": "LCP",
+     "votes": 21.0,
+     "pct": 6.0
+    },
+    {
+     "candidate": "JOHANSON Gary",
+     "party": "IND",
+     "votes": 17.0,
+     "pct": 4.8
+    },
+    {
+     "candidate": "HENDRIE Joel",
+     "party": "ONP",
+     "votes": 12.0,
+     "pct": 3.4
+    },
+    {
+     "candidate": "SNELLING Lucia",
+     "party": "FFP",
+     "votes": 12.0,
+     "pct": 3.4
+    },
+    {
+     "candidate": "ANDERSON Scott",
+     "party": "LIB",
+     "votes": 10.0,
+     "pct": 2.8
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "SNELLING Lucia",
+   "excluded_party": "FFP",
+   "votes": 408.0,
+   "to": [
+    {
+     "candidate": "HENDRIE Joel",
+     "party": "ONP",
+     "votes": 145.0,
+     "pct": 35.5
+    },
+    {
+     "candidate": "RICH Cheyne",
+     "party": "ALP",
+     "votes": 67.0,
+     "pct": 16.4
+    },
+    {
+     "candidate": "BOAN Claire",
+     "party": "IND",
+     "votes": 59.0,
+     "pct": 14.5
+    },
+    {
+     "candidate": "SHAW Hayden",
+     "party": "GRN",
+     "votes": 41.0,
+     "pct": 10.0
+    },
+    {
+     "candidate": "JOHANSON Gary",
+     "party": "IND",
+     "votes": 36.0,
+     "pct": 8.8
+    },
+    {
+     "candidate": "ANDERSON Scott",
+     "party": "LIB",
+     "votes": 33.0,
+     "pct": 8.1
+    },
+    {
+     "candidate": "KEEN Sallyann",
+     "party": "LCP",
+     "votes": 27.0,
+     "pct": 6.6
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "KEEN Sallyann",
+   "excluded_party": "LCP",
+   "votes": 577.0,
+   "to": [
+    {
+     "candidate": "SHAW Hayden",
+     "party": "GRN",
+     "votes": 175.0,
+     "pct": 30.3
+    },
+    {
+     "candidate": "RICH Cheyne",
+     "party": "ALP",
+     "votes": 134.0,
+     "pct": 23.2
+    },
+    {
+     "candidate": "HENDRIE Joel",
+     "party": "ONP",
+     "votes": 88.0,
+     "pct": 15.3
+    },
+    {
+     "candidate": "JOHANSON Gary",
+     "party": "IND",
+     "votes": 75.0,
+     "pct": 13.0
+    },
+    {
+     "candidate": "BOAN Claire",
+     "party": "IND",
+     "votes": 74.0,
+     "pct": 12.8
+    },
+    {
+     "candidate": "ANDERSON Scott",
+     "party": "LIB",
+     "votes": 31.0,
+     "pct": 5.4
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "JOHANSON Gary",
+   "excluded_party": "IND",
+   "votes": 742.0,
+   "to": [
+    {
+     "candidate": "HENDRIE Joel",
+     "party": "ONP",
+     "votes": 300.0,
+     "pct": 40.4
+    },
+    {
+     "candidate": "BOAN Claire",
+     "party": "IND",
+     "votes": 259.0,
+     "pct": 34.9
+    },
+    {
+     "candidate": "RICH Cheyne",
+     "party": "ALP",
+     "votes": 98.0,
+     "pct": 13.2
+    },
+    {
+     "candidate": "SHAW Hayden",
+     "party": "GRN",
+     "votes": 45.0,
+     "pct": 6.1
+    },
+    {
+     "candidate": "ANDERSON Scott",
+     "party": "LIB",
+     "votes": 40.0,
+     "pct": 5.4
+    }
+   ]
+  },
+  {
+   "count": 9,
+   "excluded": "ANDERSON Scott",
+   "excluded_party": "LIB",
+   "votes": 1867.0,
+   "to": [
+    {
+     "candidate": "BOAN Claire",
+     "party": "IND",
+     "votes": 861.0,
+     "pct": 46.1
+    },
+    {
+     "candidate": "HENDRIE Joel",
+     "party": "ONP",
+     "votes": 443.0,
+     "pct": 23.7
+    },
+    {
+     "candidate": "RICH Cheyne",
+     "party": "ALP",
+     "votes": 317.0,
+     "pct": 17.0
+    },
+    {
+     "candidate": "SHAW Hayden",
+     "party": "GRN",
+     "votes": 246.0,
+     "pct": 13.2
+    }
+   ]
+  },
+  {
+   "count": 10,
+   "excluded": "SHAW Hayden",
+   "excluded_party": "GRN",
+   "votes": 3128.0,
+   "to": [
+    {
+     "candidate": "RICH Cheyne",
+     "party": "ALP",
+     "votes": 2114.0,
+     "pct": 67.6
+    },
+    {
+     "candidate": "BOAN Claire",
+     "party": "IND",
+     "votes": 775.0,
+     "pct": 24.8
+    },
+    {
+     "candidate": "HENDRIE Joel",
+     "party": "ONP",
+     "votes": 239.0,
+     "pct": 7.6
+    }
+   ]
+  },
+  {
+   "count": 11,
+   "excluded": "BOAN Claire",
+   "excluded_party": "IND",
+   "votes": 5200.0,
+   "to": [
+    {
+     "candidate": "RICH Cheyne",
+     "party": "ALP",
+     "votes": 3126.0,
+     "pct": 60.1
+    },
+    {
+     "candidate": "HENDRIE Joel",
+     "party": "ONP",
+     "votes": 2074.0,
+     "pct": 39.9
+    }
+   ]
+  }
+ ],
+ "ramsay": [
+  {
+   "count": 2,
+   "excluded": "DEMITRIOU Leo",
+   "excluded_party": "X_SGFGA",
+   "votes": 107.0,
+   "to": [
+    {
+     "candidate": "CHAMBERS Ralph",
+     "party": "ONP",
+     "votes": 19.0,
+     "pct": 17.8
+    },
+    {
+     "candidate": "SKINNER Luke",
+     "party": "GRN",
+     "votes": 17.0,
+     "pct": 15.9
+    },
+    {
+     "candidate": "VELASQUEZ Luz Mutya",
+     "party": "FFP",
+     "votes": 16.0,
+     "pct": 15.0
+    },
+    {
+     "candidate": "BETTISON Zoe",
+     "party": "ALP",
+     "votes": 14.0,
+     "pct": 13.1
+    },
+    {
+     "candidate": "OWEN Nic",
+     "party": "X_UVA",
+     "votes": 13.0,
+     "pct": 12.1
+    },
+    {
+     "candidate": "MCCANN Daryl",
+     "party": "LIB",
+     "votes": 11.0,
+     "pct": 10.3
+    },
+    {
+     "candidate": "GAYLOR Ashley",
+     "party": "X_AFP",
+     "votes": 10.0,
+     "pct": 9.3
+    },
+    {
+     "candidate": "ECKERMANN Mark",
+     "party": "LCP",
+     "votes": 7.0,
+     "pct": 6.5
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "GAYLOR Ashley",
+   "excluded_party": "X_AFP",
+   "votes": 188.0,
+   "to": [
+    {
+     "candidate": "VELASQUEZ Luz Mutya",
+     "party": "FFP",
+     "votes": 72.0,
+     "pct": 38.3
+    },
+    {
+     "candidate": "BETTISON Zoe",
+     "party": "ALP",
+     "votes": 38.0,
+     "pct": 20.2
+    },
+    {
+     "candidate": "SKINNER Luke",
+     "party": "GRN",
+     "votes": 22.0,
+     "pct": 11.7
+    },
+    {
+     "candidate": "CHAMBERS Ralph",
+     "party": "ONP",
+     "votes": 17.0,
+     "pct": 9.0
+    },
+    {
+     "candidate": "MCCANN Daryl",
+     "party": "LIB",
+     "votes": 14.0,
+     "pct": 7.4
+    },
+    {
+     "candidate": "OWEN Nic",
+     "party": "X_UVA",
+     "votes": 13.0,
+     "pct": 6.9
+    },
+    {
+     "candidate": "ECKERMANN Mark",
+     "party": "LCP",
+     "votes": 12.0,
+     "pct": 6.4
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "OWEN Nic",
+   "excluded_party": "X_UVA",
+   "votes": 225.0,
+   "to": [
+    {
+     "candidate": "CHAMBERS Ralph",
+     "party": "ONP",
+     "votes": 59.0,
+     "pct": 26.2
+    },
+    {
+     "candidate": "ECKERMANN Mark",
+     "party": "LCP",
+     "votes": 55.0,
+     "pct": 24.4
+    },
+    {
+     "candidate": "BETTISON Zoe",
+     "party": "ALP",
+     "votes": 39.0,
+     "pct": 17.3
+    },
+    {
+     "candidate": "VELASQUEZ Luz Mutya",
+     "party": "FFP",
+     "votes": 30.0,
+     "pct": 13.3
+    },
+    {
+     "candidate": "SKINNER Luke",
+     "party": "GRN",
+     "votes": 23.0,
+     "pct": 10.2
+    },
+    {
+     "candidate": "MCCANN Daryl",
+     "party": "LIB",
+     "votes": 19.0,
+     "pct": 8.4
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "VELASQUEZ Luz Mutya",
+   "excluded_party": "FFP",
+   "votes": 801.0,
+   "to": [
+    {
+     "candidate": "CHAMBERS Ralph",
+     "party": "ONP",
+     "votes": 243.0,
+     "pct": 30.3
+    },
+    {
+     "candidate": "BETTISON Zoe",
+     "party": "ALP",
+     "votes": 218.0,
+     "pct": 27.2
+    },
+    {
+     "candidate": "SKINNER Luke",
+     "party": "GRN",
+     "votes": 172.0,
+     "pct": 21.5
+    },
+    {
+     "candidate": "MCCANN Daryl",
+     "party": "LIB",
+     "votes": 111.0,
+     "pct": 13.9
+    },
+    {
+     "candidate": "ECKERMANN Mark",
+     "party": "LCP",
+     "votes": 57.0,
+     "pct": 7.1
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "ECKERMANN Mark",
+   "excluded_party": "LCP",
+   "votes": 900.0,
+   "to": [
+    {
+     "candidate": "BETTISON Zoe",
+     "party": "ALP",
+     "votes": 320.0,
+     "pct": 35.6
+    },
+    {
+     "candidate": "CHAMBERS Ralph",
+     "party": "ONP",
+     "votes": 256.0,
+     "pct": 28.4
+    },
+    {
+     "candidate": "SKINNER Luke",
+     "party": "GRN",
+     "votes": 244.0,
+     "pct": 27.1
+    },
+    {
+     "candidate": "MCCANN Daryl",
+     "party": "LIB",
+     "votes": 80.0,
+     "pct": 8.9
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "MCCANN Daryl",
+   "excluded_party": "LIB",
+   "votes": 1621.0,
+   "to": [
+    {
+     "candidate": "CHAMBERS Ralph",
+     "party": "ONP",
+     "votes": 783.0,
+     "pct": 48.3
+    },
+    {
+     "candidate": "BETTISON Zoe",
+     "party": "ALP",
+     "votes": 513.0,
+     "pct": 31.6
+    },
+    {
+     "candidate": "SKINNER Luke",
+     "party": "GRN",
+     "votes": 325.0,
+     "pct": 20.0
+    }
+   ]
+  },
+  {
+   "count": 8,
+   "excluded": "SKINNER Luke",
+   "excluded_party": "GRN",
+   "votes": 2594.0,
+   "to": [
+    {
+     "candidate": "BETTISON Zoe",
+     "party": "ALP",
+     "votes": 1958.0,
+     "pct": 75.5
+    },
+    {
+     "candidate": "CHAMBERS Ralph",
+     "party": "ONP",
+     "votes": 636.0,
+     "pct": 24.5
+    }
+   ]
+  }
+ ],
+ "reynell": [
+  {
+   "count": 2,
+   "excluded": "O'ROURKE Aaron",
+   "excluded_party": "X_AFP",
+   "votes": 222.0,
+   "to": [
+    {
+     "candidate": "FARMER Andy",
+     "party": "FFP",
+     "votes": 76.0,
+     "pct": 34.2
+    },
+    {
+     "candidate": "HILDYARD Katrine",
+     "party": "ALP",
+     "votes": 67.0,
+     "pct": 30.2
+    },
+    {
+     "candidate": "HEGGIE Peter",
+     "party": "ONP",
+     "votes": 32.0,
+     "pct": 14.4
+    },
+    {
+     "candidate": "TAIT Miya",
+     "party": "GRN",
+     "votes": 22.0,
+     "pct": 9.9
+    },
+    {
+     "candidate": "KRASNIQI Adnan",
+     "party": "LCP",
+     "votes": 18.0,
+     "pct": 8.1
+    },
+    {
+     "candidate": "ZAMAN Haseen",
+     "party": "LIB",
+     "votes": 7.0,
+     "pct": 3.2
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "FARMER Andy",
+   "excluded_party": "FFP",
+   "votes": 859.0,
+   "to": [
+    {
+     "candidate": "HEGGIE Peter",
+     "party": "ONP",
+     "votes": 323.0,
+     "pct": 37.6
+    },
+    {
+     "candidate": "TAIT Miya",
+     "party": "GRN",
+     "votes": 163.0,
+     "pct": 19.0
+    },
+    {
+     "candidate": "HILDYARD Katrine",
+     "party": "ALP",
+     "votes": 148.0,
+     "pct": 17.2
+    },
+    {
+     "candidate": "ZAMAN Haseen",
+     "party": "LIB",
+     "votes": 133.0,
+     "pct": 15.5
+    },
+    {
+     "candidate": "KRASNIQI Adnan",
+     "party": "LCP",
+     "votes": 92.0,
+     "pct": 10.7
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "KRASNIQI Adnan",
+   "excluded_party": "LCP",
+   "votes": 1228.0,
+   "to": [
+    {
+     "candidate": "TAIT Miya",
+     "party": "GRN",
+     "votes": 433.0,
+     "pct": 35.3
+    },
+    {
+     "candidate": "HILDYARD Katrine",
+     "party": "ALP",
+     "votes": 314.0,
+     "pct": 25.6
+    },
+    {
+     "candidate": "HEGGIE Peter",
+     "party": "ONP",
+     "votes": 262.0,
+     "pct": 21.3
+    },
+    {
+     "candidate": "ZAMAN Haseen",
+     "party": "LIB",
+     "votes": 219.0,
+     "pct": 17.8
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "ZAMAN Haseen",
+   "excluded_party": "LIB",
+   "votes": 2262.0,
+   "to": [
+    {
+     "candidate": "HEGGIE Peter",
+     "party": "ONP",
+     "votes": 1189.0,
+     "pct": 52.6
+    },
+    {
+     "candidate": "TAIT Miya",
+     "party": "GRN",
+     "votes": 631.0,
+     "pct": 27.9
+    },
+    {
+     "candidate": "HILDYARD Katrine",
+     "party": "ALP",
+     "votes": 442.0,
+     "pct": 19.5
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "TAIT Miya",
+   "excluded_party": "GRN",
+   "votes": 3784.0,
+   "to": [
+    {
+     "candidate": "HILDYARD Katrine",
+     "party": "ALP",
+     "votes": 2763.0,
+     "pct": 73.0
+    },
+    {
+     "candidate": "HEGGIE Peter",
+     "party": "ONP",
+     "votes": 1021.0,
+     "pct": 27.0
+    }
+   ]
+  }
+ ],
+ "schubert": [
+  {
+   "count": 2,
+   "excluded": "DUNCAN David",
+   "excluded_party": "X_SGFGA",
+   "votes": 108.0,
+   "to": [
+    {
+     "candidate": "WILLIAMS Matt",
+     "party": "X_AFP",
+     "votes": 29.0,
+     "pct": 26.9
+    },
+    {
+     "candidate": "HURN Ashton",
+     "party": "LIB",
+     "votes": 24.0,
+     "pct": 22.2
+    },
+    {
+     "candidate": "PREECE Bruce",
+     "party": "ONP",
+     "votes": 18.0,
+     "pct": 16.7
+    },
+    {
+     "candidate": "MORRIS Beverley",
+     "party": "GRN",
+     "votes": 14.0,
+     "pct": 13.0
+    },
+    {
+     "candidate": "ROTHE James",
+     "party": "ALP",
+     "votes": 13.0,
+     "pct": 12.0
+    },
+    {
+     "candidate": "SHORE Alice",
+     "party": "AJP",
+     "votes": 10.0,
+     "pct": 9.3
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "WILLIAMS Matt",
+   "excluded_party": "X_AFP",
+   "votes": 326.0,
+   "to": [
+    {
+     "candidate": "PREECE Bruce",
+     "party": "ONP",
+     "votes": 123.0,
+     "pct": 37.7
+    },
+    {
+     "candidate": "HURN Ashton",
+     "party": "LIB",
+     "votes": 108.0,
+     "pct": 33.1
+    },
+    {
+     "candidate": "ROTHE James",
+     "party": "ALP",
+     "votes": 39.0,
+     "pct": 12.0
+    },
+    {
+     "candidate": "MORRIS Beverley",
+     "party": "GRN",
+     "votes": 29.0,
+     "pct": 8.9
+    },
+    {
+     "candidate": "SHORE Alice",
+     "party": "AJP",
+     "votes": 27.0,
+     "pct": 8.3
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "SHORE Alice",
+   "excluded_party": "AJP",
+   "votes": 458.0,
+   "to": [
+    {
+     "candidate": "MORRIS Beverley",
+     "party": "GRN",
+     "votes": 270.0,
+     "pct": 59.0
+    },
+    {
+     "candidate": "ROTHE James",
+     "party": "ALP",
+     "votes": 79.0,
+     "pct": 17.2
+    },
+    {
+     "candidate": "PREECE Bruce",
+     "party": "ONP",
+     "votes": 68.0,
+     "pct": 14.8
+    },
+    {
+     "candidate": "HURN Ashton",
+     "party": "LIB",
+     "votes": 41.0,
+     "pct": 9.0
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "MORRIS Beverley",
+   "excluded_party": "GRN",
+   "votes": 2169.0,
+   "to": [
+    {
+     "candidate": "ROTHE James",
+     "party": "ALP",
+     "votes": 1587.0,
+     "pct": 73.2
+    },
+    {
+     "candidate": "HURN Ashton",
+     "party": "LIB",
+     "votes": 392.0,
+     "pct": 18.1
+    },
+    {
+     "candidate": "PREECE Bruce",
+     "party": "ONP",
+     "votes": 190.0,
+     "pct": 8.8
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "PREECE Bruce",
+   "excluded_party": "ONP",
+   "votes": 6477.0,
+   "to": [
+    {
+     "candidate": "HURN Ashton",
+     "party": "LIB",
+     "votes": 4869.0,
+     "pct": 75.2
+    },
+    {
+     "candidate": "ROTHE James",
+     "party": "ALP",
+     "votes": 1608.0,
+     "pct": 24.8
+    }
+   ]
+  }
+ ],
+ "stuart": [
+  {
+   "count": 2,
+   "excluded": "PARNELL Robyn",
+   "excluded_party": "AJP",
+   "votes": 180.0,
+   "to": [
+    {
+     "candidate": "PILMORE Poppy",
+     "party": "GRN",
+     "votes": 45.0,
+     "pct": 25.0
+    },
+    {
+     "candidate": "BROCK Geoff",
+     "party": "IND",
+     "votes": 41.0,
+     "pct": 22.8
+    },
+    {
+     "candidate": "MCKINNON Jessica",
+     "party": "LCP",
+     "votes": 27.0,
+     "pct": 15.0
+    },
+    {
+     "candidate": "TURTON Brandon",
+     "party": "ONP",
+     "votes": 26.0,
+     "pct": 14.4
+    },
+    {
+     "candidate": "TONKIN Stephen",
+     "party": "X_AFP",
+     "votes": 18.0,
+     "pct": 10.0
+    },
+    {
+     "candidate": "STEPHENS Leon",
+     "party": "LIB",
+     "votes": 14.0,
+     "pct": 7.8
+    },
+    {
+     "candidate": "EWINGS David",
+     "party": "ALP",
+     "votes": 9.0,
+     "pct": 5.0
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "TONKIN Stephen",
+   "excluded_party": "X_AFP",
+   "votes": 237.0,
+   "to": [
+    {
+     "candidate": "EWINGS David",
+     "party": "ALP",
+     "votes": 57.0,
+     "pct": 24.1
+    },
+    {
+     "candidate": "TURTON Brandon",
+     "party": "ONP",
+     "votes": 56.0,
+     "pct": 23.6
+    },
+    {
+     "candidate": "PILMORE Poppy",
+     "party": "GRN",
+     "votes": 36.0,
+     "pct": 15.2
+    },
+    {
+     "candidate": "BROCK Geoff",
+     "party": "IND",
+     "votes": 30.0,
+     "pct": 12.7
+    },
+    {
+     "candidate": "STEPHENS Leon",
+     "party": "LIB",
+     "votes": 29.0,
+     "pct": 12.2
+    },
+    {
+     "candidate": "MCKINNON Jessica",
+     "party": "LCP",
+     "votes": 29.0,
+     "pct": 12.2
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "MCKINNON Jessica",
+   "excluded_party": "LCP",
+   "votes": 529.0,
+   "to": [
+    {
+     "candidate": "BROCK Geoff",
+     "party": "IND",
+     "votes": 149.0,
+     "pct": 28.2
+    },
+    {
+     "candidate": "TURTON Brandon",
+     "party": "ONP",
+     "votes": 132.0,
+     "pct": 25.0
+    },
+    {
+     "candidate": "PILMORE Poppy",
+     "party": "GRN",
+     "votes": 107.0,
+     "pct": 20.2
+    },
+    {
+     "candidate": "EWINGS David",
+     "party": "ALP",
+     "votes": 96.0,
+     "pct": 18.1
+    },
+    {
+     "candidate": "STEPHENS Leon",
+     "party": "LIB",
+     "votes": 45.0,
+     "pct": 8.5
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "PILMORE Poppy",
+   "excluded_party": "GRN",
+   "votes": 1063.0,
+   "to": [
+    {
+     "candidate": "BROCK Geoff",
+     "party": "IND",
+     "votes": 569.0,
+     "pct": 53.5
+    },
+    {
+     "candidate": "EWINGS David",
+     "party": "ALP",
+     "votes": 331.0,
+     "pct": 31.1
+    },
+    {
+     "candidate": "TURTON Brandon",
+     "party": "ONP",
+     "votes": 106.0,
+     "pct": 10.0
+    },
+    {
+     "candidate": "STEPHENS Leon",
+     "party": "LIB",
+     "votes": 57.0,
+     "pct": 5.4
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "EWINGS David",
+   "excluded_party": "ALP",
+   "votes": 2481.0,
+   "to": [
+    {
+     "candidate": "BROCK Geoff",
+     "party": "IND",
+     "votes": 1575.0,
+     "pct": 63.5
+    },
+    {
+     "candidate": "STEPHENS Leon",
+     "party": "LIB",
+     "votes": 526.0,
+     "pct": 21.2
+    },
+    {
+     "candidate": "TURTON Brandon",
+     "party": "ONP",
+     "votes": 380.0,
+     "pct": 15.3
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "STEPHENS Leon",
+   "excluded_party": "LIB",
+   "votes": 4507.0,
+   "to": [
+    {
+     "candidate": "TURTON Brandon",
+     "party": "ONP",
+     "votes": 2717.0,
+     "pct": 60.3
+    },
+    {
+     "candidate": "BROCK Geoff",
+     "party": "IND",
+     "votes": 1790.0,
+     "pct": 39.7
+    }
+   ]
+  }
+ ],
+ "taylor": [
+  {
+   "count": 2,
+   "excluded": "ATTARD John",
+   "excluded_party": "X_AFP",
+   "votes": 261.0,
+   "to": [
+    {
+     "candidate": "EVANS Kylie",
+     "party": "FFP",
+     "votes": 142.0,
+     "pct": 54.4
+    },
+    {
+     "candidate": "STEPHENS Brett",
+     "party": "LCP",
+     "votes": 31.0,
+     "pct": 11.9
+    },
+    {
+     "candidate": "CHAMPION Nick",
+     "party": "ALP",
+     "votes": 30.0,
+     "pct": 11.5
+    },
+    {
+     "candidate": "RENTOULIS Peter",
+     "party": "ONP",
+     "votes": 24.0,
+     "pct": 9.2
+    },
+    {
+     "candidate": "BOUL HOSN Ted",
+     "party": "LIB",
+     "votes": 19.0,
+     "pct": 7.3
+    },
+    {
+     "candidate": "OSBORNE Xander",
+     "party": "GRN",
+     "votes": 15.0,
+     "pct": 5.7
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "STEPHENS Brett",
+   "excluded_party": "LCP",
+   "votes": 756.0,
+   "to": [
+    {
+     "candidate": "OSBORNE Xander",
+     "party": "GRN",
+     "votes": 230.0,
+     "pct": 30.4
+    },
+    {
+     "candidate": "RENTOULIS Peter",
+     "party": "ONP",
+     "votes": 181.0,
+     "pct": 23.9
+    },
+    {
+     "candidate": "CHAMPION Nick",
+     "party": "ALP",
+     "votes": 168.0,
+     "pct": 22.2
+    },
+    {
+     "candidate": "EVANS Kylie",
+     "party": "FFP",
+     "votes": 151.0,
+     "pct": 20.0
+    },
+    {
+     "candidate": "BOUL HOSN Ted",
+     "party": "LIB",
+     "votes": 26.0,
+     "pct": 3.4
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "EVANS Kylie",
+   "excluded_party": "FFP",
+   "votes": 1581.0,
+   "to": [
+    {
+     "candidate": "RENTOULIS Peter",
+     "party": "ONP",
+     "votes": 775.0,
+     "pct": 49.0
+    },
+    {
+     "candidate": "CHAMPION Nick",
+     "party": "ALP",
+     "votes": 349.0,
+     "pct": 22.1
+    },
+    {
+     "candidate": "OSBORNE Xander",
+     "party": "GRN",
+     "votes": 274.0,
+     "pct": 17.3
+    },
+    {
+     "candidate": "BOUL HOSN Ted",
+     "party": "LIB",
+     "votes": 183.0,
+     "pct": 11.6
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "BOUL HOSN Ted",
+   "excluded_party": "LIB",
+   "votes": 2097.0,
+   "to": [
+    {
+     "candidate": "RENTOULIS Peter",
+     "party": "ONP",
+     "votes": 1062.0,
+     "pct": 50.6
+    },
+    {
+     "candidate": "CHAMPION Nick",
+     "party": "ALP",
+     "votes": 621.0,
+     "pct": 29.6
+    },
+    {
+     "candidate": "OSBORNE Xander",
+     "party": "GRN",
+     "votes": 414.0,
+     "pct": 19.7
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "OSBORNE Xander",
+   "excluded_party": "GRN",
+   "votes": 2820.0,
+   "to": [
+    {
+     "candidate": "CHAMPION Nick",
+     "party": "ALP",
+     "votes": 2208.0,
+     "pct": 78.3
+    },
+    {
+     "candidate": "RENTOULIS Peter",
+     "party": "ONP",
+     "votes": 612.0,
+     "pct": 21.7
+    }
+   ]
+  }
+ ],
+ "torrens": [
+  {
+   "count": 2,
+   "excluded": "REYNOLDS Malcolm",
+   "excluded_party": "X_AFP",
+   "votes": 236.0,
+   "to": [
+    {
+     "candidate": "JOSHUA Mervin",
+     "party": "FFP",
+     "votes": 74.0,
+     "pct": 31.4
+    },
+    {
+     "candidate": "SALVEMINI Stella",
+     "party": "GRN",
+     "votes": 62.0,
+     "pct": 26.3
+    },
+    {
+     "candidate": "SPENCER Meagan",
+     "party": "ALP",
+     "votes": 30.0,
+     "pct": 12.7
+    },
+    {
+     "candidate": "MEDLOCK David",
+     "party": "ONP",
+     "votes": 27.0,
+     "pct": 11.4
+    },
+    {
+     "candidate": "YARA Haritha",
+     "party": "LIB",
+     "votes": 25.0,
+     "pct": 10.6
+    },
+    {
+     "candidate": "WARREN Bradley",
+     "party": "X_UVA",
+     "votes": 18.0,
+     "pct": 7.6
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "WARREN Bradley",
+   "excluded_party": "X_UVA",
+   "votes": 310.0,
+   "to": [
+    {
+     "candidate": "MEDLOCK David",
+     "party": "ONP",
+     "votes": 157.0,
+     "pct": 50.6
+    },
+    {
+     "candidate": "YARA Haritha",
+     "party": "LIB",
+     "votes": 61.0,
+     "pct": 19.7
+    },
+    {
+     "candidate": "SALVEMINI Stella",
+     "party": "GRN",
+     "votes": 34.0,
+     "pct": 11.0
+    },
+    {
+     "candidate": "JOSHUA Mervin",
+     "party": "FFP",
+     "votes": 30.0,
+     "pct": 9.7
+    },
+    {
+     "candidate": "SPENCER Meagan",
+     "party": "ALP",
+     "votes": 28.0,
+     "pct": 9.0
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "JOSHUA Mervin",
+   "excluded_party": "FFP",
+   "votes": 890.0,
+   "to": [
+    {
+     "candidate": "MEDLOCK David",
+     "party": "ONP",
+     "votes": 379.0,
+     "pct": 42.6
+    },
+    {
+     "candidate": "YARA Haritha",
+     "party": "LIB",
+     "votes": 184.0,
+     "pct": 20.7
+    },
+    {
+     "candidate": "SPENCER Meagan",
+     "party": "ALP",
+     "votes": 183.0,
+     "pct": 20.6
+    },
+    {
+     "candidate": "SALVEMINI Stella",
+     "party": "GRN",
+     "votes": 144.0,
+     "pct": 16.2
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "SALVEMINI Stella",
+   "excluded_party": "GRN",
+   "votes": 3670.0,
+   "to": [
+    {
+     "candidate": "SPENCER Meagan",
+     "party": "ALP",
+     "votes": 2976.0,
+     "pct": 81.1
+    },
+    {
+     "candidate": "YARA Haritha",
+     "party": "LIB",
+     "votes": 431.0,
+     "pct": 11.7
+    },
+    {
+     "candidate": "MEDLOCK David",
+     "party": "ONP",
+     "votes": 263.0,
+     "pct": 7.2
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "YARA Haritha",
+   "excluded_party": "LIB",
+   "votes": 4482.0,
+   "to": [
+    {
+     "candidate": "MEDLOCK David",
+     "party": "ONP",
+     "votes": 2411.0,
+     "pct": 53.8
+    },
+    {
+     "candidate": "SPENCER Meagan",
+     "party": "ALP",
+     "votes": 2071.0,
+     "pct": 46.2
+    }
+   ]
+  }
+ ],
+ "unley": [
+  {
+   "count": 2,
+   "excluded": "ATTARD Peter",
+   "excluded_party": "X_AFP",
+   "votes": 142.0,
+   "to": [
+    {
+     "candidate": "WILKINSON Jason",
+     "party": "ONP",
+     "votes": 56.0,
+     "pct": 39.4
+    },
+    {
+     "candidate": "ROTOLO Rosalie",
+     "party": "LIB",
+     "votes": 31.0,
+     "pct": 21.8
+    },
+    {
+     "candidate": "HARRISON Ryan",
+     "party": "IND",
+     "votes": 15.0,
+     "pct": 10.6
+    },
+    {
+     "candidate": "KIERNAN Dylan",
+     "party": "GRN",
+     "votes": 14.0,
+     "pct": 9.9
+    },
+    {
+     "candidate": "ROLLS Alice",
+     "party": "ALP",
+     "votes": 13.0,
+     "pct": 9.2
+    },
+    {
+     "candidate": "PATERSON Emma",
+     "party": "X_SPRCS",
+     "votes": 10.0,
+     "pct": 7.0
+    },
+    {
+     "candidate": "IVKA Josip",
+     "party": "AJP",
+     "votes": 3.0,
+     "pct": 2.1
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "PATERSON Emma",
+   "excluded_party": "X_SPRCS",
+   "votes": 193.0,
+   "to": [
+    {
+     "candidate": "HARRISON Ryan",
+     "party": "IND",
+     "votes": 54.0,
+     "pct": 28.0
+    },
+    {
+     "candidate": "ROLLS Alice",
+     "party": "ALP",
+     "votes": 35.0,
+     "pct": 18.1
+    },
+    {
+     "candidate": "KIERNAN Dylan",
+     "party": "GRN",
+     "votes": 33.0,
+     "pct": 17.1
+    },
+    {
+     "candidate": "ROTOLO Rosalie",
+     "party": "LIB",
+     "votes": 29.0,
+     "pct": 15.0
+    },
+    {
+     "candidate": "WILKINSON Jason",
+     "party": "ONP",
+     "votes": 23.0,
+     "pct": 11.9
+    },
+    {
+     "candidate": "IVKA Josip",
+     "party": "AJP",
+     "votes": 19.0,
+     "pct": 9.8
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "IVKA Josip",
+   "excluded_party": "AJP",
+   "votes": 336.0,
+   "to": [
+    {
+     "candidate": "KIERNAN Dylan",
+     "party": "GRN",
+     "votes": 187.0,
+     "pct": 55.7
+    },
+    {
+     "candidate": "ROLLS Alice",
+     "party": "ALP",
+     "votes": 56.0,
+     "pct": 16.7
+    },
+    {
+     "candidate": "HARRISON Ryan",
+     "party": "IND",
+     "votes": 46.0,
+     "pct": 13.7
+    },
+    {
+     "candidate": "ROTOLO Rosalie",
+     "party": "LIB",
+     "votes": 32.0,
+     "pct": 9.5
+    },
+    {
+     "candidate": "WILKINSON Jason",
+     "party": "ONP",
+     "votes": 15.0,
+     "pct": 4.5
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "HARRISON Ryan",
+   "excluded_party": "IND",
+   "votes": 1174.0,
+   "to": [
+    {
+     "candidate": "ROLLS Alice",
+     "party": "ALP",
+     "votes": 400.0,
+     "pct": 34.1
+    },
+    {
+     "candidate": "KIERNAN Dylan",
+     "party": "GRN",
+     "votes": 379.0,
+     "pct": 32.3
+    },
+    {
+     "candidate": "ROTOLO Rosalie",
+     "party": "LIB",
+     "votes": 273.0,
+     "pct": 23.3
+    },
+    {
+     "candidate": "WILKINSON Jason",
+     "party": "ONP",
+     "votes": 122.0,
+     "pct": 10.4
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "WILKINSON Jason",
+   "excluded_party": "ONP",
+   "votes": 2504.0,
+   "to": [
+    {
+     "candidate": "ROTOLO Rosalie",
+     "party": "LIB",
+     "votes": 1674.0,
+     "pct": 66.9
+    },
+    {
+     "candidate": "ROLLS Alice",
+     "party": "ALP",
+     "votes": 418.0,
+     "pct": 16.7
+    },
+    {
+     "candidate": "KIERNAN Dylan",
+     "party": "GRN",
+     "votes": 412.0,
+     "pct": 16.5
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "KIERNAN Dylan",
+   "excluded_party": "GRN",
+   "votes": 4369.0,
+   "to": [
+    {
+     "candidate": "ROLLS Alice",
+     "party": "ALP",
+     "votes": 3593.0,
+     "pct": 82.2
+    },
+    {
+     "candidate": "ROTOLO Rosalie",
+     "party": "LIB",
+     "votes": 776.0,
+     "pct": 17.8
+    }
+   ]
+  }
+ ],
+ "waite": [
+  {
+   "count": 2,
+   "excluded": "RUTA Mark",
+   "excluded_party": "X_SGFGA",
+   "votes": 61.0,
+   "to": [
+    {
+     "candidate": "PAWLEY Ross",
+     "party": "X_AFP",
+     "votes": 13.0,
+     "pct": 21.3
+    },
+    {
+     "candidate": "GARGETT Alec",
+     "party": "IND",
+     "votes": 12.0,
+     "pct": 19.7
+    },
+    {
+     "candidate": "PANGALLO Frank",
+     "party": "LIB",
+     "votes": 10.0,
+     "pct": 16.4
+    },
+    {
+     "candidate": "VON FRATTNER Aaron",
+     "party": "ONP",
+     "votes": 9.0,
+     "pct": 14.8
+    },
+    {
+     "candidate": "HUTCHESSON Catherine",
+     "party": "ALP",
+     "votes": 9.0,
+     "pct": 14.8
+    },
+    {
+     "candidate": "BRUMFIELD Declan",
+     "party": "GRN",
+     "votes": 8.0,
+     "pct": 13.1
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "PAWLEY Ross",
+   "excluded_party": "X_AFP",
+   "votes": 272.0,
+   "to": [
+    {
+     "candidate": "VON FRATTNER Aaron",
+     "party": "ONP",
+     "votes": 103.0,
+     "pct": 37.9
+    },
+    {
+     "candidate": "PANGALLO Frank",
+     "party": "LIB",
+     "votes": 82.0,
+     "pct": 30.1
+    },
+    {
+     "candidate": "HUTCHESSON Catherine",
+     "party": "ALP",
+     "votes": 36.0,
+     "pct": 13.2
+    },
+    {
+     "candidate": "GARGETT Alec",
+     "party": "IND",
+     "votes": 34.0,
+     "pct": 12.5
+    },
+    {
+     "candidate": "BRUMFIELD Declan",
+     "party": "GRN",
+     "votes": 17.0,
+     "pct": 6.2
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "GARGETT Alec",
+   "excluded_party": "IND",
+   "votes": 797.0,
+   "to": [
+    {
+     "candidate": "BRUMFIELD Declan",
+     "party": "GRN",
+     "votes": 284.0,
+     "pct": 35.6
+    },
+    {
+     "candidate": "HUTCHESSON Catherine",
+     "party": "ALP",
+     "votes": 205.0,
+     "pct": 25.7
+    },
+    {
+     "candidate": "VON FRATTNER Aaron",
+     "party": "ONP",
+     "votes": 173.0,
+     "pct": 21.7
+    },
+    {
+     "candidate": "PANGALLO Frank",
+     "party": "LIB",
+     "votes": 135.0,
+     "pct": 16.9
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "VON FRATTNER Aaron",
+   "excluded_party": "ONP",
+   "votes": 3355.0,
+   "to": [
+    {
+     "candidate": "PANGALLO Frank",
+     "party": "LIB",
+     "votes": 2214.0,
+     "pct": 66.0
+    },
+    {
+     "candidate": "HUTCHESSON Catherine",
+     "party": "ALP",
+     "votes": 640.0,
+     "pct": 19.1
+    },
+    {
+     "candidate": "BRUMFIELD Declan",
+     "party": "GRN",
+     "votes": 501.0,
+     "pct": 14.9
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "BRUMFIELD Declan",
+   "excluded_party": "GRN",
+   "votes": 5009.0,
+   "to": [
+    {
+     "candidate": "HUTCHESSON Catherine",
+     "party": "ALP",
+     "votes": 4380.0,
+     "pct": 87.4
+    },
+    {
+     "candidate": "PANGALLO Frank",
+     "party": "LIB",
+     "votes": 629.0,
+     "pct": 12.6
+    }
+   ]
+  }
+ ],
+ "west-torrens": [
+  {
+   "count": 2,
+   "excluded": "WILSON Mathew",
+   "excluded_party": "X_AFP",
+   "votes": 179.0,
+   "to": [
+    {
+     "candidate": "WAMAYI Anna",
+     "party": "FFP",
+     "votes": 65.0,
+     "pct": 36.3
+    },
+    {
+     "candidate": "BANNON Sam",
+     "party": "GRN",
+     "votes": 43.0,
+     "pct": 24.0
+    },
+    {
+     "candidate": "KOUTSANTONIS Tom",
+     "party": "ALP",
+     "votes": 31.0,
+     "pct": 17.3
+    },
+    {
+     "candidate": "ALDRIDGE Judith",
+     "party": "ONP",
+     "votes": 21.0,
+     "pct": 11.7
+    },
+    {
+     "candidate": "SHARMA Sarika",
+     "party": "LIB",
+     "votes": 19.0,
+     "pct": 10.6
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "WAMAYI Anna",
+   "excluded_party": "FFP",
+   "votes": 455.0,
+   "to": [
+    {
+     "candidate": "ALDRIDGE Judith",
+     "party": "ONP",
+     "votes": 186.0,
+     "pct": 40.9
+    },
+    {
+     "candidate": "KOUTSANTONIS Tom",
+     "party": "ALP",
+     "votes": 122.0,
+     "pct": 26.8
+    },
+    {
+     "candidate": "BANNON Sam",
+     "party": "GRN",
+     "votes": 74.0,
+     "pct": 16.3
+    },
+    {
+     "candidate": "SHARMA Sarika",
+     "party": "LIB",
+     "votes": 73.0,
+     "pct": 16.0
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "SHARMA Sarika",
+   "excluded_party": "LIB",
+   "votes": 2266.0,
+   "to": [
+    {
+     "candidate": "ALDRIDGE Judith",
+     "party": "ONP",
+     "votes": 1221.0,
+     "pct": 53.9
+    },
+    {
+     "candidate": "KOUTSANTONIS Tom",
+     "party": "ALP",
+     "votes": 604.0,
+     "pct": 26.7
+    },
+    {
+     "candidate": "BANNON Sam",
+     "party": "GRN",
+     "votes": 441.0,
+     "pct": 19.5
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "BANNON Sam",
+   "excluded_party": "GRN",
+   "votes": 4412.0,
+   "to": [
+    {
+     "candidate": "KOUTSANTONIS Tom",
+     "party": "ALP",
+     "votes": 3880.0,
+     "pct": 87.9
+    },
+    {
+     "candidate": "ALDRIDGE Judith",
+     "party": "ONP",
+     "votes": 532.0,
+     "pct": 12.1
+    }
+   ]
+  }
+ ],
+ "wright": [
+  {
+   "count": 2,
+   "excluded": "WILTON Rosalind",
+   "excluded_party": "X_UVA",
+   "votes": 107.0,
+   "to": [
+    {
+     "candidate": "PORTER Sean",
+     "party": "ONP",
+     "votes": 36.0,
+     "pct": 33.6
+    },
+    {
+     "candidate": "SKINNER Samantha",
+     "party": "GRN",
+     "votes": 19.0,
+     "pct": 17.8
+    },
+    {
+     "candidate": "HILL Robin",
+     "party": "X_AFP",
+     "votes": 14.0,
+     "pct": 13.1
+    },
+    {
+     "candidate": "HORLEY Deb",
+     "party": "AJP",
+     "votes": 13.0,
+     "pct": 12.1
+    },
+    {
+     "candidate": "BOYER Blair",
+     "party": "ALP",
+     "votes": 12.0,
+     "pct": 11.2
+    },
+    {
+     "candidate": "NANCARROW Sue",
+     "party": "FFP",
+     "votes": 9.0,
+     "pct": 8.4
+    },
+    {
+     "candidate": "KEONG-WOODHOUSE Carston",
+     "party": "LIB",
+     "votes": 4.0,
+     "pct": 3.7
+    }
+   ]
+  },
+  {
+   "count": 3,
+   "excluded": "HILL Robin",
+   "excluded_party": "X_AFP",
+   "votes": 366.0,
+   "to": [
+    {
+     "candidate": "HORLEY Deb",
+     "party": "AJP",
+     "votes": 141.0,
+     "pct": 38.5
+    },
+    {
+     "candidate": "NANCARROW Sue",
+     "party": "FFP",
+     "votes": 116.0,
+     "pct": 31.7
+    },
+    {
+     "candidate": "BOYER Blair",
+     "party": "ALP",
+     "votes": 38.0,
+     "pct": 10.4
+    },
+    {
+     "candidate": "PORTER Sean",
+     "party": "ONP",
+     "votes": 28.0,
+     "pct": 7.7
+    },
+    {
+     "candidate": "KEONG-WOODHOUSE Carston",
+     "party": "LIB",
+     "votes": 22.0,
+     "pct": 6.0
+    },
+    {
+     "candidate": "SKINNER Samantha",
+     "party": "GRN",
+     "votes": 21.0,
+     "pct": 5.7
+    }
+   ]
+  },
+  {
+   "count": 4,
+   "excluded": "HORLEY Deb",
+   "excluded_party": "AJP",
+   "votes": 527.0,
+   "to": [
+    {
+     "candidate": "NANCARROW Sue",
+     "party": "FFP",
+     "votes": 195.0,
+     "pct": 37.0
+    },
+    {
+     "candidate": "SKINNER Samantha",
+     "party": "GRN",
+     "votes": 179.0,
+     "pct": 34.0
+    },
+    {
+     "candidate": "BOYER Blair",
+     "party": "ALP",
+     "votes": 89.0,
+     "pct": 16.9
+    },
+    {
+     "candidate": "PORTER Sean",
+     "party": "ONP",
+     "votes": 37.0,
+     "pct": 7.0
+    },
+    {
+     "candidate": "KEONG-WOODHOUSE Carston",
+     "party": "LIB",
+     "votes": 27.0,
+     "pct": 5.1
+    }
+   ]
+  },
+  {
+   "count": 5,
+   "excluded": "NANCARROW Sue",
+   "excluded_party": "FFP",
+   "votes": 992.0,
+   "to": [
+    {
+     "candidate": "PORTER Sean",
+     "party": "ONP",
+     "votes": 336.0,
+     "pct": 33.9
+    },
+    {
+     "candidate": "BOYER Blair",
+     "party": "ALP",
+     "votes": 331.0,
+     "pct": 33.4
+    },
+    {
+     "candidate": "KEONG-WOODHOUSE Carston",
+     "party": "LIB",
+     "votes": 186.0,
+     "pct": 18.8
+    },
+    {
+     "candidate": "SKINNER Samantha",
+     "party": "GRN",
+     "votes": 139.0,
+     "pct": 14.0
+    }
+   ]
+  },
+  {
+   "count": 6,
+   "excluded": "KEONG-WOODHOUSE Carston",
+   "excluded_party": "LIB",
+   "votes": 2409.0,
+   "to": [
+    {
+     "candidate": "PORTER Sean",
+     "party": "ONP",
+     "votes": 1273.0,
+     "pct": 52.8
+    },
+    {
+     "candidate": "BOYER Blair",
+     "party": "ALP",
+     "votes": 662.0,
+     "pct": 27.5
+    },
+    {
+     "candidate": "SKINNER Samantha",
+     "party": "GRN",
+     "votes": 474.0,
+     "pct": 19.7
+    }
+   ]
+  },
+  {
+   "count": 7,
+   "excluded": "SKINNER Samantha",
+   "excluded_party": "GRN",
+   "votes": 2977.0,
+   "to": [
+    {
+     "candidate": "BOYER Blair",
+     "party": "ALP",
+     "votes": 2441.0,
+     "pct": 82.0
+    },
+    {
+     "candidate": "PORTER Sean",
+     "party": "ONP",
+     "votes": 536.0,
+     "pct": 18.0
+    }
+   ]
+  }
+ ]
+}

@@ -20,9 +20,10 @@ import numpy as np
 import polars as pl
 from scipy.special import expit, logit
 
-from prophecy.model.preferences import BLOCS, IDX, count, draw_weights, two_party
+from prophecy.model.preferences import BLOCS, IDX, count, draw_exhaust, draw_weights, two_party
 
 SWING_BLOCS = ["ALP", "COAL", "GRN", "OTH"]
+COAL_SPLIT_SD = 0.6  # logit: spread of the Liberal-National split in a three-cornered contest
 
 
 @dataclass
@@ -35,12 +36,21 @@ class SimConfig:
         default_factory=lambda: {"ALP": 2.0, "COAL": 2.0, "GRN": 1.2, "ONP": 2.5}
     )
     poll_error_df: float = 5.0
+    # Correlation of the parties' polling errors (order ``poll_error_corr_parties``);
+    # absent: independent errors.
+    poll_error_corr: list[list[float]] | None = None
+    poll_error_corr_parties: list[str] = field(default_factory=list)
     # Persistent poll lean (points, polls minus result) subtracted from the aggregate.
     poll_bias: dict[str, float] = field(default_factory=dict)
     region_sd: float = 0.06  # logit, per region x party
     seat_sd: dict[str, float] = field(
         default_factory=lambda: {"ALP": 0.12, "COAL": 0.12, "GRN": 0.18, "OTH": 0.25, "ONP": 0.25}
     )
+    # Student-t degrees of freedom of seat noise per party (absent: Gaussian), and the
+    # regression to the mean of seat swings on the seat's centred logit share (absent: 0).
+    # Both estimated from past elections by ``prophecy.model.swing_fit``.
+    seat_df: dict[str, float] = field(default_factory=dict)
+    seat_beta: dict[str, float] = field(default_factory=dict)
     ind_decay_mean: float = -0.2  # log scale: independents retain ~80% on average
     ind_decay_sd: float = 0.4
     # Candidate effects on the logit primary vote of the party concerned (priors, in line
@@ -66,6 +76,11 @@ class SeatInputs:
     sophomore: np.ndarray | None = None  # D x B: 1 where a first-term member recontests
     contest: np.ndarray | None = None  # D x B bool: bloc has a candidate (None = all)
     ind_prior: np.ndarray | None = None  # D: expected IND share (fraction), NaN = none
+    new_ind: np.ndarray | None = None  # D: first-time independents on the ballot
+    new_ind_pool: np.ndarray | None = None  # earlier first-time independents' shares (fractions)
+    # Three-cornered contests: the Liberal share of the Coalition vote last time where a
+    # Liberal and a National both stand (0.5 when only one stood), NaN elsewhere.
+    lib_share: np.ndarray | None = None
     notes: dict[str, list[str]] = field(default_factory=dict)
 
 
@@ -185,6 +200,11 @@ def _recentre(p_logit: np.ndarray, weight: np.ndarray, target: np.ndarray) -> np
     return p_logit + ((lo + hi) / 2)[:, None]
 
 
+def _seat_noise(rng: np.random.Generator, df: float | None, size: tuple[int, int]) -> np.ndarray:
+    """Standard seat noise: Student-t with ``df`` degrees of freedom (scale 1), or normal."""
+    return rng.standard_t(df, size=size) if df else rng.standard_normal(size)
+
+
 def _candidate_adj(inputs: SeatInputs, k: int, cfg: SimConfig) -> np.ndarray:
     adj = np.zeros(len(inputs.districts))
     if inputs.retiring is not None:
@@ -203,18 +223,15 @@ class SimResult:
     final: np.ndarray  # S x D x B final-count shares
     weights: np.ndarray  # S x B x B flow weights
     tpp_alp_coal: np.ndarray  # S
+    coal_label: np.ndarray | None = None  # S x D Coalition party where both stand, else None
 
 
-def simulate(inputs: SeatInputs, agg_draws: np.ndarray, agg_parties: list[str],
-             flow_weights: np.ndarray, cfg: SimConfig | None = None) -> SimResult:
-    """agg_draws: draws x parties election-day shares (%) from the aggregator."""
-    cfg = cfg or SimConfig()
-    rng = np.random.default_rng(cfg.seed)
-    D = len(inputs.districts)
+def statewide_shares(agg_draws: np.ndarray, agg_parties: list[str], cfg: SimConfig,
+                     rng: np.random.Generator) -> np.ndarray:
+    """Statewide primaries (%) per simulation, in model bloc order: each aggregator draw
+    repeated ``n_per_draw`` times, less the poll bias, plus a systematic polling error."""
     draws = np.repeat(agg_draws, cfg.n_per_draw, axis=0)
     S = draws.shape[0]
-
-    # 1. Statewide shares with systematic polling error, in model bloc order.
     state = np.zeros((S, len(BLOCS)))
     for k, p in enumerate(agg_parties):
         state[:, IDX[p]] = draws[:, k]
@@ -222,12 +239,36 @@ def simulate(inputs: SeatInputs, agg_draws: np.ndarray, agg_parties: list[str],
     for p, b in cfg.poll_bias.items():
         if p in agg_parties:
             state[:, IDX[p]] -= b
+    corr_parties = [p for p in cfg.poll_error_corr_parties if p in agg_parties] if cfg.poll_error_corr else []
+    if corr_parties:
+        # Multivariate t: correlated normals over one shared chi-square scale.
+        idx = [cfg.poll_error_corr_parties.index(p) for p in corr_parties]
+        c = np.asarray(cfg.poll_error_corr)[np.ix_(idx, idx)]
+        sds = np.array([cfg.poll_error_sd[p] for p in corr_parties])
+        z = rng.standard_normal((S, len(corr_parties))) @ np.linalg.cholesky(c).T
+        mix = np.sqrt(cfg.poll_error_df / rng.chisquare(cfg.poll_error_df, size=S))
+        for j, p in enumerate(corr_parties):
+            state[:, IDX[p]] += sds[j] * scale * z[:, j] * mix
     for p, sd in cfg.poll_error_sd.items():
-        if p in agg_parties:  # e.g. ONP is not modelled in cycles where it wasn't polled
+        if p in agg_parties and p not in corr_parties:  # e.g. ONP is not modelled in cycles where it wasn't polled
             state[:, IDX[p]] += sd * scale * rng.standard_t(cfg.poll_error_df, size=S)
     modelled = [IDX[p] for p in agg_parties]
     state[:, modelled] = np.clip(state[:, modelled], 0.3, None)
-    state = 100 * state / state.sum(axis=1, keepdims=True)
+    return 100 * state / state.sum(axis=1, keepdims=True)
+
+
+def simulate(inputs: SeatInputs, agg_draws: np.ndarray, agg_parties: list[str],
+             flow_weights: np.ndarray, cfg: SimConfig | None = None,
+             exhaust: np.ndarray | None = None) -> SimResult:
+    """agg_draws: draws x parties election-day shares (%) from the aggregator.
+
+    exhaust: per-bloc exhaustion weights under optional preferential voting (NSW).
+    """
+    cfg = cfg or SimConfig()
+    rng = np.random.default_rng(cfg.seed)
+    D = len(inputs.districts)
+    state = statewide_shares(agg_draws, agg_parties, cfg, rng)
+    S = state.shape[0]
 
     w = inputs.weight / inputs.weight.sum()
     base_state = inputs.base.T @ w  # B, previous statewide shares
@@ -255,6 +296,15 @@ def simulate(inputs: SeatInputs, agg_draws: np.ndarray, agg_parties: list[str],
         prior = np.nan_to_num(inputs.ind_prior)[None, :] * np.exp(
             rng.normal(0, cfg.ind_prior_sd, size=(S, D)))
         ind = np.where(has[None, :], prior, ind)
+    if inputs.new_ind is not None and inputs.new_ind_pool is not None:
+        # First-time independents on the ballot (not curated): resampled from what such
+        # candidates polled before. A separate stream keeps the other draws unchanged.
+        from prophecy.model.new_candidates import draw
+
+        n_new = inputs.new_ind.copy()
+        if inputs.ind_prior is not None:
+            n_new[np.isfinite(inputs.ind_prior)] = 0
+        ind = ind + draw(n_new, inputs.new_ind_pool, S, np.random.default_rng(cfg.seed + 1))
     seat[:, :, IDX["IND"]] = ind
     ind_state = ind @ w  # S
 
@@ -266,8 +316,10 @@ def simulate(inputs: SeatInputs, agg_draws: np.ndarray, agg_parties: list[str],
         base = np.clip(inputs.base[:, k], 0.002, 0.98)
         swing = logit(targets[b]) - logit(np.clip(base_state[k], 0.002, 0.98))
         region_eff = rng.normal(0, cfg.region_sd, size=(S, len(region_names)))[:, region_idx]
-        noise = rng.normal(0, cfg.seat_sd[b], size=(S, D))
-        p = logit(base)[None, :] + swing[:, None] + region_eff + noise + _candidate_adj(inputs, k, cfg)[None, :]
+        noise = cfg.seat_sd[b] * _seat_noise(rng, cfg.seat_df.get(b), (S, D))
+        l0 = logit(base)
+        rtm = cfg.seat_beta.get(b, 0.0) * (l0 - l0 @ w)  # strong seats swing back
+        p = (l0 + rtm)[None, :] + swing[:, None] + region_eff + noise + _candidate_adj(inputs, k, cfg)[None, :]
         seat[:, :, k] = expit(_recentre(p, inputs.weight, targets[b]))
 
     # 3. One Nation from federal geography (only when ONP is modelled this cycle).
@@ -282,20 +334,32 @@ def simulate(inputs: SeatInputs, agg_draws: np.ndarray, agg_parties: list[str],
 
     # 5. Preference count.
     flows = draw_weights(flow_weights, S, rng)
-    winner, final = count(seat, flows)
+    ex = draw_exhaust(exhaust, S, rng) if exhaust is not None else None
+    winner, final = count(seat, flows, ex)
     # Statewide 2PP: split the simulated independent vote back out of "Others", since
     # independents' preferences differ from minor parties'.
     tpp_primary = state / 100
     tpp_primary[:, IDX["IND"]] = np.minimum(ind_state, tpp_primary[:, IDX["OTH"]])
     tpp_primary[:, IDX["OTH"]] -= tpp_primary[:, IDX["IND"]]
-    tpp = two_party(tpp_primary, flows, "ALP", "COAL")
-    return SimResult(inputs, state, seat, winner, final, flows, tpp)
+    tpp = two_party(tpp_primary, flows, "ALP", "COAL", ex)
+    coal_label = None
+    if inputs.lib_share is not None and np.isfinite(inputs.lib_share).any():
+        # Which Coalition party leads the Coalition vote: the previous split, with a
+        # wide spread on the logit scale (candidates and campaigns vary).
+        r = np.random.default_rng(cfg.seed + 3)
+        split = np.clip(np.nan_to_num(inputs.lib_share, nan=0.5), 0.02, 0.98)
+        lib = expit(logit(split)[None, :] + r.normal(0, COAL_SPLIT_SD, size=(S, D))) > 0.5
+        coal_label = np.where(lib, "LIB", "NAT").astype(object)
+        coal_label[:, ~np.isfinite(inputs.lib_share)] = None
+    return SimResult(inputs, state, seat, winner, final, flows, tpp, coal_label)
 
 
 def seat_labels(res: SimResult) -> np.ndarray:
     """Winner as a party label per sim and seat (Coalition split into LIB/NAT)."""
     labels = np.array(BLOCS, dtype=object)[res.winner]
     coal = np.array(res.inputs.coal_party, dtype=object)[None, :].repeat(labels.shape[0], 0)
+    if res.coal_label is not None:
+        coal = np.where(res.coal_label != None, res.coal_label, coal)  # noqa: E711 (object array)
     return np.where(labels == "COAL", coal, labels)
 
 
@@ -303,8 +367,11 @@ def summarise(res: SimResult) -> dict:
     labels = seat_labels(res)
     S, D = labels.shape
     parties = ["ALP", "LIB", "NAT", "GRN", "ONP", "IND", "OTH"]
+    for merged in ("LNP", "CLP"):  # Queensland's and the NT's merged Coalition parties
+        if merged in res.inputs.coal_party:
+            parties.insert(3, merged)
     seats = {p: (labels == p).sum(axis=1) for p in parties}
-    coal = seats["LIB"] + seats["NAT"]
+    coal = sum(seats[p] for p in ("LIB", "NAT", "LNP", "CLP") if p in seats)
     majority = D // 2 + 1
     outcome = {
         "alp_majority": float(np.mean(seats["ALP"] >= majority)),

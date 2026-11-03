@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { geoMercator, geoPath, type GeoPermissibleObjects } from 'd3-geo';
 	import type { FeatureCollection, Geometry } from 'geojson';
+	import type { MapFrame } from '$lib/maps';
 
 	export interface SeatProps {
 		name: string;
@@ -15,6 +16,7 @@
 	interface Props {
 		title: string;
 		geo: FeatureCollection<Geometry, SeatProps>;
+		frame: MapFrame;
 		fill: (slug: string) => string;
 		opacity?: (slug: string) => number;
 		tooltip: (slug: string) => { title: string; lines: string[] };
@@ -23,16 +25,19 @@
 		/** Continuous legend: CSS gradient + end labels. */
 		gradient?: { css: string; left: string; mid?: string; right: string };
 	}
-	let { title, geo, fill, opacity = () => 1, tooltip, href, legend = [], gradient }: Props = $props();
+	let { title, geo, frame, fill, opacity = () => 1, tooltip, href, legend = [], gradient }: Props = $props();
 
-	// Inset frame: Metropolitan Melbourne.
-	const METRO: [number, number][] = [
-		[144.58, -38.12],
-		[145.42, -38.12],
-		[145.42, -37.58],
-		[144.58, -37.58]
-	];
-	const metroFit = { type: 'MultiPoint', coordinates: METRO } as GeoPermissibleObjects;
+	// Inset frame on the capital city.
+	const metro = $derived.by((): [number, number][] => {
+		const { west, south, east, north } = frame.inset;
+		return [
+			[west, south],
+			[east, south],
+			[east, north],
+			[west, north]
+		];
+	});
+	const metroFit = $derived({ type: 'MultiPoint', coordinates: metro } as GeoPermissibleObjects);
 
 	let width = $state(900);
 	let hover = $state<string | null>(null);
@@ -40,16 +45,16 @@
 
 	const wide = $derived(width >= 760);
 	const mainW = $derived(wide ? Math.round(width * 0.6) : width);
-	const mainH = $derived(Math.round(mainW * 0.64));
+	const mainH = $derived(Math.round(mainW * frame.aspect));
 	const insetW = $derived(wide ? width - mainW - 16 : width);
-	const insetH = $derived(Math.round(insetW * (wide ? 0.95 : 0.75)));
+	const insetH = $derived(Math.round(insetW * (wide ? (frame.inset.aspect ?? 0.95) : 0.75)));
 
 	const mainProj = $derived(geoMercator().fitSize([mainW, mainH], geo as GeoPermissibleObjects));
 	const insetProj = $derived(geoMercator().fitSize([insetW, insetH], metroFit));
 	const mainPath = $derived(geoPath(mainProj));
 	const insetPath = $derived(geoPath(insetProj));
-	const frame = $derived.by(() => {
-		const pts = METRO.map((c) => mainProj(c)!);
+	const box = $derived.by(() => {
+		const pts = metro.map((c) => mainProj(c)!);
 		const xs = pts.map((p) => p[0]);
 		const ys = pts.map((p) => p[1]);
 		return { x: Math.min(...xs), y: Math.min(...ys), w: Math.max(...xs) - Math.min(...xs), h: Math.max(...ys) - Math.min(...ys) };
@@ -93,13 +98,13 @@
 
 <figure class="seatmap" bind:clientWidth={width} aria-label={title}>
 	<div class="maps">
-		<svg viewBox="0 0 {mainW} {mainH}" class="main" role="img" aria-label="{title}: Victoria">
+		<svg viewBox="0 0 {mainW} {mainH}" class="main" role="img" aria-label="{title}: {frame.state}">
 			{@render seats(mainPath, false)}
-			<rect class="frame" x={frame.x} y={frame.y} width={frame.w} height={frame.h} />
+			<rect class="frame" x={box.x} y={box.y} width={box.w} height={box.h} />
 		</svg>
 		<div class="inset">
-			<span class="inset-label">Metropolitan Melbourne</span>
-			<svg viewBox="0 0 {insetW} {insetH}" role="img" aria-label="{title}: Metropolitan Melbourne">
+			<span class="inset-label">{frame.inset.label}</span>
+			<svg viewBox="0 0 {insetW} {insetH}" role="img" aria-label="{title}: {frame.inset.label}">
 				<defs><clipPath id={clipId}><rect width={insetW} height={insetH} /></clipPath></defs>
 				<g clip-path="url(#{clipId})">{@render seats(insetPath, true)}</g>
 				<rect class="inset-border" width={insetW} height={insetH} />
