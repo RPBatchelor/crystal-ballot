@@ -55,13 +55,16 @@ jobs:
           uv run prophecy ingest-polls --jurisdiction VIC
           uv run prophecy ingest-polls --jurisdiction FED
 
-      - name: Poll aggregate and seat forecast
+      # Victoria first, committed on its own, so a slow federal fit never holds it back.
+      - name: Victorian poll aggregate and seat forecast
         if: env.FULL_RUN == 'true'
+        timeout-minutes: 50
         working-directory: pipeline
         run: |
-          uv run prophecy aggregate --election vic-2026
-          uv run prophecy forecast --election vic-2026
-          uv run prophecy aggregate --election fed-next --iter-sampling 2000
+          # 500 draws per chain (2000 total) keeps the fit near 25 min on a 4-core runner;
+          # 10 simulations per draw keeps the forecast at 20,000.
+          uv run prophecy aggregate --election vic-2026 --iter-sampling 500
+          uv run prophecy forecast --election vic-2026 --n-per-draw 10
 
       - name: Test
         working-directory: pipeline
@@ -73,7 +76,7 @@ jobs:
           uv run prophecy publish --election vic-2026
           uv run prophecy publish --election fed-next
 
-      - name: Commit refreshed data
+      - name: Commit Victorian update
         if: env.FULL_RUN == 'true'
         run: |
           git config user.name "prophecy-bot"
@@ -83,6 +86,30 @@ jobs:
             echo "No data changes"
           else
             git commit -m "Daily forecast update $(date -u +%Y-%m-%d)"
+            git pull --rebase
+            git push
+          fi
+
+      # Federal trend: best effort. On timeout or failure the last committed fit stays.
+      - name: Federal poll aggregate
+        id: fed
+        if: env.FULL_RUN == 'true'
+        timeout-minutes: 30
+        continue-on-error: true
+        working-directory: pipeline
+        run: |
+          uv run prophecy aggregate --election fed-next --iter-sampling 2000
+          uv run prophecy publish --election fed-next
+
+      - name: Commit federal update
+        if: env.FULL_RUN == 'true' && steps.fed.outcome == 'success'
+        run: |
+          git add data/processed web/static/data
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "Daily federal poll trend $(date -u +%Y-%m-%d)"
+            git pull --rebase
             git push
           fi
 
