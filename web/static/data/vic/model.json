@@ -3,6 +3,274 @@
   {
    "election_id": "vic-2018",
    "n_seats": 88,
+   "brier": 0.1755,
+   "log_loss": 0.3038,
+   "favourite_accuracy": 0.8636,
+   "status_quo_accuracy": 0.8636,
+   "seats": {
+    "ALP": {
+     "actual": 55,
+     "median": 50.0,
+     "p90": [
+      40.0,
+      61.0
+     ],
+     "covered_90": true
+    },
+    "COAL": {
+     "actual": 27,
+     "median": 34.0,
+     "p90": [
+      23.0,
+      44.0
+     ],
+     "covered_90": true
+    },
+    "GRN": {
+     "actual": 3,
+     "median": 2.0,
+     "p90": [
+      0.0,
+      5.0
+     ],
+     "covered_90": true
+    },
+    "IND": {
+     "actual": 3,
+     "median": 2.0,
+     "p90": [
+      0.0,
+      4.0
+     ],
+     "covered_90": true
+    }
+   },
+   "calibration": [
+    {
+     "bin": "0.50-0.70",
+     "n": 16,
+     "mean_prob": 0.61,
+     "hit_rate": 0.5
+    },
+    {
+     "bin": "0.70-0.90",
+     "n": 24,
+     "mean_prob": 0.826,
+     "hit_rate": 0.875
+    },
+    {
+     "bin": "0.90-0.99",
+     "n": 28,
+     "mean_prob": 0.951,
+     "hit_rate": 1.0
+    },
+    {
+     "bin": "0.99-1.00",
+     "n": 18,
+     "mean_prob": 0.997,
+     "hit_rate": 1.0
+    }
+   ],
+   "misses": [
+    {
+     "district": "Bass",
+     "won": "ALP",
+     "favourite": "LIB",
+     "p_fav": 0.678,
+     "p_won": 0.272,
+     "incumbent": "LIB"
+    },
+    {
+     "district": "Bayswater",
+     "won": "ALP",
+     "favourite": "LIB",
+     "p_fav": 0.604,
+     "p_won": 0.396,
+     "incumbent": "LIB"
+    },
+    {
+     "district": "Box Hill",
+     "won": "ALP",
+     "favourite": "LIB",
+     "p_fav": 0.676,
+     "p_won": 0.322,
+     "incumbent": "LIB"
+    },
+    {
+     "district": "Brunswick",
+     "won": "GRN",
+     "favourite": "ALP",
+     "p_fav": 0.509,
+     "p_won": 0.476,
+     "incumbent": "ALP"
+    },
+    {
+     "district": "Burwood",
+     "won": "ALP",
+     "favourite": "LIB",
+     "p_fav": 0.512,
+     "p_won": 0.487,
+     "incumbent": "LIB"
+    },
+    {
+     "district": "Hawthorn",
+     "won": "ALP",
+     "favourite": "LIB",
+     "p_fav": 0.854,
+     "p_won": 0.113,
+     "incumbent": "LIB"
+    },
+    {
+     "district": "Mildura",
+     "won": "IND",
+     "favourite": "NAT",
+     "p_fav": 0.833,
+     "p_won": 0.167,
+     "incumbent": "NAT"
+    },
+    {
+     "district": "Morwell",
+     "won": "IND",
+     "favourite": "NAT",
+     "p_fav": 0.55,
+     "p_won": 0.049,
+     "incumbent": "NAT"
+    },
+    {
+     "district": "Mount Waverley",
+     "won": "ALP",
+     "favourite": "LIB",
+     "p_fav": 0.556,
+     "p_won": 0.444,
+     "incumbent": "LIB"
+    },
+    {
+     "district": "Nepean",
+     "won": "ALP",
+     "favourite": "LIB",
+     "p_fav": 0.781,
+     "p_won": 0.207,
+     "incumbent": "LIB"
+    },
+    {
+     "district": "Prahran",
+     "won": "GRN",
+     "favourite": "ALP",
+     "p_fav": 0.445,
+     "p_won": 0.15,
+     "incumbent": "GRN"
+    },
+    {
+     "district": "Ringwood",
+     "won": "ALP",
+     "favourite": "LIB",
+     "p_fav": 0.56,
+     "p_won": 0.44,
+     "incumbent": "LIB"
+    }
+   ],
+   "seat_vote": {
+    "ALP": {
+     "n": 88,
+     "crps": 2.868,
+     "cover50": 0.511,
+     "cover90": 0.886,
+     "pit_hist": [
+      6,
+      3,
+      7,
+      5,
+      10,
+      10,
+      12,
+      7,
+      18,
+      10
+     ]
+    },
+    "COAL": {
+     "n": 87,
+     "crps": 3.121,
+     "cover50": 0.414,
+     "cover90": 0.931,
+     "pit_hist": [
+      18,
+      20,
+      13,
+      13,
+      6,
+      5,
+      5,
+      4,
+      2,
+      1
+     ]
+    },
+    "GRN": {
+     "n": 88,
+     "crps": 1.269,
+     "cover50": 0.75,
+     "cover90": 0.977,
+     "pit_hist": [
+      3,
+      7,
+      7,
+      15,
+      23,
+      15,
+      7,
+      4,
+      6,
+      1
+     ]
+    }
+   },
+   "pendulum_accuracy": 0.8636,
+   "statewide": {
+    "ALP": {
+     "forecast": [
+      37.8,
+      41.4,
+      45.0
+     ],
+     "actual": 42.9
+    },
+    "COAL": {
+     "forecast": [
+      35.4,
+      38.8,
+      42.2
+     ],
+     "actual": 35.199999999999996
+    },
+    "GRN": {
+     "forecast": [
+      6.1,
+      11.2,
+      16.0
+     ],
+     "actual": 10.7
+    },
+    "tpp": {
+     "forecast": [
+      50.8,
+      55.0,
+      58.9
+     ],
+     "actual": 57.3
+    }
+   },
+   "outcome": {
+    "alp_majority": 0.8108,
+    "coal_majority": 0.04925,
+    "hung": 0.13995,
+    "alp_most_seats": 0.8945,
+    "coal_most_seats": 0.0911
+   }
+  },
+  {
+   "election_id": "vic-2018-handset",
+   "n_seats": 88,
    "brier": 0.1754,
    "log_loss": 0.3287,
    "favourite_accuracy": 0.8636,
@@ -169,6 +437,63 @@
      "incumbent": "LIB"
     }
    ],
+   "seat_vote": {
+    "ALP": {
+     "n": 88,
+     "crps": 3.26,
+     "cover50": 0.341,
+     "cover90": 0.739,
+     "pit_hist": [
+      10,
+      3,
+      3,
+      4,
+      4,
+      8,
+      6,
+      8,
+      16,
+      26
+     ]
+    },
+    "COAL": {
+     "n": 87,
+     "crps": 3.386,
+     "cover50": 0.402,
+     "cover90": 0.678,
+     "pit_hist": [
+      34,
+      9,
+      5,
+      7,
+      13,
+      5,
+      4,
+      5,
+      1,
+      4
+     ]
+    },
+    "GRN": {
+     "n": 88,
+     "crps": 1.309,
+     "cover50": 0.739,
+     "cover90": 0.977,
+     "pit_hist": [
+      2,
+      9,
+      13,
+      13,
+      18,
+      14,
+      10,
+      4,
+      3,
+      2
+     ]
+    }
+   },
+   "pendulum_accuracy": 0.8636,
    "statewide": {
     "ALP": {
      "forecast": [
