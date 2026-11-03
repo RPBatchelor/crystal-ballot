@@ -3,7 +3,7 @@
  "jurisdiction": "FED",
  "election_date": "2028-05-20",
  "election_date_known": false,
- "generated_at": "2026-10-31T23:04:32+00:00",
+ "generated_at": "2026-11-03T07:29:29+00:00",
  "cycles": [
   {
    "election_id": "fed-2010",
@@ -35,6 +35,38 @@
   }
  ],
  "polls": [
+  {
+   "pollster": "Newspoll",
+   "client": null,
+   "field_start": "2026-10-26",
+   "field_end": "2026-10-29",
+   "sample_size": "1200",
+   "ALP": 27.0,
+   "COAL": 21.0,
+   "GRN": 13.0,
+   "ONP": "28.0",
+   "IND": null,
+   "OTH": 11.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "fed-next"
+  },
+  {
+   "pollster": "DemosAU",
+   "client": null,
+   "field_start": "2026-10-23",
+   "field_end": "2026-10-26",
+   "sample_size": "1500",
+   "ALP": 26.0,
+   "COAL": 24.0,
+   "GRN": 13.0,
+   "ONP": "26.0",
+   "IND": null,
+   "OTH": 11.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "fed-next"
+  },
   {
    "pollster": "Essential",
    "client": null,
@@ -2149,7 +2181,7 @@
   },
   {
    "pollster": "YouGov",
-   "client": "Sky News Australia",
+   "client": null,
    "field_start": "2025-12-16",
    "field_end": "2025-12-23",
    "sample_size": "1869",
@@ -2165,7 +2197,7 @@
   },
   {
    "pollster": "Resolve",
-   "client": "Sydney Morning Herald/The Age",
+   "client": null,
    "field_start": "2025-12-17",
    "field_end": "2025-12-20",
    "sample_size": "1010",
@@ -2197,7 +2229,7 @@
   },
   {
    "pollster": "RedBridge/Accent",
-   "client": "Australian Financial Review",
+   "client": null,
    "field_start": "2025-12-05",
    "field_end": "2025-12-12",
    "sample_size": "1012",
@@ -2229,7 +2261,7 @@
   },
   {
    "pollster": "Resolve",
-   "client": "Sydney Morning Herald/The Age",
+   "client": null,
    "field_start": "2025-12-02",
    "field_end": "2025-12-07",
    "sample_size": "1800",
@@ -2245,7 +2277,7 @@
   },
   {
    "pollster": "YouGov",
-   "client": "Sky News Australia",
+   "client": null,
    "field_start": "2025-11-26",
    "field_end": "2025-12-02",
    "sample_size": "1605",
@@ -2261,7 +2293,7 @@
   },
   {
    "pollster": "RedBridge/Accent",
-   "client": "Australian Financial Review",
+   "client": null,
    "field_start": "2025-11-07",
    "field_end": "2025-11-26",
    "sample_size": "4775",
@@ -2293,7 +2325,7 @@
   },
   {
    "pollster": "Newspoll",
-   "client": "The Australian",
+   "client": null,
    "field_start": "2025-11-17",
    "field_end": "2025-11-20",
    "sample_size": "1245",
@@ -2309,7 +2341,7 @@
   },
   {
    "pollster": "YouGov MRP",
-   "client": "Climate Council",
+   "client": null,
    "field_start": "2025-11-12",
    "field_end": "2025-11-17",
    "sample_size": "3530",
@@ -2325,7 +2357,7 @@
   },
   {
    "pollster": "Spectre Strategy",
-   "client": "The Daily Telegraph",
+   "client": null,
    "field_start": "2025-11-04",
    "field_end": "2025-11-17",
    "sample_size": "1007",
@@ -2357,7 +2389,7 @@
   },
   {
    "pollster": "RedBridge/Accent",
-   "client": "Australian Financial Review",
+   "client": null,
    "field_start": "2025-11-07",
    "field_end": "2025-11-13",
    "sample_size": "1011",
@@ -2389,7 +2421,7 @@
   },
   {
    "pollster": "Resolve",
-   "client": "Sydney Morning Herald/The Age",
+   "client": null,
    "field_start": "2025-11-04",
    "field_end": "2025-11-08",
    "sample_size": "1804",
@@ -2405,7 +2437,7 @@
   },
   {
    "pollster": "Newspoll",
-   "client": "The Australian",
+   "client": null,
    "field_start": "2025-10-27",
    "field_end": "2025-10-30",
    "sample_size": "1265",
@@ -2421,7 +2453,7 @@
   },
   {
    "pollster": "YouGov",
-   "client": "The Australia Institute",
+   "client": null,
    "field_start": "2025-10-23",
    "field_end": "2025-10-30",
    "sample_size": "4578",
@@ -2453,7 +2485,7 @@
   },
   {
    "pollster": "Freshwater",
-   "client": "The Daily Telegraph",
+   "client": null,
    "field_start": "2025-10-15",
    "field_end": "2025-10-20",
    "sample_size": "1530",
@@ -2485,7 +2517,7 @@
   },
   {
    "pollster": "Resolve",
-   "client": "Sydney Morning Herald/The Age",
+   "client": null,
    "field_start": "2025-10-07",
    "field_end": "2025-10-12",
    "sample_size": "1800",
@@ -2501,7 +2533,7 @@
   },
   {
    "pollster": "RedBridge/Accent",
-   "client": "Australian Financial Review",
+   "client": null,
    "field_start": "2025-09-25",
    "field_end": "2025-10-07",
    "sample_size": "1997",
@@ -2517,7 +2549,7 @@
   },
   {
    "pollster": "Newspoll",
-   "client": "The Australian",
+   "client": null,
    "field_start": "2025-09-29",
    "field_end": "2025-10-02",
    "sample_size": "1264",
@@ -2581,7 +2613,7 @@
   },
   {
    "pollster": "Resolve",
-   "client": "Sydney Morning Herald/The Age",
+   "client": null,
    "field_start": "2025-09-09",
    "field_end": "2025-09-13",
    "sample_size": "1800",
@@ -2597,7 +2629,7 @@
   },
   {
    "pollster": "Newspoll",
-   "client": "The Australian",
+   "client": null,
    "field_start": "2025-09-08",
    "field_end": "2025-09-11",
    "sample_size": "1283",
@@ -2613,7 +2645,7 @@
   },
   {
    "pollster": "RedBridge/Accent",
-   "client": "Australian Financial Review",
+   "client": null,
    "field_start": "2025-08-19",
    "field_end": "2025-09-08",
    "sample_size": "5326",
@@ -2645,7 +2677,7 @@
   },
   {
    "pollster": "Resolve",
-   "client": "Sydney Morning Herald/The Age",
+   "client": null,
    "field_start": "2025-08-09",
    "field_end": "2025-08-16",
    "sample_size": "1800",
@@ -2661,7 +2693,7 @@
   },
   {
    "pollster": "Newspoll",
-   "client": "The Australian",
+   "client": null,
    "field_start": "2025-08-11",
    "field_end": "2025-08-14",
    "sample_size": "1283",
@@ -2677,7 +2709,7 @@
   },
   {
    "pollster": "Wolf & Smith",
-   "client": "Australian Financial Review",
+   "client": null,
    "field_start": "2025-07-18",
    "field_end": "2025-07-30",
    "sample_size": "5000",
@@ -2709,7 +2741,7 @@
   },
   {
    "pollster": "Resolve",
-   "client": "Sydney Morning Herald/The Age",
+   "client": null,
    "field_start": "2025-07-13",
    "field_end": "2025-07-18",
    "sample_size": "2311",
@@ -2725,7 +2757,7 @@
   },
   {
    "pollster": "Newspoll",
-   "client": "The Australian",
+   "client": null,
    "field_start": "2025-07-14",
    "field_end": "2025-07-17",
    "sample_size": "1264",
@@ -2773,7 +2805,7 @@
   },
   {
    "pollster": "RedBridge/Accent",
-   "client": "Australian Financial Review",
+   "client": null,
    "field_start": "2025-06-19",
    "field_end": "2025-06-30",
    "sample_size": "4036",
@@ -8762,12 +8794,12 @@
    "field_end": "2023-11-18",
    "sample_size": "601",
    "ALP": 22.2,
-   "COAL": null,
+   "COAL": 40.4,
    "GRN": 11.1,
    "ONP": "11.7",
    "IND": "7.2",
-   "OTH": 47.8,
-   "tpp_alp_vs_coal": null,
+   "OTH": 7.4,
+   "tpp_alp_vs_coal": 43.9,
    "tpp_alp_vs_onp": null,
    "cycle": "fed-2025"
   },
@@ -34578,7 +34610,7 @@
    "COAL": 32.67,
    "GRN": 12.52,
    "ONP": 6.29,
-   "tpp_alp_vs_coal": 55.25
+   "tpp_alp_vs_coal": 55.24
   },
   {
    "date": "2023-05-31",
@@ -34586,7 +34618,7 @@
    "COAL": 32.75,
    "GRN": 12.54,
    "ONP": 6.31,
-   "tpp_alp_vs_coal": 55.14
+   "tpp_alp_vs_coal": 55.13
   },
   {
    "date": "2023-06-07",
@@ -34594,7 +34626,7 @@
    "COAL": 32.84,
    "GRN": 12.56,
    "ONP": 6.33,
-   "tpp_alp_vs_coal": 55.02
+   "tpp_alp_vs_coal": 55.01
   },
   {
    "date": "2023-06-14",
@@ -34602,12 +34634,12 @@
    "COAL": 32.94,
    "GRN": 12.57,
    "ONP": 6.35,
-   "tpp_alp_vs_coal": 54.89
+   "tpp_alp_vs_coal": 54.88
   },
   {
    "date": "2023-06-21",
    "ALP": 36.68,
-   "COAL": 33.05,
+   "COAL": 33.06,
    "GRN": 12.59,
    "ONP": 6.37,
    "tpp_alp_vs_coal": 54.75
@@ -34615,290 +34647,290 @@
   {
    "date": "2023-06-28",
    "ALP": 36.5,
-   "COAL": 33.17,
+   "COAL": 33.18,
    "GRN": 12.59,
    "ONP": 6.39,
-   "tpp_alp_vs_coal": 54.62
+   "tpp_alp_vs_coal": 54.61
   },
   {
    "date": "2023-07-05",
    "ALP": 36.32,
-   "COAL": 33.29,
+   "COAL": 33.3,
    "GRN": 12.6,
    "ONP": 6.41,
-   "tpp_alp_vs_coal": 54.48
+   "tpp_alp_vs_coal": 54.47
   },
   {
    "date": "2023-07-12",
    "ALP": 36.13,
-   "COAL": 33.42,
+   "COAL": 33.43,
    "GRN": 12.61,
    "ONP": 6.43,
-   "tpp_alp_vs_coal": 54.34
+   "tpp_alp_vs_coal": 54.32
   },
   {
    "date": "2023-07-19",
    "ALP": 35.95,
-   "COAL": 33.55,
+   "COAL": 33.56,
    "GRN": 12.61,
    "ONP": 6.44,
-   "tpp_alp_vs_coal": 54.2
+   "tpp_alp_vs_coal": 54.18
   },
   {
    "date": "2023-07-26",
    "ALP": 35.76,
-   "COAL": 33.68,
+   "COAL": 33.69,
    "GRN": 12.61,
    "ONP": 6.45,
-   "tpp_alp_vs_coal": 54.07
+   "tpp_alp_vs_coal": 54.05
   },
   {
    "date": "2023-08-02",
    "ALP": 35.58,
-   "COAL": 33.8,
+   "COAL": 33.82,
    "GRN": 12.62,
    "ONP": 6.46,
-   "tpp_alp_vs_coal": 53.94
+   "tpp_alp_vs_coal": 53.91
   },
   {
    "date": "2023-08-09",
    "ALP": 35.4,
-   "COAL": 33.93,
+   "COAL": 33.95,
    "GRN": 12.62,
    "ONP": 6.47,
-   "tpp_alp_vs_coal": 53.82
+   "tpp_alp_vs_coal": 53.78
   },
   {
    "date": "2023-08-16",
    "ALP": 35.23,
-   "COAL": 34.05,
+   "COAL": 34.08,
    "GRN": 12.63,
    "ONP": 6.47,
-   "tpp_alp_vs_coal": 53.7
+   "tpp_alp_vs_coal": 53.65
   },
   {
    "date": "2023-08-23",
    "ALP": 35.06,
-   "COAL": 34.17,
+   "COAL": 34.2,
    "GRN": 12.63,
    "ONP": 6.48,
-   "tpp_alp_vs_coal": 53.58
+   "tpp_alp_vs_coal": 53.53
   },
   {
    "date": "2023-08-30",
    "ALP": 34.9,
-   "COAL": 34.28,
+   "COAL": 34.32,
    "GRN": 12.64,
    "ONP": 6.48,
-   "tpp_alp_vs_coal": 53.47
+   "tpp_alp_vs_coal": 53.41
   },
   {
    "date": "2023-09-06",
    "ALP": 34.74,
-   "COAL": 34.4,
+   "COAL": 34.43,
    "GRN": 12.64,
    "ONP": 6.47,
-   "tpp_alp_vs_coal": 53.35
+   "tpp_alp_vs_coal": 53.3
   },
   {
    "date": "2023-09-13",
    "ALP": 34.59,
-   "COAL": 34.51,
+   "COAL": 34.55,
    "GRN": 12.65,
    "ONP": 6.47,
-   "tpp_alp_vs_coal": 53.25
+   "tpp_alp_vs_coal": 53.18
   },
   {
    "date": "2023-09-20",
    "ALP": 34.44,
-   "COAL": 34.62,
+   "COAL": 34.66,
    "GRN": 12.66,
    "ONP": 6.46,
-   "tpp_alp_vs_coal": 53.14
+   "tpp_alp_vs_coal": 53.07
   },
   {
    "date": "2023-09-27",
    "ALP": 34.29,
-   "COAL": 34.73,
+   "COAL": 34.77,
    "GRN": 12.67,
    "ONP": 6.45,
-   "tpp_alp_vs_coal": 53.03
+   "tpp_alp_vs_coal": 52.96
   },
   {
    "date": "2023-10-04",
    "ALP": 34.15,
-   "COAL": 34.84,
+   "COAL": 34.89,
    "GRN": 12.68,
    "ONP": 6.44,
-   "tpp_alp_vs_coal": 52.93
+   "tpp_alp_vs_coal": 52.85
   },
   {
    "date": "2023-10-11",
    "ALP": 34.01,
-   "COAL": 34.95,
+   "COAL": 35.0,
    "GRN": 12.69,
    "ONP": 6.43,
-   "tpp_alp_vs_coal": 52.82
+   "tpp_alp_vs_coal": 52.73
   },
   {
    "date": "2023-10-18",
    "ALP": 33.87,
-   "COAL": 35.06,
+   "COAL": 35.12,
    "GRN": 12.7,
    "ONP": 6.41,
-   "tpp_alp_vs_coal": 52.71
+   "tpp_alp_vs_coal": 52.62
   },
   {
    "date": "2023-10-25",
    "ALP": 33.74,
-   "COAL": 35.18,
+   "COAL": 35.23,
    "GRN": 12.72,
    "ONP": 6.39,
-   "tpp_alp_vs_coal": 52.61
+   "tpp_alp_vs_coal": 52.51
   },
   {
    "date": "2023-11-01",
    "ALP": 33.61,
-   "COAL": 35.3,
+   "COAL": 35.35,
    "GRN": 12.73,
    "ONP": 6.37,
-   "tpp_alp_vs_coal": 52.5
+   "tpp_alp_vs_coal": 52.4
   },
   {
    "date": "2023-11-08",
    "ALP": 33.48,
-   "COAL": 35.42,
+   "COAL": 35.47,
    "GRN": 12.74,
    "ONP": 6.35,
-   "tpp_alp_vs_coal": 52.39
+   "tpp_alp_vs_coal": 52.29
   },
   {
    "date": "2023-11-15",
    "ALP": 33.36,
-   "COAL": 35.54,
+   "COAL": 35.6,
    "GRN": 12.75,
    "ONP": 6.32,
-   "tpp_alp_vs_coal": 52.27
+   "tpp_alp_vs_coal": 52.18
   },
   {
    "date": "2023-11-22",
    "ALP": 33.24,
-   "COAL": 35.67,
+   "COAL": 35.72,
    "GRN": 12.76,
    "ONP": 6.29,
-   "tpp_alp_vs_coal": 52.16
+   "tpp_alp_vs_coal": 52.07
   },
   {
    "date": "2023-11-29",
    "ALP": 33.12,
-   "COAL": 35.79,
+   "COAL": 35.84,
    "GRN": 12.77,
    "ONP": 6.27,
-   "tpp_alp_vs_coal": 52.05
+   "tpp_alp_vs_coal": 51.96
   },
   {
    "date": "2023-12-06",
    "ALP": 33.01,
-   "COAL": 35.92,
+   "COAL": 35.96,
    "GRN": 12.78,
    "ONP": 6.24,
-   "tpp_alp_vs_coal": 51.94
+   "tpp_alp_vs_coal": 51.85
   },
   {
    "date": "2023-12-13",
    "ALP": 32.9,
-   "COAL": 36.04,
+   "COAL": 36.08,
    "GRN": 12.79,
    "ONP": 6.21,
-   "tpp_alp_vs_coal": 51.83
+   "tpp_alp_vs_coal": 51.75
   },
   {
    "date": "2023-12-20",
    "ALP": 32.79,
-   "COAL": 36.16,
+   "COAL": 36.2,
    "GRN": 12.8,
    "ONP": 6.19,
-   "tpp_alp_vs_coal": 51.72
+   "tpp_alp_vs_coal": 51.64
   },
   {
    "date": "2023-12-27",
    "ALP": 32.69,
-   "COAL": 36.27,
+   "COAL": 36.31,
    "GRN": 12.81,
    "ONP": 6.17,
-   "tpp_alp_vs_coal": 51.61
+   "tpp_alp_vs_coal": 51.54
   },
   {
    "date": "2024-01-03",
    "ALP": 32.6,
-   "COAL": 36.38,
+   "COAL": 36.41,
    "GRN": 12.83,
    "ONP": 6.15,
-   "tpp_alp_vs_coal": 51.51
+   "tpp_alp_vs_coal": 51.45
   },
   {
    "date": "2024-01-10",
    "ALP": 32.5,
-   "COAL": 36.48,
+   "COAL": 36.51,
    "GRN": 12.84,
    "ONP": 6.13,
-   "tpp_alp_vs_coal": 51.41
+   "tpp_alp_vs_coal": 51.35
   },
   {
    "date": "2024-01-17",
    "ALP": 32.42,
-   "COAL": 36.57,
+   "COAL": 36.59,
    "GRN": 12.85,
    "ONP": 6.12,
-   "tpp_alp_vs_coal": 51.31
+   "tpp_alp_vs_coal": 51.27
   },
   {
    "date": "2024-01-24",
    "ALP": 32.33,
-   "COAL": 36.65,
+   "COAL": 36.67,
    "GRN": 12.86,
    "ONP": 6.11,
-   "tpp_alp_vs_coal": 51.22
+   "tpp_alp_vs_coal": 51.18
   },
   {
    "date": "2024-01-31",
    "ALP": 32.25,
-   "COAL": 36.72,
+   "COAL": 36.74,
    "GRN": 12.88,
    "ONP": 6.1,
-   "tpp_alp_vs_coal": 51.14
+   "tpp_alp_vs_coal": 51.1
   },
   {
    "date": "2024-02-07",
    "ALP": 32.16,
-   "COAL": 36.79,
+   "COAL": 36.8,
    "GRN": 12.89,
    "ONP": 6.1,
-   "tpp_alp_vs_coal": 51.05
+   "tpp_alp_vs_coal": 51.02
   },
   {
    "date": "2024-02-14",
    "ALP": 32.08,
-   "COAL": 36.84,
+   "COAL": 36.86,
    "GRN": 12.91,
    "ONP": 6.11,
-   "tpp_alp_vs_coal": 50.97
+   "tpp_alp_vs_coal": 50.95
   },
   {
    "date": "2024-02-21",
    "ALP": 32.0,
-   "COAL": 36.89,
+   "COAL": 36.9,
    "GRN": 12.92,
    "ONP": 6.12,
-   "tpp_alp_vs_coal": 50.9
+   "tpp_alp_vs_coal": 50.88
   },
   {
    "date": "2024-02-28",
    "ALP": 31.92,
-   "COAL": 36.93,
+   "COAL": 36.94,
    "GRN": 12.93,
    "ONP": 6.13,
-   "tpp_alp_vs_coal": 50.83
+   "tpp_alp_vs_coal": 50.81
   },
   {
    "date": "2024-03-06",
@@ -34906,7 +34938,7 @@
    "COAL": 36.97,
    "GRN": 12.95,
    "ONP": 6.15,
-   "tpp_alp_vs_coal": 50.76
+   "tpp_alp_vs_coal": 50.74
   },
   {
    "date": "2024-03-13",
@@ -34914,7 +34946,7 @@
    "COAL": 37.0,
    "GRN": 12.96,
    "ONP": 6.16,
-   "tpp_alp_vs_coal": 50.69
+   "tpp_alp_vs_coal": 50.68
   },
   {
    "date": "2024-03-20",
@@ -34927,7 +34959,7 @@
   {
    "date": "2024-03-27",
    "ALP": 31.61,
-   "COAL": 37.05,
+   "COAL": 37.06,
    "GRN": 12.98,
    "ONP": 6.2,
    "tpp_alp_vs_coal": 50.56
@@ -34938,15 +34970,15 @@
    "COAL": 37.08,
    "GRN": 12.99,
    "ONP": 6.22,
-   "tpp_alp_vs_coal": 50.5
+   "tpp_alp_vs_coal": 50.49
   },
   {
    "date": "2024-04-10",
    "ALP": 31.46,
-   "COAL": 37.1,
+   "COAL": 37.11,
    "GRN": 13.0,
    "ONP": 6.24,
-   "tpp_alp_vs_coal": 50.44
+   "tpp_alp_vs_coal": 50.43
   },
   {
    "date": "2024-04-17",
@@ -34954,7 +34986,7 @@
    "COAL": 37.13,
    "GRN": 13.0,
    "ONP": 6.26,
-   "tpp_alp_vs_coal": 50.38
+   "tpp_alp_vs_coal": 50.37
   },
   {
    "date": "2024-04-24",
@@ -37621,7 +37653,7 @@
   },
   {
    "event_date": "2025-05-28",
-   "description": "The first dissolution of the Liberal\u2013National Coalition"
+   "description": "The Liberal/National Coalition is dissolved"
   },
   {
    "event_date": "2025-11-27",

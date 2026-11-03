@@ -1,7 +1,7 @@
 {
  "diagnostics": {
-  "max_rhat": 1.01638,
-  "min_ess_bulk": 393.773,
+  "max_rhat": 1.01281,
+  "min_ess_bulk": 344.321,
   "divergences": 0
  },
  "start_share": {
@@ -15,6 +15,7 @@
   "DemosAU",
   "Freshwater",
   "Newspoll",
+  "Online Research Unit",
   "RedBridge/Accent",
   "Resolve",
   "Roy Morgan",
@@ -23,25 +24,25 @@
  ],
  "dynamics": {
   "sigma_vel": [
-   0.0069,
-   0.0061,
-   0.0035,
-   0.0228
+   0.0071,
+   0.006,
+   0.0034,
+   0.0237
   ],
   "phi": [
-   0.796
+   0.7916
   ],
   "tau": [
-   0.5755,
-   1.1608,
-   0.3581,
-   1.5017
+   0.5863,
+   1.1251,
+   0.3625,
+   1.5977
   ],
   "sigma_house": [
-   1.3488,
-   1.3155,
-   0.5344,
-   1.4995
+   1.3153,
+   1.35,
+   0.54,
+   2.066
   ]
  },
  "parties": [
