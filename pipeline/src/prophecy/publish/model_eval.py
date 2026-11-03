@@ -16,6 +16,8 @@ def publish_model_eval(jurisdiction: str) -> str | None:
     code = jurisdiction.lower()
     payload: dict = {"backtests": [], "poll_error": [], "poll_error_settings": None}
     for path in sorted(PROCESSED.glob(f"backtest-{code}-*/backtest_metrics.json")):
+        if path.parent.name.endswith("-handset"):  # --hand-set A/B runs: not published
+            continue
         metrics = json.loads(path.read_text(encoding="utf-8"))
         payload["backtests"].append({"election_id": path.parent.name.removeprefix("backtest-"),
                                      **metrics})

@@ -1,12 +1,18 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import { party } from '$lib/parties';
+	import { allForecastYears, getJurisdiction } from '$lib/jurisdictions';
 
 	let { data }: { data: PageData } = $props();
 	const ADJECTIVES: Record<string, string> = { Victoria: 'Victorian', 'New South Wales': 'NSW', Queensland: 'Queensland', 'South Australia': 'SA', 'Western Australia': 'WA' };
 	const adjective = (name: string) => ADJECTIVES[name] ?? name.toLowerCase();
 	const pct = (p: number) => `${Math.round(p * 100)}%`;
 	const signed = (v: number | null) => (v == null ? '–' : `${v > 0 ? '+' : ''}${v.toFixed(1)}`);
+	// Earlier backtests are scored here without a forecast page of their own.
+	const hasPage = (code: string, year: string) => {
+		const j = getJurisdiction(code);
+		return !!j && allForecastYears(j).includes(Number(year));
+	};
 </script>
 
 <svelte:head>
@@ -112,10 +118,12 @@
 		simply assuming every seat stays with its holder would have got {Math.round(b.status_quo_accuracy * b.n_seats)}
 		right.
 	</p>
-	<p class="prose">
-		<a href="/{code}/forecast/{year}/">The {year} forecast</a> ·
-		<a href="/{code}/forecast/{year}/vs-result/">Forecast against the result: seats, vote, calibration and every miss →</a>
-	</p>
+	{#if hasPage(code, year)}
+		<p class="prose">
+			<a href="/{code}/forecast/{year}/">The {year} forecast</a> ·
+			<a href="/{code}/forecast/{year}/vs-result/">Forecast against the result: seats, vote, calibration and every miss →</a>
+		</p>
+	{/if}
 {/each}
 {/each}
 
