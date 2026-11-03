@@ -98,7 +98,7 @@ jobs:
         continue-on-error: true
         working-directory: pipeline
         run: |
-          uv run prophecy aggregate --election fed-next --iter-sampling 2000
+          uv run prophecy aggregate --election fed-next --iter-sampling 500
           uv run prophecy publish --election fed-next
 
       - name: Commit federal update
