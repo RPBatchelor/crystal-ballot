@@ -2,7 +2,7 @@
  "election_id": "fed-2025",
  "jurisdiction": "FED",
  "election_date": "2025-05-03",
- "generated_at": "2026-11-05T00:29:25+00:00",
+ "generated_at": "2026-11-05T00:47:51+00:00",
  "model_version": "0.1.0",
  "mode": "retrospective",
  "validated": true,
@@ -3318,8 +3318,8 @@
     "ALP": 33.6,
     "GRN": 7.6,
     "ONP": 4.2,
-    "IND": 12.2,
-    "COAL": 34.7
+    "COAL": 34.7,
+    "IND": 12.2
    },
    "p_actual": 0.3549
   },
@@ -4003,11 +4003,11 @@
    "actual_winner": "ALP",
    "actual_primary": {
     "OTH": 10.4,
-    "COAL": 30.7,
     "GRN": 11.4,
     "ALP": 34.2,
     "IND": 3.0,
-    "ONP": 10.3
+    "ONP": 10.3,
+    "COAL": 30.7
    },
    "p_actual": 0.2514
   },
@@ -5324,10 +5324,10 @@
    "actual_winner": "ALP",
    "actual_primary": {
     "ALP": 39.0,
+    "GRN": 11.4,
     "OTH": 7.8,
     "COAL": 36.5,
-    "ONP": 5.3,
-    "GRN": 11.4
+    "ONP": 5.3
    },
    "p_actual": 0.0726
   },
@@ -6063,9 +6063,9 @@
    "actual_primary": {
     "OTH": 5.6,
     "ALP": 46.1,
-    "GRN": 16.4,
     "ONP": 4.3,
-    "COAL": 27.7
+    "COAL": 27.7,
+    "GRN": 16.4
    },
    "p_actual": 0.9606
   },
@@ -6690,8 +6690,8 @@
     "GRN": 9.1,
     "COAL": 49.7,
     "OTH": 11.0,
-    "ALP": 19.1,
-    "ONP": 11.0
+    "ONP": 11.0,
+    "ALP": 19.1
    },
    "p_actual": 0.9929
   },
@@ -6745,8 +6745,8 @@
     "OTH": 13.3,
     "COAL": 53.2,
     "GRN": 5.2,
-    "ALP": 16.0,
-    "ONP": 12.3
+    "ONP": 12.3,
+    "ALP": 16.0
    },
    "p_actual": 0.9798
   },
@@ -7026,12 +7026,12 @@
    "leader_prob": 0.6904,
    "actual_winner": "COAL",
    "actual_primary": {
+    "IND": 15.0,
+    "COAL": 35.9,
+    "OTH": 12.9,
     "GRN": 8.4,
     "ONP": 4.3,
-    "OTH": 12.9,
-    "ALP": 23.4,
-    "IND": 15.0,
-    "COAL": 35.9
+    "ALP": 23.4
    },
    "p_actual": 0.6904
   },
@@ -8519,10 +8519,10 @@
    "actual_winner": "ALP",
    "actual_primary": {
     "OTH": 18.5,
-    "ONP": 6.6,
     "GRN": 9.4,
     "COAL": 20.5,
-    "ALP": 44.9
+    "ALP": 44.9,
+    "ONP": 6.6
    },
    "p_actual": 0.9737
   },
