@@ -2,7 +2,7 @@
  "election_id": "fed-2025",
  "jurisdiction": "FED",
  "election_date": "2025-05-03",
- "generated_at": "2026-11-05T00:47:51+00:00",
+ "generated_at": "2026-11-06T00:17:26+00:00",
  "model_version": "0.1.0",
  "mode": "retrospective",
  "validated": true,
@@ -972,12 +972,12 @@
    "leader_prob": 0.6008,
    "actual_winner": "ALP",
    "actual_primary": {
-    "COAL": 37.7,
-    "ALP": 37.3,
     "OTH": 6.0,
     "IND": 4.1,
     "GRN": 11.5,
-    "ONP": 3.4
+    "ONP": 3.4,
+    "COAL": 37.7,
+    "ALP": 37.3
    },
    "p_actual": 0.373
   },
@@ -1029,12 +1029,12 @@
    "leader_prob": 0.9765,
    "actual_winner": "ALP",
    "actual_primary": {
-    "COAL": 28.6,
     "GRN": 14.3,
     "ONP": 7.7,
     "ALP": 42.4,
     "IND": 2.8,
-    "OTH": 4.2
+    "OTH": 4.2,
+    "COAL": 28.6
    },
    "p_actual": 0.9765
   },
@@ -2113,9 +2113,9 @@
    "leader_prob": 0.5969,
    "actual_winner": "ALP",
    "actual_primary": {
+    "COAL": 40.1,
     "ONP": 8.6,
     "OTH": 8.2,
-    "COAL": 40.1,
     "ALP": 31.9,
     "GRN": 11.2
    },
@@ -3202,9 +3202,9 @@
    "actual_primary": {
     "OTH": 14.6,
     "COAL": 41.7,
-    "ONP": 10.4,
     "GRN": 7.1,
-    "ALP": 26.2
+    "ALP": 26.2,
+    "ONP": 10.4
    },
    "p_actual": 0.848
   },
@@ -4003,11 +4003,11 @@
    "actual_winner": "ALP",
    "actual_primary": {
     "OTH": 10.4,
+    "COAL": 30.7,
     "GRN": 11.4,
     "ALP": 34.2,
     "IND": 3.0,
-    "ONP": 10.3,
-    "COAL": 30.7
+    "ONP": 10.3
    },
    "p_actual": 0.2514
   },
@@ -6063,9 +6063,9 @@
    "actual_primary": {
     "OTH": 5.6,
     "ALP": 46.1,
+    "GRN": 16.4,
     "ONP": 4.3,
-    "COAL": 27.7,
-    "GRN": 16.4
+    "COAL": 27.7
    },
    "p_actual": 0.9606
   },
@@ -6291,12 +6291,12 @@
    "leader_prob": 0.8769,
    "actual_winner": "COAL",
    "actual_primary": {
+    "IND": 15.5,
     "GRN": 6.4,
     "ALP": 19.8,
     "OTH": 13.7,
     "ONP": 8.4,
-    "COAL": 36.2,
-    "IND": 15.5
+    "COAL": 36.2
    },
    "p_actual": 0.8769
   },
@@ -6633,10 +6633,10 @@
    "actual_winner": "ALP",
    "actual_primary": {
     "OTH": 10.6,
-    "GRN": 12.4,
     "ONP": 6.7,
     "COAL": 22.5,
-    "ALP": 47.8
+    "ALP": 47.8,
+    "GRN": 12.4
    },
    "p_actual": 0.943
   },
@@ -6690,8 +6690,8 @@
     "GRN": 9.1,
     "COAL": 49.7,
     "OTH": 11.0,
-    "ONP": 11.0,
-    "ALP": 19.1
+    "ALP": 19.1,
+    "ONP": 11.0
    },
    "p_actual": 0.9929
   },
@@ -6745,8 +6745,8 @@
     "OTH": 13.3,
     "COAL": 53.2,
     "GRN": 5.2,
-    "ONP": 12.3,
-    "ALP": 16.0
+    "ALP": 16.0,
+    "ONP": 12.3
    },
    "p_actual": 0.9798
   },
@@ -8287,12 +8287,12 @@
    "leader_prob": 0.5959,
    "actual_winner": "ALP",
    "actual_primary": {
-    "GRN": 26.5,
     "ALP": 30.4,
     "IND": 2.6,
     "ONP": 5.4,
     "OTH": 10.5,
-    "COAL": 24.6
+    "COAL": 24.6,
+    "GRN": 26.5
    },
    "p_actual": 0.5959
   },
@@ -8519,10 +8519,10 @@
    "actual_winner": "ALP",
    "actual_primary": {
     "OTH": 18.5,
+    "ONP": 6.6,
     "GRN": 9.4,
     "COAL": 20.5,
-    "ALP": 44.9,
-    "ONP": 6.6
+    "ALP": 44.9
    },
    "p_actual": 0.9737
   },
@@ -8863,10 +8863,10 @@
    "actual_winner": "ALP",
    "actual_primary": {
     "ALP": 55.2,
-    "OTH": 2.2,
     "COAL": 17.6,
     "ONP": 3.4,
-    "GRN": 21.6
+    "GRN": 21.6,
+    "OTH": 2.2
    },
    "p_actual": 0.9959
   },
@@ -9379,10 +9379,10 @@
    "actual_winner": "ALP",
    "actual_primary": {
     "OTH": 12.7,
-    "ALP": 35.6,
-    "COAL": 12.9,
     "GRN": 35.4,
-    "ONP": 3.5
+    "ONP": 3.5,
+    "ALP": 35.6,
+    "COAL": 12.9
    },
    "p_actual": 0.7272
   },
