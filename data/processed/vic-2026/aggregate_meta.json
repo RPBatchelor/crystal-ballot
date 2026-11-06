@@ -1,7 +1,7 @@
 {
  "diagnostics": {
-  "max_rhat": 1.01281,
-  "min_ess_bulk": 344.321,
+  "max_rhat": 1.01838,
+  "min_ess_bulk": 395.333,
   "divergences": 0
  },
  "start_share": {
@@ -14,6 +14,7 @@
  "pollsters": [
   "DemosAU",
   "Freshwater",
+  "Lighthouse/Growth Intelligence Centre",
   "Newspoll",
   "Online Research Unit",
   "RedBridge/Accent",
@@ -24,25 +25,25 @@
  ],
  "dynamics": {
   "sigma_vel": [
-   0.0071,
-   0.006,
+   0.0072,
+   0.0061,
    0.0034,
-   0.0237
+   0.023
   ],
   "phi": [
-   0.7916
+   0.798
   ],
   "tau": [
-   0.5863,
-   1.1251,
-   0.3625,
-   1.5977
+   0.5368,
+   1.1212,
+   0.3485,
+   1.6041
   ],
   "sigma_house": [
-   1.3153,
-   1.35,
-   0.54,
-   2.066
+   1.2943,
+   1.286,
+   0.5241,
+   2.0588
   ]
  },
  "parties": [
