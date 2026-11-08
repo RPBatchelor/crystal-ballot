@@ -3,7 +3,7 @@
  "jurisdiction": "FED",
  "election_date": "2028-05-20",
  "election_date_known": false,
- "generated_at": "2026-11-07T23:17:40+00:00",
+ "generated_at": "2026-11-08T23:00:36+00:00",
  "cycles": [
   {
    "election_id": "fed-2010",
@@ -35,6 +35,38 @@
   }
  ],
  "polls": [
+  {
+   "pollster": "Resolve",
+   "client": null,
+   "field_start": "2026-11-02",
+   "field_end": "2026-11-07",
+   "sample_size": "2250",
+   "ALP": 28.0,
+   "COAL": 22.0,
+   "GRN": 13.0,
+   "ONP": "25.0",
+   "IND": null,
+   "OTH": 11.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "fed-next"
+  },
+  {
+   "pollster": "RedBridge/Accent",
+   "client": null,
+   "field_start": "2026-11-02",
+   "field_end": "2026-11-06",
+   "sample_size": "1005",
+   "ALP": 26.0,
+   "COAL": 25.0,
+   "GRN": 13.0,
+   "ONP": "28.0",
+   "IND": null,
+   "OTH": 8.0,
+   "tpp_alp_vs_coal": 47.0,
+   "tpp_alp_vs_onp": "54.0",
+   "cycle": "fed-next"
+  },
   {
    "pollster": "YouGov",
    "client": null,
