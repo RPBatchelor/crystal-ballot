@@ -108,7 +108,7 @@
 		opacity: 0.55;
 	}
 	.total {
-		font-family: var(--font-serif);
+		font-family: var(--font-display);
 		font-size: 0.22px;
 		font-weight: 700;
 		fill: var(--fg);

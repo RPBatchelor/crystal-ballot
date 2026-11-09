@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { SITE_NAME } from '$lib/site';
+	import Orby from '$lib/components/brand/Orby.svelte';
 	import type { PageData } from './$types';
 	import { party } from '$lib/parties';
 	import { allForecastYears, getJurisdiction } from '$lib/jurisdictions';
@@ -20,12 +21,17 @@
 	<title>Methodology · {SITE_NAME}</title>
 </svelte:head>
 
-<p class="eyebrow">How it works</p>
-<h1>Methodology</h1>
-<p class="lede">
-	The model has three layers, each checked against past Victorian, NSW, Queensland and federal elections. Everything below is
-	reproducible from the open pipeline.
-</p>
+<div class="intro">
+	<div>
+		<p class="eyebrow">How it works</p>
+		<h1>Methodology</h1>
+		<p class="lede">
+			The model has three layers, each checked against past Victorian, NSW, Queensland and federal elections. Everything below is
+			reproducible from the open pipeline. Like Orby, it holds up odds, never certainties.
+		</p>
+	</div>
+	<Orby size={170} />
+</div>
 
 <div class="prose">
 	<h2>1. Poll aggregation</h2>
@@ -129,8 +135,20 @@
 {/each}
 
 <style>
+	.intro {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2rem;
+		margin-bottom: 1rem;
+	}
+	@media (max-width: 40rem) {
+		.intro :global(.orby) {
+			display: none;
+		}
+	}
 	h3.jur {
-		font-family: var(--font-serif);
+		font-family: var(--font-display);
 		font-size: 1.3rem;
 		margin-top: 2rem;
 	}

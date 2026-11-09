@@ -263,9 +263,9 @@
 
 <style>
 	.preview {
-		border: 1px solid var(--party-ONP);
-		background: color-mix(in srgb, var(--party-ONP) 10%, var(--surface));
-		border-radius: var(--radius);
+		border: 1px solid var(--brand-spark);
+		background: color-mix(in srgb, var(--brand-spark) 16%, var(--surface));
+		border-radius: var(--radius-md);
 		padding: 0.7rem 1rem;
 		margin-bottom: 1.25rem;
 		font-size: 0.92rem;
