@@ -146,6 +146,12 @@ export interface ForecastFile {
 	seat_hist: Record<string, number[]>;
 	statewide_primary: Record<string, [number, number, number]>;
 	tpp_alp: [number, number, number];
+	/** Coalition seats minus Labor seats: counts[i] simulations had a margin of min + i. */
+	seat_margin?: { min: number; counts: number[] };
+	/** [Labor seats, Coalition seats, simulations] for every combination that occurred. */
+	seat_joint?: [number, number, number][];
+	/** Labor two-party vote (%): counts[i] simulations fell in [min + i*step, min + (i+1)*step). */
+	tpp_hist?: { min: number; step: number; counts: number[] };
 	districts: ForecastDistrict[];
 	/** 'retrospective': a blind backtest shown as the eve-of-election forecast. */
 	mode?: 'live' | 'retrospective';

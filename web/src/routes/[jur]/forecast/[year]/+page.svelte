@@ -3,6 +3,10 @@
 	import type { PageData } from './$types';
 	import OutcomeBar from '$lib/components/charts/OutcomeBar.svelte';
 	import SeatHistogram from '$lib/components/charts/SeatHistogram.svelte';
+	import MarginHistogram from '$lib/components/charts/MarginHistogram.svelte';
+	import SeatHeatmap from '$lib/components/charts/SeatHeatmap.svelte';
+	import TppDistribution from '$lib/components/charts/TppDistribution.svelte';
+	import TrendLines from '$lib/components/charts/TrendLines.svelte';
 	import Hemicycle from '$lib/components/charts/Hemicycle.svelte';
 	import SeatMap from '$lib/components/charts/SeatMap.svelte';
 	import { fmtDate } from '$lib/format';
@@ -87,6 +91,42 @@
 		f.districts.filter((d) => d.notes?.length).toSorted((a, b) => a.district.localeCompare(b.district))
 	);
 
+	// Past elections: where the result landed on each distribution.
+	const COAL_CODES = ['LIB', 'NAT', 'LNP', 'CLP', 'COAL'];
+	const actualSeats = $derived(
+		retro && f.actual
+			? {
+					alp: f.actual.seat_counts.ALP ?? 0,
+					coal: COAL_CODES.reduce((a, k) => a + (f.actual!.seat_counts[k] ?? 0), 0)
+				}
+			: null
+	);
+	const resultLabel = $derived(`${data.year} result`);
+
+	// How the live forecast has moved, one point per day it ran.
+	const history = $derived(data.history && data.history.length >= 2 ? data.history : null);
+	const chanceSeries = $derived(
+		history
+			? [
+					{ key: 'coal', label: 'Coalition majority', colour: partyColour('COAL'), points: history.map((h) => ({ date: h.date, v: 100 * h.outcome.coal_majority })) },
+					{ key: 'hung', label: 'Hung', colour: 'var(--fg-2)', dashed: true, points: history.map((h) => ({ date: h.date, v: 100 * h.outcome.hung })) },
+					{ key: 'alp', label: 'Labor majority', colour: partyColour('ALP'), points: history.map((h) => ({ date: h.date, v: 100 * h.outcome.alp_majority })) }
+				]
+			: []
+	);
+	const seatSeries = $derived(
+		history
+			? (['COAL', 'ALP'] as const).map((k) => ({
+					key: k,
+					label: k === 'ALP' ? 'Labor' : 'Coalition',
+					colour: partyColour(k),
+					points: history
+						.filter((h) => h.seats[k])
+						.map((h) => ({ date: h.date, v: h.seats[k][1], lo: h.seats[k][0], hi: h.seats[k][2] }))
+				}))
+			: []
+	);
+
 	const changes = $derived(
 		f.districts.filter((d) => d.leader !== d.incumbent && d.leader_prob > 0.5).length
 	);
@@ -129,6 +169,21 @@
 		f.outcome.alp_most_seats * 100
 	)} of 100.
 </p>
+
+{#if history}
+	<h2>How the forecast has moved</h2>
+	<p class="small muted">One point for each day the model ran; seat lines show the median with a 90% band.</p>
+	<div class="trends">
+		<TrendLines title="Chance of each outcome" series={chanceSeries} yMax={100} format={(v) => `${Math.round(v)}%`} />
+		<TrendLines
+			title="Seats won"
+			series={seatSeries}
+			yMax={Math.ceil(Math.max(f.majority + 10, ...seatSeries.flatMap((s) => s.points.map((p) => p.hi ?? p.v))) / 10) * 10}
+			format={(v) => `${Math.round(v)}`}
+			reference={{ value: f.majority, label: `${f.majority} for majority` }}
+		/>
+	</div>
+{/if}
 
 <h2>Seat by seat</h2>
 <p class="small muted">
@@ -195,6 +250,22 @@
 	</tbody>
 </table>
 
+{#if f.seat_margin && f.seat_joint}
+	<h2>How big a win?</h2>
+	<p class="small muted">
+		Every simulation, by how many more seats one major party wins than the other, and by the seats each wins.
+		{#if retro}The dashed line and ring mark what happened.{/if}
+	</p>
+	<div class="win">
+		<MarginHistogram
+			margin={f.seat_margin}
+			actual={actualSeats ? actualSeats.coal - actualSeats.alp : null}
+			actualLabel={resultLabel}
+		/>
+		<SeatHeatmap joint={f.seat_joint} majority={f.majority} outcome={f.outcome} actual={actualSeats} actualLabel={resultLabel} />
+	</div>
+{/if}
+
 <h2>{area} vote</h2>
 <p class="small muted">Election-day first-preference estimates with 90% intervals, including polling error.</p>
 <ul class="forest">
@@ -221,6 +292,11 @@
 		<span class="num v">{f.tpp_alp[1].toFixed(1)}% <span class="muted small">({f.tpp_alp[0].toFixed(0)}–{f.tpp_alp[2].toFixed(0)})</span></span>
 	</li>
 </ul>
+{#if f.tpp_hist}
+	<div class="tpp-dist">
+		<TppDistribution hist={f.tpp_hist} actual={retro ? (f.actual?.tpp_alp ?? null) : null} actualLabel={resultLabel} />
+	</div>
+{/if}
 
 <h2>Every seat</h2>
 <p class="small muted">
@@ -262,6 +338,26 @@
 </p>
 
 <style>
+	.trends {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr));
+		gap: 1.5rem 2rem;
+	}
+	.win {
+		display: grid;
+		grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+		align-items: start;
+		gap: 1.5rem 2rem;
+	}
+	@media (max-width: 52rem) {
+		.win {
+			grid-template-columns: minmax(0, 1fr);
+		}
+	}
+	.tpp-dist {
+		margin-top: 1.25rem;
+		max-width: 46rem;
+	}
 	.preview {
 		border: 1px solid var(--brand-spark);
 		background: color-mix(in srgb, var(--brand-spark) 16%, var(--surface));

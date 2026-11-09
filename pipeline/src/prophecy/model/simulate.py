@@ -354,6 +354,9 @@ def simulate(inputs: SeatInputs, agg_draws: np.ndarray, agg_parties: list[str],
     return SimResult(inputs, state, seat, winner, final, flows, tpp, coal_label)
 
 
+TPP_STEP = 0.5  # percentage points per bin of the published 2PP histogram
+
+
 def seat_labels(res: SimResult) -> np.ndarray:
     """Winner as a party label per sim and seat (Coalition split into LIB/NAT)."""
     labels = np.array(BLOCS, dtype=object)[res.winner]
@@ -412,6 +415,13 @@ def summarise(res: SimResult) -> dict:
     seat_dist["COAL"] = q(coal)
     hist = {p: np.bincount(seats[p], minlength=D + 1).tolist() for p in ["ALP", "GRN", "ONP", "IND"]}
     hist["COAL"] = np.bincount(coal, minlength=D + 1).tolist()
+    # Coalition seats minus Labor seats, and the two together (how big a win, and which
+    # combinations of seats are likely), for the site's margin histogram and heatmap.
+    margin = coal - seats["ALP"]
+    lo = int(margin.min())
+    joint, joint_n = np.unique(np.stack([seats["ALP"], coal], axis=1), axis=0, return_counts=True)
+    tpp_lo = float(np.floor(res.tpp_alp_coal.min()))
+    tpp_bins = np.floor((res.tpp_alp_coal - tpp_lo) / TPP_STEP).astype(int)
 
     per_seat = []
     for d, name in enumerate(res.inputs.districts):
@@ -435,5 +445,8 @@ def summarise(res: SimResult) -> dict:
         "statewide_primary": {b: [round(float(v), 1) for v in np.quantile(res.statewide[:, k], [0.05, 0.5, 0.95])]
                               for k, b in enumerate(BLOCS)},
         "tpp_alp": [round(float(v), 1) for v in np.quantile(res.tpp_alp_coal, [0.05, 0.5, 0.95])],
+        "seat_margin": {"min": lo, "counts": np.bincount(margin - lo).tolist()},
+        "seat_joint": [[int(a), int(c), int(n)] for (a, c), n in zip(joint, joint_n)],
+        "tpp_hist": {"min": tpp_lo, "step": TPP_STEP, "counts": np.bincount(tpp_bins).tolist()},
         "districts": per_seat,
     }
