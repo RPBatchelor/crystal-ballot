@@ -1,20 +1,32 @@
 @import '@fontsource-variable/inter';
-@import '@fontsource-variable/source-serif-4';
+@import '@fontsource-variable/bricolage-grotesque';
 
 /* Party colours validated with the dataviz palette checker (light + dark), incl. NAT
    as a lighter (light theme) / deeper (dark theme) Coalition blue:
    lightness band, chroma, CVD separation and normal-vision floor all pass.
    ONP orange is below 3:1 on light surfaces, so charts always carry labels/tables. */
 :root {
-	--bg: #fbfaf7;
+	/* Crystal Ballot brand (docs/Crystal Ballot brand.html): Night, Glass, Spark and three
+	   neutral swirls. Brand colours dress the site; party colours stay for data only. */
+	--brand-night: #1e1b4b;
+	--brand-box: #2e2a6b;
+	--brand-lid: #3d3890;
+	--brand-glass: #ddeffa;
+	--brand-spark: #f5c451;
+	--swirl-teal: #14b8a6;
+	--swirl-amber: #f59e0b;
+	--swirl-violet: #8b5cf6;
+
+	--bg: #f6f4fb;
 	--surface: #ffffff;
-	--fg: #1b1b1d;
-	--fg-2: #4a4a50;
-	--muted: #6e6e75;
-	--rule: #e4e2dc;
-	--rule-strong: #c9c6be;
-	--accent: #1b1b1d;
-	--focus: #2563eb;
+	--fg: #15123f;
+	--fg-2: #4a4778;
+	--muted: #5b5794;
+	--rule: #e4e0f5;
+	--rule-strong: #c9c5f2;
+	--accent: #2e2a6b;
+	--on-accent: #ffffff;
+	--focus: #8b5cf6;
 
 	--party-ALP: #c8202b;
 	--party-COAL: #1f4e9e;
@@ -26,23 +38,29 @@
 	--party-OTH: #a6a6ab;
 
 	--font-sans: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
-	--font-serif: 'Source Serif 4 Variable', Georgia, serif;
-	--radius: 6px;
+	--font-display: 'Bricolage Grotesque Variable', 'Inter Variable', system-ui, sans-serif;
+	--radius: 8px;
+	--radius-md: 12px;
+	--radius-lg: 20px;
+	--shadow: 0 1px 2px rgb(30 27 75 / 0.05), 0 4px 16px rgb(30 27 75 / 0.05);
 	--gutter: 16px;
 	color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root:not([data-theme='light']) {
-		--bg: #141416;
-		--surface: #1a1a19;
-		--fg: #ececee;
-		--fg-2: #c3c3c8;
-		--muted: #9a9aa2;
-		--rule: #2c2c31;
-		--rule-strong: #45454c;
-		--accent: #ececee;
-		--focus: #60a5fa;
+		--bg: #121027;
+		--surface: #1a1838;
+		--fg: #f1effb;
+		--fg-2: #c9c5f2;
+		--muted: #a19dd0;
+		--rule: #2e2a6b;
+		--rule-strong: #4a4590;
+		--accent: #ddeffa;
+		--on-accent: #15123f;
+		--focus: #a78bfa;
+		--brand-box: #3d3890;
+		--brand-lid: #5149b5;
 
 		--party-ALP: #e5484f;
 		--party-COAL: #5a8af6;
@@ -57,15 +75,18 @@
 }
 
 :root[data-theme='dark'] {
-	--bg: #141416;
-	--surface: #1a1a19;
-	--fg: #ececee;
-	--fg-2: #c3c3c8;
-	--muted: #9a9aa2;
-	--rule: #2c2c31;
-	--rule-strong: #45454c;
-	--accent: #ececee;
-	--focus: #60a5fa;
+	--bg: #121027;
+	--surface: #1a1838;
+	--fg: #f1effb;
+	--fg-2: #c9c5f2;
+	--muted: #a19dd0;
+	--rule: #2e2a6b;
+	--rule-strong: #4a4590;
+	--accent: #ddeffa;
+	--on-accent: #15123f;
+	--focus: #a78bfa;
+	--brand-box: #3d3890;
+	--brand-lid: #5149b5;
 
 	--party-ALP: #e5484f;
 	--party-COAL: #5a8af6;
@@ -89,6 +110,11 @@ html {
 }
 
 body {
+	/* Header, main and footer stack so the footer sits at the bottom of short pages. */
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-height: 100dvh;
 	margin: 0;
 	background: var(--bg);
 	color: var(--fg);
@@ -101,14 +127,16 @@ body {
 h1,
 h2,
 h3 {
-	font-family: var(--font-serif);
-	font-weight: 650;
-	line-height: 1.15;
-	letter-spacing: -0.01em;
+	font-family: var(--font-display);
+	font-weight: 750;
+	line-height: 1.12;
+	letter-spacing: -0.015em;
 	margin: 0 0 0.5rem;
 }
 h1 {
-	font-size: clamp(1.9rem, 4vw, 2.75rem);
+	font-size: clamp(2rem, 4.2vw, 2.9rem);
+	font-weight: 800;
+	letter-spacing: -0.02em;
 }
 h2 {
 	font-size: clamp(1.35rem, 2.5vw, 1.7rem);
@@ -141,9 +169,9 @@ a:hover {
 	font-variant-numeric: tabular-nums;
 }
 .eyebrow {
-	font-size: 0.78rem;
-	font-weight: 600;
-	letter-spacing: 0.06em;
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
 	text-transform: uppercase;
 	color: var(--muted);
 	margin: 0 0 0.35rem;
@@ -157,8 +185,24 @@ a:hover {
 .card {
 	background: var(--surface);
 	border: 1px solid var(--rule);
-	border-radius: var(--radius);
-	padding: 1rem 1.25rem;
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow);
+	padding: 1.25rem 1.5rem;
+}
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	font-weight: 650;
+	background: var(--accent);
+	color: var(--on-accent);
+	padding: 0.6rem 1.1rem;
+	border-radius: 999px;
+	text-decoration: none;
+}
+.button:hover {
+	filter: brightness(1.15);
 }
 
 .scroll-x {

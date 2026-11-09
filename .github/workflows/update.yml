@@ -1,4 +1,4 @@
-# Pushes: test, publish and build the site from committed data (fast).
+# Pushes (main and dev): test, publish and build the site from committed data (fast).
 # Daily / manual: refresh polls, refit the poll aggregate, rerun the seat forecast,
 # commit the refreshed data back to main, then build. Deploy is added with hosting.
 name: update
@@ -8,13 +8,14 @@ on:
     - cron: "0 19 * * *" # 06:00 AEDT
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main, dev]
 
 permissions:
   contents: write
 
 concurrency:
-  group: update
+  # Per branch, so a dev push never waits behind the daily run on main.
+  group: update-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
