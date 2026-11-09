@@ -363,13 +363,40 @@ def seat_labels(res: SimResult) -> np.ndarray:
     return np.where(labels == "COAL", coal, labels)
 
 
-def summarise(res: SimResult) -> dict:
-    labels = seat_labels(res)
-    S, D = labels.shape
+def summary_parties(res: SimResult) -> list[str]:
+    """Party labels a forecast reports seats for."""
     parties = ["ALP", "LIB", "NAT", "GRN", "ONP", "IND", "OTH"]
     for merged in ("LNP", "CLP"):  # Queensland's and the NT's merged Coalition parties
         if merged in res.inputs.coal_party:
             parties.insert(3, merged)
+    return parties
+
+
+def sim_arrays(res: SimResult) -> dict[str, np.ndarray]:
+    """Every simulation, for the site to condition on: winner per seat (index into
+    ``parties``), statewide primaries (%) by bloc, and the ALP v Coalition 2PP."""
+    labels = seat_labels(res)
+    parties = summary_parties(res)
+    unknown = set(np.unique(labels)) - set(parties)
+    if unknown:
+        raise ValueError(f"Seat winners outside the reported parties: {sorted(unknown)}")
+    winners = np.zeros(labels.shape, dtype=np.uint8)
+    for k, p in enumerate(parties):
+        winners[labels == p] = k
+    return {
+        "winners": winners,
+        "parties": np.array(parties),
+        "districts": np.array(res.inputs.districts),
+        "blocs": np.array(BLOCS),
+        "statewide": res.statewide.astype(np.float32),
+        "tpp": res.tpp_alp_coal.astype(np.float32),
+    }
+
+
+def summarise(res: SimResult) -> dict:
+    labels = seat_labels(res)
+    S, D = labels.shape
+    parties = summary_parties(res)
     seats = {p: (labels == p).sum(axis=1) for p in parties}
     coal = sum(seats[p] for p in ("LIB", "NAT", "LNP", "CLP") if p in seats)
     majority = D // 2 + 1

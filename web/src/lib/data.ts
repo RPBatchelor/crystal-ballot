@@ -26,3 +26,32 @@ export const loadGeo = (fetch: Fetch, jur: string, boundaries: string) =>
 		fetch,
 		`/data/${jur}/geo/${boundaries}.json`
 	);
+
+/** Daily headline history of a live forecast; null before the first stamped run. */
+export async function loadForecastHistory(fetch: Fetch, jur: string, year: number | string) {
+	const res = await fetch(`/data/${jur}/forecast/${year}-history.json`);
+	return res.ok ? ((await res.json()) as import('./types').ForecastHistoryEntry[]) : null;
+}
+
+/** Every simulation behind a live forecast (about 2 MB): load after first paint. */
+export async function loadSims(fetch: Fetch, jur: string, year: number | string) {
+	const [h, b] = await Promise.all([
+		fetch(`/data/${jur}/forecast/${year}-sims.json`),
+		fetch(`/data/${jur}/forecast/${year}-sims.bin`)
+	]);
+	if (!h.ok || !b.ok) return null;
+	const header = (await h.json()) as import('./types').SimsHeader;
+	const buf = await b.arrayBuffer();
+	if (buf.byteLength !== header.byte_length) return null; // header and file from different runs
+	const view = (name: string) => {
+		const f = header.layout.find((l) => l.name === name)!;
+		const n = f.shape.reduce((a, c) => a * c, 1);
+		return f.dtype === 'uint8' ? new Uint8Array(buf, f.offset, n) : new Int16Array(buf, f.offset, n);
+	};
+	return {
+		header,
+		winners: view('winners') as Uint8Array,
+		statewide: view('statewide') as Int16Array,
+		tpp: view('tpp') as Int16Array
+	} satisfies import('./types').Sims;
+}

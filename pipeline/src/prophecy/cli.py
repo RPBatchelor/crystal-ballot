@@ -344,7 +344,19 @@ def forecast(
     cfg = _historical_config(e)
     cfg.n_per_draw = n_per_draw
     typer.echo(f"polling error sd: {cfg.poll_error_sd}")
-    summary = summarise(simulate(inputs, shares[:, -1, :], parties, flows, cfg))
+    from datetime import UTC, datetime
+
+    import numpy as np
+
+    from prophecy.model.simulate import sim_arrays
+
+    res = simulate(inputs, shares[:, -1, :], parties, flows, cfg)
+    summary = summarise(res)
+    # Stamps the summary and its simulations, so publishing can tell they belong together.
+    summary["simulated_at"] = datetime.now(UTC).isoformat(timespec="seconds")
+    # The simulations themselves (a few MB) stay out of git; `publish` packs them for the site.
+    np.savez_compressed(RUNS / election / "forecast_sims.npz",
+                        simulated_at=np.array(summary["simulated_at"]), **sim_arrays(res))
 
     out = PROCESSED_DIR / election
     (out / "forecast_summary.json").write_text(json.dumps(summary, indent=1))
@@ -703,6 +715,36 @@ def publish(election: str = typer.Option("vic-2026", help="Election id")) -> Non
     for past in jurisdictions.ELECTIONS.values():
         if past.jurisdiction == e.jurisdiction and (PROCESSED_DIR / past.election_id / "districts.csv").exists():
             typer.echo(publish_results(past))
+
+
+@app.command("backfill-history")
+def backfill_history(election: str = typer.Option("vic-2026", help="Election id")) -> None:
+    """Forecast history from every committed forecast summary (last commit each day)."""
+    import json
+    import subprocess
+
+    from prophecy import WEB_DATA_DIR
+    from prophecy.jurisdictions import site_code
+    from prophecy.publish.sims import history_entry, local_date, upsert_history
+
+    e = jurisdictions.get(election)
+    rel = f"data/processed/{election}/forecast_summary.json"
+    root = PROCESSED_DIR.parent.parent
+    log = subprocess.run(["git", "log", "--reverse", "--format=%H %cI", "--", rel],
+                         cwd=root, capture_output=True, text=True, check=True).stdout.split("\n")
+    path = WEB_DATA_DIR / site_code(e.jurisdiction) / "forecast" / f"{e.date.year}-history.json"
+    n = 0
+    for line in filter(None, log):
+        sha, when = line.split()
+        shown = subprocess.run(["git", "show", f"{sha}:{rel}"], cwd=root, capture_output=True, text=True)
+        if shown.returncode:
+            continue
+        summary = json.loads(shown.stdout)
+        stamp = summary.get("simulated_at") or when
+        upsert_history(path, history_entry(summary, local_date(stamp, e.jurisdiction)))
+        n += 1
+    history = json.loads(path.read_text(encoding="utf-8"))
+    typer.echo(f"{n} committed forecasts -> {len(history)} days in {path}")
 
 
 def _write_tables(tables: dict, out) -> None:

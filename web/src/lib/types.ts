@@ -127,6 +127,8 @@ export interface ForecastFile {
 	jurisdiction: string;
 	election_date: string;
 	generated_at: string;
+	/** When the seat simulation ran (matches the `-sims` files it produced). */
+	simulated_at?: string;
 	model_version: string;
 	validated: boolean;
 	diagnostics: { max_rhat?: number; min_ess_bulk?: number; divergences?: number };
@@ -160,4 +162,48 @@ export interface ForecastFile {
 		calibration: { bin: string; n: number; mean_prob: number; hit_rate: number }[];
 		seats: Record<string, { actual: number; median: number; p90: [number, number]; covered_90: boolean }>;
 	};
+}
+
+/** One day's headline forecast (`forecast/{year}-history.json`, oldest first). */
+export interface ForecastHistoryEntry {
+	date: string;
+	simulated_at: string | null;
+	outcome: ForecastFile['outcome'];
+	/** Seats won: [5th percentile, median, 95th percentile]. */
+	seats: Record<string, [number, number, number]>;
+	tpp_alp: [number, number, number];
+	statewide_primary: Record<string, [number, number, number]>;
+	/** Win probability by district and party. */
+	probs: Record<string, Record<string, number>>;
+}
+
+/** Describes `forecast/{year}-sims.bin`: every simulation, little-endian. */
+export interface SimsHeader {
+	n_sims: number;
+	simulated_at: string;
+	districts: string[];
+	/** `winners` values index this list. */
+	parties: string[];
+	/** Column order of `statewide`. */
+	blocs: string[];
+	byte_length: number;
+	layout: {
+		name: 'winners' | 'statewide' | 'tpp';
+		dtype: 'uint8' | 'int16';
+		shape: number[];
+		offset: number;
+		/** Divide stored values by this (int16 fields hold tenths of a percent). */
+		scale: number;
+	}[];
+}
+
+/** Decoded simulations: row-major, one row per simulation. */
+export interface Sims {
+	header: SimsHeader;
+	/** n_sims x districts: index into header.parties. */
+	winners: Uint8Array;
+	/** n_sims x blocs, tenths of a percent. */
+	statewide: Int16Array;
+	/** n_sims, ALP v Coalition 2PP in tenths of a percent. */
+	tpp: Int16Array;
 }

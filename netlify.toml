@@ -1,0 +1,29 @@
+# Netlify: builds the static SvelteKit site in web/ on every push to main.
+# The daily CI run commits fresh forecast data, which triggers a redeploy.
+
+[build]
+  base = "web"
+  command = "npm run build"
+  publish = "build"
+  # Only the site and its data affect the build: skip deploys for pipeline-only commits.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ../netlify.toml"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+# Forecast data changes daily: let browsers revalidate rather than serve a stale copy.
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/data/*.bin"
+  [headers.values]
+    Content-Type = "application/octet-stream"
+
+# Hashed build assets never change.
+[[headers]]
+  for = "/_app/immutable/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

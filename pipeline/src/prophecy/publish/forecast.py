@@ -40,7 +40,19 @@ def publish_forecast(election: Election, validated: bool = False) -> str | None:
     out = WEB_DATA_DIR / site_code(election.jurisdiction) / "forecast" / f"{election.date.year}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(payload, indent=1), encoding="utf-8")
-    return str(out)
+
+    from prophecy.model.pipeline import RUNS
+    from prophecy.publish.sims import history_entry, local_date, publish_sims, upsert_history
+
+    stamp = summary.get("simulated_at")
+    note = publish_sims(RUNS / election.election_id / "forecast_sims.npz", out.parent,
+                        election.date.year, stamp)
+    if stamp:
+        # Keyed by the day the forecast ran, so re-publishing an unchanged summary later
+        # (push-triggered CI runs) rewrites that day's entry rather than adding a new one.
+        upsert_history(out.parent / f"{election.date.year}-history.json",
+                       history_entry(summary, local_date(stamp, election.jurisdiction)))
+    return "\n".join(s for s in (str(out), note) if s)
 
 
 COAL_CODES = {"LIB", "NAT", "LNP", "CLP", "COAL"}
