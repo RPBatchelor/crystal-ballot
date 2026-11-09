@@ -108,9 +108,8 @@
 	</aside>
 {:else if !f.validated}
 	<aside class="preview">
-		<strong>Development preview.</strong> The model has been <a href="/methodology/">backtested on 2018</a>,
-		but candidate lists (nominations close in November) and independents are still provisional. Do not
-		cite.
+		<strong>Development preview.</strong> The model has been <a href="/methodology/">backtested on past elections</a>,
+		but its treatment of independents is still provisional. Do not cite.
 	</aside>
 {/if}
 
