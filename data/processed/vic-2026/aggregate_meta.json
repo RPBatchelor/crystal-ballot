@@ -1,7 +1,7 @@
 {
  "diagnostics": {
-  "max_rhat": 1.01465,
-  "min_ess_bulk": 279.127,
+  "max_rhat": 1.01423,
+  "min_ess_bulk": 505.499,
   "divergences": 0
  },
  "start_share": {
@@ -16,7 +16,6 @@
   "Freshwater",
   "Lighthouse/Growth Intelligence Centre",
   "Newspoll",
-  "Online Research Unit",
   "RedBridge/Accent",
   "Resolve",
   "Roy Morgan",
@@ -25,25 +24,25 @@
  ],
  "dynamics": {
   "sigma_vel": [
-   0.0074,
-   0.0062,
-   0.0035,
-   0.023
+   0.0075,
+   0.0063,
+   0.0037,
+   0.0234
   ],
   "phi": [
-   0.8004
+   0.7945
   ],
   "tau": [
-   0.5214,
-   1.0777,
-   0.3451,
-   1.5675
+   0.5145,
+   1.0846,
+   0.3697,
+   1.4253
   ],
   "sigma_house": [
-   1.4268,
-   1.3193,
-   0.6408,
-   2.0997
+   1.4653,
+   1.3311,
+   0.6797,
+   1.4567
   ]
  },
  "parties": [
