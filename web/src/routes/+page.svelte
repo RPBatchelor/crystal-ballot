@@ -1,17 +1,18 @@
 <script lang="ts">
+	import { SITE_NAME, SITE_TAGLINE } from '$lib/site';
 	import { JURISDICTIONS, isActive } from '$lib/jurisdictions';
 	import { daysUntil, fmtDate } from '$lib/format';
 </script>
 
 <svelte:head>
-	<title>Prophecy · Australian election forecasts</title>
+	<title>{SITE_NAME} · {SITE_TAGLINE}</title>
 </svelte:head>
 
 <section class="hero">
 	<p class="eyebrow">Australian elections, seat by seat</p>
 	<h1>Forecasts built from polls, results and uncertainty.</h1>
 	<p class="lede">
-		Prophecy combines every published poll with historical results and preference flows in a
+		{SITE_NAME} combines every published poll with historical results and preference flows in a
 		Bayesian model, simulating each seat thousands of times. The first live forecast is the
 		Victorian state election on <strong>28 November 2026</strong>.
 	</p>

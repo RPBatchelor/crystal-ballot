@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { SITE_NAME, SITE_TAGLINE } from '$lib/site';
 	import '../app.css';
 	import { page } from '$app/state';
 	import { JURISDICTIONS, getJurisdiction, isActive } from '$lib/jurisdictions';
@@ -26,7 +27,7 @@
 </script>
 
 <svelte:head>
-	<title>Prophecy · Australian election forecasts</title>
+	<title>{SITE_NAME} · {SITE_TAGLINE}</title>
 	<meta
 		name="description"
 		content="Bayesian seat-by-seat forecasts, polling and results for Australian elections."
@@ -37,8 +38,8 @@
 
 <header class="site">
 	<div class="bar">
-		<a href="/" class="brand" aria-label="Prophecy home">
-			<span class="mark" aria-hidden="true"></span>Prophecy
+		<a href="/" class="brand" aria-label="{SITE_NAME} home">
+			<span class="mark" aria-hidden="true"></span>{SITE_NAME}
 		</a>
 		<a href="/methodology/" class="meta-link">Methodology</a>
 	</div>
@@ -67,7 +68,7 @@
 
 <footer>
 	<p>
-		Prophecy is an independent, non-partisan forecasting project. Results data from the Victorian
+		{SITE_NAME} is an independent, non-partisan forecasting project. Results data from the Victorian
 		Electoral Commission, the NSW Electoral Commission, the Electoral Commission of Queensland, the
 		Electoral Commission of South Australia and the Australian Electoral Commission; polls from published
 		pollster releases.

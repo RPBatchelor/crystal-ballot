@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { SITE_NAME } from '$lib/site';
 	import type { PageData } from './$types';
 	import TimeSeriesChart from '$lib/components/charts/TimeSeriesChart.svelte';
 	import Hemicycle from '$lib/components/charts/Hemicycle.svelte';
@@ -35,7 +36,7 @@
 </script>
 
 <svelte:head>
-	<title>{j.name} · Prophecy</title>
+	<title>{j.name} · {SITE_NAME}</title>
 </svelte:head>
 
 <p class="eyebrow">{j.name} · {j.chamber}</p>

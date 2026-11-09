@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { SITE_NAME } from '$lib/site';
 	import type { PageData } from './$types';
 	import { party } from '$lib/parties';
 	import { allForecastYears, getJurisdiction } from '$lib/jurisdictions';
@@ -16,7 +17,7 @@
 </script>
 
 <svelte:head>
-	<title>Methodology · Prophecy</title>
+	<title>Methodology · {SITE_NAME}</title>
 </svelte:head>
 
 <p class="eyebrow">How it works</p>

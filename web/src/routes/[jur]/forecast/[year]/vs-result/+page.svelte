@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { SITE_NAME } from '$lib/site';
 	import type { PageData } from './$types';
 	import OutcomeBar from '$lib/components/charts/OutcomeBar.svelte';
 	import Hemicycle from '$lib/components/charts/Hemicycle.svelte';
@@ -127,7 +128,7 @@
 </script>
 
 <svelte:head>
-	<title>{electionName}: forecast vs result · Prophecy</title>
+	<title>{electionName}: forecast vs result · {SITE_NAME}</title>
 </svelte:head>
 
 <p class="eyebrow">

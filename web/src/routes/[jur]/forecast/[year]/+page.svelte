@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { SITE_NAME } from '$lib/site';
 	import type { PageData } from './$types';
 	import OutcomeBar from '$lib/components/charts/OutcomeBar.svelte';
 	import SeatHistogram from '$lib/components/charts/SeatHistogram.svelte';
@@ -92,7 +93,7 @@
 </script>
 
 <svelte:head>
-	<title>{j.name} {data.year} forecast · Prophecy</title>
+	<title>{j.name} {data.year} forecast · {SITE_NAME}</title>
 </svelte:head>
 
 {#if retro && f.actual}

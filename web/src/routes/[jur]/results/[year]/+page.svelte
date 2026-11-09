@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { SITE_NAME } from '$lib/site';
 	import type { PageData } from './$types';
 	import Hemicycle from '$lib/components/charts/Hemicycle.svelte';
 	import SeatMap from '$lib/components/charts/SeatMap.svelte';
@@ -86,7 +87,7 @@
 </script>
 
 <svelte:head>
-	<title>{j.name} {data.year} results · Prophecy</title>
+	<title>{j.name} {data.year} results · {SITE_NAME}</title>
 </svelte:head>
 
 {#if years.length > 1}

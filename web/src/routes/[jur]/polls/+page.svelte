@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { SITE_NAME } from '$lib/site';
 	import type { PageData } from './$types';
 	import TimeSeriesChart from '$lib/components/charts/TimeSeriesChart.svelte';
 	import { fmtDate, fmtInt } from '$lib/format';
@@ -43,7 +44,7 @@
 </script>
 
 <svelte:head>
-	<title>{j.name} polls · Prophecy</title>
+	<title>{j.name} polls · {SITE_NAME}</title>
 </svelte:head>
 
 <p class="eyebrow">{j.name} · voting intention</p>

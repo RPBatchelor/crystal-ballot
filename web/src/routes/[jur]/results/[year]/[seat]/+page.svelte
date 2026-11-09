@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { SITE_NAME } from '$lib/site';
 	import type { PageData } from './$types';
 	import VoteBars from '$lib/components/charts/VoteBars.svelte';
 	import { displayName, fmtDate, fmtInt, fmtPct } from '$lib/format';
@@ -21,7 +22,7 @@
 </script>
 
 <svelte:head>
-	<title>{s.name} {data.year} · Prophecy</title>
+	<title>{s.name} {data.year} · {SITE_NAME}</title>
 </svelte:head>
 
 <nav class="crumbs small">

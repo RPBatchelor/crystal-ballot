@@ -1,5 +1,8 @@
 # Prophecy
 
+The public site is **Crystal Ballot** (https://crystalballot.netlify.app); the site name is
+set in `web/src/lib/site.ts`. The code and pipeline keep the name `prophecy`.
+
 Bayesian, seat-level forecasts for Australian elections, plus a static website to explore
 forecasts, polling and historical results. First target: the **Victorian state election,
 28 November 2026** (Legislative Assembly, 88 seats).
