@@ -105,6 +105,27 @@ def ingest_results(year: int = typer.Option(2022, help="Victorian state election
                   PROCESSED_DIR / e.election_id)
 
 
+@app.command("ingest-nominations")
+def ingest_nominations_cmd(
+    election: str = typer.Option("vic-2026", help="Election id"),
+    ballot_order: bool = typer.Option(False, help="Pages are in ballot-draw order: record positions"),
+) -> None:
+    """Legislative Assembly candidates from the VEC nominations pages."""
+    from prophecy import CURATED_DIR
+    from prophecy.ingest.vec_nominations import ingest_nominations
+    from prophecy.schema.parties import bloc
+
+    members = pl.read_csv(CURATED_DIR / f"members_{election}.csv")
+    cands = ingest_nominations(election, members["district"].to_list(), ballot_order=ballot_order)
+    path = CURATED_DIR / f"candidates_{election}.csv"
+    cands.write_csv(path)
+    blocs = cands.with_columns(pl.col("party").map_elements(bloc, return_dtype=pl.String).alias("bloc"))
+    typer.echo(f"{cands.height} candidates in {cands['district'].n_unique()} districts -> {path}")
+    for b in ("ALP", "COAL", "GRN", "ONP", "IND"):
+        n = blocs.filter(pl.col("bloc") == b)["district"].n_unique()
+        typer.echo(f"  {b}: {n} districts")
+
+
 @app.command("ingest-nswec")
 def ingest_nswec(years: str = typer.Option("2015,2019,2023", help="Comma-separated NSW years")) -> None:
     """NSWEC Legislative Assembly results: primaries, 2CP, 2PP, preferences, venues."""
@@ -307,6 +328,18 @@ def forecast(
     flows = flow_weights(prev, inputs, log=typer.echo)
     add_tpp_trend(shares, parties, flows, PROCESSED_DIR / election / "poll_trend.csv",
                   ind_fraction(inputs))
+    from prophecy import CURATED_DIR
+
+    ballot_path = CURATED_DIR / f"candidates_{election}.csv"
+    ballot = pl.read_csv(ballot_path, infer_schema_length=None) if ballot_path.exists() else None
+    if ballot is not None and ballot.height:
+        # As in the backtests: first-time independents on the ballot polled like earlier ones.
+        from prophecy.model import new_candidates
+
+        inputs.new_ind = new_candidates.count_new_on_ballot(ballot, prev, inputs.districts)
+        inputs.new_ind_pool = new_candidates.pool(e.date)
+        typer.echo(f"first-time independents: {int(inputs.new_ind.sum())} on the ballot; "
+                   f"{len(inputs.new_ind_pool)} earlier ones to draw from")
     # Settings estimated from every election held so far (as in the backtests).
     cfg = _historical_config(e)
     cfg.n_per_draw = n_per_draw

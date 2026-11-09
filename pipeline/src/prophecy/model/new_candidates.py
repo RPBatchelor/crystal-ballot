@@ -50,6 +50,21 @@ def count_new(e: Election, prev: Election, districts: list[str]) -> np.ndarray:
     return np.array([n.get(d, 0) for d in districts], dtype=int)
 
 
+def count_new_on_ballot(ballot: pl.DataFrame, prev: Election, districts: list[str]) -> np.ndarray:
+    """As ``count_new``, before the election: from the nominations file (district, name,
+    party) instead of the results."""
+    from prophecy.schema.parties import bloc
+
+    old = pl.read_csv(PROCESSED / prev.election_id / "primary.csv", infer_schema_length=None)
+    before = {_key(c) for c in old["candidate"].to_list()}
+    new = ballot.filter(pl.col("party").map_elements(bloc, return_dtype=pl.String) == "IND")
+    n: dict[str, int] = {}
+    for d, name in new.select("district", "name").iter_rows():
+        if _key(name) not in before:
+            n[d] = n.get(d, 0) + 1
+    return np.array([n.get(d, 0) for d in districts], dtype=int)
+
+
 def draw(n_new: np.ndarray, shares: np.ndarray, size: int, rng: np.random.Generator) -> np.ndarray:
     """S x D total first-time independent vote: each candidate a resampled share."""
     D = len(n_new)
