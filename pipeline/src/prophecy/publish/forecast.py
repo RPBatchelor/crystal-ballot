@@ -89,8 +89,9 @@ def publish_retrospective(election: Election) -> str | None:
     actual_dir = processed / election.election_id
     districts = pl.read_csv(actual_dir / "districts.csv")
     winners = {d: label(p) for d, p in districts.select("district", "elected_party").iter_rows()}
+    # Sorted so republishing gives identical files (group_by order is arbitrary).
     prim = (pl.read_csv(actual_dir / "primary.csv").group_by("district", "bloc")
-            .agg(pl.col("pct").sum()))
+            .agg(pl.col("pct").sum()).sort("district", "pct", "bloc", descending=[False, True, False]))
     actual_primary: dict[str, dict[str, float]] = {}
     for d, b, v in prim.iter_rows():
         actual_primary.setdefault(d, {})[b] = round(v, 1)
