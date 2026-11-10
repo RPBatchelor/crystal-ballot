@@ -589,7 +589,9 @@ def backtest_all(
         summary = pl.concat([pl.read_csv(path).filter(~pl.col("election").is_in(ids)), summary],
                             how="diagonal_relaxed")
     summary.write_csv(path)
-    typer.echo(summary)
+    # Plain rows: polars' box-drawing table fails on a Windows (cp1252) console.
+    for r in summary.iter_rows(named=True):
+        typer.echo("  ".join(f"{k}={v}" for k, v in r.items()))
 
 
 def _write_manifest(out, e, cfg, extra: dict | None = None) -> None:

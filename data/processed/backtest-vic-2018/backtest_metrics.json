@@ -1,34 +1,34 @@
 {
  "n_seats": 88,
- "brier": 0.1754,
- "log_loss": 0.3032,
+ "brier": 0.1721,
+ "log_loss": 0.311,
  "favourite_accuracy": 0.8636,
  "status_quo_accuracy": 0.8636,
  "seats": {
   "ALP": {
    "actual": 55,
-   "median": 50.0,
+   "median": 51.0,
    "p90": [
-    40.0,
-    61.0
+    37.0,
+    65.0
    ],
    "covered_90": true
   },
   "COAL": {
    "actual": 27,
-   "median": 34.0,
+   "median": 32.0,
    "p90": [
-    23.0,
-    44.0
+    19.0,
+    47.0
    ],
    "covered_90": true
   },
   "GRN": {
    "actual": 3,
-   "median": 2.0,
+   "median": 1.0,
    "p90": [
     0.0,
-    5.0
+    6.0
    ],
    "covered_90": true
   },
@@ -37,7 +37,7 @@
    "median": 2.0,
    "p90": [
     0.0,
-    4.0
+    5.0
    ],
    "covered_90": true
   }
@@ -45,25 +45,25 @@
  "calibration": [
   {
    "bin": "0.50-0.70",
-   "n": 16,
-   "mean_prob": 0.61,
-   "hit_rate": 0.5
+   "n": 21,
+   "mean_prob": 0.611,
+   "hit_rate": 0.571
   },
   {
    "bin": "0.70-0.90",
-   "n": 25,
-   "mean_prob": 0.829,
-   "hit_rate": 0.88
+   "n": 27,
+   "mean_prob": 0.82,
+   "hit_rate": 0.963
   },
   {
    "bin": "0.90-0.99",
-   "n": 28,
-   "mean_prob": 0.954,
+   "n": 25,
+   "mean_prob": 0.95,
    "hit_rate": 1.0
   },
   {
    "bin": "0.99-1.00",
-   "n": 17,
+   "n": 13,
    "mean_prob": 0.997,
    "hit_rate": 1.0
   }
@@ -73,96 +73,96 @@
    "district": "Bass",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.678,
-   "p_won": 0.271,
+   "p_fav": 0.514,
+   "p_won": 0.407,
    "incumbent": "LIB"
   },
   {
    "district": "Bayswater",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.605,
-   "p_won": 0.395,
+   "p_fav": 0.582,
+   "p_won": 0.418,
    "incumbent": "LIB"
   },
   {
    "district": "Box Hill",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.674,
-   "p_won": 0.323,
+   "p_fav": 0.671,
+   "p_won": 0.325,
    "incumbent": "LIB"
   },
   {
    "district": "Brunswick",
    "won": "GRN",
    "favourite": "ALP",
-   "p_fav": 0.509,
-   "p_won": 0.475,
+   "p_fav": 0.571,
+   "p_won": 0.394,
    "incumbent": "ALP"
   },
   {
    "district": "Burwood",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.514,
-   "p_won": 0.485,
+   "p_fav": 0.508,
+   "p_won": 0.491,
    "incumbent": "LIB"
   },
   {
    "district": "Hawthorn",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.851,
-   "p_won": 0.115,
+   "p_fav": 0.805,
+   "p_won": 0.127,
    "incumbent": "LIB"
   },
   {
    "district": "Mildura",
    "won": "IND",
    "favourite": "NAT",
-   "p_fav": 0.832,
-   "p_won": 0.167,
+   "p_fav": 0.64,
+   "p_won": 0.339,
    "incumbent": "NAT"
   },
   {
    "district": "Morwell",
    "won": "IND",
-   "favourite": "NAT",
-   "p_fav": 0.55,
-   "p_won": 0.051,
+   "favourite": "ALP",
+   "p_fav": 0.483,
+   "p_won": 0.05,
    "incumbent": "NAT"
   },
   {
    "district": "Mount Waverley",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.555,
-   "p_won": 0.445,
+   "p_fav": 0.556,
+   "p_won": 0.444,
    "incumbent": "LIB"
   },
   {
    "district": "Nepean",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.781,
-   "p_won": 0.206,
+   "p_fav": 0.687,
+   "p_won": 0.284,
    "incumbent": "LIB"
   },
   {
    "district": "Prahran",
    "won": "GRN",
    "favourite": "ALP",
-   "p_fav": 0.442,
-   "p_won": 0.152,
+   "p_fav": 0.445,
+   "p_won": 0.18,
    "incumbent": "GRN"
   },
   {
    "district": "Ringwood",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.561,
-   "p_won": 0.439,
+   "p_fav": 0.535,
+   "p_won": 0.464,
    "incumbent": "LIB"
   }
  ],
@@ -222,7 +222,7 @@
    ]
   }
  },
- "pendulum_accuracy": 0.8636,
+ "pendulum_accuracy": 0.875,
  "statewide": {
   "ALP": {
    "forecast": [
@@ -250,18 +250,18 @@
   },
   "tpp": {
    "forecast": [
-    50.7,
-    55.1,
-    58.9
+    47.9,
+    55.9,
+    61.1
    ],
    "actual": 57.3
   }
  },
  "outcome": {
-  "alp_majority": 0.80715,
-  "coal_majority": 0.049,
-  "hung": 0.14385,
-  "alp_most_seats": 0.8932,
-  "coal_most_seats": 0.092
+  "alp_majority": 0.7548,
+  "coal_majority": 0.09245,
+  "hung": 0.15275,
+  "alp_most_seats": 0.84335,
+  "coal_most_seats": 0.144
  }
 }
