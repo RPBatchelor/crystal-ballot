@@ -2,7 +2,7 @@
  "election_id": "fed-2025",
  "jurisdiction": "FED",
  "election_date": "2025-05-03",
- "generated_at": "2026-11-09T10:26:54+00:00",
+ "generated_at": "2026-11-10T02:05:19+00:00",
  "model_version": "0.1.0",
  "mode": "retrospective",
  "validated": true,
@@ -13490,10 +13490,10 @@
    "actual_primary": {
     "OTH": 2.7,
     "IND": 22.1,
+    "COAL": 41.2,
     "ONP": 5.3,
     "ALP": 22.3,
-    "GRN": 6.4,
-    "COAL": 41.2
+    "GRN": 6.4
    },
    "p_actual": 0.9236
   },
@@ -13835,11 +13835,11 @@
    "leader_prob": 0.9845,
    "actual_winner": "ALP",
    "actual_primary": {
-    "OTH": 10.5,
     "GRN": 25.3,
     "ONP": 4.8,
-    "COAL": 16.9,
-    "ALP": 42.6
+    "OTH": 10.5,
+    "ALP": 42.6,
+    "COAL": 16.9
    },
    "p_actual": 0.9845
   },
@@ -14063,8 +14063,8 @@
     "ALP": 21.3,
     "ONP": 14.4,
     "GRN": 8.5,
-    "COAL": 52.5,
-    "OTH": 3.3
+    "OTH": 3.3,
+    "COAL": 52.5
    },
    "p_actual": 0.9867
   },
@@ -14869,10 +14869,10 @@
    "actual_winner": "ALP",
    "actual_primary": {
     "OTH": 5.9,
+    "GRN": 14.9,
     "ONP": 4.7,
     "ALP": 48.8,
-    "COAL": 25.7,
-    "GRN": 14.9
+    "COAL": 25.7
    },
    "p_actual": 0.9761
   },
@@ -15099,10 +15099,10 @@
    "actual_primary": {
     "IND": 43.7,
     "ALP": 8.3,
+    "COAL": 30.7,
     "ONP": 7.2,
     "GRN": 3.6,
-    "OTH": 6.4,
-    "COAL": 30.7
+    "OTH": 6.4
    },
    "p_actual": 0.9349
   },
