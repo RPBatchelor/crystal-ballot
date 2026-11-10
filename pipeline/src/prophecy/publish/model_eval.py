@@ -23,7 +23,10 @@ def publish_model_eval(jurisdiction: str) -> str | None:
                                      **metrics})
     table = PROCESSED / f"poll_error_{code}.csv"
     if table.exists():
-        payload["poll_error"] = pl.read_csv(table).to_dicts()
+        try:
+            payload["poll_error"] = pl.read_csv(table).to_dicts()
+        except pl.exceptions.NoDataError:  # no election had final-month polls (NT)
+            pass
     settings = PROCESSED / f"poll_error_{code}.json"
     if settings.exists():
         payload["poll_error_settings"] = json.loads(settings.read_text(encoding="utf-8"))
