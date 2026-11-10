@@ -26,9 +26,6 @@ from prophecy.schema.parties import bloc
 
 PROCESSED = DATA_DIR / "processed"
 RUNS = DATA_DIR.parent / "runs"
-# Preference distributions are only published for 2022; earlier elections reuse their
-# structure, re-calibrated to that election's own seat results.
-FLOW_SOURCE = "vic-2022"
 ONP_START = 3.0  # ONP's starting level (%) when the previous Assembly barely had it
 
 
@@ -292,25 +289,50 @@ def attach_candidates(inputs: SeatInputs, election: Election, previous: Election
     return inputs
 
 
-def flow_weights(previous: Election, inputs: SeatInputs,
-                 log: Callable[[str], None] = print) -> np.ndarray:
-    """Luce weights from the DoPs, tilted so replaying ``previous`` reproduces its seat
-    2CPs, then ONP flows from polls."""
-    transfers = pl.read_csv(PROCESSED / FLOW_SOURCE / "dop_transfers.csv").filter(
-        pl.col("count") > 0
-    ).with_columns(
-        pl.col("from_party").map_elements(bloc, return_dtype=pl.String).alias("from_bloc"),
-        pl.col("to_party").map_elements(bloc, return_dtype=pl.String).alias("to_bloc"),
-    )
+def flow_source(election: Election) -> Election | None:
+    """The latest election in ``election``'s jurisdiction, held before it, with full
+    distributions of preferences (the VEC published them first in 2022); None when there
+    is none, and flows must come from the federal divisions instead."""
+    from prophecy.jurisdictions import in_jurisdiction
+
+    with_dops = [e for e in in_jurisdiction(election.jurisdiction) if e.date < election.date
+                 and (PROCESSED / e.election_id / "dop_transfers.csv").exists()]
+    return with_dops[-1] if with_dops else None
+
+
+def flow_weights(previous: Election, inputs: SeatInputs, election: Election,
+                 log: Callable[[str], None] = print, live: bool = False) -> np.ndarray:
+    """Luce weights from distributions of preferences published before ``election`` (the
+    state's own, else its federal divisions'), tilted so replaying ``previous``
+    reproduces its seat 2CPs.
+
+    ``live``: the current cycle, where One Nation's flows are set from 2026 polls'
+    reported 2PPs (``ONP_FLOW_TARGETS``). A backtest must not see those polls, so its
+    One Nation flows stay as estimated from the distributions.
+    """
+    src = flow_source(election)
+    if src is not None:
+        transfers = pl.read_csv(PROCESSED / src.election_id / "dop_transfers.csv").filter(
+            pl.col("count") > 0
+        ).with_columns(
+            pl.col("from_party").map_elements(bloc, return_dtype=pl.String).alias("from_bloc"),
+            pl.col("to_party").map_elements(bloc, return_dtype=pl.String).alias("to_bloc"),
+        )
+        weights = estimate_weights(transfers)
+        log(f"flows from {src.election_id} distributions of preferences")
+    else:
+        from prophecy.model.hareclark import tas_flows
+
+        weights = tas_flows(election, log=log)
     tcp = pl.read_csv(PROCESSED / previous.election_id / "tcp.csv")
     alp_tcp = np.full(len(inputs.districts), np.nan)
     for i, name in enumerate(inputs.districts):
         t = tcp.filter(pl.col("district") == name)
         if set(t["bloc"]) == {"ALP", "COAL"}:
             alp_tcp[i] = t.filter(pl.col("bloc") == "ALP")["pct"][0]
-    flows, calib = calibrate_to_results(estimate_weights(transfers), inputs.base, alp_tcp)
+    flows, calib = calibrate_to_results(weights, inputs.base, alp_tcp)
     log(f"flow calibration ({previous.election_id}): {calib}")
-    return apply_onp_targets(flows)
+    return apply_onp_targets(flows) if live else flows
 
 
 def ind_fraction(inputs: SeatInputs) -> float:

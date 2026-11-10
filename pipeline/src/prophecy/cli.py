@@ -325,7 +325,7 @@ def forecast(
     shares, parties = load_draws(RUNS / election)
     inputs = seat_inputs(prev, boundaries="assembly2022", onp_geography="ONP" in parties,
                          log=typer.echo, election=e)
-    flows = flow_weights(prev, inputs, log=typer.echo)
+    flows = flow_weights(prev, inputs, e, log=typer.echo, live=True)
     add_tpp_trend(shares, parties, flows, PROCESSED_DIR / election / "poll_trend.csv",
                   ind_fraction(inputs))
     from prophecy import CURATED_DIR
@@ -469,7 +469,7 @@ def backtest(
             flows, exhaust = state_flows(prev, log=typer.echo)
     else:
         inputs = seat_inputs(prev, boundaries=boundaries, onp_geography=False, log=typer.echo)
-        flows = flow_weights(prev, inputs, log=typer.echo)
+        flows = flow_weights(prev, inputs, e, log=typer.echo)
     if not hand_set:
         from prophecy.model import new_candidates
 
@@ -539,6 +539,57 @@ def backtest(
     for m in metrics["misses"]:
         typer.echo(f"  {m['district']}: favourite {m['favourite']} ({m['p_fav']:.0%}), "
                    f"won {m['won']} (p={m['p_won']:.0%})")
+
+
+# The published blind tests, in date order: the latest election in every jurisdiction and
+# the earlier ones the data allows. Victoria 2022 joins once its notional baseline exists.
+BACKTEST_SET = [
+    "qld-2015", "qld-2017", "wa-2017", "sa-2018", "vic-2018", "nsw-2019", "nt-2020",
+    "qld-2020", "wa-2021", "sa-2022", "nsw-2023", "act-2024", "nt-2024", "qld-2024",
+    "tas-2024", "fed-2025", "tas-2025", "wa-2025", "sa-2026",
+]
+VIC_BOUNDARIES = {"vic-2013": "assembly2013", "vic-2021": "assembly2022"}  # Vicmap layer per set
+
+
+@app.command("backtest-all")
+def backtest_all(
+    since: str = typer.Option("", help="Only elections on or after this date (YYYY-MM-DD)"),
+    only: str = typer.Option("", help="Comma-separated election ids (default: the published set)"),
+    allow_dirty: bool = typer.Option(False, "--allow-dirty",
+                                     help="Run with uncommitted model code or curated data (not for publishing)"),
+) -> None:
+    """Rerun the published blind tests from a clean commit, oldest first, and write a
+    summary table (data/processed/backtest_summary.csv)."""
+    import json
+    import subprocess
+    from datetime import date
+
+    dirty = subprocess.run(["git", "status", "--porcelain", "--", "src", "../data/curated"],
+                           capture_output=True, text=True, cwd=PROCESSED_DIR.parent.parent / "pipeline").stdout
+    if dirty and not allow_dirty:
+        raise typer.BadParameter(f"uncommitted changes; commit first so manifests are reproducible:\n{dirty}")
+    ids = only.split(",") if only else BACKTEST_SET
+    if since:
+        cutoff = date.fromisoformat(since)
+        ids = [i for i in ids if jurisdictions.get(i).date >= cutoff]
+    rows = []
+    for eid in ids:
+        e = jurisdictions.get(eid)
+        typer.echo(f"\n=== {eid} ===")
+        backtest(election=eid, boundaries=VIC_BOUNDARIES.get(e.boundary_set, "assembly2013"),
+                 refit=True, hand_set=False, aggregator="poll_aggregator")
+        m = json.loads((PROCESSED_DIR / f"backtest-{eid}" / "backtest_metrics.json").read_text(encoding="utf-8"))
+        rows.append({"election": eid, "seats": m.get("n_seats", m.get("n_divisions")),
+                     "favourite_accuracy": m.get("favourite_accuracy"),
+                     "status_quo_accuracy": m.get("status_quo_accuracy"),
+                     "brier": m.get("brier", m.get("seat_brier"))})
+    summary = pl.DataFrame(rows)
+    path = PROCESSED_DIR / "backtest_summary.csv"
+    if path.exists() and (since or only):  # partial rerun: keep the other elections' rows
+        summary = pl.concat([pl.read_csv(path).filter(~pl.col("election").is_in(ids)), summary],
+                            how="diagonal_relaxed")
+    summary.write_csv(path)
+    typer.echo(summary)
 
 
 def _write_manifest(out, e, cfg, extra: dict | None = None) -> None:
