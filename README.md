@@ -1,4 +1,4 @@
-# Prophecy
+# Crystal Ballot
 
 The public site is **Crystal Ballot** (https://crystalballot.netlify.app); the site name is
 set in `web/src/lib/site.ts`. The code and pipeline keep the name `prophecy`.
