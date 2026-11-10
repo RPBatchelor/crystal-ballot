@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ABOUT_URL, SITE_NAME, SITE_STRAPLINE, SITE_TAGLINE } from '$lib/site';
+	import { REPO_URL, SITE_NAME, SITE_STRAPLINE, SITE_TAGLINE } from '$lib/site';
 	import BrandMark from '$lib/components/brand/BrandMark.svelte';
 	import '../app.css';
 	import { page } from '$app/state';
@@ -44,7 +44,7 @@
 		</a>
 		<nav class="meta" aria-label="About this site">
 			<a href="/methodology/" aria-current={path.startsWith('/methodology/') ? 'page' : undefined}>Methodology</a>
-			<a href={ABOUT_URL} target="_blank" rel="noopener noreferrer">About<span class="ext" aria-hidden="true">↗</span><span class="visually-hidden"> (GitHub, opens in a new tab)</span></a>
+			<a href={REPO_URL} target="_blank" rel="noopener noreferrer">GitHub<span class="ext" aria-hidden="true">↗</span><span class="visually-hidden"> (source repository, opens in a new tab)</span></a>
 		</nav>
 	</div>
 	<nav class="jurisdictions" aria-label="Jurisdiction">
@@ -82,7 +82,7 @@
 		{SITE_NAME} is an independent, non-partisan forecasting project. Results data from the Victorian
 		Electoral Commission, the NSW Electoral Commission, the Electoral Commission of Queensland, the
 		Electoral Commission of South Australia and the Australian Electoral Commission; polls from published
-		pollster releases. <a href="/methodology/">Methodology</a> · <a href={ABOUT_URL} target="_blank" rel="noopener noreferrer">About</a>
+		pollster releases. <a href="/methodology/">Methodology</a> · <a href={REPO_URL} target="_blank" rel="noopener noreferrer">GitHub</a>
 	</p>
 </footer>
 
