@@ -1,7 +1,7 @@
 {
  "n_seats": 25,
- "brier": 0.4464,
- "log_loss": 0.8235,
+ "brier": 0.4438,
+ "log_loss": 0.8244,
  "favourite_accuracy": 0.68,
  "status_quo_accuracy": 0.52,
  "seats": {
@@ -46,13 +46,13 @@
   {
    "bin": "0.50-0.70",
    "n": 6,
-   "mean_prob": 0.63,
+   "mean_prob": 0.629,
    "hit_rate": 0.833
   },
   {
    "bin": "0.70-0.90",
    "n": 9,
-   "mean_prob": 0.757,
+   "mean_prob": 0.755,
    "hit_rate": 0.556
   },
   {
@@ -73,7 +73,7 @@
    "district": "Arafura",
    "won": "ALP",
    "favourite": "CLP",
-   "p_fav": 0.746,
+   "p_fav": 0.745,
    "p_won": 0.255,
    "incumbent": "ALP"
   },
@@ -81,32 +81,32 @@
    "district": "Araluen",
    "won": "IND",
    "favourite": "CLP",
-   "p_fav": 0.496,
-   "p_won": 0.293,
+   "p_fav": 0.491,
+   "p_won": 0.296,
    "incumbent": "IND"
   },
   {
    "district": "Casuarina",
    "won": "CLP",
    "favourite": "ALP",
-   "p_fav": 0.531,
-   "p_won": 0.112,
+   "p_fav": 0.528,
+   "p_won": 0.113,
    "incumbent": "ALP"
   },
   {
    "district": "Daly",
    "won": "ALP",
    "favourite": "CLP",
-   "p_fav": 0.915,
-   "p_won": 0.085,
+   "p_fav": 0.912,
+   "p_won": 0.088,
    "incumbent": "ALP"
   },
   {
    "district": "Fannie Bay",
    "won": "CLP",
    "favourite": "ALP",
-   "p_fav": 0.459,
-   "p_won": 0.27,
+   "p_fav": 0.455,
+   "p_won": 0.274,
    "incumbent": "ALP"
   },
   {
@@ -114,30 +114,30 @@
    "won": "IND",
    "favourite": "GRN",
    "p_fav": 0.794,
-   "p_won": 0.005,
+   "p_won": 0.004,
    "incumbent": "ALP"
   },
   {
    "district": "Sanderson",
    "won": "CLP",
    "favourite": "ALP",
-   "p_fav": 0.757,
-   "p_won": 0.243,
+   "p_fav": 0.749,
+   "p_won": 0.251,
    "incumbent": "ALP"
   },
   {
    "district": "Wanguri",
    "won": "CLP",
    "favourite": "ALP",
-   "p_fav": 0.721,
-   "p_won": 0.273,
+   "p_fav": 0.714,
+   "p_won": 0.28,
    "incumbent": "ALP"
   }
  ],
  "seat_vote": {
   "ALP": {
    "n": 24,
-   "crps": 6.485,
+   "crps": 6.47,
    "cover50": 0.333,
    "cover90": 0.75,
    "pit_hist": [
@@ -149,13 +149,13 @@
     1,
     2,
     3,
-    0,
-    5
+    1,
+    4
    ]
   },
   "COAL": {
    "n": 25,
-   "crps": 6.442,
+   "crps": 6.421,
    "cover50": 0.56,
    "cover90": 0.92,
    "pit_hist": [
@@ -173,7 +173,7 @@
   },
   "GRN": {
    "n": 11,
-   "crps": 9.642,
+   "crps": 9.587,
    "cover50": 0.091,
    "cover90": 0.455,
    "pit_hist": [
@@ -218,17 +218,17 @@
   "tpp": {
    "forecast": [
     33.2,
-    45.0,
-    58.0
+    44.9,
+    58.1
    ],
    "actual": 42.6
   }
  },
  "outcome": {
-  "alp_majority": 0.0806,
-  "coal_majority": 0.677,
-  "hung": 0.2424,
-  "alp_most_seats": 0.1745,
-  "coal_most_seats": 0.8045
+  "alp_majority": 0.08,
+  "coal_majority": 0.6797,
+  "hung": 0.2403,
+  "alp_most_seats": 0.17405,
+  "coal_most_seats": 0.8037
  }
 }

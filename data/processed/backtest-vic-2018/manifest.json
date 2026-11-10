@@ -1,7 +1,7 @@
 {
  "election": "vic-2018",
- "run_at": "2026-11-10T08:26:49+00:00",
- "git_commit": "0566f9f0123f76db57f7491935e6dee1820b7a87",
+ "run_at": "2026-11-10T09:28:29+00:00",
+ "git_commit": "0a20970a2c05dcb0c4064952072fafc3c2fbf60e",
  "uncommitted_changes": false,
  "config": {
   "n_per_draw": 5,
@@ -68,16 +68,19 @@
   "ind_retire_log": -1.2
  },
  "inputs": {
+  "vic-2018\\booths.csv": "20c4f6723d534b70",
   "vic-2018\\districts.csv": "1f0dd4fd77b14c1c",
   "vic-2018\\final.csv": "25375498662a3fb0",
   "vic-2018\\primary.csv": "6fbd763163b7fa24",
-  "vic-2018\\tcp.csv": "5d6b4b6ed3b2253f",
-  "vic-2018\\tpp.csv": "b20ccd8cd2f8326a",
+  "vic-2018\\tcp.csv": "81203d6b9244e0bf",
+  "vic-2018\\tpp.csv": "d45d0efa4e4f3aa6",
+  "vic-2018\\tpp_booths.csv": "f1008ff6f4bc698b",
   "vic-2014\\districts.csv": "f7303dcdcebab9cf",
   "vic-2014\\final.csv": "3e6274b322d1a071",
   "vic-2014\\primary.csv": "e677162f04e541b9",
-  "vic-2014\\tcp.csv": "6d6e41cb8df7e547",
-  "vic-2014\\tpp.csv": "2c871f7fda810de4",
+  "vic-2014\\tcp.csv": "8d79a90f38c33ad5",
+  "vic-2014\\tpp.csv": "d90be1f5d2e361c7",
+  "vic-2014\\tpp_booths.csv": "e0b0be506d2c0685",
   "polls_vic-2018.csv": "7afce2e90837721a",
   "election_results_vic.csv": "b0edb12af88245b4"
  },

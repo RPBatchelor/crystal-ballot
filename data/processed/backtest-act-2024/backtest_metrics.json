@@ -1,7 +1,7 @@
 {
  "n_divisions": 5,
- "seat_brier": 0.1331,
- "mean_p_actual_seats": 0.8828,
+ "seat_brier": 0.133,
+ "mean_p_actual_seats": 0.8829,
  "median_abs_error": 0.083,
  "seats": {
   "AJP": {
@@ -53,7 +53,7 @@
    "actual": 4,
    "median": 4.0,
    "p90": [
-    1.0,
+    2.0,
     6.0
    ],
    "covered_90": true
@@ -152,7 +152,7 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.02,
-   "p_actual": 0.98
+   "p_actual": 0.981
   },
   {
    "division": "Brindabella",
@@ -192,7 +192,7 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.42,
-   "p_actual": 0.576
+   "p_actual": 0.577
   },
   {
    "division": "Ginninderra",
@@ -200,7 +200,7 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.06,
-   "p_actual": 0.938
+   "p_actual": 0.937
   },
   {
    "division": "Ginninderra",
@@ -208,7 +208,7 @@
    "actual": 1,
    "median": 1.0,
    "mean": 0.9,
-   "p_actual": 0.886
+   "p_actual": 0.888
   },
   {
    "division": "Ginninderra",
@@ -224,7 +224,7 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.03,
-   "p_actual": 0.966
+   "p_actual": 0.967
   },
   {
    "division": "Ginninderra",
@@ -232,7 +232,7 @@
    "actual": 2,
    "median": 1.0,
    "mean": 1.31,
-   "p_actual": 0.309
+   "p_actual": 0.308
   },
   {
    "division": "Ginninderra",
@@ -240,7 +240,7 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.06,
-   "p_actual": 0.938
+   "p_actual": 0.939
   },
   {
    "division": "Kurrajong",
@@ -256,15 +256,15 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.01,
-   "p_actual": 0.988
+   "p_actual": 0.987
   },
   {
    "division": "Kurrajong",
    "party": "GRN",
    "actual": 1,
    "median": 1.0,
-   "mean": 1.2,
-   "p_actual": 0.786
+   "mean": 1.21,
+   "p_actual": 0.785
   },
   {
    "division": "Kurrajong",
@@ -280,7 +280,7 @@
    "actual": 1,
    "median": 2.0,
    "mean": 1.72,
-   "p_actual": 0.281
+   "p_actual": 0.28
   },
   {
    "division": "Kurrajong",
@@ -288,7 +288,7 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.01,
-   "p_actual": 0.988
+   "p_actual": 0.989
   },
   {
    "division": "Kurrajong",
@@ -296,7 +296,7 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.01,
-   "p_actual": 0.987
+   "p_actual": 0.989
   },
   {
    "division": "Murrumbidgee",
@@ -312,7 +312,7 @@
    "actual": 2,
    "median": 2.0,
    "mean": 1.96,
-   "p_actual": 0.942
+   "p_actual": 0.944
   },
   {
    "division": "Murrumbidgee",
@@ -320,7 +320,7 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.06,
-   "p_actual": 0.944
+   "p_actual": 0.945
   },
   {
    "division": "Murrumbidgee",
@@ -328,7 +328,7 @@
    "actual": 0,
    "median": 1.0,
    "mean": 0.72,
-   "p_actual": 0.276
+   "p_actual": 0.278
   },
   {
    "division": "Murrumbidgee",
@@ -344,7 +344,7 @@
    "actual": 1,
    "median": 0.0,
    "mean": 0.19,
-   "p_actual": 0.186
+   "p_actual": 0.188
   },
   {
    "division": "Murrumbidgee",
@@ -368,7 +368,7 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.01,
-   "p_actual": 0.992
+   "p_actual": 0.993
   },
   {
    "division": "Yerrabi",
@@ -376,7 +376,7 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.02,
-   "p_actual": 0.985
+   "p_actual": 0.984
   },
   {
    "division": "Yerrabi",
@@ -384,7 +384,7 @@
    "actual": 1,
    "median": 1.0,
    "mean": 0.54,
-   "p_actual": 0.541
+   "p_actual": 0.54
   },
   {
    "division": "Yerrabi",
@@ -446,10 +446,10 @@
   }
  },
  "outcome": {
-  "lib_majority": 0.00905,
-  "alp_majority": 0.01305,
-  "hung": 0.9779,
-  "lib_most_seats": 0.2476,
-  "alp_most_seats": 0.5271
+  "lib_majority": 0.00885,
+  "alp_majority": 0.01295,
+  "hung": 0.9782,
+  "lib_most_seats": 0.2479,
+  "alp_most_seats": 0.528
  }
 }

@@ -1,7 +1,7 @@
 {
  "n_seats": 59,
- "brier": 0.0532,
- "log_loss": 0.1073,
+ "brier": 0.0531,
+ "log_loss": 0.107,
  "favourite_accuracy": 0.9492,
  "status_quo_accuracy": 0.7627,
  "seats": {
@@ -46,7 +46,7 @@
   {
    "bin": "0.50-0.70",
    "n": 2,
-   "mean_prob": 0.552,
+   "mean_prob": 0.551,
    "hit_rate": 0.5
   },
   {
@@ -73,8 +73,8 @@
    "district": "Kalgoorlie",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.48,
-   "p_won": 0.188,
+   "p_fav": 0.477,
+   "p_won": 0.191,
    "incumbent": "LIB"
   },
   {
@@ -82,23 +82,23 @@
    "won": "NAT",
    "favourite": "ALP",
    "p_fav": 0.458,
-   "p_won": 0.456,
+   "p_won": 0.455,
    "incumbent": "NAT"
   },
   {
    "district": "Warren-Blackwood",
    "won": "ALP",
    "favourite": "NAT",
-   "p_fav": 0.525,
-   "p_won": 0.428,
+   "p_fav": 0.523,
+   "p_won": 0.43,
    "incumbent": "NAT"
   }
  ],
  "seat_vote": {
   "ALP": {
    "n": 59,
-   "crps": 4.76,
-   "cover50": 0.254,
+   "crps": 4.743,
+   "cover50": 0.271,
    "cover90": 0.644,
    "pit_hist": [
     0,
@@ -115,7 +115,7 @@
   },
   "COAL": {
    "n": 59,
-   "crps": 2.975,
+   "crps": 2.984,
    "cover50": 0.339,
    "cover90": 0.831,
    "pit_hist": [
@@ -133,7 +133,7 @@
   },
   "GRN": {
    "n": 59,
-   "crps": 1.454,
+   "crps": 1.458,
    "cover50": 0.254,
    "cover90": 0.949,
    "pit_hist": [
@@ -156,7 +156,7 @@
    "forecast": [
     47.8,
     52.4,
-    56.9
+    57.0
    ],
    "actual": 59.94
   },
@@ -178,7 +178,7 @@
   },
   "tpp": {
    "forecast": [
-    60.6,
+    60.5,
     65.2,
     69.5
    ],
@@ -186,10 +186,10 @@
   }
  },
  "outcome": {
-  "alp_majority": 0.99995,
-  "coal_majority": 5e-05,
+  "alp_majority": 0.99985,
+  "coal_majority": 0.00015,
   "hung": 0.0,
-  "alp_most_seats": 0.99995,
-  "coal_most_seats": 5e-05
+  "alp_most_seats": 0.99985,
+  "coal_most_seats": 0.00015
  }
 }

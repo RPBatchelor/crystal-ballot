@@ -1,7 +1,7 @@
 {
  "n_seats": 93,
- "brier": 0.2409,
- "log_loss": 0.4586,
+ "brier": 0.2406,
+ "log_loss": 0.4582,
  "favourite_accuracy": 0.8172,
  "status_quo_accuracy": 0.8495,
  "seats": {
@@ -16,7 +16,7 @@
   },
   "COAL": {
    "actual": 39,
-   "median": 29.0,
+   "median": 30.0,
    "p90": [
     18.0,
     40.0
@@ -28,7 +28,7 @@
    "median": 0.0,
    "p90": [
     0.0,
-    2.0
+    3.0
    ],
    "covered_90": true
   },
@@ -51,15 +51,15 @@
   },
   {
    "bin": "0.70-0.90",
-   "n": 21,
-   "mean_prob": 0.798,
-   "hit_rate": 0.857
+   "n": 22,
+   "mean_prob": 0.802,
+   "hit_rate": 0.864
   },
   {
    "bin": "0.90-0.99",
-   "n": 28,
-   "mean_prob": 0.958,
-   "hit_rate": 0.964
+   "n": 27,
+   "mean_prob": 0.96,
+   "hit_rate": 0.963
   },
   {
    "bin": "0.99-1.00",
@@ -73,8 +73,8 @@
    "district": "Bonney",
    "won": "LNP",
    "favourite": "ALP",
-   "p_fav": 0.632,
-   "p_won": 0.336,
+   "p_fav": 0.629,
+   "p_won": 0.339,
    "incumbent": "LNP"
   },
   {
@@ -89,8 +89,8 @@
    "district": "Chatsworth",
    "won": "LNP",
    "favourite": "ALP",
-   "p_fav": 0.644,
-   "p_won": 0.356,
+   "p_fav": 0.641,
+   "p_won": 0.359,
    "incumbent": "LNP"
   },
   {
@@ -98,30 +98,30 @@
    "won": "LNP",
    "favourite": "ALP",
    "p_fav": 0.686,
-   "p_won": 0.314,
+   "p_won": 0.313,
    "incumbent": "LNP"
   },
   {
    "district": "Gaven",
    "won": "ALP",
    "favourite": "LNP",
-   "p_fav": 0.736,
-   "p_won": 0.264,
+   "p_fav": 0.735,
+   "p_won": 0.265,
    "incumbent": "LNP"
   },
   {
    "district": "Glass House",
    "won": "LNP",
    "favourite": "ALP",
-   "p_fav": 0.629,
-   "p_won": 0.351,
+   "p_fav": 0.632,
+   "p_won": 0.348,
    "incumbent": "LNP"
   },
   {
    "district": "Gympie",
    "won": "LNP",
    "favourite": "ONP",
-   "p_fav": 0.484,
+   "p_fav": 0.482,
    "p_won": 0.314,
    "incumbent": "LNP"
   },
@@ -146,22 +146,22 @@
    "won": "GRN",
    "favourite": "LNP",
    "p_fav": 0.564,
-   "p_won": 0.111,
+   "p_won": 0.113,
    "incumbent": "LNP"
   },
   {
    "district": "Maryborough",
    "won": "ALP",
    "favourite": "ONP",
-   "p_fav": 0.568,
-   "p_won": 0.1,
+   "p_fav": 0.569,
+   "p_won": 0.099,
    "incumbent": "ALP"
   },
   {
    "district": "Mirani",
    "won": "ONP",
    "favourite": "ALP",
-   "p_fav": 0.99,
+   "p_fav": 0.991,
    "p_won": 0.0,
    "incumbent": "ALP"
   },
@@ -177,15 +177,15 @@
    "district": "Noosa",
    "won": "IND",
    "favourite": "LNP",
-   "p_fav": 0.658,
-   "p_won": 0.062,
+   "p_fav": 0.659,
+   "p_won": 0.063,
    "incumbent": "LNP"
   },
   {
    "district": "Pumicestone",
    "won": "LNP",
    "favourite": "ALP",
-   "p_fav": 0.745,
+   "p_fav": 0.743,
    "p_won": 0.178,
    "incumbent": "IND"
   },
@@ -193,25 +193,25 @@
    "district": "Toowoomba North",
    "won": "LNP",
    "favourite": "ALP",
-   "p_fav": 0.601,
-   "p_won": 0.383,
+   "p_fav": 0.597,
+   "p_won": 0.387,
    "incumbent": "LNP"
   },
   {
    "district": "Whitsunday",
    "won": "LNP",
    "favourite": "ALP",
-   "p_fav": 0.756,
-   "p_won": 0.224,
+   "p_fav": 0.752,
+   "p_won": 0.228,
    "incumbent": "LNP"
   }
  ],
  "seat_vote": {
   "ALP": {
    "n": 93,
-   "crps": 2.912,
+   "crps": 2.906,
    "cover50": 0.376,
-   "cover90": 0.806,
+   "cover90": 0.796,
    "pit_hist": [
     22,
     20,
@@ -220,21 +220,21 @@
     7,
     5,
     11,
-    6,
-    4,
+    5,
+    5,
     3
    ]
   },
   "COAL": {
    "n": 93,
-   "crps": 3.297,
+   "crps": 3.3,
    "cover50": 0.28,
    "cover90": 0.742,
    "pit_hist": [
     30,
     12,
-    8,
-    8,
+    9,
+    7,
     4,
     4,
     7,
@@ -246,7 +246,7 @@
   "GRN": {
    "n": 93,
    "crps": 1.118,
-   "cover50": 0.656,
+   "cover50": 0.645,
    "cover90": 0.978,
    "pit_hist": [
     3,
@@ -267,8 +267,8 @@
   "ALP": {
    "forecast": [
     32.2,
-    35.3,
-    38.4
+    35.2,
+    38.3
    ],
    "actual": 35.4
   },
@@ -276,7 +276,7 @@
    "forecast": [
     30.5,
     33.4,
-    36.5
+    36.4
    ],
    "actual": 33.7
   },
@@ -298,10 +298,10 @@
   }
  },
  "outcome": {
-  "alp_majority": 0.8921,
-  "coal_majority": 0.00745,
-  "hung": 0.10045,
+  "alp_majority": 0.89145,
+  "coal_majority": 0.0076,
+  "hung": 0.10095,
   "alp_most_seats": 0.9731,
-  "coal_most_seats": 0.0224
+  "coal_most_seats": 0.0231
  }
 }

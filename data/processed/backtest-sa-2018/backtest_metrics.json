@@ -1,7 +1,7 @@
 {
  "n_seats": 47,
- "brier": 0.3257,
- "log_loss": 0.6806,
+ "brier": 0.3261,
+ "log_loss": 0.6813,
  "favourite_accuracy": 0.8085,
  "status_quo_accuracy": 0.9149,
  "seats": {
@@ -45,20 +45,20 @@
  "calibration": [
   {
    "bin": "0.50-0.70",
-   "n": 22,
-   "mean_prob": 0.584,
-   "hit_rate": 0.818
+   "n": 23,
+   "mean_prob": 0.58,
+   "hit_rate": 0.783
   },
   {
    "bin": "0.70-0.90",
    "n": 8,
-   "mean_prob": 0.797,
+   "mean_prob": 0.796,
    "hit_rate": 1.0
   },
   {
    "bin": "0.90-0.99",
    "n": 2,
-   "mean_prob": 0.958,
+   "mean_prob": 0.957,
    "hit_rate": 1.0
   },
   {
@@ -73,7 +73,7 @@
    "district": "Black",
    "won": "LIB",
    "favourite": "ALP",
-   "p_fav": 0.494,
+   "p_fav": 0.493,
    "p_won": 0.346,
    "incumbent": "LIB"
   },
@@ -81,16 +81,16 @@
    "district": "Colton",
    "won": "LIB",
    "favourite": "ALP",
-   "p_fav": 0.559,
-   "p_won": 0.421,
+   "p_fav": 0.56,
+   "p_won": 0.42,
    "incumbent": "LIB"
   },
   {
    "district": "Elder",
    "won": "LIB",
    "favourite": "ALP",
-   "p_fav": 0.409,
-   "p_won": 0.372,
+   "p_fav": 0.41,
+   "p_won": 0.371,
    "incumbent": "LIB"
   },
   {
@@ -105,15 +105,15 @@
    "district": "Gibson",
    "won": "LIB",
    "favourite": "ALP",
-   "p_fav": 0.512,
-   "p_won": 0.384,
+   "p_fav": 0.511,
+   "p_won": 0.385,
    "incumbent": "LIB"
   },
   {
    "district": "Hartley",
    "won": "LIB",
    "favourite": "ALP",
-   "p_fav": 0.482,
+   "p_fav": 0.485,
    "p_won": 0.428,
    "incumbent": "LIB"
   },
@@ -121,15 +121,15 @@
    "district": "King",
    "won": "LIB",
    "favourite": "ALP",
-   "p_fav": 0.498,
-   "p_won": 0.315,
+   "p_fav": 0.501,
+   "p_won": 0.314,
    "incumbent": "ALP"
   },
   {
    "district": "Mount Gambier",
    "won": "IND",
    "favourite": "LIB",
-   "p_fav": 0.486,
+   "p_fav": 0.485,
    "p_won": 0.411,
    "incumbent": "IND"
   },
@@ -137,7 +137,7 @@
    "district": "Newland",
    "won": "LIB",
    "favourite": "ALP",
-   "p_fav": 0.519,
+   "p_fav": 0.518,
    "p_won": 0.266,
    "incumbent": "ALP"
   }
@@ -145,9 +145,9 @@
  "seat_vote": {
   "ALP": {
    "n": 47,
-   "crps": 2.918,
+   "crps": 2.913,
    "cover50": 0.404,
-   "cover90": 0.851,
+   "cover90": 0.83,
    "pit_hist": [
     3,
     3,
@@ -163,7 +163,7 @@
   },
   "COAL": {
    "n": 47,
-   "crps": 4.267,
+   "crps": 4.263,
    "cover50": 0.383,
    "cover90": 0.681,
    "pit_hist": [
@@ -181,12 +181,12 @@
   },
   "GRN": {
    "n": 47,
-   "crps": 1.047,
+   "crps": 1.05,
    "cover50": 0.638,
    "cover90": 1.0,
    "pit_hist": [
-    4,
-    4,
+    3,
+    5,
     13,
     4,
     7,
@@ -202,9 +202,9 @@
  "statewide": {
   "ALP": {
    "forecast": [
-    26.5,
+    26.6,
     30.3,
-    34.0
+    33.9
    ],
    "actual": 32.8
   },
@@ -227,17 +227,17 @@
   "tpp": {
    "forecast": [
     34.8,
-    55.2,
+    55.3,
     66.5
    ],
    "actual": 48.1
   }
  },
  "outcome": {
-  "alp_majority": 0.43605,
-  "coal_majority": 0.31345,
-  "hung": 0.2505,
-  "alp_most_seats": 0.59115,
-  "coal_most_seats": 0.39205
+  "alp_majority": 0.43695,
+  "coal_majority": 0.3146,
+  "hung": 0.24845,
+  "alp_most_seats": 0.58725,
+  "coal_most_seats": 0.3941
  }
 }

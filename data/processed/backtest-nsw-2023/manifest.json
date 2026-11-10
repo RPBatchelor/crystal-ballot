@@ -1,8 +1,8 @@
 {
  "election": "nsw-2023",
- "run_at": "2026-11-09T09:39:19+00:00",
- "git_commit": "8500fdbfb629e973702773d7985d24ed71c43515",
- "uncommitted_changes": true,
+ "run_at": "2026-11-10T10:02:55+00:00",
+ "git_commit": "0a20970a2c05dcb0c4064952072fafc3c2fbf60e",
+ "uncommitted_changes": false,
  "config": {
   "n_per_draw": 5,
   "seed": 20261128,
@@ -40,29 +40,29 @@
    "COAL": -0.67,
    "GRN": 0.77
   },
-  "region_sd": 0.095,
+  "region_sd": 0.0961,
   "seat_sd": {
-   "ALP": 0.1899,
-   "COAL": 0.2012,
-   "GRN": 0.2014,
+   "ALP": 0.187,
+   "COAL": 0.2,
+   "GRN": 0.2059,
    "OTH": 0.25,
    "ONP": 0.25
   },
   "seat_df": {
-   "ALP": 7.11,
-   "COAL": 5.7,
-   "GRN": 7.06,
-   "OTH": 5.7
+   "ALP": 6.73,
+   "COAL": 5.76,
+   "GRN": 7.72,
+   "OTH": 5.76
   },
   "seat_beta": {
-   "ALP": -0.0453,
-   "COAL": -0.0683,
-   "GRN": -0.0247
+   "ALP": -0.049,
+   "COAL": -0.0925,
+   "GRN": -0.0331
   },
   "ind_decay_mean": -0.2,
   "ind_decay_sd": 0.4,
-  "retire_effect": -0.0799,
-  "sophomore_effect": 0.1294,
+  "retire_effect": -0.0812,
+  "sophomore_effect": 0.1307,
   "ind_prior_sd": 0.35,
   "ind_sophomore_log": 0.15,
   "ind_retire_log": -1.2

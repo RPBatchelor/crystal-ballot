@@ -1,7 +1,7 @@
 {
  "n_seats": 93,
- "brier": 0.1979,
- "log_loss": 0.3403,
+ "brier": 0.197,
+ "log_loss": 0.339,
  "favourite_accuracy": 0.8602,
  "status_quo_accuracy": 0.7634,
  "seats": {
@@ -46,20 +46,20 @@
   {
    "bin": "0.50-0.70",
    "n": 22,
-   "mean_prob": 0.604,
+   "mean_prob": 0.602,
    "hit_rate": 0.636
   },
   {
    "bin": "0.70-0.90",
-   "n": 21,
-   "mean_prob": 0.824,
-   "hit_rate": 0.905
+   "n": 20,
+   "mean_prob": 0.82,
+   "hit_rate": 0.9
   },
   {
    "bin": "0.90-0.99",
-   "n": 28,
-   "mean_prob": 0.953,
-   "hit_rate": 0.964
+   "n": 29,
+   "mean_prob": 0.95,
+   "hit_rate": 0.966
   },
   {
    "bin": "0.99-1.00",
@@ -73,178 +73,178 @@
    "district": "Aspley",
    "won": "ALP",
    "favourite": "LNP",
-   "p_fav": 0.664,
-   "p_won": 0.336,
+   "p_fav": 0.659,
+   "p_won": 0.341,
    "incumbent": "ALP"
   },
   {
    "district": "Bundaberg",
    "won": "ALP",
    "favourite": "LNP",
-   "p_fav": 0.79,
-   "p_won": 0.17,
+   "p_fav": 0.796,
+   "p_won": 0.164,
    "incumbent": "ALP"
   },
   {
    "district": "Cairns",
    "won": "ALP",
    "favourite": "LNP",
-   "p_fav": 0.549,
-   "p_won": 0.436,
+   "p_fav": 0.546,
+   "p_won": 0.439,
    "incumbent": "ALP"
   },
   {
    "district": "Capalaba",
    "won": "LNP",
    "favourite": "ALP",
-   "p_fav": 0.75,
-   "p_won": 0.25,
+   "p_fav": 0.756,
+   "p_won": 0.244,
    "incumbent": "ALP"
   },
   {
    "district": "Cook",
    "won": "LNP",
-   "favourite": "IND",
-   "p_fav": 0.351,
-   "p_won": 0.302,
+   "favourite": "ALP",
+   "p_fav": 0.344,
+   "p_won": 0.313,
    "incumbent": "ALP"
   },
   {
    "district": "Cooper",
    "won": "ALP",
    "favourite": "GRN",
-   "p_fav": 0.524,
-   "p_won": 0.283,
+   "p_fav": 0.517,
+   "p_won": 0.286,
    "incumbent": "ALP"
   },
   {
    "district": "Mansfield",
    "won": "ALP",
    "favourite": "LNP",
-   "p_fav": 0.534,
-   "p_won": 0.466,
+   "p_fav": 0.531,
+   "p_won": 0.469,
    "incumbent": "GRN"
   },
   {
    "district": "Maryborough",
    "won": "LNP",
    "favourite": "ALP",
-   "p_fav": 0.669,
-   "p_won": 0.251,
+   "p_fav": 0.664,
+   "p_won": 0.259,
    "incumbent": "LNP"
   },
   {
    "district": "McConnel",
    "won": "ALP",
    "favourite": "GRN",
-   "p_fav": 0.551,
-   "p_won": 0.266,
+   "p_fav": 0.541,
+   "p_won": 0.275,
    "incumbent": "ALP"
   },
   {
    "district": "Mirani",
    "won": "LNP",
    "favourite": "ONP",
-   "p_fav": 0.618,
-   "p_won": 0.264,
+   "p_fav": 0.619,
+   "p_won": 0.263,
    "incumbent": "IND"
   },
   {
    "district": "Mulgrave",
    "won": "LNP",
    "favourite": "ALP",
-   "p_fav": 0.47,
-   "p_won": 0.212,
+   "p_fav": 0.471,
+   "p_won": 0.216,
    "incumbent": "ALP"
   },
   {
    "district": "Pine Rivers",
    "won": "ALP",
    "favourite": "LNP",
-   "p_fav": 0.542,
-   "p_won": 0.457,
+   "p_fav": 0.537,
+   "p_won": 0.463,
    "incumbent": "ALP"
   },
   {
    "district": "South Brisbane",
    "won": "ALP",
    "favourite": "GRN",
-   "p_fav": 0.967,
-   "p_won": 0.027,
+   "p_fav": 0.965,
+   "p_won": 0.028,
    "incumbent": "GRN"
   }
  ],
  "seat_vote": {
   "ALP": {
    "n": 93,
-   "crps": 2.3,
-   "cover50": 0.645,
+   "crps": 2.283,
+   "cover50": 0.634,
    "cover90": 0.925,
    "pit_hist": [
     5,
     7,
     8,
-    8,
-    13,
-    15,
+    10,
+    11,
     16,
-    6,
-    9,
-    6
+    14,
+    7,
+    8,
+    7
    ]
   },
   "COAL": {
    "n": 93,
-   "crps": 2.231,
+   "crps": 2.203,
    "cover50": 0.624,
    "cover90": 0.989,
    "pit_hist": [
     2,
-    11,
-    13,
-    13,
+    8,
     16,
-    7,
+    13,
+    15,
+    9,
     7,
     10,
-    10,
+    9,
     4
    ]
   },
   "GRN": {
    "n": 93,
-   "crps": 1.195,
+   "crps": 1.194,
    "cover50": 0.581,
-   "cover90": 0.989,
+   "cover90": 1.0,
    "pit_hist": [
     10,
-    12,
-    21,
+    13,
+    20,
+    10,
+    18,
     7,
-    21,
-    6,
-    9,
+    8,
     3,
     1,
     3
    ]
   }
  },
- "pendulum_accuracy": 0.8495,
+ "pendulum_accuracy": 0.8387,
  "statewide": {
   "ALP": {
    "forecast": [
     27.9,
     31.6,
-    35.4
+    35.3
    ],
    "actual": 32.6
   },
   "COAL": {
    "forecast": [
-    37.3,
-    40.9,
-    44.5
+    37.4,
+    40.8,
+    44.6
    ],
    "actual": 41.5
   },
@@ -259,17 +259,17 @@
   "tpp": {
    "forecast": [
     42.1,
-    47.9,
-    53.0
+    48.0,
+    52.9
    ],
    "actual": 46.2
   }
  },
  "outcome": {
-  "alp_majority": 0.0513,
-  "coal_majority": 0.6379,
-  "hung": 0.3108,
-  "alp_most_seats": 0.15275,
-  "coal_most_seats": 0.83225
+  "alp_majority": 0.0515,
+  "coal_majority": 0.6394,
+  "hung": 0.3091,
+  "alp_most_seats": 0.1525,
+  "coal_most_seats": 0.83275
  }
 }

@@ -1,7 +1,7 @@
 {
  "n_seats": 47,
- "brier": 0.1515,
- "log_loss": 0.242,
+ "brier": 0.1519,
+ "log_loss": 0.2425,
  "favourite_accuracy": 0.8936,
  "status_quo_accuracy": 0.7872,
  "seats": {
@@ -46,13 +46,13 @@
   {
    "bin": "0.50-0.70",
    "n": 8,
-   "mean_prob": 0.595,
+   "mean_prob": 0.594,
    "hit_rate": 0.625
   },
   {
    "bin": "0.70-0.90",
    "n": 11,
-   "mean_prob": 0.791,
+   "mean_prob": 0.792,
    "hit_rate": 0.818
   },
   {
@@ -73,24 +73,24 @@
    "district": "Davenport",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.647,
-   "p_won": 0.353,
+   "p_fav": 0.646,
+   "p_won": 0.354,
    "incumbent": "LIB"
   },
   {
    "district": "Gibson",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.772,
-   "p_won": 0.215,
+   "p_fav": 0.776,
+   "p_won": 0.211,
    "incumbent": "LIB"
   },
   {
    "district": "Kavel",
    "won": "IND",
    "favourite": "LIB",
-   "p_fav": 0.593,
-   "p_won": 0.348,
+   "p_fav": 0.594,
+   "p_won": 0.346,
    "incumbent": "IND"
   },
   {
@@ -98,22 +98,22 @@
    "won": "IND",
    "favourite": "LIB",
    "p_fav": 0.71,
-   "p_won": 0.266,
+   "p_won": 0.267,
    "incumbent": "IND"
   },
   {
    "district": "Waite",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.54,
-   "p_won": 0.287,
+   "p_fav": 0.541,
+   "p_won": 0.285,
    "incumbent": "IND"
   }
  ],
  "seat_vote": {
   "ALP": {
    "n": 47,
-   "crps": 2.249,
+   "crps": 2.248,
    "cover50": 0.638,
    "cover90": 0.957,
    "pit_hist": [
@@ -131,7 +131,7 @@
   },
   "COAL": {
    "n": 47,
-   "crps": 2.865,
+   "crps": 2.866,
    "cover50": 0.617,
    "cover90": 0.957,
    "pit_hist": [
@@ -139,8 +139,8 @@
     3,
     5,
     4,
-    6,
-    7,
+    5,
+    8,
     6,
     4,
     3,
@@ -149,7 +149,7 @@
   },
   "GRN": {
    "n": 43,
-   "crps": 1.459,
+   "crps": 1.458,
    "cover50": 0.372,
    "cover90": 0.953,
    "pit_hist": [
@@ -161,8 +161,8 @@
     2,
     1,
     8,
-    10,
-    3
+    9,
+    4
    ]
   }
  },
@@ -170,9 +170,9 @@
  "statewide": {
   "ALP": {
    "forecast": [
-    34.6,
+    34.7,
     39.3,
-    43.9
+    43.8
    ],
    "actual": 40.0
   },
@@ -202,10 +202,10 @@
   }
  },
  "outcome": {
-  "alp_majority": 0.8083,
-  "coal_majority": 0.06125,
-  "hung": 0.13045,
-  "alp_most_seats": 0.87665,
-  "coal_most_seats": 0.09225
+  "alp_majority": 0.81095,
+  "coal_majority": 0.06535,
+  "hung": 0.1237,
+  "alp_most_seats": 0.8776,
+  "coal_most_seats": 0.0938
  }
 }

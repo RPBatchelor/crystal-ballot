@@ -1,7 +1,7 @@
 {
  "n_seats": 93,
- "brier": 0.1612,
- "log_loss": 0.2894,
+ "brier": 0.1611,
+ "log_loss": 0.2891,
  "favourite_accuracy": 0.9247,
  "status_quo_accuracy": 0.8925,
  "seats": {
@@ -16,7 +16,7 @@
   },
   "COAL": {
    "actual": 34,
-   "median": 37.0,
+   "median": 38.0,
    "p90": [
     24.0,
     50.0
@@ -81,8 +81,8 @@
    "district": "Caloundra",
    "won": "ALP",
    "favourite": "LNP",
-   "p_fav": 0.681,
-   "p_won": 0.296,
+   "p_fav": 0.683,
+   "p_won": 0.295,
    "incumbent": "LNP"
   },
   {
@@ -90,46 +90,46 @@
    "won": "ALP",
    "favourite": "LNP",
    "p_fav": 0.786,
-   "p_won": 0.157,
+   "p_won": 0.158,
    "incumbent": "LNP"
   },
   {
    "district": "Mirani",
    "won": "ONP",
    "favourite": "ALP",
-   "p_fav": 0.504,
-   "p_won": 0.178,
+   "p_fav": 0.502,
+   "p_won": 0.18,
    "incumbent": "ONP"
   },
   {
    "district": "Nicklin",
    "won": "ALP",
    "favourite": "LNP",
-   "p_fav": 0.63,
-   "p_won": 0.305,
+   "p_fav": 0.633,
+   "p_won": 0.303,
    "incumbent": "LNP"
   },
   {
    "district": "Rockhampton",
    "won": "ALP",
    "favourite": "IND",
-   "p_fav": 0.6,
-   "p_won": 0.289,
+   "p_fav": 0.598,
+   "p_won": 0.29,
    "incumbent": "ALP"
   },
   {
    "district": "South Brisbane",
    "won": "GRN",
    "favourite": "ALP",
-   "p_fav": 0.708,
-   "p_won": 0.276,
+   "p_fav": 0.707,
+   "p_won": 0.278,
    "incumbent": "ALP"
   }
  ],
  "seat_vote": {
   "ALP": {
    "n": 93,
-   "crps": 3.093,
+   "crps": 3.094,
    "cover50": 0.376,
    "cover90": 0.871,
    "pit_hist": [
@@ -138,16 +138,16 @@
     2,
     2,
     3,
-    10,
-    13,
+    9,
+    14,
     16,
-    20,
-    24
+    21,
+    23
    ]
   },
   "COAL": {
    "n": 93,
-   "crps": 2.311,
+   "crps": 2.313,
    "cover50": 0.656,
    "cover90": 0.957,
    "pit_hist": [
@@ -165,14 +165,14 @@
   },
   "GRN": {
    "n": 93,
-   "crps": 1.504,
-   "cover50": 0.452,
+   "crps": 1.495,
+   "cover50": 0.462,
    "cover90": 0.871,
    "pit_hist": [
     20,
-    15,
+    14,
     24,
-    9,
+    10,
     11,
     7,
     1,
@@ -195,8 +195,8 @@
   "COAL": {
    "forecast": [
     32.7,
-    36.0,
-    39.5
+    36.1,
+    39.6
    ],
    "actual": 35.9
   },
@@ -212,16 +212,16 @@
    "forecast": [
     45.4,
     51.7,
-    57.4
+    57.3
    ],
    "actual": 53.2
   }
  },
  "outcome": {
-  "alp_majority": 0.4953,
-  "coal_majority": 0.12315,
-  "hung": 0.38155,
-  "alp_most_seats": 0.71,
-  "coal_most_seats": 0.2684
+  "alp_majority": 0.49155,
+  "coal_majority": 0.12385,
+  "hung": 0.3846,
+  "alp_most_seats": 0.7049,
+  "coal_most_seats": 0.2719
  }
 }

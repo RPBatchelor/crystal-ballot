@@ -1,7 +1,7 @@
 {
  "n_seats": 93,
  "brier": 0.1461,
- "log_loss": 0.3807,
+ "log_loss": 0.3806,
  "favourite_accuracy": 0.914,
  "status_quo_accuracy": 0.957,
  "seats": {
@@ -52,7 +52,7 @@
   {
    "bin": "0.70-0.90",
    "n": 17,
-   "mean_prob": 0.845,
+   "mean_prob": 0.844,
    "hit_rate": 0.824
   },
   {
@@ -73,15 +73,15 @@
    "district": "Ballina",
    "won": "GRN",
    "favourite": "ALP",
-   "p_fav": 0.421,
-   "p_won": 0.373,
+   "p_fav": 0.42,
+   "p_won": 0.374,
    "incumbent": "GRN"
   },
   {
    "district": "Barwon",
    "won": "OTH",
    "favourite": "NAT",
-   "p_fav": 0.801,
+   "p_fav": 0.802,
    "p_won": 0.0,
    "incumbent": "NAT"
   },
@@ -89,7 +89,7 @@
    "district": "Coogee",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.623,
+   "p_fav": 0.622,
    "p_won": 0.373,
    "incumbent": "LIB"
   },
@@ -97,8 +97,8 @@
    "district": "East Hills",
    "won": "LIB",
    "favourite": "ALP",
-   "p_fav": 0.827,
-   "p_won": 0.168,
+   "p_fav": 0.826,
+   "p_won": 0.169,
    "incumbent": "LIB"
   },
   {
@@ -121,48 +121,48 @@
    "district": "Upper Hunter",
    "won": "NAT",
    "favourite": "ALP",
-   "p_fav": 0.525,
-   "p_won": 0.475,
+   "p_fav": 0.526,
+   "p_won": 0.474,
    "incumbent": "NAT"
   },
   {
    "district": "Wagga Wagga",
    "won": "IND",
    "favourite": "NAT",
-   "p_fav": 0.89,
-   "p_won": 0.049,
+   "p_fav": 0.888,
+   "p_won": 0.05,
    "incumbent": "IND"
   }
  ],
  "seat_vote": {
   "ALP": {
    "n": 93,
-   "crps": 4.049,
+   "crps": 4.05,
    "cover50": 0.344,
    "cover90": 0.763,
    "pit_hist": [
     35,
     15,
     13,
-    12,
-    5,
+    13,
+    4,
     1,
-    4,
-    4,
+    5,
+    3,
     4,
     0
    ]
   },
   "COAL": {
    "n": 93,
-   "crps": 3.434,
+   "crps": 3.433,
    "cover50": 0.473,
    "cover90": 0.871,
    "pit_hist": [
     13,
     6,
-    14,
-    7,
+    13,
+    8,
     6,
     6,
     9,
@@ -174,7 +174,7 @@
   "GRN": {
    "n": 93,
    "crps": 1.038,
-   "cover50": 0.667,
+   "cover50": 0.677,
    "cover90": 0.978,
    "pit_hist": [
     2,
@@ -183,10 +183,10 @@
     8,
     17,
     12,
-    17,
-    11,
-    5,
-    3
+    18,
+    10,
+    6,
+    2
    ]
   }
  },
@@ -203,8 +203,8 @@
   "COAL": {
    "forecast": [
     36.7,
-    40.2,
-    43.8
+    40.1,
+    43.7
    ],
    "actual": 41.58
   },
@@ -212,13 +212,13 @@
    "forecast": [
     5.9,
     9.1,
-    12.2
+    12.3
    ],
    "actual": 9.57
   },
   "tpp": {
    "forecast": [
-    44.4,
+    44.5,
     49.0,
     53.5
    ],
@@ -226,10 +226,10 @@
   }
  },
  "outcome": {
-  "alp_majority": 0.05285,
-  "coal_majority": 0.72565,
-  "hung": 0.2215,
-  "alp_most_seats": 0.11045,
-  "coal_most_seats": 0.86565
+  "alp_majority": 0.05155,
+  "coal_majority": 0.7237,
+  "hung": 0.22475,
+  "alp_most_seats": 0.1098,
+  "coal_most_seats": 0.8665
  }
 }
