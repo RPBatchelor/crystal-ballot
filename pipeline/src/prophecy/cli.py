@@ -105,6 +105,20 @@ def ingest_results(year: int = typer.Option(2022, help="Victorian state election
                   PROCESSED_DIR / e.election_id)
 
 
+@app.command("ingest-vec-booths")
+def ingest_vec_booths_cmd(years: str = typer.Option("2018,2022", help="Comma-separated Victorian years")) -> None:
+    """VEC first preferences by voting centre (booths.csv), for notional results after a
+    redistribution (``prophecy notional --election vic-2022``)."""
+    from prophecy.ingest.vec import ingest_vec_booths
+
+    for y in map(int, years.split(",")):
+        d = PROCESSED_DIR / f"vic-{y}"
+        by = PROCESSED_DIR / f"vic-{y}-by-elections" / "primary.csv"
+        booths = ingest_vec_booths(y, pl.read_csv(d / "districts.csv"), pl.read_csv(d / "primary.csv"),
+                                   pl.read_csv(by) if by.exists() else None, log=typer.echo)
+        _write_tables({"booths": booths}, d)
+
+
 @app.command("ingest-nominations")
 def ingest_nominations_cmd(
     election: str = typer.Option("vic-2026", help="Election id"),
@@ -456,7 +470,10 @@ def backtest(
 
         inputs = federal_inputs(e, prev, log=typer.echo)
         flows = federal_flows(prev, log=typer.echo)
-    elif e.jurisdiction in ("NSW", "QLD", "WA", "SA", "NT"):
+    elif e.jurisdiction in ("NSW", "QLD", "WA", "SA", "NT") or (
+            # Victoria after a redistribution (2022): the notional re-cut of the previous
+            # result, as for the other states (``prophecy notional --election vic-2022``).
+            e.jurisdiction == "VIC" and e.boundary_set != prev.boundary_set):
         from prophecy.model.states import state_flows, state_inputs
 
         inputs = state_inputs(e, prev, log=typer.echo, federal_onp=not hand_set)
@@ -542,10 +559,10 @@ def backtest(
 
 
 # The published blind tests, in date order: the latest election in every jurisdiction and
-# the earlier ones the data allows. Victoria 2022 joins once its notional baseline exists.
+# the earlier ones the data allows.
 BACKTEST_SET = [
     "qld-2015", "qld-2017", "wa-2017", "sa-2018", "vic-2018", "nsw-2019", "nt-2020",
-    "qld-2020", "wa-2021", "sa-2022", "nsw-2023", "act-2024", "nt-2024", "qld-2024",
+    "qld-2020", "wa-2021", "sa-2022", "vic-2022", "nsw-2023", "act-2024", "nt-2024", "qld-2024",
     "tas-2024", "fed-2025", "tas-2025", "wa-2025", "sa-2026",
 ]
 VIC_BOUNDARIES = {"vic-2013": "assembly2013", "vic-2021": "assembly2022"}  # Vicmap layer per set

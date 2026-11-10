@@ -247,6 +247,35 @@ def parse_2cp_page(html: str) -> list[dict]:
     return []
 
 
+def parse_2cp_venues(html: str) -> tuple[list[str], list[dict]]:
+    """Party names of the two candidates, and one row per voting centre or declaration
+    vote type (section, venue, votes for each) from a '2CP results by voting centre'
+    page. Election-day voting centres come first; after the blank row, vote types."""
+    p = _ResultsPageParser()
+    p.feed(html)
+    for sec in p.sections:
+        for table in sec.tables:
+            party_idx = next(
+                (i for i, r in enumerate(table) if r and r[0].lower().startswith("voting centre")),
+                None,
+            )
+            if party_idx is None:
+                continue
+            parties = table[party_idx][1:3]
+            rows, section = [], "Voting Centres"
+            for r in table[party_idx + 1:]:
+                if not r or not r[0].strip():
+                    section = None  # declaration vote types follow
+                    continue
+                if r[0].lower() == "total":
+                    break
+                a, b = _int(r[1]), _int(r[2])
+                if a is not None and b is not None:
+                    rows.append({"section": section or r[0], "venue": r[0], "votes": (a, b)})
+            return parties, rows
+    return [], []
+
+
 def canonical_district(name: str) -> str:
     """Normalise district names across VEC pages and spreadsheets."""
     name = re.sub(r"\s*\(.*?\)\s*$", "", name).strip()
@@ -441,14 +470,31 @@ def ingest_vec_archive(year: int) -> dict[str, pl.DataFrame]:
                       follow_redirects=True, timeout=60) as client:
         summary = _cached_get(client, "summary.html", raw / "summary.html").read_text(encoding="utf-8")
         slugs = sorted(set(re.findall(r'href="([a-z-]+district)\.html"', summary)))
-        results = []
+        results, tcp, tpp_booths = [], {}, []
         for slug in slugs:
             html = _cached_get(client, f"{slug}.html", raw / "districts" / f"{slug}.html").read_text(
                 encoding="utf-8", errors="replace")
-            results.append(parse_district_page(html, _archive_name(html, slug)))
+            r = parse_district_page(html, _archive_name(html, slug))
+            results.append(r)
+            # Seats without a full distribution give the 2CP count only on a linked page
+            # (by voting centre): their totals, and the Labor v Coalition count by venue.
+            m = re.search(r'href="(tcpbyvotingcentre[a-z-]+\.html)"', html)
+            if m:
+                page = _cached_get(client, m.group(1), raw / "2cp" / f"{slug}.html").read_text(
+                    encoding="utf-8", errors="replace")
+                tcp[r.district] = parse_2cp_page(page)
+                parties, venues = parse_2cp_venues(page)
+                sides = [bloc(party_code(x)) for x in parties]
+                if sorted(sides) == ["ALP", "COAL"]:
+                    a = sides.index("ALP")
+                    tpp_booths += [{"election_id": f"vic-{year}", "district": canonical_district(r.district),
+                                    "section": v["section"], "venue": v["venue"],
+                                    "alp": v["votes"][a], "coal": v["votes"][1 - a]} for v in venues]
     election_id = f"vic-{year}"
-    tables = _assemble(results, {}, election_id)
+    tables = _assemble(results, tcp, election_id)
     tables["tpp"] = _tpp_from_pages(results, election_id)
+    if tpp_booths:
+        tables["tpp_booths"] = pl.DataFrame(tpp_booths)
     return tables
 
 
@@ -484,3 +530,96 @@ def read_tpp_xlsx(path: Path, election_id: str) -> pl.DataFrame:
         pl.col("Coalition votes").cast(pl.Int64).alias("coal_votes"),
         (100 * pl.col("ALP %")).round(3).alias("alp_tpp"),
     ).filter(pl.col("district").is_not_null() & (pl.col("district") != "TOTAL"))
+
+
+# --------------------------------------------------------------------------------------
+# First preferences by voting centre (for notional results after a redistribution)
+# --------------------------------------------------------------------------------------
+
+ORDINARY_SECTION = "Voting Centres"  # election-day voting centres (states.ORDINARY)
+_BOOTH_TOTALS = ("total ordinary", "total declaration", "total all", "percentage of formal")
+
+
+def parse_booth_workbook(path: Path) -> tuple[str, list[dict]]:
+    """The workbook's election title (e.g. "State Election 2022") and its rows (section,
+    venue, candidate, votes), from a VEC 'Results by Voting Centre' workbook (2018 .xlsx
+    and 2022 .xls share one layout).
+
+    Candidate columns are headed "SURNAME, Given\nPARTY"; election-day voting centres
+    come first, then "Total Ordinary Votes", then one row per declaration vote type
+    (absent, early, postal, ...) for the whole district.
+    """
+    import pandas as pd
+
+    import warnings
+
+    with warnings.catch_warnings():  # xlrd: deprecation, and "file size not 512 + ..." on VEC .xls
+        warnings.simplefilter("ignore")
+        sheet = pd.read_excel(path, header=None)
+    title = next((str(v).strip() for v in sheet.iloc[:6, 0]
+                  if isinstance(v, str) and "election" in v.lower()), "")
+    header_row = next(i for i in range(len(sheet))
+                      if any(isinstance(v, str) and "\n" in v and "," in v for v in sheet.iloc[i]))
+    columns = {
+        c: str(v).split("\n")[0].strip()
+        for c, v in sheet.iloc[header_row].items()
+        if isinstance(v, str) and "," in v.split("\n")[0]
+    }
+    rows, section = [], ORDINARY_SECTION
+    for i in range(header_row + 1, len(sheet)):
+        label = sheet.iloc[i, 1]
+        if not isinstance(label, str) or not label.strip():
+            continue
+        label = label.strip()
+        low = label.lower()
+        if low.startswith("total ordinary"):
+            section = None  # declaration vote types follow, each its own section
+            continue
+        if low.startswith(_BOOTH_TOTALS):
+            continue
+        for c, cand in columns.items():
+            v = sheet.iloc[i, c]
+            if pd.notna(v):
+                rows.append({"section": section or label, "venue": label,
+                             "candidate": cand, "votes": int(v)})
+    return title, rows
+
+
+def ingest_vec_booths(year: int, districts: pl.DataFrame, primary: pl.DataFrame,
+                      by_election_primary: pl.DataFrame | None = None,
+                      log=print) -> pl.DataFrame:
+    """First preferences by voting centre for every district, in the booths.csv schema
+    shared with NSW, SA and WA (election_id, district, section, venue, candidate, party,
+    votes). Workbook links come from the district pages (``booth_primary_xlsx``).
+
+    The VEC reuses a district's workbook URL for later by-elections, so for 2022 some
+    links now serve a 2023-26 by-election. Those are on the same boundaries, so their
+    voting centres still place venues in districts (all a notional re-cut needs from the
+    later election); their parties come from ``by_election_primary`` and each
+    substitution is logged."""
+    from urllib.parse import quote
+
+    raw = RAW_DIR / "vec" / str(year) / "booths"
+    base = f"{ARCHIVE_BASE}/state{year}/" if year in ARCHIVE_YEARS else BASE
+    party = {(d, c): p for d, c, p in primary.select("district", "candidate", "party").iter_rows()}
+    out = []
+    with httpx.Client(headers={"User-Agent": USER_AGENT}, follow_redirects=True, timeout=60) as client:
+        for district, link in districts.select("district", "booth_primary_xlsx").iter_rows():
+            url = link if link.startswith("http") else base + link
+            url = quote(url, safe=":/")
+            ext = ".xlsx" if url.lower().endswith(".xlsx") else ".xls"
+            path = _cached_get(client, url, raw / f"{_slug(district.lower().replace(' ', '-'))}{ext}",
+                               binary=True)
+            title, rows = parse_booth_workbook(path)
+            general = title.lower() == f"state election {year}"
+            if not general and by_election_primary is not None:
+                log(f"{year} {district}: workbook is now the {title!r}; used for its voting centres")
+                party.update({(d, c): p for d, c, p in by_election_primary.filter(pl.col("district") == district)
+                              .select("district", "candidate", "party").iter_rows()})
+            missing = {r["candidate"] for r in rows} - {c for d, c in party if d == district}
+            if missing:
+                raise ValueError(f"{year} {district}: workbook candidates not in primary.csv: {missing}")
+            out += [{"election_id": f"vic-{year}", "district": district, **r,
+                     "party": party[(district, r["candidate"])]} for r in rows]
+    return pl.DataFrame(out).select("election_id", "district", "section", "venue", "candidate",
+                                    "party", "votes")
