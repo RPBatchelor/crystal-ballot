@@ -30,7 +30,7 @@ export const NOTES: JurisdictionNote[] = [
 			'Victorian polls have tended to overstate the Greens (by about 1.6 points on average in the final month), so half of that lean is taken off, and the Greens get a wider allowance for polling error than elsewhere.'
 		],
 		backtestNote:
-			'The latest blind test is of 2018. The 2022 election was held on new boundaries (the 2021 redistribution), and a fair test of 2022 needs the 2018 result re-cut onto those boundaries first, which has not been built yet. The 2018 test also uses the original hand-set seat settings, because there were too few earlier Victorian elections on matching boundaries to estimate them from.'
+			'The 2022 election was held on new boundaries (the 2021 redistribution), so for this test the 2018 result was first re-cut onto them, voting centre by voting centre. That re-cut agrees with Antony Green’s published notional margins to about a point on average. The VEC published full distributions of preferences first in 2022, so the test takes its preference flows from Victoria’s federal seats at the 2019 and 2022 federal elections, both held before polling day.'
 	},
 	{
 		code: 'nsw',

@@ -1,0 +1,251 @@
+{
+ "n_seats": 88,
+ "brier": 0.1796,
+ "log_loss": 0.3325,
+ "favourite_accuracy": 0.8864,
+ "status_quo_accuracy": 0.8864,
+ "seats": {
+  "ALP": {
+   "actual": 56,
+   "median": 58.0,
+   "p90": [
+    46.0,
+    69.0
+   ],
+   "covered_90": true
+  },
+  "COAL": {
+   "actual": 28,
+   "median": 23.0,
+   "p90": [
+    12.0,
+    35.0
+   ],
+   "covered_90": true
+  },
+  "GRN": {
+   "actual": 4,
+   "median": 4.0,
+   "p90": [
+    0.0,
+    7.0
+   ],
+   "covered_90": true
+  },
+  "IND": {
+   "actual": 0,
+   "median": 4.0,
+   "p90": [
+    2.0,
+    6.0
+   ],
+   "covered_90": false
+  }
+ },
+ "calibration": [
+  {
+   "bin": "0.50-0.70",
+   "n": 21,
+   "mean_prob": 0.585,
+   "hit_rate": 0.762
+  },
+  {
+   "bin": "0.70-0.90",
+   "n": 16,
+   "mean_prob": 0.773,
+   "hit_rate": 0.875
+  },
+  {
+   "bin": "0.90-0.99",
+   "n": 24,
+   "mean_prob": 0.962,
+   "hit_rate": 0.958
+  },
+  {
+   "bin": "0.99-1.00",
+   "n": 25,
+   "mean_prob": 0.996,
+   "hit_rate": 1.0
+  }
+ ],
+ "misses": [
+  {
+   "district": "Berwick",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.588,
+   "p_won": 0.412,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Glen Waverley",
+   "won": "ALP",
+   "favourite": "LIB",
+   "p_fav": 0.529,
+   "p_won": 0.47,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Hawthorn",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.614,
+   "p_won": 0.331,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Mildura",
+   "won": "NAT",
+   "favourite": "IND",
+   "p_fav": 0.926,
+   "p_won": 0.071,
+   "incumbent": "IND"
+  },
+  {
+   "district": "Morwell",
+   "won": "NAT",
+   "favourite": "ALP",
+   "p_fav": 0.813,
+   "p_won": 0.018,
+   "incumbent": "IND"
+  },
+  {
+   "district": "Nepean",
+   "won": "LIB",
+   "favourite": "ALP",
+   "p_fav": 0.596,
+   "p_won": 0.332,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Northcote",
+   "won": "ALP",
+   "favourite": "GRN",
+   "p_fav": 0.515,
+   "p_won": 0.485,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Richmond",
+   "won": "GRN",
+   "favourite": "ALP",
+   "p_fav": 0.496,
+   "p_won": 0.485,
+   "incumbent": "ALP"
+  },
+  {
+   "district": "Shepparton",
+   "won": "NAT",
+   "favourite": "IND",
+   "p_fav": 0.711,
+   "p_won": 0.035,
+   "incumbent": "IND"
+  },
+  {
+   "district": "South-West Coast",
+   "won": "LIB",
+   "favourite": "IND",
+   "p_fav": 0.457,
+   "p_won": 0.397,
+   "incumbent": "LIB"
+  }
+ ],
+ "seat_vote": {
+  "ALP": {
+   "n": 87,
+   "crps": 3.454,
+   "cover50": 0.54,
+   "cover90": 0.851,
+   "pit_hist": [
+    18,
+    12,
+    12,
+    12,
+    8,
+    11,
+    7,
+    1,
+    5,
+    1
+   ]
+  },
+  "COAL": {
+   "n": 87,
+   "crps": 3.037,
+   "cover50": 0.529,
+   "cover90": 0.897,
+   "pit_hist": [
+    15,
+    6,
+    12,
+    10,
+    10,
+    10,
+    8,
+    5,
+    5,
+    6
+   ]
+  },
+  "GRN": {
+   "n": 88,
+   "crps": 1.579,
+   "cover50": 0.557,
+   "cover90": 0.955,
+   "pit_hist": [
+    9,
+    14,
+    16,
+    13,
+    9,
+    6,
+    13,
+    2,
+    5,
+    1
+   ]
+  }
+ },
+ "pendulum_accuracy": 0.875,
+ "statewide": {
+  "ALP": {
+   "forecast": [
+    35.3,
+    39.1,
+    43.0
+   ],
+   "actual": 37.0
+  },
+  "COAL": {
+   "forecast": [
+    31.2,
+    35.1,
+    39.1
+   ],
+   "actual": 34.5
+  },
+  "GRN": {
+   "forecast": [
+    8.6,
+    12.8,
+    16.7
+   ],
+   "actual": 11.5
+  },
+  "tpp": {
+   "forecast": [
+    50.8,
+    57.6,
+    62.6
+   ],
+   "actual": 55.0
+  }
+ },
+ "outcome": {
+  "alp_majority": 0.9674,
+  "coal_majority": 0.00355,
+  "hung": 0.02905,
+  "alp_most_seats": 0.98945,
+  "coal_most_seats": 0.0092
+ }
+}

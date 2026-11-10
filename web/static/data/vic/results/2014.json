@@ -348,22 +348,22 @@
      "candidate": "VICTORIA, Heidi",
      "party": "LIB",
      "party_name": "LIBERAL",
-     "votes": 19536,
-     "pct": 59.656
+     "votes": 20854,
+     "pct": 54.625
     },
     {
      "candidate": "DIB, Tony",
      "party": "ALP",
      "party_name": "AUSTRALIAN LABOR PARTY",
-     "votes": 13212,
-     "pct": 40.344
+     "votes": 17323,
+     "pct": 45.375
     }
    ],
-   "margin": 9.66,
-   "tcp_estimated": true,
+   "margin": 4.62,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
-   "tpp_alp": null,
-   "tpp_method": null,
+   "tpp_alp": 45.375,
+   "tpp_method": "page",
    "classic": true,
    "has_dop": false,
    "by_election": null
@@ -663,22 +663,22 @@
      "candidate": "EDWARDS, Maree",
      "party": "ALP",
      "party_name": "AUSTRALIAN LABOR PARTY",
-     "votes": 19204,
-     "pct": 58.394
+     "votes": 23702,
+     "pct": 62.176
     },
     {
      "candidate": "LANGDON, Michael",
      "party": "LIB",
      "party_name": "LIBERAL",
-     "votes": 13683,
-     "pct": 41.606
+     "votes": 14419,
+     "pct": 37.824
     }
    ],
-   "margin": 8.39,
-   "tcp_estimated": true,
+   "margin": 12.18,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
-   "tpp_alp": null,
-   "tpp_method": null,
+   "tpp_alp": 62.176,
+   "tpp_method": "page",
    "classic": true,
    "has_dop": false,
    "by_election": null
@@ -1867,22 +1867,22 @@
      "candidate": "McLEISH, Cindy",
      "party": "LIB",
      "party_name": "LIBERAL",
-     "votes": 19132,
-     "pct": 61.344
+     "votes": 19934,
+     "pct": 53.752
     },
     {
      "candidate": "BRENNAN, Sally",
      "party": "ALP",
      "party_name": "AUSTRALIAN LABOR PARTY",
-     "votes": 12056,
-     "pct": 38.656
+     "votes": 17151,
+     "pct": 46.248
     }
    ],
-   "margin": 11.34,
-   "tcp_estimated": true,
+   "margin": 3.75,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
-   "tpp_alp": null,
-   "tpp_method": null,
+   "tpp_alp": 46.248,
+   "tpp_method": "page",
    "classic": true,
    "has_dop": false,
    "by_election": null
@@ -2406,22 +2406,22 @@
      "candidate": "ANGUS, Neil",
      "party": "LIB",
      "party_name": "LIBERAL",
-     "votes": 18483,
-     "pct": 58.526
+     "votes": 20286,
+     "pct": 54.823
     },
     {
      "candidate": "RICHARDS, Pauline",
      "party": "ALP",
      "party_name": "AUSTRALIAN LABOR PARTY",
-     "votes": 13098,
-     "pct": 41.474
+     "votes": 16717,
+     "pct": 45.177
     }
    ],
-   "margin": 8.53,
-   "tcp_estimated": true,
+   "margin": 4.82,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
-   "tpp_alp": null,
-   "tpp_method": null,
+   "tpp_alp": 45.177,
+   "tpp_method": "page",
    "classic": true,
    "has_dop": false,
    "by_election": null
@@ -3855,19 +3855,19 @@
      "candidate": "CRISP, Peter",
      "party": "NAT",
      "party_name": "THE NATIONALS",
-     "votes": 18958,
-     "pct": 65.009
+     "votes": 21271,
+     "pct": 58.038
     },
     {
      "candidate": "CUPPER, Ali",
      "party": "IND",
      "party_name": "",
-     "votes": 10204,
-     "pct": 34.991
+     "votes": 15379,
+     "pct": 41.962
     }
    ],
-   "margin": 15.01,
-   "tcp_estimated": true,
+   "margin": 8.04,
+   "tcp_estimated": false,
    "runner_up_party": "IND",
    "tpp_alp": 29.781,
    "tpp_method": "page",
@@ -5185,22 +5185,22 @@
      "candidate": "BLANDTHORN, Lizzie",
      "party": "ALP",
      "party_name": "AUSTRALIAN LABOR PARTY",
-     "votes": 19825,
-     "pct": 63.939
+     "votes": 26244,
+     "pct": 66.772
     },
     {
      "candidate": "KHOO, Jacqueline",
      "party": "LIB",
      "party_name": "LIBERAL",
-     "votes": 11181,
-     "pct": 36.061
+     "votes": 13060,
+     "pct": 33.228
     }
    ],
-   "margin": 13.94,
-   "tcp_estimated": true,
+   "margin": 16.77,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
-   "tpp_alp": null,
-   "tpp_method": null,
+   "tpp_alp": 66.772,
+   "tpp_method": "page",
    "classic": true,
    "has_dop": false,
    "by_election": null
@@ -5409,23 +5409,23 @@
      "candidate": "SCOTT, Robin",
      "party": "ALP",
      "party_name": "AUSTRALIAN LABOR PARTY",
-     "votes": 19121,
-     "pct": 68.721
+     "votes": 27199,
+     "pct": 74.653
     },
     {
-     "candidate": "LJUBICIC, Rose",
-     "party": "GRN",
-     "party_name": "AUSTRALIAN GREENS",
-     "votes": 8703,
-     "pct": 31.279
+     "candidate": "FORSTER, John",
+     "party": "LIB",
+     "party_name": "LIBERAL",
+     "votes": 9235,
+     "pct": 25.347
     }
    ],
-   "margin": 18.72,
-   "tcp_estimated": true,
-   "runner_up_party": "GRN",
-   "tpp_alp": null,
-   "tpp_method": null,
-   "classic": false,
+   "margin": 24.65,
+   "tcp_estimated": false,
+   "runner_up_party": "LIB",
+   "tpp_alp": 74.653,
+   "tpp_method": "page",
+   "classic": true,
    "has_dop": false,
    "by_election": null
   },
@@ -5584,22 +5584,22 @@
      "candidate": "RYALL, Dee",
      "party": "LIB",
      "party_name": "LIBERAL",
-     "votes": 18350,
-     "pct": 60.384
+     "votes": 19919,
+     "pct": 55.072
     },
     {
      "candidate": "CLARK, Tony",
      "party": "ALP",
      "party_name": "AUSTRALIAN LABOR PARTY",
-     "votes": 12039,
-     "pct": 39.616
+     "votes": 16250,
+     "pct": 44.928
     }
    ],
-   "margin": 10.38,
-   "tcp_estimated": true,
+   "margin": 5.07,
+   "tcp_estimated": false,
    "runner_up_party": "ALP",
-   "tpp_alp": null,
-   "tpp_method": null,
+   "tpp_alp": 44.928,
+   "tpp_method": "page",
    "classic": true,
    "has_dop": false,
    "by_election": null
@@ -6389,22 +6389,22 @@
      "candidate": "LANGUILLER, Telmo",
      "party": "ALP",
      "party_name": "AUSTRALIAN LABOR PARTY",
-     "votes": 18864,
-     "pct": 62.598
+     "votes": 24139,
+     "pct": 64.581
     },
     {
      "candidate": "GOURISETTY, Dinesh",
      "party": "LIB",
      "party_name": "LIBERAL",
-     "votes": 11271,
-     "pct": 37.402
+     "votes": 13239,
+     "pct": 35.419
     }
    ],
-   "margin": 12.6,
-   "tcp_estimated": true,
+   "margin": 14.58,
+   "tcp_estimated": false,
    "runner_up_party": "LIB",
-   "tpp_alp": null,
-   "tpp_method": null,
+   "tpp_alp": 64.581,
+   "tpp_method": "page",
    "classic": true,
    "has_dop": false,
    "by_election": null

@@ -62,7 +62,7 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		nextElection: '2026-11-28',
 		resultYears: [2014, 2018, 2022],
 		forecastYears: [2026],
-		retroYears: [2018],
+		retroYears: [2018, 2022],
 		hasPolls: true,
 		commission: 'VEC'
 	},

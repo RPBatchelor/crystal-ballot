@@ -1,0 +1,94 @@
+{
+ "election": "vic-2022",
+ "run_at": "2026-11-10T08:50:27+00:00",
+ "git_commit": "e9d2664d15a2d5b1be8b9e10ec0a9e096178dd9c",
+ "uncommitted_changes": false,
+ "config": {
+  "n_per_draw": 5,
+  "seed": 20261128,
+  "poll_error_sd": {
+   "ALP": 2.12,
+   "COAL": 2.19,
+   "GRN": 2.65,
+   "ONP": 2.5
+  },
+  "poll_error_df": 5.0,
+  "poll_error_corr": [
+   [
+    1.0,
+    -0.529,
+    -0.263
+   ],
+   [
+    -0.529,
+    1.0,
+    -0.343
+   ],
+   [
+    -0.263,
+    -0.343,
+    1.0
+   ]
+  ],
+  "poll_error_corr_parties": [
+   "ALP",
+   "COAL",
+   "GRN"
+  ],
+  "poll_bias": {
+   "ALP": -0.82,
+   "COAL": -0.47,
+   "GRN": 0.99
+  },
+  "region_sd": 0.095,
+  "seat_sd": {
+   "ALP": 0.182,
+   "COAL": 0.2024,
+   "GRN": 0.1987,
+   "OTH": 0.25,
+   "ONP": 0.25
+  },
+  "seat_df": {
+   "ALP": 7.11,
+   "COAL": 5.7,
+   "GRN": 7.06,
+   "OTH": 5.7
+  },
+  "seat_beta": {
+   "ALP": -0.0453,
+   "COAL": -0.0683,
+   "GRN": -0.0247
+  },
+  "ind_decay_mean": -0.2,
+  "ind_decay_sd": 0.4,
+  "retire_effect": -0.0799,
+  "sophomore_effect": 0.1294,
+  "ind_prior_sd": 0.35,
+  "ind_sophomore_log": 0.15,
+  "ind_retire_log": -1.2
+ },
+ "inputs": {
+  "vic-2022\\booths.csv": "72dfc4af109f5a18",
+  "vic-2022\\districts.csv": "c984d269eb2ffcbc",
+  "vic-2022\\dop_transfers.csv": "14f5fffaeb5be7df",
+  "vic-2022\\federal2025_by_district.csv": "4aba66c42ce0ca91",
+  "vic-2022\\final.csv": "517e8aa995a19203",
+  "vic-2022\\primary.csv": "d9e58df084aa222e",
+  "vic-2022\\tcp.csv": "c9910b300e22f867",
+  "vic-2022\\tpp.csv": "ca91c90fddecf7b2",
+  "vic-2018\\booths.csv": "20c4f6723d534b70",
+  "vic-2018\\districts.csv": "1f0dd4fd77b14c1c",
+  "vic-2018\\final.csv": "25375498662a3fb0",
+  "vic-2018\\primary.csv": "6fbd763163b7fa24",
+  "vic-2018\\tcp.csv": "81203d6b9244e0bf",
+  "vic-2018\\tpp.csv": "d45d0efa4e4f3aa6",
+  "vic-2018\\tpp_booths.csv": "f1008ff6f4bc698b",
+  "vic-2022-notional\\districts.csv": "c0e978a15b530bc5",
+  "vic-2022-notional\\primary.csv": "3eb2d6f9adcdce97",
+  "vic-2022-notional\\venue_map.csv": "cef83cda51b44ded",
+  "polls_vic-2022.csv": "4f8d5cc7980d5245",
+  "election_results_vic.csv": "b0edb12af88245b4"
+ },
+ "hand_set": false,
+ "no_polls": false
+}
