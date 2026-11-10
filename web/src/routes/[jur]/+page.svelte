@@ -49,7 +49,7 @@
 		way.
 	</p>
 {:else}
-	<h1>{j.kind === 'federal' ? 'Federal election' : `${j.name} state election`}{#if j.nextElection}, {fmtDate(j.nextElection)}{/if}</h1>
+	<h1>{j.kind === 'federal' ? 'Federal election' : `${j.name} ${j.kind === 'territory' ? 'territory' : 'state'} election`}{#if j.nextElection}, {fmtDate(j.nextElection)}{/if}</h1>
 	{#if days != null && days > 0}
 		<p class="lede">
 			<strong>{days} days</strong> until polling day. All {j.seats} {j.chamber} seats are up;

@@ -20,6 +20,8 @@ export interface Jurisdiction {
 	commission?: string;
 	/** Optional preferential voting: ballots can exhaust before the final count. */
 	optionalPreferential?: boolean;
+	/** Caveat about where the results come from, shown on results and forecast pages. */
+	dataNote?: string;
 }
 
 export const JURISDICTIONS: Jurisdiction[] = [
@@ -131,8 +133,14 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		kind: 'territory',
 		chamber: 'Legislative Assembly',
 		seats: 25,
-		resultYears: [],
-		hasPolls: false
+		// Fixed term: the fourth Saturday in August.
+		nextElection: '2028-08-26',
+		resultYears: [2016, 2020, 2024],
+		retroYears: [2020, 2024],
+		hasPolls: true,
+		commission: 'NTEC',
+		dataNote:
+			'Northern Territory results are the NT Electoral Commission’s counts as transcribed by Wikipedia (the NTEC site does not allow automated downloads). The 2024 starting point on the new boundaries is rebuilt from published changes in each party’s vote, so it is approximate.'
 	}
 ];
 

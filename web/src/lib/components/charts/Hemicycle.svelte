@@ -50,8 +50,12 @@
 			for (let j = 0; j < k; j++) pts.push({ r, a: Math.PI - (k === 1 ? Math.PI / 2 : (Math.PI * j) / (k - 1)) });
 		});
 		pts.sort((p, q) => q.a - p.a || p.r - q.r);
-		const spacing = (1 - R0) / (nRows - 1);
-		return { pts, dot: spacing * 0.46 };
+		// Dot size from the tighter of the row gap and the gap between seats along each
+		// arc (small chambers, such as the NT's 25, have few rows and crowded arcs), and
+		// capped so the outer row stays inside the view box.
+		const radial = (1 - R0) / (nRows - 1);
+		const along = Math.min(...radii.map((r, i) => (perRow[i] > 1 ? (Math.PI * r) / (perRow[i] - 1) : Infinity)));
+		return { pts, dot: Math.min(Math.min(radial, along) * 0.46, 0.075) };
 	});
 
 	let hover = $state<number | null>(null);

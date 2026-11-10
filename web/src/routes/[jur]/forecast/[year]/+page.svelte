@@ -162,6 +162,7 @@
 	Across {f.n_sims.toLocaleString()} simulations of all {j.seats} seats, combining the poll aggregate,
 	polling-error history, seat-level swings and preference flows.
 </p>
+{#if j.dataNote}<p class="small muted">{j.dataNote}</p>{/if}
 
 <OutcomeBar alpMajority={f.outcome.alp_majority} hung={f.outcome.hung} coalMajority={f.outcome.coal_majority} />
 <p class="small muted">

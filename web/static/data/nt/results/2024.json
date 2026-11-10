@@ -1,0 +1,1463 @@
+{
+ "election_id": "nt-2024",
+ "jurisdiction": "NT",
+ "date": "2024-08-24",
+ "seats_total": 25,
+ "majority": 13,
+ "seat_counts": {
+  "CLP": 17,
+  "ALP": 4,
+  "IND": 3,
+  "GRN": 1
+ },
+ "primary_share": {
+  "COAL": 48.89,
+  "ALP": 28.79,
+  "IND": 14.19,
+  "GRN": 8.13
+ },
+ "party_share": {
+  "CLP": 48.89,
+  "ALP": 28.79,
+  "IND": 14.19,
+  "GRN": 8.13
+ },
+ "tpp_alp": 42.6,
+ "seats": [
+  {
+   "name": "Arafura",
+   "slug": "arafura",
+   "elected": "BROWN Manuel",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 2708,
+   "informal": 57,
+   "primary": [
+    {
+     "candidate": "BROWN Manuel",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1887,
+     "pct": 69.682
+    },
+    {
+     "candidate": "THOMPSON Yanja",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 821,
+     "pct": 30.318
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BROWN Manuel",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1887,
+     "pct": 69.682
+    },
+    {
+     "candidate": "THOMPSON Yanja",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 821,
+     "pct": 30.318
+    }
+   ],
+   "margin": 19.68,
+   "tcp_estimated": false,
+   "runner_up_party": "CLP",
+   "tpp_alp": 69.682,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Araluen",
+   "slug": "araluen",
+   "elected": "LAMBLEY Robyn",
+   "party": "IND",
+   "enrolment": null,
+   "formal": 4021,
+   "informal": 144,
+   "primary": [
+    {
+     "candidate": "LAMBLEY Robyn",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1638,
+     "pct": 40.736
+    },
+    {
+     "candidate": "HEENAN Sean",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 1062,
+     "pct": 26.411
+    },
+    {
+     "candidate": "WELLS Hugo",
+     "party": "GRN",
+     "party_name": "Greens NT",
+     "votes": 666,
+     "pct": 16.563
+    },
+    {
+     "candidate": "SODHI Gagandeep",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 536,
+     "pct": 13.33
+    },
+    {
+     "candidate": "WRIGHT Wayne",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 119,
+     "pct": 2.959
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "LAMBLEY Robyn",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2603,
+     "pct": 64.735
+    },
+    {
+     "candidate": "HEENAN Sean",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 1418,
+     "pct": 35.265
+    }
+   ],
+   "margin": 14.73,
+   "tcp_estimated": false,
+   "runner_up_party": "CLP",
+   "tpp_alp": 38.299,
+   "tpp_method": "estimate",
+   "classic": false,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Arnhem",
+   "slug": "arnhem",
+   "elected": "UIBO Selena",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 3364,
+   "informal": 92,
+   "primary": [
+    {
+     "candidate": "UIBO Selena",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 2162,
+     "pct": 64.269
+    },
+    {
+     "candidate": "GUMBULA Ian Mongunu",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 1202,
+     "pct": 35.731
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "UIBO Selena",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 2162,
+     "pct": 64.269
+    },
+    {
+     "candidate": "GUMBULA Ian Mongunu",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 1202,
+     "pct": 35.731
+    }
+   ],
+   "margin": 14.27,
+   "tcp_estimated": false,
+   "runner_up_party": "CLP",
+   "tpp_alp": 64.269,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Barkly",
+   "slug": "barkly",
+   "elected": "EDGINGTON Steve",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 3017,
+   "informal": 75,
+   "primary": [
+    {
+     "candidate": "EDGINGTON Steve",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 1571,
+     "pct": 51.934
+    },
+    {
+     "candidate": "HOGAN Lizzie",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1454,
+     "pct": 48.066
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "EDGINGTON Steve",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 1571,
+     "pct": 51.934
+    },
+    {
+     "candidate": "HOGAN Lizzie",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1454,
+     "pct": 48.066
+    }
+   ],
+   "margin": 1.93,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 48.066,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Blain",
+   "slug": "blain",
+   "elected": "KERLE Matthew",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 4075,
+   "informal": 161,
+   "primary": [
+    {
+     "candidate": "KERLE Matthew",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 1895,
+     "pct": 46.503
+    },
+    {
+     "candidate": "TURNER Mark",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1584,
+     "pct": 38.871
+    },
+    {
+     "candidate": "EVELEIGH Danielle",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 596,
+     "pct": 14.626
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "KERLE Matthew",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2106,
+     "pct": 51.974
+    },
+    {
+     "candidate": "TURNER Mark",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1946,
+     "pct": 48.026
+    }
+   ],
+   "margin": 1.97,
+   "tcp_estimated": false,
+   "runner_up_party": "IND",
+   "tpp_alp": 27.902,
+   "tpp_method": "estimate",
+   "classic": false,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Braitling",
+   "slug": "braitling",
+   "elected": "BURGOYNE Joshua",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 4198,
+   "informal": 111,
+   "primary": [
+    {
+     "candidate": "BURGOYNE Joshua",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2101,
+     "pct": 50.06
+    },
+    {
+     "candidate": "HILL Asta",
+     "party": "GRN",
+     "party_name": "Greens NT",
+     "votes": 1627,
+     "pct": 38.766
+    },
+    {
+     "candidate": "BITAR Allison",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 469,
+     "pct": 11.175
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BURGOYNE Joshua",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2261,
+     "pct": 53.859
+    },
+    {
+     "candidate": "HILL Asta",
+     "party": "GRN",
+     "party_name": "Greens NT",
+     "votes": 1937,
+     "pct": 46.141
+    }
+   ],
+   "margin": 3.86,
+   "tcp_estimated": false,
+   "runner_up_party": "GRN",
+   "tpp_alp": 41.758,
+   "tpp_method": "estimate",
+   "classic": false,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Brennan",
+   "slug": "brennan",
+   "elected": "BOOTHBY Marie-Clare",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 4775,
+   "informal": 132,
+   "primary": [
+    {
+     "candidate": "BOOTHBY Marie-Clare",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 3529,
+     "pct": 73.906
+    },
+    {
+     "candidate": "SIEVERS Tony",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1246,
+     "pct": 26.094
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "BOOTHBY Marie-Clare",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 3529,
+     "pct": 73.906
+    },
+    {
+     "candidate": "SIEVERS Tony",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1246,
+     "pct": 26.094
+    }
+   ],
+   "margin": 23.91,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 26.094,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Casuarina",
+   "slug": "casuarina",
+   "elected": "PATEL Khoda",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 4664,
+   "informal": 147,
+   "primary": [
+    {
+     "candidate": "PATEL Khoda",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2055,
+     "pct": 44.061
+    },
+    {
+     "candidate": "MOSS Lauren",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1559,
+     "pct": 33.426
+    },
+    {
+     "candidate": "MCCALMAN Pamela",
+     "party": "GRN",
+     "party_name": "Greens NT",
+     "votes": 578,
+     "pct": 12.393
+    },
+    {
+     "candidate": "JACKSON Martin",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 472,
+     "pct": 10.12
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PATEL Khoda",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2365,
+     "pct": 50.904
+    },
+    {
+     "candidate": "MOSS Lauren",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 2281,
+     "pct": 49.096
+    }
+   ],
+   "margin": 0.9,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 49.096,
+   "tpp_method": "estimate",
+   "classic": true,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Daly",
+   "slug": "daly",
+   "elected": "YOUNG Dheran",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 4442,
+   "informal": 131,
+   "primary": [
+    {
+     "candidate": "YOUNG Dheran",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 2323,
+     "pct": 52.296
+    },
+    {
+     "candidate": "CIVITARESE Kris",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2119,
+     "pct": 47.704
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "YOUNG Dheran",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 2323,
+     "pct": 52.296
+    },
+    {
+     "candidate": "CIVITARESE Kris",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2119,
+     "pct": 47.704
+    }
+   ],
+   "margin": 2.3,
+   "tcp_estimated": false,
+   "runner_up_party": "CLP",
+   "tpp_alp": 52.296,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Drysdale",
+   "slug": "drysdale",
+   "elected": "HOWE Clinton",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 4204,
+   "informal": 156,
+   "primary": [
+    {
+     "candidate": "HOWE Clinton",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2466,
+     "pct": 58.658
+    },
+    {
+     "candidate": "LAWLER Eva",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1254,
+     "pct": 29.829
+    },
+    {
+     "candidate": "ROBERTS Cindy Mebbingarri",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 484,
+     "pct": 11.513
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HOWE Clinton",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2732,
+     "pct": 64.986
+    },
+    {
+     "candidate": "LAWLER Eva",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1472,
+     "pct": 35.014
+    }
+   ],
+   "margin": 14.99,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 35.014,
+   "tpp_method": "estimate",
+   "classic": true,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Fannie Bay",
+   "slug": "fannie-bay",
+   "elected": "ZIO Laurie",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 4661,
+   "informal": 104,
+   "primary": [
+    {
+     "candidate": "ZIO Laurie",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 1858,
+     "pct": 39.863
+    },
+    {
+     "candidate": "DORRAS-WALKER Suki",
+     "party": "GRN",
+     "party_name": "Greens NT",
+     "votes": 1340,
+     "pct": 28.749
+    },
+    {
+     "candidate": "POTTER Brent",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1276,
+     "pct": 27.376
+    },
+    {
+     "candidate": "MAY Leonard",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 187,
+     "pct": 4.012
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "ZIO Laurie",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2349,
+     "pct": 50.397
+    },
+    {
+     "candidate": "DORRAS-WALKER Suki",
+     "party": "GRN",
+     "party_name": "Greens NT",
+     "votes": 2312,
+     "pct": 49.603
+    }
+   ],
+   "margin": 0.4,
+   "tcp_estimated": false,
+   "runner_up_party": "GRN",
+   "tpp_alp": 52.392,
+   "tpp_method": "estimate",
+   "classic": false,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Fong Lim",
+   "slug": "fong-lim",
+   "elected": "RAHMAN Tanzil",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 4225,
+   "informal": 118,
+   "primary": [
+    {
+     "candidate": "RAHMAN Tanzil",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2050,
+     "pct": 48.521
+    },
+    {
+     "candidate": "MONAGHAN Mark",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1174,
+     "pct": 27.787
+    },
+    {
+     "candidate": "NIBLOCK Simon",
+     "party": "GRN",
+     "party_name": "Greens NT",
+     "votes": 672,
+     "pct": 15.905
+    },
+    {
+     "candidate": "UN Amye",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 329,
+     "pct": 7.787
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "RAHMAN Tanzil",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2428,
+     "pct": 57.549
+    },
+    {
+     "candidate": "MONAGHAN Mark",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1791,
+     "pct": 42.451
+    }
+   ],
+   "margin": 7.55,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 42.451,
+   "tpp_method": "estimate",
+   "classic": true,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Goyder",
+   "slug": "goyder",
+   "elected": "MACKAY Andrew",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 5062,
+   "informal": 175,
+   "primary": [
+    {
+     "candidate": "MACKAY Andrew",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2846,
+     "pct": 56.223
+    },
+    {
+     "candidate": "KOLSTAD Belinda",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1049,
+     "pct": 20.723
+    },
+    {
+     "candidate": "GRIFFIN Sandy",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 691,
+     "pct": 13.651
+    },
+    {
+     "candidate": "SALTER Mathew",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 367,
+     "pct": 7.25
+    },
+    {
+     "candidate": "JENKINS Trevor",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 109,
+     "pct": 2.153
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MACKAY Andrew",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 3172,
+     "pct": 62.663
+    },
+    {
+     "candidate": "KOLSTAD Belinda",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1890,
+     "pct": 37.337
+    }
+   ],
+   "margin": 12.66,
+   "tcp_estimated": false,
+   "runner_up_party": "IND",
+   "tpp_alp": 24.585,
+   "tpp_method": "estimate",
+   "classic": false,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Gwoja",
+   "slug": "gwoja",
+   "elected": "PAECH Chansey",
+   "party": "ALP",
+   "enrolment": null,
+   "formal": 2512,
+   "informal": 68,
+   "primary": [
+    {
+     "candidate": "PAECH Chansey",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1654,
+     "pct": 65.844
+    },
+    {
+     "candidate": "WILLIAMS Jarrod Jupurula",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 858,
+     "pct": 34.156
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "PAECH Chansey",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1654,
+     "pct": 65.844
+    },
+    {
+     "candidate": "WILLIAMS Jarrod Jupurula",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 858,
+     "pct": 34.156
+    }
+   ],
+   "margin": 15.84,
+   "tcp_estimated": false,
+   "runner_up_party": "CLP",
+   "tpp_alp": 65.844,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Johnston",
+   "slug": "johnston",
+   "elected": "DAVIS Justine",
+   "party": "IND",
+   "enrolment": null,
+   "formal": 4207,
+   "informal": 120,
+   "primary": [
+    {
+     "candidate": "STRACHAN Gary",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 1456,
+     "pct": 34.609
+    },
+    {
+     "candidate": "DAVIS Justine",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1273,
+     "pct": 30.259
+    },
+    {
+     "candidate": "BOWDEN Joel",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1108,
+     "pct": 26.337
+    },
+    {
+     "candidate": "BARTON Billie",
+     "party": "GRN",
+     "party_name": "Greens NT",
+     "votes": 370,
+     "pct": 8.795
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "DAVIS Justine",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2425,
+     "pct": 57.642
+    },
+    {
+     "candidate": "STRACHAN Gary",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 1782,
+     "pct": 42.358
+    }
+   ],
+   "margin": 7.64,
+   "tcp_estimated": false,
+   "runner_up_party": "CLP",
+   "tpp_alp": 52.864,
+   "tpp_method": "estimate",
+   "classic": false,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Karama",
+   "slug": "karama",
+   "elected": "O'GALLAGHER Brian",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 4127,
+   "informal": 167,
+   "primary": [
+    {
+     "candidate": "O'GALLAGHER Brian",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2060,
+     "pct": 49.674
+    },
+    {
+     "candidate": "KIT Ngaree Ah",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1096,
+     "pct": 26.429
+    },
+    {
+     "candidate": "GLOVER Justine",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 669,
+     "pct": 16.132
+    },
+    {
+     "candidate": "ROWAN Andy",
+     "party": "GRN",
+     "party_name": "Greens NT",
+     "votes": 322,
+     "pct": 7.765
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "O'GALLAGHER Brian",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2542,
+     "pct": 61.297
+    },
+    {
+     "candidate": "KIT Ngaree Ah",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1605,
+     "pct": 38.703
+    }
+   ],
+   "margin": 11.3,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 38.703,
+   "tpp_method": "estimate",
+   "classic": true,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Katherine",
+   "slug": "katherine",
+   "elected": "HERSEY Jo",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 3830,
+   "informal": 136,
+   "primary": [
+    {
+     "candidate": "HERSEY Jo",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2181,
+     "pct": 56.945
+    },
+    {
+     "candidate": "PHELAN Sam",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1071,
+     "pct": 27.963
+    },
+    {
+     "candidate": "LOVERING Nick",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 578,
+     "pct": 15.091
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "HERSEY Jo",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2381,
+     "pct": 62.167
+    },
+    {
+     "candidate": "PHELAN Sam",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1449,
+     "pct": 37.833
+    }
+   ],
+   "margin": 12.17,
+   "tcp_estimated": false,
+   "runner_up_party": "IND",
+   "tpp_alp": 30.209,
+   "tpp_method": "estimate",
+   "classic": false,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Mulka",
+   "slug": "mulka",
+   "elected": "GUYULA Yingiya Mark",
+   "party": "IND",
+   "enrolment": null,
+   "formal": 3057,
+   "informal": 90,
+   "primary": [
+    {
+     "candidate": "GUYULA Yingiya Mark",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2299,
+     "pct": 75.204
+    },
+    {
+     "candidate": "FANNING Allen",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 758,
+     "pct": 24.796
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "GUYULA Yingiya Mark",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 2299,
+     "pct": 75.204
+    },
+    {
+     "candidate": "FANNING Allen",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 758,
+     "pct": 24.796
+    }
+   ],
+   "margin": 25.2,
+   "tcp_estimated": false,
+   "runner_up_party": "CLP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Namatjira",
+   "slug": "namatjira",
+   "elected": "YAN Bill",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 3441,
+   "informal": 154,
+   "primary": [
+    {
+     "candidate": "YAN Bill",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 1896,
+     "pct": 55.1
+    },
+    {
+     "candidate": "TAYLOR Sheralee",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 874,
+     "pct": 25.4
+    },
+    {
+     "candidate": "MCFARLAND Blair",
+     "party": "GRN",
+     "party_name": "Greens NT",
+     "votes": 671,
+     "pct": 19.5
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "YAN Bill",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2115,
+     "pct": 61.465
+    },
+    {
+     "candidate": "TAYLOR Sheralee",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1326,
+     "pct": 38.535
+    }
+   ],
+   "margin": 11.47,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 38.535,
+   "tpp_method": "estimate",
+   "classic": true,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Nelson",
+   "slug": "nelson",
+   "elected": "MALEY Gerard",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 5104,
+   "informal": 146,
+   "primary": [
+    {
+     "candidate": "MALEY Gerard",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 3653,
+     "pct": 71.571
+    },
+    {
+     "candidate": "RATAHI Beverley",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 743,
+     "pct": 14.557
+    },
+    {
+     "candidate": "VENES Anthony",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 708,
+     "pct": 13.871
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MALEY Gerard",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 3949,
+     "pct": 77.371
+    },
+    {
+     "candidate": "RATAHI Beverley",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1155,
+     "pct": 22.629
+    }
+   ],
+   "margin": 27.37,
+   "tcp_estimated": false,
+   "runner_up_party": "IND",
+   "tpp_alp": 20.513,
+   "tpp_method": "estimate",
+   "classic": false,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Nightcliff",
+   "slug": "nightcliff",
+   "elected": "MCNAMARA Kat",
+   "party": "GRN",
+   "enrolment": null,
+   "formal": 4468,
+   "informal": 127,
+   "primary": [
+    {
+     "candidate": "FYLES Natasha",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1467,
+     "pct": 32.833
+    },
+    {
+     "candidate": "SECRETARY Helen",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 1060,
+     "pct": 23.724
+    },
+    {
+     "candidate": "MCNAMARA Kat",
+     "party": "GRN",
+     "party_name": "Greens NT",
+     "votes": 981,
+     "pct": 21.956
+    },
+    {
+     "candidate": "MAY Mililma",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 858,
+     "pct": 19.203
+    },
+    {
+     "candidate": "MAMOUZELLOS George",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 102,
+     "pct": 2.283
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "MCNAMARA Kat",
+     "party": "GRN",
+     "party_name": "Greens NT",
+     "votes": 2252,
+     "pct": 50.403
+    },
+    {
+     "candidate": "FYLES Natasha",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 2216,
+     "pct": 49.597
+    }
+   ],
+   "margin": 0.4,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": null,
+   "tpp_method": null,
+   "classic": false,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Port Darwin",
+   "slug": "port-darwin",
+   "elected": "CAHILL Robyn",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 4119,
+   "informal": 121,
+   "primary": [
+    {
+     "candidate": "CAHILL Robyn",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2149,
+     "pct": 52.173
+    },
+    {
+     "candidate": "MANNING Brian",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 972,
+     "pct": 23.598
+    },
+    {
+     "candidate": "DICKSON Greg",
+     "party": "GRN",
+     "party_name": "Greens NT",
+     "votes": 681,
+     "pct": 16.533
+    },
+    {
+     "candidate": "POTTER Leah",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 234,
+     "pct": 5.681
+    },
+    {
+     "candidate": "DAVIES Janey",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 83,
+     "pct": 2.015
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CAHILL Robyn",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2543,
+     "pct": 61.738
+    },
+    {
+     "candidate": "MANNING Brian",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1576,
+     "pct": 38.262
+    }
+   ],
+   "margin": 11.74,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 38.262,
+   "tpp_method": "estimate",
+   "classic": true,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Sanderson",
+   "slug": "sanderson",
+   "elected": "CHARLS Jinson",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 4427,
+   "informal": 149,
+   "primary": [
+    {
+     "candidate": "CHARLS Jinson",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2311,
+     "pct": 52.202
+    },
+    {
+     "candidate": "WORDEN Kate",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 2116,
+     "pct": 47.798
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CHARLS Jinson",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2311,
+     "pct": 52.202
+    },
+    {
+     "candidate": "WORDEN Kate",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 2116,
+     "pct": 47.798
+    }
+   ],
+   "margin": 2.2,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 47.798,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Spillett",
+   "slug": "spillett",
+   "elected": "FINOCCHIARO Lia",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 4664,
+   "informal": 121,
+   "primary": [
+    {
+     "candidate": "FINOCCHIARO Lia",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 3712,
+     "pct": 79.588
+    },
+    {
+     "candidate": "BURKE Caleb",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 952,
+     "pct": 20.412
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "FINOCCHIARO Lia",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 3712,
+     "pct": 79.588
+    },
+    {
+     "candidate": "BURKE Caleb",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 952,
+     "pct": 20.412
+    }
+   ],
+   "margin": 29.59,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 20.412,
+   "tpp_method": "2CP",
+   "classic": true,
+   "has_dop": false,
+   "by_election": null
+  },
+  {
+   "name": "Wanguri",
+   "slug": "wanguri",
+   "elected": "CARLSON Oly",
+   "party": "CLP",
+   "enrolment": null,
+   "formal": 4341,
+   "informal": 158,
+   "primary": [
+    {
+     "candidate": "CARLSON Oly",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2069,
+     "pct": 47.662
+    },
+    {
+     "candidate": "SHARMA Shlok",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1139,
+     "pct": 26.238
+    },
+    {
+     "candidate": "SAWYER Graeme",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 769,
+     "pct": 17.715
+    },
+    {
+     "candidate": "COATES Andrew",
+     "party": "GRN",
+     "party_name": "Greens NT",
+     "votes": 364,
+     "pct": 8.385
+    }
+   ],
+   "tcp": [
+    {
+     "candidate": "CARLSON Oly",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 2561,
+     "pct": 58.996
+    },
+    {
+     "candidate": "SHARMA Shlok",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1780,
+     "pct": 41.004
+    }
+   ],
+   "margin": 9.0,
+   "tcp_estimated": false,
+   "runner_up_party": "ALP",
+   "tpp_alp": 41.004,
+   "tpp_method": "estimate",
+   "classic": true,
+   "has_dop": false,
+   "by_election": null
+  }
+ ]
+}

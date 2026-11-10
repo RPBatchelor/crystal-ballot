@@ -43,7 +43,7 @@
 		)
 	);
 	const tallyOrder = ['ALP', 'LIB', 'LNP', 'NAT', 'CLP', 'GRN', 'IND', 'KAP', 'CA', 'ONP', 'OTH'];
-	const scope = $derived(j.kind === 'federal' ? 'national' : 'statewide');
+	const scope = $derived(j.kind === 'federal' ? 'national' : j.kind === 'territory' ? 'territory-wide' : 'statewide');
 	const tally = $derived(
 		Object.entries(r.seat_counts)
 			.map(([code, seats]) => ({
@@ -104,6 +104,7 @@
 	{party(government).short} formed {govSeats >= r.majority ? '' : 'minority '}government with {govSeats} of
 	{r.seats_total} seats{govSeats >= r.majority ? '' : ` (${r.majority} needed for a majority)`}. Labor won {r.tpp_alp.toFixed(1)}% of the {scope} two-party-preferred vote.
 </p>
+{#if j.dataNote}<p class="small muted data-note">{j.dataNote}</p>{/if}
 
 <div class="hero">
 	<Hemicycle title="Seats won at the {data.year} election" seats={chamber} majority={r.majority} />
@@ -120,7 +121,7 @@
 				{/each}
 			</tbody>
 		</table>
-		<h3 class="sub">{scope === 'national' ? 'National' : 'Statewide'} first preferences</h3>
+		<h3 class="sub">{scope === 'national' ? 'National' : scope === 'territory-wide' ? 'Territory-wide' : 'Statewide'} first preferences</h3>
 		<ul class="shares">
 			{#each shares as s (s.code)}
 				<li>

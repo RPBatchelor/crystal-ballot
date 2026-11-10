@@ -14,7 +14,7 @@
 	const actual = $derived(f.actual!);
 	const scores = $derived(f.scores!);
 	const area = $derived(j.kind === 'federal' ? 'National' : 'Statewide');
-	const electionName = $derived(j.kind === 'federal' ? `${data.year} federal election` : `${data.year} ${j.name === 'Victoria' ? 'Victorian' : j.name} state election`);
+	const electionName = $derived(j.kind === 'federal' ? `${data.year} federal election` : `${data.year} ${j.name === 'Victoria' ? 'Victorian' : j.name} ${j.kind === 'territory' ? 'territory' : 'state'} election`);
 
 	const pct = (p: number) => (p < 0.005 ? '<1%' : p > 0.995 ? '>99%' : `${Math.round(p * 100)}%`);
 	const inHundred = (p: number) => (p < 0.01 ? 'less than 1' : p > 0.99 ? 'more than 99' : `${Math.round(p * 100)}`);
@@ -140,6 +140,7 @@
 	<strong>{inHundred(outcome.p)} in 100</strong> chance. Labor won {sumSeats(['ALP'])} of {n} seats with
 	{actual.tpp_alp.toFixed(1)}% of the two-party vote, against a forecast of {f.tpp_alp[1].toFixed(1)}%.
 </p>
+{#if j.dataNote}<p class="small muted">{j.dataNote}</p>{/if}
 
 <div class="tiles">
 	<div class="tile">

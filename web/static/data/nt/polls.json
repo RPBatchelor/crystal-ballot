@@ -1,0 +1,2217 @@
+{
+ "election_id": "nt-2028",
+ "jurisdiction": "NT",
+ "election_date": "2028-08-26",
+ "election_date_known": true,
+ "generated_at": "2026-11-10T08:53:54+00:00",
+ "cycles": [
+  {
+   "election_id": "nt-2016",
+   "date": "2016-08-27"
+  },
+  {
+   "election_id": "nt-2020",
+   "date": "2020-08-22"
+  },
+  {
+   "election_id": "nt-2024",
+   "date": "2024-08-24"
+  }
+ ],
+ "polls": [
+  {
+   "pollster": "Freshwater",
+   "client": null,
+   "field_start": "2024-05-01",
+   "field_end": "2024-05-31",
+   "sample_size": null,
+   "ALP": 29.0,
+   "COAL": 39.0,
+   "GRN": 9.0,
+   "ONP": null,
+   "IND": "22.0",
+   "OTH": null,
+   "tpp_alp_vs_coal": 46.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nt-2024"
+  },
+  {
+   "pollster": "RedBridge/Accent",
+   "client": null,
+   "field_start": "2023-11-16",
+   "field_end": "2023-11-18",
+   "sample_size": null,
+   "ALP": 19.7,
+   "COAL": 40.6,
+   "GRN": 13.1,
+   "ONP": null,
+   "IND": "14.0",
+   "OTH": 11.8,
+   "tpp_alp_vs_coal": 43.5,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nt-2024"
+  },
+  {
+   "pollster": "MediaReach",
+   "client": null,
+   "field_start": "2020-05-01",
+   "field_end": "2020-06-30",
+   "sample_size": "4000",
+   "ALP": 36.2,
+   "COAL": 23.0,
+   "GRN": null,
+   "ONP": null,
+   "IND": null,
+   "OTH": 40.8,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nt-2020"
+  },
+  {
+   "pollster": "uComms",
+   "client": null,
+   "field_start": "2020-06-29",
+   "field_end": "2020-06-29",
+   "sample_size": "699",
+   "ALP": 38.83,
+   "COAL": 33.68,
+   "GRN": 6.76,
+   "ONP": null,
+   "IND": null,
+   "OTH": 20.73,
+   "tpp_alp_vs_coal": 50.8,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nt-2020"
+  },
+  {
+   "pollster": "MediaReach",
+   "client": null,
+   "field_start": "2019-09-01",
+   "field_end": "2019-09-30",
+   "sample_size": "645",
+   "ALP": 29.0,
+   "COAL": 39.0,
+   "GRN": null,
+   "ONP": null,
+   "IND": null,
+   "OTH": 22.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nt-2020"
+  },
+  {
+   "pollster": "MediaReach",
+   "client": null,
+   "field_start": "2017-08-25",
+   "field_end": "2017-08-27",
+   "sample_size": "1425",
+   "ALP": 43.0,
+   "COAL": 38.0,
+   "GRN": null,
+   "ONP": null,
+   "IND": null,
+   "OTH": 19.0,
+   "tpp_alp_vs_coal": 50.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nt-2020"
+  },
+  {
+   "pollster": "Unknown",
+   "client": null,
+   "field_start": "2016-07-27",
+   "field_end": "2016-07-01",
+   "sample_size": null,
+   "ALP": 36.0,
+   "COAL": 26.0,
+   "GRN": 6.0,
+   "ONP": null,
+   "IND": null,
+   "OTH": 29.0,
+   "tpp_alp_vs_coal": 64.0,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nt-2016"
+  },
+  {
+   "pollster": "Unknown",
+   "client": null,
+   "field_start": "2015-03-01",
+   "field_end": "2015-03-03",
+   "sample_size": null,
+   "ALP": 41.8,
+   "COAL": 34.4,
+   "GRN": 8.8,
+   "ONP": null,
+   "IND": null,
+   "OTH": 15.0,
+   "tpp_alp_vs_coal": 61.8,
+   "tpp_alp_vs_onp": null,
+   "cycle": "nt-2016"
+  }
+ ],
+ "trend": [
+  {
+   "date": "2015-03-02",
+   "ALP": 41.8,
+   "COAL": 34.4,
+   "GRN": 8.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": 61.8
+  },
+  {
+   "date": "2015-03-09",
+   "ALP": 41.8,
+   "COAL": 34.4,
+   "GRN": 8.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": 61.8
+  },
+  {
+   "date": "2015-03-16",
+   "ALP": 41.8,
+   "COAL": 34.4,
+   "GRN": 8.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": 61.8
+  },
+  {
+   "date": "2015-03-23",
+   "ALP": 41.8,
+   "COAL": 34.4,
+   "GRN": 8.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": 61.8
+  },
+  {
+   "date": "2015-03-30",
+   "ALP": 41.8,
+   "COAL": 34.4,
+   "GRN": 8.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": 61.8
+  },
+  {
+   "date": "2015-04-06",
+   "ALP": 41.8,
+   "COAL": 34.4,
+   "GRN": 8.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": 61.8
+  },
+  {
+   "date": "2015-04-13",
+   "ALP": 41.8,
+   "COAL": 34.4,
+   "GRN": 8.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": 61.8
+  },
+  {
+   "date": "2015-04-20",
+   "ALP": 41.8,
+   "COAL": 34.4,
+   "GRN": 8.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": 61.8
+  },
+  {
+   "date": "2015-04-27",
+   "ALP": 41.8,
+   "COAL": 34.4,
+   "GRN": 8.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": 61.8
+  },
+  {
+   "date": "2015-05-04",
+   "ALP": 41.8,
+   "COAL": 34.4,
+   "GRN": 8.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": 61.8
+  },
+  {
+   "date": "2015-05-11",
+   "ALP": 41.8,
+   "COAL": 34.4,
+   "GRN": 8.8,
+   "ONP": null,
+   "tpp_alp_vs_coal": 61.8
+  },
+  {
+   "date": "2015-05-18",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-05-25",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-06-01",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-06-08",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-06-15",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-06-22",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-06-29",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-07-06",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-07-13",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-07-20",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-07-27",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-08-03",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-08-10",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-08-17",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-08-24",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-08-31",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-09-07",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-09-14",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-09-21",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-09-28",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-10-05",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-10-12",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-10-19",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-10-26",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-11-02",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-11-09",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-11-16",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-11-23",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-11-30",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-12-07",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-12-14",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-12-21",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2015-12-28",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-01-04",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-01-11",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-01-18",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-01-25",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-02-01",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-02-08",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-02-15",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-02-22",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-02-29",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-03-07",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-03-14",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-03-21",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-03-28",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-04-04",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-04-11",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-04-18",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-04-25",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2016-05-02",
+   "ALP": 36.0,
+   "COAL": 26.0,
+   "GRN": 6.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 64.0
+  },
+  {
+   "date": "2016-05-09",
+   "ALP": 36.0,
+   "COAL": 26.0,
+   "GRN": 6.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 64.0
+  },
+  {
+   "date": "2016-05-16",
+   "ALP": 36.0,
+   "COAL": 26.0,
+   "GRN": 6.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 64.0
+  },
+  {
+   "date": "2016-05-23",
+   "ALP": 36.0,
+   "COAL": 26.0,
+   "GRN": 6.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 64.0
+  },
+  {
+   "date": "2016-05-30",
+   "ALP": 36.0,
+   "COAL": 26.0,
+   "GRN": 6.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 64.0
+  },
+  {
+   "date": "2016-06-06",
+   "ALP": 36.0,
+   "COAL": 26.0,
+   "GRN": 6.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 64.0
+  },
+  {
+   "date": "2016-06-13",
+   "ALP": 36.0,
+   "COAL": 26.0,
+   "GRN": 6.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 64.0
+  },
+  {
+   "date": "2016-06-20",
+   "ALP": 36.0,
+   "COAL": 26.0,
+   "GRN": 6.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 64.0
+  },
+  {
+   "date": "2016-06-27",
+   "ALP": 36.0,
+   "COAL": 26.0,
+   "GRN": 6.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 64.0
+  },
+  {
+   "date": "2016-07-04",
+   "ALP": 36.0,
+   "COAL": 26.0,
+   "GRN": 6.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 64.0
+  },
+  {
+   "date": "2016-07-11",
+   "ALP": 36.0,
+   "COAL": 26.0,
+   "GRN": 6.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 64.0
+  },
+  {
+   "date": "2016-07-14",
+   "ALP": 36.0,
+   "COAL": 26.0,
+   "GRN": 6.0,
+   "ONP": null,
+   "tpp_alp_vs_coal": 64.0
+  },
+  {
+   "date": "2017-08-26"
+  },
+  {
+   "date": "2017-08-26",
+   "ALP": 43.0,
+   "COAL": 38.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.0
+  },
+  {
+   "date": "2017-09-02",
+   "ALP": 43.0,
+   "COAL": 38.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.0
+  },
+  {
+   "date": "2017-09-09",
+   "ALP": 43.0,
+   "COAL": 38.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.0
+  },
+  {
+   "date": "2017-09-16",
+   "ALP": 43.0,
+   "COAL": 38.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.0
+  },
+  {
+   "date": "2017-09-23",
+   "ALP": 43.0,
+   "COAL": 38.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.0
+  },
+  {
+   "date": "2017-09-30",
+   "ALP": 43.0,
+   "COAL": 38.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.0
+  },
+  {
+   "date": "2017-10-07",
+   "ALP": 43.0,
+   "COAL": 38.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.0
+  },
+  {
+   "date": "2017-10-14",
+   "ALP": 43.0,
+   "COAL": 38.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.0
+  },
+  {
+   "date": "2017-10-21",
+   "ALP": 43.0,
+   "COAL": 38.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.0
+  },
+  {
+   "date": "2017-10-28",
+   "ALP": 43.0,
+   "COAL": 38.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.0
+  },
+  {
+   "date": "2017-11-04",
+   "ALP": 43.0,
+   "COAL": 38.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.0
+  },
+  {
+   "date": "2017-11-11",
+   "ALP": 43.0,
+   "COAL": 38.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.0
+  },
+  {
+   "date": "2017-11-18",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2017-11-25",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2017-12-02",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2017-12-09",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2017-12-16",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2017-12-23",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2017-12-30",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-01-06",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-01-13",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-01-20",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-01-27",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-02-03",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-02-10",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-02-17",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-02-24",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-03-03",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-03-10",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-03-17",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-03-24",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-03-31",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-04-07",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-04-14",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-04-21",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-04-28",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-05-05",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-05-12",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-05-19",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-05-26",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-06-02",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-06-09",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-06-16",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-06-23",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-06-30",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-07-07",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-07-14",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-07-21",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-07-28",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-08-04",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-08-11",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-08-18",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-08-25",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-09-01",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-09-08",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-09-15",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-09-22",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-09-29",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-10-06",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-10-13",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-10-20",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-10-27",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-11-03",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-11-10",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-11-17",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-11-24",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-12-01",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-12-08",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-12-15",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-12-22",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2018-12-29",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-01-05",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-01-12",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-01-19",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-01-26",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-02-02",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-02-09",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-02-16",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-02-23",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-03-02",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-03-09",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-03-16",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-03-23",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-03-30",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-04-06",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-04-13",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-04-20",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-04-27",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-05-04",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-05-11",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-05-18",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-05-25",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-06-01",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-06-08",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-06-15",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-06-22",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-06-29",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-07-06",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-07-13",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-07-20",
+   "ALP": 29.0,
+   "COAL": 39.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-07-27",
+   "ALP": 29.0,
+   "COAL": 39.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-08-03",
+   "ALP": 29.0,
+   "COAL": 39.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-08-10",
+   "ALP": 29.0,
+   "COAL": 39.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-08-17",
+   "ALP": 29.0,
+   "COAL": 39.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-08-24",
+   "ALP": 29.0,
+   "COAL": 39.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-08-31",
+   "ALP": 29.0,
+   "COAL": 39.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-09-07",
+   "ALP": 29.0,
+   "COAL": 39.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-09-14",
+   "ALP": 29.0,
+   "COAL": 39.0,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-09-21",
+   "ALP": 29.0,
+   "COAL": 38.99,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-09-28",
+   "ALP": 29.0,
+   "COAL": 38.99,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-10-05",
+   "ALP": 29.01,
+   "COAL": 38.98,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-10-12",
+   "ALP": 29.01,
+   "COAL": 38.97,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-10-19",
+   "ALP": 29.02,
+   "COAL": 38.96,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-10-26",
+   "ALP": 29.03,
+   "COAL": 38.93,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-11-02",
+   "ALP": 29.06,
+   "COAL": 38.89,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-11-09",
+   "ALP": 29.09,
+   "COAL": 38.81,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-11-16",
+   "ALP": 29.15,
+   "COAL": 38.69,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-11-23",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-11-30",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-12-07",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-12-14",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-12-21",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2019-12-28",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-01-04",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-01-11",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-01-18",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-01-25",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-02-01",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-02-08",
+   "ALP": null,
+   "COAL": null,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-02-15",
+   "ALP": 36.11,
+   "COAL": 25.33,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-02-22",
+   "ALP": 36.3,
+   "COAL": 25.07,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-02-29",
+   "ALP": 36.43,
+   "COAL": 24.93,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-03-07",
+   "ALP": 36.51,
+   "COAL": 24.88,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-03-14",
+   "ALP": 36.57,
+   "COAL": 24.88,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-03-21",
+   "ALP": 36.62,
+   "COAL": 24.92,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-03-28",
+   "ALP": 36.66,
+   "COAL": 24.98,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-04-04",
+   "ALP": 36.69,
+   "COAL": 25.06,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-04-11",
+   "ALP": 36.72,
+   "COAL": 25.14,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-04-18",
+   "ALP": 36.74,
+   "COAL": 25.23,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-04-25",
+   "ALP": 36.77,
+   "COAL": 25.33,
+   "GRN": null,
+   "ONP": null,
+   "tpp_alp_vs_coal": null
+  },
+  {
+   "date": "2020-05-02",
+   "ALP": 36.8,
+   "COAL": 25.43,
+   "GRN": 6.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.8
+  },
+  {
+   "date": "2020-05-09",
+   "ALP": 36.82,
+   "COAL": 25.54,
+   "GRN": 6.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.8
+  },
+  {
+   "date": "2020-05-16",
+   "ALP": 36.85,
+   "COAL": 25.65,
+   "GRN": 6.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.8
+  },
+  {
+   "date": "2020-05-23",
+   "ALP": 36.88,
+   "COAL": 25.76,
+   "GRN": 6.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.8
+  },
+  {
+   "date": "2020-05-30",
+   "ALP": 36.91,
+   "COAL": 25.88,
+   "GRN": 6.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.8
+  },
+  {
+   "date": "2020-06-06",
+   "ALP": 36.94,
+   "COAL": 26.0,
+   "GRN": 6.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.8
+  },
+  {
+   "date": "2020-06-13",
+   "ALP": 36.97,
+   "COAL": 26.12,
+   "GRN": 6.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.8
+  },
+  {
+   "date": "2020-06-20",
+   "ALP": 37.0,
+   "COAL": 26.25,
+   "GRN": 6.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.8
+  },
+  {
+   "date": "2020-06-27",
+   "ALP": 37.03,
+   "COAL": 26.38,
+   "GRN": 6.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.8
+  },
+  {
+   "date": "2020-06-29",
+   "ALP": 37.04,
+   "COAL": 26.41,
+   "GRN": 6.76,
+   "ONP": null,
+   "tpp_alp_vs_coal": 50.8
+  },
+  {
+   "date": "2023-11-17"
+  },
+  {
+   "date": "2023-11-17",
+   "ALP": 19.8,
+   "COAL": 40.58,
+   "GRN": 13.06,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.53
+  },
+  {
+   "date": "2023-11-24",
+   "ALP": 19.84,
+   "COAL": 40.58,
+   "GRN": 13.04,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.54
+  },
+  {
+   "date": "2023-12-01",
+   "ALP": 19.89,
+   "COAL": 40.57,
+   "GRN": 13.01,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.55
+  },
+  {
+   "date": "2023-12-08",
+   "ALP": 19.97,
+   "COAL": 40.55,
+   "GRN": 12.98,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.57
+  },
+  {
+   "date": "2023-12-15",
+   "ALP": 20.08,
+   "COAL": 40.53,
+   "GRN": 12.93,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.6
+  },
+  {
+   "date": "2023-12-22",
+   "ALP": 20.24,
+   "COAL": 40.51,
+   "GRN": 12.86,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.64
+  },
+  {
+   "date": "2023-12-29",
+   "ALP": 20.45,
+   "COAL": 40.47,
+   "GRN": 12.77,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.7
+  },
+  {
+   "date": "2024-01-05",
+   "ALP": 20.73,
+   "COAL": 40.42,
+   "GRN": 12.65,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.78
+  },
+  {
+   "date": "2024-01-12",
+   "ALP": 21.1,
+   "COAL": 40.36,
+   "GRN": 12.48,
+   "ONP": null,
+   "tpp_alp_vs_coal": 43.88
+  },
+  {
+   "date": "2024-01-19",
+   "ALP": 21.57,
+   "COAL": 40.28,
+   "GRN": 12.28,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.0
+  },
+  {
+   "date": "2024-01-26",
+   "ALP": 22.15,
+   "COAL": 40.18,
+   "GRN": 12.02,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.16
+  },
+  {
+   "date": "2024-02-02",
+   "ALP": 22.83,
+   "COAL": 40.06,
+   "GRN": 11.72,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.34
+  },
+  {
+   "date": "2024-02-09",
+   "ALP": 23.6,
+   "COAL": 39.93,
+   "GRN": 11.38,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.55
+  },
+  {
+   "date": "2024-02-16",
+   "ALP": 24.41,
+   "COAL": 39.79,
+   "GRN": 11.02,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.77
+  },
+  {
+   "date": "2024-02-23",
+   "ALP": 25.22,
+   "COAL": 39.65,
+   "GRN": 10.67,
+   "ONP": null,
+   "tpp_alp_vs_coal": 44.98
+  },
+  {
+   "date": "2024-03-01",
+   "ALP": 25.97,
+   "COAL": 39.52,
+   "GRN": 10.33,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.19
+  },
+  {
+   "date": "2024-03-08",
+   "ALP": 26.64,
+   "COAL": 39.41,
+   "GRN": 10.04,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.37
+  },
+  {
+   "date": "2024-03-15",
+   "ALP": 27.21,
+   "COAL": 39.31,
+   "GRN": 9.79,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.52
+  },
+  {
+   "date": "2024-03-22",
+   "ALP": 27.66,
+   "COAL": 39.23,
+   "GRN": 9.59,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.64
+  },
+  {
+   "date": "2024-03-29",
+   "ALP": 28.02,
+   "COAL": 39.17,
+   "GRN": 9.43,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.74
+  },
+  {
+   "date": "2024-04-05",
+   "ALP": 28.29,
+   "COAL": 39.12,
+   "GRN": 9.31,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.81
+  },
+  {
+   "date": "2024-04-12",
+   "ALP": 28.49,
+   "COAL": 39.09,
+   "GRN": 9.23,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.86
+  },
+  {
+   "date": "2024-04-19",
+   "ALP": 28.63,
+   "COAL": 39.06,
+   "GRN": 9.16,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.9
+  },
+  {
+   "date": "2024-04-26",
+   "ALP": 28.74,
+   "COAL": 39.04,
+   "GRN": 9.12,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.93
+  },
+  {
+   "date": "2024-05-03",
+   "ALP": 28.81,
+   "COAL": 39.03,
+   "GRN": 9.08,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.95
+  },
+  {
+   "date": "2024-05-10",
+   "ALP": 28.87,
+   "COAL": 39.02,
+   "GRN": 9.06,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.96
+  },
+  {
+   "date": "2024-05-16",
+   "ALP": 28.9,
+   "COAL": 39.02,
+   "GRN": 9.04,
+   "ONP": null,
+   "tpp_alp_vs_coal": 45.97
+  }
+ ],
+ "trend_method": "Current cycle: Bayesian poll aggregate (a smooth, damped trend from the previous result, adjusting for each pollster's house effect and sample size; bands are 90% credible intervals; 2PP implied from primaries via estimated preference flows). Earlier cycles: simple 60-day kernel average of published polls.",
+ "results": [
+  {
+   "year": 2012,
+   "date": "2012-08-25",
+   "ALP": 36.5,
+   "COAL": 50.6,
+   "GRN": 3.3,
+   "ONP": null,
+   "OTH": 9.6,
+   "tpp_alp_vs_coal": 44.2
+  },
+  {
+   "year": 2016,
+   "date": "2016-08-27",
+   "ALP": 42.41,
+   "COAL": 32.08,
+   "GRN": 3.0,
+   "ONP": null,
+   "OTH": 22.51,
+   "tpp_alp_vs_coal": 57.5
+  },
+  {
+   "year": 2020,
+   "date": "2020-08-22",
+   "ALP": 39.43,
+   "COAL": 31.34,
+   "GRN": 4.36,
+   "ONP": null,
+   "OTH": 24.87,
+   "tpp_alp_vs_coal": 53.3
+  },
+  {
+   "year": 2024,
+   "date": "2024-08-24",
+   "ALP": 28.79,
+   "COAL": 48.89,
+   "GRN": 8.13,
+   "ONP": null,
+   "OTH": 14.19,
+   "tpp_alp_vs_coal": 42.6
+  }
+ ],
+ "house_effects": [],
+ "events": [
+  {
+   "event_date": "2019-08-31",
+   "description": "Terry Mills announces formation of Territory Alliance"
+  },
+  {
+   "event_date": "2020-02-01",
+   "description": "Lia Finocchiaro becomes CLP leader and leader of the opposition"
+  },
+  {
+   "event_date": "2020-03-24",
+   "description": "Disputed opposition leadership after Territory Alliance surpassed CLP in seat numbers"
+  }
+ ]
+}
