@@ -1,7 +1,7 @@
 {
  "n_seats": 59,
- "brier": 0.1311,
- "log_loss": 0.2165,
+ "brier": 0.13,
+ "log_loss": 0.2152,
  "favourite_accuracy": 0.8983,
  "status_quo_accuracy": 0.8644,
  "seats": {
@@ -45,15 +45,15 @@
  "calibration": [
   {
    "bin": "0.50-0.70",
-   "n": 9,
-   "mean_prob": 0.621,
-   "hit_rate": 0.778
+   "n": 10,
+   "mean_prob": 0.627,
+   "hit_rate": 0.7
   },
   {
    "bin": "0.70-0.90",
-   "n": 10,
-   "mean_prob": 0.789,
-   "hit_rate": 0.7
+   "n": 9,
+   "mean_prob": 0.799,
+   "hit_rate": 0.778
   },
   {
    "bin": "0.90-0.99",
@@ -64,7 +64,7 @@
   {
    "bin": "0.99-1.00",
    "n": 21,
-   "mean_prob": 0.997,
+   "mean_prob": 0.998,
    "hit_rate": 1.0
   }
  ],
@@ -73,64 +73,64 @@
    "district": "Albany",
    "won": "NAT",
    "favourite": "ALP",
-   "p_fav": 0.456,
-   "p_won": 0.234,
+   "p_fav": 0.467,
+   "p_won": 0.232,
    "incumbent": "ALP"
   },
   {
    "district": "Bateman",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.705,
-   "p_won": 0.282,
+   "p_fav": 0.697,
+   "p_won": 0.288,
    "incumbent": "ALP"
   },
   {
    "district": "Kalamunda",
    "won": "LIB",
    "favourite": "ALP",
-   "p_fav": 0.706,
-   "p_won": 0.293,
+   "p_fav": 0.704,
+   "p_won": 0.294,
    "incumbent": "ALP"
   },
   {
    "district": "Kalgoorlie",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.611,
-   "p_won": 0.332,
+   "p_fav": 0.608,
+   "p_won": 0.337,
    "incumbent": "ALP"
   },
   {
    "district": "Murray-Wellington",
    "won": "LIB",
    "favourite": "ALP",
-   "p_fav": 0.757,
-   "p_won": 0.242,
+   "p_fav": 0.761,
+   "p_won": 0.238,
    "incumbent": "ALP"
   },
   {
    "district": "Scarborough",
    "won": "ALP",
    "favourite": "LIB",
-   "p_fav": 0.529,
-   "p_won": 0.47,
+   "p_fav": 0.516,
+   "p_won": 0.482,
    "incumbent": "ALP"
   }
  ],
  "seat_vote": {
   "ALP": {
    "n": 59,
-   "crps": 4.134,
+   "crps": 4.081,
    "cover50": 0.305,
    "cover90": 0.831,
    "pit_hist": [
-    16,
-    11,
-    8,
+    15,
+    13,
+    7,
+    4,
     5,
-    5,
-    2,
+    3,
     2,
     5,
     2,
@@ -139,25 +139,25 @@
   },
   "COAL": {
    "n": 59,
-   "crps": 2.272,
-   "cover50": 0.61,
-   "cover90": 0.966,
+   "crps": 2.27,
+   "cover50": 0.593,
+   "cover90": 0.949,
    "pit_hist": [
     3,
-    5,
-    7,
-    12,
+    4,
     9,
+    12,
+    8,
     7,
-    5,
-    2,
+    4,
+    3,
     5,
     4
    ]
   },
   "GRN": {
    "n": 59,
-   "crps": 1.468,
+   "crps": 1.462,
    "cover50": 0.559,
    "cover90": 0.898,
    "pit_hist": [
@@ -166,11 +166,11 @@
     2,
     5,
     10,
-    2,
-    7,
+    4,
+    6,
     11,
     8,
-    12
+    11
    ]
   }
  },
@@ -179,8 +179,8 @@
   "ALP": {
    "forecast": [
     38.8,
-    44.2,
-    49.3
+    44.1,
+    49.2
    ],
    "actual": 41.43
   },
@@ -194,7 +194,7 @@
   },
   "GRN": {
    "forecast": [
-    7.5,
+    7.6,
     10.3,
     13.2
    ],
@@ -202,18 +202,18 @@
   },
   "tpp": {
    "forecast": [
-    53.8,
+    53.9,
     58.8,
-    63.4
+    63.5
    ],
    "actual": 57.1
   }
  },
  "outcome": {
-  "alp_majority": 0.99565,
-  "coal_majority": 0.0034,
-  "hung": 0.00095,
-  "alp_most_seats": 0.99605,
-  "coal_most_seats": 0.0036
+  "alp_majority": 0.99545,
+  "coal_majority": 0.00295,
+  "hung": 0.0016,
+  "alp_most_seats": 0.99625,
+  "coal_most_seats": 0.00325
  }
 }

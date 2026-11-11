@@ -1,8 +1,8 @@
 {
  "election": "sa-2026",
- "run_at": "2026-11-09T09:40:26+00:00",
- "git_commit": "8500fdbfb629e973702773d7985d24ed71c43515",
- "uncommitted_changes": true,
+ "run_at": "2026-11-11T08:21:45+00:00",
+ "git_commit": "0ad5e11ec57c105478aa6a981bb30c5e5c101f5c",
+ "uncommitted_changes": false,
  "config": {
   "n_per_draw": 5,
   "seed": 20261128,
@@ -40,29 +40,29 @@
    "COAL": -0.55,
    "GRN": 0.44
   },
-  "region_sd": 0.0981,
+  "region_sd": 0.0971,
   "seat_sd": {
-   "ALP": 0.1823,
-   "COAL": 0.2165,
-   "GRN": 0.2318,
+   "ALP": 0.181,
+   "COAL": 0.2171,
+   "GRN": 0.2351,
    "OTH": 0.25,
    "ONP": 0.25
   },
   "seat_df": {
-   "ALP": 5.22,
-   "COAL": 4.82,
-   "GRN": 6.91,
-   "OTH": 4.82
+   "ALP": 5.15,
+   "COAL": 4.87,
+   "GRN": 7.33,
+   "OTH": 4.87
   },
   "seat_beta": {
-   "ALP": -0.0565,
-   "COAL": -0.0722,
-   "GRN": -0.087
+   "ALP": -0.0579,
+   "COAL": -0.0879,
+   "GRN": -0.0862
   },
   "ind_decay_mean": -0.2,
   "ind_decay_sd": 0.4,
-  "retire_effect": -0.0972,
-  "sophomore_effect": 0.1385,
+  "retire_effect": -0.096,
+  "sophomore_effect": 0.1384,
   "ind_prior_sd": 0.35,
   "ind_sophomore_log": 0.15,
   "ind_retire_log": -1.2

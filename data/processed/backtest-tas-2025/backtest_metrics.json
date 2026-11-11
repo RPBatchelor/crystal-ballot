@@ -1,8 +1,8 @@
 {
  "n_divisions": 5,
- "seat_brier": 0.3198,
- "mean_p_actual_seats": 0.674,
- "median_abs_error": 0.2,
+ "seat_brier": 0.3193,
+ "mean_p_actual_seats": 0.6744,
+ "median_abs_error": 0.233,
  "seats": {
   "ALP": {
    "actual": 10,
@@ -35,7 +35,7 @@
    "actual": 14,
    "median": 14.0,
    "p90": [
-    11.0,
+    12.0,
     16.0
    ],
    "covered_90": true
@@ -65,8 +65,8 @@
    "party": "ALP",
    "actual": 2,
    "median": 2.0,
-   "mean": 2.32,
-   "p_actual": 0.663
+   "mean": 2.33,
+   "p_actual": 0.657
   },
   {
    "division": "Bass",
@@ -74,7 +74,7 @@
    "actual": 1,
    "median": 1.0,
    "mean": 1.01,
-   "p_actual": 0.95
+   "p_actual": 0.952
   },
   {
    "division": "Bass",
@@ -82,7 +82,7 @@
    "actual": 1,
    "median": 0.0,
    "mean": 0.11,
-   "p_actual": 0.109
+   "p_actual": 0.11
   },
   {
    "division": "Bass",
@@ -90,7 +90,7 @@
    "actual": 3,
    "median": 3.0,
    "mean": 3.0,
-   "p_actual": 0.819
+   "p_actual": 0.821
   },
   {
    "division": "Bass",
@@ -98,7 +98,7 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.32,
-   "p_actual": 0.677
+   "p_actual": 0.678
   },
   {
    "division": "Bass",
@@ -106,7 +106,7 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.23,
-   "p_actual": 0.766
+   "p_actual": 0.768
   },
   {
    "division": "Braddon",
@@ -121,8 +121,8 @@
    "party": "GRN",
    "actual": 0,
    "median": 0.0,
-   "mean": 0.47,
-   "p_actual": 0.534
+   "mean": 0.46,
+   "p_actual": 0.54
   },
   {
    "division": "Braddon",
@@ -130,7 +130,7 @@
    "actual": 1,
    "median": 1.0,
    "mean": 0.59,
-   "p_actual": 0.471
+   "p_actual": 0.469
   },
   {
    "division": "Braddon",
@@ -138,7 +138,7 @@
    "actual": 4,
    "median": 3.0,
    "mean": 3.3,
-   "p_actual": 0.309
+   "p_actual": 0.312
   },
   {
    "division": "Braddon",
@@ -146,7 +146,7 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.37,
-   "p_actual": 0.633
+   "p_actual": 0.635
   },
   {
    "division": "Braddon",
@@ -154,7 +154,7 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.41,
-   "p_actual": 0.595
+   "p_actual": 0.592
   },
   {
    "division": "Clark",
@@ -162,7 +162,7 @@
    "actual": 2,
    "median": 2.0,
    "mean": 2.4,
-   "p_actual": 0.588
+   "p_actual": 0.587
   },
   {
    "division": "Clark",
@@ -178,7 +178,7 @@
    "actual": 1,
    "median": 1.0,
    "mean": 0.7,
-   "p_actual": 0.627
+   "p_actual": 0.631
   },
   {
    "division": "Clark",
@@ -186,7 +186,7 @@
    "actual": 2,
    "median": 2.0,
    "mean": 2.1,
-   "p_actual": 0.826
+   "p_actual": 0.824
   },
   {
    "division": "Franklin",
@@ -194,7 +194,7 @@
    "actual": 2,
    "median": 2.0,
    "mean": 2.03,
-   "p_actual": 0.853
+   "p_actual": 0.855
   },
   {
    "division": "Franklin",
@@ -202,15 +202,15 @@
    "actual": 1,
    "median": 2.0,
    "mean": 1.57,
-   "p_actual": 0.429
+   "p_actual": 0.431
   },
   {
    "division": "Franklin",
    "party": "IND",
    "actual": 2,
    "median": 1.0,
-   "mean": 0.87,
-   "p_actual": 0.113
+   "mean": 0.88,
+   "p_actual": 0.112
   },
   {
    "division": "Franklin",
@@ -218,23 +218,23 @@
    "actual": 2,
    "median": 3.0,
    "mean": 2.52,
-   "p_actual": 0.476
+   "p_actual": 0.475
   },
   {
    "division": "Lyons",
    "party": "ALP",
    "actual": 2,
-   "median": 2.0,
+   "median": 3.0,
    "mean": 2.5,
-   "p_actual": 0.496
+   "p_actual": 0.493
   },
   {
    "division": "Lyons",
    "party": "GRN",
    "actual": 1,
    "median": 1.0,
-   "mean": 0.95,
-   "p_actual": 0.934
+   "mean": 0.94,
+   "p_actual": 0.93
   },
   {
    "division": "Lyons",
@@ -242,7 +242,7 @@
    "actual": 0,
    "median": 0.0,
    "mean": 0.22,
-   "p_actual": 0.786
+   "p_actual": 0.788
   },
   {
    "division": "Lyons",
@@ -250,7 +250,7 @@
    "actual": 3,
    "median": 3.0,
    "mean": 2.91,
-   "p_actual": 0.809
+   "p_actual": 0.81
   },
   {
    "division": "Lyons",
@@ -266,7 +266,7 @@
    "actual": 1,
    "median": 0.0,
    "mean": 0.29,
-   "p_actual": 0.293
+   "p_actual": 0.294
   }
  ],
  "statewide": {
@@ -274,13 +274,13 @@
    "forecast": [
     22.3,
     27.3,
-    32.4
+    32.3
    ],
    "actual": 25.87
   },
   "COAL": {
    "forecast": [
-    30.2,
+    30.3,
     35.4,
     40.5
    ],
@@ -296,10 +296,10 @@
   }
  },
  "outcome": {
-  "lib_majority": 0.0131,
-  "alp_majority": 0.0006,
+  "lib_majority": 0.01315,
+  "alp_majority": 0.00055,
   "hung": 0.9863,
-  "lib_most_seats": 0.82165,
-  "alp_most_seats": 0.09595
+  "lib_most_seats": 0.81995,
+  "alp_most_seats": 0.09695
  }
 }
