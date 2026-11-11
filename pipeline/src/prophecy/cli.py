@@ -236,12 +236,14 @@ def ingest_nt(
     years: str = typer.Option("2016,2020,2024", help="Comma-separated NT years"),
     refresh: bool = typer.Option(True, help="Re-download the Wikipedia pages"),
 ) -> None:
-    """NT Legislative Assembly results (Wikipedia's per-division tables of the NTEC counts),
-    and the notional baseline after a redistribution."""
+    """NT Legislative Assembly results: candidates from Wikipedia's per-division tables,
+    every count corrected to the NTEC's division summaries (``data/raw/ntec``), and the
+    notional baseline after a redistribution."""
+    from prophecy.ingest.ntec import reconcile
     from prophecy.ingest.wiki_nt import ingest_nt_assembly, notional_from_changes
 
     for y in (int(x) for x in years.split(",")):
-        tables = ingest_nt_assembly(y, refresh)
+        tables = reconcile(y, ingest_nt_assembly(y, refresh), log=typer.echo)
         _write_tables(tables, PROCESSED_DIR / f"nt-{y}")
         typer.echo(f"nt-{y} seats: {dict(tables['districts']['elected_party'].value_counts().iter_rows())}")
         e = jurisdictions.get(f"nt-{y}")

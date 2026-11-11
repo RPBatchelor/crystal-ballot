@@ -65,7 +65,8 @@ def _code(party: str) -> str:
 
 def _candidates(section: str) -> list[dict]:
     out = []
-    for m in re.finditer(r"\{\{Election box candidate AU party(.*?)\n\}\}", section, flags=re.S):
+    # Boxes close with "}}" on its own line, sometimes indented (Blain 2016).
+    for m in re.finditer(r"\{\{Election box candidate AU party(.*?)\n\s*\}\}", section, flags=re.S):
         b = m.group(1)
         party = _plain(_field(b, "party"))
         out.append({"candidate": _name(_field(b, "candidate")), "party_name": party, "party": _code(party),

@@ -106,7 +106,8 @@ def estimate_flows(transfers: pl.DataFrame, iters: int = 200) -> tuple[np.ndarra
 def calibrate_to_results(w: np.ndarray, primaries: np.ndarray, alp_tcp: np.ndarray,
                          origins: tuple[str, ...] = ("GRN", "OTH", "IND"),
                          outlier: float = 15.0,
-                         exhaust: np.ndarray | None = None) -> tuple[np.ndarray, dict]:
+                         exhaust: np.ndarray | None = None,
+                         exhaust_rate: float = 0.0) -> tuple[np.ndarray, dict]:
     """Tilt each origin's ALP-v-COAL split so replayed counts match actual 2CPs.
 
     The DoPs cover only 39 seats and lump heterogeneous minor parties together; every
@@ -132,7 +133,7 @@ def calibrate_to_results(w: np.ndarray, primaries: np.ndarray, alp_tcp: np.ndarr
 
     def errors(theta: np.ndarray) -> np.ndarray:
         ex = None if exhaust is None else exhaust[None]
-        _, final = count(primaries[None], tilted(theta)[None], ex)
+        _, final = count(primaries[None], tilted(theta)[None], ex, exhaust_rate)
         return final[0, :, a] * 100 - alp_tcp
 
     keep = mask & (np.abs(errors(np.zeros(len(rows)))) < outlier)
@@ -192,7 +193,8 @@ def draw_exhaust(exhaust: np.ndarray, n: int, rng: np.random.Generator,
 
 
 def count(shares: np.ndarray, weights: np.ndarray,
-          exhaust: np.ndarray | None = None) -> tuple[np.ndarray, np.ndarray]:
+          exhaust: np.ndarray | None = None, exhaust_rate: float = 0.0,
+          with_total: bool = False):
     """Run an exclusion count for every simulation and seat.
 
     shares:  S x D x B primary shares (0 where a bloc has no candidate)
@@ -200,6 +202,9 @@ def count(shares: np.ndarray, weights: np.ndarray,
     exhaust: S x B exhaustion weights (optional preferential voting), or None
     Returns (winner index S x D, final two-candidate shares S x D x B; under optional
     preferential voting these are shares of the ballots still in the count).
+    exhaust_rate: alternatively, the same share of every transfer exhausts (a fitted
+    rate, where no distributions of preferences say which ballots exhaust).
+    with_total: also return the share of all ballots still in the final count (S x D).
     """
     votes = shares.astype(float).copy()
     alive = votes > 0
@@ -225,14 +230,17 @@ def count(shares: np.ndarray, weights: np.ndarray,
         if exhaust is not None:
             tot = tot + exhaust[np.arange(S)[:, None], loser][..., None]
         tot[tot == 0] = 1.0
-        transfer = loser_votes[..., None] * w_from / tot
+        transfer = loser_votes[..., None] * w_from / tot * (1.0 - exhaust_rate)
         votes = np.where(active[..., None], votes + transfer, votes)
         np.put_along_axis(votes, loser[..., None],
                           np.where(active, 0.0, loser_votes)[..., None], axis=2)
         alive = np.where(active[..., None], survivors, alive)
     winner = votes.argmax(axis=2)
     total = votes.sum(axis=2, keepdims=True)
-    return winner, votes / np.where(total > 0, total, 1)
+    final = votes / np.where(total > 0, total, 1)
+    if with_total:
+        return winner, final, total[..., 0] / np.maximum(shares.sum(axis=2), 1e-12)
+    return winner, final
 
 
 def two_party(primary: np.ndarray, weights: np.ndarray, a: str, b: str,

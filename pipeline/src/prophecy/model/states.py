@@ -420,6 +420,32 @@ def _sitting_before(previous: Election) -> set[str]:
             | set(_by_elections(previous.jurisdiction, earlier.date, previous.date)["member"].to_list()))
 
 
+def _fit_exhaustion(w: np.ndarray, base: np.ndarray, src, names: list[str],
+                    log: Callable[[str], None]) -> float:
+    """The share of every transfer that exhausts, chosen so replaying the previous count
+    exhausts the share of ballots each seat's ``exhausted`` column records; 0 when the
+    election recorded none (full preferential)."""
+    from scipy.optimize import minimize_scalar
+
+    from prophecy.model.preferences import count
+
+    d = pl.read_csv(src / "districts.csv")
+    if "exhausted" not in d.columns or d["exhausted"].is_null().all():
+        return 0.0
+    share = dict(zip(d["district"], (d["exhausted"] / d["formal"]).to_list()))
+    actual = np.array([share.get(n) if share.get(n) is not None else np.nan for n in names])
+
+    def miss(e: float) -> float:
+        _, _, kept = count(base[None], w[None], exhaust_rate=e, with_total=True)
+        return float(np.nanmean((1 - kept[0] - actual) ** 2))
+
+    e = float(minimize_scalar(miss, bounds=(0.0, 0.95), method="bounded").x)
+    _, _, kept = count(base[None], w[None], exhaust_rate=e, with_total=True)
+    log(f"exhaustion ({src.name}): {e:.1%} of each transfer; replayed {np.nanmean(1 - kept[0]):.1%} "
+        f"of ballots exhausted per seat, recorded {np.nanmean(actual):.1%}")
+    return e
+
+
 def state_flows(previous: Election, log: Callable[[str], None] = print,
                 weights: np.ndarray | None = None) -> tuple[np.ndarray, np.ndarray | None]:
     """Flows (and, under optional preferential voting, exhaustion) from the previous
@@ -449,6 +475,16 @@ def state_flows(previous: Election, log: Callable[[str], None] = print,
     for (d,), t in tcp.group_by("district"):
         if set(t["bloc"]) == {"ALP", "COAL"}:
             alp_tcp[names.index(d)] = t.filter(pl.col("bloc") == "ALP")["pct"][0]
+    if weights is not None:
+        # Flows estimated elsewhere carry no exhaustion. If the previous election was
+        # optional preferential (NT 2016), its 2CPs are shares of the ballots still in the
+        # count: calibrate with an exhaustion rate fitted to the exhausted ballots it
+        # recorded, so the flows aren't understated. The forecast itself is full
+        # preferential (NT since 2020), so no exhaustion is returned for simulating it.
+        rate = _fit_exhaustion(w, base, src, names, log)
+        flows, calib = calibrate_to_results(w, base, alp_tcp, exhaust_rate=rate)
+        log(f"flow calibration ({previous.election_id}): {calib}")
+        return flows, None
     flows, calib = calibrate_to_results(w, base, alp_tcp, exhaust=exhaust)
     log(f"flow calibration ({previous.election_id}): {calib}")
     if exhaust is not None:
