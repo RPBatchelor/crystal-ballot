@@ -6,7 +6,9 @@
   command = "npm run build"
   publish = "build"
   # Only the site and its data affect the build: skip deploys for pipeline-only commits.
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ../netlify.toml"
+  # Always build when the cache is from this very commit (e.g. a dev branch deploy of
+  # the commit main was then fast-forwarded to): there is nothing to diff against.
+  ignore = "[ \"$CACHED_COMMIT_REF\" != \"$COMMIT_REF\" ] && git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ../netlify.toml"
 
 [build.environment]
   NODE_VERSION = "24"
