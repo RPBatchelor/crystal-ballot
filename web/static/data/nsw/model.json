@@ -4,7 +4,7 @@
    "election_id": "nsw-2019",
    "n_seats": 93,
    "brier": 0.1461,
-   "log_loss": 0.3807,
+   "log_loss": 0.3806,
    "favourite_accuracy": 0.914,
    "status_quo_accuracy": 0.957,
    "seats": {
@@ -55,7 +55,7 @@
     {
      "bin": "0.70-0.90",
      "n": 17,
-     "mean_prob": 0.845,
+     "mean_prob": 0.844,
      "hit_rate": 0.824
     },
     {
@@ -76,15 +76,15 @@
      "district": "Ballina",
      "won": "GRN",
      "favourite": "ALP",
-     "p_fav": 0.421,
-     "p_won": 0.373,
+     "p_fav": 0.42,
+     "p_won": 0.374,
      "incumbent": "GRN"
     },
     {
      "district": "Barwon",
      "won": "OTH",
      "favourite": "NAT",
-     "p_fav": 0.801,
+     "p_fav": 0.802,
      "p_won": 0.0,
      "incumbent": "NAT"
     },
@@ -92,7 +92,7 @@
      "district": "Coogee",
      "won": "ALP",
      "favourite": "LIB",
-     "p_fav": 0.623,
+     "p_fav": 0.622,
      "p_won": 0.373,
      "incumbent": "LIB"
     },
@@ -100,8 +100,8 @@
      "district": "East Hills",
      "won": "LIB",
      "favourite": "ALP",
-     "p_fav": 0.827,
-     "p_won": 0.168,
+     "p_fav": 0.826,
+     "p_won": 0.169,
      "incumbent": "LIB"
     },
     {
@@ -124,48 +124,48 @@
      "district": "Upper Hunter",
      "won": "NAT",
      "favourite": "ALP",
-     "p_fav": 0.525,
-     "p_won": 0.475,
+     "p_fav": 0.526,
+     "p_won": 0.474,
      "incumbent": "NAT"
     },
     {
      "district": "Wagga Wagga",
      "won": "IND",
      "favourite": "NAT",
-     "p_fav": 0.89,
-     "p_won": 0.049,
+     "p_fav": 0.888,
+     "p_won": 0.05,
      "incumbent": "IND"
     }
    ],
    "seat_vote": {
     "ALP": {
      "n": 93,
-     "crps": 4.049,
+     "crps": 4.05,
      "cover50": 0.344,
      "cover90": 0.763,
      "pit_hist": [
       35,
       15,
       13,
-      12,
-      5,
+      13,
+      4,
       1,
-      4,
-      4,
+      5,
+      3,
       4,
       0
      ]
     },
     "COAL": {
      "n": 93,
-     "crps": 3.434,
+     "crps": 3.433,
      "cover50": 0.473,
      "cover90": 0.871,
      "pit_hist": [
       13,
       6,
-      14,
-      7,
+      13,
+      8,
       6,
       6,
       9,
@@ -177,7 +177,7 @@
     "GRN": {
      "n": 93,
      "crps": 1.038,
-     "cover50": 0.667,
+     "cover50": 0.677,
      "cover90": 0.978,
      "pit_hist": [
       2,
@@ -186,10 +186,10 @@
       8,
       17,
       12,
-      17,
-      11,
-      5,
-      3
+      18,
+      10,
+      6,
+      2
      ]
     }
    },
@@ -206,8 +206,8 @@
     "COAL": {
      "forecast": [
       36.7,
-      40.2,
-      43.8
+      40.1,
+      43.7
      ],
      "actual": 41.58
     },
@@ -215,13 +215,13 @@
      "forecast": [
       5.9,
       9.1,
-      12.2
+      12.3
      ],
      "actual": 9.57
     },
     "tpp": {
      "forecast": [
-      44.4,
+      44.5,
       49.0,
       53.5
      ],
@@ -229,18 +229,18 @@
     }
    },
    "outcome": {
-    "alp_majority": 0.05285,
-    "coal_majority": 0.72565,
-    "hung": 0.2215,
-    "alp_most_seats": 0.11045,
-    "coal_most_seats": 0.86565
+    "alp_majority": 0.05155,
+    "coal_majority": 0.7237,
+    "hung": 0.22475,
+    "alp_most_seats": 0.1098,
+    "coal_most_seats": 0.8665
    }
   },
   {
    "election_id": "nsw-2023",
    "n_seats": 93,
-   "brier": 0.1664,
-   "log_loss": 0.2818,
+   "brier": 0.1667,
+   "log_loss": 0.2822,
    "favourite_accuracy": 0.8817,
    "status_quo_accuracy": 0.9032,
    "seats": {
@@ -257,7 +257,7 @@
      "actual": 36,
      "median": 37.0,
      "p90": [
-      29.0,
+      28.0,
       45.0
      ],
      "covered_90": true
@@ -290,19 +290,19 @@
     },
     {
      "bin": "0.70-0.90",
-     "n": 16,
-     "mean_prob": 0.838,
-     "hit_rate": 0.875
+     "n": 18,
+     "mean_prob": 0.841,
+     "hit_rate": 0.889
     },
     {
      "bin": "0.90-0.99",
      "n": 31,
-     "mean_prob": 0.961,
+     "mean_prob": 0.966,
      "hit_rate": 0.935
     },
     {
      "bin": "0.99-1.00",
-     "n": 31,
+     "n": 29,
      "mean_prob": 0.997,
      "hit_rate": 1.0
     }
@@ -312,71 +312,71 @@
      "district": "Camden",
      "won": "ALP",
      "favourite": "LIB",
-     "p_fav": 0.663,
-     "p_won": 0.337,
+     "p_fav": 0.67,
+     "p_won": 0.33,
      "incumbent": "LIB"
     },
     {
      "district": "Goulburn",
      "won": "LIB",
      "favourite": "ALP",
-     "p_fav": 0.586,
-     "p_won": 0.414,
+     "p_fav": 0.583,
+     "p_won": 0.417,
      "incumbent": "LIB"
     },
     {
      "district": "Kiama",
      "won": "IND",
      "favourite": "LIB",
-     "p_fav": 0.642,
-     "p_won": 0.188,
+     "p_fav": 0.633,
+     "p_won": 0.191,
      "incumbent": "IND"
     },
     {
      "district": "Monaro",
      "won": "ALP",
      "favourite": "NAT",
-     "p_fav": 0.917,
-     "p_won": 0.083,
+     "p_fav": 0.914,
+     "p_won": 0.086,
      "incumbent": "NAT"
     },
     {
      "district": "Oatley",
      "won": "LIB",
      "favourite": "ALP",
-     "p_fav": 0.508,
-     "p_won": 0.484,
+     "p_fav": 0.518,
+     "p_won": 0.474,
      "incumbent": "LIB"
     },
     {
      "district": "South Coast",
      "won": "ALP",
      "favourite": "LIB",
-     "p_fav": 0.698,
-     "p_won": 0.302,
+     "p_fav": 0.683,
+     "p_won": 0.316,
      "incumbent": "LIB"
     },
     {
      "district": "Tweed",
      "won": "NAT",
      "favourite": "ALP",
-     "p_fav": 0.529,
-     "p_won": 0.469,
+     "p_fav": 0.538,
+     "p_won": 0.46,
      "incumbent": "NAT"
     },
     {
      "district": "Upper Hunter",
      "won": "NAT",
      "favourite": "ALP",
-     "p_fav": 0.8,
-     "p_won": 0.185,
+     "p_fav": 0.79,
+     "p_won": 0.195,
      "incumbent": "NAT"
     },
     {
      "district": "Wakehurst",
      "won": "IND",
      "favourite": "LIB",
-     "p_fav": 0.983,
+     "p_fav": 0.982,
      "p_won": 0.011,
      "incumbent": "LIB"
     },
@@ -384,33 +384,33 @@
      "district": "Winston Hills",
      "won": "LIB",
      "favourite": "ALP",
-     "p_fav": 0.642,
-     "p_won": 0.358,
+     "p_fav": 0.645,
+     "p_won": 0.355,
      "incumbent": "LIB"
     },
     {
      "district": "Wollondilly",
      "won": "IND",
      "favourite": "LIB",
-     "p_fav": 0.85,
-     "p_won": 0.116,
+     "p_fav": 0.858,
+     "p_won": 0.112,
      "incumbent": "LIB"
     }
    ],
    "seat_vote": {
     "ALP": {
      "n": 93,
-     "crps": 3.08,
-     "cover50": 0.473,
-     "cover90": 0.882,
+     "crps": 3.062,
+     "cover50": 0.462,
+     "cover90": 0.871,
      "pit_hist": [
-      18,
-      16,
-      8,
-      6,
-      10,
-      10,
+      19,
+      14,
       9,
+      6,
+      9,
+      10,
+      10,
       7,
       5,
       4
@@ -418,35 +418,35 @@
     },
     "COAL": {
      "n": 93,
-     "crps": 3.473,
-     "cover50": 0.462,
+     "crps": 3.489,
+     "cover50": 0.473,
      "cover90": 0.839,
      "pit_hist": [
-      18,
+      19,
+      12,
       13,
-      10,
-      17,
+      14,
+      7,
       8,
       7,
-      6,
+      5,
       4,
-      6,
       4
      ]
     },
     "GRN": {
      "n": 93,
-     "crps": 1.209,
+     "crps": 1.216,
      "cover50": 0.624,
      "cover90": 0.946,
      "pit_hist": [
       6,
-      9,
       10,
-      8,
-      15,
-      12,
-      14,
+      10,
+      7,
+      17,
+      11,
+      13,
       14,
       3,
       2
@@ -459,14 +459,14 @@
      "forecast": [
       33.1,
       36.9,
-      40.8
+      40.7
      ],
      "actual": 36.97
     },
     "COAL": {
      "forecast": [
       32.3,
-      36.0,
+      36.1,
       39.9
      ],
      "actual": 35.37
@@ -483,17 +483,17 @@
      "forecast": [
       48.8,
       53.3,
-      57.5
+      57.6
      ],
      "actual": 54.27
     }
    },
    "outcome": {
-    "alp_majority": 0.5006,
-    "coal_majority": 0.02815,
-    "hung": 0.47125,
-    "alp_most_seats": 0.83145,
-    "coal_most_seats": 0.1428
+    "alp_majority": 0.5138,
+    "coal_majority": 0.02965,
+    "hung": 0.45655,
+    "alp_most_seats": 0.8377,
+    "coal_most_seats": 0.1378
    }
   }
  ],

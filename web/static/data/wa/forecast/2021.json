@@ -1,0 +1,4425 @@
+{
+ "election_id": "wa-2021",
+ "jurisdiction": "WA",
+ "election_date": "2021-03-13",
+ "generated_at": "2026-11-11T08:22:24+00:00",
+ "model_version": "0.1.0",
+ "mode": "retrospective",
+ "validated": true,
+ "diagnostics": {
+  "max_rhat": 1.01012,
+  "min_ess_bulk": 1262.08,
+  "divergences": 0
+ },
+ "n_sims": 20000,
+ "majority": 30,
+ "outcome": {
+  "alp_majority": 0.99985,
+  "coal_majority": 0.00015,
+  "hung": 0.0,
+  "alp_most_seats": 0.99985,
+  "coal_most_seats": 0.00015
+ },
+ "seats": {
+  "ALP": [
+   46.0,
+   49.0,
+   51.0,
+   52.0,
+   55.0
+  ],
+  "LIB": [
+   1.0,
+   3.0,
+   4.0,
+   5.0,
+   8.0
+  ],
+  "NAT": [
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0
+  ],
+  "GRN": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "ONP": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "IND": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "OTH": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "COAL": [
+   4.0,
+   6.0,
+   8.0,
+   10.0,
+   13.0
+  ]
+ },
+ "seat_hist": {
+  "ALP": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   1,
+   3,
+   5,
+   15,
+   14,
+   24,
+   38,
+   67,
+   128,
+   254,
+   349,
+   603,
+   1067,
+   1587,
+   2171,
+   2829,
+   2958,
+   2886,
+   2303,
+   1521,
+   730,
+   287,
+   113,
+   38,
+   4
+  ],
+  "GRN": [
+   19908,
+   84,
+   5,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "ONP": [
+   19978,
+   13,
+   8,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "IND": [
+   15748,
+   3864,
+   367,
+   20,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "COAL": [
+   5,
+   41,
+   124,
+   324,
+   828,
+   1667,
+   2508,
+   3046,
+   3021,
+   2752,
+   2068,
+   1486,
+   895,
+   510,
+   307,
+   183,
+   101,
+   50,
+   32,
+   19,
+   17,
+   8,
+   1,
+   2,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "statewide_primary": {
+  "ALP": [
+   47.8,
+   52.4,
+   57.0
+  ],
+  "COAL": [
+   23.9,
+   27.9,
+   32.0
+  ],
+  "GRN": [
+   5.7,
+   8.8,
+   11.8
+  ],
+  "ONP": [
+   0.3,
+   4.3,
+   8.0
+  ],
+  "IND": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "OTH": [
+   5.2,
+   6.4,
+   8.5
+  ]
+ },
+ "tpp_alp": [
+  60.5,
+  65.2,
+  69.5
+ ],
+ "seat_margin": {
+  "min": -59,
+  "counts": [
+   4,
+   1,
+   37,
+   4,
+   109,
+   14,
+   274,
+   47,
+   685,
+   135,
+   1396,
+   250,
+   2071,
+   429,
+   2466,
+   565,
+   2410,
+   616,
+   2207,
+   535,
+   1641,
+   440,
+   1140,
+   348,
+   719,
+   198,
+   382,
+   129,
+   215,
+   105,
+   141,
+   48,
+   69,
+   33,
+   36,
+   16,
+   20,
+   11,
+   12,
+   8,
+   7,
+   10,
+   4,
+   4,
+   1,
+   1,
+   1,
+   1,
+   0,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ]
+ },
+ "seat_joint": [
+  [
+   21,
+   38,
+   1
+  ],
+  [
+   27,
+   31,
+   1
+  ],
+  [
+   28,
+   30,
+   1
+  ],
+  [
+   34,
+   24,
+   2
+  ],
+  [
+   35,
+   23,
+   1
+  ],
+  [
+   36,
+   21,
+   1
+  ],
+  [
+   36,
+   22,
+   1
+  ],
+  [
+   36,
+   23,
+   1
+  ],
+  [
+   37,
+   20,
+   1
+  ],
+  [
+   37,
+   21,
+   4
+  ],
+  [
+   38,
+   18,
+   1
+  ],
+  [
+   38,
+   19,
+   1
+  ],
+  [
+   38,
+   20,
+   10
+  ],
+  [
+   38,
+   21,
+   3
+  ],
+  [
+   39,
+   18,
+   1
+  ],
+  [
+   39,
+   19,
+   7
+  ],
+  [
+   39,
+   20,
+   6
+  ],
+  [
+   40,
+   16,
+   1
+  ],
+  [
+   40,
+   17,
+   1
+  ],
+  [
+   40,
+   18,
+   11
+  ],
+  [
+   40,
+   19,
+   11
+  ],
+  [
+   41,
+   15,
+   2
+  ],
+  [
+   41,
+   16,
+   2
+  ],
+  [
+   41,
+   17,
+   15
+  ],
+  [
+   41,
+   18,
+   19
+  ],
+  [
+   42,
+   15,
+   2
+  ],
+  [
+   42,
+   16,
+   31
+  ],
+  [
+   42,
+   17,
+   34
+  ],
+  [
+   43,
+   13,
+   3
+  ],
+  [
+   43,
+   14,
+   10
+  ],
+  [
+   43,
+   15,
+   48
+  ],
+  [
+   43,
+   16,
+   67
+  ],
+  [
+   44,
+   12,
+   1
+  ],
+  [
+   44,
+   13,
+   20
+  ],
+  [
+   44,
+   14,
+   102
+  ],
+  [
+   44,
+   15,
+   131
+  ],
+  [
+   45,
+   11,
+   3
+  ],
+  [
+   45,
+   12,
+   23
+  ],
+  [
+   45,
+   13,
+   128
+  ],
+  [
+   45,
+   14,
+   195
+  ],
+  [
+   46,
+   9,
+   1
+  ],
+  [
+   46,
+   10,
+   5
+  ],
+  [
+   46,
+   11,
+   43
+  ],
+  [
+   46,
+   12,
+   195
+  ],
+  [
+   46,
+   13,
+   359
+  ],
+  [
+   47,
+   8,
+   1
+  ],
+  [
+   47,
+   9,
+   5
+  ],
+  [
+   47,
+   10,
+   42
+  ],
+  [
+   47,
+   11,
+   343
+  ],
+  [
+   47,
+   12,
+   676
+  ],
+  [
+   48,
+   8,
+   1
+  ],
+  [
+   48,
+   9,
+   54
+  ],
+  [
+   48,
+   10,
+   435
+  ],
+  [
+   48,
+   11,
+   1097
+  ],
+  [
+   49,
+   6,
+   1
+  ],
+  [
+   49,
+   7,
+   1
+  ],
+  [
+   49,
+   8,
+   49
+  ],
+  [
+   49,
+   9,
+   534
+  ],
+  [
+   49,
+   10,
+   1586
+  ],
+  [
+   50,
+   6,
+   2
+  ],
+  [
+   50,
+   7,
+   54
+  ],
+  [
+   50,
+   8,
+   615
+  ],
+  [
+   50,
+   9,
+   2158
+  ],
+  [
+   51,
+   5,
+   2
+  ],
+  [
+   51,
+   6,
+   38
+  ],
+  [
+   51,
+   7,
+   563
+  ],
+  [
+   51,
+   8,
+   2355
+  ],
+  [
+   52,
+   5,
+   31
+  ],
+  [
+   52,
+   6,
+   427
+  ],
+  [
+   52,
+   7,
+   2428
+  ],
+  [
+   53,
+   3,
+   1
+  ],
+  [
+   53,
+   4,
+   12
+  ],
+  [
+   53,
+   5,
+   250
+  ],
+  [
+   53,
+   6,
+   2040
+  ],
+  [
+   54,
+   3,
+   3
+  ],
+  [
+   54,
+   4,
+   134
+  ],
+  [
+   54,
+   5,
+   1384
+  ],
+  [
+   55,
+   2,
+   1
+  ],
+  [
+   55,
+   3,
+   47
+  ],
+  [
+   55,
+   4,
+   682
+  ],
+  [
+   56,
+   2,
+   14
+  ],
+  [
+   56,
+   3,
+   273
+  ],
+  [
+   57,
+   1,
+   4
+  ],
+  [
+   57,
+   2,
+   109
+  ],
+  [
+   58,
+   0,
+   1
+  ],
+  [
+   58,
+   1,
+   37
+  ],
+  [
+   59,
+   0,
+   4
+  ]
+ ],
+ "tpp_hist": {
+  "min": 41.0,
+  "step": 0.5,
+  "counts": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   2,
+   0,
+   3,
+   1,
+   2,
+   5,
+   3,
+   6,
+   8,
+   21,
+   14,
+   30,
+   38,
+   50,
+   77,
+   119,
+   134,
+   212,
+   265,
+   351,
+   450,
+   599,
+   792,
+   954,
+   1086,
+   1317,
+   1419,
+   1490,
+   1517,
+   1493,
+   1429,
+   1313,
+   1069,
+   931,
+   773,
+   585,
+   424,
+   293,
+   215,
+   168,
+   109,
+   72,
+   46,
+   29,
+   31,
+   20,
+   5,
+   5,
+   9,
+   2,
+   3,
+   3,
+   2,
+   2,
+   0,
+   0,
+   0,
+   0,
+   1
+  ]
+ },
+ "districts": [
+  {
+   "district": "Albany",
+   "region": "South West",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9957,
+    "LIB": 0.0021,
+    "NAT": 0.0022
+   },
+   "primary": {
+    "ALP": [
+     48.3,
+     54.9,
+     61.2
+    ],
+    "COAL": [
+     23.1,
+     29.1,
+     35.6
+    ],
+    "GRN": [
+     4.3,
+     6.8,
+     9.9
+    ],
+    "ONP": [
+     1.4,
+     4.8,
+     8.8
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.1,
+     3.6,
+     6.0
+    ]
+   },
+   "slug": "albany",
+   "leader": "ALP",
+   "leader_prob": 0.9957,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 50.8,
+    "COAL": 28.9,
+    "OTH": 12.1,
+    "GRN": 5.6,
+    "ONP": 2.6
+   },
+   "p_actual": 0.9957
+  },
+  {
+   "district": "Armadale",
+   "region": "East Metropolitan",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     69.1,
+     74.0,
+     78.4
+    ],
+    "COAL": [
+     9.8,
+     13.1,
+     17.2
+    ],
+    "GRN": [
+     4.2,
+     6.4,
+     9.3
+    ],
+    "ONP": [
+     0.1,
+     0.4,
+     0.7
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.3,
+     5.5,
+     8.8
+    ]
+   },
+   "slug": "armadale",
+   "leader": "ALP",
+   "leader_prob": 1.0,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 74.4,
+    "OTH": 10.7,
+    "COAL": 7.5,
+    "GRN": 4.6,
+    "ONP": 2.8
+   },
+   "p_actual": 1.0
+  },
+  {
+   "district": "Balcatta",
+   "region": "North Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9997,
+    "LIB": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     52.9,
+     58.8,
+     64.6
+    ],
+    "COAL": [
+     21.1,
+     26.5,
+     32.3
+    ],
+    "GRN": [
+     6.5,
+     9.8,
+     13.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.5,
+     4.3,
+     7.0
+    ]
+   },
+   "slug": "balcatta",
+   "leader": "ALP",
+   "leader_prob": 0.9997,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 66.5,
+    "COAL": 18.8,
+    "GRN": 7.6,
+    "OTH": 7.0
+   },
+   "p_actual": 0.9997
+  },
+  {
+   "district": "Baldivis",
+   "region": "South Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.8772,
+    "IND": 0.1228
+   },
+   "primary": {
+    "ALP": [
+     44.4,
+     53.2,
+     60.7
+    ],
+    "COAL": [
+     6.9,
+     9.7,
+     13.3
+    ],
+    "GRN": [
+     3.0,
+     4.8,
+     7.1
+    ],
+    "ONP": [
+     1.3,
+     4.6,
+     8.5
+    ],
+    "IND": [
+     16.3,
+     24.3,
+     35.3
+    ],
+    "OTH": [
+     1.1,
+     2.0,
+     3.5
+    ]
+   },
+   "slug": "baldivis",
+   "leader": "ALP",
+   "leader_prob": 0.8772,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 79.8,
+    "COAL": 8.0,
+    "GRN": 3.9,
+    "IND": 3.5,
+    "OTH": 3.0,
+    "ONP": 1.8
+   },
+   "p_actual": 0.8772
+  },
+  {
+   "district": "Bassendean",
+   "region": "East Metropolitan",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 1.0,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     61.8,
+     67.2,
+     72.3
+    ],
+    "COAL": [
+     13.0,
+     17.1,
+     22.0
+    ],
+    "GRN": [
+     6.9,
+     10.3,
+     14.4
+    ],
+    "ONP": [
+     0.1,
+     0.2,
+     0.4
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.7,
+     4.5,
+     7.3
+    ]
+   },
+   "slug": "bassendean",
+   "leader": "ALP",
+   "leader_prob": 1.0,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 70.7,
+    "COAL": 12.2,
+    "GRN": 8.3,
+    "OTH": 6.8,
+    "ONP": 2.0
+   },
+   "p_actual": 1.0
+  },
+  {
+   "district": "Bateman",
+   "region": "South Metropolitan",
+   "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.8791,
+    "LIB": 0.1208,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     36.8,
+     43.4,
+     49.9
+    ],
+    "COAL": [
+     31.7,
+     38.3,
+     45.0
+    ],
+    "GRN": [
+     7.0,
+     10.6,
+     15.0
+    ],
+    "ONP": [
+     0.8,
+     2.9,
+     5.5
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.1
+    ],
+    "OTH": [
+     2.3,
+     4.0,
+     6.6
+    ]
+   },
+   "slug": "bateman",
+   "leader": "ALP",
+   "leader_prob": 0.8791,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 45.8,
+    "COAL": 37.0,
+    "GRN": 6.9,
+    "OTH": 6.3,
+    "IND": 3.2,
+    "ONP": 0.8
+   },
+   "p_actual": 0.8791
+  },
+  {
+   "district": "Belmont",
+   "region": "East Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9999,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     55.4,
+     61.3,
+     66.9
+    ],
+    "COAL": [
+     17.0,
+     22.0,
+     27.5
+    ],
+    "GRN": [
+     4.7,
+     7.2,
+     10.4
+    ],
+    "ONP": [
+     1.2,
+     4.2,
+     7.9
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.6,
+     4.4,
+     7.1
+    ]
+   },
+   "slug": "belmont",
+   "leader": "ALP",
+   "leader_prob": 0.9999,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 70.4,
+    "COAL": 16.1,
+    "GRN": 7.0,
+    "OTH": 4.7,
+    "ONP": 1.8
+   },
+   "p_actual": 0.9999
+  },
+  {
+   "district": "Bicton",
+   "region": "South Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9972,
+    "LIB": 0.0027
+   },
+   "primary": {
+    "ALP": [
+     48.3,
+     54.5,
+     60.5
+    ],
+    "COAL": [
+     25.6,
+     31.5,
+     37.8
+    ],
+    "GRN": [
+     7.3,
+     10.9,
+     15.4
+    ],
+    "ONP": [
+     0.0,
+     0.1,
+     0.3
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.4,
+     2.4,
+     4.1
+    ]
+   },
+   "slug": "bicton",
+   "leader": "ALP",
+   "leader_prob": 0.9972,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 55.1,
+    "COAL": 30.7,
+    "GRN": 10.0,
+    "OTH": 3.0,
+    "ONP": 1.2
+   },
+   "p_actual": 0.9972
+  },
+  {
+   "district": "Bunbury",
+   "region": "South West",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9984,
+    "LIB": 0.0013,
+    "NAT": 0.0003,
+    "GRN": 0.0001,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     50.7,
+     57.3,
+     63.4
+    ],
+    "COAL": [
+     20.8,
+     26.4,
+     32.6
+    ],
+    "GRN": [
+     4.3,
+     6.6,
+     9.7
+    ],
+    "ONP": [
+     1.7,
+     5.9,
+     10.8
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.8,
+     3.1,
+     5.1
+    ]
+   },
+   "slug": "bunbury",
+   "leader": "ALP",
+   "leader_prob": 0.9984,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 60.5,
+    "COAL": 23.2,
+    "OTH": 8.8,
+    "GRN": 4.8,
+    "ONP": 2.7
+   },
+   "p_actual": 0.9984
+  },
+  {
+   "district": "Burns Beach",
+   "region": "North Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9992,
+    "LIB": 0.0008
+   },
+   "primary": {
+    "ALP": [
+     51.9,
+     57.9,
+     63.7
+    ],
+    "COAL": [
+     22.5,
+     28.2,
+     34.1
+    ],
+    "GRN": [
+     5.5,
+     8.4,
+     12.0
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.9,
+     5.0,
+     8.1
+    ]
+   },
+   "slug": "burns-beach",
+   "leader": "ALP",
+   "leader_prob": 0.9992,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 70.1,
+    "COAL": 18.5,
+    "OTH": 5.8,
+    "GRN": 5.5
+   },
+   "p_actual": 0.9992
+  },
+  {
+   "district": "Butler",
+   "region": "North Metropolitan",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     65.4,
+     71.0,
+     75.8
+    ],
+    "COAL": [
+     12.2,
+     16.2,
+     21.0
+    ],
+    "GRN": [
+     4.5,
+     6.9,
+     9.9
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.2,
+     5.4,
+     8.7
+    ]
+   },
+   "slug": "butler",
+   "leader": "ALP",
+   "leader_prob": 1.0,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 77.0,
+    "COAL": 13.9,
+    "OTH": 5.2,
+    "GRN": 4.0
+   },
+   "p_actual": 1.0
+  },
+  {
+   "district": "Cannington",
+   "region": "South Metropolitan",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 1.0,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     59.3,
+     65.0,
+     70.3
+    ],
+    "COAL": [
+     13.4,
+     17.8,
+     22.7
+    ],
+    "GRN": [
+     5.7,
+     8.7,
+     12.4
+    ],
+    "ONP": [
+     1.3,
+     4.4,
+     8.2
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.9,
+     3.3,
+     5.5
+    ]
+   },
+   "slug": "cannington",
+   "leader": "ALP",
+   "leader_prob": 1.0,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 71.8,
+    "COAL": 13.0,
+    "OTH": 7.2,
+    "GRN": 6.3,
+    "ONP": 1.6
+   },
+   "p_actual": 1.0
+  },
+  {
+   "district": "Carine",
+   "region": "North Metropolitan",
+   "incumbent": "LIB",
+   "notes": [],
+   "probs": {
+    "ALP": 0.7494,
+    "LIB": 0.2505,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     35.0,
+     41.7,
+     48.5
+    ],
+    "COAL": [
+     35.8,
+     42.8,
+     49.8
+    ],
+    "GRN": [
+     7.5,
+     11.4,
+     16.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.0,
+     3.5,
+     5.8
+    ]
+   },
+   "slug": "carine",
+   "leader": "ALP",
+   "leader_prob": 0.7494,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "COAL": 44.4,
+    "ALP": 44.3,
+    "GRN": 8.8,
+    "OTH": 2.5
+   },
+   "p_actual": 0.7494
+  },
+  {
+   "district": "Central Wheatbelt",
+   "region": "Agricultural",
+   "incumbent": "NAT",
+   "notes": [],
+   "probs": {
+    "ALP": 0.031,
+    "LIB": 0.01,
+    "NAT": 0.9588,
+    "ONP": 0.0002
+   },
+   "primary": {
+    "ALP": [
+     24.1,
+     30.6,
+     37.7
+    ],
+    "COAL": [
+     43.5,
+     50.9,
+     57.9
+    ],
+    "GRN": [
+     2.1,
+     3.4,
+     5.3
+    ],
+    "ONP": [
+     2.5,
+     8.5,
+     15.2
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.3,
+     5.6,
+     9.2
+    ]
+   },
+   "slug": "central-wheatbelt",
+   "leader": "NAT",
+   "leader_prob": 0.9588,
+   "actual_winner": "NAT",
+   "actual_primary": {
+    "COAL": 55.8,
+    "ALP": 33.8,
+    "OTH": 6.7,
+    "ONP": 1.9,
+    "GRN": 1.8
+   },
+   "p_actual": 0.9588
+  },
+  {
+   "district": "Churchlands",
+   "region": "North Metropolitan",
+   "incumbent": "LIB",
+   "notes": [],
+   "probs": {
+    "ALP": 0.5787,
+    "LIB": 0.4212,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     28.8,
+     35.0,
+     41.5
+    ],
+    "COAL": [
+     36.5,
+     43.4,
+     50.1
+    ],
+    "GRN": [
+     9.4,
+     13.9,
+     19.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     2.1,
+     3.5,
+     5.8
+    ],
+    "OTH": [
+     1.9,
+     3.4,
+     5.7
+    ]
+   },
+   "slug": "churchlands",
+   "leader": "ALP",
+   "leader_prob": 0.5787,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "COAL": 43.9,
+    "ALP": 39.4,
+    "GRN": 10.5,
+    "OTH": 3.4,
+    "IND": 2.8
+   },
+   "p_actual": 0.5787
+  },
+  {
+   "district": "Cockburn",
+   "region": "South Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9999,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     57.2,
+     63.3,
+     68.8
+    ],
+    "COAL": [
+     16.8,
+     21.9,
+     27.6
+    ],
+    "GRN": [
+     5.9,
+     9.0,
+     12.9
+    ],
+    "ONP": [
+     0.5,
+     1.8,
+     3.3
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.0,
+     3.4,
+     5.6
+    ]
+   },
+   "slug": "cockburn",
+   "leader": "ALP",
+   "leader_prob": 0.9999,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 68.4,
+    "COAL": 18.6,
+    "GRN": 6.4,
+    "OTH": 4.9,
+    "ONP": 1.8
+   },
+   "p_actual": 0.9999
+  },
+  {
+   "district": "Collie-Preston",
+   "region": "South West",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9833,
+    "LIB": 0.0005,
+    "NAT": 0.0001,
+    "IND": 0.016
+   },
+   "primary": {
+    "ALP": [
+     50.0,
+     57.6,
+     64.1
+    ],
+    "COAL": [
+     17.5,
+     22.8,
+     28.7
+    ],
+    "GRN": [
+     2.8,
+     4.4,
+     6.7
+    ],
+    "ONP": [
+     1.6,
+     5.6,
+     10.3
+    ],
+    "IND": [
+     2.5,
+     4.7,
+     12.2
+    ],
+    "OTH": [
+     1.5,
+     2.7,
+     4.5
+    ]
+   },
+   "slug": "collie-preston",
+   "leader": "ALP",
+   "leader_prob": 0.9833,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 62.2,
+    "COAL": 23.3,
+    "OTH": 7.5,
+    "GRN": 3.4,
+    "ONP": 2.1,
+    "IND": 1.5
+   },
+   "p_actual": 0.9833
+  },
+  {
+   "district": "Cottesloe",
+   "region": "North Metropolitan",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.2434,
+    "LIB": 0.7522,
+    "GRN": 0.0001,
+    "IND": 0.0043
+   },
+   "primary": {
+    "ALP": [
+     25.4,
+     31.4,
+     37.7
+    ],
+    "COAL": [
+     39.1,
+     46.4,
+     52.9
+    ],
+    "GRN": [
+     7.2,
+     11.0,
+     15.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     4.9,
+     8.2,
+     15.6
+    ],
+    "OTH": [
+     0.8,
+     1.4,
+     2.4
+    ]
+   },
+   "slug": "cottesloe",
+   "leader": "LIB",
+   "leader_prob": 0.7522,
+   "actual_winner": "LIB",
+   "actual_primary": {
+    "COAL": 46.8,
+    "ALP": 28.3,
+    "GRN": 12.7,
+    "IND": 9.9,
+    "OTH": 2.2
+   },
+   "p_actual": 0.7522
+  },
+  {
+   "district": "Darling Range",
+   "region": "East Metropolitan",
+   "incumbent": "LIB",
+   "notes": [
+    "won by LIB at a by-election",
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9779,
+    "LIB": 0.0022,
+    "IND": 0.0199
+   },
+   "primary": {
+    "ALP": [
+     44.1,
+     51.4,
+     57.9
+    ],
+    "COAL": [
+     17.9,
+     23.3,
+     29.1
+    ],
+    "GRN": [
+     4.6,
+     7.1,
+     10.4
+    ],
+    "ONP": [
+     1.5,
+     5.3,
+     9.7
+    ],
+    "IND": [
+     1.2,
+     2.9,
+     10.3
+    ],
+    "OTH": [
+     4.4,
+     7.5,
+     11.8
+    ]
+   },
+   "slug": "darling-range",
+   "leader": "ALP",
+   "leader_prob": 0.9779,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 56.0,
+    "COAL": 28.3,
+    "OTH": 8.4,
+    "GRN": 4.7,
+    "ONP": 2.0,
+    "IND": 0.6
+   },
+   "p_actual": 0.9779
+  },
+  {
+   "district": "Dawesville",
+   "region": "South West",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9261,
+    "LIB": 0.0737,
+    "NAT": 0.0002,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     42.7,
+     49.8,
+     56.8
+    ],
+    "COAL": [
+     28.2,
+     34.9,
+     41.8
+    ],
+    "GRN": [
+     3.0,
+     4.8,
+     7.2
+    ],
+    "ONP": [
+     2.0,
+     6.9,
+     12.7
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.6,
+     2.8,
+     4.7
+    ]
+   },
+   "slug": "dawesville",
+   "leader": "ALP",
+   "leader_prob": 0.9261,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 57.7,
+    "COAL": 33.0,
+    "OTH": 4.6,
+    "GRN": 3.2,
+    "ONP": 1.5
+   },
+   "p_actual": 0.9261
+  },
+  {
+   "district": "Forrestfield",
+   "region": "East Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9998,
+    "LIB": 0.0002,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     52.9,
+     59.3,
+     65.4
+    ],
+    "COAL": [
+     17.0,
+     21.9,
+     27.6
+    ],
+    "GRN": [
+     4.0,
+     6.2,
+     9.1
+    ],
+    "ONP": [
+     2.0,
+     6.7,
+     12.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.9,
+     4.9,
+     7.9
+    ]
+   },
+   "slug": "forrestfield",
+   "leader": "ALP",
+   "leader_prob": 0.9998,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 68.6,
+    "COAL": 19.3,
+    "OTH": 5.4,
+    "GRN": 4.4,
+    "ONP": 2.3
+   },
+   "p_actual": 0.9998
+  },
+  {
+   "district": "Fremantle",
+   "region": "South Metropolitan",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 0.996,
+    "GRN": 0.0008,
+    "IND": 0.0032
+   },
+   "primary": {
+    "ALP": [
+     52.6,
+     59.9,
+     66.1
+    ],
+    "COAL": [
+     10.7,
+     14.7,
+     19.4
+    ],
+    "GRN": [
+     12.0,
+     17.3,
+     23.1
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.8,
+     2.6,
+     9.9
+    ],
+    "OTH": [
+     2.0,
+     3.5,
+     5.8
+    ]
+   },
+   "slug": "fremantle",
+   "leader": "ALP",
+   "leader_prob": 0.996,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 57.3,
+    "GRN": 18.6,
+    "COAL": 15.0,
+    "OTH": 7.9,
+    "IND": 1.2
+   },
+   "p_actual": 0.996
+  },
+  {
+   "district": "Geraldton",
+   "region": "Agricultural",
+   "incumbent": "NAT",
+   "notes": [],
+   "probs": {
+    "ALP": 0.8437,
+    "LIB": 0.0337,
+    "NAT": 0.1226,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     39.8,
+     47.1,
+     54.1
+    ],
+    "COAL": [
+     30.0,
+     36.8,
+     43.7
+    ],
+    "GRN": [
+     2.7,
+     4.3,
+     6.6
+    ],
+    "ONP": [
+     1.9,
+     6.8,
+     12.3
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.5,
+     4.2,
+     7.0
+    ]
+   },
+   "slug": "geraldton",
+   "leader": "ALP",
+   "leader_prob": 0.8437,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 54.7,
+    "COAL": 37.3,
+    "OTH": 3.9,
+    "GRN": 2.5,
+    "ONP": 1.6
+   },
+   "p_actual": 0.8437
+  },
+  {
+   "district": "Hillarys",
+   "region": "North Metropolitan",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.966,
+    "LIB": 0.034
+   },
+   "primary": {
+    "ALP": [
+     42.7,
+     49.6,
+     56.4
+    ],
+    "COAL": [
+     30.4,
+     37.2,
+     44.1
+    ],
+    "GRN": [
+     6.7,
+     10.3,
+     14.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.4,
+     2.4,
+     4.0
+    ]
+   },
+   "slug": "hillarys",
+   "leader": "ALP",
+   "leader_prob": 0.966,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 61.4,
+    "COAL": 27.0,
+    "OTH": 6.2,
+    "GRN": 5.4
+   },
+   "p_actual": 0.966
+  },
+  {
+   "district": "Jandakot",
+   "region": "South Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9975,
+    "LIB": 0.0025
+   },
+   "primary": {
+    "ALP": [
+     47.9,
+     54.3,
+     60.4
+    ],
+    "COAL": [
+     22.7,
+     28.5,
+     34.4
+    ],
+    "GRN": [
+     4.3,
+     6.6,
+     9.7
+    ],
+    "ONP": [
+     1.3,
+     4.4,
+     8.1
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.2,
+     5.4,
+     8.8
+    ]
+   },
+   "slug": "jandakot",
+   "leader": "ALP",
+   "leader_prob": 0.9975,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 64.5,
+    "COAL": 23.2,
+    "OTH": 6.1,
+    "GRN": 4.8,
+    "ONP": 1.4
+   },
+   "p_actual": 0.9975
+  },
+  {
+   "district": "Joondalup",
+   "region": "North Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9794,
+    "LIB": 0.0052,
+    "GRN": 0.0001,
+    "IND": 0.0154
+   },
+   "primary": {
+    "ALP": [
+     44.8,
+     51.8,
+     57.9
+    ],
+    "COAL": [
+     24.3,
+     30.4,
+     36.6
+    ],
+    "GRN": [
+     5.2,
+     8.0,
+     11.6
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     2.5,
+     4.7,
+     11.8
+    ],
+    "OTH": [
+     1.9,
+     3.3,
+     5.5
+    ]
+   },
+   "slug": "joondalup",
+   "leader": "ALP",
+   "leader_prob": 0.9794,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 65.4,
+    "COAL": 19.6,
+    "OTH": 8.5,
+    "GRN": 4.5,
+    "IND": 2.0
+   },
+   "p_actual": 0.9794
+  },
+  {
+   "district": "Kalamunda",
+   "region": "East Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9969,
+    "LIB": 0.0031,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     44.3,
+     50.7,
+     57.1
+    ],
+    "COAL": [
+     21.9,
+     27.8,
+     34.0
+    ],
+    "GRN": [
+     8.1,
+     12.1,
+     16.8
+    ],
+    "ONP": [
+     1.4,
+     4.8,
+     8.9
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.2,
+     3.7,
+     6.1
+    ]
+   },
+   "slug": "kalamunda",
+   "leader": "ALP",
+   "leader_prob": 0.9969,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 51.3,
+    "COAL": 31.8,
+    "GRN": 8.5,
+    "OTH": 7.0,
+    "ONP": 1.5
+   },
+   "p_actual": 0.9969
+  },
+  {
+   "district": "Kalgoorlie",
+   "region": "Mining and Pastoral",
+   "incumbent": "LIB",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.1905,
+    "LIB": 0.4769,
+    "NAT": 0.3322,
+    "ONP": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     30.0,
+     36.7,
+     43.8
+    ],
+    "COAL": [
+     38.8,
+     46.2,
+     53.0
+    ],
+    "GRN": [
+     2.6,
+     4.1,
+     6.3
+    ],
+    "ONP": [
+     2.5,
+     8.5,
+     15.3
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.1,
+     3.6,
+     6.1
+    ]
+   },
+   "slug": "kalgoorlie",
+   "leader": "LIB",
+   "leader_prob": 0.4769,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 52.7,
+    "COAL": 35.9,
+    "OTH": 5.8,
+    "ONP": 3.3,
+    "GRN": 2.2
+   },
+   "p_actual": 0.1905
+  },
+  {
+   "district": "Kimberley",
+   "region": "Mining and Pastoral",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9933,
+    "LIB": 0.0056,
+    "NAT": 0.0009,
+    "GRN": 0.0001,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     45.3,
+     52.1,
+     58.6
+    ],
+    "COAL": [
+     23.6,
+     29.7,
+     36.1
+    ],
+    "GRN": [
+     5.4,
+     8.4,
+     12.3
+    ],
+    "ONP": [
+     1.4,
+     5.0,
+     9.2
+    ],
+    "IND": [
+     1.3,
+     2.2,
+     3.7
+    ],
+    "OTH": [
+     1.0,
+     1.7,
+     2.9
+    ]
+   },
+   "slug": "kimberley",
+   "leader": "ALP",
+   "leader_prob": 0.9933,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 53.9,
+    "COAL": 26.7,
+    "GRN": 15.0,
+    "ONP": 2.1,
+    "OTH": 1.4,
+    "IND": 0.9
+   },
+   "p_actual": 0.9933
+  },
+  {
+   "district": "Kingsley",
+   "region": "North Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9957,
+    "LIB": 0.0043
+   },
+   "primary": {
+    "ALP": [
+     45.8,
+     51.9,
+     57.9
+    ],
+    "COAL": [
+     24.3,
+     30.2,
+     36.2
+    ],
+    "GRN": [
+     6.0,
+     9.1,
+     13.0
+    ],
+    "ONP": [
+     1.1,
+     3.9,
+     7.2
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.5,
+     4.2,
+     6.8
+    ]
+   },
+   "slug": "kingsley",
+   "leader": "ALP",
+   "leader_prob": 0.9957,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 60.5,
+    "COAL": 30.2,
+    "GRN": 5.6,
+    "OTH": 2.0,
+    "ONP": 1.7
+   },
+   "p_actual": 0.9957
+  },
+  {
+   "district": "Kwinana",
+   "region": "South Metropolitan",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 0.9999,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     61.7,
+     67.8,
+     73.3
+    ],
+    "COAL": [
+     10.8,
+     14.5,
+     19.2
+    ],
+    "GRN": [
+     5.1,
+     7.8,
+     11.3
+    ],
+    "ONP": [
+     1.8,
+     6.2,
+     11.4
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.6,
+     2.8,
+     4.7
+    ]
+   },
+   "slug": "kwinana",
+   "leader": "ALP",
+   "leader_prob": 0.9999,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 76.9,
+    "COAL": 10.9,
+    "GRN": 5.1,
+    "OTH": 4.1,
+    "ONP": 3.0
+   },
+   "p_actual": 0.9999
+  },
+  {
+   "district": "Landsdale",
+   "region": "North Metropolitan",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 1.0,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     58.2,
+     64.2,
+     69.6
+    ],
+    "COAL": [
+     18.0,
+     23.0,
+     28.8
+    ],
+    "GRN": [
+     4.1,
+     6.3,
+     9.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.5,
+     5.9,
+     9.3
+    ]
+   },
+   "slug": "landsdale",
+   "leader": "ALP",
+   "leader_prob": 1.0,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 69.3,
+    "COAL": 20.1,
+    "OTH": 6.4,
+    "GRN": 4.1
+   },
+   "p_actual": 1.0
+  },
+  {
+   "district": "Mandurah",
+   "region": "South West",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 0.9925,
+    "LIB": 0.0003,
+    "ONP": 0.0001,
+    "IND": 0.0072
+   },
+   "primary": {
+    "ALP": [
+     55.2,
+     63.2,
+     69.6
+    ],
+    "COAL": [
+     13.2,
+     17.7,
+     23.0
+    ],
+    "GRN": [
+     2.9,
+     4.6,
+     6.9
+    ],
+    "ONP": [
+     2.4,
+     8.0,
+     14.5
+    ],
+    "IND": [
+     1.2,
+     3.0,
+     10.4
+    ],
+    "OTH": [
+     0.8,
+     1.4,
+     2.4
+    ]
+   },
+   "slug": "mandurah",
+   "leader": "ALP",
+   "leader_prob": 0.9925,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 68.7,
+    "COAL": 20.6,
+    "OTH": 5.5,
+    "GRN": 3.0,
+    "ONP": 1.6,
+    "IND": 0.7
+   },
+   "p_actual": 0.9925
+  },
+  {
+   "district": "Maylands",
+   "region": "East Metropolitan",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 0.999,
+    "LIB": 0.0001,
+    "GRN": 0.001
+   },
+   "primary": {
+    "ALP": [
+     50.6,
+     56.7,
+     62.5
+    ],
+    "COAL": [
+     14.6,
+     19.1,
+     24.4
+    ],
+    "GRN": [
+     10.9,
+     15.7,
+     21.0
+    ],
+    "ONP": [
+     1.1,
+     3.9,
+     7.2
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.2,
+     3.7,
+     6.2
+    ]
+   },
+   "slug": "maylands",
+   "leader": "ALP",
+   "leader_prob": 0.999,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 62.9,
+    "GRN": 16.1,
+    "COAL": 15.6,
+    "OTH": 4.0,
+    "ONP": 1.4
+   },
+   "p_actual": 0.999
+  },
+  {
+   "district": "Midland",
+   "region": "East Metropolitan",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 0.9998,
+    "LIB": 0.0002,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     53.8,
+     60.0,
+     65.9
+    ],
+    "COAL": [
+     16.7,
+     21.7,
+     27.4
+    ],
+    "GRN": [
+     5.7,
+     8.7,
+     12.4
+    ],
+    "ONP": [
+     1.6,
+     5.3,
+     9.7
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.0,
+     3.4,
+     5.6
+    ]
+   },
+   "slug": "midland",
+   "leader": "ALP",
+   "leader_prob": 0.9998,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 65.8,
+    "COAL": 19.3,
+    "GRN": 6.7,
+    "OTH": 6.1,
+    "ONP": 2.1
+   },
+   "p_actual": 0.9998
+  },
+  {
+   "district": "Mirrabooka",
+   "region": "East Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9952,
+    "LIB": 0.0001,
+    "GRN": 0.0001,
+    "IND": 0.0046
+   },
+   "primary": {
+    "ALP": [
+     56.6,
+     63.5,
+     69.1
+    ],
+    "COAL": [
+     11.5,
+     15.5,
+     20.2
+    ],
+    "GRN": [
+     3.8,
+     5.9,
+     8.6
+    ],
+    "ONP": [
+     1.1,
+     3.8,
+     7.1
+    ],
+    "IND": [
+     2.3,
+     4.3,
+     11.6
+    ],
+    "OTH": [
+     2.9,
+     4.9,
+     7.8
+    ]
+   },
+   "slug": "mirrabooka",
+   "leader": "ALP",
+   "leader_prob": 0.9952,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 71.6,
+    "COAL": 10.1,
+    "OTH": 6.2,
+    "GRN": 5.9,
+    "ONP": 4.2,
+    "IND": 2.0
+   },
+   "p_actual": 0.9952
+  },
+  {
+   "district": "Moore",
+   "region": "Agricultural",
+   "incumbent": "NAT",
+   "notes": [],
+   "probs": {
+    "ALP": 0.0704,
+    "LIB": 0.1152,
+    "NAT": 0.8144,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     25.1,
+     31.6,
+     38.8
+    ],
+    "COAL": [
+     40.3,
+     47.8,
+     55.0
+    ],
+    "GRN": [
+     2.6,
+     4.2,
+     6.4
+    ],
+    "ONP": [
+     2.9,
+     9.4,
+     16.8
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.5,
+     5.9,
+     9.6
+    ]
+   },
+   "slug": "moore",
+   "leader": "NAT",
+   "leader_prob": 0.8144,
+   "actual_winner": "NAT",
+   "actual_primary": {
+    "COAL": 54.8,
+    "ALP": 33.8,
+    "OTH": 5.9,
+    "GRN": 2.9,
+    "ONP": 2.6
+   },
+   "p_actual": 0.8144
+  },
+  {
+   "district": "Morley",
+   "region": "East Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 1.0,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     55.2,
+     61.0,
+     66.3
+    ],
+    "COAL": [
+     16.8,
+     21.6,
+     27.0
+    ],
+    "GRN": [
+     5.6,
+     8.5,
+     12.1
+    ],
+    "ONP": [
+     1.1,
+     3.8,
+     7.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.6,
+     4.3,
+     7.0
+    ]
+   },
+   "slug": "morley",
+   "leader": "ALP",
+   "leader_prob": 1.0,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 70.4,
+    "COAL": 15.9,
+    "GRN": 6.2,
+    "OTH": 5.8,
+    "ONP": 1.8
+   },
+   "p_actual": 1.0
+  },
+  {
+   "district": "Mount Lawley",
+   "region": "East Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9983,
+    "LIB": 0.0016,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     47.5,
+     53.7,
+     59.7
+    ],
+    "COAL": [
+     24.1,
+     30.0,
+     36.2
+    ],
+    "GRN": [
+     7.7,
+     11.6,
+     16.3
+    ],
+    "ONP": [
+     0.0,
+     0.1,
+     0.1
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.4,
+     4.1,
+     6.7
+    ]
+   },
+   "slug": "mount-lawley",
+   "leader": "ALP",
+   "leader_prob": 0.9983,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 59.0,
+    "COAL": 23.4,
+    "GRN": 11.1,
+    "OTH": 5.6,
+    "ONP": 0.8
+   },
+   "p_actual": 0.9983
+  },
+  {
+   "district": "Murray-Wellington",
+   "region": "South West",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9848,
+    "LIB": 0.0145,
+    "NAT": 0.0006,
+    "ONP": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     45.6,
+     52.5,
+     59.2
+    ],
+    "COAL": [
+     23.5,
+     29.5,
+     35.9
+    ],
+    "GRN": [
+     2.9,
+     4.5,
+     6.8
+    ],
+    "ONP": [
+     2.2,
+     7.6,
+     13.7
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.9,
+     4.9,
+     8.0
+    ]
+   },
+   "slug": "murray-wellington",
+   "leader": "ALP",
+   "leader_prob": 0.9848,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 57.9,
+    "COAL": 27.3,
+    "OTH": 10.0,
+    "GRN": 2.8,
+    "ONP": 2.0
+   },
+   "p_actual": 0.9848
+  },
+  {
+   "district": "Nedlands",
+   "region": "North Metropolitan",
+   "incumbent": "LIB",
+   "notes": [],
+   "probs": {
+    "ALP": 0.7921,
+    "LIB": 0.1973,
+    "GRN": 0.0004,
+    "IND": 0.0102
+   },
+   "primary": {
+    "ALP": [
+     30.2,
+     36.9,
+     43.7
+    ],
+    "COAL": [
+     31.9,
+     39.2,
+     46.1
+    ],
+    "GRN": [
+     9.9,
+     14.6,
+     20.3
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.9,
+     2.7,
+     10.4
+    ],
+    "OTH": [
+     2.4,
+     4.2,
+     6.9
+    ]
+   },
+   "slug": "nedlands",
+   "leader": "ALP",
+   "leader_prob": 0.7921,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 35.7,
+    "COAL": 35.0,
+    "GRN": 13.6,
+    "IND": 13.4,
+    "OTH": 2.3
+   },
+   "p_actual": 0.7921
+  },
+  {
+   "district": "North West Central",
+   "region": "Mining and Pastoral",
+   "incumbent": "NAT",
+   "notes": [],
+   "probs": {
+    "ALP": 0.4577,
+    "LIB": 0.0793,
+    "NAT": 0.4551,
+    "ONP": 0.0003,
+    "IND": 0.0076
+   },
+   "primary": {
+    "ALP": [
+     30.6,
+     37.8,
+     45.1
+    ],
+    "COAL": [
+     32.5,
+     40.1,
+     47.4
+    ],
+    "GRN": [
+     3.5,
+     5.7,
+     8.5
+    ],
+    "ONP": [
+     2.2,
+     7.5,
+     13.8
+    ],
+    "IND": [
+     2.6,
+     5.0,
+     12.4
+    ],
+    "OTH": [
+     0.9,
+     1.6,
+     2.8
+    ]
+   },
+   "slug": "north-west-central",
+   "leader": "ALP",
+   "leader_prob": 0.4577,
+   "actual_winner": "NAT",
+   "actual_primary": {
+    "COAL": 47.6,
+    "ALP": 40.2,
+    "OTH": 4.5,
+    "GRN": 4.1,
+    "ONP": 3.0,
+    "IND": 0.5
+   },
+   "p_actual": 0.4551
+  },
+  {
+   "district": "Perth",
+   "region": "North Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9994,
+    "LIB": 0.0001,
+    "GRN": 0.0006
+   },
+   "primary": {
+    "ALP": [
+     52.8,
+     58.7,
+     64.3
+    ],
+    "COAL": [
+     18.7,
+     23.8,
+     29.4
+    ],
+    "GRN": [
+     9.2,
+     13.5,
+     18.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.1,
+     3.5,
+     5.8
+    ]
+   },
+   "slug": "perth",
+   "leader": "ALP",
+   "leader_prob": 0.9994,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 63.5,
+    "COAL": 17.9,
+    "GRN": 16.0,
+    "OTH": 2.7
+   },
+   "p_actual": 0.9994
+  },
+  {
+   "district": "Pilbara",
+   "region": "Mining and Pastoral",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.8829,
+    "LIB": 0.0244,
+    "NAT": 0.0924,
+    "ONP": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     38.7,
+     45.8,
+     53.0
+    ],
+    "COAL": [
+     26.7,
+     33.5,
+     40.3
+    ],
+    "GRN": [
+     2.7,
+     4.3,
+     6.5
+    ],
+    "ONP": [
+     2.3,
+     7.7,
+     13.9
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     4.6,
+     7.8,
+     12.4
+    ]
+   },
+   "slug": "pilbara",
+   "leader": "ALP",
+   "leader_prob": 0.8829,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 61.0,
+    "COAL": 26.6,
+    "OTH": 6.1,
+    "GRN": 3.4,
+    "ONP": 2.9
+   },
+   "p_actual": 0.8829
+  },
+  {
+   "district": "Riverton",
+   "region": "South Metropolitan",
+   "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9692,
+    "LIB": 0.0307,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     41.6,
+     48.3,
+     54.9
+    ],
+    "COAL": [
+     29.2,
+     35.9,
+     42.7
+    ],
+    "GRN": [
+     6.5,
+     9.9,
+     14.2
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.1,
+     5.3,
+     8.6
+    ]
+   },
+   "slug": "riverton",
+   "leader": "ALP",
+   "leader_prob": 0.9692,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 50.0,
+    "COAL": 34.7,
+    "GRN": 7.7,
+    "OTH": 7.5
+   },
+   "p_actual": 0.9692
+  },
+  {
+   "district": "Rockingham",
+   "region": "South Metropolitan",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     65.5,
+     71.2,
+     76.2
+    ],
+    "COAL": [
+     9.8,
+     13.3,
+     17.6
+    ],
+    "GRN": [
+     4.7,
+     7.2,
+     10.3
+    ],
+    "ONP": [
+     1.7,
+     5.9,
+     10.6
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.0,
+     1.8,
+     3.0
+    ]
+   },
+   "slug": "rockingham",
+   "leader": "ALP",
+   "leader_prob": 1.0,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 82.8,
+    "COAL": 9.8,
+    "GRN": 3.2,
+    "OTH": 2.2,
+    "ONP": 2.1
+   },
+   "p_actual": 1.0
+  },
+  {
+   "district": "Roe",
+   "region": "Agricultural",
+   "incumbent": "ALP",
+   "notes": [
+    "notionally ALP after the redistribution"
+   ],
+   "probs": {
+    "ALP": 0.0017,
+    "LIB": 0.1802,
+    "NAT": 0.8181
+   },
+   "primary": {
+    "ALP": [
+     19.0,
+     24.4,
+     30.6
+    ],
+    "COAL": [
+     52.4,
+     59.2,
+     65.3
+    ],
+    "GRN": [
+     2.4,
+     3.8,
+     5.8
+    ],
+    "ONP": [
+     1.7,
+     5.9,
+     10.8
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.4,
+     5.8,
+     9.4
+    ]
+   },
+   "slug": "roe",
+   "leader": "NAT",
+   "leader_prob": 0.8181,
+   "actual_winner": "NAT",
+   "actual_primary": {
+    "COAL": 56.3,
+    "ALP": 29.2,
+    "OTH": 8.8,
+    "GRN": 4.0,
+    "ONP": 1.7
+   },
+   "p_actual": 0.8181
+  },
+  {
+   "district": "Scarborough",
+   "region": "North Metropolitan",
+   "incumbent": "LIB",
+   "notes": [],
+   "probs": {
+    "ALP": 0.8863,
+    "LIB": 0.1023,
+    "GRN": 0.0005,
+    "IND": 0.0109
+   },
+   "primary": {
+    "ALP": [
+     33.8,
+     40.7,
+     47.6
+    ],
+    "COAL": [
+     30.1,
+     37.5,
+     44.5
+    ],
+    "GRN": [
+     9.2,
+     13.8,
+     19.3
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.8,
+     2.6,
+     10.5
+    ],
+    "OTH": [
+     1.8,
+     3.1,
+     5.3
+    ]
+   },
+   "slug": "scarborough",
+   "leader": "ALP",
+   "leader_prob": 0.8863,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 50.3,
+    "COAL": 34.7,
+    "GRN": 9.2,
+    "OTH": 4.5,
+    "IND": 1.3
+   },
+   "p_actual": 0.8863
+  },
+  {
+   "district": "South Perth",
+   "region": "South Metropolitan",
+   "incumbent": "LIB",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.8729,
+    "LIB": 0.1269,
+    "GRN": 0.0002
+   },
+   "primary": {
+    "ALP": [
+     36.9,
+     43.6,
+     50.4
+    ],
+    "COAL": [
+     33.5,
+     40.4,
+     47.4
+    ],
+    "GRN": [
+     8.4,
+     12.6,
+     17.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.6,
+     2.8,
+     4.7
+    ]
+   },
+   "slug": "south-perth",
+   "leader": "ALP",
+   "leader_prob": 0.8729,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 49.9,
+    "COAL": 35.4,
+    "GRN": 10.4,
+    "OTH": 4.2
+   },
+   "p_actual": 0.8729
+  },
+  {
+   "district": "Southern River",
+   "region": "South Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9886,
+    "LIB": 0.0004,
+    "IND": 0.011
+   },
+   "primary": {
+    "ALP": [
+     52.2,
+     59.1,
+     64.8
+    ],
+    "COAL": [
+     21.1,
+     26.8,
+     32.6
+    ],
+    "GRN": [
+     3.7,
+     5.8,
+     8.5
+    ],
+    "ONP": [
+     0.1,
+     0.3,
+     0.6
+    ],
+    "IND": [
+     2.4,
+     4.4,
+     11.6
+    ],
+    "OTH": [
+     1.1,
+     1.9,
+     3.2
+    ]
+   },
+   "slug": "southern-river",
+   "leader": "ALP",
+   "leader_prob": 0.9886,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 76.0,
+    "COAL": 11.7,
+    "OTH": 6.7,
+    "GRN": 3.6,
+    "ONP": 1.4,
+    "IND": 0.8
+   },
+   "p_actual": 0.9886
+  },
+  {
+   "district": "Swan Hills",
+   "region": "East Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 0.9999,
+    "LIB": 0.0001,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     61.7,
+     67.5,
+     72.8
+    ],
+    "COAL": [
+     16.8,
+     21.8,
+     27.4
+    ],
+    "GRN": [
+     4.9,
+     7.5,
+     10.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.6,
+     2.7,
+     4.5
+    ]
+   },
+   "slug": "swan-hills",
+   "leader": "ALP",
+   "leader_prob": 0.9999,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 69.8,
+    "COAL": 18.5,
+    "OTH": 6.9,
+    "GRN": 4.8
+   },
+   "p_actual": 0.9999
+  },
+  {
+   "district": "Thornlie",
+   "region": "East Metropolitan",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 1.0,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     60.5,
+     66.4,
+     71.8
+    ],
+    "COAL": [
+     15.6,
+     20.3,
+     25.7
+    ],
+    "GRN": [
+     4.7,
+     7.2,
+     10.4
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     3.3,
+     5.5,
+     8.8
+    ]
+   },
+   "slug": "thornlie",
+   "leader": "ALP",
+   "leader_prob": 1.0,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 74.2,
+    "COAL": 13.9,
+    "OTH": 7.1,
+    "GRN": 4.9
+   },
+   "p_actual": 1.0
+  },
+  {
+   "district": "Vasse",
+   "region": "South West",
+   "incumbent": "LIB",
+   "notes": [],
+   "probs": {
+    "ALP": 0.0565,
+    "LIB": 0.8734,
+    "NAT": 0.07,
+    "GRN": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     23.3,
+     28.9,
+     35.1
+    ],
+    "COAL": [
+     46.3,
+     53.0,
+     59.4
+    ],
+    "GRN": [
+     8.8,
+     13.3,
+     18.4
+    ],
+    "ONP": [
+     1.2,
+     4.1,
+     7.5
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     0.1,
+     0.1,
+     0.2
+    ]
+   },
+   "slug": "vasse",
+   "leader": "LIB",
+   "leader_prob": 0.8734,
+   "actual_winner": "LIB",
+   "actual_primary": {
+    "COAL": 48.4,
+    "ALP": 34.0,
+    "GRN": 10.4,
+    "OTH": 6.2,
+    "ONP": 1.0
+   },
+   "p_actual": 0.8734
+  },
+  {
+   "district": "Victoria Park",
+   "region": "South Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "sitting member not recontesting (retiring)"
+   ],
+   "probs": {
+    "ALP": 0.9997,
+    "LIB": 0.0001,
+    "GRN": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     53.6,
+     59.7,
+     65.4
+    ],
+    "COAL": [
+     16.3,
+     21.3,
+     27.0
+    ],
+    "GRN": [
+     9.6,
+     13.9,
+     19.1
+    ],
+    "ONP": [
+     0.0,
+     0.1,
+     0.1
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.5,
+     4.4,
+     7.1
+    ]
+   },
+   "slug": "victoria-park",
+   "leader": "ALP",
+   "leader_prob": 0.9997,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 63.7,
+    "COAL": 16.2,
+    "GRN": 12.6,
+    "OTH": 6.1,
+    "ONP": 1.3
+   },
+   "p_actual": 0.9997
+  },
+  {
+   "district": "Wanneroo",
+   "region": "North Metropolitan",
+   "incumbent": "ALP",
+   "notes": [
+    "first-term member recontesting (since 2017)"
+   ],
+   "probs": {
+    "ALP": 1.0,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     59.1,
+     65.2,
+     70.5
+    ],
+    "COAL": [
+     17.9,
+     23.1,
+     28.9
+    ],
+    "GRN": [
+     4.8,
+     7.4,
+     10.7
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.2,
+     3.8,
+     6.3
+    ]
+   },
+   "slug": "wanneroo",
+   "leader": "ALP",
+   "leader_prob": 1.0,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 71.8,
+    "COAL": 18.3,
+    "OTH": 5.4,
+    "GRN": 4.5
+   },
+   "p_actual": 1.0
+  },
+  {
+   "district": "Warnbro",
+   "region": "South Metropolitan",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     63.3,
+     69.5,
+     75.2
+    ],
+    "COAL": [
+     8.6,
+     11.7,
+     15.7
+    ],
+    "GRN": [
+     4.4,
+     6.8,
+     9.8
+    ],
+    "ONP": [
+     2.4,
+     8.0,
+     14.3
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     1.8,
+     3.1,
+     5.2
+    ]
+   },
+   "slug": "warnbro",
+   "leader": "ALP",
+   "leader_prob": 1.0,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 76.9,
+    "COAL": 13.2,
+    "GRN": 4.0,
+    "OTH": 3.4,
+    "ONP": 2.5
+   },
+   "p_actual": 1.0
+  },
+  {
+   "district": "Warren-Blackwood",
+   "region": "South West",
+   "incumbent": "NAT",
+   "notes": [],
+   "probs": {
+    "ALP": 0.4299,
+    "LIB": 0.0466,
+    "NAT": 0.5233,
+    "GRN": 0.0003
+   },
+   "primary": {
+    "ALP": [
+     25.8,
+     32.0,
+     38.7
+    ],
+    "COAL": [
+     35.9,
+     43.1,
+     50.1
+    ],
+    "GRN": [
+     10.0,
+     14.8,
+     20.5
+    ],
+    "ONP": [
+     1.5,
+     5.0,
+     9.2
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.4,
+     4.2,
+     6.9
+    ]
+   },
+   "slug": "warren-blackwood",
+   "leader": "NAT",
+   "leader_prob": 0.5233,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "COAL": 42.6,
+    "ALP": 32.6,
+    "GRN": 13.4,
+    "OTH": 9.8,
+    "ONP": 1.7
+   },
+   "p_actual": 0.4299
+  },
+  {
+   "district": "West Swan",
+   "region": "East Metropolitan",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 1.0
+   },
+   "primary": {
+    "ALP": [
+     63.2,
+     68.6,
+     73.8
+    ],
+    "COAL": [
+     14.9,
+     19.5,
+     24.8
+    ],
+    "GRN": [
+     4.4,
+     6.8,
+     9.8
+    ],
+    "ONP": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.7,
+     4.5,
+     7.3
+    ]
+   },
+   "slug": "west-swan",
+   "leader": "ALP",
+   "leader_prob": 1.0,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 77.9,
+    "COAL": 11.8,
+    "OTH": 6.4,
+    "GRN": 3.9
+   },
+   "p_actual": 1.0
+  },
+  {
+   "district": "Willagee",
+   "region": "South Metropolitan",
+   "incumbent": "ALP",
+   "notes": [],
+   "probs": {
+    "ALP": 0.9999,
+    "LIB": 0.0001
+   },
+   "primary": {
+    "ALP": [
+     57.1,
+     62.9,
+     68.3
+    ],
+    "COAL": [
+     17.1,
+     22.1,
+     27.7
+    ],
+    "GRN": [
+     7.0,
+     10.5,
+     14.8
+    ],
+    "ONP": [
+     0.1,
+     0.5,
+     0.9
+    ],
+    "IND": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "OTH": [
+     2.0,
+     3.4,
+     5.6
+    ]
+   },
+   "slug": "willagee",
+   "leader": "ALP",
+   "leader_prob": 0.9999,
+   "actual_winner": "ALP",
+   "actual_primary": {
+    "ALP": 66.1,
+    "COAL": 19.2,
+    "GRN": 9.3,
+    "OTH": 3.5,
+    "ONP": 1.8
+   },
+   "p_actual": 0.9999
+  }
+ ],
+ "actual": {
+  "seat_counts": {
+   "ALP": 53,
+   "NAT": 4,
+   "LIB": 2
+  },
+  "primary": {
+   "ALP": 59.94,
+   "COAL": 25.3,
+   "GRN": 6.92,
+   "ONP": 1.26
+  },
+  "tpp_alp": 69.7
+ },
+ "scores": {
+  "brier": 0.0531,
+  "log_loss": 0.107,
+  "favourite_accuracy": 0.9492,
+  "status_quo_accuracy": 0.7627,
+  "calibration": [
+   {
+    "bin": "0.50-0.70",
+    "n": 2,
+    "mean_prob": 0.551,
+    "hit_rate": 0.5
+   },
+   {
+    "bin": "0.70-0.90",
+    "n": 12,
+    "mean_prob": 0.837,
+    "hit_rate": 1.0
+   },
+   {
+    "bin": "0.90-0.99",
+    "n": 9,
+    "mean_prob": 0.97,
+    "hit_rate": 1.0
+   },
+   {
+    "bin": "0.99-1.00",
+    "n": 34,
+    "mean_prob": 0.999,
+    "hit_rate": 1.0
+   }
+  ],
+  "seats": {
+   "ALP": {
+    "actual": 53,
+    "median": 51.0,
+    "p90": [
+     46.0,
+     55.0
+    ],
+    "covered_90": true
+   },
+   "COAL": {
+    "actual": 6,
+    "median": 8.0,
+    "p90": [
+     4.0,
+     13.0
+    ],
+    "covered_90": true
+   },
+   "GRN": {
+    "actual": 0,
+    "median": 0.0,
+    "p90": [
+     0.0,
+     0.0
+    ],
+    "covered_90": true
+   },
+   "IND": {
+    "actual": 0,
+    "median": 0.0,
+    "p90": [
+     0.0,
+     1.0
+    ],
+    "covered_90": true
+   }
+  }
+ }
+}
