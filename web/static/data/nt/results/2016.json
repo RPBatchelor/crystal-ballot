@@ -10,20 +10,20 @@
   "CLP": 2
  },
  "primary_share": {
-  "ALP": 42.41,
-  "COAL": 32.08,
-  "IND": 18.01,
-  "OTH": 4.5,
-  "GRN": 3.0
+  "ALP": 42.19,
+  "COAL": 31.8,
+  "IND": 18.83,
+  "OTH": 4.31,
+  "GRN": 2.87
  },
  "party_share": {
-  "ALP": 42.41,
-  "CLP": 32.08,
-  "IND": 18.01,
-  "X_T": 3.74,
-  "GRN": 3.0,
-  "SFF": 0.56,
-  "X_C": 0.2
+  "ALP": 42.19,
+  "CLP": 31.8,
+  "IND": 18.83,
+  "X_T": 3.58,
+  "GRN": 2.87,
+  "SFF": 0.53,
+  "X_C": 0.19
  },
  "tpp_alp": 57.5,
  "seats": [
@@ -32,7 +32,7 @@
    "slug": "arafura",
    "elected": "COSTA Lawrence",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 4848,
    "formal": 2349,
    "informal": 34,
    "primary": [
@@ -95,7 +95,7 @@
    "slug": "araluen",
    "elected": "LAMBLEY Robyn",
    "party": "IND",
-   "enrolment": null,
+   "enrolment": 5850,
    "formal": 4720,
    "informal": 106,
    "primary": [
@@ -151,7 +151,7 @@
    "slug": "arnhem",
    "elected": "UIBO Selena",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 5158,
    "formal": 2894,
    "informal": 78,
    "primary": [
@@ -221,7 +221,7 @@
    "slug": "barkly",
    "elected": "MCCARTHY Gerry",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 5183,
    "formal": 3218,
    "informal": 53,
    "primary": [
@@ -260,17 +260,17 @@
      "party": "ALP",
      "party_name": "Labor NT",
      "votes": 1739,
-     "pct": 57.986
+     "pct": 58.044
     },
     {
      "candidate": "MCADAM Elliot",
      "party": "IND",
      "party_name": "Independent",
-     "votes": 1260,
-     "pct": 42.014
+     "votes": 1257,
+     "pct": 41.956
     }
    ],
-   "margin": 7.99,
+   "margin": 8.04,
    "tcp_estimated": false,
    "runner_up_party": "IND",
    "tpp_alp": null,
@@ -284,10 +284,39 @@
    "slug": "blain",
    "elected": "MILLS Terry",
    "party": "IND",
-   "enrolment": null,
-   "formal": 4280,
+   "enrolment": 5576,
+   "formal": 4281,
    "informal": 121,
-   "primary": [],
+   "primary": [
+    {
+     "candidate": "HALE Damian",
+     "party": "ALP",
+     "party_name": "Labor NT",
+     "votes": 1597,
+     "pct": 37.304
+    },
+    {
+     "candidate": "MILLS Terry",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 1341,
+     "pct": 31.324
+    },
+    {
+     "candidate": "BOOTHBY Marie-Clare",
+     "party": "CLP",
+     "party_name": "CLP",
+     "votes": 1102,
+     "pct": 25.742
+    },
+    {
+     "candidate": "KNOWLES Gregory",
+     "party": "IND",
+     "party_name": "Independent",
+     "votes": 241,
+     "pct": 5.63
+    }
+   ],
    "tcp": [
     {
      "candidate": "MILLS Terry",
@@ -318,7 +347,7 @@
    "slug": "braitling",
    "elected": "WAKEFIELD Dale",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 5998,
    "formal": 4889,
    "informal": 84,
    "primary": [
@@ -402,7 +431,7 @@
    "slug": "brennan",
    "elected": "SIEVERS Tony",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 5204,
    "formal": 4037,
    "informal": 122,
    "primary": [
@@ -458,7 +487,7 @@
    "slug": "casuarina",
    "elected": "MOSS Lauren",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 5457,
    "formal": 4382,
    "informal": 117,
    "primary": [
@@ -507,7 +536,7 @@
    "slug": "daly",
    "elected": "HIGGINS Gary",
    "party": "CLP",
-   "enrolment": null,
+   "enrolment": 5386,
    "formal": 3730,
    "informal": 94,
    "primary": [
@@ -573,21 +602,21 @@
      "candidate": "HIGGINS Gary",
      "party": "CLP",
      "party_name": "CLP",
-     "votes": 1763,
-     "pct": 52.083
+     "votes": 1772,
+     "pct": 52.287
     },
     {
      "candidate": "VENES Anthony",
      "party": "ALP",
      "party_name": "Labor NT",
-     "votes": 1622,
-     "pct": 47.917
+     "votes": 1617,
+     "pct": 47.713
     }
    ],
-   "margin": 2.08,
+   "margin": 2.29,
    "tcp_estimated": false,
    "runner_up_party": "ALP",
-   "tpp_alp": 47.917,
+   "tpp_alp": 47.713,
    "tpp_method": "estimate",
    "classic": true,
    "has_dop": false,
@@ -598,7 +627,7 @@
    "slug": "drysdale",
    "elected": "LAWLER Eva",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 5460,
    "formal": 3885,
    "informal": 111,
    "primary": [
@@ -650,21 +679,21 @@
      "candidate": "LAWLER Eva",
      "party": "ALP",
      "party_name": "Labor NT",
-     "votes": 1964,
-     "pct": 55.153
+     "votes": 1971,
+     "pct": 55.241
     },
     {
      "candidate": "HOSKING Ben",
      "party": "CLP",
      "party_name": "CLP",
      "votes": 1597,
-     "pct": 44.847
+     "pct": 44.759
     }
    ],
-   "margin": 5.15,
+   "margin": 5.24,
    "tcp_estimated": false,
    "runner_up_party": "CLP",
-   "tpp_alp": 55.153,
+   "tpp_alp": 55.241,
    "tpp_method": "estimate",
    "classic": true,
    "has_dop": false,
@@ -675,30 +704,30 @@
    "slug": "fannie-bay",
    "elected": "GUNNER Michael",
    "party": "ALP",
-   "enrolment": null,
-   "formal": 4281,
+   "enrolment": 5613,
+   "formal": 4302,
    "informal": 95,
    "primary": [
     {
      "candidate": "GUNNER Michael",
      "party": "ALP",
      "party_name": "Labor NT",
-     "votes": 2539,
-     "pct": 59.309
+     "votes": 2550,
+     "pct": 59.275
     },
     {
      "candidate": "BROWN Karen",
      "party": "CLP",
      "party_name": "CLP",
-     "votes": 1393,
-     "pct": 32.539
+     "votes": 1401,
+     "pct": 32.566
     },
     {
      "candidate": "STRETTLES Greg",
      "party": "X_T",
      "party_name": "1 Territory",
-     "votes": 349,
-     "pct": 8.152
+     "votes": 351,
+     "pct": 8.159
     }
    ],
    "tcp": [
@@ -731,7 +760,7 @@
    "slug": "fong-lim",
    "elected": "COLLINS Jeff",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 5353,
    "formal": 3981,
    "informal": 74,
    "primary": [
@@ -794,7 +823,7 @@
    "slug": "goyder",
    "elected": "PURICK Kezia",
    "party": "IND",
-   "enrolment": null,
+   "enrolment": 5587,
    "formal": 4539,
    "informal": 78,
    "primary": [
@@ -864,7 +893,7 @@
    "slug": "johnston",
    "elected": "VOWLES Ken",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 4983,
    "formal": 3929,
    "informal": 77,
    "primary": [
@@ -920,7 +949,7 @@
    "slug": "karama",
    "elected": "KIT Ngaree Ah",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 5228,
    "formal": 4040,
    "informal": 93,
    "primary": [
@@ -1004,7 +1033,7 @@
    "slug": "katherine",
    "elected": "NELSON Sandra",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 5285,
    "formal": 4073,
    "informal": 66,
    "primary": [
@@ -1081,7 +1110,7 @@
    "slug": "namatjira",
    "elected": "PAECH Chansey",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 5435,
    "formal": 3115,
    "informal": 56,
    "primary": [
@@ -1120,20 +1149,20 @@
      "party": "ALP",
      "party_name": "Labor NT",
      "votes": 1742,
-     "pct": 58.496
+     "pct": 58.515
     },
     {
      "candidate": "WILLIAMS Heidi",
      "party": "CLP",
      "party_name": "CLP",
-     "votes": 1236,
-     "pct": 41.504
+     "votes": 1235,
+     "pct": 41.485
     }
    ],
-   "margin": 8.5,
+   "margin": 8.52,
    "tcp_estimated": false,
    "runner_up_party": "CLP",
-   "tpp_alp": 58.496,
+   "tpp_alp": 58.515,
    "tpp_method": "estimate",
    "classic": true,
    "has_dop": false,
@@ -1144,7 +1173,7 @@
    "slug": "nelson",
    "elected": "WOOD Gerry",
    "party": "IND",
-   "enrolment": null,
+   "enrolment": 5825,
    "formal": 4635,
    "informal": 61,
    "primary": [
@@ -1214,7 +1243,7 @@
    "slug": "nhulunbuy",
    "elected": "GUYULA Yingiya Mark",
    "party": "IND",
-   "enrolment": null,
+   "enrolment": 5895,
    "formal": 3385,
    "informal": 73,
    "primary": [
@@ -1277,7 +1306,7 @@
    "slug": "nightcliff",
    "elected": "FYLES Natasha",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 5341,
    "formal": 4079,
    "informal": 78,
    "primary": [
@@ -1333,7 +1362,7 @@
    "slug": "port-darwin",
    "elected": "KIRBY Paul",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 5281,
    "formal": 3894,
    "informal": 82,
    "primary": [
@@ -1410,7 +1439,7 @@
    "slug": "sanderson",
    "elected": "WORDEN Kate",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 5546,
    "formal": 4443,
    "informal": 63,
    "primary": [
@@ -1480,7 +1509,7 @@
    "slug": "spillett",
    "elected": "FINOCCHIARO Lia",
    "party": "CLP",
-   "enrolment": null,
+   "enrolment": 5203,
    "formal": 4060,
    "informal": 76,
    "primary": [
@@ -1557,7 +1586,7 @@
    "slug": "stuart",
    "elected": "MCCONNELL Scott",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 5242,
    "formal": 2874,
    "informal": 32,
    "primary": [
@@ -1620,7 +1649,7 @@
    "slug": "wanguri",
    "elected": "MANISON Nicole",
    "party": "ALP",
-   "enrolment": null,
+   "enrolment": 5569,
    "formal": 4565,
    "informal": 81,
    "primary": [

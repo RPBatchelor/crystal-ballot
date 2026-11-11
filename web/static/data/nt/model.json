@@ -3,9 +3,9 @@
   {
    "election_id": "nt-2020",
    "n_seats": 25,
-   "brier": 0.3615,
-   "log_loss": 0.8347,
-   "favourite_accuracy": 0.84,
+   "brier": 0.3633,
+   "log_loss": 0.8382,
+   "favourite_accuracy": 0.8,
    "status_quo_accuracy": 0.72,
    "seats": {
     "ALP": {
@@ -19,7 +19,7 @@
     },
     "COAL": {
      "actual": 8,
-     "median": 6.0,
+     "median": 5.0,
      "p90": [
       1.0,
       15.0
@@ -49,25 +49,25 @@
     {
      "bin": "0.50-0.70",
      "n": 7,
-     "mean_prob": 0.554,
+     "mean_prob": 0.555,
      "hit_rate": 0.857
     },
     {
      "bin": "0.70-0.90",
      "n": 4,
-     "mean_prob": 0.825,
+     "mean_prob": 0.826,
      "hit_rate": 1.0
     },
     {
      "bin": "0.90-0.99",
      "n": 7,
-     "mean_prob": 0.956,
+     "mean_prob": 0.957,
      "hit_rate": 0.857
     },
     {
      "bin": "0.99-1.00",
      "n": 1,
-     "mean_prob": 0.996,
+     "mean_prob": 0.997,
      "hit_rate": 1.0
     }
    ],
@@ -84,7 +84,7 @@
      "district": "Barkly",
      "won": "CLP",
      "favourite": "ALP",
-     "p_fav": 0.961,
+     "p_fav": 0.962,
      "p_won": 0.017,
      "incumbent": "ALP"
     },
@@ -92,23 +92,31 @@
      "district": "Braitling",
      "won": "CLP",
      "favourite": "ALP",
-     "p_fav": 0.435,
-     "p_won": 0.302,
+     "p_fav": 0.449,
+     "p_won": 0.288,
      "incumbent": "ALP"
     },
     {
      "district": "Brennan",
      "won": "CLP",
      "favourite": "ALP",
-     "p_fav": 0.563,
-     "p_won": 0.437,
+     "p_fav": 0.562,
+     "p_won": 0.438,
      "incumbent": "ALP"
+    },
+    {
+     "district": "Namatjira",
+     "won": "CLP",
+     "favourite": "ALP",
+     "p_fav": 0.411,
+     "p_won": 0.405,
+     "incumbent": "CLP"
     }
    ],
    "seat_vote": {
     "ALP": {
      "n": 25,
-     "crps": 4.203,
+     "crps": 4.208,
      "cover50": 0.48,
      "cover90": 0.88,
      "pit_hist": [
@@ -117,16 +125,16 @@
       2,
       1,
       3,
-      4,
-      3,
-      1,
       5,
-      1
+      2,
+      1,
+      4,
+      2
      ]
     },
     "COAL": {
      "n": 24,
-     "crps": 5.417,
+     "crps": 5.423,
      "cover50": 0.625,
      "cover90": 0.75,
      "pit_hist": [
@@ -144,12 +152,12 @@
     },
     "GRN": {
      "n": 10,
-     "crps": 7.15,
+     "crps": 7.072,
      "cover50": 0.0,
      "cover90": 0.5,
      "pit_hist": [
-      2,
-      3,
+      1,
+      4,
       0,
       0,
       0,
@@ -164,50 +172,50 @@
    "statewide": {
     "ALP": {
      "forecast": [
-      31.0,
+      31.2,
       37.6,
-      44.3
+      43.9
      ],
      "actual": 39.43
     },
     "COAL": {
      "forecast": [
-      22.7,
-      29.8,
-      37.1
+      23.0,
+      30.0,
+      37.0
      ],
      "actual": 31.34
     },
     "GRN": {
      "forecast": [
-      1.5,
-      5.3,
-      9.8
+      1.3,
+      5.2,
+      9.7
      ],
      "actual": 4.36
     },
     "tpp": {
      "forecast": [
-      38.0,
-      58.4,
+      38.4,
+      58.8,
       72.8
      ],
      "actual": 53.3
     }
    },
    "outcome": {
-    "alp_majority": 0.63635,
-    "coal_majority": 0.1762,
-    "hung": 0.18745,
-    "alp_most_seats": 0.7348,
-    "coal_most_seats": 0.23835
+    "alp_majority": 0.63525,
+    "coal_majority": 0.1708,
+    "hung": 0.19395,
+    "alp_most_seats": 0.7345,
+    "coal_most_seats": 0.2356
    }
   },
   {
    "election_id": "nt-2024",
    "n_seats": 25,
-   "brier": 0.4438,
-   "log_loss": 0.8244,
+   "brier": 0.4388,
+   "log_loss": 0.8117,
    "favourite_accuracy": 0.68,
    "status_quo_accuracy": 0.52,
    "seats": {
@@ -224,7 +232,7 @@
      "actual": 17,
      "median": 15.0,
      "p90": [
-      5.0,
+      4.0,
       22.0
      ],
      "covered_90": true
@@ -252,20 +260,20 @@
     {
      "bin": "0.50-0.70",
      "n": 6,
-     "mean_prob": 0.629,
+     "mean_prob": 0.628,
      "hit_rate": 0.833
     },
     {
      "bin": "0.70-0.90",
-     "n": 9,
-     "mean_prob": 0.755,
-     "hit_rate": 0.556
+     "n": 10,
+     "mean_prob": 0.769,
+     "hit_rate": 0.5
     },
     {
      "bin": "0.90-0.99",
-     "n": 7,
-     "mean_prob": 0.934,
-     "hit_rate": 0.857
+     "n": 6,
+     "mean_prob": 0.938,
+     "hit_rate": 1.0
     },
     {
      "bin": "0.99-1.00",
@@ -279,47 +287,47 @@
      "district": "Arafura",
      "won": "ALP",
      "favourite": "CLP",
-     "p_fav": 0.745,
-     "p_won": 0.255,
+     "p_fav": 0.747,
+     "p_won": 0.253,
      "incumbent": "ALP"
     },
     {
      "district": "Araluen",
      "won": "IND",
      "favourite": "CLP",
-     "p_fav": 0.491,
-     "p_won": 0.296,
+     "p_fav": 0.493,
+     "p_won": 0.295,
      "incumbent": "IND"
     },
     {
      "district": "Casuarina",
      "won": "CLP",
      "favourite": "ALP",
-     "p_fav": 0.528,
-     "p_won": 0.113,
+     "p_fav": 0.522,
+     "p_won": 0.114,
      "incumbent": "ALP"
     },
     {
      "district": "Daly",
      "won": "ALP",
      "favourite": "CLP",
-     "p_fav": 0.912,
-     "p_won": 0.088,
+     "p_fav": 0.886,
+     "p_won": 0.114,
      "incumbent": "ALP"
     },
     {
      "district": "Fannie Bay",
      "won": "CLP",
      "favourite": "ALP",
-     "p_fav": 0.455,
-     "p_won": 0.274,
+     "p_fav": 0.45,
+     "p_won": 0.275,
      "incumbent": "ALP"
     },
     {
      "district": "Johnston",
      "won": "IND",
      "favourite": "GRN",
-     "p_fav": 0.794,
+     "p_fav": 0.796,
      "p_won": 0.004,
      "incumbent": "ALP"
     },
@@ -327,23 +335,23 @@
      "district": "Sanderson",
      "won": "CLP",
      "favourite": "ALP",
-     "p_fav": 0.749,
-     "p_won": 0.251,
+     "p_fav": 0.747,
+     "p_won": 0.254,
      "incumbent": "ALP"
     },
     {
      "district": "Wanguri",
      "won": "CLP",
      "favourite": "ALP",
-     "p_fav": 0.714,
-     "p_won": 0.28,
+     "p_fav": 0.711,
+     "p_won": 0.282,
      "incumbent": "ALP"
     }
    ],
    "seat_vote": {
     "ALP": {
      "n": 24,
-     "crps": 6.47,
+     "crps": 6.37,
      "cover50": 0.333,
      "cover90": 0.75,
      "pit_hist": [
@@ -354,14 +362,14 @@
       1,
       1,
       2,
-      3,
+      2,
       1,
-      4
+      5
      ]
     },
     "COAL": {
      "n": 25,
-     "crps": 6.421,
+     "crps": 6.341,
      "cover50": 0.56,
      "cover90": 0.92,
      "pit_hist": [
@@ -379,7 +387,7 @@
     },
     "GRN": {
      "n": 11,
-     "crps": 9.587,
+     "crps": 9.603,
      "cover50": 0.091,
      "cover90": 0.455,
      "pit_hist": [
@@ -423,7 +431,7 @@
     },
     "tpp": {
      "forecast": [
-      33.2,
+      33.1,
       44.9,
       58.1
      ],
@@ -431,11 +439,11 @@
     }
    },
    "outcome": {
-    "alp_majority": 0.08,
-    "coal_majority": 0.6797,
-    "hung": 0.2403,
-    "alp_most_seats": 0.17405,
-    "coal_most_seats": 0.8037
+    "alp_majority": 0.08135,
+    "coal_majority": 0.6806,
+    "hung": 0.23805,
+    "alp_most_seats": 0.1741,
+    "coal_most_seats": 0.8041
    }
   }
  ],

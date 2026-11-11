@@ -141,7 +141,7 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		hasPolls: true,
 		commission: 'NTEC',
 		dataNote:
-			'Northern Territory results are the NT Electoral Commission’s counts as transcribed by Wikipedia (the NTEC site does not allow automated downloads). The 2024 starting point on the new boundaries is rebuilt from published changes in each party’s vote, so it is approximate.'
+			'Northern Territory results are the NT Electoral Commission’s official counts by division; candidate names come from Wikipedia, and where several independents stood in one seat, the NTEC’s independent total is shared between them in proportion to Wikipedia’s figures. In 2024 the NTEC did not publish the final two-candidate count for most Labor v CLP seats, so those use Wikipedia’s figures. The 2024 starting point on the new boundaries is rebuilt from published changes in each party’s vote, so it is approximate.'
 	}
 ];
 
