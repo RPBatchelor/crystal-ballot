@@ -765,7 +765,11 @@ def _backtest_tas(e, prev, shares, parties, out, no_polls: bool = False, hand_se
 
 
 @app.command("publish")
-def publish(election: str = typer.Option("vic-2026", help="Election id")) -> None:
+def publish(
+    election: str = typer.Option("vic-2026", help="Election id"),
+    validated: bool = typer.Option(False, "--validated",
+                                   help="Publish the live forecast as official, not a development preview"),
+) -> None:
     """Write website data files for an election."""
     from prophecy.publish.forecast import publish_forecast
     from prophecy.publish.polls import publish_polls
@@ -773,7 +777,7 @@ def publish(election: str = typer.Option("vic-2026", help="Election id")) -> Non
 
     e = jurisdictions.get(election)
     typer.echo(publish_polls(e))
-    typer.echo(publish_forecast(e) or "no forecast yet")
+    typer.echo(publish_forecast(e, validated=validated) or "no forecast yet")
     from prophecy.publish.model_eval import publish_model_eval
 
     typer.echo(publish_model_eval(e.jurisdiction) or "no model evaluation yet")

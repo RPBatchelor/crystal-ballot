@@ -59,9 +59,12 @@
 
 	{#if j.forecastYears?.length}
 		<aside class="card notice">
-			<strong>The forecast launches in mid-November.</strong>
-			A <a href="/{j.code}/forecast/{j.forecastYears.at(-1)}/">development preview</a> is available; it
-			becomes the official forecast once the model passes its historical backtests.
+			<strong>The {j.forecastYears.at(-1)} forecast is live.</strong>
+			<a href="/{j.code}/forecast/{j.forecastYears.at(-1)}/">Every seat's chances, updated daily →</a>
+			{#if j.retroYears?.length}
+				<br />Blind tests on past elections:
+				{#each j.retroYears as y, i (y)}{i > 0 ? ', ' : ''}<a href="/{j.code}/forecast/{y}/vs-result/">{y}</a>{/each}.
+			{/if}
 		</aside>
 	{:else if j.kind === 'federal'}
 		<p class="lede">

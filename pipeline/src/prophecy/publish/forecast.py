@@ -9,7 +9,9 @@ from prophecy import DATA_DIR, WEB_DATA_DIR
 from prophecy.jurisdictions import Election, site_code
 from prophecy.publish.results import slugify
 
-MODEL_VERSION = "0.1.0"
+# Frozen for the Victorian 2026 launch (git tag model-v1.0.0); every change after it goes
+# in MODEL_CHANGELOG.md.
+MODEL_VERSION = "1.0.0"
 
 
 def publish_forecast(election: Election, validated: bool = False) -> str | None:
@@ -31,8 +33,8 @@ def publish_forecast(election: Election, validated: bool = False) -> str | None:
         "election_date": election.date.isoformat(),
         "generated_at": datetime.now(UTC).isoformat(timespec="seconds"),
         "model_version": MODEL_VERSION,
-        # False until the model passes its historical backtest; the site labels the
-        # forecast as a development preview while this is False.
+        # Official forecast (``prophecy publish --validated``, as CI runs it); the site
+        # labels an unvalidated one a development preview.
         "validated": validated,
         "diagnostics": meta.get("diagnostics", {}),
         **summary,

@@ -150,7 +150,19 @@
 {:else if !f.validated}
 	<aside class="preview">
 		<strong>Development preview.</strong> The model has been <a href="/methodology/">backtested on past elections</a>,
-		but its treatment of independents is still provisional. Do not cite.
+		but this forecast is not yet final. Do not cite.
+	</aside>
+{:else if data.blindTests.length}
+	<aside class="retro">
+		<strong>How this model did in blind tests.</strong> Run on the eve of past elections in {j.name} with only
+		what was known at the time, the favourite won
+		{#each data.blindTests as t, i (t.year)}{i > 0 ? (i === data.blindTests.length - 1 ? ' and ' : ', ') : ''}<a
+				href="/{j.code}/forecast/{t.year}/vs-result/">{Math.round(t.favourite * t.seats)} of {t.seats} seats in {t.year}</a
+			>{/each}. Assuming no seat changes hands would have got
+		{#each data.blindTests as t, i (t.year)}{i > 0 ? (i === data.blindTests.length - 1 ? ' and ' : ', ') : ''}{Math.round(
+				t.statusQuo * t.seats
+			)}{/each}: few seats change hands, so the forecast's value is in how likely each upset is, not in naming more
+		winners. <a href="/methodology/">How the model works →</a>
 	</aside>
 {/if}
 

@@ -27,6 +27,33 @@ export const loadGeo = (fetch: Fetch, jur: string, boundaries: string) =>
 		`/data/${jur}/geo/${boundaries}.json`
 	);
 
+/** A jurisdiction's single-member blind tests (oldest first), from its model.json. */
+export interface BlindTest {
+	year: number;
+	seats: number;
+	favourite: number; // share of seats the favourite won
+	statusQuo: number; // share of seats kept by the party that held them
+	brier: number;
+}
+
+export async function loadBlindTests(fetch: Fetch, jur: string): Promise<BlindTest[]> {
+	const res = await fetch(`/data/${jur}/model.json`);
+	if (!res.ok) return [];
+	const m = (await res.json()) as {
+		backtests?: { election_id: string; n_seats?: number; favourite_accuracy?: number; status_quo_accuracy?: number; brier?: number }[];
+	};
+	return (m.backtests ?? [])
+		.filter((b) => b.favourite_accuracy != null && b.status_quo_accuracy != null && b.n_seats && b.brier != null)
+		.map((b) => ({
+			year: Number(b.election_id.slice(-4)),
+			seats: b.n_seats!,
+			favourite: b.favourite_accuracy!,
+			statusQuo: b.status_quo_accuracy!,
+			brier: b.brier!
+		}))
+		.sort((a, b) => a.year - b.year);
+}
+
 /** Daily headline history of a live forecast; null before the first stamped run. */
 export async function loadForecastHistory(fetch: Fetch, jur: string, year: number | string) {
 	const res = await fetch(`/data/${jur}/forecast/${year}-history.json`);
