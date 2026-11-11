@@ -3,6 +3,7 @@
 	Labor wins more seats, right of zero the Coalition does; an optional line marks the result.
 -->
 <script lang="ts">
+	import { cap } from '$lib/format';
 	import { partyColour } from '$lib/parties';
 
 	interface Props {
@@ -10,8 +11,12 @@
 		/** Actual Coalition-minus-Labor margin, for past elections. */
 		actual?: number | null;
 		actualLabel?: string;
+		/** What the Coalition side is called here ("LNP", "Liberal"…). */
+		coal?: string;
+		/** The same as a sentence subject ("the LNP", "the Coalition"). */
+		theCoal?: string;
 	}
-	let { margin, actual = null, actualLabel = 'Result' }: Props = $props();
+	let { margin, actual = null, actualLabel = 'Result', coal = 'Coalition', theCoal = 'the Coalition' }: Props = $props();
 
 	let width = $state(640);
 	const height = 230;
@@ -37,7 +42,7 @@
 		const n = Math.floor(ext / tickStep);
 		return Array.from({ length: 2 * n + 1 }, (_, i) => (i - n) * tickStep).filter((t) => (t / tickStep) % every === 0);
 	});
-	const tickLabel = (v: number) => (v === 0 ? 'Tie' : v < 0 ? `+${-v} Labor` : `+${v} Coalition`);
+	const tickLabel = (v: number) => (v === 0 ? 'Tie' : v < 0 ? `+${-v} Labor` : `+${v} ${coal}`);
 	const colour = (v: number) => (v < 0 ? partyColour('ALP') : v > 0 ? partyColour('COAL') : 'var(--muted)');
 	let hover = $state<number | null>(null);
 	const in100 = (p: number) => (p < 0.01 ? 'fewer than 1' : Math.round(p * 100).toString());
@@ -48,7 +53,7 @@
 		<svg
 			viewBox="0 0 {width} {height}"
 			role="img"
-			aria-label="Seat margin between the major parties. Coalition wins more seats in {in100(pCoal)} of 100 simulations, Labor in {in100(pAlp)}.{actual != null ? ` ${actualLabel}: ${tickLabel(actual)}.` : ''}"
+			aria-label="Seat margin between the major parties. {cap(theCoal)} wins more seats in {in100(pCoal)} of 100 simulations, Labor in {in100(pAlp)}.{actual != null ? ` ${actualLabel}: ${tickLabel(actual)}.` : ''}"
 		>
 			{#each margin.counts as c, i (i)}
 				{@const v = margin.min + i}
@@ -90,18 +95,18 @@
 				<text class="tick" x={x(t) + bw / 2} y={m.top + innerH + 16} text-anchor="middle">{tickLabel(t)}</text>
 			{/each}
 			<text class="dir" x={m.left} y={height - 4}>← Labor wins more seats</text>
-			<text class="dir" x={m.left + innerW} y={height - 4} text-anchor="end">Coalition wins more seats →</text>
+			<text class="dir" x={m.left + innerW} y={height - 4} text-anchor="end">{cap(theCoal)} wins more seats →</text>
 		</svg>
 		{#if hover != null}
 			{@const c = margin.counts[hover - margin.min] ?? 0}
 			<div class="tip" style:left="{Math.min(Math.max(x(hover) + bw / 2, 80), width - 80)}px">
-				<strong>{hover === 0 ? 'A tie on seats' : hover < 0 ? `Labor by ${-hover}` : `Coalition by ${hover}`}</strong>
+				<strong>{hover === 0 ? 'A tie on seats' : hover < 0 ? `Labor by ${-hover}` : `${cap(theCoal)} by ${hover}`}</strong>
 				{((100 * c) / total).toFixed(1)}% of simulations
 			</div>
 		{/if}
 	</div>
 	<figcaption class="small muted">
-		The Coalition wins more seats than Labor in <strong>{in100(pCoal)} of 100</strong> simulations; Labor in
+		{cap(theCoal)} wins more seats than Labor in <strong>{in100(pCoal)} of 100</strong> simulations; Labor in
 		<strong>{in100(pAlp)} of 100</strong>. Winning more seats is not the same as a majority: the crossbench decides
 		the rest.
 	</figcaption>

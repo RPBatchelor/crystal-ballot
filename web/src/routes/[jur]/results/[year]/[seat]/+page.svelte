@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { coalName, theCoal } from '$lib/jurisdictions';
 	import { SITE_NAME } from '$lib/site';
 	import type { PageData } from './$types';
 	import VoteBars from '$lib/components/charts/VoteBars.svelte';
@@ -8,6 +9,8 @@
 	let { data }: { data: PageData } = $props();
 	const s = $derived(data.seat);
 	const j = $derived(data.jurisdiction);
+	const coalLabel = $derived(coalName(j.code));
+	const theC = $derived(theCoal(j.code));
 	const base = $derived(`/${j.code}/results/${data.year}`);
 	const [winner, loser] = $derived(s.tcp);
 	const by = $derived(s.by_election);
@@ -65,7 +68,7 @@
 			<span><strong class="num">{loser.pct.toFixed(1)}%</strong> {displayName(loser.candidate)}</span>
 		</div>
 		{#if s.tpp_alp != null && !s.classic}
-			<p class="muted small">Labor v Coalition two-party-preferred: {fmtPct(s.tpp_alp)} Labor.</p>
+			<p class="muted small">Labor v {coalLabel} two-party-preferred: {fmtPct(s.tpp_alp)} Labor.</p>
 		{/if}
 	</section>
 	<section class="facts">

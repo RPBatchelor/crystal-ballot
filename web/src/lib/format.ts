@@ -22,3 +22,12 @@ export function daysUntil(iso: string, from = new Date()): number {
 	const ms = new Date(iso + 'T00:00:00+11:00').getTime() - from.getTime();
 	return Math.ceil(ms / 86_400_000);
 }
+
+/** First letter upper-cased ("the LNP" -> "The LNP"). */
+export const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+
+/** "a" or "an" before a word or acronym, by sound: "an LNP", "a CLP", "a Liberal". */
+export function article(word: string): string {
+	const acronym = /^[A-Z]{2,}\b/.test(word);
+	return (acronym ? /^[AEFHILMNORSX]/ : /^[aeiou]/i).test(word) ? 'an' : 'a';
+}

@@ -9,13 +9,15 @@
 		alpMajority: number;
 		hung: number;
 		coalMajority: number;
+		/** What the Coalition side is called here ("LNP", "Liberal"…). */
+		coal?: string;
 	}
-	let { alpMajority, hung, coalMajority }: Props = $props();
+	let { alpMajority, hung, coalMajority, coal = 'Coalition' }: Props = $props();
 
 	const segs = $derived([
 		{ key: 'alp', label: 'Labor majority', p: alpMajority, colour: partyColour('ALP') },
 		{ key: 'hung', label: 'Hung parliament', p: hung, colour: 'var(--rule-strong)' },
-		{ key: 'coal', label: 'Coalition majority', p: coalMajority, colour: partyColour('COAL') }
+		{ key: 'coal', label: `${coal} majority`, p: coalMajority, colour: partyColour('COAL') }
 	]);
 	const inHundred = (p: number) => (p < 0.01 ? '<1' : p > 0.99 ? '>99' : Math.round(p * 100).toString());
 

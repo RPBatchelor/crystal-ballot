@@ -10,8 +10,10 @@
 		outcome: { alp_majority: number; coal_majority: number; hung: number };
 		actual?: { alp: number; coal: number } | null;
 		actualLabel?: string;
+		/** What the Coalition side is called here ("LNP", "Liberal"…). */
+		coal?: string;
 	}
-	let { joint, majority, outcome, actual = null, actualLabel = 'Result' }: Props = $props();
+	let { joint, majority, outcome, actual = null, actualLabel = 'Result', coal = 'Coalition' }: Props = $props();
 
 	let width = $state(420);
 	const m = { top: 12, right: 12, bottom: 40, left: 46 };
@@ -44,7 +46,7 @@
 			{height}
 			viewBox="0 0 {Math.min(width, 520)} {height}"
 			role="img"
-			aria-label="Labor seats against Coalition seats across the simulations. Labor majority {in100(outcome.alp_majority)} in 100, Coalition majority {in100(outcome.coal_majority)} in 100, hung parliament {in100(outcome.hung)} in 100.{actual ? ` ${actualLabel}: Labor ${actual.alp}, Coalition ${actual.coal}.` : ''}"
+			aria-label="Labor seats against {coal} seats across the simulations. Labor majority {in100(outcome.alp_majority)} in 100, {coal} majority {in100(outcome.coal_majority)} in 100, hung parliament {in100(outcome.hung)} in 100.{actual ? ` ${actualLabel}: Labor ${actual.alp}, ${coal} ${actual.coal}.` : ''}"
 		>
 			<!-- Majority regions -->
 			<rect class="region" x={x(majority)} y={y(yMax)} width={x(xMax + 1) - x(majority)} height={y(yMin) + cell - y(yMax)} />
@@ -68,7 +70,7 @@
 			<line class="maj" x1={x(majority)} x2={x(majority)} y1={y(yMax)} y2={y(yMin) + cell} />
 			<line class="maj" x1={x(xMin)} x2={x(xMax + 1)} y1={y(majority) + cell} y2={y(majority) + cell} />
 			<text class="region-label" x={x(xMax + 1) - 6} y={y(yMin) + cell - 8} text-anchor="end">Labor majority · {in100(outcome.alp_majority)} in 100</text>
-			<text class="region-label" x={x(xMin) + 6} y={y(yMax) + 14}>Coalition majority · {in100(outcome.coal_majority)} in 100</text>
+			<text class="region-label" x={x(xMin) + 6} y={y(yMax) + 14}>{coal} majority · {in100(outcome.coal_majority)} in 100</text>
 			<text class="region-label" x={x(xMin) + 6} y={y(yMin) + cell - 8}>Hung · {in100(outcome.hung)} in 100</text>
 			{#if actual}
 				<g class="result" transform="translate({x(actual.alp) + cell / 2} {y(actual.coal) + cell / 2})">
@@ -83,11 +85,11 @@
 				<text class="tick" x={m.left - 6} y={y(t) + cell / 2 + 4} text-anchor="end">{t}</text>
 			{/each}
 			<text class="axis-title" x={m.left + innerW / 2} y={height - 6} text-anchor="middle">Labor seats →</text>
-			<text class="axis-title" transform="translate(12 {m.top + innerH / 2}) rotate(-90)" text-anchor="middle">Coalition seats →</text>
+			<text class="axis-title" transform="translate(12 {m.top + innerH / 2}) rotate(-90)" text-anchor="middle">{coal} seats →</text>
 		</svg>
 		{#if hover}
 			<div class="tip" style:left="{x(hover[0]) + cell / 2}px" style:top="{y(hover[1]) - 8}px">
-				<strong>Labor {hover[0]}, Coalition {hover[1]}</strong>
+				<strong>Labor {hover[0]}, {coal} {hover[1]}</strong>
 				{((100 * hover[2]) / total).toFixed(2)}% of simulations
 			</div>
 		{/if}

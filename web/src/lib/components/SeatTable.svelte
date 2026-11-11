@@ -6,8 +6,10 @@
 	interface Props {
 		seats: SeatResult[];
 		base: string;
+		/** What the Coalition side is called here ("LNP", "Liberal"…). */
+		coal?: string;
 	}
-	let { seats, base }: Props = $props();
+	let { seats, base, coal = 'Coalition' }: Props = $props();
 
 	type Key = 'name' | 'party' | 'margin' | 'tpp_alp' | 'ALP' | 'COAL' | 'GRN';
 	let sortKey = $state<Key>('margin');
@@ -46,21 +48,21 @@
 		}
 	}
 
-	const columns: { key: Key; label: string; left?: boolean }[] = [
+	const columns: { key: Key; label: string; left?: boolean }[] = $derived([
 		{ key: 'name', label: 'Seat', left: true },
 		{ key: 'party', label: 'Held by', left: true },
 		{ key: 'margin', label: 'Margin' },
 		{ key: 'tpp_alp', label: 'ALP 2PP' },
 		{ key: 'ALP', label: 'ALP 1st' },
-		{ key: 'COAL', label: 'L/NP 1st' },
+		{ key: 'COAL', label: `${coal === 'Coalition' ? 'L/NP' : coal} 1st` },
 		{ key: 'GRN', label: 'GRN 1st' }
-	];
-	const filters = [
+	]);
+	const filters = $derived([
 		{ v: 'all', l: 'All seats' },
 		{ v: 'ALP', l: 'Labor' },
-		{ v: 'COAL', l: 'Coalition' },
+		{ v: 'COAL', l: coal },
 		{ v: 'GRN', l: 'Greens' }
-	];
+	]);
 </script>
 
 <div class="controls">

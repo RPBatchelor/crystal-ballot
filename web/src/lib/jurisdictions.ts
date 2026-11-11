@@ -145,6 +145,31 @@ export const JURISDICTIONS: Jurisdiction[] = [
 	}
 ];
 
+// What the Coalition side is called where it is one party, or not a coalition at all.
+const COAL_NAME: Record<string, string> = {
+	qld: 'LNP',
+	nt: 'CLP',
+	sa: 'Liberal',
+	tas: 'Liberal',
+	act: 'Liberal',
+	wa: 'Liberal & National'
+};
+const THE_COAL: Record<string, string> = {
+	qld: 'the LNP',
+	nt: 'the CLP',
+	sa: 'the Liberals',
+	tas: 'the Liberals',
+	act: 'the Liberals',
+	wa: 'the Liberals and Nationals'
+};
+
+/** The Coalition side's label in a jurisdiction ("LNP", "CLP", "Liberal", "Coalition"). */
+export const coalName = (code: string) => COAL_NAME[code] ?? 'Coalition';
+/** The same, short enough for chart labels ("Lib/Nat" for WA). */
+export const coalShort = (code: string) => (code === 'wa' ? 'Lib/Nat' : coalName(code));
+/** The same, as the subject of a sentence ("the LNP", "the Liberals", "the Coalition"). */
+export const theCoal = (code: string) => THE_COAL[code] ?? 'the Coalition';
+
 export function getJurisdiction(code: string): Jurisdiction | undefined {
 	return JURISDICTIONS.find((j) => j.code === code);
 }

@@ -1,16 +1,19 @@
 <script lang="ts">
+	import { coalName, coalShort, theCoal } from '$lib/jurisdictions';
 	import { SITE_NAME } from '$lib/site';
 	import type { PageData } from './$types';
 	import TimeSeriesChart from '$lib/components/charts/TimeSeriesChart.svelte';
 	import Hemicycle from '$lib/components/charts/Hemicycle.svelte';
 	import OutcomeBar from '$lib/components/charts/OutcomeBar.svelte';
 	import { chamberSeats } from '$lib/maps';
-	import { daysUntil, fmtDate } from '$lib/format';
+	import { article, daysUntil, fmtDate } from '$lib/format';
 	import { partyColour } from '$lib/parties';
-	import { PRIMARY_SERIES } from '$lib/series';
+	import { primarySeries } from '$lib/series';
 
 	let { data }: { data: PageData } = $props();
 	const j = $derived(data.jurisdiction);
+	const coalLabel = $derived(coalName(j.code));
+	const theC = $derived(theCoal(j.code));
 	const latest = $derived(data.polls?.trend.at(-1));
 	const lastYear = $derived(data.results?.date.slice(0, 4));
 	const days = $derived(j.nextElection ? daysUntil(j.nextElection) : null);
@@ -18,7 +21,7 @@
 	const tiles = $derived(
 		latest && data.results
 			? [
-					...PRIMARY_SERIES.map((s) => ({
+					...primarySeries(coalLabel).map((s) => ({
 						label: s.label,
 						colour: s.colour,
 						value: latest[s.key as keyof typeof latest] as number | null,
@@ -82,13 +85,13 @@
 			<p>
 				Run blind on the eve of polling day, the model gave Labor a majority a
 				<strong>{Math.round(r.outcome.alp_majority * 100)} in 100</strong> chance, a hung parliament
-				{Math.round(r.outcome.hung * 100)} and a Coalition majority {Math.round(r.outcome.coal_majority * 100)}.
+				{Math.round(r.outcome.hung * 100)} and {article(coalLabel)} {coalLabel} majority {Math.round(r.outcome.coal_majority * 100)}.
 				Labor won {won} seats{won >= r.majority
 					? ', a majority'
 					: ''}; the favourite won {hits} of
 				{r.districts.length} seats.
 			</p>
-			<OutcomeBar alpMajority={r.outcome.alp_majority} hung={r.outcome.hung} coalMajority={r.outcome.coal_majority} />
+			<OutcomeBar alpMajority={r.outcome.alp_majority} hung={r.outcome.hung} coalMajority={r.outcome.coal_majority} coal={coalShort(j.code)} />
 			<p class="links">
 				<a href="/{j.code}/forecast/{data.retroYear}/">The full {data.retroYear} forecast →</a>
 				<a href="/{j.code}/forecast/{data.retroYear}/vs-result/">Forecast against the result →</a>
@@ -119,7 +122,7 @@
 
 		<TimeSeriesChart
 			title="{j.name} primary vote polling, current cycle"
-			series={PRIMARY_SERIES}
+			series={primarySeries(coalLabel)}
 			points={data.polls.polls}
 			pointDate={(p) => p.field_end}
 			trend={data.polls.trend}

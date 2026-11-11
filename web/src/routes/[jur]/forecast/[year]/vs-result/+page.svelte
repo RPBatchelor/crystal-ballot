@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { coalName, coalShort, theCoal } from '$lib/jurisdictions';
 	import { SITE_NAME } from '$lib/site';
 	import type { PageData } from './$types';
 	import OutcomeBar from '$lib/components/charts/OutcomeBar.svelte';
@@ -11,6 +12,8 @@
 	let { data }: { data: PageData } = $props();
 	const f = $derived(data.forecast);
 	const j = $derived(data.jurisdiction);
+	const coalLabel = $derived(coalName(j.code));
+	const theC = $derived(theCoal(j.code));
 	const actual = $derived(f.actual!);
 	const scores = $derived(f.scores!);
 	const area = $derived(j.kind === 'federal' ? 'National' : 'Statewide');
@@ -26,7 +29,7 @@
 		const alp = sumSeats(['ALP']);
 		const coal = sumSeats(COAL);
 		if (alp >= f.majority) return { label: 'Labor majority', p: f.outcome.alp_majority };
-		if (coal >= f.majority) return { label: 'Coalition majority', p: f.outcome.coal_majority };
+		if (coal >= f.majority) return { label: `${coalLabel} majority`, p: f.outcome.coal_majority };
 		return { label: 'hung parliament', p: f.outcome.hung };
 	});
 
@@ -166,10 +169,10 @@
 </div>
 
 <h2>Who forms government</h2>
-<OutcomeBar alpMajority={f.outcome.alp_majority} hung={f.outcome.hung} coalMajority={f.outcome.coal_majority} />
+<OutcomeBar alpMajority={f.outcome.alp_majority} hung={f.outcome.hung} coalMajority={f.outcome.coal_majority} coal={coalShort(j.code)} />
 <p class="small">
 	<span class="actual-key"></span> Actual outcome: <strong>{outcome.label}</strong> ({sumSeats(['ALP'])} Labor,
-	{sumSeats(COAL)} Coalition, {n - sumSeats(['ALP']) - sumSeats(COAL)} crossbench; {f.majority} needed for a majority).
+	{sumSeats(COAL)} {coalLabel}, {n - sumSeats(['ALP']) - sumSeats(COAL)} crossbench; {f.majority} needed for a majority).
 </p>
 
 <h2>Seat totals</h2>

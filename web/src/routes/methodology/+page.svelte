@@ -3,7 +3,7 @@
 	import Orby from '$lib/components/brand/Orby.svelte';
 	import type { PageData } from './$types';
 	import { party } from '$lib/parties';
-	import { allForecastYears, getJurisdiction } from '$lib/jurisdictions';
+	import { allForecastYears, coalName, getJurisdiction, theCoal } from '$lib/jurisdictions';
 	import { isHareClark, type Backtest, type HareClarkBacktest } from './model';
 	import { NOTES } from './notes';
 
@@ -20,24 +20,6 @@
 		return !!j && allForecastYears(j).includes(year);
 	};
 
-	// What "the Coalition" is called where it is one party (or not a coalition at all).
-	const COAL_NAME: Record<string, string> = {
-		qld: 'LNP',
-		nt: 'CLP',
-		sa: 'Liberal',
-		tas: 'Liberal',
-		act: 'Liberal',
-		wa: 'Liberal & National'
-	};
-	// The same side as the subject of a sentence.
-	const THE_COAL: Record<string, string> = {
-		qld: 'the LNP',
-		nt: 'the CLP',
-		sa: 'the Liberals',
-		tas: 'the Liberals',
-		act: 'the Liberals',
-		wa: 'the Liberals and Nationals'
-	};
 	// Minor parties that appear in the Hare-Clark tests (codes from the pipeline's ingest).
 	const MINOR: Record<string, string> = {
 		IFC: 'Independents for Canberra',
@@ -48,8 +30,8 @@
 		DLP: 'Democratic Labour'
 	};
 	const label = (code: string, p: string) =>
-		p === 'COAL' && COAL_NAME[code]
-			? COAL_NAME[code]
+		p === 'COAL' && coalName(code) !== 'Coalition'
+			? coalName(code)
 			: p === 'tpp'
 				? 'Labor two-party'
 				: (MINOR[p] ?? (p.startsWith('X_') ? 'Other' : party(p).short));
@@ -71,7 +53,7 @@
 		const coal = (isHareClark(b) ? b.seats.LIB?.actual : b.seats.COAL?.actual) ?? 0;
 		const need = Math.floor(total / 2) + 1;
 		if (alp >= need) return `Labor won a majority (${alp} of ${total} seats)`;
-		if (coal >= need) return `${THE_COAL[code] ?? 'the Coalition'} won a majority (${coal} of ${total} seats)`;
+		if (coal >= need) return `${theCoal(code)} won a majority (${coal} of ${total} seats)`;
 		return `no party won a majority (Labor ${alp}, ${label(code, 'COAL')} ${coal}, of ${total} seats)`;
 	}
 

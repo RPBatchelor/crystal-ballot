@@ -1,13 +1,16 @@
 <script lang="ts">
+	import { coalName, theCoal } from '$lib/jurisdictions';
 	import { SITE_NAME } from '$lib/site';
 	import type { PageData } from './$types';
 	import TimeSeriesChart from '$lib/components/charts/TimeSeriesChart.svelte';
 	import { fmtDate, fmtInt } from '$lib/format';
-	import { PRIMARY_SERIES, TPP_SERIES } from '$lib/series';
+	import { primarySeries, TPP_SERIES } from '$lib/series';
 
 	let { data }: { data: PageData } = $props();
 	const polls = $derived(data.polls);
 	const j = $derived(data.jurisdiction);
+	const coalLabel = $derived(coalName(j.code));
+	const theC = $derived(theCoal(j.code));
 
 	const pollsters = $derived([...new Set(polls.polls.map((p) => p.pollster))].sort());
 	const cycles = $derived([...(polls.cycles ?? [])].reverse());
@@ -58,7 +61,7 @@
 <h2>Primary vote</h2>
 <TimeSeriesChart
 	title="{j.name} primary vote polling since {firstYear}"
-	series={PRIMARY_SERIES}
+	series={primarySeries(coalLabel)}
 	points={polls.polls}
 	pointDate={(p) => p.field_end}
 	trend={polls.trend}
@@ -72,7 +75,7 @@
 
 <h2>Two-party preferred</h2>
 <p class="muted small">
-	Labor share of the Labor-versus-Coalition two-party-preferred vote. Dots are each pollster's own figure;
+	Labor share of the Labor-versus-{coalLabel} two-party-preferred vote. Dots are each pollster's own figure;
 	the line is implied from the primary-vote average using estimated preference flows.
 </p>
 <TimeSeriesChart

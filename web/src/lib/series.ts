@@ -1,6 +1,9 @@
 import { partyColour } from './parties';
 
 /** Fixed series order for primary-vote charts: colour follows the party, never the rank. */
+export const primarySeries = (coal = 'Coalition') =>
+	PRIMARY_SERIES.map((s) => (s.key === 'COAL' ? { ...s, label: coal } : s));
+
 export const PRIMARY_SERIES = [
 	{ key: 'ALP', label: 'Labor', colour: partyColour('ALP') },
 	{ key: 'COAL', label: 'Coalition', colour: partyColour('COAL') },

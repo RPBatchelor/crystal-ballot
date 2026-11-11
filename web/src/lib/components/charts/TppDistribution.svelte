@@ -3,14 +3,17 @@
 	wins of the two-party vote, left of it Coalition wins. An optional line marks the result.
 -->
 <script lang="ts">
+	import { cap } from '$lib/format';
 	import { partyColour } from '$lib/parties';
 
 	interface Props {
 		hist: { min: number; step: number; counts: number[] };
 		actual?: number | null;
 		actualLabel?: string;
+		/** The same as a sentence subject ("the LNP", "the Coalition"). */
+		theCoal?: string;
 	}
-	let { hist, actual = null, actualLabel = 'Result' }: Props = $props();
+	let { hist, actual = null, actualLabel = 'Result', theCoal = 'the Coalition' }: Props = $props();
 
 	let width = $state(640);
 	const height = 190;
@@ -71,7 +74,7 @@
 			{#each ticks as t (t)}
 				<text class="tick" x={x(t)} y={m.top + innerH + 16} text-anchor="middle">{t}%</text>
 			{/each}
-			<text class="dir" x={m.left} y={height - 4}>← Coalition wins the two-party vote</text>
+			<text class="dir" x={m.left} y={height - 4}>← {cap(theCoal)} wins the two-party vote</text>
 			<text class="dir" x={m.left + innerW} y={height - 4} text-anchor="end">Labor wins →</text>
 		</svg>
 		{#if hover != null}

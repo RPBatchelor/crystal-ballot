@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { coalName, theCoal } from '$lib/jurisdictions';
 	import { SITE_NAME } from '$lib/site';
 	import type { PageData } from './$types';
 	import Hemicycle from '$lib/components/charts/Hemicycle.svelte';
@@ -12,6 +13,8 @@
 	let { data }: { data: PageData } = $props();
 	const r = $derived(data.results);
 	const j = $derived(data.jurisdiction);
+	const coalLabel = $derived(coalName(j.code));
+	const theC = $derived(theCoal(j.code));
 	const base = $derived(`/${j.code}/results/${data.year}`);
 
 	const shareOrder = ['ALP', 'COAL', 'GRN', 'IND', 'ONP', 'OTH'];
@@ -81,7 +84,7 @@
 		];
 		if (s.tpp_alp != null) lines.push(`Labor 2PP ${s.tpp_alp.toFixed(1)}%`);
 		const sw = swing[slug];
-		if (sw != null) lines.push(`Swing ${sw >= 0 ? '+' : '−'}${Math.abs(sw).toFixed(1)} to ${sw >= 0 ? 'Labor' : 'Coalition'}`);
+		if (sw != null) lines.push(`Swing ${sw >= 0 ? '+' : '−'}${Math.abs(sw).toFixed(1)} to ${sw >= 0 ? 'Labor' : coalLabel}`);
 		return { title: s.name, lines };
 	}
 </script>
@@ -159,7 +162,7 @@
 			fill={(slug) => (bySlug[slug]?.tpp_alp != null ? tppColour(bySlug[slug].tpp_alp!) : 'var(--rule)')}
 			tooltip={seatTip}
 			href={(slug) => `${base}/${slug}/`}
-			gradient={{ css: TPP_GRADIENT, left: 'Coalition 75%', right: 'Labor 75%', mid: 'Grey: no Labor-v-Coalition count' }}
+			gradient={{ css: TPP_GRADIENT, left: `${coalLabel} 75%`, right: 'Labor 75%', mid: `Grey: no Labor-v-${coalLabel} count` }}
 		/>
 	{:else}
 		<SeatMap
@@ -169,7 +172,7 @@
 			fill={(slug) => (swing[slug] != null ? swingColour(swing[slug]!) : 'var(--rule)')}
 			tooltip={seatTip}
 			href={(slug) => `${base}/${slug}/`}
-			gradient={{ css: TPP_GRADIENT, left: '12 pts to Coalition', right: '12 pts to Labor' }}
+			gradient={{ css: TPP_GRADIENT, left: `12 pts to ${coalLabel}`, right: '12 pts to Labor' }}
 		/>
 	{/if}
 {/if}
@@ -177,12 +180,12 @@
 <h2>Pendulum</h2>
 <p class="muted small">
 	Seats ranked by two-candidate-preferred margin: the swing needed for each seat to change hands. {nonClassic}
-	seats were not Labor-versus-Coalition contests and are tagged with the runner-up.
+	seats were not Labor-versus-{coalLabel} contests and are tagged with the runner-up.
 </p>
 <Pendulum seats={r.seats} {government} {base} />
 
 <h2>Every seat</h2>
-<SeatTable seats={r.seats} {base} />
+<SeatTable seats={r.seats} {base} coal={coalLabel} />
 
 <style>
 	.hero {

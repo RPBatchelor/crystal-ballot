@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { coalName, coalShort, theCoal } from '$lib/jurisdictions';
 	import { SITE_NAME } from '$lib/site';
 	import type { PageData } from './$types';
 	import OutcomeBar from '$lib/components/charts/OutcomeBar.svelte';
@@ -9,20 +10,22 @@
 	import TrendLines from '$lib/components/charts/TrendLines.svelte';
 	import Hemicycle from '$lib/components/charts/Hemicycle.svelte';
 	import SeatMap from '$lib/components/charts/SeatMap.svelte';
-	import { fmtDate } from '$lib/format';
+	import { article, fmtDate } from '$lib/format';
 	import { chamberSeats, tierOpacity, TIERS, mapFrame } from '$lib/maps';
 	import { party, partyColour } from '$lib/parties';
 
 	let { data }: { data: PageData } = $props();
 	const f = $derived(data.forecast);
 	const j = $derived(data.jurisdiction);
+	const coalLabel = $derived(coalName(j.code));
+	const theC = $derived(theCoal(j.code));
 	const retro = $derived(f.mode === 'retrospective');
 	const area = $derived(j.kind === 'federal' ? 'National' : 'Statewide');
 
 	const headline = $derived.by(() => {
 		const o = f.outcome;
 		const top = [
-			{ p: o.coal_majority, t: 'a Coalition majority' },
+			{ p: o.coal_majority, t: `${article(coalLabel)} ${coalLabel} majority` },
 			{ p: o.hung, t: 'a hung parliament' },
 			{ p: o.alp_majority, t: 'a Labor majority' }
 		].sort((a, b) => b.p - a.p)[0];
@@ -108,7 +111,7 @@
 	const chanceSeries = $derived(
 		history
 			? [
-					{ key: 'coal', label: 'Coalition majority', colour: partyColour('COAL'), points: history.map((h) => ({ date: h.date, v: 100 * h.outcome.coal_majority })) },
+					{ key: 'coal', label: `${coalLabel} majority`, colour: partyColour('COAL'), points: history.map((h) => ({ date: h.date, v: 100 * h.outcome.coal_majority })) },
 					{ key: 'hung', label: 'Hung', colour: 'var(--fg-2)', dashed: true, points: history.map((h) => ({ date: h.date, v: 100 * h.outcome.hung })) },
 					{ key: 'alp', label: 'Labor majority', colour: partyColour('ALP'), points: history.map((h) => ({ date: h.date, v: 100 * h.outcome.alp_majority })) }
 				]
@@ -118,7 +121,7 @@
 		history
 			? (['COAL', 'ALP'] as const).map((k) => ({
 					key: k,
-					label: k === 'ALP' ? 'Labor' : 'Coalition',
+					label: k === 'ALP' ? 'Labor' : coalLabel,
 					colour: partyColour(k),
 					points: history
 						.filter((h) => h.seats[k])
@@ -176,9 +179,9 @@
 </p>
 {#if j.dataNote}<p class="small muted">{j.dataNote}</p>{/if}
 
-<OutcomeBar alpMajority={f.outcome.alp_majority} hung={f.outcome.hung} coalMajority={f.outcome.coal_majority} />
+<OutcomeBar alpMajority={f.outcome.alp_majority} hung={f.outcome.hung} coalMajority={f.outcome.coal_majority} coal={coalShort(j.code)} />
 <p class="small muted">
-	Largest party: Coalition in {Math.round(f.outcome.coal_most_seats * 100)} of 100, Labor in {Math.round(
+	Largest party: {coalLabel} in {Math.round(f.outcome.coal_most_seats * 100)} of 100, Labor in {Math.round(
 		f.outcome.alp_most_seats * 100
 	)} of 100.
 </p>
@@ -247,7 +250,7 @@
 <h2>Seat totals</h2>
 <div class="hists">
 	<SeatHistogram label="Labor" colour={partyColour('ALP')} counts={f.seat_hist.ALP} majority={f.majority} quantiles={f.seats.ALP} />
-	<SeatHistogram label="Coalition" colour={partyColour('COAL')} counts={f.seat_hist.COAL} majority={f.majority} quantiles={f.seats.COAL} />
+	<SeatHistogram label={coalLabel} colour={partyColour('COAL')} counts={f.seat_hist.COAL} majority={f.majority} quantiles={f.seats.COAL} />
 </div>
 <table class="data minor">
 	<thead><tr><th class="left">Party</th><th>Median seats</th><th>Likely range (50%)</th><th>90% range</th></tr></thead>
@@ -274,8 +277,10 @@
 			margin={f.seat_margin}
 			actual={actualSeats ? actualSeats.coal - actualSeats.alp : null}
 			actualLabel={resultLabel}
+			coal={coalShort(j.code)}
+			theCoal={theC}
 		/>
-		<SeatHeatmap joint={f.seat_joint} majority={f.majority} outcome={f.outcome} actual={actualSeats} actualLabel={resultLabel} />
+		<SeatHeatmap joint={f.seat_joint} majority={f.majority} outcome={f.outcome} actual={actualSeats} actualLabel={resultLabel} coal={coalLabel} />
 	</div>
 {/if}
 
@@ -307,7 +312,7 @@
 </ul>
 {#if f.tpp_hist}
 	<div class="tpp-dist">
-		<TppDistribution hist={f.tpp_hist} actual={retro ? (f.actual?.tpp_alp ?? null) : null} actualLabel={resultLabel} />
+		<TppDistribution hist={f.tpp_hist} actual={retro ? (f.actual?.tpp_alp ?? null) : null} actualLabel={resultLabel} theCoal={theC} />
 	</div>
 {/if}
 
@@ -323,7 +328,7 @@
 			<option value="certainty">Closest first</option>
 			<option value="name">Name</option>
 			<option value="alp">Labor chance</option>
-			<option value="coal">Coalition chance</option>
+			<option value="coal">{coalLabel} chance</option>
 		</select>
 	</label>
 </div>
