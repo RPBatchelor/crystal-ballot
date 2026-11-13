@@ -20,7 +20,9 @@ concurrency:
 
 jobs:
   pipeline:
-    runs-on: ubuntu-latest
+    # Pinned, not ubuntu-latest: the move to 26.04 (Nov 2026) changed the toolchain
+    # and Python under the frozen model and broke the CmdStan build.
+    runs-on: ubuntu-24.04
     timeout-minutes: 90
     env:
       # Wikimedia robot policy: identify the client with a contact URL.
@@ -42,7 +44,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cmdstan
-          key: cmdstan-2.40.0-${{ runner.os }}
+          # ImageOS (e.g. ubuntu24) in the key: a CmdStan built on one image aborts
+          # (SIGABRT, code -6) when its compiled libraries are reused on another.
+          key: cmdstan-2.40.0-${{ runner.os }}-${{ env.ImageOS }}
 
       - name: Install CmdStan
         if: env.FULL_RUN == 'true'
