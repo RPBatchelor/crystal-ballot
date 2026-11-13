@@ -39,14 +39,20 @@ jobs:
         working-directory: pipeline
         run: uv sync
 
+      # The runner sets ImageOS (e.g. ubuntu24) in the shell only, not in the env context.
+      - name: Runner image
+        id: image
+        if: env.FULL_RUN == 'true'
+        run: echo "os=$ImageOS" >> "$GITHUB_OUTPUT"
+
       - name: Cache CmdStan
         if: env.FULL_RUN == 'true'
         uses: actions/cache@v4
         with:
           path: ~/.cmdstan
-          # ImageOS (e.g. ubuntu24) in the key: a CmdStan built on one image aborts
-          # (SIGABRT, code -6) when its compiled libraries are reused on another.
-          key: cmdstan-2.40.0-${{ runner.os }}-${{ env.ImageOS }}
+          # Image in the key: a CmdStan built on one image aborts (SIGABRT, code -6)
+          # when its compiled libraries are reused on another.
+          key: cmdstan-2.40.0-${{ runner.os }}-${{ steps.image.outputs.os }}
 
       - name: Install CmdStan
         if: env.FULL_RUN == 'true'
