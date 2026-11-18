@@ -3,7 +3,7 @@
  "jurisdiction": "FED",
  "election_date": "2028-05-20",
  "election_date_known": false,
- "generated_at": "2026-11-17T02:36:30+00:00",
+ "generated_at": "2026-11-18T01:44:53+00:00",
  "cycles": [
   {
    "election_id": "fed-2010",
@@ -35,6 +35,22 @@
   }
  ],
  "polls": [
+  {
+   "pollster": "YouGov",
+   "client": "News24",
+   "field_start": "2026-11-10",
+   "field_end": "2026-11-17",
+   "sample_size": "1500",
+   "ALP": 24.0,
+   "COAL": 22.0,
+   "GRN": 15.0,
+   "ONP": "26.0",
+   "IND": null,
+   "OTH": 13.0,
+   "tpp_alp_vs_coal": 51.0,
+   "tpp_alp_vs_onp": "56.0",
+   "cycle": "fed-next"
+  },
   {
    "pollster": "Roy Morgan",
    "client": "rowspan=\"2\"",
