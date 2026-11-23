@@ -3,7 +3,7 @@
  "jurisdiction": "FED",
  "election_date": "2028-05-20",
  "election_date_known": false,
- "generated_at": "2026-11-22T00:01:45+00:00",
+ "generated_at": "2026-11-23T00:09:06+00:00",
  "cycles": [
   {
    "election_id": "fed-2010",
@@ -35,6 +35,22 @@
   }
  ],
  "polls": [
+  {
+   "pollster": "Newspoll",
+   "client": "The Australian",
+   "field_start": "2026-11-16",
+   "field_end": "2026-11-19",
+   "sample_size": "1229",
+   "ALP": 27.0,
+   "COAL": 22.0,
+   "GRN": 14.0,
+   "ONP": "27.0",
+   "IND": null,
+   "OTH": 10.0,
+   "tpp_alp_vs_coal": null,
+   "tpp_alp_vs_onp": null,
+   "cycle": "fed-next"
+  },
   {
    "pollster": "YouGov",
    "client": "News24",
