@@ -53,6 +53,7 @@
 			<strong>Labor {live.seats.ALP[2]}</strong> ({live.seats.ALP[0]}–{live.seats.ALP[4]}),
 			Greens {live.seats.GRN[2]}, One Nation {live.seats.ONP[2]}, Ind. {live.seats.IND[2]} ·
 			Labor 2PP <strong>{live.tpp_alp[1].toFixed(1)}%</strong> ({live.tpp_alp[0].toFixed(1)}–{live.tpp_alp[2].toFixed(1)}%)
+			· <a href="/vic/live/2026/" class="live-link">Election Night Live Tracker →</a>
 		</p>
 	</section>
 {/if}

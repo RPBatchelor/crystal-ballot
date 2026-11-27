@@ -365,6 +365,7 @@
 	{#if !retro}<a href="#scenarios">What-If scenarios</a>{/if}
 	<a href="#statewide-vote">{area} vote</a>
 	<a href="#every-seat">Every seat ({f.districts.length})</a>
+	{#if !retro}<a href="/{j.code}/live/{data.year}/" class="live-jump">● Live tracker →</a>{/if}
 </nav>
 
 {#if history}

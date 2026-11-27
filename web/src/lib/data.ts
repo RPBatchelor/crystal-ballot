@@ -1,3 +1,4 @@
+import { browser } from '$app/environment';
 import { error } from '@sveltejs/kit';
 import type { PollsFile, PreferencesFile, ResultsFile } from './types';
 
@@ -24,6 +25,29 @@ export const loadForecast = (fetch: Fetch, jur: string, year: number | string) =
 export async function loadLeaders(fetch: Fetch): Promise<import('./types').LeadersFile> {
 	const res = await fetch('/data/leaders.json');
 	return res.ok ? ((await res.json()) as import('./types').LeadersFile) : {};
+}
+
+/** Live election-night feed: tries Netlify Function first, falls back to static live JSON. */
+export async function loadLiveResults(
+	fetch: Fetch,
+	jur: string,
+	year: number | string
+): Promise<import('./types').LiveResultsFile | null> {
+	const endpoints = browser
+		? [`/.netlify/functions/live-${jur}-${year}`, `/data/${jur}/live/${year}.json`]
+		: [`/data/${jur}/live/${year}.json`];
+	for (const url of endpoints) {
+		try {
+			const res = await fetch(url, { cache: 'no-store' });
+			if (res.ok) {
+				const ct = res.headers.get('content-type') ?? '';
+				if (ct.includes('json')) return (await res.json()) as import('./types').LiveResultsFile;
+			}
+		} catch {
+			// Try next fallback endpoint
+		}
+	}
+	return null;
 }
 
 export const loadGeo = (fetch: Fetch, jur: string, boundaries: string) =>

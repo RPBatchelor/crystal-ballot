@@ -237,3 +237,41 @@ export interface ElectionLeaders {
 }
 
 export type LeadersFile = Record<string, ElectionLeaders>;
+
+export type LiveSeatStatus = 'uncounted' | 'counting' | 'projected' | 'called';
+
+export interface LiveDistrictResult {
+	slug: string;
+	district?: string;
+	status: LiveSeatStatus;
+	/** Official VEC / curated call party code (e.g. 'ALP', 'LIB', 'NAT', 'GRN', 'ONP', 'IND'). */
+	called_party?: string | null;
+	/** Currently leading party code on election night. */
+	leading_party?: string | null;
+	/** Two-candidate-preferred margin (%) for the leading candidate. */
+	margin?: number | null;
+	/** Percentage of enrolled/expected votes counted (0-100). */
+	pct_counted: number;
+	/** Live first-preference share (%) by bloc. */
+	primary?: Record<string, number>;
+	/** Live Labor two-party-preferred share (%) if available. */
+	tpp_alp?: number | null;
+	/** ISO timestamp when the seat was called. */
+	called_at?: string | null;
+	/** Source tag: 'vec' | 'curated' | 'projected' | 'manual'. */
+	source?: string;
+}
+
+export interface LiveResultsFile {
+	election_id: string;
+	updated_at: string;
+	status: 'pre_polls' | 'counting' | 'final';
+	source?: string;
+	note?: string | null;
+	seats_called: number;
+	seats_reporting: number;
+	pct_counted: number;
+	statewide_primary: Record<string, number | null>;
+	tpp_alp: number | null;
+	districts: LiveDistrictResult[];
+}
