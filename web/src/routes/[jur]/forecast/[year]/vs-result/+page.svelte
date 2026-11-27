@@ -103,11 +103,15 @@
 		};
 	}
 
-	// Calibration chart
+	// Calibration chart with 90% binomial confidence intervals around each bin.
 	const CAL = { w: 320, h: 260, l: 40, r: 12, t: 12, b: 38, lo: 0.4 };
 	const cx = (p: number) => CAL.l + ((p - CAL.lo) / (1 - CAL.lo)) * (CAL.w - CAL.l - CAL.r);
 	const cy = (p: number) => CAL.h - CAL.b - ((p - CAL.lo) / (1 - CAL.lo)) * (CAL.h - CAL.t - CAL.b);
 	const ticks = [0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1];
+	const binom90 = (p: number, n: number): [number, number] => {
+		const se = Math.sqrt((p * (1 - p)) / Math.max(n, 1));
+		return [Math.max(CAL.lo, p - 1.645 * se), Math.min(1, p + 1.645 * se)];
+	};
 
 	// Seat table
 	let view = $state<'all' | 'misses' | 'changed'>('all');
@@ -276,8 +280,10 @@
 			{/each}
 			<line class="diag" x1={cx(CAL.lo)} y1={cy(CAL.lo)} x2={cx(1)} y2={cy(1)} />
 			{#each scores.calibration as c (c.bin)}
+				{@const [lo90, hi90] = binom90(c.mean_prob, c.n)}
+				<line class="ci" x1={cx(c.mean_prob)} x2={cx(c.mean_prob)} y1={cy(lo90)} y2={cy(hi90)} />
 				<circle cx={cx(c.mean_prob)} cy={cy(Math.max(c.hit_rate, CAL.lo))} r={3 + Math.sqrt(c.n) * 1.4}>
-					<title>{c.bin.replace('-', '–')}: {c.n} seats, average forecast {pct(c.mean_prob)}, favourite won {pct(c.hit_rate)}</title>
+					<title>{c.bin.replace('-', '–')}: {c.n} seats, average forecast {pct(c.mean_prob)}, favourite won {pct(c.hit_rate)} (expected 90% range {pct(lo90)}–{pct(hi90)})</title>
 				</circle>
 			{/each}
 			<text class="axis-label" x={(CAL.l + CAL.w - CAL.r) / 2} y={CAL.h - 4} text-anchor="middle">Favourite's forecast chance (%)</text>
@@ -506,6 +512,12 @@
 	.cal .diag {
 		stroke: var(--fg-2);
 		stroke-dasharray: 4 3;
+	}
+	.cal .ci {
+		stroke: var(--muted);
+		stroke-width: 2;
+		stroke-linecap: round;
+		opacity: 0.65;
 	}
 	.cal circle {
 		fill: var(--fg);

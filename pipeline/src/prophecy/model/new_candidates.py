@@ -74,5 +74,7 @@ def draw(n_new: np.ndarray, shares: np.ndarray, size: int, rng: np.random.Genera
     for k in range(1, int(n_new.max(initial=0)) + 1):
         has = n_new >= k
         picks = shares[rng.integers(0, len(shares), size=(size, int(has.sum())))]
-        out[:, has] += picks * np.exp(rng.normal(0, JITTER_SD, size=picks.shape))
+        # Sub-linear accumulation (1/sqrt(k)) reflects vote-splitting among multiple
+        # first-time independents competing on the same ballot.
+        out[:, has] += (picks / np.sqrt(k)) * np.exp(rng.normal(0, JITTER_SD, size=picks.shape))
     return np.clip(out, 0, 0.6)

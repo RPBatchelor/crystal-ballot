@@ -66,17 +66,54 @@ def run_aggregate(election: Election, previous: Election, polls: pl.DataFrame,
     return f
 
 
-SWING_FLOOR = {"ALP": 3.0, "COAL": 3.0, "GRN": 1.5}  # points, for the no-polls prior
+SWING_FLOOR = {"ALP": 3.0, "COAL": 3.0, "GRN": 1.5}  # points, floor for no-polls prior
+SWING_PRIOR_SHRINK = 4.0  # pseudo-elections shrinking jurisdiction swing cov toward pool
+SWING_PRIOR_DF = 5.0  # heavy-tailed election-to-election swings
+GOV_SWING_TO_OPP = 0.6  # share of anti-government swing going to major opposition vs OTH
+
+
+def _alr_swing_samples(before, jurisdiction: str | None = None) -> np.ndarray:
+    """Election-to-election ALR swing vectors (N x 3 for ALP, COAL, GRN vs OTH)
+    from all elections before ``before`` (or a single jurisdiction)."""
+    from prophecy.jurisdictions import in_jurisdiction
+
+    jurs = (jurisdiction,) if jurisdiction else ("VIC", "NSW", "QLD", "WA", "SA", "TAS", "ACT", "NT", "FED")
+    diffs = []
+    for j in jurs:
+        path = PROCESSED / f"election_results_{j.lower()}.csv"
+        if not path.exists():
+            continue
+        df = pl.read_csv(path, try_parse_dates=True).filter(pl.col("date") < before).sort("year")
+        if df.height < 2:
+            continue
+        rows = df.iter_rows(named=True)
+        prev_alr = None
+        for r in rows:
+            vals = [r.get("ALP"), r.get("COAL"), r.get("GRN")]
+            if any(v is None for v in vals):
+                prev_alr = None
+                continue
+            alp, coal, grn = [max(float(v), 0.5) for v in vals]
+            oth = max(100.0 - alp - coal - grn, 1.0)
+            tot = alp + coal + grn + oth
+            cur = np.log(np.array([alp, coal, grn]) / oth)
+            if prev_alr is not None:
+                diffs.append(cur - prev_alr)
+            prev_alr = cur
+    return np.asarray(diffs, dtype=float) if diffs else np.empty((0, 3))
 
 
 def swing_prior(election: Election, previous: Election, out_dir: Path, run_dir: Path,
                 polls: pl.DataFrame | None = None, n_draws: int = 4000, seed: int = 20261128,
                 log: Callable[[str], None] = print) -> None:
     """Stand-in for the poll aggregate when an election had too few public polls to fit
-    it (none for the ACT in 2024; two for the NT): a centre plus a swing drawn from the
-    jurisdiction's own election-to-election changes (root mean square, floored), saved
-    in the aggregator's format. The centre is the previous result, or for each party the
-    average of the polls of the last year that report it."""
+    it (none for the ACT in 2024; two for the NT): a centre plus correlated multivariate-t
+    swings on the ALR scale, with the jurisdiction's covariance shrunk toward the national
+    pool of earlier election-to-election swings."""
+    from scipy.special import softmax
+
+    from prophecy.model.simulate import _safe_cholesky
+
     code = election.jurisdiction.lower()
     hist = (pl.read_csv(PROCESSED / f"election_results_{code}.csv", try_parse_dates=True)
             .filter(pl.col("year") < election.date.year).sort("year"))
@@ -94,26 +131,56 @@ def swing_prior(election: Election, previous: Election, out_dir: Path, run_dir: 
             if len(v):
                 start[p] = float(v.mean())
                 used.append(p)
-        start["OTH"] = 100 - sum(start[p] for p in parties[:-1])
+        start["OTH"] = max(100.0 - sum(start[p] for p in parties[:-1]), 1.0)
     # The government's vote tends to fall: shift its centre by the average change in
-    # governing parties' primary votes at earlier elections (unless polls set it).
+    # governing parties' primary votes at earlier elections (unless polls set it),
+    # routing most of the swing to the major opposition and the remainder to Others.
     gov = governing_bloc(previous)
     shift = government_swing(election.date) if gov and gov not in used else 0.0
     if shift:
-        start[gov] += shift
-        start["OTH"] -= shift
+        opp = "COAL" if gov == "ALP" else "ALP"
+        start[gov] = max(start[gov] + shift, 1.0)
+        if opp not in used:
+            start[opp] = max(start[opp] - GOV_SWING_TO_OPP * shift, 1.0)
+            start["OTH"] = max(start["OTH"] - (1.0 - GOV_SWING_TO_OPP) * shift, 1.0)
+        else:
+            start["OTH"] = max(start["OTH"] - shift, 1.0)
+        tot_s = sum(start.values())
+        start = {k: 100.0 * v / tot_s for k, v in start.items()}
         log(f"no polls for the governing party ({gov}): centre shifted {shift:+.1f} points")
+
+    p0 = np.array([max(start[p], 0.5) for p in parties], dtype=float)
+    p0 = 100.0 * p0 / p0.sum()
+    alr0 = np.log(p0[:3] / p0[3])
+
+    # Pooled + jurisdiction-shrunk ALR swing covariance (centred second moment).
+    pool_d = _alr_swing_samples(election.date)
+    own_d = _alr_swing_samples(election.date, election.jurisdiction)
+    cov_pool = (pool_d.T @ pool_d) / max(len(pool_d), 1) if len(pool_d) >= 3 else np.diag([0.08, 0.08, 0.08])
+    if len(own_d) >= 1:
+        cov_own = (own_d.T @ own_d) / len(own_d)
+        k = SWING_PRIOR_SHRINK
+        cov_alr = (len(own_d) * cov_own + k * cov_pool) / (len(own_d) + k)
+    else:
+        cov_alr = cov_pool
+    # Enforce minimum marginal variance corresponding to SWING_FLOOR via delta method.
+    J_inv = np.diag(1.0 / p0[:3]) + (1.0 / p0[3])
+    floor_alr = np.diag(J_inv @ np.diag([SWING_FLOOR[p] ** 2 for p in parties[:3]]) @ J_inv.T)
+    diag_alr = np.diag(cov_alr)
+    bump = np.sqrt(np.maximum(floor_alr / np.maximum(diag_alr, 1e-8), 1.0))
+    cov_alr = cov_alr * np.outer(bump, bump)
+    cov_alr = 0.95 * cov_alr + 0.05 * np.diag(np.diag(cov_alr))
+
     rng = np.random.default_rng(seed)
+    L = _safe_cholesky(cov_alr)
+    scale = np.sqrt((SWING_PRIOR_DF - 2.0) / SWING_PRIOR_DF)
+    z = rng.standard_normal((n_draws, 3)) @ L.T
+    mix = np.sqrt(SWING_PRIOR_DF / rng.chisquare(SWING_PRIOR_DF, size=n_draws))
+    eta = alr0[None, :] + (scale * mix[:, None]) * z
     shares = np.zeros((n_draws, 1, len(parties)))
-    sd = {}
-    for k, p in enumerate(parties[:-1]):
-        changes = hist[p].diff().drop_nulls().to_numpy()
-        rms = float(np.sqrt(np.mean(changes ** 2))) if len(changes) else 0.0
-        sd[p] = round(max(rms, SWING_FLOOR[p]), 2)
-        shares[:, 0, k] = start[p] + rng.normal(0, sd[p], n_draws)
-    shares[:, 0, :-1] = np.clip(shares[:, 0, :-1], 0.5, None)
-    shares[:, 0, -1] = np.clip(100 - shares[:, 0, :-1].sum(axis=1), 1.0, None)
-    shares[:, 0, :] *= 100 / shares[:, 0, :].sum(axis=1, keepdims=True)
+    shares[:, 0, :] = 100.0 * softmax(np.concatenate([eta, np.zeros((n_draws, 1))], axis=1), axis=1)
+    sd = {p: round(float(np.std(shares[:, 0, i])), 2) for i, p in enumerate(parties[:-1])}
+
     run_dir.mkdir(parents=True, exist_ok=True)
     np.savez_compressed(run_dir / "aggregate_draws.npz", shares=shares.astype(np.float32),
                         parties=np.array(parties))
@@ -124,7 +191,7 @@ def swing_prior(election: Election, previous: Election, out_dir: Path, run_dir: 
          "swing_from": hist["year"].to_list()}, indent=1))
     log(f"too few polls: centre {({k: round(v, 1) for k, v in start.items()})} "
         f"(poll average for {used or 'none'}, else previous result) "
-        f"plus swing sd {sd} (from {len(hist)} past results)")
+        f"plus correlated ALR swing sd {sd} (from {len(own_d)} own + {len(pool_d)} pooled swings)")
 
 
 GOV_SHRINK = 10  # pseudo-elections shrinking the average government swing toward zero

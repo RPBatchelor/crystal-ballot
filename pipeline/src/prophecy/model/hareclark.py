@@ -47,8 +47,52 @@ NEW_IND_SHARE = 0.01  # an independent with no previous vote in the division
 NEW_IND_SD = 0.8  # log-scale spread for a new independent (most poll little, a few well)
 DEFECTOR_PERSONAL_VOTE = 0.5  # share of a sitting member's old personal vote they keep
 EXHAUST = 0.1  # exhaustion weight (Luce scale, rows of the flow weights sum to 1)
+EXHAUST_SD = 0.25  # log-scale simulation uncertainty on Hare-Clark exhaustion
+SURPLUS_LEAKAGE = 0.08  # share of a multi-seat party's surplus leaking outside its ticket
 SAME_BLOC = 0.15  # flow weight between two independents or two minor parties
 DIVISION_SD = 0.35  # log scale: a new party's strength from division to division
+HC_PRIOR_SD = {"ALP": 0.12, "COAL": 0.12, "GRN": 0.18, "OTH": 0.25}
+HC_SHRINK_DIVS = 10  # pseudo-divisions shrinking empirical division swing SD to prior
+
+
+def hareclark_swing_sd(before) -> dict[str, float]:
+    """Empirical logit-scale division swing SD for Hare-Clark (TAS/ACT) from pairs of
+    consecutive Hare-Clark elections held before ``before``, shrunk toward priors."""
+    from prophecy.jurisdictions import ELECTIONS, previous
+
+    resids: dict[str, list[float]] = {b: [] for b in SWING_BLOCS}
+    for e in ELECTIONS.values():
+        p = previous(e)
+        if (e.jurisdiction not in ("TAS", "ACT") or p is None or e.date >= before
+                or not (PROCESSED / e.election_id / "primary.csv").exists()
+                or not (PROCESSED / p.election_id / "primary.csv").exists()):
+            continue
+        cur = pl.read_csv(PROCESSED / e.election_id / "primary.csv", infer_schema_length=None)
+        old = pl.read_csv(PROCESSED / p.election_id / "primary.csv", infer_schema_length=None)
+        for b in SWING_BLOCS:
+            def _div_shares(df: pl.DataFrame) -> dict[str, float]:
+                tot = dict(df.group_by("district").agg(pl.col("votes").sum()).iter_rows())
+                sub = (df.with_columns(pl.col("bloc").map_elements(_swing_bloc, return_dtype=pl.String).alias("sb"))
+                       .filter(pl.col("sb") == b).group_by("district").agg(pl.col("votes").sum()))
+                return {d: v / tot[d] for d, v in sub.iter_rows() if tot.get(d, 0) > 0}
+            s0, s1 = _div_shares(old), _div_shares(cur)
+            common = sorted(set(s0) & set(s1))
+            deltas = [float(logit(np.clip(s1[d], 0.02, 0.98)) - logit(np.clip(s0[d], 0.02, 0.98)))
+                      for d in common if s0[d] > 0.02 and s1[d] > 0.02]
+            if len(deltas) >= 3:
+                mean_d = float(np.mean(deltas))
+                resids[b].extend(x - mean_d for x in deltas)
+    out = {}
+    for b in SWING_BLOCS:
+        r = np.asarray(resids[b], dtype=float)
+        p_sd = HC_PRIOR_SD[b]
+        if len(r) >= 4:
+            emp_var = float(np.mean(r ** 2))
+            var = (len(r) * emp_var + HC_SHRINK_DIVS * p_sd ** 2) / (len(r) + HC_SHRINK_DIVS)
+            out[b] = round(float(np.sqrt(var)), 4)
+        else:
+            out[b] = p_sd
+    return out
 
 
 @dataclass
@@ -196,11 +240,15 @@ def tas_flows(election: Election, log: Callable[[str], None] = print) -> np.ndar
 
 
 def hare_clark(votes: np.ndarray, unit_bloc: np.ndarray, cap: np.ndarray, seats: int,
-               flows: np.ndarray, exhaust: float = EXHAUST) -> np.ndarray:
+               flows: np.ndarray, exhaust: float | np.ndarray = EXHAUST,
+               surplus_leakage: float = 0.0) -> np.ndarray:
     """Seats won by each unit, per simulation.
 
     votes: S x U first-preference shares; unit_bloc: U bloc indices; cap: U most seats a
-    unit can win (1 for an independent); flows: S x B x B Luce weights.
+    unit can win (1 for an independent); flows: S x B x B Luce weights;
+    exhaust: scalar or (S,) array of exhaustion weights;
+    surplus_leakage: share of a multi-seat party's surplus leaking outside its ticket
+    (approximating Robson rotation / intra-ticket dispersion).
     """
     S, U = votes.shape
     q = 1.0 / (seats + 1)
@@ -211,17 +259,20 @@ def hare_clark(votes: np.ndarray, unit_bloc: np.ndarray, cap: np.ndarray, seats:
     member = np.zeros((U, len(BLOCS)))
     member[np.arange(U), unit_bloc] = 1.0
     rows = np.arange(S)
+    ex_arr = np.broadcast_to(np.asarray(exhaust, dtype=float), (S,))
 
-    def transfer(s: np.ndarray, u: np.ndarray, amount: np.ndarray) -> None:
+    def transfer(s: np.ndarray, u: np.ndarray, amount: np.ndarray, exclude_self: bool = False) -> None:
         """Move ``amount`` from unit u to the continuing units, by bloc then by vote."""
         if len(s) == 0:
             return
-        act = active[s]
+        act = active[s].copy()
+        if exclude_self:
+            act[np.arange(len(s)), u] = False
         Vb = (V[s] * act) @ member  # s x B continuing votes by bloc
         present = (act.astype(float) @ member) > 0
         f = flows[s, unit_bloc[u], :] * present  # s x B
-        denom = f.sum(axis=1) + exhaust
-        to_unit = f[:, unit_bloc] / denom[:, None] * act * V[s] / np.maximum(Vb[:, unit_bloc], 1e-12)
+        denom = f.sum(axis=1) + ex_arr[s]
+        to_unit = f[:, unit_bloc] / np.maximum(denom[:, None], 1e-12) * act * V[s] / np.maximum(Vb[:, unit_bloc], 1e-12)
         V[s] += amount[:, None] * to_unit
 
     for _ in range(4 * U + seats + 5):
@@ -246,6 +297,13 @@ def hare_clark(votes: np.ndarray, unit_bloc: np.ndarray, cap: np.ndarray, seats:
             V[sd, ud] = 0.0
             active[sd, ud] = False
             transfer(sd, ud, surplus)
+            if surplus_leakage > 0.0:
+                stay = ~done & (V[s, u] > 1e-9)
+                ss, us = s[stay], u[stay]
+                if len(ss):
+                    leaked = surplus_leakage * V[ss, us]
+                    V[ss, us] -= leaked
+                    transfer(ss, us, leaked, exclude_self=True)
 
         s = np.nonzero(exclude)[0]
         if len(s):
@@ -324,6 +382,7 @@ def simulate_tas(divisions: list[DivisionInputs], agg_draws: np.ndarray, agg_par
     for b in ("IND", "OTH"):
         flows[:, IDX[b], IDX[b]] = SAME_BLOC
     flows /= flows.sum(axis=2, keepdims=True)
+    ex_draws = EXHAUST * np.exp(rng.normal(0.0, EXHAUST_SD, size=S))
 
     seats_out, shares_out = {}, {}
     for i, d in enumerate(divisions):
@@ -348,7 +407,8 @@ def simulate_tas(divisions: list[DivisionInputs], agg_draws: np.ndarray, agg_par
         V /= V.sum(axis=1, keepdims=True)
         unit_bloc = np.array([IDX[u.bloc] for u in units])
         cap = np.array([1 if u.party == "IND" else d.seats for u in units])
-        seats_out[d.division] = hare_clark(V, unit_bloc, cap, d.seats, flows)
+        seats_out[d.division] = hare_clark(V, unit_bloc, cap, d.seats, flows, exhaust=ex_draws,
+                                           surplus_leakage=SURPLUS_LEAKAGE)
         shares_out[d.division] = V
     return TasResult(divisions, state, seats_out, shares_out)
 

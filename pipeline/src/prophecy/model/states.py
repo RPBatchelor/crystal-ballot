@@ -99,14 +99,109 @@ def _redistribute(votes: pl.DataFrame, by: list[str], value: str,
             .group_by("new", "district", *by).agg(pl.col(value).sum()))
 
 
+def gis_venue_dest(prev_booths: pl.DataFrame, boundary_set: str,
+                   districts: list[str] | None = None) -> pl.DataFrame | None:
+    """Pre-election GIS point-in-polygon mapping of previous-election polling venues onto
+    new boundary polygons (returns columns ``key``, ``new``, ``w`` = 1.0), using only
+    booth coordinates and the gazetted pre-election boundary GeoJSON (zero post-election
+    data). Returns None if booth coordinates or the boundary GeoJSON are not available."""
+    import json
+
+    from shapely import STRtree, points
+    from shapely.geometry import shape
+
+    from prophecy.ingest.boundaries import LAYERS, raw_path
+
+    if boundary_set not in LAYERS or not raw_path(boundary_set).exists():
+        return None
+    cols_lower = {c.lower(): c for c in prev_booths.columns}
+    lat_c = cols_lower.get("latitude") or cols_lower.get("lat")
+    lon_c = cols_lower.get("longitude") or cols_lower.get("lon") or cols_lower.get("lng")
+    if not (lat_c and lon_c):
+        return None
+    located = (prev_booths.filter(pl.col("section").is_in(ORDINARY)
+                                  & pl.col(lat_c).is_not_null() & pl.col(lon_c).is_not_null())
+               .with_columns(pl.col("venue").map_elements(_key, return_dtype=pl.String).alias("key"))
+               .group_by("key").agg(pl.col(lat_c).cast(pl.Float64).mean().alias("lat"),
+                                    pl.col(lon_c).cast(pl.Float64).mean().alias("lon")))
+    if not located.height:
+        return None
+    data = json.loads(raw_path(boundary_set).read_text(encoding="utf-8"))
+    field = LAYERS[boundary_set].name_field.lower()
+    by_slug = {slugify(d): d for d in districts} if districts else {}
+    names, geoms = [], []
+    for feat in data["features"]:
+        props = {k.lower(): v for k, v in feat["properties"].items()}
+        raw_name = str(props[field])
+        names.append(by_slug.get(slugify(raw_name), raw_name))
+        geoms.append(shape(feat["geometry"]))
+    tree = STRtree(geoms)
+    pts = points(located["lon"].to_numpy(), located["lat"].to_numpy())
+    pt_idx, geom_idx = tree.query(pts, predicate="within")
+    if not len(pt_idx):
+        return None
+    keys = located["key"].to_list()
+    return pl.DataFrame({
+        "key": [keys[i] for i in pt_idx],
+        "new": [names[j] for j in geom_idx],
+        "w": [1.0] * len(pt_idx),
+    }).unique(subset=["key"])
+
+
+def _shares_from_dest(prev_booths: pl.DataFrame, dest: pl.DataFrame) -> pl.DataFrame:
+    """Old-to-new district vote shares and match rate from a venue destination map."""
+    venues = (prev_booths.filter((pl.col("party") != "INFORMAL") & pl.col("section").is_in(ORDINARY))
+              .with_columns(pl.col("venue").map_elements(_key, return_dtype=pl.String).alias("key"))
+              .group_by("district", "key").agg(pl.col("votes").sum()))
+    matched = venues.join(dest, on="key", how="inner").with_columns((pl.col("votes") * pl.col("w")).alias("v"))
+    share = (matched.group_by("district", "new").agg(pl.col("v").sum())
+             .with_columns((pl.col("v") / pl.col("v").sum().over("district")).alias("share")))
+    rate = (venues.group_by("district").agg(pl.col("votes").sum().alias("all"))
+            .join(venues.join(dest.select("key").unique(), on="key", how="semi")
+                  .group_by("district").agg(pl.col("votes").sum().alias("hit")), on="district", how="left")
+            .select("district", (pl.col("hit").fill_null(0) / pl.col("all")).alias("matched")))
+    return share.select(pl.col("district").alias("old"), "new", "share").join(
+        rate.rename({"district": "old"}), on="old", how="left")
+
+
+def _redistribute_with_dest(votes: pl.DataFrame, by: list[str], value: str,
+                            dest: pl.DataFrame, shares: pl.DataFrame) -> pl.DataFrame:
+    v = votes.with_columns(pl.col("venue").map_elements(_key, return_dtype=pl.String).alias("key"))
+    is_day = pl.col("section").is_in(ORDINARY)
+    direct = v.filter(is_day).join(dest, on="key", how="inner")
+    rest = pl.concat([
+        v.filter(is_day).join(direct.select("district", "key").unique(), on=["district", "key"], how="anti"),
+        v.filter(~is_day),
+    ])
+    spread = rest.join(shares.rename({"old": "district", "share": "w"}), on="district", how="inner")
+    cols = ["district", "new", *by, value, "w"]
+    return (pl.concat([direct.select(cols), spread.select(cols)])
+            .with_columns((pl.col(value) * pl.col("w")).alias(value))
+            .group_by("new", "district", *by).agg(pl.col(value).sum()))
+
+
 def notional_baseline(previous: Election, election: Election,
-                      log: Callable[[str], None] = print) -> dict[str, pl.DataFrame]:
+                      log: Callable[[str], None] = print,
+                      allow_post_election_venues: bool = True) -> dict[str, pl.DataFrame]:
     """``previous``'s first preferences and Labor v Coalition 2PP on ``election``'s
-    districts, with each new district's notional holder."""
+    districts, with each new district's notional holder.
+
+    Prefers pure pre-election GIS point-in-polygon matching (when booth coordinates and
+    boundary GeoJSON are available) so no target-election data is read; falls back to
+    venue-name catchment matching otherwise (unless ``allow_post_election_venues=False``)."""
     pdir, ndir = PROCESSED / previous.election_id, PROCESSED / election.election_id
     prev_booths = pl.read_csv(pdir / "booths.csv")
-    new_booths = pl.read_csv(ndir / "booths.csv")
-    shares = venue_map(prev_booths, new_booths)
+    dest_gis = gis_venue_dest(prev_booths, election.boundary_set)
+    if dest_gis is not None:
+        shares = _shares_from_dest(prev_booths, dest_gis)
+        new_booths = None
+        log(f"notional baseline ({election.election_id}): pre-election GIS point-in-polygon ({dest_gis.height} venues)")
+    else:
+        if not allow_post_election_venues:
+            raise ValueError(f"{election.election_id}: pre-election GIS booth coordinates or boundaries unavailable")
+        new_booths = pl.read_csv(ndir / "booths.csv")
+        shares = venue_map(prev_booths, new_booths)
+        log(f"notional baseline ({election.election_id}): venue-name matching fallback (no booth lat/lon)")
     low = shares.select("old", "matched").unique().filter(pl.col("matched") < 0.8)
     if low.height:
         log(f"WARNING: under 80% of election-day votes matched to new venues: {low.rows()}")
@@ -125,7 +220,10 @@ def notional_baseline(previous: Election, election: Election,
                     "candidate", "party", (pl.col("votes") - pl.col("by_venue").fill_null(0)).alias("votes"))
             .filter(pl.col("votes") > 0))
     cand = pl.concat([cand, rest.cast(cand.schema)])
-    moved = _redistribute(cand, ["candidate", "party"], "votes", new_booths, shares)
+    if dest_gis is not None:
+        moved = _redistribute_with_dest(cand, ["candidate", "party"], "votes", dest_gis, shares)
+    else:
+        moved = _redistribute(cand, ["candidate", "party"], "votes", new_booths, shares)
 
     primary = (moved.with_columns(pl.col("party").map_elements(bloc, return_dtype=pl.String).alias("bloc"))
         .with_columns(_member_bloc(winners, held).alias("bloc"))
@@ -140,9 +238,12 @@ def notional_baseline(previous: Election, election: Election,
 
     if (pdir / "tpp_booths.csv").exists():
         tb = pl.read_csv(pdir / "tpp_booths.csv")
-        sides = _redistribute(tb.unpivot(index=["district", "section", "venue"], on=["alp", "coal"],
-                                         variable_name="side", value_name="votes"),
-                              ["side"], "votes", new_booths, shares)
+        tb_long = tb.unpivot(index=["district", "section", "venue"], on=["alp", "coal"],
+                             variable_name="side", value_name="votes")
+        if dest_gis is not None:
+            sides = _redistribute_with_dest(tb_long, ["side"], "votes", dest_gis, shares)
+        else:
+            sides = _redistribute(tb_long, ["side"], "votes", new_booths, shares)
     else:
         # No Labor v Coalition count by venue (WA): each old seat's count follows its
         # votes, split in that seat's 2PP proportions. Old seats without such a count
