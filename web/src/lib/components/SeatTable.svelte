@@ -61,7 +61,9 @@
 		{ v: 'all', l: 'All seats' },
 		{ v: 'ALP', l: 'Labor' },
 		{ v: 'COAL', l: coal },
-		{ v: 'GRN', l: 'Greens' }
+		{ v: 'GRN', l: 'Greens' },
+		{ v: 'IND', l: 'Ind.' },
+		{ v: 'ONP', l: 'One Nation' }
 	]);
 </script>
 

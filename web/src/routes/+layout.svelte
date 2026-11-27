@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import { REPO_URL, SITE_NAME, SITE_STRAPLINE, SITE_TAGLINE } from '$lib/site';
 	import BrandMark from '$lib/components/brand/BrandMark.svelte';
 	import '../app.css';
@@ -6,6 +7,23 @@
 	import { JURISDICTIONS, getJurisdiction, isActive } from '$lib/jurisdictions';
 
 	let { children } = $props();
+	let theme = $state<'light' | 'dark'>('light');
+
+	$effect(() => {
+		if (!browser) return;
+		const saved = localStorage.getItem('cb-theme');
+		const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+		theme = saved === 'dark' || saved === 'light' ? saved : prefersDark ? 'dark' : 'light';
+		document.documentElement.dataset.theme = theme;
+	});
+
+	function toggleTheme() {
+		theme = theme === 'dark' ? 'light' : 'dark';
+		if (browser) {
+			document.documentElement.dataset.theme = theme;
+			localStorage.setItem('cb-theme', theme);
+		}
+	}
 
 	const current = $derived(getJurisdiction(page.params.jur ?? ''));
 	const path = $derived(page.url.pathname);
@@ -45,6 +63,13 @@
 		<nav class="meta" aria-label="About this site">
 			<a href="/methodology/" aria-current={path.startsWith('/methodology/') ? 'page' : undefined}>Methodology</a>
 			<a href={REPO_URL} target="_blank" rel="noopener noreferrer">GitHub<span class="ext" aria-hidden="true">↗</span><span class="visually-hidden"> (source repository, opens in a new tab)</span></a>
+			<button
+				type="button"
+				class="theme-btn"
+				onclick={toggleTheme}
+				aria-label="Switch to {theme === 'dark' ? 'light' : 'dark'} theme"
+				title="Switch to {theme === 'dark' ? 'light' : 'dark'} theme"
+			>{theme === 'dark' ? '☀' : '☾'}</button>
 		</nav>
 	</div>
 	<nav class="jurisdictions" aria-label="Jurisdiction">
@@ -136,7 +161,23 @@
 	}
 	.meta {
 		display: flex;
+		align-items: center;
 		gap: 0.25rem;
+	}
+	.theme-btn {
+		font: inherit;
+		font-size: 0.95rem;
+		line-height: 1;
+		padding: 0.38rem 0.6rem;
+		border: 1px solid var(--rule);
+		border-radius: 999px;
+		background: var(--surface);
+		color: var(--fg-2);
+		cursor: pointer;
+	}
+	.theme-btn:hover {
+		border-color: var(--rule-strong);
+		color: var(--fg);
 	}
 	.meta a {
 		font-size: 0.9rem;

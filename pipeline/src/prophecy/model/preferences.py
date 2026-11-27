@@ -183,7 +183,41 @@ def draw_weights(w: np.ndarray, n: int, rng: np.random.Generator,
     onp = IDX["ONP"]
     out[:, :, onp] *= np.exp(rng.normal(0, 0.25, size=(n, B)))
     out[:, onp, onp] = 0.0
+    # Renormalise rows to sum to 1 so OPV exhaustion weights stay on the same scale.
+    out /= np.maximum(out.sum(axis=2, keepdims=True), 1e-12)
     return out
+
+
+def draw_seat_weights(flows: np.ndarray, incumbent_blocs: list[str], rng: np.random.Generator,
+                      seat_sd: float = 0.15, ind_sd: float = 0.45,
+                      ind_anti_incumbent_tilt: float = 0.25) -> np.ndarray:
+    """Seat-level flow weights (S x D x B x B) around statewide ``flows`` (S x B x B).
+
+    Adds seat-to-seat heterogeneity (widest for independents and minor parties) and a
+    mild anti-incumbent tilt on independent preferences (e.g. challenger independents in
+    Coalition-held seats flow slightly more toward Labor/Greens, and vice versa).
+    """
+    S = flows.shape[0]
+    D = len(incumbent_blocs)
+    w = np.broadcast_to(flows[:, None, :, :], (S, D, B, B)).copy()
+    if seat_sd > 0 or ind_sd > 0:
+        row_sd = np.full(B, seat_sd)
+        row_sd[IDX["IND"]] = ind_sd
+        row_sd[IDX["OTH"]] = max(seat_sd, 0.25)
+        jitter = np.exp(rng.normal(0.0, 1.0, size=(S, D, B, B)) * row_sd[None, None, :, None])
+        w *= jitter
+    if ind_anti_incumbent_tilt != 0.0:
+        ind_i, alp_i, coal_i = IDX["IND"], IDX["ALP"], IDX["COAL"]
+        inc = np.array(incumbent_blocs)
+        # Positive tilt on ALP vs COAL in COAL-held seats; negative in ALP-held seats.
+        tilt = np.where(inc == "COAL", ind_anti_incumbent_tilt,
+                        np.where(inc == "ALP", -ind_anti_incumbent_tilt, 0.0))
+        w[:, :, ind_i, alp_i] *= np.exp(0.5 * tilt)[None, :]
+        w[:, :, ind_i, coal_i] *= np.exp(-0.5 * tilt)[None, :]
+    eye = np.eye(B, dtype=bool)[None, None, :, :]
+    w = np.where(eye, 0.0, w)
+    w /= np.maximum(w.sum(axis=3, keepdims=True), 1e-12)
+    return w
 
 
 def draw_exhaust(exhaust: np.ndarray, n: int, rng: np.random.Generator,
@@ -198,7 +232,7 @@ def count(shares: np.ndarray, weights: np.ndarray,
     """Run an exclusion count for every simulation and seat.
 
     shares:  S x D x B primary shares (0 where a bloc has no candidate)
-    weights: S x B x B flow weights (one set per simulation)
+    weights: S x B x B (shared across seats) or S x D x B x B (seat-specific) flow weights
     exhaust: S x B exhaustion weights (optional preferential voting), or None
     Returns (winner index S x D, final two-candidate shares S x D x B; under optional
     preferential voting these are shares of the ballots still in the count).
@@ -208,7 +242,10 @@ def count(shares: np.ndarray, weights: np.ndarray,
     """
     votes = shares.astype(float).copy()
     alive = votes > 0
-    S = votes.shape[0]
+    S, D, _ = votes.shape
+    s_idx = np.arange(S)[:, None]
+    d_idx = np.arange(D)[None, :]
+    seat_specific = weights.ndim == 4
     for _ in range(B - 2):
         n_alive = alive.sum(axis=2)
         active = n_alive > 2
@@ -222,7 +259,7 @@ def count(shares: np.ndarray, weights: np.ndarray,
         loser = masked.argmin(axis=2)  # S x D
         loser_votes = np.take_along_axis(votes, loser[..., None], axis=2)[..., 0]
         # Flow weights from each seat's excluded bloc, restricted to survivors: S x D x B.
-        w_from = weights[np.arange(S)[:, None], loser]
+        w_from = weights[s_idx, d_idx, loser] if seat_specific else weights[s_idx, loser]
         survivors = alive.copy()
         np.put_along_axis(survivors, loser[..., None], False, axis=2)
         w_from = np.where(survivors, w_from, 0.0)

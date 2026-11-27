@@ -191,23 +191,75 @@ class SwingParams:
     region_sd: float
     n: dict[str, int]
     pairs: list[str]
+    seat_corr: list[list[float]] | None = None
+    region_corr: list[list[float]] | None = None
+    corr_blocs: list[str] | None = None
 
     def as_dict(self) -> dict:
         return self.__dict__.copy()
 
 
+def _safe_corr(mat: np.ndarray, shrink: float = 0.05) -> list[list[float]]:
+    """Empirical correlation matrix shrunk slightly toward identity for PD stability."""
+    p = mat.shape[1]
+    if len(mat) < max(p + 2, 10):
+        return np.eye(p).tolist()
+    c = np.corrcoef(mat.T)
+    if not np.all(np.isfinite(c)):
+        return np.eye(p).tolist()
+    c = (1.0 - shrink) * c + shrink * np.eye(p)
+    np.fill_diagonal(c, 1.0)
+    return np.round(c, 3).tolist()
+
+
+def _irls_t_fit(design: np.ndarray, y: np.ndarray, blocs: np.ndarray,
+                jurisdictions: np.ndarray, n_iters: int = 10, nu_init: float = 6.0) -> np.ndarray:
+    """Heteroscedastic Student-t IRLS with bloc-and-jurisdiction residual scales."""
+    coef, *_ = np.linalg.lstsq(design, y, rcond=None)
+    n_obs = len(y)
+    for _ in range(n_iters):
+        resid = y - design @ coef
+        scale = np.ones(n_obs)
+        for b in FIT_BLOCS:
+            mb = blocs == b
+            rb = resid[mb]
+            if not len(rb):
+                continue
+            # Robust MAD-based pooled scale per bloc.
+            sc_pool = max(float(np.median(np.abs(rb))) * 1.4826, 0.05)
+            scale[mb] = sc_pool
+            for j in np.unique(jurisdictions[mb]):
+                mjb = mb & (jurisdictions == j)
+                rjb = resid[mjb]
+                if len(rjb) >= 15:
+                    sc_j = max(float(np.median(np.abs(rjb))) * 1.4826, 0.05)
+                    n_j = len(rjb)
+                    scale[mjb] = np.sqrt((n_j * sc_j ** 2 + SHRINK_OBS * sc_pool ** 2) / (n_j + SHRINK_OBS))
+        u2 = (resid / scale) ** 2
+        w = (nu_init + 1.0) / (nu_init + u2) / (scale ** 2)
+        sw = np.sqrt(w)
+        coef_new, *_ = np.linalg.lstsq(design * sw[:, None], y * sw, rcond=None)
+        if np.max(np.abs(coef_new - coef)) < 1e-6:
+            coef = coef_new
+            break
+        coef = coef_new
+    return coef
+
+
 def fit(before: date, jurisdiction: str | None = None, log=print) -> SwingParams | None:
     """Estimate the seat-swing terms from pairs whose later election precedes ``before``.
 
-    Coefficients and the tail shape are pooled over every jurisdiction; the noise scale
-    is ``jurisdiction``'s own, shrunk toward the pooled scale (the NT's small seats swing
-    about twice as much as other states')."""
+    Coefficients, tail shapes and cross-party residual correlations are pooled over
+    every jurisdiction via heteroscedastic Student-t IRLS with bloc-specific intercepts;
+    the noise scale is ``jurisdiction``'s own, shrunk toward the pooled scale.
+    """
     ps = pairs(before)
     if not ps:
         return None
     obs = pl.concat([observations(e, p) for e, p in ps])
     scale, df_, beta, n = {}, {}, {}, {}
     X_all, y_all, resid_rows = [], [], []
+    n_blocs = len(FIT_BLOCS)
     for (pair, b), g in obs.group_by("pair", "bloc", maintain_order=True):
         l0, l1 = logit(g["s0"].to_numpy()), logit(g["s1"].to_numpy())
         w0 = g["w0"].to_numpy() / g["w0"].sum()
@@ -217,44 +269,78 @@ def fit(before: date, jurisdiction: str | None = None, log=print) -> SwingParams
         c = _shift(l0, w0, float(g["s1"].to_numpy() @ w1))
         centred = l0 - l0 @ w0
         y = l1 - l0 - c
-        slopes = np.zeros((len(y), len(FIT_BLOCS)))
-        slopes[:, FIT_BLOCS.index(b)] = centred  # one regression-to-the-mean slope per party
-        X_all.append(np.column_stack([slopes, g["retire"].to_numpy(), g["sophomore"].to_numpy()]))
+        b_idx = FIT_BLOCS.index(b)
+        slopes = np.zeros((len(y), n_blocs))
+        slopes[:, b_idx] = centred  # one regression-to-the-mean slope per party
+        intercepts = np.zeros((len(y), n_blocs))
+        intercepts[:, b_idx] = 1.0  # bloc-specific intercept (absorbs Jensen shift)
+        X_all.append(np.column_stack([slopes, g["retire"].to_numpy(), g["sophomore"].to_numpy(), intercepts]))
         y_all.append(y)
-        resid_rows.append(g.select("pair", "jurisdiction", "bloc", "region"))
-    X, y = np.vstack(X_all), np.concatenate(y_all)
-    design = np.column_stack([X, np.ones(len(y))])
-    coef, *_ = np.linalg.lstsq(design, y, rcond=None)
-    r = pl.concat(resid_rows).with_columns(pl.Series("r", y - design @ coef))
-    # Regional variance: spread of region means beyond what seat noise alone explains,
-    # per pair and party; the median, as a few small-seat pairs (NT) are extreme.
+        resid_rows.append(g.select("pair", "jurisdiction", "district", "bloc", "region"))
+    design, y = np.vstack(X_all), np.concatenate(y_all)
+    meta = pl.concat(resid_rows)
+    coef = _irls_t_fit(design, y, meta["bloc"].to_numpy(), meta["jurisdiction"].to_numpy())
+    r = meta.with_columns(pl.Series("r", y - design @ coef))
+
+    # Unbalanced one-way random-effects ANOVA for regional variance per (pair, bloc).
     region_var = []
     for _, g in r.filter(pl.col("region").is_not_null()).group_by("pair", "bloc"):
-        m = (g.group_by("region").agg(pl.col("r").mean().alias("m"), pl.col("r").var().alias("v"),
-                                      pl.len().alias("k")).filter(pl.col("k") >= 3))
+        m = (g.group_by("region").agg(pl.col("r").mean().alias("m"), pl.col("r").var(ddof=1).alias("v"),
+                                      pl.len().alias("k")).filter(pl.col("k") >= 2))
         if m.height >= 3:
-            region_var.append(max(float(m["m"].var() - (m["v"] / m["k"]).mean()), 0.0))
+            k_arr = m["k"].to_numpy().astype(float)
+            m_arr = m["m"].to_numpy()
+            v_arr = m["v"].to_numpy()
+            N_tot = k_arr.sum()
+            R = len(k_arr)
+            grand = float((k_arr * m_arr).sum() / N_tot)
+            msb = float(np.sum(k_arr * (m_arr - grand) ** 2) / (R - 1))
+            msw = float(np.sum((k_arr - 1) * v_arr) / max(N_tot - R, 1))
+            k0 = float((N_tot - np.sum(k_arr ** 2) / N_tot) / (R - 1))
+            region_var.append(max((msb - msw) / max(k0, 1e-6), 0.0))
     region_sd = float(np.sqrt(np.median(region_var))) if region_var else 0.06
+
+    # De-mean within (pair, bloc, region) to isolate pure seat shocks from regional effects
+    # without Gaussian-plus-t convolution bias on the Student-t degrees of freedom.
+    reg_means = (r.filter(pl.col("region").is_not_null())
+                 .group_by("pair", "bloc", "region")
+                 .agg(pl.col("r").mean().alias("reg_m"), pl.len().alias("reg_k")))
+    r_de = (r.join(reg_means, on=["pair", "bloc", "region"], how="left")
+            .with_columns(
+                pl.when(pl.col("reg_k").is_not_null() & (pl.col("reg_k") >= 2))
+                .then((pl.col("r") - pl.col("reg_m")) * (pl.col("reg_k") / (pl.col("reg_k") - 1)).sqrt())
+                .otherwise(pl.col("r"))
+                .alias("r_seat")
+            ))
+
+    # Cross-bloc correlations of regional swings and within-region seat shocks.
+    reg_piv = (reg_means.filter(pl.col("reg_k") >= 2)
+               .pivot(on="bloc", index=["pair", "region"], values="reg_m")
+               .drop_nulls(list(FIT_BLOCS)))
+    region_corr = _safe_corr(reg_piv.select(list(FIT_BLOCS)).to_numpy()) if reg_piv.height else np.eye(n_blocs).tolist()
+
+    seat_piv = (r_de.pivot(on="bloc", index=["pair", "district"], values="r_seat")
+                .drop_nulls(list(FIT_BLOCS)))
+    seat_corr = _safe_corr(seat_piv.select(list(FIT_BLOCS)).to_numpy()) if seat_piv.height else np.eye(n_blocs).tolist()
+
     for k, b in enumerate(FIT_BLOCS):
-        rb = r.filter(pl.col("bloc") == b)
-        all_r = rb["r"].to_numpy()
+        rb = r_de.filter(pl.col("bloc") == b)
+        all_r = rb["r_seat"].to_numpy()
         n[b] = len(all_r)
         d, _, sc = stats.t.fit(all_r, floc=0)
         d = float(np.clip(d, 2.5, 30))
         _, _, sc = stats.t.fit(all_r, f0=d, floc=0)
-        own = rb.filter(pl.col("jurisdiction") == jurisdiction)["r"].to_numpy() if jurisdiction else np.array([])
+        own = rb.filter(pl.col("jurisdiction") == jurisdiction)["r_seat"].to_numpy() if jurisdiction else np.array([])
         if len(own) >= 20:
             _, _, sc_j = stats.t.fit(own, f0=d, floc=0)
             sc = float(np.sqrt((len(own) * sc_j ** 2 + SHRINK_OBS * sc ** 2) / (len(own) + SHRINK_OBS)))
-        # Net of the regional component (variance of a t is scale^2 * df / (df - 2)).
-        total_var = sc ** 2 * d / (d - 2)
-        seat_var = max(total_var - region_sd ** 2, 0.25 * total_var)
-        scale[b] = round(float(np.sqrt(seat_var * (d - 2) / d)), 4)
+        scale[b] = round(float(sc), 4)
         df_[b] = round(d, 2)
         beta[b] = round(float(coef[k]), 4)
-    p = SwingParams(scale=scale, df=df_, beta=beta, retire=round(float(coef[3]), 4),
-                    sophomore=round(float(coef[4]), 4), region_sd=round(region_sd, 4), n=n,
-                    pairs=[e.election_id for e, _ in ps])
+    p = SwingParams(scale=scale, df=df_, beta=beta, retire=round(float(coef[n_blocs]), 4),
+                    sophomore=round(float(coef[n_blocs + 1]), 4), region_sd=round(region_sd, 4), n=n,
+                    pairs=[e.election_id for e, _ in ps],
+                    seat_corr=seat_corr, region_corr=region_corr, corr_blocs=list(FIT_BLOCS))
     log(f"seat-swing fit ({jurisdiction or 'pooled'}) on {len(ps)} pairs before {before}: {p.as_dict()}")
     return p
 
@@ -270,6 +356,12 @@ def apply(cfg, p: SwingParams | None):
             cfg.seat_beta[b] = p.beta[b]
     if min(p.n.values()) >= MIN_OBS:
         cfg.retire_effect, cfg.sophomore_effect, cfg.region_sd = p.retire, p.sophomore, p.region_sd
+        if p.seat_corr is not None and p.corr_blocs is not None:
+            cfg.seat_corr = p.seat_corr
+            cfg.seat_corr_blocs = list(p.corr_blocs)
+        if p.region_corr is not None and p.corr_blocs is not None:
+            cfg.region_corr = p.region_corr
+            cfg.region_corr_blocs = list(p.corr_blocs)
     # Others have no estimate of their own: give them the majors' tail shape.
     cfg.seat_df.setdefault("OTH", min(cfg.seat_df.values()) if cfg.seat_df else 30.0)
     return cfg

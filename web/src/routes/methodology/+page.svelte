@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SITE_NAME } from '$lib/site';
+	import { REPO_URL, SITE_NAME } from '$lib/site';
 	import Orby from '$lib/components/brand/Orby.svelte';
 	import type { PageData } from './$types';
 	import { party } from '$lib/parties';
@@ -166,73 +166,78 @@
 
 	<h3>The poll average</h3>
 	<p>
-		The poll average is a Bayesian model that tracks each party’s first-preference vote week by week from
-		the last election to today. It learns three things at once: where each party’s support really is,
-		how much each pollster consistently leans towards or away from each party (its “house effect”), and
-		how much extra noise polls carry beyond their sample size.
+		The poll average is a Bayesian state-space model that tracks each party’s first-preference vote week by
+		week from the last election to today on the additive-log-ratio (ALR) scale. It learns four things at once:
+		where each party’s support really is, how much each pollster consistently leans towards or away from each
+		party (its “house effect”, constrained to sum to zero across reporting pollsters), how much extra
+		non-sampling noise polls carry beyond their sample size, and—when pollsters also report two-party-preferred
+		figures—the live preference flows connecting primaries to 2PP.
 	</p>
 	<p>
-		Support is allowed to drift with some momentum, so a genuine shift shows up as a trend while a
-		single odd poll is mostly treated as noise. After the last poll the momentum fades, so the forecast
-		does not project a recent trend all the way to election day. House effects are set to cancel out
-		across pollsters, which means the average tracks the polling industry as a whole and cannot by
-		itself tell if every pollster is wrong in the same direction. That is the next step’s job.
+		Each poll’s reported party shares are modelled jointly with their within-poll multinomial sampling
+		covariance (recognising that a higher Labor share in one sample implies a lower share for other parties),
+		multi-week polls average the latent trend across their full fieldwork window, and large MRP releases carry
+		an adjusted design effect so a single release cannot swamp conventional polls. After the last poll,
+		momentum decays so the election-day projection does not extrapolate recent movement indefinitely.
 	</p>
 	<p>
-		Where there are fewer than three public polls (the ACT and Northern Territory in 2024), there is
-		nothing to fit, so the forecast starts from the previous result and adds a swing as large as that
-		place’s past election-to-election swings.
+		Where there are fewer than three public polls (the ACT and Northern Territory in 2024), the forecast draws
+		correlated heavy-tailed ALR swings from the jurisdiction’s own past election-to-election changes shrunk
+		toward the national pool, routing the historical anti-government swing primarily to the major opposition.
 	</p>
 
 	<h3>How wrong could the polls be?</h3>
 	<p>
-		For every past election we compare the average of the final month’s polls with the actual result.
-		Those misses set the size of the polling error added to each simulation. It is drawn from a
-		heavy-tailed distribution, so big misses are rarer than small ones but not ruled out. Errors are
-		linked across parties: if the polls overstate Labor, they usually understate someone else.
+		For every past election we compare the final month’s polls with the actual result. Those misses set the
+		size of the systematic industry-wide polling error added to each simulation, computed from the bias-centred
+		residual variance net of the sampling noise already captured by the poll aggregator. Errors are drawn from
+		a correlated multivariate Student-<em>t</em> distribution on the ALR scale—keeping every party cleanly on the
+		simplex and linking One Nation errors negatively with major parties when One Nation is polled—so big misses
+		are rarer than small ones but never ruled out.
 	</p>
 	<p>
-		Each state’s history is short, so its error size is blended with the pattern across all nine
-		jurisdictions, leaning more on the state’s own record the more elections it has. Where polls have
-		leaned the same way time after time (Victorian polls have tended to overstate the Greens), half of
-		that lean is corrected.
+		Each state’s history is short, so its error size and persistent lean are shrunk toward the pattern across
+		all nine jurisdictions, leaning more on the state’s own record the more elections it has.
 	</p>
 
 	<h3>From the statewide vote to each seat</h3>
 	<p>
-		Every seat starts from its vote at the last election (re-cut onto new boundaries where they have
-		changed). Each simulation’s statewide swing is applied proportionally rather than as a flat number of
-		points, so a party on 10% in a seat can’t lose 15 points. Swings then vary in three ways:
+		Every seat starts from its vote at the last election (re-cut onto new boundaries where they have changed,
+		preferring pre-election GIS point-in-polygon matching where booth coordinates are available). Each
+		simulation’s statewide swing is applied on the logit scale—including for One Nation so large third-party
+		surges saturate smoothly—and varies in three ways:
 	</p>
 	<ul>
-		<li><strong>By region.</strong> Seats in the same region move together, so a bad night in one part of the state shows up across all its seats at once.</li>
-		<li><strong>By seat.</strong> Every seat gets its own random surprise. These are occasionally large, as real seats sometimes defy the trend.</li>
+		<li><strong>By region.</strong> Seats in the same region share correlated regional swings, so a bad night in one part of the state shows up across all its seats at once.</li>
+		<li><strong>By seat.</strong> Every seat gets its own correlated heavy-tailed Student-<em>t</em> surprise, allowing real seats to occasionally defy the statewide trend.</li>
 		<li><strong>Toward the middle.</strong> A party’s safest seats tend to swing against it a little, and its weakest seats towards it.</li>
 	</ul>
 	<p>
-		After all that, the seats are adjusted so that together they add back up to the simulated statewide
-		vote. How big the seat and regional variation should be, and how strong the pull to the middle is,
-		are estimated from pairs of past elections in every jurisdiction, not set by hand.
+		Seat shares are then balanced via Sinkhorn-Knopp iterative proportional fitting (raking) so that every seat
+		sums to 100%, uncontested blocs stay strictly at zero without distorting other seats, and full-contestation
+		parties add back up to the simulated statewide vote. All swing scales, tail shapes, regional variances,
+		correlations and candidate effects are estimated from pairs of past elections via heteroscedastic
+		Student-<em>t</em> IRLS rather than set by hand.
 	</p>
 
 	<h3>Candidates and local factors</h3>
 	<ul>
 		<li><strong>Retiring members</strong> take some personal vote with them, and <strong>first-term members</strong> standing again tend to gain some. Both effects are estimated from past elections.</li>
-		<li><strong>Independents</strong> who stood last time keep most of their vote. Sitting independents keep all of it, and one who retires takes most of it away.</li>
-		<li><strong>First-time independents</strong> have no previous vote, so each one’s vote is drawn from what first-time independents have polled at earlier elections. Most get a few per cent, but about one in twenty gets 20% or more, which is how “teal”-style surprises enter the forecast.</li>
+		<li><strong>Independents</strong> who stood last time keep most of their vote. Sitting independents keep all of it, and one who retires takes most of it away. Major independent surges (&gt;8 points above baseline) draw disproportionately from the incumbent major party rather than proportionally from all parties.</li>
+		<li><strong>First-time independents</strong> have no previous vote, so each one’s vote is drawn from what first-time independents have polled at earlier elections (with sub-linear dampening when several stand on the same ballot). Most get a few per cent, but about one in twenty gets 20% or more, which is how “teal”-style surprises enter the forecast.</li>
 		<li><strong>The ballot.</strong> Once nominations close, a party with no candidate in a seat gets no vote there.</li>
 		<li><strong>By-elections</strong> since the last general election shift that seat by half of any swing beyond the statewide movement at the time.</li>
-		<li><strong>One Nation</strong> is placed using its most recent vote where it stood widely, otherwise its latest federal vote re-cut onto the state seats.</li>
+		<li><strong>One Nation</strong> is placed using its most recent state vote where it stood widely, otherwise its latest federal polling-place geography swung on the logit scale.</li>
 	</ul>
 
 	<h3>Counting the preferences</h3>
 	<p>
-		With every candidate’s first-preference vote simulated, the model runs the count the way an
-		electoral commission does: exclude the lowest candidate, pass their ballots on, and repeat until two
-		remain (or, under Hare-Clark, until every seat is filled). Where those ballots go is estimated from
-		the electoral commissions’ full distributions of preferences, which record every transfer at every
-		stage. The flows are then fine-tuned so that replaying the last election reproduces each seat’s
-		actual final result, and they vary a little between simulations.
+		With every candidate’s first-preference vote simulated, the model runs the count the way an electoral
+		commission does: exclude the lowest candidate, pass their ballots on, and repeat until two remain (or,
+		under Hare-Clark, until every seat is filled—including empirically calibrated division noise, stochastic
+		exhaustion and intra-ticket surplus leakage). Preference flows are estimated from full distributions of
+		preferences, calibrated to reproduce the last election’s two-candidate results, and vary both statewide
+		and seat-by-seat (with wider seat-level variation and a mild anti-incumbent tilt for independents).
 	</p>
 
 	<h3>What the model cannot see</h3>
@@ -492,7 +497,10 @@
 </section>
 
 <p class="small muted source">
-	Everything here is reproducible from the open pipeline, including every blind test.
+	Model <strong>2.0.0</strong>. Everything here is reproducible from the open pipeline, including every blind
+	test. See the
+	<a href="{REPO_URL}/blob/main/pipeline/MODEL_CHANGELOG.md" target="_blank" rel="noopener noreferrer">version history on GitHub ↗</a>
+	for changes between model versions.
 </p>
 
 <style>

@@ -21,11 +21,12 @@
 		opacity?: (slug: string) => number;
 		tooltip: (slug: string) => { title: string; lines: string[] };
 		href?: (slug: string) => string | undefined;
+		onSelect?: (slug: string) => void;
 		legend?: LegendItem[];
 		/** Continuous legend: CSS gradient + end labels. */
 		gradient?: { css: string; left: string; mid?: string; right: string };
 	}
-	let { title, geo, frame, fill, opacity = () => 1, tooltip, href, legend = [], gradient }: Props = $props();
+	let { title, geo, frame, fill, opacity = () => 1, tooltip, href, onSelect, legend = [], gradient }: Props = $props();
 
 	// Inset frame on the capital city.
 	const metro = $derived.by((): [number, number][] => {
@@ -77,7 +78,24 @@
 {#snippet seats(path: ReturnType<typeof geoPath>, inset: boolean)}
 	{#each geo.features as f (f.properties.slug)}
 		{@const link = href?.(f.properties.slug)}
-		<a href={link} aria-label={f.properties.name} tabindex={inset ? -1 : undefined}>
+		<a
+			href={onSelect ? undefined : link}
+			role={onSelect ? 'button' : undefined}
+			aria-label={f.properties.name}
+			tabindex={inset ? -1 : onSelect ? 0 : undefined}
+			onclick={(e) => {
+				if (onSelect) {
+					e.preventDefault();
+					onSelect(f.properties.slug);
+				}
+			}}
+			onkeydown={(e) => {
+				if (onSelect && (e.key === 'Enter' || e.key === ' ')) {
+					e.preventDefault();
+					onSelect(f.properties.slug);
+				}
+			}}
+		>
 			<path
 				d={path(f) ?? ''}
 				fill={fill(f.properties.slug)}

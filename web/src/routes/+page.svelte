@@ -1,8 +1,13 @@
 <script lang="ts">
+	import type { PageData } from './$types';
 	import { SITE_NAME, SITE_STRAPLINE, SITE_TAGLINE } from '$lib/site';
 	import Orby from '$lib/components/brand/Orby.svelte';
+	import OutcomeBar from '$lib/components/charts/OutcomeBar.svelte';
 	import { JURISDICTIONS, isActive } from '$lib/jurisdictions';
 	import { daysUntil, fmtDate } from '$lib/format';
+
+	let { data }: { data: PageData } = $props();
+	const live = $derived(data.liveVic);
 </script>
 
 <svelte:head>
@@ -27,6 +32,30 @@
 		<Orby size={240} card="odds" label="Orby, the Crystal Ballot mascot: a crystal ball riding in a ballot box, holding up a card that says odds" />
 	</div>
 </section>
+
+{#if live}
+	<section class="live card">
+		<div class="live-head">
+			<div>
+				<p class="eyebrow">Live forecast · Victoria · {fmtDate(live.election_date)}</p>
+				<h2>Victoria 2026 headline odds</h2>
+			</div>
+			<a class="text-link small" href="/vic/forecast/2026/">Full seat-by-seat forecast &amp; scenarios →</a>
+		</div>
+		<OutcomeBar
+			alpMajority={live.outcome.alp_majority}
+			hung={live.outcome.hung}
+			coalMajority={live.outcome.coal_majority}
+			coal="Coalition"
+		/>
+		<p class="small muted live-seats num">
+			Median seats: <strong>Coalition {live.seats.COAL[2]}</strong> ({live.seats.COAL[0]}–{live.seats.COAL[4]}),
+			<strong>Labor {live.seats.ALP[2]}</strong> ({live.seats.ALP[0]}–{live.seats.ALP[4]}),
+			Greens {live.seats.GRN[2]}, One Nation {live.seats.ONP[2]}, Ind. {live.seats.IND[2]} ·
+			Labor 2PP <strong>{live.tpp_alp[1].toFixed(1)}%</strong> ({live.tpp_alp[0].toFixed(1)}–{live.tpp_alp[2].toFixed(1)}%)
+		</p>
+	</section>
+{/if}
 
 <h2>Jurisdictions</h2>
 <ul class="grid">
@@ -76,6 +105,24 @@
 	.text-link {
 		font-weight: 600;
 		color: var(--fg-2);
+	}
+	.live {
+		margin: 1.25rem 0 0.5rem;
+	}
+	.live-head {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		flex-wrap: wrap;
+		gap: 0.5rem 1rem;
+		margin-bottom: 0.85rem;
+	}
+	.live-head h2 {
+		margin: 0;
+		font-size: 1.35rem;
+	}
+	.live-seats {
+		margin: 0.85rem 0 0;
 	}
 	@media (max-width: 44rem) {
 		.hero {

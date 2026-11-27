@@ -38,6 +38,10 @@
 		initialRange?: 'all' | 'cycle';
 		/** Point markers (e.g. election results) keyed like the series. */
 		markers?: ({ date: string; label?: string } & Record<string, unknown>)[];
+		/** Optional label for individual raw poll dots (e.g. "Newspoll (n=1,200)"). */
+		pointLabel?: (p: P) => string;
+		/** Optional predicate to highlight a subset of raw dots (e.g. selected pollster). */
+		highlightPoint?: ((p: P) => boolean) | null;
 	}
 
 	let {
@@ -55,7 +59,9 @@
 		zoomable = false,
 		cycleStart,
 		initialRange = 'all',
-		markers = []
+		markers = [],
+		pointLabel,
+		highlightPoint = null
 	}: Props = $props();
 
 	let width = $state(720);
@@ -165,6 +171,13 @@
 	}
 
 	const hovered = $derived(hoverIndex != null ? trend[hoverIndex] : null);
+	const hoveredPolls = $derived.by(() => {
+		if (!hovered || !pointLabel) return [];
+		const ht = t(hovered.date);
+		return points
+			.filter((p) => Math.abs(t(pointDate(p)) - ht) <= 3.5 * 86_400_000)
+			.slice(0, 3);
+	});
 	const hoverRows = $derived(
 		hovered
 			? series
@@ -345,7 +358,16 @@
 					{#each points as p, i (i)}
 						{@const v = value(p, s.key)}
 						{#if v != null}
-							<circle class="dot" cx={x(new Date(pointDate(p)))} cy={y(v)} r="3" fill={s.colour} />
+							{@const hl = highlightPoint ? highlightPoint(p) : null}
+							<circle
+								class="dot"
+								class:hl={hl === true}
+								class:dim={hl === false}
+								cx={x(new Date(pointDate(p)))}
+								cy={y(v)}
+								r={hl === true ? 4 : 3}
+								fill={s.colour}
+							/>
 						{/if}
 					{/each}
 				{/each}
@@ -416,6 +438,13 @@
 						{/if}
 					</div>
 				{/each}
+				{#if hoveredPolls.length && pointLabel}
+					<div class="tip-polls">
+						{#each hoveredPolls as hp, k (k)}
+							<div class="tip-poll">{pointLabel(hp)}</div>
+						{/each}
+					</div>
+				{/if}
 			</div>
 		{/if}
 		{#if hoverEvent != null}
@@ -611,9 +640,13 @@
 	.dot {
 		opacity: 0.35;
 	}
-	.band {
-		opacity: 0.14;
-		stroke: none;
+	.dot.hl {
+		opacity: 0.92;
+		stroke: var(--surface);
+		stroke-width: 1;
+	}
+	.dot.dim {
+		opacity: 0.12;
 	}
 	.band {
 		opacity: 0.14;
@@ -713,12 +746,15 @@
 		min-width: 4.5rem;
 		text-align: right;
 	}
-	.tip-range {
+	.tip-polls {
+		margin-top: 0.35rem;
+		padding-top: 0.3rem;
+		border-top: 1px solid var(--rule);
 		font-size: 0.72rem;
-		color: var(--muted);
-		font-variant-numeric: tabular-nums;
-		min-width: 4.5rem;
-		text-align: right;
+		color: var(--fg-2);
+	}
+	.tip-poll {
+		white-space: nowrap;
 	}
 	.tip-v {
 		font-variant-numeric: tabular-nums;
