@@ -15,17 +15,29 @@
 	}
 	let { joint, majority, outcome, actual = null, actualLabel = 'Result', coal = 'Coalition' }: Props = $props();
 
+	// Deduplicate by (alp, coal) pair defensively so Svelte's keyed #each never crashes on malformed data.
+	const cells = $derived.by(() => {
+		const map = new Map<number, [number, number, number]>();
+		for (const [a, c, n] of joint) {
+			const k = a * 1000 + c;
+			const prev = map.get(k);
+			if (prev) prev[2] += n;
+			else map.set(k, [a, c, n]);
+		}
+		return [...map.values()];
+	});
+
 	let width = $state(420);
 	const m = { top: 12, right: 12, bottom: 40, left: 46 };
-	const total = $derived(joint.reduce((a, r) => a + r[2], 0));
-	const peak = $derived(Math.max(...joint.map((r) => r[2])));
+	const total = $derived(cells.reduce((a, r) => a + r[2], 0));
+	const peak = $derived(Math.max(1, ...cells.map((r) => r[2])));
 	// Cover the data, the majority lines and the result, in steps of 10 seats.
 	const lim = (vals: number[]) => Math.ceil((Math.max(...vals) + 3) / 10) * 10;
 	const lo = (vals: number[]) => Math.max(0, Math.floor((Math.min(...vals) - 3) / 10) * 10);
-	const xMin = $derived(lo([...joint.map((r) => r[0]), actual?.alp ?? Infinity, majority]));
-	const xMax = $derived(lim([...joint.map((r) => r[0]), actual?.alp ?? 0, majority]));
-	const yMin = $derived(lo([...joint.map((r) => r[1]), actual?.coal ?? Infinity, majority]));
-	const yMax = $derived(lim([...joint.map((r) => r[1]), actual?.coal ?? 0, majority]));
+	const xMin = $derived(lo([...cells.map((r) => r[0]), actual?.alp ?? Infinity, majority]));
+	const xMax = $derived(lim([...cells.map((r) => r[0]), actual?.alp ?? 0, majority]));
+	const yMin = $derived(lo([...cells.map((r) => r[1]), actual?.coal ?? Infinity, majority]));
+	const yMax = $derived(lim([...cells.map((r) => r[1]), actual?.coal ?? 0, majority]));
 	const innerW = $derived(Math.max(10, Math.min(width, 520) - m.left - m.right));
 	const cell = $derived(innerW / (xMax - xMin + 1));
 	const innerH = $derived(cell * (yMax - yMin + 1));
@@ -51,7 +63,7 @@
 			<!-- Majority regions -->
 			<rect class="region" x={x(majority)} y={y(yMax)} width={x(xMax + 1) - x(majority)} height={y(yMin) + cell - y(yMax)} />
 			<rect class="region" x={x(xMin)} y={y(yMax)} width={x(xMax + 1) - x(xMin)} height={y(majority) + cell - y(yMax)} />
-			{#each joint as r (r[0] * 1000 + r[1])}
+			{#each cells as r (r[0] * 1000 + r[1])}
 				<rect
 					x={x(r[0]) + 0.5}
 					y={y(r[1]) + 0.5}
