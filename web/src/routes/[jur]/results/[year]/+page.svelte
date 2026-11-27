@@ -6,6 +6,7 @@
 	import SeatMap from '$lib/components/charts/SeatMap.svelte';
 	import Pendulum from '$lib/components/Pendulum.svelte';
 	import SeatTable from '$lib/components/SeatTable.svelte';
+	import ElectionScorecard from '$lib/components/ElectionScorecard.svelte';
 	import { displayName, fmtDate } from '$lib/format';
 	import { chamberSeats, swingColour, tppColour, TPP_GRADIENT, mapFrame } from '$lib/maps';
 	import { party, partyColour } from '$lib/parties';
@@ -59,7 +60,7 @@
 
 	const bySlug = $derived(Object.fromEntries(r.seats.map((s) => [s.slug, s])));
 	const swing = $derived.by(() => {
-		const prev = data.previous;
+		const prev = data.canMapSwing ? data.previous : null;
 		if (!prev) return {} as Record<string, number | null>;
 		const before = Object.fromEntries(prev.seats.map((s) => [s.slug, s.tpp_alp]));
 		return Object.fromEntries(
@@ -69,7 +70,7 @@
 	const modes = $derived([
 		{ key: 'winner', label: 'Winner' },
 		{ key: 'tpp', label: 'Two-party preferred' },
-		...(data.previous ? [{ key: 'swing', label: `Swing since ${data.prevYear}` }] : [])
+		...(data.canMapSwing ? [{ key: 'swing', label: `Swing since ${data.prevYear}` }] : [])
 	]);
 	let mode = $state('winner');
 	const winnerLegend = $derived(
@@ -108,6 +109,17 @@
 	{r.seats_total} seats{govSeats >= r.majority ? '' : ` (${r.majority} needed for a majority)`}. Labor won {r.tpp_alp.toFixed(1)}% of the {scope} two-party-preferred vote.
 </p>
 {#if j.dataNote}<p class="small muted data-note">{j.dataNote}</p>{/if}
+
+<ElectionScorecard
+	mode="results"
+	jurisdiction={j}
+	year={data.year}
+	results={r}
+	previous={data.previous}
+	prevYear={data.prevYear}
+	leaders={data.leaders}
+	{base}
+/>
 
 <div class="hero">
 	<Hemicycle title="Seats won at the {data.year} election" seats={chamber} majority={r.majority} />

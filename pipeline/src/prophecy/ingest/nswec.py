@@ -192,7 +192,139 @@ def _surname_key(name: str) -> str:
     return re.sub(r"[^a-z]", "", name.lower())
 
 
+_NSW_2011_PARTIES = {
+    "LP": "Liberal",
+    "NP": "The Nationals",
+    "ALP": "Labor",
+    "CL": "Labor",
+    "GNS": "The Greens",
+    "IND": "Independent",
+    "CDP": "Christian Democratic Party",
+    "SFP": "Shooters and Fishers Party",
+    "AD": "Australian Democrats",
+    "FFP": "Family First",
+    "LDP": "Liberal Democrats",
+}
+
+
+def _clean_2011_label(s: str) -> str:
+    return re.sub(r"[+*§]+$", "", s.strip()).strip()
+
+
+def _party_2011(code: str) -> tuple[str, str]:
+    raw = _clean_2011_label(code).upper()
+    name = _NSW_2011_PARTIES.get(raw, raw or "Independent")
+    return name, party_code(name)
+
+
+def ingest_nswec_2011() -> dict[str, pl.DataFrame]:
+    """Ingest 2011 NSW Legislative Assembly results from pastvtr.elections.nsw.gov.au/SGE2011."""
+    raw = RAW_DIR / "nswec" / "2011"
+    election_id = "nsw-2011"
+    districts, primary, final, tcp, tpp = [], [], [], [], []
+    with httpx.Client(base_url=BASE, headers={"User-Agent": USER_AGENT}, follow_redirects=True,
+                      timeout=60) as client:
+        landing = _get(client, "/SGE2011/la_landing.htm", raw / "la_landing.html")
+        slugs = sorted(set(re.findall(r'href="la/la_district_summary-([^"]+)\.htm"', landing)))
+        valid_districts = {s.replace("_", " ") for s in slugs}
+        tpp_html = _get(client, "/SGE2011/la_landing-tpp.htm", raw / "la_landing-tpp.html")
+        for row in _tables(tpp_html)[0][2:]:
+            if len(row) < 7 or row[0].strip() not in valid_districts:
+                continue
+            alp_v, coal_v = _int(row[2]), _int(row[5])
+            if alp_v is not None and coal_v is not None and (alp_v + coal_v) > 0:
+                tpp.append({
+                    "election_id": election_id,
+                    "district": row[0].strip(),
+                    "tpp_method": "tcp" if len(row) > 7 and "TCP" in row[7].upper() else "2pp",
+                    "alp_votes": alp_v,
+                    "coal_votes": coal_v,
+                    "alp_tpp": round(100 * alp_v / (alp_v + coal_v), 3),
+                    "exhausted": 0,
+                })
+
+        for slug in slugs:
+            name = slug.replace("_", " ")
+            sum_html = _get(client, f"/SGE2011/la/la_district_summary-{slug}.htm", raw / "summary" / f"{slug}.html")
+            post_html = _get(client, f"/SGE2011/la/la_post_election_night-{slug}.htm", raw / "post" / f"{slug}.html")
+            enr_m = re.search(r"Enrolled:\s*([\d,]+)", post_html, re.I)
+            enrolment = _int(enr_m.group(1)) if enr_m else None
+
+            tables = _tables(sum_html)
+            # Table 0: Post-election-night 2CP (has full candidate names & final votes)
+            tcp_cands = []
+            for row in tables[0][2:]:
+                if len(row) < 3 or not row[0] or row[0].lower().startswith("total"):
+                    continue
+                v = _int(row[2])
+                if v is None:
+                    continue
+                pname, pcode = _party_2011(row[1])
+                tcp_cands.append({"candidate": _clean_2011_label(row[0]), "party_name": pname, "party": pcode, "votes": v})
+            # Balmain 2011: indicative TCP had the wrong pair (ALP v GRN, 0 votes);
+            # official NSWEC final distribution was GRN (Jamie Parker) v LIB (James Falk).
+            if name == "Balmain" and sum(c["votes"] for c in tcp_cands) == 0:
+                tcp_cands = [
+                    {"candidate": "PARKER Jamie", "party_name": "The Greens", "party": "GRN", "votes": 19141},
+                    {"candidate": "FALK James", "party_name": "Liberal", "party": "LIB", "votes": 16664},
+                ]
+            tcp_cands.sort(key=lambda c: -c["votes"])
+
+            # Map surname -> full name from 2CP so primary candidate names match elected
+            full_by_surname = {c["candidate"].split()[0].upper(): c["candidate"] for c in tcp_cands}
+
+            # Table 1: First Preference Votes (last column = Check Count & Dec final votes)
+            fp_cands, formal, informal = [], None, None
+            for row in tables[1][3:]:
+                if not row or not row[0]:
+                    continue
+                lbl = row[0].strip()
+                last_val = _int(row[-1])
+                if lbl.lower().startswith("total formal"):
+                    formal = last_val
+                    continue
+                if lbl.lower().startswith("informal"):
+                    informal = last_val
+                    continue
+                if lbl.lower().startswith("total"):
+                    continue
+                if last_val is None:
+                    continue
+                cand_clean = _clean_2011_label(lbl)
+                cand_name = full_by_surname.get(cand_clean.upper(), cand_clean)
+                pname, pcode = _party_2011(row[1])
+                fp_cands.append({"candidate": cand_name, "party_name": pname, "party": pcode, "votes": last_val})
+
+            winner = tcp_cands[0] if tcp_cands else max(fp_cands, key=lambda c: c["votes"])
+            elected = winner["candidate"]
+            districts.append({
+                "election_id": election_id,
+                "district": name,
+                "elected": elected,
+                "elected_party_name": winner["party_name"],
+                "elected_party": winner["party"],
+                "enrolment": enrolment,
+                "formal": formal or sum(c["votes"] for c in fp_cands),
+                "informal": informal or 0,
+            })
+            primary += _rows(election_id, name, fp_cands, elected)
+            if len(tcp_cands) >= 2:
+                tcp_two = tcp_cands[:2]
+                final += _rows(election_id, name, tcp_two, elected)
+                tcp += _rows(election_id, name, tcp_two, elected)
+
+    return {
+        "districts": pl.DataFrame(districts),
+        "primary": pl.DataFrame(primary, schema=_CANDIDATE_SCHEMA),
+        "final": pl.DataFrame(final, schema=_CANDIDATE_SCHEMA),
+        "tcp": pl.DataFrame(tcp, schema=_CANDIDATE_SCHEMA),
+        "tpp": pl.DataFrame(tpp),
+    }
+
+
 def ingest_nswec_assembly(year: int) -> dict[str, pl.DataFrame]:
+    if year == 2011:
+        return ingest_nswec_2011()
     site = SITES[year]
     raw = RAW_DIR / "nswec" / str(year)
     election_id = f"nsw-{year}"

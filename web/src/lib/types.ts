@@ -213,3 +213,27 @@ export interface Sims {
 	/** n_sims, ALP v Coalition 2PP in tenths of a percent. */
 	tpp: Int16Array;
 }
+
+export interface LeaderEntry {
+	bloc: string;
+	party_label: string;
+	name: string;
+	seat: string | null;
+	seat_slug: string | null;
+	portrait: string | null;
+	credit: string | null;
+}
+
+export interface HeadOfGov {
+	name: string;
+	party: string;
+}
+
+export interface ElectionLeaders {
+	head_title: string;
+	head_before: HeadOfGov | null;
+	head_after: HeadOfGov | null;
+	leaders: LeaderEntry[];
+}
+
+export type LeadersFile = Record<string, ElectionLeaders>;
