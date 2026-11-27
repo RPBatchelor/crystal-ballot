@@ -16,6 +16,7 @@
 	import SeatMap from '$lib/components/charts/SeatMap.svelte';
 	import SeatDrawer from '$lib/components/SeatDrawer.svelte';
 	import ScenarioExplorer from '$lib/components/ScenarioExplorer.svelte';
+	import ElectionScorecard from '$lib/components/ElectionScorecard.svelte';
 	import { article, fmtDate } from '$lib/format';
 	import { chamberSeats, tierOpacity, TIERS, mapFrame } from '$lib/maps';
 	import { party, partyColour } from '$lib/parties';
@@ -345,6 +346,18 @@
 		f.outcome.alp_most_seats * 100
 	)} of 100.
 </p>
+
+<ElectionScorecard
+	mode="forecast"
+	jurisdiction={j}
+	year={data.year}
+	forecast={f}
+	results={data.prevResults}
+	prevYear={data.baselineYear}
+	leaders={data.leaders}
+	{sampled}
+	onSelectSeat={(slug) => (selectedSlug = slug)}
+/>
 
 <nav class="jump card" aria-label="Jump to section">
 	<a href="#seat-by-seat">Chamber &amp; Map</a>

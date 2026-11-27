@@ -42,8 +42,8 @@ SUPPLEMENTARY = {
 BY_ELECTIONS_INDEX = "/results/state-election-results/state-by-elections-timeline"
 # Elections before 2022 are served as static HTML from the VEC's results archive.
 ARCHIVE_BASE = "https://itsitecoreblobvecprd01.blob.core.windows.net/public-files/historical-results"
-ARCHIVE_YEARS = {2014, 2018}
-REQUEST_DELAY_S = 1.0
+ARCHIVE_YEARS = {2006, 2010, 2014, 2018}
+REQUEST_DELAY_S = 0.2
 
 
 # --------------------------------------------------------------------------------------
@@ -161,7 +161,8 @@ def parse_district_page(html: str, district: str) -> DistrictResult:
         elected_party = sec.text[1] if len(sec.text) > 1 else None
 
     enrolment = formal = informal = None
-    sec = _section(sections, "Recheck votes") or _section(sections, "Recount votes") or _section(sections, "Votes")
+    sec = (_section(sections, "Recheck votes") or _section(sections, "Recount votes")
+           or _section(sections, "Primary votes") or _section(sections, "Votes"))
     if sec:
         joined = " | ".join(sec.text)
         # 2022: "Total enrolment as at close of rolls: | 54533"; archive pages split the
@@ -176,6 +177,7 @@ def parse_district_page(html: str, district: str) -> DistrictResult:
     primary: list[dict] = []
     booth_xlsx = None
     sec = (_section(sections, "Recheck first preference") or _section(sections, "Recount first preference")
+           or _section(sections, "Final first preference") or _section(sections, "Primary first preference")
            or _section(sections, "First preference"))
     if sec and sec.tables:
         for row in sec.tables[0][1:]:
@@ -299,20 +301,44 @@ def _client() -> httpx.Client:
 def _cached_get(client: httpx.Client, url: str, dest: Path, binary: bool = False) -> Path:
     if dest.exists() and dest.stat().st_size > 0:
         return dest
+    raw_bytes: bytes | None = None
+    text_str: str | None = None
     for attempt in range(4):
         try:
             resp = client.get(url)
             resp.raise_for_status()
+            if binary:
+                raw_bytes = resp.content
+            else:
+                text_str = resp.text
             break
+        except httpx.ConnectError as exc:
+            # Windows fallback to native Schannel TLS via curl.exe when certifi lags system clock.
+            if "CERTIFICATE_VERIFY_FAILED" in str(exc):
+                import subprocess
+                full_url = str(client.base_url.join(url)) if not url.startswith("http") else url
+                res = subprocess.run(
+                    ["curl.exe", "-fsSL", "-A", USER_AGENT, "--max-time", "30", full_url],
+                    capture_output=True,
+                    check=True,
+                )
+                if binary:
+                    raw_bytes = res.stdout
+                else:
+                    text_str = res.stdout.decode("utf-8", errors="replace")
+                break
+            if attempt == 3:
+                raise
+            time.sleep(2 ** (attempt + 1))
         except (httpx.TransportError, httpx.HTTPStatusError):
             if attempt == 3:
                 raise
             time.sleep(2 ** (attempt + 1))
     dest.parent.mkdir(parents=True, exist_ok=True)
     if binary:
-        dest.write_bytes(resp.content)
+        dest.write_bytes(raw_bytes or b"")
     else:
-        dest.write_text(resp.text, encoding="utf-8")
+        dest.write_text(text_str or "", encoding="utf-8")
     time.sleep(REQUEST_DELAY_S)
     return dest
 
@@ -466,10 +492,11 @@ def ingest_vec_archive(year: int) -> dict[str, pl.DataFrame]:
     """Results for an archived election (static per-district pages, same layout as 2022)."""
     raw = RAW_DIR / "vec" / str(year)
     base = f"{ARCHIVE_BASE}/state{year}/"
+    summary_file = f"state{year}resultsummary.html" if year <= 2010 else "summary.html"
     with httpx.Client(base_url=base, headers={"User-Agent": USER_AGENT},
                       follow_redirects=True, timeout=60) as client:
-        summary = _cached_get(client, "summary.html", raw / "summary.html").read_text(encoding="utf-8")
-        slugs = sorted(set(re.findall(r'href="([a-z-]+district)\.html"', summary)))
+        summary = _cached_get(client, summary_file, raw / "summary.html").read_text(encoding="utf-8")
+        slugs = sorted(set(re.findall(r'href="((?:state\d{4}result)?[a-z-]+district)\.html"', summary, re.I)))
         results, tcp, tpp_booths = [], {}, []
         for slug in slugs:
             html = _cached_get(client, f"{slug}.html", raw / "districts" / f"{slug}.html").read_text(
@@ -478,7 +505,7 @@ def ingest_vec_archive(year: int) -> dict[str, pl.DataFrame]:
             results.append(r)
             # Seats without a full distribution give the 2CP count only on a linked page
             # (by voting centre): their totals, and the Labor v Coalition count by venue.
-            m = re.search(r'href="(tcpbyvotingcentre[a-z-]+\.html)"', html)
+            m = re.search(r'href="((?:state\d{4}tcpbyvc|tcpbyvotingcentre)[a-z-]+\.html)"', html, re.I)
             if m:
                 page = _cached_get(client, m.group(1), raw / "2cp" / f"{slug}.html").read_text(
                     encoding="utf-8", errors="replace")

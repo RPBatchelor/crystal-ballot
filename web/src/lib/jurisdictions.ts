@@ -46,7 +46,7 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		chamber: 'Legislative Assembly',
 		seats: 93,
 		nextElection: '2027-03-27',
-		resultYears: [2015, 2019, 2023],
+		resultYears: [2011, 2015, 2019, 2023],
 		retroYears: [2019, 2023],
 		// 2023: Labor short of a majority (45 of 93), governing with crossbench support.
 		minorityGovernments: { 2023: 'ALP' },
@@ -62,7 +62,7 @@ export const JURISDICTIONS: Jurisdiction[] = [
 		chamber: 'Legislative Assembly',
 		seats: 88,
 		nextElection: '2026-11-28',
-		resultYears: [2014, 2018, 2022],
+		resultYears: [2006, 2010, 2014, 2018, 2022],
 		forecastYears: [2026],
 		retroYears: [2018, 2022],
 		hasPolls: true,

@@ -21,6 +21,11 @@ export const loadPreferences = (fetch: Fetch, jur: string, year: number | string
 export const loadForecast = (fetch: Fetch, jur: string, year: number | string) =>
 	getJSON<import('./types').ForecastFile>(fetch, `/data/${jur}/forecast/${year}.json`);
 
+export async function loadLeaders(fetch: Fetch): Promise<import('./types').LeadersFile> {
+	const res = await fetch('/data/leaders.json');
+	return res.ok ? ((await res.json()) as import('./types').LeadersFile) : {};
+}
+
 export const loadGeo = (fetch: Fetch, jur: string, boundaries: string) =>
 	getJSON<import('geojson').FeatureCollection<import('geojson').Geometry, import('./components/charts/SeatMap.svelte').SeatProps>>(
 		fetch,
