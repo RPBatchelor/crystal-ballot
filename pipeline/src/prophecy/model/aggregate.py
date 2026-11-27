@@ -23,7 +23,11 @@ def modelled_parties(polls: pl.DataFrame) -> list[str]:
     has_onp = "ONP" in polls.columns and polls["ONP"].drop_nulls().len() > 0
     return [p for p in PARTIES if p != "ONP" or has_onp]
 DESIGN_EFFECT = 1.5  # online/panel polls are not simple random samples
+MRP_DESIGN_EFFECT = 4.0  # MRP models carry larger model/post-stratification design effect
+MAX_N_EFF = 2000.0  # cap single-poll effective sample size so one large MRP cannot dominate
 DEFAULT_N = 1000
+# Prior ALP 2PP preference flow share & Beta concentration for non-major blocs in joint 2PP likelihood.
+TPP_FLOW_PRIOR = {"GRN": (0.82, 40.0), "ONP": (0.32, 10.0), "OTH": (0.48, 15.0)}
 
 
 @dataclass
@@ -75,29 +79,58 @@ def prepare(polls: pl.DataFrame, previous: Election, election: Election,
     pollsters = sorted(polls["pollster"].unique().to_list())
     pidx = {p: i + 1 for i, p in enumerate(pollsters)}
 
-    rows = []
+    K = len(parties)
+    K1 = K - 1
+    J = len(pollsters)
+    poll_w_start, poll_w_end, poll_pollster, poll_n_eff, poll_m = [], [], [], [], []
+    poll_parties, poll_y = [], []
+    tpp_poll, tpp_y = [], []
+    reporting_by_party: list[set[int]] = [set() for _ in range(K1)]
+
     for r in polls.iter_rows(named=True):
-        w = min(n_weeks, (r["mid"] - previous.date).days // 7 + 1)
-        n_eff = (r["sample_size"] or DEFAULT_N) / DESIGN_EFFECT
+        w_start = max(1, min(n_weeks, (r["field_start"] - previous.date).days // 7 + 1))
+        w_end = max(w_start, min(n_weeks, (r["field_end"] - previous.date).days // 7 + 1))
+        deff = MRP_DESIGN_EFFECT if "mrp" in str(r["pollster"]).lower() else DESIGN_EFFECT
+        n_eff = min((r["sample_size"] or DEFAULT_N) / deff, MAX_N_EFF)
+        p_idx = pidx[r["pollster"]]
+        obs_k, obs_y = [], []
         # Others is the reference category and never observed directly: the K-1 other
         # shares carry all the information (and ONP is only used when reported).
         for k, party in enumerate(parties[:-1], start=1):
             if r.get(party) is not None:
-                rows.append((w, pidx[r["pollster"]], k, float(r[party]), n_eff))
-    week, pollster, party, y, n_eff = map(list, zip(*rows))
+                obs_k.append(k)
+                obs_y.append(float(r[party]))
+                reporting_by_party[k - 1].add(p_idx)
+        if not obs_k:
+            continue
+        m = len(obs_k)
+        poll_w_start.append(w_start)
+        poll_w_end.append(w_end)
+        poll_pollster.append(p_idx)
+        poll_n_eff.append(float(n_eff))
+        poll_m.append(m)
+        poll_parties.append(obs_k + [0] * (K1 - m))
+        poll_y.append(obs_y + [0.0] * (K1 - m))
+        tpp_val = r.get("tpp_alp_vs_coal")
+        if tpp_val is not None and 5.0 <= float(tpp_val) <= 95.0:
+            tpp_poll.append(len(poll_w_start))
+            tpp_y.append(float(tpp_val))
 
-    K = len(parties)
-    J = len(pollsters)
-    house_slot = np.zeros((K - 1, J), dtype=int)
-    for k in range(K - 1):
-        reporting = sorted({p for p, kk in zip(pollster, party) if kk == k + 1})
-        for slot, j in enumerate(reporting, start=1):
+    house_slot = np.zeros((K1, J), dtype=int)
+    for k in range(K1):
+        for slot, j in enumerate(sorted(reporting_by_party[k]), start=1):
             house_slot[k, j - 1] = slot
     start = np.array([start_share[p] for p in parties], dtype=float)
     start = 100 * start / start.sum()
+    tpp_flow_prior = [TPP_FLOW_PRIOR.get(p, (0.50, 10.0))[0] for p in parties[2:]]
+    tpp_flow_conc = [TPP_FLOW_PRIOR.get(p, (0.50, 10.0))[1] for p in parties[2:]]
     data = {
-        "K": K, "T": n_weeks, "J": J, "N": len(y),
-        "week": week, "pollster": pollster, "party": party, "y": y, "n_eff": n_eff,
+        "K": K, "T": n_weeks, "J": J, "M": len(poll_w_start),
+        "poll_w_start": poll_w_start, "poll_w_end": poll_w_end,
+        "poll_pollster": poll_pollster, "poll_n_eff": poll_n_eff,
+        "poll_m": poll_m, "poll_parties": poll_parties, "poll_y": poll_y,
+        "M_tpp": len(tpp_poll), "tpp_poll": tpp_poll, "tpp_y": tpp_y,
+        "tpp_flow_prior": tpp_flow_prior, "tpp_flow_conc": tpp_flow_conc,
         "start_share": start.tolist(),
         "start_sd": [START_SD[p] for p in parties[:-1]],
         "J_k": (house_slot > 0).sum(axis=1).tolist(),
@@ -112,8 +145,10 @@ def inits(data: dict, model_name: str, chains: int, seed: int) -> list[dict]:
     a ~200-week cycle the trend overflows the softmax, and warmup spends a long time
     recovering. These start the trend near flat and the error scales near typical."""
     rng = np.random.default_rng(seed)
-    K1, T, J = data["K"] - 1, data["T"], data["J"]
+    K1, T = data["K"] - 1, data["T"]
+    h_free = sum(max(int(jk) - 1, 0) for jk in data["J_k"])
     corr = model_name == "poll_aggregator_corr"
+    flow_prior = np.asarray(data["tpp_flow_prior"], dtype=float)
     out = []
     for _ in range(chains):
         init = {
@@ -122,31 +157,42 @@ def inits(data: dict, model_name: str, chains: int, seed: int) -> list[dict]:
             "sigma_vel": rng.uniform(0.002, 0.01, K1),
             "phi": rng.uniform(0.6, 0.9),
             "tau": rng.uniform(0.5, 2.0, K1),
-            "sigma_house": rng.uniform(0.5, 2.0, K1),
-            "house_raw": rng.normal(0, 0.5, (K1, J)),
+            "sigma_house": rng.uniform(0.03, 0.12, K1),
+            "house_free": rng.normal(0, 0.5, h_free),
+            "flow_alp": np.clip(flow_prior + rng.normal(0, 0.03, len(flow_prior)), 0.05, 0.95),
+            "tau_tpp": float(rng.uniform(0.5, 1.5)),
         }
         if corr:
-            init |= {"L_vel": np.eye(K1), "sigma_drift": rng.uniform(0.2, 1.0, K1),
-                     "drift_raw": rng.normal(0, 0.5, (K1, J))}
+            init |= {"L_vel": np.eye(K1), "sigma_drift": rng.uniform(0.01, 0.06, K1),
+                     "drift_free": rng.normal(0, 0.5, h_free)}
         out.append({k: np.asarray(v).tolist() for k, v in init.items()})
     return out
 
 
 def fit(polls: pl.DataFrame, previous: Election, election: Election,
         start_share: dict[str, float], seed: int = 20261128,
-        model_name: str = "poll_aggregator", **sample_kw) -> AggregateFit:
+        model_name: str = "poll_aggregator", auto_retry: bool = True, **sample_kw) -> AggregateFit:
     """``model_name``: ``poll_aggregator`` (independent party trends, fixed house
     effects) or ``poll_aggregator_corr`` (correlated trends, drifting house effects)."""
     parties = modelled_parties(polls)
     data, pollsters, weeks = prepare(polls, previous, election, start_share, parties)
     model = stan_model(model_name)
-    # With the inits, 500 warmup iterations adapt as well as 1000 (vic-2026, Nov 2026:
-    # same R-hat and ESS, no divergences). adapt_delta below 0.99 brings divergences back.
+    # With the inits, 500 warmup iterations adapt well on most cycles; if convergence
+    # diagnostics fail (R-hat > 1.01 or divergences), retry once with longer warmup.
     kw = {"chains": 4, "parallel_chains": 4, "iter_warmup": 500, "iter_sampling": 1000,
               "adapt_delta": 0.99, "max_treedepth": 12, "show_progress": False}
     kw.update(sample_kw)
     kw.setdefault("inits", inits(data, model_name, kw["chains"], seed))
     mcmc = model.sample(data=data, seed=seed, **kw)
+    summary = mcmc.summary()
+    divergences = int(np.sum(mcmc.method_variables()["divergent__"]))
+    if auto_retry and (float(summary["R_hat"].max()) > 1.01 or divergences > 0):
+        retry_kw = {**kw, "iter_warmup": max(kw["iter_warmup"] * 2, 1000),
+                    "adapt_delta": max(kw["adapt_delta"], 0.995)}
+        retry_kw["inits"] = inits(data, model_name, retry_kw["chains"], seed + 17)
+        mcmc = model.sample(data=data, seed=seed + 17, **retry_kw)
+        summary = mcmc.summary()
+        divergences = int(np.sum(mcmc.method_variables()["divergent__"]))
 
     draws = mcmc.stan_variables()
     shares = draws["share"]  # draws x T x K
@@ -160,17 +206,17 @@ def fit(polls: pl.DataFrame, previous: Election, election: Election,
             rows.append({"pollster": name, "party": party, "median": float(np.median(h)),
                          "lo": float(np.quantile(h, 0.05)), "hi": float(np.quantile(h, 0.95))})
 
-    summary = mcmc.summary()
     diag = mcmc.diagnose()
     diagnostics = {
         "max_rhat": float(summary["R_hat"].max()),
         "min_ess_bulk": float(summary["ESS_bulk"].min()),
-        "divergences": int(np.sum(mcmc.method_variables()["divergent__"])),
+        "divergences": divergences,
         "report": diag,
     }
     return AggregateFit(
         parties=parties, weeks=weeks, shares=shares, house=pl.DataFrame(rows),
-        params={k: draws[k] for k in ("sigma_vel", "phi", "tau", "sigma_house", "sigma_drift", "Omega_vel")
+        params={k: draws[k] for k in ("sigma_vel", "phi", "tau", "sigma_house", "sigma_drift",
+                                      "Omega_vel", "flow_alp", "tau_tpp")
                 if k in draws},
         diagnostics=diagnostics, pollsters=pollsters,
     )

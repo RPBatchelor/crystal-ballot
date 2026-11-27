@@ -29,7 +29,12 @@
 </svelte:head>
 
 <nav class="crumbs small">
-	<a href={base + '/'}>← {data.year} results</a>
+	<span class="left-crumbs">
+		<a href={base + '/'}>← {data.year} results</a>
+		{#if j.forecastYears?.length}
+			<a class="live-pill" href="/{j.code}/forecast/{j.forecastYears.at(-1)}/">{j.forecastYears.at(-1)} forecast →</a>
+		{/if}
+	</span>
 	<span class="pn">
 		<a href="{base}/{prev.slug}/">‹ {prev.name}</a>
 		<a href="{base}/{next.slug}/">{next.name} ›</a>
@@ -129,8 +134,24 @@
 	.crumbs {
 		display: flex;
 		justify-content: space-between;
-		gap: 1rem;
+		flex-wrap: wrap;
+		gap: 0.5rem 1rem;
 		margin-bottom: 1rem;
+	}
+	.left-crumbs {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.85rem;
+	}
+	.live-pill {
+		font-weight: 600;
+		padding: 0.15rem 0.6rem;
+		border-radius: 999px;
+		border: 1px solid var(--rule-strong);
+		text-decoration: none;
+	}
+	.live-pill:hover {
+		background: var(--rule);
 	}
 	.pn {
 		display: flex;

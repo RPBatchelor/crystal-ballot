@@ -18,12 +18,14 @@ from dataclasses import dataclass, field
 
 import numpy as np
 import polars as pl
-from scipy.special import expit, logit
+from scipy.special import expit, logit, softmax
 
-from prophecy.model.preferences import BLOCS, IDX, count, draw_exhaust, draw_weights, two_party
+from prophecy.model.preferences import BLOCS, IDX, count, draw_exhaust, draw_seat_weights, draw_weights, two_party
 
 SWING_BLOCS = ["ALP", "COAL", "GRN", "OTH"]
 COAL_SPLIT_SD = 0.6  # logit: spread of the Liberal-National split in a three-cornered contest
+# Prior correlations for ONP polling error when ONP is absent from historical poll_error_corr.
+ONP_POLL_ERROR_CORR = {"COAL": -0.45, "ALP": -0.20, "GRN": -0.05}
 
 
 @dataclass
@@ -40,6 +42,8 @@ class SimConfig:
     # absent: independent errors.
     poll_error_corr: list[list[float]] | None = None
     poll_error_corr_parties: list[str] = field(default_factory=list)
+    # Apply systematic polling error on the ALR scale (preserves simplex and correlations).
+    poll_error_alr: bool = True
     # Persistent poll lean (points, polls minus result) subtracted from the aggregate.
     poll_bias: dict[str, float] = field(default_factory=dict)
     region_sd: float = 0.06  # logit, per region x party
@@ -51,8 +55,20 @@ class SimConfig:
     # Both estimated from past elections by ``prophecy.model.swing_fit``.
     seat_df: dict[str, float] = field(default_factory=dict)
     seat_beta: dict[str, float] = field(default_factory=dict)
+    # Cross-party correlations for seat shocks and regional effects (from ``swing_fit``).
+    seat_corr: list[list[float]] | None = None
+    seat_corr_blocs: list[str] = field(default_factory=list)
+    region_corr: list[list[float]] | None = None
+    region_corr_blocs: list[str] = field(default_factory=list)
     ind_decay_mean: float = -0.2  # log scale: independents retain ~80% on average
     ind_decay_sd: float = 0.4
+    # Share of a major independent surge (>8 pts above baseline) drawn from the incumbent bloc.
+    ind_incumbent_cannibal: float = 0.35
+    ind_cannibal_threshold: float = 0.08
+    # Seat-level preference flow heterogeneity (log-scale SD) and anti-incumbent IND tilt.
+    seat_flow_sd: float = 0.15
+    ind_flow_seat_sd: float = 0.45
+    ind_anti_incumbent_tilt: float = 0.25
     # Candidate effects on the logit primary vote of the party concerned (priors, in line
     # with Australian estimates of 1-2 points; not estimable from our 2014-22 data).
     retire_effect: float = -0.08  # sitting member not recontesting: lost personal vote
@@ -183,26 +199,120 @@ def _bloc(code: str) -> str:
     return bloc(code)
 
 
-def _recentre(p_logit: np.ndarray, weight: np.ndarray, target: np.ndarray) -> np.ndarray:
+def _recentre(p_logit: np.ndarray, weight: np.ndarray, target: np.ndarray,
+              mask: np.ndarray | None = None) -> np.ndarray:
     """Shift each simulation's logits so the vote-weighted mean share equals target.
 
     p_logit: S x D, target: S (fraction). Vectorised bisection on the shift.
+    When ``mask`` (D, bool) is given, only contesting seats contribute to the mean.
     """
-    lo = np.full(p_logit.shape[0], -6.0)
-    hi = np.full(p_logit.shape[0], 6.0)
     w = weight / weight.sum()
-    for _ in range(40):
+    if mask is not None:
+        m = mask.astype(float)
+        max_share = float(m @ w)
+        if max_share <= 1e-9:
+            return p_logit
+        w_eff = w * m
+        tgt = np.clip(target, 1e-4, 0.98 * max_share)
+    else:
+        w_eff = w
+        tgt = np.clip(target, 1e-4, 0.995)
+    lo = np.full(p_logit.shape[0], -8.0)
+    hi = np.full(p_logit.shape[0], 8.0)
+    for _ in range(44):
         mid = (lo + hi) / 2
-        mean = expit(p_logit + mid[:, None]) @ w
-        too_high = mean > target
+        mean = expit(p_logit + mid[:, None]) @ w_eff
+        too_high = mean > tgt
         hi = np.where(too_high, mid, hi)
         lo = np.where(too_high, lo, mid)
     return p_logit + ((lo + hi) / 2)[:, None]
 
 
+def _safe_cholesky(mat: np.ndarray) -> np.ndarray:
+    """Cholesky factor of a symmetric matrix, flooring tiny/negative eigenvalues."""
+    a = 0.5 * (mat + mat.T)
+    vals, vecs = np.linalg.eigh(a)
+    if np.min(vals) < 1e-8:
+        vals = np.maximum(vals, 1e-8)
+        a = (vecs * vals) @ vecs.T
+    return np.linalg.cholesky(a)
+
+
 def _seat_noise(rng: np.random.Generator, df: float | None, size: tuple[int, int]) -> np.ndarray:
     """Standard seat noise: Student-t with ``df`` degrees of freedom (scale 1), or normal."""
     return rng.standard_t(df, size=size) if df else rng.standard_normal(size)
+
+
+def _draw_region_effects(rng: np.random.Generator, S: int, n_regions: int,
+                         cfg: SimConfig) -> dict[str, np.ndarray]:
+    """Correlated regional effects (S x n_regions) per swing bloc."""
+    out: dict[str, np.ndarray] = {}
+    corr_blocs = [b for b in cfg.region_corr_blocs if b in SWING_BLOCS] if cfg.region_corr else []
+    if len(corr_blocs) >= 2:
+        idx = [cfg.region_corr_blocs.index(b) for b in corr_blocs]
+        c = np.asarray(cfg.region_corr, dtype=float)[np.ix_(idx, idx)]
+        L = _safe_cholesky(c)
+        z = rng.standard_normal((S, n_regions, len(corr_blocs))) @ L.T
+        for j, b in enumerate(corr_blocs):
+            out[b] = cfg.region_sd * z[:, :, j]
+    for b in SWING_BLOCS:
+        if b not in out:
+            out[b] = rng.normal(0, cfg.region_sd, size=(S, n_regions))
+    return out
+
+
+def _draw_seat_noise_all(rng: np.random.Generator, S: int, D: int,
+                         cfg: SimConfig) -> dict[str, np.ndarray]:
+    """Correlated Student-t seat shocks (S x D) per swing bloc."""
+    out: dict[str, np.ndarray] = {}
+    corr_blocs = [b for b in cfg.seat_corr_blocs if b in SWING_BLOCS] if cfg.seat_corr else []
+    if len(corr_blocs) >= 2:
+        idx = [cfg.seat_corr_blocs.index(b) for b in corr_blocs]
+        c = np.asarray(cfg.seat_corr, dtype=float)[np.ix_(idx, idx)]
+        L = _safe_cholesky(c)
+        dfs = [cfg.seat_df.get(b) for b in corr_blocs]
+        z = rng.standard_normal((S, D, len(corr_blocs))) @ L.T
+        if any(d is not None for d in dfs):
+            df_shared = float(np.mean([d for d in dfs if d is not None]))
+            mix = np.sqrt(df_shared / rng.chisquare(df_shared, size=(S, D)))
+            shared_var_fac = df_shared / (df_shared - 2.0)
+            for j, b in enumerate(corr_blocs):
+                df_b = cfg.seat_df.get(b)
+                target_var_fac = df_b / (df_b - 2.0) if df_b else 1.0
+                sc = cfg.seat_sd[b] * np.sqrt(target_var_fac / shared_var_fac)
+                out[b] = sc * z[:, :, j] * mix
+        else:
+            for j, b in enumerate(corr_blocs):
+                out[b] = cfg.seat_sd[b] * z[:, :, j]
+    for b in SWING_BLOCS:
+        if b not in out:
+            out[b] = cfg.seat_sd[b] * _seat_noise(rng, cfg.seat_df.get(b), (S, D))
+    return out
+
+
+def _rake_seats(seat: np.ndarray, w: np.ndarray, target_col: np.ndarray,
+                fixed_blocs: tuple[int, ...] = (), n_iters: int = 8) -> np.ndarray:
+    """Sinkhorn-Knopp iterative proportional fitting on S x D x B seat shares.
+
+    Preserves zero entries (non-contesting seats), keeps every seat's row sum equal to 1,
+    and matches each non-fixed bloc's vote-weighted statewide mean to ``target_col``.
+    """
+    out = np.maximum(seat, 0.0)
+    B = out.shape[2]
+    free = np.ones(B, dtype=bool)
+    for k in fixed_blocs:
+        free[k] = False
+    for _ in range(n_iters):
+        # Row step: every seat sums to 1.
+        out /= np.maximum(out.sum(axis=2, keepdims=True), 1e-12)
+        # Column step: match vote-weighted statewide targets for free blocs.
+        cur = np.einsum("sdb,d->sb", out, w)
+        scale = np.ones_like(cur)
+        active = free[None, :] & (cur > 1e-9) & (target_col > 1e-9)
+        scale[active] = target_col[active] / cur[active]
+        out *= scale[:, None, :]
+    out /= np.maximum(out.sum(axis=2, keepdims=True), 1e-12)
+    return out
 
 
 def _candidate_adj(inputs: SeatInputs, k: int, cfg: SimConfig) -> np.ndarray:
@@ -229,28 +339,102 @@ class SimResult:
 def statewide_shares(agg_draws: np.ndarray, agg_parties: list[str], cfg: SimConfig,
                      rng: np.random.Generator) -> np.ndarray:
     """Statewide primaries (%) per simulation, in model bloc order: each aggregator draw
-    repeated ``n_per_draw`` times, less the poll bias, plus a systematic polling error."""
+    repeated ``n_per_draw`` times, less the poll bias, plus a systematic polling error.
+
+    By default (``cfg.poll_error_alr=True``), bias and correlated multivariate-t errors
+    are applied on the additive-log-ratio (ALR) scale using the exact delta-method
+    Jacobian inverse, preserving the simplex and cross-party correlations without
+    clipping or linear renormalization distortion.
+    """
     draws = np.repeat(agg_draws, cfg.n_per_draw, axis=0)
     S = draws.shape[0]
     state = np.zeros((S, len(BLOCS)))
     for k, p in enumerate(agg_parties):
         state[:, IDX[p]] = draws[:, k]
+
+    active_err = [p for p in agg_parties if p != "OTH" and p in cfg.poll_error_sd and cfg.poll_error_sd[p] > 0]
+    if not active_err and not any(p in agg_parties for p in cfg.poll_bias):
+        modelled = [IDX[p] for p in agg_parties]
+        state[:, modelled] = np.clip(state[:, modelled], 0.3, None)
+        return 100 * state / state.sum(axis=1, keepdims=True)
+
     scale = np.sqrt((cfg.poll_error_df - 2) / cfg.poll_error_df)
+    if cfg.poll_error_alr and "OTH" in agg_parties:
+        non_ref = [p for p in agg_parties if p != "OTH"]
+        m = len(non_ref)
+        ref_i = IDX["OTH"]
+        non_ref_i = [IDX[p] for p in non_ref]
+        p_non = np.clip(state[:, non_ref_i], 0.3, None)
+        p_ref = np.clip(state[:, ref_i], 0.3, None)
+        tot = p_non.sum(axis=1) + p_ref
+        p_non = 100.0 * p_non / tot[:, None]
+        p_ref = 100.0 * p_ref / tot
+        eta = np.log(p_non / p_ref[:, None])
+
+        # Bias shift in ALR space evaluated at the posterior mean share.
+        mean_non = p_non.mean(axis=0)
+        mean_ref = float(p_ref.mean())
+        bias_vec = np.array([cfg.poll_bias.get(p, 0.0) for p in non_ref], dtype=float)
+        adj_non = np.clip(mean_non - bias_vec, 0.5, None)
+        adj_ref = max(mean_ref + float(bias_vec.sum()), 0.5)
+        adj_tot = float(adj_non.sum() + adj_ref)
+        adj_non = 100.0 * adj_non / adj_tot
+        adj_ref = 100.0 * adj_ref / adj_tot
+        eta_bias = np.log(adj_non / adj_ref) - np.log(mean_non / mean_ref)
+        eta = eta + eta_bias[None, :]
+
+        if active_err:
+            # Build full m x m percentage-point covariance matrix over non_ref parties.
+            sds = np.array([cfg.poll_error_sd.get(p, 0.0) for p in non_ref], dtype=float)
+            corr = np.eye(m)
+            if cfg.poll_error_corr:
+                c_src = np.asarray(cfg.poll_error_corr, dtype=float)
+                for i, pi in enumerate(non_ref):
+                    for j, pj in enumerate(non_ref):
+                        if pi in cfg.poll_error_corr_parties and pj in cfg.poll_error_corr_parties:
+                            ii = cfg.poll_error_corr_parties.index(pi)
+                            jj = cfg.poll_error_corr_parties.index(pj)
+                            corr[i, j] = c_src[ii, jj]
+            # Give ONP principled negative correlation with major parties if not in history.
+            if "ONP" in non_ref and "ONP" not in cfg.poll_error_corr_parties:
+                oi = non_ref.index("ONP")
+                for other, rho in ONP_POLL_ERROR_CORR.items():
+                    if other in non_ref:
+                        oj = non_ref.index(other)
+                        corr[oi, oj] = corr[oj, oi] = rho
+            cov_p = np.outer(sds, sds) * corr
+            # Exact inverse Jacobian of p_1:m = 100 * softmax([eta, 0])_1:m:
+            # (J^-1)_{ab} = delta_{ab} / p_a + 1 / p_ref
+            J_inv = np.diag(1.0 / adj_non) + (1.0 / adj_ref)
+            cov_eta = J_inv @ cov_p @ J_inv.T
+            L_eta = _safe_cholesky(cov_eta)
+            z = rng.standard_normal((S, m)) @ L_eta.T
+            mix = np.sqrt(cfg.poll_error_df / rng.chisquare(cfg.poll_error_df, size=S))
+            eta = eta + (scale * mix[:, None]) * z
+
+        full_eta = np.concatenate([eta, np.zeros((S, 1))], axis=1)
+        shares_m = 100.0 * softmax(full_eta, axis=1)
+        state.fill(0.0)
+        for j, idx_b in enumerate(non_ref_i):
+            state[:, idx_b] = shares_m[:, j]
+        state[:, ref_i] = shares_m[:, m]
+        return state
+
+    # Legacy percentage-point fallback (when poll_error_alr=False or no OTH reference).
     for p, b in cfg.poll_bias.items():
         if p in agg_parties:
             state[:, IDX[p]] -= b
     corr_parties = [p for p in cfg.poll_error_corr_parties if p in agg_parties] if cfg.poll_error_corr else []
     if corr_parties:
-        # Multivariate t: correlated normals over one shared chi-square scale.
         idx = [cfg.poll_error_corr_parties.index(p) for p in corr_parties]
         c = np.asarray(cfg.poll_error_corr)[np.ix_(idx, idx)]
         sds = np.array([cfg.poll_error_sd[p] for p in corr_parties])
-        z = rng.standard_normal((S, len(corr_parties))) @ np.linalg.cholesky(c).T
+        z = rng.standard_normal((S, len(corr_parties))) @ _safe_cholesky(c).T
         mix = np.sqrt(cfg.poll_error_df / rng.chisquare(cfg.poll_error_df, size=S))
         for j, p in enumerate(corr_parties):
             state[:, IDX[p]] += sds[j] * scale * z[:, j] * mix
     for p, sd in cfg.poll_error_sd.items():
-        if p in agg_parties and p not in corr_parties:  # e.g. ONP is not modelled in cycles where it wasn't polled
+        if p in agg_parties and p not in corr_parties:
             state[:, IDX[p]] += sd * scale * rng.standard_t(cfg.poll_error_df, size=S)
     modelled = [IDX[p] for p in agg_parties]
     state[:, modelled] = np.clip(state[:, modelled], 0.3, None)
@@ -274,17 +458,16 @@ def simulate(inputs: SeatInputs, agg_draws: np.ndarray, agg_parties: list[str],
     base_state = inputs.base.T @ w  # B, previous statewide shares
     region_names = sorted(set(inputs.regions))
     region_idx = np.array([region_names.index(r) for r in inputs.regions])
+    inc_blocs = [_bloc(h) for h in inputs.incumbent]
 
     seat = np.zeros((S, D, len(BLOCS)))
 
     # 4. Independents: persist with random decay, or around a curated prior where a
     #    notable independent is on the ballot.
-    # Sitting independents keep their vote (no decay); first-term ones gain; when a
-    # sitting independent retires most of their personal vote goes with them.
     decay = np.full(D, cfg.ind_decay_mean)
     if inputs.retiring is not None and inputs.sophomore is not None:
         k = IDX["IND"]
-        sitting_ind = np.array([_bloc(h) == "IND" for h in inputs.incumbent])
+        sitting_ind = np.array([b == "IND" for b in inc_blocs])
         decay = np.where(sitting_ind, 0.0, decay)
         decay = np.where(inputs.sophomore[:, k] > 0, cfg.ind_sophomore_log, decay)
         decay = np.where(inputs.retiring[:, k] > 0, cfg.ind_retire_log, decay)
@@ -297,45 +480,97 @@ def simulate(inputs: SeatInputs, agg_draws: np.ndarray, agg_parties: list[str],
             rng.normal(0, cfg.ind_prior_sd, size=(S, D)))
         ind = np.where(has[None, :], prior, ind)
     if inputs.new_ind is not None and inputs.new_ind_pool is not None:
-        # First-time independents on the ballot (not curated): resampled from what such
-        # candidates polled before. A separate stream keeps the other draws unchanged.
         from prophecy.model.new_candidates import draw
 
         n_new = inputs.new_ind.copy()
         if inputs.ind_prior is not None:
             n_new[np.isfinite(inputs.ind_prior)] = 0
         ind = ind + draw(n_new, inputs.new_ind_pool, S, np.random.default_rng(cfg.seed + 1))
+    if inputs.contest is not None:
+        ind = np.where(inputs.contest[:, IDX["IND"]][None, :], ind, 0.0)
+    ind = np.clip(ind, 0.0, 0.65)
     seat[:, :, IDX["IND"]] = ind
     ind_state = ind @ w  # S
 
-    # 2. Logit swing for ALP, COAL, GRN, OTH (OTH target excludes independents).
+    # 2. Logit swing for ALP, COAL, GRN, OTH with correlated regional & seat shocks
+    #    and contest-masked recentring.
     targets = {b: state[:, IDX[b]] / 100 for b in ("ALP", "COAL", "GRN")}
     targets["OTH"] = np.clip(state[:, IDX["OTH"]] / 100 - ind_state, 0.005, None)
+    reg_eff_map = _draw_region_effects(rng, S, len(region_names), cfg)
+    seat_noise_map = _draw_seat_noise_all(rng, S, D, cfg)
     for b in SWING_BLOCS:
         k = IDX[b]
         base = np.clip(inputs.base[:, k], 0.002, 0.98)
         swing = logit(targets[b]) - logit(np.clip(base_state[k], 0.002, 0.98))
-        region_eff = rng.normal(0, cfg.region_sd, size=(S, len(region_names)))[:, region_idx]
-        noise = cfg.seat_sd[b] * _seat_noise(rng, cfg.seat_df.get(b), (S, D))
+        region_eff = reg_eff_map[b][:, region_idx]
+        noise = seat_noise_map[b]
         l0 = logit(base)
         rtm = cfg.seat_beta.get(b, 0.0) * (l0 - l0 @ w)  # strong seats swing back
         p = (l0 + rtm)[None, :] + swing[:, None] + region_eff + noise + _candidate_adj(inputs, k, cfg)[None, :]
+        # Recentre latent support across all seats first, then zero out uncontested seats
+        # (voters in uncontested seats spill locally rather than teleporting to other seats).
         seat[:, :, k] = expit(_recentre(p, inputs.weight, targets[b]))
+        if inputs.contest is not None:
+            seat[:, :, k] *= inputs.contest[:, k][None, :]
 
-    # 3. One Nation from federal geography (only when ONP is modelled this cycle).
+    # 3. One Nation on the logit scale from federal/state geography (when modelled).
     if "ONP" in agg_parties:
-        onp = inputs.onp_index[None, :] * np.exp(rng.normal(0, cfg.seat_sd["ONP"], size=(S, D)))
-        onp *= (state[:, IDX["ONP"]] / 100 / (onp @ w))[:, None]
-        seat[:, :, IDX["ONP"]] = np.clip(onp, 0, 0.9)
+        k_onp = IDX["ONP"]
+        base_onp_ref = max(float(base_state[k_onp]), 0.03)
+        base_onp = np.clip(inputs.onp_index * base_onp_ref, 0.002, 0.90)
+        l0_onp = logit(base_onp)
+        onp_target = state[:, k_onp] / 100
+        swing_onp = logit(np.clip(onp_target, 0.002, 0.98)) - logit(np.clip(float(base_onp @ w), 0.002, 0.98))
+        noise_onp = cfg.seat_sd["ONP"] * _seat_noise(rng, cfg.seat_df.get("ONP", 6.0), (S, D))
+        p_onp = l0_onp[None, :] + swing_onp[:, None] + noise_onp + _candidate_adj(inputs, k_onp, cfg)[None, :]
+        seat[:, :, k_onp] = expit(_recentre(p_onp, inputs.weight, onp_target))
+        if inputs.contest is not None:
+            seat[:, :, k_onp] *= inputs.contest[:, k_onp][None, :]
+
+    # Targeted cannibalization: major independent surges (>8 pts above baseline) draw
+    # disproportionately from the incumbent major bloc before raking.
+    if cfg.ind_incumbent_cannibal > 0.0:
+        ind_excess = np.maximum(
+            ind - inputs.base[:, IDX["IND"]][None, :] - cfg.ind_cannibal_threshold, 0.0
+        )
+        for d, inc_b in enumerate(inc_blocs):
+            if inc_b in ("ALP", "COAL"):
+                ik = IDX[inc_b]
+                if inputs.contest is None or inputs.contest[d, ik]:
+                    seat[:, d, ik] = np.maximum(
+                        seat[:, d, ik] - cfg.ind_incumbent_cannibal * ind_excess[:, d], 0.02
+                    )
 
     if inputs.contest is not None:
         seat *= inputs.contest[None, :, :]
-    seat /= seat.sum(axis=2, keepdims=True)
 
-    # 5. Preference count.
+    # Jointly enforce seat row sums = 1 and statewide vote-weighted targets via Sinkhorn raking.
+    # Blocs contesting <95% of seats keep their realized post-contest total so uncontested
+    # statewide poll share is not artificially concentrated into the few contested seats.
+    target_col = state / 100.0
+    target_col[:, IDX["IND"]] = ind_state
+    target_col[:, IDX["OTH"]] = np.clip(state[:, IDX["OTH"]] / 100.0 - ind_state, 0.005, None)
+    fixed = [IDX["IND"]]
+    if inputs.contest is not None:
+        for k in range(len(BLOCS)):
+            if k == IDX["IND"]:
+                continue
+            cov_w = float(inputs.contest[:, k].astype(float) @ w)
+            if cov_w < 0.95:
+                target_col[:, k] = seat[:, :, k] @ w
+                fixed.append(k)
+    target_col /= np.maximum(target_col.sum(axis=1, keepdims=True), 1e-12)
+    seat = _rake_seats(seat, w, target_col, fixed_blocs=tuple(fixed), n_iters=6)
+
+    # 5. Preference count with seat-level flow heterogeneity.
     flows = draw_weights(flow_weights, S, rng)
+    seat_flows = draw_seat_weights(
+        flows, inc_blocs, np.random.default_rng(cfg.seed + 4),
+        seat_sd=cfg.seat_flow_sd, ind_sd=cfg.ind_flow_seat_sd,
+        ind_anti_incumbent_tilt=cfg.ind_anti_incumbent_tilt,
+    )
     ex = draw_exhaust(exhaust, S, rng) if exhaust is not None else None
-    winner, final = count(seat, flows, ex)
+    winner, final = count(seat, seat_flows, ex)
     # Statewide 2PP: split the simulated independent vote back out of "Others", since
     # independents' preferences differ from minor parties'.
     tpp_primary = state / 100

@@ -84,9 +84,10 @@ MIN_ERROR_SD = 1.0  # points: a guard, well below the pooled estimates
 
 def pooled_poll_error(before, jurisdiction: str, processed) -> dict:
     """Polling error for ``jurisdiction`` from every jurisdiction's elections before
-    ``before``: the pooled root-mean-square error and mean (bias) per party, each
-    jurisdiction's own values shrunk toward them (``SHRINK_ELECTIONS`` pseudo-
-    elections), and the pooled correlation between parties' errors."""
+    ``before``: the pooled bias-centred residual SD (net of average raw-poll sampling
+    variance already modelled in Stage 1) and shrunk mean bias per party, each
+    jurisdiction's own values shrunk toward the pool (``SHRINK_ELECTIONS`` pseudo-
+    elections), plus the pooled correlation between parties' centred errors."""
     tables = []
     for j in POOL_JURISDICTIONS:
         code = j.lower()
@@ -97,25 +98,49 @@ def pooled_poll_error(before, jurisdiction: str, processed) -> dict:
         res = pl.read_csv(res_path, try_parse_dates=True).filter(pl.col("date") < before)
         t = poll_error_table(pl.read_csv(polls_path, try_parse_dates=True, infer_schema_length=None), res)
         if t.height:
-            tables.append(t.select("year", *[f"{p}_error" for p in ERROR_PARTIES])
+            cols = ["year", "n_polls", *[f"{p}_error" for p in ERROR_PARTIES],
+                    *[f"{p}_result" for p in ERROR_PARTIES]]
+            tables.append(t.select([c for c in cols if c in t.columns])
                           .with_columns(pl.lit(j).alias("jurisdiction")))
     table = pl.concat(tables, how="diagonal_relaxed")
     sd, bias = {}, {}
     k = SHRINK_ELECTIONS
+    # Effective sample size per poll used by the Stage 1 aggregator (DEFAULT_N / DESIGN_EFFECT).
+    n_eff_typ = 1000.0 / 1.5
     for p in ERROR_PARTIES:
-        e = table[f"{p}_error"].drop_nulls().to_numpy()
-        own = table.filter(pl.col("jurisdiction") == jurisdiction)[f"{p}_error"].drop_nulls().to_numpy()
-        ms_g, mean_g = float(np.mean(e ** 2)), float(np.mean(e))
+        sub = table.filter(pl.col(f"{p}_error").is_not_null())
+        e = sub[f"{p}_error"].to_numpy()
+        own_sub = sub.filter(pl.col("jurisdiction") == jurisdiction)
+        own = own_sub[f"{p}_error"].to_numpy()
         n = len(own)
-        ms = (n * float(np.mean(own ** 2)) + k * ms_g) / (n + k) if n else ms_g
-        # The pooled mean is itself shrunk toward zero by the same pseudo-count.
-        mean_g = mean_g * len(e) / (len(e) + k)
+        # Shrunk bias: pooled mean shrunk toward zero, then jurisdiction shrunk toward pool.
+        mean_g = float(np.mean(e)) * len(e) / (len(e) + k)
         mu = (n * float(np.mean(own)) + k * mean_g) / (n + k) if n else mean_g
-        sd[p] = round(max(float(np.sqrt(ms)), MIN_ERROR_SD), 2)
+        # Centred residual variance around the shrunk bias (avoids double-counting subtracted bias).
+        dof_g = max(len(e) - 1, 1)
+        var_g = float(np.sum((e - mean_g) ** 2) / dof_g)
+        if n:
+            var_own = float(np.mean((own - mu) ** 2))
+            var = (n * var_own + k * var_g) / (n + k)
+        else:
+            var = var_g
+        # Subtract typical sampling variance of the raw 28-day average (already in Stage 1 posterior).
+        if f"{p}_result" in sub.columns and "n_polls" in sub.columns:
+            p_res = sub[f"{p}_result"].fill_null(35.0 if p != "GRN" else 10.0).to_numpy()
+            n_polls = np.maximum(sub["n_polls"].fill_null(3).to_numpy().astype(float), 1.0)
+            samp_var = float(np.mean(p_res * (100.0 - p_res) / (n_eff_typ * n_polls)))
+            var = max(var - samp_var, MIN_ERROR_SD ** 2)
+        sd[p] = round(max(float(np.sqrt(var)), MIN_ERROR_SD), 2)
         bias[p] = round(mu, 2)
     full = table.drop_nulls([f"{p}_error" for p in ERROR_PARTIES]).select(
         [f"{p}_error" for p in ERROR_PARTIES]).to_numpy()
-    corr = np.corrcoef(full.T) if len(full) >= 5 else np.eye(len(ERROR_PARTIES))
+    if len(full) >= 5:
+        corr = np.corrcoef(full.T)
+        # Mild shrinkage toward identity to ensure positive definiteness on small samples.
+        corr = 0.95 * corr + 0.05 * np.eye(len(ERROR_PARTIES))
+        np.fill_diagonal(corr, 1.0)
+    else:
+        corr = np.eye(len(ERROR_PARTIES))
     return {"sd": sd, "bias": bias, "corr": np.round(corr, 3).tolist(), "parties": list(ERROR_PARTIES),
             "n_elections": int(table.height), "n_own": int(table.filter(pl.col("jurisdiction") == jurisdiction).height)}
 

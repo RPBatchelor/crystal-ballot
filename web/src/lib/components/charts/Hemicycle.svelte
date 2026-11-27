@@ -12,8 +12,9 @@
 		seats: HemiSeat[];
 		majority: number;
 		rows?: number;
+		onSelect?: (key: string) => void;
 	}
-	let { title, seats, majority, rows }: Props = $props();
+	let { title, seats, majority, rows, onSelect }: Props = $props();
 
 	const R0 = 0.36; // inner radius as a fraction of the outer
 
@@ -68,7 +69,24 @@
 		{#each layout.pts as p, i (i)}
 			{@const s = seats[i]}
 			{#if s}
-				<a href={s.href} aria-label={s.label}>
+				<a
+					href={onSelect ? undefined : s.href}
+					role={onSelect ? 'button' : undefined}
+					tabindex={onSelect ? 0 : undefined}
+					aria-label={s.label}
+					onclick={(e) => {
+						if (onSelect) {
+							e.preventDefault();
+							onSelect(s.key);
+						}
+					}}
+					onkeydown={(e) => {
+						if (onSelect && (e.key === 'Enter' || e.key === ' ')) {
+							e.preventDefault();
+							onSelect(s.key);
+						}
+					}}
+				>
 					<circle
 						cx={Math.cos(p.a) * p.r}
 						cy={-Math.sin(p.a) * p.r}

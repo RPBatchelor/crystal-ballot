@@ -702,9 +702,12 @@ def _historical_config(e, no_polls: bool = False) -> "SimConfig":
     from prophecy.model.pipeline import default_config
 
     cfg = default_config()
-    # Seat-swing terms (single-member seats; Hare-Clark divisions are five-to-seven-
-    # member electorates, not comparable).
-    if e.jurisdiction not in ("TAS", "ACT"):
+    # Seat-swing terms: single-member seats via swing_fit, Hare-Clark divisions via hareclark_swing_sd.
+    if e.jurisdiction in ("TAS", "ACT"):
+        from prophecy.model.hareclark import hareclark_swing_sd
+
+        cfg.seat_sd.update(hareclark_swing_sd(e.date))
+    else:
         from prophecy.model import swing_fit
 
         swing_fit.apply(cfg, swing_fit.fit(e.date, e.jurisdiction, log=typer.echo))

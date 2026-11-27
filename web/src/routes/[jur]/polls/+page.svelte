@@ -1,8 +1,10 @@
 <script lang="ts">
-	import { coalName, theCoal } from '$lib/jurisdictions';
+	import { coalName, coalShort, theCoal } from '$lib/jurisdictions';
 	import { SITE_NAME } from '$lib/site';
 	import type { PageData } from './$types';
+	import type { Poll } from '$lib/types';
 	import TimeSeriesChart from '$lib/components/charts/TimeSeriesChart.svelte';
+	import HouseEffectsChart from '$lib/components/charts/HouseEffectsChart.svelte';
 	import { fmtDate, fmtInt } from '$lib/format';
 	import { primarySeries, TPP_SERIES } from '$lib/series';
 
@@ -10,6 +12,7 @@
 	const polls = $derived(data.polls);
 	const j = $derived(data.jurisdiction);
 	const coalLabel = $derived(coalName(j.code));
+	const coalShortLbl = $derived(coalShort(j.code));
 	const theC = $derived(theCoal(j.code));
 
 	const pollsters = $derived([...new Set(polls.polls.map((p) => p.pollster))].sort());
@@ -44,6 +47,11 @@
 	const v = (n: number | null) => (n == null ? '–' : n.toString());
 	const houseParties = ['ALP', 'COAL', 'GRN', 'ONP'];
 	const housePollsters = $derived([...new Set((polls.house_effects ?? []).map((h) => h.pollster))].sort());
+	const pollDotLabel = (p: Poll) =>
+		`${p.pollster}${p.sample_size ? ` (n=${fmtInt(p.sample_size)})` : ''} · ${fmtDate(p.field_end)}`;
+	const pollHighlight = $derived(
+		pollster === 'all' ? null : (p: Poll) => p.pollster === pollster
+	);
 </script>
 
 <svelte:head>
@@ -59,11 +67,21 @@
 </p>
 
 <h2>Primary vote</h2>
+<div class="chart-filter small">
+	<label>Highlight pollster on charts
+		<select bind:value={pollster}>
+			<option value="all">All pollsters</option>
+			{#each pollsters as p (p)}<option value={p}>{p}</option>{/each}
+		</select>
+	</label>
+</div>
 <TimeSeriesChart
 	title="{j.name} primary vote polling since {firstYear}"
 	series={primarySeries(coalLabel)}
 	points={polls.polls}
 	pointDate={(p) => p.field_end}
+	pointLabel={pollDotLabel}
+	highlightPoint={pollHighlight}
 	trend={polls.trend}
 	{events}
 	{markers}
@@ -83,6 +101,8 @@
 	series={TPP_SERIES}
 	points={polls.polls}
 	pointDate={(p) => p.field_end}
+	pointLabel={pollDotLabel}
+	highlightPoint={pollHighlight}
 	trend={polls.trend}
 	{markers}
 	end={polls.election_date_known === false ? undefined : polls.election_date}
@@ -101,37 +121,39 @@
 {#if polls.house_effects?.length}
 	<h2>Pollster house effects</h2>
 	<p class="muted small">
-		How far each pollster's figures typically sit from the average, in points (median, with 90% interval).
-		These sum to zero across pollsters, so they measure differences between pollsters, not industry-wide
-		error.
+		How far each pollster's figures typically sit from the industry average (median with 90% interval, in points).
+		Bold pollsters have a 90% interval excluding zero.
 	</p>
-	<div class="scroll-x">
-		<table class="data house">
-			<thead>
-				<tr>
-					<th class="left">Pollster</th>
-					{#each houseParties as hp (hp)}<th>{hp}</th>{/each}
-				</tr>
-			</thead>
-			<tbody>
-				{#each housePollsters as name (name)}
+	<HouseEffectsChart effects={polls.house_effects} {coalLabel} />
+	<details class="house-raw">
+		<summary class="small">View house effects table</summary>
+		<div class="scroll-x">
+			<table class="data house">
+				<thead>
 					<tr>
-						<td class="left">{name}</td>
-						{#each houseParties as hp (hp)}
-							{@const h = polls.house_effects.find((r) => r.pollster === name && r.party === hp)}
-							<td>
-								{#if h}
-									<span class:strong={h.lo > 0 || h.hi < 0}>{h.median > 0 ? '+' : ''}{h.median.toFixed(1)}</span>
-									<span class="muted small">({h.lo.toFixed(1)}, {h.hi.toFixed(1)})</span>
-								{:else}–{/if}
-							</td>
-						{/each}
+						<th class="left">Pollster</th>
+						{#each houseParties as hp (hp)}<th>{hp === 'COAL' ? coalShortLbl : hp}</th>{/each}
 					</tr>
-				{/each}
-			</tbody>
-		</table>
-	</div>
-	<p class="muted small">Bold: the 90% interval excludes zero.</p>
+				</thead>
+				<tbody>
+					{#each housePollsters as name (name)}
+						<tr>
+							<td class="left">{name}</td>
+							{#each houseParties as hp (hp)}
+								{@const h = polls.house_effects.find((r) => r.pollster === name && r.party === hp)}
+								<td>
+									{#if h}
+										<span class:strong={h.lo > 0 || h.hi < 0}>{h.median > 0 ? '+' : ''}{h.median.toFixed(1)}</span>
+										<span class="muted small">({h.lo.toFixed(1)}, {h.hi.toFixed(1)})</span>
+									{:else}–{/if}
+								</td>
+							{/each}
+						</tr>
+					{/each}
+				</tbody>
+			</table>
+		</div>
+	</details>
 {/if}
 
 <h2>All polls</h2>
@@ -160,12 +182,12 @@
 				<th class="left">Pollster</th>
 				<th>Sample</th>
 				<th>ALP</th>
-				<th>L/NP</th>
+				<th>{coalShortLbl}</th>
 				<th>GRN</th>
 				<th>ONP</th>
 				<th>IND</th>
 				<th>OTH</th>
-				<th>2PP ALP v L/NP</th>
+				<th>2PP ALP v {coalShortLbl}</th>
 				<th>2PP ALP v ONP</th>
 			</tr>
 		</thead>
@@ -194,6 +216,18 @@
 </p>
 
 <style>
+	.chart-filter {
+		margin-bottom: 0.65rem;
+		color: var(--fg-2);
+	}
+	.house-raw {
+		margin-top: 0.5rem;
+	}
+	.house-raw summary {
+		cursor: pointer;
+		color: var(--fg-2);
+		margin-bottom: 0.5rem;
+	}
 	.house td {
 		white-space: nowrap;
 	}
