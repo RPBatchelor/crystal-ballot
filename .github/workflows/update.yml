@@ -67,15 +67,20 @@ jobs:
           uv run prophecy ingest-polls --jurisdiction FED
 
       # Victoria first, committed on its own, so a slow federal fit never holds it back.
+      # Freeze the final eve-of-election vic-2026 forecast once polling day (2026-11-28) arrives.
       - name: Victorian poll aggregate and seat forecast
         if: env.FULL_RUN == 'true'
         timeout-minutes: 50
         working-directory: pipeline
         run: |
-          # 500 draws per chain (2000 total) keeps the fit near 25 min on a 4-core runner;
-          # 10 simulations per draw keeps the forecast at 20,000.
-          uv run prophecy aggregate --election vic-2026 --iter-sampling 500
-          uv run prophecy forecast --election vic-2026 --n-per-draw 10
+          if [ "$(date -u +%Y-%m-%d)" \< "2026-11-28" ]; then
+            # 500 draws per chain (2000 total) keeps the fit near 25 min on a 4-core runner;
+            # 10 simulations per draw keeps the forecast at 20,000.
+            uv run prophecy aggregate --election vic-2026 --iter-sampling 500
+            uv run prophecy forecast --election vic-2026 --n-per-draw 10
+          else
+            echo "vic-2026 forecast frozen for election day (2026-11-28)"
+          fi
 
       - name: Test
         working-directory: pipeline
@@ -84,7 +89,9 @@ jobs:
       - name: Publish site data
         working-directory: pipeline
         run: |
-          uv run prophecy publish --election vic-2026 --validated
+          if [ "$(date -u +%Y-%m-%d)" \< "2026-11-28" ]; then
+            uv run prophecy publish --election vic-2026 --validated
+          fi
           uv run prophecy publish --election fed-next
 
       - name: Commit Victorian update

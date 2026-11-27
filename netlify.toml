@@ -5,6 +5,7 @@
   base = "web"
   command = "npm run build"
   publish = "build"
+  functions = "netlify/functions"
   # Only the site and its data affect the build: skip deploys for pipeline-only commits.
   # Always build when the cache is from this very commit (e.g. a dev branch deploy of
   # the commit main was then fast-forwarded to): there is nothing to diff against.
@@ -12,6 +13,12 @@
 
 [build.environment]
   NODE_VERSION = "24"
+
+# Live election-night JSON: never serve stale copies.
+[[headers]]
+  for = "/data/*/live/*"
+  [headers.values]
+    Cache-Control = "no-store, max-age=0"
 
 # Forecast data changes daily: let browsers revalidate rather than serve a stale copy.
 [[headers]]
