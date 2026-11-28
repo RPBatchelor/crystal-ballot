@@ -1,16 +1,16 @@
 /**
  * Netlify Function: /.netlify/functions/live-vic-2026
- * Hybrid election-night feed:
- *   1. Reads curated/committed live JSON from `/data/vic/live/2026.json` on the same origin.
- *   2. Optionally fetches VEC's 2026 live results index (if VEC_LIVE_URL is set or once polls close)
- *      and merges any newly reported districts.
- *   3. Returns normalized LiveResultsFile JSON with a 45s CDN cache so concurrent viewers never
- *      hammer VEC.
+ * Live election-night feed for the 2026 Victorian state election.
+ *
+ * Primary source: ABC Elections live results SSR payload
+ *   https://www.abc.net.au/news/elections/vic/2026/results
+ *   (includes all 88 electorates, live % counted, live 2CP swingDial, and ABC seat calls).
+ * Fallback / override: curated static JSON at `/data/vic/live/2026.json`.
+ * Cached 45s at Netlify CDN so concurrent viewers share one upstream fetch.
  */
 
-const DEFAULT_VEC_URL =
-	process.env.VEC_LIVE_URL ||
-	'https://www.vec.vic.gov.au/results/state-election-results/2026-state-election-results';
+const ABC_RESULTS_URL =
+	process.env.ABC_LIVE_URL || 'https://www.abc.net.au/news/elections/vic/2026/results';
 
 const HEADERS = {
 	'Content-Type': 'application/json; charset=utf-8',
@@ -18,54 +18,153 @@ const HEADERS = {
 };
 
 function slugify(name) {
-	return name
+	return (name || '')
 		.toLowerCase()
 		.replace(/[^a-z0-9]+/g, '-')
 		.replace(/^-|-$/g, '');
 }
 
 function mapParty(raw) {
-	const s = (raw || '').toUpperCase();
-	if (s.includes('LABOR') || s === 'ALP') return 'ALP';
-	if (s.includes('NATIONAL') || s === 'NAT') return 'NAT';
-	if (s.includes('LIBERAL') || s === 'LIB') return 'LIB';
-	if (s.includes('GREEN') || s === 'GRN') return 'GRN';
-	if (s.includes('ONE NATION') || s === 'ONP' || s === 'PHON') return 'ONP';
-	if (s.includes('INDEPENDENT') || s === 'IND') return 'IND';
+	const s = (raw || '').toUpperCase().trim();
+	if (s === 'ALP' || s.includes('LABOR')) return 'ALP';
+	if (s === 'NAT' || s.includes('NATIONAL')) return 'NAT';
+	if (s === 'LIB' || s === 'L/NP' || s.includes('LIBERAL')) return 'LIB';
+	if (s === 'GRN' || s.includes('GREEN')) return 'GRN';
+	if (s === 'ONP' || s === 'PHON' || s.includes('ONE NATION')) return 'ONP';
+	if (s === 'IND' || s.includes('INDEPENDENT')) return 'IND';
 	return 'OTH';
 }
 
-/**
- * Best-effort parser for VEC's summary table if published on election night.
- * Returns null if VEC hasn't opened the live tally room yet or HTML differs.
- */
-function parseVecSummaryHtml(html) {
-	// Look for standard VEC summary rows: District link + party + % counted / margin if present
-	const rows = [];
-	const trRe = /<tr[^>]*>([\s\S]*?)<\/tr>/gi;
-	let m;
-	while ((m = trRe.exec(html))) {
-		const cells = [...m[1].matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi)].map((c) =>
-			c[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()
-		);
-		if (cells.length < 3) continue;
-		const linkMatch = m[1].match(/href="[^"]*\/([a-z0-9-]+)-district-results"/i);
-		if (!linkMatch) continue;
-		const slug = slugify(linkMatch[1]);
-		const party = mapParty(cells[1] || cells[2]);
-		const pctMatch = cells.join(' ').match(/(\d+(?:\.\d+)?)\s*%/);
-		const pct = pctMatch ? Number(pctMatch[1]) : 0;
-		const isElected = /elected|declared|won/i.test(cells.join(' '));
-		rows.push({
+function findElectoratesAndSummary(obj) {
+	let electorates = null;
+	let summary = null;
+	const walk = (node) => {
+		if (!node || typeof node !== 'object') return;
+		if (Array.isArray(node)) {
+			if (!electorates && node.length >= 80 && node.length <= 95 && node[0]?.name && 'counted' in node[0]) {
+				electorates = node;
+				return;
+			}
+			for (const item of node) walk(item);
+			return;
+		}
+		if (!summary && Array.isArray(node.results) && 'inDoubt' in node && 'totalSeats' in node) {
+			summary = node;
+		}
+		for (const val of Object.values(node)) walk(val);
+	};
+	walk(obj);
+	return { electorates, summary };
+}
+
+function parseAbcResultsHtml(html) {
+	const m = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
+	if (!m) return null;
+	const nextData = JSON.parse(m[1]);
+	const { electorates, summary } = findElectoratesAndSummary(nextData?.props?.pageProps);
+	if (!electorates || electorates.length < 50) return null;
+
+	let tppAlpSum = 0;
+	let tppCoalSum = 0;
+	const districts = [];
+
+	for (const e of electorates) {
+		const slug = slugify(e.name);
+		const pctCounted = Number.parseFloat(e.counted) || 0;
+		const dial = Array.isArray(e.swingDial) ? e.swingDial : [];
+
+		// Extract leading party, margin, and Labor 2PP from swingDial
+		let dialSorted = dial
+			.map((c) => {
+				const cp = c.predicted2CP || c.simple2CP || c.predicted || c.simple || {};
+				const pct = Number.parseFloat(cp.pct);
+				const votes = Number(cp.votes) || 0;
+				return {
+					party: mapParty(c.party?.code || c.party?.name),
+					pct: Number.isFinite(pct) ? pct : null,
+					votes
+				};
+			})
+			.filter((c) => c.pct != null && c.pct > 0)
+			.sort((a, b) => b.pct - a.pct);
+
+		let leadingParty = e.leadingCandidate?.party?.code
+			? mapParty(e.leadingCandidate.party.code)
+			: dialSorted[0]?.party ?? null;
+
+		let margin = null;
+		if (dialSorted.length >= 2) {
+			margin = Number((dialSorted[0].pct - 50).toFixed(1));
+		}
+
+		// Accumulate classic Labor v Coalition 2PP when both appear in swingDial
+		let tppAlp = null;
+		if (dialSorted.length === 2) {
+			const alp = dialSorted.find((c) => c.party === 'ALP');
+			const coal = dialSorted.find((c) => c.party === 'LIB' || c.party === 'NAT');
+			if (alp && coal) {
+				tppAlp = Number(alp.pct.toFixed(1));
+				if (alp.votes > 0 && coal.votes > 0) {
+					tppAlpSum += alp.votes;
+					tppCoalSum += coal.votes;
+				}
+			}
+		}
+
+		// Determine status: ABC official call vs likely/projected vs counting vs uncounted
+		const predStr = (e.predicted?.predictionString || '').toUpperCase();
+		const isAbcCalled =
+			Boolean(e.isFinalResult) ||
+			(e.isDoubtful === false && Boolean(leadingParty)) ||
+			(predStr.startsWith('SAFE') || predStr.includes('WON'));
+		const isAbcLikely = !isAbcCalled && predStr.startsWith('LIKELY') && Boolean(leadingParty);
+
+		let status = 'uncounted';
+		let calledParty = null;
+		if (isAbcCalled && leadingParty) {
+			status = 'called';
+			calledParty = leadingParty;
+		} else if (isAbcLikely) {
+			status = 'projected';
+		} else if (pctCounted > 0 || leadingParty) {
+			status = 'counting';
+		}
+
+		districts.push({
 			slug,
-			status: isElected ? 'called' : pct > 0 ? 'counting' : 'uncounted',
-			called_party: isElected ? party : null,
-			leading_party: pct > 0 ? party : null,
-			pct_counted: pct,
-			source: 'vec'
+			district: e.name,
+			status,
+			called_party: calledParty,
+			leading_party: leadingParty,
+			margin,
+			pct_counted: Number(pctCounted.toFixed(1)),
+			tpp_alp: tppAlp,
+			called_at: status === 'called' ? e.updated || summary?.updated || null : null,
+			source: status === 'called' ? 'abc' : status === 'projected' ? 'projected' : 'abc'
 		});
 	}
-	return rows.length >= 10 ? rows : null;
+
+	const seatsCalled = districts.filter((d) => d.status === 'called').length;
+	const seatsReporting = districts.filter((d) => d.pct_counted > 0 || d.status === 'called').length;
+	const statewidePct = Number.parseFloat(summary?.counted) || 0;
+	const swTpp =
+		tppAlpSum + tppCoalSum > 0
+			? Number(((100 * tppAlpSum) / (tppAlpSum + tppCoalSum)).toFixed(1))
+			: null;
+
+	return {
+		election_id: 'vic-2026',
+		updated_at: summary?.updated || new Date().toISOString(),
+		status: seatsCalled >= 88 ? 'final' : seatsReporting > 0 ? 'counting' : 'pre_polls',
+		source: 'abc',
+		note: null,
+		seats_called: seatsCalled,
+		seats_reporting: seatsReporting,
+		pct_counted: Number(statewidePct.toFixed(1)),
+		statewide_primary: { ALP: null, COAL: null, GRN: null, ONP: null },
+		tpp_alp: swTpp,
+		districts
+	};
 }
 
 export const handler = async (event) => {
@@ -87,7 +186,7 @@ export const handler = async (event) => {
 		districts: []
 	};
 
-	// 1. Load static/curated live JSON (updated by prophecy live-poll or manual commits)
+	// 1. Load static/curated overrides (if any)
 	try {
 		const res = await fetch(`${origin}/data/vic/live/2026.json`, {
 			headers: { 'Cache-Control': 'no-cache' }
@@ -97,50 +196,38 @@ export const handler = async (event) => {
 			base = { ...base, ...staticData };
 		}
 	} catch {
-		// Continue with empty base
+		// Continue
 	}
 
-	// 2. After polls close (2026-11-28 07:00 UTC = 6:00 PM AEDT), also poll VEC live summary
-	const pollsClosed = Date.now() >= Date.parse('2026-11-28T07:00:00Z');
-	if (pollsClosed && base.status !== 'final') {
-		try {
-			const vecRes = await fetch(DEFAULT_VEC_URL, {
-				headers: { 'User-Agent': 'CrystalBallot/2.0 (election-night-tracker)' },
-				signal: AbortSignal.timeout(8000)
-			});
-			if (vecRes.ok) {
-				const html = await vecRes.text();
-				const parsed = parseVecSummaryHtml(html);
-				if (parsed) {
-					const bySlug = new Map((base.districts || []).map((d) => [d.slug, d]));
-					for (const row of parsed) {
-						const existing = bySlug.get(row.slug);
-						// Curated calls always take precedence over automated scrapes
-						if (existing?.source === 'curated') continue;
-						bySlug.set(row.slug, { ...(existing || {}), ...row });
-					}
-					const districts = [...bySlug.values()];
-					const seatsCalled = districts.filter((d) => d.status === 'called').length;
-					const seatsReporting = districts.filter((d) => (d.pct_counted || 0) > 0).length;
-					const avgPct =
-						districts.length > 0
-							? districts.reduce((a, d) => a + (d.pct_counted || 0), 0) / districts.length
-							: 0;
-					base = {
-						...base,
-						updated_at: new Date().toISOString(),
-						status: seatsCalled >= 88 ? 'final' : seatsReporting > 0 ? 'counting' : base.status,
-						source: 'vec+curated',
-						seats_called: seatsCalled,
-						seats_reporting: seatsReporting,
-						pct_counted: Number(avgPct.toFixed(1)),
-						districts
-					};
-				}
+	// 2. Fetch live ABC Elections 2026 results
+	try {
+		const abcRes = await fetch(ABC_RESULTS_URL, {
+			headers: {
+				'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) CrystalBallot/2.0',
+				Accept: 'text/html'
+			},
+			signal: AbortSignal.timeout(10000)
+		});
+		if (abcRes.ok) {
+			const html = await abcRes.text();
+			const live = parseAbcResultsHtml(html);
+			if (live) {
+				// Preserve any explicit curated calls from static JSON
+				const curated = new Map(
+					(base.districts || []).filter((d) => d.source === 'curated').map((d) => [d.slug, d])
+				);
+				const mergedDistricts = live.districts.map((d) =>
+					curated.has(d.slug) ? { ...d, ...curated.get(d.slug) } : d
+				);
+				base = {
+					...live,
+					districts: mergedDistricts,
+					seats_called: mergedDistricts.filter((d) => d.status === 'called').length
+				};
 			}
-		} catch {
-			// Fall back cleanly to static/curated JSON
 		}
+	} catch {
+		// Fall back cleanly to static/curated JSON
 	}
 
 	return {

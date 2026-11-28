@@ -32,7 +32,7 @@ export interface MergedSeat {
 	tppAlp: number | null;
 	primary: Record<string, number> | null;
 	calledAt: string | null;
-	source: 'manual' | 'vec' | 'curated' | 'projected' | null;
+	source: 'manual' | 'vec' | 'abc' | 'curated' | 'projected' | null;
 	/** Model's pre-election probability assigned to the actual/effective winner. */
 	pActual: number | null;
 	/** Whether the model's favourite won (null if not yet effectively called). */
@@ -197,7 +197,7 @@ export function scoreLiveSeats(seats: MergedSeat[]): LiveModelScore {
 
 	for (const s of seats) {
 		if (s.source === 'manual') calledManual++;
-		else if (s.source === 'vec' || s.source === 'curated') calledOfficial++;
+		else if (s.source === 'vec' || s.source === 'abc' || s.source === 'curated') calledOfficial++;
 		else if (s.source === 'projected') calledProjected++;
 
 		if (s.effectiveWinner) {
